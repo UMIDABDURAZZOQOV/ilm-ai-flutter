@@ -1297,6 +1297,76 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': '6000+ университетов и статистика приёма',
     'en': '6,000+ schools & admission stats',
   },
+  'skills.dashboard.card': {
+    'uz': 'Milliy Sertifikat',
+    'ru': 'Milliy Sertifikat',
+    'en': 'Milliy Sertifikat',
+  },
+  'skills.dashboard.desc': {
+    'uz': "Ona tili va Tarixni bosqichma-bosqich o'rganing",
+    'ru': 'Изучайте родной язык и историю шаг за шагом',
+    'en': 'Learn Native Language and History step by step',
+  },
+  'skills.back': {
+    'uz': 'Orqaga',
+    'ru': 'Назад',
+    'en': 'Back',
+  },
+  'skills.start': {
+    'uz': 'BOSHLASH',
+    'ru': 'НАЧАТЬ',
+    'en': 'START',
+  },
+  'skills.learn': {
+    'uz': "O'rganamiz",
+    'ru': 'Учим',
+    'en': 'Learn',
+  },
+  'skills.example': {
+    'uz': 'Misol',
+    'ru': 'Пример',
+    'en': 'Example',
+  },
+  'skills.start_quiz': {
+    'uz': 'Testni boshlash!',
+    'ru': 'Начать тест!',
+    'en': 'Start quiz!',
+  },
+  'skills.lesson.correct': {
+    'uz': 'Ajoyib!',
+    'ru': 'Отлично!',
+    'en': 'Nice!',
+  },
+  'skills.lesson.incorrect': {
+    'uz': "Noto'g'ri",
+    'ru': 'Неправильно',
+    'en': 'Incorrect',
+  },
+  'skills.lesson.continue': {
+    'uz': 'Davom etish',
+    'ru': 'Далее',
+    'en': 'Continue',
+  },
+  'skills.complete.title': {
+    'uz': 'Dars yakunlandi!',
+    'ru': 'Урок завершён!',
+    'en': 'Lesson complete!',
+  },
+  'skills.complete.correct': {
+    'uz': "To'g'ri",
+    'ru': 'Правильно',
+    'en': 'Correct',
+  },
+  'skills.complete.streak': {
+    'uz': 'Kunlik seriya',
+    'ru': 'Дней подряд',
+    'en': 'Day streak',
+  },
+  'skills.error.generic': {
+    'uz': "Nimadir xato ketdi. Qayta urinib ko'ring.",
+    'ru': 'Что-то пошло не так. Попробуйте ещё раз.',
+    'en': 'Something went wrong. Please try again.',
+  },
   'college.tab.all': {
     'uz': 'Barchasi',
     'ru': 'Все',

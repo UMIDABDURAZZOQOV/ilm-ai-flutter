@@ -18,6 +18,18 @@ import '../../features/live_voice/presentation/live_voice_screen.dart';
 import '../../features/files/presentation/knowledge_base_screen.dart';
 import '../../features/quiz/data/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_home_screen.dart';
+import '../../features/skills/data/skill_tree_models.dart';
+import '../../features/skills/presentation/skills_hub_screen.dart';
+import '../../features/skills/presentation/skill_path_screen.dart';
+import '../../features/skills/presentation/skill_lesson_screen.dart';
+import '../../features/skills/presentation/skill_practice_screen.dart';
+import '../../features/skills/presentation/mock_exam_screen.dart';
+import '../../features/skills/presentation/class_mode_screen.dart';
+import '../../features/skills/presentation/parent_dashboard_screen.dart';
+import '../../features/skills/presentation/skill_profile_screen.dart';
+import '../../features/skills/presentation/skill_leaderboard_screen.dart';
+import '../../features/skills/presentation/skill_achievements_screen.dart';
+import '../../features/skills/presentation/skill_referral_screen.dart';
 import '../../features/quiz/presentation/quiz_session_screen.dart';
 import '../../features/quiz/presentation/quiz_result_screen.dart';
 import '../../features/quiz/presentation/quiz_stats_screen.dart';
@@ -119,6 +131,48 @@ final routerProvider = Provider<GoRouter>((ref) {
           fullscreenDialog: true,
           child: LiveVoiceScreen(),
         ),
+      ),
+
+      // Milliy Sertifikat skill tree -- top-level, outside the tab shell, so
+      // the whole flow (subject picker, path, lesson) is a fully immersive
+      // experience with no bottom nav, matching Duolingo's lesson flow.
+      GoRoute(
+        path: '/skills',
+        pageBuilder: (context, state) => _fadeSlidePage(const SkillsHubScreen(), state),
+        routes: [
+          GoRoute(
+            path: 'path',
+            pageBuilder: (context, state) => _fadeSlidePage(SkillPathScreen(subject: state.extra as SkillSubject), state),
+          ),
+          GoRoute(
+            path: 'lesson',
+            pageBuilder: (context, state) => _fadeSlidePage(SkillLessonScreen(lesson: state.extra as SkillTreeLesson), state),
+          ),
+          GoRoute(
+            path: 'practice',
+            pageBuilder: (context, state) {
+              final extra = state.extra as Map<String, dynamic>;
+              return _fadeSlidePage(SkillPracticeScreen(mode: extra['mode'] as PracticeMode), state);
+            },
+          ),
+          GoRoute(
+            path: 'marathon',
+            pageBuilder: (context, state) {
+              final s = state.extra as SkillSubject;
+              return _fadeSlidePage(SkillPracticeScreen(mode: PracticeMode.marathon, subjectSlug: s.slug, subjectName: s.nameUz), state);
+            },
+          ),
+          GoRoute(
+            path: 'mock',
+            pageBuilder: (context, state) => _fadeSlidePage(MockExamScreen(subject: state.extra as SkillSubject), state),
+          ),
+          GoRoute(path: 'classes', pageBuilder: (context, state) => _fadeSlidePage(const ClassModeScreen(), state)),
+          GoRoute(path: 'parent', pageBuilder: (context, state) => _fadeSlidePage(const ParentDashboardScreen(), state)),
+          GoRoute(path: 'profile', pageBuilder: (context, state) => _fadeSlidePage(const SkillProfileScreen(), state)),
+          GoRoute(path: 'leaderboard', pageBuilder: (context, state) => _fadeSlidePage(const SkillLeaderboardScreen(), state)),
+          GoRoute(path: 'achievements', pageBuilder: (context, state) => _fadeSlidePage(const SkillAchievementsScreen(), state)),
+          GoRoute(path: 'referral', pageBuilder: (context, state) => _fadeSlidePage(const SkillReferralScreen(), state)),
+        ],
       ),
 
       StatefulShellRoute.indexedStack(

@@ -46,6 +46,7 @@ class _DashboardCard {
 }
 
 const _cards = [
+  _DashboardCard(icon: Icons.emoji_events_rounded, titleKey: 'skills.dashboard.card', descKey: 'skills.dashboard.desc', location: '/skills'),
   _DashboardCard(icon: Icons.calculate_rounded, titleKey: 'math.dashboard.card', descKey: 'math.dashboard.desc', location: '/profile/math-solver'),
   _DashboardCard(icon: Icons.chat_bubble_rounded, titleKey: 'dashboard.chat.card', descKey: 'dashboard.chat.desc', location: '/chat'),
   _DashboardCard(icon: Icons.folder_rounded, titleKey: 'dashboard.files.card', descKey: 'dashboard.files.desc', location: '/files'),
