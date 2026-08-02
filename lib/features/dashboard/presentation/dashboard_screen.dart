@@ -53,6 +53,7 @@ const _cards = [
   _DashboardCard(icon: Icons.edit_rounded, titleKey: 'dashboard.quiz.card', descKey: 'dashboard.quiz.desc', location: '/quiz'),
   _DashboardCard(icon: Icons.timer_rounded, titleKey: 'focus.card', descKey: 'focus.desc', location: '/focus'),
   _DashboardCard(icon: Icons.bar_chart_rounded, titleKey: 'insights.card', descKey: 'insights.desc', location: '/insights'),
+  _DashboardCard(icon: Icons.auto_stories_rounded, titleKey: 'course.card', descKey: 'course.desc', location: '/course'),
   _DashboardCard(icon: Icons.school_rounded, titleKey: 'college.dashboard.card', descKey: 'college.dashboard.desc', location: '/profile/college'),
   _DashboardCard(icon: Icons.calendar_month_rounded, titleKey: 'dashboard.plan.card', descKey: 'dashboard.plan.desc', location: '/profile/learning-plan'),
   _DashboardCard(icon: Icons.gps_fixed_rounded, titleKey: 'dashboard.gaps.card', descKey: 'dashboard.gaps.desc', location: '/profile/gaps'),

@@ -237,6 +237,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Охват, результаты, темы',
     'en': 'Coverage, results, topics',
   },
+  'course.card': {
+    'uz': 'Materialdan kurs',
+    'ru': 'Курс из материалов',
+    'en': 'Course from materials',
+  },
+  'course.desc': {
+    'uz': 'Yuklagan PDF\'dan tuzilgan kurs',
+    'ru': 'Курс из ваших PDF',
+    'en': 'A course built from your PDFs',
+  },
   'dashboard.plan.card': {
     'uz': 'O\'quv rejasi',
     'ru': 'План обучения',
