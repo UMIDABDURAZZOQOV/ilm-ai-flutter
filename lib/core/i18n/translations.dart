@@ -227,6 +227,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Помодоро + тест на перерыве',
     'en': 'Pomodoro + break quiz',
   },
+  'insights.card': {
+    'uz': 'O\'rganish tahlili',
+    'ru': 'Аналитика обучения',
+    'en': 'Learning insights',
+  },
+  'insights.desc': {
+    'uz': 'Qamrov, natijalar, mavzular',
+    'ru': 'Охват, результаты, темы',
+    'en': 'Coverage, results, topics',
+  },
   'dashboard.plan.card': {
     'uz': 'O\'quv rejasi',
     'ru': 'План обучения',
