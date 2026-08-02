@@ -51,6 +51,7 @@ const _cards = [
   _DashboardCard(icon: Icons.chat_bubble_rounded, titleKey: 'dashboard.chat.card', descKey: 'dashboard.chat.desc', location: '/chat'),
   _DashboardCard(icon: Icons.folder_rounded, titleKey: 'dashboard.files.card', descKey: 'dashboard.files.desc', location: '/files'),
   _DashboardCard(icon: Icons.edit_rounded, titleKey: 'dashboard.quiz.card', descKey: 'dashboard.quiz.desc', location: '/quiz'),
+  _DashboardCard(icon: Icons.timer_rounded, titleKey: 'focus.card', descKey: 'focus.desc', location: '/focus'),
   _DashboardCard(icon: Icons.school_rounded, titleKey: 'college.dashboard.card', descKey: 'college.dashboard.desc', location: '/profile/college'),
   _DashboardCard(icon: Icons.calendar_month_rounded, titleKey: 'dashboard.plan.card', descKey: 'dashboard.plan.desc', location: '/profile/learning-plan'),
   _DashboardCard(icon: Icons.gps_fixed_rounded, titleKey: 'dashboard.gaps.card', descKey: 'dashboard.gaps.desc', location: '/profile/gaps'),

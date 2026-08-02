@@ -217,6 +217,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Проверьте свои знания',
     'en': 'Test your knowledge',
   },
+  'focus.card': {
+    'uz': 'Fokus rejimi',
+    'ru': 'Фокус-режим',
+    'en': 'Focus mode',
+  },
+  'focus.desc': {
+    'uz': 'Pomodoro + tanaffus viktorinasi',
+    'ru': 'Помодоро + тест на перерыве',
+    'en': 'Pomodoro + break quiz',
+  },
   'dashboard.plan.card': {
     'uz': 'O\'quv rejasi',
     'ru': 'План обучения',

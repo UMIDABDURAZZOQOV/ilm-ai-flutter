@@ -15,6 +15,7 @@ import '../../features/dashboard/presentation/dashboard_screen.dart';
 import '../../features/chat/presentation/chat_screen.dart';
 import '../../features/assistant/presentation/assistant_screen.dart';
 import '../../features/live_voice/presentation/live_voice_screen.dart';
+import '../../features/focus/presentation/focus_screen.dart';
 import '../../features/files/presentation/knowledge_base_screen.dart';
 import '../../features/quiz/data/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_home_screen.dart';
@@ -131,6 +132,11 @@ final routerProvider = Provider<GoRouter>((ref) {
           fullscreenDialog: true,
           child: LiveVoiceScreen(),
         ),
+      ),
+
+      GoRoute(
+        path: '/focus',
+        pageBuilder: (context, state) => _fadeSlidePage(const FocusScreen(), state),
       ),
 
       // Milliy Sertifikat skill tree -- top-level, outside the tab shell, so
