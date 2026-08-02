@@ -247,6 +247,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Курс из ваших PDF',
     'en': 'A course built from your PDFs',
   },
+  'decks.card': {
+    'uz': 'Flashcard to\'plamlari',
+    'ru': 'Колоды карточек',
+    'en': 'Flashcard decks',
+  },
+  'decks.desc': {
+    'uz': 'Takrorlash bilan yodlash (SRS)',
+    'ru': 'Учить с повторением (SRS)',
+    'en': 'Learn with spaced repetition',
+  },
   'dashboard.plan.card': {
     'uz': 'O\'quv rejasi',
     'ru': 'План обучения',
