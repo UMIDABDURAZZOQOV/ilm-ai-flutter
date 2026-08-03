@@ -28,14 +28,24 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Profile',
   },
   'auth.login.title': {
-    'uz': 'Kirish',
-    'ru': 'Войти',
-    'en': 'Log In',
+    'uz': 'Xush kelibsiz',
+    'ru': 'С возвращением',
+    'en': 'Welcome back',
+  },
+  'auth.login.subtitle': {
+    'uz': 'Hisobingizga kiring',
+    'ru': 'Войдите в свой аккаунт',
+    'en': 'Log in to your account',
   },
   'auth.signup.title': {
     'uz': 'Ro\'yxatdan o\'tish',
     'ru': 'Регистрация',
     'en': 'Sign Up',
+  },
+  'auth.signup.subtitle': {
+    'uz': 'Bepul hisob yarating va o\'rganishni boshlang',
+    'ru': 'Создайте бесплатный аккаунт и начните учиться',
+    'en': 'Create a free account and start learning',
   },
   'auth.email.placeholder': {
     'uz': 'Email manzil',
@@ -961,6 +971,36 @@ const Map<String, Map<String, String>> kTranslations = {
     'uz': 'Rasmga oling yoki yozing — bosqichma-bosqich yechim va tushuntirish oling',
     'ru': 'Сфотографируйте или введите — получите пошаговое решение',
     'en': 'Snap a photo or type it in — get a step-by-step solution instantly',
+  },
+  'onboarding.step6.title': {
+    'uz': 'IELTS\'ga tayyorlaning',
+    'ru': 'Подготовка к IELTS',
+    'en': 'Prepare for IELTS',
+  },
+  'onboarding.step6.desc': {
+    'uz': '4 ko\'nikma: Listening, Reading, Writing va Speaking — AI band baholash bilan',
+    'ru': '4 навыка: Listening, Reading, Writing и Speaking — с AI-оценкой балла',
+    'en': 'All 4 skills — Listening, Reading, Writing & Speaking — with instant AI band scoring',
+  },
+  'onboarding.step7.title': {
+    'uz': 'SAT\'ni zabt eting',
+    'ru': 'Освойте SAT',
+    'en': 'Conquer the SAT',
+  },
+  'onboarding.step7.desc': {
+    'uz': 'Savollar banki, mashq sessiyalari va ball bashorati — kuchli tomonlaringizni bilib oling',
+    'ru': 'Банк вопросов, практика и прогноз балла — знайте свои сильные стороны',
+    'en': 'A full question bank, practice sessions and score prediction to track your progress',
+  },
+  'onboarding.step8.title': {
+    'uz': 'Milliy Sertifikat',
+    'ru': 'Национальный сертификат',
+    'en': 'National Certificate',
+  },
+  'onboarding.step8.desc': {
+    'uz': 'Duolingo uslubidagi ko\'nikma daraxti bilan har kuni oz-ozdan o\'rganing',
+    'ru': 'Учитесь понемногу каждый день с деревом навыков в стиле Duolingo',
+    'en': 'Learn a little every day with a Duolingo-style gamified skill tree',
   },
   'onboarding.getstarted': {
     'uz': 'Boshlash',

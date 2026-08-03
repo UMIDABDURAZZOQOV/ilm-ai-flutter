@@ -15,9 +15,9 @@ class LanguageSelectScreen extends ConsumerWidget {
     final language = ref.watch(languageProvider);
 
     const options = [
-      ('uz', 'language.uz'),
-      ('ru', 'language.ru'),
-      ('en', 'language.en'),
+      ('uz', 'language.uz', '🇺🇿'),
+      ('ru', 'language.ru', '🇷🇺'),
+      ('en', 'language.en', '🇬🇧'),
     ];
 
     return Scaffold(
@@ -40,7 +40,7 @@ class LanguageSelectScreen extends ConsumerWidget {
                 style: TextStyle(fontSize: 15, color: colors.textSecondary),
               ),
               const SizedBox(height: 32),
-              for (final (code, key) in options)
+              for (final (code, key, flag) in options)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 12),
                   child: InkWell(
@@ -58,6 +58,8 @@ class LanguageSelectScreen extends ConsumerWidget {
                       ),
                       child: Row(
                         children: [
+                          Text(flag, style: const TextStyle(fontSize: 26)),
+                          const SizedBox(width: 14),
                           Expanded(child: Text(t(key, language == code ? code : language), style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: colors.text))),
                           if (language == code) Icon(Icons.check_circle, color: colors.primary),
                         ],

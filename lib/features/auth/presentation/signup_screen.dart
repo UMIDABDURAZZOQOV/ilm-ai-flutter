@@ -11,6 +11,7 @@ import '../../../core/widgets/app_text_field.dart';
 import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
+import '../../../core/widgets/google_logo.dart';
 import '../application/google_auth.dart';
 import '../data/auth_models.dart';
 import '../data/auth_repository.dart';
@@ -94,13 +95,32 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Center(
+                child: Container(
+                  width: 72,
+                  height: 72,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(color: colors.primary.withValues(alpha: 0.28), blurRadius: 20, offset: const Offset(0, 10)),
+                    ],
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset('assets/icons/icon.png', width: 72, height: 72, fit: BoxFit.cover),
+                  ),
+                ),
+              ).animate().fadeIn(duration: 450.ms).scale(begin: const Offset(0.85, 0.85), end: const Offset(1, 1), curve: Curves.easeOutBack),
+              const SizedBox(height: 24),
               Text(
                 t('auth.signup.title', language),
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.5),
               ).animate().fadeIn(duration: 400.ms),
               const SizedBox(height: 8),
               Text(
                 t('auth.signup.subtitle', language),
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, color: colors.textSecondary, fontWeight: FontWeight.w500),
               ).animate().fadeIn(delay: 100.ms, duration: 350.ms),
               const SizedBox(height: 32),
@@ -188,7 +208,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     if (_googleLoading)
                       SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2.5, color: colors.primary))
                     else
-                      const Icon(Icons.g_mobiledata, size: 24),
+                      const GoogleLogo(size: 22),
                     const SizedBox(width: 12),
                     Text(t('auth.google.button', language)),
                   ],

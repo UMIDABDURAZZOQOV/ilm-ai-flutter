@@ -12,8 +12,11 @@ import '../../../core/widgets/onboarding_illustration.dart';
 /// carousel with custom illustrations per slide.
 const _slides = [
   (IllustrationVariant.materials, 'onboarding.step1.title', 'onboarding.step1.desc'),
-  (IllustrationVariant.math, 'onboarding.step5.title', 'onboarding.step5.desc'),
   (IllustrationVariant.chat, 'onboarding.step2.title', 'onboarding.step2.desc'),
+  (IllustrationVariant.chat, 'onboarding.step6.title', 'onboarding.step6.desc'),   // IELTS
+  (IllustrationVariant.quiz, 'onboarding.step7.title', 'onboarding.step7.desc'),   // SAT
+  (IllustrationVariant.plan, 'onboarding.step8.title', 'onboarding.step8.desc'),   // Milliy Sertifikat
+  (IllustrationVariant.math, 'onboarding.step5.title', 'onboarding.step5.desc'),
   (IllustrationVariant.quiz, 'onboarding.step3.title', 'onboarding.step3.desc'),
   (IllustrationVariant.plan, 'onboarding.step4.title', 'onboarding.step4.desc'),
 ];

@@ -11,6 +11,7 @@ import '../../../core/widgets/app_text_field.dart';
 import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
+import '../../../core/widgets/google_logo.dart';
 import '../application/auth_controller.dart';
 import '../application/google_auth.dart';
 import '../data/auth_models.dart';
@@ -88,11 +89,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               const SizedBox(height: 32),
               Center(
                 child: Container(
-                  width: 80,
-                  height: 80,
+                  width: 88,
+                  height: 88,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
-                    gradient: LinearGradient(colors: [colors.primary, colors.secondary], begin: Alignment.topLeft, end: Alignment.bottomRight),
                     boxShadow: [
                       BoxShadow(
                         color: colors.primary.withValues(alpha: 0.3),
@@ -101,7 +101,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       ),
                     ],
                   ),
-                  child: const Icon(Icons.school_rounded, color: Colors.white, size: 40),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
+                    child: Image.asset('assets/icons/icon.png', width: 88, height: 88, fit: BoxFit.cover),
+                  ),
                 ),
               ).animate().fadeIn(duration: 500.ms).scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1), curve: Curves.easeOutBack),
               const SizedBox(height: 32),
@@ -170,7 +173,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     if (_googleLoading)
                       SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2.5, color: colors.primary))
                     else
-                      const Icon(Icons.g_mobiledata, size: 24),
+                      const GoogleLogo(size: 22),
                     const SizedBox(width: 12),
                     Text(t('auth.google.button', language)),
                   ],
