@@ -457,6 +457,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Напишите сообщение...',
     'en': 'Type a message...',
   },
+  'ielts.card': {
+    'uz': 'IELTS tayyorgarlik',
+    'ru': 'Подготовка к IELTS',
+    'en': 'IELTS Preparation',
+  },
+  'ielts.desc': {
+    'uz': '4 ko\'nikma: Listening, Reading, Writing, Speaking',
+    'ru': '4 навыка: Listening, Reading, Writing, Speaking',
+    'en': '4 skills: Listening, Reading, Writing, Speaking',
+  },
   'assistant.image.attach': {
     'uz': 'Rasm biriktirish',
     'ru': 'Прикрепить фото',
