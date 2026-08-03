@@ -20,7 +20,7 @@ class QuizRepository {
       'difficulty': difficulty,
       'num_questions': numQuestions,
       'language': language,
-      if (topic != null) 'topic': topic,
+      'topic': ?topic,
     });
     final data = res.data as Map<String, dynamic>;
     if (data['error'] != null) {
