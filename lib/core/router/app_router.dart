@@ -19,6 +19,7 @@ import '../../features/focus/presentation/focus_screen.dart';
 import '../../features/insights/presentation/insights_screen.dart';
 import '../../features/course/presentation/course_screen.dart';
 import '../../features/decks/presentation/decks_screen.dart';
+import '../../features/studio/presentation/studio_hub_screen.dart';
 import '../../features/files/presentation/knowledge_base_screen.dart';
 import '../../features/quiz/data/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_home_screen.dart';
@@ -155,6 +156,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/decks',
         pageBuilder: (context, state) => _fadeSlidePage(const DecksScreen(), state),
+      ),
+
+      GoRoute(
+        path: '/studio',
+        pageBuilder: (context, state) => _fadeSlidePage(const StudioHubScreen(), state),
       ),
 
       // Milliy Sertifikat skill tree -- top-level, outside the tab shell, so

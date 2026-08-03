@@ -257,6 +257,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Учить с повторением (SRS)',
     'en': 'Learn with spaced repetition',
   },
+  'studio.card': {
+    'uz': 'Ilm AI Studio',
+    'ru': 'Ilm AI Studio',
+    'en': 'Ilm AI Studio',
+  },
+  'studio.desc': {
+    'uz': 'Qidiruv, shpargalka, tarjima',
+    'ru': 'Поиск, шпаргалка, перевод',
+    'en': 'Search, cheat sheet, translate',
+  },
   'dashboard.plan.card': {
     'uz': 'O\'quv rejasi',
     'ru': 'План обучения',
