@@ -457,6 +457,16 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Напишите сообщение...',
     'en': 'Type a message...',
   },
+  'sat.card': {
+    'uz': 'SAT tayyorgarlik',
+    'ru': 'Подготовка к SAT',
+    'en': 'SAT Preparation',
+  },
+  'sat.desc': {
+    'uz': 'Savollar banki, mashq va ball bashorati',
+    'ru': 'Банк вопросов, практика и прогноз балла',
+    'en': 'Question bank, practice & score prediction',
+  },
   'ielts.card': {
     'uz': 'IELTS tayyorgarlik',
     'ru': 'Подготовка к IELTS',
