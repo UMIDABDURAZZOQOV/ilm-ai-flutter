@@ -457,6 +457,21 @@ const Map<String, Map<String, String>> kTranslations = {
     'ru': 'Напишите сообщение...',
     'en': 'Type a message...',
   },
+  'assistant.image.attach': {
+    'uz': 'Rasm biriktirish',
+    'ru': 'Прикрепить фото',
+    'en': 'Attach a photo',
+  },
+  'assistant.image.camera': {
+    'uz': 'Kamera',
+    'ru': 'Камера',
+    'en': 'Camera',
+  },
+  'assistant.image.gallery': {
+    'uz': 'Galereya',
+    'ru': 'Галерея',
+    'en': 'Gallery',
+  },
   'assistant.empty.title': {
     'uz': 'AI Yordamchi',
     'ru': 'AI Помощник',
