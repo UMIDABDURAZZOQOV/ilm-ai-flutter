@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
 import 'studio_text_tools.dart';
+import 'studio_more_tools.dart';
+import 'studio_media_tools.dart';
 
 String _tr(String lang, String uz, String ru, String en) =>
     lang == 'ru' ? ru : lang == 'en' ? en : uz;
@@ -46,6 +48,62 @@ class StudioHubScreen extends ConsumerWidget {
         title: (l) => _tr(l, 'Tarjima + tushuntirish', 'Перевод + объяснение', 'Translate & explain'),
         sub: (l) => _tr(l, 'Chet tilidagi materialni tarjima', 'Перевод материала', 'Translate foreign material'),
         build: () => const StudioMarkdownScreen(kind: 'translate'),
+      ),
+      _Tool(
+        icon: Icons.assignment_rounded,
+        color: const Color(0xFF10B981),
+        title: (l) => _tr(l, 'Sinov imtihoni', 'Пробный тест', 'Mock test'),
+        sub: (l) => _tr(l, 'Materialdan 15 savollik imtihon', 'Экзамен из 15 вопросов', '15-question exam'),
+        build: () => const StudioMockScreen(),
+      ),
+      _Tool(
+        icon: Icons.account_tree_rounded,
+        color: const Color(0xFF3B82F6),
+        title: (l) => _tr(l, 'AI diagramma', 'AI-диаграмма', 'AI diagram'),
+        sub: (l) => _tr(l, 'Mavzuni sxema qilib chizish', 'Схема темы', 'Visualize a topic'),
+        build: () => const StudioDiagramScreen(),
+      ),
+      _Tool(
+        icon: Icons.headphones_rounded,
+        color: const Color(0xFFEC4899),
+        title: (l) => _tr(l, 'Audio xulosa', 'Аудио-обзор', 'Audio recap'),
+        sub: (l) => _tr(l, 'Materialni tinglab o\'rganing', 'Слушайте материал', 'Listen to your material'),
+        build: () => const StudioAudioRecapScreen(),
+      ),
+      _Tool(
+        icon: Icons.podcasts_rounded,
+        color: const Color(0xFFF43F5E),
+        title: (l) => _tr(l, 'Podkast', 'Подкаст', 'Podcast'),
+        sub: (l) => _tr(l, 'Ikki boshlovchili suhbat', 'Диалог двух ведущих', 'Two-host conversation'),
+        build: () => const StudioPodcastScreen(),
+      ),
+      _Tool(
+        icon: Icons.photo_camera_rounded,
+        color: const Color(0xFF14B8A6),
+        title: (l) => _tr(l, 'Rasmdan komplekt', 'Комплект из фото', 'Photo study kit'),
+        sub: (l) => _tr(l, 'Sahifani suratga oling — kit tayyor', 'Сфотографируйте страницу', 'Snap a page → full kit'),
+        build: () => const StudioPhotoKitScreen(),
+      ),
+      _Tool(
+        icon: Icons.note_add_rounded,
+        color: const Color(0xFF22C55E),
+        title: (l) => _tr(l, 'Daftardan kutubxonaga', 'Заметки в библиотеку', 'Notes to library'),
+        sub: (l) => _tr(l, 'Qo\'lyozmani materialga aylantiring', 'Рукопись в материалы', 'Turn notes into material'),
+        build: () => const StudioNotesUploadScreen(),
+      ),
+      _Tool(
+        icon: Icons.hub_rounded,
+        color: const Color(0xFFA855F7),
+        title: (l) => _tr(l, 'Bilim xaritasi', 'Карта знаний', 'Knowledge map'),
+        sub: (l) => _tr(l, 'Tushunchalar bog\'lanishi', 'Связи понятий', 'How concepts connect'),
+        build: () => const StudioKnowledgeMapScreen(),
+      ),
+      _Tool(
+        icon: Icons.folder_rounded,
+        color: const Color(0xFF8B5CF6),
+        title: (l) => _tr(l, 'Materiallarim', 'Мои материалы', 'My materials'),
+        sub: (l) => _tr(l, 'Yuklangan hujjatlarni boshqarish', 'Управление документами', 'Manage uploaded docs'),
+        build: () => const StudioDocsScreen(),
       ),
     ];
 
