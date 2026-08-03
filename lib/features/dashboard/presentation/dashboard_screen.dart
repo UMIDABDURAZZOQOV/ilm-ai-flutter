@@ -58,6 +58,7 @@ const _cards = [
   _DashboardCard(icon: Icons.auto_awesome_rounded, titleKey: 'studio.card', descKey: 'studio.desc', location: '/studio'),
   _DashboardCard(icon: Icons.headphones_rounded, titleKey: 'ielts.card', descKey: 'ielts.desc', location: '/ielts'),
   _DashboardCard(icon: Icons.school_rounded, titleKey: 'sat.card', descKey: 'sat.desc', location: '/sat'),
+  _DashboardCard(icon: Icons.menu_book_rounded, titleKey: 'vocab.card', descKey: 'vocab.desc', location: '/vocab'),
   _DashboardCard(icon: Icons.school_rounded, titleKey: 'college.dashboard.card', descKey: 'college.dashboard.desc', location: '/profile/college'),
   _DashboardCard(icon: Icons.calendar_month_rounded, titleKey: 'dashboard.plan.card', descKey: 'dashboard.plan.desc', location: '/profile/learning-plan'),
   _DashboardCard(icon: Icons.gps_fixed_rounded, titleKey: 'dashboard.gaps.card', descKey: 'dashboard.gaps.desc', location: '/profile/gaps'),
