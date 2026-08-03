@@ -124,6 +124,8 @@ flutter_launcher_icons:
 flutter_native_splash:
   color: "#ffffff"
   image: "assets/icons/splash.png"
+  # Draw edge-to-edge (no status/nav bar strips) during the native splash too.
+  fullscreen: true
   android_12:
     color: "#ffffff"
     image: "assets/icons/splash.png"

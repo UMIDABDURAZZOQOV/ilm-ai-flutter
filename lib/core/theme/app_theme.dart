@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 /// Ported verbatim from ilm-ai-mobile/src/utils/theme.ts — 18 semantic fields
 /// per palette plus a 7-entry cardTints array. Do not invent or "improve" any
@@ -135,6 +136,23 @@ class AppColors extends ThemeExtension<AppColors> {
   }
 }
 
+/// Status + navigation bar styling that makes both system bars blend into the
+/// app: a transparent status bar (content draws behind it) and a navigation bar
+/// painted the SAME colour as the page background — so there are no grey/black
+/// strips ("chiziq") at the top or bottom. Icon brightness follows the theme.
+SystemUiOverlayStyle systemOverlayStyleFor(ThemeColors c) {
+  // c.statusBarStyle == Brightness.dark means a light theme (dark status icons).
+  final light = c.statusBarStyle == Brightness.dark;
+  return SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: light ? Brightness.dark : Brightness.light,
+    statusBarBrightness: light ? Brightness.light : Brightness.dark, // iOS
+    systemNavigationBarColor: c.background,
+    systemNavigationBarIconBrightness: light ? Brightness.dark : Brightness.light,
+    systemNavigationBarDividerColor: Colors.transparent,
+  );
+}
+
 ThemeData buildAppTheme(ThemeColors c) {
   final brightness = c.statusBarStyle == Brightness.dark ? Brightness.light : Brightness.dark;
   return ThemeData(
@@ -149,6 +167,7 @@ ThemeData buildAppTheme(ThemeColors c) {
       error: c.error,
       surface: c.surface,
     ),
+    appBarTheme: AppBarTheme(systemOverlayStyle: systemOverlayStyleFor(c)),
     extensions: [AppColors(c)],
   );
 }
