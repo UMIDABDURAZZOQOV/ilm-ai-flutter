@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
+import '../../../core/widgets/animated_pressable.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/quiz_models.dart';
 import '../data/quiz_repository.dart';
@@ -98,7 +101,12 @@ class _QuizSessionScreenState extends ConsumerState<QuizSessionScreen> {
     final progress = (_index + 1) / widget.questions.length;
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('quiz.progress', language).replaceAll('{n}', '${_index + 1}').replaceAll('{t}', '${widget.questions.length}'))),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('quiz.progress', language).replaceAll('{n}', '${_index + 1}').replaceAll('{t}', '${widget.questions.length}'), 
+            style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 18, letterSpacing: -0.3)),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),
@@ -106,48 +114,50 @@ class _QuizSessionScreenState extends ConsumerState<QuizSessionScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(4),
-                child: LinearProgressIndicator(value: progress, backgroundColor: colors.border, color: colors.primary, minHeight: 6),
+                borderRadius: BorderRadius.circular(8),
+                child: LinearProgressIndicator(value: progress, backgroundColor: colors.border, color: colors.primary, minHeight: 8),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 28),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Text(_current.question, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: colors.text, height: 1.4)),
-                      const SizedBox(height: 20),
-                      for (final option in _current.options)
+                      Text(_current.question, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: colors.text, height: 1.5, letterSpacing: -0.3)),
+                      const SizedBox(height: 24),
+                      for (final option in _current.options.asMap().entries)
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 10),
+                          padding: const EdgeInsets.only(bottom: 12),
                           child: _OptionTile(
-                            option: option,
+                            option: option.value,
                             state: !_answered
                                 ? _OptionState.neutral
-                                : option == _current.correctAnswer
+                                : option.value == _current.correctAnswer
                                     ? _OptionState.correct
-                                    : option == _selected
+                                    : option.value == _selected
                                         ? _OptionState.incorrect
                                         : _OptionState.disabled,
                             colors: colors,
-                            onTap: () => _selectOption(option),
-                          ),
+                            onTap: () => _selectOption(option.value),
+                          ).animate().fadeIn(delay: (option.key * 50).ms, duration: 300.ms),
                         ),
                       if (_answered && _current.explanation.isNotEmpty)
-                        Container(
-                          margin: const EdgeInsets.only(top: 8),
-                          padding: const EdgeInsets.all(14),
-                          decoration: BoxDecoration(color: colors.primaryLight, borderRadius: BorderRadius.circular(12)),
-                          child: Text(_current.explanation, style: TextStyle(color: colors.text, fontSize: 13.5, height: 1.4)),
-                        ),
+                        PremiumCard(
+                          margin: const EdgeInsets.only(top: 16),
+                          backgroundColor: colors.primaryLight,
+                          borderRadius: 18,
+                          padding: const EdgeInsets.all(18),
+                          child: Text(_current.explanation, style: TextStyle(color: colors.text, fontSize: 15, height: 1.5, fontWeight: FontWeight.w500)),
+                        ).animate().fadeIn(delay: 200.ms, duration: 300.ms),
                     ],
                   ),
                 ),
               ),
-              const SizedBox(height: 12),
-              GradientButton(
+              const SizedBox(height: 16),
+              PremiumButton(
                 onPressed: !_answered || _submitting ? null : _next,
                 loading: _submitting,
+                borderRadius: 20,
                 child: Text(_index == widget.questions.length - 1 ? t('quiz.finish', language) : t('quiz.next', language)),
               ),
             ],
@@ -182,14 +192,14 @@ class _OptionTile extends StatelessWidget {
       case _OptionState.correct:
         border = colors.success;
         bg = colors.successLight;
-        icon = Icons.check_circle;
+        icon = Icons.check_circle_rounded;
         iconColor = colors.success;
         break;
       case _OptionState.incorrect:
         border = colors.error;
         bg = colors.errorLight;
         text = colors.error;
-        icon = Icons.cancel;
+        icon = Icons.cancel_rounded;
         iconColor = colors.error;
         break;
       case _OptionState.disabled:
@@ -197,16 +207,19 @@ class _OptionTile extends StatelessWidget {
         break;
     }
 
-    return InkWell(
-      borderRadius: BorderRadius.circular(12),
+    return AnimatedPressable(
       onTap: state == _OptionState.neutral ? onTap : null,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(12), border: Border.all(color: border, width: 1.5)),
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+        decoration: BoxDecoration(
+          color: bg, 
+          borderRadius: BorderRadius.circular(16), 
+          border: Border.all(color: border, width: state == _OptionState.neutral ? 1.5 : 2),
+        ),
         child: Row(
           children: [
-            Expanded(child: Text(option, style: TextStyle(color: text, fontWeight: FontWeight.w600))),
-            if (icon != null) Icon(icon, color: iconColor, size: 20),
+            Expanded(child: Text(option, style: TextStyle(color: text, fontWeight: FontWeight.w700, fontSize: 15))),
+            if (icon != null) Icon(icon, color: iconColor, size: 22),
           ],
         ),
       ),

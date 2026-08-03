@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -6,6 +7,8 @@ import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animated_pressable.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_loading.dart';
 import '../data/college_repository.dart';
 import '../data/college_saved.dart';
 import 'college_logo.dart';
@@ -44,27 +47,33 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
     final saved = ref.watch(savedCollegesProvider);
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('college.title', language))),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('college.title', language), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
+      ),
       body: SafeArea(
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+              padding: const EdgeInsets.fromLTRB(20, 12, 20, 8),
               child: Column(
                 children: [
                   TextField(
                     controller: _search,
                     onChanged: (_) => setState(() {}),
+                    style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                       hintText: t('college.search.placeholder', language),
+                      hintStyle: TextStyle(color: colors.textMuted, fontSize: 14),
                       prefixIcon: const Icon(Icons.search_rounded),
                       filled: true,
                       fillColor: colors.inputBackground,
                       contentPadding: const EdgeInsets.symmetric(vertical: 0),
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide(color: colors.border)),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 12),
                   SegmentedButton<_Region>(
                     segments: [
                       ButtonSegment(value: _Region.all, label: Text(t('college.region.all', language))),
@@ -74,7 +83,7 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
                     selected: {_region},
                     onSelectionChanged: (s) => setState(() => _region = s.first),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 12),
                   Row(
                     children: [
                       ChoiceChip(label: Text(t('college.tab.all', language)), selected: !_savedOnly, onSelected: (_) => setState(() => _savedOnly = false)),
@@ -93,18 +102,17 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
                     ],
                   ),
                   if (_filterPanelOpen)
-                    Container(
-                      margin: const EdgeInsets.only(top: 8),
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+                    PremiumCard(
+                      borderRadius: 18,
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(t('college.sort.label', language), style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: colors.textSecondary)),
-                          const SizedBox(height: 8),
+                          Text(t('college.sort.label', language), style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: colors.textSecondary)),
+                          const SizedBox(height: 10),
                           Wrap(
-                            spacing: 8,
-                            runSpacing: 8,
+                            spacing: 10,
+                            runSpacing: 10,
                             children: [
                               _FilterChip(label: t('college.sort.top', language), selected: _sort == _SortBy.top, onTap: () => setState(() => _sort = _SortBy.top), colors: colors),
                               _FilterChip(label: t('college.sort.name', language), selected: _sort == _SortBy.name, onTap: () => setState(() => _sort = _SortBy.name), colors: colors),
@@ -112,23 +120,23 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
                               _FilterChip(label: t('college.sort.sat', language), selected: _sort == _SortBy.sat, onTap: () => setState(() => _sort = _SortBy.sat), colors: colors),
                             ],
                           ),
-                          const SizedBox(height: 14),
-                          Text(t('college.type.label', language), style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: colors.textSecondary)),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: 16),
+                          Text(t('college.type.label', language), style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: colors.textSecondary)),
+                          const SizedBox(height: 10),
                           Wrap(
-                            spacing: 8,
+                            spacing: 10,
                             children: [
                               _FilterChip(label: t('college.type.all', language), selected: _typeFilter == _TypeFilter.all, onTap: () => setState(() => _typeFilter = _TypeFilter.all), colors: colors),
                               _FilterChip(label: t('college.type.public', language), selected: _typeFilter == _TypeFilter.public, onTap: () => setState(() => _typeFilter = _TypeFilter.public), colors: colors),
                               _FilterChip(label: t('college.type.private', language), selected: _typeFilter == _TypeFilter.private, onTap: () => setState(() => _typeFilter = _TypeFilter.private), colors: colors),
                             ],
                           ),
-                          const SizedBox(height: 14),
-                          Text(t('college.acceptance.label', language), style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: colors.textSecondary)),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: 16),
+                          Text(t('college.acceptance.label', language), style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: colors.textSecondary)),
+                          const SizedBox(height: 10),
                           Wrap(
-                            spacing: 8,
-                            runSpacing: 8,
+                            spacing: 10,
+                            runSpacing: 10,
                             children: [
                               _FilterChip(label: t('college.type.all', language), selected: _acceptanceFilter == _AcceptanceFilter.all, onTap: () => setState(() => _acceptanceFilter = _AcceptanceFilter.all), colors: colors),
                               _FilterChip(label: t('college.acceptance.under25', language), selected: _acceptanceFilter == _AcceptanceFilter.under25, onTap: () => setState(() => _acceptanceFilter = _AcceptanceFilter.under25), colors: colors),
@@ -182,7 +190,7 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
                     return Center(
                       child: Text(
                         _savedOnly ? t('college.empty.saved', language) : t('college.empty.search', language),
-                        style: TextStyle(color: colors.textMuted),
+                        style: TextStyle(color: colors.textMuted, fontSize: 15, fontWeight: FontWeight.w500),
                       ),
                     );
                   }
@@ -190,67 +198,73 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
                   return Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                         child: Align(
                           alignment: Alignment.centerLeft,
-                          child: Text(t('college.showing', language).replaceAll('{n}', '${list.length}'), style: TextStyle(fontSize: 12, color: colors.textMuted)),
+                          child: Text(t('college.showing', language).replaceAll('{n}', '${list.length}'), style: TextStyle(fontSize: 13, color: colors.textMuted, fontWeight: FontWeight.w500)),
                         ),
                       ),
                       Expanded(
                         child: ListView.builder(
-                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                           itemCount: list.length,
-                          // Virtualized by default via ListView.builder -- Flutter doesn't
-                          // need the manual pagination workaround the RN-web version used.
                           itemBuilder: (context, i) {
                             final c = list[i];
                             final isSaved = saved.contains(c.id);
-                            return Container(
-                              margin: const EdgeInsets.only(bottom: 10),
+                            return Padding(
+                              padding: const EdgeInsets.only(bottom: 12),
                               child: AnimatedPressable(
                                 onTap: () => context.push('/profile/college/${c.id}'),
-                                child: Container(
-                                  padding: const EdgeInsets.all(14),
-                                  decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+                                child: PremiumCard(
+                                  borderRadius: 18,
+                                  padding: const EdgeInsets.all(16),
                                   child: Row(
                                     children: [
-                                      CollegeLogo(college: c, size: 44, fontSize: 14),
-                                      const SizedBox(width: 12),
+                                      CollegeLogo(college: c, size: 48, fontSize: 15),
+                                      const SizedBox(width: 14),
                                       Expanded(
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text(c.name, style: TextStyle(fontWeight: FontWeight.w700, color: colors.text), maxLines: 1, overflow: TextOverflow.ellipsis),
-                                            Text('${c.city}${c.state.isNotEmpty ? ', ${c.state}' : ''}', style: TextStyle(fontSize: 12, color: colors.textMuted)),
-                                            const SizedBox(height: 4),
+                                            Text(c.name, style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontSize: 15), maxLines: 1, overflow: TextOverflow.ellipsis),
+                                            Text('${c.city}${c.state.isNotEmpty ? ', ${c.state}' : ''}', style: TextStyle(fontSize: 13, color: colors.textMuted, fontWeight: FontWeight.w500)),
+                                            const SizedBox(height: 6),
                                             Row(
                                               children: [
-                                                if (c.acceptanceRate != null) Text('${t('college.card.acceptance', language)}: ${c.acceptanceRate}%', style: TextStyle(fontSize: 11, color: colors.textSecondary)),
+                                                if (c.acceptanceRate != null) Text('${t('college.card.acceptance', language)}: ${c.acceptanceRate}%', style: TextStyle(fontSize: 12, color: colors.textSecondary, fontWeight: FontWeight.w600)),
                                                 if (c.medianSAT != null) ...[
-                                                  const SizedBox(width: 10),
-                                                  Text('SAT: ${c.medianSAT}', style: TextStyle(fontSize: 11, color: colors.textSecondary)),
+                                                  const SizedBox(width: 12),
+                                                  Text('SAT: ${c.medianSAT}', style: TextStyle(fontSize: 12, color: colors.textSecondary, fontWeight: FontWeight.w600)),
                                                 ],
                                               ],
                                             ),
                                           ],
                                         ),
                                       ),
-                                      IconButton(
-                                        icon: Icon(isSaved ? Icons.bookmark : Icons.bookmark_border, color: isSaved ? colors.primary : colors.textMuted),
-                                        onPressed: () => ref.read(savedCollegesProvider.notifier).toggle(c.id),
+                                      const SizedBox(width: 8),
+                                      AnimatedPressable(
+                                        onTap: () => ref.read(savedCollegesProvider.notifier).toggle(c.id),
+                                        child: Container(
+                                          padding: const EdgeInsets.all(10),
+                                          decoration: BoxDecoration(
+                                            color: isSaved ? colors.primary.withValues(alpha: 0.1) : colors.border.withValues(alpha: 0.3),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          child: Icon(isSaved ? Icons.bookmark : Icons.bookmark_border, color: isSaved ? colors.primary : colors.textMuted, size: 22),
+                                        ),
                                       ),
                                     ],
                                   ),
                                 ),
                               ),
-                            );
+                            ).animate().fadeIn(delay: (i * 30).ms, duration: 300.ms);
                           },
                         ),
                       ),
                     ],
                   );
                 },
-                loading: () => const Center(child: CircularProgressIndicator()),
+                loading: () => const Center(child: PremiumLoading()),
                 error: (e, _) => Center(child: Text('$e', style: TextStyle(color: colors.error))),
               ),
             ),

@@ -9,6 +9,7 @@ import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animated_pressable.dart';
 import '../../../core/widgets/duo_icon.dart';
+import '../../../core/widgets/premium_card.dart';
 import '../../auth/application/auth_controller.dart';
 import '../../learning_plan/data/plan_models.dart';
 import '../../learning_plan/data/plan_repository.dart';
@@ -88,44 +89,43 @@ class DashboardScreen extends ConsumerWidget {
           child: ListView(
             padding: const EdgeInsets.all(20),
             children: [
-              Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(22),
-                  gradient: const LinearGradient(colors: [Color(0xFF0F172A), Color(0xFF1E1B4B)]),
-                ),
+              PremiumGradientCard(
+                padding: const EdgeInsets.all(24),
+                gradientColors: [colors.primary, colors.secondary],
+                borderRadius: 24,
                 child: Row(
                   children: [
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(t('dashboard.greeting', language), style: const TextStyle(color: Color(0xFF94A3B8), fontSize: 13, fontWeight: FontWeight.w600)),
-                          const SizedBox(height: 4),
-                          Text(user?.name?.isNotEmpty == true ? user!.name! : 'Learner', style: const TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w700)),
+                          Text(t('dashboard.greeting', language), style: TextStyle(color: Colors.white.withValues(alpha: 0.8), fontSize: 14, fontWeight: FontWeight.w600)),
+                          const SizedBox(height: 6),
+                          Text(user?.name?.isNotEmpty == true ? user!.name! : 'Learner', style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
                         ],
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       decoration: BoxDecoration(
-                        color: isPremium ? const Color(0x29C084FC) : Colors.white.withValues(alpha: 0.08),
-                        borderRadius: BorderRadius.circular(20),
+                        color: isPremium ? Colors.white.withValues(alpha: 0.2) : Colors.white.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(color: Colors.white.withValues(alpha: 0.3), width: 1),
                       ),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          if (isPremium) const Padding(padding: EdgeInsets.only(right: 4), child: Icon(Icons.star_rounded, size: 14, color: Color(0xFFC084FC))),
+                          if (isPremium) const Padding(padding: EdgeInsets.only(right: 6), child: Icon(Icons.star_rounded, size: 16, color: Color(0xFFFFD700))),
                           Text(
                             isPremium ? t('tier.premium', language) : t('tier.free', language),
-                            style: TextStyle(color: isPremium ? const Color(0xFFC084FC) : const Color(0xFFCBD5E1), fontSize: 12, fontWeight: FontWeight.w700),
+                            style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w700, letterSpacing: 0.5),
                           ),
                         ],
                       ),
                     ),
                   ],
                 ),
-              ).animate().fadeIn(duration: 350.ms).slideY(begin: -0.06, end: 0, curve: Curves.easeOutCubic),
+              ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.08, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 16),
               todayPlanAsync.when(
                 data: (plan) {
@@ -133,35 +133,46 @@ class DashboardScreen extends ConsumerWidget {
                   final day = plan.day!;
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 16),
-                    child: AnimatedPressable(
+                    child: PremiumCard(
                       onTap: () => context.push('/profile/learning-plan'),
-                      child: Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          color: colors.primaryLight,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: colors.primary.withValues(alpha: 0.25)),
-                        ),
-                        child: Row(
-                          children: [
-                            DuoIcon(Icons.today_rounded, color: colors.primary, size: 26),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(t('dashboard.today.title', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.text, fontSize: 14)),
-                                  const SizedBox(height: 2),
-                                  Text(day.topic, style: TextStyle(color: colors.textSecondary, fontSize: 13)),
-                                ],
-                              ),
+                      backgroundColor: colors.primaryLight,
+                      borderColor: colors.primary.withValues(alpha: 0.3),
+                      borderRadius: 20,
+                      padding: const EdgeInsets.all(18),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 44,
+                            height: 44,
+                            decoration: BoxDecoration(
+                              color: colors.primary.withValues(alpha: 0.15),
+                              borderRadius: BorderRadius.circular(14),
                             ),
-                            Icon(Icons.chevron_right_rounded, color: colors.textMuted, size: 20),
-                          ],
-                        ),
+                            child: DuoIcon(Icons.today_rounded, color: colors.primary, size: 24),
+                          ),
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(t('dashboard.today.title', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.text, fontSize: 15)),
+                                const SizedBox(height: 3),
+                                Text(day.topic, style: TextStyle(color: colors.textSecondary, fontSize: 13)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              color: colors.primary.withValues(alpha: 0.1),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Icon(Icons.chevron_right_rounded, color: colors.primary, size: 20),
+                          ),
+                        ],
                       ),
                     ),
-                  ).animate().fadeIn(delay: 80.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
+                  ).animate().fadeIn(delay: 100.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
                 },
                 loading: () => const SizedBox.shrink(),
                 error: (_, _) => const SizedBox.shrink(),
@@ -170,44 +181,44 @@ class DashboardScreen extends ConsumerWidget {
                 data: (stats) {
                   if (stats == null || (stats.sessionsCompleted == 0 && stats.topicsCovered.isEmpty)) return const SizedBox.shrink();
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: 16),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: Column(
                       children: [
                         Row(
                           children: [
-                            Expanded(child: _StatCard(icon: Icons.local_fire_department_rounded, color: colors.warning, value: '${stats.sessionsCompleted}', label: t('quiz.stats.sessions', language), colors: colors)),
-                            const SizedBox(width: 10),
-                            Expanded(child: _StatCard(icon: Icons.menu_book_rounded, color: colors.secondary, value: '${stats.topicsCovered.length}', label: language == 'uz' ? 'Mavzu' : language == 'ru' ? 'Темы' : 'Topics', colors: colors)),
-                            const SizedBox(width: 10),
-                            Expanded(child: _StatCard(icon: Icons.trending_up_rounded, color: colors.success, value: '${stats.averageScore.round()}%', label: t('quiz.stats.avg.score', language), colors: colors)),
+                            Expanded(child: _PremiumStatCard(icon: Icons.local_fire_department_rounded, color: colors.warning, value: '${stats.sessionsCompleted}', label: t('quiz.stats.sessions', language), colors: colors)),
+                            const SizedBox(width: 12),
+                            Expanded(child: _PremiumStatCard(icon: Icons.menu_book_rounded, color: colors.secondary, value: '${stats.topicsCovered.length}', label: language == 'uz' ? 'Mavzu' : language == 'ru' ? 'Темы' : 'Topics', colors: colors)),
+                            const SizedBox(width: 12),
+                            Expanded(child: _PremiumStatCard(icon: Icons.trending_up_rounded, color: colors.success, value: '${stats.averageScore.round()}%', label: t('quiz.stats.avg.score', language), colors: colors)),
                           ],
                         ),
                         if (stats.scoreTrend.length > 1) ...[
-                          const SizedBox(height: 12),
-                          Container(
-                            padding: const EdgeInsets.all(14),
-                            decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(16), border: Border.all(color: colors.border)),
+                          const SizedBox(height: 16),
+                          PremiumCard(
+                            padding: const EdgeInsets.all(18),
+                            borderRadius: 20,
                             child: ScoreSparkline(values: stats.scoreTrend.map((e) => e.scorePct).toList()),
                           ),
                         ],
                       ],
                     ),
-                  ).animate().fadeIn(delay: 140.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
+                  ).animate().fadeIn(delay: 160.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
                 },
                 loading: () => const SizedBox.shrink(),
                 error: (_, _) => const SizedBox.shrink(),
               ),
-              Text(t('dashboard.title', language), style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: colors.textSecondary)),
-              const SizedBox(height: 14),
+              Text(t('dashboard.title', language), style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: colors.textSecondary, letterSpacing: -0.3)),
+              const SizedBox(height: 16),
               GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: _cards.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  mainAxisSpacing: 12,
-                  crossAxisSpacing: 12,
-                  childAspectRatio: 0.95,
+                  mainAxisSpacing: 14,
+                  crossAxisSpacing: 14,
+                  childAspectRatio: 0.92,
                 ),
                 itemBuilder: (context, i) {
                   final card = _cards[i];
@@ -215,29 +226,46 @@ class DashboardScreen extends ConsumerWidget {
                   return AnimatedPressable(
                     onTap: () => context.push(card.location),
                     child: Container(
-                      padding: const EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(
                         color: tint.bg,
-                        borderRadius: BorderRadius.circular(18),
+                        borderRadius: BorderRadius.circular(22),
                         border: Border.all(color: tint.border, width: 1.5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: tint.border.withValues(alpha: 0.3),
+                            blurRadius: 12,
+                            offset: const Offset(0, 4),
+                          ),
+                        ],
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            width: 38,
-                            height: 38,
-                            decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.55), borderRadius: BorderRadius.circular(12)),
-                            child: DuoIcon(card.icon, size: 22, color: const Color(0xFF1E293B)),
+                            width: 42,
+                            height: 42,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.7),
+                              borderRadius: BorderRadius.circular(14),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withValues(alpha: 0.05),
+                                  blurRadius: 8,
+                                  offset: const Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                            child: DuoIcon(card.icon, size: 24, color: const Color(0xFF1E293B)),
                           ),
-                          const SizedBox(height: 10),
-                          Text(t(card.titleKey, language), style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700, color: colors.text)),
-                          const SizedBox(height: 4),
-                          Expanded(child: Text(t(card.descKey, language), style: TextStyle(fontSize: 12, color: colors.textSecondary), maxLines: 2, overflow: TextOverflow.ellipsis)),
+                          const SizedBox(height: 12),
+                          Text(t(card.titleKey, language), style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.3)),
+                          const SizedBox(height: 5),
+                          Expanded(child: Text(t(card.descKey, language), style: TextStyle(fontSize: 12.5, color: colors.textSecondary, fontWeight: FontWeight.w500), maxLines: 2, overflow: TextOverflow.ellipsis)),
                         ],
                       ),
                     ),
-                  ).animate().fadeIn(delay: (180 + i * 45).ms, duration: 300.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic);
+                  ).animate().fadeIn(delay: (200 + i * 50).ms, duration: 350.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic);
                 },
               ),
             ],
@@ -248,31 +276,45 @@ class DashboardScreen extends ConsumerWidget {
   }
 }
 
-class _StatCard extends StatelessWidget {
+class _PremiumStatCard extends StatelessWidget {
   final IconData icon;
   final Color color;
   final String value;
   final String label;
   final ThemeColors colors;
 
-  const _StatCard({required this.icon, required this.color, required this.value, required this.label, required this.colors});
+  const _PremiumStatCard({required this.icon, required this.color, required this.value, required this.label, required this.colors});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(16), border: Border.all(color: colors.border)),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: colors.card,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: colors.border, width: 1),
+        boxShadow: [
+          BoxShadow(
+            color: colors.text.withValues(alpha: 0.04),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
       child: Column(
         children: [
           Container(
-            width: 28,
-            height: 28,
-            decoration: BoxDecoration(color: color.withValues(alpha: 0.15), borderRadius: BorderRadius.circular(9)),
-            child: DuoIcon(icon, size: 16, color: color),
+            width: 36,
+            height: 36,
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.12),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: DuoIcon(icon, size: 20, color: color),
           ),
-          const SizedBox(height: 8),
-          Text(value, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: colors.text)),
-          Text(label, style: TextStyle(fontSize: 10, color: colors.textMuted, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+          const SizedBox(height: 10),
+          Text(value, style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.5)),
+          Text(label, style: TextStyle(fontSize: 11, color: colors.textMuted, fontWeight: FontWeight.w600, letterSpacing: 0.2), textAlign: TextAlign.center),
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/i18n/app_localizations.dart';
@@ -6,6 +7,8 @@ import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animated_pressable.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_loading.dart';
 import '../../../core/widgets/chat_bubble.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/chat_models.dart';
@@ -116,48 +119,76 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(t('chat.title', language)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('chat.title', language), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
         actions: [
-          IconButton(icon: const Icon(Icons.delete_outline), onPressed: _messages.isEmpty ? null : _confirmClear),
+          AnimatedPressable(
+            onTap: _messages.isEmpty ? null : _confirmClear,
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: _messages.isEmpty ? colors.border.withValues(alpha: 0.3) : colors.error.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(Icons.delete_outline_rounded, color: _messages.isEmpty ? colors.textMuted : colors.error, size: 22),
+            ),
+          ),
+          const SizedBox(width: 16),
         ],
       ),
       body: Column(
         children: [
           Expanded(
             child: _loadingHistory
-                ? const Center(child: CircularProgressIndicator())
+                ? const Center(child: PremiumLoading())
                 : _messages.isEmpty
                     ? Center(
                         child: Padding(
                           padding: const EdgeInsets.all(32),
-                          child: Text(t('chat.no.materials', language), textAlign: TextAlign.center, style: TextStyle(color: colors.textMuted)),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  color: colors.primary.withValues(alpha: 0.1),
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Icon(Icons.chat_bubble_outline_rounded, size: 40, color: colors.primary),
+                              ),
+                              const SizedBox(height: 16),
+                              Text(t('chat.no.materials', language), textAlign: TextAlign.center, style: TextStyle(color: colors.textSecondary, fontSize: 15, fontWeight: FontWeight.w500)),
+                            ],
+                          ),
                         ),
                       )
                     : ListView.builder(
                         controller: _scrollController,
-                        padding: const EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(20),
                         itemCount: _messages.length + (_sending ? 1 : 0),
                         itemBuilder: (context, i) {
                           if (i == _messages.length) {
                             return Align(
                               alignment: Alignment.centerLeft,
-                              child: Container(
-                                margin: const EdgeInsets.symmetric(vertical: 6),
-                                padding: const EdgeInsets.all(12),
-                                decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
-                                child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: colors.primary)),
+                              child: PremiumCard(
+                                margin: const EdgeInsets.symmetric(vertical: 8),
+                                padding: const EdgeInsets.all(16),
+                                borderRadius: 20,
+                                child: const PremiumLoading(size: 24),
                               ),
                             );
                           }
                           final m = _messages[i];
-                          return ChatBubble(isUser: m.role == 'user', content: m.content, citations: m.citations, colors: colors);
+                          return ChatBubble(isUser: m.role == 'user', content: m.content, citations: m.citations, colors: colors).animate().fadeIn(delay: (i * 50).ms, duration: 300.ms);
                         },
                       ),
           ),
           SafeArea(
             top: false,
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+              padding: const EdgeInsets.fromLTRB(20, 12, 20, 20),
               child: Row(
                 children: [
                   Expanded(
@@ -166,23 +197,37 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                       minLines: 1,
                       maxLines: 4,
                       onSubmitted: (_) => _send(),
+                      style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
                         hintText: t('chat.placeholder', language),
+                        hintStyle: TextStyle(color: colors.textMuted, fontSize: 14),
                         filled: true,
                         fillColor: colors.inputBackground,
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(24), borderSide: BorderSide(color: colors.border)),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(24), borderSide: BorderSide.none),
                       ),
                     ),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 12),
                   AnimatedPressable(
                     onTap: _sending ? null : _send,
                     child: Container(
-                      width: 44,
-                      height: 44,
-                      decoration: BoxDecoration(gradient: LinearGradient(colors: [colors.primary, colors.secondary]), shape: BoxShape.circle),
-                      child: const Icon(Icons.send_rounded, color: Colors.white, size: 20),
+                      width: 52,
+                      height: 52,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(colors: [colors.primary, colors.secondary]),
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: colors.primary.withValues(alpha: 0.3),
+                            blurRadius: 12,
+                            offset: const Offset(0, 4),
+                          ),
+                        ],
+                      ),
+                      child: _sending 
+                          ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2.5, color: Colors.white))
+                          : const Icon(Icons.send_rounded, color: Colors.white, size: 22),
                     ),
                   ),
                 ],

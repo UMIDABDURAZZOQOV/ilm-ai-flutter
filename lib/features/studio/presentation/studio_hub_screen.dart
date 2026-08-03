@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/animated_pressable.dart';
 import 'studio_text_tools.dart';
 import 'studio_more_tools.dart';
 import 'studio_media_tools.dart';
@@ -114,55 +117,61 @@ class StudioHubScreen extends ConsumerWidget {
         elevation: 0,
         iconTheme: IconThemeData(color: colors.text),
         title: Row(children: [
-          Icon(Icons.auto_awesome_rounded, color: colors.secondary, size: 20),
-          const SizedBox(width: 6),
-          Text('Ilm AI Studio', style: TextStyle(color: colors.text, fontWeight: FontWeight.w800)),
+          Icon(Icons.auto_awesome_rounded, color: colors.secondary, size: 24),
+          const SizedBox(width: 8),
+          Text('Ilm AI Studio', style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
         ]),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(20),
         children: [
           Text(
             _tr(lang, 'Yuklagan materialingizni kuchli o\'quv vositalariga aylantiring.',
                 'Превратите материалы в мощные учебные инструменты.',
                 'Turn your materials into powerful study tools.'),
-            style: TextStyle(color: colors.textSecondary, fontSize: 13),
+            style: TextStyle(color: colors.textSecondary, fontSize: 14, fontWeight: FontWeight.w500, height: 1.4),
           ),
-          const SizedBox(height: 16),
-          ...tools.map((t) => Padding(
-                padding: const EdgeInsets.only(bottom: 10),
-                child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => t.build())),
-                  borderRadius: BorderRadius.circular(18),
-                  child: Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color: colors.card,
-                      borderRadius: BorderRadius.circular(18),
-                      border: Border.all(color: colors.border),
+          const SizedBox(height: 20),
+          ...tools.asMap().entries.map((entry) {
+            final index = entry.key;
+            final t = entry.value;
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 14),
+              child: AnimatedPressable(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => t.build())),
+                child: PremiumCard(
+                  borderRadius: 20,
+                  padding: const EdgeInsets.all(18),
+                  child: Row(children: [
+                    Container(
+                      width: 52, height: 52,
+                      decoration: BoxDecoration(color: t.color.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(16)),
+                      child: Icon(t.icon, color: t.color, size: 26),
                     ),
-                    child: Row(children: [
-                      Container(
-                        width: 46, height: 46,
-                        decoration: BoxDecoration(color: t.color.withValues(alpha: 0.13), borderRadius: BorderRadius.circular(14)),
-                        child: Icon(t.icon, color: t.color, size: 22),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(t.title(lang), style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
+                          const SizedBox(height: 4),
+                          Text(t.sub(lang), style: TextStyle(color: colors.textSecondary, fontSize: 13, fontWeight: FontWeight.w500)),
+                        ],
                       ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(t.title(lang), style: TextStyle(color: colors.text, fontSize: 14, fontWeight: FontWeight.w700)),
-                            const SizedBox(height: 2),
-                            Text(t.sub(lang), style: TextStyle(color: colors.textSecondary, fontSize: 11)),
-                          ],
-                        ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: colors.border.withValues(alpha: 0.5),
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                      Icon(Icons.chevron_right_rounded, color: colors.textSecondary),
-                    ]),
-                  ),
+                      child: Icon(Icons.chevron_right_rounded, color: colors.textSecondary, size: 20),
+                    ),
+                  ]),
                 ),
-              )),
+              ).animate().fadeIn(delay: (index * 50).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+            );
+          }),
         ],
       ),
     );

@@ -11,7 +11,9 @@ import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/error_banner.dart';
-import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
+import '../../../core/widgets/animated_pressable.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/math_models.dart';
 import '../data/math_repository.dart';
@@ -85,7 +87,11 @@ class _MathSolverScreenState extends ConsumerState<MathSolverScreen> {
     final language = ref.watch(languageProvider);
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('math.title', language))),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('math.title', language), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -93,42 +99,52 @@ class _MathSolverScreenState extends ConsumerState<MathSolverScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               if (_result == null) ...[
-                Text(t('math.subtitle', language), style: TextStyle(color: colors.textSecondary, fontSize: 14)),
-                const SizedBox(height: 16),
+                Text(t('math.subtitle', language), style: TextStyle(color: colors.textSecondary, fontSize: 15, fontWeight: FontWeight.w500)),
+                const SizedBox(height: 20),
                 Row(
                   children: [
                     Expanded(
                       child: _ModeTab(label: t('math.mode.camera', language), selected: _mode == _Mode.camera, colors: colors, onTap: () => setState(() => _mode = _Mode.camera)),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 12),
                     Expanded(
                       child: _ModeTab(label: t('math.mode.type', language), selected: _mode == _Mode.type, colors: colors, onTap: () => setState(() => _mode = _Mode.type)),
                     ),
                   ],
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 20),
                 ErrorBanner(message: _error, onDismiss: () => setState(() => _error = null)),
                 if (_mode == _Mode.camera) ...[
                   if (_imagePath != null)
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(14),
-                      child: Image.file(File(_imagePath!), height: 220, width: double.infinity, fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.file(File(_imagePath!), height: 240, width: double.infinity, fit: BoxFit.cover),
                     )
                   else
                     Container(
-                      height: 180,
-                      decoration: BoxDecoration(color: colors.primaryLight, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
-                      child: Center(child: Icon(Icons.photo_camera_outlined, size: 48, color: colors.primary)),
+                      height: 200,
+                      decoration: BoxDecoration(color: colors.primaryLight, borderRadius: BorderRadius.circular(20), border: Border.all(color: colors.border)),
+                      child: Center(child: Icon(Icons.photo_camera_outlined, size: 56, color: colors.primary)),
                     ),
-                  const SizedBox(height: 14),
+                  const SizedBox(height: 16),
                   Row(
                     children: [
                       Expanded(
-                        child: GradientButton(outline: true, onPressed: () => _pickImage(ImageSource.camera), child: Text(t('math.take.photo', language))),
+                        child: PremiumButton(
+                          variant: PremiumButtonVariant.outline,
+                          onPressed: () => _pickImage(ImageSource.camera),
+                          borderRadius: 18,
+                          child: Text(t('math.take.photo', language)),
+                        ),
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 12),
                       Expanded(
-                        child: GradientButton(outline: true, onPressed: () => _pickImage(ImageSource.gallery), child: Text(t('math.choose.gallery', language))),
+                        child: PremiumButton(
+                          variant: PremiumButtonVariant.outline,
+                          onPressed: () => _pickImage(ImageSource.gallery),
+                          borderRadius: 18,
+                          child: Text(t('math.choose.gallery', language)),
+                        ),
                       ),
                     ],
                   ),
@@ -136,25 +152,34 @@ class _MathSolverScreenState extends ConsumerState<MathSolverScreen> {
                   TextField(
                     controller: _problemText,
                     maxLines: 4,
+                    style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                       hintText: t('math.input.placeholder', language),
+                      hintStyle: TextStyle(color: colors.textMuted, fontSize: 14),
                       filled: true,
                       fillColor: colors.inputBackground,
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide(color: colors.border)),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
                     ),
                   ),
-                const SizedBox(height: 20),
-                GradientButton(
+                const SizedBox(height: 24),
+                PremiumButton(
                   onPressed: _solving ? null : _solve,
                   loading: _solving,
-                  child: Text(_solving ? t('math.solving', language) : t('math.solve.button', language)),
+                  borderRadius: 22,
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  child: Text(_solving ? t('math.solving', language) : t('math.solve.button', language), style: const TextStyle(fontSize: 16)),
                 ),
-                const SizedBox(height: 20),
-                Text(t('math.empty.hint', language), style: TextStyle(color: colors.textMuted, fontSize: 12), textAlign: TextAlign.center),
+                const SizedBox(height: 24),
+                Text(t('math.empty.hint', language), style: TextStyle(color: colors.textMuted, fontSize: 13, fontWeight: FontWeight.w500), textAlign: TextAlign.center),
               ] else ...[
                 _ResultView(result: _result!, colors: colors, language: language),
-                const SizedBox(height: 20),
-                GradientButton(outline: true, onPressed: _reset, child: Text(t('math.result.new.problem', language))),
+                const SizedBox(height: 24),
+                PremiumButton(
+                  variant: PremiumButtonVariant.outline,
+                  onPressed: _reset,
+                  borderRadius: 18,
+                  child: Text(t('math.result.new.problem', language)),
+                ),
               ],
             ],
           ),
@@ -173,21 +198,21 @@ class _ModeTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return AnimatedPressable(
       onTap: onTap,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         curve: Curves.easeOut,
-        padding: const EdgeInsets.symmetric(vertical: 12),
+        padding: const EdgeInsets.symmetric(vertical: 14),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: selected ? colors.primary : colors.card,
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(16),
           border: Border.all(color: selected ? colors.primary : colors.border, width: 1.5),
         ),
         child: AnimatedDefaultTextStyle(
           duration: const Duration(milliseconds: 200),
-          style: TextStyle(color: selected ? Colors.white : colors.text, fontWeight: FontWeight.w700),
+          style: TextStyle(color: selected ? Colors.white : colors.text, fontWeight: FontWeight.w800, fontSize: 15),
           child: Text(label),
         ),
       ),
@@ -206,44 +231,43 @@ class _ResultView extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+        PremiumCard(
+          borderRadius: 20,
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(t('math.result.recognized', language), style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: colors.textMuted)),
-              const SizedBox(height: 4),
-              Text(result.recognizedProblem, style: TextStyle(color: colors.text, fontSize: 15)),
+              Text(t('math.result.recognized', language), style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: colors.textMuted)),
+              const SizedBox(height: 6),
+              Text(result.recognizedProblem, style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w600)),
             ],
           ),
         ).animate().fadeIn(duration: 300.ms).slideY(begin: -0.06, end: 0, curve: Curves.easeOutCubic),
-        const SizedBox(height: 16),
-        Text(t('math.result.steps.title', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.text, fontSize: 15)),
-        const SizedBox(height: 10),
+        const SizedBox(height: 20),
+        Text(t('math.result.steps.title', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontSize: 16, letterSpacing: -0.3)),
+        const SizedBox(height: 12),
         for (var i = 0; i < result.steps.length; i++)
-          Container(
-            margin: const EdgeInsets.only(bottom: 10),
-            padding: const EdgeInsets.all(14),
-            decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+          PremiumCard(
+            borderRadius: 18,
+            padding: const EdgeInsets.all(16),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 26,
-                  height: 26,
+                  width: 30,
+                  height: 30,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(color: colors.primaryLight, shape: BoxShape.circle),
-                  child: Text('${i + 1}', style: TextStyle(color: colors.primary, fontWeight: FontWeight.w700, fontSize: 12)),
+                  child: Text('${i + 1}', style: TextStyle(color: colors.primary, fontWeight: FontWeight.w800, fontSize: 13)),
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(width: 14),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(result.steps[i].expression, style: TextStyle(fontWeight: FontWeight.w700, color: colors.text, fontFamily: 'monospace')),
-                      const SizedBox(height: 4),
-                      Text(result.steps[i].explanation, style: TextStyle(color: colors.textSecondary, fontSize: 13)),
+                      Text(result.steps[i].expression, style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontFamily: 'monospace', fontSize: 14)),
+                      const SizedBox(height: 6),
+                      Text(result.steps[i].explanation, style: TextStyle(color: colors.textSecondary, fontSize: 14, fontWeight: FontWeight.w500)),
                     ],
                   ),
                 ),
@@ -251,25 +275,26 @@ class _ResultView extends StatelessWidget {
             ),
           ).animate().fadeIn(delay: (80 + i * 70).ms, duration: 280.ms).slideX(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
         if (result.graph != null) ...[
-          const SizedBox(height: 8),
+          const SizedBox(height: 12),
           Center(
-            child: Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+            child: PremiumCard(
+              borderRadius: 18,
+              padding: const EdgeInsets.all(16),
               child: MathGraphPlot(graph: result.graph!),
             ),
           ),
         ],
-        const SizedBox(height: 16),
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(gradient: LinearGradient(colors: [colors.primary, colors.secondary]), borderRadius: BorderRadius.circular(16)),
+        const SizedBox(height: 20),
+        PremiumGradientCard(
+          borderRadius: 22,
+          padding: const EdgeInsets.all(20),
+          gradientColors: [colors.primary, colors.secondary],
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(t('math.result.answer.title', language), style: const TextStyle(color: Colors.white70, fontSize: 12, fontWeight: FontWeight.w700)),
-              const SizedBox(height: 6),
-              Text(result.finalAnswer, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w800)),
+              Text(t('math.result.answer.title', language), style: const TextStyle(color: Colors.white70, fontSize: 13, fontWeight: FontWeight.w800)),
+              const SizedBox(height: 8),
+              Text(result.finalAnswer, style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900)),
             ],
           ),
         ).animate().fadeIn(delay: 200.ms, duration: 350.ms).scale(begin: const Offset(0.94, 0.94), end: const Offset(1, 1), curve: Curves.easeOutBack),

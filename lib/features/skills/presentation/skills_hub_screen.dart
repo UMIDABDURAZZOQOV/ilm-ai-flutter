@@ -7,6 +7,8 @@ import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animated_pressable.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_loading.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -40,10 +42,12 @@ class SkillsHubScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(t('skills.dashboard.card', lang)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('skills.dashboard.card', lang), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
         actions: [
           if (summary != null)
-            Padding(padding: const EdgeInsets.only(right: 12), child: Center(child: HeartsXpHeader(summary: summary))),
+            Padding(padding: const EdgeInsets.only(right: 16), child: Center(child: HeartsXpHeader(summary: summary))),
         ],
       ),
       body: SafeArea(
@@ -53,97 +57,90 @@ class SkillsHubScreen extends ConsumerWidget {
             ref.invalidate(_summaryProvider);
           },
           child: subjectsAsync.when(
-            loading: () => const Center(child: CircularProgressIndicator()),
-            error: (_, _) => ListView(children: [const SizedBox(height: 200), Center(child: Text(t('skills.error.generic', lang)))]),
+            loading: () => const Center(child: PremiumLoading()),
+            error: (_, _) => ListView(children: [const SizedBox(height: 200), Center(child: Text(t('skills.error.generic', lang), style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500)))]),
             data: (subjects) => ListView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(20),
               children: [
                 // Daily goal
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: colors.card,
-                    borderRadius: BorderRadius.circular(18),
-                    border: Border.all(color: colors.border),
-                  ),
+                PremiumCard(
+                  borderRadius: 20,
+                  padding: const EdgeInsets.all(18),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(str3(lang, 'Kunlik maqsad', 'Цель дня', 'Daily goal'), style: const TextStyle(fontWeight: FontWeight.w800)),
+                          Text(str3(lang, 'Kunlik maqsad', 'Цель дня', 'Daily goal'), style: TextStyle(fontWeight: FontWeight.w800, fontSize: 16, color: colors.text)),
                           Text('$todayXp/$goalXp XP${goalPct >= 1 ? ' 🎉' : ''}',
-                              style: TextStyle(fontWeight: FontWeight.w900, color: goalPct >= 1 ? const Color(0xFF58CC02) : Colors.grey)),
+                              style: TextStyle(fontWeight: FontWeight.w900, color: goalPct >= 1 ? const Color(0xFF58CC02) : colors.textSecondary, fontSize: 15)),
                         ],
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 12),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
-                        child: LinearProgressIndicator(value: goalPct, minHeight: 12, color: const Color(0xFF58CC02), backgroundColor: Colors.black12),
+                        borderRadius: BorderRadius.circular(10),
+                        child: LinearProgressIndicator(value: goalPct, minHeight: 14, color: const Color(0xFF58CC02), backgroundColor: colors.border.withValues(alpha: 0.3)),
                       ),
                     ],
                   ),
-                ),
-                const SizedBox(height: 20),
+                ).animate().fadeIn(duration: 300.ms),
+                const SizedBox(height: 24),
 
                 _sectionLabel(str3(lang, 'Fanlar', 'Предметы', 'Subjects')),
-                const SizedBox(height: 8),
+                const SizedBox(height: 12),
                 GridView.count(
                   crossAxisCount: 4,
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  mainAxisSpacing: 10,
-                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
                   childAspectRatio: 0.82,
                   children: [
-                    for (final s in subjects)
+                    for (final s in subjects.asMap().entries)
                       AnimatedPressable(
-                        onTap: () => context.push('/skills/path', extra: s),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: colors.card,
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: colors.border, width: 1.5),
-                          ),
+                        onTap: () => context.push('/skills/path', extra: s.value),
+                        child: PremiumCard(
+                          borderRadius: 18,
+                          padding: const EdgeInsets.all(12),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                width: 44,
-                                height: 44,
-                                decoration: BoxDecoration(color: skillColor(s.color).withValues(alpha: 0.16), shape: BoxShape.circle),
-                                child: Icon(subjectIcons[s.slug] ?? Icons.book_rounded, color: skillColor(s.color), size: 22),
+                                width: 48,
+                                height: 48,
+                                decoration: BoxDecoration(color: skillColor(s.value.color).withValues(alpha: 0.16), shape: BoxShape.circle),
+                                child: Icon(subjectIcons[s.value.slug] ?? Icons.book_rounded, color: skillColor(s.value.color), size: 24),
                               ),
-                              const SizedBox(height: 6),
+                              const SizedBox(height: 8),
                               Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 4),
-                                child: Text(s.nameFor(lang),
+                                child: Text(s.value.nameFor(lang),
                                     textAlign: TextAlign.center,
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 10.5, color: colors.text)),
+                                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 11, color: colors.text)),
                               ),
                             ],
                           ),
                         ),
-                      ),
+                      ).animate().fadeIn(delay: (s.key * 50).ms, duration: 300.ms),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 24),
 
                 _sectionLabel(str3(lang, 'Yana', 'Ещё', 'More')),
-                const SizedBox(height: 8),
+                const SizedBox(height: 12),
                 GridView.count(
                   crossAxisCount: 2,
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  mainAxisSpacing: 10,
-                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
                   childAspectRatio: 2.5,
                   children: _featureCards(context, ref, lang, subjects, colors),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 24),
               ],
             ),
           ),
@@ -183,30 +180,26 @@ class SkillsHubScreen extends ConsumerWidget {
           () => context.push('/skills/parent')),
     ];
     return [
-      for (final c in cards)
+      for (final c in cards.asMap().entries)
         AnimatedPressable(
-          onTap: c.onTap,
-          child: Container(
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: colors.card,
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: colors.border, width: 1.5),
-            ),
+          onTap: c.value.onTap,
+          child: PremiumCard(
+            borderRadius: 18,
+            padding: const EdgeInsets.all(14),
             child: Row(
               children: [
                 Container(
-                  width: 38,
-                  height: 38,
-                  decoration: BoxDecoration(color: c.color.withValues(alpha: 0.16), borderRadius: BorderRadius.circular(11)),
-                  child: Icon(c.icon, color: c.color, size: 20),
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(color: c.value.color.withValues(alpha: 0.16), borderRadius: BorderRadius.circular(12)),
+                  child: Icon(c.value.icon, color: c.value.color, size: 22),
                 ),
-                const SizedBox(width: 10),
-                Expanded(child: Text(c.title, style: TextStyle(fontWeight: FontWeight.w800, fontSize: 12.5, color: colors.text))),
+                const SizedBox(width: 12),
+                Expanded(child: Text(c.value.title, style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13, color: colors.text))),
               ],
             ),
           ),
-        ).animate().fadeIn(duration: 250.ms),
+        ).animate().fadeIn(delay: (c.key * 30).ms, duration: 300.ms),
     ];
   }
 

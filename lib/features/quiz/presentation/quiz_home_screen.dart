@@ -10,7 +10,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animated_pressable.dart';
 import '../../../core/widgets/duo_icon.dart';
 import '../../../core/widgets/error_banner.dart';
-import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/quiz_repository.dart';
 
@@ -70,7 +71,11 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
     final dueCount = ref.watch(_dueReviewCountProvider).valueOrNull ?? 0;
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('quiz.title', language))),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('quiz.title', language), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -88,7 +93,7 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                       onTap: () => context.push('/quiz/stats'),
                     ).animate().fadeIn(duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: _QuickLink(
                       icon: Icons.style_rounded,
@@ -97,7 +102,7 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                       onTap: () => context.push('/quiz/flashcards'),
                     ).animate().fadeIn(delay: 60.ms, duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: _QuickLink(
                       icon: Icons.replay_circle_filled_rounded,
@@ -109,15 +114,15 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 28),
-              Text(t('quiz.difficulty', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.text, fontSize: 15)),
-              const SizedBox(height: 10),
+              const SizedBox(height: 32),
+              Text(t('quiz.difficulty', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontSize: 16, letterSpacing: -0.3)),
+              const SizedBox(height: 12),
               Row(
                 children: [
                   for (final d in ['easy', 'medium', 'hard'])
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.only(right: d != 'hard' ? 8 : 0),
+                        padding: EdgeInsets.only(right: d != 'hard' ? 10 : 0),
                         child: _Chip(
                           label: t('quiz.difficulty.$d', language),
                           selected: _difficulty == d,
@@ -128,24 +133,25 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                     ),
                 ],
               ),
-              const SizedBox(height: 24),
-              Text(t('quiz.questions.count', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.text, fontSize: 15)),
-              const SizedBox(height: 10),
+              const SizedBox(height: 28),
+              Text(t('quiz.questions.count', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontSize: 16, letterSpacing: -0.3)),
+              const SizedBox(height: 12),
               Row(
                 children: [
                   for (final n in [5, 10])
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.only(right: n != 10 ? 8 : 0),
+                        padding: EdgeInsets.only(right: n != 10 ? 10 : 0),
                         child: _Chip(label: '$n', selected: _numQuestions == n, colors: colors, onTap: () => setState(() => _numQuestions = n)),
                       ),
                     ),
                 ],
               ),
-              const SizedBox(height: 32),
-              GradientButton(
+              const SizedBox(height: 36),
+              PremiumButton(
                 onPressed: _generating ? null : _startQuiz,
                 loading: _generating,
+                borderRadius: 20,
                 child: Text(t('quiz.start', language)),
               ),
             ],
@@ -169,29 +175,29 @@ class _QuickLink extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedPressable(
       onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-        decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+      child: PremiumCard(
+        borderRadius: 18,
+        padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 12),
         child: Column(
           children: [
             Stack(
               clipBehavior: Clip.none,
               children: [
-                DuoIcon(icon, color: colors.primary, size: 26),
+                DuoIcon(icon, color: colors.primary, size: 28),
                 if (badge != null)
                   Positioned(
                     right: -8,
                     top: -6,
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
-                      decoration: BoxDecoration(color: colors.error, borderRadius: BorderRadius.circular(8)),
-                      child: Text('$badge', style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w700)),
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(color: colors.error, borderRadius: BorderRadius.circular(10)),
+                      child: Text('$badge', style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w800)),
                     ),
                   ),
               ],
             ),
-            const SizedBox(height: 6),
-            Text(label, style: TextStyle(fontSize: 11, color: colors.textSecondary, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+            const SizedBox(height: 8),
+            Text(label, style: TextStyle(fontSize: 12, color: colors.textSecondary, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
           ],
         ),
       ),
@@ -214,16 +220,16 @@ class _Chip extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         curve: Curves.easeOut,
-        padding: const EdgeInsets.symmetric(vertical: 12),
+        padding: const EdgeInsets.symmetric(vertical: 14),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: selected ? colors.primary : colors.card,
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(16),
           border: Border.all(color: selected ? colors.primary : colors.border, width: 1.5),
         ),
         child: AnimatedDefaultTextStyle(
           duration: const Duration(milliseconds: 200),
-          style: TextStyle(color: selected ? Colors.white : colors.text, fontWeight: FontWeight.w700),
+          style: TextStyle(color: selected ? Colors.white : colors.text, fontWeight: FontWeight.w800, fontSize: 15),
           child: Text(label),
         ),
       ),

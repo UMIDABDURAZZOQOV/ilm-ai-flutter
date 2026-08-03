@@ -9,7 +9,8 @@ import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/app_text_field.dart';
 import '../../../core/widgets/error_banner.dart';
-import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
 import '../application/auth_controller.dart';
 import '../application/google_auth.dart';
 import '../data/auth_models.dart';
@@ -80,89 +81,112 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+          padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 24),
+              const SizedBox(height: 32),
               Center(
                 child: Container(
-                  width: 64,
-                  height: 64,
+                  width: 80,
+                  height: 80,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    gradient: LinearGradient(colors: [colors.primary, colors.secondary]),
+                    borderRadius: BorderRadius.circular(24),
+                    gradient: LinearGradient(colors: [colors.primary, colors.secondary], begin: Alignment.topLeft, end: Alignment.bottomRight),
+                    boxShadow: [
+                      BoxShadow(
+                        color: colors.primary.withValues(alpha: 0.3),
+                        blurRadius: 24,
+                        offset: const Offset(0, 12),
+                      ),
+                    ],
                   ),
-                  child: const Icon(Icons.school_rounded, color: Colors.white, size: 32),
+                  child: const Icon(Icons.school_rounded, color: Colors.white, size: 40),
                 ),
-              ).animate().fadeIn(duration: 400.ms).scale(begin: const Offset(0.85, 0.85), end: const Offset(1, 1), curve: Curves.easeOutBack),
-              const SizedBox(height: 20),
+              ).animate().fadeIn(duration: 500.ms).scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1), curve: Curves.easeOutBack),
+              const SizedBox(height: 32),
               Text(
                 t('auth.login.title', language),
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800, color: colors.text),
-              ).animate().fadeIn(delay: 80.ms, duration: 350.ms),
-              const SizedBox(height: 28),
+                style: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.5),
+              ).animate().fadeIn(delay: 100.ms, duration: 400.ms),
+              const SizedBox(height: 8),
+              Text(
+                t('auth.login.subtitle', language),
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15, color: colors.textSecondary, fontWeight: FontWeight.w500),
+              ).animate().fadeIn(delay: 150.ms, duration: 350.ms),
+              const SizedBox(height: 36),
               ErrorBanner(message: _error, onDismiss: () => setState(() => _error = null)),
-              AppTextField(
-                controller: _email,
-                hint: t('auth.email.placeholder', language),
-                keyboardType: TextInputType.emailAddress,
-                prefixIcon: Icon(Icons.mail_outline, color: colors.textMuted, size: 20),
-              ).animate().fadeIn(delay: 140.ms, duration: 320.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
-              const SizedBox(height: 12),
-              PasswordField(controller: _password, hint: t('auth.password.placeholder', language))
-                  .animate()
-                  .fadeIn(delay: 190.ms, duration: 320.ms)
-                  .slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              PremiumCard(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                borderRadius: 20,
+                child: AppTextField(
+                  controller: _email,
+                  hint: t('auth.email.placeholder', language),
+                  keyboardType: TextInputType.emailAddress,
+                  prefixIcon: Icon(Icons.mail_outline, color: colors.textMuted, size: 22),
+                ),
+              ).animate().fadeIn(delay: 200.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              const SizedBox(height: 16),
+              PremiumCard(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                borderRadius: 20,
+                child: PasswordField(controller: _password, hint: t('auth.password.placeholder', language)),
+              ).animate().fadeIn(delay: 250.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   onPressed: () => context.push('/forgot-password'),
-                  child: Text(t('auth.forgot.password', language), style: TextStyle(color: colors.primary)),
+                  child: Text(t('auth.forgot.password', language), style: TextStyle(color: colors.primary, fontWeight: FontWeight.w700, fontSize: 14)),
                 ),
               ),
-              const SizedBox(height: 8),
-              GradientButton(
+              const SizedBox(height: 12),
+              PremiumButton(
                 onPressed: _loading ? null : _handleLogin,
                 loading: _loading,
+                borderRadius: 20,
                 child: Text(t('auth.login.button', language)),
-              ),
-              const SizedBox(height: 20),
+              ).animate().fadeIn(delay: 300.ms, duration: 350.ms),
+              const SizedBox(height: 28),
               Row(
                 children: [
-                  Expanded(child: Divider(color: colors.border)),
+                  Expanded(child: Divider(color: colors.border, thickness: 1)),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
-                    child: Text(t('auth.divider.or', language), style: TextStyle(color: colors.textMuted)),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(t('auth.divider.or', language), style: TextStyle(color: colors.textMuted, fontSize: 13, fontWeight: FontWeight.w600)),
                   ),
-                  Expanded(child: Divider(color: colors.border)),
+                  Expanded(child: Divider(color: colors.border, thickness: 1)),
                 ],
               ),
-              const SizedBox(height: 20),
-              OutlinedButton.icon(
-                onPressed: _googleLoading ? null : _handleGoogle,
-                icon: _googleLoading
-                    ? SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2, color: colors.textSecondary))
-                    : const Icon(Icons.g_mobiledata, size: 26),
-                label: Text(t('auth.google.button', language)),
-                style: OutlinedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  side: BorderSide(color: colors.border, width: 1.5),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                ),
-              ),
               const SizedBox(height: 24),
+              PremiumButton(
+                onPressed: _googleLoading ? null : _handleGoogle,
+                outline: true,
+                borderRadius: 20,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    if (_googleLoading)
+                      SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2.5, color: colors.primary))
+                    else
+                      const Icon(Icons.g_mobiledata, size: 24),
+                    const SizedBox(width: 12),
+                    Text(t('auth.google.button', language)),
+                  ],
+                ),
+              ).animate().fadeIn(delay: 350.ms, duration: 350.ms),
+              const SizedBox(height: 32),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(t('auth.no.account', language), style: TextStyle(color: colors.textSecondary)),
+                  Text(t('auth.no.account', language), style: TextStyle(color: colors.textSecondary, fontSize: 15)),
                   TextButton(
                     onPressed: () => context.push('/signup'),
-                    child: Text(t('auth.signup.button', language), style: TextStyle(color: colors.primary, fontWeight: FontWeight.w700)),
+                    child: Text(t('auth.signup.button', language), style: TextStyle(color: colors.primary, fontWeight: FontWeight.w800, fontSize: 15)),
                   ),
                 ],
-              ),
+              ).animate().fadeIn(delay: 400.ms, duration: 350.ms),
             ],
           ),
         ),

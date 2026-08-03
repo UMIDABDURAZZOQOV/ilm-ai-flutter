@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
+import '../../../core/widgets/premium_loading.dart';
+import '../../../core/widgets/animated_pressable.dart';
 import '../../auth/application/auth_controller.dart' show currentUserIdProvider;
 import '../../quiz/data/quiz_models.dart';
 import '../data/course_repository.dart';
@@ -99,12 +104,12 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(icon: Icon(Icons.arrow_back_rounded, color: colors.text), onPressed: () => context.pop()),
+        leading: IconButton(icon: Icon(Icons.arrow_back_rounded, color: colors.text, size: 24), onPressed: () => context.pop()),
         title: Text(_tr(lang, 'Materialdan kurs', 'Курс из материалов', 'Course from materials'),
-            style: TextStyle(color: colors.text, fontWeight: FontWeight.w700)),
+            style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: PremiumLoading())
           : course == null
               ? _buildEmpty(colors, lang)
               : _buildCourse(colors, lang, course),
@@ -114,15 +119,23 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
   Widget _buildEmpty(ThemeColors colors, String lang) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(28),
+        padding: const EdgeInsets.all(32),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.auto_awesome_rounded, size: 44, color: colors.primary),
-            const SizedBox(height: 12),
+            Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                color: colors.primary.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(24),
+              ),
+              child: Icon(Icons.auto_awesome_rounded, size: 40, color: colors.primary),
+            ),
+            const SizedBox(height: 16),
             Text(_tr(lang, 'Kurs hali yo\'q', 'Курса пока нет', 'No course yet'),
-                style: TextStyle(color: colors.text, fontSize: 17, fontWeight: FontWeight.w700)),
-            const SizedBox(height: 6),
+                style: TextStyle(color: colors.text, fontSize: 20, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
+            const SizedBox(height: 8),
             Text(
               _error == 'no_materials'
                   ? _tr(lang, 'Avval material (PDF) yuklang.', 'Сначала загрузите материал.', 'Upload material first.')
@@ -130,23 +143,25 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
                       ? _tr(lang, 'Bo\'lmadi — qayta urinib ko\'ring.', 'Не удалось — попробуйте снова.', 'Couldn\'t build it — try again.')
                       : _tr(lang, 'Yuklagan materialingizdan kurs yasang.', 'Постройте курс из материалов.', 'Build a course from your materials.'),
               textAlign: TextAlign.center,
-              style: TextStyle(color: colors.textSecondary),
+              style: TextStyle(color: colors.textSecondary, fontSize: 14, fontWeight: FontWeight.w500),
             ),
-            const SizedBox(height: 20),
-            ElevatedButton.icon(
+            const SizedBox(height: 24),
+            PremiumButton(
               onPressed: _generating ? null : _generate,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: colors.primary,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              borderRadius: 20,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  if (_generating)
+                    const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2.5, color: Colors.white))
+                  else
+                    const Icon(Icons.auto_awesome_rounded, size: 20),
+                  const SizedBox(width: 8),
+                  Text(_generating
+                      ? _tr(lang, 'Yaratilyapti...', 'Создаётся...', 'Building...')
+                      : _tr(lang, 'Kurs yaratish', 'Создать курс', 'Build course')),
+                ],
               ),
-              icon: _generating
-                  ? const SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
-                  : const Icon(Icons.auto_awesome_rounded, size: 18),
-              label: Text(_generating
-                  ? _tr(lang, 'Yaratilyapti...', 'Создаётся...', 'Building...')
-                  : _tr(lang, 'Kurs yaratish', 'Создать курс', 'Build course')),
             ),
           ],
         ),
@@ -156,34 +171,43 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
 
   Widget _buildCourse(ThemeColors colors, String lang, Course course) {
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(20),
       children: [
         Row(
           children: [
-            Expanded(child: Text(course.title, style: TextStyle(color: colors.text, fontSize: 19, fontWeight: FontWeight.w800))),
-            TextButton(onPressed: _generating ? null : _generate,
-                child: Text(_tr(lang, 'Qayta', 'Заново', 'Rebuild'), style: TextStyle(color: colors.primary))),
+            Expanded(child: Text(course.title, style: TextStyle(color: colors.text, fontSize: 22, fontWeight: FontWeight.w800, letterSpacing: -0.5))),
+            AnimatedPressable(
+              onTap: _generating ? null : _generate,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: colors.primary.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(_tr(lang, 'Qayta', 'Заново', 'Rebuild'), style: TextStyle(color: colors.primary, fontSize: 13, fontWeight: FontWeight.w700)),
+              ),
+            ),
           ],
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 12),
         ...course.chapters.asMap().entries.map((ce) {
           final ci = ce.key;
           final ch = ce.value;
           return Padding(
-            padding: const EdgeInsets.only(bottom: 18),
+            padding: const EdgeInsets.only(bottom: 24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(children: [
                   Container(
-                    width: 24, height: 24, alignment: Alignment.center,
+                    width: 32, height: 32, alignment: Alignment.center,
                     decoration: BoxDecoration(color: colors.primaryLight, shape: BoxShape.circle),
-                    child: Text('${ci + 1}', style: TextStyle(color: colors.primary, fontSize: 12, fontWeight: FontWeight.w800)),
+                    child: Text('${ci + 1}', style: TextStyle(color: colors.primary, fontSize: 14, fontWeight: FontWeight.w800)),
                   ),
-                  const SizedBox(width: 8),
-                  Expanded(child: Text(ch.title, style: TextStyle(color: colors.text, fontSize: 14, fontWeight: FontWeight.w800))),
+                  const SizedBox(width: 12),
+                  Expanded(child: Text(ch.title, style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w800, letterSpacing: -0.3))),
                 ]),
-                const SizedBox(height: 8),
+                const SizedBox(height: 12),
                 ...ch.lessons.asMap().entries.map((le) {
                   final li = le.key;
                   final ls = le.value;
@@ -191,45 +215,43 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
                   final done = _state?.completed[key] == true;
                   final opening = _openingKey == key;
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: 8, left: 8),
-                    child: InkWell(
+                    padding: const EdgeInsets.only(bottom: 12, left: 8),
+                    child: AnimatedPressable(
                       onTap: _openingKey != null ? null : () => _openLesson(ci, li, ch, ls),
-                      borderRadius: BorderRadius.circular(16),
-                      child: Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: colors.card,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: colors.border),
-                        ),
+                      child: PremiumCard(
+                        borderRadius: 18,
+                        padding: const EdgeInsets.all(16),
                         child: Row(
                           children: [
                             Container(
-                              width: 34, height: 34, alignment: Alignment.center,
+                              width: 40, height: 40, alignment: Alignment.center,
                               decoration: BoxDecoration(
-                                color: done ? colors.success : colors.primaryLight,
+                                color: done ? colors.success : colors.primary.withValues(alpha: 0.1),
                                 shape: BoxShape.circle,
                               ),
                               child: opening
-                                  ? const SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2))
+                                  ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2.5))
                                   : Icon(done ? Icons.check_rounded : Icons.menu_book_rounded,
-                                      size: 18, color: done ? Colors.white : colors.primary),
+                                      size: 20, color: done ? Colors.white : colors.primary),
                             ),
-                            const SizedBox(width: 10),
+                            const SizedBox(width: 14),
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(ls.title, style: TextStyle(color: colors.text, fontSize: 13, fontWeight: FontWeight.w700)),
+                                  Text(ls.title, style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w800)),
                                   if (ls.summary.isNotEmpty)
-                                    Text(ls.summary, style: TextStyle(color: colors.textSecondary, fontSize: 11), maxLines: 2, overflow: TextOverflow.ellipsis),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 4),
+                                      child: Text(ls.summary, style: TextStyle(color: colors.textSecondary, fontSize: 12, fontWeight: FontWeight.w500), maxLines: 2, overflow: TextOverflow.ellipsis),
+                                    ),
                                 ],
                               ),
                             ),
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fadeIn(delay: (le.key * 50).ms, duration: 300.ms),
                   );
                 }),
               ],

@@ -32,26 +32,34 @@ class AppTextField extends StatelessWidget {
       obscureText: obscureText,
       keyboardType: keyboardType,
       onChanged: onChanged,
-      style: TextStyle(color: colors.text, fontSize: 15),
+      style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w500),
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: TextStyle(color: colors.textMuted),
+        hintStyle: TextStyle(color: colors.textMuted, fontSize: 15, fontWeight: FontWeight.w400),
         filled: true,
         fillColor: colors.inputBackground,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(color: colors.border, width: 1.5),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(color: colors.border, width: 1.5),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colors.primary, width: 1.5),
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: colors.primary, width: 2),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: colors.error, width: 1.5),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: colors.error, width: 2),
         ),
       ),
     );
@@ -80,9 +88,21 @@ class _PasswordFieldState extends State<PasswordField> {
       hint: widget.hint,
       obscureText: !_visible,
       onChanged: widget.onChanged,
-      suffixIcon: IconButton(
-        icon: Icon(_visible ? Icons.visibility_off_outlined : Icons.visibility_outlined, color: colors.textMuted, size: 20),
-        onPressed: () => setState(() => _visible = !_visible),
+      suffixIcon: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
+        child: IconButton(
+          icon: AnimatedSwitcher(
+            duration: const Duration(milliseconds: 150),
+            child: Icon(
+              _visible ? Icons.visibility_off_rounded : Icons.visibility_rounded,
+              color: _visible ? colors.primary : colors.textMuted,
+              size: 22,
+              key: ValueKey<bool>(_visible),
+            ),
+          ),
+          onPressed: () => setState(() => _visible = !_visible),
+          padding: const EdgeInsets.all(8),
+        ),
       ),
     );
   }

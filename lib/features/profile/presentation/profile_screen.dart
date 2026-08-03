@@ -15,7 +15,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/animated_pressable.dart';
 import '../../../core/widgets/duo_icon.dart';
 import '../../../core/widgets/error_banner.dart';
-import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
 import '../../auth/application/auth_controller.dart';
 import '../../auth/data/auth_models.dart';
 import '../../auth/data/auth_repository.dart';
@@ -160,7 +161,11 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     });
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('profile.title', language))),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('profile.title', language), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(20),
@@ -172,13 +177,13 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   child: Stack(
                     children: [
                       CircleAvatar(
-                        radius: 34,
+                        radius: 38,
                         backgroundColor: colors.primary,
                         backgroundImage: _avatar != null ? MemoryImage(base64Decode(_avatar!.split(',').last)) : null,
                         child: _avatar == null
                             ? Text(
                                 (user?.name?.isNotEmpty == true ? user!.name![0] : 'U').toUpperCase(),
-                                style: const TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.w800),
+                                style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.w900),
                               )
                             : null,
                       ),
@@ -186,111 +191,115 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                         right: 0,
                         bottom: 0,
                         child: Container(
-                          width: 22,
-                          height: 22,
+                          width: 24,
+                          height: 24,
                           decoration: BoxDecoration(color: colors.secondary, shape: BoxShape.circle, border: Border.all(color: colors.background, width: 2)),
                           child: _avatarSaving
                               ? const Padding(padding: EdgeInsets.all(4), child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
-                              : const Icon(Icons.camera_alt_rounded, size: 12, color: Colors.white),
+                              : const Icon(Icons.camera_alt_rounded, size: 13, color: Colors.white),
                         ),
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(width: 14),
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(user?.name ?? '—', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: colors.text)),
-                      const SizedBox(height: 2),
-                      Text(user?.email ?? '—', style: TextStyle(fontSize: 13, color: colors.textMuted)),
+                      Text(user?.name ?? '—', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: colors.text)),
+                      const SizedBox(height: 4),
+                      Text(user?.email ?? '—', style: TextStyle(fontSize: 14, color: colors.textMuted, fontWeight: FontWeight.w500)),
                     ],
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 24),
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(16), border: Border.all(color: colors.border)),
+            const SizedBox(height: 28),
+            PremiumCard(
+              borderRadius: 20,
+              padding: const EdgeInsets.all(18),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ErrorBanner(message: _error, onDismiss: () => setState(() => _error = null)),
-                  Text(t('profile.goal.placeholder', language), style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: colors.textSecondary)),
-                  const SizedBox(height: 8),
+                  Text(t('profile.goal.placeholder', language), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: colors.textSecondary)),
+                  const SizedBox(height: 10),
                   TextField(
                     controller: _goal,
                     maxLines: 2,
+                    style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                       hintText: t('profile.goal.placeholder', language),
+                      hintStyle: TextStyle(color: colors.textMuted, fontSize: 14),
                       filled: true,
                       fillColor: colors.inputBackground,
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: colors.border)),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: BorderSide.none),
                     ),
                   ),
-                  const SizedBox(height: 12),
-                  Text(t('profile.date.placeholder', language), style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: colors.textSecondary)),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 14),
+                  Text(t('profile.date.placeholder', language), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: colors.textSecondary)),
+                  const SizedBox(height: 10),
                   TextField(
                     controller: _targetDate,
+                    style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w500),
                     decoration: InputDecoration(
                       hintText: 'YYYY-MM-DD',
+                      hintStyle: TextStyle(color: colors.textMuted, fontSize: 14),
                       filled: true,
                       fillColor: colors.inputBackground,
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: colors.border)),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: BorderSide.none),
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  GradientButton(
+                  const SizedBox(height: 18),
+                  PremiumButton(
                     onPressed: _saving ? null : _save,
                     loading: _saving,
+                    borderRadius: 18,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
                     child: Text(_saved ? t('profile.saved', language) : t('profile.save', language)),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 24),
             for (var i = 0; i < _links.length; i++)
               Padding(
-                padding: const EdgeInsets.only(bottom: 8),
+                padding: const EdgeInsets.only(bottom: 12),
                 child: AnimatedPressable(
                   onTap: () => context.push(_links[i].location),
-                  child: Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(12), border: Border.all(color: colors.border)),
+                  child: PremiumCard(
+                    borderRadius: 18,
+                    padding: const EdgeInsets.all(16),
                     child: Row(
                       children: [
                         Container(
-                          width: 32,
-                          height: 32,
-                          decoration: BoxDecoration(color: colors.primaryLight, borderRadius: BorderRadius.circular(10)),
-                          child: DuoIcon(_links[i].icon, size: 19, color: colors.primary),
+                          width: 36,
+                          height: 36,
+                          decoration: BoxDecoration(color: colors.primaryLight, borderRadius: BorderRadius.circular(12)),
+                          child: DuoIcon(_links[i].icon, size: 20, color: colors.primary),
                         ),
-                        const SizedBox(width: 12),
-                        Expanded(child: Text(t(_links[i].labelKey, language), style: TextStyle(fontWeight: FontWeight.w600, color: colors.text))),
-                        Icon(Icons.chevron_right_rounded, color: colors.textMuted, size: 20),
+                        const SizedBox(width: 14),
+                        Expanded(child: Text(t(_links[i].labelKey, language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontSize: 15))),
+                        Icon(Icons.chevron_right_rounded, color: colors.textMuted, size: 22),
                       ],
                     ),
                   ),
                 ),
               ).animate().fadeIn(delay: (60 * i).ms, duration: 280.ms).slideX(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 12),
-            AnimatedPressable(
-              onTap: _confirmLogout,
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(color: colors.errorLight, borderRadius: BorderRadius.circular(12), border: Border.all(color: colors.error)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.logout_rounded, size: 16, color: colors.error),
-                    const SizedBox(width: 8),
-                    Text(t('auth.logout', language), style: TextStyle(color: colors.error, fontWeight: FontWeight.w700)),
-                  ],
-                ),
+            const SizedBox(height: 16),
+            PremiumButton(
+              onPressed: _confirmLogout,
+              backgroundColor: colors.error,
+              borderRadius: 18,
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.logout_rounded, size: 18, color: Colors.white),
+                  const SizedBox(width: 8),
+                  Text(t('auth.logout', language), style: const TextStyle(fontSize: 15)),
+                ],
               ),
             ),
           ],

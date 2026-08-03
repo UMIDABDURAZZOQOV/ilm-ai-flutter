@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/animated_pressable.dart';
 import '../../auth/application/auth_controller.dart' show currentUserIdProvider;
 import '../data/ielts_models.dart';
 import '../data/ielts_repository.dart';
@@ -75,70 +78,78 @@ class _IeltsHubScreenState extends ConsumerState<IeltsHubScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent, elevation: 0, iconTheme: IconThemeData(color: colors.text),
         title: Text(_tr(lang, 'IELTS tayyorgarlik', 'Подготовка к IELTS', 'IELTS Preparation'),
-            style: TextStyle(color: colors.text, fontWeight: FontWeight.w800)),
+            style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(20),
         children: [
           // Band card
-          Container(
-            padding: const EdgeInsets.all(18),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(colors: [Color(0xFF3B82F6), Color(0xFF2563EB)]),
-              borderRadius: BorderRadius.circular(20),
-            ),
+          PremiumGradientCard(
+            padding: const EdgeInsets.all(24),
+            gradientColors: [const Color(0xFF3B82F6), const Color(0xFF2563EB)],
+            borderRadius: 24,
             child: Row(children: [
               Container(
-                width: 84, height: 84,
-                decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.18), shape: BoxShape.circle, border: Border.all(color: Colors.white54, width: 3)),
+                width: 90, height: 90,
+                decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.2), shape: BoxShape.circle, border: Border.all(color: Colors.white.withValues(alpha: 0.4), width: 3)),
                 alignment: Alignment.center,
                 child: Column(mainAxisSize: MainAxisSize.min, children: [
-                  Text(band != null ? band.toStringAsFixed(1) : '—', style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900)),
-                  const Text('BAND', style: TextStyle(color: Colors.white70, fontSize: 9, fontWeight: FontWeight.w700)),
+                  Text(band != null ? band.toStringAsFixed(1) : '—', style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.w900, letterSpacing: -1)),
+                  const Text('BAND', style: TextStyle(color: Colors.white70, fontSize: 10, fontWeight: FontWeight.w700, letterSpacing: 1)),
                 ]),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 20),
               Expanded(
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text(_tr(lang, 'Umumiy band', 'Общий балл', 'Overall band'), style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w800)),
-                  const SizedBox(height: 4),
+                  Text(_tr(lang, 'Umumiy band', 'Общий балл', 'Overall band'), style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
+                  const SizedBox(height: 6),
                   Text('${_tr(lang, 'Sinov testlari', 'Пробные тесты', 'Mock tests')}: ${_mocks?.length ?? 0}',
-                      style: const TextStyle(color: Colors.white70, fontSize: 12)),
+                      style: const TextStyle(color: Colors.white70, fontSize: 13, fontWeight: FontWeight.w500)),
                 ]),
               ),
             ]),
-          ),
-          const SizedBox(height: 18),
+          ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+          const SizedBox(height: 24),
           Text(_tr(lang, 'To\'rt ko\'nikma', 'Четыре навыка', 'The four skills'),
-              style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w800)),
-          const SizedBox(height: 10),
-          ...skills.map((s) => Padding(
-                padding: const EdgeInsets.only(bottom: 10),
-                child: InkWell(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => s.screen())),
-                  borderRadius: BorderRadius.circular(18),
-                  child: Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(18), border: Border.all(color: colors.border)),
-                    child: Row(children: [
-                      Container(
-                        width: 48, height: 48,
-                        decoration: BoxDecoration(color: s.c.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(14)),
-                        child: Icon(s.icon, color: s.c, size: 24),
+              style: TextStyle(color: colors.text, fontSize: 18, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
+          const SizedBox(height: 16),
+          ...skills.asMap().entries.map((entry) {
+            final index = entry.key;
+            final s = entry.value;
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 14),
+              child: AnimatedPressable(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => s.screen())),
+                child: PremiumCard(
+                  padding: const EdgeInsets.all(18),
+                  borderRadius: 20,
+                  child: Row(children: [
+                    Container(
+                      width: 52, height: 52,
+                      decoration: BoxDecoration(color: s.c.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(16)),
+                      child: Icon(s.icon, color: s.c, size: 26),
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Text(s.title, style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
+                        const SizedBox(height: 4),
+                        Text(s.desc, style: TextStyle(color: colors.textSecondary, fontSize: 13, fontWeight: FontWeight.w500)),
+                      ]),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: colors.border.withValues(alpha: 0.5),
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                          Text(s.title, style: TextStyle(color: colors.text, fontSize: 15, fontWeight: FontWeight.w800)),
-                          const SizedBox(height: 2),
-                          Text(s.desc, style: TextStyle(color: colors.textSecondary, fontSize: 12)),
-                        ]),
-                      ),
-                      Icon(Icons.chevron_right_rounded, color: colors.textSecondary),
-                    ]),
-                  ),
+                      child: Icon(Icons.chevron_right_rounded, color: colors.textSecondary, size: 20),
+                    ),
+                  ]),
                 ),
-              )),
+              ).animate().fadeIn(delay: (100 + index * 80).ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+            );
+          }),
         ],
       ),
     );

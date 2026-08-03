@@ -39,20 +39,59 @@ class MainShell extends ConsumerWidget {
 
     return Scaffold(
       body: navigationShell,
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: navigationShell.currentIndex,
-        onDestinationSelected: (index) => navigationShell.goBranch(
-          index,
-          initialLocation: index == navigationShell.currentIndex,
-        ),
-        destinations: [
-          for (var i = 0; i < _icons.length; i++)
-            NavigationDestination(
-              icon: Icon(_icons[i], color: colors.textMuted),
-              selectedIcon: DuoIcon(_icons[i], color: colors.primary, size: 26),
-              label: labels[i],
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          color: colors.surface,
+          boxShadow: [
+            BoxShadow(
+              color: colors.text.withValues(alpha: 0.08),
+              blurRadius: 20,
+              offset: const Offset(0, -4),
             ),
-        ],
+          ],
+        ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+            child: NavigationBar(
+              selectedIndex: navigationShell.currentIndex,
+              onDestinationSelected: (index) => navigationShell.goBranch(
+                index,
+                initialLocation: index == navigationShell.currentIndex,
+              ),
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              height: 65,
+              labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+              destinations: [
+                for (var i = 0; i < _icons.length; i++)
+                  NavigationDestination(
+                    icon: AnimatedContainer(
+                      duration: const Duration(milliseconds: 200),
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: navigationShell.currentIndex == i 
+                            ? colors.primary.withValues(alpha: 0.15) 
+                            : Colors.transparent,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Icon(_icons[i], color: navigationShell.currentIndex == i ? colors.primary : colors.textMuted, size: 24),
+                    ),
+                    selectedIcon: AnimatedContainer(
+                      duration: const Duration(milliseconds: 200),
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: colors.primary.withValues(alpha: 0.15),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: DuoIcon(_icons[i], color: colors.primary, size: 24),
+                    ),
+                    label: labels[i],
+                  ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

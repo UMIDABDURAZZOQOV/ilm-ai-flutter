@@ -2,11 +2,14 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
+import '../../../core/widgets/premium_button.dart';
+import '../../../core/widgets/animated_pressable.dart';
 
 String _tr(String lang, String uz, String ru, String en) =>
     lang == 'ru' ? ru : lang == 'en' ? en : uz;
@@ -126,12 +129,12 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_rounded, color: colors.text),
+          icon: Icon(Icons.arrow_back_rounded, color: colors.text, size: 24),
           onPressed: () => context.pop(),
         ),
         title: Text(
           _tr(lang, 'Fokus rejimi', 'Фокус-режим', 'Focus mode'),
-          style: TextStyle(color: colors.text, fontWeight: FontWeight.w700),
+          style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5),
         ),
       ),
       body: SafeArea(
@@ -143,7 +146,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
               children: [
                 // Phase badge
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(
                     color: accent.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(999),
@@ -152,25 +155,25 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(_isFocus ? Icons.psychology_rounded : Icons.coffee_rounded,
-                          size: 16, color: accent),
-                      const SizedBox(width: 6),
+                          size: 18, color: accent),
+                      const SizedBox(width: 8),
                       Text(
                         _isFocus
                             ? _tr(lang, 'Fokus', 'Фокус', 'Focus')
                             : (_longBreakNow
                                 ? _tr(lang, 'Uzoq tanaffus', 'Длинный перерыв', 'Long break')
                                 : _tr(lang, 'Qisqa tanaffus', 'Короткий перерыв', 'Short break')),
-                        style: TextStyle(color: accent, fontWeight: FontWeight.w700, fontSize: 13),
+                        style: TextStyle(color: accent, fontWeight: FontWeight.w800, fontSize: 14),
                       ),
                     ],
                   ),
-                ),
-                const SizedBox(height: 20),
+                ).animate().fadeIn(duration: 300.ms),
+                const SizedBox(height: 24),
 
                 // Duration presets (only when paused)
                 if (!_running)
                   Wrap(
-                    spacing: 8,
+                    spacing: 10,
                     children: _isFocus
                         ? _focusOptions
                             .map((m) => _Chip(
@@ -195,8 +198,8 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                                 colors: colors,
                                 onTap: () => _setBreakKind(true)),
                           ],
-                  ),
-                const SizedBox(height: 24),
+                  ).animate().fadeIn(delay: 100.ms, duration: 300.ms),
+                const SizedBox(height: 28),
 
                 // Radial timer
                 AnimatedBuilder(
@@ -206,8 +209,8 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                     return Transform.scale(
                       scale: scale,
                       child: SizedBox(
-                        width: 260,
-                        height: 260,
+                        width: 280,
+                        height: 280,
                         child: CustomPaint(
                           painter: _RingPainter(
                             pct: pct,
@@ -221,17 +224,18 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                                 Text(
                                   _fmt(_left),
                                   style: TextStyle(
-                                    fontSize: 56,
-                                    fontWeight: FontWeight.w800,
+                                    fontSize: 64,
+                                    fontWeight: FontWeight.w900,
                                     color: colors.text,
                                     fontFeatures: const [FontFeature.tabularFigures()],
+                                    letterSpacing: -2,
                                   ),
                                 ),
                                 if (_rounds > 0)
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 4),
+                                    padding: const EdgeInsets.only(top: 8),
                                     child: Text('🍅 $_rounds',
-                                        style: TextStyle(color: colors.textSecondary, fontSize: 13)),
+                                        style: TextStyle(color: colors.textSecondary, fontSize: 14, fontWeight: FontWeight.w600)),
                                   ),
                               ],
                             ),
@@ -240,61 +244,71 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                       ),
                     );
                   },
-                ),
-                const SizedBox(height: 28),
+                ).animate().fadeIn(delay: 200.ms, duration: 400.ms),
+                const SizedBox(height: 32),
 
                 // Controls
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ElevatedButton.icon(
+                    PremiumButton(
                       onPressed: () => _running ? _pause() : _start(),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: colors.primary,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-                      ),
-                      icon: Icon(_running ? Icons.pause_rounded : Icons.play_arrow_rounded),
-                      label: Text(
-                        _running
-                            ? _tr(lang, 'Pauza', 'Пауза', 'Pause')
-                            : _tr(lang, 'Boshlash', 'Старт', 'Start'),
-                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      borderRadius: 22,
+                      padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 18),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(_running ? Icons.pause_rounded : Icons.play_arrow_rounded, size: 24),
+                          const SizedBox(width: 10),
+                          Text(
+                            _running
+                                ? _tr(lang, 'Pauza', 'Пауза', 'Pause')
+                                : _tr(lang, 'Boshlash', 'Старт', 'Start'),
+                            style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(width: 12),
-                    IconButton(
-                      onPressed: _reset,
-                      icon: Icon(Icons.refresh_rounded, color: colors.textSecondary),
-                      style: IconButton.styleFrom(
-                        side: BorderSide(color: colors.border),
-                        padding: const EdgeInsets.all(14),
+                    const SizedBox(width: 14),
+                    AnimatedPressable(
+                      onTap: _reset,
+                      child: Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: colors.border.withValues(alpha: 0.5),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Icon(Icons.refresh_rounded, color: colors.textSecondary, size: 22),
                       ),
                     ),
                   ],
-                ),
+                ).animate().fadeIn(delay: 300.ms, duration: 350.ms),
 
                 // Break: quick quiz from materials
                 if (!_isFocus) ...[
-                  const SizedBox(height: 20),
-                  OutlinedButton.icon(
+                  const SizedBox(height: 24),
+                  PremiumButton(
                     onPressed: () => context.push('/quiz'),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: colors.warning,
-                      side: BorderSide(color: colors.warning.withValues(alpha: 0.5)),
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                    variant: PremiumButtonVariant.outline,
+                    borderColor: colors.warning,
+                    textColor: colors.warning,
+                    borderRadius: 18,
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.quiz_rounded, size: 20),
+                        const SizedBox(width: 8),
+                        Text(
+                          _tr(lang, 'Materialdan tez viktorina', 'Быстрый тест по материалу',
+                              'Quick quiz from materials'),
+                          style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
+                        ),
+                      ],
                     ),
-                    icon: const Icon(Icons.quiz_rounded, size: 18),
-                    label: Text(
-                      _tr(lang, 'Materialdan tez viktorina', 'Быстрый тест по материалу',
-                          'Quick quiz from materials'),
-                      style: const TextStyle(fontWeight: FontWeight.w700),
-                    ),
-                  ),
+                  ).animate().fadeIn(delay: 400.ms, duration: 300.ms),
                 ],
-                const SizedBox(height: 24),
+                const SizedBox(height: 28),
                 Text(
                   _tr(
                     lang,
@@ -303,7 +317,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                     '25/50 min focus, 5/10 min break. A long break every 4 rounds.',
                   ),
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: colors.textMuted, fontSize: 12, height: 1.4),
+                  style: TextStyle(color: colors.textMuted, fontSize: 13, height: 1.5, fontWeight: FontWeight.w500),
                 ),
               ],
             ),

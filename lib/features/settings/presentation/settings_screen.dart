@@ -5,7 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/animated_pressable.dart';
+import '../../../core/widgets/premium_card.dart';
+import '../../../core/widgets/premium_button.dart';
 import '../../auth/application/auth_controller.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -19,31 +20,35 @@ class SettingsScreen extends ConsumerWidget {
     final user = ref.watch(authControllerProvider).valueOrNull;
 
     return Scaffold(
-      appBar: AppBar(title: Text(t('settings.title', language))),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text(t('settings.title', language), style: TextStyle(color: colors.text, fontWeight: FontWeight.w800, fontSize: 20, letterSpacing: -0.5)),
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: [
-            Text(t('settings.account', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.textSecondary, fontSize: 13)),
-            const SizedBox(height: 10),
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+            Text(t('settings.account', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.textSecondary, fontSize: 14)),
+            const SizedBox(height: 12),
+            PremiumCard(
+              borderRadius: 18,
+              padding: const EdgeInsets.all(18),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(t('settings.name.label', language), style: TextStyle(fontSize: 12, color: colors.textMuted)),
-                  const SizedBox(height: 2),
-                  Text(user?.name ?? '—', style: TextStyle(fontSize: 15, color: colors.text, fontWeight: FontWeight.w600)),
+                  Text(t('settings.name.label', language), style: TextStyle(fontSize: 13, color: colors.textMuted, fontWeight: FontWeight.w600)),
+                  const SizedBox(height: 4),
+                  Text(user?.name ?? '—', style: TextStyle(fontSize: 16, color: colors.text, fontWeight: FontWeight.w800)),
                 ],
               ),
             ).animate().fadeIn(duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 24),
-            Text(t('settings.appearance', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.textSecondary, fontSize: 13)),
-            const SizedBox(height: 10),
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+            const SizedBox(height: 28),
+            Text(t('settings.appearance', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.textSecondary, fontSize: 14)),
+            const SizedBox(height: 12),
+            PremiumCard(
+              borderRadius: 18,
+              padding: const EdgeInsets.all(10),
               child: Row(
                 children: [
                   for (final mode in ['light', 'dark', 'system'])
@@ -58,12 +63,12 @@ class SettingsScreen extends ConsumerWidget {
                 ],
               ),
             ).animate().fadeIn(delay: 60.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 24),
-            Text(t('settings.language.label', language), style: TextStyle(fontWeight: FontWeight.w700, color: colors.textSecondary, fontSize: 13)),
-            const SizedBox(height: 10),
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
+            const SizedBox(height: 28),
+            Text(t('settings.language.label', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.textSecondary, fontSize: 14)),
+            const SizedBox(height: 12),
+            PremiumCard(
+              borderRadius: 18,
+              padding: const EdgeInsets.all(10),
               child: Row(
                 children: [
                   for (final lang in ['uz', 'ru', 'en'])
@@ -78,9 +83,9 @@ class SettingsScreen extends ConsumerWidget {
                 ],
               ),
             ).animate().fadeIn(delay: 120.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 32),
-            AnimatedPressable(
-              onTap: () async {
+            const SizedBox(height: 36),
+            PremiumButton(
+              onPressed: () async {
                 final confirmed = await showDialog<bool>(
                   context: context,
                   builder: (context) => AlertDialog(
@@ -94,12 +99,10 @@ class SettingsScreen extends ConsumerWidget {
                 );
                 if (confirmed == true) await ref.read(authControllerProvider.notifier).logout();
               },
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(color: colors.errorLight, borderRadius: BorderRadius.circular(12), border: Border.all(color: colors.error)),
-                child: Text(t('settings.logout', language), style: TextStyle(color: colors.error, fontWeight: FontWeight.w700)),
-              ),
+              backgroundColor: colors.error,
+              borderRadius: 18,
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: Text(t('settings.logout', language), style: const TextStyle(fontSize: 15)),
             ).animate().fadeIn(delay: 180.ms, duration: 280.ms),
           ],
         ),
