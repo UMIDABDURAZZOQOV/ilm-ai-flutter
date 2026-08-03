@@ -6,10 +6,12 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../storage/secure_token_storage.dart';
 
-/// Base URL mirrors ilm-ai-mobile's EXPO_PUBLIC_API_URL build-time env var --
-/// pass `--dart-define=API_URL=http://LAN_IP:8000` when running against a
-/// physical device, same LAN setup already validated for the RN app.
-const _defaultBaseUrl = 'http://localhost:8000';
+/// Default to the production backend so any build (debug or release, with no
+/// extra flags) works on a real device out of the box. Override for local dev
+/// with `--dart-define=API_URL=http://LAN_IP:8000` (a plain `localhost` won't
+/// reach your machine from a phone/emulator — use the LAN IP, or 10.0.2.2 for
+/// the Android emulator).
+const _defaultBaseUrl = 'https://ilm-ai-backend-256x.onrender.com';
 const String apiBaseUrl = String.fromEnvironment('API_URL', defaultValue: _defaultBaseUrl);
 
 final secureStorageProvider = Provider<FlutterSecureStorage>((ref) => const FlutterSecureStorage());
