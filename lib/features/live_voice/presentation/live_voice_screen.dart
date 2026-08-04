@@ -125,11 +125,52 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
       return;
     }
 
-    try {
-      final answer = await ref.read(assistantRepositoryProvider).askVoice(userId: userId, language: language, audioPath: path);
-      if (_ended) return;
+    // Sequential playback chain: each audio segment is queued to play right
+    // after the previous one finishes, WHILE later segments are still streaming
+    // in — so the reply starts speaking the first sentence almost immediately.
+    Future<void> playChain = Future.value();
+    final List<String> onDeviceSay = [];
+    var switchedToSpeaking = false;
+
+    void toSpeaking() {
+      if (switchedToSpeaking) return;
+      switchedToSpeaking = true;
       if (mounted) setState(() => _phase = _VoicePhase.speaking);
-      await _speak(answer, language);
+    }
+
+    try {
+      final stream = ref.read(assistantRepositoryProvider).askVoiceStream(userId: userId, language: language, audioPath: path);
+      await for (final ev in stream) {
+        if (_ended) return;
+        switch (ev['type']) {
+          case 'audio':
+            final b64 = (ev['b64'] as String?) ?? '';
+            if (b64.isEmpty) break;
+            final bytes = base64Decode(b64);
+            if (bytes.length < 512) break; // empty/garbage segment
+            final dir = await getTemporaryDirectory();
+            final file = File('${dir.path}/seg_${DateTime.now().microsecondsSinceEpoch}.mp3');
+            await file.writeAsBytes(bytes);
+            toSpeaking();
+            playChain = playChain.then((_) => _playFile(file));
+            break;
+          case 'say':
+            // Backend TTS failed for this sentence — collect it to speak on-device.
+            final txt = (ev['text'] as String?) ?? '';
+            if (txt.trim().isNotEmpty) onDeviceSay.add(txt);
+            break;
+          case 'error':
+            // Whole turn failed server-side — nothing to play; loop back.
+            break;
+        }
+      }
+      // Let every queued segment finish playing before we listen again.
+      await playChain;
+      // Speak any sentences the backend couldn't synthesize, on-device.
+      if (onDeviceSay.isNotEmpty && !_ended) {
+        toSpeaking();
+        await _speakOnDevice(onDeviceSay.join(' '), language);
+      }
     } catch (_) {
       // transient turn failure -- just go back to listening
     } finally {
@@ -137,31 +178,30 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
     }
   }
 
-  Future<void> _speak(String text, String language) async {
+  /// Plays a single mp3 segment to completion. Errors are swallowed so one bad
+  /// segment can't break the whole spoken reply.
+  Future<void> _playFile(File file) async {
+    if (_ended) return;
     try {
-      final base64Audio = await ref.read(assistantRepositoryProvider).speak(text: text, language: language);
-      final bytes = base64Decode(base64Audio);
-      // An empty/short blob means the backend TTS produced nothing — treat it as
-      // a failure so we still speak via the on-device engine instead of silence.
-      if (bytes.length < 1024) throw Exception('empty tts audio');
-      final dir = await getTemporaryDirectory();
-      final file = File('${dir.path}/tts_${DateTime.now().millisecondsSinceEpoch}.mp3');
-      await file.writeAsBytes(bytes);
       await _player.setFilePath(file.path);
       await _player.play();
       await _player.playerStateStream.firstWhere((s) => s.processingState == ProcessingState.completed);
     } catch (_) {
-      // Backend TTS unavailable -- fall back to on-device speech synthesis.
-      final locale = language == 'ru' ? 'ru-RU' : language == 'uz' ? 'uz-UZ' : 'en-US';
-      try {
-        await _tts.setLanguage(locale);
-      } catch (_) {
-        await _tts.setLanguage('en-US'); // device may lack the uz voice
-      }
-      await _tts.setSpeechRate(0.5);
-      await _tts.awaitSpeakCompletion(true);
-      await _tts.speak(text);
+      // skip this segment
     }
+  }
+
+  /// On-device speech synthesis fallback (used only when the backend TTS fails).
+  Future<void> _speakOnDevice(String text, String language) async {
+    final locale = language == 'ru' ? 'ru-RU' : language == 'uz' ? 'uz-UZ' : 'en-US';
+    try {
+      await _tts.setLanguage(locale);
+    } catch (_) {
+      await _tts.setLanguage('en-US'); // device may lack the uz voice
+    }
+    await _tts.setSpeechRate(0.5);
+    await _tts.awaitSpeakCompletion(true);
+    await _tts.speak(text);
   }
 
   void _endCall() {

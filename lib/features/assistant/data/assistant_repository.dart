@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -66,6 +68,48 @@ class AssistantRepository {
     });
     final res = await _dio.post('/assistant/ask-voice', data: formData);
     return (res.data as Map<String, dynamic>)['answer'] as String? ?? '';
+  }
+
+  /// Streaming voice: uploads the clip and receives the answer as it's spoken,
+  /// sentence-by-sentence, so playback can start almost immediately (ChatGPT-like)
+  /// instead of waiting for the whole answer + whole audio. Yields the backend's
+  /// newline-delimited JSON frames as decoded maps; the caller interprets `type`:
+  ///   audio -> {b64, text} play this mp3 segment
+  ///   say   -> {text}      backend TTS failed, speak this on-device
+  ///   done  -> {answer, action}
+  ///   error -> {detail}
+  Stream<Map<String, dynamic>> askVoiceStream({
+    required int userId,
+    required String language,
+    required String audioPath,
+  }) async* {
+    final formData = FormData.fromMap({
+      'user_id': userId,
+      'language': language,
+      'audio': await MultipartFile.fromFile(audioPath, filename: 'voice.m4a'),
+    });
+    final res = await _dio.post<ResponseBody>(
+      '/assistant/ask-voice-stream',
+      data: formData,
+      options: Options(
+        responseType: ResponseType.stream,
+        sendTimeout: const Duration(seconds: 60),
+        receiveTimeout: const Duration(seconds: 90),
+      ),
+    );
+    final lines = res.data!.stream
+        .cast<List<int>>()
+        .transform(utf8.decoder)
+        .transform(const LineSplitter());
+    await for (final line in lines) {
+      final t = line.trim();
+      if (t.isEmpty) continue;
+      try {
+        yield json.decode(t) as Map<String, dynamic>;
+      } catch (_) {
+        // ignore a malformed/partial line
+      }
+    }
   }
 
   /// Synthesizes speech via the backend's ElevenLabs-backed /speak endpoint.
