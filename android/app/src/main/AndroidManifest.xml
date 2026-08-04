@@ -32,10 +32,16 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            <!-- ilmai:// custom scheme, ported from ilm-ai-mobile/app.json's
-                 "scheme" field, used by flutter_web_auth_2 to capture the
-                 Google OAuth / payment-checkout redirect callback (Phase 1). -->
-            <intent-filter>
+        </activity>
+        <!-- flutter_web_auth_2 (v3+) captures the ilmai:// OAuth redirect via a
+             DEDICATED CallbackActivity. Putting the scheme on MainActivity (the
+             old v2 style) reopens a fresh app instance instead of resuming the
+             waiting auth session, which surfaces as PlatformException(CANCELED)
+             right after the user picks their Google account. -->
+        <activity
+            android:name="com.linusu.flutter_web_auth_2.CallbackActivity"
+            android:exported="true">
+            <intent-filter android:label="flutter_web_auth_2">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
