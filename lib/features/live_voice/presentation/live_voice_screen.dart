@@ -32,7 +32,7 @@ class LiveVoiceScreen extends ConsumerStatefulWidget {
 
 class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTickerProviderStateMixin {
   static const _silenceThresholdDb = -38.0; // a touch more sensitive
-  static const _silenceHoldMs = 800;        // snappier turn-end (was 1200)
+  static const _silenceHoldMs = 650;        // faster turn-end (was 800/1200)
   static const _minSpeechMs = 400;
   static const _maxSpeechMs = 14000;        // hard stop so noise can't listen forever
 
@@ -85,7 +85,7 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
     setState(() => _phase = _VoicePhase.listening);
 
     _ampSub?.cancel();
-    _ampSub = _recorder.onAmplitudeChanged(const Duration(milliseconds: 250)).listen((amp) {
+    _ampSub = _recorder.onAmplitudeChanged(const Duration(milliseconds: 150)).listen((amp) {
       final now = DateTime.now();
       if (amp.current > _silenceThresholdDb) {
         _speechStartedAt ??= now;
@@ -94,7 +94,7 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
     });
 
     _silenceCheckTimer?.cancel();
-    _silenceCheckTimer = Timer.periodic(const Duration(milliseconds: 300), (_) => _checkSilence());
+    _silenceCheckTimer = Timer.periodic(const Duration(milliseconds: 150), (_) => _checkSilence());
   }
 
   void _checkSilence() {
