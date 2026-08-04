@@ -14,7 +14,7 @@ import '../../../core/widgets/animated_pressable.dart';
 String _tr(String lang, String uz, String ru, String en) =>
     lang == 'ru' ? ru : lang == 'en' ? en : uz;
 
-const _focusOptions = [25, 50];
+const _focusOptions = [15, 25, 40, 50, 60];
 const _shortBreak = 5;
 const _longBreak = 10;
 
@@ -270,6 +270,19 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                       ),
                     ),
                     const SizedBox(width: 14),
+                    // Switch focus<->break early, without waiting for the timer.
+                    AnimatedPressable(
+                      onTap: _onPhaseEnd,
+                      child: Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: accent.withValues(alpha: 0.14),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Icon(_isFocus ? Icons.coffee_rounded : Icons.psychology_rounded, color: accent, size: 22),
+                      ),
+                    ),
+                    const SizedBox(width: 14),
                     AnimatedPressable(
                       onTap: _reset,
                       child: Container(
@@ -312,9 +325,9 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                 Text(
                   _tr(
                     lang,
-                    '25/50 daqiqa fokus, 5/10 daqiqa tanaffus. Har 4 fokusdan keyin uzoq tanaffus.',
-                    '25/50 мин фокуса, 5/10 мин перерыва. Длинный перерыв каждые 4 раунда.',
-                    '25/50 min focus, 5/10 min break. A long break every 4 rounds.',
+                    'Fokus vaqtini tanlang. Istalgan payt ☕ tugmasi bilan tanaffusga o\'ting. Har 4 fokusdan keyin uzoq tanaffus.',
+                    'Выберите время фокуса. В любой момент переключитесь на перерыв кнопкой ☕. Длинный перерыв каждые 4 раунда.',
+                    'Pick your focus time. Switch to a break anytime with the ☕ button. A long break every 4 rounds.',
                   ),
                   textAlign: TextAlign.center,
                   style: TextStyle(color: colors.textMuted, fontSize: 13, height: 1.5, fontWeight: FontWeight.w500),

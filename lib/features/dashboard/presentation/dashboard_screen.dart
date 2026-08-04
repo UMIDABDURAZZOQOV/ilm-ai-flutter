@@ -224,7 +224,18 @@ class DashboardScreen extends ConsumerWidget {
                   final card = _cards[i];
                   final tint = colors.cardTints[i % colors.cardTints.length];
                   return AnimatedPressable(
-                    onTap: () => context.push(card.location),
+                    onTap: () {
+                      // Destinations that are bottom-nav tabs must SWITCH the tab
+                      // (go/goBranch) — pushing them keeps Home highlighted while
+                      // showing e.g. Chat, which looked broken. Non-tab screens
+                      // (skills, studio, focus, profile sub-pages…) are pushed.
+                      const tabRoots = {'/home', '/chat', '/assistant', '/files', '/quiz', '/profile'};
+                      if (tabRoots.contains(card.location)) {
+                        context.go(card.location);
+                      } else {
+                        context.push(card.location);
+                      }
+                    },
                     child: Container(
                       padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(

@@ -207,29 +207,37 @@ class SkillsHubScreen extends ConsumerWidget {
     showModalBottomSheet(
       context: context,
       showDragHandle: true,
+      isScrollControlled: true, // let it grow + scroll so ALL subjects are reachable
       builder: (ctx) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.75),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(str3(lang, 'Fanni tanlang', 'Выберите предмет', 'Pick a subject'), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
-              const SizedBox(height: 12),
-              Wrap(
-                spacing: 10,
-                runSpacing: 10,
-                children: [
-                  for (final s in subjects)
-                    ActionChip(
-                      avatar: Icon(subjectIcons[s.slug] ?? Icons.book_rounded, color: skillColor(s.color), size: 18),
-                      label: Text(s.nameFor(lang), style: const TextStyle(fontWeight: FontWeight.w700)),
-                      onPressed: () {
-                        Navigator.pop(ctx);
-                        context.push(route, extra: s);
-                      },
-                    ),
-                ],
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                child: Text(str3(lang, 'Fanni tanlang', 'Выберите предмет', 'Pick a subject'), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+              ),
+              Flexible(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                  child: Wrap(
+                    spacing: 10,
+                    runSpacing: 10,
+                    children: [
+                      for (final s in subjects)
+                        ActionChip(
+                          avatar: Icon(subjectIcons[s.slug] ?? Icons.book_rounded, color: skillColor(s.color), size: 18),
+                          label: Text(s.nameFor(lang), style: const TextStyle(fontWeight: FontWeight.w700)),
+                          onPressed: () {
+                            Navigator.pop(ctx);
+                            context.push(route, extra: s);
+                          },
+                        ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),

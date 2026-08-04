@@ -1433,14 +1433,14 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': '6,000+ schools & admission stats',
   },
   'skills.dashboard.card': {
-    'uz': 'Milliy Sertifikat',
-    'ru': 'Milliy Sertifikat',
-    'en': 'Milliy Sertifikat',
+    'uz': 'Fanlar',
+    'ru': 'Предметы',
+    'en': 'Subjects',
   },
   'skills.dashboard.desc': {
-    'uz': "Ona tili va Tarixni bosqichma-bosqich o'rganing",
-    'ru': 'Изучайте родной язык и историю шаг за шагом',
-    'en': 'Learn Native Language and History step by step',
+    'uz': "Barcha fanlarni bosqichma-bosqich o'rganing",
+    'ru': 'Изучайте все предметы шаг за шагом',
+    'en': 'Learn every subject step by step',
   },
   'skills.back': {
     'uz': 'Orqaga',
