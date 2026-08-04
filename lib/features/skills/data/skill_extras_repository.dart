@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/network/dio_client.dart';
+import '../../../core/providers/app_providers.dart' show languageProvider;
 import 'skill_extras_models.dart';
 
 /// Repository for all the Milliy Sertifikat extras beyond the core lesson path:
@@ -9,11 +10,12 @@ import 'skill_extras_models.dart';
 /// referral, leaderboard, achievements, and the AI tutor.
 class SkillExtrasRepository {
   final Dio _dio;
-  const SkillExtrasRepository(this._dio);
+  final String _lang;
+  const SkillExtrasRepository(this._dio, this._lang);
 
   // ── Practice modes ────────────────────────────────────────────────────────
   Future<DailyChallenge> getDailyChallenge(int userId) async {
-    final res = await _dio.get('/skills/$userId/daily-challenge');
+    final res = await _dio.get('/skills/$userId/daily-challenge', queryParameters: {'language': _lang});
     return DailyChallenge.fromJson(res.data as Map<String, dynamic>);
   }
 
@@ -23,7 +25,7 @@ class SkillExtrasRepository {
   }
 
   Future<List<PracticeQuestion>> getMistakes(int userId) async {
-    final res = await _dio.get('/skills/$userId/mistakes');
+    final res = await _dio.get('/skills/$userId/mistakes', queryParameters: {'language': _lang});
     return ((res.data as Map)['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList();
   }
 
@@ -33,7 +35,7 @@ class SkillExtrasRepository {
   }
 
   Future<List<PracticeQuestion>> getLightning(int userId) async {
-    final res = await _dio.get('/skills/$userId/lightning');
+    final res = await _dio.get('/skills/$userId/lightning', queryParameters: {'language': _lang});
     return ((res.data as Map)['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList();
   }
 
@@ -43,7 +45,7 @@ class SkillExtrasRepository {
   }
 
   Future<List<PracticeQuestion>> getMarathon(int userId, String subjectSlug) async {
-    final res = await _dio.get('/skills/$userId/marathon', queryParameters: {'subject': subjectSlug});
+    final res = await _dio.get('/skills/$userId/marathon', queryParameters: {'subject': subjectSlug, 'language': _lang});
     return ((res.data as Map)['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList();
   }
 
@@ -59,7 +61,7 @@ class SkillExtrasRepository {
   }
 
   Future<MockStartResult> startMockExam(int userId, String subjectSlug) async {
-    final res = await _dio.post('/skills/mock-exam/start', data: {'user_id': userId, 'subject': subjectSlug});
+    final res = await _dio.post('/skills/mock-exam/start', data: {'user_id': userId, 'subject': subjectSlug, 'language': _lang});
     return MockStartResult.fromJson(res.data as Map<String, dynamic>);
   }
 
@@ -172,4 +174,4 @@ class SkillExtrasRepository {
 }
 
 final skillExtrasRepositoryProvider =
-    Provider<SkillExtrasRepository>((ref) => SkillExtrasRepository(ref.watch(dioProvider)));
+    Provider<SkillExtrasRepository>((ref) => SkillExtrasRepository(ref.watch(dioProvider), ref.watch(languageProvider)));
