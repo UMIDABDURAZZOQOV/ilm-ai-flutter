@@ -148,7 +148,7 @@ class _QuizSessionScreenState extends ConsumerState<QuizSessionScreen> {
                           backgroundColor: colors.primaryLight,
                           borderRadius: 18,
                           padding: const EdgeInsets.all(18),
-                          child: Text(_current.explanation, style: TextStyle(color: colors.text, fontSize: 15, height: 1.5, fontWeight: FontWeight.w500)),
+                          child: Text(cleanMath(_current.explanation), style: TextStyle(color: colors.text, fontSize: 15, height: 1.5, fontWeight: FontWeight.w500)),
                         ).animate().fadeIn(delay: 200.ms, duration: 300.ms),
                     ],
                   ),
@@ -219,7 +219,7 @@ class _OptionTile extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Expanded(child: Text(option, style: TextStyle(color: text, fontWeight: FontWeight.w700, fontSize: 15))),
+            Expanded(child: Text(cleanMath(option), style: TextStyle(color: text, fontWeight: FontWeight.w700, fontSize: 15))),
             if (icon != null) Icon(icon, color: iconColor, size: 22),
           ],
         ),

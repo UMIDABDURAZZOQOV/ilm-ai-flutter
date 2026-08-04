@@ -335,7 +335,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           if (q.explanation != null && q.explanation!.isNotEmpty)
                             Padding(
                               padding: const EdgeInsets.only(top: 4),
-                              child: Text(q.explanation!, style: TextStyle(fontSize: 13, color: colors.textMuted)),
+                              child: Text(cleanMath(q.explanation!), style: TextStyle(fontSize: 13, color: colors.textMuted)),
                             ),
                           AiExplainButton(question: q.questionText, correctAnswer: q.correctAnswer, userAnswer: _selected),
                         ],
@@ -412,7 +412,7 @@ class _OptionTile extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
         decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(14), border: Border.all(color: border, width: 2)),
-        child: Text(option, style: TextStyle(color: text, fontWeight: FontWeight.w600)),
+        child: Text(cleanMath(option), style: TextStyle(color: text, fontWeight: FontWeight.w600)),
       ),
     );
   }

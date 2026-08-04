@@ -51,7 +51,9 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
     final prompt = 'You are a friendly tutor. Explain this question simply and clearly '
         'in $langName. Say why the correct answer is right'
         '${widget.userAnswer != null && widget.userAnswer!.isNotEmpty ? " and, if the student's answer was wrong, why it's wrong" : ''}. '
-        'Keep it short (3-5 sentences), no markdown.\n\n'
+        'Keep it short (3-5 sentences). Write ALL math in plain readable text '
+        '(e.g. x^2, 12/5, sqrt(2)) — do NOT use LaTeX (\$…\$, \\frac) or markdown '
+        '(no *, **, #).\n\n'
         'QUESTION: ${widget.question}\n'
         'CORRECT ANSWER: ${widget.correctAnswer}'
         '${widget.userAnswer != null && widget.userAnswer!.isNotEmpty ? "\nSTUDENT'S ANSWER: ${widget.userAnswer}" : ''}';
@@ -111,7 +113,7 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
                       Text(_tr(lang, 'AI o\'ylayapti...', 'AI думает...', 'AI is thinking...'), style: TextStyle(color: colors.textSecondary)),
                     ])
                   else
-                    Text(_text!, style: TextStyle(color: colors.text, fontSize: 15, height: 1.55)),
+                    Text(cleanMath(_text!), style: TextStyle(color: colors.text, fontSize: 15, height: 1.55)),
                 ]),
               ),
             ),
