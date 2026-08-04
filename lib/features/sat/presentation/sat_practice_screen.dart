@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
+import '../../../core/widgets/ai_explain_sheet.dart';
 import '../../auth/application/auth_controller.dart' show currentUserIdProvider;
 import '../data/sat_models.dart';
 import '../data/sat_repository.dart';
@@ -163,6 +164,10 @@ class _SatPracticeScreenState extends ConsumerState<SatPracticeScreen> {
                   decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(12), border: Border.all(color: colors.border)),
                   child: Text(q.rubric!, style: TextStyle(color: colors.textSecondary, fontSize: 13, height: 1.4)),
                 ),
+              ],
+              if (_answered) ...[
+                const SizedBox(height: 6),
+                AiExplainButton(question: q.questionText, correctAnswer: q.correctAnswer, userAnswer: q.isMcq ? _selected : _textCtrl.text.trim()),
               ],
             ],
           ),

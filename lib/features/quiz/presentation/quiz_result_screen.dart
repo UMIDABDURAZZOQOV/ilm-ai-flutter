@@ -6,6 +6,7 @@ import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/ai_explain_sheet.dart';
 import '../data/quiz_models.dart';
 
 /// Ported from ilm-ai-mobile's QuizResultScreen.tsx: a spring-physics score
@@ -141,6 +142,8 @@ class _AnimatedResultRow extends StatelessWidget {
             const SizedBox(height: 8),
             Text('${t('quiz.result.your.answer', language)}: ${result.userAnswer}', style: TextStyle(color: result.isCorrect ? colors.success : colors.error, fontSize: 13)),
             if (!result.isCorrect) Text('${t('quiz.result.correct.answer', language)}: ${result.correctAnswer}', style: TextStyle(color: colors.success, fontSize: 13)),
+            const SizedBox(height: 2),
+            AiExplainButton(question: result.question, correctAnswer: result.correctAnswer, userAnswer: result.userAnswer),
           ],
         ),
       ),

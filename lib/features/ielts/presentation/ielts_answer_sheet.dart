@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/ai_explain_sheet.dart';
 import '../data/ielts_models.dart';
 
 String _tr(String lang, String uz, String ru, String en) =>
@@ -137,6 +138,8 @@ class _IeltsAnswerSheetState extends State<IeltsAnswerSheet> {
         ],
         if (_checked && q.hint != null && q.hint!.isNotEmpty && wrong)
           Padding(padding: const EdgeInsets.only(top: 4), child: Text('💡 ${q.hint}', style: TextStyle(color: colors.textSecondary, fontSize: 12))),
+        if (_checked)
+          AiExplainButton(question: q.questionText, correctAnswer: q.correctAnswer, userAnswer: _answers[q.id] ?? _controllers[q.id]?.text),
       ]),
     );
   }
