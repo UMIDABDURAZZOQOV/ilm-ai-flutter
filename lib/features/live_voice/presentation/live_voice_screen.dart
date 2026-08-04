@@ -31,9 +31,10 @@ class LiveVoiceScreen extends ConsumerStatefulWidget {
 }
 
 class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTickerProviderStateMixin {
-  static const _silenceThresholdDb = -35.0;
-  static const _silenceHoldMs = 1200;
+  static const _silenceThresholdDb = -38.0; // a touch more sensitive
+  static const _silenceHoldMs = 800;        // snappier turn-end (was 1200)
   static const _minSpeechMs = 400;
+  static const _maxSpeechMs = 14000;        // hard stop so noise can't listen forever
 
   final _recorder = AudioRecorder();
   final _player = AudioPlayer();
@@ -103,7 +104,10 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
     if (started == null || lastLoud == null) return;
     final spokeLongEnough = DateTime.now().difference(started).inMilliseconds >= _minSpeechMs;
     final quietLongEnough = DateTime.now().difference(lastLoud).inMilliseconds >= _silenceHoldMs;
-    if (spokeLongEnough && quietLongEnough) {
+    // Hard cap so a noisy room (which keeps _lastLoudAt fresh) can't keep the
+    // mic "listening" forever — end the turn after _maxSpeechMs regardless.
+    final tooLong = DateTime.now().difference(started).inMilliseconds >= _maxSpeechMs;
+    if ((spokeLongEnough && quietLongEnough) || tooLong) {
       _finishTurn();
     }
   }
