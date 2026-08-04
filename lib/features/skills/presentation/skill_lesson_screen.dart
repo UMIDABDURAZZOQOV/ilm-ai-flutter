@@ -44,8 +44,9 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
   Future<void> _start() async {
     final userId = ref.read(currentUserIdProvider);
     if (userId == null) return;
+    final language = ref.read(languageProvider);
     try {
-      final res = await ref.read(skillTreeRepositoryProvider).startLesson(lessonId: widget.lesson.id, userId: userId);
+      final res = await ref.read(skillTreeRepositoryProvider).startLesson(lessonId: widget.lesson.id, userId: userId, language: language);
       setState(() {
         _attemptId = res.attemptId;
         _theory = res.theory;

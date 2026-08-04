@@ -23,9 +23,9 @@ class SkillTreeRepository {
     return GamificationSummary.fromJson(res.data as Map<String, dynamic>);
   }
 
-  Future<LessonStartResult> startLesson({required int lessonId, required int userId}) async {
+  Future<LessonStartResult> startLesson({required int lessonId, required int userId, String language = 'uz'}) async {
     try {
-      final res = await _dio.post('/skills/lessons/$lessonId/start', data: {'user_id': userId});
+      final res = await _dio.post('/skills/lessons/$lessonId/start', data: {'user_id': userId, 'language': language});
       return LessonStartResult.fromJson(res.data as Map<String, dynamic>);
     } on DioException catch (e) {
       final detail = e.response?.data is Map ? (e.response!.data as Map)['detail'] : null;
