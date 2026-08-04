@@ -46,7 +46,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     try {
       await signInWithGoogle(ref);
     } catch (e) {
-      if (mounted) setState(() => _error = extractError(e));
+      // Backing out of the Google sheet throws CANCELED — that's a user choice,
+      // not an error, so don't flash a red banner for it.
+      final canceled = e.toString().toLowerCase().contains('cancel');
+      if (mounted && !canceled) setState(() => _error = extractError(e));
     } finally {
       if (mounted) setState(() => _googleLoading = false);
     }
