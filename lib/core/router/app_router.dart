@@ -20,7 +20,6 @@ import '../../features/insights/presentation/insights_screen.dart';
 import '../../features/course/presentation/course_screen.dart';
 import '../../features/decks/presentation/decks_screen.dart';
 import '../../features/studio/presentation/studio_hub_screen.dart';
-import '../../features/ielts/presentation/ielts_hub_screen.dart';
 import '../../features/sat/presentation/sat_hub_screen.dart';
 import '../../features/vocab/presentation/vocab_screen.dart';
 import '../../features/files/presentation/knowledge_base_screen.dart';
@@ -164,11 +163,6 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/studio',
         pageBuilder: (context, state) => _fadeSlidePage(const StudioHubScreen(), state),
-      ),
-
-      GoRoute(
-        path: '/ielts',
-        pageBuilder: (context, state) => _fadeSlidePage(const IeltsHubScreen(), state),
       ),
 
       GoRoute(

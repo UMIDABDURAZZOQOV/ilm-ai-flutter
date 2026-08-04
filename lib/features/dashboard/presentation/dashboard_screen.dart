@@ -57,7 +57,8 @@ const _cards = [
   _DashboardCard(icon: Icons.auto_stories_rounded, titleKey: 'course.card', descKey: 'course.desc', location: '/course'),
   _DashboardCard(icon: Icons.style_rounded, titleKey: 'decks.card', descKey: 'decks.desc', location: '/decks'),
   _DashboardCard(icon: Icons.auto_awesome_rounded, titleKey: 'studio.card', descKey: 'studio.desc', location: '/studio'),
-  _DashboardCard(icon: Icons.headphones_rounded, titleKey: 'ielts.card', descKey: 'ielts.desc', location: '/ielts'),
+  // IELTS practice lives on the web only — long reading passages and scroll-
+  // through-listening are a poor fit for a phone, so it's not surfaced in the app.
   _DashboardCard(icon: Icons.school_rounded, titleKey: 'sat.card', descKey: 'sat.desc', location: '/sat'),
   _DashboardCard(icon: Icons.menu_book_rounded, titleKey: 'vocab.card', descKey: 'vocab.desc', location: '/vocab'),
   _DashboardCard(icon: Icons.school_rounded, titleKey: 'college.dashboard.card', descKey: 'college.dashboard.desc', location: '/profile/college'),
