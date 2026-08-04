@@ -90,12 +90,12 @@ class SkillsHubScreen extends ConsumerWidget {
                 _sectionLabel(str3(lang, 'Fanlar', 'Предметы', 'Subjects')),
                 const SizedBox(height: 12),
                 GridView.count(
-                  crossAxisCount: 4,
+                  crossAxisCount: 3,
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   mainAxisSpacing: 12,
                   crossAxisSpacing: 12,
-                  childAspectRatio: 0.82,
+                  childAspectRatio: 0.86,
                   children: [
                     for (final s in subjects.asMap().entries)
                       AnimatedPressable(
@@ -114,12 +114,12 @@ class SkillsHubScreen extends ConsumerWidget {
                               ),
                               const SizedBox(height: 8),
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 4),
+                                padding: const EdgeInsets.symmetric(horizontal: 2),
                                 child: Text(s.value.nameFor(lang),
                                     textAlign: TextAlign.center,
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 11, color: colors.text)),
+                                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 12.5, height: 1.1, color: colors.text)),
                               ),
                             ],
                           ),

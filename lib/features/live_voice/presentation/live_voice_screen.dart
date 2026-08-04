@@ -137,6 +137,9 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
     try {
       final base64Audio = await ref.read(assistantRepositoryProvider).speak(text: text, language: language);
       final bytes = base64Decode(base64Audio);
+      // An empty/short blob means the backend TTS produced nothing — treat it as
+      // a failure so we still speak via the on-device engine instead of silence.
+      if (bytes.length < 1024) throw Exception('empty tts audio');
       final dir = await getTemporaryDirectory();
       final file = File('${dir.path}/tts_${DateTime.now().millisecondsSinceEpoch}.mp3');
       await file.writeAsBytes(bytes);
@@ -145,11 +148,15 @@ class _LiveVoiceScreenState extends ConsumerState<LiveVoiceScreen> with SingleTi
       await _player.playerStateStream.firstWhere((s) => s.processingState == ProcessingState.completed);
     } catch (_) {
       // Backend TTS unavailable -- fall back to on-device speech synthesis.
-      await _tts.setLanguage(language == 'ru' ? 'ru-RU' : 'en-US');
-      final completer = Completer<void>();
-      _tts.setCompletionHandler(() => completer.complete());
+      final locale = language == 'ru' ? 'ru-RU' : language == 'uz' ? 'uz-UZ' : 'en-US';
+      try {
+        await _tts.setLanguage(locale);
+      } catch (_) {
+        await _tts.setLanguage('en-US'); // device may lack the uz voice
+      }
+      await _tts.setSpeechRate(0.5);
+      await _tts.awaitSpeakCompletion(true);
       await _tts.speak(text);
-      await completer.future.timeout(const Duration(seconds: 30), onTimeout: () {});
     }
   }
 

@@ -89,7 +89,10 @@ class _QuizResultScreenState extends ConsumerState<QuizResultScreen> with Single
             for (var i = 0; i < widget.results.length; i++) _AnimatedResultRow(index: i, controller: _controller, result: widget.results[i], colors: colors, language: language),
             const SizedBox(height: 8),
             GradientButton(
-              onPressed: () => context.go('/quiz'),
+              // The result was pushReplacement'd over the quiz home, so a plain
+              // pop returns there cleanly. `go('/quiz')` left the pushed page in
+              // the branch stack, which reappeared as the "old question" loop.
+              onPressed: () => context.canPop() ? context.pop() : context.go('/quiz'),
               child: Text(t('common.back', language)),
             ),
           ],

@@ -71,57 +71,72 @@ class SkillPathScreen extends ConsumerWidget {
             final height = 60 + flat.length * _nodeSpacing + 100;
             final firstUnlockedIndex = flat.indexWhere((f) => f.lesson.status == LessonStatus.unlocked);
 
-            return SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              child: Column(
-                children: [
-                  const Mascot(mood: MascotMood.idle, size: 64),
-                  const SizedBox(height: 16),
-                  SizedBox(
-                    width: _amplitude * 2 + 80,
-                    height: height,
-                    child: Stack(
-                      children: [
-                        Positioned.fill(
-                          child: CustomPaint(painter: _PathPainter(points: points, color: subjectColor)),
-                        ),
-                        for (var i = 0; i < flat.length; i++) ...[
-                          if (flat[i].unitStart)
-                            Positioned(
-                              left: 0,
-                              right: 0,
-                              top: points[i].dy - 40,
-                              child: Center(
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
-                                  decoration: BoxDecoration(color: subjectColor, borderRadius: BorderRadius.circular(20)),
-                                  child: Text(
-                                    flat[i].unitTitle.toUpperCase(),
-                                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w800, fontSize: 11),
+            return LayoutBuilder(
+              builder: (context, constraints) {
+                // Spread the winding path across the whole screen width and centre
+                // it, so nodes never drift off the left edge (they used to live in
+                // a fixed ~208px box).
+                final width = constraints.maxWidth;
+                final centerX = width / 2;
+                return SingleChildScrollView(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  child: Column(
+                    children: [
+                      const Mascot(mood: MascotMood.idle, size: 64),
+                      const SizedBox(height: 16),
+                      SizedBox(
+                        width: width,
+                        height: height,
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Positioned.fill(
+                              child: CustomPaint(painter: _PathPainter(points: points, color: subjectColor)),
+                            ),
+                            for (var i = 0; i < flat.length; i++) ...[
+                              if (flat[i].unitStart)
+                                Positioned(
+                                  left: 16,
+                                  right: 16,
+                                  // Sit clearly above the 64px node (which spans
+                                  // dy-32 .. dy+32) instead of overlapping it.
+                                  top: points[i].dy - 66,
+                                  child: Center(
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                                      decoration: BoxDecoration(color: subjectColor, borderRadius: BorderRadius.circular(20)),
+                                      child: Text(
+                                        flat[i].unitTitle.toUpperCase(),
+                                        textAlign: TextAlign.center,
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w800, fontSize: 11, letterSpacing: 0.3),
+                                      ),
+                                    ),
                                   ),
                                 ),
+                              Positioned(
+                                left: centerX + points[i].dx - 32,
+                                top: points[i].dy - 32,
+                                child: _LessonNodeWidget(
+                                  lesson: flat[i].lesson,
+                                  title: flat[i].lesson.titleFor(language),
+                                  color: subjectColor,
+                                  isCurrent: i == firstUnlockedIndex,
+                                  onTap: () {
+                                    if (flat[i].lesson.status == LessonStatus.locked) return;
+                                    context.push('/skills/lesson', extra: flat[i].lesson).then((_) => ref.invalidate(_treeProvider(subject.slug)));
+                                  },
+                                ),
                               ),
-                            ),
-                          Positioned(
-                            left: (_amplitude * 2 + 80) / 2 + points[i].dx - 32,
-                            top: points[i].dy - 32,
-                            child: _LessonNodeWidget(
-                              lesson: flat[i].lesson,
-                              title: flat[i].lesson.titleFor(language),
-                              color: subjectColor,
-                              isCurrent: i == firstUnlockedIndex,
-                              onTap: () {
-                                if (flat[i].lesson.status == LessonStatus.locked) return;
-                                context.push('/skills/lesson', extra: flat[i].lesson).then((_) => ref.invalidate(_treeProvider(subject.slug)));
-                              },
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                );
+              },
             );
           },
         ),

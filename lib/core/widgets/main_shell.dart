@@ -62,6 +62,11 @@ class MainShell extends ConsumerWidget {
               backgroundColor: Colors.transparent,
               elevation: 0,
               height: 65,
+              // The pill behind the icon is drawn by our own AnimatedContainer,
+              // so kill NavigationBar's built-in indicator to avoid a double
+              // highlight ("ikkilik" glow) on the selected tab.
+              indicatorColor: Colors.transparent,
+              overlayColor: WidgetStateProperty.all(Colors.transparent),
               labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
               destinations: [
                 for (var i = 0; i < _icons.length; i++)
