@@ -57,6 +57,10 @@ class SettingsScreen extends ConsumerWidget {
                         label: t('settings.theme.$mode', language),
                         selected: themeMode == mode,
                         colors: colors,
+                        leading: Icon(
+                          mode == 'light' ? Icons.light_mode_rounded : mode == 'dark' ? Icons.dark_mode_rounded : Icons.brightness_auto_rounded,
+                          size: 20, color: themeMode == mode ? Colors.white : colors.text,
+                        ),
                         onTap: () => ref.read(themeModeProvider.notifier).setMode(mode),
                       ),
                     ),
@@ -77,6 +81,10 @@ class SettingsScreen extends ConsumerWidget {
                         label: t('language.$lang', language),
                         selected: language == lang,
                         colors: colors,
+                        leading: Text(
+                          lang == 'uz' ? '🇺🇿' : lang == 'ru' ? '🇷🇺' : '🇬🇧',
+                          style: const TextStyle(fontSize: 20),
+                        ),
                         onTap: () => ref.read(languageProvider.notifier).setLanguage(lang),
                       ),
                     ),
@@ -116,8 +124,9 @@ class _SegButton extends StatelessWidget {
   final bool selected;
   final ThemeColors colors;
   final VoidCallback onTap;
+  final Widget? leading;
 
-  const _SegButton({required this.label, required this.selected, required this.colors, required this.onTap});
+  const _SegButton({required this.label, required this.selected, required this.colors, required this.onTap, this.leading});
 
   @override
   Widget build(BuildContext context) {
@@ -129,10 +138,16 @@ class _SegButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 10),
         alignment: Alignment.center,
         decoration: BoxDecoration(color: selected ? colors.primary : Colors.transparent, borderRadius: BorderRadius.circular(10)),
-        child: AnimatedDefaultTextStyle(
-          duration: const Duration(milliseconds: 220),
-          style: TextStyle(color: selected ? Colors.white : colors.text, fontWeight: FontWeight.w600, fontSize: 13),
-          child: Text(label),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (leading != null) ...[leading!, const SizedBox(height: 4)],
+            AnimatedDefaultTextStyle(
+              duration: const Duration(milliseconds: 220),
+              style: TextStyle(color: selected ? Colors.white : colors.text, fontWeight: FontWeight.w600, fontSize: 12.5),
+              child: Text(label, maxLines: 1, overflow: TextOverflow.ellipsis),
+            ),
+          ],
         ),
       ),
     );

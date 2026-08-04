@@ -3,7 +3,7 @@
 
 const Map<String, Map<String, String>> kTranslations = {
   'nav.home': {
-    'uz': 'Bosh sahifa',
+    'uz': 'Asosiy',
     'ru': 'Главная',
     'en': 'Home',
   },
@@ -448,7 +448,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Language',
   },
   'nav.assistant': {
-    'uz': 'Yordamchi',
+    'uz': 'Yordam',
     'ru': 'Помощник',
     'en': 'Assistant',
   },

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/providers/app_providers.dart' show languageProvider;
+import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/ai_explain_sheet.dart';
 import '../../auth/application/auth_controller.dart' show currentUserIdProvider;
 import '../data/sat_models.dart';
@@ -138,7 +139,7 @@ class _SatPracticeScreenState extends ConsumerState<SatPracticeScreen> {
                 if (q.skill != null && q.skill!.isNotEmpty) ...[const SizedBox(width: 6), _chip(q.skill!, colors.textSecondary, colors)],
               ]),
               const SizedBox(height: 14),
-              Text(q.questionText, style: TextStyle(color: colors.text, fontSize: 16, height: 1.5, fontWeight: FontWeight.w600)),
+              Text(cleanMath(q.questionText), style: TextStyle(color: colors.text, fontSize: 16, height: 1.5, fontWeight: FontWeight.w600)),
               const SizedBox(height: 18),
               if (q.isMcq)
                 ...q.options.map((opt) => _optionTile(q, opt, colors))
@@ -154,7 +155,7 @@ class _SatPracticeScreenState extends ConsumerState<SatPracticeScreen> {
                 ),
               if (_answered && !q.isMcq) ...[
                 const SizedBox(height: 10),
-                Text('${_tr(lang, 'To\'g\'ri javob', 'Правильный ответ', 'Correct answer')}: ${q.correctAnswer}',
+                Text('${_tr(lang, 'To\'g\'ri javob', 'Правильный ответ', 'Correct answer')}: ${cleanMath(q.correctAnswer)}',
                     style: TextStyle(color: colors.success, fontWeight: FontWeight.w700)),
               ],
               if (_answered && q.rubric != null && q.rubric!.isNotEmpty) ...[
@@ -215,7 +216,7 @@ class _SatPracticeScreenState extends ConsumerState<SatPracticeScreen> {
         child: Container(
           padding: const EdgeInsets.all(14),
           decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(14), border: Border.all(color: border, width: 1.5)),
-          child: Text(opt, style: TextStyle(color: colors.text, fontSize: 14, fontWeight: FontWeight.w600)),
+          child: Text(cleanMath(opt), style: TextStyle(color: colors.text, fontSize: 14, fontWeight: FontWeight.w600)),
         ),
       ),
     );

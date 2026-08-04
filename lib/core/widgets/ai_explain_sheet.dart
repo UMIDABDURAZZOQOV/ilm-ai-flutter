@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/app_providers.dart' show languageProvider;
 import '../theme/app_theme.dart';
+import '../utils/math_text.dart';
 import '../../features/auth/application/auth_controller.dart' show currentUserIdProvider;
 import '../../features/assistant/data/assistant_repository.dart';
 
@@ -97,7 +98,7 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
                   Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(12), border: Border.all(color: colors.border)),
-                    child: Text(widget.question, style: TextStyle(color: colors.textSecondary, fontSize: 13, fontWeight: FontWeight.w600)),
+                    child: Text(cleanMath(widget.question), style: TextStyle(color: colors.textSecondary, fontSize: 13, fontWeight: FontWeight.w600)),
                   ),
                   const SizedBox(height: 16),
                   if (_error)

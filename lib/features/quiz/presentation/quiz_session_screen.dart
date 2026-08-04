@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
 import '../../../core/widgets/animated_pressable.dart';
@@ -123,7 +124,7 @@ class _QuizSessionScreenState extends ConsumerState<QuizSessionScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Text(_current.question, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: colors.text, height: 1.5, letterSpacing: -0.3)),
+                      Text(cleanMath(_current.question), style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: colors.text, height: 1.5, letterSpacing: -0.3)),
                       const SizedBox(height: 24),
                       for (final option in _current.options.asMap().entries)
                         Padding(

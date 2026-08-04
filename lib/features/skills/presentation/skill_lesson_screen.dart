@@ -5,7 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/ai_explain_sheet.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -292,7 +294,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text(q.questionText, textAlign: TextAlign.center, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: colors.text, height: 1.4)),
+                    Text(cleanMath(q.questionText), textAlign: TextAlign.center, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: colors.text, height: 1.4)),
                     const SizedBox(height: 24),
                     for (final option in q.options)
                       Padding(
@@ -335,6 +337,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                               padding: const EdgeInsets.only(top: 4),
                               child: Text(q.explanation!, style: TextStyle(fontSize: 13, color: colors.textMuted)),
                             ),
+                          AiExplainButton(question: q.questionText, correctAnswer: q.correctAnswer, userAnswer: _selected),
                         ],
                       ),
                     ),
