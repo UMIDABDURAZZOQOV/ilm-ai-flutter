@@ -53,6 +53,11 @@ class AuthRepository {
     return (res.data as Map<String, dynamic>)['message'] as String;
   }
 
+  /// Saves the name + age the user picks right after Google sign-in (both required).
+  Future<void> completeOnboarding({required int userId, required String name, required int age}) async {
+    await _dio.post('/auth/complete-onboarding', data: {'user_id': userId, 'name': name, 'age': age});
+  }
+
   Future<GoogleLoginUrlResponse> getGoogleLoginUrl(String redirectUri) async {
     final res = await _dio.get('/auth/google-login', queryParameters: {'redirect_uri': redirectUri});
     return GoogleLoginUrlResponse.fromJson(res.data as Map<String, dynamic>);

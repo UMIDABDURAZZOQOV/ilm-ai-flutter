@@ -12,7 +12,9 @@ const _callbackScheme = 'ilmai';
 /// redirect_uri sent to the backend is a real HTTPS backend endpoint
 /// (registered with Google), which the backend then bounces to the app's
 /// custom `ilmai://` scheme carrying the issued tokens as query params.
-Future<void> signInWithGoogle(WidgetRef ref) async {
+/// Returns true when the signed-in user still needs to complete the name+age
+/// onboarding (a brand-new account, or an old one that never set an age).
+Future<bool> signInWithGoogle(WidgetRef ref) async {
   final urlRes = await ref.read(authRepositoryProvider).getGoogleLoginUrl('$apiBaseUrl/auth/google-callback-mobile');
 
   final result = await FlutterWebAuth2.authenticate(
@@ -35,4 +37,6 @@ Future<void> signInWithGoogle(WidgetRef ref) async {
         name: uri.queryParameters['name'] ?? '',
         email: uri.queryParameters['email'] ?? '',
       ));
+
+  return uri.queryParameters['needs_onboarding'] == '1';
 }

@@ -8,9 +8,7 @@ import '../../features/auth/application/auth_controller.dart';
 import '../../features/onboarding/presentation/language_select_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/auth/presentation/login_screen.dart';
-import '../../features/auth/presentation/signup_screen.dart';
-import '../../features/auth/presentation/verify_email_screen.dart';
-import '../../features/auth/presentation/forgot_password_screen.dart';
+import '../../features/auth/presentation/setup_profile_screen.dart';
 import '../../features/dashboard/presentation/dashboard_screen.dart';
 import '../../features/chat/presentation/chat_screen.dart';
 import '../../features/assistant/presentation/assistant_screen.dart';
@@ -55,7 +53,7 @@ import '../../features/settings/presentation/settings_screen.dart';
 import '../widgets/main_shell.dart';
 
 const _preAuthRoutes = {'/language-select', '/onboarding'};
-const _authRoutes = {'/login', '/signup', '/verify-email', '/forgot-password'};
+const _authRoutes = {'/login'};  // Google-only; email screens removed from the UI
 
 /// Subtle fade + upward slide on every push/pop, replacing the platform
 /// default so navigation feels consistent across Android/iOS.
@@ -123,12 +121,8 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/language-select', pageBuilder: (context, state) => _fadeSlidePage(const LanguageSelectScreen(), state)),
       GoRoute(path: '/onboarding', pageBuilder: (context, state) => _fadeSlidePage(const OnboardingScreen(), state)),
       GoRoute(path: '/login', pageBuilder: (context, state) => _fadeSlidePage(const LoginScreen(), state)),
-      GoRoute(path: '/signup', pageBuilder: (context, state) => _fadeSlidePage(const SignUpScreen(), state)),
-      GoRoute(
-        path: '/verify-email',
-        pageBuilder: (context, state) => _fadeSlidePage(VerifyEmailScreen(email: state.uri.queryParameters['email'] ?? ''), state),
-      ),
-      GoRoute(path: '/forgot-password', pageBuilder: (context, state) => _fadeSlidePage(const ForgotPasswordScreen(), state)),
+      // Post-Google name+age step (shown once for users without an age set).
+      GoRoute(path: '/setup', pageBuilder: (context, state) => _fadeSlidePage(const SetupProfileScreen(), state)),
 
       // Root-level full-screen modal, outside the tab shell (matches RN's
       // LiveVoiceScreen presented as a root-stack fullScreenModal).
