@@ -13,3 +13,8 @@ key.properties
 **/*.keystore
 **/*.jks
 /build/
+
+# Release signing — never commit the keystore or its passwords
+key.properties
+*.jks
+*.keystore
