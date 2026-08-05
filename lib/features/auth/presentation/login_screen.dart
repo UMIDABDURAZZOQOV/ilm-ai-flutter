@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/i18n/app_localizations.dart';
+import '../../../core/network/dio_client.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
@@ -25,6 +26,15 @@ class LoginScreen extends ConsumerStatefulWidget {
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   bool _googleLoading = false;
   String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    // Pre-warm the backend (Render free plan spins down after idle) so the
+    // Google token exchange isn't the request that pays the ~30-60s wake-up
+    // cost — fire it now, while the user is still picking their account.
+    ref.read(dioProvider).get('/health').then((_) {}, onError: (_) {});
+  }
 
   Future<void> _handleGoogle() async {
     setState(() {
