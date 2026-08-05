@@ -9,6 +9,7 @@ import '../../features/onboarding/presentation/language_select_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/auth/presentation/login_screen.dart';
 import '../../features/auth/presentation/setup_profile_screen.dart';
+import '../../features/ielts/presentation/ielts_web_screen.dart';
 import '../../features/dashboard/presentation/dashboard_screen.dart';
 import '../../features/chat/presentation/chat_screen.dart';
 import '../../features/assistant/presentation/assistant_screen.dart';
@@ -158,6 +159,9 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/studio',
         pageBuilder: (context, state) => _fadeSlidePage(const StudioHubScreen(), state),
       ),
+
+      // IELTS: an in-app entry that hands off to the website's IELTS section.
+      GoRoute(path: '/ielts', pageBuilder: (context, state) => _fadeSlidePage(const IeltsWebScreen(), state)),
 
       GoRoute(
         path: '/sat',
