@@ -14,59 +14,166 @@ class SkillExtrasRepository {
   const SkillExtrasRepository(this._dio, this._lang);
 
   // ── Practice modes ────────────────────────────────────────────────────────
+  Future<List<PracticeQuestion>> getPlacement(
+    int userId,
+    String subject,
+  ) async {
+    final res = await _dio.get(
+      '/skills/$userId/level-test',
+      queryParameters: {'subject': subject},
+    );
+    return (res.data['questions'] as List)
+        .map((q) => PracticeQuestion.fromJson(q as Map<String, dynamic>))
+        .toList();
+  }
+
+  Future<Map<String, dynamic>> completePlacement(
+    int userId,
+    String subject,
+    List<Map<String, dynamic>> results,
+  ) async {
+    final res = await _dio.post(
+      '/skills/level-test/complete',
+      data: {'user_id': userId, 'subject_slug': subject, 'results': results},
+    );
+    return res.data as Map<String, dynamic>;
+  }
+
+  Future<List<PracticeQuestion>> getUnitExam(int userId, int unitId) async {
+    final res = await _dio.get(
+      '/skills/$userId/unit-exam',
+      queryParameters: {'unit_id': unitId},
+    );
+    return (res.data['questions'] as List)
+        .map((q) => PracticeQuestion.fromJson(q as Map<String, dynamic>))
+        .toList();
+  }
+
+  Future<Map<String, dynamic>> completeUnitExam(
+    int userId,
+    int unitId,
+    List<Map<String, dynamic>> results,
+  ) async {
+    final res = await _dio.post(
+      '/skills/unit-exam/complete',
+      data: {'user_id': userId, 'unit_id': unitId, 'results': results},
+    );
+    return res.data as Map<String, dynamic>;
+  }
+
   Future<DailyChallenge> getDailyChallenge(int userId) async {
-    final res = await _dio.get('/skills/$userId/daily-challenge', queryParameters: {'language': _lang});
+    final res = await _dio.get(
+      '/skills/$userId/daily-challenge',
+      queryParameters: {'language': _lang},
+    );
     return DailyChallenge.fromJson(res.data as Map<String, dynamic>);
   }
 
-  Future<Map<String, dynamic>> completeDailyChallenge(int userId, List<Map<String, dynamic>> results) async {
-    final res = await _dio.post('/skills/daily-challenge/complete', data: {'user_id': userId, 'results': results});
+  Future<Map<String, dynamic>> completeDailyChallenge(
+    int userId,
+    List<Map<String, dynamic>> results,
+  ) async {
+    final res = await _dio.post(
+      '/skills/daily-challenge/complete',
+      data: {'user_id': userId, 'results': results},
+    );
     return res.data as Map<String, dynamic>;
   }
 
   Future<List<PracticeQuestion>> getMistakes(int userId) async {
-    final res = await _dio.get('/skills/$userId/mistakes', queryParameters: {'language': _lang});
-    return ((res.data as Map)['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList();
+    final res = await _dio.get(
+      '/skills/$userId/mistakes',
+      queryParameters: {'language': _lang},
+    );
+    return ((res.data as Map)['questions'] as List? ?? [])
+        .map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
-  Future<Map<String, dynamic>> completeMistakes(int userId, List<Map<String, dynamic>> results) async {
-    final res = await _dio.post('/skills/mistakes/complete', data: {'user_id': userId, 'results': results});
+  Future<Map<String, dynamic>> completeMistakes(
+    int userId,
+    List<Map<String, dynamic>> results,
+  ) async {
+    final res = await _dio.post(
+      '/skills/mistakes/complete',
+      data: {'user_id': userId, 'results': results},
+    );
     return res.data as Map<String, dynamic>;
   }
 
   Future<List<PracticeQuestion>> getLightning(int userId) async {
-    final res = await _dio.get('/skills/$userId/lightning', queryParameters: {'language': _lang});
-    return ((res.data as Map)['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList();
+    final res = await _dio.get(
+      '/skills/$userId/lightning',
+      queryParameters: {'language': _lang},
+    );
+    return ((res.data as Map)['questions'] as List? ?? [])
+        .map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
-  Future<Map<String, dynamic>> completeLightning(int userId, int score, int total) async {
-    final res = await _dio.post('/skills/lightning/complete', data: {'user_id': userId, 'score': score, 'total': total});
+  Future<Map<String, dynamic>> completeLightning(
+    int userId,
+    int score,
+    int total,
+  ) async {
+    final res = await _dio.post(
+      '/skills/lightning/complete',
+      data: {'user_id': userId, 'score': score, 'total': total},
+    );
     return res.data as Map<String, dynamic>;
   }
 
-  Future<List<PracticeQuestion>> getMarathon(int userId, String subjectSlug) async {
-    final res = await _dio.get('/skills/$userId/marathon', queryParameters: {'subject': subjectSlug, 'language': _lang});
-    return ((res.data as Map)['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList();
+  Future<List<PracticeQuestion>> getMarathon(
+    int userId,
+    String subjectSlug,
+  ) async {
+    final res = await _dio.get(
+      '/skills/$userId/marathon',
+      queryParameters: {'subject': subjectSlug, 'language': _lang},
+    );
+    return ((res.data as Map)['questions'] as List? ?? [])
+        .map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
-  Future<Map<String, dynamic>> completeMarathon(int userId, int score, int total) async {
-    final res = await _dio.post('/skills/marathon/complete', data: {'user_id': userId, 'score': score, 'total': total});
+  Future<Map<String, dynamic>> completeMarathon(
+    int userId,
+    int score,
+    int total,
+  ) async {
+    final res = await _dio.post(
+      '/skills/marathon/complete',
+      data: {'user_id': userId, 'score': score, 'total': total},
+    );
     return res.data as Map<String, dynamic>;
   }
 
   // ── Mock exam ─────────────────────────────────────────────────────────────
   Future<MockOverview> getMockOverview(int userId, String subjectSlug) async {
-    final res = await _dio.get('/skills/$userId/mock-exam', queryParameters: {'subject': subjectSlug});
+    final res = await _dio.get(
+      '/skills/$userId/mock-exam',
+      queryParameters: {'subject': subjectSlug},
+    );
     return MockOverview.fromJson(res.data as Map<String, dynamic>);
   }
 
   Future<MockStartResult> startMockExam(int userId, String subjectSlug) async {
-    final res = await _dio.post('/skills/mock-exam/start', data: {'user_id': userId, 'subject': subjectSlug, 'language': _lang});
+    final res = await _dio.post(
+      '/skills/mock-exam/start',
+      data: {'user_id': userId, 'subject': subjectSlug, 'language': _lang},
+    );
     return MockStartResult.fromJson(res.data as Map<String, dynamic>);
   }
 
-  Future<MockResult> completeMockExam(int userId, int examId, List<Map<String, dynamic>> answers) async {
-    final res = await _dio.post('/skills/mock-exam/$examId/complete', data: {'user_id': userId, 'answers': answers});
+  Future<MockResult> completeMockExam(
+    int userId,
+    int examId,
+    List<Map<String, dynamic>> answers,
+  ) async {
+    final res = await _dio.post(
+      '/skills/mock-exam/$examId/complete',
+      data: {'user_id': userId, 'answers': answers},
+    );
     return MockResult.fromJson(res.data as Map<String, dynamic>);
   }
 
@@ -87,7 +194,10 @@ class SkillExtrasRepository {
   }
 
   Future<Map<String, dynamic>> applyReferral(int userId, String code) async {
-    final res = await _dio.post('/skills/referral/apply', data: {'user_id': userId, 'code': code});
+    final res = await _dio.post(
+      '/skills/referral/apply',
+      data: {'user_id': userId, 'code': code},
+    );
     return res.data as Map<String, dynamic>;
   }
 
@@ -98,7 +208,9 @@ class SkillExtrasRepository {
 
   Future<List<Achievement>> getAchievements(int userId) async {
     final res = await _dio.get('/skills/$userId/achievements');
-    return ((res.data as Map)['achievements'] as List? ?? []).map((e) => Achievement.fromJson(e as Map<String, dynamic>)).toList();
+    return ((res.data as Map)['achievements'] as List? ?? [])
+        .map((e) => Achievement.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
   // ── AI tutor ──────────────────────────────────────────────────────────────
@@ -109,13 +221,16 @@ class SkillExtrasRepository {
     String? userAnswer,
     required String lang,
   }) async {
-    final res = await _dio.post('/skills/tutor/explain', data: {
-      'question_text': questionText,
-      'options': options,
-      'correct_answer': correctAnswer,
-      'user_answer': userAnswer,
-      'lang': lang,
-    });
+    final res = await _dio.post(
+      '/skills/tutor/explain',
+      data: {
+        'question_text': questionText,
+        'options': options,
+        'correct_answer': correctAnswer,
+        'user_answer': userAnswer,
+        'lang': lang,
+      },
+    );
     return (res.data as Map)['explanation'] as String? ?? '';
   }
 
@@ -126,7 +241,10 @@ class SkillExtrasRepository {
   }
 
   Future<ClassBrief> createClass(String name, String? subjectSlug) async {
-    final res = await _dio.post('/classes', data: {'name': name, 'subject_slug': subjectSlug});
+    final res = await _dio.post(
+      '/classes',
+      data: {'name': name, 'subject_slug': subjectSlug},
+    );
     return ClassBrief.fromJson(res.data as Map<String, dynamic>);
   }
 
@@ -140,8 +258,15 @@ class SkillExtrasRepository {
     return ClassDetail.fromJson(res.data as Map<String, dynamic>);
   }
 
-  Future<void> createAssignment(int classId, String title, String? subjectSlug) async {
-    await _dio.post('/classes/$classId/assign', data: {'title': title, 'subject_slug': subjectSlug});
+  Future<void> createAssignment(
+    int classId,
+    String title,
+    String? subjectSlug,
+  ) async {
+    await _dio.post(
+      '/classes/$classId/assign',
+      data: {'title': title, 'subject_slug': subjectSlug},
+    );
   }
 
   Future<void> deleteAssignment(int classId, int assignmentId) async {
@@ -165,13 +290,31 @@ class SkillExtrasRepository {
 
   Future<List<ChildDetail>> getChildren() async {
     final res = await _dio.get('/parent/children');
-    return ((res.data as Map)['children'] as List? ?? []).map((e) => ChildDetail.fromJson(e as Map<String, dynamic>)).toList();
+    return ((res.data as Map)['children'] as List? ?? [])
+        .map((e) => ChildDetail.fromJson(e as Map<String, dynamic>))
+        .toList();
   }
 
   Future<void> unlinkChild(int childId) async {
     await _dio.post('/parent/unlink', data: {'child_id': childId});
   }
+
+  // ── Flashcards ────────────────────────────────────────────────────────────
+  Future<SkillFlashcardsResponse> getFlashcards(
+    int userId,
+    String subjectSlug,
+  ) async {
+    final res = await _dio.get(
+      '/skills/$userId/flashcards',
+      queryParameters: {'subject': subjectSlug},
+    );
+    return SkillFlashcardsResponse.fromJson(res.data as Map<String, dynamic>);
+  }
 }
 
-final skillExtrasRepositoryProvider =
-    Provider<SkillExtrasRepository>((ref) => SkillExtrasRepository(ref.watch(dioProvider), ref.watch(languageProvider)));
+final skillExtrasRepositoryProvider = Provider<SkillExtrasRepository>(
+  (ref) => SkillExtrasRepository(
+    ref.watch(dioProvider),
+    ref.watch(languageProvider),
+  ),
+);

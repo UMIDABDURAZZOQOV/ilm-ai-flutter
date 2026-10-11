@@ -12,7 +12,7 @@ class IlmAiApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
-    final colors = ref.watch(resolvedColorsProvider);
+    final colors = learningPalette(ref.watch(resolvedColorsProvider));
 
     // Keep the system bars blended with the current theme even on screens with
     // no AppBar (splash, login, onboarding, dashboard). Re-applied whenever the

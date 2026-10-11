@@ -619,3 +619,109 @@ class FamilyCodeInfo {
         linkedParentNames: (json['linked_parents'] as List? ?? []).map((e) => (e as Map)['name'].toString()).toList(),
       );
 }
+
+class SkillFlashcard {
+  final String front;
+  final String back;
+  final String? lesson;
+
+  SkillFlashcard({
+    required this.front,
+    required this.back,
+    this.lesson,
+  });
+
+  factory SkillFlashcard.fromJson(Map<String, dynamic> json) => SkillFlashcard(
+        front: json['front'] as String? ?? '',
+        back: json['back'] as String? ?? '',
+        lesson: json['lesson'] as String?,
+      );
+}
+
+class SkillFlashcardsResponse {
+  final List<SkillFlashcard> cards;
+  final String subjectName;
+  final int total;
+
+  SkillFlashcardsResponse({
+    required this.cards,
+    required this.subjectName,
+    required this.total,
+  });
+
+  factory SkillFlashcardsResponse.fromJson(Map<String, dynamic> json) =>
+      SkillFlashcardsResponse(
+        cards: (json['cards'] as List? ?? [])
+            .map((c) => SkillFlashcard.fromJson(c as Map<String, dynamic>))
+            .toList(),
+        subjectName: json['subject_name'] as String? ?? '',
+        total: json['total'] as int? ?? 0,
+      );
+}
+
+class LevelBreakdownItem {
+  final String level;
+  final String label;
+  final int correct;
+  final int asked;
+  final double pct;
+  final bool mastered;
+
+  LevelBreakdownItem({
+    required this.level,
+    required this.label,
+    required this.correct,
+    required this.asked,
+    required this.pct,
+    required this.mastered,
+  });
+
+  factory LevelBreakdownItem.fromJson(Map<String, dynamic> json) =>
+      LevelBreakdownItem(
+        level: json['level'] as String? ?? '',
+        label: json['label'] as String? ?? '',
+        correct: (json['correct'] as num?)?.toInt() ?? 0,
+        asked: (json['asked'] as num?)?.toInt() ?? 0,
+        pct: (json['pct'] as num?)?.toDouble() ?? 0.0,
+        mastered: json['mastered'] as bool? ?? false,
+      );
+
+  Map<String, dynamic> toJson() => {
+        'level': level,
+        'label': label,
+        'correct': correct,
+        'asked': asked,
+        'pct': pct,
+        'mastered': mastered,
+      };
+}
+
+class PlacementResult {
+  final String level;
+  final String label;
+  final int score;
+  final int total;
+  final double scorePct;
+  final List<LevelBreakdownItem> breakdown;
+
+  PlacementResult({
+    required this.level,
+    required this.label,
+    required this.score,
+    required this.total,
+    required this.scorePct,
+    required this.breakdown,
+  });
+
+  factory PlacementResult.fromJson(Map<String, dynamic> json) =>
+      PlacementResult(
+        level: json['level'] as String? ?? '',
+        label: json['label'] as String? ?? '',
+        score: (json['score'] as num?)?.toInt() ?? 0,
+        total: (json['total'] as num?)?.toInt() ?? 0,
+        scorePct: (json['score_pct'] as num?)?.toDouble() ?? 0.0,
+        breakdown: (json['breakdown'] as List? ?? [])
+            .map((e) => LevelBreakdownItem.fromJson(e as Map<String, dynamic>))
+            .toList(),
+      );
+}

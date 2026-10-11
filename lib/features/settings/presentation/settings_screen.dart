@@ -17,6 +17,7 @@ class SettingsScreen extends ConsumerWidget {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final language = ref.watch(languageProvider);
     final themeMode = ref.watch(themeModeProvider);
+    final soundEnabled = ref.watch(soundEffectsProvider);
     final user = ref.watch(authControllerProvider).valueOrNull;
 
     return Scaffold(
@@ -91,6 +92,63 @@ class SettingsScreen extends ConsumerWidget {
                 ],
               ),
             ).animate().fadeIn(delay: 120.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+            const SizedBox(height: 28),
+            Text(
+              language == 'uz'
+                  ? 'Ovoz'
+                  : language == 'ru'
+                      ? 'Звук'
+                      : 'Audio',
+              style: TextStyle(
+                fontWeight: FontWeight.w800,
+                color: colors.textSecondary,
+                fontSize: 14,
+              ),
+            ),
+            const SizedBox(height: 12),
+            PremiumCard(
+              borderRadius: 18,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Material(
+                color: Colors.transparent,
+                child: SwitchListTile(
+                  contentPadding: EdgeInsets.zero,
+                  secondary: Icon(
+                    soundEnabled
+                        ? Icons.volume_up_rounded
+                        : Icons.volume_off_rounded,
+                    color: soundEnabled ? colors.primary : colors.textMuted,
+                  ),
+                  title: Text(
+                    language == 'uz'
+                        ? 'Ovoz effektlari'
+                        : language == 'ru'
+                            ? 'Звуковые эффекты'
+                            : 'Sound effects',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                      color: colors.text,
+                    ),
+                  ),
+                  subtitle: Text(
+                    language == 'uz'
+                        ? 'Dars vaqtida to‘g‘ri/xato tovushlar'
+                        : language == 'ru'
+                            ? 'Звуки при ответах на вопросы'
+                            : 'Feedback sounds during lessons',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: colors.textSecondary,
+                    ),
+                  ),
+                  value: soundEnabled,
+                  activeThumbColor: colors.primary,
+                  onChanged: (val) =>
+                      ref.read(soundEffectsProvider.notifier).setEnabled(val),
+                ),
+              ),
+            ).animate().fadeIn(delay: 150.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 36),
             PremiumButton(
               onPressed: () async {

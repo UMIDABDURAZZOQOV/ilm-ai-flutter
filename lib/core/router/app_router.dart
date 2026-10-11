@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../providers/app_providers.dart';
+import '../config/product_mode.dart';
+import '../../features/skills/presentation/subject_home_screen.dart';
 import '../splash/splash_screen.dart';
 import '../../features/auth/application/auth_controller.dart';
 import '../../features/onboarding/presentation/language_select_screen.dart';
@@ -54,7 +56,9 @@ import '../../features/settings/presentation/settings_screen.dart';
 import '../widgets/main_shell.dart';
 
 const _preAuthRoutes = {'/language-select', '/onboarding'};
-const _authRoutes = {'/login'};  // Google-only; email screens removed from the UI
+const _authRoutes = {
+  '/login',
+}; // Google-only; email screens removed from the UI
 
 /// Subtle fade + upward slide on every push/pop, replacing the platform
 /// default so navigation feels consistent across Android/iOS.
@@ -65,11 +69,17 @@ CustomTransitionPage<void> _fadeSlidePage(Widget child, GoRouterState state) {
     transitionDuration: const Duration(milliseconds: 260),
     reverseTransitionDuration: const Duration(milliseconds: 200),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      final curved = CurvedAnimation(parent: animation, curve: Curves.easeOutCubic);
+      final curved = CurvedAnimation(
+        parent: animation,
+        curve: Curves.easeOutCubic,
+      );
       return FadeTransition(
         opacity: curved,
         child: SlideTransition(
-          position: Tween(begin: const Offset(0, 0.04), end: Offset.zero).animate(curved),
+          position: Tween(
+            begin: const Offset(0, 0.04),
+            end: Offset.zero,
+          ).animate(curved),
           child: child,
         ),
       );
@@ -112,18 +122,67 @@ final routerProvider = Provider<GoRouter>((ref) {
       if (!authed) {
         return _authRoutes.contains(loc) ? null : '/login';
       }
-      if (_preAuthRoutes.contains(loc) || _authRoutes.contains(loc) || loc == '/splash') {
-        return '/home';
+      if (_preAuthRoutes.contains(loc) ||
+          _authRoutes.contains(loc) ||
+          loc == '/splash') {
+        return subjectsOnly ? '/learn' : '/home';
+      }
+      if (subjectsOnly && !isSubjectRoute(loc)) return '/learn';
+      if (loc == '/skills/practice' && state.extra is Map<String, dynamic>) {
+        final extra = state.extra as Map<String, dynamic>;
+        if (extra['mode'] is! PracticeMode ||
+            (extra['mode'] == PracticeMode.checkpoint &&
+                extra['unit_id'] is! int) ||
+            (extra['mode'] == PracticeMode.placement &&
+                (extra['subject'] is! String ||
+                    (extra['subject'] as String).isEmpty))) {
+          return subjectsOnly ? '/learn' : '/skills';
+        }
+      }
+      // Object-backed lesson routes cannot be restored from a bare deep link.
+      if ((loc == '/skills/lesson' && state.extra is! SkillTreeLesson) ||
+          (loc == '/skills/practice' && state.extra is! Map<String, dynamic>) ||
+          ({'/skills/path', '/skills/marathon', '/skills/mock'}.contains(loc) &&
+              state.extra is! SkillSubject)) {
+        return subjectsOnly ? '/learn' : '/skills';
       }
       return null;
     },
     routes: [
-      GoRoute(path: '/splash', builder: (context, state) => const SplashScreen()),
-      GoRoute(path: '/language-select', pageBuilder: (context, state) => _fadeSlidePage(const LanguageSelectScreen(), state)),
-      GoRoute(path: '/onboarding', pageBuilder: (context, state) => _fadeSlidePage(const OnboardingScreen(), state)),
-      GoRoute(path: '/login', pageBuilder: (context, state) => _fadeSlidePage(const LoginScreen(), state)),
+      GoRoute(
+        path: '/learn',
+        builder: (context, state) => const SubjectHomeScreen(),
+      ),
+      GoRoute(
+        path: '/settings',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const SettingsScreen(), state),
+      ),
+      GoRoute(
+        path: '/splash',
+        builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: '/language-select',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const LanguageSelectScreen(), state),
+      ),
+      GoRoute(
+        path: '/onboarding',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const OnboardingScreen(), state),
+      ),
+      GoRoute(
+        path: '/login',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const LoginScreen(), state),
+      ),
       // Post-Google name+age step (shown once for users without an age set).
-      GoRoute(path: '/setup', pageBuilder: (context, state) => _fadeSlidePage(const SetupProfileScreen(), state)),
+      GoRoute(
+        path: '/setup',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const SetupProfileScreen(), state),
+      ),
 
       // Root-level full-screen modal, outside the tab shell (matches RN's
       // LiveVoiceScreen presented as a root-stack fullScreenModal).
@@ -137,40 +196,51 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       GoRoute(
         path: '/focus',
-        pageBuilder: (context, state) => _fadeSlidePage(const FocusScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const FocusScreen(), state),
       ),
 
       GoRoute(
         path: '/insights',
-        pageBuilder: (context, state) => _fadeSlidePage(const InsightsScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const InsightsScreen(), state),
       ),
 
       GoRoute(
         path: '/course',
-        pageBuilder: (context, state) => _fadeSlidePage(const CourseScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const CourseScreen(), state),
       ),
 
       GoRoute(
         path: '/decks',
-        pageBuilder: (context, state) => _fadeSlidePage(const DecksScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const DecksScreen(), state),
       ),
 
       GoRoute(
         path: '/studio',
-        pageBuilder: (context, state) => _fadeSlidePage(const StudioHubScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const StudioHubScreen(), state),
       ),
 
       // IELTS: an in-app entry that hands off to the website's IELTS section.
-      GoRoute(path: '/ielts', pageBuilder: (context, state) => _fadeSlidePage(const IeltsWebScreen(), state)),
+      GoRoute(
+        path: '/ielts',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const IeltsWebScreen(), state),
+      ),
 
       GoRoute(
         path: '/sat',
-        pageBuilder: (context, state) => _fadeSlidePage(const SatHubScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const SatHubScreen(), state),
       ),
 
       GoRoute(
         path: '/vocab',
-        pageBuilder: (context, state) => _fadeSlidePage(const VocabScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const VocabScreen(), state),
       ),
 
       // Milliy Sertifikat skill tree -- top-level, outside the tab shell, so
@@ -178,123 +248,240 @@ final routerProvider = Provider<GoRouter>((ref) {
       // experience with no bottom nav, matching Duolingo's lesson flow.
       GoRoute(
         path: '/skills',
-        pageBuilder: (context, state) => _fadeSlidePage(const SkillsHubScreen(), state),
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const SkillsHubScreen(), state),
         routes: [
           GoRoute(
             path: 'path',
-            pageBuilder: (context, state) => _fadeSlidePage(SkillPathScreen(subject: state.extra as SkillSubject), state),
+            pageBuilder: (context, state) => _fadeSlidePage(
+              SkillPathScreen(subject: state.extra as SkillSubject),
+              state,
+            ),
           ),
           GoRoute(
             path: 'lesson',
-            pageBuilder: (context, state) => _fadeSlidePage(SkillLessonScreen(lesson: state.extra as SkillTreeLesson), state),
+            pageBuilder: (context, state) => _fadeSlidePage(
+              SkillLessonScreen(lesson: state.extra as SkillTreeLesson),
+              state,
+            ),
           ),
           GoRoute(
             path: 'practice',
             pageBuilder: (context, state) {
               final extra = state.extra as Map<String, dynamic>;
-              return _fadeSlidePage(SkillPracticeScreen(mode: extra['mode'] as PracticeMode), state);
+              return _fadeSlidePage(
+                SkillPracticeScreen(
+                  mode: extra['mode'] as PracticeMode,
+                  subjectSlug: extra['subject'] as String?,
+                  unitId: extra['unit_id'] as int?,
+                ),
+                state,
+              );
             },
           ),
           GoRoute(
             path: 'marathon',
             pageBuilder: (context, state) {
               final s = state.extra as SkillSubject;
-              return _fadeSlidePage(SkillPracticeScreen(mode: PracticeMode.marathon, subjectSlug: s.slug, subjectName: s.nameUz), state);
+              return _fadeSlidePage(
+                SkillPracticeScreen(
+                  mode: PracticeMode.marathon,
+                  subjectSlug: s.slug,
+                  subjectName: s.nameUz,
+                ),
+                state,
+              );
             },
           ),
           GoRoute(
             path: 'mock',
-            pageBuilder: (context, state) => _fadeSlidePage(MockExamScreen(subject: state.extra as SkillSubject), state),
+            pageBuilder: (context, state) => _fadeSlidePage(
+              MockExamScreen(subject: state.extra as SkillSubject),
+              state,
+            ),
           ),
-          GoRoute(path: 'classes', pageBuilder: (context, state) => _fadeSlidePage(const ClassModeScreen(), state)),
-          GoRoute(path: 'parent', pageBuilder: (context, state) => _fadeSlidePage(const ParentDashboardScreen(), state)),
-          GoRoute(path: 'profile', pageBuilder: (context, state) => _fadeSlidePage(const SkillProfileScreen(), state)),
-          GoRoute(path: 'leaderboard', pageBuilder: (context, state) => _fadeSlidePage(const SkillLeaderboardScreen(), state)),
-          GoRoute(path: 'achievements', pageBuilder: (context, state) => _fadeSlidePage(const SkillAchievementsScreen(), state)),
-          GoRoute(path: 'referral', pageBuilder: (context, state) => _fadeSlidePage(const SkillReferralScreen(), state)),
+          GoRoute(
+            path: 'classes',
+            pageBuilder: (context, state) =>
+                _fadeSlidePage(const ClassModeScreen(), state),
+          ),
+          GoRoute(
+            path: 'parent',
+            pageBuilder: (context, state) =>
+                _fadeSlidePage(const ParentDashboardScreen(), state),
+          ),
+          GoRoute(
+            path: 'profile',
+            pageBuilder: (context, state) =>
+                _fadeSlidePage(const SkillProfileScreen(), state),
+          ),
+          GoRoute(
+            path: 'leaderboard',
+            pageBuilder: (context, state) =>
+                _fadeSlidePage(const SkillLeaderboardScreen(), state),
+          ),
+          GoRoute(
+            path: 'achievements',
+            pageBuilder: (context, state) =>
+                _fadeSlidePage(const SkillAchievementsScreen(), state),
+          ),
+          GoRoute(
+            path: 'referral',
+            pageBuilder: (context, state) =>
+                _fadeSlidePage(const SkillReferralScreen(), state),
+          ),
         ],
       ),
 
       StatefulShellRoute.indexedStack(
-        builder: (context, state, navigationShell) => MainShell(navigationShell: navigationShell),
+        builder: (context, state, navigationShell) =>
+            MainShell(navigationShell: navigationShell),
         branches: [
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/home', builder: (context, state) => const DashboardScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/chat', builder: (context, state) => const ChatScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/assistant', builder: (context, state) => const AssistantScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/files', builder: (context, state) => const KnowledgeBaseScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(
-              path: '/quiz',
-              builder: (context, state) => const QuizHomeScreen(),
-              routes: [
-                GoRoute(
-                  path: 'session',
-                  pageBuilder: (context, state) {
-                    final extra = state.extra as Map<String, dynamic>;
-                    return _fadeSlidePage(
-                      QuizSessionScreen(
-                        questions: extra['questions'] as List<QuizQuestion>,
-                        difficulty: extra['difficulty'] as String,
-                        language: extra['language'] as String,
-                        reviewItemId: extra['reviewItemId'] as int?,
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/home',
+                builder: (context, state) => const DashboardScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/chat',
+                builder: (context, state) => const ChatScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/assistant',
+                builder: (context, state) => const AssistantScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/files',
+                builder: (context, state) => const KnowledgeBaseScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/quiz',
+                builder: (context, state) => const QuizHomeScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'session',
+                    pageBuilder: (context, state) {
+                      final extra = state.extra as Map<String, dynamic>;
+                      return _fadeSlidePage(
+                        QuizSessionScreen(
+                          questions: extra['questions'] as List<QuizQuestion>,
+                          difficulty: extra['difficulty'] as String,
+                          language: extra['language'] as String,
+                          reviewItemId: extra['reviewItemId'] as int?,
+                        ),
+                        state,
+                      );
+                    },
+                  ),
+                  GoRoute(
+                    path: 'result',
+                    pageBuilder: (context, state) {
+                      final extra = state.extra as Map<String, dynamic>;
+                      return _fadeSlidePage(
+                        QuizResultScreen(
+                          score: extra['score'] as int,
+                          total: extra['total'] as int,
+                          results: extra['results'] as List<QuizResultItem>,
+                        ),
+                        state,
+                      );
+                    },
+                  ),
+                  GoRoute(
+                    path: 'stats',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const QuizStatsScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'flashcards',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const FlashcardScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'review',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const ReviewScreen(), state),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/profile',
+                builder: (context, state) => const ProfileScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'subscription',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const SubscriptionScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'learning-plan',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const LearningPlanScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'gaps',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const GapsReportScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'telegram',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const TelegramScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'feedback',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const FeedbackScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'college',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const CollegeListScreen(), state),
+                    routes: [
+                      GoRoute(
+                        path: ':id',
+                        pageBuilder: (context, state) => _fadeSlidePage(
+                          CollegeDetailScreen(id: state.pathParameters['id']!),
+                          state,
+                        ),
                       ),
-                      state,
-                    );
-                  },
-                ),
-                GoRoute(
-                  path: 'result',
-                  pageBuilder: (context, state) {
-                    final extra = state.extra as Map<String, dynamic>;
-                    return _fadeSlidePage(
-                      QuizResultScreen(
-                        score: extra['score'] as int,
-                        total: extra['total'] as int,
-                        results: extra['results'] as List<QuizResultItem>,
-                      ),
-                      state,
-                    );
-                  },
-                ),
-                GoRoute(path: 'stats', pageBuilder: (context, state) => _fadeSlidePage(const QuizStatsScreen(), state)),
-                GoRoute(path: 'flashcards', pageBuilder: (context, state) => _fadeSlidePage(const FlashcardScreen(), state)),
-                GoRoute(path: 'review', pageBuilder: (context, state) => _fadeSlidePage(const ReviewScreen(), state)),
-              ],
-            ),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(
-              path: '/profile',
-              builder: (context, state) => const ProfileScreen(),
-              routes: [
-                GoRoute(path: 'subscription', pageBuilder: (context, state) => _fadeSlidePage(const SubscriptionScreen(), state)),
-                GoRoute(path: 'learning-plan', pageBuilder: (context, state) => _fadeSlidePage(const LearningPlanScreen(), state)),
-                GoRoute(path: 'gaps', pageBuilder: (context, state) => _fadeSlidePage(const GapsReportScreen(), state)),
-                GoRoute(path: 'telegram', pageBuilder: (context, state) => _fadeSlidePage(const TelegramScreen(), state)),
-                GoRoute(path: 'feedback', pageBuilder: (context, state) => _fadeSlidePage(const FeedbackScreen(), state)),
-                GoRoute(
-                  path: 'college',
-                  pageBuilder: (context, state) => _fadeSlidePage(const CollegeListScreen(), state),
-                  routes: [
-                    GoRoute(
-                      path: ':id',
-                      pageBuilder: (context, state) => _fadeSlidePage(CollegeDetailScreen(id: state.pathParameters['id']!), state),
-                    ),
-                  ],
-                ),
-                GoRoute(path: 'math-solver', pageBuilder: (context, state) => _fadeSlidePage(const MathSolverScreen(), state)),
-                GoRoute(path: 'settings', pageBuilder: (context, state) => _fadeSlidePage(const SettingsScreen(), state)),
-              ],
-            ),
-          ]),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'math-solver',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const MathSolverScreen(), state),
+                  ),
+                  GoRoute(
+                    path: 'settings',
+                    pageBuilder: (context, state) =>
+                        _fadeSlidePage(const SettingsScreen(), state),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ],
       ),
     ],

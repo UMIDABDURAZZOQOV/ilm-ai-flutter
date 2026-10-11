@@ -68,3 +68,17 @@ class OnboardingNotifier extends Notifier<bool> {
 }
 
 final onboardingCompleteProvider = NotifierProvider<OnboardingNotifier, bool>(OnboardingNotifier.new);
+
+class SoundEffectsNotifier extends Notifier<bool> {
+  @override
+  bool build() {
+    return ref.read(prefsServiceProvider).getBool(PrefsKeys.soundEffects, defaultValue: true);
+  }
+
+  void setEnabled(bool enabled) {
+    state = enabled;
+    ref.read(prefsServiceProvider).setBool(PrefsKeys.soundEffects, enabled);
+  }
+}
+
+final soundEffectsProvider = NotifierProvider<SoundEffectsNotifier, bool>(SoundEffectsNotifier.new);

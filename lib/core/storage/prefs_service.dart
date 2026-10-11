@@ -6,6 +6,7 @@ class PrefsKeys {
   static const language = 'app_language';
   static const onboardingComplete = 'onboarding_complete';
   static const collegeSaved = 'college_saved';
+  static const soundEffects = 'sound_effects_enabled';
 }
 
 class PrefsService {
@@ -21,5 +22,7 @@ class PrefsService {
   Future<void> setString(String key, String value) => _prefs.setString(key, value);
   bool getBool(String key, {bool defaultValue = false}) => _prefs.getBool(key) ?? defaultValue;
   Future<void> setBool(String key, bool value) => _prefs.setBool(key, value);
+  int? getInt(String key) => _prefs.getInt(key);
+  Future<void> setInt(String key, int value) => _prefs.setInt(key, value);
   Future<void> remove(String key) => _prefs.remove(key);
 }

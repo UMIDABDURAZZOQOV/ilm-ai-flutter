@@ -21,14 +21,14 @@ class SkillSubject {
   });
 
   factory SkillSubject.fromJson(Map<String, dynamic> json) => SkillSubject(
-        id: json['id'] as int,
-        slug: json['slug'] as String,
-        nameUz: json['name_uz'] as String,
-        nameRu: json['name_ru'] as String,
-        nameEn: json['name_en'] as String,
-        icon: json['icon'] as String?,
-        color: json['color'] as String?,
-      );
+    id: json['id'] as int,
+    slug: json['slug'] as String,
+    nameUz: json['name_uz'] as String,
+    nameRu: json['name_ru'] as String,
+    nameEn: json['name_en'] as String,
+    icon: json['icon'] as String?,
+    color: json['color'] as String?,
+  );
 
   String nameFor(String language) {
     switch (language) {
@@ -80,14 +80,15 @@ class SkillTreeLesson {
     this.bestScorePct,
   });
 
-  factory SkillTreeLesson.fromJson(Map<String, dynamic> json) => SkillTreeLesson(
+  factory SkillTreeLesson.fromJson(Map<String, dynamic> json) =>
+      SkillTreeLesson(
         id: json['id'] as int,
         slug: json['slug'] as String,
         titleUz: json['title_uz'] as String,
         titleRu: json['title_ru'] as String,
         titleEn: json['title_en'] as String,
         orderIndex: json['order_index'] as int,
-        xpReward: json['xp_reward'] as int? ?? 10,
+        xpReward: (json['xp_reward'] as num?)?.toInt() ?? 0,
         status: _parseStatus(json['status'] as String? ?? 'locked'),
         stars: json['stars'] as int? ?? 0,
         bestScorePct: (json['best_score_pct'] as num?)?.toDouble(),
@@ -106,6 +107,7 @@ class SkillTreeLesson {
 }
 
 class SkillTreeUnit {
+  final String examStatus;
   final int id;
   final String slug;
   final String titleUz;
@@ -115,6 +117,7 @@ class SkillTreeUnit {
   final List<SkillTreeLesson> lessons;
 
   SkillTreeUnit({
+    this.examStatus = 'locked',
     required this.id,
     required this.slug,
     required this.titleUz,
@@ -125,14 +128,17 @@ class SkillTreeUnit {
   });
 
   factory SkillTreeUnit.fromJson(Map<String, dynamic> json) => SkillTreeUnit(
-        id: json['id'] as int,
-        slug: json['slug'] as String,
-        titleUz: json['title_uz'] as String,
-        titleRu: json['title_ru'] as String,
-        titleEn: json['title_en'] as String,
-        orderIndex: json['order_index'] as int,
-        lessons: (json['lessons'] as List? ?? []).map((e) => SkillTreeLesson.fromJson(e as Map<String, dynamic>)).toList(),
-      );
+    examStatus: (json['exam'] as Map?)?['status'] as String? ?? 'locked',
+    id: json['id'] as int,
+    slug: json['slug'] as String,
+    titleUz: json['title_uz'] as String,
+    titleRu: json['title_ru'] as String,
+    titleEn: json['title_en'] as String,
+    orderIndex: json['order_index'] as int,
+    lessons: (json['lessons'] as List? ?? [])
+        .map((e) => SkillTreeLesson.fromJson(e as Map<String, dynamic>))
+        .toList(),
+  );
 
   String titleFor(String language) {
     switch (language) {
@@ -159,7 +165,8 @@ class GamificationSummary {
     this.dailyGoalXp = 20,
   });
 
-  factory GamificationSummary.fromJson(Map<String, dynamic> json) => GamificationSummary(
+  factory GamificationSummary.fromJson(Map<String, dynamic> json) =>
+      GamificationSummary(
         xpTotal: json['xp_total'] as int? ?? 0,
         streakDays: json['streak_days'] as int? ?? 0,
         todayXp: json['today_xp'] as int? ?? 0,
@@ -172,12 +179,21 @@ class SkillTreeResponse {
   final List<SkillTreeUnit> units;
   final GamificationSummary user;
 
-  SkillTreeResponse({required this.subject, required this.units, required this.user});
+  SkillTreeResponse({
+    required this.subject,
+    required this.units,
+    required this.user,
+  });
 
-  factory SkillTreeResponse.fromJson(Map<String, dynamic> json) => SkillTreeResponse(
+  factory SkillTreeResponse.fromJson(Map<String, dynamic> json) =>
+      SkillTreeResponse(
         subject: SkillSubject.fromJson(json['subject'] as Map<String, dynamic>),
-        units: (json['units'] as List? ?? []).map((e) => SkillTreeUnit.fromJson(e as Map<String, dynamic>)).toList(),
-        user: GamificationSummary.fromJson(json['user'] as Map<String, dynamic>),
+        units: (json['units'] as List? ?? [])
+            .map((e) => SkillTreeUnit.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        user: GamificationSummary.fromJson(
+          json['user'] as Map<String, dynamic>,
+        ),
       );
 }
 
@@ -199,13 +215,13 @@ class SkillQuestion {
   });
 
   factory SkillQuestion.fromJson(Map<String, dynamic> json) => SkillQuestion(
-        id: json['id'] as int,
-        questionText: json['question_text'] as String,
-        options: (json['options'] as List? ?? []).map((e) => e.toString()).toList(),
-        correctAnswer: json['correct_answer'] as String,
-        explanation: json['explanation'] as String?,
-        orderIndex: json['order_index'] as int,
-      );
+    id: json['id'] as int,
+    questionText: json['question_text'] as String,
+    options: (json['options'] as List? ?? []).map((e) => e.toString()).toList(),
+    correctAnswer: json['correct_answer'] as String,
+    explanation: json['explanation'] as String?,
+    orderIndex: json['order_index'] as int,
+  );
 }
 
 /// Duolingo-style teaching card shown before the questions.
@@ -217,22 +233,31 @@ class TheoryCard {
   TheoryCard({required this.title, required this.body, this.example});
 
   factory TheoryCard.fromJson(Map<String, dynamic> json) => TheoryCard(
-        title: json['title'] as String? ?? '',
-        body: json['body'] as String? ?? '',
-        example: json['example'] as String?,
-      );
+    title: json['title'] as String? ?? '',
+    body: json['body'] as String? ?? '',
+    example: json['example'] as String?,
+  );
 }
 
 class LessonStartResult {
   final int attemptId;
   final List<TheoryCard> theory;
   final List<SkillQuestion> questions;
-  LessonStartResult({required this.attemptId, required this.theory, required this.questions});
+  LessonStartResult({
+    required this.attemptId,
+    required this.theory,
+    required this.questions,
+  });
 
-  factory LessonStartResult.fromJson(Map<String, dynamic> json) => LessonStartResult(
+  factory LessonStartResult.fromJson(Map<String, dynamic> json) =>
+      LessonStartResult(
         attemptId: json['attempt_id'] as int,
-        theory: (json['theory'] as List? ?? []).map((e) => TheoryCard.fromJson(e as Map<String, dynamic>)).toList(),
-        questions: (json['questions'] as List? ?? []).map((e) => SkillQuestion.fromJson(e as Map<String, dynamic>)).toList(),
+        theory: (json['theory'] as List? ?? [])
+            .map((e) => TheoryCard.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        questions: (json['questions'] as List? ?? [])
+            .map((e) => SkillQuestion.fromJson(e as Map<String, dynamic>))
+            .toList(),
       );
 }
 
@@ -240,13 +265,17 @@ class LessonResultItem {
   final int questionId;
   final String userAnswer;
   final bool isCorrect;
-  LessonResultItem({required this.questionId, required this.userAnswer, required this.isCorrect});
+  LessonResultItem({
+    required this.questionId,
+    required this.userAnswer,
+    required this.isCorrect,
+  });
 
   Map<String, dynamic> toJson() => {
-        'question_id': questionId,
-        'user_answer': userAnswer,
-        'is_correct': isCorrect,
-      };
+    'question_id': questionId,
+    'user_answer': userAnswer,
+    'is_correct': isCorrect,
+  };
 }
 
 class LessonCompleteResult {
@@ -268,14 +297,18 @@ class LessonCompleteResult {
     required this.newlyUnlockedLessonIds,
   });
 
-  factory LessonCompleteResult.fromJson(Map<String, dynamic> json) => LessonCompleteResult(
+  factory LessonCompleteResult.fromJson(Map<String, dynamic> json) =>
+      LessonCompleteResult(
         stars: json['stars'] as int? ?? 0,
         score: json['score'] as int? ?? 0,
         total: json['total'] as int? ?? 0,
         xpAwarded: json['xp_awarded'] as int? ?? 0,
         xpTotal: json['xp_total'] as int? ?? 0,
         streakDays: json['streak_days'] as int? ?? 0,
-        newlyUnlockedLessonIds: (json['newly_unlocked_lesson_ids'] as List? ?? []).map((e) => e as int).toList(),
+        newlyUnlockedLessonIds:
+            (json['newly_unlocked_lesson_ids'] as List? ?? [])
+                .map((e) => e as int)
+                .toList(),
       );
 }
 

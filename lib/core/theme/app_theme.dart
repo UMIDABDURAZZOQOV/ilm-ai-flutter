@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../config/product_mode.dart';
 
-/// Ported verbatim from ilm-ai-mobile/src/utils/theme.ts — 18 semantic fields
-/// per palette plus a 7-entry cardTints array. Do not invent or "improve" any
-/// value here; if the design changes, change theme.ts first and re-port.
+/// Legacy palettes remain available when subjects-only mode is disabled.
 class CardTint {
   final Color bg;
   final Color border;
@@ -57,6 +56,33 @@ class ThemeColors {
 }
 
 Color _hex(String hex) => Color(int.parse('FF${hex.substring(1)}', radix: 16));
+
+ThemeColors learningPalette(ThemeColors base) {
+  if (!subjectsOnly) return base;
+  final dark = base.statusBarStyle == Brightness.light;
+  return ThemeColors(
+    background: dark ? const Color(0xFF131F24) : Colors.white,
+    surface: dark ? const Color(0xFF131F24) : Colors.white,
+    card: dark ? const Color(0xFF202F36) : Colors.white,
+    text: dark ? const Color(0xFFF1F7FB) : const Color(0xFF3C3C3C),
+    textSecondary: base.textSecondary,
+    textMuted: base.textMuted,
+    border: dark ? const Color(0xFF37464F) : const Color(0xFFE5E5E5),
+    primary: const Color(0xFF58CC02),
+    secondary: const Color(0xFF58CC02),
+    primaryLight: dark ? const Color(0xFF243B18) : const Color(0xFFD7FFB8),
+    accent: const Color(0xFF1CB0F6),
+    error: base.error,
+    errorLight: base.errorLight,
+    success: base.success,
+    successLight: base.successLight,
+    warning: base.warning,
+    warningLight: base.warningLight,
+    inputBackground: base.inputBackground,
+    statusBarStyle: base.statusBarStyle,
+    cardTints: base.cardTints,
+  );
+}
 
 final ThemeColors lightColors = ThemeColors(
   background: _hex('#F8FAFC'),
@@ -148,13 +174,18 @@ SystemUiOverlayStyle systemOverlayStyleFor(ThemeColors c) {
     statusBarIconBrightness: light ? Brightness.dark : Brightness.light,
     statusBarBrightness: light ? Brightness.light : Brightness.dark, // iOS
     systemNavigationBarColor: c.background,
-    systemNavigationBarIconBrightness: light ? Brightness.dark : Brightness.light,
+    systemNavigationBarIconBrightness: light
+        ? Brightness.dark
+        : Brightness.light,
     systemNavigationBarDividerColor: Colors.transparent,
   );
 }
 
 ThemeData buildAppTheme(ThemeColors c) {
-  final brightness = c.statusBarStyle == Brightness.dark ? Brightness.light : Brightness.dark;
+  c = learningPalette(c);
+  final brightness = c.statusBarStyle == Brightness.dark
+      ? Brightness.light
+      : Brightness.dark;
   return ThemeData(
     useMaterial3: true,
     brightness: brightness,

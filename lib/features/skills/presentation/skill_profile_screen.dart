@@ -6,6 +6,7 @@ import '../../auth/application/auth_controller.dart';
 import '../data/skill_extras_models.dart';
 import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
+import 'streak_calendar_widget.dart';
 
 final _profileProvider = FutureProvider.autoDispose<SkillProfile?>((ref) async {
   final userId = ref.read(currentUserIdProvider);
@@ -59,6 +60,12 @@ class SkillProfileScreen extends ConsumerWidget {
                       if (p.weakest != null && p.weakest!.slug != p.strongest?.slug) Expanded(child: _sw(str3(lang, 'Eng zaif', 'Слабейший', 'Weakest'), p.weakest!.nameFor(lang), '${p.weakest!.pct}%', const Color(0xFFFF4B4B))),
                     ]),
                   ],
+                  const SizedBox(height: 18),
+                  StreakCalendarWidget(
+                    activity: p.activity,
+                    streakDays: p.streakDays,
+                    language: lang,
+                  ),
                   const SizedBox(height: 18),
                   Text(str3(lang, 'Faollik (12 hafta)', 'Активность (12 недель)', 'Activity (12 weeks)'), style: const TextStyle(fontWeight: FontWeight.w800)),
                   const SizedBox(height: 8),
