@@ -105,7 +105,7 @@ class SkillQuestsScreen extends ConsumerWidget {
                       children: [
                         const Icon(
                           Icons.ac_unit_rounded,
-                          color: Color(0xFF1CB0F6),
+                          color: Color(0xFF2DD4BF),
                         ),
                         const SizedBox(width: 8),
                         Flexible(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers/app_providers.dart';
+import '../../../core/widgets/romb_badge.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_extras_models.dart';
 import '../data/skill_extras_repository.dart';
@@ -78,12 +79,20 @@ class SkillAchievementsScreen extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              width: 44,
-              height: 44,
-              decoration: BoxDecoration(color: color.withValues(alpha: 0.16), shape: BoxShape.circle),
-              child: Icon(icon, color: color, size: 22),
-            ),
+            a.earned
+                ? RombBadge(
+                    size: 44,
+                    color: color.withValues(alpha: 0.16),
+                    borderRadius: 10,
+                    elevation: 0,
+                    child: Icon(icon, color: color, size: 22),
+                  )
+                : Container(
+                    width: 44,
+                    height: 44,
+                    decoration: BoxDecoration(color: color.withValues(alpha: 0.16), shape: BoxShape.circle),
+                    child: Icon(icon, color: color, size: 22),
+                  ),
             const SizedBox(height: 6),
             Text('${a.target}', style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
             Text(_groupLabel(lang, a.group), textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 9, color: Color(0xFF94A3B8))),

@@ -618,7 +618,7 @@ class SkillPathScreen extends ConsumerWidget {
                                 FilledButton(
                                   style: FilledButton.styleFrom(
                                     backgroundColor: Colors.white,
-                                    foregroundColor: const Color(0xFF245700),
+                                    foregroundColor: subjectColor,
                                   ),
                                   onPressed: () async {
                                     await context.push(
