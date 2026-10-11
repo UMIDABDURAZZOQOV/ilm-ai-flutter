@@ -24,6 +24,7 @@ import 'package:ilm_ai_flutter/core/widgets/celebration_confetti.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_path_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/daily_goal_bottom_sheet.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/streak_calendar_widget.dart';
+import 'package:ilm_ai_flutter/core/widgets/mascot_image.dart';
 
 final subject = SkillSubject(
   id: 1,
@@ -1166,6 +1167,44 @@ void main() {
       expect(find.text('1-daraja'), findsOneWidget);
       expect(find.text('2-daraja'), findsOneWidget);
       expect(find.text('1/1'), findsWidgets);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'MascotImage renders all 5 poses correctly with expected assets',
+    (tester) async {
+      for (final pose in MascotPose.values) {
+        await tester.pumpWidget(
+          MaterialApp(
+            home: Scaffold(
+              body: MascotImage(pose: pose, size: 80, animate: false),
+            ),
+          ),
+        );
+        expect(find.byType(MascotImage), findsOneWidget);
+        final img = tester.widget<Image>(find.byType(Image));
+        final asset = img.image as AssetImage;
+        expect(asset.assetName, pose.assetPath);
+        expect(tester.takeException(), isNull);
+      }
+    },
+  );
+
+  testWidgets(
+    'skill path displays hello pose mascot above nodes',
+    (tester) async {
+      await mount(
+        tester,
+        SkillPathScreen(subject: subject),
+        saved: {'language': 'uz'},
+      );
+      expect(
+        find.byWidgetPredicate(
+          (w) => w is MascotImage && w.pose == MascotPose.hello,
+        ),
+        findsOneWidget,
+      );
       expect(tester.takeException(), isNull);
     },
   );

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/app_providers.dart' show languageProvider;
 import '../theme/app_theme.dart';
 import '../utils/math_text.dart';
+import 'mascot_image.dart';
 import '../../features/auth/application/auth_controller.dart' show currentUserIdProvider;
 import '../../features/assistant/data/assistant_repository.dart';
 
@@ -107,13 +108,37 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
                     Text(_tr(lang, 'Tushuntirib bo\'lmadi — qayta urinib ko\'ring.', 'Не удалось объяснить.', 'Couldn\'t explain — try again.'),
                         style: TextStyle(color: colors.error))
                   else if (_text == null)
-                    Row(children: [
-                      SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2, color: colors.primary)),
-                      const SizedBox(width: 10),
-                      Text(_tr(lang, 'AI o\'ylayapti...', 'AI думает...', 'AI is thinking...'), style: TextStyle(color: colors.textSecondary)),
-                    ])
+                    Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const MascotImage(pose: MascotPose.thinking, size: 72),
+                            const SizedBox(height: 12),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2, color: colors.primary)),
+                                const SizedBox(width: 8),
+                                Text(_tr(lang, 'AI o\'ylayapti...', 'AI думает...', 'AI is thinking...'), style: TextStyle(color: colors.textSecondary, fontWeight: FontWeight.w600)),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
                   else
-                    Text(cleanMath(_text!), style: TextStyle(color: colors.text, fontSize: 15, height: 1.55)),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const MascotImage(pose: MascotPose.explaining, size: 56),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(cleanMath(_text!), style: TextStyle(color: colors.text, fontSize: 15, height: 1.55)),
+                        ),
+                      ],
+                    ),
                 ]),
               ),
             ),

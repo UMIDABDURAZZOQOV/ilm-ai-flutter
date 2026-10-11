@@ -399,12 +399,12 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Mascot(mood: MascotMood.cheer, size: 140)
-                        .animate()
-                        .scale(
-                          duration: 450.ms,
-                          curve: Curves.elasticOut,
-                        ),
+                    MascotImage(
+                      pose: (c.total > 0 && (100 * c.score / c.total) >= 80)
+                          ? MascotPose.happy
+                          : MascotPose.hello,
+                      size: 140,
+                    ),
                     const SizedBox(height: 16),
                     Text(
                       c.stars > 0
@@ -629,11 +629,11 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           child: SingleChildScrollView(
                             child: Row(
                               children: [
-                                Mascot(
-                                  mood: isCorrect
-                                      ? MascotMood.happy
-                                      : MascotMood.sad,
-                                  size: 52,
+                                MascotImage(
+                                  pose: isCorrect
+                                      ? MascotPose.happy
+                                      : MascotPose.sad,
+                                  size: 48,
                                 ),
                                 const SizedBox(width: 12),
                                 Expanded(

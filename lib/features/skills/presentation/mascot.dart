@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+export '../../../core/widgets/mascot_image.dart';
 
 /// ILM AI's own friendly owl mascot -- fills the same encouraging-companion
 /// role Duolingo's Duo plays (greets you, celebrates wins, looks sad when you
