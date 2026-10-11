@@ -315,7 +315,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
   Color get _accent {
     switch (widget.mode) {
       case PracticeMode.daily:
-        return const Color(0xFF58CC02);
+        return const Color(0xFFF9A825);
       case PracticeMode.mistakes:
         return const Color(0xFFFF4B4B);
       case PracticeMode.lightning:
@@ -323,7 +323,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
       case PracticeMode.marathon:
       case PracticeMode.checkpoint:
       case PracticeMode.placement:
-        return const Color(0xFF7048E8);
+        return const Color(0xFF2A1F6B);
     }
   }
 

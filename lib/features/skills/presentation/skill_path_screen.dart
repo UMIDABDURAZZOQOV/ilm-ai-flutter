@@ -401,8 +401,8 @@ class SkillPathScreen extends ConsumerWidget {
                   ),
                 ] else ...[
                   _ThreeDButton(
-                    color: const Color(0xFFFF9600),
-                    shadowColor: const Color(0xFFCC7800),
+                    color: const Color(0xFFF9A825),
+                    shadowColor: const Color(0xFFC77700),
                     onPressed: () => Navigator.pop(ctx, true),
                     child: Text(
                       passed
@@ -997,9 +997,9 @@ class LessonPopoverContent extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               _ThreeDButton(
-                color: completed ? const Color(0xFF1CB0F6) : color,
+                color: completed ? const Color(0xFF2DD4BF) : color,
                 shadowColor: completed
-                    ? const Color(0xFF0D8AC4)
+                    ? const Color(0xFF0F766E)
                     : _darken(color, 0.28),
                 onPressed: onStart,
                 child: Text(
@@ -1202,12 +1202,12 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
             isDark ? const Color(0xFF1C1C1E) : const Color(0xFFB0B0B0);
         iconColor = isDark ? const Color(0xFF8E8E93) : Colors.grey.shade500;
       } else if (completed) {
-        bgColor = const Color(0xFFFFC800);
-        shadowColor = const Color(0xFFD69A00);
+        bgColor = const Color(0xFF2DD4BF);
+        shadowColor = const Color(0xFF0F766E);
         iconColor = Colors.white;
       } else {
-        bgColor = const Color(0xFFFF9600);
-        shadowColor = const Color(0xFFCC7800);
+        bgColor = const Color(0xFFF9A825);
+        shadowColor = const Color(0xFFC77700);
         iconColor = Colors.white;
       }
     } else {
@@ -1230,9 +1230,55 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       }
     }
 
-    final double nodeSize = widget.isCheckpoint ? 72.0 : 64.0;
+    final double nodeSize = widget.isCheckpoint ? 66.0 : 64.0;
     final double topOffset = _pressed ? 4.0 : 0.0;
     final double bottomBevel = _pressed ? 2.0 : 6.0;
+
+    Widget nodeContent = Container(
+      width: nodeSize,
+      height: nodeSize,
+      decoration: BoxDecoration(
+        shape: widget.isCheckpoint ? BoxShape.rectangle : BoxShape.circle,
+        borderRadius:
+            widget.isCheckpoint ? BorderRadius.circular(16) : null,
+        color: bgColor,
+        boxShadow: [
+          BoxShadow(
+            color: shadowColor,
+            offset: Offset(0, bottomBevel),
+            blurRadius: 0,
+          ),
+        ],
+        border: Border.all(
+          color: isDark && locked
+              ? Colors.white12
+              : Colors.white.withValues(alpha: 0.35),
+          width: 3.5,
+        ),
+      ),
+      alignment: Alignment.center,
+      child: widget.isCheckpoint
+          ? Transform.rotate(
+              angle: -math.pi / 4,
+              child: Icon(
+                iconData,
+                color: iconColor,
+                size: 32,
+              ),
+            )
+          : Icon(
+              iconData,
+              color: iconColor,
+              size: 30,
+            ),
+    );
+
+    if (widget.isCheckpoint) {
+      nodeContent = Transform.rotate(
+        angle: math.pi / 4,
+        child: nodeContent,
+      );
+    }
 
     Widget node = GestureDetector(
       behavior: HitTestBehavior.opaque,
@@ -1245,35 +1291,7 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       },
       child: Transform.translate(
         offset: Offset(0, topOffset),
-        child: Container(
-          width: nodeSize,
-          height: nodeSize,
-          decoration: BoxDecoration(
-            shape: widget.isCheckpoint ? BoxShape.rectangle : BoxShape.circle,
-            borderRadius:
-                widget.isCheckpoint ? BorderRadius.circular(22) : null,
-            color: bgColor,
-            boxShadow: [
-              BoxShadow(
-                color: shadowColor,
-                offset: Offset(0, bottomBevel),
-                blurRadius: 0,
-              ),
-            ],
-            border: Border.all(
-              color: isDark && locked
-                  ? Colors.white12
-                  : Colors.white.withValues(alpha: 0.35),
-              width: 3.5,
-            ),
-          ),
-          alignment: Alignment.center,
-          child: Icon(
-            iconData,
-            color: iconColor,
-            size: widget.isCheckpoint ? 34 : 30,
-          ),
-        ),
+        child: nodeContent,
       ),
     );
 
@@ -1429,7 +1447,7 @@ Color _darken(Color color, [double amount = .25]) {
 }
 
 Color _parseColor(String? hex) {
-  if (hex == null || hex.isEmpty) return const Color(0xFF58CC02);
+  if (hex == null || hex.isEmpty) return const Color(0xFF2A1F6B);
   final cleaned = hex.replaceFirst('#', '');
   return Color(int.parse('FF$cleaned', radix: 16));
 }

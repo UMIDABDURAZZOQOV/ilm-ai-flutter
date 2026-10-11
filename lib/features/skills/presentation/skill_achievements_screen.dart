@@ -23,9 +23,9 @@ const _groupIcons = {
 
 const _groupColors = {
   'streak': Color(0xFFFF9600),
-  'lessons': Color(0xFF58CC02),
+  'lessons': Color(0xFF2A1F6B),
   'perfect': Color(0xFFFFC800),
-  'questions': Color(0xFF1CB0F6),
+  'questions': Color(0xFF2DD4BF),
   'xp': Color(0xFFCE82FF),
 };
 
@@ -65,7 +65,7 @@ class SkillAchievementsScreen extends ConsumerWidget {
   }
 
   Widget _badge(String lang, Achievement a) {
-    final color = _groupColors[a.group] ?? const Color(0xFF58CC02);
+    final color = _groupColors[a.group] ?? const Color(0xFF2A1F6B);
     final icon = _groupIcons[a.group] ?? Icons.emoji_events_rounded;
     return Opacity(
       opacity: a.earned ? 1 : 0.45,

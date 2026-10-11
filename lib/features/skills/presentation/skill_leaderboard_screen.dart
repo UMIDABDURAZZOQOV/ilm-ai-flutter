@@ -174,10 +174,10 @@ class SkillLeaderboardScreen extends ConsumerWidget {
       margin: const EdgeInsets.only(bottom: 6),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: e.isMe ? const Color(0xFF58CC02).withValues(alpha: 0.10) : null,
+        color: e.isMe ? const Color(0xFF2A1F6B).withValues(alpha: 0.12) : null,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
-          color: e.isMe ? const Color(0xFF58CC02) : Colors.black12,
+          color: e.isMe ? const Color(0xFF2A1F6B) : Colors.black12,
           width: e.isMe ? 2 : 1,
         ),
       ),

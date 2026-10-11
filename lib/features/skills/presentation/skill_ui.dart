@@ -13,7 +13,7 @@ String str3(String lang, String uz, String ru, String en) {
   }
 }
 
-Color skillColor(String? hex, [Color fallback = const Color(0xFF58CC02)]) {
+Color skillColor(String? hex, [Color fallback = const Color(0xFF2A1F6B)]) {
   if (hex == null || hex.isEmpty) return fallback;
   final cleaned = hex.replaceFirst('#', '');
   try {
@@ -44,14 +44,14 @@ Color gradeColor(String? grade) {
   switch (grade) {
     case 'A+':
     case 'A':
-      return const Color(0xFF58CC02);
+      return const Color(0xFF059669);
     case 'B+':
     case 'B':
-      return const Color(0xFF1CB0F6);
+      return const Color(0xFF2DD4BF);
     case 'C+':
       return const Color(0xFFFFC800);
     case 'C':
-      return const Color(0xFFFF9600);
+      return const Color(0xFFF9A825);
     case 'Sertifikatsiz':
       return const Color(0xFFFF4B4B);
     default:

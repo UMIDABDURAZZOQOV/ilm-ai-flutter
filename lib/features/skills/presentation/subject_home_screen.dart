@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/providers/app_providers.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -243,7 +244,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                   const SizedBox(height: 14),
                   _LearningTile(
                     icon: Icons.today_rounded,
-                    color: const Color(0xFF58CC02),
+                    color: Theme.of(context).extension<AppColors>()?.colors.secondary ?? const Color(0xFFF9A825),
                     title: tr('Kunlik sinov', 'Вызов дня', 'Daily challenge'),
                     onTap: () => context.push(
                       '/skills/practice',
@@ -297,7 +298,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
               _tab = index;
               _revision++;
             }),
-            indicatorColor: const Color(0xFF58CC02).withValues(alpha: 0.18),
+            indicatorColor: (Theme.of(context).extension<AppColors>()?.colors.primary ?? const Color(0xFF2A1F6B)).withValues(alpha: 0.18),
             destinations: [
               for (var i = 0; i < labels.length; i++)
                 NavigationDestination(icon: Icon(icons[i]), label: labels[i]),

@@ -21,6 +21,7 @@ class ThemeColors {
   final Color primaryLight;
   final Color secondary;
   final Color accent;
+  final Color creamWhite;
   final Color error;
   final Color errorLight;
   final Color success;
@@ -43,6 +44,7 @@ class ThemeColors {
     required this.primaryLight,
     required this.secondary,
     required this.accent,
+    this.creamWhite = const Color(0xFFFAF7F2),
     required this.error,
     required this.errorLight,
     required this.success,
@@ -57,28 +59,48 @@ class ThemeColors {
 
 Color _hex(String hex) => Color(int.parse('FF${hex.substring(1)}', radix: 16));
 
+/// Ilm AI Brand Identity Palette
+/// Asosiy: Indigo #2A1F6B
+/// Aksent: Sariq-to'q sariq #F9A825
+/// Ajratib turuvchi: Turkuaz #2DD4BF
+/// Maskot rangi: Qaymoq-oq #FAF7F2
+/// Brend shakli: Romb (Diamond)
+class BrandPalette {
+  static const Color indigo = Color(0xFF2A1F6B);
+  static const Color indigoDarkBg = Color(0xFF13102C);
+  static const Color indigoDarkSurface = Color(0xFF1C173E);
+  static const Color indigoDarkCard = Color(0xFF251F50);
+  static const Color indigoDarkBorder = Color(0xFF3C3375);
+  static const Color indigoDarkPrimary = Color(0xFF5C4BD8);
+
+  static const Color accentOrange = Color(0xFFF9A825);
+  static const Color turquoise = Color(0xFF2DD4BF);
+  static const Color creamWhite = Color(0xFFFAF7F2);
+}
+
 ThemeColors learningPalette(ThemeColors base) {
   if (!subjectsOnly) return base;
   final dark = base.statusBarStyle == Brightness.light;
   return ThemeColors(
-    background: dark ? const Color(0xFF131F24) : Colors.white,
-    surface: dark ? const Color(0xFF131F24) : Colors.white,
-    card: dark ? const Color(0xFF202F36) : Colors.white,
-    text: dark ? const Color(0xFFF1F7FB) : const Color(0xFF3C3C3C),
-    textSecondary: base.textSecondary,
-    textMuted: base.textMuted,
-    border: dark ? const Color(0xFF37464F) : const Color(0xFFE5E5E5),
-    primary: const Color(0xFF58CC02),
-    secondary: const Color(0xFF58CC02),
-    primaryLight: dark ? const Color(0xFF243B18) : const Color(0xFFD7FFB8),
-    accent: const Color(0xFF1CB0F6),
+    background: dark ? BrandPalette.indigoDarkBg : Colors.white,
+    surface: dark ? BrandPalette.indigoDarkSurface : Colors.white,
+    card: dark ? BrandPalette.indigoDarkCard : Colors.white,
+    text: dark ? const Color(0xFFF1F0FA) : const Color(0xFF1E1A34),
+    textSecondary: dark ? const Color(0xFFA69EC6) : const Color(0xFF5A537E),
+    textMuted: dark ? const Color(0xFF766E99) : const Color(0xFF8C86A8),
+    border: dark ? BrandPalette.indigoDarkBorder : const Color(0xFFE5E2F2),
+    primary: dark ? BrandPalette.indigoDarkPrimary : BrandPalette.indigo,
+    secondary: BrandPalette.accentOrange,
+    primaryLight: dark ? const Color(0xFF2E2660) : const Color(0xFFECE9F8),
+    accent: BrandPalette.turquoise,
+    creamWhite: BrandPalette.creamWhite,
     error: base.error,
     errorLight: base.errorLight,
     success: base.success,
     successLight: base.successLight,
     warning: base.warning,
     warningLight: base.warningLight,
-    inputBackground: base.inputBackground,
+    inputBackground: dark ? BrandPalette.indigoDarkSurface : const Color(0xFFF6F5FB),
     statusBarStyle: base.statusBarStyle,
     cardTints: base.cardTints,
   );
@@ -92,10 +114,10 @@ final ThemeColors lightColors = ThemeColors(
   textSecondary: _hex('#475569'),
   textMuted: _hex('#94A3B8'),
   border: _hex('#E2E8F0'),
-  primary: _hex('#4F46E5'),
-  primaryLight: _hex('#EEF2FF'),
-  secondary: _hex('#7C3AED'),
-  accent: _hex('#06B6D4'),
+  primary: _hex('#2A1F6B'),
+  primaryLight: _hex('#ECE9F8'),
+  secondary: _hex('#F9A825'),
+  accent: _hex('#2DD4BF'),
   error: _hex('#DC2626'),
   errorLight: _hex('#FEE2E2'),
   success: _hex('#059669'),
@@ -123,10 +145,10 @@ final ThemeColors darkColors = ThemeColors(
   textSecondary: _hex('#94A3B8'),
   textMuted: _hex('#64748B'),
   border: _hex('#334155'),
-  primary: _hex('#6366F1'),
-  primaryLight: _hex('#1E1B4B'),
-  secondary: _hex('#A78BFA'),
-  accent: _hex('#22D3EE'),
+  primary: _hex('#5C4BD8'),
+  primaryLight: _hex('#2E2660'),
+  secondary: _hex('#F9A825'),
+  accent: _hex('#2DD4BF'),
   error: _hex('#F87171'),
   errorLight: _hex('#450A0A'),
   success: _hex('#34D399'),

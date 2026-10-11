@@ -111,7 +111,7 @@ class _SkillReferralScreenState extends ConsumerState<SkillReferralScreen> {
                 ]),
                 const SizedBox(height: 14),
                 FilledButton.icon(
-                  style: FilledButton.styleFrom(backgroundColor: const Color(0xFF1CB0F6), padding: const EdgeInsets.symmetric(vertical: 14)),
+                  style: FilledButton.styleFrom(backgroundColor: const Color(0xFF2A1F6B), padding: const EdgeInsets.symmetric(vertical: 14)),
                   onPressed: () {
                     final text = str3(
                       lang,

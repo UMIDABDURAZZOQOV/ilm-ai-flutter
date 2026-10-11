@@ -47,12 +47,12 @@ class _CelebrationConfettiState extends State<CelebrationConfetti>
   bool _initialized = false;
 
   static const _palette = [
-    Color(0xFF58CC02), // Green
+    Color(0xFF2A1F6B), // Indigo
+    Color(0xFFF9A825), // Brand Orange
+    Color(0xFF2DD4BF), // Turquoise
     Color(0xFFFFC800), // Gold
-    Color(0xFF1CB0F6), // Blue
-    Color(0xFFFF4B4B), // Coral
     Color(0xFFCE82FF), // Purple
-    Color(0xFFFF9600), // Orange
+    Color(0xFF059669), // Emerald
   ];
 
   @override

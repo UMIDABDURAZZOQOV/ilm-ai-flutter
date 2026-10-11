@@ -74,13 +74,13 @@ class SkillsHubScreen extends ConsumerWidget {
                         children: [
                           Text(str3(lang, 'Kunlik maqsad', 'Цель дня', 'Daily goal'), style: TextStyle(fontWeight: FontWeight.w800, fontSize: 16, color: colors.text)),
                           Text('$todayXp/$goalXp XP${goalPct >= 1 ? ' 🎉' : ''}',
-                              style: TextStyle(fontWeight: FontWeight.w900, color: goalPct >= 1 ? const Color(0xFF58CC02) : colors.textSecondary, fontSize: 15)),
+                              style: TextStyle(fontWeight: FontWeight.w900, color: goalPct >= 1 ? colors.secondary : colors.textSecondary, fontSize: 15)),
                         ],
                       ),
                       const SizedBox(height: 12),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
-                        child: LinearProgressIndicator(value: goalPct, minHeight: 14, color: const Color(0xFF58CC02), backgroundColor: colors.border.withValues(alpha: 0.3)),
+                        child: LinearProgressIndicator(value: goalPct, minHeight: 14, color: colors.secondary, backgroundColor: colors.border.withValues(alpha: 0.3)),
                       ),
                     ],
                   ),
@@ -156,7 +156,7 @@ class SkillsHubScreen extends ConsumerWidget {
 
   List<Widget> _featureCards(BuildContext context, WidgetRef ref, String lang, List<SkillSubject> subjects, dynamic colors) {
     final cards = <_FeatureCard>[
-      _FeatureCard(Icons.event_available_rounded, const Color(0xFF58CC02), str3(lang, 'Kunlik sinov', 'Ежедневный вызов', 'Daily challenge'),
+      _FeatureCard(Icons.event_available_rounded, const Color(0xFFF9A825), str3(lang, 'Kunlik sinov', 'Ежедневный вызов', 'Daily challenge'),
           () => context.push('/skills/practice', extra: {'mode': PracticeMode.daily})),
       _FeatureCard(Icons.edit_note_rounded, const Color(0xFFFF4B4B), str3(lang, 'Xatolar daftari', 'Ошибки', 'Mistakes'),
           () => context.push('/skills/practice', extra: {'mode': PracticeMode.mistakes})),

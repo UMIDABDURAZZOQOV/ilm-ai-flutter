@@ -35,10 +35,10 @@ class _MascotPainter extends CustomPainter {
     final s = size.width / 100;
     Offset p(double x, double y) => Offset(x * s, y * s);
 
-    canvas.drawOval(Rect.fromCenter(center: p(50, 58), width: 76 * s, height: 68 * s), Paint()..color = const Color(0xFF58CC02));
-    canvas.drawOval(Rect.fromCenter(center: p(28, 30), width: 28 * s, height: 32 * s), Paint()..color = const Color(0xFF58CC02));
-    canvas.drawOval(Rect.fromCenter(center: p(72, 30), width: 28 * s, height: 32 * s), Paint()..color = const Color(0xFF58CC02));
-    canvas.drawCircle(p(50, 50), 30 * s, Paint()..color = const Color(0xFF8DE24C));
+    canvas.drawOval(Rect.fromCenter(center: p(50, 58), width: 76 * s, height: 68 * s), Paint()..color = const Color(0xFF2A1F6B));
+    canvas.drawOval(Rect.fromCenter(center: p(28, 30), width: 28 * s, height: 32 * s), Paint()..color = const Color(0xFF2A1F6B));
+    canvas.drawOval(Rect.fromCenter(center: p(72, 30), width: 28 * s, height: 32 * s), Paint()..color = const Color(0xFF2A1F6B));
+    canvas.drawCircle(p(50, 50), 30 * s, Paint()..color = const Color(0xFFFAF7F2));
 
     final eyesClosed = mood == MascotMood.sad;
     if (eyesClosed) {

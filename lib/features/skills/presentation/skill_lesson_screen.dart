@@ -249,7 +249,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           value: learnProgress,
                           minHeight: 10,
                           backgroundColor: colors.border,
-                          color: const Color(0xFF1CB0F6),
+                          color: colors.accent,
                         ),
                       ),
                     ),
@@ -282,14 +282,10 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                             key: ValueKey(_theoryIndex),
                             padding: const EdgeInsets.all(20),
                             decoration: BoxDecoration(
-                              color: const Color(
-                                0xFF1CB0F6,
-                              ).withValues(alpha: 0.08),
+                              color: colors.accent.withValues(alpha: 0.08),
                               borderRadius: BorderRadius.circular(24),
                               border: Border.all(
-                                color: const Color(
-                                  0xFF1CB0F6,
-                                ).withValues(alpha: 0.35),
+                                color: colors.accent.withValues(alpha: 0.35),
                                 width: 2,
                               ),
                             ),
@@ -298,10 +294,10 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                               children: [
                                 Text(
                                   card.title,
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 19,
                                     fontWeight: FontWeight.w800,
-                                    color: Color(0xFF1489C1),
+                                    color: colors.primary,
                                   ),
                                 ),
                                 const SizedBox(height: 10),
@@ -323,9 +319,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                       color: colors.card,
                                       borderRadius: BorderRadius.circular(16),
                                       border: Border.all(
-                                        color: const Color(
-                                          0xFF1CB0F6,
-                                        ).withValues(alpha: 0.2),
+                                        color: colors.accent.withValues(alpha: 0.25),
                                       ),
                                     ),
                                     child: Column(
@@ -337,11 +331,11 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                             'skills.example',
                                             language,
                                           ).toUpperCase(),
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                             fontSize: 11,
                                             fontWeight: FontWeight.w800,
                                             letterSpacing: 1,
-                                            color: Color(0xFF1CB0F6),
+                                            color: colors.primary,
                                           ),
                                         ),
                                         const SizedBox(height: 4),
@@ -519,7 +513,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         value: progress,
                         minHeight: 10,
                         backgroundColor: colors.border,
-                        color: const Color(0xFF58CC02),
+                        color: colors.secondary,
                       ),
                     ),
                   ),
@@ -773,8 +767,8 @@ class _OptionTile extends StatelessWidget {
     Color text = colors.text;
 
     if (!answered && isSelected) {
-      border = const Color(0xFF1CB0F6);
-      bg = border.withValues(alpha: 0.12);
+      border = colors.primary;
+      bg = colors.primary.withValues(alpha: 0.10);
     } else if (answered) {
       if (isCorrectOption) {
         border = colors.success;

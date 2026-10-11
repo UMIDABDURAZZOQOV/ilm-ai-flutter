@@ -32,7 +32,7 @@ class SkillProfileScreen extends ConsumerWidget {
                 padding: const EdgeInsets.all(16),
                 children: [
                   Row(children: [
-                    CircleAvatar(radius: 30, backgroundColor: const Color(0xFF58CC02).withValues(alpha: 0.2), child: Text(p.name.isNotEmpty ? p.name[0].toUpperCase() : '?', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: Color(0xFF3A8A00)))),
+                    CircleAvatar(radius: 30, backgroundColor: const Color(0xFF2A1F6B).withValues(alpha: 0.15), child: Text(p.name.isNotEmpty ? p.name[0].toUpperCase() : '?', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: Color(0xFF2A1F6B)))),
                     const SizedBox(width: 14),
                     Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       Text(p.name, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
@@ -50,12 +50,12 @@ class SkillProfileScreen extends ConsumerWidget {
                     const SizedBox(width: 10),
                     _tile(Icons.local_fire_department_rounded, const Color(0xFFFF9600), '${p.streakDays}', str3(lang, 'kun', 'дней', 'streak')),
                     const SizedBox(width: 10),
-                    _tile(Icons.menu_book_rounded, const Color(0xFF58CC02), '${p.lessonsCompleted}', str3(lang, 'dars', 'уроков', 'lessons')),
+                    _tile(Icons.menu_book_rounded, const Color(0xFF2A1F6B), '${p.lessonsCompleted}', str3(lang, 'dars', 'уроков', 'lessons')),
                   ]),
                   if (p.strongest != null || p.weakest != null) ...[
                     const SizedBox(height: 12),
                     Row(children: [
-                      if (p.strongest != null) Expanded(child: _sw(str3(lang, 'Eng kuchli', 'Сильнейший', 'Strongest'), p.strongest!.nameFor(lang), '${p.strongest!.pct}%', const Color(0xFF58CC02))),
+                      if (p.strongest != null) Expanded(child: _sw(str3(lang, 'Eng kuchli', 'Сильнейший', 'Strongest'), p.strongest!.nameFor(lang), '${p.strongest!.pct}%', const Color(0xFF059669))),
                       if (p.strongest != null && p.weakest != null && p.weakest!.slug != p.strongest!.slug) const SizedBox(width: 10),
                       if (p.weakest != null && p.weakest!.slug != p.strongest?.slug) Expanded(child: _sw(str3(lang, 'Eng zaif', 'Слабейший', 'Weakest'), p.weakest!.nameFor(lang), '${p.weakest!.pct}%', const Color(0xFFFF4B4B))),
                     ]),
@@ -143,9 +143,9 @@ class _Heatmap extends StatelessWidget {
 
     Color shade(int c) {
       if (c == 0) return Colors.black12;
-      if (c < 2) return const Color(0xFF86E01E);
-      if (c < 4) return const Color(0xFF58CC02);
-      return const Color(0xFF3A8A00);
+      if (c < 2) return const Color(0xFF2DD4BF).withValues(alpha: 0.35);
+      if (c < 4) return const Color(0xFF2DD4BF);
+      return const Color(0xFF0F766E);
     }
 
     return SingleChildScrollView(

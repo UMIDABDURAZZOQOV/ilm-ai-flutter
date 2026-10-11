@@ -165,13 +165,13 @@ class _ParentDashboardScreenState extends ConsumerState<ParentDashboardScreen> {
           Row(children: [
             _stat(Icons.bolt_rounded, const Color(0xFFFFC800), '${c.xpTotal}', 'XP'),
             _stat(Icons.local_fire_department_rounded, const Color(0xFFFF9600), '${c.streakDays}', str3(lang, 'kun', 'дней', 'streak')),
-            _stat(Icons.menu_book_rounded, const Color(0xFF58CC02), '${c.lessonsCompleted}', str3(lang, 'dars', 'уроков', 'lessons')),
+            _stat(Icons.menu_book_rounded, const Color(0xFF2A1F6B), '${c.lessonsCompleted}', str3(lang, 'dars', 'уроков', 'lessons')),
           ]),
           if (c.strongest != null || c.weakest != null) ...[
             const SizedBox(height: 8),
             Row(children: [
               if (c.strongest != null)
-                Expanded(child: _chip(str3(lang, 'Kuchli', 'Сильный', 'Strong'), c.strongest!.nameFor(lang), const Color(0xFF58CC02))),
+                Expanded(child: _chip(str3(lang, 'Kuchli', 'Сильный', 'Strong'), c.strongest!.nameFor(lang), const Color(0xFF059669))),
               if (c.strongest != null && c.weakest != null && c.weakest!.slug != c.strongest!.slug) const SizedBox(width: 8),
               if (c.weakest != null && c.weakest!.slug != c.strongest?.slug)
                 Expanded(child: _chip(str3(lang, 'Zaif', 'Слабый', 'Weak'), c.weakest!.nameFor(lang), const Color(0xFFFF4B4B))),

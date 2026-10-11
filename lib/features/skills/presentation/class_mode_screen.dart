@@ -113,7 +113,7 @@ class _ClassModeScreenState extends ConsumerState<ClassModeScreen> {
                   for (final c in _classes!.enrolled)
                     _classTile(
                       icon: Icons.menu_book_rounded,
-                      color: const Color(0xFF58CC02),
+                      color: const Color(0xFF2A1F6B),
                       title: c.name,
                       subtitle: '${str3(lang, "O'qituvchi", 'Учитель', 'Teacher')}: ${c.teacherName}',
                     ),
@@ -144,7 +144,7 @@ class _ClassModeScreenState extends ConsumerState<ClassModeScreen> {
                     Expanded(child: TextField(controller: _joinCtrl, textCapitalization: TextCapitalization.characters, decoration: _dec('ABC123'))),
                     const SizedBox(width: 8),
                     FilledButton(
-                      style: FilledButton.styleFrom(backgroundColor: const Color(0xFF58CC02)),
+                      style: FilledButton.styleFrom(backgroundColor: const Color(0xFF2A1F6B)),
                       onPressed: _busy ? null : _join,
                       child: Text(str3(lang, "Qo'shilish", 'Вступить', 'Join')),
                     ),
@@ -329,7 +329,7 @@ class _ClassDetailScreenState extends ConsumerState<ClassDetailScreen> {
           Text(' ${r.weeklyXp}   '),
           const Icon(Icons.local_fire_department_rounded, size: 13, color: Color(0xFFFF9600)),
           Text(' ${r.streakDays}'),
-          if (r.activeToday) Text('   ● ${str3(lang, 'faol', 'активен', 'active')}', style: const TextStyle(color: Color(0xFF58CC02), fontWeight: FontWeight.w700, fontSize: 11)),
+          if (r.activeToday) Text('   ● ${str3(lang, 'faol', 'активен', 'active')}', style: const TextStyle(color: Color(0xFF059669), fontWeight: FontWeight.w700, fontSize: 11)),
         ]),
         trailing: IconButton(
           icon: const Icon(Icons.person_remove_outlined, size: 20),

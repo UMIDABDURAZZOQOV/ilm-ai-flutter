@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers/app_providers.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../auth/application/auth_controller.dart';
 import 'skill_ui.dart';
 
@@ -83,7 +84,9 @@ Future<int?> showDailyGoalBottomSheet({
     ),
     builder: (ctx) => DailyGoalBottomSheet(
       language: language,
-      accentColor: accentColor ?? const Color(0xFF58CC02),
+      accentColor: accentColor ??
+          Theme.of(ctx).extension<AppColors>()?.colors.secondary ??
+          const Color(0xFFF9A825),
     ),
   );
 }

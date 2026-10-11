@@ -155,7 +155,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(children: [
-                            const Icon(Icons.trending_up_rounded, size: 16, color: Color(0xFF58CC02)),
+                            const Icon(Icons.trending_up_rounded, size: 16, color: Color(0xFF059669)),
                             const SizedBox(width: 6),
                             Text(str3(lang, 'Bashorat qilingan daraja', 'Прогнозируемая оценка', 'Predicted grade'), style: const TextStyle(fontWeight: FontWeight.w800)),
                           ]),
@@ -171,7 +171,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
                   ],
                   const SizedBox(height: 16),
                   FilledButton.icon(
-                    style: FilledButton.styleFrom(backgroundColor: const Color(0xFF58CC02), padding: const EdgeInsets.symmetric(vertical: 16)),
+                    style: FilledButton.styleFrom(backgroundColor: const Color(0xFF2A1F6B), padding: const EdgeInsets.symmetric(vertical: 16)),
                     onPressed: _begin,
                     icon: const Icon(Icons.emoji_events_rounded),
                     label: Text(str3(lang, 'Imtihonni boshlash', 'Начать экзамен', 'Start exam'), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
@@ -225,7 +225,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
                 ],
               ),
             ),
-            LinearProgressIndicator(value: (_index + 1) / total, minHeight: 6, color: const Color(0xFF58CC02), backgroundColor: Colors.black12),
+            LinearProgressIndicator(value: (_index + 1) / total, minHeight: 6, color: const Color(0xFFF9A825), backgroundColor: Colors.black12),
             Expanded(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.all(20),
@@ -243,9 +243,9 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
                           child: Container(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                             decoration: BoxDecoration(
-                              color: _answers[q.id] == opt ? const Color(0xFF58CC02).withValues(alpha: 0.10) : null,
+                              color: _answers[q.id] == opt ? const Color(0xFF2A1F6B).withValues(alpha: 0.10) : null,
                               borderRadius: BorderRadius.circular(16),
-                              border: Border.all(color: _answers[q.id] == opt ? const Color(0xFF58CC02) : Colors.black12, width: 2),
+                              border: Border.all(color: _answers[q.id] == opt ? const Color(0xFF2A1F6B) : Colors.black12, width: 2),
                             ),
                             child: Text(opt, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15)),
                           ),
@@ -265,7 +265,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
                     child: _index < total - 1
                         ? FilledButton(onPressed: () => setState(() => _index++), child: Text(str3(lang, 'Keyingi', 'Далее', 'Next')))
                         : FilledButton(
-                            style: FilledButton.styleFrom(backgroundColor: const Color(0xFF58CC02)),
+                            style: FilledButton.styleFrom(backgroundColor: const Color(0xFF2A1F6B)),
                             onPressed: _submitting ? null : _submit,
                             child: Text(_submitting ? '...' : str3(lang, 'Yakunlash ($answeredCount/$total)', 'Завершить ($answeredCount/$total)', 'Finish ($answeredCount/$total)'), style: const TextStyle(fontWeight: FontWeight.w800)),
                           ),
@@ -332,7 +332,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(children: [
-                      const Icon(Icons.trending_up_rounded, size: 16, color: Color(0xFF58CC02)),
+                      const Icon(Icons.trending_up_rounded, size: 16, color: Color(0xFF059669)),
                       const SizedBox(width: 6),
                       Text(str3(lang, 'Haqiqiy imtihon bashorati', 'Прогноз реального экзамена', 'Real exam prediction'), style: const TextStyle(fontWeight: FontWeight.w800)),
                     ]),
@@ -356,7 +356,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
             for (var i = 0; i < r.review.length; i++) _reviewTile(lang, i + 1, r.review[i]),
             const SizedBox(height: 16),
             FilledButton(
-              style: FilledButton.styleFrom(backgroundColor: const Color(0xFF58CC02), padding: const EdgeInsets.symmetric(vertical: 14)),
+              style: FilledButton.styleFrom(backgroundColor: const Color(0xFF2A1F6B), padding: const EdgeInsets.symmetric(vertical: 14)),
               onPressed: () => context.pop(),
               child: Text(str3(lang, 'Yakunlash', 'Завершить', 'Done'), style: const TextStyle(fontWeight: FontWeight.w800)),
             ),
@@ -375,7 +375,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Icon(r.isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded, size: 18, color: r.isCorrect ? const Color(0xFF58CC02) : const Color(0xFFFF4B4B)),
+            Icon(r.isCorrect ? Icons.check_circle_rounded : Icons.cancel_rounded, size: 18, color: r.isCorrect ? const Color(0xFF059669) : const Color(0xFFFF4B4B)),
             const SizedBox(width: 6),
             Expanded(child: Text('$n. ${r.questionText}', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13.5))),
           ]),

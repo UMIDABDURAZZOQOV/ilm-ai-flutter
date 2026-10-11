@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'skill_ui.dart';
 
 /// Both Android back and the close button go through the same confirmation.
@@ -30,10 +31,11 @@ class _StudyExitGuardState extends State<StudyExitGuard> {
     final leave = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        icon: const Icon(
+        icon: Icon(
           Icons.school_rounded,
           size: 44,
-          color: Color(0xFF58CC02),
+          color: Theme.of(ctx).extension<AppColors>()?.colors.primary ??
+              const Color(0xFF2A1F6B),
         ),
         title: Text(
           str3(
