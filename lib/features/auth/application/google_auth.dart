@@ -7,6 +7,12 @@ import '../data/auth_repository.dart';
 import 'auth_controller.dart';
 
 const _callbackScheme = 'ilmai';
+const googleAuthTimeout = Duration(seconds: 30);
+
+/// Tracks whether a newly authenticated Google user still needs name + age
+/// onboarding, so the router redirect can immediately guide them to /setup
+/// rather than racing to /learn or /home.
+final needsProfileSetupProvider = StateProvider<bool>((ref) => false);
 
 /// Ported from ilm-ai-mobile's Login/SignUp Google-OAuth handler: the
 /// redirect_uri sent to the backend is a real HTTPS backend endpoint
@@ -15,12 +21,15 @@ const _callbackScheme = 'ilmai';
 /// Returns true when the signed-in user still needs to complete the name+age
 /// onboarding (a brand-new account, or an old one that never set an age).
 Future<bool> signInWithGoogle(WidgetRef ref) async {
-  final urlRes = await ref.read(authRepositoryProvider).getGoogleLoginUrl('$apiBaseUrl/auth/google-callback-mobile');
+  final urlRes = await ref
+      .read(authRepositoryProvider)
+      .getGoogleLoginUrl('$apiBaseUrl/auth/google-callback-mobile')
+      .timeout(googleAuthTimeout);
 
   final result = await FlutterWebAuth2.authenticate(
     url: urlRes.authUrl,
     callbackUrlScheme: _callbackScheme,
-  );
+  ).timeout(googleAuthTimeout);
 
   final uri = Uri.parse(result);
   final accessToken = uri.queryParameters['access_token'];
@@ -30,6 +39,9 @@ Future<bool> signInWithGoogle(WidgetRef ref) async {
     throw Exception('Invalid Google sign-in response');
   }
 
+  final needsOnboarding = uri.queryParameters['needs_onboarding'] == '1';
+  ref.read(needsProfileSetupProvider.notifier).state = needsOnboarding;
+
   await ref.read(authControllerProvider.notifier).login(AuthResponse(
         accessToken: accessToken,
         refreshToken: refreshToken,
@@ -38,5 +50,5 @@ Future<bool> signInWithGoogle(WidgetRef ref) async {
         email: uri.queryParameters['email'] ?? '',
       ));
 
-  return uri.queryParameters['needs_onboarding'] == '1';
+  return needsOnboarding;
 }

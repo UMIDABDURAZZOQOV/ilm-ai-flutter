@@ -7,6 +7,7 @@ import '../config/product_mode.dart';
 import '../../features/skills/presentation/subject_home_screen.dart';
 import '../splash/splash_screen.dart';
 import '../../features/auth/application/auth_controller.dart';
+import '../../features/auth/application/google_auth.dart';
 import '../../features/onboarding/presentation/language_select_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/auth/presentation/login_screen.dart';
@@ -94,6 +95,7 @@ class _RouterRefreshNotifier extends ChangeNotifier {
   _RouterRefreshNotifier(Ref ref) {
     ref.listen(onboardingCompleteProvider, (_, _) => notifyListeners());
     ref.listen(authControllerProvider, (_, _) => notifyListeners());
+    ref.listen(needsProfileSetupProvider, (_, _) => notifyListeners());
   }
 }
 
@@ -121,6 +123,13 @@ final routerProvider = Provider<GoRouter>((ref) {
       }
       if (!authed) {
         return _authRoutes.contains(loc) ? null : '/login';
+      }
+      final needsSetup = ref.read(needsProfileSetupProvider);
+      if (needsSetup) {
+        return loc == '/setup' ? null : '/setup';
+      }
+      if (loc == '/setup') {
+        return subjectsOnly ? '/learn' : '/home';
       }
       if (_preAuthRoutes.contains(loc) ||
           _authRoutes.contains(loc) ||

@@ -1,8 +1,12 @@
+import 'dart:async';
+
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/config/product_mode.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/network/error_message.dart';
@@ -36,6 +40,61 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     ref.read(dioProvider).get('/health').then((_) {}, onError: (_) {});
   }
 
+  String _getAuthErrorMessage(Object err, String language) {
+    String tr(String uz, String ru, String en) =>
+        language == 'ru' ? ru : language == 'en' ? en : uz;
+
+    // Check for timeout or backend waking up (Render free tier cold start ~30-50s)
+    final isTimeout = err is TimeoutException ||
+        (err is DioException &&
+            (err.type == DioExceptionType.connectionTimeout ||
+                err.type == DioExceptionType.receiveTimeout ||
+                err.type == DioExceptionType.sendTimeout)) ||
+        (err is DioException &&
+            err.response?.statusCode != null &&
+            [502, 503, 504].contains(err.response!.statusCode)) ||
+        err.toString().toLowerCase().contains('timeout');
+
+    if (isTimeout) {
+      return tr(
+        "Server uyg'onmoqda, biroz kuting va qayta urinib ko'ring.",
+        'Сервер просыпается, подождите немного и повторите попытку.',
+        'Server is waking up, please wait a moment and try again.',
+      );
+    }
+
+    if (err is DioException && err.type == DioExceptionType.connectionError) {
+      return tr(
+        "Internet aloqasi yo'q. Tarmoq ulanishini tekshiring.",
+        'Нет подключения к интернету. Проверьте соединение.',
+        'No internet connection. Please check your network.',
+      );
+    }
+
+    if (err is DioException &&
+        err.response?.statusCode != null &&
+        err.response!.statusCode! >= 500) {
+      return tr(
+        "Serverda xatolik yuz berdi (${err.response!.statusCode}). Birozdan so'ng qayta urinib ko'ring.",
+        'Ошибка сервера (${err.response!.statusCode}). Пожалуйста, повторите попытку позже.',
+        'Server error (${err.response!.statusCode}). Please try again in a moment.',
+      );
+    }
+
+    final extracted = extractError(err);
+    if (extracted.isNotEmpty &&
+        extracted != 'An unexpected error occurred. Please try again.' &&
+        extracted != 'Request failed. Please try again.') {
+      return extracted;
+    }
+
+    return tr(
+      "Kirishda xatolik yuz berdi. Qayta urinib ko'ring.",
+      'Произошла ошибка при входе. Попробуйте еще раз.',
+      'An error occurred during sign-in. Please try again.',
+    );
+  }
+
   Future<void> _handleGoogle() async {
     setState(() {
       _googleLoading = true;
@@ -43,12 +102,20 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     });
     try {
       final needsOnboarding = await signInWithGoogle(ref);
-      if (needsOnboarding && mounted) context.go('/setup');
-      // Otherwise the router's redirect sends the now-authed user to /home.
+      if (mounted) {
+        if (needsOnboarding) {
+          context.go('/setup');
+        } else {
+          context.go(subjectsOnly ? '/learn' : '/home');
+        }
+      }
     } catch (e) {
       // Backing out of the Google sheet throws CANCELED — a user choice, not an error.
       final canceled = e.toString().toLowerCase().contains('cancel');
-      if (mounted && !canceled) setState(() => _error = extractError(e));
+      if (mounted && !canceled) {
+        final language = ref.read(languageProvider);
+        setState(() => _error = _getAuthErrorMessage(e, language));
+      }
     } finally {
       if (mounted) setState(() => _googleLoading = false);
     }

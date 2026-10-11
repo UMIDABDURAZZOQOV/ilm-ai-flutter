@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/config/product_mode.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
@@ -11,6 +12,7 @@ import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
 import '../application/auth_controller.dart';
+import '../application/google_auth.dart';
 import '../data/auth_repository.dart';
 
 /// Shown once, right after Google sign-in, for a user who hasn't set a name+age.
@@ -62,7 +64,8 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
     });
     try {
       await ref.read(authRepositoryProvider).completeOnboarding(userId: userId, name: name, age: age);
-      if (mounted) context.go('/home');
+      ref.read(needsProfileSetupProvider.notifier).state = false;
+      if (mounted) context.go(subjectsOnly ? '/learn' : '/home');
     } catch (e) {
       if (mounted) setState(() => _error = extractError(e));
     } finally {
