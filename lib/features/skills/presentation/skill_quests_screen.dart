@@ -11,14 +11,16 @@ import 'skill_practice_screen.dart';
 import 'skill_ui.dart';
 import 'daily_goal_bottom_sheet.dart';
 
-final learningGoalsProvider = FutureProvider.autoDispose((ref) async {
+/// Not autoDispose: tab switches must keep the last successful payload so
+/// Quests does not flash a spinner every time (paired with IndexedStack).
+final learningGoalsProvider = FutureProvider((ref) async {
   final id = ref.watch(currentUserIdProvider);
   if (id == null) throw StateError('Not signed in');
   final results = await Future.wait<dynamic>([
     ref.watch(skillTreeRepositoryProvider).getSummary(id),
     ref.watch(skillExtrasRepositoryProvider).getDailyChallenge(id),
     ref.watch(dioProvider).get('/skills/$id/streak-freezes'),
-  ]);
+  ]).timeout(const Duration(seconds: 18));
   return (
     summary: results[0] as GamificationSummary,
     completed: results[1].completed as bool,
@@ -46,11 +48,30 @@ class SkillQuestsScreen extends ConsumerWidget {
         ],
       ),
       body: goals.when(
+        skipLoadingOnReload: true,
+        skipLoadingOnRefresh: true,
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (_, _) => Center(
-          child: TextButton(
-            onPressed: () => ref.invalidate(learningGoalsProvider),
-            child: Text(tr('Qayta urinish', 'Повторить', 'Try again')),
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  tr(
+                    'Vazifalarni yuklab bo‘lmadi',
+                    'Не удалось загрузить задания',
+                    'Could not load quests',
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 12),
+                FilledButton(
+                  onPressed: () => ref.invalidate(learningGoalsProvider),
+                  child: Text(tr('Qayta urinish', 'Повторить', 'Try again')),
+                ),
+              ],
+            ),
           ),
         ),
         data: (data) => RefreshIndicator(
@@ -134,7 +155,8 @@ class SkillQuestsScreen extends ConsumerWidget {
               const SizedBox(height: 16),
               () {
                 final customGoal = ref.watch(userDailyGoalProvider);
-                final goalXp = customGoal > 0 ? customGoal : data.summary.dailyGoalXp;
+                final goalXp =
+                    customGoal > 0 ? customGoal : data.summary.dailyGoalXp;
                 return _Quest(
                   icon: Icons.bolt_rounded,
                   color: const Color(0xFFFFC800),

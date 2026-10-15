@@ -1,44 +1,35 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_theme.dart';
-
 /// Shown only while AuthController restores tokens from secure storage on
 /// cold start; the router redirects away as soon as that resolves. Branded
-/// with a large centred logo so the app entry feels finished, not blank.
+/// indigo + Ilmo splash logo so native and Flutter splash match.
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
+  static const _indigo = Color(0xFF2A1F6B);
+
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).extension<AppColors>()?.colors;
-    final primary = colors?.primary ?? const Color(0xFF4F46E5);
-    final bg = colors?.background ?? Colors.white;
-
-    return Scaffold(
-      backgroundColor: bg,
+    return const Scaffold(
+      backgroundColor: _indigo,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Container(
-              width: 132,
-              height: 132,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(34),
-                boxShadow: [
-                  BoxShadow(color: primary.withValues(alpha: 0.28), blurRadius: 32, offset: const Offset(0, 16)),
-                ],
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(34),
-                child: Image.asset('assets/icons/icon.png', width: 132, height: 132, fit: BoxFit.cover),
-              ),
+            Image(
+              image: AssetImage('assets/mascot/splash_logo.png'),
+              width: 160,
+              height: 160,
+              fit: BoxFit.contain,
             ),
-            const SizedBox(height: 40),
+            SizedBox(height: 36),
             SizedBox(
               width: 26,
               height: 26,
-              child: CircularProgressIndicator(strokeWidth: 2.6, valueColor: AlwaysStoppedAnimation(primary)),
+              child: CircularProgressIndicator(
+                strokeWidth: 2.6,
+                valueColor: AlwaysStoppedAnimation(Color(0xFFF9A825)),
+              ),
             ),
           ],
         ),

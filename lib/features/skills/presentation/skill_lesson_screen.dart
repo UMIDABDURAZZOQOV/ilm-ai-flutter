@@ -205,7 +205,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Mascot(mood: MascotMood.sad, size: 100),
+                  const MascotImage(pose: MascotPose.sad, size: 110),
                   const SizedBox(height: 16),
                   Text(
                     t('skills.error.generic', language),
@@ -275,9 +275,19 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const Center(
-                        child: Mascot(mood: MascotMood.happy, size: 80),
+                        child: MascotImage(
+                          pose: MascotPose.explaining,
+                          size: 110,
+                        ),
                       ),
-                      const SizedBox(height: 20),
+                      if (looksLikeUntranslatedUzbek(
+                        '${card.title} ${card.body} ${card.example ?? ''}',
+                        language,
+                      )) ...[
+                        const SizedBox(height: 10),
+                        ContentLanguageBadge(language: language),
+                      ],
+                      const SizedBox(height: 16),
                       Container(
                             key: ValueKey(_theoryIndex),
                             padding: const EdgeInsets.all(20),
@@ -397,7 +407,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       pose: (c.total > 0 && (100 * c.score / c.total) >= 80)
                           ? MascotPose.happy
                           : MascotPose.hello,
-                      size: 140,
+                      size: 180,
                     ),
                     const SizedBox(height: 16),
                     Text(
@@ -545,11 +555,26 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       ),
                       const SizedBox(height: 12),
                     ],
+                    if (!_answered) ...[
+                      const Center(
+                        child: MascotImage(
+                          pose: MascotPose.thinking,
+                          size: 104,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                    ],
+                    if (!_answered &&
+                        looksLikeUntranslatedUzbek(q.questionText, language))
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: ContentLanguageBadge(language: language),
+                      ),
                     Text(
                       cleanMath(q.questionText),
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 21,
                         fontWeight: FontWeight.w700,
                         color: colors.text,
                         height: 1.4,
@@ -627,7 +652,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                   pose: isCorrect
                                       ? MascotPose.happy
                                       : MascotPose.sad,
-                                  size: 48,
+                                  size: 100,
                                 ),
                                 const SizedBox(width: 12),
                                 Expanded(
@@ -647,12 +672,13 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                               ),
                                         style: TextStyle(
                                           fontWeight: FontWeight.w800,
+                                          fontSize: 16,
                                           color: isCorrect
                                               ? colors.success
                                               : colors.error,
                                         ),
                                       ),
-                                      if (!isCorrect)
+                                      if (!isCorrect) ...[
                                         Text(
                                           cleanMath(q.correctAnswer),
                                           style: TextStyle(
@@ -660,6 +686,26 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                             color: colors.text,
                                           ),
                                         ),
+                                        if (!_reviewing)
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                              top: 4,
+                                            ),
+                                            child: Text(
+                                              str3(
+                                                language,
+                                                'Bu savol oxirida yana chiqadi',
+                                                'Этот вопрос появится снова в конце',
+                                                'This question will appear again at the end',
+                                              ),
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w600,
+                                                color: colors.textMuted,
+                                              ),
+                                            ),
+                                          ),
+                                      ],
                                       if (q.explanation != null &&
                                           q.explanation!.isNotEmpty)
                                         Padding(
@@ -783,18 +829,25 @@ class _OptionTile extends StatelessWidget {
     }
 
     return InkWell(
-      borderRadius: BorderRadius.circular(14),
+      borderRadius: BorderRadius.circular(16),
       onTap: answered ? null : onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+        constraints: const BoxConstraints(minHeight: 56),
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
         decoration: BoxDecoration(
           color: bg,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(16),
           border: Border.all(color: border, width: 2),
         ),
+        alignment: Alignment.centerLeft,
         child: Text(
           cleanMath(option),
-          style: TextStyle(color: text, fontWeight: FontWeight.w600),
+          style: TextStyle(
+            color: text,
+            fontWeight: FontWeight.w700,
+            fontSize: 17.5,
+            height: 1.35,
+          ),
         ),
       ),
     );

@@ -690,7 +690,7 @@ class SkillPathScreen extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: 20),
-                      const MascotImage(pose: MascotPose.hello, size: 72),
+                      const MascotImage(pose: MascotPose.hello, size: 112),
                       const SizedBox(height: 16),
                       SizedBox(
                         width: width,

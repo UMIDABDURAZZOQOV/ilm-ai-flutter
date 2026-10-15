@@ -8,9 +8,120 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
 import '../../auth/application/auth_controller.dart';
+import '../../skills/presentation/skill_profile_screen.dart';
+import '../../skills/presentation/skill_ui.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
+
+  Future<void> _editName(
+    BuildContext context,
+    WidgetRef ref,
+    String current,
+  ) async {
+    final language = ref.read(languageProvider);
+    final colors = Theme.of(context).extension<AppColors>()!.colors;
+    final controller = TextEditingController(text: current);
+    String? errorText;
+
+    final saved = await showDialog<bool>(
+      context: context,
+      builder: (ctx) {
+        return StatefulBuilder(
+          builder: (ctx, setLocal) {
+            return AlertDialog(
+              title: Text(
+                str3(
+                  language,
+                  'Ism / familiya',
+                  'Имя / фамилия',
+                  'Name',
+                ),
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  TextField(
+                    controller: controller,
+                    autofocus: true,
+                    textCapitalization: TextCapitalization.words,
+                    decoration: InputDecoration(
+                      hintText: str3(
+                        language,
+                        'Ismingizni yozing',
+                        'Введите имя',
+                        'Enter your name',
+                      ),
+                      errorText: errorText,
+                    ),
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(ctx, false),
+                  child: Text(t('common.cancel', language)),
+                ),
+                TextButton(
+                  onPressed: () async {
+                    final name = controller.text.trim();
+                    if (name.length < 2) {
+                      setLocal(() {
+                        errorText = str3(
+                          language,
+                          'Kamida 2 ta belgi kerak',
+                          'Нужно минимум 2 символа',
+                          'At least 2 characters required',
+                        );
+                      });
+                      return;
+                    }
+                    try {
+                      await ref
+                          .read(authControllerProvider.notifier)
+                          .updateDisplayName(name);
+                      if (ctx.mounted) Navigator.pop(ctx, true);
+                    } catch (_) {
+                      setLocal(() {
+                        errorText = str3(
+                          language,
+                          'Saqlab bo‘lmadi. Qayta urinib ko‘ring.',
+                          'Не удалось сохранить. Попробуйте ещё раз.',
+                          'Could not save. Please try again.',
+                        );
+                      });
+                    }
+                  },
+                  child: Text(
+                    str3(language, 'Saqlash', 'Сохранить', 'Save'),
+                    style: TextStyle(color: colors.primary),
+                  ),
+                ),
+              ],
+            );
+          },
+        );
+      },
+    );
+    controller.dispose();
+    if (saved == true) {
+      ref.invalidate(skillProfileProvider);
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              str3(
+                language,
+                'Ism saqlandi',
+                'Имя сохранено',
+                'Name saved',
+              ),
+            ),
+          ),
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -35,12 +146,34 @@ class SettingsScreen extends ConsumerWidget {
             PremiumCard(
               borderRadius: 18,
               padding: const EdgeInsets.all(18),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              onTap: () => _editName(context, ref, user?.name ?? ''),
+              child: Row(
                 children: [
-                  Text(t('settings.name.label', language), style: TextStyle(fontSize: 13, color: colors.textMuted, fontWeight: FontWeight.w600)),
-                  const SizedBox(height: 4),
-                  Text(user?.name ?? '—', style: TextStyle(fontSize: 16, color: colors.text, fontWeight: FontWeight.w800)),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          t('settings.name.label', language),
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: colors.textMuted,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          user?.name ?? '—',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colors.text,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.edit_rounded, color: colors.textMuted, size: 20),
                 ],
               ),
             ).animate().fadeIn(duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),

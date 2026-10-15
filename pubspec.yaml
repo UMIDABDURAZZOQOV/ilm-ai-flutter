@@ -123,14 +123,17 @@ flutter_launcher_icons:
   remove_alpha_ios: true
 
 flutter_native_splash:
-  color: "#ffffff"
-  # Use the full app icon (not the small wordmark) so the launch logo reads big.
-  image: "assets/icons/icon.png"
+  color: "#2A1F6B"
+  image: "assets/mascot/splash_logo.png"
   # Draw edge-to-edge (no status/nav bar strips) during the native splash too.
   fullscreen: true
+  color_dark: "#2A1F6B"
+  image_dark: "assets/mascot/splash_logo.png"
   android_12:
-    color: "#ffffff"
-    image: "assets/icons/icon.png"
+    color: "#2A1F6B"
+    image: "assets/mascot/splash_logo.png"
+    color_dark: "#2A1F6B"
+    image_dark: "assets/mascot/splash_logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

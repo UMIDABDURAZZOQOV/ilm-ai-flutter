@@ -13,6 +13,61 @@ String str3(String lang, String uz, String ru, String en) {
   }
 }
 
+/// Heuristic: backend authors content in Uzbek and translates ru/en best-effort.
+/// When translation fails the original Uzbek is returned — surface a small badge.
+bool looksLikeUntranslatedUzbek(String text, String lang) {
+  final trimmed = text.trim();
+  if (lang == 'uz' || trimmed.isEmpty) return false;
+  if (lang == 'ru') {
+    final cyrillic = RegExp(r'[\u0400-\u04FF]').allMatches(trimmed).length;
+    final letters = RegExp(
+      r'[A-Za-zА-Яа-яЁё\u0400-\u04FF]',
+    ).allMatches(trimmed).length;
+    if (letters < 8) return false;
+    return cyrillic / letters < 0.25;
+  }
+  // English UI but content still has Uzbek-specific letters / common particles.
+  return RegExp(r"[ʻʼ‘’']").hasMatch(trimmed) &&
+      RegExp(
+        r"\b(va|uchun|bilan|bo'lishi|qilish|emas|kerak)\b",
+        caseSensitive: false,
+      ).hasMatch(trimmed);
+}
+
+/// Small notice when lesson body stayed in Uzbek while the UI language is ru/en.
+class ContentLanguageBadge extends StatelessWidget {
+  final String language;
+  const ContentLanguageBadge({super.key, required this.language});
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.center,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+        decoration: BoxDecoration(
+          color: const Color(0xFFF9A825).withValues(alpha: 0.18),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Text(
+          str3(
+            language,
+            'Bu dars hozircha faqat o‘zbek tilida',
+            'Этот урок пока только на узбекском',
+            'This lesson is currently only in Uzbek',
+          ),
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.w700,
+            color: Color(0xFF2A1F6B),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 Color skillColor(String? hex, [Color fallback = const Color(0xFF2A1F6B)]) {
   if (hex == null || hex.isEmpty) return fallback;
   final cleaned = hex.replaceFirst('#', '');

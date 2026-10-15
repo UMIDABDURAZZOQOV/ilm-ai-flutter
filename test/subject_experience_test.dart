@@ -25,6 +25,7 @@ import 'package:ilm_ai_flutter/features/skills/presentation/skill_path_screen.da
 import 'package:ilm_ai_flutter/features/skills/presentation/daily_goal_bottom_sheet.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/streak_calendar_widget.dart';
 import 'package:ilm_ai_flutter/core/widgets/mascot_image.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/skill_ui.dart';
 
 final subject = SkillSubject(
   id: 1,
@@ -46,9 +47,14 @@ final lesson = SkillTreeLesson(
 );
 
 class FakeRepository extends SkillTreeRepository {
-  FakeRepository({this.empty = false, this.units = const []}) : super(Dio());
+  FakeRepository({
+    this.empty = false,
+    this.units = const [],
+    this.customQuestions,
+  }) : super(Dio());
   final bool empty;
   final List<SkillTreeUnit> units;
+  final List<SkillQuestion>? customQuestions;
   List<LessonResultItem>? saved;
   @override
   Future<LessonCompleteResult> completeLesson({
@@ -90,15 +96,16 @@ class FakeRepository extends SkillTreeRepository {
     theory: [],
     questions: empty
         ? []
-        : [
-            SkillQuestion(
-              id: 1,
-              questionText: '2 + 2 = ?',
-              options: ['3', '4'],
-              correctAnswer: '4',
-              orderIndex: 0,
-            ),
-          ],
+        : customQuestions ??
+            [
+              SkillQuestion(
+                id: 1,
+                questionText: '2 + 2 = ?',
+                options: ['3', '4'],
+                correctAnswer: '4',
+                orderIndex: 0,
+              ),
+            ],
   );
 }
 
@@ -106,6 +113,14 @@ class FakeAuth extends AuthController {
   @override
   Future<StoredTokens?> build() async =>
       StoredTokens(accessToken: 'test', refreshToken: 'test', userId: 7);
+}
+
+/// Forces UI language in widget tests (prefs alone can race LanguageNotifier).
+class _FixedLanguageNotifier extends LanguageNotifier {
+  _FixedLanguageNotifier(this._lang);
+  final String _lang;
+  @override
+  String build() => _lang;
 }
 
 class FakeExtras extends SkillExtrasRepository {
@@ -298,18 +313,27 @@ void main() {
     FakeExtras? extras,
     FakeSoundService? soundService,
     Map<String, Object> saved = const {},
+    String? language,
   }) async {
     tester.view.physicalSize = const Size(390, 844);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
-    SharedPreferences.setMockInitialValues(saved);
+    final initial = Map<String, Object>.from(saved);
+    if (language != null) {
+      initial[PrefsKeys.language] = language;
+    }
+    SharedPreferences.setMockInitialValues(initial);
     final prefs = await PrefsService.create();
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
           prefsServiceProvider.overrideWithValue(prefs),
           currentUserIdProvider.overrideWithValue(7),
+          if (language != null)
+            languageProvider.overrideWith(
+              () => _FixedLanguageNotifier(language),
+            ),
           soundServiceProvider.overrideWithValue(
             soundService ?? FakeSoundService(),
           ),
@@ -1208,5 +1232,113 @@ void main() {
       expect(tester.takeException(), isNull);
     },
   );
+
+  testWidgets(
+    'three wrong answers reappear at the end until corrected',
+    (tester) async {
+      final repository = FakeRepository(
+        customQuestions: [
+          for (var i = 1; i <= 3; i++)
+            SkillQuestion(
+              id: i,
+              questionText: 'Q$i?',
+              options: ['wrong$i', 'right$i'],
+              correctAnswer: 'right$i',
+              orderIndex: i - 1,
+            ),
+        ],
+      );
+      await mount(
+        tester,
+        SkillLessonScreen(lesson: lesson),
+        repository: repository,
+        saved: {PrefsKeys.language: 'en'},
+      );
+
+      Future<void> tap(String label) async {
+        await tester.tap(find.text(label).first);
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 400));
+        await tester.pump(const Duration(milliseconds: 400));
+      }
+
+      // Miss all three first-pass questions.
+      for (var i = 1; i <= 3; i++) {
+        expect(find.text('Q$i?'), findsOneWidget);
+        await tap('wrong$i');
+        await tap('CHECK');
+        expect(
+          find.text('This question will appear again at the end'),
+          findsOneWidget,
+        );
+        await tap('Continue');
+      }
+
+      // Review queue: three mistakes again.
+      expect(find.text('REVIEW YOUR MISTAKES'), findsOneWidget);
+      expect(repository.saved, isNull);
+      for (var i = 1; i <= 3; i++) {
+        expect(find.text('Q$i?'), findsOneWidget);
+        await tap('right$i');
+        await tap('CHECK');
+        await tap('Continue');
+      }
+
+      expect(repository.saved, hasLength(3));
+      expect(repository.saved!.every((r) => r.isCorrect == false), isTrue);
+      expect(find.text('First-attempt accuracy'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  for (final case_ in [
+    ('uz', 'TEKSHIRISH', 'Bu savol oxirida yana chiqadi'),
+    ('ru', 'ПРОВЕРИТЬ', 'Этот вопрос появится снова в конце'),
+    ('en', 'CHECK', 'This question will appear again at the end'),
+  ]) {
+    final lang = case_.$1;
+    final check = case_.$2;
+    final tip = case_.$3;
+    testWidgets(
+      'incorrect feedback tip is localized ($lang)',
+      (tester) async {
+        await mount(
+          tester,
+          SkillLessonScreen(lesson: lesson),
+          language: lang,
+        );
+        expect(find.text(check), findsOneWidget);
+        await tester.tap(find.text('3'));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 400));
+        await tester.tap(find.text(check));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 400));
+        expect(find.text(tip), findsOneWidget);
+        expect(tester.takeException(), isNull);
+      },
+    );
+  }
+
+  test('looksLikeUntranslatedUzbek detects Cyrillic-less Russian UI content', () {
+    expect(
+      looksLikeUntranslatedUzbek(
+        'Kvadrat tenglama ildizlarini toping',
+        'ru',
+      ),
+      isTrue,
+    );
+    expect(
+      looksLikeUntranslatedUzbek(
+        'Найдите корни квадратного уравнения',
+        'ru',
+      ),
+      isFalse,
+    );
+    expect(
+      looksLikeUntranslatedUzbek('Anything', 'uz'),
+      isFalse,
+    );
+  });
 }
 

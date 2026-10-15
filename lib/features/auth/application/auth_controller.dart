@@ -60,6 +60,23 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
     await ref.read(secureTokenStorageProvider).clearTokens();
     state = const AsyncData(null);
   }
+
+  /// Persists a new display name to `/auth/update-profile` and updates the
+  /// local session so settings/profile/shell all show the new name immediately.
+  Future<void> updateDisplayName(String name) async {
+    final tokens = state.valueOrNull;
+    if (tokens == null) throw StateError('Not signed in');
+    final trimmed = name.trim();
+    if (trimmed.length < 2) {
+      throw ArgumentError('Name too short');
+    }
+    await ref.read(authRepositoryProvider).updateProfile(
+          UpdateProfileRequest(userId: tokens.userId, name: trimmed),
+        );
+    final updated = tokens.copyWith(name: trimmed);
+    await ref.read(secureTokenStorageProvider).saveTokens(updated);
+    state = AsyncData(updated);
+  }
 }
 
 final authControllerProvider = AsyncNotifierProvider<AuthController, StoredTokens?>(AuthController.new);

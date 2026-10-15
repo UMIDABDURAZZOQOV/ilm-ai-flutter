@@ -396,7 +396,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Mascot(mood: MascotMood.idle, size: 90),
+                const MascotImage(pose: MascotPose.thinking, size: 110),
                 const SizedBox(height: 16),
                 Text(
                   str3(
@@ -525,9 +525,9 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Mascot(mood: MascotMood.cheer, size: 120)
-                        .animate()
-                        .scale(duration: 450.ms, curve: Curves.elasticOut),
+                    // Do not chain flutter_animate `.animate()` on MascotImage —
+                    // it has a bool field named `animate` that shadows the extension.
+                    const MascotImage(pose: MascotPose.happy, size: 170),
                     const SizedBox(height: 12),
                     Text(
                       str3(lang, 'Tayyor!', 'Готово!', 'Done!'),
@@ -614,7 +614,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Mascot(mood: MascotMood.idle, size: 90),
+              const MascotImage(pose: MascotPose.thinking, size: 110),
               const SizedBox(height: 12),
               Text(
                 str3(
@@ -700,8 +700,9 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                     Text(
                       q.questionText,
                       style: const TextStyle(
-                        fontSize: 18,
+                        fontSize: 21,
                         fontWeight: FontWeight.w800,
+                        height: 1.35,
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -819,7 +820,9 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
         onTap: _answered ? null : () => _pick(opt),
         borderRadius: BorderRadius.circular(16),
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          constraints: const BoxConstraints(minHeight: 56),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+          alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
             color: bg,
             borderRadius: BorderRadius.circular(16),
@@ -827,7 +830,11 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
           ),
           child: Text(
             opt,
-            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+            style: const TextStyle(
+              fontWeight: FontWeight.w700,
+              fontSize: 17.5,
+              height: 1.35,
+            ),
           ),
         ),
       ),

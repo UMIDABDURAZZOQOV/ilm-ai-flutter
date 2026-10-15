@@ -36,7 +36,11 @@ class SubjectHomeScreen extends ConsumerStatefulWidget {
 class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   int _tab = 0;
   bool _choosing = false;
-  int _revision = 0;
+  final int _revision = 0;
+  /// Lazy-mount tabs so Quests/League/Profile do not fire network (+18s
+  /// timeout timers) until the user opens them. Once visited, IndexedStack
+  /// keeps them alive (no spinner on return).
+  final Set<int> _visitedTabs = {0};
 
   Future<void> _select(SkillSubject subject) async {
     final user = ref.read(currentUserIdProvider);
@@ -116,7 +120,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 32),
                 children: [
-                  const Center(child: Mascot(mood: MascotMood.happy, size: 96)),
+                  const Center(
+                    child: MascotImage(pose: MascotPose.hello, size: 120),
+                  ),
                   const SizedBox(height: 20),
                   Text(
                     tr(
@@ -191,114 +197,127 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
           Icons.shield_rounded,
           Icons.person_rounded,
         ];
-        Widget body;
-        switch (_tab) {
-          case 0:
-            body = SkillPathScreen(
-              key: ValueKey('${subject.slug}:$_revision'),
-              subject: subject,
-              onChangeSubject: () => setState(() => _choosing = true),
-            );
-          case 1:
-            body = Scaffold(
-              appBar: AppBar(
-                automaticallyImplyLeading: false,
-                title: Text(labels[1]),
-              ),
-              body: ListView(
-                padding: const EdgeInsets.all(20),
-                children: [
-                  Text(
-                    tr(
-                      'Bilimingizni mustahkamlang',
-                      'Закрепите знания',
-                      'Make your knowledge stick',
-                    ),
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    tr(
-                      'Takrorlash barcha o‘rgangan fanlaringizni qamrab oladi.',
-                      'Повторение охватывает все изученные предметы.',
-                      'Review covers all the subjects you have studied.',
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  _LearningTile(
-                    icon: Icons.auto_fix_high_rounded,
-                    color: const Color(0xFFCE82FF),
-                    title: tr(
-                      'Xatolar ustida ishlash',
-                      'Работа над ошибками',
-                      'Review mistakes',
-                    ),
-                    onTap: () => context.push(
-                      '/skills/practice',
-                      extra: {'mode': PracticeMode.mistakes},
-                    ),
-                  ),
-                  const SizedBox(height: 14),
-                  _LearningTile(
-                    icon: Icons.today_rounded,
-                    color: Theme.of(context).extension<AppColors>()?.colors.secondary ?? const Color(0xFFF9A825),
-                    title: tr('Kunlik sinov', 'Вызов дня', 'Daily challenge'),
-                    onTap: () => context.push(
-                      '/skills/practice',
-                      extra: {'mode': PracticeMode.daily},
-                    ),
-                  ),
-                  const SizedBox(height: 14),
-                  _LearningTile(
-                    icon: Icons.bolt_rounded,
-                    color: const Color(0xFFFF9600),
-                    title: tr(
-                      'Tezlik mashqi',
-                      'На скорость',
-                      'Lightning practice',
-                    ),
-                    onTap: () => context.push(
-                      '/skills/practice',
-                      extra: {'mode': PracticeMode.lightning},
-                    ),
-                  ),
-                ],
-              ),
-            );
-          case 2:
-            body = const SkillQuestsScreen();
-          case 3:
-            body = const SkillLeaderboardScreen();
-          default:
-            body = Column(
+        // IndexedStack keeps visited tab state/cache alive so Quests/Profile
+        // do not flash a spinner every time the user returns to them.
+        // Local copy so closures do not see the outer nullable `subject`.
+        final SkillSubject activeSubject = subject;
+        final tabBuilders = <Widget Function()>[
+          () => SkillPathScreen(
+            key: ValueKey('${activeSubject.slug}:$_revision'),
+            subject: activeSubject,
+            onChangeSubject: () => setState(() => _choosing = true),
+          ),
+          () => Scaffold(
+            appBar: AppBar(
+              automaticallyImplyLeading: false,
+              title: Text(labels[1]),
+            ),
+            body: ListView(
+              padding: const EdgeInsets.all(20),
               children: [
-                SafeArea(
-                  bottom: false,
-                  child: Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton.icon(
-                      onPressed: () => context.push('/settings'),
-                      icon: const Icon(Icons.settings_outlined),
-                      label: Text(tr('Sozlamalar', 'Настройки', 'Settings')),
-                    ),
+                Text(
+                  tr(
+                    'Bilimingizni mustahkamlang',
+                    'Закрепите знания',
+                    'Make your knowledge stick',
+                  ),
+                  style: const TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
-                const Expanded(child: SkillProfileScreen()),
+                const SizedBox(height: 12),
+                Text(
+                  tr(
+                    'Takrorlash barcha o‘rgangan fanlaringizni qamrab oladi.',
+                    'Повторение охватывает все изученные предметы.',
+                    'Review covers all the subjects you have studied.',
+                  ),
+                ),
+                const SizedBox(height: 24),
+                _LearningTile(
+                  icon: Icons.auto_fix_high_rounded,
+                  color: const Color(0xFFCE82FF),
+                  title: tr(
+                    'Xatolar ustida ishlash',
+                    'Работа над ошибками',
+                    'Review mistakes',
+                  ),
+                  onTap: () => context.push(
+                    '/skills/practice',
+                    extra: {'mode': PracticeMode.mistakes},
+                  ),
+                ),
+                const SizedBox(height: 14),
+                _LearningTile(
+                  icon: Icons.today_rounded,
+                  color:
+                      Theme.of(context).extension<AppColors>()?.colors.secondary ??
+                      const Color(0xFFF9A825),
+                  title: tr('Kunlik sinov', 'Вызов дня', 'Daily challenge'),
+                  onTap: () => context.push(
+                    '/skills/practice',
+                    extra: {'mode': PracticeMode.daily},
+                  ),
+                ),
+                const SizedBox(height: 14),
+                _LearningTile(
+                  icon: Icons.bolt_rounded,
+                  color: const Color(0xFFFF9600),
+                  title: tr(
+                    'Tezlik mashqi',
+                    'На скорость',
+                    'Lightning practice',
+                  ),
+                  onTap: () => context.push(
+                    '/skills/practice',
+                    extra: {'mode': PracticeMode.lightning},
+                  ),
+                ),
               ],
-            );
-        }
+            ),
+          ),
+          () => const SkillQuestsScreen(),
+          () => const SkillLeaderboardScreen(),
+          () => Column(
+            children: [
+              SafeArea(
+                bottom: false,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton.icon(
+                    onPressed: () => context.push('/settings'),
+                    icon: const Icon(Icons.settings_outlined),
+                    label: Text(tr('Sozlamalar', 'Настройки', 'Settings')),
+                  ),
+                ),
+              ),
+              const Expanded(child: SkillProfileScreen()),
+            ],
+          ),
+        ];
+        final tabs = [
+          for (var i = 0; i < tabBuilders.length; i++)
+            _visitedTabs.contains(i)
+                ? tabBuilders[i]()
+                : const SizedBox.shrink(),
+        ];
         return Scaffold(
-          body: body,
+          body: IndexedStack(index: _tab, children: tabs),
           bottomNavigationBar: NavigationBar(
             selectedIndex: _tab,
-            onDestinationSelected: (index) => setState(() {
-              _tab = index;
-              _revision++;
-            }),
-            indicatorColor: (Theme.of(context).extension<AppColors>()?.colors.primary ?? const Color(0xFF2A1F6B)).withValues(alpha: 0.18),
+            onDestinationSelected: (index) {
+              // Only switch tab — do NOT bump _revision (that remounted Learn).
+              if (index == _tab) return;
+              setState(() {
+                _visitedTabs.add(index);
+                _tab = index;
+              });
+            },
+            indicatorColor:
+                (Theme.of(context).extension<AppColors>()?.colors.primary ??
+                        const Color(0xFF2A1F6B))
+                    .withValues(alpha: 0.18),
             destinations: [
               for (var i = 0; i < labels.length; i++)
                 NavigationDestination(icon: Icon(icons[i]), label: labels[i]),

@@ -7,16 +7,20 @@ import '../data/skill_extras_models.dart';
 import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
 
-final _leaderboardProvider = FutureProvider.autoDispose<LeaderboardResponse>((
-  ref,
-) async {
-  return ref.read(skillExtrasRepositoryProvider).getLeaderboard();
+final _leaderboardProvider = FutureProvider<LeaderboardResponse>((ref) async {
+  return ref
+      .read(skillExtrasRepositoryProvider)
+      .getLeaderboard()
+      .timeout(const Duration(seconds: 18));
 });
 
-final _leagueProvider = FutureProvider.autoDispose<LeagueResponse>((ref) async {
+final _leagueProvider = FutureProvider<LeagueResponse>((ref) async {
   final id = ref.watch(currentUserIdProvider);
   if (id == null) throw StateError('Not signed in');
-  return ref.watch(skillExtrasRepositoryProvider).getLeague(id);
+  return ref
+      .watch(skillExtrasRepositoryProvider)
+      .getLeague(id)
+      .timeout(const Duration(seconds: 18));
 });
 
 const _leagueColors = {
@@ -49,10 +53,15 @@ class SkillLeaderboardScreen extends ConsumerWidget {
         ],
       ),
       body: async.when(
+        skipLoadingOnReload: true,
+        skipLoadingOnRefresh: true,
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (_, _) => Center(
-          child: TextButton(
-            onPressed: () => ref.invalidate(_leaderboardProvider),
+          child: FilledButton(
+            onPressed: () {
+              ref.invalidate(_leaderboardProvider);
+              ref.invalidate(_leagueProvider);
+            },
             child: Text(str3(lang, 'Qayta urinish', 'Повторить', 'Try again')),
           ),
         ),

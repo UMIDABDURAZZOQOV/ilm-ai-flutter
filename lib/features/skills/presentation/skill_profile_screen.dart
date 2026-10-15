@@ -8,10 +8,14 @@ import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
 import 'streak_calendar_widget.dart';
 
-final _profileProvider = FutureProvider.autoDispose<SkillProfile?>((ref) async {
-  final userId = ref.read(currentUserIdProvider);
+/// Kept across tab switches so Profile does not spinner-reload on every visit.
+final skillProfileProvider = FutureProvider<SkillProfile?>((ref) async {
+  final userId = ref.watch(currentUserIdProvider);
   if (userId == null) return null;
-  return ref.read(skillExtrasRepositoryProvider).getProfile(userId);
+  return ref
+      .read(skillExtrasRepositoryProvider)
+      .getProfile(userId)
+      .timeout(const Duration(seconds: 18));
 });
 
 class SkillProfileScreen extends ConsumerWidget {
@@ -20,30 +24,81 @@ class SkillProfileScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lang = ref.watch(languageProvider);
-    final async = ref.watch(_profileProvider);
+    final sessionName = ref.watch(authControllerProvider).valueOrNull?.name;
+    final async = ref.watch(skillProfileProvider);
     return Scaffold(
       appBar: AppBar(title: Text(str3(lang, 'Mening profilim', 'Мой профиль', 'My profile'))),
       body: async.when(
+        skipLoadingOnReload: true,
+        skipLoadingOnRefresh: true,
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, _) => Center(child: Text(str3(lang, 'Xatolik', 'Ошибка', 'Error'))),
+        error: (_, _) => Center(
+          child: FilledButton(
+            onPressed: () => ref.invalidate(skillProfileProvider),
+            child: Text(str3(lang, 'Qayta urinish', 'Повторить', 'Try again')),
+          ),
+        ),
         data: (p) => p == null
             ? const SizedBox()
             : ListView(
                 padding: const EdgeInsets.all(16),
                 children: [
-                  Row(children: [
-                    CircleAvatar(radius: 30, backgroundColor: const Color(0xFF2A1F6B).withValues(alpha: 0.15), child: Text(p.name.isNotEmpty ? p.name[0].toUpperCase() : '?', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: Color(0xFF2A1F6B)))),
-                    const SizedBox(width: 14),
-                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      Text(p.name, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-                      const SizedBox(height: 4),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
-                        decoration: BoxDecoration(color: skillColor(p.league.color).withValues(alpha: 0.2), borderRadius: BorderRadius.circular(20)),
-                        child: Text('${p.league.nameFor(lang)} ${str3(lang, 'ligasi', 'лига', 'league')}', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 12, color: skillColor(p.league.color))),
+                  () {
+                    final displayName =
+                        (sessionName != null && sessionName.isNotEmpty)
+                            ? sessionName
+                            : p.name;
+                    return Row(children: [
+                      CircleAvatar(
+                        radius: 30,
+                        backgroundColor:
+                            const Color(0xFF2A1F6B).withValues(alpha: 0.15),
+                        child: Text(
+                          displayName.isNotEmpty
+                              ? displayName[0].toUpperCase()
+                              : '?',
+                          style: const TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w900,
+                            color: Color(0xFF2A1F6B),
+                          ),
+                        ),
                       ),
-                    ]),
-                  ]),
+                      const SizedBox(width: 14),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            displayName,
+                            style: const TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 3,
+                            ),
+                            decoration: BoxDecoration(
+                              color: skillColor(p.league.color)
+                                  .withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              '${p.league.nameFor(lang)} ${str3(lang, 'ligasi', 'лига', 'league')}',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w800,
+                                fontSize: 12,
+                                color: skillColor(p.league.color),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ]);
+                  }(),
                   const SizedBox(height: 18),
                   Row(children: [
                     _tile(Icons.bolt_rounded, const Color(0xFFFFC800), '${p.xpTotal}', 'XP'),

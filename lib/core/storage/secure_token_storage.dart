@@ -37,12 +37,18 @@ class StoredTokens {
         if (email != null) 'email': email,
       };
 
-  StoredTokens copyWith({String? accessToken, String? refreshToken}) => StoredTokens(
+  StoredTokens copyWith({
+    String? accessToken,
+    String? refreshToken,
+    String? name,
+    String? email,
+  }) =>
+      StoredTokens(
         accessToken: accessToken ?? this.accessToken,
         refreshToken: refreshToken ?? this.refreshToken,
         userId: userId,
-        name: name,
-        email: email,
+        name: name ?? this.name,
+        email: email ?? this.email,
       );
 }
 
