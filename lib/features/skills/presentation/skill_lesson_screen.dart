@@ -8,6 +8,7 @@ import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/gradient_button.dart';
+import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/ai_explain_sheet.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
@@ -243,14 +244,9 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       onPressed: () => Navigator.of(context).maybePop(),
                     ),
                     Expanded(
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(6),
-                        child: LinearProgressIndicator(
-                          value: learnProgress,
-                          minHeight: 10,
-                          backgroundColor: colors.border,
-                          color: colors.accent,
-                        ),
+                      child: DuoProgressBar(
+                        value: learnProgress,
+                        color: colors.accent,
                       ),
                     ),
                     const SizedBox(width: 12),
@@ -377,7 +373,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.all(20),
-                child: GradientButton(
+                child: Duo3DButton(
                   onPressed: _nextTheoryCard,
                   child: Text(
                     _theoryIndex + 1 < _theory.length
@@ -485,7 +481,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       ),
                     ),
                     const SizedBox(height: 24),
-                    GradientButton(
+                    Duo3DButton(
                       onPressed: () => Navigator.of(context).maybePop(),
                       child: Text(t('skills.lesson.continue', language)),
                     ).animate().fadeIn(delay: 600.ms),
@@ -517,14 +513,9 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                     onPressed: () => Navigator.of(context).maybePop(),
                   ),
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(6),
-                      child: LinearProgressIndicator(
-                        value: progress,
-                        minHeight: 10,
-                        backgroundColor: colors.border,
-                        color: colors.secondary,
-                      ),
+                    child: DuoProgressBar(
+                      value: progress,
+                      color: colors.secondary,
                     ),
                   ),
                 ],
@@ -582,16 +573,12 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                     ),
                     const SizedBox(height: 24),
                     for (final option in q.options)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 12),
-                        child: _OptionTile(
-                          option: option,
-                          answered: _answered,
-                          isSelected: _selected == option,
-                          isCorrectOption: option == q.correctAnswer,
-                          colors: colors,
-                          onTap: () => _pick(option),
-                        ),
+                      DuoChoiceCard(
+                        text: cleanMath(option),
+                        answered: _answered,
+                        selected: _selected == option,
+                        isCorrectOption: option == q.correctAnswer,
+                        onTap: () => _pick(option),
                       ),
                   ],
                 ),
@@ -600,13 +587,10 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
             if (!_answered)
               Padding(
                 padding: const EdgeInsets.all(20),
-                child: SizedBox(
-                  width: double.infinity,
-                  child: GradientButton(
-                    onPressed: _selected == null ? null : _check,
-                    child: Text(
-                      str3(language, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK'),
-                    ),
+                child: Duo3DButton(
+                  onPressed: _selected == null ? null : _check,
+                  child: Text(
+                    str3(language, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK'),
                   ),
                 ),
               ),
@@ -733,20 +717,22 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           ),
                         ),
                         const SizedBox(height: 12),
-                        SizedBox(
-                          width: double.infinity,
-                          child: GradientButton(
-                            onPressed: _submitting ? null : _next,
-                            child: _submitting
-                                ? const SizedBox(
-                                    width: 22,
-                                    height: 22,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                    ),
-                                  )
-                                : Text(t('skills.lesson.continue', language)),
-                          ),
+                        Duo3DButton(
+                          color: isCorrect ? colors.success : colors.error,
+                          shadowColor: isCorrect
+                              ? const Color(0xFF046C4E)
+                              : const Color(0xFF9B1C1C),
+                          onPressed: _submitting ? null : _next,
+                          child: _submitting
+                              ? const SizedBox(
+                                  width: 22,
+                                  height: 22,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : Text(t('skills.lesson.continue', language)),
                         ),
                       ],
                     ),
@@ -789,67 +775,3 @@ class _StatColumn extends StatelessWidget {
   }
 }
 
-class _OptionTile extends StatelessWidget {
-  final String option;
-  final bool answered;
-  final bool isSelected;
-  final bool isCorrectOption;
-  final ThemeColors colors;
-  final VoidCallback onTap;
-
-  const _OptionTile({
-    required this.option,
-    required this.answered,
-    required this.isSelected,
-    required this.isCorrectOption,
-    required this.colors,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    Color border = colors.border;
-    Color bg = colors.card;
-    Color text = colors.text;
-
-    if (!answered && isSelected) {
-      border = colors.primary;
-      bg = colors.primary.withValues(alpha: 0.10);
-    } else if (answered) {
-      if (isCorrectOption) {
-        border = colors.success;
-        bg = colors.successLight;
-      } else if (isSelected) {
-        border = colors.error;
-        bg = colors.errorLight;
-        text = colors.error;
-      } else {
-        text = colors.textMuted;
-      }
-    }
-
-    return InkWell(
-      borderRadius: BorderRadius.circular(16),
-      onTap: answered ? null : onTap,
-      child: Container(
-        constraints: const BoxConstraints(minHeight: 56),
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
-        decoration: BoxDecoration(
-          color: bg,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: border, width: 2),
-        ),
-        alignment: Alignment.centerLeft,
-        child: Text(
-          cleanMath(option),
-          style: TextStyle(
-            color: text,
-            fontWeight: FontWeight.w700,
-            fontSize: 17.5,
-            height: 1.35,
-          ),
-        ),
-      ),
-    );
-  }
-}

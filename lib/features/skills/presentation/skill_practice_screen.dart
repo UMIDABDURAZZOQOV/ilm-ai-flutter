@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers/app_providers.dart';
+import '../../../core/widgets/duo_chrome.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_extras_models.dart';
 import '../data/skill_extras_repository.dart';
@@ -195,15 +196,6 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
     setState(() {
       _answered = true;
     });
-  }
-
-  void _continueAction() {
-    if (!_answered) {
-      _check();
-      _next();
-    } else {
-      _next();
-    }
   }
 
   void _next() {
@@ -653,15 +645,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                     onPressed: () => Navigator.of(context).maybePop(),
                   ),
                   Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: LinearProgressIndicator(
-                        value: progress,
-                        minHeight: 10,
-                        color: _accent,
-                        backgroundColor: Colors.black12,
-                      ),
-                    ),
+                    child: DuoProgressBar(value: progress, color: _accent),
                   ),
                   if (_timed)
                     Padding(
@@ -697,8 +681,19 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    if (!_answered)
+                      const Padding(
+                        padding: EdgeInsets.only(bottom: 12),
+                        child: Center(
+                          child: MascotImage(
+                            pose: MascotPose.thinking,
+                            size: 104,
+                          ),
+                        ),
+                      ),
                     Text(
                       q.questionText,
+                      textAlign: TextAlign.center,
                       style: const TextStyle(
                         fontSize: 21,
                         fontWeight: FontWeight.w800,
@@ -706,8 +701,14 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    for (final opt in q.options) _optionTile(opt, q, isCorrect),
-                    if (_answered) _feedback(q, isCorrect, lang),
+                    for (final opt in q.options)
+                      DuoChoiceCard(
+                        text: opt,
+                        selected: _selected == opt,
+                        answered: _answered,
+                        isCorrectOption: opt == q.correctAnswer,
+                        onTap: () => _pick(opt),
+                      ),
                   ],
                 ),
               ),
@@ -715,69 +716,15 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             if (!_answered && !_timed)
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
-                child: _selected == null
-                    ? SizedBox(
-                        width: double.infinity,
-                        child: FilledButton(
-                          style: FilledButton.styleFrom(
-                            backgroundColor: Colors.grey.shade300,
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(16),
-                            ),
-                          ),
-                          onPressed: null,
-                          child: Text(
-                            str3(lang, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK'),
-                            style: const TextStyle(fontWeight: FontWeight.w900),
-                          ),
-                        ),
-                      )
-                    : Row(
-                        children: [
-                          Expanded(
-                            child: OutlinedButton(
-                              style: OutlinedButton.styleFrom(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 14),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(16),
-                                ),
-                                side: BorderSide(color: _accent, width: 2),
-                              ),
-                              onPressed: _check,
-                              child: Text(
-                                str3(lang, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK'),
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w900,
-                                  color: _accent,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: FilledButton(
-                              style: FilledButton.styleFrom(
-                                backgroundColor: _accent,
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 14),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(16),
-                                ),
-                              ),
-                              onPressed: _continueAction,
-                              child: Text(
-                                str3(lang, 'Davom etish', 'Далее', 'Continue'),
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                child: Duo3DButton(
+                  color: _accent,
+                  onPressed: _selected == null ? null : _check,
+                  child: Text(
+                    str3(lang, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK'),
+                  ),
+                ),
               ),
+            if (_answered) _feedbackDock(q, isCorrect, lang),
           ],
         ),
       ),
@@ -798,101 +745,69 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
     ],
   );
 
-  Widget _optionTile(String opt, PracticeQuestion q, bool isCorrect) {
-    final isSelectedBeforeAnswer = !_answered && _selected == opt;
-    final showCorrect = _answered && opt == q.correctAnswer;
-    final showWrong = _answered && _selected == opt && !isCorrect;
-    Color border = Colors.black12;
-    Color? bg;
-    if (showCorrect) {
-      border = const Color(0xFF58CC02);
-      bg = const Color(0xFF58CC02).withValues(alpha: 0.10);
-    } else if (showWrong) {
-      border = const Color(0xFFFF4B4B);
-      bg = const Color(0xFFFF4B4B).withValues(alpha: 0.10);
-    } else if (isSelectedBeforeAnswer) {
-      border = _accent;
-      bg = _accent.withValues(alpha: 0.12);
-    }
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: InkWell(
-        onTap: _answered ? null : () => _pick(opt),
-        borderRadius: BorderRadius.circular(16),
-        child: Container(
-          constraints: const BoxConstraints(minHeight: 56),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
-          alignment: Alignment.centerLeft,
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: border, width: 2),
-          ),
-          child: Text(
-            opt,
-            style: const TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize: 17.5,
-              height: 1.35,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _feedback(PracticeQuestion q, bool isCorrect, String lang) {
+  Widget _feedbackDock(PracticeQuestion q, bool isCorrect, String lang) {
+    final ok = const Color(0xFF059669);
+    final bad = const Color(0xFFDC2626);
     return Container(
-      margin: const EdgeInsets.only(top: 8),
-      padding: const EdgeInsets.all(16),
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
       decoration: BoxDecoration(
-        color: (isCorrect ? const Color(0xFF58CC02) : const Color(0xFFFF4B4B))
-            .withValues(alpha: 0.10),
-        borderRadius: BorderRadius.circular(16),
+        color: (isCorrect ? ok : bad).withValues(alpha: 0.10),
+        border: Border(top: BorderSide(color: isCorrect ? ok : bad, width: 2)),
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            isCorrect
-                ? str3(lang, 'Ajoyib!', 'Отлично!', 'Nice!')
-                : str3(lang, "Noto'g'ri", 'Неправильно', 'Incorrect'),
-            style: TextStyle(
-              fontWeight: FontWeight.w900,
-              color: isCorrect
-                  ? const Color(0xFF3A8A00)
-                  : const Color(0xFFC81E1E),
-            ),
+          Row(
+            children: [
+              MascotImage(
+                pose: isCorrect ? MascotPose.happy : MascotPose.sad,
+                size: 88,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      isCorrect
+                          ? str3(lang, 'Ajoyib!', 'Отлично!', 'Nice!')
+                          : str3(lang, "Noto'g'ri", 'Неправильно', 'Incorrect'),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 18,
+                        color: isCorrect ? ok : bad,
+                      ),
+                    ),
+                    if (q.explanation != null && q.explanation!.isNotEmpty)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Text(
+                          q.explanation!,
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey.shade700,
+                          ),
+                        ),
+                      ),
+                    if (!isCorrect)
+                      AiTutorWidget(
+                        questionText: q.questionText,
+                        options: q.options,
+                        correctAnswer: q.correctAnswer,
+                        userAnswer: _selected,
+                      ),
+                  ],
+                ),
+              ),
+            ],
           ),
-          if (q.explanation != null && q.explanation!.isNotEmpty)
-            Padding(
-              padding: const EdgeInsets.only(top: 4),
-              child: Text(
-                q.explanation!,
-                style: TextStyle(fontSize: 13, color: Colors.grey.shade700),
-              ),
-            ),
-          if (!isCorrect)
-            AiTutorWidget(
-              questionText: q.questionText,
-              options: q.options,
-              correctAnswer: q.correctAnswer,
-              userAnswer: _selected,
-            ),
           const SizedBox(height: 12),
-          SizedBox(
-            width: double.infinity,
-            child: FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: _accent,
-                padding: const EdgeInsets.symmetric(vertical: 12),
-              ),
-              onPressed: _next,
-              child: Text(
-                str3(lang, 'Davom etish', 'Далее', 'Continue'),
-                style: const TextStyle(fontWeight: FontWeight.w800),
-              ),
-            ),
+          Duo3DButton(
+            color: isCorrect ? ok : bad,
+            onPressed: _next,
+            child: Text(str3(lang, 'Davom etish', 'Далее', 'Continue')),
           ),
         ],
       ),

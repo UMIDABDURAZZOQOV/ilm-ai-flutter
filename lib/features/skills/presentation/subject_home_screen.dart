@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/duo_chrome.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -304,9 +305,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         ];
         return Scaffold(
           body: IndexedStack(index: _tab, children: tabs),
-          bottomNavigationBar: NavigationBar(
-            selectedIndex: _tab,
-            onDestinationSelected: (index) {
+          bottomNavigationBar: DuoBottomNav(
+            index: _tab,
+            onChanged: (index) {
               // Only switch tab — do NOT bump _revision (that remounted Learn).
               if (index == _tab) return;
               setState(() {
@@ -314,13 +315,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 _tab = index;
               });
             },
-            indicatorColor:
-                (Theme.of(context).extension<AppColors>()?.colors.primary ??
-                        const Color(0xFF2A1F6B))
-                    .withValues(alpha: 0.18),
-            destinations: [
+            items: [
               for (var i = 0; i < labels.length; i++)
-                NavigationDestination(icon: Icon(icons[i]), label: labels[i]),
+                DuoNavItem(icon: icons[i], label: labels[i]),
             ],
           ),
         );
@@ -344,38 +341,40 @@ class _LearningTile extends StatelessWidget {
   final VoidCallback onTap;
 
   @override
-  Widget build(BuildContext context) => Container(
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(20),
-      border: Border.all(
-        color: Theme.of(context).dividerColor.withValues(alpha: 0.25),
-        width: 2,
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).extension<AppColors>()?.colors;
+    return Container(
+      decoration: BoxDecoration(
+        color: colors?.card ?? Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: color.withValues(alpha: 0.45), width: 2.4),
+        boxShadow: [
+          BoxShadow(color: duoShadowOf(color), offset: const Offset(0, 5)),
+        ],
       ),
-      boxShadow: [
-        BoxShadow(
-          color: color.withValues(alpha: 0.18),
-          offset: const Offset(0, 4),
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(18),
+        clipBehavior: Clip.antiAlias,
+        child: ListTile(
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 18,
+            vertical: 14,
+          ),
+          leading: CircleAvatar(
+            radius: 22,
+            backgroundColor: color.withValues(alpha: 0.14),
+            child: Icon(icon, color: color, size: 26),
+          ),
+          title: Text(
+            title,
+            style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 17),
+          ),
+          subtitle: subtitle == null ? null : Text(subtitle!),
+          trailing: const Icon(Icons.chevron_right_rounded),
+          onTap: onTap,
         ),
-      ],
-    ),
-    child: Material(
-      color: Theme.of(context).colorScheme.surface,
-      borderRadius: BorderRadius.circular(18),
-      clipBehavior: Clip.antiAlias,
-      child: ListTile(
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 18,
-          vertical: 12,
-        ),
-        leading: Icon(icon, color: color, size: 34),
-        title: Text(
-          title,
-          style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 17),
-        ),
-        subtitle: subtitle == null ? null : Text(subtitle!),
-        trailing: const Icon(Icons.chevron_right_rounded),
-        onTap: onTap,
       ),
-    ),
-  );
+    );
+  }
 }

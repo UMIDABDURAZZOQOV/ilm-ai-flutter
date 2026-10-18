@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
+import '../../../core/widgets/duo_chrome.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -400,7 +401,7 @@ class SkillPathScreen extends ConsumerWidget {
                     ),
                   ),
                 ] else ...[
-                  _ThreeDButton(
+                  Duo3DButton(
                     color: const Color(0xFFF9A825),
                     shadowColor: const Color(0xFFC77700),
                     onPressed: () => Navigator.pop(ctx, true),
@@ -475,8 +476,12 @@ class SkillPathScreen extends ConsumerWidget {
             ),
           treeAsync.maybeWhen(
             data: (tree) => Padding(
-              padding: const EdgeInsets.only(right: 16),
-              child: Center(child: HeartsXpHeader(summary: tree.user)),
+              padding: const EdgeInsets.only(right: 8),
+              child: Center(
+                child: FittedBox(
+                  child: HeartsXpHeader(summary: tree.user),
+                ),
+              ),
             ),
             orElse: () => const SizedBox.shrink(),
           ),
@@ -996,7 +1001,7 @@ class LessonPopoverContent extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              _ThreeDButton(
+              Duo3DButton(
                 color: completed ? const Color(0xFF2DD4BF) : color,
                 shadowColor: completed
                     ? const Color(0xFF0F766E)
@@ -1317,66 +1322,6 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
         else
           const SizedBox(height: 13),
       ],
-    );
-  }
-}
-
-class _ThreeDButton extends StatefulWidget {
-  final Widget child;
-  final Color color;
-  final Color shadowColor;
-  final VoidCallback? onPressed;
-
-  const _ThreeDButton({
-    required this.child,
-    required this.color,
-    required this.shadowColor,
-    required this.onPressed,
-  });
-
-  @override
-  State<_ThreeDButton> createState() => _ThreeDButtonState();
-}
-
-class _ThreeDButtonState extends State<_ThreeDButton> {
-  bool _pressed = false;
-
-  @override
-  Widget build(BuildContext context) {
-    final enabled = widget.onPressed != null;
-    final topOffset = _pressed ? 4.0 : 0.0;
-    final bottomBevel = _pressed ? 2.0 : 6.0;
-
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTapDown: enabled ? (_) => setState(() => _pressed = true) : null,
-      onTapUp: enabled ? (_) => setState(() => _pressed = false) : null,
-      onTapCancel: enabled ? () => setState(() => _pressed = false) : null,
-      onTap: enabled
-          ? () {
-              HapticFeedback.lightImpact();
-              widget.onPressed?.call();
-            }
-          : null,
-      child: Transform.translate(
-        offset: Offset(0, topOffset),
-        child: Container(
-          height: 52,
-          decoration: BoxDecoration(
-            color: enabled ? widget.color : Colors.grey.shade400,
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                color: enabled ? widget.shadowColor : Colors.grey.shade500,
-                offset: Offset(0, bottomBevel),
-                blurRadius: 0,
-              ),
-            ],
-          ),
-          alignment: Alignment.center,
-          child: widget.child,
-        ),
-      ),
     );
   }
 }

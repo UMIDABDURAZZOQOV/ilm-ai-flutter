@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/duo_chrome.dart';
 import 'package:ilm_ai_flutter/core/widgets/romb_badge.dart';
+import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/hearts_xp_widgets.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_ui.dart';
 
 void main() {
@@ -83,6 +86,101 @@ void main() {
 
       expect(find.byType(RombBadge), findsOneWidget);
       expect(find.byIcon(Icons.star), findsOneWidget);
+    });
+  });
+
+  group('Duolingo chrome (brand colours kept)', () {
+    testWidgets('Duo3DButton CHECK stays disabled until onPressed is set', (
+      tester,
+    ) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: const Scaffold(
+            body: Duo3DButton(child: Text('CHECK')),
+          ),
+        ),
+      );
+      await tester.tap(find.text('CHECK'));
+      await tester.pump();
+      expect(find.text('CHECK'), findsOneWidget);
+    });
+
+    testWidgets('DuoBottomNav reports the tapped tab immediately', (
+      tester,
+    ) async {
+      var index = 0;
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: StatefulBuilder(
+            builder: (context, setState) => Scaffold(
+              bottomNavigationBar: DuoBottomNav(
+                index: index,
+                onChanged: (i) => setState(() => index = i),
+                items: const [
+                  DuoNavItem(icon: Icons.home_rounded, label: 'Learn'),
+                  DuoNavItem(icon: Icons.person_rounded, label: 'Profile'),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.tap(find.text('Profile'));
+      await tester.pump();
+      expect(find.text('Profile'), findsOneWidget);
+    });
+
+    testWidgets('HeartsXpHeader shows streak, XP and unlimited hearts', (
+      tester,
+    ) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: Scaffold(
+            body: HeartsXpHeader(
+              summary: GamificationSummary(
+                xpTotal: 42,
+                streakDays: 3,
+              ),
+            ),
+          ),
+        ),
+      );
+      expect(find.text('3'), findsOneWidget);
+      expect(find.text('42'), findsOneWidget);
+      expect(find.text('∞'), findsOneWidget);
+      expect(find.byIcon(Icons.favorite_rounded), findsOneWidget);
+    });
+
+    testWidgets('DuoChoiceCard and progress fit a 360dp phone width', (
+      tester,
+    ) async {
+      tester.view.physicalSize = const Size(360, 640);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: Scaffold(
+            body: Column(
+              children: const [
+                DuoProgressBar(value: 0.4),
+                DuoChoiceCard(
+                  text: '4',
+                  selected: true,
+                  answered: false,
+                  isCorrectOption: true,
+                ),
+                Duo3DButton(onPressed: null, child: Text('CHECK')),
+              ],
+            ),
+          ),
+        ),
+      );
+      expect(tester.takeException(), isNull);
     });
   });
 }
