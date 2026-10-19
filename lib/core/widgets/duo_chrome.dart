@@ -15,6 +15,8 @@ class Duo3DButton extends StatefulWidget {
   final VoidCallback? onPressed;
   final Color? color;
   final Color? shadowColor;
+  final Color? textColor;
+  final Color? borderColor;
   final double height;
 
   const Duo3DButton({
@@ -23,6 +25,8 @@ class Duo3DButton extends StatefulWidget {
     this.onPressed,
     this.color,
     this.shadowColor,
+    this.textColor,
+    this.borderColor,
     this.height = 52,
   });
 
@@ -43,8 +47,11 @@ class _Duo3DButtonState extends State<Duo3DButton> {
     final bevel = enabled
         ? (widget.shadowColor ?? duoShadowOf(face))
         : const Color(0xFFB0B0B0);
+    final textCol = enabled
+        ? (widget.textColor ?? Colors.white)
+        : const Color(0xFF777777);
     final topOffset = _pressed && enabled ? 4.0 : 0.0;
-    final bottomBevel = _pressed && enabled ? 2.0 : 6.0;
+    final bottomBevel = _pressed && enabled ? 2.0 : 5.0;
 
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
@@ -67,6 +74,9 @@ class _Duo3DButtonState extends State<Duo3DButton> {
             decoration: BoxDecoration(
               color: face,
               borderRadius: BorderRadius.circular(16),
+              border: widget.borderColor != null
+                  ? Border.all(color: widget.borderColor!, width: 2)
+                  : null,
               boxShadow: [
                 BoxShadow(
                   color: bevel,
@@ -78,7 +88,7 @@ class _Duo3DButtonState extends State<Duo3DButton> {
             alignment: Alignment.center,
             child: DefaultTextStyle.merge(
               style: TextStyle(
-                color: enabled ? Colors.white : const Color(0xFF777777),
+                color: textCol,
                 fontSize: 16,
                 fontWeight: FontWeight.w900,
                 letterSpacing: 0.6,
@@ -101,16 +111,55 @@ class DuoProgressBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()?.colors;
-    final fill = color ?? colors?.secondary ?? BrandPalette.accentOrange;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final fill = color ?? colors?.primary ?? BrandPalette.indigo;
+    final trackColor =
+        isDark ? const Color(0xFF2B2353) : const Color(0xFFE5E5E5);
+
+    final clamped = value.clamp(0.0, 1.0);
+
     return ClipRRect(
       borderRadius: BorderRadius.circular(8),
-      child: SizedBox(
+      child: Container(
         height: 16,
-        child: LinearProgressIndicator(
-          value: value.clamp(0.0, 1.0),
-          minHeight: 16,
-          backgroundColor: colors?.border ?? const Color(0xFFE5E5E5),
-          color: fill,
+        color: trackColor,
+        alignment: Alignment.centerLeft,
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final barWidth = constraints.maxWidth * clamped;
+            return TweenAnimationBuilder<double>(
+              tween: Tween<double>(begin: 0.0, end: barWidth),
+              duration: const Duration(milliseconds: 320),
+              curve: Curves.easeOutCubic,
+              builder: (context, width, _) {
+                if (width <= 0) return const SizedBox.shrink();
+                return Container(
+                  width: width,
+                  height: 16,
+                  decoration: BoxDecoration(
+                    color: fill,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: 2,
+                        left: 4,
+                        right: 4,
+                        height: 3,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.35),
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            );
+          },
         ),
       ),
     );
@@ -266,4 +315,191 @@ class DuoBottomNav extends StatelessWidget {
       ),
     );
   }
+}
+
+enum BubblePointerDirection { left, down, none }
+
+class DuoSpeechBubble extends StatelessWidget {
+  final Widget? child;
+  final String? text;
+  final BubblePointerDirection pointerDirection;
+  final TextStyle? textStyle;
+  final EdgeInsetsGeometry padding;
+
+  const DuoSpeechBubble({
+    super.key,
+    this.child,
+    this.text,
+    this.pointerDirection = BubblePointerDirection.left,
+    this.textStyle,
+    this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).extension<AppColors>()?.colors;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final bg = isDark ? BrandPalette.indigoDarkCard : Colors.white;
+    final border = colors?.border ?? const Color(0xFFE5E2F2);
+    final shadow = isDark ? Colors.black26 : const Color(0x12000000);
+
+    final content = child ??
+        Text(
+          text ?? '',
+          style: textStyle ??
+              TextStyle(
+                fontSize: 16.5,
+                fontWeight: FontWeight.w800,
+                color: colors?.text ?? const Color(0xFF1E1A34),
+                height: 1.35,
+              ),
+        );
+
+    if (pointerDirection == BubblePointerDirection.down) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: padding,
+            decoration: BoxDecoration(
+              color: bg,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: border, width: 2),
+              boxShadow: [
+                BoxShadow(
+                  color: shadow,
+                  offset: const Offset(0, 3.5),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+            child: content,
+          ),
+          Transform.translate(
+            offset: const Offset(0, -1),
+            child: CustomPaint(
+              size: const Size(18, 9),
+              painter: _BubbleTailPainter(
+                color: bg,
+                borderColor: border,
+                direction: BubblePointerDirection.down,
+              ),
+            ),
+          ),
+        ],
+      );
+    } else if (pointerDirection == BubblePointerDirection.left) {
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Transform.translate(
+            offset: const Offset(1, 0),
+            child: CustomPaint(
+              size: const Size(9, 18),
+              painter: _BubbleTailPainter(
+                color: bg,
+                borderColor: border,
+                direction: BubblePointerDirection.left,
+              ),
+            ),
+          ),
+          Flexible(
+            child: Container(
+              padding: padding,
+              decoration: BoxDecoration(
+                color: bg,
+                borderRadius: BorderRadius.circular(18),
+                border: Border.all(color: border, width: 2),
+                boxShadow: [
+                  BoxShadow(
+                    color: shadow,
+                    offset: const Offset(0, 3.5),
+                    blurRadius: 0,
+                  ),
+                ],
+              ),
+              child: content,
+            ),
+          ),
+        ],
+      );
+    }
+
+    return Container(
+      padding: padding,
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: border, width: 2),
+        boxShadow: [
+          BoxShadow(
+            color: shadow,
+            offset: const Offset(0, 3.5),
+            blurRadius: 0,
+          ),
+        ],
+      ),
+      child: content,
+    );
+  }
+}
+
+class _BubbleTailPainter extends CustomPainter {
+  final Color color;
+  final Color borderColor;
+  final BubblePointerDirection direction;
+
+  const _BubbleTailPainter({
+    required this.color,
+    required this.borderColor,
+    required this.direction,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paintFill = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill;
+    final paintBorder = Paint()
+      ..color = borderColor
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round;
+
+    final path = Path();
+    if (direction == BubblePointerDirection.down) {
+      path.moveTo(0, 0);
+      path.lineTo(size.width / 2, size.height);
+      path.lineTo(size.width, 0);
+      path.close();
+      canvas.drawPath(path, paintFill);
+
+      final borderPath = Path()
+        ..moveTo(0, 0)
+        ..lineTo(size.width / 2, size.height)
+        ..lineTo(size.width, 0);
+      canvas.drawPath(borderPath, paintBorder);
+    } else {
+      path.moveTo(size.width, 0);
+      path.lineTo(0, size.height / 2);
+      path.lineTo(size.width, size.height);
+      path.close();
+      canvas.drawPath(path, paintFill);
+
+      final borderPath = Path()
+        ..moveTo(size.width, 0)
+        ..lineTo(0, size.height / 2)
+        ..lineTo(size.width, size.height);
+      canvas.drawPath(borderPath, paintBorder);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _BubbleTailPainter oldDelegate) =>
+      color != oldDelegate.color ||
+      borderColor != oldDelegate.borderColor ||
+      direction != oldDelegate.direction;
 }

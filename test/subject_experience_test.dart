@@ -464,6 +464,8 @@ void main() {
     );
     await tester.tap(find.text('4'));
     await tester.pump();
+    await tester.tap(find.text('CHECK'));
+    await tester.pump();
     await tester.pump(const Duration(seconds: 1));
     await tester.tap(find.text('Continue'));
     await tester.pump();
@@ -493,6 +495,8 @@ void main() {
         extras: extras,
       );
       await tester.tap(find.text('4'));
+      await tester.pump();
+      await tester.tap(find.text('CHECK'));
       await tester.pump();
       await tester.pump(const Duration(seconds: 1));
       await tester.tap(find.text('Continue'));
