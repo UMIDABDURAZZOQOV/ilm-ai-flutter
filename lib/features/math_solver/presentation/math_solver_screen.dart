@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -63,7 +64,7 @@ class _MathSolverScreenState extends ConsumerState<MathSolverScreen> {
           : await ref.read(mathRepositoryProvider).solveText(userId: userId, problem: _problemText.text.trim(), language: language);
       setState(() => _result = result);
     } catch (e) {
-      final msg = extractError(e);
+      final msg = extractError(e, language: ref.read(languageProvider));
       setState(() => _error = msg.toLowerCase().contains('403') || msg.toLowerCase().contains('limit')
           ? t('math.limit.reached', language)
           : t('math.error.generic', language));
@@ -242,7 +243,7 @@ class _ResultView extends StatelessWidget {
               Text(result.recognizedProblem, style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w600)),
             ],
           ),
-        ).animate().fadeIn(duration: 300.ms).slideY(begin: -0.06, end: 0, curve: Curves.easeOutCubic),
+        ).motion(context).fadeIn(duration: 300.ms).slideY(begin: -0.06, end: 0, curve: Curves.easeOutCubic),
         const SizedBox(height: 20),
         Text(t('math.result.steps.title', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.text, fontSize: 16, letterSpacing: -0.3)),
         const SizedBox(height: 12),
@@ -273,7 +274,7 @@ class _ResultView extends StatelessWidget {
                 ),
               ],
             ),
-          ).animate().fadeIn(delay: (80 + i * 70).ms, duration: 280.ms).slideX(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+          ).motion(context).fadeIn(delay: (80 + i * 70).ms, duration: 280.ms).slideX(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
         if (result.graph != null) ...[
           const SizedBox(height: 12),
           Center(
@@ -297,7 +298,7 @@ class _ResultView extends StatelessWidget {
               Text(result.finalAnswer, style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900)),
             ],
           ),
-        ).animate().fadeIn(delay: 200.ms, duration: 350.ms).scale(begin: const Offset(0.94, 0.94), end: const Offset(1, 1), curve: Curves.easeOutBack),
+        ).motion(context).fadeIn(delay: 200.ms, duration: 350.ms).scale(begin: const Offset(0.94, 0.94), end: const Offset(1, 1), curve: Curves.easeOutBack),
       ],
     );
   }

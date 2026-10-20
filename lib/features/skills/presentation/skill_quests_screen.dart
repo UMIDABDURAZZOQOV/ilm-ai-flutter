@@ -14,6 +14,7 @@ import 'daily_goal_bottom_sheet.dart';
 /// Not autoDispose: tab switches must keep the last successful payload so
 /// Quests does not flash a spinner every time (paired with IndexedStack).
 final learningGoalsProvider = FutureProvider((ref) async {
+  ref.watch(studyRevisionProvider);
   final id = ref.watch(currentUserIdProvider);
   if (id == null) throw StateError('Not signed in');
   final results = await Future.wait<dynamic>([

@@ -33,7 +33,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
       await ref.read(subscriptionRepositoryProvider).confirmPayment(sessionId: res.sessionId, userId: userId);
       ref.invalidate(subscriptionStatusProvider);
     } catch (e) {
-      if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(extractError(e))));
+      if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(extractError(e, language: ref.read(languageProvider)))));
     } finally {
       if (mounted) setState(() => _loading = false);
     }

@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -79,7 +80,7 @@ class _SatHubScreenState extends ConsumerState<SatHubScreen> {
                         const Spacer(),
                         const Icon(Icons.school_rounded, color: Colors.white38, size: 64),
                       ]),
-                    ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+                    ).motion(context).fadeIn(duration: 400.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
                     if (_score != null && !_score!.available && _score!.message != null)
                       Padding(padding: const EdgeInsets.only(top: 12), child: Text(
                         _tr(lang, 'Ballni ochish uchun bir nechta mashq sessiyasini yakunlang.', 'Пройдите несколько сессий, чтобы открыть прогноз.', _score!.message!),
@@ -97,7 +98,7 @@ class _SatHubScreenState extends ConsumerState<SatHubScreen> {
                           Text(_tr(lang, 'Tezkor mashq (10 savol)', 'Быстрая практика (10)', 'Quick practice (10 questions)'), style: const TextStyle(fontWeight: FontWeight.w700)),
                         ],
                       ),
-                    ).animate().fadeIn(delay: 100.ms, duration: 350.ms),
+                    ).motion(context).fadeIn(delay: 100.ms, duration: 350.ms),
                     const SizedBox(height: 24),
                     Text(_tr(lang, 'Savollar banki', 'Банк вопросов', 'Question bank'), style: TextStyle(color: colors.text, fontSize: 18, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
                     const SizedBox(height: 6),
@@ -120,7 +121,7 @@ class _SatHubScreenState extends ConsumerState<SatHubScreen> {
                               lang: lang,
                               onTapDomain: () => _practice(domain: d.domain, title: d.domain),
                               onTapSkill: (sk) => _practice(domain: d.domain, skill: sk, title: sk),
-                            ).animate().fadeIn(delay: (150 + (secIndex * 50) + (domainIndex * 30)).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic);
+                            ).motion(context).fadeIn(delay: (150 + (secIndex * 50) + (domainIndex * 30)).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic);
                           }),
                         ],
                       );

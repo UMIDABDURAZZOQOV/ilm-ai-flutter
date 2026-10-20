@@ -45,9 +45,9 @@ class _AiTutorWidgetState extends ConsumerState<AiTutorWidget> {
             userAnswer: widget.userAnswer,
             lang: lang,
           );
-      setState(() => _explanation = text);
+      if (mounted) setState(() => _explanation = text);
     } catch (_) {
-      setState(() => _error = true);
+      if (mounted) setState(() => _error = true);
     } finally {
       if (mounted) setState(() => _loading = false);
     }

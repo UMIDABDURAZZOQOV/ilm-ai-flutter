@@ -8,6 +8,8 @@ import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
 
 final _leaderboardProvider = FutureProvider<LeaderboardResponse>((ref) async {
+  ref.watch(studyRevisionProvider);
+  ref.watch(currentUserIdProvider);
   return ref
       .read(skillExtrasRepositoryProvider)
       .getLeaderboard()
@@ -15,6 +17,7 @@ final _leaderboardProvider = FutureProvider<LeaderboardResponse>((ref) async {
 });
 
 final _leagueProvider = FutureProvider<LeagueResponse>((ref) async {
+  ref.watch(studyRevisionProvider);
   final id = ref.watch(currentUserIdProvider);
   if (id == null) throw StateError('Not signed in');
   return ref

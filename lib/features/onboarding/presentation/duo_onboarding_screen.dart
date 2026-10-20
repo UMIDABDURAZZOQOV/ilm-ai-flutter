@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -14,10 +15,10 @@ import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/mascot_image.dart';
 import '../../auth/application/auth_controller.dart';
-import '../../auth/application/google_auth.dart';
 import '../../auth/data/auth_repository.dart';
-import '../../skills/data/skill_tree_repository.dart';
+import '../data/onboarding_draft.dart';
 import '../../skills/presentation/daily_goal_bottom_sheet.dart';
+import '../../skills/application/learning_preferences.dart';
 import '../../skills/presentation/skill_ui.dart';
 import '../../skills/presentation/subject_home_screen.dart';
 
@@ -43,7 +44,20 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
   int? _selectedLevel;
   final Set<String> _selectedReasons = {};
   int? _selectedDailyGoal;
-  bool _loadingFadeOut = false;
+  late OnboardingDraftStore _drafts;
+  int? _draftUser;
+
+  Map<String, dynamic> get _draft => {
+    'step': _step, 'subject': _selectedSubject, 'class': _selectedClass,
+    'source': _selectedSource, 'level': _selectedLevel,
+    'reason': _selectedReasons.join(','), 'daily_goal': _selectedDailyGoal,
+    'name': _nameController.text, 'age': _ageController.text,
+    'completed': _step == 12,
+  };
+
+  void _persist() { unawaited(_drafts.save(_draftUser, _draft).catchError((Object _) {})); }
+  void _change(VoidCallback change) { setState(change); _persist(); }
+
 
   final _nameController = TextEditingController();
   final _ageController = TextEditingController();
@@ -54,17 +68,30 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
   @override
   void initState() {
     super.initState();
-    _step = widget.initialStep;
+    _drafts = OnboardingDraftStore(ref.read(prefsServiceProvider));
+    _draftUser = ref.read(currentUserIdProvider);
+    final draft = _drafts.read(_draftUser);
+    _step = (draft?['step'] as int? ?? (_draftUser == null ? widget.initialStep : 11)).clamp(0, 11);
+    _selectedSubject = draft?['subject'] as String?;
+    _selectedClass = draft?['class'] as String? ?? 'all';
+    _selectedSource = draft?['source'] as String?;
+    _selectedLevel = draft?['level'] as int?;
+    _selectedDailyGoal = draft?['daily_goal'] as int?;
+    _selectedReasons.addAll((draft?['reason'] as String? ?? '').split(',').where((s) => s.isNotEmpty));
+    _nameController.text = draft?['name'] as String? ?? '';
+    _ageController.text = '${draft?['age'] ?? ''}';
+    _nameController.addListener(_persist);
+    _ageController.addListener(_persist);
     final authName =
         ref.read(authControllerProvider).valueOrNull?.name?.trim() ?? '';
-    if (authName.isNotEmpty) {
+    if (authName.isNotEmpty && _nameController.text.isEmpty) {
       _nameController.text = authName;
     }
     ref.listenManual(authControllerProvider, (_, next) {
       final name = next.valueOrNull?.name?.trim() ?? '';
       if (name.isNotEmpty && _nameController.text.isEmpty) {
         _nameController.text = name;
-        if (mounted) setState(() {});
+        if (mounted) _change(() {});
       }
     });
   }
@@ -82,7 +109,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       return;
     }
     if (_step > 0 && _step < 12) {
-      setState(() {
+      _change(() {
         _error = null;
         _step--;
       });
@@ -133,7 +160,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     }
 
     if (_step < 11) {
-      setState(() {
+      _change(() {
         _error = null;
         _step++;
       });
@@ -145,7 +172,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final age = int.tryParse(_ageController.text.trim());
 
     if (name.length < 2) {
-      setState(() => _error = str3(
+      _change(() => _error = str3(
             lang,
             'Ismingizni kiriting.',
             'Введите имя.',
@@ -154,7 +181,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       return;
     }
     if (age == null || age < 5 || age > 100) {
-      setState(() => _error = str3(
+      _change(() => _error = str3(
             lang,
             "Yoshingizni to'g'ri kiriting (5–100).",
             'Введите корректный возраст (5–100).',
@@ -186,16 +213,15 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         await prefs.setInt('daily_goal_guest', _selectedDailyGoal!);
         ref.read(userDailyGoalProvider.notifier).state = _selectedDailyGoal!;
       }
-      ref.read(onboardingCompleteProvider.notifier).complete();
 
-      setState(() {
+      _change(() {
         _step = 12;
       });
       _finishOnboarding(0);
       return;
     }
 
-    setState(() {
+    _change(() {
       _submitting = true;
       _error = null;
     });
@@ -205,9 +231,6 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           .read(authRepositoryProvider)
           .completeOnboarding(userId: userId, name: name, age: age);
 
-      try {
-        await ref.read(authControllerProvider.notifier).updateDisplayName(name);
-      } catch (_) {}
 
       // Persist user-keyed preferences
       final prefs = ref.read(prefsServiceProvider);
@@ -231,12 +254,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       if (_selectedReasons.isNotEmpty) {
         await prefs.setString('reason_$userId', _selectedReasons.join(','));
       }
+      await ref.read(learningPreferencesProvider).save(userId, {});
       await prefs.setBool('onboarding_completed_$userId', true);
 
-      ref.read(needsProfileSetupProvider.notifier).state = false;
 
       if (mounted) {
-        setState(() {
+        _change(() {
           _submitting = false;
           _step = 12;
         });
@@ -244,39 +267,25 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       }
     } catch (e) {
       if (mounted) {
-        setState(() {
+        _change(() {
           _submitting = false;
-          _error = extractError(e);
+          _error = extractError(e, language: ref.read(languageProvider));
         });
       }
     }
   }
 
   void _finishOnboarding(int userId) {
-    if (userId > 0 && _selectedSubject != null) {
-      try {
-        ref
-            .read(skillTreeRepositoryProvider)
-            .getTree(userId: userId, subjectSlug: _selectedSubject!);
-      } catch (_) {}
-    }
-
-    Future<void>.delayed(const Duration(milliseconds: 1200), () async {
+    Future<void>.delayed(const Duration(milliseconds: 650), () async {
       if (!mounted) return;
-
-      setState(() => _loadingFadeOut = true);
-      await Future<void>.delayed(const Duration(milliseconds: 250));
-      if (!mounted) return;
-
       if (userId == 0) {
-        context.go('/login');
-        return;
-      }
-
-      if (mounted) {
-        try {
-          context.go(subjectsOnly ? '/learn' : '/home');
-        } catch (_) {}
+        ref.read(onboardingCompleteProvider.notifier).complete();
+        if (mounted) GoRouter.maybeOf(context)?.go('/login');
+      } else {
+        await _drafts.clear(userId);
+        if (!mounted) return;
+        await ref.read(authControllerProvider.notifier).markProfileComplete(_nameController.text.trim(), userId: userId);
+        if (mounted) GoRouter.maybeOf(context)?.go(subjectsOnly ? '/learn' : '/home');
       }
     });
   }
@@ -356,8 +365,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                                 )
                               : const SizedBox.shrink(),
                         ),
-                        const SizedBox(
-                            width: 48), // Balancing width for symmetry
+                        if ({4, 5, 7, 9}.contains(_step))
+                          TextButton(
+                            onPressed: _submitting ? null : () => _change(() { _step++; _error = null; }),
+                            child: Text(str3(lang, 'O‘tkazish', 'Пропустить', 'Skip')),
+                          )
+                        else const SizedBox(width: 48),
                       ],
                     ),
                   ),
@@ -367,7 +380,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           children: [
             Expanded(
               child: AnimatedSwitcher(
-                duration: const Duration(milliseconds: 250),
+                duration: motionDuration(context, 250),
                 transitionBuilder: (child, animation) {
                   return FadeTransition(
                     opacity: animation,
@@ -385,7 +398,10 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 },
                 child: KeyedSubtree(
                   key: ValueKey<int>(_step),
-                  child: _buildCurrentStep(lang),
+                  child: !{1, 2, 6, 8}.contains(_step) ? _buildCurrentStep(lang) : LayoutBuilder(builder: (context, constraints) => SingleChildScrollView(
+                    child: ConstrainedBox(constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                      child: _buildCurrentStep(lang)),
+                  )),
                 ),
               ),
             ),
@@ -458,7 +474,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           leading: const Text('🇺🇿', style: TextStyle(fontSize: 28)),
           onTap: () {
             ref.read(languageProvider.notifier).setLanguage('uz');
-            setState(() {});
+            _change(() {});
           },
         ),
         const SizedBox(height: 12),
@@ -469,7 +485,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           leading: const Text('🇷🇺', style: TextStyle(fontSize: 28)),
           onTap: () {
             ref.read(languageProvider.notifier).setLanguage('ru');
-            setState(() {});
+            _change(() {});
           },
         ),
         const SizedBox(height: 12),
@@ -480,7 +496,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           leading: const Text('🇬🇧', style: TextStyle(fontSize: 28)),
           onTap: () {
             ref.read(languageProvider.notifier).setLanguage('en');
-            setState(() {});
+            _change(() {});
           },
         ),
       ],
@@ -509,7 +525,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               ),
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             )
-                .animate()
+                .motion(context)
                 .fadeIn(duration: 350.ms, delay: 100.ms)
                 .slideY(begin: 0.12, end: 0, curve: Curves.easeOutQuad),
             const SizedBox(height: 18),
@@ -517,7 +533,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               pose: MascotPose.hello,
               size: 140,
             ) as Widget)
-                .animate()
+                .motion(context)
                 .scale(
                   begin: const Offset(0.35, 0.35),
                   end: const Offset(1.0, 1.0),
@@ -617,7 +633,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    return InkWell(
+    return Semantics(button: true, selected: isSelected, child: InkWell(
       onTap: () {
         HapticFeedback.selectionClick();
         onTap();
@@ -648,7 +664,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           ),
         ),
       ),
-    );
+    ));
   }
 
   Widget _buildStep3Subject(String lang) {
@@ -671,19 +687,25 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               _buildClassChip(
                 label: str3(lang, 'Barchasi', 'Все', 'All'),
                 isSelected: _selectedClass == 'all',
-                onTap: () => setState(() => _selectedClass = 'all'),
+                onTap: () => _change(() => _selectedClass = 'all'),
               ),
-              for (int grade = 5; grade <= 11; grade++) ...[
+              for (int grade = 1; grade <= 11; grade++) ...[
                 const SizedBox(width: 8),
                 _buildClassChip(
                   label: str3(lang, '$grade-sinf', '$grade класс', 'Grade $grade'),
                   isSelected: _selectedClass == '$grade',
-                  onTap: () => setState(() => _selectedClass = '$grade'),
+                  onTap: () => _change(() => _selectedClass = '$grade'),
                 ),
               ],
             ],
           ),
         ),
+        const SizedBox(height: 8),
+        Text(str3(lang,
+          'Sinfingiz profil uchun saqlanadi. Darslar umumiy fan yo‘lida ko‘rsatiladi.',
+          'Класс сохраняется в профиле. Уроки пока идут по общему пути предмета.',
+          'Your grade is saved in your profile. Lessons currently follow the shared subject path.'),
+          style: TextStyle(fontSize: 12, color: colors.textSecondary)),
         const SizedBox(height: 16),
         catalogAsync.when(
           loading: () => const Padding(
@@ -733,7 +755,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                       ),
                     ),
                     onTap: () {
-                      setState(() => _selectedSubject = item.slug);
+                      _change(() => _selectedSubject = item.slug);
                     },
                   ),
                   const SizedBox(height: 10),
@@ -797,7 +819,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
             title: item.$2,
             isSelected: _selectedSource == item.$1,
             onTap: () {
-              setState(() => _selectedSource = item.$1);
+              _change(() => _selectedSource = item.$1);
             },
           ),
           const SizedBox(height: 10),
@@ -856,7 +878,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
             isSelected: _selectedLevel == item.$1,
             leading: _SignalBars(level: item.$1),
             onTap: () {
-              setState(() => _selectedLevel = item.$1);
+              _change(() => _selectedLevel = item.$1);
             },
           ),
           const SizedBox(height: 10),
@@ -961,7 +983,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
             isSelected: _selectedReasons.contains(item.$1),
             leading: Icon(item.$3, color: BrandPalette.indigo, size: 24),
             onTap: () {
-              setState(() {
+              _change(() {
                 if (_selectedReasons.contains(item.$1)) {
                   _selectedReasons.remove(item.$1);
                 } else {
@@ -1049,7 +1071,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               size: 26,
             ),
             onTap: () {
-              setState(() => _selectedDailyGoal = item.$1);
+              _change(() => _selectedDailyGoal = item.$1);
             },
           ),
           const SizedBox(height: 10),
@@ -1183,7 +1205,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       children: [
         ErrorBanner(
           message: _error,
-          onDismiss: () => setState(() => _error = null),
+          onDismiss: () => _change(() => _error = null),
         ),
         Container(
           padding: const EdgeInsets.all(20),
@@ -1200,7 +1222,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                     'Name or nickname'),
                 prefixIcon: Icon(Icons.person_outline,
                     color: colors.textMuted, size: 22),
-                onChanged: (_) => setState(() {}),
+                onChanged: (_) => _change(() {}),
               ),
               const SizedBox(height: 16),
               AppTextField(
@@ -1210,7 +1232,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 keyboardType: TextInputType.number,
                 prefixIcon: Icon(Icons.cake_outlined,
                     color: colors.textMuted, size: 22),
-                onChanged: (_) => setState(() {}),
+                onChanged: (_) => _change(() {}),
               ),
             ],
           ),
@@ -1223,17 +1245,14 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    return AnimatedOpacity(
-      duration: const Duration(milliseconds: 250),
-      opacity: _loadingFadeOut ? 0.0 : 1.0,
-      child: Center(
+    return Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 28),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              (MascotImage(pose: MascotPose.thinking, size: 128) as Widget)
-                  .animate(onPlay: (controller) => controller.repeat(reverse: true))
+              (MascotImage(pose: MascotPose.happy, size: 128) as Widget)
+                  .motion(context, onPlay: (controller) => controller.repeat(reverse: true))
                   .scale(
                     begin: const Offset(0.96, 0.96),
                     end: const Offset(1.04, 1.04),
@@ -1244,9 +1263,9 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               Text(
                 str3(
                   lang,
-                  'REJA TAYYORLANMOQDA...',
-                  'ПЛАН ГОТОВИТСЯ...',
-                  'PREPARING YOUR PLAN...',
+                  'TAYYOR!',
+                  'ГОТОВО!',
+                  'READY!',
                 ),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
@@ -1257,13 +1276,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 ),
               ),
               const SizedBox(height: 24),
-              const SizedBox(
-                width: 220,
-                child: DuoProgressBar(
-                  value: 0.85,
-                  color: BrandPalette.indigo,
-                ),
-              ),
+              const Icon(Icons.check_circle_rounded, color: Color(0xFF059669), size: 48),
               const SizedBox(height: 32),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
@@ -1311,7 +1324,6 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
             ],
           ),
         ),
-      ),
     );
   }
 
@@ -1425,7 +1437,7 @@ class _SelectionTile extends StatelessWidget {
         ? const Color(0xFF0D9488)
         : (isDark ? Colors.black26 : const Color(0xFFE5E2F2));
 
-    return InkWell(
+    return Semantics(button: true, selected: isSelected, child: InkWell(
       onTap: () {
         HapticFeedback.selectionClick();
         onTap();
@@ -1501,7 +1513,7 @@ class _SelectionTile extends StatelessWidget {
                 child: isSelected
                     ? const Icon(
                         Icons.check_rounded,
-                        color: Colors.white,
+                        color: BrandPalette.indigo,
                         size: 18,
                       )
                     : null,
@@ -1515,7 +1527,7 @@ class _SelectionTile extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
 

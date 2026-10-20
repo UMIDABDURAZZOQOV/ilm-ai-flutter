@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -13,6 +14,7 @@ import '../../../core/widgets/mascot_image.dart';
 import '../../../core/widgets/onboarding_illustration.dart';
 import '../../skills/presentation/skill_ui.dart';
 import 'duo_onboarding_screen.dart';
+import '../data/onboarding_draft.dart';
 
 /// Ported from ilm-ai-mobile's OnboardingScreen.tsx: swipeable PageView
 /// carousel with custom illustrations per slide.
@@ -103,6 +105,12 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   bool _startedOnboarding = false;
 
   @override
+  void initState() {
+    super.initState();
+    _startedOnboarding = OnboardingDraftStore(ref.read(prefsServiceProvider)).read(null) != null;
+  }
+
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
@@ -119,7 +127,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       return;
     }
     _controller.nextPage(
-      duration: const Duration(milliseconds: 300),
+      duration: motionDuration(context, 300),
       curve: Curves.easeOut,
     );
   }
@@ -137,7 +145,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       }
       return Scaffold(
         body: SafeArea(
-          child: Padding(
+          child: LayoutBuilder(builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(constraints: BoxConstraints(minHeight: constraints.maxHeight),
+            child: IntrinsicHeight(child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: Column(
               children: [
@@ -188,7 +198,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 const MascotImage(pose: MascotPose.hello, size: 140),
                 const SizedBox(height: 24),
                 Text(
-                  'Ilm AI',
+                  'ILM AI',
                   style: TextStyle(
                     fontSize: 34,
                     fontWeight: FontWeight.w900,
@@ -247,7 +257,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 const SizedBox(height: 20),
               ],
             ),
-          ),
+          ))),
+          )),
         ),
       );
     }
@@ -319,7 +330,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
               children: [
                 for (var i = 0; i < _activeSlides.length; i++)
                   AnimatedContainer(
-                    duration: const Duration(milliseconds: 200),
+                    duration: motionDuration(context, 200),
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     width: i == _index ? 22 : 8,
                     height: 8,

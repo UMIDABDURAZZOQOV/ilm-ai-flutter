@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -54,6 +55,6 @@ class ChatBubble extends StatelessWidget {
           ],
         ),
       ),
-    ).animate().fadeIn(duration: 220.ms).slideY(begin: isUser ? 0.15 : -0.15, end: 0, curve: Curves.easeOutCubic);
+    ).motion(context).fadeIn(duration: 220.ms).slideY(begin: isUser ? 0.15 : -0.15, end: 0, curve: Curves.easeOutCubic);
   }
 }

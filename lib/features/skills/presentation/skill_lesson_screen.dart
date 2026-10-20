@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -168,6 +169,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
             results: _results,
           );
       if (!mounted) return;
+      ref.read(studyRevisionProvider.notifier).state++;
       ref.read(soundServiceProvider).playLessonComplete();
       setState(() {
         _timer.stop();
@@ -394,7 +396,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         body: CelebrationConfetti(
           child: SafeArea(
             child: Center(
-              child: Padding(
+              child: SingleChildScrollView(
                 padding: const EdgeInsets.all(24),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -419,7 +421,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         fontSize: 22,
                         fontWeight: FontWeight.w800,
                       ),
-                    ).animate().fadeIn(duration: 250.ms).slideY(begin: 0.1, end: 0),
+                    ).motion(context).fadeIn(duration: 250.ms).slideY(begin: 0.1, end: 0),
                     const SizedBox(height: 8),
                     Row(
                       mainAxisSize: MainAxisSize.min,
@@ -432,7 +434,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                 ? Colors.amber
                                 : Colors.grey.shade300,
                           )
-                              .animate()
+                              .motion(context)
                               .scale(
                                 delay: (180 + i * 120).ms,
                                 duration: 350.ms,
@@ -441,26 +443,27 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       ],
                     ),
                     const SizedBox(height: 16),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      spacing: 16, runSpacing: 12,
                       children: [
                         _StatColumn(
                           value: '+${c.xpAwarded}',
                           label: 'XP',
-                          color: Colors.amber.shade700,
-                        ).animate().scale(delay: 350.ms, duration: 300.ms, curve: Curves.easeOutBack),
+                          color: colors.text,
+                        ).motion(context).scale(delay: 350.ms, duration: 300.ms, curve: Curves.easeOutBack),
                         const SizedBox(width: 24),
                         _StatColumn(
                           value: '${c.score}/${c.total}',
                           label: t('skills.complete.correct', language),
-                          color: Colors.green,
-                        ).animate().scale(delay: 450.ms, duration: 300.ms, curve: Curves.easeOutBack),
+                          color: colors.success,
+                        ).motion(context).scale(delay: 450.ms, duration: 300.ms, curve: Curves.easeOutBack),
                         const SizedBox(width: 24),
                         _StatColumn(
                           value: '${c.streakDays}',
                           label: t('skills.complete.streak', language),
-                          color: Colors.orange,
-                        ).animate().scale(delay: 550.ms, duration: 300.ms, curve: Curves.easeOutBack),
+                          color: colors.text,
+                        ).motion(context).scale(delay: 550.ms, duration: 300.ms, curve: Curves.easeOutBack),
                       ],
                     ),
                     const SizedBox(height: 16),
@@ -484,7 +487,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                     Duo3DButton(
                       onPressed: () => Navigator.of(context).maybePop(),
                       child: Text(t('skills.lesson.continue', language)),
-                    ).animate().fadeIn(delay: 600.ms),
+                    ).motion(context).fadeIn(delay: 600.ms),
                   ],
                 ),
               ),
@@ -737,7 +740,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       ],
                     ),
                   )
-                  .animate()
+                  .motion(context)
                   .fadeIn(duration: 200.ms)
                   .slideY(begin: 0.3, end: 0, curve: Curves.easeOutCubic),
           ],

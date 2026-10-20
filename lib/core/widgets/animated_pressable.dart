@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 
 /// Shrinks slightly on press for tactile feedback on cards/buttons/list rows.
@@ -25,7 +26,7 @@ class _AnimatedPressableState extends State<AnimatedPressable> {
       onTapCancel: widget.onTap == null ? null : () => setState(() => _pressed = false),
       child: AnimatedScale(
         scale: _pressed ? widget.scaleOnPress : 1.0,
-        duration: const Duration(milliseconds: 100),
+        duration: motionDuration(context, 100),
         curve: Curves.easeOut,
         child: widget.child,
       ),

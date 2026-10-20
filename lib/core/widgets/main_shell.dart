@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -72,7 +73,7 @@ class MainShell extends ConsumerWidget {
                 for (var i = 0; i < _icons.length; i++)
                   NavigationDestination(
                     icon: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
+                      duration: motionDuration(context, 200),
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: navigationShell.currentIndex == i 
@@ -83,7 +84,7 @@ class MainShell extends ConsumerWidget {
                       child: Icon(_icons[i], color: navigationShell.currentIndex == i ? colors.primary : colors.textMuted, size: 24),
                     ),
                     selectedIcon: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
+                      duration: motionDuration(context, 200),
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         color: colors.primary.withValues(alpha: 0.15),

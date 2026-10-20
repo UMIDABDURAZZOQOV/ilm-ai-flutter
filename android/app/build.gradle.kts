@@ -53,12 +53,11 @@ android {
 
     buildTypes {
         release {
-            // Use the real upload key when key.properties is present (Play releases);
-            // fall back to debug signing otherwise so local `flutter run` still works.
+            // Release artifacts must never silently use a debug key.
             signingConfig = if (keystorePropertiesFile.exists())
                 signingConfigs.getByName("release")
             else
-                signingConfigs.getByName("debug")
+                null
         }
     }
 }
@@ -75,4 +74,11 @@ flutter {
 
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+}
+
+
+gradle.taskGraph.whenReady {
+    if (!keystorePropertiesFile.exists() && allTasks.any { it.name.contains("Release") }) {
+        throw GradleException("Release signing requires android/key.properties and the upload keystore. Debug builds remain available.")
+    }
 }

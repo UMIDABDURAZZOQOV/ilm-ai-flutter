@@ -8,6 +8,7 @@ import '../../../core/widgets/duo_chrome.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
+import '../application/learning_preferences.dart';
 import 'mascot.dart';
 import 'skill_path_screen.dart';
 import 'skill_practice_screen.dart';
@@ -22,6 +23,7 @@ final subjectCatalogProvider = FutureProvider<List<SkillSubject>>(
 
 /// Selection belongs to the signed-in learner, not to the device's last user.
 final selectedSubjectProvider = StateProvider<String?>((ref) {
+  ref.watch(studyRevisionProvider);
   final user = ref.watch(currentUserIdProvider);
   return user == null
       ? null
@@ -46,9 +48,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   Future<void> _select(SkillSubject subject) async {
     final user = ref.read(currentUserIdProvider);
     if (user == null) return;
-    await ref
-        .read(prefsServiceProvider)
-        .setString('subject_$user', subject.slug);
+    await ref.read(learningPreferencesProvider).save(user, {'subject': subject.slug});
     if (!mounted || ref.read(currentUserIdProvider) != user) return;
     ref.read(selectedSubjectProvider.notifier).state = subject.slug;
     setState(() {
@@ -188,7 +188,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
           tr('O‘rganish', 'Учиться', 'Learn'),
           tr('Mashq', 'Практика', 'Practice'),
           tr('Vazifalar', 'Задания', 'Quests'),
-          tr('Reyting', 'Рейтинг', 'League'),
+          tr('Liga', 'Лига', 'League'),
           tr('Profil', 'Профиль', 'Profile'),
         ];
         const icons = [
@@ -300,7 +300,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         final tabs = [
           for (var i = 0; i < tabBuilders.length; i++)
             _visitedTabs.contains(i)
-                ? tabBuilders[i]()
+                ? TickerMode(enabled: _tab == i, child: tabBuilders[i]())
                 : const SizedBox.shrink(),
         ];
         return Scaffold(

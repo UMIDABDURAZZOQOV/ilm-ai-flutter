@@ -1,3 +1,5 @@
+import 'support/offline_preferences.dart';
+import 'package:ilm_ai_flutter/features/skills/application/learning_preferences.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -9,7 +11,6 @@ import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/storage/secure_token_storage.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
-import 'package:ilm_ai_flutter/features/auth/application/google_auth.dart';
 import 'package:ilm_ai_flutter/features/auth/data/auth_models.dart';
 import 'package:ilm_ai_flutter/features/auth/data/auth_repository.dart';
 import 'package:ilm_ai_flutter/features/onboarding/presentation/duo_onboarding_screen.dart';
@@ -86,6 +87,11 @@ class _MockAuthController extends AuthController {
 
   @override
   Future<void> updateDisplayName(String name) async {}
+
+  @override
+  Future<void> markProfileComplete(String name, {int? userId}) async {
+    ref.read(needsProfileSetupProvider.notifier).state = false;
+  }
 }
 
 void main() {
@@ -100,6 +106,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -150,6 +157,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -195,6 +203,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -247,6 +256,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -296,6 +306,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -351,6 +362,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -392,6 +404,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -446,6 +459,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),
@@ -519,6 +533,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(mockAuth),
@@ -577,13 +592,15 @@ void main() {
 
       // Verify flags in SharedPreferences
       expect(prefs.getBool('onboarding_completed_99'), isTrue);
-      expect(container.read(needsProfileSetupProvider), isFalse);
+      expect(container.read(needsProfileSetupProvider), isTrue);
 
       // Advances to Step 12 (Loading)
-      expect(find.text('REJA TAYYORLANMOQDA...'), findsOneWidget);
+      expect(find.text('TAYYOR!'), findsOneWidget);
 
-      // Drain completion timer
+      // The setup guard changes only when preparation finishes.
       await tester.pump(const Duration(seconds: 2));
+      await tester.pump();
+      expect(container.read(needsProfileSetupProvider), isFalse);
     });
 
     testWidgets('Back button navigates to previous step', (tester) async {
@@ -592,6 +609,7 @@ void main() {
 
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(_MockAuthController.new),
           authRepositoryProvider.overrideWithValue(_MockAuthRepo()),

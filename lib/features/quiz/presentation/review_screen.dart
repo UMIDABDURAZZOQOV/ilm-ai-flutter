@@ -48,7 +48,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
         });
       }
     } catch (e) {
-      if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(extractError(e))));
+      if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(extractError(e, language: ref.read(languageProvider)))));
     } finally {
       if (mounted) setState(() => _startingItemId = null);
     }
@@ -111,7 +111,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, _) => Center(child: Text(extractError(e), style: TextStyle(color: colors.error))),
+          error: (e, _) => Center(child: Text(extractError(e, language: ref.read(languageProvider)), style: TextStyle(color: colors.error))),
         ),
       ),
     );

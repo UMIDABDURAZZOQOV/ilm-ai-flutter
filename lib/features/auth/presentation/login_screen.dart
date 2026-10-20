@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:async';
 
 import 'package:dio/dio.dart';
@@ -81,7 +82,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       );
     }
 
-    final extracted = extractError(err);
+    final extracted = extractError(err, language: ref.read(languageProvider));
     if (extracted.isNotEmpty &&
         extracted != 'An unexpected error occurred. Please try again.' &&
         extracted != 'Request failed. Please try again.') {
@@ -150,13 +151,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     child: Image.asset('assets/icons/icon.png', width: 88, height: 88, fit: BoxFit.cover),
                   ),
                 ),
-              ).animate().fadeIn(duration: 500.ms).scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1), curve: Curves.easeOutBack),
+              ).motion(context).fadeIn(duration: 500.ms).scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1), curve: Curves.easeOutBack),
               const SizedBox(height: 32),
               Text(
                 t('auth.login.title', language),
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.5),
-              ).animate().fadeIn(delay: 100.ms, duration: 400.ms),
+              ).motion(context).fadeIn(delay: 100.ms, duration: 400.ms),
               const SizedBox(height: 10),
               Text(
                 tr(
@@ -166,7 +167,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 ),
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, color: colors.textSecondary, fontWeight: FontWeight.w500, height: 1.4),
-              ).animate().fadeIn(delay: 150.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 150.ms, duration: 350.ms),
               const SizedBox(height: 40),
               ErrorBanner(message: _error, onDismiss: () => setState(() => _error = null)),
               PremiumButton(
@@ -184,7 +185,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     Text(tr('Google bilan davom etish', 'Продолжить с Google', 'Continue with Google')),
                   ],
                 ),
-              ).animate().fadeIn(delay: 300.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 300.ms, duration: 350.ms),
             ],
           ),
         ),

@@ -22,7 +22,8 @@ class LanguageSelectScreen extends ConsumerWidget {
 
     return Scaffold(
       body: SafeArea(
-        child: Padding(
+        child: Center(child: SingleChildScrollView(
+          child: Padding(
           padding: const EdgeInsets.all(24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -69,7 +70,7 @@ class LanguageSelectScreen extends ConsumerWidget {
                 ),
             ],
           ),
-        ),
+        ))),
       ),
     );
   }

@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -251,7 +252,7 @@ class _CourseScreenState extends ConsumerState<CourseScreen> {
                           ],
                         ),
                       ),
-                    ).animate().fadeIn(delay: (le.key * 50).ms, duration: 300.ms),
+                    ).motion(context).fadeIn(delay: (le.key * 50).ms, duration: 300.ms),
                   );
                 }),
               ],

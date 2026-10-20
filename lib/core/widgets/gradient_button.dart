@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
@@ -64,11 +65,11 @@ class _GradientButtonState extends State<GradientButton> {
           );
 
     return AnimatedOpacity(
-      duration: const Duration(milliseconds: 150),
+      duration: motionDuration(context, 150),
       opacity: disabled ? 0.6 : 1,
       child: AnimatedScale(
         scale: _pressed ? 0.97 : 1.0,
-        duration: const Duration(milliseconds: 100),
+        duration: motionDuration(context, 100),
         curve: Curves.easeOut,
         child: Material(
           color: Colors.transparent,

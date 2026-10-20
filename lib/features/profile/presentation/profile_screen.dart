@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:convert';
 import 'dart:typed_data';
 
@@ -94,7 +95,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     } catch (e) {
       setState(() {
         _avatar = previous;
-        _error = extractError(e);
+        _error = extractError(e, language: ref.read(languageProvider));
       });
     } finally {
       if (mounted) setState(() => _avatarSaving = false);
@@ -119,7 +120,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
         if (mounted) setState(() => _saved = false);
       });
     } catch (e) {
-      setState(() => _error = extractError(e));
+      setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _saving = false);
     }
@@ -286,7 +287,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     ),
                   ),
                 ),
-              ).animate().fadeIn(delay: (60 * i).ms, duration: 280.ms).slideX(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: (60 * i).ms, duration: 280.ms).slideX(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 16),
             PremiumButton(
               onPressed: _confirmLogout,

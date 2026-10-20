@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -80,7 +81,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       final res = await ref.read(chatRepositoryProvider).ask(userId: userId, question: question, language: language);
       setState(() => _messages.add(ChatMessage(role: 'assistant', content: res.answer, citations: res.citations)));
     } catch (e) {
-      setState(() => _messages.add(ChatMessage(role: 'assistant', content: extractError(e))));
+      setState(() => _messages.add(ChatMessage(role: 'assistant', content: extractError(e, language: ref.read(languageProvider)))));
     } finally {
       setState(() => _sending = false);
       _scrollToBottom();
@@ -181,7 +182,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                             );
                           }
                           final m = _messages[i];
-                          return ChatBubble(isUser: m.role == 'user', content: m.content, citations: m.citations, colors: colors).animate().fadeIn(delay: (i * 50).ms, duration: 300.ms);
+                          return ChatBubble(isUser: m.role == 'user', content: m.content, citations: m.citations, colors: colors).motion(context).fadeIn(delay: (i * 50).ms, duration: 300.ms);
                         },
                       ),
           ),

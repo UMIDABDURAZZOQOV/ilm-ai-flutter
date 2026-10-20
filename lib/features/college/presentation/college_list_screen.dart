@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -257,7 +258,7 @@ class _CollegeListScreenState extends ConsumerState<CollegeListScreen> {
                                   ),
                                 ),
                               ),
-                            ).animate().fadeIn(delay: (i * 30).ms, duration: 300.ms);
+                            ).motion(context).fadeIn(delay: (i * 30).ms, duration: 300.ms);
                           },
                         ),
                       ),

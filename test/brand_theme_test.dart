@@ -140,6 +140,7 @@ void main() {
           theme: buildAppTheme(lightColors),
           home: Scaffold(
             body: HeartsXpHeader(
+              showHearts: true,
               summary: GamificationSummary(
                 xpTotal: 42,
                 streakDays: 3,

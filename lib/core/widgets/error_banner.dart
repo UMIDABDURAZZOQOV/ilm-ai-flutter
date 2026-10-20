@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -46,6 +47,6 @@ class ErrorBanner extends StatelessWidget {
             ),
         ],
       ),
-    ).animate().fadeIn(duration: const Duration(milliseconds: 300), curve: Curves.easeOut).slideX(begin: -0.1, end: 0, curve: Curves.easeOut);
+    ).motion(context).fadeIn(duration: const Duration(milliseconds: 300), curve: Curves.easeOut).slideX(begin: -0.1, end: 0, curve: Curves.easeOut);
   }
 }

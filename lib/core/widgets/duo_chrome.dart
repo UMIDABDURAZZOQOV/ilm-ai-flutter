@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
+import 'motion.dart';
+
+Color foregroundOn(Color background) => background.computeLuminance() > 0.179
+    ? const Color(0xFF18152B)
+    : Colors.white;
 
 Color duoShadowOf(Color color) {
   final hsl = HSLColor.fromColor(color);
@@ -48,52 +53,58 @@ class _Duo3DButtonState extends State<Duo3DButton> {
         ? (widget.shadowColor ?? duoShadowOf(face))
         : const Color(0xFFB0B0B0);
     final textCol = enabled
-        ? (widget.textColor ?? Colors.white)
-        : const Color(0xFF777777);
+        ? (widget.textColor ?? foregroundOn(face))
+        : const Color(0xFF555555);
     final topOffset = _pressed && enabled ? 4.0 : 0.0;
     final bottomBevel = _pressed && enabled ? 2.0 : 5.0;
 
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTapDown: enabled ? (_) => setState(() => _pressed = true) : null,
-      onTapUp: enabled ? (_) => setState(() => _pressed = false) : null,
-      onTapCancel: enabled ? () => setState(() => _pressed = false) : null,
-      onTap: enabled
-          ? () {
-              HapticFeedback.lightImpact();
-              widget.onPressed?.call();
-            }
-          : null,
-      child: Transform.translate(
-        offset: Offset(0, topOffset),
-        child: ConstrainedBox(
-          constraints: BoxConstraints(minHeight: widget.height),
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            decoration: BoxDecoration(
-              color: face,
-              borderRadius: BorderRadius.circular(16),
-              border: widget.borderColor != null
-                  ? Border.all(color: widget.borderColor!, width: 2)
-                  : null,
-              boxShadow: [
-                BoxShadow(
-                  color: bevel,
-                  offset: Offset(0, bottomBevel),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            alignment: Alignment.center,
-            child: DefaultTextStyle.merge(
-              style: TextStyle(
-                color: textCol,
-                fontSize: 16,
-                fontWeight: FontWeight.w900,
-                letterSpacing: 0.6,
+    return Semantics(
+      button: true,
+      enabled: enabled,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTapDown: enabled ? (_) => setState(() => _pressed = true) : null,
+        onTapUp: enabled ? (_) => setState(() => _pressed = false) : null,
+        onTapCancel: enabled ? () => setState(() => _pressed = false) : null,
+        onTap: enabled
+            ? () {
+                HapticFeedback.lightImpact();
+                widget.onPressed?.call();
+              }
+            : null,
+        child: AnimatedSlide(
+          duration: motionDuration(context, 90),
+          curve: Curves.easeOutCubic,
+          offset: Offset(0, topOffset / widget.height),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: widget.height),
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                color: face,
+                borderRadius: BorderRadius.circular(16),
+                border: widget.borderColor != null
+                    ? Border.all(color: widget.borderColor!, width: 2)
+                    : null,
+                boxShadow: [
+                  BoxShadow(
+                    color: bevel,
+                    offset: Offset(0, bottomBevel),
+                    blurRadius: 0,
+                  ),
+                ],
               ),
-              child: widget.child,
+              alignment: Alignment.center,
+              child: DefaultTextStyle.merge(
+                style: TextStyle(
+                  color: textCol,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 0.6,
+                ),
+                child: widget.child,
+              ),
             ),
           ),
         ),
@@ -113,53 +124,57 @@ class DuoProgressBar extends StatelessWidget {
     final colors = Theme.of(context).extension<AppColors>()?.colors;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final fill = color ?? colors?.primary ?? BrandPalette.indigo;
-    final trackColor =
-        isDark ? const Color(0xFF2B2353) : const Color(0xFFE5E5E5);
+    final trackColor = isDark
+        ? const Color(0xFF2B2353)
+        : const Color(0xFFE5E5E5);
 
     final clamped = value.clamp(0.0, 1.0);
 
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(8),
-      child: Container(
-        height: 16,
-        color: trackColor,
-        alignment: Alignment.centerLeft,
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            final barWidth = constraints.maxWidth * clamped;
-            return TweenAnimationBuilder<double>(
-              tween: Tween<double>(begin: 0.0, end: barWidth),
-              duration: const Duration(milliseconds: 320),
-              curve: Curves.easeOutCubic,
-              builder: (context, width, _) {
-                if (width <= 0) return const SizedBox.shrink();
-                return Container(
-                  width: width,
-                  height: 16,
-                  decoration: BoxDecoration(
-                    color: fill,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: 2,
-                        left: 4,
-                        right: 4,
-                        height: 3,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.35),
-                            borderRadius: BorderRadius.circular(2),
+    return Semantics(
+      value: '${(clamped * 100).round()}%',
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          height: 16,
+          color: trackColor,
+          alignment: Alignment.centerLeft,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final barWidth = constraints.maxWidth * clamped;
+              return TweenAnimationBuilder<double>(
+                tween: Tween<double>(begin: 0.0, end: barWidth),
+                duration: motionDuration(context, 320),
+                curve: Curves.easeOutCubic,
+                builder: (context, width, _) {
+                  if (width <= 0) return const SizedBox.shrink();
+                  return Container(
+                    width: width,
+                    height: 16,
+                    decoration: BoxDecoration(
+                      color: fill,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          top: 2,
+                          left: 4,
+                          right: 4,
+                          height: 3,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.35),
+                              borderRadius: BorderRadius.circular(2),
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                );
-              },
-            );
-          },
+                      ],
+                    ),
+                  );
+                },
+              );
+            },
+          ),
         ),
       ),
     );
@@ -211,27 +226,37 @@ class DuoChoiceCard extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
-      child: GestureDetector(
-        onTap: answered ? null : onTap,
-        child: Container(
-          constraints: const BoxConstraints(minHeight: 56),
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: border, width: 2.4),
-            boxShadow: [
-              BoxShadow(color: shadow, offset: const Offset(0, 4), blurRadius: 0),
-            ],
-          ),
-          alignment: Alignment.centerLeft,
-          child: Text(
-            text,
-            style: TextStyle(
-              color: textColor,
-              fontWeight: FontWeight.w700,
-              fontSize: 17.5,
-              height: 1.35,
+      child: Semantics(
+        button: true,
+        selected: selected,
+        enabled: !answered && onTap != null,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: answered ? null : onTap,
+          child: Container(
+            constraints: const BoxConstraints(minHeight: 56),
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            decoration: BoxDecoration(
+              color: bg,
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: border, width: 2.4),
+              boxShadow: [
+                BoxShadow(
+                  color: shadow,
+                  offset: const Offset(0, 4),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+            alignment: Alignment.centerLeft,
+            child: Text(
+              text,
+              style: TextStyle(
+                color: textColor,
+                fontWeight: FontWeight.w700,
+                fontSize: 17.5,
+                height: 1.35,
+              ),
             ),
           ),
         ),
@@ -276,34 +301,38 @@ class DuoBottomNav extends StatelessWidget {
               children: [
                 for (var i = 0; i < items.length; i++)
                   Expanded(
-                    child: InkWell(
-                      onTap: () => onChanged(i),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 6),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(
-                              items[i].icon,
-                              size: 28,
-                              color: i == index
-                                  ? colors.primary
-                                  : colors.textMuted,
-                            ),
-                            const SizedBox(height: 2),
-                            Text(
-                              items[i].label,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 10,
-                                fontWeight: FontWeight.w800,
+                    child: Semantics(
+                      button: true,
+                      selected: i == index,
+                      child: InkWell(
+                        onTap: () => onChanged(i),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                items[i].icon,
+                                size: 28,
                                 color: i == index
                                     ? colors.primary
                                     : colors.textMuted,
                               ),
-                            ),
-                          ],
+                              const SizedBox(height: 2),
+                              Text(
+                                items[i].label,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w800,
+                                  color: i == index
+                                      ? colors.primary
+                                      : colors.textMuted,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -344,10 +373,12 @@ class DuoSpeechBubble extends StatelessWidget {
     final border = colors?.border ?? const Color(0xFFE5E2F2);
     final shadow = isDark ? Colors.black26 : const Color(0x12000000);
 
-    final content = child ??
+    final content =
+        child ??
         Text(
           text ?? '',
-          style: textStyle ??
+          style:
+              textStyle ??
               TextStyle(
                 fontSize: 16.5,
                 fontWeight: FontWeight.w800,
@@ -434,11 +465,7 @@ class DuoSpeechBubble extends StatelessWidget {
         borderRadius: BorderRadius.circular(18),
         border: Border.all(color: border, width: 2),
         boxShadow: [
-          BoxShadow(
-            color: shadow,
-            offset: const Offset(0, 3.5),
-            blurRadius: 0,
-          ),
+          BoxShadow(color: shadow, offset: const Offset(0, 3.5), blurRadius: 0),
         ],
       ),
       child: content,

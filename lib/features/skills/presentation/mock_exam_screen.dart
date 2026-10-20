@@ -97,6 +97,8 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
     try {
       final answers = _exam!.questions.map((q) => {'question_id': q.id, 'user_answer': _answers[q.id]}).toList();
       _result = await ref.read(skillExtrasRepositoryProvider).completeMockExam(userId, _exam!.examId, answers);
+      if (!mounted) return;
+      ref.read(studyRevisionProvider.notifier).state++;
       _phase = _Phase.result;
     } catch (_) {
       _submitted = false;

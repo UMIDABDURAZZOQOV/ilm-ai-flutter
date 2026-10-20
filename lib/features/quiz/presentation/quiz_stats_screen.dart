@@ -83,7 +83,7 @@ class QuizStatsScreen extends ConsumerWidget {
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, _) => Center(child: Text(extractError(e), style: TextStyle(color: colors.error))),
+          error: (e, _) => Center(child: Text(extractError(e, language: ref.read(languageProvider)), style: TextStyle(color: colors.error))),
         ),
       ),
     );

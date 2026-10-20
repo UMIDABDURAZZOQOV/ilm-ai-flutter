@@ -51,7 +51,7 @@ class _KnowledgeBaseScreenState extends ConsumerState<KnowledgeBaseScreen> {
       await ref.read(filesRepositoryProvider).delete(userId: userId, filename: filename);
       ref.invalidate(_filesListProvider);
     } catch (e) {
-      setState(() => _error = extractError(e));
+      setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     }
   }
 
@@ -97,7 +97,7 @@ class _KnowledgeBaseScreenState extends ConsumerState<KnowledgeBaseScreen> {
                     if (context.mounted) Navigator.pop(context);
                   } catch (e) {
                     setSheetState(() {
-                      sheetError = extractError(e);
+                      sheetError = extractError(e, language: ref.read(languageProvider));
                       saving = false;
                     });
                   }
@@ -186,7 +186,7 @@ class _KnowledgeBaseScreenState extends ConsumerState<KnowledgeBaseScreen> {
                     if (context.mounted) Navigator.pop(context);
                   } catch (e) {
                     setSheetState(() {
-                      sheetError = extractError(e);
+                      sheetError = extractError(e, language: ref.read(languageProvider));
                       uploading = false;
                     });
                   }
@@ -280,7 +280,7 @@ class _KnowledgeBaseScreenState extends ConsumerState<KnowledgeBaseScreen> {
                     );
                   },
                   loading: () => const Center(child: CircularProgressIndicator()),
-                  error: (e, _) => Center(child: Text(extractError(e), style: TextStyle(color: colors.error))),
+                  error: (e, _) => Center(child: Text(extractError(e, language: ref.read(languageProvider)), style: TextStyle(color: colors.error))),
                 ),
               ),
               const SizedBox(height: 72),

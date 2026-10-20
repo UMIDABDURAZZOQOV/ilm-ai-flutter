@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -88,6 +89,7 @@ class _PathItem {
 
 final _treeProvider = FutureProvider.autoDispose
     .family<SkillTreeResponse, String>((ref, subjectSlug) async {
+      ref.watch(studyRevisionProvider);
       final userId = ref.watch(currentUserIdProvider);
       if (userId == null) throw Exception('not authenticated');
       return ref
@@ -767,6 +769,12 @@ class SkillPathScreen extends ConsumerWidget {
                                 top: points[i].dy -
                                     (items[i].isCheckpoint ? 36 : 32),
                                 child: _LessonNodeWidget(
+                                  semanticLabel: '${items[i].isCheckpoint ? items[i].unit!.titleFor(language) : items[i].lesson!.titleFor(language)}. ${
+                                    (items[i].isCheckpoint ? items[i].unit!.examStatus == 'locked' : items[i].lesson!.status == LessonStatus.locked)
+                                    ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
+                                    : (items[i].isCheckpoint ? items[i].unit!.examStatus == 'passed' : items[i].lesson!.status == LessonStatus.completed)
+                                    ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
+                                    : str3(language, 'Boshlash', 'Начать', 'Start')}',
                                   lesson: items[i].lesson,
                                   unit: items[i].unit,
                                   isCheckpoint: items[i].isCheckpoint,
@@ -1052,7 +1060,18 @@ class _FloatingStartIndicatorState extends State<_FloatingStartIndicator>
     _anim = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 900),
-    )..repeat(reverse: true);
+    );
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _anim.stop();
+      _anim.value = 0;
+    } else if (!_anim.isAnimating) {
+      _anim.repeat(reverse: true);
+    }
   }
 
   @override
@@ -1154,11 +1173,13 @@ class _LessonNodeWidget extends StatefulWidget {
   final SkillTreeLesson? lesson;
   final SkillTreeUnit? unit;
   final bool isCheckpoint;
+  final String semanticLabel;
   final Color color;
   final bool isCurrent;
   final VoidCallback onTap;
 
   const _LessonNodeWidget({
+    required this.semanticLabel,
     this.lesson,
     this.unit,
     this.isCheckpoint = false,
@@ -1209,11 +1230,11 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       } else if (completed) {
         bgColor = const Color(0xFF2DD4BF);
         shadowColor = const Color(0xFF0F766E);
-        iconColor = Colors.white;
+        iconColor = foregroundOn(bgColor);
       } else {
         bgColor = const Color(0xFFF9A825);
         shadowColor = const Color(0xFFC77700);
-        iconColor = Colors.white;
+        iconColor = foregroundOn(bgColor);
       }
     } else {
       iconData = locked
@@ -1227,11 +1248,11 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       } else if (completed) {
         bgColor = const Color(0xFFFFC800);
         shadowColor = const Color(0xFFD69A00);
-        iconColor = Colors.white;
+        iconColor = foregroundOn(bgColor);
       } else {
         bgColor = widget.color;
         shadowColor = _darken(widget.color, 0.28);
-        iconColor = Colors.white;
+        iconColor = foregroundOn(bgColor);
       }
     }
 
@@ -1285,8 +1306,8 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       );
     }
 
-    Widget node = GestureDetector(
-      behavior: HitTestBehavior.opaque,
+    Widget node = Semantics(button: true, label: widget.semanticLabel, child: InkWell(
+      borderRadius: BorderRadius.circular(32),
       onTapDown: (_) => setState(() => _pressed = true),
       onTapUp: (_) => setState(() => _pressed = false),
       onTapCancel: () => setState(() => _pressed = false),
@@ -1294,11 +1315,12 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
         HapticFeedback.lightImpact();
         widget.onTap();
       },
-      child: Transform.translate(
-        offset: Offset(0, topOffset),
+      child: AnimatedSlide(
+        duration: motionDuration(context, 90),
+        offset: Offset(0, topOffset / nodeSize),
         child: nodeContent,
       ),
-    );
+    ));
 
     return Column(
       mainAxisSize: MainAxisSize.min,

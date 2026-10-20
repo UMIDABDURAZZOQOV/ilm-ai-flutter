@@ -1,11 +1,11 @@
+import 'dart:async';
+import 'package:dio/dio.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../features/notifications/data/notifications_repository.dart';
 
 /// Ported from ilm-ai-mobile's utils/pushNotifications.ts, with one
 /// deliberate behavior change (signed off on during planning): registers a
@@ -80,17 +80,49 @@ class PushService {
     }
   }
 
-  /// Registers the current device's push token with the backend. Safe to
-  /// call multiple times; guards against redundant registration should be
-  /// applied by the caller (see the one-shot `_registered` ref in
-  /// RootNavigator-equivalent code), matching the RN app's useRef guard.
-  static Future<void> registerWithBackend(Ref ref, int userId) async {
-    final token = await _registerForPushNotifications();
-    if (token == null) return;
-    try {
-      await ref.read(notificationsRepositoryProvider).registerToken(userId: userId, token: token);
-    } catch (e) {
-      debugPrint('[push] Failed to register token with backend: $e');
+  static StreamSubscription<String>? _tokenChanges;
+  static String? _boundToken;
+  static int _generation = 0;
+  static Future<void> _pending = Future.value();
+
+  static String? stop() {
+    _generation++;
+    _tokenChanges?.cancel();
+    _tokenChanges = null;
+    final token = _boundToken;
+    _boundToken = null;
+    return token;
+  }
+
+  static Future<void> unregister(Dio dio, int userId, String token, Options options) {
+    _pending = _pending.then((_) async {
+      try { await dio.post('/notifications/unregister-token', data: {'user_id': userId, 'token': token}, options: options); } catch (_) {}
+    });
+    return _pending;
+  }
+
+  /// Account scoped, with token rotation and stale async callback protection.
+  static Future<void> registerWithBackend(Dio dio, int userId, bool Function() isCurrent) async {
+    stop();
+    final generation = _generation;
+    Future<void> send(String token) {
+      _pending = _pending.then((_) async {
+        if (generation != _generation || !isCurrent()) return;
+        _boundToken = token; // Logout can unbind an in-flight registration too.
+        try {
+          await dio.post('/notifications/register-token', data: {'user_id': userId, 'token': token});
+        } catch (_) { /* Retry on login/resume or token rotation. */ }
+      });
+      return _pending;
     }
+    try {
+      if (kIsWeb || (defaultTargetPlatform != TargetPlatform.android &&
+          defaultTargetPlatform != TargetPlatform.iOS)) { return; }
+      final token = await _registerForPushNotifications();
+      if (generation != _generation || !isCurrent() || Firebase.apps.isEmpty) return;
+      _tokenChanges = FirebaseMessaging.instance.onTokenRefresh.listen(send,
+          onError: (Object _) {});
+      if (token != null) await send(token);
+    } catch (_) { /* Missing platform configuration cannot crash authentication. */ }
   }
 }

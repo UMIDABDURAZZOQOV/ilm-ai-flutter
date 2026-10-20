@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -169,7 +170,7 @@ class StudioHubScreen extends ConsumerWidget {
                     ),
                   ]),
                 ),
-              ).animate().fadeIn(delay: (index * 50).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: (index * 50).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
             );
           }),
         ],

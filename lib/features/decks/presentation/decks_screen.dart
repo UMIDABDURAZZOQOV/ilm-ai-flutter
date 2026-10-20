@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -157,7 +158,7 @@ class _DecksScreenState extends ConsumerState<DecksScreen> {
                                 ],
                               ),
                             ),
-                          ).animate().fadeIn(delay: (entry.key * 50).ms, duration: 300.ms),
+                          ).motion(context).fadeIn(delay: (entry.key * 50).ms, duration: 300.ms),
                         )),
                   ],
                 ),

@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:async';
 import 'dart:math' as math;
 
@@ -167,7 +168,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                       ),
                     ],
                   ),
-                ).animate().fadeIn(duration: 300.ms),
+                ).motion(context).fadeIn(duration: 300.ms),
                 const SizedBox(height: 24),
 
                 // Duration presets (only when paused)
@@ -198,7 +199,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                                 colors: colors,
                                 onTap: () => _setBreakKind(true)),
                           ],
-                  ).animate().fadeIn(delay: 100.ms, duration: 300.ms),
+                  ).motion(context).fadeIn(delay: 100.ms, duration: 300.ms),
                 const SizedBox(height: 28),
 
                 // Radial timer
@@ -244,7 +245,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                       ),
                     );
                   },
-                ).animate().fadeIn(delay: 200.ms, duration: 400.ms),
+                ).motion(context).fadeIn(delay: 200.ms, duration: 400.ms),
                 const SizedBox(height: 32),
 
                 // Controls
@@ -295,7 +296,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                       ),
                     ),
                   ],
-                ).animate().fadeIn(delay: 300.ms, duration: 350.ms),
+                ).motion(context).fadeIn(delay: 300.ms, duration: 350.ms),
 
                 // Break: quick quiz from materials
                 if (!_isFocus) ...[
@@ -319,7 +320,7 @@ class _FocusScreenState extends ConsumerState<FocusScreen>
                         ),
                       ],
                     ),
-                  ).animate().fadeIn(delay: 400.ms, duration: 300.ms),
+                  ).motion(context).fadeIn(delay: 400.ms, duration: 300.ms),
                 ],
                 const SizedBox(height: 28),
                 Text(

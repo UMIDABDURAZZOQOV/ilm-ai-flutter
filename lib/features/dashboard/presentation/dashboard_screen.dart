@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -127,7 +128,7 @@ class DashboardScreen extends ConsumerWidget {
                     ),
                   ],
                 ),
-              ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.08, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(duration: 400.ms).slideY(begin: -0.08, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 16),
               todayPlanAsync.when(
                 data: (plan) {
@@ -174,7 +175,7 @@ class DashboardScreen extends ConsumerWidget {
                         ],
                       ),
                     ),
-                  ).animate().fadeIn(delay: 100.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
+                  ).motion(context).fadeIn(delay: 100.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
                 },
                 loading: () => const SizedBox.shrink(),
                 error: (_, _) => const SizedBox.shrink(),
@@ -205,7 +206,7 @@ class DashboardScreen extends ConsumerWidget {
                         ],
                       ],
                     ),
-                  ).animate().fadeIn(delay: 160.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
+                  ).motion(context).fadeIn(delay: 160.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic);
                 },
                 loading: () => const SizedBox.shrink(),
                 error: (_, _) => const SizedBox.shrink(),
@@ -278,7 +279,7 @@ class DashboardScreen extends ConsumerWidget {
                         ],
                       ),
                     ),
-                  ).animate().fadeIn(delay: (200 + i * 50).ms, duration: 350.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic);
+                  ).motion(context).fadeIn(delay: (200 + i * 50).ms, duration: 350.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic);
                 },
               ),
             ],

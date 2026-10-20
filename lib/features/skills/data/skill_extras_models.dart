@@ -8,6 +8,7 @@ class PracticeQuestion {
   final List<String> options;
   final String correctAnswer;
   final String? explanation;
+  final String? attemptId;
 
   PracticeQuestion({
     required this.id,
@@ -15,9 +16,11 @@ class PracticeQuestion {
     required this.options,
     required this.correctAnswer,
     this.explanation,
+    this.attemptId,
   });
 
   factory PracticeQuestion.fromJson(Map<String, dynamic> json) => PracticeQuestion(
+        attemptId: json['attempt_id'] as String?,
         id: json['id'] as int,
         questionText: json['question_text'] as String,
         options: (json['options'] as List? ?? []).map((e) => e.toString()).toList(),
@@ -40,7 +43,7 @@ class DailyChallenge {
         score: json['score'] as int?,
         total: json['total'] as int?,
         xpAwarded: json['xp_awarded'] as int?,
-        questions: (json['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson(e as Map<String, dynamic>)).toList(),
+        questions: (json['questions'] as List? ?? []).map((e) => PracticeQuestion.fromJson({...e as Map<String, dynamic>, 'attempt_id': json['attempt_id']})).toList(),
       );
 }
 

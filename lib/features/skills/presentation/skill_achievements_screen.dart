@@ -9,7 +9,8 @@ import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
 
 final _achievementsProvider = FutureProvider.autoDispose<List<Achievement>>((ref) async {
-  final userId = ref.read(currentUserIdProvider);
+  ref.watch(studyRevisionProvider);
+  final userId = ref.watch(currentUserIdProvider);
   if (userId == null) return [];
   return ref.read(skillExtrasRepositoryProvider).getAchievements(userId);
 });

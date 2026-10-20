@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -160,7 +161,7 @@ class _VocabScreenState extends ConsumerState<VocabScreen> {
                                 const SizedBox(height: 6),
                                 Text(entry.value.source, style: TextStyle(color: colors.textSecondary, fontSize: 12, fontStyle: FontStyle.italic)),
                               ]),
-                            ).animate().fadeIn(delay: (entry.key * 50).ms, duration: 300.ms)),
+                            ).motion(context).fadeIn(delay: (entry.key * 50).ms, duration: 300.ms)),
                       ],
                     ],
                   ],
@@ -199,7 +200,7 @@ class _VocabScreenState extends ConsumerState<VocabScreen> {
                 )).toList()),
           ],
         ]),
-      ).animate().fadeIn(delay: (index * 60).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic);
+      ).motion(context).fadeIn(delay: (index * 60).ms, duration: 350.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic);
 
   Widget _buildStarredView(ThemeColors colors, String lang) {
     if (_starred.isEmpty) {
@@ -241,7 +242,7 @@ class _VocabScreenState extends ConsumerState<VocabScreen> {
                 decoration: BoxDecoration(color: colors.card, borderRadius: BorderRadius.circular(14), border: Border.all(color: colors.border)),
                 child: Text(entry.value.word, style: TextStyle(color: colors.text, fontSize: 14, fontWeight: FontWeight.w600)),
               ),
-            ).animate().fadeIn(delay: (entry.key * 40).ms, duration: 300.ms)).toList()),
+            ).motion(context).fadeIn(delay: (entry.key * 40).ms, duration: 300.ms)).toList()),
       ],
     );
   }

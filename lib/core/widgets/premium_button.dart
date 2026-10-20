@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import 'motion.dart';
 
 /// Visual style of a [PremiumButton]. `filled` is the default gradient button;
 /// `outline` is a bordered transparent button; `ghost` is borderless/flat.
@@ -61,6 +62,7 @@ class _PremiumButtonState extends State<PremiumButton> with SingleTickerProvider
 
   @override
   Widget build(BuildContext context) {
+    _controller.duration = motionDuration(context, 150);
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final disabled = widget.onPressed == null || widget.loading;
 
@@ -124,8 +126,8 @@ class _PremiumButtonState extends State<PremiumButton> with SingleTickerProvider
                 ],
               );
 
-    return AnimatedOpacity(
-      duration: const Duration(milliseconds: 200),
+    return Semantics(button: true, enabled: !disabled, child: AnimatedOpacity(
+      duration: motionDuration(context, 200),
       opacity: disabled ? 0.5 : 1,
       child: AnimatedBuilder(
         animation: _scale,
@@ -154,7 +156,7 @@ class _PremiumButtonState extends State<PremiumButton> with SingleTickerProvider
           );
         },
       ),
-    );
+    ));
   }
 }
 

@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -176,7 +177,7 @@ class SettingsScreen extends ConsumerWidget {
                   Icon(Icons.edit_rounded, color: colors.textMuted, size: 20),
                 ],
               ),
-            ).animate().fadeIn(duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+            ).motion(context).fadeIn(duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 28),
             Text(t('settings.appearance', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.textSecondary, fontSize: 14)),
             const SizedBox(height: 12),
@@ -200,7 +201,7 @@ class SettingsScreen extends ConsumerWidget {
                     ),
                 ],
               ),
-            ).animate().fadeIn(delay: 60.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+            ).motion(context).fadeIn(delay: 60.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 28),
             Text(t('settings.language.label', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.textSecondary, fontSize: 14)),
             const SizedBox(height: 12),
@@ -224,7 +225,7 @@ class SettingsScreen extends ConsumerWidget {
                     ),
                 ],
               ),
-            ).animate().fadeIn(delay: 120.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+            ).motion(context).fadeIn(delay: 120.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 28),
             Text(
               language == 'uz'
@@ -281,7 +282,7 @@ class SettingsScreen extends ConsumerWidget {
                       ref.read(soundEffectsProvider.notifier).setEnabled(val),
                 ),
               ),
-            ).animate().fadeIn(delay: 150.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+            ).motion(context).fadeIn(delay: 150.ms, duration: 280.ms).slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 36),
             PremiumButton(
               onPressed: () async {
@@ -302,7 +303,7 @@ class SettingsScreen extends ConsumerWidget {
               borderRadius: 18,
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Text(t('settings.logout', language), style: const TextStyle(fontSize: 15)),
-            ).animate().fadeIn(delay: 180.ms, duration: 280.ms),
+            ).motion(context).fadeIn(delay: 180.ms, duration: 280.ms),
           ],
         ),
       ),

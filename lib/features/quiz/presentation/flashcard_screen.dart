@@ -45,7 +45,7 @@ class _FlashcardScreenState extends ConsumerState<FlashcardScreen> {
         _flipped = false;
       });
     } catch (e) {
-      setState(() => _error = extractError(e));
+      setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _loading = false);
     }

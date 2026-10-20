@@ -1,3 +1,5 @@
+import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/motion.dart';
 import 'dart:async';
 
 import 'package:dio/dio.dart';
@@ -67,6 +69,8 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
 
   Timer? _timer;
   int _timeLeft = 0;
+  DateTime? _deadline;
+  String? get _attemptId => _questions.isEmpty ? null : _questions.first.attemptId;
   bool get _timed => widget.mode == PracticeMode.lightning;
 
   @override
@@ -133,12 +137,15 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
   }
 
   void _startTimer() {
+    _deadline = DateTime.now().add(Duration(seconds: _timeLeft));
     _timer = Timer.periodic(const Duration(seconds: 1), (t) {
-      if (_timeLeft <= 1) {
+      if (!mounted) { t.cancel(); return; }
+      final remaining = _deadline!.difference(DateTime.now()).inSeconds;
+      if (remaining <= 0) {
         t.cancel();
         _finish();
       } else {
-        setState(() => _timeLeft--);
+        setState(() => _timeLeft = remaining);
       }
     });
   }
@@ -158,6 +165,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
       }
       _results.add({
         'question_id': q.id,
+        'answer_index': q.options.indexOf(option),
         'is_correct': isCorrect,
         'user_answer': option,
       });
@@ -190,6 +198,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
     }
     _results.add({
       'question_id': q.id,
+      'answer_index': q.options.indexOf(_selected!),
       'is_correct': isCorrect,
       'user_answer': _selected,
     });
@@ -234,6 +243,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             userId,
             widget.subjectSlug!,
             _results,
+            attemptId: _attemptId,
           );
           _extraLine =
               '${str3(lang, 'Taxminiy daraja', 'Примерный уровень', 'Estimated level')}: ${r['label']}';
@@ -245,6 +255,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             userId,
             widget.unitId!,
             _results,
+            attemptId: _attemptId,
           );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           _extraLine = r['passed'] == true
@@ -262,11 +273,11 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                 );
           break;
         case PracticeMode.daily:
-          final r = await repo.completeDailyChallenge(userId, _results);
+          final r = await repo.completeDailyChallenge(userId, _results, attemptId: _attemptId);
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           break;
         case PracticeMode.mistakes:
-          final r = await repo.completeMistakes(userId, _results);
+          final r = await repo.completeMistakes(userId, _results, attemptId: _attemptId);
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           final remaining = r['remaining'] as int? ?? 0;
           _extraLine = str3(
@@ -281,6 +292,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             userId,
             _correct,
             _results.length,
+            attemptId: _attemptId, results: _results,
           );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           break;
@@ -289,11 +301,13 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             userId,
             _correct,
             _results.length,
+            attemptId: _attemptId, results: _results,
           );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           break;
       }
       if (mounted) {
+        ref.read(studyRevisionProvider.notifier).state++;
         ref.read(soundServiceProvider).playLessonComplete();
         setState(() => _finished = true);
       }
@@ -517,7 +531,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // Do not chain flutter_animate `.animate()` on MascotImage —
+                    // Do not chain flutter_animate `.motion(context)` on MascotImage —
                     // it has a bool field named `animate` that shadows the extension.
                     const MascotImage(pose: MascotPose.happy, size: 170),
                     const SizedBox(height: 12),
@@ -527,7 +541,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                         fontSize: 22,
                         fontWeight: FontWeight.w900,
                       ),
-                    ).animate().fadeIn(duration: 250.ms).slideY(begin: 0.1, end: 0),
+                    ).motion(context).fadeIn(duration: 250.ms).slideY(begin: 0.1, end: 0),
                     const SizedBox(height: 16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -536,10 +550,10 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                           '$_correct/${_results.length}',
                           str3(lang, "To'g'ri", 'Правильно', 'Correct'),
                           const Color(0xFF58CC02),
-                        ).animate().scale(delay: 250.ms, duration: 300.ms, curve: Curves.easeOutBack),
+                        ).motion(context).scale(delay: 250.ms, duration: 300.ms, curve: Curves.easeOutBack),
                         const SizedBox(width: 32),
                         _stat('+$_xpAwarded', 'XP', const Color(0xFFFFC800))
-                            .animate()
+                            .motion(context)
                             .scale(delay: 350.ms, duration: 300.ms, curve: Curves.easeOutBack),
                       ],
                     ),
@@ -579,6 +593,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                   FilledButton(
                     style: FilledButton.styleFrom(
                       backgroundColor: _accent,
+                      foregroundColor: foregroundOn(_accent),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 40,
                         vertical: 14,
@@ -691,6 +706,8 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                           ),
                         ),
                       ),
+                    if (looksLikeUntranslatedUzbek(q.questionText, lang))
+                      Padding(padding: const EdgeInsets.only(bottom: 8), child: ContentLanguageBadge(language: lang)),
                     Text(
                       q.questionText,
                       textAlign: TextAlign.center,
@@ -738,10 +755,10 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
         style: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.w900,
-          color: color,
+          color: Theme.of(context).brightness == Brightness.light && color.computeLuminance() > 0.30 ? BrandPalette.indigo : color,
         ),
       ),
-      Text(label, style: TextStyle(fontSize: 12, color: Colors.grey.shade600)),
+      Text(label, style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurfaceVariant)),
     ],
   );
 
@@ -755,11 +772,13 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
         color: (isCorrect ? ok : bad).withValues(alpha: 0.10),
         border: Border(top: BorderSide(color: isCorrect ? ok : bad, width: 2)),
       ),
-      child: Column(
+      child: Semantics(liveRegion: true, child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Row(
+          ConstrainedBox(
+            constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.28),
+            child: SingleChildScrollView(child: Row(
             children: [
               MascotImage(
                 pose: isCorrect ? MascotPose.happy : MascotPose.sad,
@@ -787,7 +806,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                           q.explanation!,
                           style: TextStyle(
                             fontSize: 13,
-                            color: Colors.grey.shade700,
+                            color: Theme.of(context).colorScheme.onSurfaceVariant,
                           ),
                         ),
                       ),
@@ -802,6 +821,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                 ),
               ),
             ],
+          )),
           ),
           const SizedBox(height: 12),
           Duo3DButton(
@@ -810,7 +830,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             child: Text(str3(lang, 'Davom etish', 'Далее', 'Continue')),
           ),
         ],
-      ),
+      )),
     );
   }
 }

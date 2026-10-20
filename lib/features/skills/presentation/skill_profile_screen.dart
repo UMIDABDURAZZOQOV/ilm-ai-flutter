@@ -10,6 +10,7 @@ import 'streak_calendar_widget.dart';
 
 /// Kept across tab switches so Profile does not spinner-reload on every visit.
 final skillProfileProvider = FutureProvider<SkillProfile?>((ref) async {
+  ref.watch(studyRevisionProvider);
   final userId = ref.watch(currentUserIdProvider);
   if (userId == null) return null;
   return ref
@@ -65,7 +66,7 @@ class SkillProfileScreen extends ConsumerWidget {
                         ),
                       ),
                       const SizedBox(width: 14),
-                      Column(
+                      Expanded(child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
@@ -96,23 +97,23 @@ class SkillProfileScreen extends ConsumerWidget {
                             ),
                           ),
                         ],
-                      ),
+                      )),
                     ]);
                   }(),
                   const SizedBox(height: 18),
                   Row(children: [
-                    _tile(Icons.bolt_rounded, const Color(0xFFFFC800), '${p.xpTotal}', 'XP'),
+                    _tile(context, Icons.bolt_rounded, const Color(0xFFFFC800), '${p.xpTotal}', 'XP'),
                     const SizedBox(width: 10),
-                    _tile(Icons.local_fire_department_rounded, const Color(0xFFFF9600), '${p.streakDays}', str3(lang, 'kun', 'дней', 'streak')),
+                    _tile(context, Icons.local_fire_department_rounded, const Color(0xFFFF9600), '${p.streakDays}', str3(lang, 'kun', 'дней', 'streak')),
                     const SizedBox(width: 10),
-                    _tile(Icons.menu_book_rounded, const Color(0xFF2A1F6B), '${p.lessonsCompleted}', str3(lang, 'dars', 'уроков', 'lessons')),
+                    _tile(context, Icons.menu_book_rounded, const Color(0xFF2A1F6B), '${p.lessonsCompleted}', str3(lang, 'dars', 'уроков', 'lessons')),
                   ]),
                   if (p.strongest != null || p.weakest != null) ...[
                     const SizedBox(height: 12),
                     Row(children: [
-                      if (p.strongest != null) Expanded(child: _sw(str3(lang, 'Eng kuchli', 'Сильнейший', 'Strongest'), p.strongest!.nameFor(lang), '${p.strongest!.pct}%', const Color(0xFF059669))),
+                      if (p.strongest != null) Expanded(child: _sw(context, str3(lang, 'Eng kuchli', 'Сильнейший', 'Strongest'), p.strongest!.nameFor(lang), '${p.strongest!.pct}%', const Color(0xFF059669))),
                       if (p.strongest != null && p.weakest != null && p.weakest!.slug != p.strongest!.slug) const SizedBox(width: 10),
-                      if (p.weakest != null && p.weakest!.slug != p.strongest?.slug) Expanded(child: _sw(str3(lang, 'Eng zaif', 'Слабейший', 'Weakest'), p.weakest!.nameFor(lang), '${p.weakest!.pct}%', const Color(0xFFFF4B4B))),
+                      if (p.weakest != null && p.weakest!.slug != p.strongest?.slug) Expanded(child: _sw(context, str3(lang, 'Eng zaif', 'Слабейший', 'Weakest'), p.weakest!.nameFor(lang), '${p.weakest!.pct}%', const Color(0xFFFF4B4B))),
                     ]),
                   ],
                   const SizedBox(height: 18),
@@ -128,14 +129,14 @@ class SkillProfileScreen extends ConsumerWidget {
                   const SizedBox(height: 18),
                   Text(str3(lang, 'Fanlar bo\'yicha', 'По предметам', 'By subject'), style: const TextStyle(fontWeight: FontWeight.w800)),
                   const SizedBox(height: 8),
-                  for (final s in p.subjects) _subjectBar(lang, s),
+                  for (final s in p.subjects) _subjectBar(context, lang, s),
                 ],
               ),
       ),
     );
   }
 
-  Widget _tile(IconData icon, Color color, String value, String label) => Expanded(
+  Widget _tile(BuildContext context, IconData icon, Color color, String value, String label) => Expanded(
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 12),
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.black12)),
@@ -143,27 +144,28 @@ class SkillProfileScreen extends ConsumerWidget {
             Icon(icon, color: color, size: 20),
             const SizedBox(height: 2),
             Text(value, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-            Text(label, style: const TextStyle(fontSize: 10, color: Color(0xFF94A3B8))),
+            Text(label, style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurfaceVariant)),
           ]),
         ),
       );
 
-  Widget _sw(String label, String subject, String pct, Color color) => Container(
+  Widget _sw(BuildContext context, String label, String subject, String pct, Color color) => Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(color: color.withValues(alpha: 0.10), borderRadius: BorderRadius.circular(16)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text(label.toUpperCase(), style: TextStyle(fontSize: 9, fontWeight: FontWeight.w900, color: color)),
           Text(subject, style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 13)),
-          Text(pct, style: const TextStyle(fontSize: 11, color: Color(0xFF94A3B8))),
+          Text(pct, style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurfaceVariant)),
         ]),
       );
 
-  Widget _subjectBar(String lang, SubjectProgress s) => Padding(
+  Widget _subjectBar(BuildContext context, String lang, SubjectProgress s) => Padding(
         padding: const EdgeInsets.only(bottom: 10),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            Text(s.nameFor(lang), style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12.5)),
-            Text('${s.completed}/${s.total} · ⭐${s.stars}', style: const TextStyle(fontSize: 11, color: Color(0xFF94A3B8))),
+            Expanded(child: Text(s.nameFor(lang), style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12.5))),
+            const SizedBox(width: 8),
+            Text('${s.completed}/${s.total} · ⭐${s.stars}', style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurfaceVariant)),
           ]),
           const SizedBox(height: 4),
           ClipRRect(
@@ -182,7 +184,7 @@ class _Heatmap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final days = weeks * 7;
-    final today = DateTime.now();
+    final today = DateTime.now().toUtc();
     final cols = <List<int>>[];
     var current = <int>[];
     for (var i = days - 1; i >= 0; i--) {

@@ -1,54 +1,57 @@
+import 'dart:convert';
+import 'dart:math';
+import 'package:crypto/crypto.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
-
 import '../../../core/network/dio_client.dart';
 import '../data/auth_models.dart';
 import '../data/auth_repository.dart';
 import 'auth_controller.dart';
+export 'auth_controller.dart' show needsProfileSetupProvider;
 
-const _callbackScheme = 'ilmai';
-const googleAuthTimeout = Duration(seconds: 30);
+const googleAuthTimeout = Duration(
+  seconds: 30,
+); // Network phase; browser allows time for 2FA.
 
-/// Tracks whether a newly authenticated Google user still needs name + age
-/// onboarding, so the router redirect can immediately guide them to /setup
-/// rather than racing to /learn or /home.
-final needsProfileSetupProvider = StateProvider<bool>((ref) => false);
+String createCodeVerifier() => base64UrlEncode(
+  List<int>.generate(48, (_) => Random.secure().nextInt(256)),
+).replaceAll('=', '');
+String codeChallenge(String verifier) => base64UrlEncode(
+  sha256.convert(utf8.encode(verifier)).bytes,
+).replaceAll('=', '');
 
-/// Ported from ilm-ai-mobile's Login/SignUp Google-OAuth handler: the
-/// redirect_uri sent to the backend is a real HTTPS backend endpoint
-/// (registered with Google), which the backend then bounces to the app's
-/// custom `ilmai://` scheme carrying the issued tokens as query params.
-/// Returns true when the signed-in user still needs to complete the name+age
-/// onboarding (a brand-new account, or an old one that never set an age).
 Future<bool> signInWithGoogle(WidgetRef ref) async {
-  final urlRes = await ref
-      .read(authRepositoryProvider)
-      .getGoogleLoginUrl('$apiBaseUrl/auth/google-callback-mobile')
+  final repo = ref.read(authRepositoryProvider);
+  final verifier = createCodeVerifier();
+  final url = await repo
+      .getGoogleLoginUrl(
+        '$apiBaseUrl/auth/google-callback-mobile',
+        challenge: codeChallenge(verifier),
+      )
       .timeout(googleAuthTimeout);
-
   final result = await FlutterWebAuth2.authenticate(
-    url: urlRes.authUrl,
-    callbackUrlScheme: _callbackScheme,
-  ).timeout(googleAuthTimeout);
-
+    url: url.authUrl,
+    callbackUrlScheme: 'ilmai',
+  ).timeout(const Duration(minutes: 5));
   final uri = Uri.parse(result);
-  final accessToken = uri.queryParameters['access_token'];
-  final refreshToken = uri.queryParameters['refresh_token'];
-  final userIdRaw = uri.queryParameters['user_id'];
-  if (accessToken == null || refreshToken == null || userIdRaw == null) {
-    throw Exception('Invalid Google sign-in response');
+  if (uri.queryParameters['error'] != null) {
+    throw StateError('google_sign_in_failed');
   }
-
-  final needsOnboarding = uri.queryParameters['needs_onboarding'] == '1';
-  ref.read(needsProfileSetupProvider.notifier).state = needsOnboarding;
-
-  await ref.read(authControllerProvider.notifier).login(AuthResponse(
-        accessToken: accessToken,
-        refreshToken: refreshToken,
-        userId: int.parse(userIdRaw),
-        name: uri.queryParameters['name'] ?? '',
-        email: uri.queryParameters['email'] ?? '',
-      ));
-
-  return needsOnboarding;
+  if (uri.scheme != 'ilmai' ||
+      uri.host != 'auth' ||
+      uri.path != '/callback' ||
+      uri.queryParameters['state'] != url.state ||
+      uri.queryParameters['code'] == null) {
+    throw StateError('invalid_google_callback');
+  }
+  final data = await repo
+      .exchangeMobileCode(uri.queryParameters['code']!, verifier)
+      .timeout(googleAuthTimeout);
+  await ref
+      .read(authControllerProvider.notifier)
+      .login(
+        AuthResponse.fromJson(data),
+        needsOnboarding: data['needs_onboarding'] == true,
+      );
+  return ref.read(needsProfileSetupProvider) == true;
 }

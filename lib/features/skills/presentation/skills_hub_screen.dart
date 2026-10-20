@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,11 +18,13 @@ import 'skill_practice_screen.dart';
 import 'skill_ui.dart';
 
 final _subjectsProvider = FutureProvider.autoDispose<List<SkillSubject>>((ref) async {
+  ref.watch(studyRevisionProvider);
   return ref.read(skillTreeRepositoryProvider).getSubjects();
 });
 
 final _summaryProvider = FutureProvider.autoDispose<GamificationSummary?>((ref) async {
-  final userId = ref.read(currentUserIdProvider);
+  ref.watch(studyRevisionProvider);
+  final userId = ref.watch(currentUserIdProvider);
   if (userId == null) return null;
   return ref.read(skillTreeRepositoryProvider).getSummary(userId);
 });
@@ -84,7 +87,7 @@ class SkillsHubScreen extends ConsumerWidget {
                       ),
                     ],
                   ),
-                ).animate().fadeIn(duration: 300.ms),
+                ).motion(context).fadeIn(duration: 300.ms),
                 const SizedBox(height: 24),
 
                 _sectionLabel(str3(lang, 'Fanlar', 'Предметы', 'Subjects')),
@@ -124,7 +127,7 @@ class SkillsHubScreen extends ConsumerWidget {
                             ],
                           ),
                         ),
-                      ).animate().fadeIn(delay: (s.key * 50).ms, duration: 300.ms),
+                      ).motion(context).fadeIn(delay: (s.key * 50).ms, duration: 300.ms),
                   ],
                 ),
                 const SizedBox(height: 24),
@@ -199,7 +202,7 @@ class SkillsHubScreen extends ConsumerWidget {
               ],
             ),
           ),
-        ).animate().fadeIn(delay: (c.key * 30).ms, duration: 300.ms),
+        ).motion(context).fadeIn(delay: (c.key * 30).ms, duration: 300.ms),
     ];
   }
 

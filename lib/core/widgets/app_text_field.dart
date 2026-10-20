@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
@@ -89,10 +90,10 @@ class _PasswordFieldState extends State<PasswordField> {
       obscureText: !_visible,
       onChanged: widget.onChanged,
       suffixIcon: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
+        duration: motionDuration(context, 150),
         child: IconButton(
           icon: AnimatedSwitcher(
-            duration: const Duration(milliseconds: 150),
+            duration: motionDuration(context, 150),
             child: Icon(
               _visible ? Icons.visibility_off_rounded : Icons.visibility_rounded,
               color: _visible ? colors.primary : colors.textMuted,

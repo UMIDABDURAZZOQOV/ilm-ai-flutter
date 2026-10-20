@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -140,7 +141,7 @@ class _QuizSessionScreenState extends ConsumerState<QuizSessionScreen> {
                                         : _OptionState.disabled,
                             colors: colors,
                             onTap: () => _selectOption(option.value),
-                          ).animate().fadeIn(delay: (option.key * 50).ms, duration: 300.ms),
+                          ).motion(context).fadeIn(delay: (option.key * 50).ms, duration: 300.ms),
                         ),
                       if (_answered && _current.explanation.isNotEmpty)
                         PremiumCard(
@@ -149,7 +150,7 @@ class _QuizSessionScreenState extends ConsumerState<QuizSessionScreen> {
                           borderRadius: 18,
                           padding: const EdgeInsets.all(18),
                           child: Text(cleanMath(_current.explanation), style: TextStyle(color: colors.text, fontSize: 15, height: 1.5, fontWeight: FontWeight.w500)),
-                        ).animate().fadeIn(delay: 200.ms, duration: 300.ms),
+                        ).motion(context).fadeIn(delay: 200.ms, duration: 300.ms),
                     ],
                   ),
                 ),

@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -49,7 +50,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
           );
       if (mounted) setState(() => _step = 2);
     } catch (e) {
-      if (mounted) setState(() => _error = extractError(e));
+      if (mounted) setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -66,7 +67,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
           );
       await ref.read(authControllerProvider.notifier).login(res);
     } catch (e) {
-      if (mounted) setState(() => _error = extractError(e));
+      if (mounted) setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -104,14 +105,14 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
                     keyboardType: TextInputType.emailAddress,
                     prefixIcon: Icon(Icons.mail_outline, color: colors.textMuted, size: 22),
                   ),
-                ).animate().fadeIn(delay: 150.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+                ).motion(context).fadeIn(delay: 150.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
                 const SizedBox(height: 24),
                 PremiumButton(
                   onPressed: _loading ? null : _handleSendCode,
                   loading: _loading,
                   borderRadius: 20,
                   child: Text(t('forgot.send.button', language)),
-                ).animate().fadeIn(delay: 200.ms, duration: 350.ms),
+                ).motion(context).fadeIn(delay: 200.ms, duration: 350.ms),
               ] else ...[
                 PremiumCard(
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
@@ -133,20 +134,20 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
                       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide(color: colors.primary, width: 2)),
                     ),
                   ),
-                ).animate().fadeIn(delay: 150.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+                ).motion(context).fadeIn(delay: 150.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
                 const SizedBox(height: 16),
                 PremiumCard(
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                   borderRadius: 20,
                   child: PasswordField(controller: _newPassword, hint: t('forgot.new.password.placeholder', language)),
-                ).animate().fadeIn(delay: 200.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+                ).motion(context).fadeIn(delay: 200.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
                 const SizedBox(height: 24),
                 PremiumButton(
                   onPressed: _loading ? null : _handleReset,
                   loading: _loading,
                   borderRadius: 20,
                   child: Text(t('forgot.reset.button', language)),
-                ).animate().fadeIn(delay: 250.ms, duration: 350.ms),
+                ).motion(context).fadeIn(delay: 250.ms, duration: 350.ms),
               ],
               const SizedBox(height: 32),
               Center(
@@ -154,7 +155,7 @@ class _ForgotPasswordScreenState extends ConsumerState<ForgotPasswordScreen> {
                   onPressed: () => context.pop(),
                   child: Text(t('forgot.back.to.login', language), style: TextStyle(color: colors.primary, fontWeight: FontWeight.w700, fontSize: 15)),
                 ),
-              ).animate().fadeIn(delay: 300.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 300.ms, duration: 350.ms),
             ],
           ),
         ),

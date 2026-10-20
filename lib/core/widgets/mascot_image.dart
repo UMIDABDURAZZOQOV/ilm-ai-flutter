@@ -1,3 +1,4 @@
+import 'motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
@@ -48,15 +49,16 @@ class MascotImage extends StatelessWidget {
       width: size,
       height: size,
       fit: fit,
+      excludeFromSemantics: true,
       errorBuilder: (context, error, stackTrace) => SizedBox(
         width: size,
         height: size,
       ),
     );
 
-    if (animate) {
+    if (animate && !MediaQuery.disableAnimationsOf(context)) {
       image = image
-          .animate()
+          .motion(context)
           .fadeIn(duration: 250.ms)
           .scale(
             begin: const Offset(0.92, 0.92),

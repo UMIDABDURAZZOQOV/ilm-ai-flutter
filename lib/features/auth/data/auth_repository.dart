@@ -30,12 +30,20 @@ class AuthRepository {
   }
 
   Future<String> requestPasswordReset(PasswordResetRequestBody req) async {
-    final res = await _dio.post('/auth/password-reset/request', data: req.toJson());
+    final res = await _dio.post(
+      '/auth/password-reset/request',
+      data: req.toJson(),
+    );
     return (res.data as Map<String, dynamic>)['message'] as String;
   }
 
-  Future<AuthResponse> confirmPasswordReset(PasswordResetConfirmRequest req) async {
-    final res = await _dio.post('/auth/password-reset/confirm', data: req.toJson());
+  Future<AuthResponse> confirmPasswordReset(
+    PasswordResetConfirmRequest req,
+  ) async {
+    final res = await _dio.post(
+      '/auth/password-reset/confirm',
+      data: req.toJson(),
+    );
     return AuthResponse.fromJson(res.data as Map<String, dynamic>);
   }
 
@@ -54,14 +62,52 @@ class AuthRepository {
   }
 
   /// Saves the name + age the user picks right after Google sign-in (both required).
-  Future<void> completeOnboarding({required int userId, required String name, required int age}) async {
-    await _dio.post('/auth/complete-onboarding', data: {'user_id': userId, 'name': name, 'age': age});
+  Future<void> completeOnboarding({
+    required int userId,
+    required String name,
+    required int age,
+  }) async {
+    await _dio.post(
+      '/auth/complete-onboarding',
+      data: {'user_id': userId, 'name': name, 'age': age},
+    );
   }
 
-  Future<GoogleLoginUrlResponse> getGoogleLoginUrl(String redirectUri) async {
-    final res = await _dio.get('/auth/google-login', queryParameters: {'redirect_uri': redirectUri});
+  Future<Map<String, dynamic>> exchangeMobileCode(
+    String code,
+    String verifier,
+  ) async {
+    final response = await _dio.post(
+      '/auth/mobile/exchange',
+      data: {'code': code, 'code_verifier': verifier},
+      options: Options(extra: {'skipAuth': true}),
+    );
+    return Map<String, dynamic>.from(response.data as Map);
+  }
+
+  Future<bool> needsOnboarding(int userId) async {
+    final response = await _dio.get('/auth/profile/$userId');
+    final value = response.data['needs_onboarding'];
+    if (value is! bool) throw const FormatException('Invalid profile state');
+    return value;
+  }
+
+  Future<GoogleLoginUrlResponse> getGoogleLoginUrl(
+    String redirectUri, {
+    String? challenge,
+  }) async {
+    final res = await _dio.get(
+      '/auth/google-login',
+      queryParameters: {
+        'redirect_uri': redirectUri,
+        'code_challenge': ?challenge,
+        if (challenge != null) 'code_challenge_method': 'S256',
+      },
+    );
     return GoogleLoginUrlResponse.fromJson(res.data as Map<String, dynamic>);
   }
 }
 
-final authRepositoryProvider = Provider<AuthRepository>((ref) => AuthRepository(ref.watch(dioProvider)));
+final authRepositoryProvider = Provider<AuthRepository>(
+  (ref) => AuthRepository(ref.watch(dioProvider)),
+);

@@ -89,7 +89,7 @@ class _AssistantScreenState extends ConsumerState<AssistantScreen> {
       final r = await ref.read(assistantRepositoryProvider).ask(userId: userId, question: question, language: language);
       setState(() => _messages.add(_Msg('assistant', r.answer, sources: r.sources, action: r.action, followups: r.followups)));
     } catch (e) {
-      setState(() => _messages.add(_Msg('assistant', extractError(e))));
+      setState(() => _messages.add(_Msg('assistant', extractError(e, language: ref.read(languageProvider)))));
     } finally {
       setState(() => _sending = false);
       _scrollToBottom();
@@ -116,7 +116,7 @@ class _AssistantScreenState extends ConsumerState<AssistantScreen> {
       final r = await ref.read(assistantRepositoryProvider).askImage(userId: userId, question: question, language: language, imagePath: picked.path);
       setState(() => _messages.add(_Msg('assistant', r.answer, action: r.action, followups: r.followups)));
     } catch (e) {
-      setState(() => _messages.add(_Msg('assistant', extractError(e))));
+      setState(() => _messages.add(_Msg('assistant', extractError(e, language: ref.read(languageProvider)))));
     } finally {
       setState(() => _sending = false);
       _scrollToBottom();

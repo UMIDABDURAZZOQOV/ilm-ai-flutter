@@ -1,3 +1,5 @@
+import 'support/offline_preferences.dart';
+import 'package:ilm_ai_flutter/features/skills/application/learning_preferences.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -154,7 +156,7 @@ class FakeExtras extends SkillExtrasRepository {
   Future<Map<String, dynamic>> completePlacement(
     int userId,
     String subject,
-    List<Map<String, dynamic>> results,
+    List<Map<String, dynamic>> results, {String? attemptId}
   ) async {
     savedSubject = subject;
     placementSaveCount++;
@@ -183,7 +185,7 @@ class FakeExtras extends SkillExtrasRepository {
   Future<Map<String, dynamic>> completeUnitExam(
     int userId,
     int unitId,
-    List<Map<String, dynamic>> results,
+    List<Map<String, dynamic>> results, {String? attemptId}
   ) async {
     savedUnit = unitId;
     saveCount++;
@@ -233,6 +235,7 @@ void main() {
       final prefs = await PrefsService.create();
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           authControllerProvider.overrideWith(FakeAuth.new),
           skillTreeRepositoryProvider.overrideWithValue(FakeRepository()),
@@ -328,6 +331,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           currentUserIdProvider.overrideWithValue(7),
           if (language != null)
@@ -910,6 +914,7 @@ void main() {
       final prefs = await PrefsService.create();
       final container = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           currentUserIdProvider.overrideWithValue(7),
         ],
@@ -927,6 +932,7 @@ void main() {
       // User 8 has no saved goal, defaults to 20
       final containerUser8 = ProviderContainer(
         overrides: [
+        learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
           currentUserIdProvider.overrideWithValue(8),
         ],

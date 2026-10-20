@@ -101,6 +101,12 @@ class _CelebrationConfettiState extends State<CelebrationConfetti>
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (MediaQuery.disableAnimationsOf(context)) _controller.stop();
+  }
+
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();

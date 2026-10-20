@@ -57,7 +57,7 @@ class _VerifyEmailScreenState extends ConsumerState<VerifyEmailScreen> {
           );
       await ref.read(authControllerProvider.notifier).login(res);
     } catch (e) {
-      if (mounted) setState(() => _error = extractError(e));
+      if (mounted) setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -72,7 +72,7 @@ class _VerifyEmailScreenState extends ConsumerState<VerifyEmailScreen> {
           );
       _cooldown.start(_resendCooldownSeconds);
     } catch (e) {
-      if (mounted) setState(() => _error = extractError(e));
+      if (mounted) setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     }
   }
 

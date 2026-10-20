@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -58,7 +59,7 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
         context.push('/quiz/session', extra: {'questions': questions, 'difficulty': _difficulty, 'language': language});
       }
     } catch (e) {
-      setState(() => _error = extractError(e));
+      setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _generating = false);
     }
@@ -91,7 +92,7 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                       label: t('quiz.stats.title', language),
                       colors: colors,
                       onTap: () => context.push('/quiz/stats'),
-                    ).animate().fadeIn(duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
+                    ).motion(context).fadeIn(duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -100,7 +101,7 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                       label: t('flashcard.title', language),
                       colors: colors,
                       onTap: () => context.push('/quiz/flashcards'),
-                    ).animate().fadeIn(delay: 60.ms, duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
+                    ).motion(context).fadeIn(delay: 60.ms, duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -110,7 +111,7 @@ class _QuizHomeScreenState extends ConsumerState<QuizHomeScreen> {
                       badge: dueCount > 0 ? dueCount : null,
                       colors: colors,
                       onTap: () => context.push('/quiz/review'),
-                    ).animate().fadeIn(delay: 120.ms, duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
+                    ).motion(context).fadeIn(delay: 120.ms, duration: 280.ms).slideY(begin: 0.1, end: 0, curve: Curves.easeOutCubic),
                   ),
                 ],
               ),

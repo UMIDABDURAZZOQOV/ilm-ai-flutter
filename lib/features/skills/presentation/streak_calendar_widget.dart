@@ -84,7 +84,7 @@ class StreakCalendarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final now = DateTime.now();
+    final now = DateTime.now().toUtc();
     final current = targetMonth ?? now;
     final year = current.year;
     final month = current.month;

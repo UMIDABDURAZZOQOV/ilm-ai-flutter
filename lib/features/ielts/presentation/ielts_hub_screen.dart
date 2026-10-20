@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -108,7 +109,7 @@ class _IeltsHubScreenState extends ConsumerState<IeltsHubScreen> {
                 ]),
               ),
             ]),
-          ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+          ).motion(context).fadeIn(duration: 400.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
           const SizedBox(height: 24),
           Text(_tr(lang, 'To\'rt ko\'nikma', 'Четыре навыка', 'The four skills'),
               style: TextStyle(color: colors.text, fontSize: 18, fontWeight: FontWeight.w800, letterSpacing: -0.3)),
@@ -147,7 +148,7 @@ class _IeltsHubScreenState extends ConsumerState<IeltsHubScreen> {
                     ),
                   ]),
                 ),
-              ).animate().fadeIn(delay: (100 + index * 80).ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: (100 + index * 80).ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
             );
           }),
         ],

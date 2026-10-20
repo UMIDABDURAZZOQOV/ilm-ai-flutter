@@ -63,7 +63,7 @@ class _LearningPlanScreenState extends ConsumerState<LearningPlanScreen> {
       ref.invalidate(_planProvider);
       setState(() => _showForm = false);
     } catch (e) {
-      setState(() => _error = extractError(e));
+      setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _generating = false);
     }

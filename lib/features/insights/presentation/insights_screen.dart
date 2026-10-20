@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
@@ -98,7 +99,7 @@ class InsightsScreen extends ConsumerWidget {
                       colors: colors,
                     )),
                   ],
-                ).animate().fadeIn(duration: 300.ms),
+                ).motion(context).fadeIn(duration: 300.ms),
                 const SizedBox(height: 18),
 
                 if (data.recentScores.length >= 2) ...[
@@ -113,7 +114,7 @@ class InsightsScreen extends ConsumerWidget {
                         painter: _SparkPainter(data.recentScores, colors.primary),
                       )),
                     ],
-                  )).animate().fadeIn(delay: 100.ms, duration: 300.ms),
+                  )).motion(context).fadeIn(delay: 100.ms, duration: 300.ms),
                   const SizedBox(height: 18),
                 ],
 
@@ -130,17 +131,17 @@ class InsightsScreen extends ConsumerWidget {
                         child: Text(f, style: TextStyle(color: colors.textSecondary, fontSize: 12, fontWeight: FontWeight.w600)),
                       )).toList()),
                     ],
-                  )).animate().fadeIn(delay: 200.ms, duration: 300.ms),
+                  )).motion(context).fadeIn(delay: 200.ms, duration: 300.ms),
                   const SizedBox(height: 18),
                 ],
 
                 if (data.strong.isNotEmpty)
                   _TopicCard(title: _tr(lang, 'Kuchli mavzular', 'Сильные темы', 'Strong topics'),
-                      topics: data.strong, color: colors.success, colors: colors).animate().fadeIn(delay: 300.ms, duration: 300.ms),
+                      topics: data.strong, color: colors.success, colors: colors).motion(context).fadeIn(delay: 300.ms, duration: 300.ms),
                 if (data.weak.isNotEmpty) ...[
                   const SizedBox(height: 18),
                   _TopicCard(title: _tr(lang, 'Zaif mavzular', 'Слабые темы', 'Weak topics'),
-                      topics: data.weak, color: colors.warning, colors: colors).animate().fadeIn(delay: 400.ms, duration: 300.ms),
+                      topics: data.weak, color: colors.warning, colors: colors).motion(context).fadeIn(delay: 400.ms, duration: 300.ms),
                 ],
               ],
             ),

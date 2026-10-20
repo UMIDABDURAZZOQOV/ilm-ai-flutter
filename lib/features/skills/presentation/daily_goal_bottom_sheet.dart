@@ -1,7 +1,9 @@
+import '../../../core/widgets/duo_chrome.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/providers/app_providers.dart';
+import '../application/learning_preferences.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../auth/application/auth_controller.dart';
 import 'skill_ui.dart';
@@ -9,6 +11,7 @@ import 'skill_ui.dart';
 /// User-specific daily XP goal persisted in SharedPreferences via `daily_goal_<userId>`.
 /// Default is 20 XP to match the platform default.
 final userDailyGoalProvider = StateProvider<int>((ref) {
+  ref.watch(studyRevisionProvider);
   final user = ref.watch(currentUserIdProvider);
   if (user == null) return 20;
   return ref.read(prefsServiceProvider).getInt('daily_goal_$user') ?? 20;
@@ -17,7 +20,7 @@ final userDailyGoalProvider = StateProvider<int>((ref) {
 Future<void> saveDailyGoal(WidgetRef ref, int goal) async {
   final user = ref.read(currentUserIdProvider);
   if (user != null) {
-    await ref.read(prefsServiceProvider).setInt('daily_goal_$user', goal);
+    await ref.read(learningPreferencesProvider).save(user, {'daily_goal_xp': goal});
   }
   ref.read(userDailyGoalProvider.notifier).state = goal;
 }
@@ -121,7 +124,7 @@ class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return SafeArea(
-      child: Padding(
+      child: SingleChildScrollView(child: Padding(
         padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -167,6 +170,7 @@ class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
             FilledButton(
               style: FilledButton.styleFrom(
                 backgroundColor: widget.accentColor,
+                foregroundColor: foregroundOn(widget.accentColor),
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
@@ -183,13 +187,13 @@ class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w800,
-                  color: Colors.white,
+
                 ),
               ),
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }
@@ -220,7 +224,7 @@ class _GoalOptionTile extends StatelessWidget {
         ? accentColor.withValues(alpha: isDark ? 0.20 : 0.10)
         : (isDark ? Colors.grey.shade900 : Colors.grey.shade50);
 
-    return InkWell(
+    return Semantics(button: true, selected: isSelected, child: InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(16),
       child: Container(
@@ -288,6 +292,6 @@ class _GoalOptionTile extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }

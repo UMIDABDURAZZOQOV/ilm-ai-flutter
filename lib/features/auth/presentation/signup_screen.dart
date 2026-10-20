@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -52,7 +53,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
       // Backing out of the Google sheet throws CANCELED — a user choice, not an
       // error, so don't flash a red banner for it.
       final canceled = e.toString().toLowerCase().contains('cancel');
-      if (mounted && !canceled) setState(() => _error = extractError(e));
+      if (mounted && !canceled) setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _googleLoading = false);
     }
@@ -74,7 +75,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
           );
       if (mounted) context.push('/verify-email?email=${Uri.encodeComponent(res.email)}');
     } catch (e) {
-      if (mounted) setState(() => _error = extractError(e));
+      if (mounted) setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -113,19 +114,19 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     child: Image.asset('assets/icons/icon.png', width: 72, height: 72, fit: BoxFit.cover),
                   ),
                 ),
-              ).animate().fadeIn(duration: 450.ms).scale(begin: const Offset(0.85, 0.85), end: const Offset(1, 1), curve: Curves.easeOutBack),
+              ).motion(context).fadeIn(duration: 450.ms).scale(begin: const Offset(0.85, 0.85), end: const Offset(1, 1), curve: Curves.easeOutBack),
               const SizedBox(height: 24),
               Text(
                 t('auth.signup.title', language),
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.5),
-              ).animate().fadeIn(duration: 400.ms),
+              ).motion(context).fadeIn(duration: 400.ms),
               const SizedBox(height: 8),
               Text(
                 t('auth.signup.subtitle', language),
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, color: colors.textSecondary, fontWeight: FontWeight.w500),
-              ).animate().fadeIn(delay: 100.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 100.ms, duration: 350.ms),
               const SizedBox(height: 32),
               ErrorBanner(message: _error, onDismiss: () => setState(() => _error = null)),
               PremiumCard(
@@ -136,7 +137,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   hint: t('auth.name.placeholder', language),
                   prefixIcon: Icon(Icons.person_outline, color: colors.textMuted, size: 22),
                 ),
-              ).animate().fadeIn(delay: 150.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: 150.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 16),
               PremiumCard(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -147,18 +148,18 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   keyboardType: TextInputType.emailAddress,
                   prefixIcon: Icon(Icons.mail_outline, color: colors.textMuted, size: 22),
                 ),
-              ).animate().fadeIn(delay: 200.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: 200.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 16),
               PremiumCard(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 borderRadius: 20,
                 child: PasswordField(controller: _password, hint: t('auth.password.placeholder', language)),
-              ).animate().fadeIn(delay: 250.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: 250.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 8),
               Padding(
                 padding: const EdgeInsets.only(left: 4),
                 child: Text(t('auth.password.hint', language), style: TextStyle(fontSize: 13, color: colors.textMuted, fontWeight: FontWeight.w500)),
-              ).animate().fadeIn(delay: 280.ms, duration: 300.ms),
+              ).motion(context).fadeIn(delay: 280.ms, duration: 300.ms),
               const SizedBox(height: 16),
               PremiumCard(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -168,7 +169,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   hint: t('auth.confirm.password.placeholder', language),
                   onChanged: (_) => setState(() {}),
                 ),
-              ).animate().fadeIn(delay: 310.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
+              ).motion(context).fadeIn(delay: 310.ms, duration: 350.ms).slideY(begin: 0.08, end: 0, curve: Curves.easeOutCubic),
               if (passwordsMatch) ...[
                 const SizedBox(height: 8),
                 Padding(
@@ -180,7 +181,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                       Text(t('auth.password.match.ok', language), style: TextStyle(fontSize: 13, color: colors.success, fontWeight: FontWeight.w600)),
                     ],
                   ),
-                ).animate().fadeIn(delay: 330.ms, duration: 300.ms),
+                ).motion(context).fadeIn(delay: 330.ms, duration: 300.ms),
               ],
               const SizedBox(height: 24),
               PremiumButton(
@@ -188,7 +189,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                 loading: _loading,
                 borderRadius: 20,
                 child: Text(t('auth.signup.button', language)),
-              ).animate().fadeIn(delay: 360.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 360.ms, duration: 350.ms),
               const SizedBox(height: 28),
               Row(
                 children: [
@@ -216,7 +217,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     Text(t('auth.google.button', language)),
                   ],
                 ),
-              ).animate().fadeIn(delay: 390.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 390.ms, duration: 350.ms),
               const SizedBox(height: 32),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -227,7 +228,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                     child: Text(t('auth.login.button', language), style: TextStyle(color: colors.primary, fontWeight: FontWeight.w800, fontSize: 15)),
                   ),
                 ],
-              ).animate().fadeIn(delay: 420.ms, duration: 350.ms),
+              ).motion(context).fadeIn(delay: 420.ms, duration: 350.ms),
               const SizedBox(height: 24),
             ],
           ),

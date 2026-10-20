@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 export '../../../core/widgets/mascot_image.dart';
@@ -20,9 +21,9 @@ class Mascot extends StatelessWidget {
       child: CustomPaint(painter: _MascotPainter(mood: mood)),
     );
     if (mood == MascotMood.cheer) {
-      return child.animate(onPlay: (c) => c.repeat(reverse: true)).moveY(begin: 0, end: -14, duration: 300.ms, curve: Curves.easeInOut);
+      return child.motion(context, onPlay: (c) => c.repeat(reverse: true)).moveY(begin: 0, end: -14, duration: 300.ms, curve: Curves.easeInOut);
     }
-    return child.animate(onPlay: (c) => c.repeat(reverse: true)).rotate(begin: -0.02, end: 0.02, duration: 1100.ms, curve: Curves.easeInOut);
+    return child.motion(context, onPlay: (c) => c.repeat(reverse: true)).rotate(begin: -0.02, end: 0.02, duration: 1100.ms, curve: Curves.easeInOut);
   }
 }
 

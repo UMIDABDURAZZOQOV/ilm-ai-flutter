@@ -1,3 +1,4 @@
+import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -104,7 +105,7 @@ class _TelegramScreenState extends ConsumerState<TelegramScreen> {
       ref.invalidate(_telegramStatusProvider);
       setState(() => _saved = true);
     } catch (e) {
-      setState(() => _error = extractError(e));
+      setState(() => _error = extractError(e, language: ref.read(languageProvider)));
     } finally {
       if (mounted) setState(() => _saving = false);
     }
@@ -154,7 +155,7 @@ class _TelegramScreenState extends ConsumerState<TelegramScreen> {
                   child: Column(
                     children: [
                       DuoIcon(linked ? Icons.check_circle_rounded : Icons.link_rounded, size: 40, color: linked ? colors.success : colors.primary)
-                          .animate(onPlay: (c) => linked ? null : c.repeat(reverse: true))
+                          .motion(context, onPlay: (c) => linked ? null : c.repeat(reverse: true))
                           .scaleXY(begin: 1, end: linked ? 1 : 1.08, duration: 900.ms, curve: Curves.easeInOut),
                       const SizedBox(height: 10),
                       Text(
@@ -174,7 +175,7 @@ class _TelegramScreenState extends ConsumerState<TelegramScreen> {
                       ),
                     ],
                   ),
-                ).animate().fadeIn(duration: 320.ms).slideY(begin: -0.05, end: 0, curve: Curves.easeOutCubic),
+                ).motion(context).fadeIn(duration: 320.ms).slideY(begin: -0.05, end: 0, curve: Curves.easeOutCubic),
                 if (linked)
                   Container(
                     padding: const EdgeInsets.all(16),
@@ -203,7 +204,7 @@ class _TelegramScreenState extends ConsumerState<TelegramScreen> {
                         ],
                       ],
                     ),
-                  ).animate().fadeIn(delay: 80.ms, duration: 320.ms).slideY(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
+                  ).motion(context).fadeIn(delay: 80.ms, duration: 320.ms).slideY(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
                 const SizedBox(height: 16),
                 GradientButton(
                   onPressed: _openBot,
@@ -284,12 +285,12 @@ class _TelegramScreenState extends ConsumerState<TelegramScreen> {
                         Expanded(child: Text(_botFeatures[i].desc[language] ?? _botFeatures[i].desc['en']!, style: TextStyle(color: colors.textSecondary, fontSize: 13))),
                       ],
                     ),
-                  ).animate().fadeIn(delay: (240 + i * 60).ms, duration: 260.ms).slideX(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
+                  ).motion(context).fadeIn(delay: (240 + i * 60).ms, duration: 260.ms).slideX(begin: 0.05, end: 0, curve: Curves.easeOutCubic),
               ],
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (e, _) => Center(child: Text(extractError(e), style: TextStyle(color: colors.error))),
+          error: (e, _) => Center(child: Text(extractError(e, language: ref.read(languageProvider)), style: TextStyle(color: colors.error))),
         ),
       ),
     );

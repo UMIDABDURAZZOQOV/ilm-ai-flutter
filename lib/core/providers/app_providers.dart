@@ -27,13 +27,29 @@ class ThemeModeNotifier extends Notifier<String> {
 
 final themeModeProvider = NotifierProvider<ThemeModeNotifier, String>(ThemeModeNotifier.new);
 
+class PlatformBrightnessNotifier extends Notifier<Brightness> with WidgetsBindingObserver {
+  @override
+  Brightness build() {
+    WidgetsBinding.instance.addObserver(this);
+    ref.onDispose(() => WidgetsBinding.instance.removeObserver(this));
+    return WidgetsBinding.instance.platformDispatcher.platformBrightness;
+  }
+  @override
+  void didChangePlatformBrightness() {
+    state = WidgetsBinding.instance.platformDispatcher.platformBrightness;
+  }
+}
+
+final platformBrightnessProvider = NotifierProvider<PlatformBrightnessNotifier, Brightness>(PlatformBrightnessNotifier.new);
+final studyRevisionProvider = StateProvider<int>((ref) => 0);
+
 /// Resolves 'system' against the platform brightness, mirroring RN's
 /// ThemeContext resolvedTheme derivation via useColorScheme().
 final resolvedColorsProvider = Provider<ThemeColors>((ref) {
   final mode = ref.watch(themeModeProvider);
   if (mode == 'light') return lightColors;
   if (mode == 'dark') return darkColors;
-  final brightness = WidgetsBinding.instance.platformDispatcher.platformBrightness;
+  final brightness = ref.watch(platformBrightnessProvider);
   return brightness == Brightness.dark ? darkColors : lightColors;
 });
 

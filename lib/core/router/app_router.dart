@@ -7,8 +7,8 @@ import '../config/product_mode.dart';
 import '../../features/skills/presentation/subject_home_screen.dart';
 import '../splash/splash_screen.dart';
 import '../../features/auth/application/auth_controller.dart';
-import '../../features/auth/application/google_auth.dart';
 import '../../features/onboarding/presentation/language_select_screen.dart';
+import '../../features/onboarding/data/onboarding_draft.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/auth/presentation/login_screen.dart';
 import '../../features/auth/presentation/setup_profile_screen.dart';
@@ -70,6 +70,7 @@ CustomTransitionPage<void> _fadeSlidePage(Widget child, GoRouterState state) {
     transitionDuration: const Duration(milliseconds: 260),
     reverseTransitionDuration: const Duration(milliseconds: 200),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      if (MediaQuery.disableAnimationsOf(context)) return child;
       final curved = CurvedAnimation(
         parent: animation,
         curve: Curves.easeOutCubic,
@@ -96,6 +97,7 @@ class _RouterRefreshNotifier extends ChangeNotifier {
     ref.listen(onboardingCompleteProvider, (_, _) => notifyListeners());
     ref.listen(authControllerProvider, (_, _) => notifyListeners());
     ref.listen(needsProfileSetupProvider, (_, _) => notifyListeners());
+    ref.listen(sessionRestoreErrorProvider, (_, _) => notifyListeners());
   }
 }
 
@@ -117,9 +119,13 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       final onboardingDone = ref.read(onboardingCompleteProvider);
       final authed = authState.valueOrNull != null;
+      if (authState.hasError || ref.read(sessionRestoreErrorProvider) != null) {
+        return loc == '/splash' ? null : '/splash';
+      }
 
       if (!onboardingDone) {
-        return _preAuthRoutes.contains(loc) ? null : '/language-select';
+        return _preAuthRoutes.contains(loc) ? null :
+            OnboardingDraftStore(ref.read(prefsServiceProvider)).read(null) != null ? '/onboarding' : '/language-select';
       }
       if (!authed) {
         return _authRoutes.contains(loc) ? null : '/login';
