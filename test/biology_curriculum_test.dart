@@ -367,6 +367,62 @@ void main() {
     }
   });
 
+  testWidgets(
+    'Mendel genotype case remains distinct through wrong feedback and review',
+    (tester) async {
+      final data = fixture('biology_mendel_lesson');
+      dio.httpClientAdapter = Adapter((request) {
+        requests.add(request);
+        if (request.path.endsWith('/start')) return reply(200, data);
+        if (request.path.endsWith('/complete')) {
+          return reply(200, fixture('biology_mendel_result'));
+        }
+        throw StateError('Unexpected Mendel lesson request');
+      });
+      await mount(
+        tester,
+        SkillLessonScreen(
+          lesson: SkillTreeLesson.fromJson(fixture('biology_mendel_row')),
+        ),
+      );
+      for (var i = 1; i < (data['theory'] as List).length; i++) {
+        await tap(tester, 'Davom etish');
+      }
+      await tap(tester, 'Testni boshlash!');
+      final questions = data['questions'] as List;
+      expect(questions[1]['correct_answer'], 'Aa');
+      expect(questions[1]['options'], containsAll(['AA', 'Aa', 'aa']));
+      for (var i = 0; i < questions.length; i++) {
+        await tap(
+          tester,
+          i == 1 ? 'AA' : questions[i]['correct_answer'] as String,
+        );
+        await tap(tester, 'TEKSHIRISH');
+        expect(find.text('Ajoyib!'), i == 1 ? findsNothing : findsOneWidget);
+        await tap(tester, 'Davom etish');
+      }
+      // The wrong item returns, but reviewing it must not replace the first answer.
+      await tap(tester, 'Aa');
+      await tap(tester, 'TEKSHIRISH');
+      expect(find.text('Ajoyib!'), findsOneWidget);
+      await tap(tester, 'Davom etish');
+      expect(find.text('Dars yakunlandi!'), findsOneWidget);
+      expect(find.text('+20'), findsOneWidget);
+      final completions = requests
+          .where((r) => r.path.endsWith('/complete'))
+          .toList();
+      expect(completions, hasLength(1));
+      final answers = (completions.single.data as Map)['results'] as List;
+      expect(answers, hasLength(questions.length));
+      expect(answers[1]['user_answer'], 'AA');
+      expect(answers[1]['is_correct'], isFalse);
+      expect(tester.takeException(), isNull);
+      await tester.pumpAndSettle();
+      await tester.pumpWidget(const SizedBox());
+      await tester.pump(const Duration(milliseconds: 100));
+    },
+  );
+
   for (final grade in [6, 8]) {
     testWidgets(
       'grade $grade real sourced lesson completes through the existing Ilmo engine',
