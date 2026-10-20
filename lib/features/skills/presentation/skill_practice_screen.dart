@@ -19,6 +19,7 @@ import 'ai_tutor_widget.dart';
 import 'mascot.dart';
 import 'skill_ui.dart';
 import 'study_exit_guard.dart';
+import 'content_source_button.dart';
 
 enum PracticeMode {
   daily,
@@ -706,7 +707,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                           ),
                         ),
                       ),
-                    if (looksLikeUntranslatedUzbek(q.questionText, lang))
+                    if ((q.source != null && lang != 'uz') || looksLikeUntranslatedUzbek(q.questionText, lang))
                       Padding(padding: const EdgeInsets.only(bottom: 8), child: ContentLanguageBadge(language: lang)),
                     Text(
                       q.questionText,
@@ -717,6 +718,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                         height: 1.35,
                       ),
                     ),
+                    if(q.source != null) ContentSourceButton(source:q.source!,language:lang),
                     const SizedBox(height: 20),
                     for (final opt in q.options)
                       DuoChoiceCard(

@@ -1,0 +1,61 @@
+{
+  "subject": "biologiya",
+  "grades": [
+    {
+      "grade": 5,
+      "title_uz": "Biologiya",
+      "status": "mapped",
+      "ready_lessons": 1,
+      "book_id": "biology-5-2020",
+      "language": "uz"
+    },
+    {
+      "grade": 6,
+      "title_uz": "Botanika",
+      "status": "blocked_transfer_limit_32_mib",
+      "ready_lessons": 0,
+      "book_id": "biology-6-unavailable",
+      "language": "uz"
+    },
+    {
+      "grade": 7,
+      "title_uz": "Biologiya (Zoologiya)",
+      "status": "mapped",
+      "ready_lessons": 0,
+      "book_id": "biology-7-2017",
+      "language": "uz"
+    },
+    {
+      "grade": 8,
+      "title_uz": "Odam va uning salomatligi",
+      "status": "blocked_transfer_limit_32_mib",
+      "ready_lessons": 0,
+      "book_id": "biology-8-unavailable",
+      "language": "uz"
+    },
+    {
+      "grade": 9,
+      "title_uz": "Biologiya. Sitologiya va genetika asoslari",
+      "status": "mapped",
+      "ready_lessons": 0,
+      "book_id": "biology-9-2019",
+      "language": "uz"
+    },
+    {
+      "grade": 10,
+      "title_uz": "Biologiya",
+      "status": "mapped",
+      "ready_lessons": 0,
+      "book_id": "biology-10-2017",
+      "language": "uz"
+    },
+    {
+      "grade": 11,
+      "title_uz": "Biologiya",
+      "status": "mapped",
+      "ready_lessons": 0,
+      "book_id": "biology-11-2018",
+      "language": "uz"
+    }
+  ]
+}

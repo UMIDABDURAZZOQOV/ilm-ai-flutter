@@ -9,10 +9,12 @@ Duration motionDuration(BuildContext context, int milliseconds) =>
 extension AccessibleMotion on Widget {
   Animate motion(
     BuildContext context, {
+    Key? key,
     void Function(AnimationController)? onPlay,
   }) {
     final reduced = MediaQuery.disableAnimationsOf(context);
     return Animate(
+      key: key,
       autoPlay: !reduced,
       value: reduced ? 1 : null,
       onPlay: reduced ? null : onPlay,

@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/network/dio_client.dart';
+import '../../../core/network/api_contract.dart';
 import 'auth_models.dart';
 
 /// Ported 1:1 from ilm-ai-mobile's src/api/auth.ts.
@@ -104,7 +105,13 @@ class AuthRepository {
         if (challenge != null) 'code_challenge_method': 'S256',
       },
     );
-    return GoogleLoginUrlResponse.fromJson(res.data as Map<String, dynamic>);
+    if (res.data is! Map<String, dynamic>) throw const InvalidApiResponseException();
+    final data = res.data as Map<String, dynamic>;
+    // Fail before opening an old callback that puts JWTs in a custom URI.
+    if (challenge != null && data['mobile_auth_version'] != 2) {
+      throw const ApiCompatibilityException();
+    }
+    return GoogleLoginUrlResponse.fromJson(data);
   }
 }
 

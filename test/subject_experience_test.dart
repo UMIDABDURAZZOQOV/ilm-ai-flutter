@@ -83,6 +83,7 @@ class FakeRepository extends SkillTreeRepository {
   Future<SkillTreeResponse> getTree({
     required int userId,
     required String subjectSlug,
+    int? grade,
   }) async => SkillTreeResponse(
     subject: subject,
     units: units,

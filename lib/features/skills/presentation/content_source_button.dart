@@ -1,0 +1,68 @@
+import 'package:flutter/material.dart';
+import 'skill_ui.dart';
+
+/// Bibliographic references only; copyrighted PDF pages are never bundled.
+class ContentSourceButton extends StatelessWidget {
+  final Map<String, dynamic> source;
+  final String language;
+  const ContentSourceButton({
+    super.key,
+    required this.source,
+    required this.language,
+  });
+  @override
+  Widget build(BuildContext context) {
+    String tr(String uz, String ru, String en) => str3(language, uz, ru, en);
+    final printed = (source['printed_pages'] as List? ?? []).join(', ');
+    final pdf = (source['pdf_pages'] as List? ?? []).join(', ');
+    final section = source['paragraph'];
+    return TextButton.icon(
+      icon: const Icon(Icons.menu_book_outlined, size: 18),
+      label: Text(
+        tr(
+          'Manba: §$section · $printed-bet',
+          'Источник: §$section · стр. $printed',
+          'Source: §$section · p. $printed',
+        ),
+      ),
+      onPressed: () => showModalBottomSheet<void>(
+        context: context,
+        isScrollControlled: true,
+        showDragHandle: true,
+        builder: (context) => SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  '${source['book_title'] ?? ''} · ${source['year'] ?? ''}',
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+                const SizedBox(height: 12),
+                Text((source['authors'] as List? ?? []).join(', ')),
+                const SizedBox(height: 12),
+                Text(
+                  tr(
+                    'Paragraf: §$section\nKitobdagi bet: $printed\nPDF sahifasi: $pdf',
+                    'Параграф: §$section\nСтраница учебника: $printed\nСтраница PDF: $pdf',
+                    'Section: §$section\nPrinted page: $printed\nPDF page: $pdf',
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  tr(
+                    'Tushuntirish va savollar darslikdagi bilimlar asosida ILM AI uchun qayta tuzilgan.',
+                    'Объяснения и вопросы составлены для ILM AI на основе знаний из учебника.',
+                    'The explanations and questions were independently written for ILM AI using the textbook as a factual source.',
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

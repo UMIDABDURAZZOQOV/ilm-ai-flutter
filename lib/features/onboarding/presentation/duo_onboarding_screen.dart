@@ -701,7 +701,10 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           ),
         ),
         const SizedBox(height: 8),
-        Text(str3(lang,
+        Text(_selectedSubject == 'biologiya' ? str3(lang,
+          'Biologiya uchun alohida sinf yo‘li kirgandan keyin tanlanadi. Darslar hozir o‘zbek tilida.',
+          'Класс для биологии выбирается после входа. Уроки пока на узбекском.',
+          'Choose a separate biology grade path after signing in. Lessons are currently in Uzbek.') : str3(lang,
           'Sinfingiz profil uchun saqlanadi. Darslar umumiy fan yo‘lida ko‘rsatiladi.',
           'Класс сохраняется в профиле. Уроки пока идут по общему пути предмета.',
           'Your grade is saved in your profile. Lessons currently follow the shared subject path.'),
@@ -717,7 +720,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               ),
             ),
           ),
-          error: (_, _) => Column(
+          error: (error, _) => Column(
             children: [
               Text(
                 str3(
@@ -728,6 +731,8 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 ),
                 style: TextStyle(color: colors.error),
               ),
+              const SizedBox(height:8),
+              Text(extractError(error,language:lang),textAlign:TextAlign.center),
               const SizedBox(height: 10),
               FilledButton(
                 onPressed: () => ref.invalidate(subjectCatalogProvider),

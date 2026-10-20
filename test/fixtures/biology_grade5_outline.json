@@ -1,0 +1,1138 @@
+{
+  "subject": "biologiya",
+  "grade": 5,
+  "title_uz": "Biologiya",
+  "status": "mapped",
+  "book": {
+    "file_name": "5-biologiya.pdf",
+    "title": "Biologiya",
+    "year": 2020,
+    "authors": [
+      "O‘. Pratov",
+      "A. To‘xtayev",
+      "F. Azimova",
+      "Z. Tillayeva"
+    ],
+    "publisher": "O‘zbekiston",
+    "edition": 5,
+    "chapter_count": 3,
+    "paragraph_count": 18,
+    "isbn": "978-9943-6479-3-0",
+    "id": "biology-5-2020",
+    "grade": 5,
+    "status": "mapped",
+    "sha256": "a2465bbe185ed9062d7af1eac5389048253317dc9a7ae2889a562fce094a0530",
+    "pdf_page_count": 195,
+    "toc_pdf_pages": [
+      95
+    ],
+    "bibliography_pdf_pages": [
+      2,
+      3
+    ],
+    "questions_and_tasks": {
+      "present": true,
+      "evidence_pdf_pages": [
+        3,
+        31,
+        39,
+        71,
+        76,
+        83
+      ],
+      "verification": "text_layer_legends_and_assessment_markers",
+      "textbook_questions_republished": false
+    },
+    "rights": {
+      "fulltext_republication": "not_authorized",
+      "images_republication": "not_authorized",
+      "published_payload": "bibliography_headings_page_references_and_original_fact_based_lessons"
+    },
+    "duplicate_pdf_ranges": [
+      [
+        99,
+        195
+      ]
+    ]
+  },
+  "chapters": [
+    {
+      "unit_id": 1,
+      "title_uz": "I BOB. BIOLOGIYA TIRIK ORGANIZMLAR HAQIDAGI FAN",
+      "topics": [
+        {
+          "id": "bio-5-topic-2",
+          "kind": "topic",
+          "title_uz": "1-§. Biologiya – hayot haqidagi fan",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "1-§. Biologiya – hayot haqidagi fan",
+            "paragraph": 1,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 4,
+            "id": "bio-5-topic-2",
+            "chapter_id": "bio-5-chapter-1",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 5,
+            "printed_start": 4,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 121
+            },
+            "pdf_end": 8,
+            "printed_end": 7,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [
+            1
+          ],
+          "ready": true,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-3",
+          "kind": "topic",
+          "title_uz": "2-§. Tirik organizmlarning xususiyatlari",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "2-§. Tirik organizmlarning xususiyatlari",
+            "paragraph": 2,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 9,
+            "id": "bio-5-topic-3",
+            "chapter_id": "bio-5-chapter-1",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 10,
+            "printed_start": 9,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 848
+            },
+            "pdf_end": 13,
+            "printed_end": 12,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-4",
+          "kind": "topic",
+          "title_uz": "3-§. Biologiyaning o‘rganish usullari",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "3-§. Biologiyaning o‘rganish usullari",
+            "paragraph": 3,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 12,
+            "id": "bio-5-topic-4",
+            "chapter_id": "bio-5-chapter-1",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 13,
+            "printed_start": 12,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 874
+            },
+            "pdf_end": 16,
+            "printed_end": 15,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-5",
+          "kind": "topic",
+          "title_uz": "4-§. Hujayra – tiriklikning asosi",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "4-§. Hujayra – tiriklikning asosi",
+            "paragraph": 4,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 17,
+            "id": "bio-5-topic-5",
+            "chapter_id": "bio-5-chapter-1",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 18,
+            "printed_start": 17,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 934
+            },
+            "pdf_end": 23,
+            "printed_end": 22,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-laboratory-1",
+          "kind": "laboratory",
+          "title_uz": "Xavfsizlik texnikasi qoidalari va laboratoriya jihozlari bilan tanishish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-laboratory-1",
+            "kind": "laboratory",
+            "paragraph": null,
+            "title": "Xavfsizlik texnikasi qoidalari va laboratoriya jihozlari bilan tanishish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 9,
+            "chapter_id": "bio-5-chapter-1",
+            "printed_start": 8,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 55,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 10,
+            "printed_end": 9,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-laboratory-2",
+          "kind": "laboratory",
+          "title_uz": "Lupa va mikroskop tuzilishi bilan tanishish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-laboratory-2",
+            "kind": "laboratory",
+            "paragraph": null,
+            "title": "Lupa va mikroskop tuzilishi bilan tanishish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 16,
+            "chapter_id": "bio-5-chapter-1",
+            "printed_start": 15,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 554,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 18,
+            "printed_end": 17,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-laboratory-3",
+          "kind": "laboratory",
+          "title_uz": "Piyoz po‘sti hujayrasining tuzilishini mikroskopda o‘rganish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-laboratory-3",
+            "kind": "laboratory",
+            "paragraph": null,
+            "title": "Piyoz po‘sti hujayrasining tuzilishini mikroskopda o‘rganish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 23,
+            "chapter_id": "bio-5-chapter-1",
+            "printed_start": 22,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 103,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 24,
+            "printed_end": 23,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        }
+      ],
+      "coverage_complete": false,
+      "checkpoint_passed": false
+    },
+    {
+      "unit_id": 2,
+      "title_uz": "II BOB. TIRIK ORGANIZMLARNING XILMA-XILLIGI",
+      "topics": [
+        {
+          "id": "bio-5-topic-7",
+          "kind": "topic",
+          "title_uz": "5-§. Tirik organizmlar haqida umumiy ma’lumot",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "5-§. Tirik organizmlar haqida umumiy ma’lumot",
+            "paragraph": 5,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 23,
+            "id": "bio-5-topic-7",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 24,
+            "printed_start": 23,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 581
+            },
+            "pdf_end": 27,
+            "printed_end": 26,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-8",
+          "kind": "topic",
+          "title_uz": "6-§. Bakteriyalar dunyosi",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "6-§. Bakteriyalar dunyosi",
+            "paragraph": 6,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 26,
+            "id": "bio-5-topic-8",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 27,
+            "printed_start": 26,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 722
+            },
+            "pdf_end": 31,
+            "printed_end": 30,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-9",
+          "kind": "topic",
+          "title_uz": "7-§. Zamburug‘lar dunyosi",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "7-§. Zamburug‘lar dunyosi",
+            "paragraph": 7,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 30,
+            "id": "bio-5-topic-9",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 31,
+            "printed_start": 30,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1256
+            },
+            "pdf_end": 35,
+            "printed_end": 34,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-10",
+          "kind": "topic",
+          "title_uz": "8-§. O‘simliklar dunyosi",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "8-§. O‘simliklar dunyosi",
+            "paragraph": 8,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 35,
+            "id": "bio-5-topic-10",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 36,
+            "printed_start": 35,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 528
+            },
+            "pdf_end": 40,
+            "printed_end": 39,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-11",
+          "kind": "topic",
+          "title_uz": "9-§. Tuban o‘simliklar",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "9-§. Tuban o‘simliklar",
+            "paragraph": 9,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 40,
+            "id": "bio-5-topic-11",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 41,
+            "printed_start": 40,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 609
+            },
+            "pdf_end": 44,
+            "printed_end": 43,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-12",
+          "kind": "topic",
+          "title_uz": "10-§. Yuksak o‘simliklar",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "10-§. Yuksak o‘simliklar",
+            "paragraph": 10,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 43,
+            "id": "bio-5-topic-12",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 44,
+            "printed_start": 43,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 507
+            },
+            "pdf_end": 50,
+            "printed_end": 49,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-13",
+          "kind": "topic",
+          "title_uz": "11-§. O‘zbekistonda keng tarqalgan dorivor va zaharli o‘simliklar",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "11-§. O‘zbekistonda keng tarqalgan dorivor va zaharli o‘simliklar",
+            "paragraph": 11,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 54,
+            "id": "bio-5-topic-13",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 55,
+            "printed_start": 54,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1190
+            },
+            "pdf_end": 60,
+            "printed_end": 59,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-14",
+          "kind": "topic",
+          "title_uz": "12-§. Hayvonot dunyosi",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "12-§. Hayvonot dunyosi",
+            "paragraph": 12,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 59,
+            "id": "bio-5-topic-14",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 60,
+            "printed_start": 59,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 541
+            },
+            "pdf_end": 63,
+            "printed_end": 62,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-15",
+          "kind": "topic",
+          "title_uz": "13-§. Umurtqasiz hayvonlar",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "13-§. Umurtqasiz hayvonlar",
+            "paragraph": 13,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 62,
+            "id": "bio-5-topic-15",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 63,
+            "printed_start": 62,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 523
+            },
+            "pdf_end": 69,
+            "printed_end": 68,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-16",
+          "kind": "topic",
+          "title_uz": "14-§. Umurtqali hayvonlar",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "14-§. Umurtqali hayvonlar",
+            "paragraph": 14,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 70,
+            "id": "bio-5-topic-16",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 71,
+            "printed_start": 70,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 744
+            },
+            "pdf_end": 74,
+            "printed_end": 73,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-17",
+          "kind": "topic",
+          "title_uz": "15-§. Odam organlari sistemasi",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "15-§. Odam organlari sistemasi",
+            "paragraph": 15,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 75,
+            "id": "bio-5-topic-17",
+            "chapter_id": "bio-5-chapter-6",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 76,
+            "printed_start": 75,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 704
+            },
+            "pdf_end": 81,
+            "printed_end": 80,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-1",
+          "kind": "practical",
+          "title_uz": "Sutdan qatiq tayyorlash",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-1",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Sutdan qatiq tayyorlash",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 31,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 30,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 593,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 31,
+            "printed_end": 30,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-laboratory-4",
+          "kind": "laboratory",
+          "title_uz": "Achitqi zamburug‘idan foydalanib non tayyorlash jarayoni bilan tanishish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-laboratory-4",
+            "kind": "laboratory",
+            "paragraph": null,
+            "title": "Achitqi zamburug‘idan foydalanib non tayyorlash jarayoni bilan tanishish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 35,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 34,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 754,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 36,
+            "printed_end": 35,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-2",
+          "kind": "practical",
+          "title_uz": "O‘simliklar bargidan gerbariy tayyorlash",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-2",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "O‘simliklar bargidan gerbariy tayyorlash",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 40,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 39,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 859,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 41,
+            "printed_end": 40,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-3",
+          "kind": "practical",
+          "title_uz": "Olma o‘simligining hayot sikli bilan tanishish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-3",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Olma o‘simligining hayot sikli bilan tanishish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 50,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 49,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 597,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 52,
+            "printed_end": 51,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-4",
+          "kind": "practical",
+          "title_uz": "Xona o‘simliklarini ekish va ko‘chirib o‘tkazish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-4",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Xona o‘simliklarini ekish va ko‘chirib o‘tkazish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 52,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 51,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 1304,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 55,
+            "printed_end": 54,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-5",
+          "kind": "practical",
+          "title_uz": "Suvarak va asalarining hayot siklini o‘rganish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-5",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Suvarak va asalarining hayot siklini o‘rganish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 69,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 68,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 154,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 71,
+            "printed_end": 70,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-6",
+          "kind": "practical",
+          "title_uz": "Baqaning hayot siklini o‘rganish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-6",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Baqaning hayot siklini o‘rganish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 74,
+            "chapter_id": "bio-5-chapter-6",
+            "printed_start": 73,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 840,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 76,
+            "printed_end": 75,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        }
+      ],
+      "coverage_complete": false,
+      "checkpoint_passed": false
+    },
+    {
+      "unit_id": 3,
+      "title_uz": "III BOB. ORGANIZM VA TASHQI MUHIT",
+      "topics": [
+        {
+          "id": "bio-5-topic-19",
+          "kind": "topic",
+          "title_uz": "16-§. Ekologik omillar",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "16-§. Ekologik omillar",
+            "paragraph": 16,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 79,
+            "id": "bio-5-topic-19",
+            "chapter_id": "bio-5-chapter-18",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 81,
+            "printed_start": 80,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 97,
+              "toc_body_page_difference": true
+            },
+            "pdf_end": 84,
+            "printed_end": 83,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-20",
+          "kind": "topic",
+          "title_uz": "17-§. Inson va tabiat",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "17-§. Inson va tabiat",
+            "paragraph": 17,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 83,
+            "id": "bio-5-topic-20",
+            "chapter_id": "bio-5-chapter-18",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 84,
+            "printed_start": 83,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 388
+            },
+            "pdf_end": 86,
+            "printed_end": 85,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-topic-21",
+          "kind": "topic",
+          "title_uz": "18-§. Tabiatni muhofaza qilish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "kind": "topic",
+            "title": "18-§. Tabiatni muhofaza qilish",
+            "paragraph": 18,
+            "toc_pdf_page": 95,
+            "toc_printed_start": 86,
+            "id": "bio-5-topic-21",
+            "chapter_id": "bio-5-chapter-18",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 87,
+            "printed_start": 86,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1081
+            },
+            "pdf_end": 91,
+            "printed_end": 90,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-7",
+          "kind": "practical",
+          "title_uz": "Maktab hududidagi o‘simlik va hayvonot dunyosining mavsumiy o‘zgarishlarini kuzatish",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-7",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Maktab hududidagi o‘simlik va hayvonot dunyosining mavsumiy o‘zgarishlarini kuzatish",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 86,
+            "chapter_id": "bio-5-chapter-18",
+            "printed_start": 85,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 1193,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 87,
+            "printed_end": 86,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        },
+        {
+          "id": "bio-5-practical-8",
+          "kind": "practical",
+          "title_uz": "Bakteriya, zamburug‘, o‘simlik va hayvonot dunyosi haqida ma’lumot to‘plash",
+          "source": {
+            "book_id": "biology-5-2020",
+            "id": "bio-5-practical-8",
+            "kind": "practical",
+            "paragraph": null,
+            "title": "Bakteriya, zamburug‘, o‘simlik va hayvonot dunyosi haqida ma’lumot to‘plash",
+            "toc_pdf_page": null,
+            "toc_printed_start": null,
+            "pdf_start": 91,
+            "chapter_id": "bio-5-chapter-18",
+            "printed_start": 90,
+            "verification": {
+              "status": "text_layer_manually_checked",
+              "method": "body_activity_heading",
+              "heading_offset": 850,
+              "reviewed_on": "2026-10-20"
+            },
+            "pdf_end": 92,
+            "printed_end": 91,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [],
+          "ready": false,
+          "completed": false
+        }
+      ],
+      "coverage_complete": false,
+      "checkpoint_passed": false
+    }
+  ],
+  "completed": false,
+  "next_grade": null
+}

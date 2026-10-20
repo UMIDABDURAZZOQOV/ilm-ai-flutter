@@ -1,9 +1,14 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/services.dart';
+import 'api_contract.dart';
 
 /// Ported from ilm-ai-mobile's utils/errorMessage.ts -- always returns a
 /// human-readable string, never a raw exception object.
 String extractError(Object err, {String language = 'en'}) {
   String text(String uz, String ru, String en) => language == 'uz' ? uz : language == 'ru' ? ru : en;
+  if (err is ApiCompatibilityException) return text('Ilova va server versiyalari mos emas. Server yangilanishi kerak.', 'Версии приложения и сервера несовместимы. Требуется обновление сервера.', 'The app and server versions are incompatible. The server needs an update.');
+  if (err is InvalidApiResponseException) return text('Server javobini o‘qib bo‘lmadi. Keyinroq qayta urining.', 'Не удалось прочитать ответ сервера. Повторите позже.', 'The server response could not be read. Please try later.');
+  if (err is PlatformException && err.code.toUpperCase().contains('CANCEL')) return text('Google orqali kirish bekor qilindi.', 'Вход через Google отменён.', 'Google sign-in was cancelled.');
   if (err is DioException) {
     if (err.type == DioExceptionType.connectionError || err.type == DioExceptionType.connectionTimeout) {
       return text('Internetga ulanib bo‘lmadi. Ulanishni tekshiring.', 'Нет подключения к интернету. Проверьте соединение.', 'No internet connection');

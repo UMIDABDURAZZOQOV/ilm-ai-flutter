@@ -108,6 +108,7 @@ class SkillTreeLesson {
 
 class SkillTreeUnit {
   final String examStatus;
+  final bool coverageComplete;
   final int id;
   final String slug;
   final String titleUz;
@@ -118,6 +119,7 @@ class SkillTreeUnit {
 
   SkillTreeUnit({
     this.examStatus = 'locked',
+    this.coverageComplete = true,
     required this.id,
     required this.slug,
     required this.titleUz,
@@ -129,6 +131,7 @@ class SkillTreeUnit {
 
   factory SkillTreeUnit.fromJson(Map<String, dynamic> json) => SkillTreeUnit(
     examStatus: (json['exam'] as Map?)?['status'] as String? ?? 'locked',
+    coverageComplete: json['coverage_complete'] as bool? ?? true,
     id: json['id'] as int,
     slug: json['slug'] as String,
     titleUz: json['title_uz'] as String,
@@ -198,6 +201,7 @@ class SkillTreeResponse {
 }
 
 class SkillQuestion {
+  final Map<String,dynamic>? source;
   final int id;
   final String questionText;
   final List<String> options;
@@ -206,6 +210,7 @@ class SkillQuestion {
   final int orderIndex;
 
   SkillQuestion({
+    this.source,
     required this.id,
     required this.questionText,
     required this.options,
@@ -215,6 +220,7 @@ class SkillQuestion {
   });
 
   factory SkillQuestion.fromJson(Map<String, dynamic> json) => SkillQuestion(
+    source:json['source'] as Map<String,dynamic>?,
     id: json['id'] as int,
     questionText: json['question_text'] as String,
     options: (json['options'] as List? ?? []).map((e) => e.toString()).toList(),
@@ -226,13 +232,15 @@ class SkillQuestion {
 
 /// Duolingo-style teaching card shown before the questions.
 class TheoryCard {
+  final Map<String,dynamic>? source;
   final String title;
   final String body;
   final String? example;
 
-  TheoryCard({required this.title, required this.body, this.example});
+  TheoryCard({required this.title, required this.body, this.example,this.source});
 
   factory TheoryCard.fromJson(Map<String, dynamic> json) => TheoryCard(
+    source:json['source'] as Map<String,dynamic>?,
     title: json['title'] as String? ?? '',
     body: json['body'] as String? ?? '',
     example: json['example'] as String?,

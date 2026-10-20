@@ -16,6 +16,7 @@ import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
 import 'mascot.dart';
 import 'skill_ui.dart';
+import 'content_source_button.dart';
 import 'study_exit_guard.dart';
 import '../../../core/services/sound_service.dart';
 import '../../../core/widgets/celebration_confetti.dart';
@@ -317,6 +318,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                     color: colors.text,
                                   ),
                                 ),
+                                if(card.source != null) ContentSourceButton(source:card.source!,language:language),
                                 if (card.example != null &&
                                     card.example!.isNotEmpty) ...[
                                   const SizedBox(height: 14),
@@ -362,7 +364,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                               ],
                             ),
                           )
-                          .animate(key: ValueKey('theory_$_theoryIndex'))
+                          .motion(context,key: ValueKey('theory_$_theoryIndex'))
                           .fadeIn(duration: 250.ms)
                           .slideX(
                             begin: 0.08,
@@ -574,6 +576,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         height: 1.4,
                       ),
                     ),
+                    if(q.source != null) ContentSourceButton(source:q.source!,language:language),
                     const SizedBox(height: 24),
                     for (final option in q.options)
                       DuoChoiceCard(

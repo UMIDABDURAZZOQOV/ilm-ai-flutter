@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/providers/app_providers.dart';
+import '../../../core/network/error_message.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../auth/application/auth_controller.dart';
@@ -16,6 +17,7 @@ import 'skill_leaderboard_screen.dart';
 import 'skill_profile_screen.dart';
 import 'skill_quests_screen.dart';
 import 'skill_ui.dart';
+import 'curriculum_learning_screen.dart';
 
 final subjectCatalogProvider = FutureProvider<List<SkillSubject>>(
   (ref) => ref.watch(skillTreeRepositoryProvider).getSubjects(),
@@ -66,7 +68,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
     return catalog.when(
       loading: () =>
           const Scaffold(body: Center(child: CircularProgressIndicator())),
-      error: (_, _) => Scaffold(
+      error: (error, _) => Scaffold(
         body: SafeArea(
           child: Center(
             child: Column(
@@ -79,6 +81,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                     'Could not load subjects',
                   ),
                 ),
+                Text(extractError(error,language:lang),textAlign:TextAlign.center),
                 const SizedBox(height: 16),
                 FilledButton(
                   onPressed: () => ref.invalidate(subjectCatalogProvider),
@@ -203,7 +206,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         // Local copy so closures do not see the outer nullable `subject`.
         final SkillSubject activeSubject = subject;
         final tabBuilders = <Widget Function()>[
-          () => SkillPathScreen(
+          () => activeSubject.slug == 'biologiya' ? CurriculumLearningScreen(
+            key:ValueKey('curriculum:${ref.watch(currentUserIdProvider)}'),
+            subject:activeSubject,onChangeSubject:()=>setState(()=>_choosing=true),
+          ) : SkillPathScreen(
             key: ValueKey('${activeSubject.slug}:$_revision'),
             subject: activeSubject,
             onChangeSubject: () => setState(() => _choosing = true),

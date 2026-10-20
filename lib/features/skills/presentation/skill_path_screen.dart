@@ -75,34 +75,36 @@ class _PathItem {
     required this.unitTitle,
     required this.unitStart,
     this.lockReason,
-  })  : isCheckpoint = false,
-        unit = null;
+  }) : isCheckpoint = false,
+       unit = null;
 
   _PathItem.checkpoint({
     required SkillTreeUnit this.unit,
     required this.unitTitle,
-  })  : isCheckpoint = true,
-        lesson = null,
-        unitStart = false,
-        lockReason = null;
+  }) : isCheckpoint = true,
+       lesson = null,
+       unitStart = false,
+       lockReason = null;
 }
 
 final _treeProvider = FutureProvider.autoDispose
-    .family<SkillTreeResponse, String>((ref, subjectSlug) async {
+    .family<SkillTreeResponse, (String, int?)>((ref, key) async {
       ref.watch(studyRevisionProvider);
       final userId = ref.watch(currentUserIdProvider);
       if (userId == null) throw Exception('not authenticated');
       return ref
           .read(skillTreeRepositoryProvider)
-          .getTree(userId: userId, subjectSlug: subjectSlug);
+          .getTree(userId: userId, subjectSlug: key.$1, grade: key.$2);
     });
 
 class SkillPathScreen extends ConsumerWidget {
   final SkillSubject subject;
+  final int? grade;
   final VoidCallback? onChangeSubject;
   const SkillPathScreen({
     super.key,
     required this.subject,
+    this.grade,
     this.onChangeSubject,
   });
 
@@ -217,7 +219,7 @@ class SkillPathScreen extends ConsumerWidget {
       '/skills/practice',
       extra: {'mode': PracticeMode.checkpoint, 'unit_id': unit.id},
     );
-    if (context.mounted) ref.invalidate(_treeProvider(subject.slug));
+    if (context.mounted) ref.invalidate(_treeProvider((subject.slug, grade)));
   }
 
   Future<void> _showLessonPopover({
@@ -247,7 +249,7 @@ class SkillPathScreen extends ConsumerWidget {
     );
     if (start != true || !context.mounted) return;
     await context.push('/skills/lesson', extra: lesson);
-    if (context.mounted) ref.invalidate(_treeProvider(subject.slug));
+    if (context.mounted) ref.invalidate(_treeProvider((subject.slug, grade)));
   }
 
   Future<void> _showCheckpointPopover({
@@ -270,167 +272,180 @@ class SkillPathScreen extends ConsumerWidget {
       builder: (ctx) {
         final isDark = Theme.of(ctx).brightness == Brightness.dark;
         return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(24, 8, 24, 28),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  str3(
-                    language,
-                    'BO‘LIM SINOVI',
-                    'ПРОВЕРКА РАЗДЕЛА',
-                    'UNIT CHECKPOINT',
-                  ),
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w800,
-                    color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
-                    letterSpacing: 0.8,
-                  ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  unit.titleFor(language),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                const SizedBox(height: 14),
-                Center(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 14,
-                      vertical: 6,
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(24, 8, 24, 28),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    str3(
+                      language,
+                      'BO‘LIM SINOVI',
+                      'ПРОВЕРКА РАЗДЕЛА',
+                      'UNIT CHECKPOINT',
                     ),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFFFC800).withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          passed
-                              ? Icons.verified_rounded
-                              : Icons.emoji_events_rounded,
-                          size: 20,
-                          color: const Color(0xFFFF9600),
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          passed
-                              ? str3(
-                                  language,
-                                  'Muvaffaqiyatli topshirilgan',
-                                  'Пройдено',
-                                  'Passed',
-                                )
-                              : str3(
-                                  language,
-                                  'Bo‘limni yakunlash sinovi',
-                                  'Итоговая проверка',
-                                  'Final unit quiz',
-                                ),
-                          style: const TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w800,
-                            color: Color(0xFFFF9600),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                if (locked) ...[
-                  Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
                       color: isDark
-                          ? Colors.grey.shade900
-                          : Colors.grey.shade100,
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(
-                        color: isDark
-                            ? Colors.grey.shade800
-                            : Colors.grey.shade300,
-                      ),
+                          ? Colors.grey.shade400
+                          : Colors.grey.shade600,
+                      letterSpacing: 0.8,
                     ),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.lock_outline_rounded,
-                          color: Colors.grey,
-                          size: 24,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            str3(
-                              language,
-                              'Bo‘limdagi barcha darslarni tugating.',
-                              'Завершите все уроки в этом разделе.',
-                              'Complete all lessons in this unit.',
-                            ),
-                            style: TextStyle(
-                              fontSize: 13,
-                              color: isDark
-                                  ? Colors.grey.shade300
-                                  : Colors.grey.shade700,
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    unit.titleFor(language),
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const SizedBox(height: 14),
+                  Center(
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFC800).withValues(alpha: 0.15),
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            passed
+                                ? Icons.verified_rounded
+                                : Icons.emoji_events_rounded,
+                            size: 20,
+                            color: const Color(0xFFFF9600),
+                          ),
+                          const SizedBox(width: 6),
+                          Flexible(
+                            child: Text(
+                              passed
+                                  ? str3(
+                                      language,
+                                      'Muvaffaqiyatli topshirilgan',
+                                      'Пройдено',
+                                      'Passed',
+                                    )
+                                  : str3(
+                                      language,
+                                      'Bo‘limni yakunlash sinovi',
+                                      'Итоговая проверка',
+                                      'Final unit quiz',
+                                    ),
+                              style: const TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800,
+                                color: Color(0xFF2A1F6B),
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  FilledButton(
-                    onPressed: null,
-                    style: FilledButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(
+                  const SizedBox(height: 20),
+                  if (locked) ...[
+                    Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: isDark
+                            ? Colors.grey.shade900
+                            : Colors.grey.shade100,
                         borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: isDark
+                              ? Colors.grey.shade800
+                              : Colors.grey.shade300,
+                        ),
                       ),
-                    ),
-                    child: Text(
-                      str3(language, 'QULFLANGAN', 'ЗАБЛОКИРОВАНО', 'LOCKED'),
-                      style: const TextStyle(fontWeight: FontWeight.w800),
-                    ),
-                  ),
-                ] else ...[
-                  Duo3DButton(
-                    color: const Color(0xFFF9A825),
-                    shadowColor: const Color(0xFFC77700),
-                    onPressed: () => Navigator.pop(ctx, true),
-                    child: Text(
-                      passed
-                          ? str3(
-                              language,
-                              'SINOVNI TAKRORLASH',
-                              'ПОВТОРИТЬ ПРОВЕРКУ',
-                              'REVIEW CHECKPOINT',
-                            )
-                          : str3(
-                              language,
-                              'SINOVNI BOSHLASH',
-                              'НАЧАТЬ ПРОВЕРКУ',
-                              'START CHECKPOINT',
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.lock_outline_rounded,
+                            color: Colors.grey,
+                            size: 24,
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              !unit.coverageComplete
+                                  ? str3(
+                                      language,
+                                      'Bobning qolgan darslari tayyorlanmoqda. Checkpoint hali ochilmaydi.',
+                                      'Остальные уроки главы готовятся. Проверка пока недоступна.',
+                                      'The remaining chapter lessons are in preparation. The checkpoint is not available yet.',
+                                    )
+                                  : str3(
+                                      language,
+                                      'Bo‘limdagi barcha darslarni tugating.',
+                                      'Завершите все уроки в этом разделе.',
+                                      'Complete all lessons in this unit.',
+                                    ),
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: isDark
+                                    ? Colors.grey.shade300
+                                    : Colors.grey.shade700,
+                              ),
                             ),
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 0.5,
+                          ),
+                        ],
                       ),
                     ),
-                  ),
+                    const SizedBox(height: 16),
+                    FilledButton(
+                      onPressed: null,
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
+                      child: Text(
+                        str3(language, 'QULFLANGAN', 'ЗАБЛОКИРОВАНО', 'LOCKED'),
+                        style: const TextStyle(fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ] else ...[
+                    Duo3DButton(
+                      color: const Color(0xFFF9A825),
+                      shadowColor: const Color(0xFFC77700),
+                      onPressed: () => Navigator.pop(ctx, true),
+                      child: Text(
+                        passed
+                            ? str3(
+                                language,
+                                'SINOVNI TAKRORLASH',
+                                'ПОВТОРИТЬ ПРОВЕРКУ',
+                                'REVIEW CHECKPOINT',
+                              )
+                            : str3(
+                                language,
+                                'SINOVNI BOSHLASH',
+                                'НАЧАТЬ ПРОВЕРКУ',
+                                'START CHECKPOINT',
+                              ),
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                    ),
+                  ],
                 ],
-              ],
+              ),
             ),
           ),
         );
@@ -442,14 +457,15 @@ class SkillPathScreen extends ConsumerWidget {
       '/skills/practice',
       extra: {'mode': PracticeMode.checkpoint, 'unit_id': unit.id},
     );
-    if (context.mounted) ref.invalidate(_treeProvider(subject.slug));
+    if (context.mounted) ref.invalidate(_treeProvider((subject.slug, grade)));
   }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final language = ref.watch(languageProvider);
-    final treeAsync = ref.watch(_treeProvider(subject.slug));
+    final treeAsync = ref.watch(_treeProvider((subject.slug, grade)));
     final subjectColor = _parseColor(subject.color);
+    final goalForeground = foregroundOn(subjectColor);
     final userGoal = ref.watch(userDailyGoalProvider);
     final dailyGoal = userGoal > 0
         ? userGoal
@@ -480,9 +496,7 @@ class SkillPathScreen extends ConsumerWidget {
             data: (tree) => Padding(
               padding: const EdgeInsets.only(right: 8),
               child: Center(
-                child: FittedBox(
-                  child: HeartsXpHeader(summary: tree.user),
-                ),
+                child: FittedBox(child: HeartsXpHeader(summary: tree.user)),
               ),
             ),
             orElse: () => const SizedBox.shrink(),
@@ -498,7 +512,8 @@ class SkillPathScreen extends ConsumerWidget {
               children: [
                 Text(t('skills.error.generic', language)),
                 TextButton(
-                  onPressed: () => ref.invalidate(_treeProvider(subject.slug)),
+                  onPressed: () =>
+                      ref.invalidate(_treeProvider((subject.slug, grade))),
                   child: Text(
                     str3(language, 'Qayta urinish', 'Повторить', 'Try again'),
                   ),
@@ -512,7 +527,9 @@ class SkillPathScreen extends ConsumerWidget {
               final unit = tree.units[uIdx];
               final hasUnpassedCheckpointBefore = tree.units
                   .take(uIdx)
-                  .any((u) => u.examStatus != 'passed' && u.examStatus != 'none');
+                  .any(
+                    (u) => u.examStatus != 'passed' && u.examStatus != 'none',
+                  );
               for (var i = 0; i < unit.lessons.length; i++) {
                 final l = unit.lessons[i];
                 LessonLockReason? lockReason;
@@ -539,12 +556,6 @@ class SkillPathScreen extends ConsumerWidget {
                 );
               }
             }
-            final points = List.generate(
-              items.length,
-              (i) =>
-                  Offset(_amplitude * math.sin(i * 0.9), 60 + i * _nodeSpacing),
-            );
-            final height = 60 + items.length * _nodeSpacing + 100;
             final firstUnlockedIndex = items.indexWhere(
               (it) =>
                   !it.isCheckpoint &&
@@ -555,6 +566,33 @@ class SkillPathScreen extends ConsumerWidget {
               builder: (context, constraints) {
                 final width = constraints.maxWidth;
                 final centerX = width / 2;
+                final labelStyle = TextStyle(
+                  color: goalForeground,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 13,
+                  letterSpacing: .3,
+                );
+                final points = <Offset>[];
+                final labelTops = <int, double>{};
+                var pathY = 16.0;
+                for (var i = 0; i < items.length; i++) {
+                  if (i > 0) pathY += _nodeSpacing;
+                  if (items[i].unitStart) {
+                    labelTops[i] = pathY;
+                    final painter = TextPainter(
+                      text: TextSpan(
+                        text: items[i].unitTitle.toUpperCase(),
+                        style: labelStyle,
+                      ),
+                      textDirection: Directionality.of(context),
+                      textScaler: MediaQuery.textScalerOf(context),
+                    )..layout(maxWidth: math.max(1, width - 64));
+                    pathY += painter.height + 10 + 92;
+                    painter.dispose();
+                  }
+                  points.add(Offset(_amplitude * math.sin(i * .9), pathY));
+                }
+                final height = pathY + 100;
                 return SingleChildScrollView(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Column(
@@ -581,21 +619,25 @@ class SkillPathScreen extends ConsumerWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
-                                        str3(
-                                          language,
-                                          'KUNLIK MAQSAD',
-                                          'ЦЕЛЬ ДНЯ',
-                                          'DAILY GOAL',
-                                        ),
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w800,
+                                      Expanded(
+                                        child: Text(
+                                          str3(
+                                            language,
+                                            'KUNLIK MAQSAD',
+                                            'ЦЕЛЬ ДНЯ',
+                                            'DAILY GOAL',
+                                          ),
+                                          style: TextStyle(
+                                            color: goalForeground,
+                                            fontWeight: FontWeight.w800,
+                                          ),
                                         ),
                                       ),
-                                      const Icon(
+                                      Icon(
                                         Icons.tune_rounded,
-                                        color: Colors.white70,
+                                        color: goalForeground.withValues(
+                                          alpha: .75,
+                                        ),
                                         size: 18,
                                       ),
                                     ],
@@ -603,8 +645,8 @@ class SkillPathScreen extends ConsumerWidget {
                                   const SizedBox(height: 10),
                                   Text(
                                     '${tree.user.todayXp}/$dailyGoal XP',
-                                    style: const TextStyle(
-                                      color: Colors.white,
+                                    style: TextStyle(
+                                      color: goalForeground,
                                       fontSize: 24,
                                       fontWeight: FontWeight.w900,
                                     ),
@@ -613,90 +655,101 @@ class SkillPathScreen extends ConsumerWidget {
                                   LinearProgressIndicator(
                                     value: dailyGoal <= 0
                                         ? 0
-                                        : (tree.user.todayXp / dailyGoal)
-                                            .clamp(0.0, 1.0),
-                                    color: Colors.white,
-                                    backgroundColor: Colors.white24,
+                                        : (tree.user.todayXp / dailyGoal).clamp(
+                                            0.0,
+                                            1.0,
+                                          ),
+                                    color: goalForeground,
+                                    backgroundColor: goalForeground.withValues(
+                                      alpha: .2,
+                                    ),
                                     minHeight: 8,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                              if (firstUnlockedIndex >= 0) ...[
-                                const SizedBox(height: 16),
-                                FilledButton(
-                                  style: FilledButton.styleFrom(
-                                    backgroundColor: Colors.white,
-                                    foregroundColor: subjectColor,
-                                  ),
-                                  onPressed: () async {
-                                    await context.push(
-                                      '/skills/lesson',
-                                      extra: items[firstUnlockedIndex].lesson!,
-                                    );
-                                    if (context.mounted) {
-                                      ref.invalidate(
-                                        _treeProvider(subject.slug),
-                                      );
-                                    }
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      vertical: 12,
-                                    ),
-                                    child: Text(
-                                      str3(
-                                        language,
-                                        'DAVOM ETISH',
-                                        'ПРОДОЛЖИТЬ',
-                                        'CONTINUE',
+                                  if (firstUnlockedIndex >= 0) ...[
+                                    const SizedBox(height: 16),
+                                    FilledButton(
+                                      style: FilledButton.styleFrom(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: foregroundOn(
+                                          Colors.white,
+                                        ),
+                                      ),
+                                      onPressed: () async {
+                                        await context.push(
+                                          '/skills/lesson',
+                                          extra:
+                                              items[firstUnlockedIndex].lesson!,
+                                        );
+                                        if (context.mounted) {
+                                          ref.invalidate(
+                                            _treeProvider((
+                                              subject.slug,
+                                              grade,
+                                            )),
+                                          );
+                                        }
+                                      },
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          vertical: 12,
+                                        ),
+                                        child: Text(
+                                          str3(
+                                            language,
+                                            'DAVOM ETISH',
+                                            'ПРОДОЛЖИТЬ',
+                                            'CONTINUE',
+                                          ),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ),
-                                const SizedBox(height: 8),
-                                Text(
-                                  items[firstUnlockedIndex].lesson!.titleFor(
-                                    language,
-                                  ),
-                                  style: const TextStyle(color: Colors.white),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ] else ...[
-                                const SizedBox(height: 12),
-                                if (tree.units.any(
-                                  (u) => u.examStatus == 'unlocked',
-                                ))
-                                  FilledButton.icon(
-                                    onPressed: () =>
-                                        _sections(context, ref, tree, language),
-                                    icon: const Icon(
-                                      Icons.emoji_events_rounded,
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      items[firstUnlockedIndex].lesson!
+                                          .titleFor(language),
+                                      style: TextStyle(color: goalForeground),
+                                      textAlign: TextAlign.center,
                                     ),
-                                    label: Text(
+                                  ] else ...[
+                                    const SizedBox(height: 12),
+                                    if (tree.units.any(
+                                      (u) => u.examStatus == 'unlocked',
+                                    ))
+                                      FilledButton.icon(
+                                        onPressed: () => _sections(
+                                          context,
+                                          ref,
+                                          tree,
+                                          language,
+                                        ),
+                                        icon: Icon(Icons.emoji_events_rounded),
+                                        label: Text(
+                                          str3(
+                                            language,
+                                            'BO‘LIM SINOVI',
+                                            'ПРОВЕРКА РАЗДЕЛА',
+                                            'UNIT CHECKPOINT',
+                                          ),
+                                        ),
+                                      ),
+                                    Text(
                                       str3(
                                         language,
-                                        'BO‘LIM SINOVI',
-                                        'ПРОВЕРКА РАЗДЕЛА',
-                                        'UNIT CHECKPOINT',
+                                        'Darslarni takrorlab bilimingizni mustahkamlang.',
+                                        'Повторяйте уроки, чтобы закрепить знания.',
+                                        'Revisit lessons to strengthen your knowledge.',
                                       ),
+                                      style: TextStyle(color: goalForeground),
                                     ),
-                                  ),
-                                Text(
-                                  str3(
-                                    language,
-                                    'Darslarni takrorlab bilimingizni mustahkamlang.',
-                                    'Повторяйте уроки, чтобы закрепить знания.',
-                                    'Revisit lessons to strengthen your knowledge.',
-                                  ),
-                                  style: const TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            ],
+                                  ],
+                                ],
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       const MascotImage(pose: MascotPose.hello, size: 112),
                       const SizedBox(height: 16),
                       SizedBox(
@@ -718,7 +771,7 @@ class SkillPathScreen extends ConsumerWidget {
                                 Positioned(
                                   left: 16,
                                   right: 16,
-                                  top: points[i].dy - 66,
+                                  top: labelTops[i]!,
                                   child: Center(
                                     child: Container(
                                       padding: const EdgeInsets.symmetric(
@@ -732,14 +785,7 @@ class SkillPathScreen extends ConsumerWidget {
                                       child: Text(
                                         items[i].unitTitle.toUpperCase(),
                                         textAlign: TextAlign.center,
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w800,
-                                          fontSize: 11,
-                                          letterSpacing: 0.3,
-                                        ),
+                                        style: labelStyle,
                                       ),
                                     ),
                                   ),
@@ -763,18 +809,20 @@ class SkillPathScreen extends ConsumerWidget {
                                   ),
                                 ),
                               Positioned(
-                                left: centerX +
+                                left:
+                                    centerX +
                                     points[i].dx -
                                     (items[i].isCheckpoint ? 36 : 32),
-                                top: points[i].dy -
+                                top:
+                                    points[i].dy -
                                     (items[i].isCheckpoint ? 36 : 32),
                                 child: _LessonNodeWidget(
-                                  semanticLabel: '${items[i].isCheckpoint ? items[i].unit!.titleFor(language) : items[i].lesson!.titleFor(language)}. ${
-                                    (items[i].isCheckpoint ? items[i].unit!.examStatus == 'locked' : items[i].lesson!.status == LessonStatus.locked)
-                                    ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
-                                    : (items[i].isCheckpoint ? items[i].unit!.examStatus == 'passed' : items[i].lesson!.status == LessonStatus.completed)
-                                    ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
-                                    : str3(language, 'Boshlash', 'Начать', 'Start')}',
+                                  semanticLabel:
+                                      '${items[i].isCheckpoint ? items[i].unit!.titleFor(language) : items[i].lesson!.titleFor(language)}. ${(items[i].isCheckpoint ? items[i].unit!.examStatus == 'locked' : items[i].lesson!.status == LessonStatus.locked)
+                                          ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
+                                          : (items[i].isCheckpoint ? items[i].unit!.examStatus == 'passed' : items[i].lesson!.status == LessonStatus.completed)
+                                          ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
+                                          : str3(language, 'Boshlash', 'Начать', 'Start')}',
                                   lesson: items[i].lesson,
                                   unit: items[i].unit,
                                   isCheckpoint: items[i].isCheckpoint,
@@ -866,10 +914,7 @@ class LessonPopoverContent extends StatelessWidget {
             Text(
               lesson.titleFor(language),
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w900,
-              ),
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900),
             ),
             const SizedBox(height: 14),
             Row(
@@ -896,8 +941,8 @@ class LessonPopoverContent extends StatelessWidget {
                           color: completed && i <= lesson.stars
                               ? const Color(0xFFFFC800)
                               : (isDark
-                                  ? Colors.grey.shade700
-                                  : Colors.grey.shade300),
+                                    ? Colors.grey.shade700
+                                    : Colors.grey.shade300),
                         ),
                     ],
                   ),
@@ -941,14 +986,10 @@ class LessonPopoverContent extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
-                  color: isDark
-                      ? Colors.grey.shade900
-                      : Colors.grey.shade100,
+                  color: isDark ? Colors.grey.shade900 : Colors.grey.shade100,
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(
-                    color: isDark
-                        ? Colors.grey.shade800
-                        : Colors.grey.shade300,
+                    color: isDark ? Colors.grey.shade800 : Colors.grey.shade300,
                   ),
                 ),
                 child: Row(
@@ -1125,10 +1166,7 @@ class _FloatingStartIndicatorState extends State<_FloatingStartIndicator>
       animation: _anim,
       builder: (context, child) {
         final dy = -4.0 * Curves.easeInOut.transform(_anim.value);
-        return Transform.translate(
-          offset: Offset(0, dy),
-          child: child,
-        );
+        return Transform.translate(offset: Offset(0, dy), child: child);
       },
       child: bubble,
     );
@@ -1224,8 +1262,9 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
           : (completed ? Icons.verified_rounded : Icons.emoji_events_rounded);
       if (locked) {
         bgColor = isDark ? const Color(0xFF2C2C2E) : const Color(0xFFE5E5E5);
-        shadowColor =
-            isDark ? const Color(0xFF1C1C1E) : const Color(0xFFB0B0B0);
+        shadowColor = isDark
+            ? const Color(0xFF1C1C1E)
+            : const Color(0xFFB0B0B0);
         iconColor = isDark ? const Color(0xFF8E8E93) : Colors.grey.shade500;
       } else if (completed) {
         bgColor = const Color(0xFF2DD4BF);
@@ -1242,8 +1281,9 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
           : (completed ? Icons.check_rounded : Icons.star_rounded);
       if (locked) {
         bgColor = isDark ? const Color(0xFF2C2C2E) : const Color(0xFFE5E5E5);
-        shadowColor =
-            isDark ? const Color(0xFF1C1C1E) : const Color(0xFFB0B0B0);
+        shadowColor = isDark
+            ? const Color(0xFF1C1C1E)
+            : const Color(0xFFB0B0B0);
         iconColor = isDark ? const Color(0xFF8E8E93) : Colors.grey.shade500;
       } else if (completed) {
         bgColor = const Color(0xFFFFC800);
@@ -1265,8 +1305,7 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       height: nodeSize,
       decoration: BoxDecoration(
         shape: widget.isCheckpoint ? BoxShape.rectangle : BoxShape.circle,
-        borderRadius:
-            widget.isCheckpoint ? BorderRadius.circular(16) : null,
+        borderRadius: widget.isCheckpoint ? BorderRadius.circular(16) : null,
         color: bgColor,
         boxShadow: [
           BoxShadow(
@@ -1286,41 +1325,34 @@ class _LessonNodeWidgetState extends State<_LessonNodeWidget> {
       child: widget.isCheckpoint
           ? Transform.rotate(
               angle: -math.pi / 4,
-              child: Icon(
-                iconData,
-                color: iconColor,
-                size: 32,
-              ),
+              child: Icon(iconData, color: iconColor, size: 32),
             )
-          : Icon(
-              iconData,
-              color: iconColor,
-              size: 30,
-            ),
+          : Icon(iconData, color: iconColor, size: 30),
     );
 
     if (widget.isCheckpoint) {
-      nodeContent = Transform.rotate(
-        angle: math.pi / 4,
-        child: nodeContent,
-      );
+      nodeContent = Transform.rotate(angle: math.pi / 4, child: nodeContent);
     }
 
-    Widget node = Semantics(button: true, label: widget.semanticLabel, child: InkWell(
-      borderRadius: BorderRadius.circular(32),
-      onTapDown: (_) => setState(() => _pressed = true),
-      onTapUp: (_) => setState(() => _pressed = false),
-      onTapCancel: () => setState(() => _pressed = false),
-      onTap: () {
-        HapticFeedback.lightImpact();
-        widget.onTap();
-      },
-      child: AnimatedSlide(
-        duration: motionDuration(context, 90),
-        offset: Offset(0, topOffset / nodeSize),
-        child: nodeContent,
+    Widget node = Semantics(
+      button: true,
+      label: widget.semanticLabel,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(32),
+        onTapDown: (_) => setState(() => _pressed = true),
+        onTapUp: (_) => setState(() => _pressed = false),
+        onTapCancel: () => setState(() => _pressed = false),
+        onTap: () {
+          HapticFeedback.lightImpact();
+          widget.onTap();
+        },
+        child: AnimatedSlide(
+          duration: motionDuration(context, 90),
+          offset: Offset(0, topOffset / nodeSize),
+          child: nodeContent,
+        ),
       ),
-    ));
+    );
 
     return Column(
       mainAxisSize: MainAxisSize.min,

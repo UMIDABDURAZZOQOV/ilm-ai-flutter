@@ -3,6 +3,7 @@
 // Plain manual models, matching skill_tree_models.dart's convention.
 
 class PracticeQuestion {
+  final Map<String,dynamic>? source;
   final int id;
   final String questionText;
   final List<String> options;
@@ -11,6 +12,7 @@ class PracticeQuestion {
   final String? attemptId;
 
   PracticeQuestion({
+    this.source,
     required this.id,
     required this.questionText,
     required this.options,
@@ -20,6 +22,7 @@ class PracticeQuestion {
   });
 
   factory PracticeQuestion.fromJson(Map<String, dynamic> json) => PracticeQuestion(
+        source:json['source'] as Map<String,dynamic>?,
         attemptId: json['attempt_id'] as String?,
         id: json['id'] as int,
         questionText: json['question_text'] as String,

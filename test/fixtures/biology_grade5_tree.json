@@ -1,0 +1,81 @@
+{
+  "subject": {
+    "id": 1,
+    "slug": "biologiya",
+    "name_uz": "Biologiya",
+    "name_ru": "Биология",
+    "name_en": "Biology",
+    "icon": "biology",
+    "color": "#2DD4BF"
+  },
+  "units": [
+    {
+      "id": 1,
+      "slug": "bio-5-bio-5-chapter-1",
+      "title_uz": "I BOB. BIOLOGIYA TIRIK ORGANIZMLAR HAQIDAGI FAN",
+      "title_ru": "I BOB. BIOLOGIYA TIRIK ORGANIZMLAR HAQIDAGI FAN",
+      "title_en": "I BOB. BIOLOGIYA TIRIK ORGANIZMLAR HAQIDAGI FAN",
+      "order_index": 1,
+      "coverage_complete": false,
+      "lessons": [
+        {
+          "id": 1,
+          "slug": "biology-5-paragraph-1-v1",
+          "title_uz": "Biologiya – hayot haqidagi fan",
+          "title_ru": "Biologiya – hayot haqidagi fan",
+          "title_en": "Biologiya – hayot haqidagi fan",
+          "order_index": 1,
+          "xp_reward": 20,
+          "status": "unlocked",
+          "stars": 0,
+          "best_score_pct": null
+        }
+      ],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 2,
+      "slug": "bio-5-bio-5-chapter-6",
+      "title_uz": "II BOB. TIRIK ORGANIZMLARNING XILMA-XILLIGI",
+      "title_ru": "II BOB. TIRIK ORGANIZMLARNING XILMA-XILLIGI",
+      "title_en": "II BOB. TIRIK ORGANIZMLARNING XILMA-XILLIGI",
+      "order_index": 2,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 3,
+      "slug": "bio-5-bio-5-chapter-18",
+      "title_uz": "III BOB. ORGANIZM VA TASHQI MUHIT",
+      "title_ru": "III BOB. ORGANIZM VA TASHQI MUHIT",
+      "title_en": "III BOB. ORGANIZM VA TASHQI MUHIT",
+      "order_index": 3,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    }
+  ],
+  "grade": 5,
+  "user": {
+    "xp_total": 0,
+    "streak_days": 0,
+    "today_xp": 0,
+    "daily_goal_xp": 20
+  }
+}

@@ -2,7 +2,9 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/network/dio_client.dart';
+import '../../../core/network/api_contract.dart';
 import 'skill_tree_models.dart';
+import 'curriculum_models.dart';
 
 class SkillTreeRepository {
   final Dio _dio;
@@ -10,12 +12,25 @@ class SkillTreeRepository {
 
   Future<List<SkillSubject>> getSubjects() async {
     final res = await _dio.get('/skills/subjects');
+    if (res.data is! List || (res.data as List).any((item) => item is! Map<String, dynamic>)) {
+      throw const InvalidApiResponseException();
+    }
     return (res.data as List).map((e) => SkillSubject.fromJson(e as Map<String, dynamic>)).toList();
   }
 
-  Future<SkillTreeResponse> getTree({required int userId, required String subjectSlug}) async {
-    final res = await _dio.get('/skills/$userId/tree', queryParameters: {'subject': subjectSlug});
+  Future<SkillTreeResponse> getTree({required int userId, required String subjectSlug, int? grade}) async {
+    final res = await _dio.get('/skills/$userId/tree', queryParameters: {'subject': subjectSlug, 'grade':?grade});
     return SkillTreeResponse.fromJson(res.data as Map<String, dynamic>);
+  }
+
+  Future<List<CurriculumGrade>> getGrades(String subject) async {
+    final res = await _dio.get('/skills/subjects/$subject/grades');
+    return ((res.data as Map<String,dynamic>)['grades'] as List).map((g)=>CurriculumGrade.fromJson(g as Map<String,dynamic>)).toList();
+  }
+
+  Future<CurriculumOutline> getCurriculum({required int userId,required String subject,int? grade}) async {
+    final res = await _dio.get('/skills/$userId/curriculum',queryParameters:{'subject':subject,'grade':grade});
+    return CurriculumOutline.fromJson(res.data as Map<String,dynamic>);
   }
 
   Future<GamificationSummary> getSummary(int userId) async {
