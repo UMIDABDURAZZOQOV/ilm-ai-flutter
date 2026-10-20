@@ -448,4 +448,86 @@ void main() {
       );
     }
   }
+
+  testWidgets(
+    'real digital lab keeps Ilmo, feedback and once-only 10 XP completion',
+    (tester) async {
+      final data = fixture('biology_activity_lesson');
+      dio.httpClientAdapter = Adapter((request) {
+        requests.add(request);
+        if (request.path.endsWith('/start')) return reply(200, data);
+        if (request.path.endsWith('/complete')) {
+          return reply(200, fixture('biology_activity_result'));
+        }
+        throw StateError('Unexpected activity request');
+      });
+      final row = SkillTreeLesson.fromJson(fixture('biology_activity_row'));
+      await mount(tester, SkillLessonScreen(lesson: row));
+      expect(
+        find.textContaining('haqiqiy laboratoriya ishini'),
+        findsOneWidget,
+      );
+      for (var i = 1; i < (data['theory'] as List).length; i++) {
+        await tap(tester, 'Davom etish');
+      }
+      await tap(tester, 'Testni boshlash!');
+      for (final q in data['questions'] as List) {
+        await tap(tester, q['correct_answer'] as String);
+        await tap(tester, 'TEKSHIRISH');
+        expect(find.text('Ajoyib!'), findsOneWidget);
+        await tap(tester, 'Davom etish');
+      }
+      expect(find.text('Dars yakunlandi!'), findsOneWidget);
+      expect(find.text('+10'), findsOneWidget);
+      expect(requests.where((r) => r.path.endsWith('/complete')), hasLength(1));
+      expect(tester.takeException(), isNull);
+      await tester.pumpAndSettle();
+      await tester.pumpWidget(const SizedBox());
+      await tester.pump(const Duration(milliseconds: 100));
+    },
+  );
+
+  for (final kind in ['laboratory', 'practical']) {
+    for (final language in ['uz', 'ru', 'en']) {
+      testWidgets(
+        '$kind citation $language has no null paragraph and fits large text',
+        (tester) async {
+          tester.view.physicalSize = const Size(320, 568);
+          tester.view.devicePixelRatio = 1;
+          addTearDown(tester.view.resetPhysicalSize);
+          addTearDown(tester.view.resetDevicePixelRatio);
+          final source = Map<String, dynamic>.from(
+            (fixture('biology_activity_lesson')['questions'] as List)
+                    .first['source']
+                as Map,
+          )..['activity_kind'] = kind;
+          final reference = kind == 'laboratory'
+              ? {
+                  'uz': 'Laboratoriya 1',
+                  'ru': 'Лабораторная 1',
+                  'en': 'Lab 1',
+                }[language]!
+              : {
+                  'uz': 'Amaliy 1',
+                  'ru': 'Практическая 1',
+                  'en': 'Activity 1',
+                }[language]!;
+          await mount(
+            tester,
+            ContentSourceButton(source: source, language: language),
+            scale: 2,
+          );
+          expect(find.textContaining(reference), findsOneWidget);
+          expect(find.textContaining('§null'), findsNothing);
+          await tester.tap(find.byType(ContentSourceButton));
+          await tester.pumpAndSettle();
+          final chapter = find.text(source['chapter_title'] as String);
+          await tester.ensureVisible(chapter);
+          expect(chapter, findsOneWidget);
+          expect(find.textContaining('§null'), findsNothing);
+          expect(tester.takeException(), isNull);
+        },
+      );
+    }
+  }
 }

@@ -16,13 +16,20 @@ class ContentSourceButton extends StatelessWidget {
     final printed = (source['printed_pages'] as List? ?? []).join(', ');
     final pdf = (source['pdf_pages'] as List? ?? []).join(', ');
     final section = source['paragraph'];
+    final activity = source['activity_kind'];
+    final number = source['activity_number'];
+    final reference = section != null
+        ? '§$section'
+        : activity == 'laboratory'
+        ? tr('Laboratoriya $number', 'Лабораторная $number', 'Lab $number')
+        : tr('Amaliy $number', 'Практическая $number', 'Activity $number');
     return TextButton.icon(
       icon: const Icon(Icons.menu_book_outlined, size: 18),
       label: Text(
         tr(
-          'Manba: §$section · $printed-bet',
-          'Источник: §$section · стр. $printed',
-          'Source: §$section · p. $printed',
+          'Manba: $reference · $printed-bet',
+          'Источник: $reference · стр. $printed',
+          'Source: $reference · p. $printed',
         ),
       ),
       onPressed: () => showModalBottomSheet<void>(
@@ -42,12 +49,16 @@ class ContentSourceButton extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
                 Text((source['authors'] as List? ?? []).join(', ')),
+                if (source['chapter_title'] != null) ...[
+                  const SizedBox(height: 12),
+                  Text(source['chapter_title'] as String),
+                ],
                 const SizedBox(height: 12),
                 Text(
                   tr(
-                    'Paragraf: §$section\nKitobdagi bet: $printed\nPDF sahifasi: $pdf',
-                    'Параграф: §$section\nСтраница учебника: $printed\nСтраница PDF: $pdf',
-                    'Section: §$section\nPrinted page: $printed\nPDF page: $pdf',
+                    'Paragraf: $reference\nKitobdagi bet: $printed\nPDF sahifasi: $pdf',
+                    'Параграф: $reference\nСтраница учебника: $printed\nСтраница PDF: $pdf',
+                    'Section: $reference\nPrinted page: $printed\nPDF page: $pdf',
                   ),
                 ),
                 for (final segment
