@@ -348,4 +348,104 @@ void main() {
       }
     },
   );
+
+  test('all seven grades report actual authored lesson counts', () async {
+    dio.httpClientAdapter = Adapter(
+      (_) => reply(200, fixture('biology_batch_grades')),
+    );
+    final grades = await SkillTreeRepository(dio).getGrades('biologiya');
+    expect(grades.map((g) => g.readyLessons).toList(), [4, 3, 2, 4, 2, 2, 2]);
+    for (final grade in [6, 8]) {
+      final data = LessonStartResult.fromJson(
+        fixture('biology_grade${grade}_lesson'),
+      );
+      expect(fixture('biology_grade${grade}_lesson')['content_language'], 'uz');
+      for (final question in data.questions) {
+        expect(question.source!['source_set_sha256'], isNotEmpty);
+        expect(question.source!['source_segments'], isNotEmpty);
+      }
+    }
+  });
+
+  for (final grade in [6, 8]) {
+    testWidgets(
+      'grade $grade real sourced lesson completes through the existing Ilmo engine',
+      (tester) async {
+        final data = fixture('biology_grade${grade}_lesson');
+        final path = fixture('biology_grade${grade}_tree');
+        dio.httpClientAdapter = Adapter((request) {
+          requests.add(request);
+          if (request.path.endsWith('/start')) return reply(200, data);
+          if (request.path.endsWith('/complete')) {
+            return reply(200, fixture('biology_grade${grade}_result'));
+          }
+          throw StateError('Unexpected lesson request');
+        });
+        final row = SkillTreeLesson.fromJson(
+          ((path['units'] as List).first['lessons'] as List).first
+              as Map<String, dynamic>,
+        );
+        await mount(tester, SkillLessonScreen(lesson: row));
+        for (var i = 1; i < (data['theory'] as List).length; i++) {
+          await tap(tester, 'Davom etish');
+        }
+        await tap(tester, 'Testni boshlash!');
+        for (final q in data['questions'] as List) {
+          await tap(tester, q['correct_answer'] as String);
+          await tap(tester, 'TEKSHIRISH');
+          expect(find.text('Ajoyib!'), findsOneWidget);
+          await tap(tester, 'Davom etish');
+        }
+        expect(find.text('Dars yakunlandi!'), findsOneWidget);
+        expect(find.text('+20'), findsOneWidget);
+        final sent = requests
+            .where((r) => r.path.endsWith('/complete'))
+            .toList();
+        expect(sent.length, 1);
+        expect(
+          (sent.single.data as Map)['results'],
+          hasLength((data['questions'] as List).length),
+        );
+        expect(tester.takeException(), isNull);
+        await tester.pumpAndSettle();
+        await tester.pumpWidget(const SizedBox());
+        await tester.pump(const Duration(milliseconds: 100));
+      },
+    );
+    for (final language in ['uz', 'ru', 'en']) {
+      testWidgets(
+        'split PDF source $grade $language scrolls at 200 percent text on 320px',
+        (tester) async {
+          tester.view.physicalSize = const Size(320, 568);
+          tester.view.devicePixelRatio = 1;
+          addTearDown(tester.view.resetPhysicalSize);
+          addTearDown(tester.view.resetDevicePixelRatio);
+          final data = fixture('biology_grade${grade}_lesson');
+          final source =
+              (data['questions'] as List).first['source']
+                  as Map<String, dynamic>;
+          await mount(
+            tester,
+            ContentSourceButton(source: source, language: language),
+            scale: 2,
+          );
+          await tester.tap(find.byType(ContentSourceButton));
+          await tester.pumpAndSettle();
+          final part = (source['source_segments'] as List).first as Map;
+          final file = find.text(part['file_name'] as String);
+          await tester.ensureVisible(file);
+          expect(file, findsOneWidget);
+          final label = language == 'uz'
+              ? 'Qism ichidagi PDF sahifasi:'
+              : language == 'ru'
+              ? 'Страница PDF внутри части:'
+              : 'PDF page within this part:';
+          final page = find.textContaining(label);
+          await tester.ensureVisible(page);
+          expect(page, findsOneWidget);
+          expect(tester.takeException(), isNull);
+        },
+      );
+    }
+  }
 }

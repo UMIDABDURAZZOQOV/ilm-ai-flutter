@@ -50,6 +50,19 @@ class ContentSourceButton extends StatelessWidget {
                     'Section: §$section\nPrinted page: $printed\nPDF page: $pdf',
                   ),
                 ),
+                for (final segment
+                    in (source['source_segments'] as List? ?? [])
+                        .whereType<Map>()) ...[
+                  const SizedBox(height: 12),
+                  Text('${segment['file_name']}'),
+                  Text(
+                    tr(
+                      'Qism ichidagi PDF sahifasi: ${(segment['segment_pdf_pages'] as List? ?? []).join(', ')}',
+                      'Страница PDF внутри части: ${(segment['segment_pdf_pages'] as List? ?? []).join(', ')}',
+                      'PDF page within this part: ${(segment['segment_pdf_pages'] as List? ?? []).join(', ')}',
+                    ),
+                  ),
+                ],
                 const SizedBox(height: 12),
                 Text(
                   tr(

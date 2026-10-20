@@ -1,0 +1,294 @@
+{
+  "subject": {
+    "id": 2,
+    "slug": "biologiya",
+    "name_uz": "Biologiya",
+    "name_ru": "Биология",
+    "name_en": "Biology",
+    "icon": "biology",
+    "color": "#2DD4BF"
+  },
+  "units": [
+    {
+      "id": 19,
+      "slug": "bio-8-bio-8-introduction-1",
+      "title_uz": "KIRISH",
+      "title_ru": "KIRISH",
+      "title_en": "KIRISH",
+      "order_index": 17,
+      "coverage_complete": true,
+      "lessons": [
+        {
+          "id": 13,
+          "slug": "biology-8-paragraph-1-v1",
+          "title_uz": "Odam va uning salomatligi to‘g‘risida umumiy tushuncha",
+          "title_ru": "Odam va uning salomatligi to‘g‘risida umumiy tushuncha",
+          "title_en": "Odam va uning salomatligi to‘g‘risida umumiy tushuncha",
+          "order_index": 1001,
+          "xp_reward": 20,
+          "status": "unlocked",
+          "stars": 0,
+          "best_score_pct": null
+        }
+      ],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 20,
+      "slug": "bio-8-bio-8-chapter-3",
+      "title_uz": "I BOB. ODAM ORGANIZMI TO‘G‘RISIDA UMUMIY MA’LUMOT",
+      "title_ru": "I BOB. ODAM ORGANIZMI TO‘G‘RISIDA UMUMIY MA’LUMOT",
+      "title_en": "I BOB. ODAM ORGANIZMI TO‘G‘RISIDA UMUMIY MA’LUMOT",
+      "order_index": 18,
+      "coverage_complete": true,
+      "lessons": [
+        {
+          "id": 14,
+          "slug": "biology-8-paragraph-2-v1",
+          "title_uz": "Odam organizmining hujayraviy tuzilishi",
+          "title_ru": "Odam organizmining hujayraviy tuzilishi",
+          "title_en": "Odam organizmining hujayraviy tuzilishi",
+          "order_index": 2001,
+          "xp_reward": 20,
+          "status": "locked",
+          "stars": 0,
+          "best_score_pct": null
+        },
+        {
+          "id": 15,
+          "slug": "biology-8-paragraph-3-v1",
+          "title_uz": "Hujayra va organizmning hayotiy xossalari",
+          "title_ru": "Hujayra va organizmning hayotiy xossalari",
+          "title_en": "Hujayra va organizmning hayotiy xossalari",
+          "order_index": 3001,
+          "xp_reward": 20,
+          "status": "locked",
+          "stars": 0,
+          "best_score_pct": null
+        },
+        {
+          "id": 16,
+          "slug": "biology-8-paragraph-4-v1",
+          "title_uz": "To‘qimalar, organlar va organizm",
+          "title_ru": "To‘qimalar, organlar va organizm",
+          "title_en": "To‘qimalar, organlar va organizm",
+          "order_index": 4001,
+          "xp_reward": 20,
+          "status": "locked",
+          "stars": 0,
+          "best_score_pct": null
+        }
+      ],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 21,
+      "slug": "bio-8-bio-8-chapter-7",
+      "title_uz": "II BOB. ORGANIZM FUNKSIYASINING BOSHQARILISHI, SEKRETSIYA BEZLARI",
+      "title_ru": "II BOB. ORGANIZM FUNKSIYASINING BOSHQARILISHI, SEKRETSIYA BEZLARI",
+      "title_en": "II BOB. ORGANIZM FUNKSIYASINING BOSHQARILISHI, SEKRETSIYA BEZLARI",
+      "order_index": 19,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 22,
+      "slug": "bio-8-bio-8-chapter-12",
+      "title_uz": "III BOB. TAYANCH-HARAKATLANISH SISTEMASI",
+      "title_ru": "III BOB. TAYANCH-HARAKATLANISH SISTEMASI",
+      "title_en": "III BOB. TAYANCH-HARAKATLANISH SISTEMASI",
+      "order_index": 20,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 23,
+      "slug": "bio-8-bio-8-chapter-18",
+      "title_uz": "IV BOB. QON",
+      "title_ru": "IV BOB. QON",
+      "title_en": "IV BOB. QON",
+      "order_index": 21,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 24,
+      "slug": "bio-8-bio-8-chapter-23",
+      "title_uz": "V BOB. QON AYLANISH SISTEMASI",
+      "title_ru": "V BOB. QON AYLANISH SISTEMASI",
+      "title_en": "V BOB. QON AYLANISH SISTEMASI",
+      "order_index": 22,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 25,
+      "slug": "bio-8-bio-8-chapter-29",
+      "title_uz": "VI BOB. NAFAS OLISH SISTEMASI",
+      "title_ru": "VI BOB. NAFAS OLISH SISTEMASI",
+      "title_en": "VI BOB. NAFAS OLISH SISTEMASI",
+      "order_index": 23,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 26,
+      "slug": "bio-8-bio-8-chapter-33",
+      "title_uz": "VII BOB. OVQAT HAZM QILISH SISTEMASI",
+      "title_ru": "VII BOB. OVQAT HAZM QILISH SISTEMASI",
+      "title_en": "VII BOB. OVQAT HAZM QILISH SISTEMASI",
+      "order_index": 24,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 27,
+      "slug": "bio-8-bio-8-chapter-38",
+      "title_uz": "VIII BOB. MODDALAR VA ENERGIYA ALMASHINUVI",
+      "title_ru": "VIII BOB. MODDALAR VA ENERGIYA ALMASHINUVI",
+      "title_en": "VIII BOB. MODDALAR VA ENERGIYA ALMASHINUVI",
+      "order_index": 25,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 28,
+      "slug": "bio-8-bio-8-chapter-43",
+      "title_uz": "IX BOB. TERI VA SIYDIK AYIRISH SISTEMASI",
+      "title_ru": "IX BOB. TERI VA SIYDIK AYIRISH SISTEMASI",
+      "title_en": "IX BOB. TERI VA SIYDIK AYIRISH SISTEMASI",
+      "order_index": 26,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 29,
+      "slug": "bio-8-bio-8-chapter-49",
+      "title_uz": "X BOB. NERV SISTEMASI",
+      "title_ru": "X BOB. NERV SISTEMASI",
+      "title_en": "X BOB. NERV SISTEMASI",
+      "order_index": 27,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 30,
+      "slug": "bio-8-bio-8-chapter-56",
+      "title_uz": "XI BOB. OLIY NERV FAOLIYATI",
+      "title_ru": "XI BOB. OLIY NERV FAOLIYATI",
+      "title_en": "XI BOB. OLIY NERV FAOLIYATI",
+      "order_index": 28,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 31,
+      "slug": "bio-8-bio-8-chapter-64",
+      "title_uz": "XII BOB. SEZGI ORGANLARI",
+      "title_ru": "XII BOB. SEZGI ORGANLARI",
+      "title_en": "XII BOB. SEZGI ORGANLARI",
+      "order_index": 29,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 32,
+      "slug": "bio-8-bio-8-chapter-71",
+      "title_uz": "XIII BOB. KO‘PAYISH VA RIVOJLANISH. ODAMNING BIOLOGIK VA IJTIMOIY TABIATI",
+      "title_ru": "XIII BOB. KO‘PAYISH VA RIVOJLANISH. ODAMNING BIOLOGIK VA IJTIMOIY TABIATI",
+      "title_en": "XIII BOB. KO‘PAYISH VA RIVOJLANISH. ODAMNING BIOLOGIK VA IJTIMOIY TABIATI",
+      "order_index": 30,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    }
+  ],
+  "grade": 8,
+  "user": {
+    "xp_total": 20,
+    "streak_days": 1,
+    "today_xp": 20,
+    "daily_goal_xp": 20
+  }
+}

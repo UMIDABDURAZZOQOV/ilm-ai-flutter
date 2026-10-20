@@ -1,0 +1,137 @@
+{
+  "subject": {
+    "id": 2,
+    "slug": "biologiya",
+    "name_uz": "Biologiya",
+    "name_ru": "Биология",
+    "name_en": "Biology",
+    "icon": "biology",
+    "color": "#2DD4BF"
+  },
+  "units": [
+    {
+      "id": 6,
+      "slug": "bio-6-bio-6-chapter-1",
+      "title_uz": "I bob. O‘simliklar dunyosi bilan umumiy tanishuv",
+      "title_ru": "I bob. O‘simliklar dunyosi bilan umumiy tanishuv",
+      "title_en": "I bob. O‘simliklar dunyosi bilan umumiy tanishuv",
+      "order_index": 4,
+      "coverage_complete": true,
+      "lessons": [
+        {
+          "id": 8,
+          "slug": "biology-6-paragraph-1-v1",
+          "title_uz": "Botanika – o‘simliklar haqidagi fan",
+          "title_ru": "Botanika – o‘simliklar haqidagi fan",
+          "title_en": "Botanika – o‘simliklar haqidagi fan",
+          "order_index": 1001,
+          "xp_reward": 20,
+          "status": "unlocked",
+          "stars": 0,
+          "best_score_pct": null
+        },
+        {
+          "id": 9,
+          "slug": "biology-6-paragraph-2-v1",
+          "title_uz": "Gulli o‘simliklar bilan umumiy tanishish",
+          "title_ru": "Gulli o‘simliklar bilan umumiy tanishish",
+          "title_en": "Gulli o‘simliklar bilan umumiy tanishish",
+          "order_index": 2001,
+          "xp_reward": 20,
+          "status": "locked",
+          "stars": 0,
+          "best_score_pct": null
+        },
+        {
+          "id": 10,
+          "slug": "biology-6-paragraph-3-v1",
+          "title_uz": "O‘simliklarning hayotiy shakllari",
+          "title_ru": "O‘simliklarning hayotiy shakllari",
+          "title_en": "O‘simliklarning hayotiy shakllari",
+          "order_index": 3001,
+          "xp_reward": 20,
+          "status": "locked",
+          "stars": 0,
+          "best_score_pct": null
+        }
+      ],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 7,
+      "slug": "bio-6-bio-6-chapter-5",
+      "title_uz": "II bob. Hujayra – hayotning asosi",
+      "title_ru": "II bob. Hujayra – hayotning asosi",
+      "title_en": "II bob. Hujayra – hayotning asosi",
+      "order_index": 5,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 8,
+      "slug": "bio-6-bio-6-chapter-9",
+      "title_uz": "III bob. Gulli o‘simliklarning vegetativ va generativ organlari",
+      "title_ru": "III bob. Gulli o‘simliklarning vegetativ va generativ organlari",
+      "title_en": "III bob. Gulli o‘simliklarning vegetativ va generativ organlari",
+      "order_index": 6,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 9,
+      "slug": "bio-6-bio-6-chapter-28",
+      "title_uz": "IV bob. Gulli o‘simliklarning hayotiy faoliyati",
+      "title_ru": "IV bob. Gulli o‘simliklarning hayotiy faoliyati",
+      "title_en": "IV bob. Gulli o‘simliklarning hayotiy faoliyati",
+      "order_index": 7,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    },
+    {
+      "id": 10,
+      "slug": "bio-6-bio-6-chapter-42",
+      "title_uz": "V bob. O‘simliklar sistematikasi",
+      "title_ru": "V bob. O‘simliklar sistematikasi",
+      "title_en": "V bob. O‘simliklar sistematikasi",
+      "order_index": 8,
+      "coverage_complete": false,
+      "lessons": [],
+      "exam": {
+        "status": "locked",
+        "passed": false,
+        "best_score_pct": null,
+        "attempts": 0
+      }
+    }
+  ],
+  "grade": 6,
+  "user": {
+    "xp_total": 0,
+    "streak_days": 0,
+    "today_xp": 0,
+    "daily_goal_xp": 20
+  }
+}
