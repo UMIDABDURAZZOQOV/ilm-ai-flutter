@@ -1,38 +1,157 @@
 import 'package:dio/dio.dart';
+import 'dart:async';
 import 'package:flutter/services.dart';
 import 'api_contract.dart';
 
 /// Ported from ilm-ai-mobile's utils/errorMessage.ts -- always returns a
 /// human-readable string, never a raw exception object.
 String extractError(Object err, {String language = 'en'}) {
-  String text(String uz, String ru, String en) => language == 'uz' ? uz : language == 'ru' ? ru : en;
-  if (err is ApiCompatibilityException) return text('Ilova va server versiyalari mos emas. Server yangilanishi kerak.', 'Версии приложения и сервера несовместимы. Требуется обновление сервера.', 'The app and server versions are incompatible. The server needs an update.');
-  if (err is InvalidApiResponseException) return text('Server javobini o‘qib bo‘lmadi. Keyinroq qayta urining.', 'Не удалось прочитать ответ сервера. Повторите позже.', 'The server response could not be read. Please try later.');
-  if (err is PlatformException && err.code.toUpperCase().contains('CANCEL')) return text('Google orqali kirish bekor qilindi.', 'Вход через Google отменён.', 'Google sign-in was cancelled.');
-  if (err is DioException) {
-    if (err.type == DioExceptionType.connectionError || err.type == DioExceptionType.connectionTimeout) {
-      return text('Internetga ulanib bo‘lmadi. Ulanishni tekshiring.', 'Нет подключения к интернету. Проверьте соединение.', 'No internet connection');
+  String text(String uz, String ru, String en) => language == 'uz'
+      ? uz
+      : language == 'ru'
+      ? ru
+      : en;
+  if (err is TimeoutException) {
+    return text(
+      'So‘rov vaqti tugadi. Qayta urinib ko‘ring.',
+      'Время ожидания истекло. Повторите попытку.',
+      'Request timed out. Please try again.',
+    );
+  }
+  if (err is GoogleAuthException) {
+    switch (err.failure) {
+      case GoogleAuthFailure.cancelled:
+        return text(
+          'Google orqali kirish bekor qilindi.',
+          'Вход через Google отменён.',
+          'Google sign-in was cancelled.',
+        );
+      case GoogleAuthFailure.notConfigured:
+        return text(
+          'Serverda Google orqali kirish sozlanmagan. Administratorga xabar bering.',
+          'Вход через Google не настроен на сервере. Сообщите администратору.',
+          'Google sign-in is not configured on the server. Contact the administrator.',
+        );
+      case GoogleAuthFailure.invalidCallback:
+        return text(
+          'Google qaytish havolasi tasdiqlanmadi. Kirishni qaytadan boshlang.',
+          'Не удалось проверить ответ Google. Начните вход заново.',
+          'The Google callback could not be verified. Start sign-in again.',
+        );
+      case GoogleAuthFailure.providerFailed:
+        return text(
+          'Google orqali kirish serverda yakunlanmadi. Qayta urining.',
+          'Сервер не завершил вход через Google. Повторите попытку.',
+          'The server could not complete Google sign-in. Please retry.',
+        );
     }
-    if (err.type == DioExceptionType.receiveTimeout || err.type == DioExceptionType.sendTimeout) {
-      return text('So‘rov vaqti tugadi. Qayta urinib ko‘ring.', 'Время ожидания истекло. Повторите попытку.', 'Request timed out. Please try again.');
+  }
+  if (err is ApiCompatibilityException) {
+    return text(
+      'Ilova va server versiyalari mos emas. Server yangilanishi kerak.',
+      'Версии приложения и сервера несовместимы. Требуется обновление сервера.',
+      'The app and server versions are incompatible. The server needs an update.',
+    );
+  }
+  if (err is InvalidApiResponseException) {
+    return text(
+      'Server javobini o‘qib bo‘lmadi. Keyinroq qayta urining.',
+      'Не удалось прочитать ответ сервера. Повторите позже.',
+      'The server response could not be read. Please try later.',
+    );
+  }
+  if (err is PlatformException && err.code.toUpperCase().contains('CANCEL')) {
+    return text(
+      'Google orqali kirish bekor qilindi.',
+      'Вход через Google отменён.',
+      'Google sign-in was cancelled.',
+    );
+  }
+  if (err is DioException) {
+    final detail = err.response?.data is Map
+        ? (err.response!.data as Map)['detail']
+        : null;
+    if (detail == 'mobile_curriculum_not_imported') {
+      return text(
+        'Biologiya darslari serverga hali import qilinmagan. Administratorga xabar bering.',
+        'Уроки биологии ещё не импортированы на сервер. Сообщите администратору.',
+        'Biology lessons have not been imported on the server. Contact the administrator.',
+      );
+    }
+    if (detail == 'mobile_schema_not_ready') {
+      return text(
+        'Mobil server bazasi tayyor emas. Administratorga xabar bering.',
+        'База мобильного сервера не готова. Сообщите администратору.',
+        'The mobile server database is not ready. Contact the administrator.',
+      );
+    }
+    if (err.type == DioExceptionType.connectionError ||
+        err.type == DioExceptionType.connectionTimeout) {
+      return text(
+        'Internetga ulanib bo‘lmadi. Ulanishni tekshiring.',
+        'Нет подключения к интернету. Проверьте соединение.',
+        'No internet connection',
+      );
+    }
+    if (err.type == DioExceptionType.receiveTimeout ||
+        err.type == DioExceptionType.sendTimeout) {
+      return text(
+        'So‘rov vaqti tugadi. Qayta urinib ko‘ring.',
+        'Время ожидания истекло. Повторите попытку.',
+        'Request timed out. Please try again.',
+      );
     }
     final status = err.response?.statusCode;
     if (status != null && status >= 500) {
-      return text('Serverda xatolik. Birozdan so‘ng qayta urining.', 'Ошибка сервера. Повторите попытку позже.', 'Server error ($status). Please try again in a moment.');
+      return text(
+        'Serverda xatolik. Birozdan so‘ng qayta urining.',
+        'Ошибка сервера. Повторите попытку позже.',
+        'Server error ($status). Please try again in a moment.',
+      );
     }
-    if (status == 401) return text('Sessiya tugadi. Qayta kiring.', 'Сеанс истёк. Войдите снова.', 'Your session expired. Please sign in again.');
-    if (status == 403) return text('Bu amal hozir mavjud emas. Oldingi bosqichlarni tekshiring.', 'Действие пока недоступно. Проверьте предыдущие этапы.', 'This action is unavailable. Check the preceding steps.');
-    if (status == 409) return text('Urinishni tekshiring yoki qayta oching. Saqlangan natija yo‘qolmaydi.', 'Проверьте или откройте попытку заново. Сохранённый результат останется.', 'Check or reopen this attempt. Saved results are preserved.');
-    if (status == 422 || status == 400) return text('Ma’lumotlarni tekshirib, qayta urining.', 'Проверьте данные и повторите попытку.', 'Check the entered details and try again.');
+    if (status == 401) {
+      return text(
+        'Sessiya tugadi. Qayta kiring.',
+        'Сеанс истёк. Войдите снова.',
+        'Your session expired. Please sign in again.',
+      );
+    }
+    if (status == 403) {
+      return text(
+        'Bu amal hozir mavjud emas. Oldingi bosqichlarni tekshiring.',
+        'Действие пока недоступно. Проверьте предыдущие этапы.',
+        'This action is unavailable. Check the preceding steps.',
+      );
+    }
+    if (status == 409) {
+      return text(
+        'Urinishni tekshiring yoki qayta oching. Saqlangan natija yo‘qolmaydi.',
+        'Проверьте или откройте попытку заново. Сохранённый результат останется.',
+        'Check or reopen this attempt. Saved results are preserved.',
+      );
+    }
+    if (status == 422 || status == 400) {
+      return text(
+        'Ma’lumotlarni tekshirib, qayta urining.',
+        'Проверьте данные и повторите попытку.',
+        'Check the entered details and try again.',
+      );
+    }
   }
-  return text('Amal bajarilmadi. Qayta urinib ko‘ring.', 'Не удалось выполнить действие. Повторите попытку.', 'Request failed. Please try again.');
+  return text(
+    'Amal bajarilmadi. Qayta urinib ko‘ring.',
+    'Не удалось выполнить действие. Повторите попытку.',
+    'Request failed. Please try again.',
+  );
 }
 
 /// Login fails with a structured 403 { code: "email_not_verified", email }
 /// when an account hasn't confirmed its verification code yet.
 String? getUnverifiedEmail(Object err) {
   if (err is DioException && err.response?.statusCode == 403) {
-    final detail = err.response?.data is Map ? (err.response!.data as Map)['detail'] : null;
+    final detail = err.response?.data is Map
+        ? (err.response!.data as Map)['detail']
+        : null;
     if (detail is Map && detail['code'] == 'email_not_verified') {
       return detail['email'] as String?;
     }

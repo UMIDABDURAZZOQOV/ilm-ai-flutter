@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/storage/prefs_service.dart';
+import '../../../core/config/mobile_release.dart';
 
 /// Offline writes are retained per account and retried at the next restoration.
 class LearningPreferences {
@@ -26,6 +27,14 @@ class LearningPreferences {
       final Object? value = entry.key == 'daily_goal_xp' || entry.key == 'level'
           ? prefs.getInt('${entry.value}_$id')
           : prefs.getString('${entry.value}_$id');
+      if (entry.key == 'subject' && !isPublishedMobileSubject(value as String?)) {
+        continue;
+      }
+      if (biologyOnly &&
+          entry.key == 'grade' &&
+          !['5', '6', '7', '8', '9', '10', '11'].contains(value)) {
+        continue;
+      }
       if (value != null) values[entry.key] = value;
     }
     return values;

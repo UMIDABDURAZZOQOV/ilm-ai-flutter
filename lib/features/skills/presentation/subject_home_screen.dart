@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/providers/app_providers.dart';
 import '../../../core/network/error_message.dart';
+import '../../../core/config/mobile_release.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../auth/application/auth_controller.dart';
@@ -235,7 +236,11 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  tr(
+                  biologyOnly ? tr(
+                    'Biologiya bo‘yicha bilimingizni takrorlang va mustahkamlang.',
+                    'Повторяйте и закрепляйте знания по биологии.',
+                    'Review and strengthen your biology knowledge.',
+                  ) : tr(
                     'Takrorlash barcha o‘rgangan fanlaringizni qamrab oladi.',
                     'Повторение охватывает все изученные предметы.',
                     'Review covers all the subjects you have studied.',

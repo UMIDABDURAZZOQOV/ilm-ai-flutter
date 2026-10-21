@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/config/mobile_release.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/network/error_message.dart';
@@ -97,7 +98,7 @@ class _CurriculumLearningScreenState
     final lang = ref.watch(languageProvider);
     String tr(String uz, String ru, String en) => str3(lang, uz, ru, en);
     final grades = ref.watch(curriculumGradesProvider(widget.subject.slug));
-    if (_legacy) {
+    if (_legacy && !biologyOnly) {
       return SkillPathScreen(
         subject: widget.subject,
         onChangeSubject: () => setState(() => _legacy = false),
@@ -127,16 +128,17 @@ class _CurriculumLearningScreenState
                   ref.invalidate(curriculumGradesProvider(widget.subject.slug)),
               child: Text(tr('Qayta urinish', 'Повторить', 'Retry')),
             ),
-            TextButton(
-              onPressed: () => setState(() => _legacy = true),
-              child: Text(
-                tr(
-                  'Oldingi umumiy yo‘l',
-                  'Прежний общий путь',
-                  'Previous shared path',
+            if (!biologyOnly)
+              TextButton(
+                onPressed: () => setState(() => _legacy = true),
+                child: Text(
+                  tr(
+                    'Oldingi umumiy yo‘l',
+                    'Прежний общий путь',
+                    'Previous shared path',
+                  ),
                 ),
               ),
-            ),
             TextButton(
               onPressed: widget.onChangeSubject,
               child: Text(
@@ -240,16 +242,17 @@ class _CurriculumLearningScreenState
                       ),
                     ),
                   ),
-                TextButton(
-                  onPressed: () => setState(() => _legacy = true),
-                  child: Text(
-                    tr(
-                      'Oldingi umumiy yo‘lni ochish',
-                      'Открыть прежний общий путь',
-                      'Open the previous shared path',
+                if (!biologyOnly)
+                  TextButton(
+                    onPressed: () => setState(() => _legacy = true),
+                    child: Text(
+                      tr(
+                        'Oldingi umumiy yo‘lni ochish',
+                        'Открыть прежний общий путь',
+                        'Open the previous shared path',
+                      ),
                     ),
                   ),
-                ),
               ],
             ),
           );

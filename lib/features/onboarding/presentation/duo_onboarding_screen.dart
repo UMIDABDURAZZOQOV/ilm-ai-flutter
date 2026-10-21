@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/config/product_mode.dart';
+import '../../../core/config/mobile_release.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
@@ -39,7 +40,7 @@ class DuoOnboardingScreen extends ConsumerStatefulWidget {
 class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
   late int _step;
   String? _selectedSubject;
-  String? _selectedClass = 'all';
+  String? _selectedClass = biologyOnly ? '5' : 'all';
   String? _selectedSource;
   int? _selectedLevel;
   final Set<String> _selectedReasons = {};
@@ -74,6 +75,15 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     _step = (draft?['step'] as int? ?? (_draftUser == null ? widget.initialStep : 11)).clamp(0, 11);
     _selectedSubject = draft?['subject'] as String?;
     _selectedClass = draft?['class'] as String? ?? 'all';
+    if (biologyOnly) {
+      if (_selectedSubject != null && !isPublishedMobileSubject(_selectedSubject)) {
+        _selectedSubject = null;
+        if (_step > 3 && _draftUser == null) _step = 3;
+      }
+      if (!['5', '6', '7', '8', '9', '10', '11'].contains(_selectedClass)) {
+        _selectedClass = '5';
+      }
+    }
     _selectedSource = draft?['source'] as String?;
     _selectedLevel = draft?['level'] as int?;
     _selectedDailyGoal = draft?['daily_goal'] as int?;
@@ -684,12 +694,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              _buildClassChip(
+              if (!biologyOnly) _buildClassChip(
                 label: str3(lang, 'Barchasi', 'Все', 'All'),
                 isSelected: _selectedClass == 'all',
                 onTap: () => _change(() => _selectedClass = 'all'),
               ),
-              for (int grade = 1; grade <= 11; grade++) ...[
+              for (int grade = biologyOnly ? 5 : 1; grade <= 11; grade++) ...[
                 const SizedBox(width: 8),
                 _buildClassChip(
                   label: str3(lang, '$grade-sinf', '$grade класс', 'Grade $grade'),

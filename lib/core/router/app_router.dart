@@ -28,6 +28,7 @@ import '../../features/files/presentation/knowledge_base_screen.dart';
 import '../../features/quiz/data/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_home_screen.dart';
 import '../../features/skills/data/skill_tree_models.dart';
+import '../config/mobile_release.dart';
 import '../../features/skills/presentation/skills_hub_screen.dart';
 import '../../features/skills/presentation/skill_path_screen.dart';
 import '../../features/skills/presentation/skill_lesson_screen.dart';
@@ -124,8 +125,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       }
 
       if (!onboardingDone) {
-        return _preAuthRoutes.contains(loc) ? null :
-            OnboardingDraftStore(ref.read(prefsServiceProvider)).read(null) != null ? '/onboarding' : '/language-select';
+        return _preAuthRoutes.contains(loc)
+            ? null
+            : OnboardingDraftStore(ref.read(prefsServiceProvider)).read(null) !=
+                  null
+            ? '/onboarding'
+            : '/language-select';
       }
       if (!authed) {
         return _authRoutes.contains(loc) ? null : '/login';
@@ -143,6 +148,22 @@ final routerProvider = Provider<GoRouter>((ref) {
         return subjectsOnly ? '/learn' : '/home';
       }
       if (subjectsOnly && !isSubjectRoute(loc)) return '/learn';
+      if (biologyOnly) {
+        if (loc == '/skills') return '/learn';
+        if (loc == '/skills/path') {
+          return '/learn'; // Grade paths live under Learn.
+        }
+        if (state.extra is SkillSubject &&
+            !isPublishedMobileSubject((state.extra as SkillSubject).slug)) {
+          return '/learn';
+        }
+        if (state.extra is Map<String, dynamic>) {
+          final subject = (state.extra as Map<String, dynamic>)['subject'];
+          if (subject is String && !isPublishedMobileSubject(subject)) {
+            return '/learn';
+          }
+        }
+      }
       if (loc == '/skills/practice' && state.extra is Map<String, dynamic>) {
         final extra = state.extra as Map<String, dynamic>;
         if (extra['mode'] is! PracticeMode ||

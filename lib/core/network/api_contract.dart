@@ -6,3 +6,15 @@ class ApiCompatibilityException implements Exception {
 class InvalidApiResponseException implements Exception {
   const InvalidApiResponseException();
 }
+
+enum GoogleAuthFailure {
+  cancelled,
+  invalidCallback,
+  providerFailed,
+  notConfigured,
+}
+
+class GoogleAuthException implements Exception {
+  final GoogleAuthFailure failure;
+  const GoogleAuthException(this.failure);
+}

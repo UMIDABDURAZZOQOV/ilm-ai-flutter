@@ -104,14 +104,67 @@ class AuthRepository {
         'code_challenge': ?challenge,
         if (challenge != null) 'code_challenge_method': 'S256',
       },
+      options: Options(extra: {'skipAuth': true}),
     );
-    if (res.data is! Map<String, dynamic>) throw const InvalidApiResponseException();
+    if (res.data is! Map<String, dynamic>) {
+      throw const InvalidApiResponseException();
+    }
     final data = res.data as Map<String, dynamic>;
     // Fail before opening an old callback that puts JWTs in a custom URI.
     if (challenge != null && data['mobile_auth_version'] != 2) {
       throw const ApiCompatibilityException();
     }
+    final rawUrl = data['auth_url'];
+    final authUri = rawUrl is String ? Uri.tryParse(rawUrl) : null;
+    if (authUri == null ||
+        authUri.scheme != 'https' ||
+        authUri.host != 'accounts.google.com' ||
+        authUri.userInfo.isNotEmpty ||
+        data['state'] is! String ||
+        (data['state'] as String).isEmpty) {
+      throw const InvalidApiResponseException();
+    }
     return GoogleLoginUrlResponse.fromJson(data);
+  }
+
+  Future<GoogleLoginUrlResponse> prepareGoogleLogin(String challenge) async {
+    late Response response;
+    try {
+      response = await _dio.get(
+        '/auth/mobile/config',
+        options: Options(extra: {'skipAuth': true}),
+      );
+    } on DioException catch (error) {
+      if (error.response?.statusCode == 404) {
+        throw const ApiCompatibilityException();
+      }
+      rethrow;
+    }
+    final config = response.data;
+    if (config is! Map ||
+        config['mobile_auth_version'] != 2 ||
+        config['pkce_method'] != 'S256' ||
+        config['code_exchange_path'] != '/auth/mobile/exchange') {
+      throw const ApiCompatibilityException();
+    }
+    if (config['google_configured'] != true) {
+      throw const GoogleAuthException(GoogleAuthFailure.notConfigured);
+    }
+    final redirect =
+        config['redirect_uri'] ?? '$apiBaseUrl/auth/google-callback-mobile';
+    final uri = redirect is String ? Uri.tryParse(redirect) : null;
+    if (uri == null ||
+        !uri.hasAuthority ||
+        uri.path != '/auth/google-callback-mobile' ||
+        uri.hasQuery ||
+        uri.hasFragment ||
+        uri.userInfo.isNotEmpty ||
+        (uri.scheme != 'https' &&
+            !(uri.scheme == 'http' &&
+                {'localhost', '127.0.0.1', '::1'}.contains(uri.host)))) {
+      throw const InvalidApiResponseException();
+    }
+    return getGoogleLoginUrl(redirect as String, challenge: challenge);
   }
 }
 

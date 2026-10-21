@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:crypto/crypto.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
-import '../../../core/network/dio_client.dart';
+import '../../../core/network/api_contract.dart';
 import '../data/auth_models.dart';
 import '../data/auth_repository.dart';
 import 'auth_controller.dart';
@@ -20,33 +20,56 @@ String codeChallenge(String verifier) => base64UrlEncode(
   sha256.convert(utf8.encode(verifier)).bytes,
 ).replaceAll('=', '');
 
+String validatedGoogleCode(String callback, String state) {
+  final uri = Uri.tryParse(callback);
+  if (uri == null ||
+      uri.scheme != 'ilmai' ||
+      uri.host != 'auth' ||
+      uri.path != '/callback' ||
+      uri.userInfo.isNotEmpty ||
+      uri.hasFragment ||
+      uri.queryParametersAll['state']?.length != 1 ||
+      uri.queryParameters['state'] != state ||
+      uri.queryParameters.containsKey('access_token') ||
+      uri.queryParameters.containsKey('refresh_token')) {
+    throw const GoogleAuthException(GoogleAuthFailure.invalidCallback);
+  }
+  final error = uri.queryParameters['error'];
+  if (error != null) {
+    throw GoogleAuthException(
+      error == 'cancelled'
+          ? GoogleAuthFailure.cancelled
+          : GoogleAuthFailure.providerFailed,
+    );
+  }
+  if (uri.queryParametersAll['code']?.length != 1 ||
+      (uri.queryParameters['code'] ?? '').isEmpty) {
+    throw const GoogleAuthException(GoogleAuthFailure.invalidCallback);
+  }
+  return uri.queryParameters['code']!;
+}
+
 Future<bool> signInWithGoogle(WidgetRef ref) async {
   final repo = ref.read(authRepositoryProvider);
   final verifier = createCodeVerifier();
   final url = await repo
-      .getGoogleLoginUrl(
-        '$apiBaseUrl/auth/google-callback-mobile',
-        challenge: codeChallenge(verifier),
-      )
+      .prepareGoogleLogin(codeChallenge(verifier))
       .timeout(googleAuthTimeout);
   final result = await FlutterWebAuth2.authenticate(
     url: url.authUrl,
     callbackUrlScheme: 'ilmai',
   ).timeout(const Duration(minutes: 5));
-  final uri = Uri.parse(result);
-  if (uri.queryParameters['error'] != null) {
-    throw StateError('google_sign_in_failed');
-  }
-  if (uri.scheme != 'ilmai' ||
-      uri.host != 'auth' ||
-      uri.path != '/callback' ||
-      uri.queryParameters['state'] != url.state ||
-      uri.queryParameters['code'] == null) {
-    throw StateError('invalid_google_callback');
-  }
+  final code = validatedGoogleCode(result, url.state);
+  if (!ref.context.mounted) return false;
   final data = await repo
-      .exchangeMobileCode(uri.queryParameters['code']!, verifier)
+      .exchangeMobileCode(code, verifier)
       .timeout(googleAuthTimeout);
+  if (!ref.context.mounted) {
+    await repo
+        .logout(data['refresh_token'] as String)
+        .catchError((Object _) {});
+    return false;
+  }
   await ref
       .read(authControllerProvider.notifier)
       .login(

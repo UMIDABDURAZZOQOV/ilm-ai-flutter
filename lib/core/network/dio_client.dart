@@ -3,11 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../storage/secure_token_storage.dart';
+import 'mobile_api.dart';
 
 const _defaultBaseUrl = 'https://ilm-ai-backend-256x.onrender.com';
-const String apiBaseUrl = String.fromEnvironment(
-  'API_URL',
-  defaultValue: _defaultBaseUrl,
+final String apiBaseUrl = normalizeApiBaseUrl(
+  const String.fromEnvironment('API_URL', defaultValue: _defaultBaseUrl),
 );
 
 final secureStorageProvider = Provider<FlutterSecureStorage>(
@@ -157,6 +157,7 @@ class AuthInterceptor extends QueuedInterceptor {
 
 final dioProvider = Provider<Dio>((ref) {
   final dio = Dio(apiOptions());
+  dio.interceptors.add(MobileApiInterceptor());
   final interceptor = AuthInterceptor(ref.watch(secureTokenStorageProvider));
   dio.interceptors.add(interceptor);
   ref.onDispose(interceptor.dispose);
