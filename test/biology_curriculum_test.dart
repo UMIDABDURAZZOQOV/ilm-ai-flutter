@@ -242,10 +242,7 @@ void main() {
         ),
         isTrue,
       );
-      expect(
-        find.textContaining('Qolgan mavzular tayyorlanmoqda.'),
-        findsOneWidget,
-      );
+      expect(find.text('Hozir 1 ta dars mavjud.'), findsOneWidget);
       await tap(tester, 'Mavzular');
       expect(find.textContaining('1-§. Biologiya'), findsOneWidget);
       expect(find.text('Keyingi sinfga o‘tish'), findsNothing);
@@ -542,6 +539,155 @@ void main() {
       await tester.pump(const Duration(milliseconds: 100));
     },
   );
+
+  for (final activity in [false, true]) {
+    testWidgets(
+      'final grade 11 ${activity ? 'lab 5' : 'paragraph 44'} completes from real API evidence',
+      (tester) async {
+        final prefix = activity
+            ? 'biology_grade11_lab5'
+            : 'biology_grade11_final';
+        final data = fixture('${prefix}_lesson');
+        dio.httpClientAdapter = Adapter((request) {
+          requests.add(request);
+          if (request.path.endsWith('/start')) return reply(200, data);
+          if (request.path.endsWith('/complete')) {
+            return reply(200, fixture('${prefix}_result'));
+          }
+          throw StateError('Unexpected final-course request ${request.path}');
+        });
+        await mount(
+          tester,
+          SkillLessonScreen(
+            lesson: SkillTreeLesson.fromJson(fixture('${prefix}_row')),
+          ),
+        );
+        if (activity) {
+          expect(
+            find.textContaining('haqiqiy laboratoriya ishini'),
+            findsOneWidget,
+          );
+          expect(
+            (data['questions'] as List).first['source']['activity_number'],
+            5,
+          );
+        }
+        for (var i = 1; i < (data['theory'] as List).length; i++) {
+          await tap(tester, 'Davom etish');
+        }
+        await tap(tester, 'Testni boshlash!');
+        for (final q in data['questions'] as List) {
+          await tap(tester, q['correct_answer'] as String);
+          await tap(tester, 'TEKSHIRISH');
+          expect(find.text('Ajoyib!'), findsOneWidget);
+          await tap(tester, 'Davom etish');
+        }
+        expect(find.text('Dars yakunlandi!'), findsOneWidget);
+        expect(find.text(activity ? '+10' : '+20'), findsOneWidget);
+        final sent = requests
+            .where((r) => r.path.endsWith('/complete'))
+            .toList();
+        expect(sent, hasLength(1));
+        expect(
+          (sent.single.data as Map)['results'],
+          hasLength(data['questions'].length),
+        );
+        expect(tester.takeException(), isNull);
+        await tester.pumpAndSettle();
+        await tester.pumpWidget(const SizedBox());
+        await tester.pump(const Duration(milliseconds: 100));
+      },
+    );
+  }
+
+  test(
+    'complete catalogue and final outline retain real counts and no grade 12',
+    () async {
+      dio.httpClientAdapter = Adapter((request) {
+        if (request.path.endsWith('/grades')) {
+          return reply(200, fixture('biology_complete_grades'));
+        }
+        if (request.path.endsWith('/curriculum')) {
+          return reply(200, fixture('biology_grade11_complete_outline'));
+        }
+        throw StateError('Unexpected completion request');
+      });
+      final repo = SkillTreeRepository(dio);
+      final grades = await repo.getGrades('biologiya');
+      expect(grades.map((g) => g.grade), [5, 6, 7, 8, 9, 10, 11]);
+      expect(grades.map((g) => g.readyLessons), [30, 66, 64, 68, 67, 62, 49]);
+      expect(grades.any((g) => g.sourceBlocked), isFalse);
+      final outline = await repo.getCurriculum(
+        userId: 900002,
+        subject: 'biologiya',
+        grade: 11,
+      );
+      expect(outline.completed, isTrue);
+      expect(outline.nextGrade, isNull);
+      expect(outline.chapters.expand((c) => c.topics), hasLength(49));
+      expect(
+        outline.chapters
+            .expand((c) => c.topics)
+            .every((t) => t.ready && t.completed),
+        isTrue,
+      );
+    },
+  );
+
+  for (final size in [const Size(320, 568), const Size(640, 360)]) {
+    testWidgets('completed grade 11 outline fits $size at 200 percent text', (
+      tester,
+    ) async {
+      tester.view.physicalSize = size;
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final finalTree = fixture('biology_grade11_complete_tree');
+      final outline = fixture('biology_grade11_complete_outline');
+      dio.httpClientAdapter = Adapter((request) {
+        requests.add(request);
+          if (request.path.endsWith('/grades')) {
+          return reply(200, fixture('biology_complete_grades'));
+          }
+        if (request.path.endsWith('/tree')) return reply(200, finalTree);
+        if (request.path.endsWith('/curriculum')) return reply(200, outline);
+        throw StateError('Unexpected completed-path request ${request.path}');
+      });
+      await mount(
+        tester,
+        CurriculumLearningScreen(
+          subject: SkillSubject.fromJson(
+            finalTree['subject'] as Map<String, dynamic>,
+          ),
+          onChangeSubject: () {},
+        ),
+        saved: {'class_900002': '11'},
+        scale: 2,
+      );
+      expect(find.text('Hozir 49 ta dars mavjud.'), findsOneWidget);
+      expect(
+        find.textContaining('Qolgan mavzular tayyorlanmoqda'),
+        findsNothing,
+      );
+      await tap(tester, 'Mavzular');
+      final lastTitle =
+          ((outline['chapters'] as List).last['topics'] as List)
+                  .last['title_uz']
+              as String;
+      await tester.scrollUntilVisible(
+        find.text(lastTitle),
+        500,
+        scrollable: find.byType(Scrollable).last,
+        maxScrolls: 100,
+      );
+      expect(find.text(lastTitle), findsOneWidget);
+      expect(find.text('Keyingi sinfga o‘tish'), findsNothing);
+      expect(requests.where((r) => r.queryParameters['grade'] == 12), isEmpty);
+      expect(tester.takeException(), isNull);
+      await tester.pumpWidget(const SizedBox());
+      await tester.pump(const Duration(milliseconds: 100));
+    });
+  }
 
   for (final kind in ['laboratory', 'practical']) {
     for (final language in ['uz', 'ru', 'en']) {

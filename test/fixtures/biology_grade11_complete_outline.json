@@ -1,0 +1,2040 @@
+{
+  "subject": "biologiya",
+  "grade": 11,
+  "title_uz": "Biologiya",
+  "status": "mapped",
+  "book": {
+    "file_name": "biologiya_11_uzb.pdf",
+    "title": "Biologiya",
+    "year": 2018,
+    "authors": [
+      "A. G‘afurov",
+      "A. Abdukarimov",
+      "J. Tolipova",
+      "O. Ishankulov",
+      "M. Umaraliyeva",
+      "I. Abduraxmonova"
+    ],
+    "publisher": "Sharq",
+    "edition": 1,
+    "chapter_count": 4,
+    "paragraph_count": 44,
+    "isbn": "978-9943-26-806-7",
+    "id": "biology-11-2018",
+    "grade": 11,
+    "status": "mapped",
+    "sha256": "3a220c9f8102663566979e3b568b1a51c6134342b37edc2ee4ad3a0d2c101a52",
+    "pdf_page_count": 240,
+    "toc_pdf_pages": [
+      237,
+      238
+    ],
+    "bibliography_pdf_pages": [
+      1,
+      2
+    ],
+    "questions_and_tasks": {
+      "present": true,
+      "evidence_pdf_pages": [
+        3,
+        8,
+        13,
+        18,
+        22,
+        29,
+        37,
+        38
+      ],
+      "verification": "text_layer_legends_and_assessment_markers",
+      "textbook_questions_republished": false
+    },
+    "rights": {
+      "fulltext_republication": "not_authorized",
+      "images_republication": "not_authorized",
+      "published_payload": "bibliography_headings_page_references_and_original_fact_based_lessons"
+    },
+    "duplicate_pdf_ranges": []
+  },
+  "chapters": [
+    {
+      "unit_id": 46,
+      "title_uz": "I BOB. EKOLOGIYA VA HAYOT",
+      "topics": [
+        {
+          "id": "bio-11-topic-2",
+          "kind": "topic",
+          "title_uz": "1-§. Biologik tizimlar. Ekologiya – biologik tizimlar haqidagi fan",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "1-§. Biologik tizimlar. Ekologiya – biologik tizimlar haqidagi fan",
+            "paragraph": 1,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 4,
+            "id": "bio-11-topic-2",
+            "chapter_id": "bio-11-chapter-1",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 4,
+            "printed_start": 4,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 449
+            },
+            "pdf_end": 9,
+            "printed_end": 9,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            21
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-3",
+          "kind": "topic",
+          "title_uz": "2-§. Ekologiyaning rivojlanishi, bo‘limlari va metodlari",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "2-§. Ekologiyaning rivojlanishi, bo‘limlari va metodlari",
+            "paragraph": 2,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 9,
+            "id": "bio-11-topic-3",
+            "chapter_id": "bio-11-chapter-1",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 9,
+            "printed_start": 9,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 388
+            },
+            "pdf_end": 14,
+            "printed_end": 14,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            22
+          ],
+          "ready": true,
+          "completed": true
+        }
+      ],
+      "coverage_complete": true,
+      "checkpoint_passed": true
+    },
+    {
+      "unit_id": 47,
+      "title_uz": "II BOB. HAYOTNING EKOSISTEMA DARAJASIDAGI UMUMBIOLOGIK QONUNIYATLARI",
+      "topics": [
+        {
+          "id": "bio-11-topic-5",
+          "kind": "topic",
+          "title_uz": "3-§. Hayotning ekosistema darajasi xususiyatlari. Biogeotsenoz – biologik sistema",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "3-§. Hayotning ekosistema darajasi xususiyatlari. Biogeotsenoz – biologik sistema",
+            "paragraph": 3,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 14,
+            "id": "bio-11-topic-5",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 14,
+            "printed_start": 14,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1080
+            },
+            "pdf_end": 18,
+            "printed_end": 18,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            363
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-6",
+          "kind": "topic",
+          "title_uz": "4-§. Ekosistemalarning tarkibiy qismlari",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "4-§. Ekosistemalarning tarkibiy qismlari",
+            "paragraph": 4,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 18,
+            "id": "bio-11-topic-6",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 18,
+            "printed_start": 18,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 601
+            },
+            "pdf_end": 23,
+            "printed_end": 23,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            364
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-7",
+          "kind": "topic",
+          "title_uz": "5-§. Organizmlarning yashash muhiti. Suv muhiti",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "5-§. Organizmlarning yashash muhiti. Suv muhiti",
+            "paragraph": 5,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 23,
+            "id": "bio-11-topic-7",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 23,
+            "printed_start": 23,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 645
+            },
+            "pdf_end": 30,
+            "printed_end": 30,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            365
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-8",
+          "kind": "topic",
+          "title_uz": "6-§. Quruqlik-havo, tuproq, tirik organizmlar yashash muhitlari sifatida",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "6-§. Quruqlik-havo, tuproq, tirik organizmlar yashash muhitlari sifatida",
+            "paragraph": 6,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 30,
+            "id": "bio-11-topic-8",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 30,
+            "printed_start": 30,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 208
+            },
+            "pdf_end": 38,
+            "printed_end": 38,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            366
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-9",
+          "kind": "topic",
+          "title_uz": "7-§. Muhit omillari va ularning tasnifi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "7-§. Muhit omillari va ularning tasnifi",
+            "paragraph": 7,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 39,
+            "id": "bio-11-topic-9",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 39,
+            "printed_start": 39,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 46,
+            "printed_end": 46,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            367
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-10",
+          "kind": "topic",
+          "title_uz": "8-§. Yorug‘lik – muhitning ekologik omili .",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "8-§. Yorug‘lik – muhitning ekologik omili .",
+            "paragraph": 8,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 47,
+            "id": "bio-11-topic-10",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 47,
+            "printed_start": 47,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 53,
+            "printed_end": 53,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            368
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-11",
+          "kind": "topic",
+          "title_uz": "9-§. Harorat – muhitning abiotik omili",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "9-§. Harorat – muhitning abiotik omili",
+            "paragraph": 9,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 53,
+            "id": "bio-11-topic-11",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 53,
+            "printed_start": 53,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 202
+            },
+            "pdf_end": 57,
+            "printed_end": 57,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            369
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-12",
+          "kind": "topic",
+          "title_uz": "10-§. Namlik ekologik omil sifatida.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "10-§. Namlik ekologik omil sifatida.",
+            "paragraph": 10,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 58,
+            "id": "bio-11-topic-12",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 58,
+            "printed_start": 58,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 63,
+            "printed_end": 63,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            370
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-13",
+          "kind": "topic",
+          "title_uz": "11-§. Tuproq va topografik omillar",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "11-§. Tuproq va topografik omillar",
+            "paragraph": 11,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 63,
+            "id": "bio-11-topic-13",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 63,
+            "printed_start": 63,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1067
+            },
+            "pdf_end": 67,
+            "printed_end": 67,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            371
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-14",
+          "kind": "topic",
+          "title_uz": "12-§. Muhitning biotik omillari. Tirik organizmlar o‘rtasidagi munosabatlar.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "12-§. Muhitning biotik omillari. Tirik organizmlar o‘rtasidagi munosabatlar.",
+            "paragraph": 12,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 67,
+            "id": "bio-11-topic-14",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 67,
+            "printed_start": 67,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 353
+            },
+            "pdf_end": 76,
+            "printed_end": 76,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            372
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-15",
+          "kind": "topic",
+          "title_uz": "13-§. Antropogen omillar",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "13-§. Antropogen omillar",
+            "paragraph": 13,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 76,
+            "id": "bio-11-topic-15",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 76,
+            "printed_start": 76,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1335
+            },
+            "pdf_end": 79,
+            "printed_end": 79,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [
+            373
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-laboratory-16",
+          "kind": "laboratory",
+          "title_uz": "1-laboratoriya mashg‘uloti",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "laboratory",
+            "title": "1-laboratoriya mashg‘uloti",
+            "paragraph": null,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 79,
+            "id": "bio-11-laboratory-16",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 79,
+            "printed_start": 79,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "numbered_activity_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 825
+            },
+            "pdf_end": 80,
+            "printed_end": 80,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "savol"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            374
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-17",
+          "kind": "topic",
+          "title_uz": "14-§. Turning populatsion strukturasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "14-§. Turning populatsion strukturasi",
+            "paragraph": 14,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 81,
+            "id": "bio-11-topic-17",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 81,
+            "printed_start": 81,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 85,
+            "printed_end": 85,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [
+            375
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-18",
+          "kind": "topic",
+          "title_uz": "15-§. Turning populatsion strukturasi (davomi).",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "15-§. Turning populatsion strukturasi (davomi).",
+            "paragraph": 15,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 86,
+            "id": "bio-11-topic-18",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 86,
+            "printed_start": 86,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 92,
+            "printed_end": 92,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            376
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-19",
+          "kind": "topic",
+          "title_uz": "16-§. Ekotizimlarning trofik strukturasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "16-§. Ekotizimlarning trofik strukturasi",
+            "paragraph": 16,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 93,
+            "id": "bio-11-topic-19",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 93,
+            "printed_start": 93,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 100,
+            "printed_end": 100,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            377
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-20",
+          "kind": "topic",
+          "title_uz": "17-§. Ekotizimlarning mahsuldorligi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "17-§. Ekotizimlarning mahsuldorligi",
+            "paragraph": 17,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 100,
+            "id": "bio-11-topic-20",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 100,
+            "printed_start": 100,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 495
+            },
+            "pdf_end": 102,
+            "printed_end": 102,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            378
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-21",
+          "kind": "topic",
+          "title_uz": "18-§. Ekologik piramida qoidasi. Biomassa va energiya piramidasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "18-§. Ekologik piramida qoidasi. Biomassa va energiya piramidasi",
+            "paragraph": 18,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 102,
+            "id": "bio-11-topic-21",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 102,
+            "printed_start": 102,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 871
+            },
+            "pdf_end": 106,
+            "printed_end": 106,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            379
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-laboratory-22",
+          "kind": "laboratory",
+          "title_uz": "2-laboratoriya mashg‘uloti",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "laboratory",
+            "title": "2-laboratoriya mashg‘uloti",
+            "paragraph": null,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 106,
+            "id": "bio-11-laboratory-22",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 106,
+            "printed_start": 106,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "numbered_activity_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1111
+            },
+            "pdf_end": 107,
+            "printed_end": 107,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            380
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-23",
+          "kind": "topic",
+          "title_uz": "19-§. Tabiiy ekosistemalar",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "19-§. Tabiiy ekosistemalar",
+            "paragraph": 19,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 107,
+            "id": "bio-11-topic-23",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 107,
+            "printed_start": 107,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1935
+            },
+            "pdf_end": 111,
+            "printed_end": 111,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            381
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-24",
+          "kind": "topic",
+          "title_uz": "20-§. Markaziy Osiyo va O‘zbekistonning tabiiy ekosistemalari.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "20-§. Markaziy Osiyo va O‘zbekistonning tabiiy ekosistemalari.",
+            "paragraph": 20,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 112,
+            "id": "bio-11-topic-24",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 112,
+            "printed_start": 112,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 116,
+            "printed_end": 116,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            382
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-25",
+          "kind": "topic",
+          "title_uz": "21-§. Sun’iy ekosistemalar",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "21-§. Sun’iy ekosistemalar",
+            "paragraph": 21,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 117,
+            "id": "bio-11-topic-25",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 117,
+            "printed_start": 117,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 122,
+            "printed_end": 122,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            383
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-26",
+          "kind": "topic",
+          "title_uz": "22-§. Biogeotsenozlarning barqarorligi.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "22-§. Biogeotsenozlarning barqarorligi.",
+            "paragraph": 22,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 122,
+            "id": "bio-11-topic-26",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 122,
+            "printed_start": 122,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 524
+            },
+            "pdf_end": 126,
+            "printed_end": 126,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            384
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-27",
+          "kind": "topic",
+          "title_uz": "23-§. Inson ekologiyasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "23-§. Inson ekologiyasi",
+            "paragraph": 23,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 126,
+            "id": "bio-11-topic-27",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 126,
+            "printed_start": 126,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 412
+            },
+            "pdf_end": 131,
+            "printed_end": 131,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            385
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-laboratory-28",
+          "kind": "laboratory",
+          "title_uz": "3-laboratoriya mashg‘uloti",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "laboratory",
+            "title": "3-laboratoriya mashg‘uloti",
+            "paragraph": null,
+            "toc_pdf_page": 237,
+            "toc_printed_start": 131,
+            "id": "bio-11-laboratory-28",
+            "chapter_id": "bio-11-chapter-4",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 131,
+            "printed_start": 131,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "numbered_activity_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 648
+            },
+            "pdf_end": 133,
+            "printed_end": 133,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            386
+          ],
+          "ready": true,
+          "completed": true
+        }
+      ],
+      "coverage_complete": true,
+      "checkpoint_passed": true
+    },
+    {
+      "unit_id": 48,
+      "title_uz": "III BOB. HAYOTNING BIOSFERA DARAJASINING UMUMBIOLOGIK QONUNIYATLARI",
+      "topics": [
+        {
+          "id": "bio-11-topic-30",
+          "kind": "topic",
+          "title_uz": "24-§. Biosfera darajasining xususiyatlari. Biosfera haqida ta’limot",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "24-§. Biosfera darajasining xususiyatlari. Biosfera haqida ta’limot",
+            "paragraph": 24,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 133,
+            "id": "bio-11-topic-30",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 133,
+            "printed_start": 133,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 664
+            },
+            "pdf_end": 135,
+            "printed_end": 135,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            387
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-31",
+          "kind": "topic",
+          "title_uz": "25-§. Biosfera chegaralari",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "25-§. Biosfera chegaralari",
+            "paragraph": 25,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 136,
+            "id": "bio-11-topic-31",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 136,
+            "printed_start": 136,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 139,
+            "printed_end": 139,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            388
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-32",
+          "kind": "topic",
+          "title_uz": "26-§. Biosferaning tarkibi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "26-§. Biosferaning tarkibi",
+            "paragraph": 26,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 139,
+            "id": "bio-11-topic-32",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 139,
+            "printed_start": 139,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1467
+            },
+            "pdf_end": 142,
+            "printed_end": 142,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            389
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-33",
+          "kind": "topic",
+          "title_uz": "27-§. Biosferadagi tirik moddaning xususiyatlari va funksiyalari",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "27-§. Biosferadagi tirik moddaning xususiyatlari va funksiyalari",
+            "paragraph": 27,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 142,
+            "id": "bio-11-topic-33",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 142,
+            "printed_start": 142,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 548
+            },
+            "pdf_end": 146,
+            "printed_end": 146,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            390
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-34",
+          "kind": "topic",
+          "title_uz": "28-§. Biosfera biomassasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "28-§. Biosfera biomassasi",
+            "paragraph": 28,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 146,
+            "id": "bio-11-topic-34",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 146,
+            "printed_start": 146,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 851
+            },
+            "pdf_end": 149,
+            "printed_end": 149,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            391
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-35",
+          "kind": "topic",
+          "title_uz": "29-§. Biosferada modda va energiyaning davriy aylanishi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "29-§. Biosferada modda va energiyaning davriy aylanishi",
+            "paragraph": 29,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 150,
+            "id": "bio-11-topic-35",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 150,
+            "printed_start": 150,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 153,
+            "printed_end": 153,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            392
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-36",
+          "kind": "topic",
+          "title_uz": "30-§. Biogeokimyoviy sikl",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "30-§. Biogeokimyoviy sikl",
+            "paragraph": 30,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 154,
+            "id": "bio-11-topic-36",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 154,
+            "printed_start": 154,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 161,
+            "printed_end": 161,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            393
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-37",
+          "kind": "topic",
+          "title_uz": "31-§. Biosfera evolutsiyasi. Biogenez",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "31-§. Biosfera evolutsiyasi. Biogenez",
+            "paragraph": 31,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 162,
+            "id": "bio-11-topic-37",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 162,
+            "printed_start": 162,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 166,
+            "printed_end": 166,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            394
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-38",
+          "kind": "topic",
+          "title_uz": "32-§. Biosfera evolutsiyasi. Noogenez",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "32-§. Biosfera evolutsiyasi. Noogenez",
+            "paragraph": 32,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 167,
+            "id": "bio-11-topic-38",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 167,
+            "printed_start": 167,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 170,
+            "printed_end": 170,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            395
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-39",
+          "kind": "topic",
+          "title_uz": "33-§. Inson biosfera omili sifatida. Inson faoliyatining biosferaga ta’siri .",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "33-§. Inson biosfera omili sifatida. Inson faoliyatining biosferaga ta’siri .",
+            "paragraph": 33,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 171,
+            "id": "bio-11-topic-39",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 171,
+            "printed_start": 171,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 175,
+            "printed_end": 175,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            396
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-40",
+          "kind": "topic",
+          "title_uz": "34-§. O‘simlik va hayvonot olamini muhofaza qilish.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "34-§. O‘simlik va hayvonot olamini muhofaza qilish.",
+            "paragraph": 34,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 175,
+            "id": "bio-11-topic-40",
+            "chapter_id": "bio-11-chapter-29",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 175,
+            "printed_start": 175,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1450
+            },
+            "pdf_end": 183,
+            "printed_end": 183,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            397
+          ],
+          "ready": true,
+          "completed": true
+        }
+      ],
+      "coverage_complete": true,
+      "checkpoint_passed": true
+    },
+    {
+      "unit_id": 49,
+      "title_uz": "IV BOB. ORGANIK OLAM FILOGENEZI",
+      "topics": [
+        {
+          "id": "bio-11-topic-42",
+          "kind": "topic",
+          "title_uz": "35-§. Organik olam filogenezining umumiy tavsifi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "35-§. Organik olam filogenezining umumiy tavsifi",
+            "paragraph": 35,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 183,
+            "id": "bio-11-topic-42",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 183,
+            "printed_start": 183,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 837
+            },
+            "pdf_end": 186,
+            "printed_end": 186,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            398
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-43",
+          "kind": "topic",
+          "title_uz": "36-§. O‘simliklar filogenezi. O‘simliklarning vegetativ organlari filogenezi.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "36-§. O‘simliklar filogenezi. O‘simliklarning vegetativ organlari filogenezi.",
+            "paragraph": 36,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 187,
+            "id": "bio-11-topic-43",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 187,
+            "printed_start": 187,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 190,
+            "printed_end": 190,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            399
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-44",
+          "kind": "topic",
+          "title_uz": "37-§. O‘simliklarning generativ organlari filogenezi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "37-§. O‘simliklarning generativ organlari filogenezi",
+            "paragraph": 37,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 190,
+            "id": "bio-11-topic-44",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 190,
+            "printed_start": 190,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1713
+            },
+            "pdf_end": 193,
+            "printed_end": 193,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            400
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-laboratory-45",
+          "kind": "laboratory",
+          "title_uz": "4-laboratoriya mashg‘uloti",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "laboratory",
+            "title": "4-laboratoriya mashg‘uloti",
+            "paragraph": null,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 194,
+            "id": "bio-11-laboratory-45",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 194,
+            "printed_start": 194,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "numbered_activity_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 194,
+            "printed_end": 194,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [
+            401
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-46",
+          "kind": "topic",
+          "title_uz": "38-§. Hayvonot dunyosidagi evolutsion o‘zgarishlar",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "38-§. Hayvonot dunyosidagi evolutsion o‘zgarishlar",
+            "paragraph": 38,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 195,
+            "id": "bio-11-topic-46",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 195,
+            "printed_start": 195,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 201,
+            "printed_end": 201,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            402
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-47",
+          "kind": "topic",
+          "title_uz": "39-§. Tirik organizmlarda o‘z-o‘zini idora etish organlari: gumoral va nerv sistemasi evolutsiyasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "39-§. Tirik organizmlarda o‘z-o‘zini idora etish organlari: gumoral va nerv sistemasi evolutsiyasi",
+            "paragraph": 39,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 202,
+            "id": "bio-11-topic-47",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 202,
+            "printed_start": 202,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 208,
+            "printed_end": 208,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            403
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-48",
+          "kind": "topic",
+          "title_uz": "40-§. Hayvonlarning tana qoplami va harakat organlari evolutsiyasi.",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "40-§. Hayvonlarning tana qoplami va harakat organlari evolutsiyasi.",
+            "paragraph": 40,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 208,
+            "id": "bio-11-topic-48",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 208,
+            "printed_start": 208,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 690
+            },
+            "pdf_end": 214,
+            "printed_end": 214,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            404
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-49",
+          "kind": "topic",
+          "title_uz": "41-§. Hayvonlarning nafas olish organlari evolutsiyasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "41-§. Hayvonlarning nafas olish organlari evolutsiyasi",
+            "paragraph": 41,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 214,
+            "id": "bio-11-topic-49",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 214,
+            "printed_start": 214,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 443
+            },
+            "pdf_end": 217,
+            "printed_end": 217,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            405
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-50",
+          "kind": "topic",
+          "title_uz": "42-§. Hayvonlarning qon aylanish organlari evolutsiyasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "42-§. Hayvonlarning qon aylanish organlari evolutsiyasi",
+            "paragraph": 42,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 217,
+            "id": "bio-11-topic-50",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 217,
+            "printed_start": 217,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 893
+            },
+            "pdf_end": 222,
+            "printed_end": 222,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            406
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-51",
+          "kind": "topic",
+          "title_uz": "43-§. Hayvonlarning hazm qilish organlari evolutsiyasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "43-§. Hayvonlarning hazm qilish organlari evolutsiyasi",
+            "paragraph": 43,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 223,
+            "id": "bio-11-topic-51",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 223,
+            "printed_start": 223,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 0
+            },
+            "pdf_end": 226,
+            "printed_end": 226,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            407
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-topic-52",
+          "kind": "topic",
+          "title_uz": "44-§. Hayvonlarning ayirish va jinsiy organlari evolutsiyasi",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "topic",
+            "title": "44-§. Hayvonlarning ayirish va jinsiy organlari evolutsiyasi",
+            "paragraph": 44,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 226,
+            "id": "bio-11-topic-52",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 226,
+            "printed_start": 226,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "paragraph_number_and_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 1065
+            },
+            "pdf_end": 232,
+            "printed_end": 232,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [
+                "topshiriq",
+                "mustaqil"
+              ],
+              "status": "detected"
+            }
+          },
+          "lesson_ids": [
+            408
+          ],
+          "ready": true,
+          "completed": true
+        },
+        {
+          "id": "bio-11-laboratory-53",
+          "kind": "laboratory",
+          "title_uz": "5-laboratoriya mashg‘uloti",
+          "source": {
+            "book_id": "biology-11-2018",
+            "kind": "laboratory",
+            "title": "5-laboratoriya mashg‘uloti",
+            "paragraph": null,
+            "toc_pdf_page": 238,
+            "toc_printed_start": 232,
+            "id": "bio-11-laboratory-53",
+            "chapter_id": "bio-11-chapter-41",
+            "part_id": null,
+            "subchapter_id": null,
+            "pdf_start": 232,
+            "printed_start": 232,
+            "verification": {
+              "status": "text_layer_matched",
+              "method": "numbered_activity_heading",
+              "heading_similarity": 1.0,
+              "heading_offset": 189
+            },
+            "pdf_end": 232,
+            "printed_end": 232,
+            "range_method": "next_verified_heading_boundary_inclusive",
+            "assessment_marker_scan": {
+              "detected": [],
+              "status": "not_detected_not_proof_of_absence"
+            }
+          },
+          "lesson_ids": [
+            409
+          ],
+          "ready": true,
+          "completed": true
+        }
+      ],
+      "coverage_complete": true,
+      "checkpoint_passed": true
+    }
+  ],
+  "completed": true,
+  "next_grade": null
+}

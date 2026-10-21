@@ -293,9 +293,9 @@ class _CurriculumLearningScreenState
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Text(
                     tr(
-                      'Hozir ${current.readyLessons} ta dars mavjud. Qolgan mavzular tayyorlanmoqda.',
-                      'Сейчас доступно уроков: ${current.readyLessons}. Остальные готовятся.',
-                      '${current.readyLessons} lesson(s) available. The remaining topics are in preparation.',
+                      'Hozir ${current.readyLessons} ta dars mavjud.',
+                      'Сейчас доступно уроков: ${current.readyLessons}.',
+                      '${current.readyLessons} lesson(s) available.',
                     ),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
