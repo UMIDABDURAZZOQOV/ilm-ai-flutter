@@ -799,6 +799,780 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-6-section-19-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Yo‘l 2,35 km. Uni metrda ifodala. x km, y m bo‘lsin.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "2.35",
+          "unit": "km"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-19",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            47
+          ],
+          "printed_pages": [
+            47
+          ],
+          "page_text_sha256": [
+            "2f1d6cf061a721ffa7b8df2dd40a762068727c3a08ec3bb071c85f07afb22a0e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-19-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kuzatuv 4,5 min davom etdi. Vaqtni sekundga o‘tkaz. x min, y s.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "4.5",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-19",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            47
+          ],
+          "printed_pages": [
+            47
+          ],
+          "page_text_sha256": [
+            "2f1d6cf061a721ffa7b8df2dd40a762068727c3a08ec3bb071c85f07afb22a0e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-19-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Safar 1,25 h davom etdi. Sekunddagi vaqtni top. x h, y s.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "1.25",
+          "unit": "h"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-19",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            47
+          ],
+          "printed_pages": [
+            47
+          ],
+          "page_text_sha256": [
+            "2f1d6cf061a721ffa7b8df2dd40a762068727c3a08ec3bb071c85f07afb22a0e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-19-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qadamning o‘rtacha uzunligi l = 0,6 m. n = 150 qadam uchun yo‘lni bahola.",
+      "givens": [
+        {
+          "symbol": "l",
+          "value": "0.6",
+          "unit": "m"
+        },
+        {
+          "symbol": "n",
+          "value": "150",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "l",
+        "n"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-19",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            48
+          ],
+          "printed_pages": [
+            48
+          ],
+          "page_text_sha256": [
+            "331ef5e6e5915984ea54423af9b878b0f07e02d8cfc6e2bd984504616e1562df"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-20-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Velosipedchi s = 180 m yo‘lni t = 30 s da o‘tdi. Butun oraliqning o‘rtacha tezligini top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "180",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "value": "30",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-20",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            49,
+            50
+          ],
+          "printed_pages": [
+            49,
+            50
+          ],
+          "page_text_sha256": [
+            "d9974dfc650650e1b6b203cc10cad3b588401a5dad88cdb5e1e409074598eb71",
+            "f4b1cd764e2b0eaaabcaef0bd093ebbc3f619113f5f922b9dfee74c48b67dcfa"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-20-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Aravacha v = 1,2 m/s tezlikda t = 25 s tekis yurdi. Yo‘lni hisobla.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "1.2",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "25",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-20",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            51
+          ],
+          "printed_pages": [
+            51
+          ],
+          "page_text_sha256": [
+            "0f617a6cba61c5d44e69f82307a27cbc01f2b3c4eef5a3ea8afcbe9cc1ed12b0"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-20-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Jism s = 84 m yo‘lni v = 7 m/s tezlikda tekis o‘tadi. Vaqtni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "84",
+          "unit": "m"
+        },
+        {
+          "symbol": "v",
+          "value": "7",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "v"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-20",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            51
+          ],
+          "printed_pages": [
+            51
+          ],
+          "page_text_sha256": [
+            "0f617a6cba61c5d44e69f82307a27cbc01f2b3c4eef5a3ea8afcbe9cc1ed12b0"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-20-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ikki bosqich: s1 = 120 m, t1 = 60 s; s2 = 180 m, t2 = 40 s. Umumiy o‘rtacha tezlikni top.",
+      "givens": [
+        {
+          "symbol": "s1",
+          "value": "120",
+          "unit": "m"
+        },
+        {
+          "symbol": "s2",
+          "value": "180",
+          "unit": "m"
+        },
+        {
+          "symbol": "t1",
+          "value": "60",
+          "unit": "s"
+        },
+        {
+          "symbol": "t2",
+          "value": "40",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s1",
+        "s2",
+        "t1",
+        "t2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-20",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            50
+          ],
+          "printed_pages": [
+            50
+          ],
+          "page_text_sha256": [
+            "f4b1cd764e2b0eaaabcaef0bd093ebbc3f619113f5f922b9dfee74c48b67dcfa"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-21-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m = 0,5 kg yukning og‘irlik kuchini top. Bu topshiriqda g = 9,81 N/kg.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-21",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            53,
+            54
+          ],
+          "printed_pages": [
+            53,
+            54
+          ],
+          "page_text_sha256": [
+            "cc535011fa28d45a7a567d2e46de391f64f38ec5c2f46ec5319a2ad3e0532e81",
+            "fbf50f80a6331452a2556b519072ef0a0d0729b6f8fb718db015453fd1844417"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-21-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Og‘irlik kuchi F = 19,62 N. g = 9,81 N/kg berilgan. Jism massasini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "19.62",
+          "unit": "N"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "F",
+        "g"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-21",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            54,
+            55
+          ],
+          "printed_pages": [
+            54,
+            55
+          ],
+          "page_text_sha256": [
+            "fbf50f80a6331452a2556b519072ef0a0d0729b6f8fb718db015453fd1844417",
+            "b48e6dfd59590c1a231e9239996285573d8293b843129d6134ebcbc01359f7da"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-23-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bosqichli hisob: quti tayanchining tomonlari a = 10 cm va b = 20 cm. Yuzani top.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "10",
+          "unit": "cm"
+        },
+        {
+          "symbol": "b",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "a",
+        "b"
+      ],
+      "suggested_unit": "cm2",
+      "unit_choices": [
+        "m2",
+        "cm2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-23",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            58
+          ],
+          "printed_pages": [
+            58
+          ],
+          "page_text_sha256": [
+            "2c3f1d3dd37285b3c19036a4995aa634ba474948ee31324f2d6be29ab3cecc91"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-23-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil quti: sirtga tik F = 90 N kuch, S = 300 cm². Bosimni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "90",
+          "unit": "N"
+        },
+        {
+          "symbol": "S",
+          "value": "300",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "S"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-23",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            57,
+            58
+          ],
+          "printed_pages": [
+            57,
+            58
+          ],
+          "page_text_sha256": [
+            "74db76fdb2c04e3dcb1e73978376d5913bfdcad6ff9f604901d4b49ac93fc5d7",
+            "2c3f1d3dd37285b3c19036a4995aa634ba474948ee31324f2d6be29ab3cecc91"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-23-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir tekis tik bosim p = 2500 Pa, S = 0,04 m². Bosim kuchini top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "2500",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "S",
+          "value": "0.04",
+          "unit": "m2"
+        }
+      ],
+      "symbols": [
+        "p",
+        "S"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-23",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            57,
+            59
+          ],
+          "printed_pages": [
+            57,
+            59
+          ],
+          "page_text_sha256": [
+            "74db76fdb2c04e3dcb1e73978376d5913bfdcad6ff9f604901d4b49ac93fc5d7",
+            "cc9662eafcd3b78bcf1a719d71e3918d1412b1d165310b5e8d4e8e1eee6bb597"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-23-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "F = 120 N tik kuch p = 4000 Pa bosim beradi. Tegish yuzasini hisobla.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "120",
+          "unit": "N"
+        },
+        {
+          "symbol": "p",
+          "value": "4000",
+          "unit": "Pa"
+        }
+      ],
+      "symbols": [
+        "F",
+        "p"
+      ],
+      "suggested_unit": "m2",
+      "unit_choices": [
+        "m2",
+        "cm2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-23",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            58,
+            59
+          ],
+          "printed_pages": [
+            58,
+            59
+          ],
+          "page_text_sha256": [
+            "2c3f1d3dd37285b3c19036a4995aa634ba474948ee31324f2d6be29ab3cecc91",
+            "cc9662eafcd3b78bcf1a719d71e3918d1412b1d165310b5e8d4e8e1eee6bb597"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-24-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bosqichli ideal press: F1 = 20 N, S1 = 5 cm², S2 = 40 cm². F2 ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "20",
+          "unit": "N"
+        },
+        {
+          "symbol": "S1",
+          "value": "5",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "S2",
+          "value": "40",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "S1",
+        "S2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-24",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            61
+          ],
+          "printed_pages": [
+            61
+          ],
+          "page_text_sha256": [
+            "4b61913797eb3830d8d47f59795f254b0dc521d050b1234e94084e58e730b37d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-24-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil ideal press: F1 = 12 N, S1 = 3 cm², S2 = 30 cm². Ishqalanish va sath farqi e’tiborsiz. F2 ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "12",
+          "unit": "N"
+        },
+        {
+          "symbol": "S1",
+          "value": "3",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "S2",
+          "value": "30",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "S1",
+        "S2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-24",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            61
+          ],
+          "printed_pages": [
+            61
+          ],
+          "page_text_sha256": [
+            "4b61913797eb3830d8d47f59795f254b0dc521d050b1234e94084e58e730b37d"
+          ]
+        }
+      ]
     }
   ]
 }

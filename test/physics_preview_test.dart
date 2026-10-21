@@ -549,7 +549,7 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final questions = jsonRows(fixture('physics_batch2_frq')['questions']);
-      for (final unit in ['kg/m3', 'cm3', 'g', 'mm/s']) {
+      for (final unit in ['kg/m3', 'cm3', 'g', 'mm/s', 'N', 'Pa', 'm2', 's']) {
         final q = questions.firstWhere(
           (q) => (q['unit_choices'] as List).contains(unit),
         );

@@ -119,7 +119,7 @@ class _PhysicsAnswerEditorState extends State<PhysicsAnswerEditor> {
           Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: Text(
-              '${g['symbol']} = ${g['value']}${g['unit'] == '1' ? ' (oraliqlar soni)' : ' ${g['unit']}'}',
+              '${g['symbol']} = ${g['value']}${g['unit'] == '1' ? ' (birliksiz son)' : ' ${g['unit']}'}',
             ),
           ),
         const Text(
