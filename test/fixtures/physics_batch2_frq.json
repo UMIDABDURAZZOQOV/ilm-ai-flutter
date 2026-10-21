@@ -1,0 +1,804 @@
+{
+  "assessment_version": 2,
+  "questions": [
+    {
+      "key": "physics-6-section-9-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bosqichli mashq: V = 0,0000000006 m³ parda S = 2 m² ga bir tekis yoyilgan. Qalinlikni m da top; formula, son va birlikni yoz.",
+      "givens": [
+        {
+          "symbol": "V",
+          "value": "0.0000000006",
+          "unit": "m3"
+        },
+        {
+          "symbol": "S",
+          "value": "2",
+          "unit": "m2"
+        }
+      ],
+      "symbols": [
+        "V",
+        "S"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-9",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            21
+          ],
+          "printed_pages": [
+            21
+          ],
+          "page_text_sha256": [
+            "1f4e384d5f1a4ca75183a6f0f015aedab6d7795096011f8583153503629c4ca8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-9-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil model: V = 0,0000000009 m³ va S = 3 m². Parda qalinligini hisobla; model bir qatlamli deb olingan.",
+      "givens": [
+        {
+          "symbol": "V",
+          "value": "0.0000000009",
+          "unit": "m3"
+        },
+        {
+          "symbol": "S",
+          "value": "3",
+          "unit": "m2"
+        }
+      ],
+      "symbols": [
+        "V",
+        "S"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-9",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            21
+          ],
+          "printed_pages": [
+            21
+          ],
+          "page_text_sha256": [
+            "1f4e384d5f1a4ca75183a6f0f015aedab6d7795096011f8583153503629c4ca8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-13-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli kuzatuv: h = 12 mm, t = 600 s. Rangli qatlamning o‘rtacha siljish ko‘rsatkichini top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "12",
+          "unit": "mm"
+        },
+        {
+          "symbol": "t",
+          "value": "600",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "h",
+        "t"
+      ],
+      "suggested_unit": "mm/s",
+      "unit_choices": [
+        "m/s",
+        "mm/s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-13",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            28
+          ],
+          "printed_pages": [
+            28
+          ],
+          "page_text_sha256": [
+            "d91e931bfa438f1993973a6a662cdf40e710939e3a770df8218025c7ba60aa54"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-13-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Boshqa shartli qaydda h = 15 mm, t = 1000 s. h/t ko‘rsatkichini hisobla; javobda birlikni yoz.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "15",
+          "unit": "mm"
+        },
+        {
+          "symbol": "t",
+          "value": "1000",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "h",
+        "t"
+      ],
+      "suggested_unit": "mm/s",
+      "unit_choices": [
+        "m/s",
+        "mm/s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-13",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            28
+          ],
+          "printed_pages": [
+            28
+          ],
+          "page_text_sha256": [
+            "d91e931bfa438f1993973a6a662cdf40e710939e3a770df8218025c7ba60aa54"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-14-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "0,85 kg massani grammda ifodala. x kilogramm, y gramm bo‘lsin.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "0.85",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "g",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-14",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            30
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "e790c88774550e32120989123879400a006af079cf7338de8ad24b0545bb81a2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-14-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil mashq: 375 g ni kilogrammga o‘tkaz. x gramm, y kilogramm bo‘lsin.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "375",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-14",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            30
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "e790c88774550e32120989123879400a006af079cf7338de8ad24b0545bb81a2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-14-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yuk massasi 1,6 t. Uni kg da ifodala. x tonna, y kilogramm.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "1.6",
+          "unit": "t"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-14",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            30
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "e790c88774550e32120989123879400a006af079cf7338de8ad24b0545bb81a2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-15-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli tortish: jism 100 g, 50 g va 20 g toshlar bilan muvozanatda. Jism massasini top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "100",
+          "unit": "g"
+        },
+        {
+          "symbol": "m2",
+          "value": "50",
+          "unit": "g"
+        },
+        {
+          "symbol": "m3",
+          "value": "20",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "suggested_unit": "g",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-15",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            32
+          ],
+          "page_text_sha256": [
+            "5647922790ac160b963c5cfbad2deb38f7e6d0a8eeec2378558654e3144a80cc"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-15-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bo‘sh idish m0 = 85 g, idish va suv M = 245 g. Faqat suv massasini top.",
+      "givens": [
+        {
+          "symbol": "M",
+          "value": "245",
+          "unit": "g"
+        },
+        {
+          "symbol": "m0",
+          "value": "85",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "M",
+        "m0"
+      ],
+      "suggested_unit": "g",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-15",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            32
+          ],
+          "page_text_sha256": [
+            "5647922790ac160b963c5cfbad2deb38f7e6d0a8eeec2378558654e3144a80cc"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-16-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil namuna: m = 54 g, V = 20 cm³. O‘rtacha zichlikni formula, son va birlik bilan top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "54",
+          "unit": "g"
+        },
+        {
+          "symbol": "V",
+          "value": "20",
+          "unit": "cm3"
+        }
+      ],
+      "symbols": [
+        "m",
+        "V"
+      ],
+      "suggested_unit": "g/cm3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-16",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            33,
+            34
+          ],
+          "printed_pages": [
+            33,
+            34
+          ],
+          "page_text_sha256": [
+            "cefc27aed83a6d2d10da9c9718c2a05c0eed472dde28741110f0439546485b29",
+            "3d04f76215f118cbd5eb836a069b03a481c97cc7924ec53801cf9ff3806c7c18"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-16-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir jinsli namuna: rho = 0,8 g/cm³, V = 25 cm³. Massani top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "0.8",
+          "unit": "g/cm3"
+        },
+        {
+          "symbol": "V",
+          "value": "25",
+          "unit": "cm3"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "V"
+      ],
+      "suggested_unit": "g",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-16",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            35
+          ],
+          "printed_pages": [
+            35
+          ],
+          "page_text_sha256": [
+            "ea8e01a716366fdaf7d7e6a0d1b03220b430e941362c5dd47571122058c8c99d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-16-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Massasi 81 g, zichligi 2,7 g/cm³ bo‘lgan bir jinsli jism hajmini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "81",
+          "unit": "g"
+        },
+        {
+          "symbol": "rho",
+          "value": "2.7",
+          "unit": "g/cm3"
+        }
+      ],
+      "symbols": [
+        "m",
+        "rho"
+      ],
+      "suggested_unit": "cm3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-16",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            35
+          ],
+          "printed_pages": [
+            35
+          ],
+          "page_text_sha256": [
+            "ea8e01a716366fdaf7d7e6a0d1b03220b430e941362c5dd47571122058c8c99d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-16-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘liq botirilgan, erimaydigan jism: V1 = 32 cm³, V2 = 47 cm³. Suv to‘kilmagan. Jism hajmini top.",
+      "givens": [
+        {
+          "symbol": "V2",
+          "value": "47",
+          "unit": "cm3"
+        },
+        {
+          "symbol": "V1",
+          "value": "32",
+          "unit": "cm3"
+        }
+      ],
+      "symbols": [
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "cm3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-16",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            34
+          ],
+          "printed_pages": [
+            34
+          ],
+          "page_text_sha256": [
+            "3d04f76215f118cbd5eb836a069b03a481c97cc7924ec53801cf9ff3806c7c18"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-17-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bosqichli jadval: l1 = 2 cm, l2 = 4 cm, l3 = 5 cm. Parallelepiped hajmini top.",
+      "givens": [
+        {
+          "symbol": "l1",
+          "value": "2",
+          "unit": "cm"
+        },
+        {
+          "symbol": "l2",
+          "value": "4",
+          "unit": "cm"
+        },
+        {
+          "symbol": "l3",
+          "value": "5",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "l1",
+        "l2",
+        "l3"
+      ],
+      "suggested_unit": "cm3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-17",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37
+          ],
+          "printed_pages": [
+            37
+          ],
+          "page_text_sha256": [
+            "420e2e261a66616c420f49795f9415415017f81f59644fa64e49a7f06008e947"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-17-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Yuqoridagi blok uchun jadvalda m = 108 g, V = 40 cm³ berilgan. Zichlikni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "108",
+          "unit": "g"
+        },
+        {
+          "symbol": "V",
+          "value": "40",
+          "unit": "cm3"
+        }
+      ],
+      "symbols": [
+        "m",
+        "V"
+      ],
+      "suggested_unit": "g/cm3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-17",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37,
+            38
+          ],
+          "printed_pages": [
+            37,
+            38
+          ],
+          "page_text_sha256": [
+            "420e2e261a66616c420f49795f9415415017f81f59644fa64e49a7f06008e947",
+            "73805bdbe4bc7da93070a20cac731fcbc39db8302b420c1e35d33a34391c8bd7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-17-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil notekis namuna: V1 = 46 cm³, V2 = 64 cm³. Jism to‘liq botgan va erimaydi; suv to‘kilmagan. Hajmni top.",
+      "givens": [
+        {
+          "symbol": "V2",
+          "value": "64",
+          "unit": "cm3"
+        },
+        {
+          "symbol": "V1",
+          "value": "46",
+          "unit": "cm3"
+        }
+      ],
+      "symbols": [
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "cm3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-17",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37
+          ],
+          "printed_pages": [
+            37
+          ],
+          "page_text_sha256": [
+            "420e2e261a66616c420f49795f9415415017f81f59644fa64e49a7f06008e947"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-17-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Notekis namunaning mustaqil jadval qatori: m = 45 g, V = 18 cm³. Zichlikni hisobla.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "45",
+          "unit": "g"
+        },
+        {
+          "symbol": "V",
+          "value": "18",
+          "unit": "cm3"
+        }
+      ],
+      "symbols": [
+        "m",
+        "V"
+      ],
+      "suggested_unit": "g/cm3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-17",
+          "chapter_id": "physics-6-chapter-1",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37,
+            38
+          ],
+          "printed_pages": [
+            37,
+            38
+          ],
+          "page_text_sha256": [
+            "420e2e261a66616c420f49795f9415415017f81f59644fa64e49a7f06008e947",
+            "73805bdbe4bc7da93070a20cac731fcbc39db8302b420c1e35d33a34391c8bd7"
+          ]
+        }
+      ]
+    }
+  ]
+}

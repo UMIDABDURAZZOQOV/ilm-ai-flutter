@@ -542,6 +542,45 @@ void main() {
     },
   );
   testWidgets(
+    'new sourced FRQs use quantity-specific units on a small large-text screen',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final questions = jsonRows(fixture('physics_batch2_frq')['questions']);
+      for (final unit in ['kg/m3', 'cm3', 'g', 'mm/s']) {
+        final q = questions.firstWhere(
+          (q) => (q['unit_choices'] as List).contains(unit),
+        );
+        Json? edited;
+        await mount(
+          tester,
+          scale: 2,
+          child: Scaffold(
+            body: SingleChildScrollView(
+              padding: const EdgeInsets.all(20),
+              child: PhysicsAnswerEditor(
+                key: ValueKey(unit),
+                question: q,
+                draft: const {},
+                enabled: true,
+                onChanged: (v) => edited = v,
+              ),
+            ),
+          ),
+        );
+        final chip = find.widgetWithText(ActionChip, unit);
+        await tester.ensureVisible(chip);
+        await tester.pump();
+        await tester.tap(chip);
+        await tester.pump();
+        expect(edited?['unit'], unit);
+        expect(tester.takeException(), isNull);
+      }
+    },
+  );
+  testWidgets(
     'FRQ inputs have accessible labels and Android-sized tap targets',
     (tester) async {
       final semantics = tester.ensureSemantics();

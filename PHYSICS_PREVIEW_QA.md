@@ -113,3 +113,13 @@ preview build tekshirilgan. Detallar va aniq sonlar backendning markaziy
 `docs/physics/STAGE2_GRADE6_BATCH1.md` / `CLAUDE.md` hujjatida.
 Native APK/iOS, Google Console va haqiqiy telefon natijasini bu bilan almashtirmang.
 Keyingi §8–17 kontent partiyasi hisobotdan keyingi foydalanuvchi tasdig‘ini kutadi.
+# 2026-10-22 — keyingi manbali partiyalar
+
+Backend `feat/physics-curriculum-map` bilan lokal preview hozir §1–17 ni qamraydi.
+Yangi massa/hajm/zichlik/tezlik FRQ inputlari savoldagi public `unit_choices`
+ro‘yxatidan foydalanadi. Javob kalitlari Flutterga qo‘shilmagan. Eskidan saqlangan
+sandbox uchun `--resume` yangi immutable darslarni qo‘shadi va XP/progressni saqlaydi.
+Normal ilovada `PHYSICS_PREVIEW=false`; ommaviy Fizika nashri yo‘q.
+Bu davomdagi Physics widget testlari16 passed, analyze toza; real Android/native
+APK hali tekshirilmagan. Quyidagi birinchi-partiya Windows yo‘riqnomasi amal qiladi.
+

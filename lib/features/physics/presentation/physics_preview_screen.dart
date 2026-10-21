@@ -414,7 +414,7 @@ class _SessionState extends ConsumerState<_Session> {
           text: 'Birga kuzatamiz, o‘lchaymiz va tekshiramiz!',
         ),
         _panel(
-          '6-sinf • §1–7',
+          '6-sinf • ${rows.isEmpty ? 'darslar kutilmoqda' : '§${rows.first['sequence']}–${rows.last['sequence']}'}',
           'Bu alohida lokal sinov. Darslar faqat o‘zbekcha. Har darsdan kamida 60% natija keyingi bosqichni ochadi; birinchi muvaffaqiyatli yakun uchun 10 XP.',
         ),
         if (_catalog != null)

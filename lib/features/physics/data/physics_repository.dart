@@ -90,6 +90,14 @@ class PhysicsRepository {
               text(g['unit']);
             }
             List<String>.from(q['symbols'] as List);
+            if (q.containsKey('unit_choices')) {
+              final units = List<String>.from(q['unit_choices'] as List);
+              if (units.isEmpty ||
+                  units.length > 12 ||
+                  units.any((u) => u.isEmpty || u.length > 16)) {
+                throw const FormatException();
+              }
+            }
           } else if ({
             'concept_selection',
             'ordering',

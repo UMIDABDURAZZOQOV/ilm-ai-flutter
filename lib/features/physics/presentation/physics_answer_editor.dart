@@ -58,6 +58,9 @@ class _PhysicsAnswerEditorState extends State<PhysicsAnswerEditor> {
   @override
   Widget build(BuildContext context) {
     final q = widget.question;
+    final unitChoices = List<String>.from(
+      q['unit_choices'] as List? ?? ['m', 'cm', 'mm'],
+    );
     if (q['response_kind'] == 'concept_selection') {
       return Column(
         children: [
@@ -176,16 +179,16 @@ class _PhysicsAnswerEditorState extends State<PhysicsAnswerEditor> {
           enabled: widget.enabled,
           maxLength: 16,
           autocorrect: false,
-          decoration: const InputDecoration(
+          decoration: InputDecoration(
             labelText: 'O‘lchov birligi',
-            hintText: 'm, cm yoki mm',
+            hintText: unitChoices.join(', '),
           ),
           onChanged: (v) => _change('unit', v),
         ),
         Wrap(
           spacing: 8,
           children: [
-            for (final u in ['m', 'cm', 'mm'])
+            for (final u in unitChoices)
               ActionChip(
                 label: Text(u),
                 onPressed: widget.enabled
