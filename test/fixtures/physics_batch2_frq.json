@@ -2308,6 +2308,793 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-6-section-31-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "F = 8 N kuchning tik yelkasi l = 0,25 m. Moment modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "8",
+          "unit": "N"
+        },
+        {
+          "symbol": "l",
+          "value": "0.25",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "l"
+      ],
+      "suggested_unit": "N*m",
+      "unit_choices": [
+        "N*m"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-31",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            87
+          ],
+          "printed_pages": [
+            87
+          ],
+          "page_text_sha256": [
+            "eeef81fac1eae49f69df359a6d64ef264cba0b3d45ae6e47972e6f37a38d7886"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-31-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal richagda F1 = 9 N, l1 = 40 cm, l2 = 15 cm. Qarama-qarshi moment beruvchi F2 ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "9",
+          "unit": "N"
+        },
+        {
+          "symbol": "l1",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "l2",
+          "value": "15",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "l1",
+        "l2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-31",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            88
+          ],
+          "printed_pages": [
+            88
+          ],
+          "page_text_sha256": [
+            "90cfd1b5e02d08df2eac4e14dce2679922dbf6e0a60abeb554f0b213ca87130c"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-31-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Muvozanatda F1 = 12 N, l1 = 0,3 m, F2 = 18 N. l2 ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "12",
+          "unit": "N"
+        },
+        {
+          "symbol": "l1",
+          "value": "0.3",
+          "unit": "m"
+        },
+        {
+          "symbol": "F2",
+          "value": "18",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "l1",
+        "F2"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-31",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            88
+          ],
+          "printed_pages": [
+            88
+          ],
+          "page_text_sha256": [
+            "90cfd1b5e02d08df2eac4e14dce2679922dbf6e0a60abeb554f0b213ca87130c"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-32-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli richag jadvali: F1=6 N, l1=10 cm, l2=30 cm. Ideal muvozanat uchun F2 ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "6",
+          "unit": "N"
+        },
+        {
+          "symbol": "l1",
+          "value": "10",
+          "unit": "cm"
+        },
+        {
+          "symbol": "l2",
+          "value": "30",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "l1",
+        "l2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-32",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            89,
+            90
+          ],
+          "printed_pages": [
+            89,
+            90
+          ],
+          "page_text_sha256": [
+            "92e2a942d488b4f413e7da554ad15f8c857494c2984f20b2dceddf88f82752ea",
+            "f090145d0beb70debe1ed1be97bf16fec875b80f398986dc0a0c7824ed3376b6"
+          ],
+          "extent_note": "original_image_continues_before_next_heading"
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-32-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil jadval: F1=3 N, l1=24 cm, F2=4 N. Muvozanatdagi l2 ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "3",
+          "unit": "N"
+        },
+        {
+          "symbol": "l1",
+          "value": "24",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F2",
+          "value": "4",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "l1",
+        "F2"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-32",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            89,
+            90
+          ],
+          "printed_pages": [
+            89,
+            90
+          ],
+          "page_text_sha256": [
+            "92e2a942d488b4f413e7da554ad15f8c857494c2984f20b2dceddf88f82752ea",
+            "f090145d0beb70debe1ed1be97bf16fec875b80f398986dc0a0c7824ed3376b6"
+          ],
+          "extent_note": "original_image_continues_before_next_heading"
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-33-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bitta ideal ko‘char blokda ikki vertikal ip P=80 N yukni tutadi. Blok/ip vazni e’tiborsiz. Tortish kuchini top.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "80",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "P"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-33",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            91
+          ],
+          "printed_pages": [
+            91
+          ],
+          "page_text_sha256": [
+            "5fe27b36f5fee6aeb2d5ef673012fd033ba8d74ecb8ac0bc80eaf00a676f3755"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-33-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal ishqalanishsiz qiya tekislik: P=120 N, h=0,5 m, s=2 m. Yuk tekis ko‘tariladi. F ni top.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "120",
+          "unit": "N"
+        },
+        {
+          "symbol": "h",
+          "value": "0.5",
+          "unit": "m"
+        },
+        {
+          "symbol": "s",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "P",
+        "h",
+        "s"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-33",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            91
+          ],
+          "printed_pages": [
+            91
+          ],
+          "page_text_sha256": [
+            "5fe27b36f5fee6aeb2d5ef673012fd033ba8d74ecb8ac0bc80eaf00a676f3755"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-33-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil chig‘iriq: P=180 N, r=5 cm, R=30 cm. Ideal tortish kuchini hisobla.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "180",
+          "unit": "N"
+        },
+        {
+          "symbol": "r",
+          "value": "5",
+          "unit": "cm"
+        },
+        {
+          "symbol": "R",
+          "value": "30",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "P",
+        "r",
+        "R"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-33",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            91,
+            92
+          ],
+          "printed_pages": [
+            91,
+            92
+          ],
+          "page_text_sha256": [
+            "5fe27b36f5fee6aeb2d5ef673012fd033ba8d74ecb8ac0bc80eaf00a676f3755",
+            "18b9d3431273200ed1fd049e24c054e4400a62673b670e3c18da747fc9989820"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-33-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Darslikdagi ideal ikki bosqichli lebyodka: R1=12 cm, r1=3 cm, R2=15 cm, r2=5 cm. Kuch yutug‘i n ni «marta» sifatida top; birlik1 yoz.",
+      "givens": [
+        {
+          "symbol": "R1",
+          "value": "12",
+          "unit": "cm"
+        },
+        {
+          "symbol": "r1",
+          "value": "3",
+          "unit": "cm"
+        },
+        {
+          "symbol": "R2",
+          "value": "15",
+          "unit": "cm"
+        },
+        {
+          "symbol": "r2",
+          "value": "5",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "R1",
+        "r1",
+        "R2",
+        "r2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-33",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            92
+          ],
+          "printed_pages": [
+            92
+          ],
+          "page_text_sha256": [
+            "18b9d3431273200ed1fd049e24c054e4400a62673b670e3c18da747fc9989820"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-34-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal mexanizm: F1=30 N, chiqish kuchi F2=90 N, chiqish yo‘li s2=0,4 m. Kirish yo‘li s1 ni top.",
+      "givens": [
+        {
+          "symbol": "F2",
+          "value": "90",
+          "unit": "N"
+        },
+        {
+          "symbol": "s2",
+          "value": "0.4",
+          "unit": "m"
+        },
+        {
+          "symbol": "F1",
+          "value": "30",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F2",
+        "s2",
+        "F1"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-34",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            93,
+            94
+          ],
+          "printed_pages": [
+            93,
+            94
+          ],
+          "page_text_sha256": [
+            "f1329cfb13c437b620c5c0a7bcec1b187a7149ac836835915d30c82af9ee5a6f",
+            "5a31c032d66c1f377c1ab7a4fdb72d03075105a0ecbbdf3b59400d1c1a16ff66"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-34-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal bitta ko‘char blok yukni h=0,75 m ko‘tardi. Ikki tayanch ipli modelda erkin ip uchi yo‘li s ni top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "0.75",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "h"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-34",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            94
+          ],
+          "printed_pages": [
+            94
+          ],
+          "page_text_sha256": [
+            "5a31c032d66c1f377c1ab7a4fdb72d03075105a0ecbbdf3b59400d1c1a16ff66"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-34-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil ideal hisob: F1=20 N, F2=80 N, s2=0,3 m. Kirish kuchi ta’sir nuqtasi yo‘lini hisobla.",
+      "givens": [
+        {
+          "symbol": "F2",
+          "value": "80",
+          "unit": "N"
+        },
+        {
+          "symbol": "s2",
+          "value": "0.3",
+          "unit": "m"
+        },
+        {
+          "symbol": "F1",
+          "value": "20",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F2",
+        "s2",
+        "F1"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-34",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            93,
+            94
+          ],
+          "printed_pages": [
+            93,
+            94
+          ],
+          "page_text_sha256": [
+            "f1329cfb13c437b620c5c0a7bcec1b187a7149ac836835915d30c82af9ee5a6f",
+            "5a31c032d66c1f377c1ab7a4fdb72d03075105a0ecbbdf3b59400d1c1a16ff66"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-35-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil qayd: Af=144 J, Au=180 J. eta ni Af/Au formulasi bilan top; javobni nisbat va birlik1 yoki foiz va% da yoz.",
+      "givens": [
+        {
+          "symbol": "Af",
+          "value": "144",
+          "unit": "J"
+        },
+        {
+          "symbol": "Au",
+          "value": "180",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Af",
+        "Au"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-35",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            95
+          ],
+          "printed_pages": [
+            95
+          ],
+          "page_text_sha256": [
+            "a1f2f64274b6b9baba5b2fca9766d96fbb387e1e1ab9198ac9acf59057d8ca99"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-35-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "FIK eta=75%, umumiy ish Au=240 J. Foydali ishni top; foizni nisbatga aylantir.",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "75",
+          "unit": "%"
+        },
+        {
+          "symbol": "Au",
+          "value": "240",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "Au"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-35",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            95,
+            97
+          ],
+          "printed_pages": [
+            95,
+            97
+          ],
+          "page_text_sha256": [
+            "a1f2f64274b6b9baba5b2fca9766d96fbb387e1e1ab9198ac9acf59057d8ca99",
+            "cb83460adacdac2fe5c33a2024d74c17f07aee8fd7c28cc790497525c2449afc"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-35-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Raqamli tekis ko‘tarish: P=40 N, h=0,6 m, F=15 N, s=2 m. eta nisbatini top; natijani% da ham yozish mumkin.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "40",
+          "unit": "N"
+        },
+        {
+          "symbol": "h",
+          "value": "0.6",
+          "unit": "m"
+        },
+        {
+          "symbol": "F",
+          "value": "15",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "P",
+        "h",
+        "F",
+        "s"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-35",
+          "chapter_id": "physics-6-chapter-3",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            95,
+            96
+          ],
+          "printed_pages": [
+            95,
+            96
+          ],
+          "page_text_sha256": [
+            "a1f2f64274b6b9baba5b2fca9766d96fbb387e1e1ab9198ac9acf59057d8ca99",
+            "f49ba80a7f21f2774f749c776fedb4c488d902f0f45517726b6867b7739650bb"
+          ]
+        }
+      ]
     }
   ]
 }

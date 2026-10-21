@@ -331,12 +331,22 @@ class _SessionState extends ConsumerState<_Session> {
     unawaited(_loadCatalog());
   }
 
+  // Give each action its own node so its label cannot merge into the long
+  // surrounding lesson text when the screen scrolls.
   Widget _button(String text, VoidCallback? action) => Padding(
     padding: const EdgeInsets.symmetric(vertical: 12),
-    child: Duo3DButton(
-      height: math.max(56, MediaQuery.textScalerOf(context).scale(32)),
-      onPressed: action,
-      child: Text(text, textAlign: TextAlign.center),
+    child: Semantics(
+      container: true,
+      label: text,
+      button: true,
+      enabled: action != null,
+      onTap: action,
+      excludeSemantics: true,
+      child: Duo3DButton(
+        height: math.max(56, MediaQuery.textScalerOf(context).scale(32)),
+        onPressed: action,
+        child: Text(text, textAlign: TextAlign.center),
+      ),
     ),
   );
 

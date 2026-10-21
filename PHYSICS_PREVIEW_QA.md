@@ -115,11 +115,34 @@ Native APK/iOS, Google Console va haqiqiy telefon natijasini bu bilan almashtirm
 Keyingi §8–17 kontent partiyasi hisobotdan keyingi foydalanuvchi tasdig‘ini kutadi.
 # 2026-10-22 — keyingi manbali partiyalar
 
-Backend `feat/physics-curriculum-map` bilan lokal preview hozir §1–17 ni qamraydi.
+Backend `feat/physics-curriculum-map` bilan lokal preview hozir §1–35 ni qamraydi.
 Yangi massa/hajm/zichlik/tezlik FRQ inputlari savoldagi public `unit_choices`
 ro‘yxatidan foydalanadi. Javob kalitlari Flutterga qo‘shilmagan. Eskidan saqlangan
 sandbox uchun `--resume` yangi immutable darslarni qo‘shadi va XP/progressni saqlaydi.
 Normal ilovada `PHYSICS_PREVIEW=false`; ommaviy Fizika nashri yo‘q.
-Bu davomdagi Physics widget testlari16 passed, analyze toza; real Android/native
+Bu davomdagi to‘liq Flutter suite143 passed, analyze toza; real Android/native
 APK hali tekshirilmagan. Quyidagi birinchi-partiya Windows yo‘riqnomasi amal qiladi.
 
+
+
+## §1–35 lokal QA davom nuqtasi
+
+Backend `--resume` barcha35 reviewed darsni mavjud sandbox’ga qo‘shadi.
+Ushbu bosqichda boshqa sinflarning Physics darslari hali yaratilmagan.
+N*m moment va foiz (%) FIK, J/W energiya/quvvat inputlari ham bor;
+joriy public payload fixture63 yangi FRQ’ni saqlaydi (rubric yo‘q).
+
+Real Android’da: kichik ekran va200% matn, TalkBack/keyboard; §9 parda
+sonlari, §13 h/t raqamli kuzatuv, §15/17 mass/zichlik, §20 vaqt
+konversiyasi, §23 cm², §29 W/J, §31 N*m, §35 80% va0,8 birlik1;
+offline javob retry va complete retry, ilovani yopib draftni tiklash,
+akkaunt almashishi, XP birinchi-yakun qoidasini sinang. Native SDK yo‘q: bu
+ro‘yxatning real telefon/native build natijasi hali tasdiqlanmagan.
+
+
+Fizika action tugmalari endi alohida semantik node: uzun dars matnidan
+ajralgan label va accessibility tap bor. Final143 Flutter tests/analyze
+o‘tdi. Local JS preview uchun `flutter build web --debug --no-web-resources-cdn
+--no-wasm-dry-run -t lib/physics_preview_main.dart --dart-define-from-file=PRIVATE_FILE`
+CanvasKit’ni tashqi CDN o‘rniga lokal SDK faylidan yuklaydi. Actual Chromium
+§35 formula/80/% javobini serverda to‘g‘ri baholadi; bu native Android testi emas.

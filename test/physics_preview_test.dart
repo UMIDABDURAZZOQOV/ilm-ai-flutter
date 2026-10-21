@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:ui' show SemanticsAction;
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -560,6 +561,8 @@ void main() {
         's',
         'J',
         'W',
+        'N*m',
+        '%',
       ]) {
         final q = questions.firstWhere(
           (q) => (q['unit_choices'] as List).contains(unit),
@@ -589,6 +592,26 @@ void main() {
         expect(edited?['unit'], unit);
         expect(tester.takeException(), isNull);
       }
+    },
+  );
+  testWidgets(
+    'Physics action buttons expose an explicit label and accessibility tap',
+    (tester) async {
+      final handle = tester.ensureSemantics();
+      await mount(tester);
+      await open(tester);
+      await tester.ensureVisible(find.text('Mashqlarga o‘tish'));
+      await tester.pumpAndSettle();
+      final target = find.bySemanticsLabel('Mashqlarga o‘tish');
+      expect(target, findsOneWidget);
+      expect(
+        tester
+            .getSemantics(target)
+            .getSemanticsData()
+            .hasAction(SemanticsAction.tap),
+        isTrue,
+      );
+      handle.dispose();
     },
   );
   testWidgets(
