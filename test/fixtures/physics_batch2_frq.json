@@ -1573,6 +1573,741 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-6-section-25-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bosqichli ustun: rho = 1000 kg/m³, h = 0,2 m, g = 9,81 N/kg. Faqat suyuqlik ustuni bosimi hissasini top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "0.2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-25",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            62
+          ],
+          "page_text_sha256": [
+            "50576471cd29b0f523d2bce14d207a58abb5c3cca431131a3f469d286072f666"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-25-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil ustun: rho = 800 kg/m³, h = 0,5 m, g = 9,81 N/kg. Tashqi bosimni qo‘shmay, ustun hissasini hisobla.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "800",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "0.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-25",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            62
+          ],
+          "page_text_sha256": [
+            "50576471cd29b0f523d2bce14d207a58abb5c3cca431131a3f469d286072f666"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-25-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ikki aralashmaydigan tinch suyuqlikning ustki bosimlari teng. rho1 = 1000 kg/m³, h1 = 0,18 m, rho2 = 900 kg/m³. Balandliklar umumiy chegara sathidan o‘lchangan. h2 ni top.",
+      "givens": [
+        {
+          "symbol": "rho1",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "h1",
+          "value": "0.18",
+          "unit": "m"
+        },
+        {
+          "symbol": "rho2",
+          "value": "900",
+          "unit": "kg/m3"
+        }
+      ],
+      "symbols": [
+        "rho1",
+        "h1",
+        "rho2"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-25",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            63
+          ],
+          "printed_pages": [
+            63
+          ],
+          "page_text_sha256": [
+            "279e80bdd3ddff1039264cb7c028854c871afa5eaf18e56f39855121fd7cdd8c"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-26-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli bosim 1,2 atm. Paskalda ifodala. x atm, y Pa.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "1.2",
+          "unit": "atm"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-26",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            66
+          ],
+          "printed_pages": [
+            66
+          ],
+          "page_text_sha256": [
+            "ab0510c7ae70721b7e3ec113de5d10ef33da9b1e1e2af3c1b8dd72ed7acb3de5"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-26-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil konversiya: x = 0,6 atm. y bosimni Pa da hisobla.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "0.6",
+          "unit": "atm"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-26",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            66
+          ],
+          "printed_pages": [
+            66
+          ],
+          "page_text_sha256": [
+            "ab0510c7ae70721b7e3ec113de5d10ef33da9b1e1e2af3c1b8dd72ed7acb3de5"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-27-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Suvda to‘liq botgan hajm V = 0,0002 m³. rho = 1000 kg/m³, g = 9,81 N/kg. Arximed kuchini top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "V",
+          "value": "0.0002",
+          "unit": "m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "V",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-27",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            68
+          ],
+          "page_text_sha256": [
+            "4e46dc222a45082a4a95a6ade2977ab9f7a5f6d3c00a1084d136612aedde9d95"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-27-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil muhit: rho = 800 kg/m³, siqib chiqarilgan hajm V = 0,0005 m³, g = 9,81 N/kg. FA ni hisobla.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "800",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "V",
+          "value": "0.0005",
+          "unit": "m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "V",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-27",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            68,
+            69
+          ],
+          "printed_pages": [
+            68,
+            69
+          ],
+          "page_text_sha256": [
+            "4e46dc222a45082a4a95a6ade2977ab9f7a5f6d3c00a1084d136612aedde9d95",
+            "cbd8d3b8c68f03e0d85b362f07294fe5c979f3856076c87e789b892480a183c4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-27-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli tinch o‘lchov: Ph = 4,2 N, Ps = 3 N. Havo ko‘tarish ta’siri e’tiborsiz. FA ni ko‘rsatishlar farqidan top.",
+      "givens": [
+        {
+          "symbol": "Ph",
+          "value": "4.2",
+          "unit": "N"
+        },
+        {
+          "symbol": "Ps",
+          "value": "3",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "Ph",
+        "Ps"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-27",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            68
+          ],
+          "page_text_sha256": [
+            "4e46dc222a45082a4a95a6ade2977ab9f7a5f6d3c00a1084d136612aedde9d95"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-28-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "O‘zgarmas F = 20 N kuch ko‘chish bilan bir yo‘nalishda. Jism s = 3 m siljidi. Shu kuch ishini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "20",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-28",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            71
+          ],
+          "printed_pages": [
+            71
+          ],
+          "page_text_sha256": [
+            "4d191bff87637d6433aa3beb69c4d7d603a688a14a96c7727c01eb19eff18b83"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-28-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Parallel o‘zgarmas kuch s = 6 m da A = 72 J ish bajardi. Kuch modulini top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "72",
+          "unit": "J"
+        },
+        {
+          "symbol": "s",
+          "value": "6",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "A",
+        "s"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-28",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            71
+          ],
+          "printed_pages": [
+            71
+          ],
+          "page_text_sha256": [
+            "4d191bff87637d6433aa3beb69c4d7d603a688a14a96c7727c01eb19eff18b83"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-28-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "F = 7 N o‘zgarmas kuch o‘z yo‘nalishidagi siljishda A = 35 J ish bajardi. Siljish uzunligini top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "35",
+          "unit": "J"
+        },
+        {
+          "symbol": "F",
+          "value": "7",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "A",
+        "F"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-28",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            71
+          ],
+          "printed_pages": [
+            71
+          ],
+          "page_text_sha256": [
+            "4d191bff87637d6433aa3beb69c4d7d603a688a14a96c7727c01eb19eff18b83"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-29-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m = 2 kg jism tanlangan nol sathdan h = 1,5 m yuqorida. g = 9,81 N/kg. Ep ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "1.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-29",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            73
+          ],
+          "printed_pages": [
+            73
+          ],
+          "page_text_sha256": [
+            "be909be04fac1c94f8d24965f9b7c0feaa49c626c46b683c3758cdf538882eaf"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-29-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil aravacha: m = 4 kg, v = 3 m/s. Kinetik energiyani top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "4",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "3",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-29",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            73
+          ],
+          "printed_pages": [
+            73
+          ],
+          "page_text_sha256": [
+            "be909be04fac1c94f8d24965f9b7c0feaa49c626c46b683c3758cdf538882eaf"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-29-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "A = 1200 J ish t = 20 s da bajarildi. O‘rtacha quvvatni top; formulada darslikdagi N belgisini ishlat.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "1200",
+          "unit": "J"
+        },
+        {
+          "symbol": "t",
+          "value": "20",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "A",
+        "t"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-29",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            74
+          ],
+          "printed_pages": [
+            74
+          ],
+          "page_text_sha256": [
+            "76ff1f22011af8632f986c15438353174026ba486cbf1a33f014bd764f377d37"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-29-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qurilmaning o‘rtacha quvvati N = 250 W. t = 2 min davomida bajarilgan ishni top.",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "250",
+          "unit": "W"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "N",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-29",
+          "chapter_id": "physics-6-chapter-2",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            74,
+            75,
+            76
+          ],
+          "printed_pages": [
+            74,
+            75,
+            76
+          ],
+          "page_text_sha256": [
+            "76ff1f22011af8632f986c15438353174026ba486cbf1a33f014bd764f377d37",
+            "0f2a89c9a9e34f4f5545a8a59ea73d4ff5a54e24e0b8a5d2cdc6b0a23ac8e20d",
+            "81c64d157036ba26df9e82a62807e2003b97191153b7e869dc5b370da7db7cdd"
+          ]
+        }
+      ]
     }
   ]
 }
