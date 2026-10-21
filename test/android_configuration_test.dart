@@ -15,7 +15,14 @@ void main() {
         contains('com.linusu.flutter_web_auth_2.CallbackActivity'),
       );
       expect(
-        manifest,
+        // Check the actual cross-file default; the preview build overrides the
+        // placeholder. This remains a static check, not native manifest merging.
+        manifest.replaceAll(
+          r'${oauthRedirectScheme}',
+          RegExp(
+            r'manifestPlaceholders\["oauthRedirectScheme"\] = "([^"]+)"',
+          ).firstMatch(gradle)!.group(1)!,
+        ),
         contains(
           'android:scheme="ilmai" android:host="auth" android:path="/callback"',
         ),

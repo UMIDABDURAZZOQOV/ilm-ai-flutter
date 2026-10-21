@@ -257,6 +257,7 @@ void main() {
       await tester.pump(const Duration(seconds: 1));
       await tester.pump(const Duration(milliseconds: 100));
       for (final path in [
+        '/physics-preview',
         '/sat',
         '/ielts',
         '/profile/college',

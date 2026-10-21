@@ -1,0 +1,486 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "v2:900002:00000000-0000-4000-8000-000000000005",
+  "lesson_key": "physics-6-section-5-r1",
+  "expires_at": "2026-10-22T18:50:28.759209+00:00",
+  "title": "Kuzatishlar va tajribalar",
+  "content": {
+    "cards": [
+      {
+        "title": "Savol kuzatishdan boshlanadi",
+        "body": "Kuzatish hodisa haqida savol tug‘diradi. «Nima bo‘lyapti?» va «Qanday tekshiramiz?» degan savollar tajribaga tayyorlaydi.",
+        "fact_ids": [
+          "observe"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-5",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              10,
+              11
+            ],
+            "printed_pages": [
+              10,
+              11
+            ],
+            "page_text_sha256": [
+              "acc2d011dcaf09177b4e67b3e49b3afe42360fc4675d19614c162f1ba4ec2297",
+              "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Taxmin — hali xulosa emas",
+        "body": "Faraz yoki gipoteza kuzatuvni tushuntirish uchun ilgari suriladi. Uni tekshirmasdan yakuniy xulosa deb qabul qilmaymiz.",
+        "fact_ids": [
+          "hypothesis"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-5",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              11
+            ],
+            "printed_pages": [
+              11
+            ],
+            "page_text_sha256": [
+              "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tekshirish ketma-ketligi",
+        "body": "Darslikdagi sxema: kuzatish → gipoteza → tajriba → xulosa. Tajriba natijasi bilan dastlabki taxminni solishtirib, xulosa chiqaramiz.",
+        "fact_ids": [
+          "sequence"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-5",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              11
+            ],
+            "printed_pages": [
+              11
+            ],
+            "page_text_sha256": [
+              "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Asbobni vazifaga mos tanlaymiz",
+        "body": "Chizg‘ich va o‘lchov tasmasi uzunlikni, tarozi massani, sekundomer vaqtni o‘lchashda ishlatiladi. Menzurka hajmga oid o‘lchashga mos asbobdir.",
+        "fact_ids": [
+          "tools"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-5",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              11
+            ],
+            "printed_pages": [
+              11
+            ],
+            "page_text_sha256": [
+              "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+            ]
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Qog‘oz eni qanday tekshiriladi?",
+        "body": "O‘quvchi daftar qog‘ozi enini bilmoqchi. Bu raqamli reja; ilova haqiqiy o‘lchash bajarildi deb hisoblamaydi.",
+        "steps": [
+          {
+            "body": "Savolni belgilaymiz: qog‘ozning eni qancha?",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-5",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  11
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "page_text_sha256": [
+                  "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "Uzunlik uchun mos asbob — chizg‘ichni tanlaymiz.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-5",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  11
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "page_text_sha256": [
+                  "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "O‘lchash natijasiga tayanib xulosa yozamiz; taxminni natija o‘rniga qo‘ymaymiz.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-5",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  11
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "page_text_sha256": [
+                  "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+                ]
+              }
+            ]
+          }
+        ],
+        "fact_ids": [
+          "observe",
+          "hypothesis",
+          "tools",
+          "sequence"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-5",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              11
+            ],
+            "printed_pages": [
+              11
+            ],
+            "page_text_sha256": [
+              "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+            ]
+          }
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "physics-uz-grade-6",
+        "topic_id": "physics-6-section-5",
+        "chapter_id": "physics-6-introduction",
+        "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+        "file_name": "fizika_6_uzb.pdf",
+        "verification": "original_pdf_text_and_image_checked",
+        "pdf_pages": [
+          10,
+          11,
+          12
+        ],
+        "printed_pages": [
+          10,
+          11,
+          12
+        ],
+        "page_text_sha256": [
+          "acc2d011dcaf09177b4e67b3e49b3afe42360fc4675d19614c162f1ba4ec2297",
+          "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8",
+          "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda"
+        ]
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "physics-6-section-5-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Gipoteza nima?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Hali tekshirilishi kerak bo‘lgan faraz"
+        },
+        {
+          "id": "o2",
+          "label": "Har qanday o‘lchov asbobi"
+        },
+        {
+          "id": "o3",
+          "label": "Tekshirishsiz doimo to‘g‘ri xulosa"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            11
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-5-r1:q2",
+      "response_kind": "ordering",
+      "phase": "independent",
+      "prompt": "Tadqiqot bosqichlarini darslik sxemasiga mos tartibla.",
+      "items": [
+        {
+          "id": "s1",
+          "label": "Xulosa"
+        },
+        {
+          "id": "s2",
+          "label": "Tajriba"
+        },
+        {
+          "id": "s3",
+          "label": "Kuzatish"
+        },
+        {
+          "id": "s4",
+          "label": "Gipoteza"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            11
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-5-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Daftar enini o‘lchash uchun qaysi asbob mos?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Sekundomer"
+        },
+        {
+          "id": "o2",
+          "label": "Chizg‘ich"
+        },
+        {
+          "id": "o3",
+          "label": "Tarozi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            11
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-5-r1:q4",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Yugurish davomiyligini o‘lchashda qaysi asbob kerak?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Menzurka"
+        },
+        {
+          "id": "o2",
+          "label": "Chizg‘ich"
+        },
+        {
+          "id": "o3",
+          "label": "Sekundomer"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            11
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-5-r1:q5",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Menzurka qaysi o‘lchashga mos?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Hajmni aniqlashga"
+        },
+        {
+          "id": "o2",
+          "label": "Faqat vaqtni o‘lchashga"
+        },
+        {
+          "id": "o3",
+          "label": "Faqat massani tortishga"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            11
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-5-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Tajriba taxminni tasdiqlamadi. Qaysi yo‘l tadqiqotga mos?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Natijani e’tiborsiz qoldirib, taxminni to‘g‘ri deyish"
+        },
+        {
+          "id": "o2",
+          "label": "Natijani tahlil qilib, xulosani unga mos yozish"
+        },
+        {
+          "id": "o3",
+          "label": "Tajriba bajarilmasa ham natija bor deb belgilash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            11
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

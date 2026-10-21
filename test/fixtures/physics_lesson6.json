@@ -1,0 +1,617 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "v2:900002:00000000-0000-4000-8000-000000000006",
+  "lesson_key": "physics-6-section-6-r1",
+  "expires_at": "2026-10-22T18:50:28.778733+00:00",
+  "title": "Fizik kattaliklar va ularni o‘lchash",
+  "content": {
+    "cards": [
+      {
+        "title": "Kattalikning soni va birligi",
+        "body": "O‘lchash natijasida faqat son emas, o‘lchov birligi ham kerak. Uzunlik, vaqt va massa turli fizik kattaliklardir; ularni bitta kattalikdek solishtirmaymiz.",
+        "fact_ids": [
+          "quantity"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              12,
+              13
+            ],
+            "printed_pages": [
+              12,
+              13
+            ],
+            "page_text_sha256": [
+              "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+              "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "O‘lchash — taqqoslash",
+        "body": "O‘lchashda kattalikni shu turdagi birlik bilan taqqoslaymiz. Darslik uzunlik uchun metr (m), vaqt uchun sekund (s), massa uchun kilogramm (kg) birliklarini keltiradi.",
+        "fact_ids": [
+          "standard"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              12
+            ],
+            "printed_pages": [
+              12
+            ],
+            "page_text_sha256": [
+              "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bir uzunlik, turli birlik",
+        "body": "1 m = 100 cm = 1000 mm va 1 km = 1000 m. Metrlarda berilgan x sonini santimetrga o‘tkazishda 100 ga ko‘paytiramiz. Millimetrdagi x sonini metrga o‘tkazishda 1000 ga bo‘lamiz. Uzunlik o‘zgarmaydi, uning sonli yozuvi o‘zgaradi.",
+        "fact_ids": [
+          "convert"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              13
+            ],
+            "page_text_sha256": [
+              "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Solishtirishdan oldin birlik",
+        "body": "Ikki uzunlikni solishtirish uchun ularni bir xil birlikda yozamiz. Uzunlikni massa yoki vaqt bilan bevosita taqqoslash esa bir turdagi kattaliklarni solishtirish emas.",
+        "fact_ids": [
+          "compare"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              13,
+              14
+            ],
+            "printed_pages": [
+              13,
+              14
+            ],
+            "page_text_sha256": [
+              "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a",
+              "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Juda yupqa varaq",
+        "body": "Bitta qog‘oz qalinligini oddiy chizg‘ich bilan o‘lchash qiyin. Darslik 100 varaqning umumiy qalinligini o‘lchab, 100 ga bo‘lish usulini taklif qiladi. Bu faqat reja: raqamli javob haqiqiy tajriba bajarildi degani emas.",
+        "fact_ids": [
+          "stack"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              14
+            ],
+            "printed_pages": [
+              14
+            ],
+            "page_text_sha256": [
+              "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+            ]
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "rule": "m_to_cm",
+        "title": "Metrlardan santimetrga",
+        "expression": "y = 100*x",
+        "body": "x — metrlardagi son, y — santimetrdagi son. Bir metrda yuz santimetr bor.",
+        "fact_ids": [
+          "convert"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              13
+            ],
+            "page_text_sha256": [
+              "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+            ]
+          }
+        ]
+      },
+      {
+        "rule": "mm_to_m",
+        "title": "Millimetrlardan metrga",
+        "expression": "y = x/1000",
+        "body": "x — millimetrdagi son, y — metrdagi son. Bir metrda ming millimetr bor.",
+        "fact_ids": [
+          "convert"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              13
+            ],
+            "page_text_sha256": [
+              "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+            ]
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ip uzunligini boshqa birlikda yozamiz",
+        "body": "Ip 2.3 m. Uning uzunligini santimetrda ifodalaymiz.",
+        "steps": [
+          {
+            "body": "Birliklar bog‘lanishi: 1 m = 100 cm.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-6",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  12,
+                  13
+                ],
+                "printed_pages": [
+                  12,
+                  13
+                ],
+                "page_text_sha256": [
+                  "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+                  "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "x = 2.3 bo‘lsa, y = 100*x = 230.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-6",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  12,
+                  13
+                ],
+                "printed_pages": [
+                  12,
+                  13
+                ],
+                "page_text_sha256": [
+                  "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+                  "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "Javob: 230 cm. Ipning uzunligi o‘zgarmadi.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-6",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  12,
+                  13
+                ],
+                "printed_pages": [
+                  12,
+                  13
+                ],
+                "page_text_sha256": [
+                  "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+                  "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+                ]
+              }
+            ]
+          }
+        ],
+        "fact_ids": [
+          "convert",
+          "quantity"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-6",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              12,
+              13
+            ],
+            "printed_pages": [
+              12,
+              13
+            ],
+            "page_text_sha256": [
+              "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+              "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+            ]
+          }
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "physics-uz-grade-6",
+        "topic_id": "physics-6-section-6",
+        "chapter_id": "physics-6-introduction",
+        "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+        "file_name": "fizika_6_uzb.pdf",
+        "verification": "original_pdf_text_and_image_checked",
+        "pdf_pages": [
+          12,
+          13,
+          14
+        ],
+        "printed_pages": [
+          12,
+          13,
+          14
+        ],
+        "page_text_sha256": [
+          "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+          "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a",
+          "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+        ]
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "physics-6-section-6-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "«Uzunlik 18» degan yozuvda nima yetishmayapti?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "O‘lchov birligi"
+        },
+        {
+          "id": "o2",
+          "label": "Uzunlik o‘rniga massaning qiymati"
+        },
+        {
+          "id": "o3",
+          "label": "Sonni yana bir marta takrorlash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            12
+          ],
+          "printed_pages": [
+            12
+          ],
+          "page_text_sha256": [
+            "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Uzunlik, vaqt va massa birliklari to‘g‘ri berilgan qatorni tanla.",
+      "options": [
+        {
+          "id": "o1",
+          "label": "kg, m, s"
+        },
+        {
+          "id": "o2",
+          "label": "m, s, kg"
+        },
+        {
+          "id": "o3",
+          "label": "s, kg, m"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            12
+          ],
+          "printed_pages": [
+            12
+          ],
+          "page_text_sha256": [
+            "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1:q3",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ipning berilgan uzunligini santimetrda ifodala. y uchun formulani, sonli javobni va birlikni kirit.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "1.7",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "cm",
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            13
+          ],
+          "printed_pages": [
+            13
+          ],
+          "page_text_sha256": [
+            "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Detal uzunligini metrda ifodala. y uchun formulani, son va birlikni o‘zing yoz.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "460",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "m",
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            13
+          ],
+          "printed_pages": [
+            13
+          ],
+          "page_text_sha256": [
+            "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1:q5",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Ikki yo‘l 3 m va 250 cm. To‘g‘ri solishtirishni tanla.",
+      "options": [
+        {
+          "id": "o1",
+          "label": "3 m = 300 cm, demak birinchisi uzunroq"
+        },
+        {
+          "id": "o2",
+          "label": "250 soni 3 dan katta, demak ikkinchisi doim uzunroq"
+        },
+        {
+          "id": "o3",
+          "label": "Turli uzunlik birliklarini hech qachon almashtirib bo‘lmaydi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            13,
+            14
+          ],
+          "printed_pages": [
+            13,
+            14
+          ],
+          "page_text_sha256": [
+            "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a",
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Qaysi juftlikni bir turdagi kattalik sifatida bevosita solishtirib bo‘lmaydi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "2 m va 150 cm"
+        },
+        {
+          "id": "o2",
+          "label": "3 kg va 4 m"
+        },
+        {
+          "id": "o3",
+          "label": "400 mm va 1 m"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            12,
+            14
+          ],
+          "printed_pages": [
+            12,
+            14
+          ],
+          "page_text_sha256": [
+            "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1:q7",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "100 varaq umumiy qalinligidan bitta varaq qalinligi qanday baholanadi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Umumiy qalinlikni 100 ga ko‘paytirib"
+        },
+        {
+          "id": "o2",
+          "label": "Umumiy qalinlikka 100 metr qo‘shib"
+        },
+        {
+          "id": "o3",
+          "label": "Umumiy qalinlikni 100 ga bo‘lib"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            14
+          ],
+          "printed_pages": [
+            14
+          ],
+          "page_text_sha256": [
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

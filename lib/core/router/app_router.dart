@@ -4,6 +4,9 @@ import 'package:go_router/go_router.dart';
 
 import '../providers/app_providers.dart';
 import '../config/product_mode.dart';
+import '../config/physics_preview.dart';
+import '../network/dio_client.dart' show apiBaseUrl;
+import '../../features/physics/presentation/physics_preview_screen.dart';
 import '../../features/skills/presentation/subject_home_screen.dart';
 import '../splash/splash_screen.dart';
 import '../../features/auth/application/auth_controller.dart';
@@ -147,6 +150,9 @@ final routerProvider = Provider<GoRouter>((ref) {
           loc == '/splash') {
         return subjectsOnly ? '/learn' : '/home';
       }
+      if (loc == '/physics-preview' && !physicsPreviewAllowed(apiBaseUrl)) {
+        return '/learn';
+      }
       if (subjectsOnly && !isSubjectRoute(loc)) return '/learn';
       if (biologyOnly) {
         if (loc == '/skills') return '/learn';
@@ -185,6 +191,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/physics-preview',
+        pageBuilder: (context, state) =>
+            _fadeSlidePage(const PhysicsPreviewScreen(), state),
+      ),
       GoRoute(
         path: '/learn',
         builder: (context, state) => const SubjectHomeScreen(),

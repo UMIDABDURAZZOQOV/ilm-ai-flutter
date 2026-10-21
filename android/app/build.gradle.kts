@@ -1,5 +1,6 @@
 import java.util.Properties
 import java.io.FileInputStream
+import java.util.Base64
 
 plugins {
     id("com.android.application")
@@ -13,6 +14,16 @@ val keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
+
+// Flutter supplies base64-encoded dart-defines. A Physics QA APK must coexist
+// with the learner's installed ILM AI app and must not claim its OAuth scheme.
+val physicsPreviewEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")
+    ?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("PHYSICS_PREVIEW=true") == true
+val flutterTarget = (project.findProperty("target") as? String).orEmpty().replace('\\', '/')
+val physicsPreviewBuild = physicsPreviewEnabled &&
+    (flutterTarget == "physics_preview_main.dart" || flutterTarget.endsWith("/physics_preview_main.dart"))
 
 android {
     namespace = "com.ilmai.ilm_ai_flutter"
@@ -31,6 +42,8 @@ android {
     defaultConfig {
         // Permanent Play Store identity — cannot change after the first publish.
         applicationId = "com.ilmai.app"
+        manifestPlaceholders["appLabel"] = "ILM AI"
+        manifestPlaceholders["oauthRedirectScheme"] = "ilmai"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
@@ -52,6 +65,13 @@ android {
     }
 
     buildTypes {
+        debug {
+            if (physicsPreviewBuild) {
+                applicationIdSuffix = ".physicsqa"
+                manifestPlaceholders["appLabel"] = "ILM AI Fizika QA"
+                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-physics-qa"
+            }
+        }
         release {
             // Release artifacts must never silently use a debug key.
             signingConfig = if (keystorePropertiesFile.exists())
@@ -78,6 +98,9 @@ dependencies {
 
 
 gradle.taskGraph.whenReady {
+    if (physicsPreviewEnabled && allTasks.any { it.name.contains("Release") }) {
+        throw GradleException("Physics preview is debug-only. Do not publish a sandbox APK.")
+    }
     if (!keystorePropertiesFile.exists() && allTasks.any { it.name.contains("Release") }) {
         throw GradleException("Release signing requires android/key.properties and the upload keystore. Debug builds remain available.")
     }

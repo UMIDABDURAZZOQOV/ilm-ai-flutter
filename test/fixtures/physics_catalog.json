@@ -1,0 +1,230 @@
+{
+  "assessment_version": 2,
+  "subject": "fizika",
+  "grade": 6,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 61,
+  "implemented_sections": 7,
+  "course_complete": false,
+  "lessons": [
+    {
+      "key": "physics-6-section-1-r1",
+      "sequence": 1,
+      "title": "Fizika nimani o‘rganadi? Fizik hodisalar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            3,
+            4,
+            5
+          ],
+          "printed_pages": [
+            3,
+            4,
+            5
+          ],
+          "page_text_sha256": [
+            "de05fed32278947fce25ec8aeabb7ea28bb55c846490aa2c0b79cf95ff5de91f",
+            "7a938bd4d0d1fe4534102c974da2376c2a65e8123d1afe030fc0a802af87a959",
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-2-r1",
+      "sequence": 2,
+      "title": "Fizika taraqqiyoti tarixidan ma’lumotlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-2",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            6,
+            7,
+            8
+          ],
+          "printed_pages": [
+            6,
+            7,
+            8
+          ],
+          "page_text_sha256": [
+            "4f2cc9c78f869bc9de352086d5daec10d2963a9c5f3a9d7aabc89ab91d3a60ff",
+            "4c8b6b77d2b1a9d30a8c2ca0aa89c1e0a825a6be726ce86e6034554ac9bcafe7",
+            "970fc0b535255b528e39d058186a055a68aa36be8d9ef1dfc0e1e8fe35e06bb2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-3-r1",
+      "sequence": 3,
+      "title": "Jamiyat rivojlanishida fizikaning ahamiyati. O‘zbekistonda fizika taraqqiyoti",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-3",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "printed_pages": [
+            8,
+            9
+          ],
+          "page_text_sha256": [
+            "970fc0b535255b528e39d058186a055a68aa36be8d9ef1dfc0e1e8fe35e06bb2",
+            "d07e199c1a01ca17dbc10e58480cb4feb98bdf5f6d78eaca7e9a90cdb9ac1b91"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-4-r1",
+      "sequence": 4,
+      "title": "Fizikada ishlatiladigan ayrim atamalar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-4",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            9,
+            10
+          ],
+          "printed_pages": [
+            9,
+            10
+          ],
+          "page_text_sha256": [
+            "d07e199c1a01ca17dbc10e58480cb4feb98bdf5f6d78eaca7e9a90cdb9ac1b91",
+            "acc2d011dcaf09177b4e67b3e49b3afe42360fc4675d19614c162f1ba4ec2297"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-5-r1",
+      "sequence": 5,
+      "title": "Kuzatishlar va tajribalar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-5",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            10,
+            11,
+            12
+          ],
+          "printed_pages": [
+            10,
+            11,
+            12
+          ],
+          "page_text_sha256": [
+            "acc2d011dcaf09177b4e67b3e49b3afe42360fc4675d19614c162f1ba4ec2297",
+            "de97c7eddc3cd7445f03ab7ea40e89abeb239539f32abd853ec79e510ce8c3f8",
+            "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-6-r1",
+      "sequence": 6,
+      "title": "Fizik kattaliklar va ularni o‘lchash",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-6",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            12,
+            13,
+            14
+          ],
+          "printed_pages": [
+            12,
+            13,
+            14
+          ],
+          "page_text_sha256": [
+            "fc139efb018cf2113fcfa016904433548173fe4778bfa51536505a8e73302cda",
+            "203ca63381c534ae7a766577dcd9117f41a6ad31a316cb8745478ab3da9b9f3a",
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1",
+      "sequence": 7,
+      "title": "O‘lchashlar va o‘lchash aniqligi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            14,
+            15,
+            16
+          ],
+          "printed_pages": [
+            14,
+            15,
+            16
+          ],
+          "page_text_sha256": [
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f",
+            "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b",
+            "1ac256d9af2fa44be5df1d98da3ec3bcd085f16e24b0693c61cb7f7a66d27893"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ bool isSubjectRoute(String path) => const {
   '/learn',
   '/setup',
   '/settings',
+  '/physics-preview',
   '/skills/lesson',
   '/skills/practice',
   '/skills/marathon',

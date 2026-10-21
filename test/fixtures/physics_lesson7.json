@@ -1,0 +1,768 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "v2:900002:00000000-0000-4000-8000-000000000007",
+  "lesson_key": "physics-6-section-7-r1",
+  "expires_at": "2026-10-22T18:50:28.877450+00:00",
+  "title": "O‘lchashlar va o‘lchash aniqligi",
+  "content": {
+    "cards": [
+      {
+        "title": "Shkalaning bir bo‘linmasi",
+        "body": "Raqamlangan ikki belgi orasidagi qiymatlar farqini ular orasidagi teng oraliqlar soniga bo‘lamiz. d = (b-a)/n. n — chiziqchalar emas, oraliqlar soni; a va b bir xil birlikda yoziladi.",
+        "fact_ids": [
+          "division"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              14
+            ],
+            "printed_pages": [
+              14
+            ],
+            "page_text_sha256": [
+              "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chegara va bo‘linma boshqa-boshqa",
+        "body": "O‘lchash chegarasi — asbob bilan o‘lchash mumkin bo‘lgan eng katta qiymat. Bo‘linma qiymati esa yonma-yon ikki chiziqcha orasidagi qiymat farqidir. Eng katta yozuvni bo‘linma qiymati deb olmang.",
+        "fact_ids": [
+          "range"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              15
+            ],
+            "printed_pages": [
+              15
+            ],
+            "page_text_sha256": [
+              "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Oddiy shkala modeli",
+        "body": "Darslikdagi oddiy chizg‘ich misolida o‘lchash xatoligi eng kichik bo‘linmaning yarmiga teng deb baholanadi: delta = d/2. Bu shu soddalashtirilgan model uchun qoida; barcha asboblarning universal aniqligi deb olinmaydi.",
+        "fact_ids": [
+          "uncertainty"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              15
+            ],
+            "printed_pages": [
+              15
+            ],
+            "page_text_sha256": [
+              "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ikki o‘lchovning o‘rtachasi",
+        "body": "Bir kattalik ikki marta bir xil birlikda o‘lchansa, natijalarni qo‘shib ikkiga bo‘lamiz: a_ort = (x1+x2)/2. O‘rtacha qiymat ikki natijani umumlashtiradi; u har qanday xatoni avtomatik yo‘qotmaydi.",
+        "fact_ids": [
+          "average"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              15
+            ],
+            "printed_pages": [
+              15
+            ],
+            "page_text_sha256": [
+              "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Natija va xatolikni yozish",
+        "body": "Darslik natijani A = a ± delta_a ko‘rinishida yozishni ko‘rsatadi: a — o‘lchangan qiymat, delta_a — xatolik bahosi. Sonlar bilan birga birlik ham saqlanadi.",
+        "fact_ids": [
+          "record"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              16
+            ],
+            "printed_pages": [
+              16
+            ],
+            "page_text_sha256": [
+              "1ac256d9af2fa44be5df1d98da3ec3bcd085f16e24b0693c61cb7f7a66d27893"
+            ]
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "rule": "scale",
+        "title": "Shkala bo‘linmasi",
+        "expression": "d = (b-a)/n",
+        "body": "a va b — bir birlikdagi ikki belgi qiymati; n — ular orasidagi teng oraliqlar soni, n > 0.",
+        "fact_ids": [
+          "division"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              14
+            ],
+            "printed_pages": [
+              14
+            ],
+            "page_text_sha256": [
+              "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+            ]
+          }
+        ]
+      },
+      {
+        "rule": "half_division",
+        "title": "Xatolikning oddiy bahosi",
+        "expression": "delta = d/2",
+        "body": "Faqat shu darsdagi oddiy shkala modeli: d — eng kichik bo‘linma.",
+        "fact_ids": [
+          "uncertainty"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              15
+            ],
+            "printed_pages": [
+              15
+            ],
+            "page_text_sha256": [
+              "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+            ]
+          }
+        ]
+      },
+      {
+        "rule": "mean2",
+        "title": "Ikki o‘lchov o‘rtachasi",
+        "expression": "a_ort = (x1+x2)/2",
+        "body": "x1 va x2 bir kattalikning bir birlikda yozilgan ikki o‘lchovi.",
+        "fact_ids": [
+          "average"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              15
+            ],
+            "printed_pages": [
+              15
+            ],
+            "page_text_sha256": [
+              "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+            ]
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Belgilardan bo‘linmaga",
+        "body": "Shkalada 2 cm va 8 cm orasida 12 teng oraliq bor. Bir bo‘linmani topamiz.",
+        "steps": [
+          {
+            "body": "Qiymatlar farqi: 8 − 2 = 6 cm.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-7",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  14
+                ],
+                "printed_pages": [
+                  14
+                ],
+                "page_text_sha256": [
+                  "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "Oraliqlar soni 12; d = (8−2)/12 = 0.5 cm.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-7",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  14
+                ],
+                "printed_pages": [
+                  14
+                ],
+                "page_text_sha256": [
+                  "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "13 ta chiziqcha 12 ta oraliq hosil qiladi; hisobda oraliqlar olinadi.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-7",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  14
+                ],
+                "printed_pages": [
+                  14
+                ],
+                "page_text_sha256": [
+                  "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+                ]
+              }
+            ]
+          }
+        ],
+        "fact_ids": [
+          "division"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              14
+            ],
+            "printed_pages": [
+              14
+            ],
+            "page_text_sha256": [
+              "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ikki o‘lchovni umumlashtiramiz",
+        "body": "Bir buyum 11.2 cm va 11.6 cm deb o‘lchandi. O‘rtacha qiymatni hisoblaymiz.",
+        "steps": [
+          {
+            "body": "Ikkala natija bir birlikda.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-7",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  15
+                ],
+                "printed_pages": [
+                  15
+                ],
+                "page_text_sha256": [
+                  "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "a_ort = (11.2+11.6)/2 = 11.4.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-7",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  15
+                ],
+                "printed_pages": [
+                  15
+                ],
+                "page_text_sha256": [
+                  "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "O‘rtacha 11.4 cm; bu barcha xatolar yo‘qoldi degani emas.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-7",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  15
+                ],
+                "printed_pages": [
+                  15
+                ],
+                "page_text_sha256": [
+                  "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+                ]
+              }
+            ]
+          }
+        ],
+        "fact_ids": [
+          "average"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-7",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              15
+            ],
+            "printed_pages": [
+              15
+            ],
+            "page_text_sha256": [
+              "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+            ]
+          }
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "physics-uz-grade-6",
+        "topic_id": "physics-6-section-7",
+        "chapter_id": "physics-6-introduction",
+        "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+        "file_name": "fizika_6_uzb.pdf",
+        "verification": "original_pdf_text_and_image_checked",
+        "pdf_pages": [
+          14,
+          15,
+          16
+        ],
+        "printed_pages": [
+          14,
+          15,
+          16
+        ],
+        "page_text_sha256": [
+          "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f",
+          "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b",
+          "1ac256d9af2fa44be5df1d98da3ec3bcd085f16e24b0693c61cb7f7a66d27893"
+        ]
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "physics-6-section-7-r1:q1",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shkalaning a va b belgilari orasida n ta teng oraliq bor. Bir bo‘linma d ni top: formula, son va birlikni kirit.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "0",
+          "unit": "cm"
+        },
+        {
+          "symbol": "b",
+          "value": "12",
+          "unit": "cm"
+        },
+        {
+          "symbol": "n",
+          "value": "6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "b",
+        "a",
+        "n"
+      ],
+      "suggested_unit": "cm",
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            14
+          ],
+          "printed_pages": [
+            14
+          ],
+          "page_text_sha256": [
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "0 dan 10 cm gacha 11 ta chiziqcha, shu jumladan ikkala chet belgi bor. Nechta oraliq bor?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "11"
+        },
+        {
+          "id": "o2",
+          "label": "10"
+        },
+        {
+          "id": "o3",
+          "label": "12"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            14
+          ],
+          "printed_pages": [
+            14
+          ],
+          "page_text_sha256": [
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q3",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ikki o‘lchovning o‘rtacha qiymati a_ort ni top. Formula, son va birlikni yoz.",
+      "givens": [
+        {
+          "symbol": "x1",
+          "value": "14.2",
+          "unit": "cm"
+        },
+        {
+          "symbol": "x2",
+          "value": "14.6",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "x1",
+        "x2"
+      ],
+      "suggested_unit": "cm",
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            15
+          ],
+          "printed_pages": [
+            15
+          ],
+          "page_text_sha256": [
+            "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Oddiy shkala modelida eng kichik bo‘linma d berilgan. Xatolik bahosi delta ni top; formula, son va birlikni yoz.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "0.4",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "d"
+      ],
+      "suggested_unit": "cm",
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            15
+          ],
+          "printed_pages": [
+            15
+          ],
+          "page_text_sha256": [
+            "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q5",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Chizg‘ichning eng katta belgisi 25 cm, bir bo‘linmasi 1 mm. O‘lchash chegarasi qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "25 cm"
+        },
+        {
+          "id": "o2",
+          "label": "1 mm"
+        },
+        {
+          "id": "o3",
+          "label": "26 cm"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            15
+          ],
+          "printed_pages": [
+            15
+          ],
+          "page_text_sha256": [
+            "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "A = a ± delta_a yozuvida delta_a nimani bildiradi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Asbobning o‘lchash chegarasini"
+        },
+        {
+          "id": "o2",
+          "label": "O‘lchash xatoligi bahosini"
+        },
+        {
+          "id": "o3",
+          "label": "Ikki belgi orasidagi oraliqlar sonini"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            16
+          ],
+          "printed_pages": [
+            16
+          ],
+          "page_text_sha256": [
+            "1ac256d9af2fa44be5df1d98da3ec3bcd085f16e24b0693c61cb7f7a66d27893"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q7",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Ikki o‘lchovning o‘rtachasini olish haqida ehtiyotkor xulosani tanla.",
+      "options": [
+        {
+          "id": "o1",
+          "label": "O‘rtacha har qanday xatoni butunlay yo‘qotadi"
+        },
+        {
+          "id": "o2",
+          "label": "O‘rtacha hisoblashda birliklar kerak emas"
+        },
+        {
+          "id": "o3",
+          "label": "O‘rtacha ikki natijani umumlashtiradi, barcha xatolar yo‘qolishini kafolatlamaydi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            15
+          ],
+          "printed_pages": [
+            15
+          ],
+          "page_text_sha256": [
+            "e59988e2a73126194fd4a6b53ed72787ad9427883d5854176bfb1d438ef4f14b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-7-r1:q8",
+      "response_kind": "ordering",
+      "phase": "independent",
+      "prompt": "Shkalani o‘qishga tayyorgarlik bosqichlarini tartibla.",
+      "items": [
+        {
+          "id": "s1",
+          "label": "Farqni oraliqlar soniga bo‘lish"
+        },
+        {
+          "id": "s2",
+          "label": "Ikkita raqamlangan belgi qiymatini bir birlikda olish"
+        },
+        {
+          "id": "s3",
+          "label": "Ular orasidagi teng oraliqlarni sanash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-7",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            14
+          ],
+          "printed_pages": [
+            14
+          ],
+          "page_text_sha256": [
+            "ede35145cefbc8a2b64393f4c295d573c0ea3c39ebd35cccd43ab946a648ba8f"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

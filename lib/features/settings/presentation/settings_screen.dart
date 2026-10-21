@@ -2,6 +2,9 @@ import '../../../core/widgets/motion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import '../../../core/config/physics_preview.dart';
+import '../../../core/network/dio_client.dart' show apiBaseUrl;
 
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
@@ -142,6 +145,15 @@ class SettingsScreen extends ConsumerWidget {
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: [
+            if (physicsPreviewAllowed(apiBaseUrl)) ...[
+              ListTile(
+                leading: const Icon(Icons.science_outlined),
+                title: const Text('Fizika sinovi • 6-sinf'),
+                subtitle: const Text('Faqat lokal sinov • §1–7 • O‘zbekcha'),
+                onTap: () => context.push('/physics-preview'),
+              ),
+              const SizedBox(height: 16),
+            ],
             Text(t('settings.account', language), style: TextStyle(fontWeight: FontWeight.w800, color: colors.textSecondary, fontSize: 14)),
             const SizedBox(height: 12),
             PremiumCard(

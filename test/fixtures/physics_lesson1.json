@@ -1,0 +1,516 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "v2:900002:00000000-0000-4000-8000-000000000001",
+  "lesson_key": "physics-6-section-1-r1",
+  "expires_at": "2026-10-22T18:50:28.704228+00:00",
+  "title": "Fizika nimani o‘rganadi? Fizik hodisalar",
+  "content": {
+    "cards": [
+      {
+        "title": "Tabiatdagi o‘zgarishlar",
+        "body": "Fizika tabiatda ro‘y beradigan hodisalarni o‘rganadi. Harakat, issiqlik, elektr, yorug‘lik va tovush bilan bog‘liq jarayonlarni kundalik hayotda kuzatamiz.",
+        "fact_ids": [
+          "nature"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-1",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              3,
+              4
+            ],
+            "printed_pages": [
+              3,
+              4
+            ],
+            "page_text_sha256": [
+              "de05fed32278947fce25ec8aeabb7ea28bb55c846490aa2c0b79cf95ff5de91f",
+              "7a938bd4d0d1fe4534102c974da2376c2a65e8123d1afe030fc0a802af87a959"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Harakatni payqaymiz",
+        "body": "Jismning harakatlanishi mexanik hodisaga misol. Velosipedning yurishi yoki qaychining harakatlanuvchi qismlari shunday kuzatuvga mos keladi.",
+        "fact_ids": [
+          "motion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-1",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "page_text_sha256": [
+              "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Issiqlik hodisalari",
+        "body": "Muzning erishi, suvning muzlashi va jismlarning qizishi issiqlik hodisalaridir. Hodisani ajratishda aynan nima o‘zgarayotganiga e’tibor ber.",
+        "fact_ids": [
+          "heat"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-1",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "page_text_sha256": [
+              "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Yorug‘lik va tovush",
+        "body": "Ko‘zguda aks ko‘rinishi va kamalak yorug‘lik bilan bog‘liq. Ovoz eshitish esa tovush hodisasiga misol. Bir vaziyatda bir nechta hodisa uchrashi mumkin.",
+        "fact_ids": [
+          "light"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-1",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              4,
+              5
+            ],
+            "printed_pages": [
+              4,
+              5
+            ],
+            "page_text_sha256": [
+              "7a938bd4d0d1fe4534102c974da2376c2a65e8123d1afe030fc0a802af87a959",
+              "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Elektr kundalik hayotda",
+        "body": "Elektr jihozlaridan foydalanishda elektr hodisalari qatnashadi. Jihozning qanday ish bajarishini kuzatish fizika bilan hayot orasidagi bog‘lanishni ko‘rsatadi.",
+        "fact_ids": [
+          "electric"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-1",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "page_text_sha256": [
+              "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+            ]
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Bir tongdagi uch hodisa",
+        "body": "Aziza ko‘zguga qaradi, velosipedda yurdi va eriyotgan muzni ko‘rdi. Har bir holatda asosiy hodisani ajratamiz.",
+        "steps": [
+          {
+            "body": "Ko‘zgudagi aks — yorug‘lik hodisasi.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-1",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  5
+                ],
+                "printed_pages": [
+                  5
+                ],
+                "page_text_sha256": [
+                  "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "Velosipedning yurishi — mexanik harakat.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-1",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  5
+                ],
+                "printed_pages": [
+                  5
+                ],
+                "page_text_sha256": [
+                  "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+                ]
+              }
+            ]
+          },
+          {
+            "body": "Muzning erishi — issiqlik hodisasi.",
+            "source_refs": [
+              {
+                "book_id": "physics-uz-grade-6",
+                "topic_id": "physics-6-section-1",
+                "chapter_id": "physics-6-introduction",
+                "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+                "file_name": "fizika_6_uzb.pdf",
+                "verification": "original_pdf_text_and_image_checked",
+                "pdf_pages": [
+                  5
+                ],
+                "printed_pages": [
+                  5
+                ],
+                "page_text_sha256": [
+                  "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+                ]
+              }
+            ]
+          }
+        ],
+        "fact_ids": [
+          "light",
+          "motion",
+          "heat"
+        ],
+        "source_refs": [
+          {
+            "book_id": "physics-uz-grade-6",
+            "topic_id": "physics-6-section-1",
+            "chapter_id": "physics-6-introduction",
+            "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+            "file_name": "fizika_6_uzb.pdf",
+            "verification": "original_pdf_text_and_image_checked",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "page_text_sha256": [
+              "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+            ]
+          }
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "physics-uz-grade-6",
+        "topic_id": "physics-6-section-1",
+        "chapter_id": "physics-6-introduction",
+        "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+        "file_name": "fizika_6_uzb.pdf",
+        "verification": "original_pdf_text_and_image_checked",
+        "pdf_pages": [
+          3,
+          4,
+          5
+        ],
+        "printed_pages": [
+          3,
+          4,
+          5
+        ],
+        "page_text_sha256": [
+          "de05fed32278947fce25ec8aeabb7ea28bb55c846490aa2c0b79cf95ff5de91f",
+          "7a938bd4d0d1fe4534102c974da2376c2a65e8123d1afe030fc0a802af87a959",
+          "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+        ]
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "physics-6-section-1-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Velosipedning yo‘lda yurishida qaysi hodisa bevosita kuzatiladi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Mexanik harakat"
+        },
+        {
+          "id": "o2",
+          "label": "Suvning muzlashi"
+        },
+        {
+          "id": "o3",
+          "label": "Yorug‘likning aks etishi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            5
+          ],
+          "printed_pages": [
+            5
+          ],
+          "page_text_sha256": [
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-1-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Muz bo‘lagi eriyapti. Asosiy hodisa qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Tovush"
+        },
+        {
+          "id": "o2",
+          "label": "Issiqlik"
+        },
+        {
+          "id": "o3",
+          "label": "Mexanik harakat"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            5
+          ],
+          "printed_pages": [
+            5
+          ],
+          "page_text_sha256": [
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-1-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "O‘quvchi ko‘zguda o‘z aksini ko‘rdi. Bu qaysi hodisaga misol?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Elektr"
+        },
+        {
+          "id": "o2",
+          "label": "Issiqlik"
+        },
+        {
+          "id": "o3",
+          "label": "Yorug‘lik"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            5
+          ],
+          "printed_pages": [
+            5
+          ],
+          "page_text_sha256": [
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-1-r1:q4",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Qo‘ng‘iroq ovozini eshitish qaysi hodisaga eng bevosita misol?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Tovush"
+        },
+        {
+          "id": "o2",
+          "label": "Muzlash"
+        },
+        {
+          "id": "o3",
+          "label": "Kamalak"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            4,
+            5
+          ],
+          "printed_pages": [
+            4,
+            5
+          ],
+          "page_text_sha256": [
+            "7a938bd4d0d1fe4534102c974da2376c2a65e8123d1afe030fc0a802af87a959",
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-1-r1:q5",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Fizikani o‘rganishga mos kuzatuvni tanla.",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Mexanik harakatni faqat buyumning nomi deb tushunish"
+        },
+        {
+          "id": "o2",
+          "label": "Jism qanday harakatlanishini kuzatish"
+        },
+        {
+          "id": "o3",
+          "label": "Muz erishini tovush hodisasi deb tasniflash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            3,
+            5
+          ],
+          "printed_pages": [
+            3,
+            5
+          ],
+          "page_text_sha256": [
+            "de05fed32278947fce25ec8aeabb7ea28bb55c846490aa2c0b79cf95ff5de91f",
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-6-section-1-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Elektr jihozining ishlashini o‘rganish nimaga yordam beradi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Jihozdagi barcha hodisalarni faqat mexanik deb hisoblashga"
+        },
+        {
+          "id": "o2",
+          "label": "Tabiat hodisalari kundalik hayotda qatnashishini tushunishga"
+        },
+        {
+          "id": "o3",
+          "label": "Elektr va issiqlik hodisalarini doim bir xil deb atashga"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-6",
+          "topic_id": "physics-6-section-1",
+          "chapter_id": "physics-6-introduction",
+          "sha256": "ccfe285c53072e33966df6ee22ec50c730ca66b5e16e2202a9ad732c77ea2534",
+          "file_name": "fizika_6_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            5
+          ],
+          "printed_pages": [
+            5
+          ],
+          "page_text_sha256": [
+            "239949294774c14debfa03534a0ded605d980e616e48e4e19e7854c5011fe535"
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
