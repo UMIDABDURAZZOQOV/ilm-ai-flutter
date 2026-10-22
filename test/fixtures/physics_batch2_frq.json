@@ -3095,6 +3095,50 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-6-section-45-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Test manbaidagi x=3 V kuchlanishni y millivoltda yoz. Formulada x voltlardagi son.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "3",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "mV",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-6-section-45-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil birlik almashtirish: x=1,8 V ni y millivoltda ifodala. Formulada x voltlardagi son.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "1.8",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "x"
+      ],
+      "suggested_unit": "mV",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
     }
   ]
 }
