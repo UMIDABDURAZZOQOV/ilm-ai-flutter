@@ -137,7 +137,7 @@ class DuoProgressBar extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8),
         child: Container(
-          height: 16,
+          height: 8,
           color: trackColor,
           alignment: Alignment.centerLeft,
           child: LayoutBuilder(
@@ -151,26 +151,10 @@ class DuoProgressBar extends StatelessWidget {
                   if (width <= 0) return const SizedBox.shrink();
                   return Container(
                     width: width,
-                    height: 16,
+                    height: 8,
                     decoration: BoxDecoration(
                       color: fill,
                       borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          top: 2,
-                          left: 4,
-                          right: 4,
-                          height: 3,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.35),
-                              borderRadius: BorderRadius.circular(2),
-                            ),
-                          ),
-                        ),
-                      ],
                     ),
                   );
                 },
@@ -189,6 +173,7 @@ class DuoChoiceCard extends StatelessWidget {
   final bool answered;
   final bool isCorrectOption;
   final VoidCallback? onTap;
+  final String? stateLabel;
 
   const DuoChoiceCard({
     super.key,
@@ -197,6 +182,7 @@ class DuoChoiceCard extends StatelessWidget {
     required this.answered,
     required this.isCorrectOption,
     this.onTap,
+    this.stateLabel,
   });
 
   @override
@@ -231,6 +217,10 @@ class DuoChoiceCard extends StatelessWidget {
       child: Semantics(
         button: true,
         selected: selected,
+        inMutuallyExclusiveGroup: true,
+        label: stateLabel == null ? text : '$text. $stateLabel',
+        excludeSemantics: true,
+        onTap: !answered ? onTap : null,
         enabled: !answered && onTap != null,
         child: InkWell(
           borderRadius: BorderRadius.circular(16),
@@ -241,24 +231,48 @@ class DuoChoiceCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: bg,
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: border, width: 2.4),
+              border: Border.all(
+                color: border,
+                width: selected || answered && isCorrectOption ? 2 : 1,
+              ),
               boxShadow: [
                 BoxShadow(
                   color: shadow,
-                  offset: const Offset(0, 4),
+                  offset: const Offset(0, 1),
                   blurRadius: 0,
                 ),
               ],
             ),
             alignment: Alignment.centerLeft,
-            child: Text(
-              text,
-              style: TextStyle(
-                color: textColor,
-                fontWeight: FontWeight.w700,
-                fontSize: 17.5,
-                height: 1.35,
-              ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(
+                  answered && isCorrectOption
+                      ? Icons.check_circle_rounded
+                      : answered && selected
+                      ? Icons.cancel_outlined
+                      : selected
+                      ? Icons.radio_button_checked_rounded
+                      : Icons.radio_button_unchecked_rounded,
+                  color: answered && isCorrectOption
+                      ? colors.success
+                      : textColor,
+                  size: 22,
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    text,
+                    style: TextStyle(
+                      color: textColor,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      height: 1.45,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ),

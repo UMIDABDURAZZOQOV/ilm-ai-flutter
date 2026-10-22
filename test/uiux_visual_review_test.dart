@@ -300,8 +300,13 @@ void main() {
                 ? t('skills.start_quiz', 'ru')
                 : t('skills.lesson.continue', 'ru'),
           );
+          if (i == 0 && start.theory.length > 1) await save('theory-next');
         }
         await save('quiz');
+        await tester.tap(find.byIcon(Icons.close_rounded).first);
+        await tester.pumpAndSettle();
+        await save('exit');
+        await tapText('Продолжить');
         await tapText(
           start.questions.first.options.firstWhere(
             (s) => s != start.questions.first.correctAnswer,
@@ -309,6 +314,26 @@ void main() {
         );
         await tapText('ПРОВЕРИТЬ');
         await save('feedback');
+        await mount(SkillLessonScreen(lesson: lesson));
+        // Fresh isolated preferences: completing this fixture never calls a server.
+        for (var i = 0; i < start.theory.length; i++) {
+          await tapText(
+            i + 1 == start.theory.length
+                ? t('skills.start_quiz', 'ru')
+                : t('skills.lesson.continue', 'ru'),
+          );
+        }
+        for (var i = 0; i < start.questions.length; i++) {
+          await tapText(start.questions[i].correctAnswer);
+          await tapText('ПРОВЕРИТЬ');
+          if (i == 0) await save('correct');
+          await tapText(t('skills.lesson.continue', 'ru'));
+        }
+        await save('finish');
+        if (find.text('Посмотреть ответы').evaluate().isNotEmpty) {
+          await tapText('Посмотреть ответы');
+          await save('answer-review');
+        }
         await tester.pumpWidget(const SizedBox.shrink());
         await tester.pump();
       },

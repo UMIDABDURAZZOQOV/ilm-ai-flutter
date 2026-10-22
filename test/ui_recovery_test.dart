@@ -161,6 +161,26 @@ void main() {
     await tester.pumpAndSettle();
   }
 
+  testWidgets(
+    'answer review reads the original attempt without awarding again',
+    (tester) async {
+      repo.passed = true;
+      await mount(tester);
+      await tap(tester, '4');
+      await tap(tester, 'CHECK');
+      await tap(tester, 'Continue');
+      expect(repo.completes, 1);
+      await tester.ensureVisible(find.text('Review answers'));
+      await tap(tester, 'Review answers');
+      expect(find.text('Your answers'), findsOneWidget);
+      expect(find.text('Your answer'), findsOneWidget);
+      expect(find.text('Lesson answer'), findsOneWidget);
+      expect(repo.completes, 1);
+      expect(repo.starts, 1);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   testWidgets('load failure retries in place and AI explain stays hidden', (
     tester,
   ) async {

@@ -1473,9 +1473,9 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Nice!',
   },
   'skills.lesson.incorrect': {
-    'uz': "Noto'g'ri",
-    'ru': 'Неправильно',
-    'en': 'Incorrect',
+    'uz': 'Bu safar mos kelmadi',
+    'ru': 'Пока неверно. Разберёмся!',
+    'en': 'Not quite. Let’s review.',
   },
   'skills.lesson.continue': {
     'uz': 'Davom etish',

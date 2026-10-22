@@ -9,6 +9,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/ilm_design.dart';
+import 'lesson_widgets.dart';
 import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/gradient_button.dart';
 import '../../../core/widgets/duo_chrome.dart';
@@ -56,12 +58,23 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
   late final int? _owner;
   LessonDraftStore? _drafts;
   Map<String, dynamic>? _startSnapshot;
+  String? _contentLanguage;
   Object? _loadError;
   bool _expired = false;
   bool _draftFailed = false;
   int _elapsedBeforeRestore = 0;
   int _startedAt = 0;
   bool get _active => mounted && ref.read(currentUserIdProvider) == _owner;
+
+  bool _uzbekContent(String language) {
+    if (language == 'uz') return false;
+    if (_contentLanguage != null) return _contentLanguage == 'uz';
+    return widget.lesson.slug.startsWith('biology-') ||
+        looksLikeUntranslatedUzbek(
+          '${_theory.map((c) => '${c.title} ${c.body}').join(' ')} ${_questions.map((q) => q.questionText).join(' ')}',
+          language,
+        );
+  }
 
   Map<String, dynamic> get _draft => {
     'start': _startSnapshot,
@@ -138,6 +151,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         final restored = LessonStartResult.fromJson(start);
         setState(() {
           _startSnapshot = start;
+          _contentLanguage = restored.contentLanguage;
           _attemptId = restored.attemptId;
           _theory = restored.theory;
           _questions = restored.questions;
@@ -184,6 +198,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
       setState(() {
         _expired = false;
         _startSnapshot = LessonDraftStore.snapshot(res);
+        _contentLanguage = res.contentLanguage;
         _startedAt = DateTime.now().millisecondsSinceEpoch;
         _elapsedBeforeRestore = 0;
         _timer
@@ -332,6 +347,110 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
     } finally {
       if (mounted) setState(() => _submitting = false);
     }
+  }
+
+  Future<void> _showAnswers() async {
+    final language = ref.read(languageProvider);
+    final answers = {
+      for (final result in _results) result.questionId: result.userAnswer,
+    };
+    await showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      showDragHandle: true,
+      useSafeArea: true,
+      constraints: BoxConstraints(
+        maxHeight: MediaQuery.sizeOf(context).height * .9,
+      ),
+      builder: (_) => Consumer(
+        builder: (context, ref, _) {
+          if (ref.watch(currentUserIdProvider) != _owner) {
+            return const SafeArea(
+              child: Padding(
+                padding: EdgeInsets.all(24),
+                child: Icon(Icons.lock_outline_rounded),
+              ),
+            );
+          }
+          return SafeArea(
+            child: SizedBox(
+              height: MediaQuery.sizeOf(context).height * .8,
+              child: ListView(
+                padding: const EdgeInsets.all(20),
+                children: [
+                  Text(
+                    str3(
+                      language,
+                      'Javoblaringiz',
+                      'Ваши ответы',
+                      'Your answers',
+                    ),
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  if (_uzbekContent(language))
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: ContentLanguageBadge(language: language),
+                    ),
+                  for (final question in _questions.where(
+                    (q) => answers.containsKey(q.id),
+                  ))
+                    Padding(
+                      padding: const EdgeInsets.only(top: 12),
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Text(
+                                cleanMath(question.questionText),
+                                style: Theme.of(context).textTheme.titleMedium,
+                              ),
+                              const SizedBox(height: 12),
+                              Text(
+                                str3(
+                                  language,
+                                  'Sizning javobingiz',
+                                  'Ваш ответ',
+                                  'Your answer',
+                                ),
+                                style: Theme.of(context).textTheme.labelMedium,
+                              ),
+                              Text(cleanMath(answers[question.id]!)),
+                              const SizedBox(height: 8),
+                              Text(
+                                str3(
+                                  language,
+                                  'Darsdagi javob',
+                                  'Ответ из урока',
+                                  'Lesson answer',
+                                ),
+                                style: Theme.of(context).textTheme.labelMedium,
+                              ),
+                              Text(cleanMath(question.correctAnswer)),
+                              if (question.explanation?.isNotEmpty == true)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 12),
+                                  child: Text(cleanMath(question.explanation!)),
+                                ),
+                              if (question.source != null)
+                                ContentSourceButton(
+                                  source: question.source!,
+                                  language: language,
+                                ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
   }
 
   @override
@@ -492,154 +611,137 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         body: SafeArea(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 8,
-                ),
-                child: Row(
-                  children: [
-                    IconButton(
-                      icon: const Icon(Icons.close_rounded),
-                      onPressed: () => Navigator.of(context).maybePop(),
-                    ),
-                    Expanded(
-                      child: DuoProgressBar(
-                        value: learnProgress,
-                        color: colors.accent,
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    Flexible(
-                      child: Text(
-                        t('skills.learn', language),
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w800,
-                          color: colors.textMuted,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              LessonStepHeader(
+                label:
+                    '${str3(language, 'Nazariya', 'Теория', 'Theory')} ${_theoryIndex + 1}/${_theory.length}',
+                progress: learnProgress,
+                language: language,
+                uzbekContent: _uzbekContent(language),
+                onClose: () => Navigator.of(context).maybePop(),
               ),
               Expanded(
                 child: SingleChildScrollView(
+                  key: ValueKey('theory-scroll-$_theoryIndex'),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 24,
                     vertical: 16,
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const Center(
-                        child: MascotImage(
-                          pose: MascotPose.explaining,
-                          size: 110,
-                        ),
-                      ),
-                      if (looksLikeUntranslatedUzbek(
-                        '${card.title} ${card.body} ${card.example ?? ''}',
-                        language,
-                      )) ...[
-                        const SizedBox(height: 10),
-                        ContentLanguageBadge(language: language),
-                      ],
-                      const SizedBox(height: 16),
-                      Container(
-                            key: ValueKey(_theoryIndex),
-                            padding: const EdgeInsets.all(20),
-                            decoration: BoxDecoration(
-                              color: colors.accent.withValues(alpha: 0.08),
-                              borderRadius: BorderRadius.circular(24),
-                              border: Border.all(
-                                color: colors.accent.withValues(alpha: 0.35),
-                                width: 2,
+                  child: IlmReadingWidth(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (_theoryIndex == 0 && _uzbekContent(language)) ...[
+                          ContentLanguageBadge(language: language),
+                          const SizedBox(height: 16),
+                        ],
+                        Container(
+                              key: ValueKey(_theoryIndex),
+                              padding: const EdgeInsets.all(20),
+                              decoration: BoxDecoration(
+                                color: colors.card,
+                                borderRadius: BorderRadius.circular(
+                                  IlmRadius.card,
+                                ),
+                                border: Border.all(
+                                  color: colors.border,
+                                  width: 1,
+                                ),
                               ),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  card.title,
-                                  style: TextStyle(
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w800,
-                                    color: colors.primary,
-                                  ),
-                                ),
-                                const SizedBox(height: 10),
-                                Text(
-                                  card.body,
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    height: 1.5,
-                                    color: colors.text,
-                                  ),
-                                ),
-                                if (card.source != null)
-                                  ContentSourceButton(
-                                    source: card.source!,
-                                    language: language,
-                                  ),
-                                if (card.example != null &&
-                                    card.example!.isNotEmpty) ...[
-                                  const SizedBox(height: 14),
-                                  Container(
-                                    width: double.infinity,
-                                    padding: const EdgeInsets.all(14),
-                                    decoration: BoxDecoration(
-                                      color: colors.card,
-                                      borderRadius: BorderRadius.circular(16),
-                                      border: Border.all(
-                                        color: colors.accent.withValues(
-                                          alpha: 0.25,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Text(
+                                          card.title,
+                                          style: Theme.of(
+                                            context,
+                                          ).textTheme.titleLarge,
                                         ),
                                       ),
-                                    ),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          t(
-                                            'skills.example',
-                                            language,
-                                          ).toUpperCase(),
-                                          style: TextStyle(
-                                            fontSize: 11,
-                                            fontWeight: FontWeight.w800,
-                                            letterSpacing: 1,
-                                            color: colors.primary,
-                                          ),
-                                        ),
-                                        const SizedBox(height: 4),
-                                        Text(
-                                          card.example!,
-                                          style: TextStyle(
-                                            fontSize: 13.5,
-                                            height: 1.4,
-                                            color: colors.text,
-                                          ),
-                                        ),
-                                      ],
+                                      const SizedBox(width: 12),
+                                      const MascotImage(
+                                        pose: MascotPose.explaining,
+                                        size: 72,
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Text(
+                                    card.body,
+                                    style: TextStyle(
+                                      fontSize: 17,
+                                      height: 1.6,
+                                      color: colors.text,
                                     ),
                                   ),
+                                  if (card.source != null)
+                                    ContentSourceButton(
+                                      source: card.source!,
+                                      language: language,
+                                    ),
+                                  if (card.example != null &&
+                                      card.example!.isNotEmpty) ...[
+                                    const SizedBox(height: 14),
+                                    Container(
+                                      width: double.infinity,
+                                      padding: const EdgeInsets.all(14),
+                                      decoration: BoxDecoration(
+                                        color: colors.card,
+                                        borderRadius: BorderRadius.circular(16),
+                                        border: Border.all(
+                                          color: colors.accent.withValues(
+                                            alpha: 0.25,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            t(
+                                              'skills.example',
+                                              language,
+                                            ).toUpperCase(),
+                                            style: TextStyle(
+                                              fontSize: 11,
+                                              fontWeight: FontWeight.w800,
+                                              letterSpacing: 1,
+                                              color: colors.primary,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 4),
+                                          Text(
+                                            card.example!,
+                                            style: TextStyle(
+                                              fontSize: 13.5,
+                                              height: 1.4,
+                                              color: colors.text,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
                                 ],
-                              ],
+                              ),
+                            )
+                            .motion(
+                              context,
+                              key: ValueKey('theory_$_theoryIndex'),
+                            )
+                            .fadeIn(duration: 250.ms)
+                            .slideX(
+                              begin: 0.08,
+                              end: 0,
+                              curve: Curves.easeOutCubic,
                             ),
-                          )
-                          .motion(
-                            context,
-                            key: ValueKey('theory_$_theoryIndex'),
-                          )
-                          .fadeIn(duration: 250.ms)
-                          .slideX(
-                            begin: 0.08,
-                            end: 0,
-                            curve: Curves.easeOutCubic,
-                          ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -774,9 +876,29 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                   ),
                 ),
                 const SizedBox(height: 24),
+                OutlinedButton.icon(
+                  onPressed: _showAnswers,
+                  icon: const Icon(Icons.fact_check_outlined),
+                  label: Text(
+                    str3(
+                      language,
+                      'Javoblarni ko‘rish',
+                      'Посмотреть ответы',
+                      'Review answers',
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
                 Duo3DButton(
                   onPressed: () => Navigator.of(context).maybePop(),
-                  child: Text(t('skills.lesson.continue', language)),
+                  child: Text(
+                    str3(
+                      language,
+                      'Dars yo‘liga qaytish',
+                      'К учебному пути',
+                      'Back to learning path',
+                    ),
+                  ),
                 ).motion(context).fadeIn(delay: 600.ms),
               ],
             ),
@@ -790,96 +912,121 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
 
     final q = _current;
     final isCorrect = _selected == q.correctAnswer;
+    final reviewTotal = _results.where((r) => !r.isCorrect).length;
+    final reviewPosition = reviewTotal - _mistakes.length;
     final progress = _reviewing
-        ? 1.0
+        ? reviewTotal == 0
+              ? 0.0
+              : ((reviewPosition - 1 + (_answered && isCorrect ? 1 : 0)) /
+                        reviewTotal)
+                    .clamp(0.0, 1.0)
         : (_index + (_answered ? 1 : 0)) / _questions.length;
 
     return Scaffold(
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: Row(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.close_rounded),
-                    onPressed: () => Navigator.of(context).maybePop(),
-                  ),
-                  Expanded(
-                    child: DuoProgressBar(
-                      value: progress,
-                      color: colors.secondary,
-                    ),
-                  ),
-                ],
-              ),
+            LessonStepHeader(
+              label: _reviewing
+                  ? '${str3(language, 'Takrorlash', 'Закрепление', 'Review')} $reviewPosition/$reviewTotal'
+                  : '${str3(language, 'Savol', 'Вопрос', 'Question')} ${_index + 1}/${_questions.length}',
+              progress: progress,
+              language: language,
+              uzbekContent: _uzbekContent(language),
+              onClose: () => Navigator.of(context).maybePop(),
             ),
             Expanded(
               child: SingleChildScrollView(
+                key: ValueKey('question-scroll-${q.id}-$_reviewing'),
                 padding: const EdgeInsets.symmetric(
                   horizontal: 24,
                   vertical: 16,
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    if (_reviewing) ...[
+                child: IlmReadingWidth(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (_reviewing) ...[
+                        Text(
+                          str3(
+                            language,
+                            'XATOLARNI MUSTAHKAMLASH',
+                            'РАБОТА НАД ОШИБКАМИ',
+                            'REVIEW YOUR MISTAKES',
+                          ),
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: colors.primary,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                      ],
+                      if (!_answered) ...[
+                        const Center(
+                          child: MascotImage(
+                            pose: MascotPose.thinking,
+                            size: 72,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                      ],
+                      if (!_answered &&
+                          _theory.isEmpty &&
+                          _index == 0 &&
+                          _uzbekContent(language))
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: ContentLanguageBadge(language: language),
+                        ),
                       Text(
-                        str3(
-                          language,
-                          'XATOLARNI MUSTAHKAMLASH',
-                          'РАБОТА НАД ОШИБКАМИ',
-                          'REVIEW YOUR MISTAKES',
-                        ),
+                        cleanMath(q.questionText),
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: Color(0xFFCE82FF),
-                          fontWeight: FontWeight.w900,
+                        style: TextStyle(
+                          fontSize: 21,
+                          fontWeight: FontWeight.w700,
+                          color: colors.text,
+                          height: 1.4,
                         ),
                       ),
-                      const SizedBox(height: 12),
-                    ],
-                    if (!_answered) ...[
-                      const Center(
-                        child: MascotImage(
-                          pose: MascotPose.thinking,
-                          size: 104,
+                      if (q.source != null)
+                        ContentSourceButton(
+                          source: q.source!,
+                          language: language,
                         ),
-                      ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 24),
+                      for (final option in q.options)
+                        DuoChoiceCard(
+                          text: cleanMath(option),
+                          answered: _answered,
+                          selected: _selected == option,
+                          isCorrectOption: option == q.correctAnswer,
+                          stateLabel: _answered && option == q.correctAnswer
+                              ? str3(
+                                  language,
+                                  'To‘g‘ri javob',
+                                  'Правильный ответ',
+                                  'Correct answer',
+                                )
+                              : _answered && _selected == option
+                              ? str3(
+                                  language,
+                                  'Bu javob mos kelmadi',
+                                  'Этот ответ не подходит',
+                                  'This answer does not fit',
+                                )
+                              : _selected == option
+                              ? str3(
+                                  language,
+                                  'Tanlandi',
+                                  'Выбрано',
+                                  'Selected',
+                                )
+                              : null,
+                          onTap: () => _pick(option),
+                        ),
                     ],
-                    if (!_answered &&
-                        looksLikeUntranslatedUzbek(q.questionText, language))
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: ContentLanguageBadge(language: language),
-                      ),
-                    Text(
-                      cleanMath(q.questionText),
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 21,
-                        fontWeight: FontWeight.w700,
-                        color: colors.text,
-                        height: 1.4,
-                      ),
-                    ),
-                    if (q.source != null)
-                      ContentSourceButton(
-                        source: q.source!,
-                        language: language,
-                      ),
-                    const SizedBox(height: 24),
-                    for (final option in q.options)
-                      DuoChoiceCard(
-                        text: cleanMath(option),
-                        answered: _answered,
-                        selected: _selected == option,
-                        isCorrectOption: option == q.correctAnswer,
-                        onTap: () => _pick(option),
-                      ),
-                  ],
+                  ),
                 ),
               ),
             ),
@@ -893,147 +1040,26 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                   ),
                 ),
               ),
-            if (_saveFailed)
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Text(
-                  str3(
-                    language,
-                    'Natija saqlanmadi. Davom etish tugmasi bilan qayta urinib ko‘ring.',
-                    'Результат не сохранён. Нажмите «Продолжить», чтобы повторить.',
-                    'Result not saved. Tap Continue to retry.',
-                  ),
-                  style: TextStyle(color: colors.error),
-                ),
-              ),
             if (_answered)
-              Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: isCorrect
-                          ? colors.successLight
-                          : colors.errorLight,
-                      border: Border(
-                        top: BorderSide(
-                          color: isCorrect ? colors.success : colors.error,
-                          width: 2,
-                        ),
-                      ),
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        ConstrainedBox(
-                          constraints: BoxConstraints(
-                            maxHeight: MediaQuery.sizeOf(context).height * 0.25,
-                          ),
-                          child: SingleChildScrollView(
-                            child: Row(
-                              children: [
-                                MascotImage(
-                                  pose: isCorrect
-                                      ? MascotPose.happy
-                                      : MascotPose.sad,
-                                  size: 100,
-                                ),
-                                const SizedBox(width: 12),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        isCorrect
-                                            ? t(
-                                                'skills.lesson.correct',
-                                                language,
-                                              )
-                                            : t(
-                                                'skills.lesson.incorrect',
-                                                language,
-                                              ),
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.w800,
-                                          fontSize: 16,
-                                          color: isCorrect
-                                              ? colors.success
-                                              : colors.error,
-                                        ),
-                                      ),
-                                      if (!isCorrect) ...[
-                                        Text(
-                                          cleanMath(q.correctAnswer),
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.w800,
-                                            color: colors.text,
-                                          ),
-                                        ),
-                                        if (!_reviewing)
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              top: 4,
-                                            ),
-                                            child: Text(
-                                              str3(
-                                                language,
-                                                'Bu savol oxirida yana chiqadi',
-                                                'Этот вопрос появится снова в конце',
-                                                'This question will appear again at the end',
-                                              ),
-                                              style: TextStyle(
-                                                fontSize: 12,
-                                                fontWeight: FontWeight.w600,
-                                                color: colors.textMuted,
-                                              ),
-                                            ),
-                                          ),
-                                      ],
-                                      if (q.explanation != null &&
-                                          q.explanation!.isNotEmpty)
-                                        Padding(
-                                          padding: const EdgeInsets.only(
-                                            top: 4,
-                                          ),
-                                          child: Text(
-                                            cleanMath(q.explanation!),
-                                            style: TextStyle(
-                                              fontSize: 13,
-                                              color: colors.textMuted,
-                                            ),
-                                          ),
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        Duo3DButton(
-                          color: isCorrect ? colors.success : colors.error,
-                          shadowColor: isCorrect
-                              ? const Color(0xFF046C4E)
-                              : const Color(0xFF9B1C1C),
-                          onPressed: _submitting ? null : _next,
-                          child: _submitting
-                              ? const SizedBox(
-                                  width: 22,
-                                  height: 22,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2,
-                                    color: Colors.white,
-                                  ),
-                                )
-                              : Text(t('skills.lesson.continue', language)),
-                        ),
-                      ],
-                    ),
-                  )
-                  .motion(context)
-                  .fadeIn(duration: 200.ms)
-                  .slideY(begin: 0.3, end: 0, curve: Curves.easeOutCubic),
+              LessonFeedbackPanel(
+                saveError: _saveFailed
+                    ? str3(
+                        language,
+                        'Natija saqlanmadi. Davom etish tugmasi bilan qayta urinib ko‘ring.',
+                        'Результат не сохранён. Нажмите «Продолжить», чтобы повторить.',
+                        'Result not saved. Tap Continue to retry.',
+                      )
+                    : null,
+                language: language,
+                correct: isCorrect,
+                correctAnswer: cleanMath(q.correctAnswer),
+                explanation: q.explanation == null
+                    ? ''
+                    : cleanMath(q.explanation!),
+                reviewHint: !isCorrect && !_reviewing,
+                saving: _submitting,
+                onContinue: _next,
+              ),
           ],
         ),
       ),
@@ -1063,7 +1089,7 @@ class _StatColumn extends StatelessWidget {
             color: color,
           ),
         ),
-        Text(label, style: const TextStyle(fontSize: 11, color: Colors.grey)),
+        Text(label, style: Theme.of(context).textTheme.bodySmall),
       ],
     );
   }

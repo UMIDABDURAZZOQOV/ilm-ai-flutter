@@ -77,6 +77,8 @@ class LessonDraftStore {
 
   static Map<String, dynamic> snapshot(LessonStartResult start) => {
     'attempt_id': start.attemptId,
+    if (start.contentLanguage != null)
+      'content_language': start.contentLanguage,
     'theory': [
       for (final c in start.theory)
         {

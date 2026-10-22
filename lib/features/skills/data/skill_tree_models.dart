@@ -201,7 +201,7 @@ class SkillTreeResponse {
 }
 
 class SkillQuestion {
-  final Map<String,dynamic>? source;
+  final Map<String, dynamic>? source;
   final int id;
   final String questionText;
   final List<String> options;
@@ -220,7 +220,7 @@ class SkillQuestion {
   });
 
   factory SkillQuestion.fromJson(Map<String, dynamic> json) => SkillQuestion(
-    source:json['source'] as Map<String,dynamic>?,
+    source: json['source'] as Map<String, dynamic>?,
     id: json['id'] as int,
     questionText: json['question_text'] as String,
     options: (json['options'] as List? ?? []).map((e) => e.toString()).toList(),
@@ -232,15 +232,20 @@ class SkillQuestion {
 
 /// Duolingo-style teaching card shown before the questions.
 class TheoryCard {
-  final Map<String,dynamic>? source;
+  final Map<String, dynamic>? source;
   final String title;
   final String body;
   final String? example;
 
-  TheoryCard({required this.title, required this.body, this.example,this.source});
+  TheoryCard({
+    required this.title,
+    required this.body,
+    this.example,
+    this.source,
+  });
 
   factory TheoryCard.fromJson(Map<String, dynamic> json) => TheoryCard(
-    source:json['source'] as Map<String,dynamic>?,
+    source: json['source'] as Map<String, dynamic>?,
     title: json['title'] as String? ?? '',
     body: json['body'] as String? ?? '',
     example: json['example'] as String?,
@@ -248,6 +253,8 @@ class TheoryCard {
 }
 
 class LessonStartResult {
+  /// Existing server metadata. No translation or outbound API change.
+  final String? contentLanguage;
   final int attemptId;
   final List<TheoryCard> theory;
   final List<SkillQuestion> questions;
@@ -255,10 +262,14 @@ class LessonStartResult {
     required this.attemptId,
     required this.theory,
     required this.questions,
+    this.contentLanguage,
   });
 
   factory LessonStartResult.fromJson(Map<String, dynamic> json) =>
       LessonStartResult(
+        contentLanguage: json['content_language'] is String
+            ? json['content_language'] as String
+            : null,
         attemptId: json['attempt_id'] as int,
         theory: (json['theory'] as List? ?? [])
             .map((e) => TheoryCard.fromJson(e as Map<String, dynamic>))

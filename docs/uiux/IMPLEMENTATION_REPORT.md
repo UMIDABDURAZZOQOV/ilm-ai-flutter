@@ -89,3 +89,30 @@ Capture yordamchisida har sahna oldidan route daraxti to‘liq yangilanadi;
 “grades” sahnasi haqiqatan sinf pickerini ko‘rsatayotgani assertion bilan
 tasdiqlanadi. Home ruscha/inglizcha UI’da dars tili o‘zbekcha ekanini bir marta
 ixcham ko‘rsatadi. Callback, API/data qatlamlari va barcha PNGlar o‘zgarmagan.
+
+## Bosqich 3 — Nazariya, savol va javob tahlili
+
+- `LessonStepHeader` nazariya/savol/takrorlash hisobini alohida ko‘rsatadi.
+  To‘liq til eslatmasi birinchi qadamda; qolganida ixcham, semantik UZ belgisi.
+  Serverning mavjud optional `content_language` metadatasi o‘qiladi va lokal
+  snapshotda saqlanadi; eski snapshot ham ishlaydi. Outbound payload o‘zgarmagan.
+- Nazariya neytral reader kartasi, 17px/1.6 matn, 640dp maksimal kenglik,
+  kontekst ichidagi 72dp Ilmo va har yangi kartada yuqoridan boshlanadigan scroll.
+  Asl body/example/source va savol/javob/izoh matnlari o‘zgartirilmagan.
+- Variantlarda radio/check/cancel ikonlari va holat semantics bor; tekshirishdan
+  oldin to‘g‘ri javobni ko‘rsatmaydi. Feedback muloyimroq, izoh/save error alohida
+  scroll, Continue tashqarida qoladi; takrorlash navbati va grading o‘zgarmagan.
+- Yakunda original javoblarni read-only ko‘rish va dars yo‘liga aniq qaytish.
+  Review serverga qayta start/complete yubormasligi regressiyada tekshiriladi.
+
+To‘liq regression **226 passed** (70s). Yangi 14 ta presentation testi:
+legacy/metadata snapshot, javobni erta oshkor qilmaslik, 3 til × 2 theme × 2
+o‘lchamda 200% shrift va uzun feedback/save error bilan CTA hit-test.
+Qo‘shimcha review testida XP qayta berilmasligi tekshirildi. Goldenlar
+yangilandi va to‘liq suite oddiy golden comparison bilan o‘tdi.
+BEFORE/AFTER capture testlari **2 + 2 passed**. Theory-next, exit, correct va
+finish sahnalari qo‘shildi; yangi answer-review faqat AFTER mavjud. Light theory,
+dark wrong feedback va dark finish juftlari ko‘rildi. Testdagi 12/12 va +20
+izolyatsiyalangan fixture javobidir, jonli foydalanuvchi natijasi emas.
+
+Analyze: **No issues found** (49.2s). 36 ta private BEFORE/AFTER juftlik.
