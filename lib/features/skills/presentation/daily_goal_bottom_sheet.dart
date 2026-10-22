@@ -20,8 +20,11 @@ final userDailyGoalProvider = StateProvider<int>((ref) {
 Future<void> saveDailyGoal(WidgetRef ref, int goal) async {
   final user = ref.read(currentUserIdProvider);
   if (user != null) {
-    await ref.read(learningPreferencesProvider).save(user, {'daily_goal_xp': goal});
+    await ref.read(learningPreferencesProvider).save(user, {
+      'daily_goal_xp': goal,
+    });
   }
+  if (!ref.context.mounted || ref.read(currentUserIdProvider) != user) return;
   ref.read(userDailyGoalProvider.notifier).state = goal;
 }
 
@@ -87,7 +90,8 @@ Future<int?> showDailyGoalBottomSheet({
     ),
     builder: (ctx) => DailyGoalBottomSheet(
       language: language,
-      accentColor: accentColor ??
+      accentColor:
+          accentColor ??
           Theme.of(ctx).extension<AppColors>()?.colors.secondary ??
           const Color(0xFFF9A825),
     ),
@@ -111,6 +115,8 @@ class DailyGoalBottomSheet extends ConsumerStatefulWidget {
 
 class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
   late int _selectedGoal;
+  bool _saving = false;
+  bool _saveError = false;
 
   @override
   void initState() {
@@ -124,76 +130,114 @@ class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return SafeArea(
-      child: SingleChildScrollView(child: Padding(
-        padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              str3(lang, 'Kunlik maqsad', 'Цель на день', 'Daily Goal'),
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w900,
-              ),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              str3(
-                lang,
-                'Har kuni o‘rganish uchun o‘zingizga mos XP maqsadini tanlang.',
-                'Выберите цель по XP для ежедневного обучения.',
-                'Choose a daily XP goal that works best for you.',
-              ),
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 13,
-                color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
-              ),
-            ),
-            const SizedBox(height: 20),
-            for (final opt in dailyGoalOptions) ...[
-              _GoalOptionTile(
-                option: opt,
-                isSelected: _selectedGoal == opt.xp,
-                language: lang,
-                accentColor: widget.accentColor,
-                isDark: isDark,
-                onTap: () {
-                  setState(() => _selectedGoal = opt.xp);
-                },
-              ),
-              const SizedBox(height: 10),
-            ],
-            const SizedBox(height: 12),
-            FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: widget.accentColor,
-                foregroundColor: foregroundOn(widget.accentColor),
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
-                ),
-              ),
-              onPressed: () async {
-                await saveDailyGoal(ref, _selectedGoal);
-                if (context.mounted) {
-                  Navigator.of(context).pop(_selectedGoal);
-                }
-              },
-              child: Text(
-                str3(lang, 'Saqlash', 'Сохранить', 'Save'),
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                str3(lang, 'Kunlik maqsad', 'Цель на день', 'Daily Goal'),
+                textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-
+                  fontSize: 22,
+                  fontWeight: FontWeight.w900,
                 ),
               ),
-            ),
-          ],
+              const SizedBox(height: 6),
+              Text(
+                str3(
+                  lang,
+                  'Har kuni o‘rganish uchun o‘zingizga mos XP maqsadini tanlang.',
+                  'Выберите цель по XP для ежедневного обучения.',
+                  'Choose a daily XP goal that works best for you.',
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 13,
+                  color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                ),
+              ),
+              const SizedBox(height: 20),
+              for (final opt in dailyGoalOptions) ...[
+                _GoalOptionTile(
+                  option: opt,
+                  isSelected: _selectedGoal == opt.xp,
+                  language: lang,
+                  accentColor: widget.accentColor,
+                  isDark: isDark,
+                  onTap: _saving
+                      ? null
+                      : () {
+                          setState(() => _selectedGoal = opt.xp);
+                        },
+                ),
+                const SizedBox(height: 10),
+              ],
+              const SizedBox(height: 12),
+              if (_saveError)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: Semantics(
+                    liveRegion: true,
+                    child: Text(
+                      str3(
+                        lang,
+                        'Maqsad saqlanmadi. Qayta urinib ko‘ring.',
+                        'Не удалось сохранить цель. Повторите попытку.',
+                        'Could not save the goal. Please retry.',
+                      ),
+                      style: TextStyle(
+                        color: Theme.of(context).colorScheme.error,
+                      ),
+                    ),
+                  ),
+                ),
+              FilledButton(
+                style: FilledButton.styleFrom(
+                  backgroundColor: widget.accentColor,
+                  foregroundColor: foregroundOn(widget.accentColor),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                onPressed: _saving
+                    ? null
+                    : () async {
+                        final owner = ref.read(currentUserIdProvider);
+                        setState(() {
+                          _saving = true;
+                          _saveError = false;
+                        });
+                        try {
+                          await saveDailyGoal(ref, _selectedGoal);
+                          if (context.mounted) {
+                            Navigator.of(context).pop(
+                              ref.read(currentUserIdProvider) == owner
+                                  ? _selectedGoal
+                                  : null,
+                            );
+                          }
+                        } catch (_) {
+                          if (mounted) setState(() => _saveError = true);
+                        } finally {
+                          if (mounted) setState(() => _saving = false);
+                        }
+                      },
+                child: Text(
+                  str3(lang, 'Saqlash', 'Сохранить', 'Save'),
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
@@ -204,7 +248,7 @@ class _GoalOptionTile extends StatelessWidget {
   final String language;
   final Color accentColor;
   final bool isDark;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
   const _GoalOptionTile({
     required this.option,
@@ -224,74 +268,77 @@ class _GoalOptionTile extends StatelessWidget {
         ? accentColor.withValues(alpha: isDark ? 0.20 : 0.10)
         : (isDark ? Colors.grey.shade900 : Colors.grey.shade50);
 
-    return Semantics(button: true, selected: isSelected, child: InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: borderColor,
-            width: isSelected ? 2.2 : 1.2,
+    return Semantics(
+      button: true,
+      selected: isSelected,
+      enabled: onTap != null,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            color: bgColor,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: borderColor,
+              width: isSelected ? 2.2 : 1.2,
+            ),
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: isSelected
+                      ? accentColor.withValues(alpha: 0.2)
+                      : (isDark ? Colors.grey.shade800 : Colors.grey.shade200),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.bolt_rounded,
+                  size: 20,
+                  color: isSelected ? accentColor : Colors.grey,
+                ),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '${option.xp} XP',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w900,
+                        color: isSelected ? accentColor : null,
+                      ),
+                    ),
+                    Text(
+                      option.title(language),
+                      style: TextStyle(
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.w600,
+                        color: isDark
+                            ? Colors.grey.shade400
+                            : Colors.grey.shade600,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              if (isSelected)
+                Icon(Icons.check_circle_rounded, color: accentColor, size: 22)
+              else
+                Icon(
+                  Icons.radio_button_unchecked,
+                  color: isDark ? Colors.grey.shade700 : Colors.grey.shade400,
+                  size: 22,
+                ),
+            ],
           ),
         ),
-        child: Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: isSelected
-                    ? accentColor.withValues(alpha: 0.2)
-                    : (isDark ? Colors.grey.shade800 : Colors.grey.shade200),
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.bolt_rounded,
-                size: 20,
-                color: isSelected ? accentColor : Colors.grey,
-              ),
-            ),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '${option.xp} XP',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w900,
-                      color: isSelected ? accentColor : null,
-                    ),
-                  ),
-                  Text(
-                    option.title(language),
-                    style: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.w600,
-                      color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            if (isSelected)
-              Icon(
-                Icons.check_circle_rounded,
-                color: accentColor,
-                size: 22,
-              )
-            else
-              Icon(
-                Icons.radio_button_unchecked,
-                color: isDark ? Colors.grey.shade700 : Colors.grey.shade400,
-                size: 22,
-              ),
-          ],
-        ),
       ),
-    ));
+    );
   }
 }

@@ -518,7 +518,7 @@ void main() {
   );
 
   testWidgets(
-    'answering triggers mock sound service for correct, incorrect, and lesson completion',
+    'answer sounds play but failed first-attempt result does not celebrate',
     (tester) async {
       final fakeSound = FakeSoundService();
       final repository = FakeRepository();
@@ -550,13 +550,13 @@ void main() {
       await tap('CHECK');
       expect(fakeSound.playCorrectCount, 1);
 
-      // 3. Complete lesson -> playLessonComplete
+      // 3. The server returns zero stars for the incorrect first attempt.
       await tap('Continue');
       await tester.pump(const Duration(seconds: 1));
       await tester.pump(const Duration(milliseconds: 200));
 
-      expect(fakeSound.playLessonCompleteCount, 1);
-      expect(find.byType(CelebrationConfetti), findsOneWidget);
+      expect(fakeSound.playLessonCompleteCount, 0);
+      expect(find.byType(CelebrationConfetti), findsNothing);
       expect(find.text('First-attempt accuracy'), findsOneWidget);
       expect(tester.takeException(), isNull);
     },

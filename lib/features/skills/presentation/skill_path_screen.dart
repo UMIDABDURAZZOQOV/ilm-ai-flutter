@@ -1,4 +1,5 @@
 import '../../../core/widgets/motion.dart';
+import '../../../core/config/mobile_release.dart';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -132,7 +133,7 @@ class SkillPathScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              OutlinedButton.icon(
+              if (!biologyOnly) OutlinedButton.icon(
                 onPressed: () async {
                   Navigator.pop(ctx);
                   await context.push(

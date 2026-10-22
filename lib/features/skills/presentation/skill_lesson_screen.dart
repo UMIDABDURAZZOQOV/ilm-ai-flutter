@@ -1,4 +1,6 @@
 import '../../../core/widgets/motion.dart';
+import 'dart:async';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -10,10 +12,12 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/gradient_button.dart';
 import '../../../core/widgets/duo_chrome.dart';
-import '../../../core/widgets/ai_explain_sheet.dart';
+import '../../../core/network/dio_client.dart' show apiBaseUrl;
+import '../../../core/network/error_message.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
+import '../data/lesson_draft_store.dart';
 import 'mascot.dart';
 import 'skill_ui.dart';
 import 'content_source_button.dart';
@@ -49,18 +53,122 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
   bool _reviewing = false;
   final Stopwatch _timer = Stopwatch()..start();
   LessonCompleteResult? _completion;
+  late final int? _owner;
+  LessonDraftStore? _drafts;
+  Map<String, dynamic>? _startSnapshot;
+  Object? _loadError;
+  bool _expired = false;
+  bool _draftFailed = false;
+  int _elapsedBeforeRestore = 0;
+  int _startedAt = 0;
+  bool get _active => mounted && ref.read(currentUserIdProvider) == _owner;
+
+  Map<String, dynamic> get _draft => {
+    'start': _startSnapshot,
+    'phase': _phase.name,
+    'index': _index,
+    'theory_index': _theoryIndex,
+    'selected': _selected,
+    'answered': _answered,
+    'reviewing': _reviewing,
+    'results': _results.map((r) => r.toJson()).toList(),
+    'mistakes': List<int>.of(_mistakes),
+    'elapsed_ms': _elapsedBeforeRestore + _timer.elapsedMilliseconds,
+    'started_at': _startedAt,
+  };
+
+  Future<void> _persist() async {
+    if (_drafts == null || _startSnapshot == null || !_active) return;
+    await _drafts!.save(_draft);
+  }
+
+  void _remember() {
+    unawaited(
+      _persist()
+          .then((_) {
+            if (_active && _draftFailed) setState(() => _draftFailed = false);
+          })
+          .catchError((Object _) {
+            if (_active) setState(() => _draftFailed = true);
+          }),
+    );
+  }
 
   @override
   void initState() {
     super.initState();
+    _owner = ref.read(currentUserIdProvider);
+    if (_owner != null) {
+      _drafts = LessonDraftStore(
+        ref.read(prefsServiceProvider),
+        apiBaseUrl,
+        _owner,
+        widget.lesson.id,
+      );
+    }
     _start();
   }
 
-  Future<void> _start() async {
-    final userId = ref.read(currentUserIdProvider);
-    if (userId == null) return;
+  Future<void> _start({bool fresh = false}) async {
+    final userId = _owner;
+    if (userId == null || !_active) return;
+    setState(() {
+      _phase = _Phase.loading;
+      _loadError = null;
+    });
     final language = ref.read(languageProvider);
     try {
+      if (fresh) {
+        await _drafts?.clear();
+        if (!_active) return;
+      }
+      final draft = fresh ? null : _drafts?.read();
+      if (draft != null) {
+        final age =
+            DateTime.now().millisecondsSinceEpoch -
+            (draft['started_at'] as int);
+        if (age < 0 || age >= const Duration(hours: 24).inMilliseconds) {
+          setState(() {
+            _expired = true;
+            _phase = _Phase.error;
+          });
+          return;
+        }
+        final start = Map<String, dynamic>.from(draft['start'] as Map);
+        final restored = LessonStartResult.fromJson(start);
+        setState(() {
+          _startSnapshot = start;
+          _attemptId = restored.attemptId;
+          _theory = restored.theory;
+          _questions = restored.questions;
+          _index = draft['index'] as int;
+          _theoryIndex = draft['theory_index'] as int;
+          _selected = draft['selected'] as String?;
+          _answered = draft['answered'] as bool;
+          _reviewing = draft['reviewing'] as bool;
+          _startedAt = draft['started_at'] as int;
+          _elapsedBeforeRestore = draft['elapsed_ms'] as int;
+          _timer.reset();
+          _results
+            ..clear()
+            ..addAll(
+              (draft['results'] as List).map(
+                (r) => LessonResultItem(
+                  questionId: r['question_id'] as int,
+                  userAnswer: r['user_answer'] as String,
+                  isCorrect: r['is_correct'] as bool,
+                ),
+              ),
+            );
+          _mistakes
+            ..clear()
+            ..addAll((draft['mistakes'] as List).cast<int>());
+          _phase = draft['phase'] == 'learning'
+              ? _Phase.learning
+              : _Phase.playing;
+        });
+        return;
+      }
       final res = await ref
           .read(skillTreeRepositoryProvider)
           .startLesson(
@@ -68,20 +176,39 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
             userId: userId,
             language: language,
           );
-      if (!mounted) return;
+      if (!_active) return;
       if (res.questions.isEmpty) {
         setState(() => _phase = _Phase.error);
         return;
       }
       setState(() {
+        _expired = false;
+        _startSnapshot = LessonDraftStore.snapshot(res);
+        _startedAt = DateTime.now().millisecondsSinceEpoch;
+        _elapsedBeforeRestore = 0;
+        _timer
+          ..reset()
+          ..start();
+        _theoryIndex = 0;
+        _index = 0;
+        _selected = null;
+        _answered = false;
+        _reviewing = false;
+        _saveFailed = false;
+        _results.clear();
+        _mistakes.clear();
         _attemptId = res.attemptId;
         _theory = res.theory;
         _questions = res.questions;
         _phase = _theory.isNotEmpty ? _Phase.learning : _Phase.playing;
       });
-    } catch (_) {
-      if (!mounted) return;
-      setState(() => _phase = _Phase.error);
+      _remember();
+    } catch (error) {
+      if (!_active) return;
+      setState(() {
+        _loadError = error;
+        _phase = _Phase.error;
+      });
     }
   }
 
@@ -91,6 +218,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
     } else {
       setState(() => _phase = _Phase.playing);
     }
+    _remember();
   }
 
   SkillQuestion get _current => _questions[_index];
@@ -99,6 +227,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
     if (_answered) return;
     HapticFeedback.selectionClick();
     setState(() => _selected = option);
+    _remember();
   }
 
   void _check() {
@@ -126,6 +255,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         );
       }
     });
+    _remember();
   }
 
   Future<void> _next() async {
@@ -135,6 +265,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         _selected = null;
         _answered = false;
       });
+      _remember();
       return;
     }
     if (!_reviewing && _index + 1 < _questions.length) {
@@ -143,6 +274,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         _selected = null;
         _answered = false;
       });
+      _remember();
       return;
     }
     if (_mistakes.isNotEmpty) {
@@ -152,33 +284,51 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         _selected = null;
         _answered = false;
       });
+      _remember();
       return;
     }
     final userId = ref.read(currentUserIdProvider);
-    if (userId == null || _attemptId == null) return;
+    if (userId == null || _attemptId == null || !_active) return;
     setState(() {
       _submitting = true;
       _saveFailed = false;
     });
     try {
+      await _persist();
+      if (!_active) return;
       final res = await ref
           .read(skillTreeRepositoryProvider)
           .completeLesson(
             lessonId: widget.lesson.id,
             userId: userId,
             attemptId: _attemptId!,
-            results: _results,
+            results: List<LessonResultItem>.of(_results),
           );
-      if (!mounted) return;
+      if (!_active) return;
       ref.read(studyRevisionProvider.notifier).state++;
-      ref.read(soundServiceProvider).playLessonComplete();
+      if (res.stars > 0) ref.read(soundServiceProvider).playLessonComplete();
       setState(() {
         _timer.stop();
         _completion = res;
         _phase = _Phase.finished;
+        _draftFailed = false;
       });
-    } catch (_) {
-      if (mounted) setState(() => _saveFailed = true);
+      // Cleanup failure must not turn an acknowledged completion into an error.
+      await _drafts?.clear().catchError((Object _) {});
+    } catch (error) {
+      if (_active) {
+        final detail = error is DioException && error.response?.data is Map
+            ? (error.response!.data as Map)['detail']
+            : null;
+        setState(() {
+          _saveFailed = true;
+          if (detail == 'study_session_expired' ||
+              detail == 'study_session_required') {
+            _expired = true;
+            _phase = _Phase.error;
+          }
+        });
+      }
     } finally {
       if (mounted) setState(() => _submitting = false);
     }
@@ -186,15 +336,80 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
 
   @override
   Widget build(BuildContext context) => StudyExitGuard(
-    active: _phase != _Phase.finished && _phase != _Phase.error,
-    saving: _submitting,
+    active:
+        ref.watch(currentUserIdProvider) == _owner &&
+        _phase != _Phase.finished &&
+        _phase != _Phase.error,
+    saving: ref.watch(currentUserIdProvider) == _owner && _submitting,
     language: ref.watch(languageProvider),
-    child: _buildContent(context),
+    child: Column(
+      children: [
+        if (_draftFailed &&
+            _phase != _Phase.finished &&
+            ref.watch(currentUserIdProvider) == _owner)
+          ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight: MediaQuery.sizeOf(context).height * .3,
+            ),
+            child: SingleChildScrollView(
+              child: Material(
+                child: SafeArea(
+                  bottom: false,
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          str3(
+                            ref.watch(languageProvider),
+                            'Darsni qurilmada saqlab bo‘lmadi. Ilovani yopishdan oldin qayta urinib ko‘ring.',
+                            'Не удалось сохранить урок на устройстве. Повторите перед закрытием приложения.',
+                            'Could not save this lesson on the device. Retry before closing the app.',
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: _remember,
+                          child: Text(
+                            str3(
+                              ref.watch(languageProvider),
+                              'Qayta urinish',
+                              'Повторить',
+                              'Retry',
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        Expanded(child: _buildContent(context)),
+      ],
+    ),
   );
 
   Widget _buildContent(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final language = ref.watch(languageProvider);
+    if (ref.watch(currentUserIdProvider) != _owner) {
+      return Scaffold(
+        body: SafeArea(
+          child: Center(
+            child: Text(
+              str3(
+                language,
+                'Sessiya o‘zgardi. Darsni qayta oching.',
+                'Сеанс изменился. Откройте урок заново.',
+                'Session changed. Reopen the lesson.',
+              ),
+            ),
+          ),
+        ),
+      );
+    }
 
     if (_phase == _Phase.loading) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
@@ -204,7 +419,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
       return Scaffold(
         body: SafeArea(
           child: Center(
-            child: Padding(
+            child: SingleChildScrollView(
               padding: const EdgeInsets.all(24),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -212,10 +427,38 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                   const MascotImage(pose: MascotPose.sad, size: 110),
                   const SizedBox(height: 16),
                   Text(
-                    t('skills.error.generic', language),
+                    _expired
+                        ? str3(
+                            language,
+                            'Urinish muddati tugadi. Saqlangan natijalar qoladi; darsni yangidan boshlang.',
+                            'Срок попытки истёк. Сохранённые результаты останутся; начните урок заново.',
+                            'This attempt expired. Saved results are preserved; start the lesson again.',
+                          )
+                        : _loadError == null
+                        ? t('skills.error.generic', language)
+                        : extractError(_loadError!, language: language),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 20),
+                  Duo3DButton(
+                    onPressed: () => _start(fresh: _expired),
+                    child: Text(
+                      _expired
+                          ? str3(
+                              language,
+                              'Yangidan boshlash',
+                              'Начать заново',
+                              'Start again',
+                            )
+                          : str3(
+                              language,
+                              'Qayta urinish',
+                              'Повторить',
+                              'Retry',
+                            ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
                   GradientButton(
                     onPressed: () => Navigator.of(context).maybePop(),
                     child: Text(t('skills.back', language)),
@@ -318,7 +561,11 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                     color: colors.text,
                                   ),
                                 ),
-                                if(card.source != null) ContentSourceButton(source:card.source!,language:language),
+                                if (card.source != null)
+                                  ContentSourceButton(
+                                    source: card.source!,
+                                    language: language,
+                                  ),
                                 if (card.example != null &&
                                     card.example!.isNotEmpty) ...[
                                   const SizedBox(height: 14),
@@ -329,7 +576,9 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                       color: colors.card,
                                       borderRadius: BorderRadius.circular(16),
                                       border: Border.all(
-                                        color: colors.accent.withValues(alpha: 0.25),
+                                        color: colors.accent.withValues(
+                                          alpha: 0.25,
+                                        ),
                                       ),
                                     ),
                                     child: Column(
@@ -364,7 +613,10 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                               ],
                             ),
                           )
-                          .motion(context,key: ValueKey('theory_$_theoryIndex'))
+                          .motion(
+                            context,
+                            key: ValueKey('theory_$_theoryIndex'),
+                          )
                           .fadeIn(duration: 250.ms)
                           .slideX(
                             begin: 0.08,
@@ -394,23 +646,21 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
 
     if (_phase == _Phase.finished && _completion != null) {
       final c = _completion!;
-      return Scaffold(
-        body: CelebrationConfetti(
-          child: SafeArea(
-            child: Center(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.all(24),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    MascotImage(
-                      pose: (c.total > 0 && (100 * c.score / c.total) >= 80)
-                          ? MascotPose.happy
-                          : MascotPose.hello,
-                      size: 180,
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
+      final result = SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                MascotImage(
+                  pose: (c.total > 0 && (100 * c.score / c.total) >= 80)
+                      ? MascotPose.happy
+                      : MascotPose.hello,
+                  size: 180,
+                ),
+                const SizedBox(height: 16),
+                Text(
                       c.stars > 0
                           ? t('skills.complete.title', language)
                           : str3(
@@ -423,79 +673,102 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         fontSize: 22,
                         fontWeight: FontWeight.w800,
                       ),
-                    ).motion(context).fadeIn(duration: 250.ms).slideY(begin: 0.1, end: 0),
-                    const SizedBox(height: 8),
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        for (var i = 1; i <= 3; i++)
-                          Icon(
+                    )
+                    .motion(context)
+                    .fadeIn(duration: 250.ms)
+                    .slideY(begin: 0.1, end: 0),
+                const SizedBox(height: 8),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    for (var i = 1; i <= 3; i++)
+                      Icon(
                             Icons.star_rounded,
                             size: 32,
                             color: i <= c.stars
                                 ? Colors.amber
                                 : Colors.grey.shade300,
                           )
-                              .motion(context)
-                              .scale(
-                                delay: (180 + i * 120).ms,
-                                duration: 350.ms,
-                                curve: Curves.easeOutBack,
-                              ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    Wrap(
-                      alignment: WrapAlignment.center,
-                      spacing: 16, runSpacing: 12,
-                      children: [
-                        _StatColumn(
+                          .motion(context)
+                          .scale(
+                            delay: (180 + i * 120).ms,
+                            duration: 350.ms,
+                            curve: Curves.easeOutBack,
+                          ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 16,
+                  runSpacing: 12,
+                  children: [
+                    _StatColumn(
                           value: '+${c.xpAwarded}',
                           label: 'XP',
                           color: colors.text,
-                        ).motion(context).scale(delay: 350.ms, duration: 300.ms, curve: Curves.easeOutBack),
-                        const SizedBox(width: 24),
-                        _StatColumn(
+                        )
+                        .motion(context)
+                        .scale(
+                          delay: 350.ms,
+                          duration: 300.ms,
+                          curve: Curves.easeOutBack,
+                        ),
+                    const SizedBox(width: 24),
+                    _StatColumn(
                           value: '${c.score}/${c.total}',
                           label: t('skills.complete.correct', language),
                           color: colors.success,
-                        ).motion(context).scale(delay: 450.ms, duration: 300.ms, curve: Curves.easeOutBack),
-                        const SizedBox(width: 24),
-                        _StatColumn(
+                        )
+                        .motion(context)
+                        .scale(
+                          delay: 450.ms,
+                          duration: 300.ms,
+                          curve: Curves.easeOutBack,
+                        ),
+                    const SizedBox(width: 24),
+                    _StatColumn(
                           value: '${c.streakDays}',
                           label: t('skills.complete.streak', language),
                           color: colors.text,
-                        ).motion(context).scale(delay: 550.ms, duration: 300.ms, curve: Curves.easeOutBack),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      str3(
-                        language,
-                        'Birinchi urinish aniqligi',
-                        'Точность первой попытки',
-                        'First-attempt accuracy',
-                      ),
-                      style: TextStyle(color: colors.textMuted),
-                    ),
-                    Text(
-                      '${c.total == 0 ? 0 : (100 * c.score / c.total).round()}%  ·  ${_timer.elapsed.inMinutes}:${(_timer.elapsed.inSeconds % 60).toString().padLeft(2, '0')}',
-                      style: const TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    Duo3DButton(
-                      onPressed: () => Navigator.of(context).maybePop(),
-                      child: Text(t('skills.lesson.continue', language)),
-                    ).motion(context).fadeIn(delay: 600.ms),
+                        )
+                        .motion(context)
+                        .scale(
+                          delay: 550.ms,
+                          duration: 300.ms,
+                          curve: Curves.easeOutBack,
+                        ),
                   ],
                 ),
-              ),
+                const SizedBox(height: 16),
+                Text(
+                  str3(
+                    language,
+                    'Birinchi urinish aniqligi',
+                    'Точность первой попытки',
+                    'First-attempt accuracy',
+                  ),
+                  style: TextStyle(color: colors.textMuted),
+                ),
+                Text(
+                  '${c.total == 0 ? 0 : (100 * c.score / c.total).round()}%  ·  ${Duration(milliseconds: _elapsedBeforeRestore + _timer.elapsedMilliseconds).inMinutes}:${(Duration(milliseconds: _elapsedBeforeRestore + _timer.elapsedMilliseconds).inSeconds % 60).toString().padLeft(2, '0')}',
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const SizedBox(height: 24),
+                Duo3DButton(
+                  onPressed: () => Navigator.of(context).maybePop(),
+                  child: Text(t('skills.lesson.continue', language)),
+                ).motion(context).fadeIn(delay: 600.ms),
+              ],
             ),
           ),
         ),
+      );
+      return Scaffold(
+        body: c.stars > 0 ? CelebrationConfetti(child: result) : result,
       );
     }
 
@@ -576,7 +849,11 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         height: 1.4,
                       ),
                     ),
-                    if(q.source != null) ContentSourceButton(source:q.source!,language:language),
+                    if (q.source != null)
+                      ContentSourceButton(
+                        source: q.source!,
+                        language: language,
+                      ),
                     const SizedBox(height: 24),
                     for (final option in q.options)
                       DuoChoiceCard(
@@ -710,11 +987,6 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                             ),
                                           ),
                                         ),
-                                      AiExplainButton(
-                                        question: q.questionText,
-                                        correctAnswer: q.correctAnswer,
-                                        userAnswer: _selected,
-                                      ),
                                     ],
                                   ),
                                 ),
@@ -780,4 +1052,3 @@ class _StatColumn extends StatelessWidget {
     );
   }
 }
-

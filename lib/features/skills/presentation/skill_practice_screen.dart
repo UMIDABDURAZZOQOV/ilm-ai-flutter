@@ -15,7 +15,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../../core/services/sound_service.dart';
 import '../../../core/widgets/celebration_confetti.dart';
-import 'ai_tutor_widget.dart';
 import 'mascot.dart';
 import 'skill_ui.dart';
 import 'study_exit_guard.dart';
@@ -811,13 +810,6 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                             color: Theme.of(context).colorScheme.onSurfaceVariant,
                           ),
                         ),
-                      ),
-                    if (!isCorrect)
-                      AiTutorWidget(
-                        questionText: q.questionText,
-                        options: q.options,
-                        correctAnswer: q.correctAnswer,
-                        userAnswer: _selected,
                       ),
                   ],
                 ),
