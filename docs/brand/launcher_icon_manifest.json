@@ -1,0 +1,172 @@
+{
+  "source": {
+    "file": "assets/mascot/ilmo_app_icon_new.png",
+    "sha256": "13a5e77618906ab89d8f0c48d68dd6b46214f058b2d535ebc778479f76ea67ea",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_bbox": [
+      0,
+      51,
+      1228,
+      1254
+    ]
+  },
+  "original_backups": {
+    "app_icon.png": "8f4356de6723a76eec064eab8fbb5f7385b0531e8d658113d709e3f31e7b6ee7",
+    "app_icon_foreground.png": "352a1843bc89f0618e925c529044baabb280971c7a625b17bf409d0b280afd00"
+  },
+  "background": "#2A1F6B",
+  "adaptive_inset_percent": 0,
+  "adaptive_canvas_dp": 108,
+  "safe_circle_diameter_dp": 66,
+  "foreground_nonzero_alpha_radius_dp": 31.5185,
+  "outputs": [
+    {
+      "file": "assets/mascot/launcher_icon.png",
+      "sha256": "4077a20b1ccfccd59bc6caeba5215caa4b0f2571aba81db1517b067c24a8e989",
+      "bytes": 638348
+    },
+    {
+      "file": "assets/mascot/launcher_icon_foreground.png",
+      "sha256": "c7d5035c76752bac0a09925525e18f50502ebdb18da380dbf6d1a570616d91e2",
+      "bytes": 204453
+    },
+    {
+      "file": "artwork/icons/ilm_ai_play_store_512.png",
+      "sha256": "e021bc73bc48539eeaa5b2ba0d7e042a429a68e589a1b1a8832ab166e1b06ec2",
+      "bytes": 183882
+    },
+    {
+      "file": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "sha256": "ad9b198b70551c36d2d146aa28ec7efdbee6bc4e0a2c31c67bc64504d8c7e700",
+      "bytes": 3394
+    },
+    {
+      "file": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "sha256": "c6f1a78b263a8b71acfb00276c1c20f90a8d26b0e83779a6a763ac791335e501",
+      "bytes": 6440
+    },
+    {
+      "file": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "sha256": "7eed3b89226009b2e45c3d07a3ad9454de942e73daa9ddc92108d5d3fbb676ea",
+      "bytes": 10171
+    },
+    {
+      "file": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "sha256": "31f01a9152144ba327293c3ae9b49663e0364508dde35835474b6b92cae43430",
+      "bytes": 19279
+    },
+    {
+      "file": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "sha256": "1199de0b7c347a6cc56e67c279d9dc0f8c0b19f38c7de83b820d89e5273a8b58",
+      "bytes": 30710
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "sha256": "1d5ffa5283a88f6882c2d9fa7d67c1642f8fe2031a248f466862c8f0a29ba10d",
+      "bytes": 2561
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "sha256": "7f2b3f4445444709cc926d00aafa8545c583b43eb3a991a1499640043bf922d1",
+      "bytes": 4807
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+      "sha256": "05936e7a6ef45684688fc2c4168626aac7200186207c1b6556adb74f05fafb62",
+      "bytes": 1607
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+      "sha256": "631e5f7a84eea18c7e9c40efb21a64ac05c7ad7979124eabe67512268abcb5ae",
+      "bytes": 4583
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+      "sha256": "cc6374900e4a8f0075ec58ec4a3c425985a202e59b2608dabe0a134621f3dff8",
+      "bytes": 8667
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+      "sha256": "953dd8d7566aff0a5ec1f7b4d7a2aa72a7907c63194dec6d55cd2ed247758e46",
+      "bytes": 7608
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+      "sha256": "992968a7c8b09128aa24e33990f11111fb187ecd2f5f09a61a95cffe7399fdd3",
+      "bytes": 14454
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@1x.png",
+      "sha256": "68a9bb7f9aa7ec1c46c0062af2f06e63dc4ccf9bd286e7626e2cc35c99fe1d8f",
+      "bytes": 4470
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@2x.png",
+      "sha256": "d48e7fe9cc1a7e5ea8584c42f9b98fe4365d3585fd936b1b6c3ce2542dc6d3d7",
+      "bytes": 13317
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+      "sha256": "992968a7c8b09128aa24e33990f11111fb187ecd2f5f09a61a95cffe7399fdd3",
+      "bytes": 14454
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+      "sha256": "b0d5b11cbbc186029cf4ae17cb4c5f4383d1198fdd4173a86e2afef5b2925947",
+      "bytes": 27711
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "sha256": "85455274d2b61380a79135431a8c0d0fea0022846dffcecbbe9fe85c7b8c3381",
+      "bytes": 942
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+      "sha256": "1d5ffa5283a88f6882c2d9fa7d67c1642f8fe2031a248f466862c8f0a29ba10d",
+      "bytes": 2561
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@1x.png",
+      "sha256": "e2990dbb416c6045bc85d170af635502db179f4659aa8bf0c8cec7a142b8d52b",
+      "bytes": 3624
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@2x.png",
+      "sha256": "2c7437b3fa46a3186f2aa58d908c2c959154312efa1809d61ede127f0ced0592",
+      "bytes": 10772
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png",
+      "sha256": "c6f1a78b263a8b71acfb00276c1c20f90a8d26b0e83779a6a763ac791335e501",
+      "bytes": 6440
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@2x.png",
+      "sha256": "31f01a9152144ba327293c3ae9b49663e0364508dde35835474b6b92cae43430",
+      "bytes": 19279
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+      "sha256": "76543ceabb472447bd570b7cd1ad89f7250d642f648f7575b95c45e131113894",
+      "bytes": 6975
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+      "sha256": "170618eded5c02414bd9803d4b920f4c66ebde910bd9898969f841fff0375e17",
+      "bytes": 20928
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+      "sha256": "41e9cfbb22aea17de25df50df09eba7cd51d3cd837816a139abddc5226203e38",
+      "bytes": 24498
+    },
+    {
+      "file": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "sha256": "1114a4ac620f8f3f7cba90f59165249e04fdfcaca37e225ce00880d3624497a5",
+      "bytes": 562137
+    }
+  ]
+}

@@ -120,9 +120,11 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/mascot/app_icon.png"
+  image_path: "assets/mascot/launcher_icon.png"
   adaptive_icon_background: "#2A1F6B"
-  adaptive_icon_foreground: "assets/mascot/app_icon_foreground.png"
+  adaptive_icon_foreground: "assets/mascot/launcher_icon_foreground.png"
+  # The foreground already includes the 108dp canvas and safe-circle padding.
+  adaptive_icon_foreground_inset: 0
   remove_alpha_ios: true
 
 flutter_native_splash:

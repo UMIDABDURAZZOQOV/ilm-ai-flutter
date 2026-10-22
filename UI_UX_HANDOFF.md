@@ -92,3 +92,27 @@ aralashmaslik uchun ushbu o‘zgarishning hujjati Flutter UI branchida saqlandi.
 Yakuniy tekshiruv: **169 Flutter testi o‘tdi**, analyze **No issues found**.
 18 yangi brend testi bor; original PNG hashlarining hammasi saqlandi.
 Real telefon/TalkBack/native mask va memory/FPS tekshiruvi hali bajarilmagan.
+
+## 2026-10-23 — Yangi Ilmo launcher ikonkasi
+
+Foydalanuvchi bergan PNG original Flutter papkasida ikki `.png` kengaytma bilan
+topildi; faqat shu rasm UI worktree ichiga to‘g‘ri nom bilan nusxalandi. Yangi
+1024px indigo master, 66dp xavfsiz doira ichidagi adaptive foreground va 512px
+shaffof bo‘lmagan Play Store PNG tayyorlandi. Original `app_icon.png`,
+`app_icon_foreground.png`, beshta Ilmo emotsiyasi va splash PNG o‘zgarmagan.
+
+Android/iOS launcher resurslari qayta generatsiya qilindi. Generatorning ayrim
+o‘lchamlardagi RGB/alpha yaxlitlashini bartaraf etuvchi takrorlanadigan yakuniy
+bosqich skriptga qo‘shildi. Manba rasm retush yoki AI bilan qayta chizilmadi.
+
+Analyze **No issues found**, to‘liq suite **181 passed** (12 yangi ikonka testi).
+Android debug APK muvaffaqiyatli yig‘ildi va imzasi tekshirilib Samsung Galaxy
+A12 / Android 12 telefoniga `adb install -r` bilan yangilandi. UID va dastlabki
+o‘rnatilgan vaqt saqlangan; ilova o‘chirilmagan. Launcherda yangi ikonka ko‘rildi,
+o‘rnatilgan APK hashi buildga teng. Bu dars/backend/Google login end-to-end QA
+emas. iOS native build bajarilmadi.
+
+Tafsilotlar, qayta generatsiya buyruqlari, hashlar va telefon kesmasi:
+[launcher hisoboti](docs/brand/LAUNCHER_ICON_UPDATE.md).
+Splash/onboarding, auth, fan kontenti va backend kodi o‘zgarmagan; production
+deploy, Play Store nashri va `main` merge bajarilmagan.
