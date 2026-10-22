@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../config/product_mode.dart';
+import 'ilm_design.dart';
 
 /// Legacy palettes remain available when subjects-only mode is disabled.
 class CardTint {
@@ -71,7 +72,7 @@ class BrandPalette {
   static const Color indigoDarkSurface = Color(0xFF1C173E);
   static const Color indigoDarkCard = Color(0xFF251F50);
   static const Color indigoDarkBorder = Color(0xFF3C3375);
-  static const Color indigoDarkPrimary = Color(0xFF5C4BD8);
+  static const Color indigoDarkPrimary = Color(0xFFB8ACFF);
 
   static const Color accentOrange = Color(0xFFF9A825);
   static const Color turquoise = Color(0xFF2DD4BF);
@@ -82,25 +83,27 @@ ThemeColors learningPalette(ThemeColors base) {
   if (!subjectsOnly) return base;
   final dark = base.statusBarStyle == Brightness.light;
   return ThemeColors(
-    background: dark ? BrandPalette.indigoDarkBg : Colors.white,
+    background: dark ? BrandPalette.indigoDarkBg : const Color(0xFFF7F7FC),
     surface: dark ? BrandPalette.indigoDarkSurface : Colors.white,
     card: dark ? BrandPalette.indigoDarkCard : Colors.white,
     text: dark ? const Color(0xFFF1F0FA) : const Color(0xFF1E1A34),
-    textSecondary: dark ? const Color(0xFFA69EC6) : const Color(0xFF5A537E),
-    textMuted: dark ? const Color(0xFF766E99) : const Color(0xFF8C86A8),
+    textSecondary: dark ? const Color(0xFFC3BDDB) : const Color(0xFF59516E),
+    textMuted: dark ? const Color(0xFFB2AACD) : const Color(0xFF68617C),
     border: dark ? BrandPalette.indigoDarkBorder : const Color(0xFFE5E2F2),
     primary: dark ? BrandPalette.indigoDarkPrimary : BrandPalette.indigo,
     secondary: BrandPalette.accentOrange,
     primaryLight: dark ? const Color(0xFF2E2660) : const Color(0xFFECE9F8),
     accent: BrandPalette.turquoise,
     creamWhite: BrandPalette.creamWhite,
-    error: base.error,
+    error: dark ? base.error : const Color(0xFFB91C1C),
     errorLight: base.errorLight,
-    success: base.success,
+    success: dark ? base.success : const Color(0xFF087F6B),
     successLight: base.successLight,
-    warning: base.warning,
+    warning: dark ? base.warning : const Color(0xFF9A5B04),
     warningLight: base.warningLight,
-    inputBackground: dark ? BrandPalette.indigoDarkSurface : const Color(0xFFF6F5FB),
+    inputBackground: dark
+        ? BrandPalette.indigoDarkSurface
+        : const Color(0xFFF6F5FB),
     statusBarStyle: base.statusBarStyle,
     cardTints: base.cardTints,
   );
@@ -208,19 +211,197 @@ ThemeData buildAppTheme(ThemeColors c) {
   final brightness = c.statusBarStyle == Brightness.dark
       ? Brightness.light
       : Brightness.dark;
+  final dark = brightness == Brightness.dark;
+  final design = IlmDesign(
+    action: dark ? const Color(0xFF6754D4) : BrandPalette.indigo,
+    onAction: Colors.white,
+    focus: dark ? BrandPalette.turquoise : const Color(0xFF087F6B),
+  );
+  final shape = RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(IlmRadius.control),
+  );
+  final text = Typography.material2021().black
+      .apply(bodyColor: c.text, displayColor: c.text)
+      .copyWith(
+        headlineLarge: TextStyle(
+          fontSize: 30,
+          height: 1.2,
+          fontWeight: FontWeight.w800,
+          color: c.text,
+        ),
+        headlineMedium: TextStyle(
+          fontSize: 26,
+          height: 1.25,
+          fontWeight: FontWeight.w800,
+          color: c.text,
+        ),
+        headlineSmall: TextStyle(
+          fontSize: 23,
+          height: 1.3,
+          fontWeight: FontWeight.w700,
+          color: c.text,
+        ),
+        titleLarge: TextStyle(
+          fontSize: 20,
+          height: 1.3,
+          fontWeight: FontWeight.w700,
+          color: c.text,
+        ),
+        titleMedium: TextStyle(
+          fontSize: 17,
+          height: 1.35,
+          fontWeight: FontWeight.w700,
+          color: c.text,
+        ),
+        bodyLarge: TextStyle(fontSize: 17, height: 1.55, color: c.text),
+        bodyMedium: TextStyle(fontSize: 15, height: 1.5, color: c.text),
+        bodySmall: TextStyle(
+          fontSize: 13,
+          height: 1.45,
+          color: c.textSecondary,
+        ),
+        labelLarge: TextStyle(
+          fontSize: 15,
+          height: 1.3,
+          fontWeight: FontWeight.w700,
+          color: c.text,
+        ),
+        labelMedium: TextStyle(
+          fontSize: 13,
+          height: 1.3,
+          fontWeight: FontWeight.w600,
+          color: c.textSecondary,
+        ),
+      )
+      .apply(fontFamily: 'Roboto');
   return ThemeData(
     useMaterial3: true,
     brightness: brightness,
     scaffoldBackgroundColor: c.background,
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: c.primary,
-      brightness: brightness,
-      primary: c.primary,
-      secondary: c.secondary,
-      error: c.error,
-      surface: c.surface,
+    colorScheme:
+        ColorScheme.fromSeed(
+          seedColor: c.primary,
+          brightness: brightness,
+          primary: c.primary,
+          secondary: c.secondary,
+          error: c.error,
+          surface: c.surface,
+        ).copyWith(
+          onSurface: c.text,
+          onSurfaceVariant: c.textSecondary,
+          onPrimary: dark ? c.background : Colors.white,
+          outline: c.border,
+          surfaceContainerHighest: c.card,
+        ),
+    textTheme: text,
+    visualDensity: VisualDensity.standard,
+    materialTapTargetSize: MaterialTapTargetSize.padded,
+    dividerColor: c.border,
+    focusColor: design.focus.withValues(alpha: .18),
+    appBarTheme: AppBarTheme(
+      systemOverlayStyle: systemOverlayStyleFor(c),
+      backgroundColor: c.background,
+      foregroundColor: c.text,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      titleTextStyle: text.titleLarge,
     ),
-    appBarTheme: AppBarTheme(systemOverlayStyle: systemOverlayStyleFor(c)),
-    extensions: [AppColors(c)],
+    cardTheme: CardThemeData(
+      color: c.card,
+      elevation: 0,
+      margin: EdgeInsets.zero,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(IlmRadius.card),
+        side: BorderSide(color: c.border),
+      ),
+    ),
+    bottomSheetTheme: BottomSheetThemeData(
+      backgroundColor: c.surface,
+      surfaceTintColor: Colors.transparent,
+      modalBarrierColor: Colors.black.withValues(alpha: .48),
+      dragHandleColor: c.textMuted,
+      dragHandleSize: const Size(36, 4),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(IlmRadius.sheet),
+        ),
+      ),
+    ),
+    dialogTheme: DialogThemeData(
+      backgroundColor: c.surface,
+      surfaceTintColor: Colors.transparent,
+      titleTextStyle: text.titleLarge,
+      contentTextStyle: text.bodyMedium,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(IlmRadius.card),
+      ),
+    ),
+    filledButtonTheme: FilledButtonThemeData(
+      style: FilledButton.styleFrom(
+        backgroundColor: design.action,
+        foregroundColor: design.onAction,
+        disabledBackgroundColor: c.border,
+        disabledForegroundColor: c.textMuted,
+        minimumSize: const Size(48, 52),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+        shape: shape,
+        textStyle: text.labelLarge,
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: c.primary,
+        minimumSize: const Size(48, 52),
+        shape: shape,
+        side: BorderSide(color: c.primary),
+        textStyle: text.labelLarge,
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: c.primary,
+        minimumSize: const Size(48, 48),
+        textStyle: text.labelLarge,
+      ),
+    ),
+    iconButtonTheme: IconButtonThemeData(
+      style: IconButton.styleFrom(
+        foregroundColor: c.primary,
+        minimumSize: const Size(48, 48),
+      ),
+    ),
+    listTileTheme: ListTileThemeData(
+      textColor: c.text,
+      iconColor: c.primary,
+      selectedColor: c.primary,
+      selectedTileColor: c.primaryLight,
+      titleTextStyle: text.titleMedium,
+      subtitleTextStyle: text.bodySmall,
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: c.inputBackground,
+      hintStyle: TextStyle(color: c.textMuted),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(IlmRadius.control),
+        borderSide: BorderSide(color: c.border),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(IlmRadius.control),
+        borderSide: BorderSide(color: c.border),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(IlmRadius.control),
+        borderSide: BorderSide(color: c.primary, width: 2),
+      ),
+    ),
+    progressIndicatorTheme: ProgressIndicatorThemeData(
+      color: dark ? c.accent : design.action,
+      linearTrackColor: c.border,
+      linearMinHeight: 8,
+    ),
+    extensions: [AppColors(c), design],
   );
 }

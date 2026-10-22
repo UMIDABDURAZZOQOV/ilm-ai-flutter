@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/theme/app_theme.dart';
 
 /// Trilingual inline string helper (uz/ru/en) — avoids adding dozens of i18n
 /// keys for the skill-tree extras, matching the models' own nameFor() approach.
@@ -41,12 +42,13 @@ class ContentLanguageBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).extension<AppColors>()!.colors;
     return Align(
       alignment: Alignment.center,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         decoration: BoxDecoration(
-          color: const Color(0xFFF9A825).withValues(alpha: 0.18),
+          color: colors.primaryLight,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Text(
@@ -57,10 +59,11 @@ class ContentLanguageBadge extends StatelessWidget {
             'This lesson is currently only in Uzbek',
           ),
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w700,
-            color: Color(0xFF2A1F6B),
+          style: TextStyle(
+            fontSize: 13,
+            height: 1.45,
+            fontWeight: FontWeight.w600,
+            color: colors.text,
           ),
         ),
       ),

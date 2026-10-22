@@ -1,5 +1,11 @@
 import 'translations.dart';
 
+String uiText(String locale, String uz, String ru, String en) => locale == 'ru'
+    ? ru
+    : locale == 'en'
+    ? en
+    : uz;
+
 /// Ported from ilm-ai-mobile/src/utils/i18n.ts's `t()` helper. Fallback
 /// semantics must match exactly: missing key -> return the raw key; key
 /// exists but locale missing -> fall back to 'en' -> then the raw key.

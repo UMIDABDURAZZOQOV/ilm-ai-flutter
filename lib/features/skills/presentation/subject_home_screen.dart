@@ -7,6 +7,7 @@ import '../../../core/network/error_message.dart';
 import '../../../core/config/mobile_release.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
+import '../../../core/widgets/ilm_state_view.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -43,6 +44,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   int _tab = 0;
   bool _choosing = false;
   final int _revision = 0;
+
   /// Lazy-mount tabs so Quests/League/Profile do not fire network (+18s
   /// timeout timers) until the user opens them. Once visited, IndexedStack
   /// keeps them alive (no spinner on return).
@@ -51,7 +53,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   Future<void> _select(SkillSubject subject) async {
     final user = ref.read(currentUserIdProvider);
     if (user == null) return;
-    await ref.read(learningPreferencesProvider).save(user, {'subject': subject.slug});
+    await ref.read(learningPreferencesProvider).save(user, {
+      'subject': subject.slug,
+    });
     if (!mounted || ref.read(currentUserIdProvider) != user) return;
     ref.read(selectedSubjectProvider.notifier).state = subject.slug;
     setState(() {
@@ -67,8 +71,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
     final selected = ref.watch(selectedSubjectProvider);
     final catalog = ref.watch(subjectCatalogProvider);
     return catalog.when(
-      loading: () =>
-          const Scaffold(body: Center(child: CircularProgressIndicator())),
+      skipLoadingOnReload: true,
+      skipLoadingOnRefresh: true,
+      loading: () => Scaffold(body: IlmLoadingView(language: lang)),
       error: (error, _) => Scaffold(
         body: SafeArea(
           child: Center(
@@ -82,7 +87,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                     'Could not load subjects',
                   ),
                 ),
-                Text(extractError(error,language:lang),textAlign:TextAlign.center),
+                Text(
+                  extractError(error, language: lang),
+                  textAlign: TextAlign.center,
+                ),
                 const SizedBox(height: 16),
                 FilledButton(
                   onPressed: () => ref.invalidate(subjectCatalogProvider),
@@ -207,14 +215,19 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         // Local copy so closures do not see the outer nullable `subject`.
         final SkillSubject activeSubject = subject;
         final tabBuilders = <Widget Function()>[
-          () => activeSubject.slug == 'biologiya' ? CurriculumLearningScreen(
-            key:ValueKey('curriculum:${ref.watch(currentUserIdProvider)}'),
-            subject:activeSubject,onChangeSubject:()=>setState(()=>_choosing=true),
-          ) : SkillPathScreen(
-            key: ValueKey('${activeSubject.slug}:$_revision'),
-            subject: activeSubject,
-            onChangeSubject: () => setState(() => _choosing = true),
-          ),
+          () => activeSubject.slug == 'biologiya'
+              ? CurriculumLearningScreen(
+                  key: ValueKey(
+                    'curriculum:${ref.watch(currentUserIdProvider)}',
+                  ),
+                  subject: activeSubject,
+                  onChangeSubject: () => setState(() => _choosing = true),
+                )
+              : SkillPathScreen(
+                  key: ValueKey('${activeSubject.slug}:$_revision'),
+                  subject: activeSubject,
+                  onChangeSubject: () => setState(() => _choosing = true),
+                ),
           () => Scaffold(
             appBar: AppBar(
               automaticallyImplyLeading: false,
@@ -236,15 +249,17 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  biologyOnly ? tr(
-                    'Biologiya bo‘yicha bilimingizni takrorlang va mustahkamlang.',
-                    'Повторяйте и закрепляйте знания по биологии.',
-                    'Review and strengthen your biology knowledge.',
-                  ) : tr(
-                    'Takrorlash barcha o‘rgangan fanlaringizni qamrab oladi.',
-                    'Повторение охватывает все изученные предметы.',
-                    'Review covers all the subjects you have studied.',
-                  ),
+                  biologyOnly
+                      ? tr(
+                          'Biologiya bo‘yicha bilimingizni takrorlang va mustahkamlang.',
+                          'Повторяйте и закрепляйте знания по биологии.',
+                          'Review and strengthen your biology knowledge.',
+                        )
+                      : tr(
+                          'Takrorlash barcha o‘rgangan fanlaringizni qamrab oladi.',
+                          'Повторение охватывает все изученные предметы.',
+                          'Review covers all the subjects you have studied.',
+                        ),
                 ),
                 const SizedBox(height: 24),
                 _LearningTile(
@@ -264,7 +279,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 _LearningTile(
                   icon: Icons.today_rounded,
                   color:
-                      Theme.of(context).extension<AppColors>()?.colors.secondary ??
+                      Theme.of(
+                        context,
+                      ).extension<AppColors>()?.colors.secondary ??
                       const Color(0xFFF9A825),
                   title: tr('Kunlik sinov', 'Вызов дня', 'Daily challenge'),
                   onTap: () => context.push(

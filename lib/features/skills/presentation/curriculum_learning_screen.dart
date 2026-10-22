@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/widgets/ilm_state_view.dart';
 import '../../../core/config/mobile_release.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -108,7 +109,9 @@ class _CurriculumLearningScreenState
       selectedCurriculumGradeProvider(widget.subject.slug),
     );
     return grades.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
+      skipLoadingOnReload: true,
+      skipLoadingOnRefresh: true,
+      loading: () => IlmLoadingView(language: lang),
       error: (error, _) => SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(24),
@@ -268,18 +271,19 @@ class _CurriculumLearningScreenState
                   horizontal: 12,
                   vertical: 4,
                 ),
-                child: Row(
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 4,
+                  alignment: WrapAlignment.spaceBetween,
                   children: [
-                    Expanded(
-                      child: TextButton.icon(
-                        onPressed: () => setState(() => _choosing = true),
-                        icon: const Icon(Icons.school_rounded),
-                        label: Text(
-                          tr(
-                            '${current.grade}-sinf',
-                            '${current.grade} класс',
-                            'Grade ${current.grade}',
-                          ),
+                    TextButton.icon(
+                      onPressed: () => setState(() => _choosing = true),
+                      icon: const Icon(Icons.school_rounded),
+                      label: Text(
+                        tr(
+                          '${current.grade}-sinf',
+                          '${current.grade} класс',
+                          'Grade ${current.grade}',
                         ),
                       ),
                     ),
@@ -398,7 +402,7 @@ class _CurriculumOutline extends ConsumerWidget {
     return ref
         .watch(curriculumOutlineProvider(key))
         .when(
-          loading: () => const Center(child: CircularProgressIndicator()),
+          loading: () => IlmLoadingView(language: lang),
           error: (error, _) => ListView(
             padding: const EdgeInsets.all(20),
             children: [

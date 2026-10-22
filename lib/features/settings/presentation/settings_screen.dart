@@ -9,6 +9,7 @@ import '../../../core/network/dio_client.dart' show apiBaseUrl;
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/duo_chrome.dart' show foregroundOn;
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
 import '../../auth/application/auth_controller.dart';
@@ -156,7 +157,7 @@ class SettingsScreen extends ConsumerWidget {
                                   : Icons.brightness_auto_rounded,
                               size: 20,
                               color: themeMode == mode
-                                  ? Colors.white
+                                  ? foregroundOn(colors.primary)
                                   : colors.text,
                             ),
                             onTap: () => ref
@@ -355,7 +356,7 @@ class _SegButton extends StatelessWidget {
               AnimatedDefaultTextStyle(
                 duration: motionDuration(context, 220),
                 style: TextStyle(
-                  color: selected ? Colors.white : colors.text,
+                  color: selected ? foregroundOn(colors.primary) : colors.text,
                   fontWeight: FontWeight.w600,
                   fontSize: 12.5,
                 ),

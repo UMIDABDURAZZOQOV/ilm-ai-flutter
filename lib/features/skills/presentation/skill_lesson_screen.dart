@@ -341,6 +341,20 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
         _phase != _Phase.finished &&
         _phase != _Phase.error,
     saving: ref.watch(currentUserIdProvider) == _owner && _submitting,
+    saveBeforeExit: _drafts != null && _startSnapshot != null
+        ? () async {
+            try {
+              if (!_active) return false;
+              await _persist();
+              if (!_active) return false;
+              if (_draftFailed) setState(() => _draftFailed = false);
+              return true;
+            } catch (_) {
+              if (_active) setState(() => _draftFailed = true);
+              return false;
+            }
+          }
+        : null,
     language: ref.watch(languageProvider),
     child: Column(
       children: [
@@ -496,12 +510,14 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                       ),
                     ),
                     const SizedBox(width: 12),
-                    Text(
-                      t('skills.learn', language),
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w800,
-                        color: colors.textMuted,
+                    Flexible(
+                      child: Text(
+                        t('skills.learn', language),
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          color: colors.textMuted,
+                        ),
                       ),
                     ),
                   ],

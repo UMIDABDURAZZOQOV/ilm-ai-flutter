@@ -117,8 +117,11 @@ void main() {
 
   Future<void> tap(WidgetTester tester, String text) async {
     final target = find.text(text).first;
+    // Let a focused field finish its scheduled reveal before scrolling to the
+    // action. Typography changes must not race the keyboard's auto-scroll.
+    await tester.pumpAndSettle();
     await tester.ensureVisible(target);
-    await tester.pump();
+    await tester.pumpAndSettle();
     await tester.tap(target);
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));

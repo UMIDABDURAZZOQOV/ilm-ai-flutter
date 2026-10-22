@@ -16,44 +16,50 @@ void main() {
       expect(BrandPalette.creamWhite, const Color(0xFFFAF7F2));
     });
 
-    test('learningPalette in light mode provides brand colors and semantic safety', () {
-      final palette = learningPalette(lightColors);
+    test(
+      'learningPalette in light mode provides brand colors and semantic safety',
+      () {
+        final palette = learningPalette(lightColors);
 
-      // Brand colors
-      expect(palette.primary, BrandPalette.indigo);
-      expect(palette.secondary, BrandPalette.accentOrange);
-      expect(palette.accent, BrandPalette.turquoise);
-      expect(palette.creamWhite, BrandPalette.creamWhite);
+        // Brand colors
+        expect(palette.primary, BrandPalette.indigo);
+        expect(palette.secondary, BrandPalette.accentOrange);
+        expect(palette.accent, BrandPalette.turquoise);
+        expect(palette.creamWhite, BrandPalette.creamWhite);
 
-      // Semantic safety (green success, red error)
-      expect(palette.success, const Color(0xFF059669));
-      expect(palette.error, const Color(0xFFDC2626));
-      expect(palette.warning, const Color(0xFFD97706));
+        // Semantic safety (green success, red error)
+        expect(palette.success, const Color(0xFF087F6B));
+      expect(palette.error, const Color(0xFFB91C1C));
+      expect(palette.warning, const Color(0xFF9A5B04));
 
-      // Background and card contrast
-      expect(palette.background, Colors.white);
-      expect(palette.card, Colors.white);
-    });
+        // Background and card contrast
+        expect(palette.background, const Color(0xFFF7F7FC));
+        expect(palette.card, Colors.white);
+      },
+    );
 
-    test('learningPalette in dark mode provides deep indigo background with high contrast', () {
-      final palette = learningPalette(darkColors);
+    test(
+      'learningPalette in dark mode provides deep indigo background with high contrast',
+      () {
+        final palette = learningPalette(darkColors);
 
-      // Dark background is deep indigo, not grey/green
-      expect(palette.background, BrandPalette.indigoDarkBg);
-      expect(palette.surface, BrandPalette.indigoDarkSurface);
-      expect(palette.card, BrandPalette.indigoDarkCard);
-      expect(palette.border, BrandPalette.indigoDarkBorder);
+        // Dark background is deep indigo, not grey/green
+        expect(palette.background, BrandPalette.indigoDarkBg);
+        expect(palette.surface, BrandPalette.indigoDarkSurface);
+        expect(palette.card, BrandPalette.indigoDarkCard);
+        expect(palette.border, BrandPalette.indigoDarkBorder);
 
-      // Primary is high-contrast indigo, secondary is accent orange, accent is turquoise
-      expect(palette.primary, BrandPalette.indigoDarkPrimary);
-      expect(palette.secondary, BrandPalette.accentOrange);
-      expect(palette.accent, BrandPalette.turquoise);
-      expect(palette.creamWhite, BrandPalette.creamWhite);
+        // Primary is high-contrast indigo, secondary is accent orange, accent is turquoise
+        expect(palette.primary, BrandPalette.indigoDarkPrimary);
+        expect(palette.secondary, BrandPalette.accentOrange);
+        expect(palette.accent, BrandPalette.turquoise);
+        expect(palette.creamWhite, BrandPalette.creamWhite);
 
-      // Semantic colors intact in dark mode
-      expect(palette.success, const Color(0xFF34D399));
-      expect(palette.error, const Color(0xFFF87171));
-    });
+        // Semantic colors intact in dark mode
+        expect(palette.success, const Color(0xFF34D399));
+        expect(palette.error, const Color(0xFFF87171));
+      },
+    );
 
     test('skillColor fallback defaults to brand indigo #2A1F6B', () {
       expect(skillColor(null), BrandPalette.indigo);
@@ -69,7 +75,9 @@ void main() {
       expect(gradeColor('Sertifikatsiz'), const Color(0xFFFF4B4B)); // Error red
     });
 
-    testWidgets('RombBadge renders child in signature diamond brand shape', (tester) async {
+    testWidgets('RombBadge renders child in signature diamond brand shape', (
+      tester,
+    ) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -96,9 +104,7 @@ void main() {
       await tester.pumpWidget(
         MaterialApp(
           theme: buildAppTheme(lightColors),
-          home: const Scaffold(
-            body: Duo3DButton(child: Text('CHECK')),
-          ),
+          home: const Scaffold(body: Duo3DButton(child: Text('CHECK'))),
         ),
       );
       await tester.tap(find.text('CHECK'));
@@ -141,10 +147,7 @@ void main() {
           home: Scaffold(
             body: HeartsXpHeader(
               showHearts: true,
-              summary: GamificationSummary(
-                xpTotal: 42,
-                streakDays: 3,
-              ),
+              summary: GamificationSummary(xpTotal: 42, streakDays: 3),
             ),
           ),
         ),

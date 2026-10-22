@@ -10,6 +10,8 @@ import 'package:go_router/go_router.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/widgets/duo_chrome.dart';
+import '../../../core/widgets/ilm_state_view.dart';
+import '../../../core/network/error_message.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -133,27 +135,28 @@ class SkillPathScreen extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              if (!biologyOnly) OutlinedButton.icon(
-                onPressed: () async {
-                  Navigator.pop(ctx);
-                  await context.push(
-                    '/skills/practice',
-                    extra: {
-                      'mode': PracticeMode.placement,
-                      'subject': subject.slug,
-                    },
-                  );
-                },
-                icon: const Icon(Icons.insights_rounded),
-                label: Text(
-                  str3(
-                    lang,
-                    'Darajamni aniqlash',
-                    'Узнать свой уровень',
-                    'Find my level',
+              if (!biologyOnly)
+                OutlinedButton.icon(
+                  onPressed: () async {
+                    Navigator.pop(ctx);
+                    await context.push(
+                      '/skills/practice',
+                      extra: {
+                        'mode': PracticeMode.placement,
+                        'subject': subject.slug,
+                      },
+                    );
+                  },
+                  icon: const Icon(Icons.insights_rounded),
+                  label: Text(
+                    str3(
+                      lang,
+                      'Darajamni aniqlash',
+                      'Узнать свой уровень',
+                      'Find my level',
+                    ),
                   ),
                 ),
-              ),
               const SizedBox(height: 12),
               for (final u in tree.units)
                 Card(
@@ -506,21 +509,19 @@ class SkillPathScreen extends ConsumerWidget {
       ),
       body: SafeArea(
         child: treeAsync.when(
-          loading: () => const Center(child: CircularProgressIndicator()),
-          error: (_, _) => Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(t('skills.error.generic', language)),
-                TextButton(
-                  onPressed: () =>
-                      ref.invalidate(_treeProvider((subject.slug, grade))),
-                  child: Text(
-                    str3(language, 'Qayta urinish', 'Повторить', 'Try again'),
-                  ),
-                ),
-              ],
+          skipLoadingOnReload: true,
+          skipLoadingOnRefresh: true,
+          loading: () => IlmLoadingView(language: language),
+          error: (error, _) => IlmStateView(
+            title: t('skills.error.generic', language),
+            message: extractError(error, language: language),
+            retryLabel: str3(
+              language,
+              'Qayta urinish',
+              'Повторить',
+              'Try again',
             ),
+            onRetry: () => ref.invalidate(_treeProvider((subject.slug, grade))),
           ),
           data: (tree) {
             final items = <_PathItem>[];

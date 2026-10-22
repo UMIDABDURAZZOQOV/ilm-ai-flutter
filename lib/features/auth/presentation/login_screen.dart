@@ -42,11 +42,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   }
 
   String _getAuthErrorMessage(Object err, String language) {
-    String tr(String uz, String ru, String en) =>
-        language == 'ru' ? ru : language == 'en' ? en : uz;
+    String tr(String uz, String ru, String en) => language == 'ru'
+        ? ru
+        : language == 'en'
+        ? en
+        : uz;
 
     // Check for timeout or backend waking up (Render free tier cold start ~30-50s)
-    final isTimeout = err is TimeoutException ||
+    final isTimeout =
+        err is TimeoutException ||
         (err is DioException &&
             (err.type == DioExceptionType.connectionTimeout ||
                 err.type == DioExceptionType.receiveTimeout ||
@@ -126,7 +130,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final language = ref.watch(languageProvider);
-    String tr(String uz, String ru, String en) => language == 'ru' ? ru : language == 'en' ? en : uz;
+    String tr(String uz, String ru, String en) => language == 'ru'
+        ? ru
+        : language == 'en'
+        ? en
+        : uz;
 
     return Scaffold(
       body: SafeArea(
@@ -137,26 +145,47 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             children: [
               const SizedBox(height: 48),
               Center(
-                child: Container(
-                  width: 88,
-                  height: 88,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24),
-                    boxShadow: [
-                      BoxShadow(color: colors.primary.withValues(alpha: 0.3), blurRadius: 24, offset: const Offset(0, 12)),
-                    ],
+                    child: Container(
+                      width: 88,
+                      height: 88,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(24),
+                        boxShadow: [
+                          BoxShadow(
+                            color: colors.primary.withValues(alpha: 0.3),
+                            blurRadius: 24,
+                            offset: const Offset(0, 12),
+                          ),
+                        ],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24),
+                        child: Image.asset(
+                          'assets/icons/icon.png',
+                          width: 88,
+                          height: 88,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  )
+                  .motion(context)
+                  .fadeIn(duration: 500.ms)
+                  .scale(
+                    begin: const Offset(0.8, 0.8),
+                    end: const Offset(1, 1),
+                    curve: Curves.easeOutBack,
                   ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(24),
-                    child: Image.asset('assets/icons/icon.png', width: 88, height: 88, fit: BoxFit.cover),
-                  ),
-                ),
-              ).motion(context).fadeIn(duration: 500.ms).scale(begin: const Offset(0.8, 0.8), end: const Offset(1, 1), curve: Curves.easeOutBack),
               const SizedBox(height: 32),
               Text(
                 t('auth.login.title', language),
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: colors.text, letterSpacing: -0.5),
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w800,
+                  color: colors.text,
+                  letterSpacing: -0.5,
+                ),
               ).motion(context).fadeIn(delay: 100.ms, duration: 400.ms),
               const SizedBox(height: 10),
               Text(
@@ -166,10 +195,18 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   'Continue with Google in one tap — it both signs you up and logs you in.',
                 ),
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 15, color: colors.textSecondary, fontWeight: FontWeight.w500, height: 1.4),
+                style: TextStyle(
+                  fontSize: 15,
+                  color: colors.textSecondary,
+                  fontWeight: FontWeight.w500,
+                  height: 1.4,
+                ),
               ).motion(context).fadeIn(delay: 150.ms, duration: 350.ms),
               const SizedBox(height: 40),
-              ErrorBanner(message: _error, onDismiss: () => setState(() => _error = null)),
+              ErrorBanner(
+                message: _error,
+                onDismiss: () => setState(() => _error = null),
+              ),
               PremiumButton(
                 onPressed: _googleLoading ? null : _handleGoogle,
                 outline: true,
@@ -178,11 +215,27 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     if (_googleLoading)
-                      SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2.5, color: colors.primary))
+                      SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2.5,
+                          color: colors.primary,
+                        ),
+                      )
                     else
                       const GoogleLogo(size: 22),
                     const SizedBox(width: 12),
-                    Text(tr('Google bilan davom etish', 'Продолжить с Google', 'Continue with Google')),
+                    Flexible(
+                      child: Text(
+                        tr(
+                          'Google bilan davom etish',
+                          'Продолжить с Google',
+                          'Continue with Google',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ],
                 ),
               ).motion(context).fadeIn(delay: 300.ms, duration: 350.ms),

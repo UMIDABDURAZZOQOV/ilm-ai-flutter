@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'motion.dart';
+import '../theme/ilm_design.dart';
+import 'duo_chrome.dart' show foregroundOn;
 
 /// Visual style of a [PremiumButton]. `filled` is the default gradient button;
 /// `outline` is a bordered transparent button; `ghost` is borderless/flat.
@@ -38,7 +40,8 @@ class PremiumButton extends StatefulWidget {
   State<PremiumButton> createState() => _PremiumButtonState();
 }
 
-class _PremiumButtonState extends State<PremiumButton> with SingleTickerProviderStateMixin {
+class _PremiumButtonState extends State<PremiumButton>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scale;
 
@@ -49,9 +52,10 @@ class _PremiumButtonState extends State<PremiumButton> with SingleTickerProvider
       duration: const Duration(milliseconds: 150),
       vsync: this,
     );
-    _scale = Tween<double>(begin: 1.0, end: 0.96).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeOut),
-    );
+    _scale = Tween<double>(
+      begin: 1.0,
+      end: 0.96,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
   }
 
   @override
@@ -64,16 +68,21 @@ class _PremiumButtonState extends State<PremiumButton> with SingleTickerProvider
   Widget build(BuildContext context) {
     _controller.duration = motionDuration(context, 150);
     final colors = Theme.of(context).extension<AppColors>()!.colors;
+    final design = Theme.of(context).extension<IlmDesign>()!;
     final disabled = widget.onPressed == null || widget.loading;
 
     // A `variant` (if given) is equivalent to the matching bool flag.
-    final isOutline = widget.outline || widget.variant == PremiumButtonVariant.outline;
-    final isGhost = widget.ghost || widget.variant == PremiumButtonVariant.ghost;
+    final isOutline =
+        widget.outline || widget.variant == PremiumButtonVariant.outline;
+    final isGhost =
+        widget.ghost || widget.variant == PremiumButtonVariant.ghost;
 
-    final bgColor = widget.backgroundColor ??
-        (isOutline || isGhost ? Colors.transparent : colors.primary);
-    final txtColor = widget.textColor ??
-        (isOutline || isGhost ? colors.primary : Colors.white);
+    final bgColor =
+        widget.backgroundColor ??
+        (isOutline || isGhost ? Colors.transparent : design.action);
+    final txtColor =
+        widget.textColor ??
+        (isOutline || isGhost ? colors.primary : foregroundOn(bgColor));
     final brColor = widget.borderColor ?? colors.primary;
 
     final content = widget.loading
@@ -101,62 +110,59 @@ class _PremiumButtonState extends State<PremiumButton> with SingleTickerProvider
             color: bgColor,
           )
         : isOutline
-            ? BoxDecoration(
-                borderRadius: BorderRadius.circular(widget.borderRadius),
-                border: Border.all(color: brColor, width: 2),
-              )
-            : BoxDecoration(
-                borderRadius: BorderRadius.circular(widget.borderRadius),
-                // A solid fill when an explicit backgroundColor is given (e.g. a
-                // red destructive button); otherwise the brand gradient.
-                color: widget.backgroundColor,
-                gradient: widget.backgroundColor == null
-                    ? LinearGradient(
-                        colors: [colors.primary, colors.secondary],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      )
-                    : null,
-                boxShadow: [
-                  BoxShadow(
-                    color: (widget.backgroundColor ?? colors.primary).withValues(alpha: 0.3),
-                    blurRadius: 12,
-                    offset: const Offset(0, 6),
-                  ),
-                ],
-              );
+        ? BoxDecoration(
+            borderRadius: BorderRadius.circular(widget.borderRadius),
+            border: Border.all(color: brColor, width: 2),
+          )
+        : BoxDecoration(
+            borderRadius: BorderRadius.circular(widget.borderRadius),
+            // A solid fill when an explicit backgroundColor is given (e.g. a
+            // red destructive button); otherwise the brand gradient.
+            color: bgColor,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: .08),
+                blurRadius: 6,
+                offset: const Offset(0, 2),
+              ),
+            ],
+          );
 
-    return Semantics(button: true, enabled: !disabled, child: AnimatedOpacity(
-      duration: motionDuration(context, 200),
-      opacity: disabled ? 0.5 : 1,
-      child: AnimatedBuilder(
-        animation: _scale,
-        builder: (context, child) {
-          return Transform.scale(
-            scale: _scale.value,
-            child: Material(
-              color: Colors.transparent,
-              borderRadius: BorderRadius.circular(widget.borderRadius),
-              child: InkWell(
+    return Semantics(
+      button: true,
+      enabled: !disabled,
+      child: AnimatedOpacity(
+        duration: motionDuration(context, 200),
+        opacity: disabled ? 0.5 : 1,
+        child: AnimatedBuilder(
+          animation: _scale,
+          builder: (context, child) {
+            return Transform.scale(
+              scale: _scale.value,
+              child: Material(
+                color: Colors.transparent,
                 borderRadius: BorderRadius.circular(widget.borderRadius),
-                onTap: disabled ? null : widget.onPressed,
-                onTapDown: disabled ? null : (_) => _controller.forward(),
-                onTapUp: disabled ? null : (_) => _controller.reverse(),
-                onTapCancel: disabled ? null : () => _controller.reverse(),
-                splashColor: colors.primary.withValues(alpha: 0.1),
-                highlightColor: colors.primary.withValues(alpha: 0.05),
-                child: Container(
-                  padding: widget.padding,
-                  alignment: Alignment.center,
-                  decoration: decoration,
-                  child: content,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(widget.borderRadius),
+                  onTap: disabled ? null : widget.onPressed,
+                  onTapDown: disabled ? null : (_) => _controller.forward(),
+                  onTapUp: disabled ? null : (_) => _controller.reverse(),
+                  onTapCancel: disabled ? null : () => _controller.reverse(),
+                  splashColor: colors.primary.withValues(alpha: 0.1),
+                  highlightColor: colors.primary.withValues(alpha: 0.05),
+                  child: Container(
+                    padding: widget.padding,
+                    alignment: Alignment.center,
+                    decoration: decoration,
+                    child: content,
+                  ),
                 ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
-    ));
+    );
   }
 }
 
@@ -181,7 +187,7 @@ class PremiumIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
-    
+
     final bgColor = backgroundColor ?? colors.surface;
     final iconClr = iconColor ?? colors.primary;
 

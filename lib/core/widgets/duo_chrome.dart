@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
 import 'motion.dart';
+import '../theme/ilm_design.dart';
 
 Color foregroundOn(Color background) => background.computeLuminance() > 0.179
     ? const Color(0xFF18152B)
@@ -13,8 +14,8 @@ Color duoShadowOf(Color color) {
   return hsl.withLightness((hsl.lightness - 0.18).clamp(0.05, 1.0)).toColor();
 }
 
-/// Duolingo-style 3D press button. Colours come from the brand palette by
-/// default (indigo face, darker indigo bevel) — never Duo green.
+/// Compatibility name for the shared ILM AI action. A quiet press response and
+/// subtle depth replace the former heavy bevel without changing callers.
 class Duo3DButton extends StatefulWidget {
   final Widget child;
   final VoidCallback? onPressed;
@@ -45,18 +46,19 @@ class _Duo3DButtonState extends State<Duo3DButton> {
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()?.colors;
+    final design = Theme.of(context).extension<IlmDesign>();
     final enabled = widget.onPressed != null;
     final face = enabled
-        ? (widget.color ?? colors?.primary ?? BrandPalette.indigo)
-        : const Color(0xFFE5E5E5);
+        ? (widget.color ?? design?.action ?? BrandPalette.indigo)
+        : (colors?.border ?? const Color(0xFFE5E5E5));
     final bevel = enabled
         ? (widget.shadowColor ?? duoShadowOf(face))
-        : const Color(0xFFB0B0B0);
+        : (colors?.border ?? const Color(0xFFB0B0B0));
     final textCol = enabled
         ? (widget.textColor ?? foregroundOn(face))
-        : const Color(0xFF555555);
-    final topOffset = _pressed && enabled ? 4.0 : 0.0;
-    final bottomBevel = _pressed && enabled ? 2.0 : 5.0;
+        : (colors?.textMuted ?? const Color(0xFF555555));
+    final topOffset = _pressed && enabled ? 1.0 : 0.0;
+    final bottomBevel = _pressed && enabled ? 0.0 : 1.5;
 
     return Semantics(
       button: true,
@@ -100,8 +102,8 @@ class _Duo3DButtonState extends State<Duo3DButton> {
                 style: TextStyle(
                   color: textCol,
                   fontSize: 16,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 0.6,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0,
                 ),
                 child: widget.child,
               ),
@@ -291,7 +293,7 @@ class DuoBottomNav extends StatelessWidget {
       color: colors.surface,
       child: Container(
         decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: colors.border, width: 2)),
+          border: Border(top: BorderSide(color: colors.border)),
         ),
         child: SafeArea(
           top: false,
@@ -304,34 +306,42 @@ class DuoBottomNav extends StatelessWidget {
                     child: Semantics(
                       button: true,
                       selected: i == index,
+                      label: items[i].label,
+                      excludeSemantics: true,
+                      onTap: () => onChanged(i),
                       child: InkWell(
                         onTap: () => onChanged(i),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                items[i].icon,
-                                size: 28,
-                                color: i == index
-                                    ? colors.primary
-                                    : colors.textMuted,
-                              ),
-                              const SizedBox(height: 2),
-                              Text(
-                                items[i].label,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w800,
+                        child: ConstrainedBox(
+                          constraints: const BoxConstraints(minHeight: 64),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 6),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  items[i].icon,
+                                  size: 28,
                                   color: i == index
                                       ? colors.primary
                                       : colors.textMuted,
                                 ),
-                              ),
-                            ],
+                                const SizedBox(height: 2),
+                                Text(
+                                  items[i].label,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: i == index
+                                        ? FontWeight.w700
+                                        : FontWeight.w500,
+                                    color: i == index
+                                        ? colors.primary
+                                        : colors.textMuted,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
