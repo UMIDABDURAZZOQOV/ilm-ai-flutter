@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../../core/widgets/ilm_state_view.dart';
+import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/ilm_design.dart';
+import '../../../core/widgets/duo_chrome.dart' show foregroundOn;
 import '../../../core/config/mobile_release.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -97,6 +100,7 @@ class _CurriculumLearningScreenState
   @override
   Widget build(BuildContext context) {
     final lang = ref.watch(languageProvider);
+    final colors = Theme.of(context).extension<AppColors>()!.colors;
     String tr(String uz, String ru, String en) => str3(lang, uz, ru, en);
     final grades = ref.watch(curriculumGradesProvider(widget.subject.slug));
     if (_legacy && !biologyOnly) {
@@ -158,105 +162,119 @@ class _CurriculumLearningScreenState
         }
         if (active == null || _choosing) {
           return SafeArea(
-            child: ListView(
-              padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Text(
-                        widget.subject.nameFor(lang),
-                        style: Theme.of(context).textTheme.headlineSmall,
+            child: IlmReadingWidth(
+              child: ListView(
+                padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          widget.subject.nameFor(lang),
+                          style: Theme.of(context).textTheme.headlineSmall,
+                        ),
                       ),
-                    ),
-                    TextButton(
-                      onPressed: widget.onChangeSubject,
-                      child: Text(tr('Fanlar', 'Предметы', 'Subjects')),
-                    ),
-                  ],
-                ),
-                const Center(
-                  child: MascotImage(pose: MascotPose.hello, size: 110),
-                ),
-                Text(
-                  tr(
-                    'Qaysi sinfdan boshlaymiz?',
-                    'С какого класса начнём?',
-                    'Which grade will you study?',
+                      TextButton(
+                        onPressed: widget.onChangeSubject,
+                        child: Text(tr('Fanlar', 'Предметы', 'Subjects')),
+                      ),
+                    ],
                   ),
-                  style: const TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w900,
+                  const Center(
+                    child: MascotImage(pose: MascotPose.hello, size: 110),
                   ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  tr(
-                    'Har bir sinfning o‘quv yo‘li va progressi alohida. Darslar hozir o‘zbek tilida.',
-                    'У каждого класса свой путь и прогресс. Уроки пока на узбекском.',
-                    'Each grade has its own path and progress. Lessons are currently in Uzbek.',
-                  ),
-                ),
-                const SizedBox(height: 16),
-                if (items.isEmpty)
                   Text(
                     tr(
-                      'Sinf yo‘llari hali tayyorlanmoqda.',
-                      'Пути классов готовятся.',
-                      'Grade paths are being prepared.',
+                      'Qaysi sinfdan boshlaymiz?',
+                      'С какого класса начнём?',
+                      'Which grade will you study?',
+                    ),
+                    style: Theme.of(context).textTheme.headlineSmall,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    tr(
+                      'Har bir sinfning o‘quv yo‘li va progressi alohida. Darslar hozir o‘zbek tilida.',
+                      'У каждого класса свой путь и прогресс. Уроки пока на узбекском.',
+                      'Each grade has its own path and progress. Lessons are currently in Uzbek.',
                     ),
                   ),
-                for (final item in items)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
-                    child: Card(
-                      child: ListTile(
-                        enabled: !_saving,
-                        selected: item.grade == selected,
-                        leading: CircleAvatar(child: Text('${item.grade}')),
-                        title: Text(
-                          tr(
-                            '${item.grade}-sinf — ${item.title}',
-                            '${item.grade} класс — ${item.title}',
-                            'Grade ${item.grade} — ${item.title}',
-                          ),
-                        ),
-                        subtitle: Text(
-                          item.sourceBlocked
-                              ? tr(
-                                  'Darslik tekshiruvi kutilmoqda',
-                                  'Ожидается проверка учебника',
-                                  'Textbook verification pending',
-                                )
-                              : item.readyLessons > 0
-                              ? tr(
-                                  '${item.readyLessons} ta dars mavjud',
-                                  'Доступно уроков: ${item.readyLessons}',
-                                  '${item.readyLessons} lesson(s) available',
-                                )
-                              : tr(
-                                  'Mavzular xaritasi bor; darslar tayyorlanmoqda',
-                                  'Карта тем готова; уроки готовятся',
-                                  'Topics mapped; lessons in preparation',
-                                ),
-                        ),
-                        trailing: const Icon(Icons.chevron_right_rounded),
-                        onTap: () => _select(item.grade),
-                      ),
-                    ),
-                  ),
-                if (!biologyOnly)
-                  TextButton(
-                    onPressed: () => setState(() => _legacy = true),
-                    child: Text(
+                  const SizedBox(height: 16),
+                  if (items.isEmpty)
+                    Text(
                       tr(
-                        'Oldingi umumiy yo‘lni ochish',
-                        'Открыть прежний общий путь',
-                        'Open the previous shared path',
+                        'Sinf yo‘llari hali tayyorlanmoqda.',
+                        'Пути классов готовятся.',
+                        'Grade paths are being prepared.',
                       ),
                     ),
-                  ),
-              ],
+                  for (final item in items)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: Card(
+                        child: ListTile(
+                          enabled: !_saving,
+                          selected: item.grade == selected,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(IlmRadius.card),
+                          ),
+                          leading: CircleAvatar(
+                            backgroundColor: item.grade == selected
+                                ? colors.primary
+                                : colors.primaryLight,
+                            foregroundColor: item.grade == selected
+                                ? foregroundOn(colors.primary)
+                                : colors.primary,
+                            child: Text('${item.grade}'),
+                          ),
+                          title: Text(
+                            tr(
+                              '${item.grade}-sinf — ${item.title}',
+                              '${item.grade} класс — ${item.title}',
+                              'Grade ${item.grade} — ${item.title}',
+                            ),
+                          ),
+                          subtitle: Text(
+                            item.sourceBlocked
+                                ? tr(
+                                    'Darslik tekshiruvi kutilmoqda',
+                                    'Ожидается проверка учебника',
+                                    'Textbook verification pending',
+                                  )
+                                : item.readyLessons > 0
+                                ? tr(
+                                    '${item.readyLessons} ta dars mavjud',
+                                    'Доступно уроков: ${item.readyLessons}',
+                                    '${item.readyLessons} lesson(s) available',
+                                  )
+                                : tr(
+                                    'Mavzular xaritasi bor; darslar tayyorlanmoqda',
+                                    'Карта тем готова; уроки готовятся',
+                                    'Topics mapped; lessons in preparation',
+                                  ),
+                          ),
+                          trailing: Icon(
+                            item.grade == selected
+                                ? Icons.check_circle_rounded
+                                : Icons.chevron_right_rounded,
+                          ),
+                          onTap: () => _select(item.grade),
+                        ),
+                      ),
+                    ),
+                  if (!biologyOnly)
+                    TextButton(
+                      onPressed: () => setState(() => _legacy = true),
+                      child: Text(
+                        tr(
+                          'Oldingi umumiy yo‘lni ochish',
+                          'Открыть прежний общий путь',
+                          'Open the previous shared path',
+                        ),
+                      ),
+                    ),
+                ],
+              ),
             ),
           );
         }
@@ -371,6 +389,10 @@ class _CurriculumLearningScreenState
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
+      useSafeArea: true,
+      constraints: BoxConstraints(
+        maxHeight: MediaQuery.sizeOf(context).height * .9,
+      ),
       builder: (context) => SafeArea(
         child: SizedBox(
           height: MediaQuery.sizeOf(context).height * .8,

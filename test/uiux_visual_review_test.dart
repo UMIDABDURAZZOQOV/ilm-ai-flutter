@@ -167,6 +167,9 @@ void main() {
           bool grade = true,
           String lang = 'ru',
         }) async {
+          // A new route tree, not a global-key reparent of a visited tab.
+          await tester.pumpWidget(const SizedBox.shrink());
+          await tester.pump();
           SharedPreferences.setMockInitialValues({
             PrefsKeys.language: lang,
             'subject_7': 'biologiya',
@@ -254,9 +257,21 @@ void main() {
         await mount(const SubjectHomeScreen());
         expect(find.text('0/20 XP'), findsOneWidget);
         await save('home');
+        await tapText('Темы');
+        await save('outline');
+        tester.state<NavigatorState>(find.byType(Navigator).first).pop();
+        await tester.pumpAndSettle();
+        final node = find.byIcon(Icons.star_rounded).first;
+        await tester.ensureVisible(node);
+        await tester.tap(node);
+        await tester.pumpAndSettle();
+        await save('start');
+        tester.state<NavigatorState>(find.byType(Navigator).first).pop();
+        await tester.pumpAndSettle();
         await tapText('Практика');
         await save('practice');
         await mount(const SubjectHomeScreen(), grade: false);
+        expect(find.text('С какого класса начнём?'), findsOneWidget);
         await save('grades');
         await mount(const SkillProfileScreen());
         await save('profile');
