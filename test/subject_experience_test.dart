@@ -1220,7 +1220,8 @@ void main() {
         );
         expect(find.byType(MascotImage), findsOneWidget);
         final img = tester.widget<Image>(find.byType(Image));
-        final asset = img.image as AssetImage;
+        final resized = img.image as ResizeImage;
+        final asset = resized.imageProvider as AssetImage;
         expect(asset.assetName, pose.assetPath);
         expect(tester.takeException(), isNull);
       }

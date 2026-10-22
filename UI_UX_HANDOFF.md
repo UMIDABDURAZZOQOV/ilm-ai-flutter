@@ -74,3 +74,21 @@ migratsiya, deploy, main merge yoki Play nashri bajarilmadi.
 Auditning Fizika preview UI matnlarini uz/ru/en tizimiga ulash va Fizika QA hujjatini
 joriy katalog/commitlarga moslash bandlari qolgan. Fan kontenti tarjima qilinmaydi.
 Keyin vizual izchillik, Ilmo harakatlari va haqiqiy Android QA davom ettiriladi.
+
+## 2026-10-23 — Ilmo brend tizimi
+
+Foydalanuvchining alohida Ilmo/ILM AI topshirig‘i asosida Character Bible,
+grafika auditi va hozirgi assetlar bilan bajariladigan shared Flutter yaxshilashlari
+tayyorlandi. Tafsilotlar: [Character Bible](docs/brand/ILMO_CHARACTER_BIBLE.md),
+[asset auditi](docs/brand/ILMO_ASSET_AUDIT.md),
+[o‘lchangan manifest](docs/brand/ilmo_asset_audit.json).
+
+Original 8 PNG saqlandi; yangi 3D grafika yaratilmagan. Shared `MascotImage`,
+tokenlar, `IlmoSpeechHeader`, onboarding animatsiyalari va Flutter splashning
+dekodlash parametrlari standartlashtirildi. Backend, fan contenti, Physics/Biology
+feature kodi, auth/router va native konfiguratsiyada o‘zgarish yo‘q.
+Markaziy `CLAUDE.md` SHA/commit qayta tekshirildi; parallel fan ishlariga
+aralashmaslik uchun ushbu o‘zgarishning hujjati Flutter UI branchida saqlandi.
+Yakuniy tekshiruv: **169 Flutter testi o‘tdi**, analyze **No issues found**.
+18 yangi brend testi bor; original PNG hashlarining hammasi saqlandi.
+Real telefon/TalkBack/native mask va memory/FPS tekshiruvi hali bajarilmagan.

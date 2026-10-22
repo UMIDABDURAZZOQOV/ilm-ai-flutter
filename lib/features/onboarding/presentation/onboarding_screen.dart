@@ -195,7 +195,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   ),
                 ),
                 const Spacer(),
-                const MascotImage(pose: MascotPose.hello, size: 140),
+                const MascotImage.hero(pose: MascotPose.hello),
                 const SizedBox(height: 24),
                 Text(
                   'ILM AI',

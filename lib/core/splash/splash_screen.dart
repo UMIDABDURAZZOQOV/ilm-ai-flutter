@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../features/auth/application/auth_controller.dart';
 import '../../features/skills/presentation/skill_ui.dart';
 import '../providers/app_providers.dart';
+import '../theme/ilmo_tokens.dart';
+import '../theme/app_theme.dart';
 
 class SplashScreen extends ConsumerWidget {
   const SplashScreen({super.key});
@@ -13,7 +15,7 @@ class SplashScreen extends ConsumerWidget {
         ref.watch(authControllerProvider).hasError;
     final language = ref.watch(languageProvider);
     return Scaffold(
-      backgroundColor: const Color(0xFF2A1F6B),
+      backgroundColor: BrandPalette.indigo,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -23,13 +25,25 @@ class SplashScreen extends ConsumerWidget {
               children: [
                 Image.asset(
                   'assets/mascot/splash_logo.png',
-                  width: 160,
-                  height: 160,
+                  width: IlmoSizes.splash,
+                  height: IlmoSizes.splash,
+                  cacheWidth:
+                      (IlmoSizes.splash *
+                              MediaQuery.devicePixelRatioOf(context))
+                          .ceil()
+                          .clamp(1, 1024),
+                  cacheHeight:
+                      (IlmoSizes.splash *
+                              MediaQuery.devicePixelRatioOf(context))
+                          .ceil()
+                          .clamp(1, 1024),
                   semanticLabel: 'ILM AI',
                 ),
                 const SizedBox(height: 36),
                 if (!failed)
-                  const CircularProgressIndicator(color: Color(0xFFF9A825))
+                  const CircularProgressIndicator(
+                    color: BrandPalette.accentOrange,
+                  )
                 else ...[
                   Text(
                     str3(

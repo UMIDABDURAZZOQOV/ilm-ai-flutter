@@ -15,6 +15,8 @@ import '../../../core/widgets/app_text_field.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/widgets/ilmo_speech_header.dart';
+import '../../../core/theme/ilmo_tokens.dart';
 import '../../auth/application/auth_controller.dart';
 import '../../auth/data/auth_repository.dart';
 import '../data/onboarding_draft.dart';
@@ -539,17 +541,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 .fadeIn(duration: 350.ms, delay: 100.ms)
                 .slideY(begin: 0.12, end: 0, curve: Curves.easeOutQuad),
             const SizedBox(height: 18),
-            (MascotImage(
-              pose: MascotPose.hello,
-              size: 140,
-            ) as Widget)
-                .motion(context)
-                .scale(
-                  begin: const Offset(0.35, 0.35),
-                  end: const Offset(1.0, 1.0),
-                  curve: Curves.easeOutBack,
-                  duration: 450.ms,
-                ),
+            const MascotImage.hero(pose: MascotPose.hello),
           ],
         ),
       ),
@@ -1266,14 +1258,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              (MascotImage(pose: MascotPose.happy, size: 128) as Widget)
-                  .motion(context, onPlay: (controller) => controller.repeat(reverse: true))
-                  .scale(
-                    begin: const Offset(0.96, 0.96),
-                    end: const Offset(1.04, 1.04),
-                    duration: 1200.ms,
-                    curve: Curves.easeInOut,
-                  ),
+              const MascotImage.hero(pose: MascotPose.happy),
               const SizedBox(height: 28),
               Text(
                 str3(
@@ -1380,39 +1365,12 @@ class _StepContainer extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
       children: [
-        _MascotSpeechHeader(
+        IlmoSpeechHeader(
           pose: mascotPose,
           text: speechText,
         ),
-        const SizedBox(height: 24),
+        const SizedBox(height: IlmoSpacing.section),
         ...children,
-      ],
-    );
-  }
-}
-
-class _MascotSpeechHeader extends StatelessWidget {
-  final MascotPose pose;
-  final String text;
-
-  const _MascotSpeechHeader({
-    required this.pose,
-    required this.text,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        MascotImage(pose: pose, size: 88),
-        const SizedBox(width: 8),
-        Expanded(
-          child: DuoSpeechBubble(
-            pointerDirection: BubblePointerDirection.left,
-            text: text,
-          ),
-        ),
       ],
     );
   }

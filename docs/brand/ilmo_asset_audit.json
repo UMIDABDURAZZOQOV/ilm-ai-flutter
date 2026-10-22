@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "file": "assets/mascot/app_icon.png",
+      "sha256": "8f4356de6723a76eec064eab8fbb5f7385b0531e8d658113d709e3f31e7b6ee7",
+      "bytes": 433026,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGB",
+      "alpha_bbox": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "alpha_128_bbox": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "transparent_fraction": 0.0,
+      "semi_transparent_fraction": 0.0,
+      "opaque_fraction": 1.0,
+      "nontransparent_border_pixels": 4092,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/app_icon_foreground.png",
+      "sha256": "352a1843bc89f0618e925c529044baabb280971c7a625b17bf409d0b280afd00",
+      "bytes": 334422,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        174,
+        198,
+        849,
+        863
+      ],
+      "alpha_128_bbox": [
+        177,
+        201,
+        846,
+        799
+      ],
+      "transparent_fraction": 0.726291,
+      "semi_transparent_fraction": 0.071257,
+      "opaque_fraction": 0.202453,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/ilmo_explaining.png",
+      "sha256": "779af9b04109c57b0194194f08da1c52641250d42e6a7041387a8307dbe16858",
+      "bytes": 1012908,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        69,
+        89,
+        955,
+        935
+      ],
+      "alpha_128_bbox": [
+        72,
+        92,
+        952,
+        932
+      ],
+      "transparent_fraction": 0.632056,
+      "semi_transparent_fraction": 0.019976,
+      "opaque_fraction": 0.347968,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/ilmo_happy.png",
+      "sha256": "37514c9657ff0e29ccda7115eba2edbeb3139fd22dd62695bde7aa17118928ef",
+      "bytes": 912574,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        187,
+        70,
+        837,
+        954
+      ],
+      "alpha_128_bbox": [
+        190,
+        72,
+        834,
+        952
+      ],
+      "transparent_fraction": 0.689087,
+      "semi_transparent_fraction": 0.022248,
+      "opaque_fraction": 0.288665,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/ilmo_hello.png",
+      "sha256": "91ba5343834608c1602810a4b1b037ac079bd68f87a99dfc98abe01c9c95a1ed",
+      "bytes": 799741,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        239,
+        69,
+        785,
+        955
+      ],
+      "alpha_128_bbox": [
+        241,
+        71,
+        783,
+        953
+      ],
+      "transparent_fraction": 0.71667,
+      "semi_transparent_fraction": 0.014386,
+      "opaque_fraction": 0.268944,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/ilmo_sad.png",
+      "sha256": "c3be5bb85dda75e7bf753fe9bb389cce9e45e672b81624984e71b1f2969d026c",
+      "bytes": 819821,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        214,
+        70,
+        810,
+        954
+      ],
+      "alpha_128_bbox": [
+        216,
+        72,
+        808,
+        952
+      ],
+      "transparent_fraction": 0.695886,
+      "semi_transparent_fraction": 0.016002,
+      "opaque_fraction": 0.288113,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/ilmo_thinking.png",
+      "sha256": "b57a7e7b4b7122b4161e776e4a80d76c69877646be262c51521a14eb0f678dfd",
+      "bytes": 762314,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        252,
+        69,
+        772,
+        955
+      ],
+      "alpha_128_bbox": [
+        255,
+        71,
+        769,
+        953
+      ],
+      "transparent_fraction": 0.717946,
+      "semi_transparent_fraction": 0.016149,
+      "opaque_fraction": 0.265905,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    },
+    {
+      "file": "assets/mascot/splash_logo.png",
+      "sha256": "9562ccd1954cee8f7590815ca360eb028b780eb17ba9b8afd8a34b0805197b07",
+      "bytes": 307611,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source_mode": "RGBA",
+      "alpha_bbox": [
+        195,
+        199,
+        829,
+        823
+      ],
+      "alpha_128_bbox": [
+        198,
+        202,
+        826,
+        763
+      ],
+      "transparent_fraction": 0.758771,
+      "semi_transparent_fraction": 0.062755,
+      "opaque_fraction": 0.178474,
+      "nontransparent_border_pixels": 0,
+      "decoded_rgba_bytes": 4194304
+    }
+  ],
+  "total_bytes": 5382417,
+  "note": "Pixel metrics do not certify artistic consistency or halo quality."
+}
