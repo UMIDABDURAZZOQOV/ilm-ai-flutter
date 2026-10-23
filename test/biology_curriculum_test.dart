@@ -20,6 +20,7 @@ import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/content_source_button.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/curriculum_learning_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_lesson_screen.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/learning_journey_widgets.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 import 'support/offline_preferences.dart';
 
@@ -242,6 +243,7 @@ void main() {
         ),
         isTrue,
       );
+      await tester.pumpAndSettle();
       expect(find.text('Hozir 1 ta dars mavjud.'), findsOneWidget);
       await tap(tester, 'Mavzular');
       expect(find.textContaining('1-§. Biologiya'), findsOneWidget);
@@ -327,12 +329,21 @@ void main() {
           scrollable: find.byType(Scrollable).first,
         );
         expect(tester.widget<Text>(label).maxLines, isNull);
-        final checkpoint = find.bySemanticsLabel('$title. Qulflangan');
+        final checkpoint = find.descendant(
+          of: find.byWidgetPredicate(
+            (widget) =>
+                widget is LearningJourneyTile &&
+                widget.semanticLabel == '$title. Qulflangan',
+          ),
+          matching: find.text('Bo‘lim sinovi'),
+        );
         await tester.scrollUntilVisible(
           checkpoint,
           180,
           scrollable: find.byType(Scrollable).first,
         );
+        await tester.pumpAndSettle();
+        expect(checkpoint.hitTestable(), findsOneWidget);
         await tester.tap(checkpoint);
         await tester.pumpAndSettle();
         expect(
@@ -646,9 +657,9 @@ void main() {
       final outline = fixture('biology_grade11_complete_outline');
       dio.httpClientAdapter = Adapter((request) {
         requests.add(request);
-          if (request.path.endsWith('/grades')) {
+        if (request.path.endsWith('/grades')) {
           return reply(200, fixture('biology_complete_grades'));
-          }
+        }
         if (request.path.endsWith('/tree')) return reply(200, finalTree);
         if (request.path.endsWith('/curriculum')) return reply(200, outline);
         throw StateError('Unexpected completed-path request ${request.path}');
@@ -664,6 +675,7 @@ void main() {
         saved: {'class_900002': '11'},
         scale: 2,
       );
+      await tester.pumpAndSettle();
       expect(find.text('Hozir 49 ta dars mavjud.'), findsOneWidget);
       expect(
         find.textContaining('Qolgan mavzular tayyorlanmoqda'),

@@ -56,7 +56,7 @@ void main() {
       expect(find.text('10/20 XP'), findsOneWidget);
       repo.offline = true;
       await tester.drag(
-        find.byType(SingleChildScrollView).first,
+        find.byType(CustomScrollView).first,
         const Offset(0, 400),
       );
       await tester.pumpAndSettle();

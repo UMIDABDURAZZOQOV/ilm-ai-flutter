@@ -6,10 +6,11 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
-import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import 'learning_journey_widgets.dart';
+import 'study_start_sheet.dart';
+import '../application/lesson_entry.dart';
 import '../../../core/widgets/ilm_state_view.dart';
 import '../../../core/network/error_message.dart';
 import '../../auth/application/auth_controller.dart';
@@ -71,11 +72,11 @@ class _PathItem {
 
   _PathItem.lesson({
     required SkillTreeLesson this.lesson,
+    required SkillTreeUnit this.unit,
     required this.unitTitle,
     required this.unitStart,
     this.lockReason,
-  }) : isCheckpoint = false,
-       unit = null;
+  }) : isCheckpoint = false;
 
   _PathItem.checkpoint({
     required SkillTreeUnit this.unit,
@@ -99,11 +100,15 @@ final _treeProvider = FutureProvider.autoDispose
 class SkillPathScreen extends ConsumerWidget {
   final SkillSubject subject;
   final int? grade;
+  final bool embedded;
+  final String? courseNote;
   final VoidCallback? onChangeSubject;
   const SkillPathScreen({
     super.key,
     required this.subject,
     this.grade,
+    this.embedded = false,
+    this.courseNote,
     this.onChangeSubject,
   });
 
@@ -249,12 +254,16 @@ class SkillPathScreen extends ConsumerWidget {
         language: language,
         color: color,
         lockReason: lockReason,
+        entry: ref.read(lessonEntryProvider(lesson)),
         onStart: () => Navigator.pop(ctx, true),
       ),
     );
     if (start != true || !context.mounted) return;
     await context.push('/skills/lesson', extra: lesson);
-    if (context.mounted) ref.invalidate(_treeProvider((subject.slug, grade)));
+    if (context.mounted) {
+      ref.invalidate(lessonEntryProvider(lesson));
+      ref.invalidate(_treeProvider((subject.slug, grade)));
+    }
   }
 
   Future<void> _showCheckpointPopover({
@@ -264,199 +273,20 @@ class SkillPathScreen extends ConsumerWidget {
     required String language,
     required Color color,
   }) async {
-    final locked = unit.examStatus == 'locked';
-    final passed = unit.examStatus == 'passed';
-
     final start = await showModalBottomSheet<bool>(
       context: context,
       showDragHandle: true,
-      backgroundColor: Theme.of(context).cardColor,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+      isScrollControlled: true,
+      useSafeArea: true,
+      constraints: BoxConstraints(
+        maxHeight: MediaQuery.sizeOf(context).height * .88,
       ),
-      builder: (ctx) {
-        final isDark = Theme.of(ctx).brightness == Brightness.dark;
-        return SafeArea(
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(24, 8, 24, 28),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    str3(
-                      language,
-                      'BO‘LIM SINOVI',
-                      'ПРОВЕРКА РАЗДЕЛА',
-                      'UNIT CHECKPOINT',
-                    ),
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      color: isDark
-                          ? Colors.grey.shade400
-                          : Colors.grey.shade600,
-                      letterSpacing: 0.8,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    unit.titleFor(language),
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                  const SizedBox(height: 14),
-                  Center(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 14,
-                        vertical: 6,
-                      ),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFFFC800).withValues(alpha: 0.15),
-                        borderRadius: BorderRadius.circular(14),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(
-                            passed
-                                ? Icons.verified_rounded
-                                : Icons.emoji_events_rounded,
-                            size: 20,
-                            color: const Color(0xFFFF9600),
-                          ),
-                          const SizedBox(width: 6),
-                          Flexible(
-                            child: Text(
-                              passed
-                                  ? str3(
-                                      language,
-                                      'Muvaffaqiyatli topshirilgan',
-                                      'Пройдено',
-                                      'Passed',
-                                    )
-                                  : str3(
-                                      language,
-                                      'Bo‘limni yakunlash sinovi',
-                                      'Итоговая проверка',
-                                      'Final unit quiz',
-                                    ),
-                              style: const TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w800,
-                                color: Color(0xFF2A1F6B),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  if (locked) ...[
-                    Container(
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: isDark
-                            ? Colors.grey.shade900
-                            : Colors.grey.shade100,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: isDark
-                              ? Colors.grey.shade800
-                              : Colors.grey.shade300,
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          const Icon(
-                            Icons.lock_outline_rounded,
-                            color: Colors.grey,
-                            size: 24,
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              !unit.coverageComplete
-                                  ? str3(
-                                      language,
-                                      'Bobning qolgan darslari tayyorlanmoqda. Checkpoint hali ochilmaydi.',
-                                      'Остальные уроки главы готовятся. Проверка пока недоступна.',
-                                      'The remaining chapter lessons are in preparation. The checkpoint is not available yet.',
-                                    )
-                                  : str3(
-                                      language,
-                                      'Bo‘limdagi barcha darslarni tugating.',
-                                      'Завершите все уроки в этом разделе.',
-                                      'Complete all lessons in this unit.',
-                                    ),
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: isDark
-                                    ? Colors.grey.shade300
-                                    : Colors.grey.shade700,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    FilledButton(
-                      onPressed: null,
-                      style: FilledButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                      ),
-                      child: Text(
-                        str3(language, 'QULFLANGAN', 'ЗАБЛОКИРОВАНО', 'LOCKED'),
-                        style: const TextStyle(fontWeight: FontWeight.w800),
-                      ),
-                    ),
-                  ] else ...[
-                    Duo3DButton(
-                      color: const Color(0xFFF9A825),
-                      shadowColor: const Color(0xFFC77700),
-                      onPressed: () => Navigator.pop(ctx, true),
-                      child: Text(
-                        passed
-                            ? str3(
-                                language,
-                                'SINOVNI TAKRORLASH',
-                                'ПОВТОРИТЬ ПРОВЕРКУ',
-                                'REVIEW CHECKPOINT',
-                              )
-                            : str3(
-                                language,
-                                'SINOVNI BOSHLASH',
-                                'НАЧАТЬ ПРОВЕРКУ',
-                                'START CHECKPOINT',
-                              ),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                    ),
-                  ],
-                ],
-              ),
-            ),
-          ),
-        );
-      },
+      builder: (ctx) => CheckpointPopoverContent(
+        unit: unit,
+        language: language,
+        onStart: () => Navigator.pop(ctx, true),
+      ),
     );
-
     if (start != true || !context.mounted) return;
     await context.push(
       '/skills/practice',
@@ -476,37 +306,45 @@ class SkillPathScreen extends ConsumerWidget {
         : (treeAsync.valueOrNull?.user.dailyGoalXp ?? 20);
 
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: onChangeSubject == null,
-        title: onChangeSubject == null
-            ? Text(subject.nameFor(language))
-            : TextButton.icon(
-                onPressed: onChangeSubject,
-                icon: const Icon(Icons.swap_horiz_rounded),
-                label: Text(
-                  subject.nameFor(language),
-                  overflow: TextOverflow.ellipsis,
+      appBar: embedded
+          ? null
+          : AppBar(
+              automaticallyImplyLeading: onChangeSubject == null,
+              title: onChangeSubject == null
+                  ? Text(subject.nameFor(language))
+                  : TextButton.icon(
+                      onPressed: onChangeSubject,
+                      icon: const Icon(Icons.swap_horiz_rounded),
+                      label: Text(
+                        subject.nameFor(language),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+              actions: [
+                if (treeAsync.valueOrNull != null)
+                  IconButton(
+                    tooltip: str3(language, 'Bo‘limlar', 'Разделы', 'Sections'),
+                    onPressed: () => _sections(
+                      context,
+                      ref,
+                      treeAsync.requireValue,
+                      language,
+                    ),
+                    icon: const Icon(Icons.map_outlined),
+                  ),
+                treeAsync.maybeWhen(
+                  data: (tree) => Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: Center(
+                      child: FittedBox(
+                        child: HeartsXpHeader(summary: tree.user),
+                      ),
+                    ),
+                  ),
+                  orElse: () => const SizedBox.shrink(),
                 ),
-              ),
-        actions: [
-          if (treeAsync.valueOrNull != null)
-            IconButton(
-              tooltip: str3(language, 'Bo‘limlar', 'Разделы', 'Sections'),
-              onPressed: () =>
-                  _sections(context, ref, treeAsync.requireValue, language),
-              icon: const Icon(Icons.map_outlined),
+              ],
             ),
-          treeAsync.maybeWhen(
-            data: (tree) => Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: Center(
-                child: FittedBox(child: HeartsXpHeader(summary: tree.user)),
-              ),
-            ),
-            orElse: () => const SizedBox.shrink(),
-          ),
-        ],
-      ),
       body: SafeArea(
         child: treeAsync.when(
           skipLoadingOnReload: true,
@@ -543,6 +381,7 @@ class SkillPathScreen extends ConsumerWidget {
                 items.add(
                   _PathItem.lesson(
                     lesson: l,
+                    unit: unit,
                     unitTitle: unit.titleFor(language),
                     unitStart: i == 0,
                     lockReason: lockReason,
@@ -559,16 +398,29 @@ class SkillPathScreen extends ConsumerWidget {
               }
             }
             final firstUnlockedIndex = items.indexWhere(
-              (it) =>
-                  !it.isCheckpoint &&
-                  it.lesson!.status == LessonStatus.unlocked,
+              (it) => it.isCheckpoint
+                  ? it.unit!.examStatus == 'unlocked'
+                  : it.lesson!.status == LessonStatus.unlocked,
             );
 
-            final nextLesson = firstUnlockedIndex >= 0
+            final nextLesson =
+                firstUnlockedIndex >= 0 &&
+                    !items[firstUnlockedIndex].isCheckpoint
                 ? items[firstUnlockedIndex].lesson
                 : null;
-            final checkpointReady = tree.units.any(
-              (u) => u.examStatus == 'unlocked',
+            final nextCheckpoint =
+                firstUnlockedIndex >= 0 &&
+                    items[firstUnlockedIndex].isCheckpoint
+                ? items[firstUnlockedIndex].unit
+                : null;
+            final entries = {
+              for (final item in items.where((item) => !item.isCheckpoint))
+                item.lesson!.id: item.lesson!.status == LessonStatus.unlocked
+                    ? ref.watch(lessonEntryProvider(item.lesson!))
+                    : LessonEntry.resolve(item.lesson!, null, DateTime.now()),
+            };
+            final hasCompleted = items.any(
+              (item) => item.lesson?.status == LessonStatus.completed,
             );
             return RefreshIndicator(
               onRefresh: () async {
@@ -580,171 +432,250 @@ class SkillPathScreen extends ConsumerWidget {
                   // A failed pull-to-refresh must still finish its indicator.
                 }
               },
-              child: SingleChildScrollView(
-                physics: const AlwaysScrollableScrollPhysics(),
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-                child: IlmReadingWidth(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      LearningContinueCard(
-                        language: language,
-                        contentNote:
-                            subject.slug == 'biologiya' &&
-                                grade != null &&
-                                language != 'uz'
-                            ? str3(
-                                language,
-                                'Dars tili: o‘zbekcha',
-                                'Язык уроков: узбекский',
-                                'Lesson language: Uzbek',
-                              )
-                            : null,
-                        title:
-                            nextLesson?.titleFor(language) ??
-                            str3(
-                              language,
-                              'Bilimingizni mustahkamlang',
-                              'Закрепите знания',
-                              'Strengthen your knowledge',
-                            ),
-                        todayXp: tree.user.todayXp,
-                        goalXp: dailyGoal,
-                        onGoal: () => showDailyGoalBottomSheet(
-                          context: context,
-                          ref: ref,
-                          language: language,
-                          accentColor: subjectColor,
-                        ),
-                        checkpoint: nextLesson == null && checkpointReady,
-                        onContinue: nextLesson != null
-                            ? () async {
-                                await context.push(
-                                  '/skills/lesson',
-                                  extra: nextLesson,
-                                );
-                                if (context.mounted) {
-                                  ref.invalidate(
-                                    _treeProvider((subject.slug, grade)),
-                                  );
-                                }
-                              }
-                            : checkpointReady
-                            ? () => _sections(context, ref, tree, language)
-                            : null,
+              child: LayoutBuilder(
+                builder: (context, constraints) => CustomScrollView(
+                  key: PageStorageKey(
+                    'learning:${ref.watch(currentUserIdProvider)}:${subject.slug}:$grade',
+                  ),
+                  physics: const AlwaysScrollableScrollPhysics(),
+                  slivers: [
+                    SliverPadding(
+                      padding: EdgeInsets.fromLTRB(
+                        ((constraints.maxWidth - IlmDesign.readingWidth) / 2)
+                            .clamp(16, double.infinity),
+                        12,
+                        ((constraints.maxWidth - IlmDesign.readingWidth) / 2)
+                            .clamp(16, double.infinity),
+                        24,
                       ),
-                      if (items.isEmpty)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 24),
-                          child: Text(
-                            str3(
-                              language,
-                              'Bu yo‘lda hozircha darslar yo‘q. Mavzular ro‘yxatini tekshiring yoki yangilang.',
-                              'На этом пути пока нет уроков. Проверьте темы или обновите страницу.',
-                              'There are no lessons on this path yet. Check the topics or refresh.',
-                            ),
-                          ),
-                        ),
-                      for (var i = 0; i < items.length; i++) ...[
-                        if (items[i].unitStart ||
-                            (items[i].isCheckpoint &&
-                                (i == 0 ||
-                                    items[i - 1].unitTitle !=
-                                        items[i].unitTitle)))
-                          Padding(
-                            padding: const EdgeInsets.only(top: 24, bottom: 12),
-                            child: Text(
-                              items[i].unitTitle.toUpperCase(),
-                              style: Theme.of(context).textTheme.titleMedium,
-                            ),
-                          ),
-                        LearningJourneyTile(
-                          title: items[i].isCheckpoint
-                              ? str3(
-                                  language,
-                                  'Bo‘lim sinovi',
-                                  'Проверка раздела',
-                                  'Unit checkpoint',
-                                )
-                              : items[i].lesson!.titleFor(language),
-                          semanticLabel:
-                              '${items[i].isCheckpoint ? items[i].unit!.titleFor(language) : items[i].lesson!.titleFor(language)}. ${(items[i].isCheckpoint ? items[i].unit!.examStatus == 'locked' : items[i].lesson!.status == LessonStatus.locked)
-                                  ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
-                                  : (items[i].isCheckpoint ? items[i].unit!.examStatus == 'passed' : items[i].lesson!.status == LessonStatus.completed)
-                                  ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
-                                  : str3(language, 'Boshlash', 'Начать', 'Start')}',
-                          stateLabel: items[i].isCheckpoint
-                              ? items[i].unit!.examStatus == 'locked'
+                      sliver: SliverList.builder(
+                        itemCount: items.length + 1,
+                        itemBuilder: (context, index) {
+                          if (index == 0) {
+                            return Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                LearningContinueCard(
+                                  language: language,
+                                  statusLabel: nextCheckpoint != null
+                                      ? str3(
+                                          language,
+                                          'Bo‘lim sinoviga tayyor',
+                                          'Можно пройти проверку',
+                                          'Ready for the checkpoint',
+                                        )
+                                      : str3(
+                                          language,
+                                          'O‘quv yo‘lingiz',
+                                          'Ваш учебный путь',
+                                          'Your learning path',
+                                        ),
+                                  courseNote: courseNote,
+                                  summary: embedded ? tree.user : null,
+                                  entry: nextLesson == null
+                                      ? null
+                                      : entries[nextLesson.id],
+                                  contentNote:
+                                      subject.slug == 'biologiya' &&
+                                          grade != null &&
+                                          language != 'uz'
+                                      ? str3(
+                                          language,
+                                          'Dars tili: o‘zbekcha',
+                                          'Язык уроков: узбекский',
+                                          'Lesson language: Uzbek',
+                                        )
+                                      : null,
+                                  title:
+                                      nextLesson?.titleFor(language) ??
+                                      nextCheckpoint?.titleFor(language) ??
+                                      (hasCompleted
+                                          ? str3(
+                                              language,
+                                              'Takrorlash uchun dars tanlang',
+                                              'Выберите урок для повторения',
+                                              'Choose a lesson to practise again',
+                                            )
+                                          : str3(
+                                              language,
+                                              'Darslar yo‘li',
+                                              'Путь обучения',
+                                              'Learning path',
+                                            )),
+                                  todayXp: tree.user.todayXp,
+                                  goalXp: dailyGoal,
+                                  onGoal: () => showDailyGoalBottomSheet(
+                                    context: context,
+                                    ref: ref,
+                                    language: language,
+                                    accentColor: subjectColor,
+                                  ),
+                                  checkpoint: nextCheckpoint != null,
+                                  onContinue: nextLesson != null
+                                      ? () async {
+                                          await context.push(
+                                            '/skills/lesson',
+                                            extra: nextLesson,
+                                          );
+                                          if (context.mounted) {
+                                            ref.invalidate(
+                                              lessonEntryProvider(nextLesson),
+                                            );
+                                            ref.invalidate(
+                                              _treeProvider((
+                                                subject.slug,
+                                                grade,
+                                              )),
+                                            );
+                                          }
+                                        }
+                                      : nextCheckpoint != null
+                                      ? () => _showCheckpointPopover(
+                                          context: context,
+                                          ref: ref,
+                                          unit: nextCheckpoint,
+                                          language: language,
+                                          color: subjectColor,
+                                        )
+                                      : null,
+                                ),
+                                if (items.isEmpty)
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 24,
+                                    ),
+                                    child: Text(
+                                      str3(
+                                        language,
+                                        'Bu yo‘lda hozircha darslar yo‘q. Mavzular ro‘yxatini tekshiring yoki yangilang.',
+                                        'На этом пути пока нет уроков. Проверьте темы или обновите страницу.',
+                                        'There are no lessons on this path yet. Check the topics or refresh.',
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            );
+                          }
+                          final i = index - 1;
+                          return Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              if (items[i].unitStart ||
+                                  (items[i].isCheckpoint &&
+                                      (i == 0 ||
+                                          items[i - 1].unitTitle !=
+                                              items[i].unitTitle)))
+                                LearningUnitHeader(
+                                  title: items[i].unitTitle,
+                                  language: language,
+                                  completed: items[i].unit!.lessons
+                                      .where(
+                                        (lesson) =>
+                                            lesson.status ==
+                                            LessonStatus.completed,
+                                      )
+                                      .length,
+                                  total: items[i].unit!.lessons.length,
+                                  coverageComplete:
+                                      items[i].unit!.coverageComplete,
+                                ),
+                              LearningJourneyTile(
+                                title: items[i].isCheckpoint
+                                    ? str3(
+                                        language,
+                                        'Bo‘lim sinovi',
+                                        'Проверка раздела',
+                                        'Unit checkpoint',
+                                      )
+                                    : items[i].lesson!.titleFor(language),
+                                semanticLabel:
+                                    '${items[i].isCheckpoint ? items[i].unit!.titleFor(language) : items[i].lesson!.titleFor(language)}. ${(items[i].isCheckpoint ? items[i].unit!.examStatus == 'locked' : items[i].lesson!.status == LessonStatus.locked)
+                                        ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
+                                        : (items[i].isCheckpoint ? items[i].unit!.examStatus == 'passed' : items[i].lesson!.status == LessonStatus.completed)
+                                        ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
+                                        : items[i].isCheckpoint
+                                        ? str3(language, 'Boshlash', 'Начать', 'Start')
+                                        : entries[items[i].lesson!.id]!.description(language)}',
+                                stateLabel: items[i].isCheckpoint
+                                    ? items[i].unit!.examStatus == 'locked'
+                                          ? str3(
+                                              language,
+                                              'Qulflangan',
+                                              'Заблокировано',
+                                              'Locked',
+                                            )
+                                          : items[i].unit!.examStatus ==
+                                                'passed'
+                                          ? str3(
+                                              language,
+                                              'Bajarilgan',
+                                              'Завершено',
+                                              'Completed',
+                                            )
+                                          : str3(
+                                              language,
+                                              'Boshlash',
+                                              'Начать',
+                                              'Start',
+                                            )
+                                    : items[i].lesson!.status ==
+                                          LessonStatus.locked
                                     ? str3(
                                         language,
                                         'Qulflangan',
                                         'Заблокировано',
                                         'Locked',
                                       )
-                                    : items[i].unit!.examStatus == 'passed'
+                                    : items[i].lesson!.status ==
+                                          LessonStatus.completed
                                     ? str3(
                                         language,
                                         'Bajarilgan',
                                         'Завершено',
                                         'Completed',
                                       )
-                                    : str3(
+                                    : entries[items[i].lesson!.id]!.action(
                                         language,
-                                        'Boshlash',
-                                        'Начать',
-                                        'Start',
-                                      )
-                              : items[i].lesson!.status == LessonStatus.locked
-                              ? str3(
-                                  language,
-                                  'Qulflangan',
-                                  'Заблокировано',
-                                  'Locked',
-                                )
-                              : items[i].lesson!.status ==
-                                    LessonStatus.completed
-                              ? str3(
-                                  language,
-                                  'Bajarilgan',
-                                  'Завершено',
-                                  'Completed',
-                                )
-                              : str3(language, 'BOSHLASH', 'НАЧАТЬ', 'START'),
-                          locked: items[i].isCheckpoint
-                              ? items[i].unit!.examStatus == 'locked'
-                              : items[i].lesson!.status == LessonStatus.locked,
-                          completed: items[i].isCheckpoint
-                              ? items[i].unit!.examStatus == 'passed'
-                              : items[i].lesson!.status ==
-                                    LessonStatus.completed,
-                          current: i == firstUnlockedIndex,
-                          checkpoint: items[i].isCheckpoint,
-                          stars: items[i].lesson?.stars ?? 0,
-                          onTap: () {
-                            if (items[i].isCheckpoint) {
-                              _showCheckpointPopover(
-                                context: context,
-                                ref: ref,
-                                unit: items[i].unit!,
-                                language: language,
-                                color: subjectColor,
-                              );
-                            } else {
-                              _showLessonPopover(
-                                context: context,
-                                ref: ref,
-                                lesson: items[i].lesson!,
-                                language: language,
-                                color: subjectColor,
-                                unitTitle: items[i].unitTitle,
-                                lockReason: items[i].lockReason,
-                              );
-                            }
-                          },
-                        ),
-                      ],
-                    ],
-                  ),
+                                      ),
+                                locked: items[i].isCheckpoint
+                                    ? items[i].unit!.examStatus == 'locked'
+                                    : items[i].lesson!.status ==
+                                          LessonStatus.locked,
+                                completed: items[i].isCheckpoint
+                                    ? items[i].unit!.examStatus == 'passed'
+                                    : items[i].lesson!.status ==
+                                          LessonStatus.completed,
+                                current: i == firstUnlockedIndex,
+                                checkpoint: items[i].isCheckpoint,
+                                stars: items[i].lesson?.stars ?? 0,
+                                onTap: () {
+                                  if (items[i].isCheckpoint) {
+                                    _showCheckpointPopover(
+                                      context: context,
+                                      ref: ref,
+                                      unit: items[i].unit!,
+                                      language: language,
+                                      color: subjectColor,
+                                    );
+                                  } else {
+                                    _showLessonPopover(
+                                      context: context,
+                                      ref: ref,
+                                      lesson: items[i].lesson!,
+                                      language: language,
+                                      color: subjectColor,
+                                      unitTitle: items[i].unitTitle,
+                                      lockReason: items[i].lockReason,
+                                    );
+                                  }
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
               ),
             );
@@ -762,6 +693,7 @@ class LessonPopoverContent extends StatelessWidget {
   final Color color;
   final VoidCallback? onStart;
   final LessonLockReason? lockReason;
+  final LessonEntry? entry;
 
   const LessonPopoverContent({
     super.key,
@@ -771,190 +703,82 @@ class LessonPopoverContent extends StatelessWidget {
     required this.color,
     this.onStart,
     this.lockReason,
+    this.entry,
   });
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final colors = Theme.of(context).extension<AppColors>()!.colors;
+    final c = Theme.of(context).extension<AppColors>()!.colors;
     final locked = lesson.status == LessonStatus.locked;
     final completed = lesson.status == LessonStatus.completed;
-
-    return SafeArea(
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.fromLTRB(24, 8, 24, 28),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            if (unitTitle != null && unitTitle!.isNotEmpty) ...[
-              Text(
-                unitTitle!.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w800,
-                  color: colors.textSecondary,
-                  letterSpacing: 0.8,
-                ),
-              ),
-              const SizedBox(height: 6),
-            ],
-            Text(
-              lesson.titleFor(language),
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleLarge,
-            ),
-            const SizedBox(height: 14),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 4,
-                  ),
-                  decoration: BoxDecoration(
-                    color: isDark
-                        ? Colors.white10
-                        : Colors.black.withValues(alpha: 0.04),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      for (var i = 1; i <= 3; i++)
-                        Icon(
-                          Icons.star_rounded,
-                          size: 22,
-                          color: completed && i <= lesson.stars
-                              ? const Color(0xFFFFC800)
-                              : (isDark
-                                    ? Colors.grey.shade700
-                                    : Colors.grey.shade300),
-                        ),
-                    ],
-                  ),
-                ),
-                if (lesson.xpReward > 0) ...[
-                  const SizedBox(width: 12),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 4,
-                    ),
-                    decoration: BoxDecoration(
-                      color: colors.warningLight,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.bolt_rounded,
-                          size: 18,
-                          color: colors.warning,
-                        ),
-                        const SizedBox(width: 4),
-                        Text(
-                          '+${lesson.xpReward} XP',
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w800,
-                            color: colors.warning,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ],
-            ),
-            const SizedBox(height: 20),
-            if (locked) ...[
-              Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: colors.inputBackground,
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: colors.border),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.lock_outline_rounded,
-                      color: Colors.grey,
-                      size: 24,
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        lockReason?.message(language) ??
-                            str3(
-                              language,
-                              'Oldingi darslar va bo‘lim sinovini tugating.',
-                              'Завершите предыдущие уроки и проверку раздела.',
-                              'Complete the earlier lessons and unit checkpoint.',
-                            ),
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: isDark
-                              ? Colors.grey.shade300
-                              : Colors.grey.shade700,
-                          height: 1.35,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 16),
-              FilledButton(
-                onPressed: null,
-                style: FilledButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                ),
-                child: Text(
-                  str3(language, 'QULFLANGAN', 'ЗАБЛОКИРОВАНО', 'LOCKED'),
-                  style: const TextStyle(fontWeight: FontWeight.w800),
-                ),
-              ),
-            ] else ...[
-              Text(
+    final presentation =
+        entry ?? LessonEntry.resolve(lesson, null, DateTime.now());
+    return StudyStartSheet(
+      language: language,
+      title: lesson.titleFor(language),
+      contextLabel: unitTitle,
+      icon: completed
+          ? Icons.task_alt_rounded
+          : presentation.state == LessonEntryState.resume
+          ? Icons.bookmark_added_outlined
+          : Icons.menu_book_outlined,
+      details: Wrap(
+        spacing: 12,
+        runSpacing: 8,
+        children: [
+          if (completed)
+            Chip(
+              avatar: Icon(Icons.star_rounded, size: 18, color: c.warning),
+              label: Text(
                 str3(
                   language,
-                  'Tushuntirish · mashq · xatolarni mustahkamlash',
-                  'Теория · практика · работа над ошибками',
-                  'Learn · practise · review mistakes',
-                ),
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 13, color: colors.textSecondary),
-              ),
-              const SizedBox(height: 20),
-              Duo3DButton(
-                onPressed: onStart,
-                child: Text(
-                  completed
-                      ? str3(
-                          language,
-                          'QAYTA O‘TISH',
-                          'ПОВТОРИТЬ',
-                          'PRACTISE AGAIN',
-                        )
-                      : str3(language, 'BOSHLASH', 'НАЧАТЬ', 'START'),
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
-                  ),
+                  '${lesson.stars}/3 yulduz',
+                  '${lesson.stars}/3 звёзд',
+                  '${lesson.stars}/3 stars',
                 ),
               ),
-            ],
-          ],
-        ),
+              backgroundColor: c.primaryLight,
+              side: BorderSide.none,
+            ),
+          if (lesson.xpReward > 0)
+            Chip(
+              avatar: Icon(Icons.bolt_rounded, size: 18, color: c.warning),
+              label: Text(
+                '+${lesson.xpReward} XP',
+                style: TextStyle(color: c.warning),
+              ),
+              backgroundColor: c.warningLight,
+              side: BorderSide.none,
+            ),
+        ],
       ),
+      description: str3(
+        language,
+        'Tushuntirish · mashq · xatolarni mustahkamlash',
+        'Теория · практика · работа над ошибками',
+        'Learn · practise · review mistakes',
+      ),
+      notice: locked
+          ? lockReason?.message(language) ??
+                str3(
+                  language,
+                  'Oldingi darslar va bo‘lim sinovini tugating.',
+                  'Завершите предыдущие уроки и проверку раздела.',
+                  'Complete the earlier lessons and unit checkpoint.',
+                )
+          : presentation.state == LessonEntryState.resume
+          ? presentation.description(language)
+          : presentation.state == LessonEntryState.expired
+          ? str3(
+              language,
+              'Oldingi urinish muddati tugagan. Keyingi oynada yangi urinish boshlashingiz mumkin.',
+              'Срок предыдущей попытки истёк. На следующем экране можно начать заново.',
+              'The previous attempt has expired. You can start again on the next screen.',
+            )
+          : null,
+      actionLabel: presentation.action(language),
+      onStart: onStart,
+      locked: locked,
     );
   }
 }

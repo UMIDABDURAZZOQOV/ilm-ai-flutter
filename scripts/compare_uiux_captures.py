@@ -15,19 +15,20 @@ REVIEW = ROOT / '.dart_tool/uiux-review'
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--stage', required=True, choices=['phase1', 'phase2', 'phase3', 'phase4'])
+    parser.add_argument('--stage', required=True, choices=['phase1', 'phase2', 'phase3', 'phase4', 'product'])
+    parser.add_argument('--baseline', default='before', choices=['before', 'exit-dialog'])
     args = parser.parse_args()
     destination = REVIEW / 'comparisons' / args.stage
     destination.mkdir(parents=True, exist_ok=True)
     entries = []
     for after in sorted((REVIEW / args.stage).glob('*.png')):
-        before = REVIEW / 'before' / after.name
+        before = REVIEW / args.baseline / after.name
         if not before.exists():
             continue
         sheet = Image.new('RGB', (720, 836), '#e8e7ef')
         draw = ImageDraw.Draw(sheet)
         draw.text((12, 6), f'{after.stem} - isolated widget fixtures, not device screenshots', fill='#2A1F6B')
-        draw.text((12, 21), 'BEFORE aec64b8', fill='#2A1F6B')
+        draw.text((12, 21), 'BEFORE ' + ('aec64b8' if args.baseline == 'before' else '10df787'), fill='#2A1F6B')
         draw.text((372, 21), f'AFTER {args.stage}', fill='#2A1F6B')
         for x, path in [(0, before), (360, after)]:
             with Image.open(path) as image:

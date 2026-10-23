@@ -259,6 +259,7 @@ void main() {
         Future<void> tapText(String text) async {
           final target = find.text(text).first;
           await tester.ensureVisible(target);
+          await tester.pumpAndSettle();
           await tester.tap(target);
           await tester.pump();
           await tester.pump(const Duration(milliseconds: 500));
@@ -277,6 +278,7 @@ void main() {
         await tester.pumpAndSettle();
         final node = find.byIcon(Icons.star_rounded).first;
         await tester.ensureVisible(node);
+        await tester.pumpAndSettle();
         await tester.tap(node);
         await tester.pumpAndSettle();
         await save('start');

@@ -299,9 +299,9 @@ class _CurriculumLearningScreenState
                       icon: const Icon(Icons.school_rounded),
                       label: Text(
                         tr(
-                          '${current.grade}-sinf',
-                          '${current.grade} класс',
-                          'Grade ${current.grade}',
+                          '${widget.subject.nameFor(lang)} · ${current.grade}-sinf',
+                          '${widget.subject.nameFor(lang)} · ${current.grade} класс',
+                          '${widget.subject.nameFor(lang)} · Grade ${current.grade}',
                         ),
                       ),
                     ),
@@ -313,18 +313,6 @@ class _CurriculumLearningScreenState
                   ],
                 ),
               ),
-              if (current.readyLessons > 0)
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Text(
-                    tr(
-                      'Hozir ${current.readyLessons} ta dars mavjud.',
-                      'Сейчас доступно уроков: ${current.readyLessons}.',
-                      '${current.readyLessons} lesson(s) available.',
-                    ),
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                ),
               Expanded(
                 child: current.readyLessons > 0
                     ? SkillPathScreen(
@@ -333,6 +321,12 @@ class _CurriculumLearningScreenState
                         ),
                         subject: widget.subject,
                         grade: current.grade,
+                        embedded: true,
+                        courseNote: tr(
+                          'Hozir ${current.readyLessons} ta dars mavjud.',
+                          'Сейчас доступно уроков: ${current.readyLessons}.',
+                          '${current.readyLessons} lesson(s) available.',
+                        ),
                         onChangeSubject: () => setState(() => _choosing = true),
                       )
                     : ListView(
