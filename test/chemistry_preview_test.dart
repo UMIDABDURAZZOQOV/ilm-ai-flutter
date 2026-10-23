@@ -30,13 +30,14 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
-  late Json lesson, results;
+  late Json lesson, results, catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false, offline = false, expired = false;
   setUp(() {
     lesson = fixture('lesson');
     results = fixture('results');
+    catalog = fixture('catalog');
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -51,7 +52,7 @@ void main() {
             type: DioExceptionType.connectionError,
           );
         }
-        if (r.path.endsWith('/catalog')) return reply(200, fixture('catalog'));
+        if (r.path.endsWith('/catalog')) return reply(200, catalog);
         if (r.path.endsWith('/start')) {
           return expired
               ? reply(409, {'detail': 'attempt_expired'})
@@ -264,6 +265,18 @@ void main() {
     expect(find.textContaining('→ PDF 3 · chap sahifa'), findsWidgets);
     expect(t.takeException(), isNull);
   });
+
+  testWidgets(
+    'completed lesson action accurately describes reopening on a new device',
+    (t) async {
+      (catalog['lessons'] as List).first['state'] = 'completed';
+      await mount(t);
+      expect(find.text('Darsni takrorlash'), findsOneWidget);
+      await tap(t, 'Darsni takrorlash');
+      expect(find.text('Nazariya 1/8'), findsOneWidget);
+      expect(find.byType(LessonCompletionView), findsNothing);
+    },
+  );
   testWidgets('server MCQ feedback uses common panel and completion view', (
     t,
   ) async {

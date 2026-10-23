@@ -463,9 +463,9 @@ class _SessionState extends ConsumerState<_Session> {
                 _button(
                   row['state'] == 'completed'
                       ? _t(
-                          'Natijani ko‘rish',
-                          'Посмотреть результат',
-                          'View result',
+                          'Darsni takrorlash',
+                          'Повторить урок',
+                          'Review lesson',
                         )
                       : _t('Darsni boshlash', 'Начать урок', 'Start lesson'),
                   _busy || row['state'] == 'locked'

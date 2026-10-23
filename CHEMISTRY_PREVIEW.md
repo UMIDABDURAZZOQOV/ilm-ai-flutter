@@ -43,10 +43,11 @@ for this first conceptual topic.
 
 ## Evidence
 
-- Full Flutter suite:472 passed;19 new Chemistry checks included.
+- Final full Flutter suite:473 passed;20 new Chemistry checks included.
 - Static analysis:No issues found.
 - Separate JavaScript debug web build succeeded (548.5s); existing secure-storage/
   TTS WASM dry-run warnings remain. No WASM or release build is claimed.
+- Final label/token rebuild succeeded in120.2s with `--debug --no-wasm-dry-run`.
 - The local7358 web server returns HTTP200 for index/main.dart.js. Browser-use
   webview attachment timed out twice; actual browser interaction is unverified.
 - Small320px, landscape640x360,200% text,UZ/RU/EN,light/dark and reduced-motion
