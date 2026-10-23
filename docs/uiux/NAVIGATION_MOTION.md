@@ -83,3 +83,17 @@ FPS ko‘rsatkichini ilova rendering FPS’i bilan tenglashtirmang.
 
 Profiling orqali FPS/battery o‘lchanmagan; 60fps kafolati yozilmaydi.
 Haqiqiy TalkBack foydalanuvchi sinovi va iOS qurilma sinovi alohida QA bo‘lib qoladi.
+
+## 2026-10-23 — profile o‘lchovi asosida yangilanish
+
+Yuqoridagi raqamlar dastlabki motion bosqichiga tegishli. Hozir `IlmTabView`
+har frame barcha sahifa wrapperlarini qayta qurmaydi: static gate’lar saqlanadi,
+alpha render qatlamida, kichik transform builder esa static child bilan ishlaydi.
+260ms fade-through’ning dastlabki 30% qismida outgoing, keyingi 70%da incoming
+sahifa chiziladi; ikkita to‘liq sahifa alpha bilan ustma-ust chizilmaydi.
+12/8dp siljish, RTL, tez qayta bosish, cached state, focus/input himoyasi va
+Reduce Motion saqlangan. Nav ikon gesture/selection dizayni o‘zgarmagan.
+
+Navigation testlari **22**, to‘liq suite **370 passed**, analyze **No issues found**.
+Haqiqiy Samsung profile frame timing va o‘lchov cheklovlari:
+[TAB_PERFORMANCE.md](TAB_PERFORMANCE.md). Video FPS avvalgidek app FPS emas.

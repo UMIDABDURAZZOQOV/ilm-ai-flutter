@@ -128,6 +128,28 @@ chizish bosqichini yana yengillashtirish zarurligini ko‘rsatdi. Ommaviy
 reliz performance signoff’i berilmadi. Keyingi optimallashtirish alohida
 commit va xuddi shu scenario’da qayta o‘lchov bilan bajariladi.
 
+### Navigatsiya performance bosqichi — yakun
+
+Keyingi bosqich bajarildi: `IlmTabView` har frame butun Stack/gate tuzilmasini
+qayta qurmaydi. Static child, render alpha va bir vaqtning o‘zida bitta sahifa
+chiziladigan 260ms fade-through; fokus/input, RTL, Reduce Motion va scroll/cache
+saqlangan. Yakuniy suite **370 passed**, analyze **No issues found (184.2s)**.
+
+Samsung’da bir xil scenario’ning qayta o‘lchangan B nazorati **285 frame**,
+so‘ng C optimallashtirilgan versiyada **309** va **302 frame**:
+raster p95 **29.782 → 18.311 / 17.402ms**, budget’dan oshgan frame ulushi
+**18.6% → 9.7% / 9.6%**. Hash/cert/AOT tekshirilgan C APK telefonda qoldi;
+UID, firstInstallTime, draft hash teng va app xato belgisi **0**.
+
+Fon runner qayta APK o‘rnatgani sabab bitta C urinishida collector ulanmadi;
+u natija sifatida ishlatilmadi. Foydalanuvchining aniq ruxsatidan so‘ng faqat
+o‘sha avtomatik qayta boshlayotgan runnerning tekshirilgan alohida terminali
+yakunlandi. Boshqa branch, VS Code yoki daemonlarga tegilmadi.
+
+Natija sezilarli, lekin raster p95 barcha run’da 16.67ms’dan past emas.
+Single-device/warm-cache cheklovlari, to‘liq jadval va qolgan release QA:
+[TAB_PERFORMANCE.md](TAB_PERFORMANCE.md). 60 FPS yoki «10/10» kafolati yo‘q.
+
 ## 4. Ommaviy reliz va beta
 
 [Release UX gate](RELEASE_UX_GATE.md) va [beta protokoli](BETA_USABILITY_PROTOCOL.md)

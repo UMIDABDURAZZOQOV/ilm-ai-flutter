@@ -225,3 +225,12 @@ Haqiqiy 280 Flutter.Frame boshlang‘ich o‘lchovi raster p95 36.572ms chiqdi;
 keyingi bosqich shu ko‘rsatkichni yaxshilaydi. [Batafsil hisobot](PRODUCT_UX_REPORT.md).
 Beta protokoli va release UX gate tayyor; haqiqiy tester/OAuth/Play release
 sinovlari bajarildi deb yozilmaydi.
+
+## Mahsulot UX dasturi — navigatsiya performance
+
+Profile o‘lchovidan so‘ng tab animatsiyasida static wrapperlar va render alpha
+joriy qilindi, bir vaqtda ikkita sahifa shaffof chizilishi olib tashlandi.
+Yangi regression bilan navigation **22**, full suite **370 passed**, analyze
+**No issues found**. Arm64 profile build tayyor. Qurilma o‘lchovlari va aniq
+cheklovlar [TAB_PERFORMANCE.md](TAB_PERFORMANCE.md)da; release/beta signoff
+faqat o‘quvchi sinovi va release QA’dan keyin beriladi.

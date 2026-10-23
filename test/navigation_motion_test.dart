@@ -357,15 +357,69 @@ void main() {
       await tester.pump();
       expect(find.text('First page'), findsNothing);
       expect(find.text('Second page').hitTestable(), findsOneWidget);
-      final opacity = tester.widget<Opacity>(
+      final opacity = tester.widget<FadeTransition>(
         find
             .ancestor(
               of: find.text('Second page'),
-              matching: find.byType(Opacity),
+              matching: find.byType(FadeTransition),
             )
             .first,
       );
-      expect(opacity.opacity, 1);
+      expect(opacity.opacity.value, 1);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'tab animation retains static gates and paints one page at a time',
+    (tester) async {
+      var index = 0;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: StatefulBuilder(
+            builder: (context, set) => Scaffold(
+              body: IlmTabView(
+                index: index,
+                children: const [Text('One'), Text('Two'), Text('Three')],
+              ),
+              bottomNavigationBar: TextButton(
+                onPressed: () => set(() => index = 1),
+                child: const Text('Switch'),
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.tap(find.text('Switch'));
+      await tester.pump();
+      final gates = find.descendant(
+        of: find.byType(IlmTabView),
+        matching: find.byType(Offstage, skipOffstage: false),
+        skipOffstage: false,
+      );
+      final before = tester.widgetList<Offstage>(gates).toList();
+      expect(before.length, 3);
+      await tester.pump(const Duration(milliseconds: 20));
+      final after = tester.widgetList<Offstage>(gates).toList();
+      for (var i = 0; i < before.length; i++) {
+        expect(identical(before[i], after[i]), true);
+      }
+      final fades = find.descendant(
+        of: find.byType(IlmTabView),
+        matching: find.byType(FadeTransition, skipOffstage: false),
+        skipOffstage: false,
+      );
+      for (var frame = 0; frame < 28; frame++) {
+        expect(
+          tester
+              .widgetList<FadeTransition>(fades)
+              .where((fade) => fade.opacity.value > 0.000001)
+              .length,
+          lessThanOrEqualTo(1),
+        );
+        await tester.pump(const Duration(milliseconds: 10));
+      }
+      expect(find.text('Two').hitTestable(), findsOneWidget);
       expect(tester.takeException(), isNull);
     },
   );

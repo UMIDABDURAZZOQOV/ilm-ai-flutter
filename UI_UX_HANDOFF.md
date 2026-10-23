@@ -171,3 +171,11 @@ qilganligi sabab performance signoff hali berilmagan.
 [Reja](docs/uiux/PRODUCT_UX_PLAN.md), [hisobot](docs/uiux/PRODUCT_UX_REPORT.md),
 [beta protokoli](docs/uiux/BETA_USABILITY_PROTOCOL.md),
 [release UX gate](docs/uiux/RELEASE_UX_GATE.md).
+
+## 2026-10-23 — navigatsiya tezligi
+
+Tab gate’lari har frame qayta qurilmaydi; static child, render alpha va
+ustma-ust sahifasiz fade-through. Input/focus, RTL, Reduce Motion, scroll/cache
+saqlangan. Navigation **22**, full suite **370 passed**, analyze **No issues found**.
+Arm64 profile build tayyor. Samsung’dagi haqiqiy frame timing, APK va data
+tekshiruvlari: [performance hisoboti](docs/uiux/TAB_PERFORMANCE.md).

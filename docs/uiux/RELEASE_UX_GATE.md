@@ -21,7 +21,7 @@
 | Sekin/uzilgan internet | Avtomatik error/retry testlari bor | Release telefonda offline/reconnect, sekin tarmoq va qaytish |
 | TalkBack | Semantics testlari bor | Haqiqiy screen reader bilan asosiy vazifalarni bajarish |
 | Qurilmalar | Samsung A12 real, boshqa o‘lchamlar widget test | Kamida yana ikki real Android ekranida asosiy oqim |
-| Tezlik va resurs | Lazy dars ro‘yxati; FPS benchmark hali yo‘q | Profile/release’da frame timing, startup va memory o‘lchovi |
+| Tezlik va resurs | Lazy ro‘yxat va A12 profile/AOT frame timing bor; [dalillar](TAB_PERFORMANCE.md) | Release/startup, barcha muhim ekranlar va uzoq memory sinovi |
 | O‘quvchi sinovi | Protokol va CSV tayyor | Haqiqiy qatnashchilar kuzatuvi va tuzatishdan keyingi qayta sinov |
 
 Imzolash cheklovi kodda mavjud: release kalitisiz build to‘xtaydi; debug kalit
