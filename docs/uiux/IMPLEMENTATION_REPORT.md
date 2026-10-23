@@ -193,3 +193,13 @@ iOS native build bajarilmadi. Mavjud KGP dependency ogohlantirishi keyingi SDK/p
 migratsiyasida hal qilinadi; bu UI ishida dependency yoki production flag o‘zgarmadi.
 Yangi 3D asset kerak bo‘lmadi. Backend egasi uchun hujjat tavsiyasi tayyor; boshqa
 repo CLAUDE.md fayliga yozilmadi. Main merge, deploy va Play nashri bajarilmadi.
+
+## Qo‘shimcha so‘rov — navigatsiya animatsiyalari
+
+Beshta original vector ikon, 280ms selection, 360ms bir martalik ikon gesture’i
+va 260ms yo‘nalishli tab fade-through qo‘shildi. State/scroll/cache va route’lar
+saqlangan, Reduce Motion’da harakat darhol yakunlanadi. 21 ta yangi test bilan
+yakuniy suite **259 passed**, analyze **No issues found**. Frozen APK hash bilan
+tekshirilib Samsung A12’ga yangilandi; real video va dekodlangan kadrlar ko‘rildi,
+error logda fatal/unhandled/overflow belgisi 0. Main merge/deploy bajarilmadi.
+[To‘liq motion hisoboti](NAVIGATION_MOTION.md).

@@ -46,6 +46,11 @@ asosidagi muhandislik mezoni; butun ilova sertifikatlandi degan da’vo emas.
   ustun. Loading soxta foiz yoki XP bermaydi; skeleton ekran o‘quvchini kutish
   holatidan xabardor qiladi.
 
+Pastki navigatsiyada destination almashishini aniq ko‘rsatish uchun selection
+280ms, ikonning bir martalik gesture’i 360ms, sahifa fade-through’i 260ms.
+Tab state/cache saqlanadi; motion loop ishlatilmaydi. Reduce Motion hammasini
+darhol yakunlaydi. Tafsilot: [navigatsiya motion standarti](NAVIGATION_MOTION.md).
+
 ## Til va ishonch
 
 UZ/RU/EN interface qo‘llanadi. `t` va `str3`ning mavjud fallbacklari saqlanadi.

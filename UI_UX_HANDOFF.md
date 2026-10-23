@@ -137,3 +137,13 @@ Tafsilotlar: [audit](UI_UX_AUDIT.md), [bosqichlar hisoboti](docs/uiux/IMPLEMENTA
 [telefon QA](docs/uiux/SAMSUNG_A12_QA.md),
 [markaziy CLAUDE.md egasiga handoff](docs/uiux/CLAUDE_MD_OWNER_HANDOFF.md).
 TalkBack foydalanuvchi sinovi, Google OAuth va iOS build alohida qolgan QA ishlaridir.
+
+## 2026-10-23 — Pastki navigatsiya animatsiyalari
+
+Foydalanuvchi so‘roviga ko‘ra beshta original vector destination ikoni,
+siljiydigan indigo/turkuaz selection, qisqa gesture/press va yo‘nalishli tab
+fade-through qo‘shildi. Lazy mounting, tab scroll/cache, callback va route’lar
+saqlangan. Reduce Motion, 320dp/200%, uch til va RTL uchun 21 yangi test bor.
+To‘liq suite **259 passed**, analyze **No issues found**. Debug APK hisobni
+saqlagan holda Samsung A12’ga yangilandi va frozen hash bilan tekshirildi.
+Tafsilot: [navigatsiya hisoboti](docs/uiux/NAVIGATION_MOTION.md).

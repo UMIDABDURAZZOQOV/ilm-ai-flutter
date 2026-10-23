@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
 import 'motion.dart';
+import 'ilm_bottom_navigation.dart';
 import '../theme/ilm_design.dart';
 
 Color foregroundOn(Color background) => background.computeLuminance() > 0.179
@@ -281,93 +282,28 @@ class DuoChoiceCard extends StatelessWidget {
   }
 }
 
-class DuoNavItem {
-  final IconData icon;
-  final String label;
-  const DuoNavItem({required this.icon, required this.label});
+/// Compatibility API; the learning app uses the shared animated navigation.
+class DuoNavItem extends IlmNavigationDestination {
+  const DuoNavItem({
+    required super.icon,
+    required super.label,
+    super.motionIcon,
+  });
 }
 
-/// Icon + label bar. Selected uses brand indigo; no Material 3 pill.
 class DuoBottomNav extends StatelessWidget {
-  final int index;
-  final ValueChanged<int> onChanged;
-  final List<DuoNavItem> items;
-
   const DuoBottomNav({
     super.key,
     required this.index,
     required this.onChanged,
     required this.items,
   });
-
+  final int index;
+  final ValueChanged<int> onChanged;
+  final List<DuoNavItem> items;
   @override
-  Widget build(BuildContext context) {
-    final colors = Theme.of(context).extension<AppColors>()!.colors;
-    return Material(
-      color: colors.surface,
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: colors.border)),
-        ),
-        child: SafeArea(
-          top: false,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 6),
-            child: Row(
-              children: [
-                for (var i = 0; i < items.length; i++)
-                  Expanded(
-                    child: Semantics(
-                      button: true,
-                      selected: i == index,
-                      label: items[i].label,
-                      excludeSemantics: true,
-                      onTap: () => onChanged(i),
-                      child: InkWell(
-                        onTap: () => onChanged(i),
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(minHeight: 64),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 6),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(
-                                  items[i].icon,
-                                  size: 28,
-                                  color: i == index
-                                      ? colors.primary
-                                      : colors.textMuted,
-                                ),
-                                const SizedBox(height: 2),
-                                Text(
-                                  items[i].label,
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    fontSize: 11,
-                                    fontWeight: i == index
-                                        ? FontWeight.w700
-                                        : FontWeight.w500,
-                                    color: i == index
-                                        ? colors.primary
-                                        : colors.textMuted,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
+  Widget build(BuildContext context) =>
+      IlmBottomNavigation(index: index, onChanged: onChanged, items: items);
 }
 
 enum BubblePointerDirection { left, down, none }

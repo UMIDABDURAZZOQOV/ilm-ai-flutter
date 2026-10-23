@@ -1,3 +1,5 @@
+import '../../../core/widgets/ilm_navigation_icons.dart';
+import '../../../core/widgets/ilm_tab_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -46,7 +48,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   final int _revision = 0;
 
   /// Lazy-mount tabs so Quests/League/Profile do not fire network (+18s
-  /// timeout timers) until the user opens them. Once visited, IndexedStack
+  /// timeout timers) until the user opens them. Once visited, IlmTabView
   /// keeps them alive (no spinner on return).
   final Set<int> _visitedTabs = {0};
 
@@ -210,7 +212,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
           Icons.shield_rounded,
           Icons.person_rounded,
         ];
-        // IndexedStack keeps visited tab state/cache alive so Quests/Profile
+        // IlmTabView keeps visited tab state/cache alive so Quests/Profile
         // do not flash a spinner every time the user returns to them.
         // Local copy so closures do not see the outer nullable `subject`.
         final SkillSubject activeSubject = subject;
@@ -332,7 +334,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 : const SizedBox.shrink(),
         ];
         return Scaffold(
-          body: IndexedStack(index: _tab, children: tabs),
+          body: IlmTabView(index: _tab, children: tabs),
           bottomNavigationBar: DuoBottomNav(
             index: _tab,
             onChanged: (index) {
@@ -345,7 +347,11 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
             },
             items: [
               for (var i = 0; i < labels.length; i++)
-                DuoNavItem(icon: icons[i], label: labels[i]),
+                DuoNavItem(
+                  icon: icons[i],
+                  label: labels[i],
+                  motionIcon: IlmNavIcon.values[i],
+                ),
             ],
           ),
         );
