@@ -818,9 +818,9 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Language',
   },
   'settings.logout': {
-    'uz': 'Chiqish',
-    'ru': 'Выйти',
-    'en': 'Log out',
+    'uz': 'Akkauntdan chiqish',
+    'ru': 'Выйти из аккаунта',
+    'en': 'Log out of account',
   },
   'settings.logout.confirm': {
     'uz': 'Hisobingizdan chiqishni xohlaysizmi?',

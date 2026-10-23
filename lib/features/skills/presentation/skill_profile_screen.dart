@@ -11,6 +11,7 @@ import '../data/skill_extras_models.dart';
 import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
 import 'streak_calendar_widget.dart';
+import 'learning_invitation_card.dart';
 
 /// Kept across tab switches so Profile does not spinner-reload on every visit.
 final skillProfileProvider = FutureProvider<SkillProfile?>((ref) async {
@@ -24,7 +25,19 @@ final skillProfileProvider = FutureProvider<SkillProfile?>((ref) async {
 });
 
 class SkillProfileScreen extends ConsumerWidget {
-  const SkillProfileScreen({super.key});
+  const SkillProfileScreen({super.key, this.onOpenLearning});
+  final VoidCallback? onOpenLearning;
+
+  bool _hasProgress(SkillProfile p) =>
+      p.xpTotal > 0 ||
+      p.streakDays > 0 ||
+      p.lessonsCompleted > 0 ||
+      p.activity.values.any((value) => value > 0) ||
+      [
+        ...p.subjects,
+        if (p.strongest != null) p.strongest!,
+        if (p.weakest != null) p.weakest!,
+      ].any((s) => s.completed > 0 || s.stars > 0 || s.pct > 0);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -128,115 +141,192 @@ class SkillProfileScreen extends ConsumerWidget {
                       );
                     }(),
                     const SizedBox(height: 18),
-                    Row(
-                      children: [
-                        _tile(
-                          context,
-                          Icons.bolt_rounded,
-                          c.warning,
-                          '${p.xpTotal}',
-                          'XP',
-                        ),
-                        const SizedBox(width: 10),
-                        _tile(
-                          context,
-                          Icons.local_fire_department_rounded,
-                          c.warning,
-                          '${p.streakDays}',
-                          str3(lang, 'kun', 'дней', 'streak'),
-                        ),
-                        const SizedBox(width: 10),
-                        _tile(
-                          context,
-                          Icons.menu_book_rounded,
-                          c.primary,
-                          '${p.lessonsCompleted}',
-                          str3(lang, 'dars', 'уроков', 'lessons'),
-                        ),
-                      ],
-                    ),
-                    if (p.strongest != null || p.weakest != null) ...[
-                      const SizedBox(height: 12),
-                      Row(
-                        children: [
-                          if (p.strongest != null)
-                            Expanded(
-                              child: _sw(
-                                context,
-                                str3(
-                                  lang,
-                                  'Eng kuchli',
-                                  'Сильнейший',
-                                  'Strongest',
+                    Builder(
+                      builder: (context) {
+                        final statistics = Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Row(
+                              children: [
+                                _tile(
+                                  context,
+                                  Icons.bolt_rounded,
+                                  c.warning,
+                                  '${p.xpTotal}',
+                                  'XP',
                                 ),
-                                p.strongest!.nameFor(lang),
-                                '${p.strongest!.pct}%',
-                                c.success,
+                                const SizedBox(width: 10),
+                                _tile(
+                                  context,
+                                  Icons.local_fire_department_rounded,
+                                  c.warning,
+                                  '${p.streakDays}',
+                                  str3(lang, 'kun', 'дней', 'streak'),
+                                ),
+                                const SizedBox(width: 10),
+                                _tile(
+                                  context,
+                                  Icons.menu_book_rounded,
+                                  c.primary,
+                                  '${p.lessonsCompleted}',
+                                  str3(lang, 'dars', 'уроков', 'lessons'),
+                                ),
+                              ],
+                            ),
+                            if (p.strongest != null || p.weakest != null) ...[
+                              const SizedBox(height: 12),
+                              Row(
+                                children: [
+                                  if (p.strongest != null)
+                                    Expanded(
+                                      child: _sw(
+                                        context,
+                                        str3(
+                                          lang,
+                                          'Eng kuchli',
+                                          'Сильнейший',
+                                          'Strongest',
+                                        ),
+                                        p.strongest!.nameFor(lang),
+                                        '${p.strongest!.pct}%',
+                                        c.success,
+                                      ),
+                                    ),
+                                  if (p.strongest != null &&
+                                      p.weakest != null &&
+                                      p.weakest!.slug != p.strongest!.slug)
+                                    const SizedBox(width: 10),
+                                  if (p.weakest != null &&
+                                      p.weakest!.slug != p.strongest?.slug)
+                                    Expanded(
+                                      child: _sw(
+                                        context,
+                                        str3(
+                                          lang,
+                                          'Mashq uchun',
+                                          'Для практики',
+                                          'To practise',
+                                        ),
+                                        p.weakest!.nameFor(lang),
+                                        '${p.weakest!.pct}%',
+                                        c.primary,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ],
+                            const SizedBox(height: 18),
+                            StreakCalendarWidget(
+                              activity: p.activity,
+                              streakDays: p.streakDays,
+                              language: lang,
+                            ),
+                            const SizedBox(height: 18),
+                            Text(
+                              str3(
+                                lang,
+                                'Faollik (12 hafta)',
+                                'Активность (12 недель)',
+                                'Activity (12 weeks)',
+                              ),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w800,
                               ),
                             ),
-                          if (p.strongest != null &&
-                              p.weakest != null &&
-                              p.weakest!.slug != p.strongest!.slug)
-                            const SizedBox(width: 10),
-                          if (p.weakest != null &&
-                              p.weakest!.slug != p.strongest?.slug)
-                            Expanded(
-                              child: _sw(
-                                context,
-                                str3(
-                                  lang,
-                                  'Mashq uchun',
-                                  'Для практики',
-                                  'To practise',
-                                ),
-                                p.weakest!.nameFor(lang),
-                                '${p.weakest!.pct}%',
-                                c.primary,
+                            const SizedBox(height: 8),
+                            _Heatmap(
+                              activity: p.activity,
+                              weeks: 12,
+                              language: lang,
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              str3(
+                                lang,
+                                'Har katak — bir kun. Rang to‘qligi yakunlangan dars urinishlari sonini bildiradi.',
+                                'Одна клетка — один день. Насыщенность показывает число завершённых попыток урока.',
+                                'Each cell is a day. Darker colours show more completed lesson attempts.',
+                              ),
+                              style: Theme.of(context).textTheme.bodySmall,
+                            ),
+                            const SizedBox(height: 18),
+                            Text(
+                              str3(
+                                lang,
+                                'Fanlar bo\'yicha',
+                                'По предметам',
+                                'By subject',
+                              ),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w800,
                               ),
                             ),
-                        ],
-                      ),
-                    ],
-                    const SizedBox(height: 18),
-                    StreakCalendarWidget(
-                      activity: p.activity,
-                      streakDays: p.streakDays,
-                      language: lang,
+                            const SizedBox(height: 8),
+                            for (final s in p.subjects)
+                              _subjectBar(context, lang, s),
+                          ],
+                        );
+                        if (_hasProgress(p)) return statistics;
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            LearningInvitationCard(
+                              title: str3(
+                                lang,
+                                'Birinchi darsdan boshlaymiz',
+                                'Начнём с первого урока',
+                                'Start with your first lesson',
+                              ),
+                              message: str3(
+                                lang,
+                                'Darsni yakunlang — XP, faollik va yutuqlaringiz shu yerda ko‘rinadi.',
+                                'Завершите урок — здесь появятся ваши XP, активность и достижения.',
+                                'Complete a lesson to see your XP, activity and achievements here.',
+                              ),
+                              actionLabel: str3(
+                                lang,
+                                'Dars yo‘liga o‘tish',
+                                'Перейти к урокам',
+                                'Go to learning path',
+                              ),
+                              onOpenLearning:
+                                  onOpenLearning ?? () => context.go('/learn'),
+                            ),
+                            const SizedBox(height: 16),
+                            Card(
+                              clipBehavior: Clip.antiAlias,
+                              child: ExpansionTile(
+                                shape: const Border(),
+                                collapsedShape: const Border(),
+                                tilePadding: const EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 8,
+                                ),
+                                childrenPadding: const EdgeInsets.all(16),
+                                leading: const Icon(Icons.insights_outlined),
+                                title: Text(
+                                  str3(
+                                    lang,
+                                    'Statistika va faollik',
+                                    'Статистика и активность',
+                                    'Statistics and activity',
+                                  ),
+                                ),
+                                subtitle: Text(
+                                  str3(
+                                    lang,
+                                    'XP, kalendar va fanlar bo‘yicha progress',
+                                    'XP, календарь и прогресс по предметам',
+                                    'XP, calendar and subject progress',
+                                  ),
+                                ),
+                                children: [statistics],
+                              ),
+                            ),
+                          ],
+                        );
+                      },
                     ),
-                    const SizedBox(height: 18),
-                    Text(
-                      str3(
-                        lang,
-                        'Faollik (12 hafta)',
-                        'Активность (12 недель)',
-                        'Activity (12 weeks)',
-                      ),
-                      style: const TextStyle(fontWeight: FontWeight.w800),
-                    ),
-                    const SizedBox(height: 8),
-                    _Heatmap(activity: p.activity, weeks: 12, language: lang),
-                    const SizedBox(height: 8),
-                    Text(
-                      str3(
-                        lang,
-                        'Har katak — bir kun. Rang to‘qligi yakunlangan dars urinishlari sonini bildiradi.',
-                        'Одна клетка — один день. Насыщенность показывает число завершённых попыток урока.',
-                        'Each cell is a day. Darker colours show more completed lesson attempts.',
-                      ),
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                    const SizedBox(height: 18),
-                    Text(
-                      str3(
-                        lang,
-                        'Fanlar bo\'yicha',
-                        'По предметам',
-                        'By subject',
-                      ),
-                      style: const TextStyle(fontWeight: FontWeight.w800),
-                    ),
-                    const SizedBox(height: 8),
-                    for (final s in p.subjects) _subjectBar(context, lang, s),
                   ],
                 ),
               ),

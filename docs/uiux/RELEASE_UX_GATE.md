@@ -10,6 +10,8 @@
   izolyatsiyalangan widget/API fixture testlari bilan qamrab olingan.
 - Samsung A12 debug/lokal API tekshiruvi haqiqiy release/OAuth sinovi bilan
   tenglashtirilmaydi.
+- So‘nggi UI bosqichi: **425 test**, analyze toza, light/dark real A12 va
+  account/draft/selection saqlanishi. [17 tasvir bo‘yicha hisobot](SCREENSHOT_POLISH_REPORT.md).
 
 ## Egasi ishtirokida bajariladigan tekshiruvlar
 

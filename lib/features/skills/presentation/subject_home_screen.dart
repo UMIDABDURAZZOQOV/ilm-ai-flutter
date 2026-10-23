@@ -52,6 +52,14 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   /// keeps them alive (no spinner on return).
   final Set<int> _visitedTabs = {0};
 
+  void _openLearning() {
+    if (_tab == 0) return;
+    setState(() {
+      _visitedTabs.add(0);
+      _tab = 0;
+    });
+  }
+
   Future<void> _select(SkillSubject subject) async {
     final user = ref.read(currentUserIdProvider);
     if (user == null) return;
@@ -324,8 +332,8 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
             ),
           ),
           () => const SkillQuestsScreen(),
-          () => const SkillLeaderboardScreen(),
-          () => const SkillProfileScreen(),
+          () => SkillLeaderboardScreen(onOpenLearning: _openLearning),
+          () => SkillProfileScreen(onOpenLearning: _openLearning),
         ];
         final tabs = [
           for (var i = 0; i < tabBuilders.length; i++)

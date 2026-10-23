@@ -3,12 +3,14 @@ import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/ilm_state_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/providers/app_providers.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_extras_models.dart';
 import '../data/skill_extras_repository.dart';
 import 'skill_ui.dart';
+import 'learning_invitation_card.dart';
 
 final _leaderboardProvider = FutureProvider<LeaderboardResponse>((ref) async {
   ref.watch(studyRevisionProvider);
@@ -37,7 +39,8 @@ const _leagueColors = {
 };
 
 class SkillLeaderboardScreen extends ConsumerWidget {
-  const SkillLeaderboardScreen({super.key});
+  const SkillLeaderboardScreen({super.key, this.onOpenLearning});
+  final VoidCallback? onOpenLearning;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -168,13 +171,26 @@ class SkillLeaderboardScreen extends ConsumerWidget {
                 ),
               ),
               if (d.entries.isEmpty)
-                Text(
-                  str3(
+                LearningInvitationCard(
+                  title: str3(
                     lang,
-                    'Bu haftada reyting ma’lumotlari hali yo‘q.',
-                    'За эту неделю пока нет данных рейтинга.',
-                    'No ranking data for this week yet.',
+                    'Bu haftaning reytingi hali bo‘sh',
+                    'Рейтинг этой недели пока пуст',
+                    'This week’s ranking is still empty',
                   ),
+                  message: str3(
+                    lang,
+                    'Darsni yakunlab XP yig‘ing. Haftalik natijalar shu yerda ko‘rinadi.',
+                    'Проходите уроки и зарабатывайте XP. Здесь появятся результаты недели.',
+                    'Complete lessons to earn XP. Weekly results will appear here.',
+                  ),
+                  actionLabel: str3(
+                    lang,
+                    'Dars yo‘liga o‘tish',
+                    'Перейти к урокам',
+                    'Go to learning path',
+                  ),
+                  onOpenLearning: onOpenLearning ?? () => context.go('/learn'),
                 ),
               if (d.ownRank != null)
                 Padding(

@@ -88,7 +88,10 @@ Dio reviewDio({bool loading = false}) =>
             'next_league': {
               ...reviewLeague,
               'id': 'silver',
+              'name_uz': 'Kumush',
               'name_ru': 'Серебро',
+              'name_en': 'Silver',
+              'min_xp': 100,
             },
             'all_tiers': [reviewLeague],
           });

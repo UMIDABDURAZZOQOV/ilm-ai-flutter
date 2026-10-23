@@ -12,7 +12,6 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart' show foregroundOn;
 import '../../../core/widgets/premium_card.dart';
-import '../../../core/widgets/premium_button.dart';
 import '../../auth/application/auth_controller.dart';
 import '../../skills/presentation/skill_profile_screen.dart';
 import '../../skills/presentation/skill_ui.dart';
@@ -280,7 +279,12 @@ class SettingsScreen extends ConsumerWidget {
                   .fadeIn(delay: 150.ms, duration: 280.ms)
                   .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 36),
-              PremiumButton(
+              OutlinedButton.icon(
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: colors.textSecondary,
+                  side: BorderSide(color: colors.border),
+                ),
+                icon: const Icon(Icons.logout_rounded, size: 20),
                 onPressed: () async {
                   final confirmed = await showDialog<bool>(
                     context: context,
@@ -306,12 +310,9 @@ class SettingsScreen extends ConsumerWidget {
                     await ref.read(authControllerProvider.notifier).logout();
                   }
                 },
-                backgroundColor: colors.error,
-                borderRadius: 18,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                child: Text(
+                label: Text(
                   t('settings.logout', language),
-                  style: const TextStyle(fontSize: 15),
+                  textAlign: TextAlign.center,
                 ),
               ).motion(context).fadeIn(delay: 180.ms, duration: 280.ms),
             ],

@@ -23,6 +23,7 @@ class LearningContinueCard extends StatelessWidget {
     this.courseNote,
     this.summary,
     this.statusLabel,
+    this.compact = false,
   });
   final String language, title;
   final int todayXp, goalXp;
@@ -34,6 +35,7 @@ class LearningContinueCard extends StatelessWidget {
   final String? courseNote;
   final GamificationSummary? summary;
   final String? statusLabel;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -48,86 +50,125 @@ class LearningContinueCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      entry?.description(language) ??
-                          statusLabel ??
-                          str3(
-                            language,
-                            'Bilim sari bir qadam',
-                            'Ещё один шаг к знаниям',
-                            'Your next learning step',
+          if (!compact || onContinue != null)
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        entry?.description(language) ??
+                            statusLabel ??
+                            str3(
+                              language,
+                              'Bilim sari bir qadam',
+                              'Ещё один шаг к знаниям',
+                              'Your next learning step',
+                            ),
+                        style: Theme.of(
+                          context,
+                        ).textTheme.labelMedium?.copyWith(color: c.primary),
+                      ),
+                      const SizedBox(height: IlmSpace.sm),
+                      Text(
+                        title,
+                        style: compact
+                            ? Theme.of(context).textTheme.titleMedium
+                            : Theme.of(context).textTheme.titleLarge,
+                      ),
+                      if (!compact && courseNote != null)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 4),
+                          child: Text(
+                            courseNote!,
+                            style: Theme.of(context).textTheme.bodySmall,
                           ),
-                      style: Theme.of(
-                        context,
-                      ).textTheme.labelMedium?.copyWith(color: c.primary),
-                    ),
-                    const SizedBox(height: IlmSpace.sm),
-                    Text(title, style: Theme.of(context).textTheme.titleLarge),
-                    if (courseNote != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: Text(
-                          courseNote!,
-                          style: Theme.of(context).textTheme.bodySmall,
                         ),
-                      ),
-                    if (contentNote != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: Text(
-                          contentNote!,
-                          style: Theme.of(context).textTheme.bodySmall,
+                      if (!compact && contentNote != null)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 4),
+                          child: Text(
+                            contentNote!,
+                            style: Theme.of(context).textTheme.bodySmall,
+                          ),
                         ),
-                      ),
-                  ],
+                    ],
+                  ),
+                ),
+                const SizedBox(width: IlmSpace.sm),
+                MascotImage(
+                  pose: entry?.state == LessonEntryState.resume
+                      ? MascotPose.happy
+                      : MascotPose.hello,
+                  size:
+                      compact || MediaQuery.textScalerOf(context).scale(16) > 24
+                      ? 48
+                      : 64,
+                ),
+              ],
+            ),
+          if (onContinue != null) ...[
+            SizedBox(height: compact ? 4 : IlmSpace.md),
+            if (compact)
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: TextButton.icon(
+                  onPressed: onContinue,
+                  icon: const Icon(Icons.arrow_forward_rounded, size: 20),
+                  label: Text(
+                    checkpoint
+                        ? str3(
+                            language,
+                            'BO‘LIM SINOVI',
+                            'ПРОВЕРКА РАЗДЕЛА',
+                            'UNIT CHECKPOINT',
+                          )
+                        : entry?.action(language) ??
+                              str3(
+                                language,
+                                'DAVOM ETISH',
+                                'ПРОДОЛЖИТЬ',
+                                'CONTINUE',
+                              ),
+                  ),
+                ),
+              )
+            else
+              Duo3DButton(
+                onPressed: onContinue,
+                child: Text(
+                  checkpoint
+                      ? str3(
+                          language,
+                          'BO‘LIM SINOVI',
+                          'ПРОВЕРКА РАЗДЕЛА',
+                          'UNIT CHECKPOINT',
+                        )
+                      : entry?.action(language) ??
+                            str3(
+                              language,
+                              'DAVOM ETISH',
+                              'ПРОДОЛЖИТЬ',
+                              'CONTINUE',
+                            ),
                 ),
               ),
-              const SizedBox(width: IlmSpace.sm),
-              MascotImage(
-                pose: entry?.state == LessonEntryState.resume
-                    ? MascotPose.happy
-                    : MascotPose.hello,
-                size: MediaQuery.textScalerOf(context).scale(16) > 24 ? 48 : 64,
-              ),
-            ],
-          ),
-          if (onContinue != null) ...[
-            const SizedBox(height: IlmSpace.md),
-            Duo3DButton(
-              onPressed: onContinue,
-              child: Text(
-                checkpoint
-                    ? str3(
-                        language,
-                        'BO‘LIM SINOVI',
-                        'ПРОВЕРКА РАЗДЕЛА',
-                        'UNIT CHECKPOINT',
-                      )
-                    : entry?.action(language) ??
-                          str3(
-                            language,
-                            'DAVOM ETISH',
-                            'ПРОДОЛЖИТЬ',
-                            'CONTINUE',
-                          ),
-              ),
-            ),
           ],
-          const SizedBox(height: IlmSpace.sm),
+          SizedBox(height: compact ? 2 : IlmSpace.sm),
           InkWell(
             onTap: onGoal,
             borderRadius: BorderRadius.circular(IlmRadius.small),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16),
+            child: Container(
+              constraints: const BoxConstraints(minHeight: 48),
+              padding: EdgeInsets.symmetric(vertical: compact ? 8 : 16),
               child: Row(
                 children: [
+                  if (compact && onContinue == null) ...[
+                    const MascotImage(pose: MascotPose.hello, size: 40),
+                    const SizedBox(width: 12),
+                  ],
                   Expanded(
                     child: Wrap(
                       spacing: 8,
@@ -162,7 +203,7 @@ class LearningContinueCard extends StatelessWidget {
             child: ExcludeSemantics(
               child: LinearProgressIndicator(
                 value: goalXp <= 0 ? 0 : (todayXp / goalXp).clamp(0.0, 1.0),
-                minHeight: 6,
+                minHeight: compact ? 4 : 6,
                 color: Theme.of(context).brightness == Brightness.dark
                     ? c.accent
                     : c.success,
@@ -171,6 +212,13 @@ class LearningContinueCard extends StatelessWidget {
               ),
             ),
           ),
+          if (compact && (courseNote != null || contentNote != null)) ...[
+            const SizedBox(height: 10),
+            Text(
+              [?courseNote, ?contentNote].join(' · '),
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+          ],
           if (summary != null &&
               (summary!.xpTotal > 0 || summary!.streakDays > 0)) ...[
             const SizedBox(height: 12),
@@ -235,9 +283,9 @@ class LearningUnitHeader extends StatelessWidget {
               Text(
                 str3(
                   language,
-                  'Mavjud darslardan $completed/$total bajarilgan',
-                  'Пройдено доступных уроков: $completed/$total',
-                  '$completed/$total available lessons completed',
+                  'Bajarilgan darslar: $completed/$total',
+                  'Пройдено уроков: $completed/$total',
+                  'Lessons completed: $completed/$total',
                 ),
                 style: Theme.of(
                   context,
@@ -293,11 +341,13 @@ class LearningJourneyTile extends StatelessWidget {
     required this.current,
     this.checkpoint = false,
     this.stars = 0,
+    this.detail,
   });
   final String title, stateLabel, semanticLabel;
   final VoidCallback onTap;
   final bool locked, completed, current, checkpoint;
   final int stars;
+  final String? detail;
   @override
   Widget build(BuildContext context) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
@@ -312,7 +362,7 @@ class LearningJourneyTile extends StatelessWidget {
       container: true,
       button: true,
       selected: current,
-      label: semanticLabel,
+      label: [semanticLabel, ?detail].join('. '),
       onTap: onTap,
       excludeSemantics: true,
       child: Padding(
@@ -369,6 +419,13 @@ class LearningJourneyTile extends StatelessWidget {
                                 color: current ? c.primary : c.textSecondary,
                               ),
                         ),
+                        if (detail != null) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            detail!,
+                            style: Theme.of(context).textTheme.bodySmall,
+                          ),
+                        ],
                         if (completed && stars > 0)
                           Padding(
                             padding: const EdgeInsets.only(top: 6),

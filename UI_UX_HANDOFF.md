@@ -179,3 +179,16 @@ ustma-ust sahifasiz fade-through. Input/focus, RTL, Reduce Motion, scroll/cache
 saqlangan. Navigation **22**, full suite **370 passed**, analyze **No issues found**.
 Arm64 profile build tayyor. Samsung’dagi haqiqiy frame timing, APK va data
 tekshiruvlari: [performance hisoboti](docs/uiux/TAB_PERFORMANCE.md).
+
+## 2026-10-23 — yangi 17 ta tasvirdagi muammolar
+
+Outline kontent tayyorligini access’dan ajratadi. Home birinchi darsni
+takrorlamaydigan ixcham goal paneli, keyingi entry/checkpoint va review saqlangan.
+Bo‘sh liga/yangi profil uchun umumiy Ilmo card va mavjud Learn tabiga CTA;
+nol statistika yig‘iladigan bo‘limda, real progress esa darhol ochiq.
+Dark qatlamlar neytral indigo; logout aniq nomlangan outline amal.
+55 yangi test bilan **425 full-suite passed**, analyze **No issues found**,
+42 ta widget BEFORE/AFTER juftlik. Original assetlar va darslar o‘zgarmagan.
+
+[Audit/reja](docs/uiux/SCREENSHOT_POLISH_PLAN.md),
+[batafsil tekshiruv va Samsung natijalari](docs/uiux/SCREENSHOT_POLISH_REPORT.md).

@@ -243,9 +243,9 @@ class _CurriculumLearningScreenState
                                   )
                                 : item.readyLessons > 0
                                 ? tr(
-                                    '${item.readyLessons} ta dars mavjud',
-                                    'Доступно уроков: ${item.readyLessons}',
-                                    '${item.readyLessons} lesson(s) available',
+                                    'Tayyor darslar: ${item.readyLessons}',
+                                    'Подготовлено уроков: ${item.readyLessons}',
+                                    'Lessons prepared: ${item.readyLessons}',
                                   )
                                 : tr(
                                     'Mavzular xaritasi bor; darslar tayyorlanmoqda',
@@ -323,9 +323,9 @@ class _CurriculumLearningScreenState
                         grade: current.grade,
                         embedded: true,
                         courseNote: tr(
-                          'Hozir ${current.readyLessons} ta dars mavjud.',
-                          'Сейчас доступно уроков: ${current.readyLessons}.',
-                          '${current.readyLessons} lesson(s) available.',
+                          'Tayyor darslar: ${current.readyLessons}',
+                          'Подготовлено уроков: ${current.readyLessons}',
+                          'Lessons prepared: ${current.readyLessons}',
                         ),
                         onChangeSubject: () => setState(() => _choosing = true),
                       )
@@ -440,6 +440,29 @@ class _CurriculumOutline extends ConsumerWidget {
                 ),
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
+              const SizedBox(height: 12),
+              Text(
+                tr(
+                  'Bu mavzular xaritasi. Tayyor darslar o‘quv yo‘lida ketma-ket ochiladi.',
+                  'Это карта тем. Подготовленные уроки открываются по порядку на учебном пути.',
+                  'This is the topic map. Prepared lessons unlock in order on the learning path.',
+                ),
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: TextButton.icon(
+                  onPressed: () => Navigator.pop(context),
+                  icon: const Icon(Icons.route_outlined),
+                  label: Text(
+                    tr(
+                      'Dars yo‘liga qaytish',
+                      'Вернуться к урокам',
+                      'Back to learning path',
+                    ),
+                  ),
+                ),
+              ),
               if (outline.chapters.isEmpty)
                 Text(
                   tr(
@@ -464,7 +487,7 @@ class _CurriculumOutline extends ConsumerWidget {
                       topic.completed
                           ? Icons.check_circle_rounded
                           : topic.ready
-                          ? Icons.play_circle_outline_rounded
+                          ? Icons.menu_book_rounded
                           : Icons.menu_book_outlined,
                     ),
                     title: Text(topic.title),
@@ -472,7 +495,7 @@ class _CurriculumOutline extends ConsumerWidget {
                       '${topic.printedStart ?? "?"}–${topic.printedEnd ?? "?"} ${tr('bet', 'стр.', 'pp.')} · ${topic.completed
                           ? tr('Bajarilgan', 'Завершено', 'Completed')
                           : topic.ready
-                          ? tr('Dars mavjud', 'Урок доступен', 'Lesson available')
+                          ? tr('Kontent tayyor', 'Контент подготовлен', 'Content prepared')
                           : tr('Kontent tayyorlanmoqda', 'Контент готовится', 'Content in preparation')}',
                     ),
                   ),

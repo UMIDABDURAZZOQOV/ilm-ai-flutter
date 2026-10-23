@@ -19,8 +19,8 @@ call-site mosligi uchun qoladi; ushbu mahsulotning vizual qoidalari ILM AI’ga 
 | Brend indigo | `#2A1F6B` | Brend identifikatori o‘sha rang |
 | Harakat foni / yozuv | `#2A1F6B` / oq | `#6754D4` / oq |
 | Link, faol tab | `#2A1F6B` | `#B8ACFF` |
-| Fon / surface / karta | `#F7F7FC` / oq / oq | `#13102C` / `#1C173E` / `#251F50` |
-| Asosiy / ikkilamchi / muted matn | `#1E1A34` / `#59516E` / `#68617C` | `#F1F0FA` / `#C3BDDB` / `#B2AACD` |
+| Fon / surface / karta | `#F7F7FC` / oq / oq | `#101420` / `#191F30` / `#232C42` |
+| Asosiy / ikkilamchi / muted matn | `#1E1A34` / `#59516E` / `#68617C` | `#F3F4FC` / `#C4C9DC` / `#AAB4CD` |
 | Progress aksenti | `#2DD4BF` | `#2DD4BF` |
 | Yutuq aksenti | `#F9A825` | `#F9A825` |
 | Success matni | `#087F6B` | `#34D399` |
@@ -61,6 +61,24 @@ validated draft va amaldagi muddatga asoslanadi; completed/locked backenddan.
 `StudyStartSheet` dars/checkpoint uchun umumiy frame va action tartibidir.
 Bo‘lim progressi faqat mavjud backend darslari denominatoridan olinadi;
 coverage tugallanmagan bo‘lsa bu tushuntiriladi.
+
+O‘quv yo‘lida `LearningContinueCard.compact` kunlik maqsadni ixcham panelda
+ko‘rsatadi. Birinchi darsning nomi va boshlash amali panelda takrorlanmaydi;
+saqlangan savol pozitsiyasi dars qatorida ham ko‘rinadi. Keyinroq turgan joriy
+dars/checkpointga tez qaytish saqlanadi. Curriculum `ready` faqat kontent
+tayyorligini bildiradi; outline play/unlock va’dasi bermaydi. Access server
+tree’dan olinadi, mavzular oynasi o‘quv yo‘liga qaytish amalini beradi.
+
+`LearningInvitationCard` bo‘sh liga va yangi profil uchun original Ilmo,
+mazmunli izoh va mavjud o‘quv yo‘liga qaytish tugmasini birlashtiradi. Tab
+ichida callback state/cache’ni saqlaydi; alohida route’da `/learn` ishlaydi.
+Yangi profilda nol statistika/kalendar/heatmap yig‘iladigan bo‘limda qoladi;
+XP, streak, completed, activity yoki subject progress bo‘lsa batafsil statistika
+avvalgidek ochiq. Reyting yoki pedagogik yutuq sun’iy yaratilmaydi.
+
+Dark mode card chegarasi `#424F6B`, selected surface `#30395B`: fon neytral,
+indigo harakat/selection’da qoladi. Logout oddiy outline amal; «Akkauntdan
+chiqish» uch tilda aniq yoziladi, yakuniy tasdiqlashdagi error rangi saqlanadi.
 
 `LessonCompletionView` tasdiqlangan XP/score/starsni ko‘rsatadi. Aniqlik va vaqt
 alohida nomlanadi, asosiy amal yo‘lga qaytaradi. Natija/sheet o‘lchami kontentga

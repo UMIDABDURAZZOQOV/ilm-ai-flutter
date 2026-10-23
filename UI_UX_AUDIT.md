@@ -83,3 +83,11 @@ repo branchiga yozilmaydi.
 Bosqich natijalari `docs/uiux/IMPLEMENTATION_REPORT.md`da yuritiladi. Yangi kod
 yozilishidan oldingi ma’lum suite: oldingi ikonka bosqichida **181 test**, analyze
 toza. Bu yangi taskning yakuniy testi sifatida hisoblanmaydi.
+## 2026-10-23 — keyingi 17 ta Samsung tasviri bo‘yicha yangilanish
+
+Readiness/access chalkashligi, katta takroriy home hero, liga bo‘sh holati,
+yangi profilning nol statistikasi, dark hierarchy va logout urg‘usi uchun
+alohida audit/reja va amaliy tuzatishlar tayyor. **425 full-suite passed**,
+analyze **No issues found**; backend/kontentga tegilmagan.
+[Bosqich rejasi](docs/uiux/SCREENSHOT_POLISH_PLAN.md) va
+[batafsil hisobot](docs/uiux/SCREENSHOT_POLISH_REPORT.md).

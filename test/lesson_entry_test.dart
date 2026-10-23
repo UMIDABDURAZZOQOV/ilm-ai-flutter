@@ -371,7 +371,8 @@ void main() {
               ? LessonEntryState.resume
               : LessonEntryState.expired,
         ).action('en');
-        expect(find.text(expected), findsNWidgets(2));
+        // The first lesson owns the action; the compact goal panel does not repeat it.
+        expect(find.text(expected), findsOneWidget);
         await tester.tap(find.byType(LearningJourneyTile).first);
         await tester.pumpAndSettle();
         expect(
@@ -469,7 +470,7 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.byType(LearningJourneyTile).evaluate().length, lessThan(20));
-    expect(find.text('1/406 available lessons completed'), findsOneWidget);
+    expect(find.text('Lessons completed: 1/406'), findsOneWidget);
     expect(
       find.text('More lessons in this unit are in preparation.'),
       findsOneWidget,

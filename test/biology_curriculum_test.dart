@@ -244,7 +244,7 @@ void main() {
         isTrue,
       );
       await tester.pumpAndSettle();
-      expect(find.text('Hozir 1 ta dars mavjud.'), findsOneWidget);
+      expect(find.text('Tayyor darslar: 1'), findsOneWidget);
       await tap(tester, 'Mavzular');
       expect(find.textContaining('1-§. Biologiya'), findsOneWidget);
       expect(find.text('Keyingi sinfga o‘tish'), findsNothing);
@@ -676,7 +676,7 @@ void main() {
         scale: 2,
       );
       await tester.pumpAndSettle();
-      expect(find.text('Hozir 49 ta dars mavjud.'), findsOneWidget);
+      expect(find.text('Tayyor darslar: 49'), findsOneWidget);
       expect(
         find.textContaining('Qolgan mavzular tayyorlanmoqda'),
         findsNothing,

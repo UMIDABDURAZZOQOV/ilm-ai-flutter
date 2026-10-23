@@ -234,3 +234,14 @@ Yangi regression bilan navigation **22**, full suite **370 passed**, analyze
 **No issues found**. Arm64 profile build tayyor. Qurilma o‘lchovlari va aniq
 cheklovlar [TAB_PERFORMANCE.md](TAB_PERFORMANCE.md)da; release/beta signoff
 faqat o‘quvchi sinovi va release QA’dan keyin beriladi.
+
+## Yangi Samsung tasvirlari — beshta UX tuzatishi
+
+Readiness/access copy va ikonlar ajratildi; first-home takroriy hero o‘rniga
+compact goal, keyingi dars/checkpoint va completed-path guidance saqlangan.
+Reusable `LearningInvitationCard` bo‘sh liga/profilga keyingi qadam beradi.
+Real progressli profil avvalgidek, yangi hisob statistikasi expand/collapse’da.
+Dark neutral qatlamlari va aniq nomlangan secondary logout joriy qilindi.
+**55 yangi test, 425 full-suite passed, analyze toza**, 6 yangi golden,
+4 ta palette dark golden yangilandi. UI/QA dalillari va chegaralar:
+[SCREENSHOT_POLISH_REPORT.md](SCREENSHOT_POLISH_REPORT.md).

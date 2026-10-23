@@ -456,6 +456,7 @@ class SkillPathScreen extends ConsumerWidget {
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 LearningContinueCard(
+                                  compact: firstUnlockedIndex >= 0,
                                   language: language,
                                   statusLabel: nextCheckpoint != null
                                       ? str3(
@@ -511,7 +512,9 @@ class SkillPathScreen extends ConsumerWidget {
                                     accentColor: subjectColor,
                                   ),
                                   checkpoint: nextCheckpoint != null,
-                                  onContinue: nextLesson != null
+                                  onContinue: firstUnlockedIndex <= 0
+                                      ? null
+                                      : nextLesson != null
                                       ? () async {
                                           await context.push(
                                             '/skills/lesson',
@@ -580,6 +583,14 @@ class SkillPathScreen extends ConsumerWidget {
                                       items[i].unit!.coverageComplete,
                                 ),
                               LearningJourneyTile(
+                                detail:
+                                    !items[i].isCheckpoint &&
+                                        entries[items[i].lesson!.id]?.state ==
+                                            LessonEntryState.resume
+                                    ? entries[items[i].lesson!.id]!.description(
+                                        language,
+                                      )
+                                    : null,
                                 title: items[i].isCheckpoint
                                     ? str3(
                                         language,

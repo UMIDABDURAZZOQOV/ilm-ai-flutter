@@ -68,10 +68,10 @@ Color _hex(String hex) => Color(int.parse('FF${hex.substring(1)}', radix: 16));
 /// Brend shakli: Romb (Diamond)
 class BrandPalette {
   static const Color indigo = Color(0xFF2A1F6B);
-  static const Color indigoDarkBg = Color(0xFF13102C);
-  static const Color indigoDarkSurface = Color(0xFF1C173E);
-  static const Color indigoDarkCard = Color(0xFF251F50);
-  static const Color indigoDarkBorder = Color(0xFF3C3375);
+  static const Color indigoDarkBg = Color(0xFF101420);
+  static const Color indigoDarkSurface = Color(0xFF191F30);
+  static const Color indigoDarkCard = Color(0xFF232C42);
+  static const Color indigoDarkBorder = Color(0xFF424F6B);
   static const Color indigoDarkPrimary = Color(0xFFB8ACFF);
 
   static const Color accentOrange = Color(0xFFF9A825);
@@ -86,13 +86,13 @@ ThemeColors learningPalette(ThemeColors base) {
     background: dark ? BrandPalette.indigoDarkBg : const Color(0xFFF7F7FC),
     surface: dark ? BrandPalette.indigoDarkSurface : Colors.white,
     card: dark ? BrandPalette.indigoDarkCard : Colors.white,
-    text: dark ? const Color(0xFFF1F0FA) : const Color(0xFF1E1A34),
-    textSecondary: dark ? const Color(0xFFC3BDDB) : const Color(0xFF59516E),
-    textMuted: dark ? const Color(0xFFB2AACD) : const Color(0xFF68617C),
+    text: dark ? const Color(0xFFF3F4FC) : const Color(0xFF1E1A34),
+    textSecondary: dark ? const Color(0xFFC4C9DC) : const Color(0xFF59516E),
+    textMuted: dark ? const Color(0xFFAAB4CD) : const Color(0xFF68617C),
     border: dark ? BrandPalette.indigoDarkBorder : const Color(0xFFE5E2F2),
     primary: dark ? BrandPalette.indigoDarkPrimary : BrandPalette.indigo,
     secondary: BrandPalette.accentOrange,
-    primaryLight: dark ? const Color(0xFF2E2660) : const Color(0xFFECE9F8),
+    primaryLight: dark ? const Color(0xFF30395B) : const Color(0xFFECE9F8),
     accent: BrandPalette.turquoise,
     creamWhite: BrandPalette.creamWhite,
     error: dark ? base.error : const Color(0xFFB91C1C),
