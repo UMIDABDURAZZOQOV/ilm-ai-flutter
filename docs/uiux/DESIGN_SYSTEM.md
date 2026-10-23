@@ -53,6 +53,23 @@ darhol yakunlaydi. Tafsilot: [navigatsiya motion standarti](NAVIGATION_MOTION.md
 
 ## Til va ishonch
 
+### O‘quv harakatlari va qaytish
+
+`LessonEntry` hero, dars qatori va start sheet uchun bitta holat manbai:
+start/resume/expired/review/locked. Lokal resume faqat user/origin bo‘yicha
+validated draft va amaldagi muddatga asoslanadi; completed/locked backenddan.
+`StudyStartSheet` dars/checkpoint uchun umumiy frame va action tartibidir.
+Bo‘lim progressi faqat mavjud backend darslari denominatoridan olinadi;
+coverage tugallanmagan bo‘lsa bu tushuntiriladi.
+
+`LessonCompletionView` tasdiqlangan XP/score/starsni ko‘rsatadi. Aniqlik va vaqt
+alohida nomlanadi, asosiy amal yo‘lga qaytaradi. Natija/sheet o‘lchami kontentga
+mos; katta shriftda kartalar vertikal joylashadi. Yangi holat uchun rasm
+generatsiya qilinmagan, mavjud Ilmo pozalari ishlatilgan.
+
+Uzun yo‘l sliver ro‘yxati bilan render qilinadi. Bu frame-time kafolati emas;
+haqiqiy FPS va memory profile/release qurilmada alohida o‘lchanadi.
+
 UZ/RU/EN interface qo‘llanadi. `t` va `str3`ning mavjud fallbacklari saqlanadi.
 Biologiyaning manbali o‘zbekcha mazmuni o‘zgarmaydi. Dars tili izohi UI tilida;
 ruscha interfeysda o‘zbekcha dars matnining mavjudligi tarjima xatosi deb

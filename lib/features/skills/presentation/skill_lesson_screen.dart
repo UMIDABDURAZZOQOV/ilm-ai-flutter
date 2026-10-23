@@ -10,6 +10,7 @@ import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
+import '../../../core/widgets/ilm_state_view.dart';
 import 'lesson_widgets.dart';
 import '../../../core/utils/math_text.dart';
 import '../../../core/widgets/gradient_button.dart';
@@ -22,6 +23,7 @@ import '../data/skill_tree_repository.dart';
 import '../data/lesson_draft_store.dart';
 import 'mascot.dart';
 import 'skill_ui.dart';
+import 'lesson_completion_view.dart';
 import 'content_source_button.dart';
 import 'study_exit_guard.dart';
 import '../../../core/services/sound_service.dart';
@@ -545,7 +547,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
     }
 
     if (_phase == _Phase.loading) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return Scaffold(body: IlmLoadingView(language: language));
     }
 
     if (_phase == _Phase.error) {
@@ -764,146 +766,27 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
 
     if (_phase == _Phase.finished && _completion != null) {
       final c = _completion!;
-      final result = SafeArea(
-        child: Center(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(24),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                MascotImage(
-                  pose: (c.total > 0 && (100 * c.score / c.total) >= 80)
-                      ? MascotPose.happy
-                      : MascotPose.hello,
-                  size: 180,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                      c.stars > 0
-                          ? t('skills.complete.title', language)
-                          : str3(
-                              language,
-                              'Yana bir bor mashq qilamiz!',
-                              'Попробуем ещё раз!',
-                              'Let’s practise again!',
-                            ),
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    )
-                    .motion(context)
-                    .fadeIn(duration: 250.ms)
-                    .slideY(begin: 0.1, end: 0),
-                const SizedBox(height: 8),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    for (var i = 1; i <= 3; i++)
-                      Icon(
-                            Icons.star_rounded,
-                            size: 32,
-                            color: i <= c.stars
-                                ? Colors.amber
-                                : Colors.grey.shade300,
-                          )
-                          .motion(context)
-                          .scale(
-                            delay: (180 + i * 120).ms,
-                            duration: 350.ms,
-                            curve: Curves.easeOutBack,
-                          ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                Wrap(
-                  alignment: WrapAlignment.center,
-                  spacing: 16,
-                  runSpacing: 12,
-                  children: [
-                    _StatColumn(
-                          value: '+${c.xpAwarded}',
-                          label: 'XP',
-                          color: colors.text,
-                        )
-                        .motion(context)
-                        .scale(
-                          delay: 350.ms,
-                          duration: 300.ms,
-                          curve: Curves.easeOutBack,
-                        ),
-                    const SizedBox(width: 24),
-                    _StatColumn(
-                          value: '${c.score}/${c.total}',
-                          label: t('skills.complete.correct', language),
-                          color: colors.success,
-                        )
-                        .motion(context)
-                        .scale(
-                          delay: 450.ms,
-                          duration: 300.ms,
-                          curve: Curves.easeOutBack,
-                        ),
-                    const SizedBox(width: 24),
-                    _StatColumn(
-                          value: '${c.streakDays}',
-                          label: t('skills.complete.streak', language),
-                          color: colors.text,
-                        )
-                        .motion(context)
-                        .scale(
-                          delay: 550.ms,
-                          duration: 300.ms,
-                          curve: Curves.easeOutBack,
-                        ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  str3(
-                    language,
-                    'Birinchi urinish aniqligi',
-                    'Точность первой попытки',
-                    'First-attempt accuracy',
-                  ),
-                  style: TextStyle(color: colors.textMuted),
-                ),
-                Text(
-                  '${c.total == 0 ? 0 : (100 * c.score / c.total).round()}%  ·  ${Duration(milliseconds: _elapsedBeforeRestore + _timer.elapsedMilliseconds).inMinutes}:${(Duration(milliseconds: _elapsedBeforeRestore + _timer.elapsedMilliseconds).inSeconds % 60).toString().padLeft(2, '0')}',
-                  style: const TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                const SizedBox(height: 24),
-                OutlinedButton.icon(
-                  onPressed: _showAnswers,
-                  icon: const Icon(Icons.fact_check_outlined),
-                  label: Text(
-                    str3(
-                      language,
-                      'Javoblarni ko‘rish',
-                      'Посмотреть ответы',
-                      'Review answers',
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Duo3DButton(
-                  onPressed: () => Navigator.of(context).maybePop(),
-                  child: Text(
-                    str3(
-                      language,
-                      'Dars yo‘liga qaytish',
-                      'К учебному пути',
-                      'Back to learning path',
-                    ),
-                  ),
-                ).motion(context).fadeIn(delay: 600.ms),
-              ],
-            ),
-          ),
+      final result = LessonCompletionView(
+        language: language,
+        title: c.stars > 0
+            ? t('skills.complete.title', language)
+            : str3(
+                language,
+                'Yana bir bor mashq qilamiz!',
+                'Попробуем ещё раз!',
+                'Let’s practise again!',
+              ),
+        lessonTitle: widget.lesson.titleFor(language),
+        xp: c.xpAwarded,
+        correct: c.score,
+        total: c.total,
+        stars: c.stars,
+        streakDays: c.streakDays,
+        elapsed: Duration(
+          milliseconds: _elapsedBeforeRestore + _timer.elapsedMilliseconds,
         ),
+        onReview: _showAnswers,
+        onBack: () => Navigator.of(context).maybePop(),
       );
       return Scaffold(
         body: c.stars > 0 ? CelebrationConfetti(child: result) : result,
@@ -1063,34 +946,6 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
           ],
         ),
       ),
-    );
-  }
-}
-
-class _StatColumn extends StatelessWidget {
-  final String value;
-  final String label;
-  final Color color;
-  const _StatColumn({
-    required this.value,
-    required this.label,
-    required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          value,
-          style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.w800,
-            color: color,
-          ),
-        ),
-        Text(label, style: Theme.of(context).textTheme.bodySmall),
-      ],
     );
   }
 }

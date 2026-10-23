@@ -157,3 +157,17 @@ mashqda «Chiqish» ko‘rsatiladi. Mavjud lokal draft/back logikasi saqlangan.
 Samsung’da 5/12 urinishda dialog va ikkala amal tekshirildi; lokal draft
 mazmuni o‘zgarmagan. Frozen APK qayta o‘rnatilib yakuniy hash tasdiqlandi.
 Tafsilot: [dialog hisoboti](docs/uiux/STUDY_EXIT_DIALOG.md).
+
+## 2026-10-23 — Mahsulot UX dasturi
+
+Dars holatlari va keyingi harakatlar izchil, home header ixcham, 406 qatorli
+yo‘l lazy render, bo‘lim progressi serverga mos. Dars/checkpoint sheet bir xil,
+natija ekrani dars nomi/score/XP/vaqtni aniq ko‘rsatadi. Accessibility header va
+tugma node’lari ajratilgan. 81 yangi test, **369 full-suite passed**, analyze
+toza; final targeted **87 passed**, 42 BEFORE/AFTER tasvir. Profile/AOT Samsung
+testida ma’lumotlar saqlangan. Raster boshlang‘ich o‘lchovi yaxshilash talab
+qilganligi sabab performance signoff hali berilmagan.
+
+[Reja](docs/uiux/PRODUCT_UX_PLAN.md), [hisobot](docs/uiux/PRODUCT_UX_REPORT.md),
+[beta protokoli](docs/uiux/BETA_USABILITY_PROTOCOL.md),
+[release UX gate](docs/uiux/RELEASE_UX_GATE.md).

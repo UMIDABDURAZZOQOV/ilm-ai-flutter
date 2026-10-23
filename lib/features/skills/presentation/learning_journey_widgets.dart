@@ -156,6 +156,7 @@ class LearningContinueCard extends StatelessWidget {
             ),
           ),
           Semantics(
+            container: true,
             label: str3(language, 'Kunlik maqsad', 'Цель дня', 'Daily goal'),
             value: '$todayXp/$goalXp XP',
             child: ExcludeSemantics(
@@ -192,7 +193,7 @@ class LearningContinueCard extends StatelessWidget {
                       language,
                       'Seriya: ${summary!.streakDays} kun',
                       'Серия: ${summary!.streakDays} дн.',
-                      'Streak: ${summary!.streakDays} days',
+                      'Streak: ${summary!.streakDays} ${summary!.streakDays == 1 ? 'day' : 'days'}',
                     ),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
@@ -221,54 +222,58 @@ class LearningUnitHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
-    return Padding(
-      padding: const EdgeInsets.only(top: 24, bottom: 16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(title, style: Theme.of(context).textTheme.titleMedium),
-          const SizedBox(height: 8),
-          Text(
-            str3(
-              language,
-              'Mavjud darslardan $completed/$total bajarilgan',
-              'Пройдено доступных уроков: $completed/$total',
-              '$completed/$total available lessons completed',
-            ),
-            style: Theme.of(
-              context,
-            ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
-          ),
-          if (total > 0) ...[
+    return Semantics(
+      container: true,
+      child: Padding(
+        padding: const EdgeInsets.only(top: 24, bottom: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(title, style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 8),
-            ExcludeSemantics(
-              child: LinearProgressIndicator(
-                value: (completed / total).clamp(0, 1),
-                minHeight: 4,
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? c.accent
-                    : c.success,
-                backgroundColor: c.border,
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-          ],
-          if (!coverageComplete)
-            Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Text(
+            if (total > 0)
+              Text(
                 str3(
                   language,
-                  'Bo‘limning qolgan darslari tayyorlanmoqda.',
-                  'Остальные уроки раздела готовятся.',
-                  'More lessons in this unit are in preparation.',
+                  'Mavjud darslardan $completed/$total bajarilgan',
+                  'Пройдено доступных уроков: $completed/$total',
+                  '$completed/$total available lessons completed',
                 ),
                 style: Theme.of(
                   context,
-                ).textTheme.bodySmall?.copyWith(color: c.textMuted),
+                ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
               ),
-            ),
-        ],
+            if (total > 0) ...[
+              const SizedBox(height: 8),
+              ExcludeSemantics(
+                child: LinearProgressIndicator(
+                  value: (completed / total).clamp(0, 1),
+                  minHeight: 4,
+                  color: Theme.of(context).brightness == Brightness.dark
+                      ? c.accent
+                      : c.success,
+                  backgroundColor: c.border,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ],
+            if (!coverageComplete)
+              Padding(
+                padding: const EdgeInsets.only(top: 8),
+                child: Text(
+                  str3(
+                    language,
+                    'Bo‘limning qolgan darslari tayyorlanmoqda.',
+                    'Остальные уроки раздела готовятся.',
+                    'More lessons in this unit are in preparation.',
+                  ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(color: c.textMuted),
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
@@ -304,6 +309,7 @@ class LearningJourneyTile extends StatelessWidget {
         ? Icons.emoji_events_outlined
         : Icons.star_rounded;
     return Semantics(
+      container: true,
       button: true,
       selected: current,
       label: semanticLabel,

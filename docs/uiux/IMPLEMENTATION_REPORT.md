@@ -212,3 +212,16 @@ Saqlashning haqiqiy natijasi, dars muddati va oldingi yutuqlar haqidagi ma’no
 saqlangan. Light/dark, uch til, 320dp/200%, landscape, saqlash xatosi va
 Reduce Motion uchun **29 yangi test**; to‘liq suite **288 passed**, analyze
 **No issues found**. [Batafsil dialog hisoboti](STUDY_EXIT_DIALOG.md).
+
+## Mahsulot UX dasturi — o‘quv oqimi
+
+Yangi/resume/expired/review/locked holatlari hero/qator/sheet’da izchil,
+bo‘lim progressi real server darslariga asoslangan. Ixcham bosh sahifa,
+lazy ro‘yxat, umumiy dars/checkpoint sheet va qayta tuzilgan natija ekrani.
+81 yangi test bilan **369 full-suite passed**, analyze **No issues found**;
+yakuniy komponent/nav **87 passed**, 42 ta BEFORE/AFTER juftlik.
+Samsung’da debug va arm64 profile/AOT APK, cert/hash/user-data tekshirildi.
+Haqiqiy 280 Flutter.Frame boshlang‘ich o‘lchovi raster p95 36.572ms chiqdi;
+keyingi bosqich shu ko‘rsatkichni yaxshilaydi. [Batafsil hisobot](PRODUCT_UX_REPORT.md).
+Beta protokoli va release UX gate tayyor; haqiqiy tester/OAuth/Play release
+sinovlari bajarildi deb yozilmaydi.
