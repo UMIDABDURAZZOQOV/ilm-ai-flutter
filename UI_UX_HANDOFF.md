@@ -192,3 +192,16 @@ Dark qatlamlar neytral indigo; logout aniq nomlangan outline amal.
 
 [Audit/reja](docs/uiux/SCREENSHOT_POLISH_PLAN.md),
 [batafsil tekshiruv va Samsung natijalari](docs/uiux/SCREENSHOT_POLISH_REPORT.md).
+
+## 2026-10-23 — Login va autentifikatsiya brendingi
+
+Login va saqlangan signup kodidagi eski romb logo joriy launcher manbasi
+bo‘lgan rasmiy Ilmo yuzchasiga almashtirildi. Rasm kesilmaydi; markazlashuv,
+kichik ekran/katta matn scrolli va 220 ms Reduce Motion’ga mos fade bor.
+Google Sign-In, tokenlar, darslar va progress o‘zgarmagan; 20 original asset
+baytma-bayt saqlangan. 28 yangi test bilan **453 full-suite passed**, analyze
+**No issues found**. UZ/RU/EN va light/dark uchun A12 o‘lchamida 6 ta mock
+BEFORE/AFTER juftlik tayyorlandi. Haqiqiy akkauntdan chiqish yoki yangi APK
+o‘rnatish bajarilmadi.
+
+[Brend auditi, taqqoslashlar va test natijalari](docs/uiux/AUTH_BRAND_REPORT.md).

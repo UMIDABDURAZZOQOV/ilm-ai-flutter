@@ -13,6 +13,7 @@ import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
 import '../../../core/widgets/google_logo.dart';
+import '../../../core/widgets/ilmo_brand_mark.dart';
 import '../application/google_auth.dart';
 import '../data/auth_models.dart';
 import '../data/auth_repository.dart';
@@ -99,22 +100,8 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Center(
-                child: Container(
-                  width: 72,
-                  height: 72,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(color: colors.primary.withValues(alpha: 0.28), blurRadius: 20, offset: const Offset(0, 10)),
-                    ],
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image.asset('assets/icons/icon.png', width: 72, height: 72, fit: BoxFit.cover),
-                  ),
-                ),
-              ).motion(context).fadeIn(duration: 450.ms).scale(begin: const Offset(0.85, 0.85), end: const Offset(1, 1), curve: Curves.easeOutBack),
+              const Center(child: IlmoBrandMark(size: 120))
+                  .motion(context).fadeIn(duration: 220.ms),
               const SizedBox(height: 24),
               Text(
                 t('auth.signup.title', language),
