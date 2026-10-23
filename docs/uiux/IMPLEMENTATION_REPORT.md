@@ -203,3 +203,12 @@ yakuniy suite **259 passed**, analyze **No issues found**. Frozen APK hash bilan
 tekshirilib Samsung A12’ga yangilandi; real video va dekodlangan kadrlar ko‘rildi,
 error logda fatal/unhandled/overflow belgisi 0. Main merge/deploy bajarilmadi.
 [To‘liq motion hisoboti](NAVIGATION_MOTION.md).
+
+## Qo‘shimcha so‘rov — darsdan chiqish dialogi
+
+Samsung tasviridagi katta ikon va uzun paragraf o‘rniga ixcham sarlavha,
+holat belgisi, qisqa matn va to‘liq kenglikdagi ikkita amal joriy qilindi.
+Saqlashning haqiqiy natijasi, dars muddati va oldingi yutuqlar haqidagi ma’no
+saqlangan. Light/dark, uch til, 320dp/200%, landscape, saqlash xatosi va
+Reduce Motion uchun **29 yangi test**; to‘liq suite **288 passed**, analyze
+**No issues found**. [Batafsil dialog hisoboti](STUDY_EXIT_DIALOG.md).

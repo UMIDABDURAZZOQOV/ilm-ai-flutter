@@ -147,3 +147,13 @@ saqlangan. Reduce Motion, 320dp/200%, uch til va RTL uchun 21 yangi test bor.
 To‘liq suite **259 passed**, analyze **No issues found**. Debug APK hisobni
 saqlagan holda Samsung A12’ga yangilandi va frozen hash bilan tekshirildi.
 Tafsilot: [navigatsiya hisoboti](docs/uiux/NAVIGATION_MOTION.md).
+
+## 2026-10-23 — Darsdan chiqish dialogi
+
+Ixcham status belgisi, qisqartirilgan UZ/RU/EN matni, bir xil kenglikdagi
+«Davom etish» / «Saqlab chiqish» amallari. Saqlash xatosi va saqlanmaydigan
+mashqda «Chiqish» ko‘rsatiladi. Mavjud lokal draft/back logikasi saqlangan.
+29 yangi test bilan to‘liq suite **288 passed**, analyze **No issues found**.
+Samsung’da 5/12 urinishda dialog va ikkala amal tekshirildi; lokal draft
+mazmuni o‘zgarmagan. Frozen APK qayta o‘rnatilib yakuniy hash tasdiqlandi.
+Tafsilot: [dialog hisoboti](docs/uiux/STUDY_EXIT_DIALOG.md).
