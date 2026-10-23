@@ -270,6 +270,11 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                     'Работа над ошибками',
                     'Review mistakes',
                   ),
+                  subtitle: tr(
+                    'Oldingi xatolarni tushunib oling',
+                    'Разберитесь с прошлыми ошибками',
+                    'Understand your previous mistakes',
+                  ),
                   onTap: () => context.push(
                     '/skills/practice',
                     extra: {'mode': PracticeMode.mistakes},
@@ -284,6 +289,11 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                       ).extension<AppColors>()?.colors.secondary ??
                       const Color(0xFFF9A825),
                   title: tr('Kunlik sinov', 'Вызов дня', 'Daily challenge'),
+                  subtitle: tr(
+                    'Bugungi savollar to‘plami',
+                    'Подборка вопросов на сегодня',
+                    'Today’s question set',
+                  ),
                   onTap: () => context.push(
                     '/skills/practice',
                     extra: {'mode': PracticeMode.daily},
@@ -298,6 +308,11 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                     'На скорость',
                     'Lightning practice',
                   ),
+                  subtitle: tr(
+                    'Qisqa va tezkor takrorlash',
+                    'Короткое повторение на время',
+                    'A short, timed review',
+                  ),
                   onTap: () => context.push(
                     '/skills/practice',
                     extra: {'mode': PracticeMode.lightning},
@@ -308,22 +323,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
           ),
           () => const SkillQuestsScreen(),
           () => const SkillLeaderboardScreen(),
-          () => Column(
-            children: [
-              SafeArea(
-                bottom: false,
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton.icon(
-                    onPressed: () => context.push('/settings'),
-                    icon: const Icon(Icons.settings_outlined),
-                    label: Text(tr('Sozlamalar', 'Настройки', 'Settings')),
-                  ),
-                ),
-              ),
-              const Expanded(child: SkillProfileScreen()),
-            ],
-          ),
+          () => const SkillProfileScreen(),
         ];
         final tabs = [
           for (var i = 0; i < tabBuilders.length; i++)
@@ -375,10 +375,9 @@ class _LearningTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: colors?.card ?? Theme.of(context).colorScheme.surface,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withValues(alpha: 0.45), width: 2.4),
-        boxShadow: [
-          BoxShadow(color: duoShadowOf(color), offset: const Offset(0, 5)),
-        ],
+        border: Border.all(
+          color: colors?.border ?? Theme.of(context).dividerColor,
+        ),
       ),
       child: Material(
         color: Colors.transparent,
@@ -392,7 +391,7 @@ class _LearningTile extends StatelessWidget {
           leading: CircleAvatar(
             radius: 22,
             backgroundColor: color.withValues(alpha: 0.14),
-            child: Icon(icon, color: color, size: 26),
+            child: Icon(icon, color: colors?.primary, size: 24),
           ),
           title: Text(
             title,

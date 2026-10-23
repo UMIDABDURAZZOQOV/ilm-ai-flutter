@@ -33,15 +33,27 @@ class AppTextField extends StatelessWidget {
       obscureText: obscureText,
       keyboardType: keyboardType,
       onChanged: onChanged,
-      style: TextStyle(color: colors.text, fontSize: 16, fontWeight: FontWeight.w500),
+      style: TextStyle(
+        color: colors.text,
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+      ),
       decoration: InputDecoration(
-        hintText: hint,
-        hintStyle: TextStyle(color: colors.textMuted, fontSize: 15, fontWeight: FontWeight.w400),
+        labelText: hint,
+        alignLabelWithHint: true,
+        hintStyle: TextStyle(
+          color: colors.textMuted,
+          fontSize: 15,
+          fontWeight: FontWeight.w400,
+        ),
         filled: true,
         fillColor: colors.inputBackground,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 18,
+          vertical: 16,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(color: colors.border, width: 1.5),
@@ -72,7 +84,12 @@ class PasswordField extends StatefulWidget {
   final String hint;
   final ValueChanged<String>? onChanged;
 
-  const PasswordField({super.key, required this.controller, required this.hint, this.onChanged});
+  const PasswordField({
+    super.key,
+    required this.controller,
+    required this.hint,
+    this.onChanged,
+  });
 
   @override
   State<PasswordField> createState() => _PasswordFieldState();
@@ -95,7 +112,9 @@ class _PasswordFieldState extends State<PasswordField> {
           icon: AnimatedSwitcher(
             duration: motionDuration(context, 150),
             child: Icon(
-              _visible ? Icons.visibility_off_rounded : Icons.visibility_rounded,
+              _visible
+                  ? Icons.visibility_off_rounded
+                  : Icons.visibility_rounded,
               color: _visible ? colors.primary : colors.textMuted,
               size: 22,
               key: ValueKey<bool>(_visible),

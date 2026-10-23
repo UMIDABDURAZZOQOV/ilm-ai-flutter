@@ -990,7 +990,7 @@ void main() {
   );
 
   testWidgets(
-    'streak calendar marks active days with flame indicators and counter badge at 390x844',
+    'activity calendar exposes real active dates and streak at 390x844',
     (tester) async {
       tester.view.physicalSize = const Size(390, 844);
       tester.view.devicePixelRatio = 1;
@@ -1018,8 +1018,9 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('October 2026'), findsOneWidget);
-      expect(find.text('Streak Calendar'), findsOneWidget);
+      expect(find.text('Activity calendar'), findsOneWidget);
       expect(find.text('5 days'), findsOneWidget);
+      expect(find.bySemanticsLabel('2026-10-01. Completed attempts: 20'), findsOneWidget);
       expect(find.byIcon(Icons.local_fire_department_rounded), findsWidgets);
       expect(tester.takeException(), isNull);
     },
@@ -1050,7 +1051,7 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      expect(find.textContaining('Faollik ma‘lumotlari'), findsOneWidget);
+      expect(find.textContaining('Bajarilgan darslar'), findsOneWidget);
       expect(find.text('0 kun'), findsOneWidget);
       expect(tester.takeException(), isNull);
 
@@ -1071,7 +1072,7 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      expect(find.textContaining('Данных об активности'), findsOneWidget);
+      expect(find.textContaining('Завершённые уроки'), findsOneWidget);
       expect(find.text('0 дн'), findsOneWidget);
       expect(tester.takeException(), isNull);
     },

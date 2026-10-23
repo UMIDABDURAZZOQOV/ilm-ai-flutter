@@ -1,4 +1,5 @@
 // Real widgets with isolated, labelled test fixtures. Never contacts a backend.
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
@@ -166,6 +167,8 @@ void main() {
           Widget screen, {
           bool grade = true,
           String lang = 'ru',
+          bool catalogLoading = false,
+          bool catalogError = false,
         }) async {
           // A new route tree, not a global-key reparent of a visited tab.
           await tester.pumpWidget(const SizedBox.shrink());
@@ -180,6 +183,13 @@ void main() {
             ProviderScope(
               key: UniqueKey(),
               overrides: [
+                if (catalogLoading || catalogError)
+                  subjectCatalogProvider.overrideWith((ref) {
+                    if (catalogError) {
+                      throw TimeoutException('isolated offline fixture');
+                    }
+                    return Completer<List<SkillSubject>>().future;
+                  }),
                 prefsServiceProvider.overrideWithValue(prefs),
                 currentUserIdProvider.overrideWithValue(7),
                 authControllerProvider.overrideWith(FakeAuth.new),
@@ -254,6 +264,10 @@ void main() {
           await tester.pump(const Duration(milliseconds: 500));
         }
 
+        await mount(const SubjectHomeScreen(), catalogLoading: true);
+        await save('loading');
+        await mount(const SubjectHomeScreen(), catalogError: true);
+        await save('error');
         await mount(const SubjectHomeScreen());
         expect(find.text('0/20 XP'), findsOneWidget);
         await save('home');

@@ -9,6 +9,7 @@ import '../../../core/network/dio_client.dart' show apiBaseUrl;
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart' show foregroundOn;
 import '../../../core/widgets/premium_card.dart';
 import '../../../core/widgets/premium_button.dart';
@@ -66,255 +67,283 @@ class SettingsScreen extends ConsumerWidget {
         ),
       ),
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(20),
-          children: [
-            if (physicsPreviewAllowed(apiBaseUrl)) ...[
-              ListTile(
-                leading: const Icon(Icons.science_outlined),
-                title: const Text('Fizika sinovi • 6-sinf'),
-                subtitle: const Text('Faqat lokal sinov • §1–7 • O‘zbekcha'),
-                onTap: () => context.push('/physics-preview'),
+        child: IlmReadingWidth(
+          child: ListView(
+            padding: const EdgeInsets.all(20),
+            children: [
+              if (physicsPreviewAllowed(apiBaseUrl)) ...[
+                ListTile(
+                  leading: const Icon(Icons.science_outlined),
+                  title: const Text('Fizika sinovi • 6-sinf'),
+                  subtitle: const Text('Faqat lokal sinov • §1–7 • O‘zbekcha'),
+                  onTap: () => context.push('/physics-preview'),
+                ),
+                const SizedBox(height: 16),
+              ],
+              Text(
+                t('settings.account', language),
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  color: colors.textSecondary,
+                  fontSize: 14,
+                ),
               ),
-              const SizedBox(height: 16),
-            ],
-            Text(
-              t('settings.account', language),
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                color: colors.textSecondary,
-                fontSize: 14,
-              ),
-            ),
-            const SizedBox(height: 12),
-            PremiumCard(
-                  borderRadius: 18,
-                  padding: const EdgeInsets.all(18),
-                  onTap: () => _editName(context, ref, user?.name ?? ''),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              t('settings.name.label', language),
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: colors.textMuted,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              user?.name ?? '—',
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: colors.text,
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Icon(
-                        Icons.edit_rounded,
-                        color: colors.textMuted,
-                        size: 20,
-                      ),
-                    ],
-                  ),
-                )
-                .motion(context)
-                .fadeIn(duration: 280.ms)
-                .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 28),
-            Text(
-              t('settings.appearance', language),
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                color: colors.textSecondary,
-                fontSize: 14,
-              ),
-            ),
-            const SizedBox(height: 12),
-            PremiumCard(
-                  borderRadius: 18,
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      for (final mode in ['light', 'dark', 'system'])
+              const SizedBox(height: 12),
+              PremiumCard(
+                    borderRadius: 18,
+                    padding: const EdgeInsets.all(18),
+                    onTap: () => _editName(context, ref, user?.name ?? ''),
+                    child: Row(
+                      children: [
                         Expanded(
-                          child: _SegButton(
-                            label: t('settings.theme.$mode', language),
-                            selected: themeMode == mode,
-                            colors: colors,
-                            leading: Icon(
-                              mode == 'light'
-                                  ? Icons.light_mode_rounded
-                                  : mode == 'dark'
-                                  ? Icons.dark_mode_rounded
-                                  : Icons.brightness_auto_rounded,
-                              size: 20,
-                              color: themeMode == mode
-                                  ? foregroundOn(colors.primary)
-                                  : colors.text,
-                            ),
-                            onTap: () => ref
-                                .read(themeModeProvider.notifier)
-                                .setMode(mode),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                t('settings.name.label', language),
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: colors.textMuted,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                user?.name ?? '—',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: colors.text,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                    ],
-                  ),
-                )
-                .motion(context)
-                .fadeIn(delay: 60.ms, duration: 280.ms)
-                .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 28),
-            Text(
-              t('settings.language.label', language),
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                color: colors.textSecondary,
-                fontSize: 14,
-              ),
-            ),
-            const SizedBox(height: 12),
-            PremiumCard(
-                  borderRadius: 18,
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      for (final lang in ['uz', 'ru', 'en'])
-                        Expanded(
-                          child: _SegButton(
-                            label: t('language.$lang', language),
-                            selected: language == lang,
-                            colors: colors,
-                            leading: Text(
-                              lang == 'uz'
-                                  ? '🇺🇿'
-                                  : lang == 'ru'
-                                  ? '🇷🇺'
-                                  : '🇬🇧',
-                              style: const TextStyle(fontSize: 20),
-                            ),
-                            onTap: () => ref
-                                .read(languageProvider.notifier)
-                                .setLanguage(lang),
-                          ),
+                        Icon(
+                          Icons.edit_rounded,
+                          color: colors.textMuted,
+                          size: 20,
                         ),
-                    ],
-                  ),
-                )
-                .motion(context)
-                .fadeIn(delay: 120.ms, duration: 280.ms)
-                .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 28),
-            Text(
-              language == 'uz'
-                  ? 'Ovoz'
-                  : language == 'ru'
-                  ? 'Звук'
-                  : 'Audio',
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                color: colors.textSecondary,
-                fontSize: 14,
-              ),
-            ),
-            const SizedBox(height: 12),
-            PremiumCard(
-                  borderRadius: 18,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 4,
-                  ),
-                  child: Material(
-                    color: Colors.transparent,
-                    child: SwitchListTile(
-                      contentPadding: EdgeInsets.zero,
-                      secondary: Icon(
-                        soundEnabled
-                            ? Icons.volume_up_rounded
-                            : Icons.volume_off_rounded,
-                        color: soundEnabled ? colors.primary : colors.textMuted,
-                      ),
-                      title: Text(
-                        language == 'uz'
-                            ? 'Ovoz effektlari'
-                            : language == 'ru'
-                            ? 'Звуковые эффекты'
-                            : 'Sound effects',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
-                          color: colors.text,
-                        ),
-                      ),
-                      subtitle: Text(
-                        language == 'uz'
-                            ? 'Dars vaqtida to‘g‘ri/xato tovushlar'
-                            : language == 'ru'
-                            ? 'Звуки при ответах на вопросы'
-                            : 'Feedback sounds during lessons',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: colors.textSecondary,
-                        ),
-                      ),
-                      value: soundEnabled,
-                      activeThumbColor: colors.primary,
-                      onChanged: (val) => ref
-                          .read(soundEffectsProvider.notifier)
-                          .setEnabled(val),
+                      ],
                     ),
-                  ),
-                )
-                .motion(context)
-                .fadeIn(delay: 150.ms, duration: 280.ms)
-                .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
-            const SizedBox(height: 36),
-            PremiumButton(
-              onPressed: () async {
-                final confirmed = await showDialog<bool>(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    title: Text(t('settings.logout', language)),
-                    content: Text(t('settings.logout.confirm', language)),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, false),
-                        child: Text(t('common.cancel', language)),
-                      ),
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, true),
-                        child: Text(
-                          t('settings.logout', language),
-                          style: TextStyle(color: colors.error),
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-                if (confirmed == true) {
-                  await ref.read(authControllerProvider.notifier).logout();
-                }
-              },
-              backgroundColor: colors.error,
-              borderRadius: 18,
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              child: Text(
-                t('settings.logout', language),
-                style: const TextStyle(fontSize: 15),
+                  )
+                  .motion(context)
+                  .fadeIn(duration: 280.ms)
+                  .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+              const SizedBox(height: 28),
+              Text(
+                t('settings.appearance', language),
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  color: colors.textSecondary,
+                  fontSize: 14,
+                ),
               ),
-            ).motion(context).fadeIn(delay: 180.ms, duration: 280.ms),
-          ],
+              const SizedBox(height: 12),
+              PremiumCard(
+                    borderRadius: 18,
+                    padding: const EdgeInsets.all(10),
+                    child: _SettingsOptions(
+                      children: [
+                        for (final mode in ['light', 'dark', 'system'])
+                          Expanded(
+                            child: _SegButton(
+                              label: t('settings.theme.$mode', language),
+                              selected: themeMode == mode,
+                              colors: colors,
+                              leading: Icon(
+                                mode == 'light'
+                                    ? Icons.light_mode_rounded
+                                    : mode == 'dark'
+                                    ? Icons.dark_mode_rounded
+                                    : Icons.brightness_auto_rounded,
+                                size: 20,
+                                color: themeMode == mode
+                                    ? foregroundOn(colors.primary)
+                                    : colors.text,
+                              ),
+                              onTap: () => ref
+                                  .read(themeModeProvider.notifier)
+                                  .setMode(mode),
+                            ),
+                          ),
+                      ],
+                    ),
+                  )
+                  .motion(context)
+                  .fadeIn(delay: 60.ms, duration: 280.ms)
+                  .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+              const SizedBox(height: 28),
+              Text(
+                t('settings.language.label', language),
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  color: colors.textSecondary,
+                  fontSize: 14,
+                ),
+              ),
+              const SizedBox(height: 12),
+              PremiumCard(
+                    borderRadius: 18,
+                    padding: const EdgeInsets.all(10),
+                    child: _SettingsOptions(
+                      children: [
+                        for (final lang in ['uz', 'ru', 'en'])
+                          Expanded(
+                            child: _SegButton(
+                              label: t('language.$lang', language),
+                              selected: language == lang,
+                              colors: colors,
+                              leading: Text(
+                                lang == 'uz'
+                                    ? '🇺🇿'
+                                    : lang == 'ru'
+                                    ? '🇷🇺'
+                                    : '🇬🇧',
+                                style: const TextStyle(fontSize: 20),
+                              ),
+                              onTap: () => ref
+                                  .read(languageProvider.notifier)
+                                  .setLanguage(lang),
+                            ),
+                          ),
+                      ],
+                    ),
+                  )
+                  .motion(context)
+                  .fadeIn(delay: 120.ms, duration: 280.ms)
+                  .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+              const SizedBox(height: 28),
+              Text(
+                language == 'uz'
+                    ? 'Ovoz'
+                    : language == 'ru'
+                    ? 'Звук'
+                    : 'Audio',
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  color: colors.textSecondary,
+                  fontSize: 14,
+                ),
+              ),
+              const SizedBox(height: 12),
+              PremiumCard(
+                    borderRadius: 18,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 4,
+                    ),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: SwitchListTile(
+                        contentPadding: EdgeInsets.zero,
+                        secondary: Icon(
+                          soundEnabled
+                              ? Icons.volume_up_rounded
+                              : Icons.volume_off_rounded,
+                          color: soundEnabled
+                              ? colors.primary
+                              : colors.textMuted,
+                        ),
+                        title: Text(
+                          language == 'uz'
+                              ? 'Ovoz effektlari'
+                              : language == 'ru'
+                              ? 'Звуковые эффекты'
+                              : 'Sound effects',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                            color: colors.text,
+                          ),
+                        ),
+                        subtitle: Text(
+                          language == 'uz'
+                              ? 'Dars vaqtida to‘g‘ri/xato tovushlar'
+                              : language == 'ru'
+                              ? 'Звуки при ответах на вопросы'
+                              : 'Feedback sounds during lessons',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: colors.textSecondary,
+                          ),
+                        ),
+                        value: soundEnabled,
+                        activeThumbColor: colors.primary,
+                        onChanged: (val) => ref
+                            .read(soundEffectsProvider.notifier)
+                            .setEnabled(val),
+                      ),
+                    ),
+                  )
+                  .motion(context)
+                  .fadeIn(delay: 150.ms, duration: 280.ms)
+                  .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
+              const SizedBox(height: 36),
+              PremiumButton(
+                onPressed: () async {
+                  final confirmed = await showDialog<bool>(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      title: Text(t('settings.logout', language)),
+                      content: Text(t('settings.logout.confirm', language)),
+                      actions: [
+                        TextButton(
+                          onPressed: () => Navigator.pop(context, false),
+                          child: Text(t('common.cancel', language)),
+                        ),
+                        TextButton(
+                          onPressed: () => Navigator.pop(context, true),
+                          child: Text(
+                            t('settings.logout', language),
+                            style: TextStyle(color: colors.error),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                  if (confirmed == true) {
+                    await ref.read(authControllerProvider.notifier).logout();
+                  }
+                },
+                backgroundColor: colors.error,
+                borderRadius: 18,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Text(
+                  t('settings.logout', language),
+                  style: const TextStyle(fontSize: 15),
+                ),
+              ).motion(context).fadeIn(delay: 180.ms, duration: 280.ms),
+            ],
+          ),
         ),
       ),
     );
   }
+}
+
+class _SettingsOptions extends StatelessWidget {
+  const _SettingsOptions({required this.children});
+  final List<Widget> children;
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, constraints) {
+      if (constraints.maxWidth < 280 ||
+          MediaQuery.textScalerOf(context).scale(14) > 19) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            for (final child in children)
+              child is Expanded ? child.child : child,
+          ],
+        );
+      }
+      return Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: children,
+      );
+    },
+  );
 }
 
 class _SegButton extends StatelessWidget {
@@ -337,13 +366,17 @@ class _SegButton extends StatelessWidget {
     return Semantics(
       button: true,
       selected: selected,
+      label: label,
+      excludeSemantics: true,
+      onTap: onTap,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(10),
         child: AnimatedContainer(
           duration: motionDuration(context, 220),
           curve: Curves.easeOut,
-          padding: const EdgeInsets.symmetric(vertical: 10),
+          constraints: const BoxConstraints(minHeight: 64),
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
           alignment: Alignment.center,
           decoration: BoxDecoration(
             color: selected ? colors.primary : Colors.transparent,
@@ -360,10 +393,19 @@ class _SegButton extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   fontSize: 12.5,
                 ),
-                child: Text(
-                  label,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Flexible(child: Text(label, textAlign: TextAlign.center)),
+                    if (selected) ...[
+                      const SizedBox(width: 4),
+                      Icon(
+                        Icons.check_rounded,
+                        size: 16,
+                        color: foregroundOn(colors.primary),
+                      ),
+                    ],
+                  ],
                 ),
               ),
             ],

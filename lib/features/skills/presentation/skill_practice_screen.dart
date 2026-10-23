@@ -1,3 +1,6 @@
+import '../../../core/theme/ilm_design.dart';
+import '../../../core/widgets/ilm_state_view.dart';
+import 'lesson_widgets.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/motion.dart';
 import 'dart:async';
@@ -70,7 +73,8 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
   Timer? _timer;
   int _timeLeft = 0;
   DateTime? _deadline;
-  String? get _attemptId => _questions.isEmpty ? null : _questions.first.attemptId;
+  String? get _attemptId =>
+      _questions.isEmpty ? null : _questions.first.attemptId;
   bool get _timed => widget.mode == PracticeMode.lightning;
 
   @override
@@ -139,7 +143,10 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
   void _startTimer() {
     _deadline = DateTime.now().add(Duration(seconds: _timeLeft));
     _timer = Timer.periodic(const Duration(seconds: 1), (t) {
-      if (!mounted) { t.cancel(); return; }
+      if (!mounted) {
+        t.cancel();
+        return;
+      }
       final remaining = _deadline!.difference(DateTime.now()).inSeconds;
       if (remaining <= 0) {
         t.cancel();
@@ -273,11 +280,19 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                 );
           break;
         case PracticeMode.daily:
-          final r = await repo.completeDailyChallenge(userId, _results, attemptId: _attemptId);
+          final r = await repo.completeDailyChallenge(
+            userId,
+            _results,
+            attemptId: _attemptId,
+          );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           break;
         case PracticeMode.mistakes:
-          final r = await repo.completeMistakes(userId, _results, attemptId: _attemptId);
+          final r = await repo.completeMistakes(
+            userId,
+            _results,
+            attemptId: _attemptId,
+          );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           final remaining = r['remaining'] as int? ?? 0;
           _extraLine = str3(
@@ -292,7 +307,8 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             userId,
             _correct,
             _results.length,
-            attemptId: _attemptId, results: _results,
+            attemptId: _attemptId,
+            results: _results,
           );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           break;
@@ -301,7 +317,8 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             userId,
             _correct,
             _results.length,
-            attemptId: _attemptId, results: _results,
+            attemptId: _attemptId,
+            results: _results,
           );
           _xpAwarded = r['xp_awarded'] as int? ?? 0;
           break;
@@ -385,19 +402,41 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
 
   Widget _buildContent(BuildContext context) {
     final lang = ref.watch(languageProvider);
+    final c = Theme.of(context).extension<AppColors>()!.colors;
 
     if (_loading) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return Scaffold(body: IlmLoadingView(language: lang));
     }
 
     if (_saving) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return Scaffold(
+        body: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const LinearProgressIndicator(),
+                const SizedBox(height: 16),
+                Text(
+                  str3(
+                    lang,
+                    'Natija saqlanmoqda',
+                    'Сохраняем результат',
+                    'Saving your result',
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
     }
     if (_notFound) {
       return Scaffold(
         appBar: AppBar(title: Text(_title(lang))),
         body: Center(
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -425,7 +464,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                     'Тест уровня для этого предмета ещё готовится.',
                     'Placement test for this subject is still in preparation.',
                   ),
-                  style: TextStyle(color: Colors.grey.shade600),
+                  style: Theme.of(context).textTheme.bodySmall,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 24),
@@ -442,34 +481,38 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
     if (_loadError || _saveError) {
       return Scaffold(
         appBar: AppBar(title: Text(_title(lang))),
-        body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                str3(
-                  lang,
-                  'Ulanishda xatolik. Qayta urinib ko‘ring.',
-                  'Ошибка соединения. Повторите.',
-                  'Connection error. Please retry.',
-                ),
-              ),
-              FilledButton(
-                onPressed: () {
-                  if (_saveError) {
-                    _finish();
-                  } else {
-                    setState(() {
-                      _loadError = false;
-                      _loading = true;
-                    });
-                    _load();
-                  }
-                },
-                child: Text(str3(lang, 'Qayta urinish', 'Повторить', 'Retry')),
-              ),
-            ],
+        body: IlmStateView(
+          title: str3(
+            lang,
+            'Ulanishda xatolik',
+            'Ошибка соединения',
+            'Connection error',
           ),
+          message: _saveError
+              ? str3(
+                  lang,
+                  'Natija saqlanmadi. Qayta urinish mumkin.',
+                  'Результат не сохранён. Можно повторить отправку.',
+                  'Your result was not saved. You can retry.',
+                )
+              : str3(
+                  lang,
+                  'Ulanishni tekshirib, qayta urinib ko‘ring.',
+                  'Проверьте подключение и повторите попытку.',
+                  'Check your connection and try again.',
+                ),
+          retryLabel: str3(lang, 'Qayta urinish', 'Повторить', 'Retry'),
+          onRetry: () {
+            if (_saveError) {
+              _finish();
+            } else {
+              setState(() {
+                _loadError = false;
+                _loading = true;
+              });
+              _load();
+            }
+          },
         ),
       );
     }
@@ -478,7 +521,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
       return Scaffold(
         appBar: AppBar(title: Text(_title(lang))),
         body: Center(
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -506,7 +549,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                     'Возвращайся завтра за новым.',
                     'Come back tomorrow for a new one.',
                   ),
-                  style: TextStyle(color: Colors.grey.shade600),
+                  style: Theme.of(context).textTheme.bodySmall,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
@@ -536,108 +579,126 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                     const MascotImage(pose: MascotPose.happy, size: 170),
                     const SizedBox(height: 12),
                     Text(
-                      str3(lang, 'Tayyor!', 'Готово!', 'Done!'),
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ).motion(context).fadeIn(duration: 250.ms).slideY(begin: 0.1, end: 0),
+                          str3(lang, 'Tayyor!', 'Готово!', 'Done!'),
+                          style: const TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        )
+                        .motion(context)
+                        .fadeIn(duration: 250.ms)
+                        .slideY(begin: 0.1, end: 0),
                     const SizedBox(height: 16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         _stat(
-                          '$_correct/${_results.length}',
-                          str3(lang, "To'g'ri", 'Правильно', 'Correct'),
-                          const Color(0xFF58CC02),
-                        ).motion(context).scale(delay: 250.ms, duration: 300.ms, curve: Curves.easeOutBack),
-                        const SizedBox(width: 32),
-                        _stat('+$_xpAwarded', 'XP', const Color(0xFFFFC800))
+                              '$_correct/${_results.length}',
+                              str3(lang, "To'g'ri", 'Правильно', 'Correct'),
+                              c.success,
+                            )
                             .motion(context)
-                            .scale(delay: 350.ms, duration: 300.ms, curve: Curves.easeOutBack),
+                            .scale(
+                              delay: 250.ms,
+                              duration: 300.ms,
+                              curve: Curves.easeOutBack,
+                            ),
+                        const SizedBox(width: 32),
+                        _stat('+$_xpAwarded', 'XP', c.warning)
+                            .motion(context)
+                            .scale(
+                              delay: 350.ms,
+                              duration: 300.ms,
+                              curve: Curves.easeOutBack,
+                            ),
                       ],
                     ),
-                  if (_extraLine != null) ...[
-                    const SizedBox(height: 10),
-                    Text(
-                      _extraLine!,
-                      style: TextStyle(color: Colors.grey.shade600),
-                    ),
-                  ],
-                  if (_breakdown.isNotEmpty) ...[
-                    const SizedBox(height: 16),
-                    for (final level in _breakdown)
-                      ListTile(
-                        leading: Icon(
-                          level['mastered'] == true
-                              ? Icons.check_circle_rounded
-                              : Icons.radio_button_unchecked,
-                          color: level['mastered'] == true
-                              ? const Color(0xFF58CC02)
-                              : Colors.grey,
+                    if (_extraLine != null) ...[
+                      const SizedBox(height: 10),
+                      Text(
+                        _extraLine!,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                    if (_breakdown.isNotEmpty) ...[
+                      const SizedBox(height: 16),
+                      for (final level in _breakdown)
+                        ListTile(
+                          leading: Icon(
+                            level['mastered'] == true
+                                ? Icons.check_circle_rounded
+                                : Icons.radio_button_unchecked,
+                            color: level['mastered'] == true
+                                ? const Color(0xFF58CC02)
+                                : Colors.grey,
+                          ),
+                          title: Text('${level['label']}'),
+                          trailing: Text(
+                            '${level['correct']}/${level['asked']}',
+                          ),
                         ),
-                        title: Text('${level['label']}'),
-                        trailing: Text('${level['correct']}/${level['asked']}'),
+                      Text(
+                        str3(
+                          lang,
+                          'Bu mashq natijasi, rasmiy sertifikat emas. Darslar avtomatik ochilmaydi.',
+                          'Это оценка по практике, не официальный сертификат. Уроки не открываются автоматически.',
+                          'This practice estimate is not an official certificate. It does not automatically unlock lessons.',
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                    Text(
-                      str3(
-                        lang,
-                        'Bu mashq natijasi, rasmiy sertifikat emas. Darslar avtomatik ochilmaydi.',
-                        'Это оценка по практике, не официальный сертификат. Уроки не открываются автоматически.',
-                        'This practice estimate is not an official certificate. It does not automatically unlock lessons.',
+                    ],
+                    const SizedBox(height: 24),
+                    FilledButton(
+                      style: FilledButton.styleFrom(
+                        backgroundColor: _accent,
+                        foregroundColor: foregroundOn(_accent),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 40,
+                          vertical: 14,
+                        ),
                       ),
-                      textAlign: TextAlign.center,
+                      onPressed: () => Navigator.of(context).maybePop(),
+                      child: Text(
+                        str3(lang, 'Davom etish', 'Продолжить', 'Continue'),
+                        style: const TextStyle(fontWeight: FontWeight.w800),
+                      ),
                     ),
                   ],
-                  const SizedBox(height: 24),
-                  FilledButton(
-                    style: FilledButton.styleFrom(
-                      backgroundColor: _accent,
-                      foregroundColor: foregroundOn(_accent),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 40,
-                        vertical: 14,
-                      ),
-                    ),
-                    onPressed: () => Navigator.of(context).maybePop(),
-                    child: Text(
-                      str3(lang, 'Davom etish', 'Продолжить', 'Continue'),
-                      style: const TextStyle(fontWeight: FontWeight.w800),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ),
         ),
-      ),
-    );
-  }
+      );
+    }
 
     if (_questions.isEmpty) {
       return Scaffold(
         appBar: AppBar(title: Text(_title(lang))),
         body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const MascotImage(pose: MascotPose.thinking, size: 110),
-              const SizedBox(height: 12),
-              Text(
-                str3(
-                  lang,
-                  "Hozircha savollar yo'q",
-                  'Вопросов пока нет',
-                  'No questions yet',
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const MascotImage(pose: MascotPose.thinking, size: 110),
+                const SizedBox(height: 12),
+                Text(
+                  str3(
+                    lang,
+                    "Hozircha savollar yo'q",
+                    'Вопросов пока нет',
+                    'No questions yet',
+                  ),
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
-                style: TextStyle(color: Colors.grey.shade600),
-              ),
-              const SizedBox(height: 16),
-              FilledButton(
-                onPressed: () => Navigator.of(context).maybePop(),
-                child: Text(str3(lang, 'Orqaga', 'Назад', 'Back')),
-              ),
-            ],
+                const SizedBox(height: 16),
+                FilledButton(
+                  onPressed: () => Navigator.of(context).maybePop(),
+                  child: Text(str3(lang, 'Orqaga', 'Назад', 'Back')),
+                ),
+              ],
+            ),
           ),
         ),
       );
@@ -651,83 +712,73 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
-              child: Row(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.close_rounded),
-                    onPressed: () => Navigator.of(context).maybePop(),
-                  ),
-                  Expanded(
-                    child: DuoProgressBar(value: progress, color: _accent),
-                  ),
-                  if (_timed)
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.timer_rounded,
-                            size: 18,
-                            color: _timeLeft <= 10
-                                ? const Color(0xFFFF4B4B)
-                                : Colors.grey,
-                          ),
-                          const SizedBox(width: 3),
-                          Text(
-                            '${_timeLeft}s',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w800,
-                              color: _timeLeft <= 10
-                                  ? const Color(0xFFFF4B4B)
-                                  : Colors.grey,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                ],
-              ),
+            LessonStepHeader(
+              label:
+                  '${str3(lang, 'Savol', 'Вопрос', 'Question')} ${_index + 1}/${_questions.length}${_timed ? ' · $_timeLeft s' : ''}',
+              progress: progress,
+              language: lang,
+              onClose: () => Navigator.of(context).maybePop(),
+              uzbekContent:
+                  (q.source != null && lang != 'uz') ||
+                  looksLikeUntranslatedUzbek(q.questionText, lang),
             ),
             Expanded(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    if (!_answered)
-                      const Padding(
-                        padding: EdgeInsets.only(bottom: 12),
-                        child: Center(
-                          child: MascotImage(
-                            pose: MascotPose.thinking,
-                            size: 104,
+              child: IlmReadingWidth(
+                child: SingleChildScrollView(
+                  key: ValueKey(q.id),
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (!_answered)
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 12),
+                          child: Center(
+                            child: MascotImage(
+                              pose: MascotPose.thinking,
+                              size: 72,
+                            ),
                           ),
                         ),
+                      if (_index == 0 &&
+                          ((q.source != null && lang != 'uz') ||
+                              looksLikeUntranslatedUzbek(q.questionText, lang)))
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: ContentLanguageBadge(language: lang),
+                        ),
+                      Text(
+                        q.questionText,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 21,
+                          fontWeight: FontWeight.w800,
+                          height: 1.35,
+                        ),
                       ),
-                    if ((q.source != null && lang != 'uz') || looksLikeUntranslatedUzbek(q.questionText, lang))
-                      Padding(padding: const EdgeInsets.only(bottom: 8), child: ContentLanguageBadge(language: lang)),
-                    Text(
-                      q.questionText,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 21,
-                        fontWeight: FontWeight.w800,
-                        height: 1.35,
-                      ),
-                    ),
-                    if(q.source != null) ContentSourceButton(source:q.source!,language:lang),
-                    const SizedBox(height: 20),
-                    for (final opt in q.options)
-                      DuoChoiceCard(
-                        text: opt,
-                        selected: _selected == opt,
-                        answered: _answered,
-                        isCorrectOption: opt == q.correctAnswer,
-                        onTap: () => _pick(opt),
-                      ),
-                  ],
+                      if (q.source != null)
+                        ContentSourceButton(source: q.source!, language: lang),
+                      const SizedBox(height: 20),
+                      for (final opt in q.options)
+                        DuoChoiceCard(
+                          text: opt,
+                          selected: _selected == opt,
+                          answered: _answered,
+                          isCorrectOption: opt == q.correctAnswer,
+                          stateLabel: _answered && opt == q.correctAnswer
+                              ? str3(
+                                  lang,
+                                  'To‘g‘ri javob',
+                                  'Правильный ответ',
+                                  'Correct answer',
+                                )
+                              : _selected == opt
+                              ? str3(lang, 'Tanlandi', 'Выбрано', 'Selected')
+                              : null,
+                          onTap: () => _pick(opt),
+                        ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -735,11 +786,8 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
                 child: Duo3DButton(
-                  color: _accent,
                   onPressed: _selected == null ? null : _check,
-                  child: Text(
-                    str3(lang, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK'),
-                  ),
+                  child: Text(str3(lang, 'TEKSHIRISH', 'ПРОВЕРИТЬ', 'CHECK')),
                 ),
               ),
             if (_answered) _feedbackDock(q, isCorrect, lang),
@@ -756,75 +804,29 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
         style: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.w900,
-          color: Theme.of(context).brightness == Brightness.light && color.computeLuminance() > 0.30 ? BrandPalette.indigo : color,
+          color:
+              Theme.of(context).brightness == Brightness.light &&
+                  color.computeLuminance() > 0.30
+              ? BrandPalette.indigo
+              : color,
         ),
       ),
-      Text(label, style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurfaceVariant)),
+      Text(
+        label,
+        style: TextStyle(
+          fontSize: 12,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
+        ),
+      ),
     ],
   );
 
-  Widget _feedbackDock(PracticeQuestion q, bool isCorrect, String lang) {
-    final ok = const Color(0xFF059669);
-    final bad = const Color(0xFFDC2626);
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
-      decoration: BoxDecoration(
-        color: (isCorrect ? ok : bad).withValues(alpha: 0.10),
-        border: Border(top: BorderSide(color: isCorrect ? ok : bad, width: 2)),
-      ),
-      child: Semantics(liveRegion: true, child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          ConstrainedBox(
-            constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.28),
-            child: SingleChildScrollView(child: Row(
-            children: [
-              MascotImage(
-                pose: isCorrect ? MascotPose.happy : MascotPose.sad,
-                size: 88,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isCorrect
-                          ? str3(lang, 'Ajoyib!', 'Отлично!', 'Nice!')
-                          : str3(lang, "Noto'g'ri", 'Неправильно', 'Incorrect'),
-                      style: TextStyle(
-                        fontWeight: FontWeight.w900,
-                        fontSize: 18,
-                        color: isCorrect ? ok : bad,
-                      ),
-                    ),
-                    if (q.explanation != null && q.explanation!.isNotEmpty)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: Text(
-                          q.explanation!,
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: Theme.of(context).colorScheme.onSurfaceVariant,
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-            ],
-          )),
-          ),
-          const SizedBox(height: 12),
-          Duo3DButton(
-            color: isCorrect ? ok : bad,
-            onPressed: _next,
-            child: Text(str3(lang, 'Davom etish', 'Далее', 'Continue')),
-          ),
-        ],
-      )),
-    );
-  }
+  Widget _feedbackDock(PracticeQuestion q, bool isCorrect, String lang) =>
+      LessonFeedbackPanel(
+        language: lang,
+        correct: isCorrect,
+        correctAnswer: q.correctAnswer,
+        explanation: q.explanation ?? '',
+        onContinue: _next,
+      );
 }

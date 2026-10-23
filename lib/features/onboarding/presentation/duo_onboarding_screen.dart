@@ -11,6 +11,7 @@ import '../../../core/config/mobile_release.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/app_text_field.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/error_banner.dart';
@@ -51,16 +52,26 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
   int? _draftUser;
 
   Map<String, dynamic> get _draft => {
-    'step': _step, 'subject': _selectedSubject, 'class': _selectedClass,
-    'source': _selectedSource, 'level': _selectedLevel,
-    'reason': _selectedReasons.join(','), 'daily_goal': _selectedDailyGoal,
-    'name': _nameController.text, 'age': _ageController.text,
+    'step': _step,
+    'subject': _selectedSubject,
+    'class': _selectedClass,
+    'source': _selectedSource,
+    'level': _selectedLevel,
+    'reason': _selectedReasons.join(','),
+    'daily_goal': _selectedDailyGoal,
+    'name': _nameController.text,
+    'age': _ageController.text,
     'completed': _step == 12,
   };
 
-  void _persist() { unawaited(_drafts.save(_draftUser, _draft).catchError((Object _) {})); }
-  void _change(VoidCallback change) { setState(change); _persist(); }
+  void _persist() {
+    unawaited(_drafts.save(_draftUser, _draft).catchError((Object _) {}));
+  }
 
+  void _change(VoidCallback change) {
+    setState(change);
+    _persist();
+  }
 
   final _nameController = TextEditingController();
   final _ageController = TextEditingController();
@@ -74,11 +85,15 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     _drafts = OnboardingDraftStore(ref.read(prefsServiceProvider));
     _draftUser = ref.read(currentUserIdProvider);
     final draft = _drafts.read(_draftUser);
-    _step = (draft?['step'] as int? ?? (_draftUser == null ? widget.initialStep : 11)).clamp(0, 11);
+    _step =
+        (draft?['step'] as int? ??
+                (_draftUser == null ? widget.initialStep : 11))
+            .clamp(0, 11);
     _selectedSubject = draft?['subject'] as String?;
     _selectedClass = draft?['class'] as String? ?? 'all';
     if (biologyOnly) {
-      if (_selectedSubject != null && !isPublishedMobileSubject(_selectedSubject)) {
+      if (_selectedSubject != null &&
+          !isPublishedMobileSubject(_selectedSubject)) {
         _selectedSubject = null;
         if (_step > 3 && _draftUser == null) _step = 3;
       }
@@ -89,7 +104,9 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     _selectedSource = draft?['source'] as String?;
     _selectedLevel = draft?['level'] as int?;
     _selectedDailyGoal = draft?['daily_goal'] as int?;
-    _selectedReasons.addAll((draft?['reason'] as String? ?? '').split(',').where((s) => s.isNotEmpty));
+    _selectedReasons.addAll(
+      (draft?['reason'] as String? ?? '').split(',').where((s) => s.isNotEmpty),
+    );
     _nameController.text = draft?['name'] as String? ?? '';
     _ageController.text = '${draft?['age'] ?? ''}';
     _nameController.addListener(_persist);
@@ -184,21 +201,25 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final age = int.tryParse(_ageController.text.trim());
 
     if (name.length < 2) {
-      _change(() => _error = str3(
-            lang,
-            'Ismingizni kiriting.',
-            'Введите имя.',
-            'Please enter your name.',
-          ));
+      _change(
+        () => _error = str3(
+          lang,
+          'Ismingizni kiriting.',
+          'Введите имя.',
+          'Please enter your name.',
+        ),
+      );
       return;
     }
     if (age == null || age < 5 || age > 100) {
-      _change(() => _error = str3(
-            lang,
-            "Yoshingizni to'g'ri kiriting (5–100).",
-            'Введите корректный возраст (5–100).',
-            'Enter a valid age (5–100).',
-          ));
+      _change(
+        () => _error = str3(
+          lang,
+          "Yoshingizni to'g'ri kiriting (5–100).",
+          'Введите корректный возраст (5–100).',
+          'Enter a valid age (5–100).',
+        ),
+      );
       return;
     }
 
@@ -243,7 +264,6 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           .read(authRepositoryProvider)
           .completeOnboarding(userId: userId, name: name, age: age);
 
-
       // Persist user-keyed preferences
       final prefs = ref.read(prefsServiceProvider);
       if (_selectedSubject != null) {
@@ -268,7 +288,6 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       }
       await ref.read(learningPreferencesProvider).save(userId, {});
       await prefs.setBool('onboarding_completed_$userId', true);
-
 
       if (mounted) {
         _change(() {
@@ -296,8 +315,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       } else {
         await _drafts.clear(userId);
         if (!mounted) return;
-        await ref.read(authControllerProvider.notifier).markProfileComplete(_nameController.text.trim(), userId: userId);
-        if (mounted) GoRouter.maybeOf(context)?.go(subjectsOnly ? '/learn' : '/home');
+        await ref
+            .read(authControllerProvider.notifier)
+            .markProfileComplete(_nameController.text.trim(), userId: userId);
+        if (mounted) {
+          GoRouter.maybeOf(context)?.go(subjectsOnly ? '/learn' : '/home');
+        }
       }
     });
   }
@@ -359,8 +382,10 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 preferredSize: const Size.fromHeight(60),
                 child: SafeArea(
                   child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 8,
+                    ),
                     child: Row(
                       children: [
                         IconButton(
@@ -373,16 +398,24 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                           child: showProgressBar
                               ? DuoProgressBar(
                                   value: progressValue,
-                                  color: BrandPalette.indigo,
+                                  color: colors.primary,
                                 )
                               : const SizedBox.shrink(),
                         ),
                         if ({4, 5, 7, 9}.contains(_step))
                           TextButton(
-                            onPressed: _submitting ? null : () => _change(() { _step++; _error = null; }),
-                            child: Text(str3(lang, 'O‘tkazish', 'Пропустить', 'Skip')),
+                            onPressed: _submitting
+                                ? null
+                                : () => _change(() {
+                                    _step++;
+                                    _error = null;
+                                  }),
+                            child: Text(
+                              str3(lang, 'O‘tkazish', 'Пропустить', 'Skip'),
+                            ),
                           )
-                        else const SizedBox(width: 48),
+                        else
+                          const SizedBox(width: 48),
                       ],
                     ),
                   ),
@@ -397,23 +430,35 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                   return FadeTransition(
                     opacity: animation,
                     child: SlideTransition(
-                      position: Tween<Offset>(
-                        begin: const Offset(0.04, 0),
-                        end: Offset.zero,
-                      ).animate(CurvedAnimation(
-                        parent: animation,
-                        curve: Curves.easeOutCubic,
-                      )),
+                      position:
+                          Tween<Offset>(
+                            begin: const Offset(0.04, 0),
+                            end: Offset.zero,
+                          ).animate(
+                            CurvedAnimation(
+                              parent: animation,
+                              curve: Curves.easeOutCubic,
+                            ),
+                          ),
                       child: child,
                     ),
                   );
                 },
                 child: KeyedSubtree(
                   key: ValueKey<int>(_step),
-                  child: !{1, 2, 6, 8}.contains(_step) ? _buildCurrentStep(lang) : LayoutBuilder(builder: (context, constraints) => SingleChildScrollView(
-                    child: ConstrainedBox(constraints: BoxConstraints(minHeight: constraints.maxHeight),
-                      child: _buildCurrentStep(lang)),
-                  )),
+                  child: !{1, 2, 6, 8}.contains(_step)
+                      ? _buildCurrentStep(lang)
+                      : LayoutBuilder(
+                          builder: (context, constraints) =>
+                              SingleChildScrollView(
+                                child: ConstrainedBox(
+                                  constraints: BoxConstraints(
+                                    minHeight: constraints.maxHeight,
+                                  ),
+                                  child: _buildCurrentStep(lang),
+                                ),
+                              ),
+                        ),
                 ),
               ),
             ),
@@ -422,11 +467,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 top: false,
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
-                  child: Duo3DButton(
-                    key: const ValueKey('onboarding_continue_btn'),
-                    color: BrandPalette.indigo,
-                    onPressed: _isContinueEnabled ? _handleContinue : null,
-                    child: Text(_getContinueButtonText(lang)),
+                  child: IlmReadingWidth(
+                    child: Duo3DButton(
+                      key: const ValueKey('onboarding_continue_btn'),
+                      onPressed: _isContinueEnabled ? _handleContinue : null,
+                      child: Text(_getContinueButtonText(lang)),
+                    ),
                   ),
                 ),
               ),
@@ -523,20 +569,23 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             DuoSpeechBubble(
-              pointerDirection: BubblePointerDirection.down,
-              text: str3(
-                lang,
-                'Salom! Men Ilmoman',
-                'Привет! Я Ильмо',
-                "Hello! I'm Ilmo",
-              ),
-              textStyle: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w900,
-                height: 1.3,
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-            )
+                  pointerDirection: BubblePointerDirection.down,
+                  text: str3(
+                    lang,
+                    'Salom! Men Ilmoman',
+                    'Привет! Я Ильмо',
+                    "Hello! I'm Ilmo",
+                  ),
+                  textStyle: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                    height: 1.3,
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 16,
+                  ),
+                )
                 .motion(context)
                 .fadeIn(duration: 350.ms, delay: 100.ms)
                 .slideY(begin: 0.12, end: 0, curve: Curves.easeOutQuad),
@@ -617,10 +666,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               child: Text.rich(buildSpan()),
             ),
             const SizedBox(height: 18),
-            const MascotImage(
-              pose: MascotPose.explaining,
-              size: 140,
-            ),
+            const MascotImage(pose: MascotPose.explaining, size: 140),
           ],
         ),
       ),
@@ -635,38 +681,42 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    return Semantics(button: true, selected: isSelected, child: InkWell(
-      onTap: () {
-        HapticFeedback.selectionClick();
-        onTap();
-      },
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-        decoration: BoxDecoration(
-          color: isSelected
-              ? (isDark
-                  ? BrandPalette.turquoise.withValues(alpha: 0.2)
-                  : BrandPalette.turquoise.withValues(alpha: 0.12))
-              : colors.card,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: isSelected ? BrandPalette.turquoise : colors.border,
-            width: isSelected ? 2.0 : 1.5,
-          ),
-        ),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 13.5,
-            fontWeight: isSelected ? FontWeight.w800 : FontWeight.w600,
+    return Semantics(
+      button: true,
+      selected: isSelected,
+      child: InkWell(
+        onTap: () {
+          HapticFeedback.selectionClick();
+          onTap();
+        },
+        borderRadius: BorderRadius.circular(16),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+          decoration: BoxDecoration(
             color: isSelected
-                ? (isDark ? Colors.white : const Color(0xFF0F766E))
-                : colors.textSecondary,
+                ? (isDark
+                      ? BrandPalette.turquoise.withValues(alpha: 0.2)
+                      : BrandPalette.turquoise.withValues(alpha: 0.12))
+                : colors.card,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: isSelected ? BrandPalette.turquoise : colors.border,
+              width: isSelected ? 2.0 : 1.5,
+            ),
+          ),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 13.5,
+              fontWeight: isSelected ? FontWeight.w800 : FontWeight.w600,
+              color: isSelected
+                  ? (isDark ? Colors.white : const Color(0xFF0F766E))
+                  : colors.textSecondary,
+            ),
           ),
         ),
       ),
-    ));
+    );
   }
 
   Widget _buildStep3Subject(String lang) {
@@ -686,15 +736,21 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              if (!biologyOnly) _buildClassChip(
-                label: str3(lang, 'Barchasi', 'Все', 'All'),
-                isSelected: _selectedClass == 'all',
-                onTap: () => _change(() => _selectedClass = 'all'),
-              ),
+              if (!biologyOnly)
+                _buildClassChip(
+                  label: str3(lang, 'Barchasi', 'Все', 'All'),
+                  isSelected: _selectedClass == 'all',
+                  onTap: () => _change(() => _selectedClass = 'all'),
+                ),
               for (int grade = biologyOnly ? 5 : 1; grade <= 11; grade++) ...[
                 const SizedBox(width: 8),
                 _buildClassChip(
-                  label: str3(lang, '$grade-sinf', '$grade класс', 'Grade $grade'),
+                  label: str3(
+                    lang,
+                    '$grade-sinf',
+                    '$grade класс',
+                    'Grade $grade',
+                  ),
                   isSelected: _selectedClass == '$grade',
                   onTap: () => _change(() => _selectedClass = '$grade'),
                 ),
@@ -703,14 +759,22 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           ),
         ),
         const SizedBox(height: 8),
-        Text(_selectedSubject == 'biologiya' ? str3(lang,
-          'Biologiya uchun alohida sinf yo‘li kirgandan keyin tanlanadi. Darslar hozir o‘zbek tilida.',
-          'Класс для биологии выбирается после входа. Уроки пока на узбекском.',
-          'Choose a separate biology grade path after signing in. Lessons are currently in Uzbek.') : str3(lang,
-          'Sinfingiz profil uchun saqlanadi. Darslar umumiy fan yo‘lida ko‘rsatiladi.',
-          'Класс сохраняется в профиле. Уроки пока идут по общему пути предмета.',
-          'Your grade is saved in your profile. Lessons currently follow the shared subject path.'),
-          style: TextStyle(fontSize: 12, color: colors.textSecondary)),
+        Text(
+          _selectedSubject == 'biologiya'
+              ? str3(
+                  lang,
+                  'Biologiya uchun alohida sinf yo‘li kirgandan keyin tanlanadi. Darslar hozir o‘zbek tilida.',
+                  'Класс для биологии выбирается после входа. Уроки пока на узбекском.',
+                  'Choose a separate biology grade path after signing in. Lessons are currently in Uzbek.',
+                )
+              : str3(
+                  lang,
+                  'Sinfingiz profil uchun saqlanadi. Darslar umumiy fan yo‘lida ko‘rsatiladi.',
+                  'Класс сохраняется в профиле. Уроки пока идут по общему пути предмета.',
+                  'Your grade is saved in your profile. Lessons currently follow the shared subject path.',
+                ),
+          style: TextStyle(fontSize: 12, color: colors.textSecondary),
+        ),
         const SizedBox(height: 16),
         catalogAsync.when(
           loading: () => const Padding(
@@ -733,14 +797,15 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 ),
                 style: TextStyle(color: colors.error),
               ),
-              const SizedBox(height:8),
-              Text(extractError(error,language:lang),textAlign:TextAlign.center),
+              const SizedBox(height: 8),
+              Text(
+                extractError(error, language: lang),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 10),
               FilledButton(
                 onPressed: () => ref.invalidate(subjectCatalogProvider),
-                child: Text(
-                  str3(lang, 'Qayta urinish', 'Повторить', 'Retry'),
-                ),
+                child: Text(str3(lang, 'Qayta urinish', 'Повторить', 'Retry')),
               ),
             ],
           ),
@@ -753,8 +818,9 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                     isSelected: _selectedSubject == item.slug,
                     leading: CircleAvatar(
                       radius: 20,
-                      backgroundColor:
-                          skillColor(item.color).withValues(alpha: 0.15),
+                      backgroundColor: skillColor(
+                        item.color,
+                      ).withValues(alpha: 0.15),
                       child: Icon(
                         _getSubjectIcon(item.icon),
                         color: skillColor(item.color),
@@ -779,37 +845,31 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final sources = [
       (
         'friends',
-        str3(lang, "Do'stlar yoki yaqinlar", 'Друзья или близкие',
-            'Friends or family'),
+        str3(
+          lang,
+          "Do'stlar yoki yaqinlar",
+          'Друзья или близкие',
+          'Friends or family',
+        ),
       ),
-      (
-        'social',
-        'Instagram / Facebook',
-      ),
-      (
-        'tiktok',
-        'TikTok',
-      ),
-      (
-        'telegram',
-        'Telegram',
-      ),
-      (
-        'youtube',
-        'YouTube',
-      ),
+      ('social', 'Instagram / Facebook'),
+      ('tiktok', 'TikTok'),
+      ('telegram', 'Telegram'),
+      ('youtube', 'YouTube'),
       (
         'store',
         str3(lang, "Ilovalar do'koni", 'Магазин приложений', 'App store'),
       ),
       (
         'school',
-        str3(lang, "Maktab / o'qituvchi", 'Школа / учитель', 'School / teacher'),
+        str3(
+          lang,
+          "Maktab / o'qituvchi",
+          'Школа / учитель',
+          'School / teacher',
+        ),
       ),
-      (
-        'other',
-        str3(lang, 'Boshqa', 'Другое', 'Other'),
-      ),
+      ('other', str3(lang, 'Boshqa', 'Другое', 'Other')),
     ];
 
     return _StepContainer(
@@ -840,32 +900,52 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       (
         1,
         str3(lang, 'Yangi boshlovchi', 'Новичок', 'Beginner'),
-        str3(lang, "Oldin bu fanni o'rganmaganman", 'Раньше не изучал предмет',
-            'Never studied this subject before')
+        str3(
+          lang,
+          "Oldin bu fanni o'rganmaganman",
+          'Раньше не изучал предмет',
+          'Never studied this subject before',
+        ),
       ),
       (
         2,
         str3(lang, 'Asoslarini bilaman', 'Знаю основы', 'Know the basics'),
-        str3(lang, 'Oddiy tushunchalarni tushunaman', 'Понимаю простые концепции',
-            'Understand basic concepts')
+        str3(
+          lang,
+          'Oddiy tushunchalarni tushunaman',
+          'Понимаю простые концепции',
+          'Understand basic concepts',
+        ),
       ),
       (
         3,
         str3(lang, "O'rtacha", 'Средний уровень', 'Intermediate'),
-        str3(lang, 'Mustaqil misollar yecha olaman',
-            'Могу решать типовые задачи', 'Can solve standard problems')
+        str3(
+          lang,
+          'Mustaqil misollar yecha olaman',
+          'Могу решать типовые задачи',
+          'Can solve standard problems',
+        ),
       ),
       (
         4,
         str3(lang, 'Yaxshi bilaman', 'Хорошо знаю', 'Good understanding'),
-        str3(lang, "Murakkab mavzularga tayyorman",
-            'Готов к сложным темам', 'Ready for complex topics')
+        str3(
+          lang,
+          "Murakkab mavzularga tayyorman",
+          'Готов к сложным темам',
+          'Ready for complex topics',
+        ),
       ),
       (
         5,
         str3(lang, "A'lo", 'Отлично знаю', 'Advanced'),
-        str3(lang, 'Eng yuqori natijalar uchun', 'Для максимальных результатов',
-            'Aiming for the highest scores')
+        str3(
+          lang,
+          'Eng yuqori natijalar uchun',
+          'Для максимальных результатов',
+          'Aiming for the highest scores',
+        ),
       ),
     ];
 
@@ -911,10 +991,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            MascotImage(
-              pose: MascotPose.happy,
-              size: 140,
-            ),
+            MascotImage(pose: MascotPose.happy, size: 140),
           ],
         ),
       ),
@@ -925,32 +1002,47 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final reasons = [
       (
         'exam',
-        str3(lang, 'Imtihonlarga tayyorlanish', 'Подготовка к экзаменам',
-            'Exam preparation'),
+        str3(
+          lang,
+          'Imtihonlarga tayyorlanish',
+          'Подготовка к экзаменам',
+          'Exam preparation',
+        ),
         Icons.edit_note_rounded,
       ),
       (
         'grades',
-        str3(lang, 'Baholarimni yaxshilash', 'Улучшение оценок',
-            'Improving my grades'),
+        str3(
+          lang,
+          'Baholarimni yaxshilash',
+          'Улучшение оценок',
+          'Improving my grades',
+        ),
         Icons.trending_up_rounded,
       ),
       (
         'self_dev',
-        str3(lang, "O'zimni rivojlantirish", 'Саморазвитие',
-            'Self-improvement'),
+        str3(
+          lang,
+          "O'zimni rivojlantirish",
+          'Саморазвитие',
+          'Self-improvement',
+        ),
         Icons.psychology_outlined,
       ),
       (
         'olympiad',
-        str3(lang, 'Olimpiadaga tayyorlanish', 'Подготовка к олимпиадам',
-            'Olympiad preparation'),
+        str3(
+          lang,
+          'Olimpiadaga tayyorlanish',
+          'Подготовка к олимпиадам',
+          'Olympiad preparation',
+        ),
         Icons.emoji_events_outlined,
       ),
       (
         'interest',
-        str3(lang, 'Qiziqish uchun', 'Ради интереса',
-            'Just for curiosity'),
+        str3(lang, 'Qiziqish uchun', 'Ради интереса', 'Just for curiosity'),
         Icons.lightbulb_outline_rounded,
       ),
       (
@@ -1022,10 +1114,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            MascotImage(
-              pose: MascotPose.thinking,
-              size: 140,
-            ),
+            MascotImage(pose: MascotPose.thinking, size: 140),
           ],
         ),
       ),
@@ -1095,8 +1184,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       (
         Icons.menu_book_rounded,
         BrandPalette.indigo,
-        str3(lang, 'Mavzuni chuqur tushunish', 'Глубокое понимание тем',
-            'Deep topic understanding'),
+        str3(
+          lang,
+          'Mavzuni chuqur tushunish',
+          'Глубокое понимание тем',
+          'Deep topic understanding',
+        ),
         str3(
           lang,
           "Har bir mavzu va tushunchaning mohiyatini anglash",
@@ -1107,8 +1200,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       (
         Icons.verified_rounded,
         BrandPalette.turquoise,
-        str3(lang, 'Imtihonga ishonch bilan tayyorgarlik',
-            'Уверенная подготовка к экзаменам', 'Confident exam preparation'),
+        str3(
+          lang,
+          'Imtihonga ishonch bilan tayyorgarlik',
+          'Уверенная подготовка к экзаменам',
+          'Confident exam preparation',
+        ),
         str3(
           lang,
           "Murakkab misol va testlarni xatosiz yechish",
@@ -1119,8 +1216,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       (
         Icons.alarm_on_rounded,
         BrandPalette.accentOrange,
-        str3(lang, "Muntazam o'qish odati", 'Привычка учиться регулярно',
-            'Consistent daily study habit'),
+        str3(
+          lang,
+          "Muntazam o'qish odati",
+          'Привычка учиться регулярно',
+          'Consistent daily study habit',
+        ),
         str3(
           lang,
           "Har kuni qulay va qiziqarli darslar",
@@ -1219,28 +1320,62 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           decoration: BoxDecoration(
             color: colors.card,
             borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: colors.border, width: 2),
+            border: Border.all(color: colors.border),
           ),
           child: Column(
             children: [
               AppTextField(
                 controller: _nameController,
-                hint: str3(lang, 'Ism yoki taxallus', 'Имя или никнейм',
-                    'Name or nickname'),
-                prefixIcon: Icon(Icons.person_outline,
-                    color: colors.textMuted, size: 22),
+                hint: str3(
+                  lang,
+                  'Ism yoki taxallus',
+                  'Имя или никнейм',
+                  'Name or nickname',
+                ),
+                prefixIcon: Icon(
+                  Icons.person_outline,
+                  color: colors.textMuted,
+                  size: 22,
+                ),
                 onChanged: (_) => _change(() {}),
               ),
               const SizedBox(height: 16),
               AppTextField(
                 controller: _ageController,
-                hint: str3(lang, 'Yoshingiz (5–100)', 'Ваш возраст (5–100)',
-                    'Your age (5–100)'),
+                hint: str3(
+                  lang,
+                  'Yoshingiz (5–100)',
+                  'Ваш возраст (5–100)',
+                  'Your age (5–100)',
+                ),
                 keyboardType: TextInputType.number,
-                prefixIcon: Icon(Icons.cake_outlined,
-                    color: colors.textMuted, size: 22),
+                prefixIcon: Icon(
+                  Icons.cake_outlined,
+                  color: colors.textMuted,
+                  size: 22,
+                ),
                 onChanged: (_) => _change(() {}),
               ),
+              if (!_submitting && !_isContinueEnabled)
+                Padding(
+                  padding: const EdgeInsets.only(top: 12),
+                  child: Text(
+                    _nameController.text.trim().length < 2
+                        ? str3(
+                            lang,
+                            'Davom etish uchun kamida 2 harfli ism yoki taxallus kiriting.',
+                            'Чтобы продолжить, введите имя или никнейм: от 2 символов.',
+                            'To continue, enter a name or nickname with at least 2 characters.',
+                          )
+                        : str3(
+                            lang,
+                            'Davom etish uchun yoshingizni kiriting: 5–100.',
+                            'Чтобы продолжить, укажите возраст: 5–100.',
+                            'To continue, enter your age: 5–100.',
+                          ),
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                ),
             ],
           ),
         ),
@@ -1253,77 +1388,76 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 28),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const MascotImage.hero(pose: MascotPose.happy),
-              const SizedBox(height: 28),
-              Text(
-                str3(
-                  lang,
-                  'TAYYOR!',
-                  'ГОТОВО!',
-                  'READY!',
-                ),
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 1.0,
-                  height: 1.3,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 28),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const MascotImage.hero(pose: MascotPose.happy),
+            const SizedBox(height: 28),
+            Text(
+              str3(lang, 'TAYYOR!', 'ГОТОВО!', 'READY!'),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w900,
+                letterSpacing: 1.0,
+                height: 1.3,
+              ),
+            ),
+            const SizedBox(height: 24),
+            const Icon(
+              Icons.check_circle_rounded,
+              color: Color(0xFF059669),
+              size: 48,
+            ),
+            const SizedBox(height: 32),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+              decoration: BoxDecoration(
+                color: isDark
+                    ? BrandPalette.indigoDarkCard
+                    : const Color(0xFFF3F4F6),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: isDark
+                      ? BrandPalette.indigoDarkSurface
+                      : const Color(0xFFE5E7EB),
+                  width: 1.5,
                 ),
               ),
-              const SizedBox(height: 24),
-              const Icon(Icons.check_circle_rounded, color: Color(0xFF059669), size: 48),
-              const SizedBox(height: 32),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-                decoration: BoxDecoration(
-                  color: isDark
-                      ? BrandPalette.indigoDarkCard
-                      : const Color(0xFFF3F4F6),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: isDark
-                        ? BrandPalette.indigoDarkSurface
-                        : const Color(0xFFE5E7EB),
-                    width: 1.5,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(
+                    Icons.lightbulb_outline_rounded,
+                    color: BrandPalette.accentOrange,
+                    size: 22,
                   ),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(
-                      Icons.lightbulb_outline_rounded,
-                      color: BrandPalette.accentOrange,
-                      size: 22,
-                    ),
-                    const SizedBox(width: 10),
-                    Flexible(
-                      child: Text(
-                        str3(
-                          lang,
-                          'Har kuni kichik qadam, katta natija.',
-                          'Каждый день — маленький шаг, большой результат.',
-                          'Small steps every day lead to big results.',
-                        ),
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w700,
-                          color: colors.textSecondary,
-                          height: 1.35,
-                        ),
+                  const SizedBox(width: 10),
+                  Flexible(
+                    child: Text(
+                      str3(
+                        lang,
+                        'Har kuni kichik qadam, katta natija.',
+                        'Каждый день — маленький шаг, большой результат.',
+                        'Small steps every day lead to big results.',
+                      ),
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: colors.textSecondary,
+                        height: 1.35,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
+      ),
     );
   }
 
@@ -1362,16 +1496,15 @@ class _StepContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
-      children: [
-        IlmoSpeechHeader(
-          pose: mascotPose,
-          text: speechText,
-        ),
-        const SizedBox(height: IlmoSpacing.section),
-        ...children,
-      ],
+    return IlmReadingWidth(
+      child: ListView(
+        padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+        children: [
+          IlmoSpeechHeader(pose: mascotPose, text: speechText),
+          const SizedBox(height: IlmoSpacing.section),
+          ...children,
+        ],
+      ),
     );
   }
 }
@@ -1398,109 +1531,112 @@ class _SelectionTile extends StatelessWidget {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    final borderColor = isSelected
-        ? BrandPalette.turquoise
-        : colors.border;
+    final borderColor = isSelected ? BrandPalette.turquoise : colors.border;
     final bgColor = isSelected
         ? (isDark
-            ? BrandPalette.turquoise.withValues(alpha: 0.16)
-            : BrandPalette.turquoise.withValues(alpha: 0.10))
+              ? BrandPalette.turquoise.withValues(alpha: 0.16)
+              : BrandPalette.turquoise.withValues(alpha: 0.10))
         : (isDark ? BrandPalette.indigoDarkCard : colors.card);
     final shadowColor = isSelected
         ? const Color(0xFF0D9488)
         : (isDark ? Colors.black26 : const Color(0xFFE5E2F2));
 
-    return Semantics(button: true, selected: isSelected, child: InkWell(
-      onTap: () {
-        HapticFeedback.selectionClick();
-        onTap();
-      },
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        constraints: const BoxConstraints(minHeight: 56),
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
-        decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: borderColor,
-            width: isSelected ? 2.4 : 1.8,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: shadowColor,
-              offset: const Offset(0, 3.5),
-              blurRadius: 0,
+    return Semantics(
+      button: true,
+      selected: isSelected,
+      child: InkWell(
+        onTap: () {
+          HapticFeedback.selectionClick();
+          onTap();
+        },
+        borderRadius: BorderRadius.circular(16),
+        child: Container(
+          constraints: const BoxConstraints(minHeight: 56),
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
+          decoration: BoxDecoration(
+            color: bgColor,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: borderColor,
+              width: isSelected ? 2.4 : 1.8,
             ),
-          ],
-        ),
-        child: Row(
-          children: [
-            if (leading != null) ...[
-              leading!,
-              const SizedBox(width: 14),
+            boxShadow: [
+              BoxShadow(
+                color: shadowColor,
+                offset: const Offset(0, 3.5),
+                blurRadius: 0,
+              ),
             ],
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: TextStyle(
-                      fontSize: 16.5,
-                      fontWeight: FontWeight.w800,
-                      color: isSelected
-                          ? (isDark ? Colors.white : const Color(0xFF0F766E))
-                          : colors.text,
-                    ),
-                  ),
-                  if (subtitle != null && subtitle!.isNotEmpty) ...[
-                    const SizedBox(height: 3),
+          ),
+          child: Row(
+            children: [
+              if (leading != null) ...[leading!, const SizedBox(width: 14)],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                     Text(
-                      subtitle!,
+                      title,
                       style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w500,
-                        color: colors.textSecondary,
-                        height: 1.3,
+                        fontSize: 16.5,
+                        fontWeight: FontWeight.w800,
+                        color: isSelected
+                            ? (isDark ? Colors.white : const Color(0xFF0F766E))
+                            : colors.text,
                       ),
                     ),
+                    if (subtitle != null && subtitle!.isNotEmpty) ...[
+                      const SizedBox(height: 3),
+                      Text(
+                        subtitle!,
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w500,
+                          color: colors.textSecondary,
+                          height: 1.3,
+                        ),
+                      ),
+                    ],
                   ],
-                ],
-              ),
-            ),
-            const SizedBox(width: 10),
-            if (isMultiSelect)
-              Container(
-                width: 24,
-                height: 24,
-                decoration: BoxDecoration(
-                  color: isSelected ? BrandPalette.turquoise : Colors.transparent,
-                  borderRadius: BorderRadius.circular(7),
-                  border: Border.all(
-                    color: isSelected ? BrandPalette.turquoise : colors.textMuted,
-                    width: 2,
-                  ),
                 ),
-                alignment: Alignment.center,
-                child: isSelected
-                    ? const Icon(
-                        Icons.check_rounded,
-                        color: BrandPalette.indigo,
-                        size: 18,
-                      )
-                    : null,
-              )
-            else if (isSelected)
-              const Icon(
-                Icons.check_circle_rounded,
-                color: BrandPalette.turquoise,
-                size: 24,
               ),
-          ],
+              const SizedBox(width: 10),
+              if (isMultiSelect)
+                Container(
+                  width: 24,
+                  height: 24,
+                  decoration: BoxDecoration(
+                    color: isSelected
+                        ? BrandPalette.turquoise
+                        : Colors.transparent,
+                    borderRadius: BorderRadius.circular(7),
+                    border: Border.all(
+                      color: isSelected
+                          ? BrandPalette.turquoise
+                          : colors.textMuted,
+                      width: 2,
+                    ),
+                  ),
+                  alignment: Alignment.center,
+                  child: isSelected
+                      ? const Icon(
+                          Icons.check_rounded,
+                          color: BrandPalette.indigo,
+                          size: 18,
+                        )
+                      : null,
+                )
+              else if (isSelected)
+                const Icon(
+                  Icons.check_circle_rounded,
+                  color: BrandPalette.turquoise,
+                  size: 24,
+                ),
+            ],
+          ),
         ),
       ),
-    ));
+    );
   }
 }
 
@@ -1514,8 +1650,9 @@ class _SignalBars extends StatelessWidget {
     final heights = [7.0, 12.0, 17.0, 22.0];
     final activeCount = (level - 1).clamp(0, 4);
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final inactiveColor =
-        isDark ? const Color(0xFF374151) : const Color(0xFFD1D5DB);
+    final inactiveColor = isDark
+        ? const Color(0xFF374151)
+        : const Color(0xFFD1D5DB);
 
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -1526,9 +1663,7 @@ class _SignalBars extends StatelessWidget {
             width: 5.0,
             height: heights[i],
             decoration: BoxDecoration(
-              color: i < activeCount
-                  ? BrandPalette.turquoise
-                  : inactiveColor,
+              color: i < activeCount ? BrandPalette.turquoise : inactiveColor,
               borderRadius: BorderRadius.circular(2.5),
             ),
           ),

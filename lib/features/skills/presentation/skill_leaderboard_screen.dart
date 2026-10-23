@@ -1,3 +1,6 @@
+import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/ilm_design.dart';
+import '../../../core/widgets/ilm_state_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -39,6 +42,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lang = ref.watch(languageProvider);
+    final c = Theme.of(context).extension<AppColors>()!.colors;
     final async = ref.watch(_leaderboardProvider);
     final league = ref.watch(_leagueProvider);
     return Scaffold(
@@ -58,122 +62,138 @@ class SkillLeaderboardScreen extends ConsumerWidget {
       body: async.when(
         skipLoadingOnReload: true,
         skipLoadingOnRefresh: true,
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, _) => Center(
-          child: FilledButton(
-            onPressed: () {
-              ref.invalidate(_leaderboardProvider);
-              ref.invalidate(_leagueProvider);
-            },
-            child: Text(str3(lang, 'Qayta urinish', 'Повторить', 'Try again')),
+        loading: () => IlmLoadingView(language: lang),
+        error: (_, _) => IlmStateView(
+          title: str3(
+            lang,
+            'Liga yuklanmadi',
+            'Лига не загружена',
+            'League unavailable',
           ),
+          message: str3(
+            lang,
+            'Ulanishni tekshirib, qayta urinib ko‘ring.',
+            'Проверьте подключение и повторите попытку.',
+            'Check your connection and try again.',
+          ),
+          retryLabel: str3(lang, 'Qayta urinish', 'Повторить', 'Try again'),
+          onRetry: () {
+            ref.invalidate(_leaderboardProvider);
+            ref.invalidate(_leagueProvider);
+          },
         ),
-        data: (d) => ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            league.when(
-              loading: () => const LinearProgressIndicator(),
-              error: (_, _) => TextButton(
-                onPressed: () => ref.invalidate(_leagueProvider),
-                child: Text(
-                  str3(
-                    lang,
-                    'Ligani qayta yuklash',
-                    'Обновить лигу',
-                    'Reload league',
+        data: (d) => IlmReadingWidth(
+          child: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              league.when(
+                loading: () => const LinearProgressIndicator(),
+                error: (_, _) => TextButton(
+                  onPressed: () => ref.invalidate(_leagueProvider),
+                  child: Text(
+                    str3(
+                      lang,
+                      'Ligani qayta yuklash',
+                      'Обновить лигу',
+                      'Reload league',
+                    ),
+                  ),
+                ),
+                data: (l) => Container(
+                  padding: const EdgeInsets.all(24),
+                  margin: const EdgeInsets.only(bottom: 24),
+                  decoration: BoxDecoration(
+                    color: c.card,
+                    border: Border.all(color: c.border),
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  child: Column(
+                    children: [
+                      Wrap(
+                        alignment: WrapAlignment.center,
+                        spacing: 16,
+                        runSpacing: 8,
+                        children: [
+                          for (final tier in l.allTiers)
+                            Icon(
+                              Icons.shield_rounded,
+                              color: skillColor(tier.color).withValues(
+                                alpha: l.weeklyXp >= tier.minXp ? 1 : .25,
+                              ),
+                              size: tier.id == l.league.id ? 48 : 28,
+                            ),
+                        ],
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        l.league.nameFor(lang),
+                        style: const TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        '${l.weeklyXp} XP',
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      if (l.nextLeague != null) ...[
+                        const SizedBox(height: 16),
+                        LinearProgressIndicator(
+                          value: (l.nextLeague!.minXp - l.league.minXp) <= 0
+                              ? 1
+                              : ((l.weeklyXp - l.league.minXp) /
+                                        (l.nextLeague!.minXp - l.league.minXp))
+                                    .clamp(0.0, 1.0),
+                          minHeight: 12,
+                          borderRadius: BorderRadius.circular(8),
+                          color: c.primary,
+                        ),
+                        const SizedBox(height: 12),
+                        Text(
+                          str3(
+                            lang,
+                            '${l.nextLeague!.nameFor(lang)} ligasiga ${l.xpToNext} XP qoldi',
+                            'До лиги ${l.nextLeague!.nameFor(lang)}: ${l.xpToNext} XP',
+                            '${l.xpToNext} XP to ${l.nextLeague!.nameFor(lang)}',
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ],
                   ),
                 ),
               ),
-              data: (l) => Container(
-                padding: const EdgeInsets.all(24),
-                margin: const EdgeInsets.only(bottom: 24),
-                decoration: BoxDecoration(
-                  color: skillColor(l.league.color).withValues(alpha: .12),
-                  borderRadius: BorderRadius.circular(24),
+              if (d.entries.isEmpty)
+                Text(
+                  str3(
+                    lang,
+                    'Bu haftada reyting ma’lumotlari hali yo‘q.',
+                    'За эту неделю пока нет данных рейтинга.',
+                    'No ranking data for this week yet.',
+                  ),
                 ),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        for (final tier in l.allTiers)
-                          Icon(
-                            Icons.shield_rounded,
-                            color: skillColor(tier.color).withValues(
-                              alpha: l.weeklyXp >= tier.minXp ? 1 : .25,
-                            ),
-                            size: tier.id == l.league.id ? 64 : 34,
-                          ),
-                      ],
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      l.league.nameFor(lang),
-                      style: const TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      '${l.weeklyXp} XP',
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                    if (l.nextLeague != null) ...[
-                      const SizedBox(height: 16),
-                      LinearProgressIndicator(
-                        value: (l.nextLeague!.minXp - l.league.minXp) <= 0
-                            ? 1
-                            : ((l.weeklyXp - l.league.minXp) /
-                                      (l.nextLeague!.minXp - l.league.minXp))
-                                  .clamp(0.0, 1.0),
-                        minHeight: 12,
-                        borderRadius: BorderRadius.circular(8),
-                        color: skillColor(l.league.color),
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        str3(
-                          lang,
-                          '${l.nextLeague!.nameFor(lang)} ligasiga ${l.xpToNext} XP qoldi',
-                          'До лиги ${l.nextLeague!.nameFor(lang)}: ${l.xpToNext} XP',
-                          '${l.xpToNext} XP to ${l.nextLeague!.nameFor(lang)}',
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
-                  ],
+              if (d.ownRank != null)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: Text(
+                    '${str3(lang, 'Sizning o\'rningiz', 'Ваше место', 'Your rank')}: #${d.ownRank}  ·  ${d.totalParticipants} ${str3(lang, 'ishtirokchi', 'участников', 'participants')}',
+                    style: const TextStyle(fontWeight: FontWeight.w800),
+                  ),
                 ),
-              ),
-            ),
-            if (d.entries.isEmpty)
-              Text(
-                str3(
-                  lang,
-                  'Birinchi darsingizdan boshlang!',
-                  'Начните с первого урока!',
-                  'Start with your first lesson!',
-                ),
-              ),
-            if (d.ownRank != null)
-              Padding(
-                padding: const EdgeInsets.only(bottom: 12),
-                child: Text(
-                  '${str3(lang, 'Sizning o\'rningiz', 'Ваше место', 'Your rank')}: #${d.ownRank}  ·  ${d.totalParticipants} ${str3(lang, 'ishtirokchi', 'участников', 'participants')}',
-                  style: const TextStyle(fontWeight: FontWeight.w800),
-                ),
-              ),
-            for (final e in d.entries) _row(lang, e),
-          ],
+              for (final e in d.entries) _row(context, lang, e),
+            ],
+          ),
         ),
       ),
     );
   }
 
-  Widget _row(String lang, LeaderboardEntry e) {
+  Widget _row(BuildContext context, String lang, LeaderboardEntry e) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
     final medal = e.rank == 1
         ? '🥇'
         : e.rank == 2
@@ -186,10 +206,10 @@ class SkillLeaderboardScreen extends ConsumerWidget {
       margin: const EdgeInsets.only(bottom: 6),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: e.isMe ? const Color(0xFF2A1F6B).withValues(alpha: 0.12) : null,
+        color: e.isMe ? c.primary.withValues(alpha: 0.08) : c.card,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
-          color: e.isMe ? const Color(0xFF2A1F6B) : Colors.black12,
+          color: e.isMe ? c.primary : c.border,
           width: e.isMe ? 2 : 1,
         ),
       ),
@@ -203,7 +223,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
                     '${e.rank}',
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
-                      color: Colors.grey.shade500,
+                      color: c.textSecondary,
                     ),
                   ),
           ),
@@ -214,7 +234,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
               e.name.isNotEmpty ? e.name[0].toUpperCase() : '?',
               style: TextStyle(
                 fontWeight: FontWeight.w800,
-                color: leagueColor,
+                color: c.text,
                 fontSize: 13,
               ),
             ),

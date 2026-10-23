@@ -10,8 +10,10 @@ Asos: `aec64b8`, branch `feat/flutter-ui-ux-improvements`.
 qaydiga muvofiq Git tarkibiga kiritilmaydi. `.dart_tool/uiux-package/`dan o‘qiladi.
 `before/` va `phaseN/` widget capturelari bir xil 360×800dp, 2 DPR, RU UI,
 light/dark va izolyatsiyalangan fixturelar bilan yaratiladi. Ular jonli backend
-natijasi yoki haqiqiy telefon skrinshoti emas. 12 holat: home, practice, grades,
-profile, quests, league, settings, login, onboarding, theory, quiz, feedback.
+natijasi yoki haqiqiy telefon skrinshoti emas. Yakuniy capture: 20 ta holat ikkala
+theme’da juftlangan; answer-review yana ikkita AFTER tasvirga ega. Loading, error,
+home, outline, start, practice, grades, profile, quests, league, settings, login,
+onboarding, theory/theory-next, quiz, exit, wrong/correct feedback va finish mavjud.
 
 Qayta olish:
 
@@ -116,3 +118,78 @@ dark wrong feedback va dark finish juftlari ko‘rildi. Testdagi 12/12 va +20
 izolyatsiyalangan fixture javobidir, jonli foydalanuvchi natijasi emas.
 
 Analyze: **No issues found** (49.2s). 36 ta private BEFORE/AFTER juftlik.
+
+## Bosqich 4 — Profil va qolgan kundalik ekranlar
+
+- Profil avatar/badge/statlar va kalendar umumiy indigo surface/border bilan.
+  UTC faollik/streak hisoblash mantig‘i o‘zgarmagan. 200% shrift uchun kalendar
+  o‘z enida scroll qiladi. Har sana va heatmap katagi haqiqiy yakunlangan urinish
+  soni bilan semantics oladi; backend `skill_stats.py`dagi ma’no o‘qib tekshirildi.
+- Profilning tashqarisidagi qo‘shimcha settings qatori yagona AppBar actioniga
+  ko‘chirildi. Tab switch state va barcha route’lar saqlangan.
+- Liga neytral karta, rang faqat tier belgisida; bo‘sh reyting halol izoh beradi.
+  Vazifalar ixcham streak/stat, real goal va daily challenge bilan. Pull-refresh
+  xatosi AsyncValue retry state’iga o‘tadi, unhandled future chiqarmaydi.
+- Practice mode kartalariga maqsadni tushuntiruvchi qisqa UI matni. Savollar
+  umumiy reader/header/feedback komponentlaridan foydalanadi; timer, attempt,
+  submit/retry, placement va checkpoint qoidalari o‘zgarmagan.
+- Settings selected check/semantics, 48dpdan katta target va katta shrift/tor
+  ekran uchun ustunli tanlov. Onboarding field yorlig‘i yozish vaqtida qoladi;
+  disabled CTA sababi tushunarli. OAuth, validation va draft/account qoidalari
+  o‘zgarmagan. Login’da korporativ belgi bilan ILM AI nomi tartiblangan.
+
+**Tekshiruv:** to‘liq suite **238 passed** (69s), final analyze **No issues found**
+(122.2s). Oxirgi onboarding helper holati tuzatilgach targeted **22 passed** (20s).
+12 yangi accessibility matritsasi 3 til × 2 theme × 2 o‘lchamda profil, liga,
+vazifalar, settings, login, keyboardli onboarding va kalendarni 200%da tekshiradi.
+Final BEFORE/AFTER capture **2 + 2 passed**, **40 juftlik + 2 yangi review tasviri**.
+Dark profil/onboarding, light vazifalar juftlari ko‘rildi; boshqa ekranlar ham
+bir xil harnessdan qayta olindi. Native stderr warning bilan PowerShell exit’ini
+adashtirmaslik uchun final buyruqlarda subprocess return code alohida yozildi.
+
+Avvalgi test urinishlarida noto‘g‘ri fayl nomi va yangi testdagi semantics handle
+lifecycle xatosi topildi. Test yordamchisi tuzatildi; yuqoridagi natijalar faqat
+yakuniy muvaffaqiyatli runlarga tegishli.
+
+Backend CLAUDE.md hash/HEAD qayta tekshirildi va saqlangan. `aec64b8` bilan
+assets/native launcher, network, Physics, fixture/content, pubspec diffi yo‘q.
+Markaziy hujjat egasi uchun [handoff](CLAUDE_MD_OWNER_HANDOFF.md) tayyorlandi.
+Telefon tartibi: [Samsung A12 QA](SAMSUNG_A12_QA.md).
+
+## Samsung A12 — yakuniy kuzatuv
+
+Android debug build return code **0** (yakuniy incremental build 53.7s). Paket va
+avvalgi debug sertifikat tekshirilib, `adb install -r` **Success** bo‘ldi. UID
+**10298**, firstInstallTime **2026-10-21 17:56:08** saqlandi; uninstall/clear-data
+bajarilmadi. Hisob qayta login talab qilmasdan ochildi.
+
+Real telefon: home, practice, quests, league, profile light ekranlari; keyin
+settings/profile/home/outline/grade picker dark holatlari ko‘rildi. Ilovada ochiq
+turgan 3/12 savoldan chiqishda mahalliy draft saqlangani haqidagi dialog ko‘rildi.
+Serverga dars completion yuborish QA tarkibiga kiritilmadi; XP/streak ko‘rsatkichlari
+sun’iy to‘ldirilmadi. Yakunda 5-sinf, ruscha UI, light mode va home qaytarildi.
+Joriy app PID error logida fatal/unhandled/RenderFlex overflow belgilari **0**.
+
+QA davomida yana `flutter run` jarayoni paketni yangilagani kuzatildi. Foydalanuvchi
+shu ishni davom ettirishni aytdi; jarayon majburan to‘xtatilmadi. Standalone APKning
+o‘rnatish oldidagi SHA256 `dfb0327b2912390832b86e570eba25a3cc426c4d55dbec8c48919fed8598d3ea`;
+oxirgi telefondagi APK SHA256
+`75d3964b19ff72c088daa230bf9c425977a99b52c44fe4c12c1df0f156b8ffb4`.
+Oxirgi APK telefondan private nusxa sifatida olindi, sertifikati tekshirildi va
+telefon `sha256sum` natijasi bilan tengligi tasdiqlandi. Final lastUpdateTime
+**2026-10-23 09:02:08**. Bular ikkita artefakt: hashlar bir xil deb yozilmaydi.
+
+Tasvirlar/xulosa `.dart_tool/uiux-review/device/`da: `final-*`,
+`verified-home-dark.png`, `verified-outline-dark.png`, `exit-on-device.png`,
+`QA_SUMMARY.json`. Birinchi koordinata asosidagi capturelar ekran almashtirilgani
+sababli to‘g‘ri nomlanmagan; ular dark mode dalili sifatida ishlatilmadi. Yakuniy
+targetlar har amal oldidan UI XML orqali qayta topildi, theme settle kutilib
+tasvirlar qayta olindi. Telefonning asl tasvirlari yoki hisob ismi commit qilinmaydi.
+
+## Qolgan mustaqil QA
+
+Haqiqiy Google OAuth, TalkBack bilan foydalanuvchi sinovi, FPS/memory profiling va
+iOS native build bajarilmadi. Mavjud KGP dependency ogohlantirishi keyingi SDK/plugin
+migratsiyasida hal qilinadi; bu UI ishida dependency yoki production flag o‘zgarmadi.
+Yangi 3D asset kerak bo‘lmadi. Backend egasi uchun hujjat tavsiyasi tayyor; boshqa
+repo CLAUDE.md fayliga yozilmadi. Main merge, deploy va Play nashri bajarilmadi.

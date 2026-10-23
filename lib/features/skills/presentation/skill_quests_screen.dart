@@ -1,3 +1,6 @@
+import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/ilm_design.dart';
+import '../../../core/widgets/ilm_state_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -34,6 +37,7 @@ class SkillQuestsScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lang = ref.watch(languageProvider);
+    final c = Theme.of(context).extension<AppColors>()!.colors;
     String tr(String uz, String ru, String en) => str3(lang, uz, ru, en);
     final goals = ref.watch(learningGoalsProvider);
     return Scaffold(
@@ -51,7 +55,7 @@ class SkillQuestsScreen extends ConsumerWidget {
       body: goals.when(
         skipLoadingOnReload: true,
         skipLoadingOnRefresh: true,
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => IlmLoadingView(language: lang),
         error: (_, _) => Center(
           child: Padding(
             padding: const EdgeInsets.all(24),
@@ -78,130 +82,135 @@ class SkillQuestsScreen extends ConsumerWidget {
         data: (data) => RefreshIndicator(
           onRefresh: () async {
             ref.invalidate(learningGoalsProvider);
-            await ref.read(learningGoalsProvider.future);
+            try {
+              await ref.read(learningGoalsProvider.future);
+            } catch (_) {
+              /* AsyncValue renders the retry state. */
+            }
           },
-          child: ListView(
-            padding: const EdgeInsets.all(20),
-            physics: const AlwaysScrollableScrollPhysics(),
-            children: [
-              Container(
-                padding: const EdgeInsets.all(24),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFFF9600).withValues(alpha: .12),
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Column(
-                  children: [
-                    const Icon(
-                      Icons.local_fire_department_rounded,
-                      size: 80,
-                      color: Color(0xFFFF9600),
-                    ),
-                    Text(
-                      '${data.summary.streakDays}',
-                      style: const TextStyle(
-                        fontSize: 48,
-                        fontWeight: FontWeight.w900,
-                        color: Color(0xFFFF9600),
-                      ),
-                    ),
-                    Text(
-                      tr('kunlik seriya', 'дней подряд', 'day streak'),
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    Text(
-                      tr(
-                        'Har kuni o‘rganib, seriyani davom ettiring.',
-                        'Учитесь каждый день, чтобы продолжать серию.',
-                        'Learn every day to keep your streak going.',
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+          child: IlmReadingWidth(
+            child: ListView(
+              padding: const EdgeInsets.all(20),
+              physics: const AlwaysScrollableScrollPhysics(),
+              children: [
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        const Icon(
-                          Icons.ac_unit_rounded,
-                          color: Color(0xFF2DD4BF),
-                        ),
-                        const SizedBox(width: 8),
-                        Flexible(
-                          child: Text(
-                            tr(
-                              'Seriya himoyasi: ${data.freezes}',
-                              'Заморозки: ${data.freezes}',
-                              'Streak freezes: ${data.freezes}',
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.local_fire_department_rounded,
+                              size: 32,
+                              color: c.warning,
                             ),
-                            style: const TextStyle(fontWeight: FontWeight.w800),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                '${data.summary.streakDays} ${tr('kunlik seriya', 'дней подряд', 'day streak')}',
+                                style: Theme.of(context).textTheme.titleLarge,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 12),
+                        Text(
+                          tr(
+                            'O‘zingizga qulay sur’atda, bir darsdan davom eting.',
+                            'Продолжайте по одному уроку в удобном темпе.',
+                            'Keep learning one lesson at a time, at your own pace.',
                           ),
+                        ),
+                        const SizedBox(height: 12),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.ac_unit_rounded,
+                              color: c.primary,
+                              size: 20,
+                            ),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                tr(
+                                  'Seriya himoyasi: ${data.freezes}',
+                                  'Заморозки: ${data.freezes}',
+                                  'Streak freezes: ${data.freezes}',
+                                ),
+                                style: Theme.of(context).textTheme.bodySmall,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 28),
-              Text(
-                tr('Bugungi vazifalar', 'Задания на сегодня', 'Today’s quests'),
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-              const SizedBox(height: 16),
-              () {
-                final customGoal = ref.watch(userDailyGoalProvider);
-                final goalXp =
-                    customGoal > 0 ? customGoal : data.summary.dailyGoalXp;
-                return _Quest(
-                  icon: Icons.bolt_rounded,
-                  color: const Color(0xFFFFC800),
-                  title: tr(
-                    '$goalXp XP to‘plang',
-                    'Наберите $goalXp XP',
-                    'Earn $goalXp XP',
                   ),
-                  progress: data.summary.todayXp,
-                  target: goalXp,
-                );
-              }(),
-              const SizedBox(height: 14),
-              _Quest(
-                icon: Icons.flag_rounded,
-                color: const Color(0xFFCE82FF),
-                title: tr(
-                  'Kunlik sinovni bajaring',
-                  'Завершите вызов дня',
-                  'Complete the daily challenge',
                 ),
-                progress: data.completed ? 1 : 0,
-                target: 1,
-                onTap: data.completed
-                    ? null
-                    : () async {
-                        await context.push(
-                          '/skills/practice',
-                          extra: {'mode': PracticeMode.daily},
-                        );
-                        if (context.mounted) {
-                          ref.invalidate(learningGoalsProvider);
-                        }
-                      },
-              ),
-              const SizedBox(height: 24),
-              OutlinedButton.icon(
-                onPressed: () => context.push('/skills/achievements'),
-                icon: const Icon(Icons.workspace_premium_rounded),
-                label: Text(
-                  tr('Barcha yutuqlar', 'Все достижения', 'All achievements'),
+                const SizedBox(height: 28),
+                Text(
+                  tr(
+                    'Bugungi vazifalar',
+                    'Задания на сегодня',
+                    'Today’s quests',
+                  ),
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 16),
+                () {
+                  final customGoal = ref.watch(userDailyGoalProvider);
+                  final goalXp = customGoal > 0
+                      ? customGoal
+                      : data.summary.dailyGoalXp;
+                  return _Quest(
+                    icon: Icons.bolt_rounded,
+                    color: c.warning,
+                    title: tr(
+                      '$goalXp XP to‘plang',
+                      'Наберите $goalXp XP',
+                      'Earn $goalXp XP',
+                    ),
+                    progress: data.summary.todayXp,
+                    target: goalXp,
+                  );
+                }(),
+                const SizedBox(height: 14),
+                _Quest(
+                  icon: Icons.flag_rounded,
+                  color: c.primary,
+                  title: tr(
+                    'Kunlik sinovni bajaring',
+                    'Завершите вызов дня',
+                    'Complete the daily challenge',
+                  ),
+                  progress: data.completed ? 1 : 0,
+                  target: 1,
+                  onTap: data.completed
+                      ? null
+                      : () async {
+                          await context.push(
+                            '/skills/practice',
+                            extra: {'mode': PracticeMode.daily},
+                          );
+                          if (context.mounted) {
+                            ref.invalidate(learningGoalsProvider);
+                          }
+                        },
+                ),
+                const SizedBox(height: 24),
+                OutlinedButton.icon(
+                  onPressed: () => context.push('/skills/achievements'),
+                  icon: const Icon(Icons.workspace_premium_rounded),
+                  label: Text(
+                    tr('Barcha yutuqlar', 'Все достижения', 'All achievements'),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -227,13 +236,6 @@ class _Quest extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Card(
     elevation: 0,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(20),
-      side: BorderSide(
-        color: Theme.of(context).dividerColor.withValues(alpha: .25),
-        width: 2,
-      ),
-    ),
     child: InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(20),
@@ -244,7 +246,7 @@ class _Quest extends StatelessWidget {
             Icon(
               progress >= target ? Icons.check_circle_rounded : icon,
               color: color,
-              size: 40,
+              size: 28,
             ),
             const SizedBox(width: 16),
             Expanded(
@@ -264,7 +266,7 @@ class _Quest extends StatelessWidget {
                         ? 0
                         : (progress / target).clamp(0.0, 1.0),
                     color: color,
-                    minHeight: 12,
+                    minHeight: 8,
                     borderRadius: BorderRadius.circular(8),
                   ),
                   const SizedBox(height: 6),

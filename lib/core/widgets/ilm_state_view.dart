@@ -34,9 +34,9 @@ class IlmLoadingView extends StatelessWidget {
               Text(
                 uiText(
                   language,
-                  'Bir oz kuting. O‘quv yo‘lingiz tayyorlanmoqda.',
-                  'Подождите немного. Готовим ваш учебный путь.',
-                  'One moment. Your learning path is on its way.',
+                    'Bir oz kuting. Ma’lumotlar tayyorlanmoqda.',
+                    'Подождите немного. Готовим данные.',
+                    'One moment. Your data is on its way.',
                 ),
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
