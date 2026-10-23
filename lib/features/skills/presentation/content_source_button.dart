@@ -61,6 +61,20 @@ class ContentSourceButton extends StatelessWidget {
                     'Section: $reference\nPrinted page: $printed\nPDF page: $pdf',
                   ),
                 ),
+                if (source['regions'] is List) ...[
+                  const SizedBox(height: 12),
+                  if (source['file_name'] is String)
+                    Text(source['file_name'] as String),
+                  for (final (index, region)
+                      in (source['regions'] as List).indexed)
+                    Text(
+                      '${(source['printed_pages'] as List)[index]} → PDF ${(source['pdf_pages'] as List)[index]} · ${region == 'left'
+                          ? tr('chap sahifa', 'левая страница', 'left page')
+                          : region == 'right'
+                          ? tr('o‘ng sahifa', 'правая страница', 'right page')
+                          : tr('Yakka sahifa', 'Одиночная страница', 'Single page')}',
+                    ),
+                ],
                 for (final segment
                     in (source['source_segments'] as List? ?? [])
                         .whereType<Map>()) ...[
