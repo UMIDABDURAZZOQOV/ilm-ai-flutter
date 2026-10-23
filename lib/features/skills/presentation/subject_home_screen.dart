@@ -6,7 +6,6 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/providers/app_providers.dart';
 import '../../../core/network/error_message.dart';
-import '../../../core/config/mobile_release.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/ilm_state_view.dart';
@@ -17,6 +16,7 @@ import '../application/learning_preferences.dart';
 import 'mascot.dart';
 import 'skill_path_screen.dart';
 import 'skill_practice_screen.dart';
+import 'practice_hub_screen.dart';
 import 'skill_leaderboard_screen.dart';
 import 'skill_profile_screen.dart';
 import 'skill_quests_screen.dart';
@@ -238,97 +238,19 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                   subject: activeSubject,
                   onChangeSubject: () => setState(() => _choosing = true),
                 ),
-          () => Scaffold(
-            appBar: AppBar(
-              automaticallyImplyLeading: false,
-              title: Text(labels[1]),
+          () => PracticeHubScreen(
+            language: lang,
+            onDaily: () => context.push(
+              '/skills/practice',
+              extra: {'mode': PracticeMode.daily},
             ),
-            body: ListView(
-              padding: const EdgeInsets.all(20),
-              children: [
-                Text(
-                  tr(
-                    'Bilimingizni mustahkamlang',
-                    'Закрепите знания',
-                    'Make your knowledge stick',
-                  ),
-                  style: const TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  biologyOnly
-                      ? tr(
-                          'Biologiya bo‘yicha bilimingizni takrorlang va mustahkamlang.',
-                          'Повторяйте и закрепляйте знания по биологии.',
-                          'Review and strengthen your biology knowledge.',
-                        )
-                      : tr(
-                          'Takrorlash barcha o‘rgangan fanlaringizni qamrab oladi.',
-                          'Повторение охватывает все изученные предметы.',
-                          'Review covers all the subjects you have studied.',
-                        ),
-                ),
-                const SizedBox(height: 24),
-                _LearningTile(
-                  icon: Icons.auto_fix_high_rounded,
-                  color: const Color(0xFFCE82FF),
-                  title: tr(
-                    'Xatolar ustida ishlash',
-                    'Работа над ошибками',
-                    'Review mistakes',
-                  ),
-                  subtitle: tr(
-                    'Oldingi xatolarni tushunib oling',
-                    'Разберитесь с прошлыми ошибками',
-                    'Understand your previous mistakes',
-                  ),
-                  onTap: () => context.push(
-                    '/skills/practice',
-                    extra: {'mode': PracticeMode.mistakes},
-                  ),
-                ),
-                const SizedBox(height: 14),
-                _LearningTile(
-                  icon: Icons.today_rounded,
-                  color:
-                      Theme.of(
-                        context,
-                      ).extension<AppColors>()?.colors.secondary ??
-                      const Color(0xFFF9A825),
-                  title: tr('Kunlik sinov', 'Вызов дня', 'Daily challenge'),
-                  subtitle: tr(
-                    'Bugungi savollar to‘plami',
-                    'Подборка вопросов на сегодня',
-                    'Today’s question set',
-                  ),
-                  onTap: () => context.push(
-                    '/skills/practice',
-                    extra: {'mode': PracticeMode.daily},
-                  ),
-                ),
-                const SizedBox(height: 14),
-                _LearningTile(
-                  icon: Icons.bolt_rounded,
-                  color: const Color(0xFFFF9600),
-                  title: tr(
-                    'Tezlik mashqi',
-                    'На скорость',
-                    'Lightning practice',
-                  ),
-                  subtitle: tr(
-                    'Qisqa va tezkor takrorlash',
-                    'Короткое повторение на время',
-                    'A short, timed review',
-                  ),
-                  onTap: () => context.push(
-                    '/skills/practice',
-                    extra: {'mode': PracticeMode.lightning},
-                  ),
-                ),
-              ],
+            onMistakes: () => context.push(
+              '/skills/practice',
+              extra: {'mode': PracticeMode.mistakes},
+            ),
+            onLightning: () => context.push(
+              '/skills/practice',
+              extra: {'mode': PracticeMode.lightning},
             ),
           ),
           () => const SkillQuestsScreen(),

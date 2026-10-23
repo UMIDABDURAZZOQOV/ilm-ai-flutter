@@ -262,65 +262,118 @@ class LearningUnitHeader extends StatelessWidget {
     required this.completed,
     required this.total,
     required this.coverageComplete,
+    this.expanded,
+    this.current = false,
+    this.onToggle,
   });
   final String title, language;
   final int completed, total;
   final bool coverageComplete;
+  final bool? expanded;
+  final bool current;
+  final VoidCallback? onToggle;
 
   @override
   Widget build(BuildContext context) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
     return Semantics(
       container: true,
+      button: onToggle == null ? null : true,
+      expanded: expanded,
       child: Padding(
-        padding: const EdgeInsets.only(top: 24, bottom: 16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(title, style: Theme.of(context).textTheme.titleMedium),
-            const SizedBox(height: 8),
-            if (total > 0)
-              Text(
-                str3(
-                  language,
-                  'Bajarilgan darslar: $completed/$total',
-                  'Пройдено уроков: $completed/$total',
-                  'Lessons completed: $completed/$total',
-                ),
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
-              ),
-            if (total > 0) ...[
-              const SizedBox(height: 8),
-              ExcludeSemantics(
-                child: LinearProgressIndicator(
-                  value: (completed / total).clamp(0, 1),
-                  minHeight: 4,
-                  color: Theme.of(context).brightness == Brightness.dark
-                      ? c.accent
-                      : c.success,
-                  backgroundColor: c.border,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-            ],
-            if (!coverageComplete)
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Text(
-                  str3(
-                    language,
-                    'Bo‘limning qolgan darslari tayyorlanmoqda.',
-                    'Остальные уроки раздела готовятся.',
-                    'More lessons in this unit are in preparation.',
+        padding: const EdgeInsets.only(top: 12, bottom: 8),
+        child: Material(
+          color: c.surface,
+          borderRadius: BorderRadius.circular(IlmRadius.small),
+          clipBehavior: Clip.antiAlias,
+          child: InkWell(
+            onTap: onToggle,
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Text(
+                          title,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
+                      ),
+                      if (onToggle != null) ...[
+                        const SizedBox(width: 8),
+                        Icon(
+                          expanded == true
+                              ? Icons.expand_less_rounded
+                              : Icons.expand_more_rounded,
+                          color: c.textSecondary,
+                        ),
+                      ],
+                    ],
                   ),
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodySmall?.copyWith(color: c.textMuted),
-                ),
+                  const SizedBox(height: 8),
+                  if (current)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 4),
+                      child: Text(
+                        str3(
+                          language,
+                          'Joriy bob',
+                          'Текущий раздел',
+                          'Current section',
+                        ),
+                        style: Theme.of(
+                          context,
+                        ).textTheme.labelSmall?.copyWith(color: c.primary),
+                      ),
+                    ),
+                  if (total > 0)
+                    Text(
+                      str3(
+                        language,
+                        'Bajarilgan darslar: $completed/$total',
+                        'Пройдено уроков: $completed/$total',
+                        'Lessons completed: $completed/$total',
+                      ),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                  if (total > 0 && expanded != false) ...[
+                    const SizedBox(height: 8),
+                    ExcludeSemantics(
+                      child: LinearProgressIndicator(
+                        value: (completed / total).clamp(0, 1),
+                        minHeight: 4,
+                        color: Theme.of(context).brightness == Brightness.dark
+                            ? c.accent
+                            : c.success,
+                        backgroundColor: c.border,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                  ],
+                  if (!coverageComplete)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: Text(
+                        str3(
+                          language,
+                          'Bo‘limning qolgan darslari tayyorlanmoqda.',
+                          'Остальные уроки раздела готовятся.',
+                          'More lessons in this unit are in preparation.',
+                        ),
+                        style: Theme.of(
+                          context,
+                        ).textTheme.bodySmall?.copyWith(color: c.textMuted),
+                      ),
+                    ),
+                ],
               ),
-          ],
+            ),
+          ),
         ),
       ),
     );
@@ -366,13 +419,15 @@ class LearningJourneyTile extends StatelessWidget {
       onTap: onTap,
       excludeSemantics: true,
       child: Padding(
-        padding: const EdgeInsets.only(bottom: 12),
+        padding: EdgeInsets.only(bottom: current ? 12 : 4),
         child: Material(
-          color: current ? c.primaryLight : c.card,
+          color: current ? c.primaryLight : Colors.transparent,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(IlmRadius.card),
+            borderRadius: BorderRadius.circular(
+              current ? IlmRadius.card : IlmRadius.small,
+            ),
             side: BorderSide(
-              color: current ? c.primary : c.border,
+              color: current ? c.primary : Colors.transparent,
               width: current ? 1.5 : 1,
             ),
           ),
@@ -380,12 +435,12 @@ class LearningJourneyTile extends StatelessWidget {
           child: InkWell(
             onTap: onTap,
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: EdgeInsets.all(current ? 16 : 12),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   RombBadge(
-                    size: 52,
+                    size: current ? 52 : 36,
                     color: completed ? c.successLight : c.primaryLight,
                     borderColor: current ? c.primary : null,
                     borderWidth: 1.5,
@@ -411,14 +466,15 @@ class LearningJourneyTile extends StatelessWidget {
                                 color: locked ? c.textSecondary : c.text,
                               ),
                         ),
-                        const SizedBox(height: 6),
-                        Text(
-                          stateLabel,
-                          style: Theme.of(context).textTheme.labelMedium
-                              ?.copyWith(
-                                color: current ? c.primary : c.textSecondary,
-                              ),
-                        ),
+                        if (!locked) const SizedBox(height: 6),
+                        if (!locked)
+                          Text(
+                            stateLabel,
+                            style: Theme.of(context).textTheme.labelMedium
+                                ?.copyWith(
+                                  color: current ? c.primary : c.textSecondary,
+                                ),
+                          ),
                         if (detail != null) ...[
                           const SizedBox(height: 4),
                           Text(

@@ -11,6 +11,8 @@ import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/learning_journey_widgets.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/learning_path_sections.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/practice_hub_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_path_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_ui.dart';
 import 'subject_experience_test.dart' as fixture;
@@ -174,10 +176,154 @@ void main() {
             await tester.pumpAndSettle();
             expect(inspections, 1);
             expect(tester.takeException(), isNull);
+            await _reviewSectionAndPractice(tester, lang, dark);
             semantics.dispose();
           },
         );
       }
     }
   }
+}
+
+Future<void> _reviewSectionAndPractice(
+  WidgetTester tester,
+  String language,
+  bool dark,
+) async {
+  Future<void> mount(Widget child) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: buildAppTheme(dark ? darkColors : lightColors),
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(context).copyWith(
+            textScaler: const TextScaler.linear(2),
+            disableAnimations: true,
+          ),
+          child: child!,
+        ),
+        home: Scaffold(body: child),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
+  }
+
+  final units = [
+    for (var i = 1; i <= 12; i++)
+      SkillTreeUnit(
+        id: i,
+        slug: 'section-$i',
+        titleUz: 'Section $i',
+        titleRu: 'Section $i',
+        titleEn: 'Section $i',
+        orderIndex: i,
+        examStatus: 'none',
+        lessons: [
+          SkillTreeLesson(
+            id: i,
+            slug: 'lesson-$i',
+            titleUz: 'Lesson $i',
+            titleRu: 'Lesson $i',
+            titleEn: 'Lesson $i',
+            orderIndex: i,
+            xpReward: 10,
+            stars: i == 1 ? 3 : 0,
+            status: i == 1
+                ? LessonStatus.completed
+                : i == 2
+                ? LessonStatus.unlocked
+                : LessonStatus.locked,
+          ),
+        ],
+      ),
+  ];
+  await mount(
+    LearningPathSections(
+      storageKey: 'review-sections-$language',
+      language: language,
+      units: units,
+      currentUnitId: 2,
+      leading: const SizedBox(height: 8),
+      itemBuilder: (unit, lesson) =>
+          ListTile(title: Text(lesson!.titleFor(language))),
+    ),
+  );
+  expect(find.text('Lesson 1'), findsNothing);
+  await tester.tap(find.byKey(const ValueKey('path_sections')));
+  await tester.pumpAndSettle();
+  final picker = find.byType(BottomSheet);
+  final destination = find.descendant(
+    of: picker,
+    matching: find.text('Section 12'),
+  );
+  await tester.scrollUntilVisible(
+    destination,
+    120,
+    scrollable: find
+        .descendant(of: picker, matching: find.byType(Scrollable))
+        .first,
+  );
+  await tester.pumpAndSettle();
+  await tester.tap(destination);
+  await tester.pumpAndSettle();
+  expect(find.text('Lesson 12'), findsOneWidget);
+  expect(find.text('Section 2'), findsNothing);
+  expect(units.last.lessons.single.status, LessonStatus.locked);
+  final current = find.byTooltip(
+    str3(language, 'Joriy bob', 'Текущий раздел', 'Current section'),
+  );
+  expect(current.hitTestable(), findsOneWidget);
+  await tester.tap(current);
+  await tester.pumpAndSettle();
+  expect(find.text('Lesson 2'), findsOneWidget);
+  expect(find.text('Section 12'), findsNothing);
+  final header = find.byKey(const ValueKey('section_2'));
+  await tester.tap(header);
+  await tester.pumpAndSettle();
+  expect(find.text('Lesson 2'), findsNothing);
+  expect(tester.widget<LearningUnitHeader>(header).expanded, false);
+  await tester.tap(header);
+  await tester.pumpAndSettle();
+  expect(find.text('Lesson 2'), findsOneWidget);
+  await tester.tap(find.byKey(const ValueKey('path_sections')));
+  await tester.pumpAndSettle();
+  expect(find.text('Section 1'), findsOneWidget);
+  expect(tester.takeException(), isNull);
+
+  var daily = 0, mistakes = 0, lightning = 0;
+  await mount(
+    PracticeHubScreen(
+      language: language,
+      onDaily: () => daily++,
+      onMistakes: () => mistakes++,
+      onLightning: () => lightning++,
+    ),
+  );
+  final start = find.text(str3(language, 'Boshlash', 'Начать', 'Start'));
+  await tester.scrollUntilVisible(
+    start,
+    100,
+    scrollable: find.byType(Scrollable).first,
+  );
+  await tester.pumpAndSettle();
+  await tester.tap(start);
+  for (final title in [
+    str3(
+      language,
+      'Xatolar ustida ishlash',
+      'Работа над ошибками',
+      'Review mistakes',
+    ),
+    str3(language, 'Tezlik mashqi', 'На скорость', 'Lightning practice'),
+  ]) {
+    await tester.scrollUntilVisible(
+      find.text(title),
+      100,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.text(title));
+  }
+  expect([daily, mistakes, lightning], [1, 1, 1]);
+  expect(tester.takeException(), isNull);
 }

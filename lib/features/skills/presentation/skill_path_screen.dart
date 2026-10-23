@@ -7,8 +7,8 @@ import 'package:go_router/go_router.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../core/theme/ilm_design.dart';
 import 'learning_journey_widgets.dart';
+import 'learning_path_sections.dart';
 import 'study_start_sheet.dart';
 import '../application/lesson_entry.dart';
 import '../../../core/widgets/ilm_state_view.dart';
@@ -66,7 +66,6 @@ class _PathItem {
   final SkillTreeLesson? lesson;
   final SkillTreeUnit? unit;
   final String unitTitle;
-  final bool unitStart;
   final bool isCheckpoint;
   final LessonLockReason? lockReason;
 
@@ -74,7 +73,6 @@ class _PathItem {
     required SkillTreeLesson this.lesson,
     required SkillTreeUnit this.unit,
     required this.unitTitle,
-    required this.unitStart,
     this.lockReason,
   }) : isCheckpoint = false;
 
@@ -83,7 +81,6 @@ class _PathItem {
     required this.unitTitle,
   }) : isCheckpoint = true,
        lesson = null,
-       unitStart = false,
        lockReason = null;
 }
 
@@ -383,7 +380,6 @@ class SkillPathScreen extends ConsumerWidget {
                     lesson: l,
                     unit: unit,
                     unitTitle: unit.titleFor(language),
-                    unitStart: i == 0,
                     lockReason: lockReason,
                   ),
                 );
@@ -422,6 +418,14 @@ class SkillPathScreen extends ConsumerWidget {
             final hasCompleted = items.any(
               (item) => item.lesson?.status == LessonStatus.completed,
             );
+            final lessonItems = {
+              for (final item in items.where((it) => !it.isCheckpoint))
+                item.lesson!.id: item,
+            };
+            final checkpointItems = {
+              for (final item in items.where((it) => it.isCheckpoint))
+                item.unit!.id: item,
+            };
             return RefreshIndicator(
               onRefresh: () async {
                 ref.invalidate(_treeProvider((subject.slug, grade)));
@@ -432,262 +436,201 @@ class SkillPathScreen extends ConsumerWidget {
                   // A failed pull-to-refresh must still finish its indicator.
                 }
               },
-              child: LayoutBuilder(
-                builder: (context, constraints) => CustomScrollView(
-                  key: PageStorageKey(
+              child: LearningPathSections(
+                key: ValueKey(
+                  'sections:${ref.watch(currentUserIdProvider)}:${subject.slug}:$grade',
+                ),
+                storageKey:
                     'learning:${ref.watch(currentUserIdProvider)}:${subject.slug}:$grade',
-                  ),
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  slivers: [
-                    SliverPadding(
-                      padding: EdgeInsets.fromLTRB(
-                        ((constraints.maxWidth - IlmDesign.readingWidth) / 2)
-                            .clamp(16, double.infinity),
-                        12,
-                        ((constraints.maxWidth - IlmDesign.readingWidth) / 2)
-                            .clamp(16, double.infinity),
-                        24,
+                language: language,
+                units: tree.units,
+                currentUnitId: firstUnlockedIndex < 0
+                    ? null
+                    : items[firstUnlockedIndex].unit!.id,
+                leading: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    LearningContinueCard(
+                      compact: firstUnlockedIndex >= 0,
+                      language: language,
+                      statusLabel: nextCheckpoint != null
+                          ? str3(
+                              language,
+                              'Bo‘lim sinoviga tayyor',
+                              'Можно пройти проверку',
+                              'Ready for the checkpoint',
+                            )
+                          : str3(
+                              language,
+                              'O‘quv yo‘lingiz',
+                              'Ваш учебный путь',
+                              'Your learning path',
+                            ),
+                      courseNote: courseNote,
+                      summary: embedded ? tree.user : null,
+                      entry: nextLesson == null ? null : entries[nextLesson.id],
+                      contentNote:
+                          subject.slug == 'biologiya' &&
+                              grade != null &&
+                              language != 'uz'
+                          ? str3(
+                              language,
+                              'Dars tili: o‘zbekcha',
+                              'Язык уроков: узбекский',
+                              'Lesson language: Uzbek',
+                            )
+                          : null,
+                      title:
+                          nextLesson?.titleFor(language) ??
+                          nextCheckpoint?.titleFor(language) ??
+                          (hasCompleted
+                              ? str3(
+                                  language,
+                                  'Takrorlash uchun dars tanlang',
+                                  'Выберите урок для повторения',
+                                  'Choose a lesson to practise again',
+                                )
+                              : str3(
+                                  language,
+                                  'Darslar yo‘li',
+                                  'Путь обучения',
+                                  'Learning path',
+                                )),
+                      todayXp: tree.user.todayXp,
+                      goalXp: dailyGoal,
+                      onGoal: () => showDailyGoalBottomSheet(
+                        context: context,
+                        ref: ref,
+                        language: language,
+                        accentColor: subjectColor,
                       ),
-                      sliver: SliverList.builder(
-                        itemCount: items.length + 1,
-                        itemBuilder: (context, index) {
-                          if (index == 0) {
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                LearningContinueCard(
-                                  compact: firstUnlockedIndex >= 0,
-                                  language: language,
-                                  statusLabel: nextCheckpoint != null
-                                      ? str3(
-                                          language,
-                                          'Bo‘lim sinoviga tayyor',
-                                          'Можно пройти проверку',
-                                          'Ready for the checkpoint',
-                                        )
-                                      : str3(
-                                          language,
-                                          'O‘quv yo‘lingiz',
-                                          'Ваш учебный путь',
-                                          'Your learning path',
-                                        ),
-                                  courseNote: courseNote,
-                                  summary: embedded ? tree.user : null,
-                                  entry: nextLesson == null
-                                      ? null
-                                      : entries[nextLesson.id],
-                                  contentNote:
-                                      subject.slug == 'biologiya' &&
-                                          grade != null &&
-                                          language != 'uz'
-                                      ? str3(
-                                          language,
-                                          'Dars tili: o‘zbekcha',
-                                          'Язык уроков: узбекский',
-                                          'Lesson language: Uzbek',
-                                        )
-                                      : null,
-                                  title:
-                                      nextLesson?.titleFor(language) ??
-                                      nextCheckpoint?.titleFor(language) ??
-                                      (hasCompleted
-                                          ? str3(
-                                              language,
-                                              'Takrorlash uchun dars tanlang',
-                                              'Выберите урок для повторения',
-                                              'Choose a lesson to practise again',
-                                            )
-                                          : str3(
-                                              language,
-                                              'Darslar yo‘li',
-                                              'Путь обучения',
-                                              'Learning path',
-                                            )),
-                                  todayXp: tree.user.todayXp,
-                                  goalXp: dailyGoal,
-                                  onGoal: () => showDailyGoalBottomSheet(
-                                    context: context,
-                                    ref: ref,
-                                    language: language,
-                                    accentColor: subjectColor,
-                                  ),
-                                  checkpoint: nextCheckpoint != null,
-                                  onContinue: firstUnlockedIndex <= 0
-                                      ? null
-                                      : nextLesson != null
-                                      ? () async {
-                                          await context.push(
-                                            '/skills/lesson',
-                                            extra: nextLesson,
-                                          );
-                                          if (context.mounted) {
-                                            ref.invalidate(
-                                              lessonEntryProvider(nextLesson),
-                                            );
-                                            ref.invalidate(
-                                              _treeProvider((
-                                                subject.slug,
-                                                grade,
-                                              )),
-                                            );
-                                          }
-                                        }
-                                      : nextCheckpoint != null
-                                      ? () => _showCheckpointPopover(
-                                          context: context,
-                                          ref: ref,
-                                          unit: nextCheckpoint,
-                                          language: language,
-                                          color: subjectColor,
-                                        )
-                                      : null,
-                                ),
-                                if (items.isEmpty)
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      vertical: 24,
-                                    ),
-                                    child: Text(
-                                      str3(
-                                        language,
-                                        'Bu yo‘lda hozircha darslar yo‘q. Mavzular ro‘yxatini tekshiring yoki yangilang.',
-                                        'На этом пути пока нет уроков. Проверьте темы или обновите страницу.',
-                                        'There are no lessons on this path yet. Check the topics or refresh.',
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            );
-                          }
-                          final i = index - 1;
-                          return Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              if (items[i].unitStart ||
-                                  (items[i].isCheckpoint &&
-                                      (i == 0 ||
-                                          items[i - 1].unitTitle !=
-                                              items[i].unitTitle)))
-                                LearningUnitHeader(
-                                  title: items[i].unitTitle,
-                                  language: language,
-                                  completed: items[i].unit!.lessons
-                                      .where(
-                                        (lesson) =>
-                                            lesson.status ==
-                                            LessonStatus.completed,
-                                      )
-                                      .length,
-                                  total: items[i].unit!.lessons.length,
-                                  coverageComplete:
-                                      items[i].unit!.coverageComplete,
-                                ),
-                              LearningJourneyTile(
-                                detail:
-                                    !items[i].isCheckpoint &&
-                                        entries[items[i].lesson!.id]?.state ==
-                                            LessonEntryState.resume
-                                    ? entries[items[i].lesson!.id]!.description(
-                                        language,
-                                      )
-                                    : null,
-                                title: items[i].isCheckpoint
-                                    ? str3(
-                                        language,
-                                        'Bo‘lim sinovi',
-                                        'Проверка раздела',
-                                        'Unit checkpoint',
-                                      )
-                                    : items[i].lesson!.titleFor(language),
-                                semanticLabel:
-                                    '${items[i].isCheckpoint ? items[i].unit!.titleFor(language) : items[i].lesson!.titleFor(language)}. ${(items[i].isCheckpoint ? items[i].unit!.examStatus == 'locked' : items[i].lesson!.status == LessonStatus.locked)
-                                        ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
-                                        : (items[i].isCheckpoint ? items[i].unit!.examStatus == 'passed' : items[i].lesson!.status == LessonStatus.completed)
-                                        ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
-                                        : items[i].isCheckpoint
-                                        ? str3(language, 'Boshlash', 'Начать', 'Start')
-                                        : entries[items[i].lesson!.id]!.description(language)}',
-                                stateLabel: items[i].isCheckpoint
-                                    ? items[i].unit!.examStatus == 'locked'
-                                          ? str3(
-                                              language,
-                                              'Qulflangan',
-                                              'Заблокировано',
-                                              'Locked',
-                                            )
-                                          : items[i].unit!.examStatus ==
-                                                'passed'
-                                          ? str3(
-                                              language,
-                                              'Bajarilgan',
-                                              'Завершено',
-                                              'Completed',
-                                            )
-                                          : str3(
-                                              language,
-                                              'Boshlash',
-                                              'Начать',
-                                              'Start',
-                                            )
-                                    : items[i].lesson!.status ==
-                                          LessonStatus.locked
-                                    ? str3(
-                                        language,
-                                        'Qulflangan',
-                                        'Заблокировано',
-                                        'Locked',
-                                      )
-                                    : items[i].lesson!.status ==
-                                          LessonStatus.completed
-                                    ? str3(
-                                        language,
-                                        'Bajarilgan',
-                                        'Завершено',
-                                        'Completed',
-                                      )
-                                    : entries[items[i].lesson!.id]!.action(
-                                        language,
-                                      ),
-                                locked: items[i].isCheckpoint
-                                    ? items[i].unit!.examStatus == 'locked'
-                                    : items[i].lesson!.status ==
-                                          LessonStatus.locked,
-                                completed: items[i].isCheckpoint
-                                    ? items[i].unit!.examStatus == 'passed'
-                                    : items[i].lesson!.status ==
-                                          LessonStatus.completed,
-                                current: i == firstUnlockedIndex,
-                                checkpoint: items[i].isCheckpoint,
-                                stars: items[i].lesson?.stars ?? 0,
-                                onTap: () {
-                                  if (items[i].isCheckpoint) {
-                                    _showCheckpointPopover(
-                                      context: context,
-                                      ref: ref,
-                                      unit: items[i].unit!,
-                                      language: language,
-                                      color: subjectColor,
-                                    );
-                                  } else {
-                                    _showLessonPopover(
-                                      context: context,
-                                      ref: ref,
-                                      lesson: items[i].lesson!,
-                                      language: language,
-                                      color: subjectColor,
-                                      unitTitle: items[i].unitTitle,
-                                      lockReason: items[i].lockReason,
-                                    );
-                                  }
-                                },
-                              ),
-                            ],
-                          );
-                        },
-                      ),
+                      checkpoint: nextCheckpoint != null,
+                      onContinue: firstUnlockedIndex <= 0
+                          ? null
+                          : nextLesson != null
+                          ? () async {
+                              await context.push(
+                                '/skills/lesson',
+                                extra: nextLesson,
+                              );
+                              if (context.mounted) {
+                                ref.invalidate(lessonEntryProvider(nextLesson));
+                                ref.invalidate(
+                                  _treeProvider((subject.slug, grade)),
+                                );
+                              }
+                            }
+                          : nextCheckpoint != null
+                          ? () => _showCheckpointPopover(
+                              context: context,
+                              ref: ref,
+                              unit: nextCheckpoint,
+                              language: language,
+                              color: subjectColor,
+                            )
+                          : null,
                     ),
+                    if (items.isEmpty)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 24),
+                        child: Text(
+                          str3(
+                            language,
+                            'Bu yo‘lda hozircha darslar yo‘q. Mavzular ro‘yxatini tekshiring yoki yangilang.',
+                            'На этом пути пока нет уроков. Проверьте темы или обновите страницу.',
+                            'There are no lessons on this path yet. Check the topics or refresh.',
+                          ),
+                        ),
+                      ),
                   ],
                 ),
+                itemBuilder: (unit, lesson) {
+                  final item = lesson == null
+                      ? checkpointItems[unit.id]!
+                      : lessonItems[lesson.id]!;
+                  return LearningJourneyTile(
+                    detail:
+                        !item.isCheckpoint &&
+                            entries[item.lesson!.id]?.state ==
+                                LessonEntryState.resume
+                        ? entries[item.lesson!.id]!.description(language)
+                        : null,
+                    title: item.isCheckpoint
+                        ? str3(
+                            language,
+                            'Bo‘lim sinovi',
+                            'Проверка раздела',
+                            'Unit checkpoint',
+                          )
+                        : item.lesson!.titleFor(language),
+                    semanticLabel:
+                        '${item.isCheckpoint ? item.unit!.titleFor(language) : item.lesson!.titleFor(language)}. ${(item.isCheckpoint ? item.unit!.examStatus == 'locked' : item.lesson!.status == LessonStatus.locked)
+                            ? str3(language, 'Qulflangan', 'Заблокировано', 'Locked')
+                            : (item.isCheckpoint ? item.unit!.examStatus == 'passed' : item.lesson!.status == LessonStatus.completed)
+                            ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
+                            : item.isCheckpoint
+                            ? str3(language, 'Boshlash', 'Начать', 'Start')
+                            : entries[item.lesson!.id]!.description(language)}',
+                    stateLabel: item.isCheckpoint
+                        ? item.unit!.examStatus == 'locked'
+                              ? str3(
+                                  language,
+                                  'Qulflangan',
+                                  'Заблокировано',
+                                  'Locked',
+                                )
+                              : item.unit!.examStatus == 'passed'
+                              ? str3(
+                                  language,
+                                  'Bajarilgan',
+                                  'Завершено',
+                                  'Completed',
+                                )
+                              : str3(language, 'Boshlash', 'Начать', 'Start')
+                        : item.lesson!.status == LessonStatus.locked
+                        ? str3(
+                            language,
+                            'Qulflangan',
+                            'Заблокировано',
+                            'Locked',
+                          )
+                        : item.lesson!.status == LessonStatus.completed
+                        ? str3(language, 'Bajarilgan', 'Завершено', 'Completed')
+                        : entries[item.lesson!.id]!.action(language),
+                    locked: item.isCheckpoint
+                        ? item.unit!.examStatus == 'locked'
+                        : item.lesson!.status == LessonStatus.locked,
+                    completed: item.isCheckpoint
+                        ? item.unit!.examStatus == 'passed'
+                        : item.lesson!.status == LessonStatus.completed,
+                    current:
+                        firstUnlockedIndex >= 0 &&
+                        identical(item, items[firstUnlockedIndex]),
+                    checkpoint: item.isCheckpoint,
+                    stars: item.lesson?.stars ?? 0,
+                    onTap: () {
+                      if (item.isCheckpoint) {
+                        _showCheckpointPopover(
+                          context: context,
+                          ref: ref,
+                          unit: item.unit!,
+                          language: language,
+                          color: subjectColor,
+                        );
+                      } else {
+                        _showLessonPopover(
+                          context: context,
+                          ref: ref,
+                          lesson: item.lesson!,
+                          language: language,
+                          color: subjectColor,
+                          unitTitle: item.unitTitle,
+                          lockReason: item.lockReason,
+                        );
+                      }
+                    },
+                  );
+                },
               ),
             );
           },

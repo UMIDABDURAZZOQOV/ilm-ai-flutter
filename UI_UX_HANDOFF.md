@@ -205,3 +205,21 @@ BEFORE/AFTER juftlik tayyorlandi. Haqiqiy akkauntdan chiqish yoki yangi APK
 o‘rnatish bajarilmadi.
 
 [Brend auditi, taqqoslashlar va test natijalari](docs/uiux/AUTH_BRAND_REPORT.md).
+
+## 2026-10-23 — Practice, feedback va uzun dars yo‘li
+
+Practice’da kunlik sinov asosiy karta, xatolar va tezlik mashqi ixcham satrlar.
+Feedback’da kichik Ilmo sarlavhaga ko‘chirildi, izoh to‘liq kenglikda o‘qiladi;
+Continue alohida qoladi. Dars yo‘lida joriy bob ochiq, qolganlari yig‘iladi.
+Doim ko‘rinadigan bob tanlash, joriy bobga qaytish va barcha boblarni ko‘rish bor.
+UI tanlovi server lock/progress yoki mavjud dars/checkpoint amallarini o‘zgartirmaydi.
+
+Kengaytirilgan mavjud testlar 12-bobga o‘tish, katta shrift, uch til/ikki rejim
+va Practice callbacklarini qamraydi. To‘liq suite **453 passed**, analyze
+**No issues found**; 48 ta mock render, 12 ta ommaviy review tasviri tayyor.
+
+[O‘zgarishlar, taqqoslashlar va tekshiruv natijalari](docs/uiux/PRACTICE_FEEDBACK_PATH_REPORT.md).
+
+Arm64 profile APK ham muvaffaqiyatli yig‘ildi; source digestlari tekshirilgan.
+Bu mavjud lokal API uchun development build. Telefonga o‘rnatilmadi; frozen
+APK yo‘li va SHA-256 yuqoridagi hisobotda berilgan.

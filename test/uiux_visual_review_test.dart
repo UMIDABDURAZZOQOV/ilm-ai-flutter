@@ -29,6 +29,7 @@ import 'package:ilm_ai_flutter/features/skills/presentation/skill_lesson_screen.
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_profile_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_quests_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_leaderboard_screen.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/learning_journey_widgets.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 import 'subject_experience_test.dart' show FakeAuth;
 import 'support/offline_preferences.dart';
@@ -275,6 +276,23 @@ void main() {
         await mount(const SubjectHomeScreen());
         expect(find.text('0/20 XP'), findsOneWidget);
         await save('home');
+        if (stage == 'reading') {
+          await tester.tap(find.byTooltip('Текущий раздел'));
+          await tester.pumpAndSettle();
+          await save('focused-section');
+          await tester.tap(find.byType(LearningUnitHeader).first);
+          await tester.pumpAndSettle();
+          await save('collapsed-section');
+          await tester.tap(find.byType(LearningUnitHeader).first);
+          await tester.pumpAndSettle();
+          await tester.tap(find.byKey(const ValueKey('path_sections')));
+          await tester.pumpAndSettle();
+          await tester.tap(find.byKey(const ValueKey('path_sections')));
+          await tester.pumpAndSettle();
+          await save('section-picker');
+          tester.state<NavigatorState>(find.byType(Navigator).first).pop();
+          await tester.pumpAndSettle();
+        }
         await tapText('Темы');
         await save('outline');
         tester.state<NavigatorState>(find.byType(Navigator).first).pop();

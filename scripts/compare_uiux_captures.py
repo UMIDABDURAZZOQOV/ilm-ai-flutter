@@ -15,8 +15,8 @@ REVIEW = ROOT / '.dart_tool/uiux-review'
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--stage', required=True, choices=['phase1', 'phase2', 'phase3', 'phase4', 'product', 'polish'])
-    parser.add_argument('--baseline', default='before', choices=['before', 'exit-dialog', 'pre-polish'])
+    parser.add_argument('--stage', required=True, choices=['phase1', 'phase2', 'phase3', 'phase4', 'product', 'polish', 'reading'])
+    parser.add_argument('--baseline', default='before', choices=['before', 'exit-dialog', 'pre-polish', 'polish'])
     args = parser.parse_args()
     destination = REVIEW / 'comparisons' / args.stage
     destination.mkdir(parents=True, exist_ok=True)
@@ -30,7 +30,7 @@ def main():
         fixture_note = 'Next tier min XP fixture corrected from 0 to 100' if args.stage == 'polish' and after.stem.endswith('-league') else None
         caption = f'{after.stem} - {fixture_note}' if fixture_note else f'{after.stem} - isolated widget fixtures, not device screenshots'
         draw.text((12, 6), caption, fill='#2A1F6B')
-        baseline = {'before': 'aec64b8', 'exit-dialog': '10df787', 'pre-polish': '676eb37'}[args.baseline]
+        baseline = {'before': 'aec64b8', 'exit-dialog': '10df787', 'pre-polish': '676eb37', 'polish': '6d29d4e'}[args.baseline]
         draw.text((12, 21), 'BEFORE ' + baseline, fill='#2A1F6B')
         draw.text((372, 21), f'AFTER {args.stage}', fill='#2A1F6B')
         for x, path in [(0, before), (360, after)]:
