@@ -1,0 +1,685 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-7-practical06-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+  "content": {
+    "cards": [
+      {
+        "title": "Ikki oksidli mavzuni ajratish",
+        "body": "Tayyor manba tavsifida mis(II)-oksid va temir(III)-oksid sulfat kislota bilan taqqoslanadi. Raqamli ishning maqsadi reaksiyani tahlil qilish va mahsulotni eritmadan ajratish g‘oyasini tanish.",
+        "fact_ids": [
+          "purpose"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical06",
+            "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+            "paragraph": 6,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              61
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical06-page121"
+          }
+        ]
+      },
+      {
+        "title": "Ajratish usulini tanish",
+        "body": "Matnda filtrlash va tuz kristallarini ajratish nomlangan. Biz tayyor tavsifdagi usulni aniqlaymiz; reagent tayyorlash yoki fizik tajriba bajarilmaydi.",
+        "fact_ids": [
+          "filter"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical06",
+            "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+            "paragraph": 6,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              61
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical06-page121"
+          }
+        ]
+      },
+      {
+        "title": "Avvalgi misol bilan bog‘lash",
+        "body": "Oldingi bobning ishlangan misoli: CuO + H₂SO₄ = CuSO₄ + H₂O. Molar massalar tartibi 80, 98, 160, 18 g/mol. Bu aynan oldingi manba hisobidan olingan.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page50"
+          }
+        ]
+      },
+      {
+        "title": "Original raqamli hisobot modeli",
+        "body": "Virtual jadvalda CuO uchun 4 g berilsin. 80:98:160:18 nisbatdan H₂SO₄ uchun 4,9 g, CuSO₄ uchun 8 g, H₂O uchun 0,9 g chiqadi. Kirish va chiqish massasi 8,9 g.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page50"
+          }
+        ]
+      },
+      {
+        "title": "Hisobotning dalillari",
+        "body": "Mavzu va maqsadni, berilgan jarayon tavsifini, tenglamani va xulosani ajrating. Rang yoki kristall ko‘rinishi berilmagan bo‘lsa, natijani o‘zingizdan yozmang.",
+        "fact_ids": [
+          "report"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical06",
+            "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+            "paragraph": 6,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              61
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical06-page121"
+          }
+        ]
+      },
+      {
+        "title": "Temir oksidi yo‘nalishi ham saqlanadi",
+        "body": "Ikkinchi yo‘nalish temir(III)-oksidga tegishli. Uni mis(II)-oksid bilan almashtirmang. Hisobotda har bir yo‘nalish nomi va unga tegishli berilgan dalillar alohida ko‘rsatiladi.",
+        "fact_ids": [
+          "purpose",
+          "report"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical06",
+            "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+            "paragraph": 6,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              61
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical06-page121"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Virtual hisob",
+        "body": "4/80=0,05; 0,05×98=4,9 g; 0,05×160=8 g; 0,05×18=0,9 g.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page50"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-practical06",
+        "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+        "paragraph": 6,
+        "printed_pages": [
+          121
+        ],
+        "pdf_pages": [
+          61
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-practical06-page121"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-1",
+        "topic_title": "I bobga doir masalalar yechish",
+        "paragraph": null,
+        "printed_pages": [
+          50
+        ],
+        "pdf_pages": [
+          26
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-1-page50"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-7-practical06-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Mis(II)-oksiddan tashqari amaliy mavzuda yana qaysi oksid nomlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat CO2"
+        },
+        {
+          "id": "b",
+          "label": "Faqat SO2"
+        },
+        {
+          "id": "c",
+          "label": "Temir(III)-oksid"
+        },
+        {
+          "id": "d",
+          "label": "Faqat P2O5"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical06",
+          "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+          "paragraph": 6,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical06-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Manba ajratish tavsifida qaysi usul nomlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Filtrlash"
+        },
+        {
+          "id": "b",
+          "label": "Magnitlash"
+        },
+        {
+          "id": "c",
+          "label": "Faqat elash"
+        },
+        {
+          "id": "d",
+          "label": "Faqat hidlash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical06",
+          "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+          "paragraph": 6,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical06-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Hisobotning yozuvlari orasida qaysi bo‘lim bor?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat taxminiy rang"
+        },
+        {
+          "id": "b",
+          "label": "Faqat taxminiy hid"
+        },
+        {
+          "id": "c",
+          "label": "Faqat taxminiy narx"
+        },
+        {
+          "id": "d",
+          "label": "Reaksiya tenglamalari"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical06",
+          "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+          "paragraph": 6,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical06-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "Manbadagi filtr bilan ajratish usulini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical06",
+          "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+          "paragraph": 6,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical06-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Ish dalillari, tenglamalari va xulosalari jamlanadigan yozuv nomi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical06",
+          "topic_title": "Sulfat kislota bilan mis (II)-oksid, shuningdek, temir (III)-oksid orasidagi almashinish reaksiyalarini olib borish va reaksiya mahsulotlarini eritmadan ajratish",
+          "paragraph": 6,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical06-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q06",
+      "response_kind": "chemical_equation",
+      "prompt": "Avvalgi ishlangan CuO va H₂SO₄ misolini CuSO₄ va H₂O mahsulotlari bilan tenglama qilib yozing.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Virtual hisobotda 4 g CuO va 80:98 nisbat berilgan. Mos H₂SO₄ massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Virtual hisobotda 4 g CuO va 80:160 nisbat berilgan. Mos CuSO₄ massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical06-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Virtual hisobotda 4 g CuO va 80:18 nisbat berilgan. Mos H₂O massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page50"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

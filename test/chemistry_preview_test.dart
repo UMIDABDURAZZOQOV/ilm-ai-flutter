@@ -174,6 +174,7 @@ void main() {
           'practical': 3,
           'water': 31,
           'concentration': 36,
+          'acid_practical': 50,
         }[name]!,
         'source_refs': (lesson['content'] as Json)['source_refs'],
       },
@@ -407,6 +408,53 @@ void main() {
       await capture(t, 'practical-source-kind');
       await tapFinder(t, source);
       expect(find.textContaining('Manba bo‘limi: Amaliy 1'), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
+  testWidgets(
+    'practical6 reuses the earlier review with its actual page at200%',
+    (t) async {
+      useReviewedLesson('acid_practical');
+      await mount(t, size: const Size(320, 568), scale: 2);
+      await tap(t, 'Darsni boshlash');
+      expect(find.textContaining('Manba: Amaliy 6'), findsOneWidget);
+      for (var i = 0; i < 2; i++) {
+        await tap(t, 'Davom etish');
+      }
+      final source = find.textContaining('Manba: I bobga doir');
+      expect(source, findsOneWidget);
+      expect(find.textContaining('Manba: §6'), findsNothing);
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'acid-practical-earlier-review');
+      await tapFinder(t, source);
+      expect(find.textContaining('50 → PDF 26 · chap sahifa'), findsOneWidget);
+      expect(find.textContaining('Amaliy null'), findsNothing);
+      expect(t.takeException(), isNull);
+    },
+  );
+  testWidgets(
+    'practical6 numeric report keeps comma input and prior-source feedback',
+    (t) async {
+      useReviewedLesson('acid_practical');
+      skip(6);
+      await mount(t, size: const Size(320, 568), scale: 2, dark: true);
+      await tap(t, 'Darsni boshlash');
+      await t.enterText(find.byType(TextField), '4,9');
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': '4,9'});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: I bobga doir'),
+      );
+      expect(source, findsOneWidget);
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'acid-practical-earlier-feedback');
+      await tapFinder(t, source);
+      expect(find.textContaining('50 → PDF 26 · chap sahifa'), findsOneWidget);
       expect(t.takeException(), isNull);
     },
   );
