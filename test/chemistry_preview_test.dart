@@ -399,6 +399,52 @@ void main() {
       },
     );
   }
+  for (final name in ['oxidation', 'redox']) {
+    testWidgets('$name reviewed FRQ uses unchanged shared feedback at200%', (
+      t,
+    ) async {
+      catalog['available_grades'] = [7, 8];
+      grade8Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(name == 'oxidation' ? 7 : 10);
+      await mount(
+        t,
+        dark: name == 'redox',
+        size: const Size(320, 568),
+        scale: 2,
+      );
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+      await tap(t, 'Darsni boshlash');
+      final value = name == 'oxidation'
+          ? '−2'
+          : '10FeSO4+2KMnO4+8H2SO4=5Fe2(SO4)3+K2SO4+2MnSO4+8H2O';
+      await t.enterText(find.byType(TextField), value);
+      await t.pumpAndSettle();
+      await t.ensureVisible(find.byType(TextField));
+      await t.pumpAndSettle();
+      await capture(t, '$name-reviewed-input');
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      final section = name == 'oxidation' ? 18 : 20;
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$section'),
+      );
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, '$name-reviewed-feedback');
+      await tapFinder(t, source);
+      final page = name == 'oxidation' ? 78 : 86;
+      expect(
+        find.textContaining('$page -> PDF $page · Yakka sahifa'),
+        findsOneWidget,
+      );
+      expect(t.takeException(), isNull);
+    });
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
