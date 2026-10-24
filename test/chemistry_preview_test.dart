@@ -175,6 +175,7 @@ void main() {
           'water': 31,
           'concentration': 36,
           'acid_practical': 50,
+          'laboratory': 59,
         }[name]!,
         'source_refs': (lesson['content'] as Json)['source_refs'],
       },
@@ -455,6 +456,49 @@ void main() {
       await capture(t, 'acid-practical-earlier-feedback');
       await tapFinder(t, source);
       expect(find.textContaining('50 → PDF 26 · chap sahifa'), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
+  testWidgets(
+    'laboratory source has its activity label and exact spread page',
+    (t) async {
+      useReviewedLesson('laboratory');
+      await mount(t, size: const Size(320, 568), scale: 2);
+      await tap(t, 'Darsni boshlash');
+      final source = find.textContaining('Manba: Laboratoriya 1');
+      expect(source, findsOneWidget);
+      expect(find.textContaining('Manba: §1'), findsNothing);
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'laboratory-source-kind');
+      await tapFinder(t, source);
+      expect(
+        find.textContaining('Manba bo‘limi: Laboratoriya 1'),
+        findsOneWidget,
+      );
+      expect(find.textContaining('147 → PDF 74 · o‘ng sahifa'), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
+  testWidgets(
+    'laboratory short FRQ keeps typed value and source feedback at200%',
+    (t) async {
+      useReviewedLesson('laboratory');
+      skip(3);
+      await mount(t, size: const Size(320, 568), scale: 2, dark: true);
+      await tap(t, 'Darsni boshlash');
+      await t.enterText(find.byType(TextField), 'eruvchanlik');
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': 'eruvchanlik'});
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: Laboratoriya 1'),
+      );
+      expect(source, findsOneWidget);
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'laboratory-short-feedback');
       expect(t.takeException(), isNull);
     },
   );
