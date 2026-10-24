@@ -6,6 +6,7 @@ String chemistryDisplayText(String text) {
   const plain = '0123456789+-=()';
   final digits = text
       .replaceAll('→', ' -> ')
+      .replaceAll('⇌', ' <=> ')
       .replaceAllMapped(
         RegExp('[$sub]'),
         (match) => sub.indexOf(match[0]!).toString(),

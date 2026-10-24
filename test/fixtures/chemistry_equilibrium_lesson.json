@@ -1,0 +1,1090 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-8-p34-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Kimyoviy muvozanat",
+  "content": {
+    "cards": [
+      {
+        "title": "Maktab modelidagi qaytmas misollar",
+        "body": "KitobAgCl cho‘kishi,karbonat/kislota,neytrallanish,KClO3 vaZn/suyultirilgan kislota kabi yozuvlarni ajratadi. Ro‘yxatni barcha sharoitga mutlaq yo‘nalish qoidasi deb olmang.",
+        "fact_ids": [
+          "oneway"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page144"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page145"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              139
+            ],
+            "pdf_pages": [
+              139
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page139"
+          }
+        ]
+      },
+      {
+        "title": "Qaytar yozuvning ikki yo‘nalishi",
+        "body": "SO2+H2O⇌H2SO3 suvli modelida chap→o‘ng,to‘g‘ri;o‘ng→chap,teskari. Yozuv ikki yo‘nalish borligini ko‘rsatadi.",
+        "fact_ids": [
+          "reversible"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page145"
+          }
+        ]
+      },
+      {
+        "title": "Muvozanatga yaqinlashish",
+        "body": "Berilgan bayonda to‘g‘ri tezlik susayib,teskari tezlik ortadi. Maqsad ikki tezlikning tenglashish holatini ajratishdir.",
+        "fact_ids": [
+          "approach"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page145"
+          }
+        ]
+      },
+      {
+        "title": "Tenglik nimaga tegishli",
+        "body": "v1=v2—tezliklar tengligi. Reaksiyalar to‘xtadi yoki barcha konsentratsiyalar teng degan boshqa xulosa emas.",
+        "fact_ids": [
+          "equality"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page145"
+          }
+        ]
+      },
+      {
+        "title": "Katalizator holatni siljitmaydi",
+        "body": "Manba katalizator muvozanatga tezroq kelishga yordam berishini,muvozanat holatini esa siljitmasligini aytadi.",
+        "fact_ids": [
+          "catalyst"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page146"
+          }
+        ]
+      },
+      {
+        "title": "Harorat:yo‘nalish va tezlikni ajratish",
+        "body": "EkzotermikSO3 modelida isitish teskari,sovitish to‘g‘ri muvozanat yo‘nalishi bilan bog‘langan. Bu taqqoslash literal tezlik oshishi/kamayishi haqidagi hisob emas.",
+        "fact_ids": [
+          "heat"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page146"
+          }
+        ]
+      },
+      {
+        "title": "Bosim uchun shartli gaz koeffitsiyentlari",
+        "body": "2SO2+O2⇌2SO3 da3→2 gaz-koeffitsiyent modeli. Manbadagi bosim taqqoslashini shu shart bilan o‘qiymiz,SO3 uchun noaniq holatda22,4 dan haqiqiy hajm hisoblamaymiz.",
+        "fact_ids": [
+          "pressure"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page146"
+          }
+        ]
+      },
+      {
+        "title": "CO2 vaCO ni ko‘paytirish bir xil emas",
+        "body": "CO2/H2/H2O/CO modelidaCO2 ortishi to‘g‘ri,CO ortishi teskari siljish bilan berilgan. Qaysi modda sarflanishini aniqlang.",
+        "fact_ids": [
+          "concentration"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page146"
+          }
+        ]
+      },
+      {
+        "title": "Ikki issiqlik belgili mashq",
+        "body": "2NO+O2⇌2NO2+Q vaCO2+C⇌2CO−Q modellarini sovitishda yo‘nalishlar farqli:birinchida to‘g‘ri,ikkinchida teskari. Faqat berilgan sifat modelini taqqoslaymiz.",
+        "fact_ids": [
+          "heatexercise"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page146"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              147
+            ],
+            "pdf_pages": [
+              147
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page147"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph34",
+        "topic_title": "Kimyoviy muvozanat",
+        "paragraph": 34,
+        "printed_pages": [
+          144
+        ],
+        "pdf_pages": [
+          144
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph34-page144"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph34",
+        "topic_title": "Kimyoviy muvozanat",
+        "paragraph": 34,
+        "printed_pages": [
+          145
+        ],
+        "pdf_pages": [
+          145
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph34-page145"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph34",
+        "topic_title": "Kimyoviy muvozanat",
+        "paragraph": 34,
+        "printed_pages": [
+          146
+        ],
+        "pdf_pages": [
+          146
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph34-page146"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph34",
+        "topic_title": "Kimyoviy muvozanat",
+        "paragraph": 34,
+        "printed_pages": [
+          147
+        ],
+        "pdf_pages": [
+          147
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph34-page147"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph32",
+        "topic_title": "Sulfat kislota",
+        "paragraph": 32,
+        "printed_pages": [
+          139
+        ],
+        "pdf_pages": [
+          139
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph32-page139"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-8-p34-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Kimyoviy muvozanatda manbadagi v1=v2 nimaning tengligi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Barcha konsentratsiyalar"
+        },
+        {
+          "id": "b",
+          "label": "Barcha massalar"
+        },
+        {
+          "id": "c",
+          "label": "Tezliklar"
+        },
+        {
+          "id": "d",
+          "label": "Barcha atomlar turlari"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Muvozanatda ikki yo‘nalishdagi jarayon nima qiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Davom etadi"
+        },
+        {
+          "id": "b",
+          "label": "Mutlaqo to‘xtaydi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat rang o‘zgartiradi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat bitta atom qoladi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Manbaga ko‘ra katalizator muvozanat holatini nima qiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Doimo chapga siljitadi"
+        },
+        {
+          "id": "b",
+          "label": "Doimo o‘ngga siljitadi"
+        },
+        {
+          "id": "c",
+          "label": "Har doim barcha konsentratsiyani teng qiladi"
+        },
+        {
+          "id": "d",
+          "label": "Siljitmaydi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "BerilganSO2/O2/SO3+Q modeli qanday issiqlik turida?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat mexanik"
+        },
+        {
+          "id": "b",
+          "label": "Ekzotermik"
+        },
+        {
+          "id": "c",
+          "label": "Faqat erish"
+        },
+        {
+          "id": "d",
+          "label": "Issiqlik haqida ma’lumot yo‘q"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Bir xil sharoitda qarama-qarshi yo‘nalishlarda boradigan reaksiya turi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "To‘g‘ri va teskari tezliklar tenglashgan holat nomi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Berilgan ekzotermikSO3 modelida harorat oshirilsa,muvozanat qaysi yo‘nalishga siljiydi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Berilgan3→2 gaz-koeffitsiyent modelida bosim oshirilsa,SO3 tomonga siljish to‘g‘rimi yoki teskarimi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "CO2+H2⇌H2O+CO modelidaCO ko‘paytirilsa,berilgan siljish yo‘nalishi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q10",
+      "response_kind": "short_text",
+      "prompt": "CO2+C⇌2CO−Q manba modelida sovitish uchun siljish yo‘nalishi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            147
+          ],
+          "pdf_pages": [
+            147
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page147"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q11",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan atom-balans yozuvini tenglang:CO2+H2→H2O+CO.Muvozanat holati so‘ralmaydi.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan2SO2+O2⇌2SO3 gaz modelida chap koeffitsiyentlar yig‘indisi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "koeffitsiyentlar yig‘indisi",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p34-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Shu modelning o‘ng tomonidagiSO3 koeffitsiyenti?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "koeffitsiyent",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page146"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

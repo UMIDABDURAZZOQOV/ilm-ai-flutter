@@ -516,11 +516,65 @@ void main() {
       },
     );
   }
+  for (final name in ['kinetics', 'equilibrium']) {
+    testWidgets('$name reviewed theory symbols and source at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      catalog['available_grades'] = [7, 8];
+      grade8Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      await mount(
+        t,
+        dark: name == 'equilibrium',
+        size: const Size(320, 568),
+        scale: 2,
+      );
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      await waitFor(find.text('Davom etish'));
+      for (var i = 0; i < (name == 'kinetics' ? 4 : 1); i++) {
+        await tap(t, 'Davom etish');
+      }
+      final body = find.textContaining(
+        name == 'kinetics' ? 'v2/v1' : 'SO2+H2O',
+      );
+      expect(body, findsOneWidget);
+      await t.ensureVisible(body);
+      await t.pumpAndSettle();
+      await capture(t, '$name-reviewed-theory');
+      final section = name == 'kinetics' ? 33 : 34;
+      await tapFinder(t, find.textContaining('Manba: §$section'));
+      final page = name == 'kinetics' ? 143 : 145;
+      final locator = find.textContaining('$page -> PDF $page · Yakka sahifa');
+      expect(locator, findsOneWidget);
+      await t.ensureVisible(locator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-reviewed-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
     expect(chemistryDisplayText('1,66·10⁻²⁴ g'), '1,66·10^(-24) g');
     expect(chemistryDisplayText('Fe2(SO4)3=Fe2(SO4)3'), 'Fe2(SO4)3=Fe2(SO4)3');
+    expect(chemistryDisplayText('SO₂+H₂O⇌H₂SO₃'), 'SO2+H2O <=> H2SO3');
+    final equilibrium = fixture('equilibrium_lesson');
+    final equilibriumBefore = jsonEncode(equilibrium);
+    for (final card in jsonRows((equilibrium['content'] as Json)['cards'])) {
+      chemistryDisplayText(card['body'] as String);
+    }
+    expect(jsonEncode(equilibrium), equilibriumBefore);
     expect(jsonEncode(fixture('grade8_lesson')), before);
   });
   test('public first paragraph has no private rubric or AI output', () {
