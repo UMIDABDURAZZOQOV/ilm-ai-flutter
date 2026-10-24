@@ -78,3 +78,23 @@ server-side; a full text keyboard keeps e/minus available on mobile IMEs.
 All475 Flutter tests passed (2m02s); analysis reported no issues (101.3s).
 This includes320x568/200% numeric submission using real public backend fixtures.
 No native IME/device verification or new browser-build claim is made.
+
+
+## Batch04 — formulas and equations
+
+The same local v2 flow supports bounded chemical_formula and chemical_equation
+input. The server preserves case/subscripts, checks reviewed species and atom
+balance, and accepts reordered terms/proportional integer coefficients. No
+client grading, reaction prediction or general structural/ionic engine is added.
+The UI refuses an attempt for a different requested lesson. Source keys remain
+private before submission; feedback and results use shared ILM AI components.
+
+Final full Flutter suite479 passed (2m12s); analysis clean (20.7s). The separate
+debug web build against the corrected synthetic sandbox passed183.9s. Fixtures
+come from real local API runs and contain no tokens or grading specs. Real HTTP
+QA completed16 lessons/172 assessments/320 once-onlyXP. Native phone/IME/TalkBack
+and browser interaction are not claimed. Normal app publication remains gated.
+
+Current private QA defines are under
+`C:/Users/Page/Desktop/Projects/ilm-ai-chemistry-batch04-final-qa/` (port8898).
+Never commit this expiring synthetic token or the compiled private debug build.

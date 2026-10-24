@@ -5,6 +5,7 @@ import 'package:crypto/crypto.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/network/api_contract.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/widgets/duo_chrome.dart';
@@ -192,6 +193,9 @@ class _SessionState extends ConsumerState<_Session> {
         _cancel,
       );
       if (!active(generation)) return;
+      if (data['lesson_key'] != key) {
+        throw const InvalidApiResponseException();
+      }
       final answered = Map<String, dynamic>.from(data['answers'] as Map);
       final questions = jsonRows(data['questions']);
       final index = questions.indexWhere(

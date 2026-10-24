@@ -47,6 +47,8 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
   @override
   Widget build(BuildContext context) {
     final numeric = widget.question['response_kind'] == 'numeric_value';
+    final formula = widget.question['response_kind'] == 'chemical_formula';
+    final equation = widget.question['response_kind'] == 'chemical_equation';
     if (widget.question['response_kind'] == 'concept_selection') {
       return Column(
         children: [
@@ -80,7 +82,21 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
       keyboardType: TextInputType.text,
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
-        labelText: numeric
+        labelText: equation
+            ? str3(
+                widget.language,
+                'Kimyoviy tenglama',
+                'Химическое уравнение',
+                'Chemical equation',
+              )
+            : formula
+            ? str3(
+                widget.language,
+                'Kimyoviy formula',
+                'Химическая формула',
+                'Chemical formula',
+              )
+            : numeric
             ? str3(
                 widget.language,
                 'Sonli javob',
@@ -93,7 +109,20 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
                 'Краткий ответ',
                 'Short answer',
               ),
-        helperText: numeric
+        helperText: (formula || equation)
+            ? str3(
+                widget.language,
+                equation
+                    ? 'Chap = o‘ng. Moddalarni + bilan ajrating. Harflar registrini saqlang.'
+                    : 'Indeksni oddiy yoki pastki raqamda yozing. Harflar registrini saqlang.',
+                equation
+                    ? 'Слева = справа. Разделяйте вещества знаком +. Учитывайте регистр.'
+                    : 'Индекс: обычная или нижняя цифра. Учитывайте регистр.',
+                equation
+                    ? 'Left = right. Separate substances with +. Case matters.'
+                    : 'Use ordinary or subscript digits. Case matters.',
+              )
+            : numeric
             ? str3(
                 widget.language,
                 'Faqat son. Birlik: ${widget.question['unit'] == '' ? 'birliksiz' : widget.question['unit']}. e yozuvi ham mumkin.',
@@ -101,7 +130,7 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
                 'Number only. Unit: ${widget.question['unit'] == '' ? 'dimensionless' : widget.question['unit']}. e notation accepted.',
               )
             : null,
-        helperMaxLines: 3,
+        helperMaxLines: 6,
         hintText: str3(
           widget.language,
           'Javobni yozing',

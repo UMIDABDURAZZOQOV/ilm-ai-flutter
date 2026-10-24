@@ -136,6 +136,8 @@ class ChemistryRepository {
           } else if ({
             'short_text',
             'numeric_value',
+            'chemical_formula',
+            'chemical_equation',
           }.contains(q['response_kind'])) {
             if (q['max_length'] != 80) throw const FormatException();
             text(q['input_label']);

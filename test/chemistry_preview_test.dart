@@ -155,6 +155,24 @@ void main() {
     }
   }
 
+  void useReviewedLesson(String name) {
+    lesson = fixture('${name}_lesson');
+    results = fixture('${name}_results');
+    catalog['lessons'] = [
+      {
+        ...jsonRows(catalog['lessons']).first,
+        'key': lesson['lesson_key'],
+        'title': lesson['title'],
+        'sequence': name == 'numeric'
+            ? 6
+            : name == 'formula'
+            ? 12
+            : 15,
+        'source_refs': (lesson['content'] as Json)['source_refs'],
+      },
+    ];
+  }
+
   Future<void> capture(WidgetTester t, String name) async {
     if (!const bool.fromEnvironment('CHEMISTRY_CAPTURE')) return;
     await t.pumpAndSettle();
@@ -236,8 +254,7 @@ void main() {
   testWidgets(
     'numeric FRQ can submit a comma decimal using the common exercise flow',
     (t) async {
-      lesson = fixture('numeric_lesson');
-      results = fixture('numeric_results');
+      useReviewedLesson('numeric');
       // Resume at the source-reviewed mass reference denominator question.
       for (final q in jsonRows(lesson['questions']).take(6)) {
         committed[q['key'] as String] = Map<String, dynamic>.from(
@@ -282,6 +299,54 @@ void main() {
       );
     },
   );
+  test(
+    'real formula and equation payloads remain public and source linked',
+    () {
+      for (final name in ['formula', 'equation']) {
+        final data = fixture('${name}_lesson');
+        expect(ChemistryRepository(dio).checked(data, 'attempt'), isA<Map>());
+        expect(
+          jsonRows(
+            data['questions'],
+          ).any((q) => q['response_kind'] == 'chemical_$name'),
+          isTrue,
+        );
+        expect(jsonEncode(data), isNot(contains('"grading_spec"')));
+        expect(jsonEncode(data), isNot(contains('"expected"')));
+      }
+    },
+  );
+  for (final name in ['formula', 'equation']) {
+    testWidgets('$name FRQ submits exact typed notation at200% text', (
+      t,
+    ) async {
+      useReviewedLesson(name);
+      skip(name == 'formula' ? 7 : 6);
+      await mount(t, size: const Size(320, 568), scale: 2);
+      await tap(t, 'Darsni boshlash');
+      final value = name == 'formula' ? 'P₂O₅' : 'O₂ + 2Mg → 2MgO';
+      await t.enterText(find.byType(TextField), value);
+      await t.pumpAndSettle();
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      expect(t.takeException(), isNull);
+    });
+  }
+  testWidgets('a response for a different lesson cannot enter the exercise', (
+    t,
+  ) async {
+    lesson = fixture('numeric_lesson');
+    // The catalog/request still identifies paragraph01. Do not store or show a
+    // mismatched lesson from an incompatible response under that draft key.
+    await mount(t);
+    await tap(t, 'Darsni boshlash');
+    expect(find.byType(TextField), findsNothing);
+    expect(find.text('Nazariya 1/6'), findsNothing);
+    expect(find.text('Nazariya 1/8'), findsNothing);
+    expect(t.takeException(), isNull);
+  });
   testWidgets('theory advances one card and sources resolve spread sides', (
     t,
   ) async {
