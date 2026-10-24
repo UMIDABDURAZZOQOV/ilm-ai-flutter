@@ -1,0 +1,1164 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-8-p01-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Dastlabki kimyoviy tushuncha va qonunlar",
+  "content": {
+    "cards": [
+      {
+        "title": "Atom va elementni ajratish",
+        "body": "Atom kimyoviy hodisa doirasida qaraladi,lekin uning kichikroq zarralardan tuzilgani ham qayd etilgan. Element — muayyan turdagi atomlar tushunchasi.",
+        "fact_ids": [
+          "atom"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page05"
+          }
+        ]
+      },
+      {
+        "title": "Belgi nimani bildiradi?",
+        "body": "H — vodorod belgisi. Manbada Hydrogenium nomi bilan bog‘langan;belgi va nom bir vazifani bajarmaydi.",
+        "fact_ids": [
+          "symbol"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page05"
+          }
+        ]
+      },
+      {
+        "title": "Nisbiy va absolyut massa",
+        "body": "Ar — uglerod-12 massasining1/12 qismiga taqqoslash soni. Manba1 m.a.b. uchun1,66·10⁻²⁴ g beradi. Nisbiy sonni grammdagi massa deb yozmang.",
+        "fact_ids": [
+          "relative"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page06"
+          }
+        ]
+      },
+      {
+        "title": "Formuladagi indekslar",
+        "body": "H₂SO₄ da H soni2,S soni1,O soni4. Indeks yozilmagan S uchun bitta atom ko‘rsatiladi.",
+        "fact_ids": [
+          "formula"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "Massa va miqdorning birliklari",
+        "body": "H₂SO₄ uchun Mr=98,M=98 g/mol. Modda miqdori mol bilan beriladi. Kitobdagi N va boshqa adabiyotdagi n shu miqdor belgisidir.",
+        "fact_ids": [
+          "molar",
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Valentlikdan formula",
+        "body": "P(V) va O(II):umumiy qiymat10. 10/5=2 va10/2=5;manba modeli P₂O₅ ni beradi. KislorodII qoidasi aksariyat holatlarga tegishli.",
+        "fact_ids": [
+          "valence"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page08"
+          }
+        ]
+      },
+      {
+        "title": "Massadan miqdorga",
+        "body": "49 g H₂SO₄ uchun N=49/98=0,5 mol. g ni g/mol ga bo‘lish miqdorning mol birligini beradi.",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Miqdordan massaga",
+        "body": "CuO uchun M=80 g/mol. 5 mol namunaning model massasi80·5=400 g.",
+        "fact_ids": [
+          "mass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Atomlar soniga berilgan model",
+        "body": "0,301·10²³ ta O atomi uchun manbaning nisbat hisobi0,8 g beradi. Bu savolda aynan atomlar berilgan.",
+        "fact_ids": [
+          "particles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page06"
+          }
+        ]
+      },
+      {
+        "title": "Mashqdagi nuqtali yozuv",
+        "body": "Temir kuporosi mashqda FeSO₄·7H₂O deb yozilgan. Hozir bu yozuvni variantlar orasidan tanish bilan ishlaymiz.",
+        "fact_ids": [
+          "hydrate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page10"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "49 g uchun ishlangan nisbat",
+        "body": "N=m/M=49/98=0,5 mol. Massa49 g,molyar massa98 g/mol;natija modda miqdoridir.",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page09"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          5
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page05"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          6
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page06"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          8
+        ],
+        "pdf_pages": [
+          8
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page08"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          9
+        ],
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page09"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          10
+        ],
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page10"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-8-p01-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Muayyan turdagi atomni bildiradigan tushuncha qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Massa birligi"
+        },
+        {
+          "id": "b",
+          "label": "Kimyoviy element"
+        },
+        {
+          "id": "c",
+          "label": "Formulaning indeksi"
+        },
+        {
+          "id": "d",
+          "label": "Modda miqdori birligi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page05"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Manba Ar ni qanday kattalik sifatida ajratadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Grammdagi namuna massasi"
+        },
+        {
+          "id": "b",
+          "label": "Litrdagi hajm"
+        },
+        {
+          "id": "c",
+          "label": "Sekunddagi vaqt"
+        },
+        {
+          "id": "d",
+          "label": "Nisbiy atom massa"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page06"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Modda miqdori uchun qaysi birlik berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "mol"
+        },
+        {
+          "id": "b",
+          "label": "g"
+        },
+        {
+          "id": "c",
+          "label": "g/mol"
+        },
+        {
+          "id": "d",
+          "label": "l"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Molyar massaning manbadagi birligi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "mol"
+        },
+        {
+          "id": "b",
+          "label": "g"
+        },
+        {
+          "id": "c",
+          "label": "g/mol"
+        },
+        {
+          "id": "d",
+          "label": "Atom"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Manbada temir kuporosi uchun qaysi yozuv berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "FeSO4·2H2O"
+        },
+        {
+          "id": "b",
+          "label": "FeSO4·7H2O"
+        },
+        {
+          "id": "c",
+          "label": "FeSO4·5H2O"
+        },
+        {
+          "id": "d",
+          "label": "FeSO4·10H2O"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page10"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "H belgisining element nomi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page05"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "0,301·10²³ ta O haqidagi model atomgami yoki molekulagami tegishli?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page06"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q08",
+      "response_kind": "chemical_formula",
+      "prompt": "Ikki H,bitta S va to‘rtta O atomli berilgan moddaning formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q09",
+      "response_kind": "chemical_formula",
+      "prompt": "Manbadagi P(V) va O(II) modelining formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page08"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "H₂SO₄ yozuvida nechta kislorod atomi bor?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "atom",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Manba qiymatlari H=1,S=32,O=16 bo‘lganda H₂SO₄ molyar massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "49 g H₂SO₄ uchun M=98 g/mol. Modda miqdorini toping.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page09"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "5 mol CuO uchun M=80 g/mol. Massani toping.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page09"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-p01-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "Manba modelida0,301·10²³ ta O atomi uchun massa qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page06"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

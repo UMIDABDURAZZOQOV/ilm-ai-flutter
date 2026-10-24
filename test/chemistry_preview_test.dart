@@ -16,6 +16,7 @@ import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/chemistry/data/chemistry_repository.dart';
 import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_preview_screen.dart';
+import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_display_text.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_panel.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_completion_view.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
@@ -25,12 +26,14 @@ Json fixture(String name) =>
     jsonDecode(File('test/fixtures/chemistry_$name.json').readAsStringSync())
         as Json;
 const _capture = Key('chemistry-review');
+const _surfaceCapture = Key('chemistry-overlay-review');
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
   late Json lesson, results, catalog;
+  Json? grade8Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false, offline = false, expired = false;
@@ -38,6 +41,7 @@ void main() {
     lesson = fixture('lesson');
     results = fixture('results');
     catalog = fixture('catalog');
+    grade8Catalog = null;
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -52,7 +56,14 @@ void main() {
             type: DioExceptionType.connectionError,
           );
         }
-        if (r.path.endsWith('/catalog')) return reply(200, catalog);
+        if (r.path.endsWith('/catalog')) {
+          return reply(
+            200,
+            r.queryParameters['grade'] == 8 && grade8Catalog != null
+                ? grade8Catalog!
+                : catalog,
+          );
+        }
         if (r.path.endsWith('/start')) {
           return expired
               ? reply(409, {'detail': 'attempt_expired'})
@@ -109,15 +120,19 @@ void main() {
             ChemistryRepository(dio),
           ),
         ],
-        child: MaterialApp(
-          theme: buildAppTheme(dark ? darkColors : lightColors),
-          home: MediaQuery(
-            data: MediaQueryData(
-              size: size,
-              textScaler: TextScaler.linear(scale),
-              disableAnimations: true,
+        child: RepaintBoundary(
+          key: _surfaceCapture,
+          child: MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: buildAppTheme(dark ? darkColors : lightColors),
+            builder: (context, child) => MediaQuery(
+              data: MediaQuery.of(context).copyWith(
+                textScaler: TextScaler.linear(scale),
+                disableAnimations: true,
+              ),
+              child: child!,
             ),
-            child: const RepaintBoundary(
+            home: const RepaintBoundary(
               key: _capture,
               child: ChemistryPreviewScreen(),
             ),
@@ -182,11 +197,15 @@ void main() {
     ];
   }
 
-  Future<void> capture(WidgetTester t, String name) async {
+  Future<void> capture(
+    WidgetTester t,
+    String name, {
+    bool overlay = false,
+  }) async {
     if (!const bool.fromEnvironment('CHEMISTRY_CAPTURE')) return;
     await t.pumpAndSettle();
     final boundary = t.renderObject<RenderRepaintBoundary>(
-      find.byKey(_capture),
+      find.byKey(overlay ? _surfaceCapture : _capture),
     );
     await t.runAsync(() async {
       final picture = await boundary.toImage(pixelRatio: 1);
@@ -223,6 +242,125 @@ void main() {
         ),
       ),
     );
+  });
+  test(
+    'catalog rejects missing,duplicate,unsupported and mismatched grades',
+    () {
+      final repo = ChemistryRepository(dio);
+      expect(repo.checked(catalog, 'catalog')['grade'], 7);
+      for (final grades in [
+        null,
+        <int>[],
+        [7, 7],
+        [7, 12],
+        [8],
+      ]) {
+        expect(
+          () =>
+              repo.checked({...catalog, 'available_grades': grades}, 'catalog'),
+          throwsA(isA<InvalidApiResponseException>()),
+        );
+      }
+    },
+  );
+  for (final dark in [false, true]) {
+    testWidgets(
+      'grade8 selection uses real source and retains grade7 ${dark ? 'dark' : 'light'} at200%',
+      (t) async {
+        catalog['available_grades'] = [7, 8];
+        final oldKey = jsonRows(catalog['lessons']).first['key'];
+        grade8Catalog = fixture('grade8_catalog');
+        lesson = fixture('grade8_lesson');
+        results = fixture('grade8_results');
+        await mount(t, dark: dark, size: const Size(320, 568), scale: 2);
+        await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+        expect(requests.last.queryParameters['grade'], 8);
+        expect(find.textContaining('Kimyo · 8-sinf'), findsWidgets);
+        expect(find.text('5/59 dars mavjud.'), findsOneWidget);
+        await capture(t, 'grade8-path-${dark ? 'dark' : 'light'}');
+        await tap(t, 'Darsni boshlash');
+        expect(requests.last.path, contains('chemistry-8-p01-r1/start'));
+        expect(find.byKey(const ValueKey('chemistry-grade-7')), findsNothing);
+        final source = find.textContaining('Manba: §1');
+        await tapFinder(t, source);
+        expect(
+          find.textContaining('5 -> PDF 5 · Yakka sahifa'),
+          findsOneWidget,
+        );
+        expect(find.textContaining('Kimyo 8 · 2019'), findsOneWidget);
+        expect(find.textContaining('kimyo_8_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(find.textContaining('5 -> PDF 5 · Yakka sahifa'));
+        await t.pumpAndSettle();
+        await capture(
+          t,
+          'grade8-source-${dark ? 'dark' : 'light'}',
+          overlay: true,
+        );
+        expect(t.takeException(), isNull);
+        expect(jsonRows(catalog['lessons']).first['key'], oldKey);
+      },
+    );
+  }
+  testWidgets('switching back keeps grade7 path and grade8 draft separately', (
+    t,
+  ) async {
+    catalog['available_grades'] = [7, 8];
+    grade8Catalog = fixture('grade8_catalog');
+    lesson = fixture('grade8_lesson');
+    results = fixture('grade8_results');
+    await mount(t);
+    await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+    skip(5);
+    await tap(t, 'Darsni boshlash');
+    final field = find.byKey(const Key('chemistry-short-answer'));
+    await t.enterText(field, 'vodorod');
+    await t.pumpAndSettle();
+    await tapFinder(t, find.byIcon(Icons.arrow_back));
+    await tap(t, 'Saqlab chiqish');
+    expect(find.textContaining('Kimyo · 8-sinf'), findsWidgets);
+    await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-7')));
+    expect(requests.last.queryParameters['grade'], 7);
+    expect(find.textContaining('Kimyo · 7-sinf'), findsWidgets);
+    await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+    await tap(t, 'Darsni boshlash');
+    expect(find.widgetWithText(TextField, 'vodorod'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
+  testWidgets(
+    'grade8 numeric FRQ retains common feedback and exact full page at200%',
+    (t) async {
+      catalog['available_grades'] = [7, 8];
+      grade8Catalog = fixture('grade8_catalog');
+      lesson = fixture('grade8_lesson');
+      results = fixture('grade8_results');
+      skip(11);
+      await mount(t, dark: true, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+      await tap(t, 'Darsni boshlash');
+      expect(find.textContaining('49 g H2SO4'), findsOneWidget);
+      await t.enterText(find.byType(TextField), '0,5');
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': '0,5'});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §1'),
+      );
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'grade8-numeric-feedback');
+      await tapFinder(t, source);
+      expect(find.textContaining('9 -> PDF 9 · Yakka sahifa'), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
+  test('portable formula display preserves source and grading data', () {
+    final before = jsonEncode(fixture('grade8_lesson'));
+    expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
+    expect(chemistryDisplayText('1,66·10⁻²⁴ g'), '1,66·10^(-24) g');
+    expect(chemistryDisplayText('Fe2(SO4)3=Fe2(SO4)3'), 'Fe2(SO4)3=Fe2(SO4)3');
+    expect(jsonEncode(fixture('grade8_lesson')), before);
   });
   test('public first paragraph has no private rubric or AI output', () {
     final raw = jsonEncode(lesson);
@@ -372,7 +510,7 @@ void main() {
     await capture(t, 'context-source-groups');
     await tapFinder(t, find.textContaining('Manba: §10'));
     expect(find.textContaining('Kitobdagi bet: 34'), findsOneWidget);
-    expect(find.textContaining('34 → PDF 18 · chap sahifa'), findsOneWidget);
+    expect(find.textContaining('34 -> PDF 18 · chap sahifa'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
   testWidgets(
@@ -391,7 +529,7 @@ void main() {
       await t.pumpAndSettle();
       await capture(t, 'review-source-kind');
       await tapFinder(t, source);
-      expect(find.textContaining('47 → PDF 24 · o‘ng sahifa'), findsOneWidget);
+      expect(find.textContaining('47 -> PDF 24 · o‘ng sahifa'), findsOneWidget);
       expect(t.takeException(), isNull);
     },
   );
@@ -429,7 +567,7 @@ void main() {
       await t.pumpAndSettle();
       await capture(t, 'acid-practical-earlier-review');
       await tapFinder(t, source);
-      expect(find.textContaining('50 → PDF 26 · chap sahifa'), findsOneWidget);
+      expect(find.textContaining('50 -> PDF 26 · chap sahifa'), findsOneWidget);
       expect(find.textContaining('Amaliy null'), findsNothing);
       expect(t.takeException(), isNull);
     },
@@ -455,7 +593,7 @@ void main() {
       await t.pumpAndSettle();
       await capture(t, 'acid-practical-earlier-feedback');
       await tapFinder(t, source);
-      expect(find.textContaining('50 → PDF 26 · chap sahifa'), findsOneWidget);
+      expect(find.textContaining('50 -> PDF 26 · chap sahifa'), findsOneWidget);
       expect(t.takeException(), isNull);
     },
   );
@@ -476,7 +614,10 @@ void main() {
         find.textContaining('Manba bo‘limi: Laboratoriya 1'),
         findsOneWidget,
       );
-      expect(find.textContaining('147 → PDF 74 · o‘ng sahifa'), findsOneWidget);
+      expect(
+        find.textContaining('147 -> PDF 74 · o‘ng sahifa'),
+        findsOneWidget,
+      );
       expect(t.takeException(), isNull);
     },
   );
@@ -514,7 +655,7 @@ void main() {
     await t.pumpAndSettle();
     await capture(t, 'water-theory-source');
     await tapFinder(t, source);
-    expect(find.textContaining('80 → PDF 41 · chap sahifa'), findsOneWidget);
+    expect(find.textContaining('80 -> PDF 41 · chap sahifa'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
   testWidgets('hydrate is a recognition MCQ with common source feedback', (
@@ -540,7 +681,7 @@ void main() {
     await t.pumpAndSettle();
     await capture(t, 'water-hydrate-feedback');
     await tapFinder(t, source);
-    expect(find.textContaining('82 → PDF 42 · chap sahifa'), findsOneWidget);
+    expect(find.textContaining('82 -> PDF 42 · chap sahifa'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
   testWidgets('molar theory retains the prior molar-mass source at200%', (
@@ -555,7 +696,7 @@ void main() {
     expect(find.textContaining('Manba: §10'), findsOneWidget);
     expect(find.textContaining('Manba: §32'), findsOneWidget);
     await tapFinder(t, find.textContaining('Manba: §10'));
-    expect(find.textContaining('34 → PDF 18 · chap sahifa'), findsOneWidget);
+    expect(find.textContaining('34 -> PDF 18 · chap sahifa'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
   testWidgets('molar FRQ keeps its fixed unit and exact comma input at200%', (
@@ -583,7 +724,7 @@ void main() {
     await t.pumpAndSettle();
     await capture(t, 'molar-source-feedback');
     await tapFinder(t, source);
-    expect(find.textContaining('91 → PDF 46 · o‘ng sahifa'), findsOneWidget);
+    expect(find.textContaining('91 -> PDF 46 · o‘ng sahifa'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
   testWidgets('theory advances one card and sources resolve spread sides', (
@@ -605,7 +746,7 @@ void main() {
     await t.tap(source);
     await t.pumpAndSettle();
     expect(find.text('kimyo_7_uzb.pdf'), findsOneWidget);
-    expect(find.textContaining('→ PDF 3 · chap sahifa'), findsWidgets);
+    expect(find.textContaining('-> PDF 3 · chap sahifa'), findsWidgets);
     expect(t.takeException(), isNull);
   });
 

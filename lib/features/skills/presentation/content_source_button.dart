@@ -7,12 +7,14 @@ class ContentSourceButton extends StatelessWidget {
   final String language;
   final String? referenceLabel;
   final String? sectionTitle;
+  final String locatorSeparator;
   const ContentSourceButton({
     super.key,
     required this.source,
     required this.language,
     this.referenceLabel,
     this.sectionTitle,
+    this.locatorSeparator = '→',
   });
   @override
   Widget build(BuildContext context) {
@@ -78,7 +80,7 @@ class ContentSourceButton extends StatelessWidget {
                   for (final (index, region)
                       in (source['regions'] as List).indexed)
                     Text(
-                      '${(source['printed_pages'] as List)[index]} → PDF ${(source['pdf_pages'] as List)[index]} · ${region == 'left'
+                      '${(source['printed_pages'] as List)[index]} $locatorSeparator PDF ${(source['pdf_pages'] as List)[index]} · ${region == 'left'
                           ? tr('chap sahifa', 'левая страница', 'left page')
                           : region == 'right'
                           ? tr('o‘ng sahifa', 'правая страница', 'right page')

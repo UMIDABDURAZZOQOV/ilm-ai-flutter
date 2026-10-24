@@ -13,6 +13,7 @@ import '../../../core/widgets/mascot_image.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/chemistry_repository.dart';
 import 'chemistry_answer_editor.dart';
+import 'chemistry_display_text.dart';
 import '../../skills/presentation/content_source_button.dart';
 import '../../skills/presentation/lesson_feedback_panel.dart';
 import '../../skills/presentation/lesson_completion_view.dart';
@@ -51,7 +52,7 @@ class _SessionState extends ConsumerState<_Session> {
   Json _saved = {}, _draft = {};
   String? _lessonKey, _error;
   bool _busy = false, _teaching = true, _expired = false, _leaving = false;
-  int _index = 0, _generation = 0;
+  int _index = 0, _generation = 0, _grade = 7;
   Future<void> _writes = Future.value();
   ChemistryRepository get _repo => ref.read(chemistryRepositoryProvider);
   bool active(int generation) =>
@@ -144,7 +145,10 @@ class _SessionState extends ConsumerState<_Session> {
       _error = null;
     });
     try {
-      final data = await _repo.catalog(_cancel);
+      final data = await _repo.catalog(_cancel, grade: _grade);
+      if (data['grade'] != _grade) {
+        throw const InvalidApiResponseException();
+      }
       if (active(generation)) setState(() => _catalog = data);
     } catch (e) {
       if (active(generation)) setState(() => _error = message(e));
@@ -395,9 +399,15 @@ class _SessionState extends ConsumerState<_Session> {
         children: [
           Semantics(
             header: true,
-            child: Text(title, style: Theme.of(context).textTheme.titleLarge),
+            child: Text(
+              chemistryDisplayText(title),
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
           ),
-          if (body.isNotEmpty) ...[const SizedBox(height: 12), Text(body)],
+          if (body.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            Text(chemistryDisplayText(body)),
+          ],
           if (child != null) ...[const SizedBox(height: 8), child],
         ],
       ),
@@ -426,8 +436,11 @@ class _SessionState extends ConsumerState<_Session> {
       }
       return ContentSourceButton(
         language: _language,
+        locatorSeparator: '->',
         referenceLabel: label,
-        sectionTitle: first['topic_title'] as String?,
+        sectionTitle: first['topic_title'] is String
+            ? chemistryDisplayText(first['topic_title'] as String)
+            : null,
         source: {
           ...first,
           'pdf_pages': [for (final r in group) ...r['pdf_pages'] as List],
@@ -450,16 +463,39 @@ class _SessionState extends ConsumerState<_Session> {
 
   Widget _path() {
     final rows = _catalog == null ? <Json>[] : jsonRows(_catalog!['lessons']);
+    final grades = _catalog == null
+        ? <int>[]
+        : List<int>.from(_catalog!['available_grades'] as List);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const MascotImage(pose: MascotPose.hello, size: 92),
         Text(
-          _t('Kimyo · 7-sinf', 'Химия · 7 класс', 'Chemistry · Grade 7'),
+          _gradeTitle,
           style: Theme.of(context).textTheme.headlineSmall,
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 12),
+        if (grades.length > 1)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final grade in grades)
+                  ChoiceChip(
+                    key: ValueKey('chemistry-grade-$grade'),
+                    label: Text(
+                      _t('$grade-sinf', '$grade класс', 'Grade $grade'),
+                    ),
+                    selected: _grade == grade,
+                    onSelected: _busy ? null : (_) => _selectGrade(grade),
+                  ),
+              ],
+            ),
+          ),
         Text(
           _t(
             'Bilimlarni darslikdan boshlab o‘rganamiz.',
@@ -473,9 +509,9 @@ class _SessionState extends ConsumerState<_Session> {
             padding: const EdgeInsets.symmetric(vertical: 16),
             child: Text(
               _t(
-                '${rows.length}/${_catalog!['source_sections']} dars tayyor. Qolgan mavzular tayyorlanmoqda.',
-                'Готово уроков: ${rows.length}/${_catalog!['source_sections']}. Остальные темы готовятся.',
-                '${rows.length}/${_catalog!['source_sections']} lessons ready. Other topics are being prepared.',
+                '${rows.length}/${_catalog!['source_sections']} dars mavjud.',
+                'Доступно уроков: ${rows.length}/${_catalog!['source_sections']}.',
+                '${rows.length}/${_catalog!['source_sections']} lessons available.',
               ),
               textAlign: TextAlign.center,
             ),
@@ -507,6 +543,27 @@ class _SessionState extends ConsumerState<_Session> {
           ),
       ],
     );
+  }
+
+  String get _gradeTitle => _t(
+    'Kimyo · $_grade-sinf',
+    'Химия · $_grade класс',
+    'Chemistry · Grade $_grade',
+  );
+
+  void _selectGrade(int grade) {
+    if (_busy || _attempt != null || grade == _grade) return;
+    _generation++;
+    _cancel.cancel();
+    _cancel = CancelToken();
+    setState(() {
+      _grade = grade;
+      _catalog = null;
+      _lessonKey = null;
+      _error = null;
+    });
+    _top();
+    unawaited(_loadCatalog());
   }
 
   Future<void> _nextTheory() async {
@@ -607,7 +664,7 @@ class _SessionState extends ConsumerState<_Session> {
         Semantics(
           header: true,
           child: Text(
-            q['prompt'] as String,
+            chemistryDisplayText(q['prompt'] as String),
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -663,7 +720,7 @@ class _SessionState extends ConsumerState<_Session> {
                       for (final step in jsonRows(
                         (answers[q['key']] as Map)['solution'],
                       ))
-                        Text(step['body'] as String),
+                        Text(chemistryDisplayText(step['body'] as String)),
                       _sourceButton(q['source_refs']),
                     ],
                   ),
@@ -683,7 +740,7 @@ class _SessionState extends ConsumerState<_Session> {
     title: _result!['passed'] == true
         ? _t('Dars yakunlandi!', 'Урок завершён!', 'Lesson complete!')
         : _t('Yana mashq qilamiz', 'Попробуем ещё', 'Let’s practise again'),
-    lessonTitle: _attempt!['title'] as String,
+    lessonTitle: chemistryDisplayText(_attempt!['title'] as String),
     xp: _result!['xp_awarded'] as int,
     correct: _result!['score'] as int,
     total: _result!['total'] as int,
@@ -708,10 +765,7 @@ class _SessionState extends ConsumerState<_Session> {
             56,
             MediaQuery.textScalerOf(context).scale(42),
           ),
-          title: Text(
-            _t('Kimyo · 7-sinf', 'Химия · 7 класс', 'Chemistry · Grade 7'),
-            maxLines: 2,
-          ),
+          title: Text(_gradeTitle, maxLines: 2),
           leading: _attempt == null
               ? null
               : IconButton(
@@ -846,10 +900,14 @@ class _SessionState extends ConsumerState<_Session> {
                       LessonFeedbackPanel(
                         language: _language,
                         correct: _feedback!['is_correct'] as bool,
-                        correctAnswer: _feedback!['correct_answer'] as String,
-                        explanation: jsonRows(
-                          _feedback!['solution'],
-                        ).map((s) => s['body']).join('\n\n'),
+                        correctAnswer: chemistryDisplayText(
+                          _feedback!['correct_answer'] as String,
+                        ),
+                        explanation: chemistryDisplayText(
+                          jsonRows(
+                            _feedback!['solution'],
+                          ).map((s) => s['body']).join('\n\n'),
+                        ),
                         source: _sourceButton(_feedback!['source_refs']),
                         onContinue: _nextQuestion,
                       ),

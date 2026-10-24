@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../skills/presentation/skill_ui.dart';
 import '../data/chemistry_repository.dart';
+import 'chemistry_display_text.dart';
 
 /// Collects input only. All correctness and accepted text aliases live on server.
 class ChemistryAnswerEditor extends StatefulWidget {
@@ -56,7 +57,7 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
               child: DuoChoiceCard(
-                text: option['label'] as String,
+                text: chemistryDisplayText(option['label'] as String),
                 selected: _draft['choice_id'] == option['id'],
                 answered: widget.feedback != null,
                 isCorrectOption:

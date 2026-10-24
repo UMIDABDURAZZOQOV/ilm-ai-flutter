@@ -96,6 +96,13 @@ class ChemistryRepository {
             payload['source_sections'] is! int) {
           throw const FormatException();
         }
+        final grades = List<int>.from(payload['available_grades'] as List);
+        if (grades.isEmpty ||
+            grades.any((g) => g < 7 || g > 11) ||
+            grades.toSet().length != grades.length ||
+            !grades.contains(payload['grade'])) {
+          throw const FormatException();
+        }
         for (final row in jsonRows(payload['lessons'])) {
           text(row['key']);
           text(row['title']);
@@ -182,9 +189,10 @@ class ChemistryRepository {
     sendTimeout: const Duration(seconds: 20),
     receiveTimeout: const Duration(seconds: 25),
   );
-  Future<Json> catalog(CancelToken cancel) async => checked(
+  Future<Json> catalog(CancelToken cancel, {int grade = 7}) async => checked(
     (await dio.get(
       '$prefix/catalog',
+      queryParameters: {'grade': grade},
       options: options,
       cancelToken: cancel,
     )).data,
