@@ -406,18 +406,44 @@ class _SessionState extends ConsumerState<_Session> {
 
   Widget _sourceButton(dynamic values) {
     final refs = jsonRows(values);
+    final groups = <String, List<Json>>{};
+    for (final r in refs) {
+      groups.putIfAbsent('${r['book_id']}:${r['topic_id']}', () => []).add(r);
+    }
+    Widget button(List<Json> group) {
+      final first = group.first;
+      final activity = RegExp(
+        r'^ch\d+-(practical|laboratory)(\d+)$',
+      ).firstMatch(first['topic_id'] as String);
+      String? label;
+      if (activity != null) {
+        final n = int.parse(activity.group(2)!);
+        label = activity.group(1) == 'practical'
+            ? _t('Amaliy $n', 'Практическая $n', 'Practical $n')
+            : _t('Laboratoriya $n', 'Лабораторная $n', 'Lab $n');
+      } else if (first['paragraph'] == null) {
+        label = first['topic_title'] as String;
+      }
+      return ContentSourceButton(
+        language: _language,
+        referenceLabel: label,
+        sectionTitle: first['topic_title'] as String?,
+        source: {
+          ...first,
+          'pdf_pages': [for (final r in group) ...r['pdf_pages'] as List],
+          'printed_pages': [
+            for (final r in group) ...r['printed_pages'] as List,
+          ],
+          'regions': [for (final r in group) ...r['regions'] as List],
+        },
+      );
+    }
+
     return Align(
       alignment: Alignment.centerLeft,
-      child: ContentSourceButton(
-        language: _language,
-        source: {
-          ...refs.first,
-          'pdf_pages': [for (final r in refs) ...r['pdf_pages'] as List],
-          'printed_pages': [
-            for (final r in refs) ...r['printed_pages'] as List,
-          ],
-          'regions': [for (final r in refs) ...r['regions'] as List],
-        },
+      child: Wrap(
+        spacing: 8,
+        children: [for (final group in groups.values) button(group)],
       ),
     );
   }

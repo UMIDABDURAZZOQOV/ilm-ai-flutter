@@ -98,3 +98,20 @@ and browser interaction are not claimed. Normal app publication remains gated.
 Current private QA defines are under
 `C:/Users/Page/Desktop/Projects/ilm-ai-chemistry-batch04-final-qa/` (port8898).
 Never commit this expiring synthetic token or the compiled private debug build.
+
+
+## Batch05 — exact source identities
+
+Prior paragraphs, chapter reviews and practical activities retain separate source
+buttons with their actual identities/pages. Source dialogs accept optional labels
+and topic titles while preserving existing default behavior. Real API fixtures
+cover all three source kinds; no keys or tokens are included before answering.
+
+Full Flutter482 tests passed (1m44s), analysis clean (130.9s); final fixture
+source tests7 passed (4s), including320x568/200% widget captures inspected by eye.
+Fresh backend synthetic HTTP QA:21 lessons/236 questions/420 once-onlyXP, replay
+identical. No native/browser/IME/TalkBack QA or fresh web build claimed.
+
+Final private sandbox: `C:/Users/Page/Desktop/Projects/ilm-ai-chemistry-batch05-final-qa/`,
+loopback8899. Old immutable sandboxes remain unchanged; never commit QA tokens.
+Current course21/268; readiness remains false and source issues stay visible.

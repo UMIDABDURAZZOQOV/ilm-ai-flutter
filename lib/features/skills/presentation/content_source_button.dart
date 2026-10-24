@@ -5,10 +5,14 @@ import 'skill_ui.dart';
 class ContentSourceButton extends StatelessWidget {
   final Map<String, dynamic> source;
   final String language;
+  final String? referenceLabel;
+  final String? sectionTitle;
   const ContentSourceButton({
     super.key,
     required this.source,
     required this.language,
+    this.referenceLabel,
+    this.sectionTitle,
   });
   @override
   Widget build(BuildContext context) {
@@ -18,11 +22,13 @@ class ContentSourceButton extends StatelessWidget {
     final section = source['paragraph'];
     final activity = source['activity_kind'];
     final number = source['activity_number'];
-    final reference = section != null
-        ? '§$section'
-        : activity == 'laboratory'
-        ? tr('Laboratoriya $number', 'Лабораторная $number', 'Lab $number')
-        : tr('Amaliy $number', 'Практическая $number', 'Activity $number');
+    final reference =
+        referenceLabel ??
+        (section != null
+            ? '§$section'
+            : activity == 'laboratory'
+            ? tr('Laboratoriya $number', 'Лабораторная $number', 'Lab $number')
+            : tr('Amaliy $number', 'Практическая $number', 'Activity $number'));
     return TextButton.icon(
       icon: const Icon(Icons.menu_book_outlined, size: 18),
       label: Text(
@@ -49,6 +55,10 @@ class ContentSourceButton extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
                 Text((source['authors'] as List? ?? []).join(', ')),
+                if (sectionTitle != null) ...[
+                  const SizedBox(height: 12),
+                  Text(sectionTitle!),
+                ],
                 if (source['chapter_title'] != null) ...[
                   const SizedBox(height: 12),
                   Text(source['chapter_title'] as String),
@@ -56,8 +66,8 @@ class ContentSourceButton extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   tr(
-                    'Paragraf: $reference\nKitobdagi bet: $printed\nPDF sahifasi: $pdf',
-                    'Параграф: $reference\nСтраница учебника: $printed\nСтраница PDF: $pdf',
+                    '${referenceLabel == null ? 'Paragraf' : 'Manba bo‘limi'}: $reference\nKitobdagi bet: $printed\nPDF sahifasi: $pdf',
+                    '${referenceLabel == null ? 'Параграф' : 'Раздел источника'}: $reference\nСтраница учебника: $printed\nСтраница PDF: $pdf',
                     'Section: $reference\nPrinted page: $printed\nPDF page: $pdf',
                   ),
                 ),

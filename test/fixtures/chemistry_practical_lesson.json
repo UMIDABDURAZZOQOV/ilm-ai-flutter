@@ -1,0 +1,1006 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:55555555-5555-4555-8555-555555555555",
+  "lesson_key": "chemistry-7-practical01-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+  "content": {
+    "cards": [
+      {
+        "title": "Raqamli xavfsizlik tahlili",
+        "body": "Bu darsda xonadagi vaziyatlar va tayyor qaydlarni tahlil qilasiz. Real kimyoviy jarayon bajarilmaydi. Kitobdagi ish muhiti talabi: xalat va ortiqcha buyumlarsiz, toza stol.",
+        "fact_ids": [
+          "workspace"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page10"
+          }
+        ]
+      },
+      {
+        "title": "Ish daftarida nima bo‘ladi?",
+        "body": "Qaydni tartib bilan o‘qing: 1) sana, vaqt, ish raqami; 2) mavzu; 3) maqsad; 4) jihozlar va sxema; 5) ish tavsifi; 6) reaksiya tenglamalari; 7) kuzatilgan o‘zgarishlar; 8) xulosa. Kuzatuv bilan yakuniy xulosa alohida yozuvlardir.",
+        "fact_ids": [
+          "record"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page10"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Boshlashdan oldingi qaror",
+        "body": "Tartib noma’lum yoki jihoz yig‘ilishi tasdiqlanmagan vaziyatda tajriba boshlanmaydi. Kitob mo‘rili shkafdan imkon qadar foydalanishni aytadi. Moddani tatish, bevosita hidlash yoki ushlash identifikatsiya usuli sifatida tanlanmaydi. Yonuvchan moddalar alanga manbasidan uzoqda turadi.",
+        "fact_ids": [
+          "prepare",
+          "contact"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Idish va himoya belgilarini tanish",
+        "body": "Kitobdagi xavfsizlik tavsifida probirka og‘zi odamlardan boshqa tomonga qaratilgan. Qiziyotgan yoki reaksiya ketayotgan idishga engashib qarash taqiqlangan. Kislota va ishqor eritmalarini qizdirish tavsifida himoya ko‘zoynagi talab etiladi. Bular vaziyatni baholash mezonlari.",
+        "fact_ids": [
+          "vessels"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page11"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Xavfni tanish — amaliyot bajarish emas",
+        "body": "Kitob simobli termometr, namlik tekkan natriy, ortiqcha qizdirish, konsentrlangan kislota-ishqor va portlovchi aralashmalar bilan bog‘liq xavflarni tilga oladi. Bu dars bunday moddalarni yig‘ish yoki zararsizlantirish tartibini bermaydi. Moddalar bilan hazillashish va ehtiyotsiz harakat xavfsizlik talabiga zid.",
+        "fact_ids": [
+          "hazards",
+          "conduct"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page11"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Yakunlash qaydini tekshirish",
+        "body": "Tayyor hisobotning yakunida moddalar topshirilgani, idish va asboblar tozalangani, manbalar berkitilib asboblar o‘chirilgani qayd etilganini tekshiring. Bu mustaqil kimyoviy tajriba topshirig‘i emas.",
+        "fact_ids": [
+          "finish"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page11"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-practical01",
+            "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-practical01-page12"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-practical01",
+        "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+        "paragraph": 1,
+        "printed_pages": [
+          10
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-practical01-page10"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-practical01",
+        "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+        "paragraph": 1,
+        "printed_pages": [
+          11
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-practical01-page11"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-practical01",
+        "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+        "paragraph": 1,
+        "printed_pages": [
+          12
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-practical01-page12"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-7-practical01-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Qaysi tayyor ish joyi tavsifi kitob talabiga mos?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ortiqcha buyumlarsiz toza stol"
+        },
+        {
+          "id": "b",
+          "label": "Stolda oziq-ovqat va ortiqcha sumkalar bor"
+        },
+        {
+          "id": "c",
+          "label": "Kerakli jihozlar iflos holda turibdi"
+        },
+        {
+          "id": "d",
+          "label": "Ish stoli boshqa buyumlar bilan band"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page10"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Raqamli vaziyat: jihozlarning to‘g‘ri yig‘ilgani noma’lum. Qaysi qaror manbaga mos?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Natijani taxmin qilib boshlash"
+        },
+        {
+          "id": "b",
+          "label": "Jihozlarni tekshirmay ishga tushirish"
+        },
+        {
+          "id": "c",
+          "label": "Boshlamaslik"
+        },
+        {
+          "id": "d",
+          "label": "Tartibni o‘rganishni oxiriga qoldirish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Noma’lum moddani aniqlash takliflaridan qaysi biri kitobda taqiqlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tayyor yorliqni o‘qish"
+        },
+        {
+          "id": "b",
+          "label": "Ta’mini tatish"
+        },
+        {
+          "id": "c",
+          "label": "Berilgan jadvalni solishtirish"
+        },
+        {
+          "id": "d",
+          "label": "Tayyor kuzatuv yozuvini tahlil qilish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Yonuvchan modda joylashuvi haqidagi qaysi tavsif manbaga mos?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yoqilgan plita yonida"
+        },
+        {
+          "id": "b",
+          "label": "Ochiq alanga ustida"
+        },
+        {
+          "id": "c",
+          "label": "Alanga bilan bir joyda"
+        },
+        {
+          "id": "d",
+          "label": "Ochiq alangadan uzoq"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Tayyor rasm tavsifida probirka og‘zi qaysi tomonga yo‘nalgan bo‘lsa, kitob xavfsizlik talabiga mos?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Odam bo‘lmagan tomonga"
+        },
+        {
+          "id": "b",
+          "label": "Yonidagi o‘quvchiga"
+        },
+        {
+          "id": "c",
+          "label": "Kuzatuvchining yuziga"
+        },
+        {
+          "id": "d",
+          "label": "O‘qituvchining yuziga"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page12"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Kitob kislota-ishqor eritmasini qizdirish tavsifida ko‘z uchun qanday himoyani talab qiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Oddiy daftar"
+        },
+        {
+          "id": "b",
+          "label": "Ochiq qopqoq"
+        },
+        {
+          "id": "c",
+          "label": "Himoya ko‘zoynagi"
+        },
+        {
+          "id": "d",
+          "label": "Qalamdon"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page12"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Ish daftarining “kuzatilgan o‘zgarishlar” qismidan keyin keladigan oxirgi bo‘limni yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page10"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Kitob amaliy va laboratoriya ishida kiyilishini talab qilgan kiyim nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page10"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "Qayd tartibida mavzudan keyin nimani belgilash kerak? Bo‘lim nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page10"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-practical01-r1-q10",
+      "response_kind": "concept_selection",
+      "prompt": "Tugallangan ishning yakuniy qaydida qaysi amal talab etiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Asboblarni yoqilgan holda qoldirish"
+        },
+        {
+          "id": "b",
+          "label": "Asboblarni o‘chirish"
+        },
+        {
+          "id": "c",
+          "label": "Moddalarni topshirmaslik"
+        },
+        {
+          "id": "d",
+          "label": "Ish joyini tozalamaslik"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page11"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-practical01",
+          "topic_title": "Kimyo xonasidagi jihozlar bilan ishlashda mehnat xavfsizligi qoidalari bilan tanishish",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-practical01-page12"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

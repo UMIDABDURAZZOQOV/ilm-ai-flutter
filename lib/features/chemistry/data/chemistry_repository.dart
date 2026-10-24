@@ -34,6 +34,13 @@ class ChemistryRepository {
         for (final r in rows) {
           text(r['topic_id']);
           text(r['sha256']);
+          text(r['topic_title']);
+          text(r['book_id']);
+          if (!RegExp(r'^[0-9a-f]{64}$').hasMatch(r['sha256'] as String) ||
+              (r['paragraph'] != null &&
+                  (r['paragraph'] is! int || r['paragraph'] < 1))) {
+            throw const FormatException();
+          }
           final printed = List<int>.from(r['printed_pages'] as List);
           final pdf = List<int>.from(r['pdf_pages'] as List);
           final regions = List<String>.from(r['regions'] as List);

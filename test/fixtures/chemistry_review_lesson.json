@@ -1,0 +1,1626 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:55555555-5555-4555-8555-555555555555",
+  "lesson_key": "chemistry-7-p16-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+  "content": {
+    "cards": [
+      {
+        "title": "Boshlang‘ich va mahsulotlar soni",
+        "body": "Birikish: ikki yoki undan ortiq moddadan bitta yangi modda. Misol CaO+CO₂=CaCO₃. Parchalanish buning boshqa tur ko‘rinishi: bitta moddadan bir nechta mahsulot, masalan CaCO₃=CaO+CO₂.",
+        "fact_ids": [
+          "combination",
+          "decomposition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph16",
+            "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+            "paragraph": 16,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              23
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph16-page45"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph16",
+            "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+            "paragraph": 16,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph16-page46"
+          }
+        ]
+      },
+      {
+        "title": "O‘rin olish va almashinish",
+        "body": "O‘rin olishda oddiy modda birikmaning tarkibiy qismi o‘rnini oladi: Fe+CuSO₄=FeSO₄+Cu. Almashinishda ikki murakkab modda qismlari almashadi: NaOH+HCl=NaCl+H₂O. Savol reaksiyaning tuzilishini tahlil qiladi, reagent bilan ishlashni talab qilmaydi.",
+        "fact_ids": [
+          "replacement",
+          "exchange"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph16",
+            "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+            "paragraph": 16,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph16-page46"
+          }
+        ]
+      },
+      {
+        "title": "Kimyoviy energiya",
+        "body": "Kitob kimyoviy energiyaning issiqlik, nur, mexanik va elektr energiyaga aylanishini aytadi. Ajralgan yoki yutilgan miqdor Q bilan belgilanadi; birlik kJ. Bu belgini kimyoviy element formulasi bilan aralashtirmang.",
+        "fact_ids": [
+          "energy"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph16",
+            "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+            "paragraph": 16,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph16-page46"
+          }
+        ]
+      },
+      {
+        "title": "Issiqlik chiqsa yoki yutilsa",
+        "body": "Ekzotermik reaksiyada issiqlik chiqadi; kitob Fe+S=FeS+96 kJ ni beradi. Endotermik reaksiyada issiqlik yutiladi; 3O₂=2O₃−289 kJ shu yozuvga misol. Bu yerda kitobning issiqlik belgilash usuli o‘qiladi.",
+        "fact_ids": [
+          "exo",
+          "endo"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph16",
+            "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+            "paragraph": 16,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph16-page46"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph16",
+            "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+            "paragraph": 16,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph16-page47"
+          }
+        ]
+      },
+      {
+        "title": "Bob mashqi: atom massalarini yig‘ish",
+        "body": "H₃PO₄ uchun H=1, P=31, O=16 berilgan. Har elementning indeksini o‘z atom massasiga ko‘paytiramiz: 3×1+31+4×16=98. Bu yig‘indi moddaning nisbiy molekular massasini beradi.",
+        "fact_ids": [
+          "mr_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page47"
+          }
+        ]
+      },
+      {
+        "title": "Bob mashqi: foizni berilgan aniqlikda yozish",
+        "body": "48-betda CO₂ ning O hissasi 32/44 deb hisoblanib, 0,73 yoki 73% ga yaxlitlangan. C uchun 12/44≈0,27 yoki 27%. Bu mashqda butun foiz so‘ralganda shu aniqlikda javob beriladi.",
+        "fact_ids": [
+          "fraction_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              48
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page48"
+          }
+        ]
+      },
+      {
+        "title": "Original formula topish mashqi",
+        "body": "49-bet usuli: foizni tegishli Ar ga bo‘lamiz, keyin kichik songa qisqartiramiz. Original 40% S va60% O:40/32=1,25; 60/16=3,75. Nisbat 1:3, formula SO₃. Bu berilgan shartli tarkibning hisobi, yangi tashqi o‘lchov emas.",
+        "fact_ids": [
+          "empirical_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page49"
+          }
+        ]
+      },
+      {
+        "title": "Original massa va hajm nisbatlari",
+        "body": "50-betdagi 80:98:160:18 massalar nisbatini 8 g CuO uchun olsak:9,8 g kislota, 16 g tuz, 1,8 g suv.51-betdagi gaz tenglamasi esa 1:1:2 hajm nisbatiga olib keladi:3 l H₂ uchun 3 l Cl₂ va6 l HCl. Bu faqat yozma hisob.",
+        "fact_ids": [
+          "mass_review",
+          "volume_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page50"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              51
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page51"
+          }
+        ]
+      },
+      {
+        "title": "Bob testidan tushunchalarni qaytaramiz",
+        "body": "Atomlarning muayyan turi — kimyoviy element. Bitta elementdan turli oddiy moddalar hosil bo‘lishi — allotropiya. Kimyoviy reaksiyada atomlar va umumiy massa saqlanishi bu bobning boshqa bilimlarini birlashtiradi.",
+        "fact_ids": [
+          "concept_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-2",
+            "topic_title": "I bob yuzasidan test topshiriqlari",
+            "paragraph": null,
+            "printed_pages": [
+              52
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-2-page52"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-2",
+            "topic_title": "I bob yuzasidan test topshiriqlari",
+            "paragraph": null,
+            "printed_pages": [
+              53
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-2-page53"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Massa foizidan atomlar nisbati",
+        "body": "x:y=(w₁/Ar₁):(w₂/Ar₂); eng kichik nisbatga keltiriladi.",
+        "fact_ids": [
+          "empirical_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page49"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Asl mashq usulidagi original tarkib",
+        "body": "40/32:60/16=1,25:3,75=1:3 → SO₃.",
+        "fact_ids": [
+          "empirical_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page49"
+          }
+        ]
+      },
+      {
+        "title": "Asl proporsiyadan original massa",
+        "body": "8/80=9,8/98=16/160=1,8/18.",
+        "fact_ids": [
+          "mass_review"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-1",
+            "topic_title": "I bobga doir masalalar yechish",
+            "paragraph": null,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "left"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-1-page50"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-paragraph16",
+        "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+        "paragraph": 16,
+        "printed_pages": [
+          45
+        ],
+        "pdf_pages": [
+          23
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-paragraph16-page45"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-paragraph16",
+        "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+        "paragraph": 16,
+        "printed_pages": [
+          46
+        ],
+        "pdf_pages": [
+          24
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-paragraph16-page46"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-paragraph16",
+        "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+        "paragraph": 16,
+        "printed_pages": [
+          47
+        ],
+        "pdf_pages": [
+          24
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-paragraph16-page47"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-1",
+        "topic_title": "I bobga doir masalalar yechish",
+        "paragraph": null,
+        "printed_pages": [
+          47
+        ],
+        "pdf_pages": [
+          24
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-1-page47"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-1",
+        "topic_title": "I bobga doir masalalar yechish",
+        "paragraph": null,
+        "printed_pages": [
+          48
+        ],
+        "pdf_pages": [
+          25
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-1-page48"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-1",
+        "topic_title": "I bobga doir masalalar yechish",
+        "paragraph": null,
+        "printed_pages": [
+          49
+        ],
+        "pdf_pages": [
+          25
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-1-page49"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-1",
+        "topic_title": "I bobga doir masalalar yechish",
+        "paragraph": null,
+        "printed_pages": [
+          50
+        ],
+        "pdf_pages": [
+          26
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-1-page50"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-1",
+        "topic_title": "I bobga doir masalalar yechish",
+        "paragraph": null,
+        "printed_pages": [
+          51
+        ],
+        "pdf_pages": [
+          26
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-1-page51"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-2",
+        "topic_title": "I bob yuzasidan test topshiriqlari",
+        "paragraph": null,
+        "printed_pages": [
+          52
+        ],
+        "pdf_pages": [
+          27
+        ],
+        "regions": [
+          "left"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-2-page52"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-2",
+        "topic_title": "I bob yuzasidan test topshiriqlari",
+        "paragraph": null,
+        "printed_pages": [
+          53
+        ],
+        "pdf_pages": [
+          27
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-2-page53"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-7-p16-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "CaO+CO₂=CaCO₃ tuzilishiga ko‘ra qanday reaksiya?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Birikish"
+        },
+        {
+          "id": "b",
+          "label": "Parchalanish"
+        },
+        {
+          "id": "c",
+          "label": "O‘rin olish"
+        },
+        {
+          "id": "d",
+          "label": "Almashinish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page45"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Bitta moddadan bir nechta mahsulot paydo bo‘lishi qaysi tur?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Birikish"
+        },
+        {
+          "id": "b",
+          "label": "O‘rin olish"
+        },
+        {
+          "id": "c",
+          "label": "Parchalanish"
+        },
+        {
+          "id": "d",
+          "label": "Almashinish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page45"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Fe+CuSO₄=FeSO₄+Cu qaysi turga kiradi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Birikish"
+        },
+        {
+          "id": "b",
+          "label": "O‘rin olish"
+        },
+        {
+          "id": "c",
+          "label": "Parchalanish"
+        },
+        {
+          "id": "d",
+          "label": "Almashinish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "NaOH+HCl=NaCl+H₂O qaysi turga kiradi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Birikish"
+        },
+        {
+          "id": "b",
+          "label": "Parchalanish"
+        },
+        {
+          "id": "c",
+          "label": "O‘rin olish"
+        },
+        {
+          "id": "d",
+          "label": "Almashinish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Issiqlik chiqishi bilan boradigan reaksiya qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ekzotermik"
+        },
+        {
+          "id": "b",
+          "label": "Endotermik"
+        },
+        {
+          "id": "c",
+          "label": "Faqat fizik shakl o‘zgarishi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat massa o‘lchovi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page46"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page47"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Kitobda issiqlik yutilishi bilan tavsiflangan reaksiya qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ekzotermik"
+        },
+        {
+          "id": "b",
+          "label": "Faqat modda nomi"
+        },
+        {
+          "id": "c",
+          "label": "Endotermik"
+        },
+        {
+          "id": "d",
+          "label": "Faqat hajm birligi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page47"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q07",
+      "response_kind": "concept_selection",
+      "prompt": "Bir elementning turli oddiy moddalar hosil qilishi qanday hodisa?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Diffuziya"
+        },
+        {
+          "id": "b",
+          "label": "Allotropiya"
+        },
+        {
+          "id": "c",
+          "label": "Sublimatlanish"
+        },
+        {
+          "id": "d",
+          "label": "Dekantatsiya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-2",
+          "topic_title": "I bob yuzasidan test topshiriqlari",
+          "paragraph": null,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-2-page52"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-2",
+          "topic_title": "I bob yuzasidan test topshiriqlari",
+          "paragraph": null,
+          "printed_pages": [
+            53
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-2-page53"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Q energiya miqdori uchun kitobdagi birlikning belgisini emas, to‘liq nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "Atomlarning muayyan turi qanday tushuncha bilan ataladi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-2",
+          "topic_title": "I bob yuzasidan test topshiriqlari",
+          "paragraph": null,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-2-page52"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-2",
+          "topic_title": "I bob yuzasidan test topshiriqlari",
+          "paragraph": null,
+          "printed_pages": [
+            53
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-2-page53"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q10",
+      "response_kind": "chemical_equation",
+      "prompt": "CaO va CO₂ dan CaCO₃ hosil bo‘lishining tenglamasini yozing.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page45"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q11",
+      "response_kind": "chemical_equation",
+      "prompt": "Fe+CuSO₄ sxemasida kitob mahsulotlari FeSO₄ va Cu. Tenglamani yozing.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph16",
+          "topic_title": "Kimyoviy reaksiya turlari. Kimyoviy energiya",
+          "paragraph": 16,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph16-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q12",
+      "response_kind": "chemical_formula",
+      "prompt": "Ar(S)=32, Ar(O)=16. Original 40% S va60% O tarkibi uchun eng kichik indeksli formulani yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page49"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Ar(H)=1, Ar(P)=31, Ar(O)=16 bilan H₃PO₄ ning Mr qiymatini toping.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page47"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "CO₂ da O hissasi 32/44. Foizni eng yaqin butun songacha yaxlitlab yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "%",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page48"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q15",
+      "response_kind": "numeric_value",
+      "prompt": "80:98:160:18 massalar nisbatiga ko‘ra 8 g CuO uchun kislota massasi necha g?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q16",
+      "response_kind": "numeric_value",
+      "prompt": "Shu nisbat bo‘yicha 8 g CuO ga mos tuz mahsuloti massasi necha g?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-7-p16-r1-q17",
+      "response_kind": "numeric_value",
+      "prompt": "H₂+Cl₂=2HCl, hajmlar 1:1:2. Bir xil n.sh.da3 l H₂ dan necha litr HCl ga mos hisob chiqadi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "l",
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-1",
+          "topic_title": "I bobga doir masalalar yechish",
+          "paragraph": null,
+          "printed_pages": [
+            51
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-1-page51"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

@@ -129,14 +129,16 @@ void main() {
     return store;
   }
 
-  Future<void> tap(WidgetTester t, String text) async {
-    final f = find.text(text).first;
+  Future<void> tapFinder(WidgetTester t, Finder f) async {
     await t.pumpAndSettle();
     await t.ensureVisible(f);
     await t.pumpAndSettle();
     await t.tap(f);
     await t.pumpAndSettle();
   }
+
+  Future<void> tap(WidgetTester t, String text) =>
+      tapFinder(t, find.text(text).first);
 
   Future<void> begin(WidgetTester t) async {
     await tap(t, 'Darsni boshlash');
@@ -163,11 +165,14 @@ void main() {
         ...jsonRows(catalog['lessons']).first,
         'key': lesson['lesson_key'],
         'title': lesson['title'],
-        'sequence': name == 'numeric'
-            ? 6
-            : name == 'formula'
-            ? 12
-            : 15,
+        'sequence': {
+          'numeric': 6,
+          'formula': 12,
+          'equation': 15,
+          'context': 18,
+          'review': 19,
+          'practical': 3,
+        }[name]!,
         'source_refs': (lesson['content'] as Json)['source_refs'],
       },
     ];
@@ -347,6 +352,62 @@ void main() {
     expect(find.text('Nazariya 1/8'), findsNothing);
     expect(t.takeException(), isNull);
   });
+  testWidgets('prior paragraph data retains its own source button and page', (
+    t,
+  ) async {
+    useReviewedLesson('context');
+    await mount(t, size: const Size(320, 568), scale: 2);
+    await tap(t, 'Darsni boshlash');
+    for (var i = 0; i < 4; i++) {
+      await tap(t, 'Davom etish');
+    }
+    expect(find.textContaining('Manba: §10'), findsOneWidget);
+    expect(find.textContaining('Manba: §15'), findsOneWidget);
+    await t.ensureVisible(find.textContaining('Manba: §15'));
+    await t.pumpAndSettle();
+    await capture(t, 'context-source-groups');
+    await tapFinder(t, find.textContaining('Manba: §10'));
+    expect(find.textContaining('Kitobdagi bet: 34'), findsOneWidget);
+    expect(find.textContaining('34 → PDF 18 · chap sahifa'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
+  testWidgets(
+    'chapter review source is named without a false paragraph or activity',
+    (t) async {
+      useReviewedLesson('review');
+      await mount(t, size: const Size(320, 568), scale: 2);
+      await tap(t, 'Darsni boshlash');
+      for (var i = 0; i < 4; i++) {
+        await tap(t, 'Davom etish');
+      }
+      final source = find.textContaining('Manba: I bobga doir');
+      expect(source, findsOneWidget);
+      expect(find.textContaining('Amaliy null'), findsNothing);
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'review-source-kind');
+      await tapFinder(t, source);
+      expect(find.textContaining('47 → PDF 24 · o‘ng sahifa'), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
+  testWidgets(
+    'practical source label is an activity rather than paragraph one',
+    (t) async {
+      useReviewedLesson('practical');
+      await mount(t, size: const Size(320, 568), scale: 2);
+      await tap(t, 'Darsni boshlash');
+      final source = find.textContaining('Manba: Amaliy 1');
+      expect(source, findsOneWidget);
+      expect(find.textContaining('Manba: §1'), findsNothing);
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await capture(t, 'practical-source-kind');
+      await tapFinder(t, source);
+      expect(find.textContaining('Manba bo‘limi: Amaliy 1'), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
   testWidgets('theory advances one card and sources resolve spread sides', (
     t,
   ) async {
