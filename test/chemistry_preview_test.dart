@@ -563,6 +563,89 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
+  for (final dark in [false, true]) {
+    for (final name in ['nitrogen', 'ammonia']) {
+      testWidgets(
+        '$name source and response ${dark ? 'dark' : 'light'} at200%',
+        (t) async {
+          Future<void> waitFor(Finder finder) async {
+            for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+              await t.runAsync(
+                () => Future<void>.delayed(const Duration(milliseconds: 10)),
+              );
+              await t.pumpAndSettle();
+            }
+            expect(finder, findsWidgets);
+          }
+
+          catalog['available_grades'] = [7, 8];
+          grade8Catalog = fixture('${name}_catalog');
+          lesson = fixture('${name}_lesson');
+          results = fixture('${name}_results');
+          if (name == 'ammonia') skip(17);
+          await mount(t, dark: dark, size: const Size(320, 568), scale: 2);
+          await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+          await waitFor(find.text('Darsni boshlash'));
+          await tap(t, 'Darsni boshlash');
+          if (name == 'nitrogen') {
+            await waitFor(find.text('Davom etish'));
+            await tap(t, 'Davom etish');
+            final body = find.textContaining('Bi83/209/6');
+            expect(body, findsOneWidget);
+            await t.ensureVisible(body);
+            await t.pumpAndSettle();
+            await capture(t, 'nitrogen-${dark ? 'dark' : 'light'}-table');
+            await tapFinder(t, find.textContaining('Manba: Azot guruhchasi'));
+            expect(
+              find.textContaining('Manba bo‘limi: Azot guruhchasi'),
+              findsOneWidget,
+            );
+            final boundary = find.textContaining(
+              'paragraf sarlavhasidan oldingi bob kirishi',
+            );
+            expect(boundary, findsOneWidget);
+            expect(
+              find.textContaining('157 -> PDF 157 · Yakka sahifa'),
+              findsOneWidget,
+            );
+            await t.ensureVisible(boundary);
+            await t.pumpAndSettle();
+          } else {
+            final field = find.byKey(const Key('chemistry-short-answer'));
+            await waitFor(field);
+            await t.ensureVisible(field);
+            await t.enterText(field, '−3');
+            await tap(t, 'Tekshirish');
+            final request = requests.lastWhere(
+              (r) => r.path.endsWith('/answers'),
+            );
+            expect((request.data as Map)['answer'], {'value': '−3'});
+            expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+            final source = find.descendant(
+              of: find.byType(LessonFeedbackPanel),
+              matching: find.textContaining('Manba: §37'),
+            );
+            await t.ensureVisible(source);
+            await t.pumpAndSettle();
+            await capture(t, 'ammonia-${dark ? 'dark' : 'light'}-feedback');
+            await tapFinder(t, source);
+            final locator = find.textContaining(
+              '161 -> PDF 161 · Yakka sahifa',
+            );
+            expect(locator, findsOneWidget);
+            await t.ensureVisible(locator);
+            await t.pumpAndSettle();
+          }
+          await capture(
+            t,
+            '$name-${dark ? 'dark' : 'light'}-source',
+            overlay: true,
+          );
+          expect(t.takeException(), isNull);
+        },
+      );
+    }
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
