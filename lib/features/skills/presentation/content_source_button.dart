@@ -73,6 +73,17 @@ class ContentSourceButton extends StatelessWidget {
                     'Section: $reference\nPrinted page: $printed\nPDF page: $pdf',
                   ),
                 ),
+                if (source['page_scope'] ==
+                    'before_first_teaching_heading') ...[
+                  const SizedBox(height: 12),
+                  Text(
+                    tr(
+                      'Sahifadagi joy: paragraf sarlavhasidan oldingi bob kirishi.',
+                      'Место на странице: введение главы до заголовка параграфа.',
+                      'Page location: chapter introduction before the paragraph heading.',
+                    ),
+                  ),
+                ],
                 if (source['regions'] is List) ...[
                   const SizedBox(height: 12),
                   if (source['file_name'] is String)

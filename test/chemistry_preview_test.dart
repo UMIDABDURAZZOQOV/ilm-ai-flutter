@@ -355,6 +355,50 @@ void main() {
       expect(t.takeException(), isNull);
     },
   );
+  for (final dark in [false, true]) {
+    testWidgets(
+      'chapter introduction keeps exact section and heading boundary ${dark ? 'dark' : 'light'} at200%',
+      (t) async {
+        catalog['available_grades'] = [7, 8];
+        grade8Catalog = fixture('chapter_intro_catalog');
+        lesson = fixture('chapter_intro_lesson');
+        results = fixture('chapter_intro_results');
+        await mount(t, dark: dark, size: const Size(320, 568), scale: 2);
+        await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+        await tap(t, 'Darsni boshlash');
+        final source = find.textContaining('Manba: Kimyoviy bog‘lanishlar');
+        expect(source, findsOneWidget);
+        expect(find.textContaining('Manba: §3'), findsNothing);
+        await tapFinder(t, source);
+        expect(
+          find.textContaining('Manba bo‘limi: Kimyoviy bog‘lanishlar'),
+          findsOneWidget,
+        );
+        final location = find.textContaining('63 -> PDF 63 · Yakka sahifa');
+        expect(location, findsOneWidget);
+        Navigator.of(t.element(location)).pop();
+        await t.pumpAndSettle();
+        await tap(t, 'Davom etish');
+        await tapFinder(t, source);
+        expect(
+          find.textContaining('64 -> PDF 64 · Yakka sahifa'),
+          findsOneWidget,
+        );
+        final boundary = find.textContaining(
+          'paragraf sarlavhasidan oldingi bob kirishi',
+        );
+        expect(boundary, findsOneWidget);
+        await t.ensureVisible(boundary);
+        await t.pumpAndSettle();
+        await capture(
+          t,
+          'chapter-intro-boundary-${dark ? 'dark' : 'light'}',
+          overlay: true,
+        );
+        expect(t.takeException(), isNull);
+      },
+    );
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');

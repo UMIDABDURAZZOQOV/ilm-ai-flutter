@@ -418,7 +418,12 @@ class _SessionState extends ConsumerState<_Session> {
     final refs = jsonRows(values);
     final groups = <String, List<Json>>{};
     for (final r in refs) {
-      groups.putIfAbsent('${r['book_id']}:${r['topic_id']}', () => []).add(r);
+      groups
+          .putIfAbsent(
+            '${r['book_id']}:${r['topic_id']}:${r['page_scope'] ?? ''}',
+            () => [],
+          )
+          .add(r);
     }
     Widget button(List<Json> group) {
       final first = group.first;
