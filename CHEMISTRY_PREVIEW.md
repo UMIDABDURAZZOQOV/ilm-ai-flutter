@@ -115,3 +115,20 @@ identical. No native/browser/IME/TalkBack QA or fresh web build claimed.
 Final private sandbox: `C:/Users/Page/Desktop/Projects/ilm-ai-chemistry-batch05-final-qa/`,
 loopback8899. Old immutable sandboxes remain unchanged; never commit QA tokens.
 Current course21/268; readiness remains false and source issues stay visible.
+
+
+## Batch07 — water recognition and feedback provenance
+
+Chemistry supplies the exact source widget to an optional slot in the existing
+scrollable common feedback panel. Other users of that component retain their
+prior behavior. Water fixtures are real sanitized local API responses; hydrate
+notation is a recognition MCQ, not a new parser feature. Source dialogs remain
+reachable at320px/200% text for theory80/PDF41:left and feedback82/PDF42:left.
+Widget captures were inspected; no native/browser/IME/TalkBack claim.
+
+Final full Flutter484 passed/104s; analyze clean/118.7s. Fresh final backend HTTP:
+31 lessons/343 questions/620 once-onlyXP, completion replay identical, private
+grading hidden. Earlier immutable attempts remain untouched. Current private
+defines: `C:/Users/Page/Desktop/Projects/ilm-ai-chemistry-batch07-final-qa/`,
+loopback8900. Never commit tokens/compiled private builds. Course31/268 and all
+whole-course ready flags false; see backend source review and checkpoint.

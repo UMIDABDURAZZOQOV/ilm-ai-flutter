@@ -850,6 +850,7 @@ class _SessionState extends ConsumerState<_Session> {
                         explanation: jsonRows(
                           _feedback!['solution'],
                         ).map((s) => s['body']).join('\n\n'),
+                        source: _sourceButton(_feedback!['source_refs']),
                         onContinue: _nextQuestion,
                       ),
                   ],

@@ -172,6 +172,7 @@ void main() {
           'context': 18,
           'review': 19,
           'practical': 3,
+          'water': 31,
         }[name]!,
         'source_refs': (lesson['content'] as Json)['source_refs'],
       },
@@ -408,6 +409,47 @@ void main() {
       expect(t.takeException(), isNull);
     },
   );
+  testWidgets('water theory and original page remain readable at200% text', (
+    t,
+  ) async {
+    useReviewedLesson('water');
+    await mount(t, size: const Size(320, 568), scale: 2);
+    await tap(t, 'Darsni boshlash');
+    expect(find.text('Nazariya 1/10'), findsOneWidget);
+    final source = find.textContaining('Manba: §27').first;
+    await t.ensureVisible(source);
+    await t.pumpAndSettle();
+    await capture(t, 'water-theory-source');
+    await tapFinder(t, source);
+    expect(find.textContaining('80 → PDF 41 · chap sahifa'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
+  testWidgets('hydrate is a recognition MCQ with common source feedback', (
+    t,
+  ) async {
+    useReviewedLesson('water');
+    skip(3);
+    await mount(t, size: const Size(320, 568), scale: 2, dark: true);
+    await tap(t, 'Darsni boshlash');
+    expect(find.byType(TextField), findsNothing);
+    await tap(t, 'CuSO4·5H2O');
+    await tap(t, 'Tekshirish');
+    expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+    final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+    expect((request.data as Map)['answer'], {'choice_id': 'b'});
+    expect(committed.values.last['is_correct'], true);
+    final source = find.descendant(
+      of: find.byType(LessonFeedbackPanel),
+      matching: find.textContaining('Manba: §27'),
+    );
+    expect(source, findsOneWidget);
+    await t.ensureVisible(source);
+    await t.pumpAndSettle();
+    await capture(t, 'water-hydrate-feedback');
+    await tapFinder(t, source);
+    expect(find.textContaining('82 → PDF 42 · chap sahifa'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
   testWidgets('theory advances one card and sources resolve spread sides', (
     t,
   ) async {
