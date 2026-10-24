@@ -67,3 +67,14 @@ for this first conceptual topic.
 
 Replay/once-only XP, strict source validation, SQLite and real PostgreSQL results
 are recorded in the backend's `docs/chemistry/QA_REPORT.md`.
+
+
+## Batch02 ? numerical FRQ
+
+The isolated v2 preview now accepts numeric_value questions with an explicit
+fixed unit. It sends the exact bounded value to the server; it never evaluates,
+grades or converts units locally. Decimal comma/dot and e notation are supported
+server-side; a full text keyboard keeps e/minus available on mobile IMEs.
+All475 Flutter tests passed (2m02s); analysis reported no issues (101.3s).
+This includes320x568/200% numeric submission using real public backend fixtures.
+No native IME/device verification or new browser-build claim is made.

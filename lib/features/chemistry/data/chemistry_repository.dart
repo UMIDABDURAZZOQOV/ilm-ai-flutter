@@ -133,9 +133,15 @@ class ChemistryRepository {
               text(option['id']);
               text(option['label']);
             }
-          } else if (q['response_kind'] == 'short_text') {
+          } else if ({
+            'short_text',
+            'numeric_value',
+          }.contains(q['response_kind'])) {
             if (q['max_length'] != 80) throw const FormatException();
             text(q['input_label']);
+            if (q['response_kind'] == 'numeric_value' && q['unit'] is! String) {
+              throw const FormatException();
+            }
           } else {
             throw const FormatException();
           }

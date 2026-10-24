@@ -1,0 +1,811 @@
+{
+  "answers": {
+    "chemistry-7-p04-r1-q01": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q01",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Atomning absolut massasi uning haqiqiy massasidir. Kitobda vodorod uchun 1,67·10⁻²⁷ kg, uglerod uchun 19,93·10⁻²⁷ kg berilgan; bu juda kichik sonlar hisoblashni noqulaylashtiradi.",
+      "correct_answer": "Absolut massa",
+      "solution": [
+        {
+          "body": "Atomning absolut massasi uning haqiqiy massasidir. Kitobda vodorod uchun 1,67·10⁻²⁷ kg, uglerod uchun 19,93·10⁻²⁷ kg berilgan; bu juda kichik sonlar hisoblashni noqulaylashtiradi.",
+          "fact_ids": [
+            "absolute"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q02": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q02",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Nisbiy atom massasi atom massasining uglerod-12 atomi massasining o‘n ikkidan bir qismiga nisbatini ifodalaydi. Darslik 1 massa atom birligini 1,66·10⁻²⁷ kg deb oladi.",
+      "correct_answer": "Uglerod",
+      "solution": [
+        {
+          "body": "Nisbiy atom massasi atom massasining uglerod-12 atomi massasining o‘n ikkidan bir qismiga nisbatini ifodalaydi. Darslik 1 massa atom birligini 1,66·10⁻²⁷ kg deb oladi.",
+          "fact_ids": [
+            "reference"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q03": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q03",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Nisbiy atom massasi Aᵣ atom absolut massasining massa atom birligiga nisbatidir: Aᵣ = m(atom)/(1,66·10⁻²⁷ kg). Bir xil massa birliklari nisbatida kg qisqaradi.",
+      "correct_answer": "Nisbiy atom massasi",
+      "solution": [
+        {
+          "body": "Nisbiy atom massasi Aᵣ atom absolut massasining massa atom birligiga nisbatidir: Aᵣ = m(atom)/(1,66·10⁻²⁷ kg). Bir xil massa birliklari nisbatida kg qisqaradi.",
+          "fact_ids": [
+            "relative"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q04": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q04",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Darslikda kislorod absolut massasi 26,57·10⁻²⁷ kg. Berilgan 1,66·10⁻²⁷ kg ga bo‘linganda nisbiy atom massasi yaxlitlangan holda 16 bo‘ladi.",
+      "correct_answer": "16",
+      "solution": [
+        {
+          "body": "Darslikda kislorod absolut massasi 26,57·10⁻²⁷ kg. Berilgan 1,66·10⁻²⁷ kg ga bo‘linganda nisbiy atom massasi yaxlitlangan holda 16 bo‘ladi.",
+          "fact_ids": [
+            "oxygen"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q05": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q05",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Kitob mustaqil hisob uchun temirga 93,13·10⁻²⁷ kg, vodorodga 1,67·10⁻²⁷ kg, uranga 396,67·10⁻²⁷ kg absolut massa beradi. Nisbiy massa topish uchun shu massalar bir xil tayanch birlikka bo‘linadi.",
+      "correct_answer": "Absolut massa",
+      "solution": [
+        {
+          "body": "Kitob mustaqil hisob uchun temirga 93,13·10⁻²⁷ kg, vodorodga 1,67·10⁻²⁷ kg, uranga 396,67·10⁻²⁷ kg absolut massa beradi. Nisbiy massa topish uchun shu massalar bir xil tayanch birlikka bo‘linadi.",
+          "fact_ids": [
+            "practice"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                20
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "left"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page20"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "left"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page20"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q06": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q06",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Nisbiy atom massasi Aᵣ atom absolut massasining massa atom birligiga nisbatidir: Aᵣ = m(atom)/(1,66·10⁻²⁷ kg). Bir xil massa birliklari nisbatida kg qisqaradi.",
+      "correct_answer": "Nisbiy atom massasi",
+      "solution": [
+        {
+          "body": "Nisbiy atom massasi Aᵣ atom absolut massasining massa atom birligiga nisbatidir: Aᵣ = m(atom)/(1,66·10⁻²⁷ kg). Bir xil massa birliklari nisbatida kg qisqaradi.",
+          "fact_ids": [
+            "relative"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q07": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q07",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Nisbiy atom massasi atom massasining uglerod-12 atomi massasining o‘n ikkidan bir qismiga nisbatini ifodalaydi. Darslik 1 massa atom birligini 1,66·10⁻²⁷ kg deb oladi.",
+      "correct_answer": "12",
+      "solution": [
+        {
+          "body": "Nisbiy atom massasi atom massasining uglerod-12 atomi massasining o‘n ikkidan bir qismiga nisbatini ifodalaydi. Darslik 1 massa atom birligini 1,66·10⁻²⁷ kg deb oladi.",
+          "fact_ids": [
+            "reference"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q08": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q08",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Kitob atom diametrini taxminan 1 Å atrofida beradi; 1 Å = 10⁻¹⁰ m = 0,10 nm va 1 nm = 10⁻⁹ m.",
+      "correct_answer": "0.1",
+      "solution": [
+        {
+          "body": "Kitob atom diametrini taxminan 1 Å atrofida beradi; 1 Å = 10⁻¹⁰ m = 0,10 nm va 1 nm = 10⁻⁹ m.",
+          "fact_ids": [
+            "size"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q09": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q09",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Nisbiy atom massasi atom massasining uglerod-12 atomi massasining o‘n ikkidan bir qismiga nisbatini ifodalaydi. Darslik 1 massa atom birligini 1,66·10⁻²⁷ kg deb oladi.",
+      "correct_answer": "1.66e-27",
+      "solution": [
+        {
+          "body": "Nisbiy atom massasi atom massasining uglerod-12 atomi massasining o‘n ikkidan bir qismiga nisbatini ifodalaydi. Darslik 1 massa atom birligini 1,66·10⁻²⁷ kg deb oladi.",
+          "fact_ids": [
+            "reference"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q10": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q10",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Darslikdagi nisbat usuli bo‘yicha shartli atom massasi 3,32·10⁻²⁷ kg bo‘lsa, 3,32/1,66 = 2; umumiy 10⁻²⁷ kg ko‘paytuvchi qisqaradi. Bu berilgan qoidadan tuzilgan arifmetik mashq.",
+      "correct_answer": "2",
+      "solution": [
+        {
+          "body": "Darslikdagi nisbat usuli bo‘yicha shartli atom massasi 3,32·10⁻²⁷ kg bo‘lsa, 3,32/1,66 = 2; umumiy 10⁻²⁷ kg ko‘paytuvchi qisqaradi. Bu berilgan qoidadan tuzilgan arifmetik mashq.",
+          "fact_ids": [
+            "worked"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    },
+    "chemistry-7-p04-r1-q11": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-7-p04-r1-q11",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Darslikda kislorod absolut massasi 26,57·10⁻²⁷ kg. Berilgan 1,66·10⁻²⁷ kg ga bo‘linganda nisbiy atom massasi yaxlitlangan holda 16 bo‘ladi.",
+      "correct_answer": "16",
+      "solution": [
+        {
+          "body": "Darslikda kislorod absolut massasi 26,57·10⁻²⁷ kg. Berilgan 1,66·10⁻²⁷ kg ga bo‘linganda nisbiy atom massasi yaxlitlangan holda 16 bo‘ladi.",
+          "fact_ids": [
+            "oxygen"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-7-uz-2017",
+              "book_title": "Kimyo",
+              "authors": [
+                "I.R. Asqarov",
+                "N.X. To‘xtaboyev",
+                "K.G‘. G‘opirov"
+              ],
+              "year": 2017,
+              "file_name": "kimyo_7_uzb.pdf",
+              "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+              "topic_id": "ch7-paragraph04",
+              "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+              "paragraph": 4,
+              "printed_pages": [
+                19
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "right"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch7-paragraph04-page19"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph04",
+          "topic_title": "Atomlarning o‘lchami. Nisbiy va absolut massa",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph04-page19"
+        }
+      ]
+    }
+  },
+  "result": {
+    "assessment_version": 2,
+    "attempt_id": "chv2:900003:22222222-2222-4222-8222-222222222222",
+    "lesson_key": "chemistry-7-p04-r1",
+    "score": 11,
+    "total": 11,
+    "score_pct": 100.0,
+    "passed": true,
+    "xp_awarded": 20,
+    "xp_total": 120,
+    "stars": 3,
+    "streak_days": 1,
+    "completion_threshold_pct": 60,
+    "elapsed_seconds": 180
+  }
+}

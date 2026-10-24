@@ -46,6 +46,7 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
 
   @override
   Widget build(BuildContext context) {
+    final numeric = widget.question['response_kind'] == 'numeric_value';
     if (widget.question['response_kind'] == 'concept_selection') {
       return Column(
         children: [
@@ -75,14 +76,32 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
       maxLines: 3,
       autocorrect: false,
       enableSuggestions: false,
+      // Scientific notation needs e and a minus sign on mobile keyboards too.
+      keyboardType: TextInputType.text,
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
-        labelText: str3(
-          widget.language,
-          'Qisqa javob',
-          'Краткий ответ',
-          'Short answer',
-        ),
+        labelText: numeric
+            ? str3(
+                widget.language,
+                'Sonli javob',
+                'Числовой ответ',
+                'Numeric answer',
+              )
+            : str3(
+                widget.language,
+                'Qisqa javob',
+                'Краткий ответ',
+                'Short answer',
+              ),
+        helperText: numeric
+            ? str3(
+                widget.language,
+                'Faqat son. Birlik: ${widget.question['unit'] == '' ? 'birliksiz' : widget.question['unit']}. e yozuvi ham mumkin.',
+                'Только число. Единица: ${widget.question['unit'] == '' ? 'безразмерная' : widget.question['unit']}. Можно использовать e.',
+                'Number only. Unit: ${widget.question['unit'] == '' ? 'dimensionless' : widget.question['unit']}. e notation accepted.',
+              )
+            : null,
+        helperMaxLines: 3,
         hintText: str3(
           widget.language,
           'Javobni yozing',

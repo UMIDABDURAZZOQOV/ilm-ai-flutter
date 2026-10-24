@@ -559,7 +559,7 @@ class _SessionState extends ConsumerState<_Session> {
 
   bool get _hasInput =>
       _pending != null ||
-      (_question['response_kind'] == 'short_text'
+      (_question['response_kind'] != 'concept_selection'
           ? ((_draft['value'] as String?)?.trim().isNotEmpty ?? false)
           : _draft['choice_id'] != null);
 
@@ -569,7 +569,7 @@ class _SessionState extends ConsumerState<_Session> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          '${_index + 1}/${_questions.length} · ${q['response_kind'] == 'short_text' ? 'FRQ' : 'MCQ'}',
+          '${_index + 1}/${_questions.length} · ${q['response_kind'] != 'concept_selection' ? 'FRQ' : 'MCQ'}',
         ),
         const SizedBox(height: 12),
         DuoProgressBar(value: _index / _questions.length),

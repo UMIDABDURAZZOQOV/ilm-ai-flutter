@@ -217,6 +217,45 @@ void main() {
     );
     expect(jsonRows((lesson['content'] as Json)['cards']).length, 8);
   });
+  test('numeric API input has explicit units and no private grading data', () {
+    final data = fixture('numeric_lesson');
+    final repo = ChemistryRepository(dio);
+    expect(repo.checked(data, 'attempt')['lesson_key'], 'chemistry-7-p04-r1');
+    final q = jsonRows(
+      data['questions'],
+    ).firstWhere((q) => q['response_kind'] == 'numeric_value');
+    expect(q['unit'], isA<String>());
+    expect(jsonEncode(data), isNot(contains('"expected"')));
+    q.remove('unit');
+    data['questions'] = [q];
+    expect(
+      () => repo.checked(data, 'attempt'),
+      throwsA(isA<InvalidApiResponseException>()),
+    );
+  });
+  testWidgets(
+    'numeric FRQ can submit a comma decimal using the common exercise flow',
+    (t) async {
+      lesson = fixture('numeric_lesson');
+      results = fixture('numeric_results');
+      // Resume at the source-reviewed mass reference denominator question.
+      for (final q in jsonRows(lesson['questions']).take(6)) {
+        committed[q['key'] as String] = Map<String, dynamic>.from(
+          (results['answers'] as Map)[q['key']] as Map,
+        );
+      }
+      await mount(t, size: const Size(320, 568), scale: 2);
+      await tap(t, 'Darsni boshlash');
+      expect(find.textContaining('FRQ'), findsOneWidget);
+      await t.enterText(find.byType(TextField), '12,0');
+      await t.pumpAndSettle();
+      await tap(t, 'Tekshirish');
+      final submitted = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((submitted.data as Map)['answer'], {'value': '12,0'});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      expect(t.takeException(), isNull);
+    },
+  );
   test(
     'repository fails closed on version, private keys and source mapping',
     () {
