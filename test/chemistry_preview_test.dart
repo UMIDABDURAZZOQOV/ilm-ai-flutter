@@ -173,6 +173,7 @@ void main() {
           'review': 19,
           'practical': 3,
           'water': 31,
+          'concentration': 36,
         }[name]!,
         'source_refs': (lesson['content'] as Json)['source_refs'],
       },
@@ -448,6 +449,49 @@ void main() {
     await capture(t, 'water-hydrate-feedback');
     await tapFinder(t, source);
     expect(find.textContaining('82 → PDF 42 · chap sahifa'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
+  testWidgets('molar theory retains the prior molar-mass source at200%', (
+    t,
+  ) async {
+    useReviewedLesson('concentration');
+    await mount(t, size: const Size(320, 568), scale: 2);
+    await tap(t, 'Darsni boshlash');
+    for (var i = 0; i < 5; i++) {
+      await tap(t, 'Davom etish');
+    }
+    expect(find.textContaining('Manba: §10'), findsOneWidget);
+    expect(find.textContaining('Manba: §32'), findsOneWidget);
+    await tapFinder(t, find.textContaining('Manba: §10'));
+    expect(find.textContaining('34 → PDF 18 · chap sahifa'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
+  testWidgets('molar FRQ keeps its fixed unit and exact comma input at200%', (
+    t,
+  ) async {
+    useReviewedLesson('concentration');
+    skip(10);
+    await mount(t, size: const Size(320, 568), scale: 2, dark: true);
+    await tap(t, 'Darsni boshlash');
+    expect(find.textContaining('mol/l'), findsWidgets);
+    await t.enterText(find.byType(TextField), '0,4');
+    await t.pumpAndSettle();
+    await t.ensureVisible(find.textContaining('Birlik: mol/l'));
+    await t.pumpAndSettle();
+    await capture(t, 'molar-fixed-unit-input');
+    await tap(t, 'Tekshirish');
+    final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+    expect((request.data as Map)['answer'], {'value': '0,4'});
+    expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+    final source = find.descendant(
+      of: find.byType(LessonFeedbackPanel),
+      matching: find.textContaining('Manba: §32'),
+    );
+    await t.ensureVisible(source);
+    await t.pumpAndSettle();
+    await capture(t, 'molar-source-feedback');
+    await tapFinder(t, source);
+    expect(find.textContaining('91 → PDF 46 · o‘ng sahifa'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
   testWidgets('theory advances one card and sources resolve spread sides', (

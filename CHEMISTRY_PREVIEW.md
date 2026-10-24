@@ -132,3 +132,17 @@ grading hidden. Earlier immutable attempts remain untouched. Current private
 defines: `C:/Users/Page/Desktop/Projects/ilm-ai-chemistry-batch07-final-qa/`,
 loopback8900. Never commit tokens/compiled private builds. Course31/268 and all
 whole-course ready flags false; see backend source review and checkpoint.
+
+
+## Batch08 — solution units and prior mass source
+
+Two actual API-payload tests cover source§10/34 alongside§32/91 and fixed mol/l
+input at320px/200% text. Exact0,4 is forwarded; the visible unit helper and common
+feedback/source dialog are scrollable. No client-side grading/unit conversion
+or production widget change. Captures inspected; no native/browser/IME claim.
+
+Full Flutter486 passed/74s; analyze clean/117.8s; final focused recapture2 passed.
+Backend208 passed/1 skipped (opt-in PG); HTTP preserved31/620XP then addedfive
+lessons/42 questions/100XP,total36/720XP,replay identical. Current private8900
+sandbox remains append-compatible with unchanged earlier manifests. Course36/268;
+all complete-course flags false. No tokens or compiled private builds are public.
