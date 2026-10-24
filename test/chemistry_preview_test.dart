@@ -445,6 +445,77 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
+  for (final numeric in [false, true]) {
+    testWidgets(
+      'halogen practical ${numeric ? 'scientific number' : 'original balance'} keeps actual evidence at200%',
+      (t) async {
+        catalog['available_grades'] = [7, 8];
+        grade8Catalog = fixture('halogen_practical_catalog');
+        lesson = fixture('halogen_practical_lesson');
+        results = fixture('halogen_practical_results');
+        skip(numeric ? 13 : 6);
+        await mount(t, dark: numeric, size: const Size(320, 568), scale: 2);
+        await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+        // The full real catalog crosses Dio's background JSON isolate threshold.
+        // Drain real asynchronous decoding before looking for its action.
+        for (
+          var i = 0;
+          i < 100 && find.text('Darsni boshlash').evaluate().isEmpty;
+          i++
+        ) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        await tap(t, 'Darsni boshlash');
+        for (
+          var i = 0;
+          i < 100 && find.byType(TextField).evaluate().isEmpty;
+          i++
+        ) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        final value = numeric ? '2.408e23' : 'Zn+Cl2=ZnCl2';
+        await t.enterText(find.byType(TextField), value);
+        await t.pumpAndSettle();
+        await t.ensureVisible(find.byType(TextField));
+        await t.pumpAndSettle();
+        final mode = numeric ? 'number' : 'balance';
+        await capture(t, 'halogen-practical-$mode-input');
+        await tap(t, 'Tekshirish');
+        final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+        expect((request.data as Map)['answer'], {'value': value});
+        expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+        final source = find.descendant(
+          of: find.byType(LessonFeedbackPanel),
+          matching: find.textContaining(
+            numeric ? 'Manba: Amaliy 1' : 'Manba: §23',
+          ),
+        );
+        await t.ensureVisible(source);
+        await t.pumpAndSettle();
+        await capture(t, 'halogen-practical-$mode-feedback');
+        await tapFinder(t, source);
+        final page = numeric ? 129 : 97;
+        expect(
+          find.textContaining('$page -> PDF $page · Yakka sahifa'),
+          findsOneWidget,
+        );
+        if (numeric) {
+          expect(
+            find.textContaining('Manba bo‘limi: Amaliy 1'),
+            findsOneWidget,
+          );
+        }
+        await capture(t, 'halogen-practical-$mode-source', overlay: true);
+        expect(t.takeException(), isNull);
+      },
+    );
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
