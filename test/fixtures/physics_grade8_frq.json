@@ -3762,6 +3762,363 @@
       "unit_choices": [
         "1"
       ]
+    },
+    {
+      "key": "physics-8-section-53-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir jinsli maydonga tik sim:B=0,3T,I=2A,l=40cm. Kuch modulini top. F,B,I,l belgilaridan foydalan.",
+      "givens": [
+        {
+          "symbol": "B",
+          "value": "0.3",
+          "unit": "T"
+        },
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "value": "40",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "B",
+        "I",
+        "l"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-53-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik simga F=80mN kuch ta’sir qiladi.B=0,2T,l=20cm. I ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "80",
+          "unit": "mN"
+        },
+        {
+          "symbol": "B",
+          "value": "0.2",
+          "unit": "T"
+        },
+        {
+          "symbol": "l",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "B",
+        "l"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-53-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik sim:F=60mN,I=3A,l=20cm. B ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "60",
+          "unit": "mN"
+        },
+        {
+          "symbol": "I",
+          "value": "3",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "I",
+        "l"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ]
+    },
+    {
+      "key": "physics-8-section-53-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik sim:F=0,12N,B=0,4T,I=1,5A. Maydon ichidagi l uzunlikni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.12",
+          "unit": "N"
+        },
+        {
+          "symbol": "B",
+          "value": "0.4",
+          "unit": "T"
+        },
+        {
+          "symbol": "I",
+          "value": "1.5",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "F",
+        "B",
+        "I"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-8-section-54-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tik sim:F=90mN,B=0,3T,l=15cm. Tok kuchini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "90",
+          "unit": "mN"
+        },
+        {
+          "symbol": "B",
+          "value": "0.3",
+          "unit": "T"
+        },
+        {
+          "symbol": "l",
+          "value": "15",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "B",
+        "l"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-54-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik sim:F=12mN,I=4A,l=30cm. Induksiyani top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "mN"
+        },
+        {
+          "symbol": "I",
+          "value": "4",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "value": "30",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "I",
+        "l"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ]
+    },
+    {
+      "key": "physics-8-section-54-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik sim:B=25mT,I=3A,l=80cm. Kuchni top.",
+      "givens": [
+        {
+          "symbol": "B",
+          "value": "25",
+          "unit": "mT"
+        },
+        {
+          "symbol": "I",
+          "value": "3",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "value": "80",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "B",
+        "I",
+        "l"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-54-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik simda doimiy tok:F=40mN,B=20mT,l=50cm,t=2min. O‘tgan zaryad q ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "40",
+          "unit": "mN"
+        },
+        {
+          "symbol": "B",
+          "value": "20",
+          "unit": "mT"
+        },
+        {
+          "symbol": "l",
+          "value": "50",
+          "unit": "cm"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "F",
+        "t",
+        "B",
+        "l"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-54-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik simda q=24C zaryad6s da o‘tdi.B=50mT,l=20cm. Kuch modulini top.",
+      "givens": [
+        {
+          "symbol": "B",
+          "value": "50",
+          "unit": "mT"
+        },
+        {
+          "symbol": "q",
+          "value": "24",
+          "unit": "C"
+        },
+        {
+          "symbol": "l",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "t",
+          "value": "6",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "B",
+        "q",
+        "l",
+        "t"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-54-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik sim:F=30mN,B=100mT,I=1,5A. Maydon ichidagi uzunlikni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "30",
+          "unit": "mN"
+        },
+        {
+          "symbol": "B",
+          "value": "100",
+          "unit": "mT"
+        },
+        {
+          "symbol": "I",
+          "value": "1.5",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "F",
+        "B",
+        "I"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
     }
   ]
 }
