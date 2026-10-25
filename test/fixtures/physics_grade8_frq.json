@@ -1958,6 +1958,574 @@
         "mA",
         "µA"
       ]
+    },
+    {
+      "key": "physics-8-section-26-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ketma-ket R1=30Ω,R2=60Ω,umumiy U=9V. I ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "9",
+          "unit": "V"
+        },
+        {
+          "symbol": "R1",
+          "value": "30",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "60",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "mA",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-26-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "R1=15Ω,R2=45Ω ketma-ket,umumiy U=12V. R1 ga parallel voltmetrning U1 ko‘rsatkichini top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        },
+        {
+          "symbol": "R1",
+          "value": "15",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "45",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-26-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "R1=12Ω,R2=24Ω parallel juftlikning o‘z uchlarida U=6V. Juftlikka kiruvchi umumiy I ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "R1",
+          "value": "12",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "24",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-27-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "q=60nC,U=12V. C ni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "60",
+          "unit": "nC"
+        },
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "q",
+        "U"
+      ],
+      "suggested_unit": "nF",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF",
+        "pF"
+      ]
+    },
+    {
+      "key": "physics-8-section-27-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "C=9nF,U=5V. Bitta qoplamaning q zaryad modulini top.",
+      "givens": [
+        {
+          "symbol": "C",
+          "value": "9",
+          "unit": "nF"
+        },
+        {
+          "symbol": "U",
+          "value": "5",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "C",
+        "U"
+      ],
+      "suggested_unit": "nC",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-27-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "q=24µC,C=4µF. U ni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "24",
+          "unit": "µC"
+        },
+        {
+          "symbol": "C",
+          "value": "4",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "q",
+        "C"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-27-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal yassi model:eps=2,e0=8,85e-12F/m,S=20cm²,d=1mm. C ni top.",
+      "givens": [
+        {
+          "symbol": "eps",
+          "value": "2",
+          "unit": "1"
+        },
+        {
+          "symbol": "e0",
+          "value": "8.85e-12",
+          "unit": "F/m"
+        },
+        {
+          "symbol": "S",
+          "value": "20",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "d",
+          "value": "1",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "eps",
+        "e0",
+        "S",
+        "d"
+      ],
+      "suggested_unit": "pF",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF",
+        "pF"
+      ]
+    },
+    {
+      "key": "physics-8-section-28-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "C1=3µF,C2=7µF parallel. Umumiy C ni top.",
+      "givens": [
+        {
+          "symbol": "C1",
+          "value": "3",
+          "unit": "µF"
+        },
+        {
+          "symbol": "C2",
+          "value": "7",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "C1",
+        "C2"
+      ],
+      "suggested_unit": "µF",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF",
+        "pF"
+      ]
+    },
+    {
+      "key": "physics-8-section-28-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Dastlab zaryadsiz ideal C1=4µF,C2=12µF ketma-ket,oraliq tugun neytral. Umumiy C ni top.",
+      "givens": [
+        {
+          "symbol": "C1",
+          "value": "4",
+          "unit": "µF"
+        },
+        {
+          "symbol": "C2",
+          "value": "12",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "C1",
+        "C2"
+      ],
+      "suggested_unit": "µF",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF",
+        "pF"
+      ]
+    },
+    {
+      "key": "physics-8-section-28-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Dastlab zaryadsiz ideal C1=6µF,C2=12µF,C3=12µF ketma-ket,oraliq tugunlar neytral. C ni top.",
+      "givens": [
+        {
+          "symbol": "C1",
+          "value": "6",
+          "unit": "µF"
+        },
+        {
+          "symbol": "C2",
+          "value": "12",
+          "unit": "µF"
+        },
+        {
+          "symbol": "C3",
+          "value": "12",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "suggested_unit": "µF",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF",
+        "pF"
+      ]
+    },
+    {
+      "key": "physics-8-section-28-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Parallel tarmoqdagi bitta kondensatorda C=5µF,U=4V. Shu element q modulini top.",
+      "givens": [
+        {
+          "symbol": "C",
+          "value": "5",
+          "unit": "µF"
+        },
+        {
+          "symbol": "U",
+          "value": "4",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "C",
+        "U"
+      ],
+      "suggested_unit": "µC",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-29-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal kvadrat qoplama:a=20cm,eps=3,e0=8,85e-12F/m,C=106,2pF. d ni top.",
+      "givens": [
+        {
+          "symbol": "eps",
+          "value": "3",
+          "unit": "1"
+        },
+        {
+          "symbol": "e0",
+          "value": "8.85e-12",
+          "unit": "F/m"
+        },
+        {
+          "symbol": "a",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "C",
+          "value": "106.2",
+          "unit": "pF"
+        }
+      ],
+      "symbols": [
+        "eps",
+        "e0",
+        "a",
+        "C"
+      ],
+      "suggested_unit": "mm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-8-section-29-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal yassi model:C=44,25pF,d=2mm,e0=8,85e-12F/m,S=50cm². eps ni top.",
+      "givens": [
+        {
+          "symbol": "C",
+          "value": "44.25",
+          "unit": "pF"
+        },
+        {
+          "symbol": "d",
+          "value": "2",
+          "unit": "mm"
+        },
+        {
+          "symbol": "e0",
+          "value": "8.85e-12",
+          "unit": "F/m"
+        },
+        {
+          "symbol": "S",
+          "value": "50",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "C",
+        "d",
+        "e0",
+        "S"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-29-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal C1=4µF,C2=12µF ketma-ket juftligi C3=6µF ga parallel. Umumiy C ni top.",
+      "givens": [
+        {
+          "symbol": "C1",
+          "value": "4",
+          "unit": "µF"
+        },
+        {
+          "symbol": "C2",
+          "value": "12",
+          "unit": "µF"
+        },
+        {
+          "symbol": "C3",
+          "value": "6",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "suggested_unit": "µF",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF",
+        "pF"
+      ]
+    },
+    {
+      "key": "physics-8-section-30-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Doimiy U=6V,I=0,15A,t=3min. A ishni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "0.15",
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-8-section-30-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ohmik doimiy R=50Ω,I=0,2A,t=2min. A ishni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.2",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "I",
+        "R",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-8-section-30-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ohmik doimiy R=60Ω,U=12V,t=5min. A ishni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        },
+        {
+          "symbol": "t",
+          "value": "5",
+          "unit": "min"
+        },
+        {
+          "symbol": "R",
+          "value": "60",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "t",
+        "R"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
     }
   ]
 }
