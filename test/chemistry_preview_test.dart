@@ -1563,6 +1563,106 @@ void main() {
     expect(t.takeException(), isNull);
   });
 
+  for (final name in ['co2_practical', 'silicate_samples', 'metal_samples']) {
+    testWidgets('batch35 $name digital activity sources at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      final co2 = name == 'co2_practical';
+      final metal = name == 'metal_samples';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(metal ? 7 : 0);
+      await mount(t, dark: !co2, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      if (metal) {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, '422,5');
+      } else {
+        final cards = jsonRows((lesson['content'] as Json)['cards']);
+        await waitFor(find.text(cards.first['title'] as String));
+        for (var i = 0; i < cards.length - 1; i++) {
+          await tap(t, 'Davom etish');
+        }
+        await tap(t, 'Mashqlarga o‘tish');
+        final question = jsonRows(lesson['questions']).first;
+        final correct = jsonRows(
+          question['options'],
+        ).firstWhere((o) => o['id'] == (co2 ? 'b' : 'a'));
+        final choice = find.text(correct['label'] as String);
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect(
+        (request.data as Map)['answer'],
+        metal ? {'value': '422,5'} : {'choice_id': co2 ? 'b' : 'a'},
+      );
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch35-feedback');
+      final primary = co2
+          ? 1
+          : metal
+          ? 4
+          : 2;
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining(
+          co2 ? 'Manba: Amaliy $primary' : 'Manba: Laboratoriya $primary',
+        ),
+      );
+      await tapFinder(t, source);
+      final page = co2
+          ? 192
+          : metal
+          ? 197
+          : 196;
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch35-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      final earlierParagraph = co2
+          ? 10
+          : metal
+          ? 26
+          : 12;
+      final earlierSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$earlierParagraph ·'),
+      );
+      await tapFinder(t, earlierSource);
+      final earlierPage = co2
+          ? 52
+          : metal
+          ? 124
+          : 61;
+      final earlierLocator = find.textContaining(
+        '$earlierPage -> PDF $earlierPage',
+      );
+      expect(earlierLocator, findsOneWidget);
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(earlierLocator);
+      await capture(t, '$name-batch35-prior-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
