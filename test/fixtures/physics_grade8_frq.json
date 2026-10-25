@@ -4119,6 +4119,347 @@
         "mm",
         "nm"
       ]
+    },
+    {
+      "key": "physics-8-section-56-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Maydonga tik uchayotgan elektron:q=|q|=1,6e-19C,v=3e6m/s,B=0,5T. F modulini top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "3000000",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "B",
+          "value": "0.5",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "q",
+        "v",
+        "B"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "pN",
+        "nN",
+        "mN"
+      ]
+    },
+    {
+      "key": "physics-8-section-56-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Maydonga tik zarra:F=0,6pN,v=2e6m/s,B=0,5T. Zaryad moduli q ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.6",
+          "unit": "pN"
+        },
+        {
+          "symbol": "v",
+          "value": "2000000",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "B",
+          "value": "0.5",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "F",
+        "v",
+        "B"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-56-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Maydonga tik zarra:F=0,16pN,q=|q|=1,6e-19C,B=0,2T. Tezlik modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.16",
+          "unit": "pN"
+        },
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "B",
+          "value": "0.2",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q",
+        "B"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-8-section-56-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Maydonga tik zarra:F=0,48pN,q=|q|=1,6e-19C,v=6e6m/s. B ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.48",
+          "unit": "pN"
+        },
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "6000000",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q",
+        "v"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ]
+    },
+    {
+      "key": "physics-8-section-60-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Proton tik maydonga kirdi:q=|q|=1,6e-19C,v=4e6m/s,B=0,25T. F modulini top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "4000000",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "B",
+          "value": "0.25",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "q",
+        "v",
+        "B"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "pN",
+        "nN",
+        "mN"
+      ]
+    },
+    {
+      "key": "physics-8-section-60-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik uchayotgan ion:F=0,96pN,v=3e6m/s,B=0,5T. Zaryad moduli q ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.96",
+          "unit": "pN"
+        },
+        {
+          "symbol": "v",
+          "value": "3000000",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "B",
+          "value": "0.5",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "F",
+        "v",
+        "B"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-60-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik uchayotgan zarra:F=1,28pN,q=|q|=3,2e-19C,v=8e6m/s. B ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "1.28",
+          "unit": "pN"
+        },
+        {
+          "symbol": "q",
+          "value": "3.2e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "8000000",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q",
+        "v"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ]
+    },
+    {
+      "key": "physics-8-section-60-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Elektron tik maydonga kirdi:F=0,192pN,q=|q|=1,6e-19C,B=0,4T. Tezlik modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.192",
+          "unit": "pN"
+        },
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "B",
+          "value": "0.4",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q",
+        "B"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-8-section-60-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik uchayotgan ion:q=|q|=4,8e-19C,v=2e6m/s,B=0,3T. Kuch modulini top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "4.8e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "2000000",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "B",
+          "value": "0.3",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "q",
+        "v",
+        "B"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "pN",
+        "nN",
+        "mN"
+      ]
+    },
+    {
+      "key": "physics-8-section-60-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tik uchish:q=|q|=1,6e-19C,v=5e6m/s,F=0,08pN. Magnit induksiyani top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.08",
+          "unit": "pN"
+        },
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "5000000",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q",
+        "v"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ]
     }
   ]
 }
