@@ -35,6 +35,7 @@ void main() {
   late Json lesson, results, catalog;
   Json? grade8Catalog;
   Json? grade9Catalog;
+  Json? grade10Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false, offline = false, expired = false;
@@ -44,6 +45,7 @@ void main() {
     catalog = fixture('catalog');
     grade8Catalog = null;
     grade9Catalog = null;
+    grade10Catalog = null;
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -59,6 +61,9 @@ void main() {
           );
         }
         if (r.path.endsWith('/catalog')) {
+          if (r.queryParameters['grade'] == 10 && grade10Catalog != null) {
+            return reply(200, grade10Catalog!);
+          }
           if (r.queryParameters['grade'] == 9 && grade9Catalog != null) {
             return reply(200, grade9Catalog!);
           }
@@ -1827,6 +1832,72 @@ void main() {
         expect(find.textContaining(iron ? 'kimyo_9_uzb.pdf' : 'kimyo_8_uzb.pdf'), findsOneWidget);
         await t.ensureVisible(priorLocator);
         await capture(t, '$name-batch37-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
+
+  for (final name in ['organic_structure', 'isomer_types', 'alkane_names']) {
+    testWidgets('batch38 $name grade10 sourced organic tasks at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      final structure = name == 'organic_structure';
+      final isomer = name == 'isomer_types';
+      final numeric = name == 'alkane_names';
+      catalog['available_grades'] = [7, 8, 9, 10];
+      grade10Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(structure ? 1 : isomer ? 3 : 13);
+      await mount(t, dark: !isomer, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-10')));
+      await waitFor(find.text('Darsni boshlash'));
+      final catalogRequest = requests.lastWhere((r) => r.path.endsWith('/catalog'));
+      expect(catalogRequest.queryParameters['grade'], 10);
+      if (!numeric) await capture(t, '$name-batch38-catalog');
+      await tap(t, 'Darsni boshlash');
+      if (!numeric) {
+        final question = jsonRows(lesson['questions'])[structure ? 1 : 3];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == (structure ? 'c' : 'd'));
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      } else {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, '81,818');
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], numeric ? {'value':'81,818'} : {'choice_id':structure ? 'c' : 'd'});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch38-feedback');
+      final number = structure ? 2 : isomer ? 3 : 5;
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$number ·'));
+      await tapFinder(t, source);
+      final page = structure ? 8 : isomer ? 13 : 25;
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('organik_kimyo_10_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch38-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (numeric) {
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §1 ·'));
+        await tapFinder(t, priorSource);
+        final priorLocator = find.textContaining('7 -> PDF 7');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining('kimyo_8_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch38-prior-source', overlay: true);
       }
       expect(t.takeException(), isNull);
     });
