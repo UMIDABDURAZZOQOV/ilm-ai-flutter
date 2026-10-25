@@ -1,0 +1,2011 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-9-p41-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+  "content": {
+    "cards": [
+      {
+        "title": "Kimyoviy texnologiyaning vazifasi",
+        "body": "Kimyoviy texnologiya xomashyoni qayta ishlab, xomashyo va energiya sarfini hisobga olgan holda sifatli mahsulot olish yo‘llarini o‘rganadi. Reaksiya tenglamasi bilan butun ishlab chiqarish jarayonining talablari bir xil narsa emas.",
+        "fact_ids": [
+          "technology"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page189"
+          }
+        ]
+      },
+      {
+        "title": "Jarayonni bir nechta omil bilan o‘qing",
+        "body": "Manba sanoat jarayonini o‘rganishda reaksiya tezligi, unga ta’sir etuvchi omillar va kimyoviy muvozanatni birga hisobga oladi. Mahsulot turini bilishning o‘zi jarayonning barcha sharoitini aniqlamaydi.",
+        "fact_ids": [
+          "factors"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page189"
+          }
+        ]
+      },
+      {
+        "title": "O‘rtacha tezlikning oldingi ta’rifi",
+        "body": "Oldingi ta’rif bo‘yicha reaksiya tezligi konsentratsiyaning vaqt ichidagi o‘zgarishi bilan bog‘langan. Berilgan 1,0 dan 0,4 mol/L gacha kamayish 10 s da sodir bo‘lsa, o‘rtacha sarflanish tezligi (1,0−0,4)/10=0,06 mol/(L·s).",
+        "fact_ids": [
+          "rate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page142"
+          }
+        ]
+      },
+      {
+        "title": "Katalizator va inhibitor",
+        "body": "Oldingi manbada jarayonni tezlashtirish bilan bog‘langan moddalar katalizator deb ataladi, sekinlashtirish kategoriyasi esa inhibitor bilan ajratilgan. Bu tushunchani mahsulotning tozaligi yoki chiqimi bilan almashtirmang.",
+        "fact_ids": [
+          "catalyst"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page144"
+          }
+        ]
+      },
+      {
+        "title": "Muvozanatda nima tenglashadi?",
+        "body": "Oldingi ta’rifda kimyoviy muvozanat to‘g‘ri va teskari reaksiya tezliklari tenglashgan holatdir. Bu konsentratsiyalar albatta bir xil yoki ikkala jarayon butunlay to‘xtagan degani emas.",
+        "fact_ids": [
+          "equilibrium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph34",
+            "topic_title": "Kimyoviy muvozanat",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph34-page145"
+          }
+        ]
+      },
+      {
+        "title": "Fanlararo tadqiqot misollari",
+        "body": "Darslik kimyoning fizika, biologiya, matematika, geologiya va boshqa fanlar bilan bog‘lanishini tadqiqot misollarida tasvirlaydi. Tadqiqot savoliga qarab bir nechta fan usullari birgalikda qo‘llanishi mumkin.",
+        "fact_ids": [
+          "cooperation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              190
+            ],
+            "pdf_pages": [
+              190
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page190"
+          }
+        ]
+      },
+      {
+        "title": "Polimerlar haqidagi tarixiy misol",
+        "body": "2019-yil darsligidagi misolda K. S. Ahmedov suvda eriydigan polimerlar bilan bog‘langan. Qum va tuproq bilan ishlatiladigan material kategoriyalari tarixiy misol sifatida o‘qiladi; amaliy retsept yoki yangi natija da’vosi emas.",
+        "fact_ids": [
+          "polymerresearch"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              190
+            ],
+            "pdf_pages": [
+              190
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page190"
+          }
+        ]
+      },
+      {
+        "title": "Komponentni tutib qolish misoli",
+        "body": "Z. Z. Salimov haqidagi misol chiqindidagi aseton bug‘larini yutib qoladigan materiallar bilan bog‘langan. Bu bilim komponentni qayta tutib olish g‘oyasini ko‘rsatadi, barcha jarayon uchun nol chiqindini kafolatlamaydi.",
+        "fact_ids": [
+          "recovery"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              190
+            ],
+            "pdf_pages": [
+              190
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page190"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan harorat modeli",
+        "body": "Hisob uchun oldingi har 10°C ga γ marta o‘zgarish modeli qabul qilinadi: tezliklar nisbati γ^((t2−t1)/10). Faqat shu topshiriqdagi γ o‘zgarmas deb olinadi; bu har qanday real reaksiya uchun umumiy kafolat emas.",
+        "fact_ids": [
+          "temperaturelaw"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page143"
+          }
+        ]
+      },
+      {
+        "title": "To‘qqiz bosqichni sanang",
+        "body": "γ=2, t1=10°C va t2=100°C deb berilgan modelda farq 90°C, ya’ni to‘qqizta 10°C bosqich bor. Tezliklar nisbati 2^9=512.",
+        "fact_ids": [
+          "gamma2"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page143"
+          }
+        ]
+      },
+      {
+        "title": "100 martalik nisbatdan haroratga",
+        "body": "γ=3 bo‘lib tezlik 100 marta ortadigan modelda 3^(Δt/10)=100. Bundan Δt=10·ln(100)/ln(3)=41,918…°C; uch kasrda 41,918°C. 0°C dan boshlangan modelda yakuniy harorat ham shu son.",
+        "fact_ids": [
+          "gamma3"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page143"
+          }
+        ]
+      },
+      {
+        "title": "1200 dan beshinchi ildiz",
+        "body": "20°C dan 70°C gacha beshta 10°C bosqich bor. Tezlik 1200 marta o‘zgargan deb berilsa γ^5=1200; γ=1200^(1/5)=4,1289… va uch kasrda 4,129. Berilgan modelni o‘zimizcha γ=4 ga yaxlitlab almashtirmaymiz.",
+        "fact_ids": [
+          "root"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page143"
+          }
+        ]
+      },
+      {
+        "title": "Hajm va ikki konsentratsiya modeli",
+        "body": "Mashq uchun gaz miqdorlari o‘zgarmaydi va tezlik qonuni v=k[A][B] deb oldindan beriladi. Hajm uch baravar bo‘lsa ikkala konsentratsiya uchdan birga tushadi. Nisbiy tezlik (1/3)^2=1/9, uch kasrda 0,111.",
+        "fact_ids": [
+          "volumetwo"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page142"
+          }
+        ]
+      },
+      {
+        "title": "Hajm va uchinchi darajali model",
+        "body": "Ikkinchi mashq uchun aynan v=k[NO]^2[O2] qonuni va o‘zgarmas gaz miqdori beriladi. Hajm uch baravar bo‘lganda nisbiy tezlik (1/3)^3=1/27, uch kasrda 0,037. Qonun bu modelda shart sifatida berilgan.",
+        "fact_ids": [
+          "volumethree"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page142"
+          }
+        ]
+      },
+      {
+        "title": "Tenglama va tezlik qonunini ajrating",
+        "body": "Berilgan tenglama C2H4+3O2=2CO2+2H2O atomlarni saqlaydi. Hisob mashqida qo‘shimcha shart sifatida v=k[C2H4][O2]^3 deb olaylik. Boshqa omillar o‘zgarmay O2 konsentratsiyasi 3 marta bo‘lsa tezliklar nisbati 3^3=27. Bu qabul qilingan tezlik modeli, real yonish uchun mustaqil o‘lchangan qonun emas.",
+        "fact_ids": [
+          "ethylene"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page142"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Daraja ko‘rsatkichini oldin toping",
+        "body": "10°C dan 100°C gacha farq 90°C. Har bosqich 10°C bo‘lsa 9 bosqich bor. γ=2 modelida tezlik har bosqichda ikki baravar: 2^9=512.",
+        "fact_ids": [
+          "temperaturelaw",
+          "gamma2"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph41",
+            "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+            "paragraph": 41,
+            "printed_pages": [
+              191
+            ],
+            "pdf_pages": [
+              191
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph41-page191"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph33",
+            "topic_title": "Kimyoviy reaksiyalarning tezligi",
+            "paragraph": 33,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph33-page143"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph41",
+        "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+        "paragraph": 41,
+        "printed_pages": [
+          189
+        ],
+        "pdf_pages": [
+          189
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph41-page189"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph41",
+        "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+        "paragraph": 41,
+        "printed_pages": [
+          190
+        ],
+        "pdf_pages": [
+          190
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph41-page190"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph41",
+        "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+        "paragraph": 41,
+        "printed_pages": [
+          191
+        ],
+        "pdf_pages": [
+          191
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph41-page191"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph33",
+        "topic_title": "Kimyoviy reaksiyalarning tezligi",
+        "paragraph": 33,
+        "printed_pages": [
+          142
+        ],
+        "pdf_pages": [
+          142
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph33-page142"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph33",
+        "topic_title": "Kimyoviy reaksiyalarning tezligi",
+        "paragraph": 33,
+        "printed_pages": [
+          144
+        ],
+        "pdf_pages": [
+          144
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph33-page144"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph34",
+        "topic_title": "Kimyoviy muvozanat",
+        "paragraph": 34,
+        "printed_pages": [
+          145
+        ],
+        "pdf_pages": [
+          145
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph34-page145"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph33",
+        "topic_title": "Kimyoviy reaksiyalarning tezligi",
+        "paragraph": 33,
+        "printed_pages": [
+          143
+        ],
+        "pdf_pages": [
+          143
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph33-page143"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-9-p41-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Manbadagi tezlashtiruvchi modda kategoriyasi qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Inhibitor"
+        },
+        {
+          "id": "b",
+          "label": "Katalizator"
+        },
+        {
+          "id": "c",
+          "label": "To‘ldirgich"
+        },
+        {
+          "id": "d",
+          "label": "Matritsa"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Kimyoviy muvozanatning oldingi ta’rifida nima tenglashadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Konsentratsiyalar doim bir xil"
+        },
+        {
+          "id": "b",
+          "label": "Ikkala jarayon to‘xtaydi"
+        },
+        {
+          "id": "c",
+          "label": "Tezliklar teng"
+        },
+        {
+          "id": "d",
+          "label": "Faqat dastlabki modda qoladi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph34",
+          "topic_title": "Kimyoviy muvozanat",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph34-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Xomashyo va energiya sarfi bilan mahsulot olish usullarini o‘rganuvchi yo‘nalish?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kimyoviy texnologiya"
+        },
+        {
+          "id": "b",
+          "label": "Reaksiya tezligi"
+        },
+        {
+          "id": "c",
+          "label": "Atom konfiguratsiyasi"
+        },
+        {
+          "id": "d",
+          "label": "Kimyoviy muvozanat"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Oldingi manbada sekinlashtirish bilan bog‘langan kategoriya qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Katalizator"
+        },
+        {
+          "id": "b",
+          "label": "Flus"
+        },
+        {
+          "id": "c",
+          "label": "Matritsa"
+        },
+        {
+          "id": "d",
+          "label": "Inhibitor"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Reaksiyani tezlashtiruvchi kategoriya nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Manbadagi sekinlashtiruvchi kategoriya nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q07",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan C2H4 va O2 mahsulotlari CO2 va H2O. Eng kichik butun koeffitsiyentlarda tenglang: C2H4+O2=CO2+H2O.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "1,0 dan 0,4 mol/L gacha kamayish 10 s da sodir bo‘lsa o‘rtacha tezlik qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/(L·s)",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "10°C dan 100°C gacha nechta 10°C bosqich bor?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page143"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "γ=2 bo‘lgan shu modelda tezlik necha marta ortadi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page143"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "γ=3 modeli bilan 100 martalik nisbat uchun harorat farqini uch kasrga yaxlitlang.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "°C",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page143"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "1200 martalik nisbat va 50°C farq uchun γ ni uch kasrga yaxlitlang.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page143"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan v=k[A][B] va uch baravar hajm modelida yangi/eski tezlik nisbatini uch kasrga yaxlitlang.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan v=k[NO]^2[O2] va uch baravar hajm modelida yangi/eski tezlik nisbatini uch kasrga yaxlitlang.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p41-r1-q15",
+      "response_kind": "numeric_value",
+      "prompt": "v=k[C2H4][O2]^3 deb berilgan modelda faqat O2 konsentratsiyasi uch baravar bo‘lsa tezliklar nisbati qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph41",
+          "topic_title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+          "paragraph": 41,
+          "printed_pages": [
+            191
+          ],
+          "pdf_pages": [
+            191
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph41-page191"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph33",
+          "topic_title": "Kimyoviy reaksiyalarning tezligi",
+          "paragraph": 33,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph33-page142"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

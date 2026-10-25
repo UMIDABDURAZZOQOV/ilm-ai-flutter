@@ -1,0 +1,3143 @@
+{
+  "answers": {
+    "chemistry-9-p40-r1-q01": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q01",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Be ikkinchi bosh guruhchaga — IIA ga — kiradi. Buni oldingi sahifadagi 1s2 2s2 yozuvi va bosh guruhcha bilan tashqi elektronlar bog‘lanishi orqali tekshiramiz.",
+      "correct_answer": "IIA",
+      "solution": [
+        {
+          "body": "Be ikkinchi bosh guruhchaga — IIA ga — kiradi. Buni oldingi sahifadagi 1s2 2s2 yozuvi va bosh guruhcha bilan tashqi elektronlar bog‘lanishi orqali tekshiramiz.",
+          "fact_ids": [
+            "be_group"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph11",
+              "topic_title": "Kichik davr elementlarining atom tuzilishi",
+              "paragraph": 11,
+              "printed_pages": [
+                49
+              ],
+              "pdf_pages": [
+                49
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph11-page49"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                9
+              ],
+              "pdf_pages": [
+                9
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page09"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph11",
+          "topic_title": "Kichik davr elementlarining atom tuzilishi",
+          "paragraph": 11,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph11-page49"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q02": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q02",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Ca ikkinchi bosh guruhcha — IIA — elementi. Oldingi kalsiy jadvali bu joylashuvni [Ar]4s2 yozuvi bilan birga ko‘rsatadi.",
+      "correct_answer": "IIA",
+      "solution": [
+        {
+          "body": "Ca ikkinchi bosh guruhcha — IIA — elementi. Oldingi kalsiy jadvali bu joylashuvni [Ar]4s2 yozuvi bilan birga ko‘rsatadi.",
+          "fact_ids": [
+            "ca_group"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph23",
+              "topic_title": "Kalsiy va magniy",
+              "paragraph": 23,
+              "printed_pages": [
+                109
+              ],
+              "pdf_pages": [
+                109
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph23-page109"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph23",
+          "topic_title": "Kalsiy va magniy",
+          "paragraph": 23,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph23-page109"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q03": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q03",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Cl yettinchi bosh guruhcha — VIIA — elementi. 9-sinfning oldingi jadvali va 8-sinf xlor mavzusi shu joylashuvni tasdiqlaydi. Be va Ca bilan bitta II guruhga qo‘shib yubormaymiz.",
+      "correct_answer": "VIIA",
+      "solution": [
+        {
+          "body": "Cl yettinchi bosh guruhcha — VIIA — elementi. 9-sinfning oldingi jadvali va 8-sinf xlor mavzusi shu joylashuvni tasdiqlaydi. Be va Ca bilan bitta II guruhga qo‘shib yubormaymiz.",
+          "fact_ids": [
+            "cl_group"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page11"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph23",
+              "topic_title": "Xlor",
+              "paragraph": 23,
+              "printed_pages": [
+                96
+              ],
+              "pdf_pages": [
+                96
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph23-page96"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph23",
+          "topic_title": "Xlor",
+          "paragraph": 23,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph23-page96"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q04": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q04",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Cl ning tashqi konfiguratsiyasi 3s2 3p5. To‘liq yozuv 1s2 2s2 2p6 3s2 3p5 bo‘lib, jami 17 elektron bor. Tashqi qavatdagi 2+5=7 elektronni tartib raqami 17 bilan farqlang.",
+      "correct_answer": "3s2 3p5",
+      "solution": [
+        {
+          "body": "Cl ning tashqi konfiguratsiyasi 3s2 3p5. To‘liq yozuv 1s2 2s2 2p6 3s2 3p5 bo‘lib, jami 17 elektron bor. Tashqi qavatdagi 2+5=7 elektronni tartib raqami 17 bilan farqlang.",
+          "fact_ids": [
+            "cl_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page11"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph23",
+              "topic_title": "Xlor",
+              "paragraph": 23,
+              "printed_pages": [
+                96
+              ],
+              "pdf_pages": [
+                96
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph23-page96"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph23",
+          "topic_title": "Xlor",
+          "paragraph": 23,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph23-page96"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q05": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q05",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Be ning tashqi konfiguratsiyasi 2s2, to‘liq yozuvi 1s2 2s2. Jami elektronlar 4 ta, tashqi qavatdagi elektronlar esa 2 ta.",
+      "correct_answer": "2s2",
+      "solution": [
+        {
+          "body": "Be ning tashqi konfiguratsiyasi 2s2, to‘liq yozuvi 1s2 2s2. Jami elektronlar 4 ta, tashqi qavatdagi elektronlar esa 2 ta.",
+          "fact_ids": [
+            "be_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph11",
+              "topic_title": "Kichik davr elementlarining atom tuzilishi",
+              "paragraph": 11,
+              "printed_pages": [
+                49
+              ],
+              "pdf_pages": [
+                49
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph11-page49"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph11",
+          "topic_title": "Kichik davr elementlarining atom tuzilishi",
+          "paragraph": 11,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph11-page49"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q06": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q06",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Ca ning tashqi qavat yozuvi 4s2. To‘liq konfiguratsiyada 1s2 2s2 2p6 3s2 3p6 4s2 bo‘lib, jami elektronlar 20 ta; tashqi qavatda 2 ta.",
+      "correct_answer": "4s2",
+      "solution": [
+        {
+          "body": "Ca ning tashqi qavat yozuvi 4s2. To‘liq konfiguratsiyada 1s2 2s2 2p6 3s2 3p6 4s2 bo‘lib, jami elektronlar 20 ta; tashqi qavatda 2 ta.",
+          "fact_ids": [
+            "ca_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph12",
+              "topic_title": "Katta davr elementlarining atom tuzilishi",
+              "paragraph": 12,
+              "printed_pages": [
+                52
+              ],
+              "pdf_pages": [
+                52
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph12-page52"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph23",
+              "topic_title": "Kalsiy va magniy",
+              "paragraph": 23,
+              "printed_pages": [
+                109
+              ],
+              "pdf_pages": [
+                109
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph23-page109"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph12",
+          "topic_title": "Katta davr elementlarining atom tuzilishi",
+          "paragraph": 12,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph12-page52"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph23",
+          "topic_title": "Kalsiy va magniy",
+          "paragraph": 23,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph23-page109"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q07": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q07",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Be ikkinchi bosh guruhchaga — IIA ga — kiradi. Buni oldingi sahifadagi 1s2 2s2 yozuvi va bosh guruhcha bilan tashqi elektronlar bog‘lanishi orqali tekshiramiz.",
+      "correct_answer": "IIA",
+      "solution": [
+        {
+          "body": "Be ikkinchi bosh guruhchaga — IIA ga — kiradi. Buni oldingi sahifadagi 1s2 2s2 yozuvi va bosh guruhcha bilan tashqi elektronlar bog‘lanishi orqali tekshiramiz.",
+          "fact_ids": [
+            "be_group"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph11",
+              "topic_title": "Kichik davr elementlarining atom tuzilishi",
+              "paragraph": 11,
+              "printed_pages": [
+                49
+              ],
+              "pdf_pages": [
+                49
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph11-page49"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                9
+              ],
+              "pdf_pages": [
+                9
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page09"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph11",
+          "topic_title": "Kichik davr elementlarining atom tuzilishi",
+          "paragraph": 11,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph11-page49"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q08": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q08",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Ca ikkinchi bosh guruhcha — IIA — elementi. Oldingi kalsiy jadvali bu joylashuvni [Ar]4s2 yozuvi bilan birga ko‘rsatadi.",
+      "correct_answer": "IIA",
+      "solution": [
+        {
+          "body": "Ca ikkinchi bosh guruhcha — IIA — elementi. Oldingi kalsiy jadvali bu joylashuvni [Ar]4s2 yozuvi bilan birga ko‘rsatadi.",
+          "fact_ids": [
+            "ca_group"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph23",
+              "topic_title": "Kalsiy va magniy",
+              "paragraph": 23,
+              "printed_pages": [
+                109
+              ],
+              "pdf_pages": [
+                109
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph23-page109"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph23",
+          "topic_title": "Kalsiy va magniy",
+          "paragraph": 23,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph23-page109"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q09": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q09",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Cl yettinchi bosh guruhcha — VIIA — elementi. 9-sinfning oldingi jadvali va 8-sinf xlor mavzusi shu joylashuvni tasdiqlaydi. Be va Ca bilan bitta II guruhga qo‘shib yubormaymiz.",
+      "correct_answer": "VIIA",
+      "solution": [
+        {
+          "body": "Cl yettinchi bosh guruhcha — VIIA — elementi. 9-sinfning oldingi jadvali va 8-sinf xlor mavzusi shu joylashuvni tasdiqlaydi. Be va Ca bilan bitta II guruhga qo‘shib yubormaymiz.",
+          "fact_ids": [
+            "cl_group"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page11"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph23",
+              "topic_title": "Xlor",
+              "paragraph": 23,
+              "printed_pages": [
+                96
+              ],
+              "pdf_pages": [
+                96
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph23-page96"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph23",
+          "topic_title": "Xlor",
+          "paragraph": 23,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph23-page96"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q10": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q10",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Oldingi uglerod mavzusida asetilen C2H2 yozuvi bilan berilgan. Bu formulani tanish noma’lum sharoitdagi barcha organik sintez yo‘lini taxmin qilish degani emas; bu darsda faqat oldin tekshirilgan tarkib qayta o‘qiladi.",
+      "correct_answer": "C2H2",
+      "solution": [
+        {
+          "body": "Oldingi uglerod mavzusida asetilen C2H2 yozuvi bilan berilgan. Bu formulani tanish noma’lum sharoitdagi barcha organik sintez yo‘lini taxmin qilish degani emas; bu darsda faqat oldin tekshirilgan tarkib qayta o‘qiladi.",
+          "fact_ids": [
+            "acetylene"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                188
+              ],
+              "pdf_pages": [
+                188
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page188"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph09",
+              "topic_title": "Uglerodning fizik va kimyoviy xossalari",
+              "paragraph": 9,
+              "printed_pages": [
+                49
+              ],
+              "pdf_pages": [
+                49
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph09-page49"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page188"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph09",
+          "topic_title": "Uglerodning fizik va kimyoviy xossalari",
+          "paragraph": 9,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph09-page49"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q11": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q11",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Berilgan taqqoslashni oldingi ikki model bilan o‘qiymiz: 2Na+2H2O=2NaOH+H2 va 2Al+6H2O=2Al(OH)3+3H2. Aluminiy uchun himoya qatlami sharti muhim; jadvaldagi modda juftligi barcha sharoitda bir xil tezlik yoki mahsulotni kafolatlamaydi.",
+      "correct_answer": "2Na+2H2O=2NaOH+H2",
+      "solution": [
+        {
+          "body": "Berilgan taqqoslashni oldingi ikki model bilan o‘qiymiz: 2Na+2H2O=2NaOH+H2 va 2Al+6H2O=2Al(OH)3+3H2. Aluminiy uchun himoya qatlami sharti muhim; jadvaldagi modda juftligi barcha sharoitda bir xil tezlik yoki mahsulotni kafolatlamaydi.",
+          "fact_ids": [
+            "watercompare"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                188
+              ],
+              "pdf_pages": [
+                188
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page188"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph21",
+              "topic_title": "Natriy va kaliyning xossalari va eng muhim birikmalari",
+              "paragraph": 21,
+              "printed_pages": [
+                104
+              ],
+              "pdf_pages": [
+                104
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph21-page104"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page188"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph21",
+          "topic_title": "Natriy va kaliyning xossalari va eng muhim birikmalari",
+          "paragraph": 21,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph21-page104"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q12": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q12",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Berilgan taqqoslashni oldingi ikki model bilan o‘qiymiz: 2Na+2H2O=2NaOH+H2 va 2Al+6H2O=2Al(OH)3+3H2. Aluminiy uchun himoya qatlami sharti muhim; jadvaldagi modda juftligi barcha sharoitda bir xil tezlik yoki mahsulotni kafolatlamaydi.",
+      "correct_answer": "2Al+6H2O=2Al(OH)3+3H2",
+      "solution": [
+        {
+          "body": "Berilgan taqqoslashni oldingi ikki model bilan o‘qiymiz: 2Na+2H2O=2NaOH+H2 va 2Al+6H2O=2Al(OH)3+3H2. Aluminiy uchun himoya qatlami sharti muhim; jadvaldagi modda juftligi barcha sharoitda bir xil tezlik yoki mahsulotni kafolatlamaydi.",
+          "fact_ids": [
+            "watercompare"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                188
+              ],
+              "pdf_pages": [
+                188
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page188"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph21",
+              "topic_title": "Natriy va kaliyning xossalari va eng muhim birikmalari",
+              "paragraph": 21,
+              "printed_pages": [
+                104
+              ],
+              "pdf_pages": [
+                104
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph21-page104"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page188"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph21",
+          "topic_title": "Natriy va kaliyning xossalari va eng muhim birikmalari",
+          "paragraph": 21,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph21-page104"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q13": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q13",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Temirning ikki oldingi mahsulot modeli farqli: Fe+2HCl=FeCl2+H2 va 2Fe+3Cl2=2FeCl3. Birida Fe(II), ikkinchisida Fe(III) yozilgan; mahsulotlar savolda oldindan ko‘rsatiladi.",
+      "correct_answer": "Fe+2HCl=FeCl2+H2",
+      "solution": [
+        {
+          "body": "Temirning ikki oldingi mahsulot modeli farqli: Fe+2HCl=FeCl2+H2 va 2Fe+3Cl2=2FeCl3. Birida Fe(II), ikkinchisida Fe(III) yozilgan; mahsulotlar savolda oldindan ko‘rsatiladi.",
+          "fact_ids": [
+            "ironcompare"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                188
+              ],
+              "pdf_pages": [
+                188
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page188"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph35",
+              "topic_title": "Temirning eng muhim birikmalari. Ishlatilishi",
+              "paragraph": 35,
+              "printed_pages": [
+                162
+              ],
+              "pdf_pages": [
+                162
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph35-page162"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page188"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph35",
+          "topic_title": "Temirning eng muhim birikmalari. Ishlatilishi",
+          "paragraph": 35,
+          "printed_pages": [
+            162
+          ],
+          "pdf_pages": [
+            162
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph35-page162"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q14": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q14",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Temirning ikki oldingi mahsulot modeli farqli: Fe+2HCl=FeCl2+H2 va 2Fe+3Cl2=2FeCl3. Birida Fe(II), ikkinchisida Fe(III) yozilgan; mahsulotlar savolda oldindan ko‘rsatiladi.",
+      "correct_answer": "2Fe+3Cl2=2FeCl3",
+      "solution": [
+        {
+          "body": "Temirning ikki oldingi mahsulot modeli farqli: Fe+2HCl=FeCl2+H2 va 2Fe+3Cl2=2FeCl3. Birida Fe(II), ikkinchisida Fe(III) yozilgan; mahsulotlar savolda oldindan ko‘rsatiladi.",
+          "fact_ids": [
+            "ironcompare"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                188
+              ],
+              "pdf_pages": [
+                188
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page188"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph35",
+              "topic_title": "Temirning eng muhim birikmalari. Ishlatilishi",
+              "paragraph": 35,
+              "printed_pages": [
+                162
+              ],
+              "pdf_pages": [
+                162
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph35-page162"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page188"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph35",
+          "topic_title": "Temirning eng muhim birikmalari. Ishlatilishi",
+          "paragraph": 35,
+          "printed_pages": [
+            162
+          ],
+          "pdf_pages": [
+            162
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph35-page162"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q15": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q15",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Be ning tashqi konfiguratsiyasi 2s2, to‘liq yozuvi 1s2 2s2. Jami elektronlar 4 ta, tashqi qavatdagi elektronlar esa 2 ta.",
+      "correct_answer": "4",
+      "solution": [
+        {
+          "body": "Be ning tashqi konfiguratsiyasi 2s2, to‘liq yozuvi 1s2 2s2. Jami elektronlar 4 ta, tashqi qavatdagi elektronlar esa 2 ta.",
+          "fact_ids": [
+            "be_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph11",
+              "topic_title": "Kichik davr elementlarining atom tuzilishi",
+              "paragraph": 11,
+              "printed_pages": [
+                49
+              ],
+              "pdf_pages": [
+                49
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph11-page49"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph11",
+          "topic_title": "Kichik davr elementlarining atom tuzilishi",
+          "paragraph": 11,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph11-page49"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q16": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q16",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Ca ning tashqi qavat yozuvi 4s2. To‘liq konfiguratsiyada 1s2 2s2 2p6 3s2 3p6 4s2 bo‘lib, jami elektronlar 20 ta; tashqi qavatda 2 ta.",
+      "correct_answer": "20",
+      "solution": [
+        {
+          "body": "Ca ning tashqi qavat yozuvi 4s2. To‘liq konfiguratsiyada 1s2 2s2 2p6 3s2 3p6 4s2 bo‘lib, jami elektronlar 20 ta; tashqi qavatda 2 ta.",
+          "fact_ids": [
+            "ca_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph12",
+              "topic_title": "Katta davr elementlarining atom tuzilishi",
+              "paragraph": 12,
+              "printed_pages": [
+                52
+              ],
+              "pdf_pages": [
+                52
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph12-page52"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph23",
+              "topic_title": "Kalsiy va magniy",
+              "paragraph": 23,
+              "printed_pages": [
+                109
+              ],
+              "pdf_pages": [
+                109
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph23-page109"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph12",
+          "topic_title": "Katta davr elementlarining atom tuzilishi",
+          "paragraph": 12,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph12-page52"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph23",
+          "topic_title": "Kalsiy va magniy",
+          "paragraph": 23,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph23-page109"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q17": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q17",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Cl ning tashqi konfiguratsiyasi 3s2 3p5. To‘liq yozuv 1s2 2s2 2p6 3s2 3p5 bo‘lib, jami 17 elektron bor. Tashqi qavatdagi 2+5=7 elektronni tartib raqami 17 bilan farqlang.",
+      "correct_answer": "7",
+      "solution": [
+        {
+          "body": "Cl ning tashqi konfiguratsiyasi 3s2 3p5. To‘liq yozuv 1s2 2s2 2p6 3s2 3p5 bo‘lib, jami 17 elektron bor. Tashqi qavatdagi 2+5=7 elektronni tartib raqami 17 bilan farqlang.",
+          "fact_ids": [
+            "cl_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page11"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph23",
+              "topic_title": "Xlor",
+              "paragraph": 23,
+              "printed_pages": [
+                96
+              ],
+              "pdf_pages": [
+                96
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph23-page96"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph23",
+          "topic_title": "Xlor",
+          "paragraph": 23,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph23-page96"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q18": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q18",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Cl ning tashqi konfiguratsiyasi 3s2 3p5. To‘liq yozuv 1s2 2s2 2p6 3s2 3p5 bo‘lib, jami 17 elektron bor. Tashqi qavatdagi 2+5=7 elektronni tartib raqami 17 bilan farqlang.",
+      "correct_answer": "17",
+      "solution": [
+        {
+          "body": "Cl ning tashqi konfiguratsiyasi 3s2 3p5. To‘liq yozuv 1s2 2s2 2p6 3s2 3p5 bo‘lib, jami 17 elektron bor. Tashqi qavatdagi 2+5=7 elektronni tartib raqami 17 bilan farqlang.",
+          "fact_ids": [
+            "cl_outer"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                186
+              ],
+              "pdf_pages": [
+                186
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page186"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph01",
+              "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph01-page11"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph23",
+              "topic_title": "Xlor",
+              "paragraph": 23,
+              "printed_pages": [
+                96
+              ],
+              "pdf_pages": [
+                96
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph23-page96"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            186
+          ],
+          "pdf_pages": [
+            186
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page186"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph23",
+          "topic_title": "Xlor",
+          "paragraph": 23,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph23-page96"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q19": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q19",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Tartib raqami 18 misolini oldingi Ar jadvali bilan tekshiramiz: 1s2 2s2 2p6 3s2 3p6. Uch qavatdagi 2+8+8 elektron jami 18 bo‘ladi.",
+      "correct_answer": "18",
+      "solution": [
+        {
+          "body": "Tartib raqami 18 misolini oldingi Ar jadvali bilan tekshiramiz: 1s2 2s2 2p6 3s2 3p6. Uch qavatdagi 2+8+8 elektron jami 18 bo‘ladi.",
+          "fact_ids": [
+            "argon"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                187
+              ],
+              "pdf_pages": [
+                187
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page187"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph11",
+              "topic_title": "Kichik davr elementlarining atom tuzilishi",
+              "paragraph": 11,
+              "printed_pages": [
+                50
+              ],
+              "pdf_pages": [
+                50
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph11-page50"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page187"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph11",
+          "topic_title": "Kichik davr elementlarining atom tuzilishi",
+          "paragraph": 11,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph11-page50"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q20": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q20",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Tartib raqami 21 misoli oldingi Sc yozuvi bilan bog‘lanadi: 1s2 2s2 2p6 3s2 3p6 4s2 3d1. Elektronlar yig‘indisi 21; 3d qismida bitta elektron ko‘rsatilgan.",
+      "correct_answer": "21",
+      "solution": [
+        {
+          "body": "Tartib raqami 21 misoli oldingi Sc yozuvi bilan bog‘lanadi: 1s2 2s2 2p6 3s2 3p6 4s2 3d1. Elektronlar yig‘indisi 21; 3d qismida bitta elektron ko‘rsatilgan.",
+          "fact_ids": [
+            "scandium"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                187
+              ],
+              "pdf_pages": [
+                187
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page187"
+            },
+            {
+              "book_id": "chemistry-8-uz-2019",
+              "book_title": "Kimyo 8",
+              "authors": [
+                "I.R. Asqarov",
+                "K. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_8_uzb.pdf",
+              "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+              "topic_id": "ch8-paragraph12",
+              "topic_title": "Katta davr elementlarining atom tuzilishi",
+              "paragraph": 12,
+              "printed_pages": [
+                52
+              ],
+              "pdf_pages": [
+                52
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch8-paragraph12-page52"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page187"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph12",
+          "topic_title": "Katta davr elementlarining atom tuzilishi",
+          "paragraph": 12,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph12-page52"
+        }
+      ]
+    },
+    "chemistry-9-p40-r1-q21": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-p40-r1-q21",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Berilgan izotop modeli 19,6% massa soni 10 va 80,4% massa soni 11 dan tuzilgan. Vaznli o‘rtacha 0,196·10+0,804·11=10,804. Bu mashqda butun massa sonlari ishlatiladi; natija yangi tabiiy namuna o‘lchovi emas.",
+      "correct_answer": "10.804",
+      "solution": [
+        {
+          "body": "Berilgan izotop modeli 19,6% massa soni 10 va 80,4% massa soni 11 dan tuzilgan. Vaznli o‘rtacha 0,196·10+0,804·11=10,804. Bu mashqda butun massa sonlari ishlatiladi; natija yangi tabiiy namuna o‘lchovi emas.",
+          "fact_ids": [
+            "boron"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph40",
+              "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+              "paragraph": 40,
+              "printed_pages": [
+                187
+              ],
+              "pdf_pages": [
+                187
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph40-page187"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph40",
+          "topic_title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+          "paragraph": 40,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph40-page187"
+        }
+      ]
+    }
+  },
+  "result": {
+    "assessment_version": 2,
+    "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+    "lesson_key": "chemistry-9-p40-r1",
+    "score": 21,
+    "total": 21,
+    "score_pct": 100.0,
+    "passed": true,
+    "xp_awarded": 20,
+    "xp_total": 3460,
+    "stars": 3,
+    "streak_days": 1,
+    "completion_threshold_pct": 60,
+    "elapsed_seconds": 0
+  }
+}

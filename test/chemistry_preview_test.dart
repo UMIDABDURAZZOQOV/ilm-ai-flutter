@@ -1419,6 +1419,150 @@ void main() {
     await capture(t, 'chromium_compounds-current-source', overlay: true);
     expect(t.takeException(), isNull);
   });
+
+  for (final name in [
+    'environment',
+    'periodicity_erratum',
+    'technology_rate',
+  ]) {
+    testWidgets('batch34 $name source and FRQ at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      final environment = name == 'environment';
+      final periodicity = name == 'periodicity_erratum';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(
+        environment
+            ? 16
+            : periodicity
+            ? 8
+            : 11,
+      );
+      await mount(t, dark: !periodicity, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      final field = find.byKey(const Key('chemistry-short-answer'));
+      await waitFor(field);
+      await t.ensureVisible(field);
+      final value = environment
+          ? '14228,998'
+          : periodicity
+          ? 'VIIA'
+          : '4,129';
+      await t.enterText(field, value);
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch34-feedback');
+      final paragraph = environment
+          ? 39
+          : periodicity
+          ? 40
+          : 41;
+      final ownSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$paragraph'),
+      );
+      await tapFinder(t, ownSource);
+      final ownPage = environment
+          ? 185
+          : periodicity
+          ? 186
+          : 191;
+      final ownLocator = find.textContaining('$ownPage -> PDF $ownPage');
+      expect(ownLocator, findsOneWidget);
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(ownLocator);
+      await capture(t, '$name-batch34-current-source', overlay: true);
+      Navigator.of(t.element(ownLocator)).pop();
+      await t.pumpAndSettle();
+      final earlierParagraph = environment
+          ? 20
+          : periodicity
+          ? 23
+          : 33;
+      final earlierSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$earlierParagraph'),
+      );
+      await tapFinder(t, earlierSource);
+      final earlierLocator = find.textContaining(
+        environment
+            ? '61 -> PDF 31 · o‘ng sahifa'
+            : periodicity
+            ? '96 -> PDF 96'
+            : '143 -> PDF 143',
+      );
+      expect(earlierLocator, findsOneWidget);
+      expect(
+        find.textContaining(
+          environment ? 'kimyo_7_uzb.pdf' : 'kimyo_8_uzb.pdf',
+        ),
+        findsOneWidget,
+      );
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsNothing);
+      await t.ensureVisible(earlierLocator);
+      await capture(t, '$name-batch34-earlier-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
+  testWidgets('batch34 corrected Cl configuration MCQ at200%', (t) async {
+    Future<void> waitFor(Finder finder) async {
+      for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+        await t.runAsync(
+          () => Future<void>.delayed(const Duration(milliseconds: 10)),
+        );
+        await t.pumpAndSettle();
+      }
+      expect(finder, findsWidgets);
+    }
+
+    catalog['available_grades'] = [7, 8, 9];
+    grade9Catalog = fixture('periodicity_erratum_catalog');
+    lesson = fixture('periodicity_erratum_lesson');
+    results = fixture('periodicity_erratum_results');
+    skip(3);
+    await mount(t, dark: false, size: const Size(320, 568), scale: 2);
+    await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+    await waitFor(find.text('Darsni boshlash'));
+    await tap(t, 'Darsni boshlash');
+    final question = jsonRows(lesson['questions'])[3];
+    final correct = jsonRows(
+      question['options'],
+    ).firstWhere((o) => o['id'] == 'd');
+    final choice = find.text(correct['label'] as String);
+    await waitFor(choice);
+    await tapFinder(t, choice);
+    await tap(t, 'Tekshirish');
+    final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+    expect((request.data as Map)['answer'], {'choice_id': 'd'});
+    expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+    await capture(t, 'periodicity-configuration-batch34-feedback');
+    final source = find.descendant(
+      of: find.byType(LessonFeedbackPanel),
+      matching: find.textContaining('Manba: §40'),
+    );
+    await tapFinder(t, source);
+    final locator = find.textContaining('186 -> PDF 186');
+    expect(locator, findsOneWidget);
+    await t.ensureVisible(locator);
+    await capture(t, 'periodicity-configuration-batch34-source', overlay: true);
+    expect(t.takeException(), isNull);
+  });
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
