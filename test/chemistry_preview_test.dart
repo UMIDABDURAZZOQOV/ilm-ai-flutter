@@ -1291,6 +1291,134 @@ void main() {
     await capture(t, 'aluminium_compounds-current-source', overlay: true);
     expect(t.takeException(), isNull);
   });
+  for (final name in ['chromium_basics', 'iron_compounds']) {
+    testWidgets('batch33 $name earlier textbook source at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      final family = name == 'chromium_basics';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(family ? 29 : 35);
+      await mount(t, dark: family, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      final field = find.byKey(const Key('chemistry-short-answer'));
+      await waitFor(field);
+      await t.ensureVisible(field);
+      final value = family ? '19,6' : '4.515e23';
+      await t.enterText(field, value);
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-model-feedback');
+      final paragraph = family ? 31 : 35;
+      final ownSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$paragraph'),
+      );
+      await t.ensureVisible(ownSource);
+      await t.pumpAndSettle();
+      await tapFinder(t, ownSource);
+      final ownPage = family ? 146 : 165;
+      final ownLocator = find.textContaining('$ownPage -> PDF $ownPage');
+      expect(ownLocator, findsOneWidget);
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(ownLocator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-current-source', overlay: true);
+      Navigator.of(t.element(ownLocator)).pop();
+      await t.pumpAndSettle();
+      final earlierSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining(family ? 'Manba: §5' : 'Manba: §10'),
+      );
+      await t.ensureVisible(earlierSource);
+      await t.pumpAndSettle();
+      await tapFinder(t, earlierSource);
+      final earlierPage = family ? 29 : 34;
+      final earlierLocator = find.textContaining(
+        family
+            ? '$earlierPage -> PDF $earlierPage · Yakka sahifa'
+            : '34 -> PDF 18 · chap sahifa',
+      );
+      expect(earlierLocator, findsOneWidget);
+      expect(
+        find.textContaining(family ? 'kimyo_8_uzb.pdf' : 'kimyo_7_uzb.pdf'),
+        findsOneWidget,
+      );
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsNothing);
+      await t.ensureVisible(earlierLocator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-earlier-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
+  testWidgets('batch33 chromium_compounds complex MCQ source at200%', (
+    t,
+  ) async {
+    catalog['available_grades'] = [7, 8, 9];
+    grade9Catalog = fixture('chromium_compounds_catalog');
+    lesson = fixture('chromium_compounds_lesson');
+    results = fixture('chromium_compounds_results');
+    skip(2);
+    await mount(t, dark: false, size: const Size(320, 568), scale: 2);
+    await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+    for (
+      var i = 0;
+      i < 100 && find.text('Darsni boshlash').evaluate().isEmpty;
+      i++
+    ) {
+      await t.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 10)),
+      );
+      await t.pumpAndSettle();
+    }
+    await tap(t, 'Darsni boshlash');
+    final question = jsonRows(lesson['questions'])[2];
+    final correct = jsonRows(
+      question['options'],
+    ).firstWhere((o) => o['id'] == 'c');
+    final choice = find.text(correct['label'] as String);
+    for (var i = 0; i < 100 && choice.evaluate().isEmpty; i++) {
+      await t.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 10)),
+      );
+      await t.pumpAndSettle();
+    }
+    expect(choice, findsOneWidget);
+    await tap(t, correct['label'] as String);
+    await tap(t, 'Tekshirish');
+    final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+    expect((request.data as Map)['answer'], {'choice_id': 'c'});
+    expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+    await capture(t, 'chromium_compounds-model-feedback');
+    final source = find.descendant(
+      of: find.byType(LessonFeedbackPanel),
+      matching: find.textContaining('Manba: §32'),
+    );
+    await t.ensureVisible(source);
+    await t.pumpAndSettle();
+    await tapFinder(t, source);
+    final locator = find.textContaining('148 -> PDF 148');
+    expect(locator, findsOneWidget);
+    expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
+    await t.ensureVisible(locator);
+    await t.pumpAndSettle();
+    await capture(t, 'chromium_compounds-current-source', overlay: true);
+    expect(t.takeException(), isNull);
+  });
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
