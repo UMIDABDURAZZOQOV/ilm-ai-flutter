@@ -3266,6 +3266,404 @@
         "mJ",
         "MJ"
       ]
+    },
+    {
+      "key": "physics-8-section-42-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Nazariy mis modeli:k=0,329mg/C,q=60C. m ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "0.329",
+          "unit": "mg/C"
+        },
+        {
+          "symbol": "q",
+          "value": "60",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q"
+      ],
+      "suggested_unit": "mg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-8-section-42-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nazariy nikel modeli:k=0,304mg/C,I=2A,t=10s doimiy. m ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "0.304",
+          "unit": "mg/C"
+        },
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "value": "10",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "k",
+        "I",
+        "t"
+      ],
+      "suggested_unit": "mg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-8-section-42-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nazariy kumush modeli:m=22,36mg,k=1,118mg/C. q ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "22.36",
+          "unit": "mg"
+        },
+        {
+          "symbol": "k",
+          "value": "1.118",
+          "unit": "mg/C"
+        }
+      ],
+      "symbols": [
+        "m",
+        "k"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-42-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nazariy nikel modeli:m=18,24mg,k=0,304mg/C,t=60s. I ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "18.24",
+          "unit": "mg"
+        },
+        {
+          "symbol": "k",
+          "value": "0.304",
+          "unit": "mg/C"
+        },
+        {
+          "symbol": "t",
+          "value": "60",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "k",
+        "t"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-42-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli qayd,haqiqiy tajriba emas:m=6,58mg,I=0,5A,t=40s. k ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "6.58",
+          "unit": "mg"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "value": "40",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "I",
+        "t"
+      ],
+      "suggested_unit": "mg/C",
+      "unit_choices": [
+        "kg/C",
+        "mg/C"
+      ]
+    },
+    {
+      "key": "physics-8-section-43-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "M=108g/mol,Z=1,F=96500C/mol bo‘yicha nazariy k ni top;0,001mg/C qadamga yaxlitla.",
+      "givens": [
+        {
+          "symbol": "M",
+          "value": "108",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "Z",
+          "value": "1",
+          "unit": "1"
+        },
+        {
+          "symbol": "F",
+          "value": "96500",
+          "unit": "C/mol"
+        }
+      ],
+      "symbols": [
+        "M",
+        "Z",
+        "F"
+      ],
+      "suggested_unit": "mg/C",
+      "unit_choices": [
+        "kg/C",
+        "mg/C"
+      ]
+    },
+    {
+      "key": "physics-8-section-43-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nazariy kumush modeli:M=108g/mol,q=1930C,Z=1,F=96500C/mol. m ni top.",
+      "givens": [
+        {
+          "symbol": "M",
+          "value": "108",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "q",
+          "value": "1930",
+          "unit": "C"
+        },
+        {
+          "symbol": "Z",
+          "value": "1",
+          "unit": "1"
+        },
+        {
+          "symbol": "F",
+          "value": "96500",
+          "unit": "C/mol"
+        }
+      ],
+      "symbols": [
+        "M",
+        "q",
+        "Z",
+        "F"
+      ],
+      "suggested_unit": "g",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-8-section-43-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tanlangan ikki elektronli jarayon:n=0,25mol,Z=2,F=96500C/mol. Nazariy q ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "0.25",
+          "unit": "mol"
+        },
+        {
+          "symbol": "Z",
+          "value": "2",
+          "unit": "1"
+        },
+        {
+          "symbol": "F",
+          "value": "96500",
+          "unit": "C/mol"
+        }
+      ],
+      "symbols": [
+        "n",
+        "Z",
+        "F"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-44-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Nazariy model:rho=10500kg/m³,S=10cm² jami yuza,h=0,01mm,k=1,118mg/C. q ni0,01C qadamga yaxlitlab top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "10500",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "S",
+          "value": "10",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "h",
+          "value": "0.01",
+          "unit": "mm"
+        },
+        {
+          "symbol": "k",
+          "value": "1.118",
+          "unit": "mg/C"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "S",
+        "h",
+        "k"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-44-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nazariy model:k=0,329mg/C,P=12W,U=6V,t=5min doimiy. m ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "0.329",
+          "unit": "mg/C"
+        },
+        {
+          "symbol": "P",
+          "value": "12",
+          "unit": "W"
+        },
+        {
+          "symbol": "t",
+          "value": "5",
+          "unit": "min"
+        },
+        {
+          "symbol": "U",
+          "value": "6",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "k",
+        "P",
+        "t",
+        "U"
+      ],
+      "suggested_unit": "mg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-8-section-44-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ikki katta yuza,chetlar e’tiborsiz nazariy model:k=1,8e-7kg/C,I=1A,t=120s,rho=7180kg/m³,a=2cm,b=3cm. h ni0,01µm qadamga yaxlitla.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "1.8e-7",
+          "unit": "kg/C"
+        },
+        {
+          "symbol": "I",
+          "value": "1",
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "value": "120",
+          "unit": "s"
+        },
+        {
+          "symbol": "rho",
+          "value": "7180",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "cm"
+        },
+        {
+          "symbol": "b",
+          "value": "3",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "k",
+        "I",
+        "t",
+        "rho",
+        "a",
+        "b"
+      ],
+      "suggested_unit": "µm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "µm",
+        "nm"
+      ]
     }
   ]
 }
