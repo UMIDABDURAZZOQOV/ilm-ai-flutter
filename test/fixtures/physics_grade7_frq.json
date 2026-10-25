@@ -1193,6 +1193,338 @@
         "m/s",
         "km/h"
       ]
+    },
+    {
+      "key": "physics-7-section-16-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "omega=4rad/s, R=0,3m. Tekis aylanishdagi v modulini top.",
+      "givens": [
+        {
+          "symbol": "omega",
+          "value": "4",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "R",
+          "value": "0.3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "omega",
+        "R"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-16-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "n=12 to‘liq aylanish t=18s da bajarildi. T ni top.",
+      "givens": [
+        {
+          "symbol": "t",
+          "value": "18",
+          "unit": "s"
+        },
+        {
+          "symbol": "n",
+          "value": "12",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "t",
+        "n"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-7-section-16-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "n=30 to‘liq aylanish t=12s da bajarildi. nu ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "30",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "12",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "t"
+      ],
+      "suggested_unit": "1/s",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ]
+    },
+    {
+      "key": "physics-7-section-16-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "T=2s. p=3,14 deb ol. omega ni rad/s da hisobla; 0,005rad/s gacha sonli farq qabul qilinadi.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "T",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "p",
+        "T"
+      ],
+      "suggested_unit": "rad/s",
+      "unit_choices": [
+        "rad/s"
+      ]
+    },
+    {
+      "key": "physics-7-section-17-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tekis aylanish:v=4m/s,R=8m. ac ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "4",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "R",
+          "value": "8",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "v",
+        "R"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-17-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v=8m/s, ac=4m/s2. Aylana radiusi R qancha?",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "ac",
+          "value": "4",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v",
+        "ac"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-17-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil model:v=3m/s,R=1,5m. ac ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "R",
+          "value": "1.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "v",
+        "R"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-18-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir jismni bir yo‘nalishda F1=7N va F2=5N tortmoqda. Natijaviy F modulini top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "7",
+          "unit": "N"
+        },
+        {
+          "symbol": "F2",
+          "value": "5",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "F2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-18-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "O‘ngga F1=14N, chapga F2=6N. O‘ngga yo‘nalgan natijaviy F modulini top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "14",
+          "unit": "N"
+        },
+        {
+          "symbol": "F2",
+          "value": "6",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "F2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-18-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qarama-qarshi kollinear kuchlar F1=0,5kN,F2=0,2kN. Natijaviy F modulini top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "0.5",
+          "unit": "kN"
+        },
+        {
+          "symbol": "F2",
+          "value": "0.2",
+          "unit": "kN"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "F2"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-20-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ikki qism:m1=0,6kg,m2=0,9kg. Umumiy m ni top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "0.6",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m2",
+          "value": "0.9",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "m2"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-7-section-20-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil yig‘indi:m1=250g,m2=350g. m qancha?",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "250",
+          "unit": "g"
+        },
+        {
+          "symbol": "m2",
+          "value": "350",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "m2"
+      ],
+      "suggested_unit": "g",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
     }
   ]
 }
