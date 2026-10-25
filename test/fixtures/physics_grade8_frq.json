@@ -2526,6 +2526,561 @@
         "mJ",
         "MJ"
       ]
+    },
+    {
+      "key": "physics-8-section-31-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "U=12V,I=0,25A. P ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.25",
+          "unit": "A"
+        },
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "I",
+        "U"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "hW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-8-section-31-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy P=30W qurilma3h ishladi. A energiyani top.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "30",
+          "unit": "W"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "h"
+        }
+      ],
+      "symbols": [
+        "P",
+        "t"
+      ],
+      "suggested_unit": "kWh",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ",
+        "Wh",
+        "kWh"
+      ]
+    },
+    {
+      "key": "physics-8-section-31-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ishlash nuqtasida U=12V,P=6W bo‘lgan ohmik elementning R sini top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        },
+        {
+          "symbol": "P",
+          "value": "6",
+          "unit": "W"
+        }
+      ],
+      "symbols": [
+        "U",
+        "P"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ]
+    },
+    {
+      "key": "physics-8-section-31-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil hisoblagich reset qilinmagan:avvalgi W1=125,4kWh,keyingi W2=130,9kWh. Davrdagi A sarfni top.",
+      "givens": [
+        {
+          "symbol": "W2",
+          "value": "130.9",
+          "unit": "kWh"
+        },
+        {
+          "symbol": "W1",
+          "value": "125.4",
+          "unit": "kWh"
+        }
+      ],
+      "symbols": [
+        "W2",
+        "W1"
+      ],
+      "suggested_unit": "kWh",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ",
+        "Wh",
+        "kWh"
+      ]
+    },
+    {
+      "key": "physics-8-section-32-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ishlash nuqtasida P=18W,U=12V. I ni top.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "18",
+          "unit": "W"
+        },
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "P",
+        "U"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-32-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ohmik R1=30Ω,R2=60Ω parallel,bir xil U da P1=12W. P2 ni top.",
+      "givens": [
+        {
+          "symbol": "P1",
+          "value": "12",
+          "unit": "W"
+        },
+        {
+          "symbol": "R1",
+          "value": "30",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "60",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "P1",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "hW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-8-section-32-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ohmik R1=20Ω,R2=50Ω ketma-ket,bir xil I da P1=8W. P2 ni top.",
+      "givens": [
+        {
+          "symbol": "P1",
+          "value": "8",
+          "unit": "W"
+        },
+        {
+          "symbol": "R1",
+          "value": "20",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "50",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "P1",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "hW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-8-section-33-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli,haqiqiy tajriba emas:U=4V,I=0,3A. P ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.3",
+          "unit": "A"
+        },
+        {
+          "symbol": "U",
+          "value": "4",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "I",
+        "U"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "hW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-8-section-33-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli,haqiqiy tajriba emas:P1=1,1W,P2=1,2W,P3=1,3W. Pavg ni top.",
+      "givens": [
+        {
+          "symbol": "P1",
+          "value": "1.1",
+          "unit": "W"
+        },
+        {
+          "symbol": "P2",
+          "value": "1.2",
+          "unit": "W"
+        },
+        {
+          "symbol": "P3",
+          "value": "1.3",
+          "unit": "W"
+        }
+      ],
+      "symbols": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "hW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-8-section-34-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Doimiy I=0,4A,R=25Ω,t=3min. Q ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.4",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "value": "25",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "I",
+        "R",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ",
+        "Wh",
+        "kWh"
+      ]
+    },
+    {
+      "key": "physics-8-section-34-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Rezistiv doimiy R=30Ω,U=6V,t=2min. Q ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "min"
+        },
+        {
+          "symbol": "R",
+          "value": "30",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "t",
+        "R"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ",
+        "Wh",
+        "kWh"
+      ]
+    },
+    {
+      "key": "physics-8-section-34-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Foydali Af=360J,to‘liq At=600J. eta FIKni top.",
+      "givens": [
+        {
+          "symbol": "Af",
+          "value": "360",
+          "unit": "J"
+        },
+        {
+          "symbol": "At",
+          "value": "600",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Af",
+        "At"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-8-section-34-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Foydali Pf=18W,to‘liq Pt=24W. eta ni top.",
+      "givens": [
+        {
+          "symbol": "Pf",
+          "value": "18",
+          "unit": "W"
+        },
+        {
+          "symbol": "Pt",
+          "value": "24",
+          "unit": "W"
+        }
+      ],
+      "symbols": [
+        "Pf",
+        "Pt"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-8-section-34-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy rezistiv model:Q=1440J,R=20Ω,t=18s. I tok modulini top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "1440",
+          "unit": "J"
+        },
+        {
+          "symbol": "R",
+          "value": "20",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "t",
+          "value": "18",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "R",
+        "t"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-35-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Doimiy U=10V,I=0,6A,t=3min,eta=80%. Af foydali ishni top.",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "80",
+          "unit": "%"
+        },
+        {
+          "symbol": "U",
+          "value": "10",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "0.6",
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "U",
+        "I",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ",
+        "Wh",
+        "kWh"
+      ]
+    },
+    {
+      "key": "physics-8-section-35-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil vaqt ishlagan doimiy P1=0,6kW va P2=20W qurilmalar. A1/A2 nisbatini top.",
+      "givens": [
+        {
+          "symbol": "P1",
+          "value": "0.6",
+          "unit": "kW"
+        },
+        {
+          "symbol": "P2",
+          "value": "20",
+          "unit": "W"
+        }
+      ],
+      "symbols": [
+        "P1",
+        "P2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-35-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil U,t da ohmik R1=15Ω,R2=25Ω parallel. A1=300J bo‘lsa A2 ni top.",
+      "givens": [
+        {
+          "symbol": "A1",
+          "value": "300",
+          "unit": "J"
+        },
+        {
+          "symbol": "R1",
+          "value": "15",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "25",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "A1",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ",
+        "Wh",
+        "kWh"
+      ]
     }
   ]
 }

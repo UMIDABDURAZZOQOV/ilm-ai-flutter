@@ -737,11 +737,15 @@ void main() {
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
     final questions = jsonRows(fixture('physics_grade8_frq')['questions']);
-    expect(questions, hasLength(78));
+    expect(questions, hasLength(95));
     for (final question in questions) {
       Json? edited;
       final isRoot = question['key'] == 'physics-8-section-4-r1:q5';
-      final formula = isRoot ? 'sqrt(F*r^2/k)' : 'learner_formula';
+      final isHeatRoot = question['key'] == 'physics-8-section-34-r1:q9';
+      final formula = isRoot
+          ? 'sqrt(F*r^2/k)'
+          : (isHeatRoot ? 'sqrt(Q/(R*t))' : 'learner_formula');
+      final value = isRoot ? '4' : (isHeatRoot ? '2' : '-1,25');
       await mount(
         tester,
         scale: 2,
@@ -757,14 +761,9 @@ void main() {
           ),
         ),
       );
-      await enter(
-        tester,
-        formula,
-        isRoot ? '4' : '-1,25',
-        question['suggested_unit'] as String,
-      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
       expect(edited?['formula'], formula);
-      expect(edited?['value'], isRoot ? '4' : '-1,25');
+      expect(edited?['value'], value);
       expect(edited?['unit'], question['suggested_unit']);
       expect(tester.takeException(), isNull);
     }
