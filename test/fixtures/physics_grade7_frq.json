@@ -3430,6 +3430,690 @@
         "mJ",
         "MJ"
       ]
+    },
+    {
+      "key": "physics-7-section-41-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=0,4kg,g=10m/s2,h=5m tanlangan sathdan. Ep ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.4",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-41-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2kg,g=10m/s2,h1=7m,h2=3m. Og‘irlik kuchining A ishini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h1",
+          "value": "7",
+          "unit": "m"
+        },
+        {
+          "symbol": "h2",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h1",
+        "h2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-41-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=1kg,g=9,8m/s2. Jism h1=1m dan h2=3m ga ko‘tarildi. Og‘irlik kuchi A ishini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "9.8",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h1",
+          "value": "1",
+          "unit": "m"
+        },
+        {
+          "symbol": "h2",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h1",
+        "h2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-42-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=2kg,v=3m/s moduli. Ek ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "3",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-42-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=500g,v=4m/s moduli. Ek qancha?",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "500",
+          "unit": "g"
+        },
+        {
+          "symbol": "v",
+          "value": "4",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-42-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2kg,v1=2m/s,v2=5m/s modullari. Natijaviy A ishini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v1",
+          "value": "2",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v2",
+          "value": "5",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v1",
+        "v2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-42-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2kg,v1=5m/s,v2=1m/s. Natijaviy A ishini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v1",
+          "value": "5",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v2",
+          "value": "1",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v1",
+        "v2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-43-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=1kg,g=10m/s2,h=3m,v=4m/s. E=Ep+Ek ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "3",
+          "unit": "m"
+        },
+        {
+          "symbol": "v",
+          "value": "4",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h",
+        "v"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-43-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chiziqli prujina:k=200N/m,x=0,1m. Ep ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "200",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "value": "0.1",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "k",
+        "x"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-43-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal saqlanish:Ek1=5J,Ep1=30J,Ep2=15J. Ek2 qancha?",
+      "givens": [
+        {
+          "symbol": "Ek1",
+          "value": "5",
+          "unit": "J"
+        },
+        {
+          "symbol": "Ep1",
+          "value": "30",
+          "unit": "J"
+        },
+        {
+          "symbol": "Ep2",
+          "value": "15",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Ek1",
+        "Ep1",
+        "Ep2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-43-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil chiziqli model:k=100N/m,x=20cm. Ep ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "100",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "k",
+        "x"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-44-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli tinch/doimiy a qaydi:s=1,8m,t=3s. a ni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "1.8",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-44-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli model:v0=0m/s,a=0,5m/s2,t=4s. v qancha?",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "0",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "value": "0.5",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "a",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-44-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Markaz tezligi v=2m/s,m=0,25kg. Ilgarilanma Ek ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.25",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "2",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-45-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "A=900J,t=3s. O‘rtacha N quvvatni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "900",
+          "unit": "J"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "A",
+        "t"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-7-section-45-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy N=0,5kW,t=4s. A ish qancha?",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "0.5",
+          "unit": "kW"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "N",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-45-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Harakat tomoniga F=40N,v=3m/s. F kuchning N quvvatini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "40",
+          "unit": "N"
+        },
+        {
+          "symbol": "v",
+          "value": "3",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "F",
+        "v"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-7-section-45-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Foydali mexanik N=2kW,v=5m/s. Parallel tortish F kuchi qancha?",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "2",
+          "unit": "kW"
+        },
+        {
+          "symbol": "v",
+          "value": "5",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "N",
+        "v"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-46-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Af=120J,Au=200J. eta foydali ulushni top.",
+      "givens": [
+        {
+          "symbol": "Af",
+          "value": "120",
+          "unit": "J"
+        },
+        {
+          "symbol": "Au",
+          "value": "200",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Af",
+        "Au"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-7-section-46-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "eta=80%,Au=500J. Af foydali ish qancha?",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "80",
+          "unit": "%"
+        },
+        {
+          "symbol": "Au",
+          "value": "500",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "Au"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-46-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis ko‘tarish:m=20kg,g=10m/s2,h=3m,kirish N=100W,t=10s. eta ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "20",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "3",
+          "unit": "m"
+        },
+        {
+          "symbol": "N",
+          "value": "100",
+          "unit": "W"
+        },
+        {
+          "symbol": "t",
+          "value": "10",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h",
+        "N",
+        "t"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
     }
   ]
 }
