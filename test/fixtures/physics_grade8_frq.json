@@ -1151,6 +1151,395 @@
         "cm2",
         "mm2"
       ]
+    },
+    {
+      "key": "physics-8-section-17-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "U=3,6V,R=120Ω. I ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "3.6",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "120",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "R"
+      ],
+      "suggested_unit": "mA",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-17-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "I=0,25A,R=24Ω. U ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.25",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "value": "24",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "I",
+        "R"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-17-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "U=9V,I=150mA. R ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "9",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "150",
+          "unit": "mA"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ]
+    },
+    {
+      "key": "physics-8-section-17-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy rho=1,1e-6Ω*m sim:l=2m,S=0,5mm²,U=2,2V. I ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "2.2",
+          "unit": "V"
+        },
+        {
+          "symbol": "S",
+          "value": "0.5",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "rho",
+          "value": "1.1e-6",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "l",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "U",
+        "S",
+        "rho",
+        "l"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-18-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Doimiy rho=0,4e-6Ω*m,S=0,4mm²,U=3V,I=0,2A. l ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "3",
+          "unit": "V"
+        },
+        {
+          "symbol": "S",
+          "value": "0.4",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "rho",
+          "value": "0.4e-6",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "I",
+          "value": "0.2",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "U",
+        "S",
+        "rho",
+        "I"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-8-section-18-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy rho=1,1e-6Ω*m,l=10m,S=1mm²,U=11mV. I ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "11",
+          "unit": "mV"
+        },
+        {
+          "symbol": "S",
+          "value": "1",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "rho",
+          "value": "1.1e-6",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "l",
+          "value": "10",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "U",
+        "S",
+        "rho",
+        "l"
+      ],
+      "suggested_unit": "mA",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-18-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "I=0,15A,doimiy rho=0,4e-6Ω*m,l=3m,S=0,2mm². U ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.15",
+          "unit": "A"
+        },
+        {
+          "symbol": "rho",
+          "value": "0.4e-6",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "l",
+          "value": "3",
+          "unit": "m"
+        },
+        {
+          "symbol": "S",
+          "value": "0.2",
+          "unit": "mm2"
+        }
+      ],
+      "symbols": [
+        "I",
+        "rho",
+        "l",
+        "S"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-18-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "U=6V o‘zgarmas,t=20s da q=3C o‘tdi. R ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "t",
+          "value": "20",
+          "unit": "s"
+        },
+        {
+          "symbol": "q",
+          "value": "3",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "U",
+        "t",
+        "q"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ]
+    },
+    {
+      "key": "physics-8-section-18-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ohmik element:U=4V,t=8s,R=50Ω,e=1,6e-19C. n elektron sonini top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "4",
+          "unit": "V"
+        },
+        {
+          "symbol": "t",
+          "value": "8",
+          "unit": "s"
+        },
+        {
+          "symbol": "R",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "U",
+        "t",
+        "R",
+        "e"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-19-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli,haqiqiy tajriba emas:U=4V,I=40mA. R ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "4",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "40",
+          "unit": "mA"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ]
+    },
+    {
+      "key": "physics-8-section-19-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘rt shartli natija:98Ω,100Ω,102Ω,100Ω. Ravg ni top;bu haqiqiy tajriba qaydi emas.",
+      "givens": [
+        {
+          "symbol": "R1",
+          "value": "98",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "100",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R3",
+          "value": "102",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R4",
+          "value": "100",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ]
     }
   ]
 }
