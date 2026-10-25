@@ -1,0 +1,258 @@
+{
+  "assessment_version": 2,
+  "questions": [
+    {
+      "key": "physics-7-section-1-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Platforma Yerga nisbatan v1=7m/s; odam platformaga nisbatan ayni yo‘nalishda v2=1,5m/s. Klassik modelda Yerga nisbatan v ni top.",
+      "givens": [
+        {
+          "symbol": "v1",
+          "value": "7",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v2",
+          "value": "1.5",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "v1",
+        "v2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-1-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir chiziqda bir yo‘nalish: platforma v1=18km/h, odam unga nisbatan v2=3,6km/h. Yerga nisbatan v ni top.",
+      "givens": [
+        {
+          "symbol": "v1",
+          "value": "18",
+          "unit": "km/h"
+        },
+        {
+          "symbol": "v2",
+          "value": "3.6",
+          "unit": "km/h"
+        }
+      ],
+      "symbols": [
+        "v1",
+        "v2"
+      ],
+      "suggested_unit": "km/h",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-2-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Yaxlitlangan vakuum modelida v=300000km/s, t=0,01s. Yorug‘likning s yo‘lini top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "300000",
+          "unit": "km/s"
+        },
+        {
+          "symbol": "t",
+          "value": "0.01",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "km",
+      "unit_choices": [
+        "m",
+        "km"
+      ]
+    },
+    {
+      "key": "physics-7-section-2-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil shu muhit modeli:v=300000km/s, t=0,004s. Yo‘l s qancha?",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "300000",
+          "unit": "km/s"
+        },
+        {
+          "symbol": "t",
+          "value": "0.004",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "km",
+      "unit_choices": [
+        "m",
+        "km"
+      ]
+    },
+    {
+      "key": "physics-7-section-4-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir chiziq bo‘ylab sharqqa a=8m, keyin yana sharqqa b=5m. Natija ko‘chish moduli s ni top.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "8",
+          "unit": "m"
+        },
+        {
+          "symbol": "b",
+          "value": "5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "a",
+        "b"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-4-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Avval sharqqa a=11m, keyin g‘arbga b=4m. a≥b. Natija ko‘chish moduli s ni top; yo‘nalishi sharqqa.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "11",
+          "unit": "m"
+        },
+        {
+          "symbol": "b",
+          "value": "4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "a",
+        "b"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-4-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "a=6cm ko‘chish vektori musbat k=2,5 songa ko‘paytirildi. Yangi modul s ni top.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "6",
+          "unit": "cm"
+        },
+        {
+          "symbol": "k",
+          "value": "2.5",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "a",
+        "k"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-5-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "To‘g‘ri chiziqli tekis model:har teng vaqt oralig‘ida d=14cm, jami n=5ta oraliq. s yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "14",
+          "unit": "cm"
+        },
+        {
+          "symbol": "n",
+          "value": "5",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "d",
+        "n"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-5-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil qayd:har teng vaqt oralig‘ida d=0,6m, n=8ta oraliq. Jami yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "0.6",
+          "unit": "m"
+        },
+        {
+          "symbol": "n",
+          "value": "8",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "d",
+        "n"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    }
+  ]
+}

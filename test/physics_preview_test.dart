@@ -663,6 +663,45 @@ void main() {
     },
   );
   testWidgets(
+    'grade7 public FRQs preserve independently entered drafts at 200 percent',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final questions = jsonRows(fixture('physics_grade7_frq')['questions']);
+      expect(questions, hasLength(9));
+      for (final question in questions) {
+        Json? edited;
+        await mount(
+          tester,
+          scale: 2,
+          child: Scaffold(
+            body: SingleChildScrollView(
+              child: PhysicsAnswerEditor(
+                key: ValueKey(question['key']),
+                question: question,
+                draft: const {},
+                enabled: true,
+                onChanged: (v) => edited = v,
+              ),
+            ),
+          ),
+        );
+        await enter(
+          tester,
+          'learner_formula',
+          '1,25',
+          question['suggested_unit'] as String,
+        );
+        expect(edited?['formula'], 'learner_formula');
+        expect(edited?['value'], '1,25');
+        expect(edited?['unit'], question['suggested_unit']);
+        expect(tester.takeException(), isNull);
+      }
+    },
+  );
+  testWidgets(
     'FRQ inputs have accessible labels and Android-sized tap targets',
     (tester) async {
       final semantics = tester.ensureSemantics();
