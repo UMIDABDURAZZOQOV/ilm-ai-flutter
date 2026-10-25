@@ -3664,6 +3664,104 @@
         "µm",
         "nm"
       ]
+    },
+    {
+      "key": "physics-8-section-46-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "t=2s da N=5e15 elektron anodga yetdi,e=1,6e-19C. I modulini top.",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "5e15",
+          "unit": "1"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "N",
+        "e",
+        "t"
+      ],
+      "suggested_unit": "mA",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-46-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "I=2mA,t=0,5s,e=1,6e-19C. Anodga kelgan N elektron sonini top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "mA"
+        },
+        {
+          "symbol": "t",
+          "value": "0.5",
+          "unit": "s"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "I",
+        "t",
+        "e"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-46-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "A=0,32J,U=100V,e=1,6e-19C. Ushbu ishga mos ko‘chgan N elektron sonini top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "0.32",
+          "unit": "J"
+        },
+        {
+          "symbol": "U",
+          "value": "100",
+          "unit": "V"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "A",
+        "U",
+        "e"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
     }
   ]
 }
