@@ -1525,6 +1525,511 @@
         "g",
         "mg"
       ]
+    },
+    {
+      "key": "physics-7-section-21-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=0,5kg, natijaviy F=3N. a modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "3",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "0.5",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "F",
+        "m"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-21-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2,5kg, a=0,8m/s2. Natijaviy F modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2.5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "a",
+          "value": "0.8",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-21-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Natijaviy F=12N jismga a=3m/s2 beradi. m ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "N"
+        },
+        {
+          "symbol": "a",
+          "value": "3",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "a"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-7-section-21-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil:m=200g, natijaviy F=0,8N. a qancha?",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.8",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "200",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "F",
+        "m"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-22-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "A jism B ga F1=18N kuch bilan ta’sir qiladi. B ning A ga F2 kuchi MODULINI top; yo‘nalishi teskari.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "18",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F1"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-22-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Boshqa gorizontal kuch yo‘q:m1=1,5kg,a1=4m/s2,m2=3kg. O‘zaro ta’sirdan a2 modulini top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "1.5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "a1",
+          "value": "4",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "m2",
+          "value": "3",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "a1",
+        "m2"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-22-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Devor bilan kontakt juftligida F1=0,12kN. Qarshi jismdagi F2 modulini top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "0.12",
+          "unit": "kN"
+        }
+      ],
+      "symbols": [
+        "F1"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-23-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=0,5kg,v=4m/s,R=2m. Markazga F kuch modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "4",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "R",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v",
+        "R"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-23-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil:m=200g,v=3m/s,R=0,6m. Natijaviy radial F qancha?",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "200",
+          "unit": "g"
+        },
+        {
+          "symbol": "v",
+          "value": "3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "R",
+          "value": "0.6",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v",
+        "R"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-23-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=1,2kg,v=5m/s,R=3m. Markazga F modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "1.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "5",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "R",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v",
+        "R"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-24-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Chiziqli elastik model:k=200N/m,x=0,03m. F modulini top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "200",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "value": "0.03",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "k",
+        "x"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-24-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kichik elastik cho‘zilish:x=4cm,F=8N. k qancha?",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "8",
+          "unit": "N"
+        },
+        {
+          "symbol": "x",
+          "value": "4",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "x"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "kN/m"
+      ]
+    },
+    {
+      "key": "physics-7-section-24-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chiziqli model:F=9N,k=300N/m. x uzayishni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "9",
+          "unit": "N"
+        },
+        {
+          "symbol": "k",
+          "value": "300",
+          "unit": "N/m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "k"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-24-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan kichik aksial deformatsiya modeli:E=1000000Pa,S=0,0001m2,l=0,5m. k ni top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "1000000",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "S",
+          "value": "0.0001",
+          "unit": "m2"
+        },
+        {
+          "symbol": "l",
+          "value": "0.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "E",
+        "S",
+        "l"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "kN/m"
+      ]
+    },
+    {
+      "key": "physics-7-section-25-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli tinch qayd:m=0,2kg,g=10m/s2,x=0,04m. k ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "x",
+          "value": "0.04",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "x"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "kN/m"
+      ]
+    },
+    {
+      "key": "physics-7-section-25-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir prujina qaydlari:k1=48N/m,k2=51N/m,k3=51N/m. k_ort qancha?",
+      "givens": [
+        {
+          "symbol": "k1",
+          "value": "48",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "k2",
+          "value": "51",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "k3",
+          "value": "51",
+          "unit": "N/m"
+        }
+      ],
+      "symbols": [
+        "k1",
+        "k2",
+        "k3"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "kN/m"
+      ]
+    },
+    {
+      "key": "physics-7-section-25-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil shartli qayd:m=300g,g=10m/s2,x=6cm. k ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "300",
+          "unit": "g"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "x",
+          "value": "6",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "x"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "kN/m"
+      ]
     }
   ]
 }
