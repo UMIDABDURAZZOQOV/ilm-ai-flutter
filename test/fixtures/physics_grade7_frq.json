@@ -717,6 +717,482 @@
         "m/s",
         "km/h"
       ]
+    },
+    {
+      "key": "physics-7-section-11-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tinch holatdan:v0=0m/s,a=2m/s2,t=3s. s yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "0",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "a",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-11-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v0=3m/s,a=2m/s2,t=4s. Doimiy tezlanishda s ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "a",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-11-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Musbat yo‘nalishda v0=15m/s,a=−2m/s2,t=5s. To‘xtashgacha bosilgan s yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "15",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "value": "-2",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "a",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-12-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli tinch boshlanish qaydi:s=0,9m,t=3s. Modeldagi a ni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "0.9",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-12-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir novning shartli qaydlari:a1=0,18m/s2,a2=0,21m/s2,a3=0,21m/s2. a_ort ni top.",
+      "givens": [
+        {
+          "symbol": "a1",
+          "value": "0.18",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a2",
+          "value": "0.21",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a3",
+          "value": "0.21",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-13-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Pastga erkin tushish:v0=0m/s,g=10m/s2,t=3s. Urilishgacha v ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "0",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-13-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Pastga berilgan model:v0=2m/s,g=10m/s2,t=2s. Tushilgan h ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "2",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-13-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil pastga model:v0=0m/s,g=9,81m/s2,t=2s. v qancha?",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "0",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-14-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Havosiz model:v0=25m/s yuqoriga,g=10m/s2. Cho‘qqigacha t ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "25",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-7-section-14-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yuqoriga musbat:v0=30m/s,g=10m/s2,t=4s. v ni ishorasi bilan top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "30",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-14-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v0=30m/s,g=10m/s2,t=4s. Boshlagan sathdan h balandlikni top; jami yo‘l so‘ralmagan.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "30",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-14-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil model:v0=24m/s,g=10m/s2,t=2s. h qancha?",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "24",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-15-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "R=0,5m,s=1,5m aylana yoyi. phi ni radianda top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "1.5",
+          "unit": "m"
+        },
+        {
+          "symbol": "R",
+          "value": "0.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "s",
+        "R"
+      ],
+      "suggested_unit": "rad",
+      "unit_choices": [
+        "rad"
+      ]
+    },
+    {
+      "key": "physics-7-section-15-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis aylanishda phi=2,4rad burchak t=0,6s da bosilgan. omega ni top.",
+      "givens": [
+        {
+          "symbol": "phi",
+          "value": "2.4",
+          "unit": "rad"
+        },
+        {
+          "symbol": "t",
+          "value": "0.6",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "phi",
+        "t"
+      ],
+      "suggested_unit": "rad/s",
+      "unit_choices": [
+        "rad/s"
+      ]
+    },
+    {
+      "key": "physics-7-section-15-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Aylana bo‘ylab s=0,9m yoy t=0,3s da bosildi. Chiziqli tezlik moduli v ni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "0.9",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "value": "0.3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
     }
   ]
 }
