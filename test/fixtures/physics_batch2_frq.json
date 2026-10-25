@@ -3139,6 +3139,230 @@
         "mV",
         "kV"
       ]
+    },
+    {
+      "key": "physics-6-section-50-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Yaxlitlangan vakuum modeli: v=300000 km/s, t=0,004 s. Yorug‘lik yo‘lini top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "300000",
+          "unit": "km/s"
+        },
+        {
+          "symbol": "t",
+          "value": "0.004",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "km",
+      "unit_choices": [
+        "m",
+        "km"
+      ]
+    },
+    {
+      "key": "physics-6-section-50-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shu yaxlitlangan vakuum modelida s=900 km, v=300000 km/s. O‘tish vaqtini top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "900",
+          "unit": "km"
+        },
+        {
+          "symbol": "v",
+          "value": "300000",
+          "unit": "km/s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "v"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-6-section-52-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Buyum yassi ko‘zgu oldida d=0,45 m. Tasvirning ko‘zgu orqasidagi masofa moduli i ni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "0.45",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "d"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-52-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Paraksial botiq sferik ko‘zgu egrilik radiusi R=24 cm. Fokus masofasini top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "24",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "R"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-52-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Paraksial botiq ko‘zgu: F=15 cm, d=40 cm. Haqiqiy tasvir masofasi f ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "15",
+          "unit": "cm"
+        },
+        {
+          "symbol": "d",
+          "value": "40",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "d"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-52-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil botiq ko‘zgu: F=0,1 m, d=0,3 m. Paraksial modelda haqiqiy f masofani top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.1",
+          "unit": "m"
+        },
+        {
+          "symbol": "d",
+          "value": "0.3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "d"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-53-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Havodagi yig‘uvchi linza: F=20 cm. Optik kuch D ni dioptriyada top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F"
+      ],
+      "suggested_unit": "dptr",
+      "unit_choices": [
+        "dptr",
+        "1/m"
+      ]
+    },
+    {
+      "key": "physics-6-section-53-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yig‘uvchi linzaning optik kuchi D=4 dptr. Fokus masofasini top.",
+      "givens": [
+        {
+          "symbol": "D",
+          "value": "4",
+          "unit": "dptr"
+        }
+      ],
+      "symbols": [
+        "D"
+      ],
+      "suggested_unit": "cm",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-53-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil yig‘uvchi linza: F=0,4 m. D ni top, birlikni dptr yoki1/m ko‘rinishida yoz.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F"
+      ],
+      "suggested_unit": "dptr",
+      "unit_choices": [
+        "dptr",
+        "1/m"
+      ]
     }
   ]
 }

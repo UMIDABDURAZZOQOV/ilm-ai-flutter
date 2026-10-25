@@ -564,6 +564,8 @@ void main() {
         'N*m',
         '%',
         'mV',
+        'dptr',
+        'km',
       ]) {
         final q = questions.firstWhere(
           (q) => (q['unit_choices'] as List).contains(unit),
