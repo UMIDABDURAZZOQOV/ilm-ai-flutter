@@ -1,0 +1,2380 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-p07-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Alkanlarning olinishi va fizik xossalari",
+  "content": {
+    "cards": [
+      {
+        "title": "Vyursning metil qismlari kartasi",
+        "body": "Vyurs reaksiyasining berilgan metil yodid kartasi2CH3I+2Na=C2H6+2NaI. Ikki bir C li qism birikkanda mahsulotdagi C soni 2 bo‘ladi. Bu mahsulotlari berilgan atom modeli, amaliy natija yoki tayyorlash usuli emas.",
+        "fact_ids": [
+          "wurtz"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page31"
+          }
+        ]
+      },
+      {
+        "title": "Etil qismlarining C sanog‘i",
+        "body": "Etil yodid kartasining atom modeli2C2H5I+2Na=C4H10+2NaI. Ikki C2 qismidan C4 tarkib sanaladi. Koeffitsiyent bo‘yicha ikki mol etil yodid bir mol berilgan uglevodorod mahsulotiga mos keladi.",
+        "fact_ids": [
+          "ethyl"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page31"
+          }
+        ]
+      },
+      {
+        "title": "Aralash kartadagi uch ulanish",
+        "body": "Metil va etil qismlari uchun kitob uchta ulanish kartasini ko‘rsatadi: metil/metil — etan, metil/etil — propan, etil/etil — butan. Bu uch ehtimoliy kartani faqat bitta toza propan mahsuloti deb almashtirmaymiz.",
+        "fact_ids": [
+          "mixed"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page31"
+          }
+        ]
+      },
+      {
+        "title": "Karbid modelida C va Al ni kuzating",
+        "body": "Alyuminiy karbid uchun berilgan atom modeli Al4C3+12H2O=4Al(OH)3+3CH4. Bitta Al4C3 yozuvidagi3 C uchta CH4 da saqlanadi; Al esa4 ta Al(OH)3 da saqlanadi.",
+        "fact_ids": [
+          "carbide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          }
+        ]
+      },
+      {
+        "title": "Atsetatdagi ikki C qayerda qoladi?",
+        "body": "Natriy atsetat kartasida mahsulotlar CH4 va Na2CO3 deb berilgan: CH3COONa+NaOH=CH4+Na2CO3. Boshlang‘ich tuzdagi ikkita C ning bittasi CH4 da, bittasi karbonat yozuvida qoladi.",
+        "fact_ids": [
+          "acetate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          }
+        ]
+      },
+      {
+        "title": "Propionat kartasida C taqsimoti",
+        "body": "Natriy propionat kartasining berilgan atom modeli C2H5COONa+NaOH=C2H6+Na2CO3. Shu kartada3 C li tuzning2 C si etan tarkibida,1 C si karbonat tarkibida sanaladi.",
+        "fact_ids": [
+          "propionate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          }
+        ]
+      },
+      {
+        "title": "Nomlangan dastlabki gaz a’zolar",
+        "body": "Sahifa metan, etan, propan va butanni normal sharoitda gaz sifatida keltiradi. Bu aniq nomlangan dastlabki a’zolar misoli; butun alkan qatori uchun temperatura va izomerlar ko‘rsatilmagan yagona suyuq/qattiq chegarasini belgilamaymiz.",
+        "fact_ids": [
+          "gas"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          }
+        ]
+      },
+      {
+        "title": "Nazariy hisobning aniq massa modeli",
+        "body": "Oldingi butun sonli Al=27, C=12 modeli bilan M(Al4C3)=4·27+3·12=144 g/mol. Oldingi aniq hisob M(Al(OH)3)=78 g/mol beradi. Ushbu nazariy kartalarda aynan shu yaxlit massa modeli ishlatiladi.",
+        "fact_ids": [
+          "massmodel"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page33"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph02",
+            "topic_title": "Noorganik birikmalarning asosiy sinflari",
+            "paragraph": 2,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph02-page12"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "14,4 g kartasidan mol va hajmga",
+        "body": "To‘liq nazariy modelda14,4 g Al4C3 miqdori 14,4/144=0,10 mol. Uchga bir nisbat CH4=0,30 mol beradi. Oldingi Vm=22,4 L/mol (n.sh.) bilan hajm6,72 L.",
+        "fact_ids": [
+          "small"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page33"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph02",
+            "topic_title": "Noorganik birikmalarning asosiy sinflari",
+            "paragraph": 2,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph02-page12"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      },
+      {
+        "title": "108 g kartasida ikki mahsulot hisobi",
+        "body": "Xuddi shu to‘liq modelda108/144=0,75 mol Al4C3. CH4=2,25 mol va n.sh. hajmi50,4 L; Al(OH)3=3 mol va hisobiy massasi 234 g. Bu to‘liq o‘tish kartasi, haqiqiy tozalik yoki chiqim o‘lchovi emas.",
+        "fact_ids": [
+          "large"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page33"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph02",
+            "topic_title": "Noorganik birikmalarning asosiy sinflari",
+            "paragraph": 2,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph02-page12"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      },
+      {
+        "title": "41 g atsetat uchun berilgan nisbat",
+        "body": "Oldingi C=12, H=1, O=16, Na=23 butun sonli modelida M(CH3COONa)=82 g/mol.41 g uchun 0,50 mol tuz va berilgan 1:1 modelda0,50 mol CH4 mos keladi. Vm22,4 bilan bu11,2 L (n.sh.).",
+        "fact_ids": [
+          "acetatemass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page33"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              27
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page27"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              29
+            ],
+            "pdf_pages": [
+              29
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page29"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "108 g kartasini bosqichma-bosqich o‘qing",
+        "body": "108/144=0,75 mol. Koeffitsiyentlar CH4 uchun 3, Al(OH)3 uchun 4:2,25 mol va 3 mol. Shundan50,4 L hamda234 g hisoblanadi.",
+        "fact_ids": [
+          "massmodel",
+          "large"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page33"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph02",
+            "topic_title": "Noorganik birikmalarning asosiy sinflari",
+            "paragraph": 2,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph02-page12"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph07",
+            "topic_title": "Alkanlarning olinishi va fizik xossalari",
+            "paragraph": 7,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph07-page32"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph07",
+        "topic_title": "Alkanlarning olinishi va fizik xossalari",
+        "paragraph": 7,
+        "printed_pages": [
+          31
+        ],
+        "pdf_pages": [
+          31
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph07-page31"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph07",
+        "topic_title": "Alkanlarning olinishi va fizik xossalari",
+        "paragraph": 7,
+        "printed_pages": [
+          32
+        ],
+        "pdf_pages": [
+          32
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph07-page32"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph07",
+        "topic_title": "Alkanlarning olinishi va fizik xossalari",
+        "paragraph": 7,
+        "printed_pages": [
+          33
+        ],
+        "pdf_pages": [
+          33
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph07-page33"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph02",
+        "topic_title": "Noorganik birikmalarning asosiy sinflari",
+        "paragraph": 2,
+        "printed_pages": [
+          12
+        ],
+        "pdf_pages": [
+          12
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph02-page12"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph26",
+        "topic_title": "Ekvivalent qonuni",
+        "paragraph": 26,
+        "printed_pages": [
+          114
+        ],
+        "pdf_pages": [
+          114
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph26-page114"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph05",
+        "topic_title": "Kimyoviy elementlarning davriy qonuni",
+        "paragraph": 5,
+        "printed_pages": [
+          27
+        ],
+        "pdf_pages": [
+          27
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph05-page27"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph05",
+        "topic_title": "Kimyoviy elementlarning davriy qonuni",
+        "paragraph": 5,
+        "printed_pages": [
+          29
+        ],
+        "pdf_pages": [
+          29
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph05-page29"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-p07-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Kitobdagi ulash reaksiyasiga bog‘langan familiya qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Vyurs"
+        },
+        {
+          "id": "b",
+          "label": "Butlerov"
+        },
+        {
+          "id": "c",
+          "label": "Kolbe"
+        },
+        {
+          "id": "d",
+          "label": "Bertlo"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Kitobdagi metil/etil uch ulanish kartasi qaysi to‘plamni beradi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat propan"
+        },
+        {
+          "id": "b",
+          "label": "Faqat etan"
+        },
+        {
+          "id": "c",
+          "label": "Etan, propan, butan"
+        },
+        {
+          "id": "d",
+          "label": "Faqat metan"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Al4C3/suv kartasidagi berilgan gaz mahsuloti qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "C2H6"
+        },
+        {
+          "id": "b",
+          "label": "CH4"
+        },
+        {
+          "id": "c",
+          "label": "H2"
+        },
+        {
+          "id": "d",
+          "label": "CO2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Atsetat kartasidagi C saqlangan noorganik mahsulot qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "NaCl"
+        },
+        {
+          "id": "b",
+          "label": "Na2SO4"
+        },
+        {
+          "id": "c",
+          "label": "NaI"
+        },
+        {
+          "id": "d",
+          "label": "Na2CO3"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Metil/etil aralash ulanish kartasidagi uch C li mahsulot nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Propionat kartasidagi berilgan uglevodorod mahsuloti nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Bir Al4C3 ga berilgan modelda CH4 koeffitsiyenti qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Metil va etil qismlari uchun ko‘rsatilgan turli ulanish kartalari soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Al27/C12 modelida Al4C3 molyar massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page33"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan 14,4 g to‘liq modelda CH4 n.sh. hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page33"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan 108 g to‘liq modelda Al(OH)3 hisobiy massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page33"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Shu 108 g modelda CH4 n.sh. hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page33"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan 41 g atsetat to‘liq modelida CH4 n.sh. hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page33"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page27"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page29"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: 2CH3I+2Na=C2H6+2NaI",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q15",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: 2C2H5I+2Na=C4H10+2NaI",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q16",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: Al4C3+12H2O=4Al(OH)3+3CH4",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q17",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: CH3COONa+NaOH=CH4+Na2CO3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1-q18",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: C2H5COONa+NaOH=C2H6+Na2CO3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

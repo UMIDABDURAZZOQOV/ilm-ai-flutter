@@ -1,0 +1,2754 @@
+{
+  "assessment_version": 2,
+  "subject": "kimyo",
+  "grade": 10,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 41,
+  "implemented_sections": 15,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 15,
+  "grade_content_complete": false,
+  "available_grades": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "lessons": [
+    {
+      "key": "chemistry-10-p01-r1",
+      "sequence": 1,
+      "title": "Organik kimyo tarixi. Organik birikmalarning o‘ziga xos xususiyatlari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph01",
+          "topic_title": "Organik kimyo tarixi. Organik birikmalarning o‘ziga xos xususiyatlari",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph01-page04"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph01",
+          "topic_title": "Organik kimyo tarixi. Organik birikmalarning o‘ziga xos xususiyatlari",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph01",
+          "topic_title": "Organik kimyo tarixi. Organik birikmalarning o‘ziga xos xususiyatlari",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph01-page06"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph01",
+          "topic_title": "Organik kimyo tarixi. Organik birikmalarning o‘ziga xos xususiyatlari",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p02-r1",
+      "sequence": 2,
+      "title": "Organik moddalarning tuzilish nazariyasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph02",
+          "topic_title": "Organik moddalarning tuzilish nazariyasi",
+          "paragraph": 2,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph02-page07"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph02",
+          "topic_title": "Organik moddalarning tuzilish nazariyasi",
+          "paragraph": 2,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph02-page08"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph02",
+          "topic_title": "Organik moddalarning tuzilish nazariyasi",
+          "paragraph": 2,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph02-page09"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph02",
+          "topic_title": "Organik moddalarning tuzilish nazariyasi",
+          "paragraph": 2,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph02-page10"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph02",
+          "topic_title": "Organik moddalarning tuzilish nazariyasi",
+          "paragraph": 2,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph02-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p03-r1",
+      "sequence": 3,
+      "title": "Izomeriya va uning turlari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page11"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page12"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page13"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page14"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page15"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p04-r1",
+      "sequence": 4,
+      "title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph04",
+          "topic_title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+          "paragraph": 4,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph04-page15"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph04",
+          "topic_title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+          "paragraph": 4,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph04-page16"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph04",
+          "topic_title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+          "paragraph": 4,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph04-page17"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph04",
+          "topic_title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+          "paragraph": 4,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph04-page18"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph04",
+          "topic_title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph04-page19"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph04",
+          "topic_title": "Organik birikmalarning sinflanishi. Organik birikmalarga xos reaksiya turlari",
+          "paragraph": 4,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph04-page20"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p05-r1",
+      "sequence": 5,
+      "title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page21"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page22"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page23"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page24"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page25"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p06-r1",
+      "sequence": 6,
+      "title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph06",
+          "topic_title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+          "paragraph": 6,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph06-page26"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph06",
+          "topic_title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+          "paragraph": 6,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph06-page27"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph06",
+          "topic_title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+          "paragraph": 6,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph06-page28"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph06",
+          "topic_title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+          "paragraph": 6,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph06-page29"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph06",
+          "topic_title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+          "paragraph": 6,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph06-page30"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page21"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page22"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p07-r1",
+      "sequence": 7,
+      "title": "Alkanlarning olinishi va fizik xossalari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page31"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page32"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph07",
+          "topic_title": "Alkanlarning olinishi va fizik xossalari",
+          "paragraph": 7,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph07-page33"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page27"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page29"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p08-r1",
+      "sequence": 8,
+      "title": "Alkanlarning kimyoviy xossasi. Ishlatilishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph08",
+          "topic_title": "Alkanlarning kimyoviy xossasi. Ishlatilishi",
+          "paragraph": 8,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph08-page33"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph08",
+          "topic_title": "Alkanlarning kimyoviy xossasi. Ishlatilishi",
+          "paragraph": 8,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph08-page34"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph08",
+          "topic_title": "Alkanlarning kimyoviy xossasi. Ishlatilishi",
+          "paragraph": 8,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph08-page35"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph08",
+          "topic_title": "Alkanlarning kimyoviy xossasi. Ishlatilishi",
+          "paragraph": 8,
+          "printed_pages": [
+            36
+          ],
+          "pdf_pages": [
+            36
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph08-page36"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page11"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph03",
+          "topic_title": "Izomeriya va uning turlari",
+          "paragraph": 3,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph03-page12"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph06",
+          "topic_title": "Alkanlarning xalqaro nomenklatura bo‘yicha nomlanishi. Izomeriyasi",
+          "paragraph": 6,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph06-page29"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page25"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p09-r1",
+      "sequence": 9,
+      "title": "Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph09",
+          "topic_title": "Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+          "paragraph": 9,
+          "printed_pages": [
+            36
+          ],
+          "pdf_pages": [
+            36
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph09-page36"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph09",
+          "topic_title": "Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+          "paragraph": 9,
+          "printed_pages": [
+            37
+          ],
+          "pdf_pages": [
+            37
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph09-page37"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph09",
+          "topic_title": "Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+          "paragraph": 9,
+          "printed_pages": [
+            38
+          ],
+          "pdf_pages": [
+            38
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph09-page38"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph09",
+          "topic_title": "Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+          "paragraph": 9,
+          "printed_pages": [
+            39
+          ],
+          "pdf_pages": [
+            39
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph09-page39"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p10-r1",
+      "sequence": 10,
+      "title": "Sikloalkanlarning fizik va kimyoviy xossalari",
+      "state": "available",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph10",
+          "topic_title": "Sikloalkanlarning fizik va kimyoviy xossalari",
+          "paragraph": 10,
+          "printed_pages": [
+            39
+          ],
+          "pdf_pages": [
+            39
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph10-page39"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph10",
+          "topic_title": "Sikloalkanlarning fizik va kimyoviy xossalari",
+          "paragraph": 10,
+          "printed_pages": [
+            40
+          ],
+          "pdf_pages": [
+            40
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph10-page40"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph10",
+          "topic_title": "Sikloalkanlarning fizik va kimyoviy xossalari",
+          "paragraph": 10,
+          "printed_pages": [
+            41
+          ],
+          "pdf_pages": [
+            41
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph10-page41"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph09",
+          "topic_title": "Sikloalkanlar. Nomenklaturasi. Izomeriyasi. Olinishi",
+          "paragraph": 9,
+          "printed_pages": [
+            37
+          ],
+          "pdf_pages": [
+            37
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph09-page37"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p11-r1",
+      "sequence": 11,
+      "title": "Alkenlar va ularning nomenklaturasi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph11",
+          "topic_title": "Alkenlar va ularning nomenklaturasi",
+          "paragraph": 11,
+          "printed_pages": [
+            42
+          ],
+          "pdf_pages": [
+            42
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph11-page42"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph11",
+          "topic_title": "Alkenlar va ularning nomenklaturasi",
+          "paragraph": 11,
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            43
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph11-page43"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph11",
+          "topic_title": "Alkenlar va ularning nomenklaturasi",
+          "paragraph": 11,
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            44
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph11-page44"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1",
+      "sequence": 12,
+      "title": "Alkenlarning izomeriyasi va olinishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            44
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page44"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page45"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page46"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page47"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page48"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p13-r1",
+      "sequence": 13,
+      "title": "Alkenlarning fizik va kimyoviy xossalari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph13",
+          "topic_title": "Alkenlarning fizik va kimyoviy xossalari",
+          "paragraph": 13,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph13-page50"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph13",
+          "topic_title": "Alkenlarning fizik va kimyoviy xossalari",
+          "paragraph": 13,
+          "printed_pages": [
+            51
+          ],
+          "pdf_pages": [
+            51
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph13-page51"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph13",
+          "topic_title": "Alkenlarning fizik va kimyoviy xossalari",
+          "paragraph": 13,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph13-page52"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page25"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p14-r1",
+      "sequence": 14,
+      "title": "Alkadiyenlar. Olinishi va xossalari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph14",
+          "topic_title": "Alkadiyenlar. Olinishi va xossalari",
+          "paragraph": 14,
+          "printed_pages": [
+            53
+          ],
+          "pdf_pages": [
+            53
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph14-page53"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph14",
+          "topic_title": "Alkadiyenlar. Olinishi va xossalari",
+          "paragraph": 14,
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            54
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph14-page54"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph14",
+          "topic_title": "Alkadiyenlar. Olinishi va xossalari",
+          "paragraph": 14,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph14-page55"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph14",
+          "topic_title": "Alkadiyenlar. Olinishi va xossalari",
+          "paragraph": 14,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph14-page56"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph05",
+          "topic_title": "Alkanlarning umumiy formulasi va gomologik qatori. Ratsional nomenklatura",
+          "paragraph": 5,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph05-page25"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p15-r1",
+      "sequence": 15,
+      "title": "Alkinlar. Olinishi va xossalari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page56"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page57"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page58"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page59"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            60
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page60"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page61"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    }
+  ]
+}

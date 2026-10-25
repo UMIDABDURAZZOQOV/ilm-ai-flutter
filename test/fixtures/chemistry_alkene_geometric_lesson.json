@@ -1,0 +1,1971 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-p12-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Alkenlarning izomeriyasi va olinishi",
+  "content": {
+    "cards": [
+      {
+        "title": "C skeleti farqli bo‘lgan juft",
+        "body": "Buten-1 va 2-metilpropen misollarida C skeleti farqli, ikkalasining molekulyar tarkibi C4H8. Penten-1 bilan 2-metilbuten-1 ham shu turdagi zanjir farqini ko‘rsatadi.",
+        "fact_ids": [
+          "chain"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              44
+            ],
+            "pdf_pages": [
+              44
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page44"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              45
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page45"
+          }
+        ]
+      },
+      {
+        "title": "C=C o‘rni farqli bo‘lgan juft",
+        "body": "Buten-1/buten-2 va penten-1/penten-2 juftlarida C=C ning bir xil zanjirdagi o‘rni farqlanadi. Bu holat izomeriyasidir; bir xil umumiy tarkibning o‘zi qo‘sh bog‘ning o‘rnini ko‘rsatmaydi.",
+        "fact_ids": [
+          "position"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              45
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page45"
+          }
+        ]
+      },
+      {
+        "title": "Geometrik juftning shartini tekshiring",
+        "body": "Geometrik juft bo‘lishi uchun C=C dagi har bir C ikkita turli guruhga bog‘langan bo‘lishi kerak. Buten-2 misolida har ikki C ga H va CH3 birikkan. Eten tasvirida esa har bir C ga ikkita bir xil H birikkan.",
+        "fact_ids": [
+          "criterion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page46"
+          }
+        ]
+      },
+      {
+        "title": "Sis va trans rasmlarini qiyoslang",
+        "body": "Buten-2 va penten-2 ning ko‘rsatilgan juftlarida taqqoslanayotgan organik guruhlar bir tomonda bo‘lsa sis, qarama-qarshi tomonda bo‘lsa trans deb ajratilgan. Rasmda ikki shaklni qiyoslash haqiqiy C=C bog‘ni erkin aylantirish degani emas.",
+        "fact_ids": [
+          "cis"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page46"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              47
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page47"
+          }
+        ]
+      },
+      {
+        "title": "Oldindan belgilangan guruhlar bilan E/Z ni o‘qing",
+        "body": "E/Z kartasida taqqoslanadigan ikkita guruh oldindan ko‘k bilan belgilangan. Yuqoridagi rasmda shu guruhlar bir tomonda va Z deb yozilgan; keyingi rasmda qarama-qarshi tomonda va E deb yozilgan. Ushbu vazifada belgilangan guruhlarning fazoviy o‘rnini o‘qiymiz.",
+        "fact_ids": [
+          "ez"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              48
+            ],
+            "pdf_pages": [
+              48
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page48"
+          }
+        ]
+      },
+      {
+        "title": "Etanol kartasida suvning ajralishi",
+        "body": "Aynan etanolning CH3–CH2–OH tuzilishi uchun mahsulotlari oldindan berilgan atom modeli C2H5OH=C2H4+H2O. Alken va suvning koeffitsiyentlari1:1. Bu raqamli berilgan model, barcha spirtlar uchun shartsiz yagona mahsulot va’da qilmaydi.",
+        "fact_ids": [
+          "dehydration"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              48
+            ],
+            "pdf_pages": [
+              48
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page48"
+          }
+        ]
+      },
+      {
+        "title": "Etan kartasida H2 ning ajralishi",
+        "body": "Etanning berilgan atom modeli C2H6=C2H4+H2. Bu yerda suv emas, H2 ajralgan. Shu farq degidrogenlash bilan berilgan degidratlanish kartasini ajratishga yordam beradi.",
+        "fact_ids": [
+          "dehydrogenation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          }
+        ]
+      },
+      {
+        "title": "Ikki qo‘shni Br li berilgan model",
+        "body": "Qo‘shni C larda Br ko‘rsatilgan uch C li karta uchun berilgan model C3H6Br2+Zn=C3H6+ZnBr2. Mahsulot rasmining nomi propen. Tenglama bu vazifada faqat berilgan moddalar atom balansini tekshiradi.",
+        "fact_ids": [
+          "zinc"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          }
+        ]
+      },
+      {
+        "title": "Karta shartidagi spirtli muhitni saqlang",
+        "body": "Spirtli muhit sharti yozilgan xlorli karta modeli C3H7Cl+KOH=C3H6+KCl+H2O. Bu shartni tushirib, barcha suvli KOH holatlari uchun aynan bir mahsulot deb xulosa qilmaymiz.",
+        "fact_ids": [
+          "base"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          }
+        ]
+      },
+      {
+        "title": "Ishlangan5,6 g va3,6 g kartasi",
+        "body": "Ishlangan kartada suv3,6 g va M18 orqali0,20 mol. Berilgan 1:1 modelda alken ham0,20 mol. Alken massasi 5,6 g bo‘lgani uchun M=5,6/0,20=28 g/mol; CnH2n modelida natija C2H4.",
+        "fact_ids": [
+          "worked"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              50
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page50"
+          }
+        ]
+      },
+      {
+        "title": "Yangi8,4 g va1,8 g kartasi",
+        "body": "Alohida kartada8,4 g alken va 1,8 g suv berilgan. Suv0,10 mol, alken ham0,10 mol; M=84 g/mol. Oldingi C12/H1 modelida 14n=84, n=6, tarkib C6H12.",
+        "fact_ids": [
+          "newmass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              50
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page50"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "H2 hajmidan propen massasiga",
+        "body": "33,6 L H2 va Vm22,4 L/mol (n.sh.) modeli1,5 molni bildiradi. Berilgan propan→propen+H2 kartasida1:1 nisbatdan propen ham1,5 mol; C12/H1 bo‘yicha M42 bilan massasi 63 g. Bu nazariy to‘liq model.",
+        "fact_ids": [
+          "gas"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              50
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page50"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Avval suv moli,keyin alken M si",
+        "body": "3,6/18=0,20 mol suv.Berilgan 1:1 modelda alken ham0,20 mol.Shu sabab5,6/0,20=28 g/mol va 14n=28, n=2.",
+        "fact_ids": [
+          "worked"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page49"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph12",
+            "topic_title": "Alkenlarning izomeriyasi va olinishi",
+            "paragraph": 12,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              50
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph12-page50"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          44
+        ],
+        "pdf_pages": [
+          44
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page44"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          45
+        ],
+        "pdf_pages": [
+          45
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page45"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          46
+        ],
+        "pdf_pages": [
+          46
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page46"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          47
+        ],
+        "pdf_pages": [
+          47
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page47"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          48
+        ],
+        "pdf_pages": [
+          48
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page48"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          49
+        ],
+        "pdf_pages": [
+          49
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page49"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph12",
+        "topic_title": "Alkenlarning izomeriyasi va olinishi",
+        "paragraph": 12,
+        "printed_pages": [
+          50
+        ],
+        "pdf_pages": [
+          50
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph12-page50"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph26",
+        "topic_title": "Ekvivalent qonuni",
+        "paragraph": 26,
+        "printed_pages": [
+          114
+        ],
+        "pdf_pages": [
+          114
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph26-page114"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-p12-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Buten-1/2-metilpropen berilgan jufti qaysi turga misol?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Zanjir izomeriyasi"
+        },
+        {
+          "id": "b",
+          "label": "Holat izomeriyasi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat massa farqi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat bir nom"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            44
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page44"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page45"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Penten-1/penten-2 juftining berilgan farqi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Zanjir izomeriyasi"
+        },
+        {
+          "id": "b",
+          "label": "Faqat massa farqi"
+        },
+        {
+          "id": "c",
+          "label": "Holat izomeriyasi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat element nomi farqi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page45"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Ikkala C=C atomiga ham H va CH3 birikkan ko‘rsatilgan misol qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Eten"
+        },
+        {
+          "id": "b",
+          "label": "Buten-2"
+        },
+        {
+          "id": "c",
+          "label": "Metan"
+        },
+        {
+          "id": "d",
+          "label": "Etan"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Oldindan belgilangan ikki guruh bir tomonda; manba kartasi harfi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "E"
+        },
+        {
+          "id": "b",
+          "label": "H"
+        },
+        {
+          "id": "c",
+          "label": "C"
+        },
+        {
+          "id": "d",
+          "label": "Z"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page48"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Belgilangan organik guruhlari qarama-qarshi tomondagi geometrik shakl nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page46"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page47"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Oldindan belgilangan guruhlar qarama-qarshi tomondagi karta harfini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page48"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Berilgan etanol→eten+suv modeli jarayoni nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page48"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Ishlangan3,6 g suv/M18 kartasida suv moli qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Shu 5,6 g alken kartasidan topilgan M qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "8,4 g alken/1,8 g suv kartasida topilgan M qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Shu kartadagi CnH2n tarkibi uchun n qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "33,6 L H2 modeli uchun propen hisobiy massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q13",
+      "response_kind": "chemical_formula",
+      "prompt": "Ishlangan5,6 g/3,6 g kartasida topilgan jami alken molekulyar tarkibini yozing; ulanish grafigi so‘ralmayapti.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: C2H5OH=C2H4+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page48"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q15",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: C2H6=C2H4+H2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q16",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: C3H6Br2+Zn=C3H6+ZnBr2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p12-r1-q17",
+      "response_kind": "chemical_equation",
+      "prompt": "Faqat berilgan mahsulotli atom balansini yozing: C3H7Cl+KOH=C3H6+KCl+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph12",
+          "topic_title": "Alkenlarning izomeriyasi va olinishi",
+          "paragraph": 12,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph12-page49"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
