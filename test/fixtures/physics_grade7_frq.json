@@ -2858,6 +2858,578 @@
         "1",
         "%"
       ]
+    },
+    {
+      "key": "physics-7-section-36-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "O‘ngga musbat. O‘zgarmas F=3N t=2s ta’sir qiladi. I ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "3",
+          "unit": "N"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "F",
+        "t"
+      ],
+      "suggested_unit": "N*s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ]
+    },
+    {
+      "key": "physics-7-section-36-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=0,5kg jismning o‘qdagi v=−4m/s tezligi berilgan. p proyeksiyasini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "-4",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v"
+      ],
+      "suggested_unit": "kg*m/s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ]
+    },
+    {
+      "key": "physics-7-section-36-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2kg,v0=5m/s,v=1m/s bir o‘qda. dp ni ishorasi bilan top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "1",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v0",
+          "value": "5",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v",
+        "v0"
+      ],
+      "suggested_unit": "kg*m/s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ]
+    },
+    {
+      "key": "physics-7-section-36-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chapga kuch proyeksiyasi F=−4N,t=0,5s. I ni ishorasi bilan top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "-4",
+          "unit": "N"
+        },
+        {
+          "symbol": "t",
+          "value": "0.5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "F",
+        "t"
+      ],
+      "suggested_unit": "N*s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ]
+    },
+    {
+      "key": "physics-7-section-37-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir o‘qda:m1=2kg,v1=4m/s,m2=1kg,v2=−3m/s. Jami p ni top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v1",
+          "value": "4",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "m2",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v2",
+          "value": "-3",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "v1",
+        "m2",
+        "v2"
+      ],
+      "suggested_unit": "kg*m/s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ]
+    },
+    {
+      "key": "physics-7-section-37-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tashqi impuls0,yopishish:m1=2kg,v1=3m/s,m2=1kg,v2=0m/s. Umumiy v ni top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v1",
+          "value": "3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "m2",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v2",
+          "value": "0",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "v1",
+        "m2",
+        "v2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-37-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yopishish:m1=1kg,v1=2m/s,m2=3kg,v2=−2m/s,tashqi impuls0. v ni top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v1",
+          "value": "2",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "m2",
+          "value": "3",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v2",
+          "value": "-2",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "v1",
+        "m2",
+        "v2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-37-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yopishish:m1=2kg,v1=3m/s,m2=3kg,v2=−2m/s,tashqi impuls0. v qancha?",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v1",
+          "value": "3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "m2",
+          "value": "3",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v2",
+          "value": "-2",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "v1",
+        "m2",
+        "v2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-38-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Dastlab tinch ikki qism:m=0,1kg,u=4m/s,M=2kg. Tashqi impuls0. Qolgan qism v proyeksiyasini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "u",
+          "value": "4",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "M",
+          "value": "2",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m",
+        "u",
+        "M"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-38-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir martalik model:m=50g,u=6m/s,M=1,5kg,tashqi impuls0,boshlang‘ich jami0. v ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "50",
+          "unit": "g"
+        },
+        {
+          "symbol": "u",
+          "value": "6",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "M",
+          "value": "1.5",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m",
+        "u",
+        "M"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-38-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Musbat o‘qqa teskari chiqish:u=−3m/s,m=0,2kg,M=1kg. Boshlang‘ich jami/tashqi impuls0. v qancha?",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "u",
+          "value": "-3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "M",
+          "value": "1",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m",
+        "u",
+        "M"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-39-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Fpr=8N,s=3m. Tanlangan kuchning A ishini top.",
+      "givens": [
+        {
+          "symbol": "Fpr",
+          "value": "8",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "Fpr",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-39-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ko‘chishga qarshi Fpr=−5N,s=4m. A ni ishorasi bilan top.",
+      "givens": [
+        {
+          "symbol": "Fpr",
+          "value": "-5",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "Fpr",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-39-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kuch ko‘chishga tik:Fpr=0N,s=2m. A qancha?",
+      "givens": [
+        {
+          "symbol": "Fpr",
+          "value": "0",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "Fpr",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-39-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kuch moduli10N,lekin Fpr=6N. s=50cm. A ni top.",
+      "givens": [
+        {
+          "symbol": "Fpr",
+          "value": "6",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "50",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "Fpr",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-40-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli tekis ko‘tarish:F=3N,h=0,4m. Ko‘taruvchi kuchning A ishini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "3",
+          "unit": "N"
+        },
+        {
+          "symbol": "h",
+          "value": "0.4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "h"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-40-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli gorizontal tekis tortish:F=0,8N,s=0,4m. Tortuvchi kuch A ishi qancha?",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "0.8",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "0.4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-7-section-40-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil tekis ko‘tarish:F=2,5N,h=20cm. Ko‘taruvchi kuch A ishini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "2.5",
+          "unit": "N"
+        },
+        {
+          "symbol": "h",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "h"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
     }
   ]
 }
