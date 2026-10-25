@@ -713,6 +713,68 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
+  for (final name in ['fertilizer', 'zinc_lab']) {
+    testWidgets('$name sourced arithmetic or lab model at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      catalog['available_grades'] = [7, 8];
+      grade8Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(name == 'fertilizer' ? 12 : 8);
+      await mount(
+        t,
+        dark: name == 'zinc_lab',
+        size: const Size(320, 568),
+        scale: 2,
+      );
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-8')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      final field = find.byKey(const Key('chemistry-short-answer'));
+      await waitFor(field);
+      await t.ensureVisible(field);
+      final value = name == 'fertilizer'
+          ? '4,120'
+          : 'Zn(OH)2+2NaOH=Na2ZnO2+2H2O';
+      await t.enterText(field, value);
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-model-feedback');
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining(
+          name == 'fertilizer' ? 'Manba: §43' : 'Manba: Laboratoriya 1',
+        ),
+      );
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await tapFinder(t, source);
+      final page = name == 'fertilizer' ? 191 : 200;
+      final locator = find.textContaining('$page -> PDF $page · Yakka sahifa');
+      expect(locator, findsOneWidget);
+      if (name == 'zinc_lab') {
+        expect(
+          find.textContaining('Manba bo‘limi: Laboratoriya 1'),
+          findsOneWidget,
+        );
+      }
+      await t.ensureVisible(locator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-model-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
