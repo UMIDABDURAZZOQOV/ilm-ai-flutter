@@ -1,0 +1,1636 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-8-lab08-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+  "content": {
+    "cards": [
+      {
+        "title": "To‘rtta ma’lum boshlang‘ich eritma",
+        "body": "To‘rtta ma’lum eritma: H2SO4,Na2SO4,CuSO4 va alyuminiy sulfatAl2(SO4)3. Taqqoslanadigan reaktivBaCl2. Raqamli mashqda mahsulotlar berilgan tenglamalar va oldingi sifat dalili o‘qiladi.",
+        "fact_ids": [
+          "solutions"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-practical02",
+            "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+            "paragraph": 2,
+            "printed_pages": [
+              151
+            ],
+            "pdf_pages": [
+              151
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-practical02-page151"
+          }
+        ]
+      },
+      {
+        "title": "Umumiy sifat dalili",
+        "body": "Oldingi manbada sulfat/BaCl2 misollarining mahsuloti oqBaSO4 cho‘kma. Shu ma’lum modeldagi sifat belgisi moddaning miqdori yoki boshlang‘ich kationni yolg‘iz o‘zi ko‘rsatmaydi.",
+        "fact_ids": [
+          "evidence"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          }
+        ]
+      },
+      {
+        "title": "Kislota modeli",
+        "body": "Oldingi aniq balansH2SO4+BaCl2=BaSO4+2HCl. Bir sulfat guruhiga birBa; ikkitaCl uchun mahsulotda2HCl yoziladi.",
+        "fact_ids": [
+          "acid"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          }
+        ]
+      },
+      {
+        "title": "Natriy sulfat modeli",
+        "body": "Oldingi aniq balansNa2SO4+BaCl2=BaSO4+2NaCl. Sulfat mahsulotiBaSO4;2Na va2Cl esa2NaCl bilan sanaladi.",
+        "fact_ids": [
+          "sodium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          }
+        ]
+      },
+      {
+        "title": "Mis sulfat uchun mahsulotli balans",
+        "body": "Ma’lumCuSO4/BaCl2 va berilganBaSO4/CuCl2 mahsulotlarining original balansiCuSO4+BaCl2=BaSO4+CuCl2. CuCl2 oldingi misol formulasi; bu yangi noma’lum namuna tarkibi haqidagi xulosa emas.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph27",
+            "topic_title": "Xlorid kislota",
+            "paragraph": 27,
+            "printed_pages": [
+              117
+            ],
+            "pdf_pages": [
+              117
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph27-page117"
+          }
+        ]
+      },
+      {
+        "title": "Alyuminiy sulfatdagi uch guruh",
+        "body": "Ma’lumAl2(SO4)3/BaCl2 va berilganBaSO4/AlCl3 mahsulotlarining balansiAl2(SO4)3+3BaCl2=3BaSO4+2AlCl3. Uch sulfat guruhi uchun3BaSO4; ikkitaAl uchun2AlCl3 kerak.",
+        "fact_ids": [
+          "aluminium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-practical02",
+            "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+            "paragraph": 2,
+            "printed_pages": [
+              151
+            ],
+            "pdf_pages": [
+              151
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-practical02-page151"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph20",
+            "topic_title": "Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+            "paragraph": 20,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph20-page83"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Guruhni saqlab tenglash",
+        "body": "Al2(SO4)3+3BaCl2=3BaSO4+2AlCl3. Chap/o‘ng:Al2,S3,O12,Ba3,Cl6. SO4 guruhining uch marta takrorlanishini hisobga olish kerak.",
+        "fact_ids": [
+          "aluminium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory08",
+            "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+            "paragraph": 8,
+            "printed_pages": [
+              203
+            ],
+            "pdf_pages": [
+              203
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory08-page203"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-practical02",
+            "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+            "paragraph": 2,
+            "printed_pages": [
+              151
+            ],
+            "pdf_pages": [
+              151
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-practical02-page151"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph20",
+            "topic_title": "Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+            "paragraph": 20,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph20-page83"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph32",
+            "topic_title": "Sulfat kislota",
+            "paragraph": 32,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph32-page140"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-laboratory08",
+        "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+        "paragraph": 8,
+        "printed_pages": [
+          203
+        ],
+        "pdf_pages": [
+          203
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-laboratory08-page203"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph32",
+        "topic_title": "Sulfat kislota",
+        "paragraph": 32,
+        "printed_pages": [
+          140
+        ],
+        "pdf_pages": [
+          140
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph32-page140"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-practical02",
+        "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+        "paragraph": 2,
+        "printed_pages": [
+          151
+        ],
+        "pdf_pages": [
+          151
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-practical02-page151"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph27",
+        "topic_title": "Xlorid kislota",
+        "paragraph": 27,
+        "printed_pages": [
+          117
+        ],
+        "pdf_pages": [
+          117
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph27-page117"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph20",
+        "topic_title": "Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+        "paragraph": 20,
+        "printed_pages": [
+          83
+        ],
+        "pdf_pages": [
+          83
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph20-page83"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-8-lab08-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Sulfat uchun ma’lum oq mahsulot?",
+      "options": [
+        {
+          "id": "a",
+          "label": "AgI"
+        },
+        {
+          "id": "b",
+          "label": "S8"
+        },
+        {
+          "id": "c",
+          "label": "BaSO4"
+        },
+        {
+          "id": "d",
+          "label": "I2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Sahifadagi taqqoslash reaktivi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "BaCl2"
+        },
+        {
+          "id": "b",
+          "label": "Br2"
+        },
+        {
+          "id": "c",
+          "label": "NaI"
+        },
+        {
+          "id": "d",
+          "label": "I2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical02",
+          "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 2,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical02-page151"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Bir xilBaSO4 mahsuloti nimani yolg‘iz o‘zi ajratmaydi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "BaSO4 formulasini"
+        },
+        {
+          "id": "b",
+          "label": "Boshlang‘ich kationni"
+        },
+        {
+          "id": "c",
+          "label": "Sulfat guruhidagiO sanog‘ini"
+        },
+        {
+          "id": "d",
+          "label": "Berilgan oq rang tavsifini"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "ManbadagiBaSO4 cho‘kma rangi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q05",
+      "response_kind": "chemical_formula",
+      "prompt": "Bariy sulfat formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q06",
+      "response_kind": "chemical_formula",
+      "prompt": "Alyuminiy sulfat formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical02",
+          "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 2,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical02-page151"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q07",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlar berilgan modelni tenglang: H2SO4+BaCl2→BaSO4+2HCl",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q08",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlar berilgan modelni tenglang: Na2SO4+BaCl2→BaSO4+2NaCl",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q09",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlar berilgan modelni tenglang: CuSO4+BaCl2→BaSO4+CuCl2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph27",
+          "topic_title": "Xlorid kislota",
+          "paragraph": 27,
+          "printed_pages": [
+            117
+          ],
+          "pdf_pages": [
+            117
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph27-page117"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q10",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlar berilgan modelni tenglang: Al2(SO4)3+3BaCl2→3BaSO4+2AlCl3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical02",
+          "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 2,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical02-page151"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph20",
+          "topic_title": "Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+          "paragraph": 20,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph20-page83"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab08-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Eng kichik butun koeffitsiyentlardaBaCl2 koeffitsiyenti?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "koeffitsiyent",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory08",
+          "topic_title": "Turli eritmalarda sulfat ioni borligini aniqlash",
+          "paragraph": 8,
+          "printed_pages": [
+            203
+          ],
+          "pdf_pages": [
+            203
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory08-page203"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical02",
+          "topic_title": "“Oltingugurt” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 2,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical02-page151"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph20",
+          "topic_title": "Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+          "paragraph": 20,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph20-page83"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph32",
+          "topic_title": "Sulfat kislota",
+          "paragraph": 32,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph32-page140"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

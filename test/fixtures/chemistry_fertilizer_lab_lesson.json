@@ -1,0 +1,2283 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-8-lab10-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+  "content": {
+    "cards": [
+      {
+        "title": "Beshta raqamli misol",
+        "body": "Bo‘sh jadval5namuna uchun nom,formula,nisbiy massa,tashqi rang va suvda eruvchanlik ustunlarini beradi. Biz haqiqiy o‘qituvchi namunalari o‘rniga beshta oldindan nomlangan raqamli formulani solishtiramiz; ularning haqiqiy rangi yoki tozaligi haqida qayd yaratmaymiz.",
+        "fact_ids": [
+          "table"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          }
+        ]
+      },
+      {
+        "title": "NaNO3: nom va massa",
+        "body": "Ma’lum misol:natriyli selitraNaNO3. Oldingi aniqNa23,N14,O16 modeli bilan nisbiy formula massasi23+14+3·16=85. Asosiy oziqa tasnifida bu azotli misol.",
+        "fact_ids": [
+          "nitrate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page189"
+          }
+        ]
+      },
+      {
+        "title": "NH4NO3: ikkiNni hisoblang",
+        "body": "Ma’lum misol:ammoniyli selitraNH4NO3. N14,H1,O16 modeli bilan2·14+4·1+3·16=80. Formulada ikkiN bo‘lsa ham, asosiy oziqa tasnifidagiN bitta element turidir.",
+        "fact_ids": [
+          "ammoniumnitrate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "(NH4)2SO4: qavs ta’siri",
+        "body": "Ma’lum misol:ammoniy sulfat(NH4)2SO4. N14,H1,S32,O16 bilan2·14+8·1+32+4·16=132. Qavs tashqarisidagi2 NH4 guruhini butunicha ko‘paytiradi.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph42",
+            "topic_title": "Mineral o‘g‘itlar",
+            "paragraph": 42,
+            "printed_pages": [
+              188
+            ],
+            "pdf_pages": [
+              188
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph42-page188"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "KCl: oldingi hisobni o‘qing",
+        "body": "Ma’lum misol:kaliy xloridKCl. Oldingi hisob modelida ikkiKCl uchun149berilgan; demak bir formula uchun149/2=74,5. Bu ma’lum tarkibning hisobiy massasi,tijorat aralashmasining barchasi sofKCl degani emas.",
+        "fact_ids": [
+          "potassium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              192
+            ],
+            "pdf_pages": [
+              192
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page192"
+          }
+        ]
+      },
+      {
+        "title": "KNO3: ikki asosiy oziqa",
+        "body": "Ma’lum misol:kaliyli selitraKNO3; oziqa sifatidaN vaK tutuvchi murakkab misol. OldingiK2O94 vaO16 modelidanK=(94−16)/2=39. N14,O16 bilanKNO3 formula massasi39+14+48=101.",
+        "fact_ids": [
+          "complex"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph42",
+            "topic_title": "Mineral o‘g‘itlar",
+            "paragraph": 42,
+            "printed_pages": [
+              187
+            ],
+            "pdf_pages": [
+              187
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph42-page187"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              192
+            ],
+            "pdf_pages": [
+              192
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page192"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "Tasnif va hisobot asosini ajrating",
+        "body": "O‘g‘itdagiN,P,K asosiy oziqa tasnifi moddadagi barcha kimyoviy elementlarni sanashdan farq qiladi. KCl tarkibidaK vaCl bor,asosiy oziqa misolidaK ajratiladi. P2O5/K2O yozuvlari fosfor/kaliy uchun hisobot asosidir; barcha namunalarda erkin oksid bor degani emas.",
+        "fact_ids": [
+          "basis"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph42",
+            "topic_title": "Mineral o‘g‘itlar",
+            "paragraph": 42,
+            "printed_pages": [
+              187
+            ],
+            "pdf_pages": [
+              187
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph42-page187"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph42",
+            "topic_title": "Mineral o‘g‘itlar",
+            "paragraph": 42,
+            "printed_pages": [
+              188
+            ],
+            "pdf_pages": [
+              188
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph42-page188"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              192
+            ],
+            "pdf_pages": [
+              192
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page192"
+          }
+        ]
+      },
+      {
+        "title": "Namuna ma’lumoti qachon kerak?",
+        "body": "Tashqi ko‘rinish va eruvchanlik kataklari haqiqiy kuzatuv uchun joy. Formula va hisobiy massa bilan o‘lchangan namuna tavsifi alohida. Shu bo‘sh jadvaldan haqiqiy noma’lum namunaning nomi,tozaligi yoki o‘g‘it berish dozasi kelib chiqmaydi.",
+        "fact_ids": [
+          "evidence"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Qavsli formuladan massaga",
+        "body": "(NH4)2SO4 daN2,H8,S1,O4. N14,H1,S32,O16 bilan28+8+32+64=132. Bu hisobiy formula massasi,haqiqiy namuna o‘lchovi yoki ozuqa foizi emas.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-laboratory10",
+            "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+            "paragraph": 10,
+            "printed_pages": [
+              204
+            ],
+            "pdf_pages": [
+              204
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-laboratory10-page204"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph42",
+            "topic_title": "Mineral o‘g‘itlar",
+            "paragraph": 42,
+            "printed_pages": [
+              188
+            ],
+            "pdf_pages": [
+              188
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph42-page188"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph43",
+            "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+            "paragraph": 43,
+            "printed_pages": [
+              189
+            ],
+            "pdf_pages": [
+              189
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph43-page189"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-laboratory10",
+        "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+        "paragraph": 10,
+        "printed_pages": [
+          204
+        ],
+        "pdf_pages": [
+          204
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-laboratory10-page204"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph43",
+        "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+        "paragraph": 43,
+        "printed_pages": [
+          189
+        ],
+        "pdf_pages": [
+          189
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph43-page189"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph42",
+        "topic_title": "Mineral o‘g‘itlar",
+        "paragraph": 42,
+        "printed_pages": [
+          188
+        ],
+        "pdf_pages": [
+          188
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph42-page188"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph43",
+        "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+        "paragraph": 43,
+        "printed_pages": [
+          192
+        ],
+        "pdf_pages": [
+          192
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph43-page192"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph42",
+        "topic_title": "Mineral o‘g‘itlar",
+        "paragraph": 42,
+        "printed_pages": [
+          187
+        ],
+        "pdf_pages": [
+          187
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph42-page187"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-8-lab10-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Natriyli selitra formulasi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "KNO3"
+        },
+        {
+          "id": "b",
+          "label": "NaNO3"
+        },
+        {
+          "id": "c",
+          "label": "NH4NO3"
+        },
+        {
+          "id": "d",
+          "label": "KCl"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "KNO3 da manba ajratgan asosiy oziqa juftligi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Na vaCl"
+        },
+        {
+          "id": "b",
+          "label": "H vaHe"
+        },
+        {
+          "id": "c",
+          "label": "FaqatO vaCl"
+        },
+        {
+          "id": "d",
+          "label": "N va K"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page187"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "K2O ning kaliyli oziqa ifodasidagi ma’nosi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hisobot asosi"
+        },
+        {
+          "id": "b",
+          "label": "Har qanday namunadagi erkin oksid"
+        },
+        {
+          "id": "c",
+          "label": "Aniq namuna rangi"
+        },
+        {
+          "id": "d",
+          "label": "Aniq dala dozasi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page187"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page188"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "KCl asosiy oziqa tasnifida qanday misol?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q05",
+      "response_kind": "chemical_formula",
+      "prompt": "Ma’lum misol formulasini yozing: natriyli selitra",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q06",
+      "response_kind": "chemical_formula",
+      "prompt": "Ma’lum misol formulasini yozing: ammoniyli selitra",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q07",
+      "response_kind": "chemical_formula",
+      "prompt": "Ma’lum misol formulasini yozing: ammoniy sulfat",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page188"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q08",
+      "response_kind": "chemical_formula",
+      "prompt": "Ma’lum misol formulasini yozing: kaliy xlorid",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q09",
+      "response_kind": "chemical_formula",
+      "prompt": "Ma’lum misol formulasini yozing: kaliyli selitra",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page187"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "Kartadagi aniq maktab massa modeli bilan NaNO3 nisbiy formula massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbiy formula massasi",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Kartadagi aniq maktab massa modeli bilan NH4NO3 nisbiy formula massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbiy formula massasi",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Kartadagi aniq maktab massa modeli bilan (NH4)2SO4 nisbiy formula massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbiy formula massasi",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            188
+          ],
+          "pdf_pages": [
+            188
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page188"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Kartadagi aniq maktab massa modeli bilan KCl nisbiy formula massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbiy formula massasi",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-8-lab10-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "Kartadagi aniq maktab massa modeli bilan KNO3 nisbiy formula massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbiy formula massasi",
+      "source_refs": [
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-laboratory10",
+          "topic_title": "Mineral o‘g‘itlarning namunalari bilan tanishish",
+          "paragraph": 10,
+          "printed_pages": [
+            204
+          ],
+          "pdf_pages": [
+            204
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-laboratory10-page204"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph42",
+          "topic_title": "Mineral o‘g‘itlar",
+          "paragraph": 42,
+          "printed_pages": [
+            187
+          ],
+          "pdf_pages": [
+            187
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph42-page187"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            189
+          ],
+          "pdf_pages": [
+            189
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page189"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph43",
+          "topic_title": "Eng muhim asosiy mineral o‘g‘itlar",
+          "paragraph": 43,
+          "printed_pages": [
+            192
+          ],
+          "pdf_pages": [
+            192
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph43-page192"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
