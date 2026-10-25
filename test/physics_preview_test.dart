@@ -737,7 +737,7 @@ void main() {
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
     final questions = jsonRows(fixture('physics_grade8_frq')['questions']);
-    expect(questions, hasLength(15));
+    expect(questions, hasLength(21));
     for (final question in questions) {
       Json? edited;
       final isRoot = question['key'] == 'physics-8-section-4-r1:q5';

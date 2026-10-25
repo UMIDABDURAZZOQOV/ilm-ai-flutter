@@ -458,6 +458,197 @@
         "1",
         "%"
       ]
+    },
+    {
+      "key": "physics-8-section-7-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "F=12µN,E=3000N/C. q zaryad modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "µN"
+        },
+        {
+          "symbol": "E",
+          "value": "3000",
+          "unit": "N/C"
+        }
+      ],
+      "symbols": [
+        "F",
+        "E"
+      ],
+      "suggested_unit": "nC",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-7-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "F=14,4nN,E=30000N/C,e=1,6e-19C. Ortiqcha n elektron sonini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "14.4",
+          "unit": "nN"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "E",
+          "value": "30000",
+          "unit": "N/C"
+        }
+      ],
+      "symbols": [
+        "F",
+        "e",
+        "E"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-7-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir jinsli model:k=9e9N*m2/C2,q=8nC,E=300N/C,r=0,2m. eps ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        },
+        {
+          "symbol": "q",
+          "value": "8",
+          "unit": "nC"
+        },
+        {
+          "symbol": "E",
+          "value": "300",
+          "unit": "N/C"
+        },
+        {
+          "symbol": "r",
+          "value": "0.2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q",
+        "E",
+        "r"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-8-section-7-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal muallaq musbat tomchi:m=0,4mg,g=10m/s2,E=2000N/C yuqoriga. q modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.4",
+          "unit": "mg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "E",
+          "value": "2000",
+          "unit": "N/C"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "E"
+      ],
+      "suggested_unit": "nC",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-8-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tayyor qaydda t=4s kechikish,v=340m/s modeli. Yorug‘lik vaqtini e’tiborsiz olib s taxminiy masofani top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "340",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-8-section-8-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Boshqa tayyor qayd:t=2,5s,v=340m/s. Shu yaqinlashuvda s qancha?",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "340",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "2.5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
     }
   ]
 }
