@@ -1,0 +1,845 @@
+{
+  "assessment_version": 2,
+  "subject": "kimyo",
+  "grade": 9,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 61,
+  "implemented_sections": 5,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 7,
+  "grade_content_complete": false,
+  "available_grades": [
+    7,
+    8,
+    9
+  ],
+  "lessons": [
+    {
+      "key": "chemistry-9-p01-r1",
+      "sequence": 1,
+      "title": "Elementlar davriy sistemasi va davriy qonuni",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page06"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page08"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page10"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page12"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page13"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page14"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p02-r1",
+      "sequence": 2,
+      "title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph02",
+          "topic_title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+          "paragraph": 2,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph02-page16"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph02",
+          "topic_title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+          "paragraph": 2,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph02-page17"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph02",
+          "topic_title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+          "paragraph": 2,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph02-page18"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph02",
+          "topic_title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+          "paragraph": 2,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph02-page19"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p03-r1",
+      "sequence": 3,
+      "title": "Elektrolitlar va noelektrolitlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph03",
+          "topic_title": "Elektrolitlar va noelektrolitlar",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph03-page20"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph03",
+          "topic_title": "Elektrolitlar va noelektrolitlar",
+          "paragraph": 3,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph03-page21"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph03",
+          "topic_title": "Elektrolitlar va noelektrolitlar",
+          "paragraph": 3,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph03-page22"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph03",
+          "topic_title": "Elektrolitlar va noelektrolitlar",
+          "paragraph": 3,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph03-page23"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph03",
+          "topic_title": "Elektrolitlar va noelektrolitlar",
+          "paragraph": 3,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph03-page24"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph02",
+          "topic_title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+          "paragraph": 2,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph02-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p04-r1",
+      "sequence": 4,
+      "title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph04",
+          "topic_title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph04-page24"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph04",
+          "topic_title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph04-page25"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph04",
+          "topic_title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph04-page26"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph03",
+          "topic_title": "Elektrolitlar va noelektrolitlar",
+          "paragraph": 3,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph03-page23"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p05-r1",
+      "sequence": 5,
+      "title": "Kuchli va kuchsiz elektrolitlar dissotsiatsiyalanish darajasi",
+      "state": "available",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph05",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar dissotsiatsiyalanish darajasi",
+          "paragraph": 5,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph05-page26"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph05",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar dissotsiatsiyalanish darajasi",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph05-page27"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph05",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar dissotsiatsiyalanish darajasi",
+          "paragraph": 5,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph05-page28"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph04",
+          "topic_title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph04-page24"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph04",
+          "topic_title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph04-page26"
+        }
+      ]
+    }
+  ]
+}

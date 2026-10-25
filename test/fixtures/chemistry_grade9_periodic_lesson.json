@@ -1,0 +1,2529 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-9-p01-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Elementlar davriy sistemasi va davriy qonuni",
+  "content": {
+    "cards": [
+      {
+        "title": "Tasniflashdan davriy tizimga",
+        "body": "Darslik tasniflash tarixini ketma-ket eslatadi: Abu ar-Roziy moddalarni olinadigan manbasiga ko‘ra ajratgan; A. Sala erituvchilarni guruhlagan; E. Joffrua o‘xshashlik jadvalini tuzgan. Keyingi tizimlashtirish urinishlari orasida Debereyner, Meyer, Odling va Nyulends bor. Kitob Mendeleyevning1869-yildagi yechimini alohida ajratadi.",
+        "fact_ids": [
+          "history"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page05"
+          }
+        ]
+      },
+      {
+        "title": "Davriy qonunning asosiy kattaligi",
+        "body": "Dastlabki davriy talqin atom massalariga tayangan. Darslikdagi keyingi ta’rif esa element va ular hosil qilgan moddalar xossalarining atom yadrosi zaryadiga davriy bog‘liqligini aytadi. Davriylik—ma’lum oraliqlardan keyin o‘xshash xossalarning takrorlanishi.",
+        "fact_ids": [
+          "law"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page06"
+          }
+        ]
+      },
+      {
+        "title": "Atom haqidagi tarixiy bosqichlar",
+        "body": "Kitob atom tuzilishini o‘rganishdagi bosqichlar sifatida rentgen nurlari1895, radioaktivlik1896, elektron1897 va yadro zaryadi/tartib raqami bog‘lanishi1913-yilni keltiradi. Bu tarixiy ketma-ketlikning nomlari mos ravishda Rentgen, Bekkerel, Tomson va Mozli.",
+        "fact_ids": [
+          "discoveries"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page06"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "Uch zarracha va neytral atom",
+        "body": "Atom musbat yadro va manfiy elektronlar bilan tasvirlanadi. Yadroda proton va neytronlar bor: proton zaryadi+1, neytron zaryadsiz, elektron zaryadi−1. Neytral atomda protonlar va elektronlar soni tartib raqamiZ ga teng.",
+        "fact_ids": [
+          "particles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page08"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan tarkibni sanang",
+        "body": "Neytral atom uchun Z=15 berilsa15 proton va15 elektron; Z=33 bo‘lsa33 elektron, Z=51 bo‘lsa51 elektron bo‘ladi. Alohida hisob modelida15 proton va16 neytron berilsa, jami 31 nuklon. Bu butun sonli tarkib mashqi; o‘rtacha nisbiy atom massasidan har qanday neytron soni chiqarilmaydi.",
+        "fact_ids": [
+          "counts"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page08"
+          }
+        ]
+      },
+      {
+        "title": "Davr va elektron qavat",
+        "body": "Davr raqami band elektron qavatlari soni bilan bog‘langan. Darslik H va He uchun bir qavatni, Li danNe gacha ikki qavatni, uchinchi davr uchun uch qavatni taqqoslaydi. Uchinchi davrNa bilan boshlanibAr bilan tugaydi; birinchi davrni ishqoriy metall bilan boshlanadi deb umumlashtirmang.",
+        "fact_ids": [
+          "period"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page09"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Kitobdagi guruh belgilari",
+        "body": "Kitob qisqa ko‘rinishdagiI–VIII guruh va bosh/yonaki guruhchalar tilidan foydalanadi. Bosh guruhchalar uchun tashqi elektronlar/guruh raqami bog‘lanishi He istisnosi bilan o‘qiladi. He tashqi qavatida2 elektron bo‘lgan misol. Bu belgilashni har bir element uchun bir xil oddiy qoida qilib qo‘llamang.",
+        "fact_ids": [
+          "groups"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page09"
+          }
+        ]
+      },
+      {
+        "title": "s,p,d,f nimani bildiradi?",
+        "body": "Tasnifda s, p, d va f pog‘onachalar ajratiladi. Bosh guruhlar tashqi s yoki p pog‘onacha bilan, yonaki guruhlar ichki d pog‘onacha bilan taqqoslanadi; lantanoid va aktinoidlar uchun f to‘lishi eslatilgan. Bu pog‘onacha nomlari, kimyoviy formula emas.",
+        "fact_ids": [
+          "blocks"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Elektronni ajratish energiyasi",
+        "body": "Ionlanish energiyasi—elektronni atomdan ajratish uchun zarur energiya sifatida ta’riflangan. Kitob qiymatlarni eV/atom bilan ifodalaydi. Bu elektron berish uchun energiya talabi haqidagi kattalik.",
+        "fact_ids": [
+          "ionization"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page10"
+          }
+        ]
+      },
+      {
+        "title": "Elektron birikishi bilan farq",
+        "body": "Elektronga moyillik neytral atomga bitta elektron birikishidagi ajraladigan yoki yutiladigan energiya bilan ta’riflangan. Bu elektronni ajratish uchun zarur ionlanish energiyasi bilan bir xil jarayon emas.",
+        "fact_ids": [
+          "affinity"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Uchinchi davr konfiguratsiyalari",
+        "body": "Uchinchi davr jadvaliNa11, Mg12, Al13, Si14, P15, S16, Cl17 yadrolarini va konfiguratsiyalarini beradi. MasalanNa:1s2 2s2 2p6 3s1, Cl:1s2 2s2 2p6 3s2 3p5. Ichki1s2 2s2 2p6 qismi bir xil, tashqi uchinchi qavatdagi sonlar farqli.",
+        "fact_ids": [
+          "configuration"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Jadval umumiy yo‘nalishdan aniqroq",
+        "body": "Jadvalning aniq ionlanish energiyalari: Na 5,14; Mg 7,64; Al 5,98; P 10,48; S 10,36 eV. Shuning uchun shu ma’lumotning o‘zida Mg→Al va P→S kamayishlari bor. Umumiy davriy yo‘nalish barcha qo‘shni qiymatlar qat’iy ortadi degani emas. Mg va Al orasidagi farq7,64−5,98=1,66 eV.",
+        "fact_ids": [
+          "table"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Davr va bosh guruh yo‘nalishlari",
+        "body": "Manba davr bo‘ylab metallikning susayishi va metallmaslikning kuchayishi, bosh guruhchada pastga metallikning kuchayishi haqida umumiy yo‘nalishni beradi. IA misollaridaLi, Na, K, Rb, Cs, Fr tashqi bir s-elektron bilan taqqoslangan. Umumiy yo‘nalish barcha sonli xossalarga istisnosiz qonun deb olinmaydi.",
+        "fact_ids": [
+          "trends"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page12"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              13
+            ],
+            "pdf_pages": [
+              13
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page13"
+          }
+        ]
+      },
+      {
+        "title": "Qavatning maksimal sig‘imi",
+        "body": "Qavat sig‘imi uchun maksimal2n² modeli berilgan: n=1→2, n=2→8, n=3→18, n=4→32. Bu qavatdagi eng ko‘p elektron soni; har bir atomda qavatlar shu maksimal songacha to‘lgan degani emas.",
+        "fact_ids": [
+          "capacity"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              14
+            ],
+            "pdf_pages": [
+              14
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page14"
+          }
+        ]
+      },
+      {
+        "title": "Pog‘onachaning maksimal sig‘imi",
+        "body": "Pog‘onacha belgilarida l=0: s, l=1: p, l=2: d, l=3: f. Sig‘im2(2l+1) bo‘yicha s2, p6, d10, f14 gacha elektron tutadi. n=3 uchun l qiymatlari0,1,2; demak3s,3p,3d pog‘onachalar ajratiladi.",
+        "fact_ids": [
+          "subshell"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              14
+            ],
+            "pdf_pages": [
+              14
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page14"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              15
+            ],
+            "pdf_pages": [
+              15
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page15"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan to‘lish tartibi",
+        "body": "Berilgan to‘lish ketma-ketligining boshlanishi1s→2s→2p→3s→3p→4s→3d→4p. Bo‘sh yacheykalar avval bittadan band bo‘lishi, keyin juftlashish boshlanishi tasvirlangan. Bu yerda elektronning haqiqiy klassik harakat yo‘li o‘ylab topilmaydi.",
+        "fact_ids": [
+          "filling"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              15
+            ],
+            "pdf_pages": [
+              15
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page15"
+          }
+        ]
+      },
+      {
+        "title": "Konfiguratsiyadan sonli javob",
+        "body": "Berilgan konfiguratsiya mashqlarini elektron sanog‘i bilan boshlang:[He]2s2 2p5 uchun to‘ldirilgan birinchi qavat2 va tashqi2+5, jami 9;[Ne]3s2 3p3 uchun ichki10 va tashqi5, jami 15. Shu sonlar konfiguratsiyaning hisobiy tekshiruvidir.",
+        "fact_ids": [
+          "exercise"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              15
+            ],
+            "pdf_pages": [
+              15
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page15"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page09"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Massa ulushidan nisbat",
+        "body": "Oksid masalasida kislorod massa ulushi30,5% va elementning+4 modeli berilgan. EO2 tarkib modeli deb aniq belgilasak, E/O atom massalari nisbati2·69,5/30,5=4,557377…; uch kasrda4,557. Bu nisbatni hisoblash uchun tekshirilmagan tashqi atom massasi yoki element nomi kerak emas.",
+        "fact_ids": [
+          "ratio"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              15
+            ],
+            "pdf_pages": [
+              15
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page15"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Sig‘im va haqiqiy elektron soni",
+        "body": "n=3 uchun maksimal2·3²=18. Ammo jadvaldagiNa ning tashqi3s1 qismida1 elektron bor.18—qavat sig‘imi,1—aynan shu neytralNa modelining tashqi qavatidagi son.",
+        "fact_ids": [
+          "capacity",
+          "configuration"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              14
+            ],
+            "pdf_pages": [
+              14
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page14"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Ulushdan atom massalari nisbatiga",
+        "body": "100massa birlikdagiEO2 modelidaO30,5, E 69,5. E/O atom massalari nisbati69,5/(30,5/2)=4,557377…; uch kasrda4,557. Elementning tekshirilmagan nomi kiritilmadi.",
+        "fact_ids": [
+          "ratio"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph01",
+            "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+            "paragraph": 1,
+            "printed_pages": [
+              15
+            ],
+            "pdf_pages": [
+              15
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph01-page15"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          5
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page05"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          6
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page06"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          8
+        ],
+        "pdf_pages": [
+          8
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page08"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          9
+        ],
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page09"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          10
+        ],
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page10"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          11
+        ],
+        "pdf_pages": [
+          11
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page11"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          12
+        ],
+        "pdf_pages": [
+          12
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page12"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          13
+        ],
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page13"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          14
+        ],
+        "pdf_pages": [
+          14
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page14"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph01",
+        "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+        "paragraph": 1,
+        "printed_pages": [
+          15
+        ],
+        "pdf_pages": [
+          15
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph01-page15"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-9-p01-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Keyingi davriy qonun ta’rifidagi asosiy atom kattaligi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat namuna hajmi"
+        },
+        {
+          "id": "b",
+          "label": "Yadro zaryadi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat rang"
+        },
+        {
+          "id": "d",
+          "label": "Faqat idish shakli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page06"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Yadrodagi zaryadsiz zarracha?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Elektron"
+        },
+        {
+          "id": "b",
+          "label": "Proton"
+        },
+        {
+          "id": "c",
+          "label": "Faqat ion"
+        },
+        {
+          "id": "d",
+          "label": "Neytron"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page08"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Elektronni ajratish uchun energiya qaysi kattalik?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ionlanish energiyasi"
+        },
+        {
+          "id": "b",
+          "label": "Faqat elektronga moyillik"
+        },
+        {
+          "id": "c",
+          "label": "Faqat zichlik"
+        },
+        {
+          "id": "d",
+          "label": "Faqat massa ulushi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page10"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Kitob jadvalining Mg→Al qiymatlari nimani ko‘rsatadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Doimiy teng"
+        },
+        {
+          "id": "b",
+          "label": "Qat’iy ortadi"
+        },
+        {
+          "id": "c",
+          "label": "Mg dan Al ga kamayadi"
+        },
+        {
+          "id": "d",
+          "label": "Jadvalda sonlar yo‘q"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan boshlang‘ich tartibda3p dan keyingi pog‘onacha?",
+      "options": [
+        {
+          "id": "a",
+          "label": "4s"
+        },
+        {
+          "id": "b",
+          "label": "3d"
+        },
+        {
+          "id": "c",
+          "label": "4p"
+        },
+        {
+          "id": "d",
+          "label": "5s"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Bosh guruhchada pastga umumiy metallik yo‘nalishi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metallik kamayadi"
+        },
+        {
+          "id": "b",
+          "label": "Barcha sonli xossalar teng"
+        },
+        {
+          "id": "c",
+          "label": "Yadro zaryadi kamayadi"
+        },
+        {
+          "id": "d",
+          "label": "Metallik kuchayadi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page12"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page13"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "1869-yil tizimlashtirish yechimi bilan ajratilgan olim?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page05"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Kitobda elektron kashfiyoti bilan bog‘langan olim?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page06"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "Neytral atom yadrosidagi musbat zarracha?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page08"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q10",
+      "response_kind": "chemical_formula",
+      "prompt": "JadvaldagiZ=11 elementining kimyoviy belgisini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q11",
+      "response_kind": "chemical_formula",
+      "prompt": "JadvaldagiZ=17 elementining kimyoviy belgisini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Neytral atom uchun Z=33 berilgan. Elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page08"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan15 proton va16 neytron jami nechta nuklon?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nuklon",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page08"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "Uchinchi davr atomlari uchun band qavatlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "qavat",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page12"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q15",
+      "response_kind": "numeric_value",
+      "prompt": "He misolida tashqi elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q16",
+      "response_kind": "numeric_value",
+      "prompt": "JadvaldagiCl ning3s2 3p5 tashqi qavatida nechta elektron?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q17",
+      "response_kind": "numeric_value",
+      "prompt": "Mg 7,64 va Al 5,98 eV modelida farq, ikki kasr xonasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "eV",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q18",
+      "response_kind": "numeric_value",
+      "prompt": "n=3 uchun 2n² maksimal sig‘im?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page14"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q19",
+      "response_kind": "numeric_value",
+      "prompt": "n=4 uchun 2n² maksimal sig‘im?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page14"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q20",
+      "response_kind": "numeric_value",
+      "prompt": "l=2 uchun 2(2l+1) maksimal sig‘im?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page14"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q21",
+      "response_kind": "numeric_value",
+      "prompt": "f pog‘onachaning maksimal sig‘imi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page14"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q22",
+      "response_kind": "numeric_value",
+      "prompt": "[He]2s2 2p5 konfiguratsiyasidagi jami elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q23",
+      "response_kind": "numeric_value",
+      "prompt": "[Ne]3s2 3p3 konfiguratsiyasidagi jami elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "elektron",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p01-r1-q24",
+      "response_kind": "numeric_value",
+      "prompt": "EO2 modeli, O 30,5%, E 69,5%. E/O atom massalari nisbati2·69,5/30,5, uch kasr xonasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbat",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph01",
+          "topic_title": "Elementlar davriy sistemasi va davriy qonuni",
+          "paragraph": 1,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph01-page15"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

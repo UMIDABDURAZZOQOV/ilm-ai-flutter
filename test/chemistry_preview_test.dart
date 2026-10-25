@@ -34,6 +34,7 @@ void main() {
   late Dio dio;
   late Json lesson, results, catalog;
   Json? grade8Catalog;
+  Json? grade9Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false, offline = false, expired = false;
@@ -42,6 +43,7 @@ void main() {
     results = fixture('results');
     catalog = fixture('catalog');
     grade8Catalog = null;
+    grade9Catalog = null;
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -57,6 +59,9 @@ void main() {
           );
         }
         if (r.path.endsWith('/catalog')) {
+          if (r.queryParameters['grade'] == 9 && grade9Catalog != null) {
+            return reply(200, grade9Catalog!);
+          }
           return reply(
             200,
             r.queryParameters['grade'] == 8 && grade8Catalog != null
@@ -829,6 +834,67 @@ void main() {
         find.textContaining('Manba bo‘limi: Laboratoriya $lab'),
         findsOneWidget,
       );
+      await t.ensureVisible(locator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-model-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
+  for (final name in ['grade9_periodic', 'grade9_degree']) {
+    testWidgets('$name sourced grade9 FRQ at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      final periodic = name == 'grade9_periodic';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(periodic ? 16 : 18);
+      await mount(
+        t,
+        dark: periodic,
+        size: const Size(320, 568),
+        scale: 2,
+      );
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      expect(
+        requests.any(
+          (r) => r.path.endsWith('/catalog') && r.queryParameters['grade'] == 9,
+        ),
+        isTrue,
+      );
+      await tap(t, 'Darsni boshlash');
+      final field = find.byKey(const Key('chemistry-short-answer'));
+      await waitFor(field);
+      await t.ensureVisible(field);
+      final value = periodic ? '1,66' : '1e-5';
+      await t.enterText(field, value);
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-model-feedback');
+      final paragraph = periodic ? 1 : 5;
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$paragraph'),
+      );
+      await t.ensureVisible(source);
+      await t.pumpAndSettle();
+      await tapFinder(t, source);
+      final page = periodic ? 11 : 28;
+      final locator = find.textContaining('$page -> PDF $page · Yakka sahifa');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
       await t.ensureVisible(locator);
       await t.pumpAndSettle();
       await capture(t, '$name-model-source', overlay: true);
