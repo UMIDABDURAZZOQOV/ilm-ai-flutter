@@ -253,6 +253,470 @@
         "mm",
         "nm"
       ]
+    },
+    {
+      "key": "physics-7-section-6-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tekis harakat: s=360m, t=45s. v tezlikni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "360",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "value": "45",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-6-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil tekis safar: s=1,8km, t=6min. Tezlikni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "1.8",
+          "unit": "km"
+        },
+        {
+          "symbol": "t",
+          "value": "6",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "km/h",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-7-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tekis v–t grafikda v=6m/s, oraliq t=7s. s yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "6",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "7",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-7-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis v=12m/s tezlikda s=0,36km yo‘lga qancha t vaqt ketadi?",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "0.36",
+          "unit": "km"
+        },
+        {
+          "symbol": "v",
+          "value": "12",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "v"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-7-section-7-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil grafik:v=54km/h doimiy, t=4min. s yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "54",
+          "unit": "km/h"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "km",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-8-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Safar: s1=24m t1=6s da; s2=36m t2=14s da. Butun v o‘rtachani top.",
+      "givens": [
+        {
+          "symbol": "s1",
+          "value": "24",
+          "unit": "m"
+        },
+        {
+          "symbol": "s2",
+          "value": "36",
+          "unit": "m"
+        },
+        {
+          "symbol": "t1",
+          "value": "6",
+          "unit": "s"
+        },
+        {
+          "symbol": "t2",
+          "value": "14",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s1",
+        "s2",
+        "t1",
+        "t2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-8-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "s1=120m,t1=20s; so‘ng s2=0m,t2=10s to‘xtash. Butun safar o‘rtacha tezligini top.",
+      "givens": [
+        {
+          "symbol": "s1",
+          "value": "120",
+          "unit": "m"
+        },
+        {
+          "symbol": "s2",
+          "value": "0",
+          "unit": "m"
+        },
+        {
+          "symbol": "t1",
+          "value": "20",
+          "unit": "s"
+        },
+        {
+          "symbol": "t2",
+          "value": "10",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s1",
+        "s2",
+        "t1",
+        "t2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-8-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kichik kuzatuv oraliqda s=1,8m, t=0,3s. Shu oraliqdagi taqribiy v ni top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "1.8",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "value": "0.3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-9-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Musbat o‘q harakat tomonga. v0=2m/s dan v=14m/s ga t=4s da doimiy o‘zgarish. a ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "14",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v0",
+          "value": "2",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "v0",
+        "t"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-9-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "O‘q dastlabki harakat tomonga. v0=18m/s, v=6m/s,t=4s; yo‘nalish o‘zgarmaydi. a ni ishorasi bilan top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "6",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v0",
+          "value": "18",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "v0",
+        "t"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-9-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil qayd:v0=18km/h,v=54km/h,t=5s. O‘q musbat harakat tomonga. a ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "54",
+          "unit": "km/h"
+        },
+        {
+          "symbol": "v0",
+          "value": "18",
+          "unit": "km/h"
+        },
+        {
+          "symbol": "t",
+          "value": "5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "v0",
+        "t"
+      ],
+      "suggested_unit": "cm/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-10-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "v0=5m/s,a=1,5m/s2,t=4s. Shu doimiy tezlanishda v ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "5",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "value": "1.5",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "a",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-10-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v0=16m/s,a=−2m/s2,t=5s. Yo‘nalish o‘zgarmasdan tormozlanish modelida v ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "16",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "value": "-2",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "a",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-10-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy tezlanish, yo‘nalish almashmagan:v0=4m/s va v=14m/s. v_ort ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "4",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "value": "14",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "v"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-7-section-10-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil doimiy sekinlashish:v0=18m/s,v=6m/s, yo‘nalish almashmagan. Oraliq o‘rtachasini top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "18",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "value": "6",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "v"
+      ],
+      "suggested_unit": "km/h",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
     }
   ]
 }

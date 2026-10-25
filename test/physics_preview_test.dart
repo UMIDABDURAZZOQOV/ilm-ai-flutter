@@ -670,7 +670,7 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final questions = jsonRows(fixture('physics_grade7_frq')['questions']);
-      expect(questions, hasLength(9));
+      expect(questions, hasLength(24));
       for (final question in questions) {
         Json? edited;
         await mount(
@@ -691,11 +691,11 @@ void main() {
         await enter(
           tester,
           'learner_formula',
-          '1,25',
+          '-1,25',
           question['suggested_unit'] as String,
         );
         expect(edited?['formula'], 'learner_formula');
-        expect(edited?['value'], '1,25');
+        expect(edited?['value'], '-1,25');
         expect(edited?['unit'], question['suggested_unit']);
         expect(tester.takeException(), isNull);
       }
