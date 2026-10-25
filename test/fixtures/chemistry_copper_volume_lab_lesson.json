@@ -1,0 +1,1937 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-9-lab12-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+  "content": {
+    "cards": [
+      {
+        "title": "Cu(OH)2 ning berilgan cho‘kish modeli",
+        "body": "Tayyor Cu(II)/OH kartasi oldingi CuSO4+2NaOH=Cu(OH)2+Na2SO4 modeli bilan beriladi. Cu(OH)2 havorang cho‘kma sifatida tasvirlangan. Tenglamadagi nisbat CuSO4: NaOH=1:2.",
+        "fact_ids": [
+          "formation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              200
+            ],
+            "pdf_pages": [
+              200
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page200"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph28",
+            "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+            "paragraph": 28,
+            "printed_pages": [
+              135
+            ],
+            "pdf_pages": [
+              135
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph28-page135"
+          }
+        ]
+      },
+      {
+        "title": "Kislota kartasida suvni sanang",
+        "body": "Kislota kartasida mahsulotlar CuCl2 va H2O deb aniq berilgan. Gidroksid/kislota kategoriyasining atom balansi Cu(OH)2+2HCl=CuCl2+2H2O. Suv koeffitsiyenti 2, chunki ikkita OH guruhi bor.",
+        "fact_ids": [
+          "acid"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph28",
+            "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+            "paragraph": 28,
+            "printed_pages": [
+              135
+            ],
+            "pdf_pages": [
+              135
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph28-page135"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph06",
+            "topic_title": "Ion almashinish reaksiyalari",
+            "paragraph": 6,
+            "printed_pages": [
+              29
+            ],
+            "pdf_pages": [
+              29
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph06-page29"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph06",
+            "topic_title": "Ion almashinish reaksiyalari",
+            "paragraph": 6,
+            "printed_pages": [
+              30
+            ],
+            "pdf_pages": [
+              30
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph06-page30"
+          }
+        ]
+      },
+      {
+        "title": "Gidroksid va oksid ranglarini farqlang",
+        "body": "Oldingi berilgan o‘tish Cu(OH)2=CuO+H2O. CuO qora, Cu(OH)2 havorang deb ajratilgan. Bu raqamli tarkib zanjiri, haqiqiy qizdirilgan namuna natijasi emas.",
+        "fact_ids": [
+          "oxide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph28",
+            "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+            "paragraph": 28,
+            "printed_pages": [
+              135
+            ],
+            "pdf_pages": [
+              135
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph28-page135"
+          }
+        ]
+      },
+      {
+        "title": "Eritmadan tuz massasiga",
+        "body": "Kitob masalasining 4 g 20% CuSO4 eritmasida tuz massasi 4·0,20=0,8 g. Hisob CuSO4 bo‘yicha suvsiz tuz ekvivalenti deb aniq olinadi; gidratning butun massasini bunga almashtirmang.",
+        "fact_ids": [
+          "saltmass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          }
+        ]
+      },
+      {
+        "title": "Tuzdan NaOH moliga",
+        "body": "Oldingi ishlangan model M(CuSO4)=160 g/mol beradi. Shundan n=0,8/160=0,005 mol; birga ikki nisbat bilan NaOH=0,010 mol. Bu to‘liq nazariy cho‘kish modeli.",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph37",
+            "topic_title": "Po‘lat ishlab chiqarish",
+            "paragraph": 37,
+            "printed_pages": [
+              176
+            ],
+            "pdf_pages": [
+              176
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph37-page176"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph28",
+            "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+            "paragraph": 28,
+            "printed_pages": [
+              135
+            ],
+            "pdf_pages": [
+              135
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph28-page135"
+          }
+        ]
+      },
+      {
+        "title": "Sof asosdan eritma massasiga",
+        "body": "Oldingi Na=23, O=16, H=1 butun sonli modelida M(NaOH)=40 g/mol. 0,010 mol uchun m(NaOH)=0,4 g. 20% eritma uchun jami eritma massasi 0,4/0,20=2 g.",
+        "fact_ids": [
+          "basemass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              27
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page27"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              29
+            ],
+            "pdf_pages": [
+              29
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page29"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "Zichlikdan nazariy hajmga",
+        "body": "Masaladagi zichlik 1,22 g/mL va hisobiy eritma massasi 2 g bilan V=m/ρ=2/1,22=1,639344… mL. Uch kasrga yaxlitlangan javob 1,639 mL. Bu berilgan nazariy hisob, amalda qo‘shiladigan doza tavsiyasi emas.",
+        "fact_ids": [
+          "volume"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          }
+        ]
+      },
+      {
+        "title": "Uch dalilni alohida xulosalang",
+        "body": "Xulosa uch xil dalilni ajratadi: ma’lum cho‘kma/oksidning manbadagi rang tavsifi, berilgan atom balanslari va masaladagi nazariy miqdor. Ular noma’lum haqiqiy namunaning o‘lchovi deb yozilmaydi.",
+        "fact_ids": [
+          "conclusion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Masaladagi to‘liq zanjir",
+        "body": "4·0,20=0,8 g CuSO4; 0,8/160=0,005 mol; NaOH=0,010 mol. NaOH massasi 0,4 g, 20% eritma massasi 2 g. Oxirida 2/1,22=1,639 mL ga yaxlitlanadi.",
+        "fact_ids": [
+          "saltmass",
+          "amount",
+          "basemass",
+          "volume"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory12",
+            "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+            "paragraph": 12,
+            "printed_pages": [
+              201
+            ],
+            "pdf_pages": [
+              201
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory12-page201"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph37",
+            "topic_title": "Po‘lat ishlab chiqarish",
+            "paragraph": 37,
+            "printed_pages": [
+              176
+            ],
+            "pdf_pages": [
+              176
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph37-page176"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph28",
+            "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+            "paragraph": 28,
+            "printed_pages": [
+              135
+            ],
+            "pdf_pages": [
+              135
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph28-page135"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              27
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page27"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              29
+            ],
+            "pdf_pages": [
+              29
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page29"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-laboratory12",
+        "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+        "paragraph": 12,
+        "printed_pages": [
+          200
+        ],
+        "pdf_pages": [
+          200
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-laboratory12-page200"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-laboratory12",
+        "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+        "paragraph": 12,
+        "printed_pages": [
+          201
+        ],
+        "pdf_pages": [
+          201
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-laboratory12-page201"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph28",
+        "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+        "paragraph": 28,
+        "printed_pages": [
+          135
+        ],
+        "pdf_pages": [
+          135
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph28-page135"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph06",
+        "topic_title": "Ion almashinish reaksiyalari",
+        "paragraph": 6,
+        "printed_pages": [
+          29
+        ],
+        "pdf_pages": [
+          29
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph06-page29"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph06",
+        "topic_title": "Ion almashinish reaksiyalari",
+        "paragraph": 6,
+        "printed_pages": [
+          30
+        ],
+        "pdf_pages": [
+          30
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph06-page30"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph37",
+        "topic_title": "Po‘lat ishlab chiqarish",
+        "paragraph": 37,
+        "printed_pages": [
+          176
+        ],
+        "pdf_pages": [
+          176
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph37-page176"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph05",
+        "topic_title": "Kimyoviy elementlarning davriy qonuni",
+        "paragraph": 5,
+        "printed_pages": [
+          27
+        ],
+        "pdf_pages": [
+          27
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph05-page27"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph05",
+        "topic_title": "Kimyoviy elementlarning davriy qonuni",
+        "paragraph": 5,
+        "printed_pages": [
+          29
+        ],
+        "pdf_pages": [
+          29
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph05-page29"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-9-lab12-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Ma’lum kartadagi havorang cho‘kma qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "CuO"
+        },
+        {
+          "id": "b",
+          "label": "Cu(OH)2"
+        },
+        {
+          "id": "c",
+          "label": "Na2SO4"
+        },
+        {
+          "id": "d",
+          "label": "CuCl2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            200
+          ],
+          "pdf_pages": [
+            200
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page200"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Qora deb tasvirlangan berilgan mahsulot qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "CuO"
+        },
+        {
+          "id": "b",
+          "label": "Cu(OH)2"
+        },
+        {
+          "id": "c",
+          "label": "NaOH"
+        },
+        {
+          "id": "d",
+          "label": "CuSO4·5H2O"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Bir CuSO4 uchun modeldagi NaOH koeffitsiyenti qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "1"
+        },
+        {
+          "id": "b",
+          "label": "3"
+        },
+        {
+          "id": "c",
+          "label": "2"
+        },
+        {
+          "id": "d",
+          "label": "4"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            200
+          ],
+          "pdf_pages": [
+            200
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page200"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "1,639 mL natija bu topshiriqda qanday dalil?",
+      "options": [
+        {
+          "id": "a",
+          "label": "O‘lchangan amaliy doza"
+        },
+        {
+          "id": "b",
+          "label": "Tuproq sertifikati"
+        },
+        {
+          "id": "c",
+          "label": "Noma’lum namuna tahlili"
+        },
+        {
+          "id": "d",
+          "label": "Nazariy hisob"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Ma’lum Cu(OH)2 kartasining rangini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            200
+          ],
+          "pdf_pages": [
+            200
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page200"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Ma’lum CuO kartasining rangini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q07",
+      "response_kind": "chemical_formula",
+      "prompt": "Mis(II)-gidroksid formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            200
+          ],
+          "pdf_pages": [
+            200
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page200"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q08",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli atom balansini yozing: CuSO4+2NaOH=Cu(OH)2+Na2SO4",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            200
+          ],
+          "pdf_pages": [
+            200
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page200"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q09",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli atom balansini yozing: Cu(OH)2+2HCl=CuCl2+2H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph06",
+          "topic_title": "Ion almashinish reaksiyalari",
+          "paragraph": 6,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph06-page29"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph06",
+          "topic_title": "Ion almashinish reaksiyalari",
+          "paragraph": 6,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph06-page30"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q10",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli atom balansini yozing: Cu(OH)2=CuO+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "4 g 20% eritmadagi CuSO4 massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "0,8 g va M160 modelida CuSO4 miqdori qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph37",
+          "topic_title": "Po‘lat ishlab chiqarish",
+          "paragraph": 37,
+          "printed_pages": [
+            176
+          ],
+          "pdf_pages": [
+            176
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph37-page176"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph28",
+          "topic_title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph28-page135"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "0,010 mol NaOH va M40 modelida sof asos massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page27"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page29"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab12-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "2 g va 1,22 g/mL modelidagi eritma hajmini uch kasrga yaxlitlang.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mL",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory12",
+          "topic_title": "Misning ikki valentli tuzlaridan mis (II)-gidroksidi olish va u bilan tajribalar o‘tkazish",
+          "paragraph": 12,
+          "printed_pages": [
+            201
+          ],
+          "pdf_pages": [
+            201
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory12-page201"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

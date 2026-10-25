@@ -1762,6 +1762,76 @@ void main() {
     });
   }
 
+
+  for (final name in ['copper_volume_lab', 'iron_complex_lab', 'alloy_amount_lab']) {
+    testWidgets('batch37 $name final grade9 lab models at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      final copper = name == 'copper_volume_lab';
+      final iron = name == 'iron_complex_lab';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(copper ? 13 : iron ? 1 : 9);
+      await mount(t, dark: !iron, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      final value = copper ? '1,639' : '0,388';
+      if (iron) {
+        final question = jsonRows(lesson['questions'])[1];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == 'c');
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      } else {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], iron ? {'choice_id':'c'} : {'value':value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch37-feedback');
+      final number = copper ? 12 : iron ? 16 : 17;
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: Laboratoriya $number ·'));
+      await tapFinder(t, source);
+      final page = copper ? 201 : iron ? 203 : 204;
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch37-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (copper) {
+        final footer = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.text('Davom etish'));
+        expect(footer, findsOneWidget);
+        await t.drag(find.byType(LessonFeedbackPanel), const Offset(0, -200));
+        await t.pumpAndSettle();
+        await capture(t, '$name-batch37-feedback-scrolled');
+      } else {
+        final prior = iron ? 35 : 26;
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$prior ·'));
+        await tapFinder(t, priorSource);
+        final priorPage = iron ? 163 : 114;
+        final priorLocator = find.textContaining('$priorPage -> PDF $priorPage');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining(iron ? 'kimyo_9_uzb.pdf' : 'kimyo_8_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch37-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
