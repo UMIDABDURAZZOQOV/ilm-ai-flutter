@@ -2030,6 +2030,521 @@
         "N/m",
         "kN/m"
       ]
+    },
+    {
+      "key": "physics-7-section-26-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Nuqta modeli:m1=1kg,m2=1kg,r=1m. G=6,67e-11N*m2/kg2. F modulini top.",
+      "givens": [
+        {
+          "symbol": "G",
+          "value": "6.67e-11",
+          "unit": "N*m2/kg2"
+        },
+        {
+          "symbol": "m1",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m2",
+          "value": "1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "r",
+          "value": "1",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "G",
+        "m1",
+        "m2",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-26-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nuqta modeli:m1=100kg,m2=200kg,r=10m,G=6,67e-11N*m2/kg2. F qancha?",
+      "givens": [
+        {
+          "symbol": "G",
+          "value": "6.67e-11",
+          "unit": "N*m2/kg2"
+        },
+        {
+          "symbol": "m1",
+          "value": "100",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m2",
+          "value": "200",
+          "unit": "kg"
+        },
+        {
+          "symbol": "r",
+          "value": "10",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "G",
+        "m1",
+        "m2",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-26-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil nuqta modeli:m1=3kg,m2=4kg,r=0,5m,G=6,67e-11N*m2/kg2. F qancha?",
+      "givens": [
+        {
+          "symbol": "G",
+          "value": "6.67e-11",
+          "unit": "N*m2/kg2"
+        },
+        {
+          "symbol": "m1",
+          "value": "3",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m2",
+          "value": "4",
+          "unit": "kg"
+        },
+        {
+          "symbol": "r",
+          "value": "0.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "G",
+        "m1",
+        "m2",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-27-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=0,75kg,g=10m/s2. Og‘irlik kuchi F ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.75",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-27-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "F=29,4N og‘irlik kuchi,g=9,8m/s2. m ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "29.4",
+          "unit": "N"
+        },
+        {
+          "symbol": "g",
+          "value": "9.8",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "g"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-7-section-27-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=250g,g=9,8m/s2. Jismning F og‘irlik kuchi qancha?",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "250",
+          "unit": "g"
+        },
+        {
+          "symbol": "g",
+          "value": "9.8",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-28-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Tinch tayanchdagi m=0,8kg,g=10m/s2. P og‘irlik modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.8",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-28-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis pastga ketayotgan lift ichida m=2kg,g=9,8m/s2. P qancha?",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "9.8",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-29-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=30kg,g=10m/s2, yuqoriga a=2m/s2. P ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "30",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-29-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=30kg,g=10m/s2, pastga a=2m/s2. P ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "30",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-29-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "g=10m/s2, yuqoriga a=5m/s2. n yuklama nisbatini top.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "5",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "g",
+        "a"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-7-section-29-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Birgalikda erkin tushish:m=2kg,g=10m/s2,pastga a=10m/s2. P qancha?",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-30-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Gorizontal v0=7m/s,urilishgacha t=2s. s gorizontal masofani top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "7",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-30-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vertikal v0=0 modelida g=10m/s2,t=3s. Pastga tushilgan h qancha?",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-30-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sferik Yer modeli:G=6,67e-11N*m2/kg2,M=6e24kg,R=6,4e6m,h=3,6e6m. Berilgan yaqinlashuvlardan gh ni top.",
+      "givens": [
+        {
+          "symbol": "G",
+          "value": "6.67e-11",
+          "unit": "N*m2/kg2"
+        },
+        {
+          "symbol": "M",
+          "value": "6e24",
+          "unit": "kg"
+        },
+        {
+          "symbol": "R",
+          "value": "6.4e6",
+          "unit": "m"
+        },
+        {
+          "symbol": "h",
+          "value": "3.6e6",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "G",
+        "M",
+        "R",
+        "h"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ]
+    },
+    {
+      "key": "physics-7-section-30-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal aylana orbitada v=8000m/s,g=10m/s2 deb berilgan. r markazgacha radiusni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "8000",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
     }
   ]
 }
