@@ -2545,6 +2545,319 @@
         "mm",
         "nm"
       ]
+    },
+    {
+      "key": "physics-7-section-31-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli ideal aylana:v=7800m/s,g=9m/s2,R=6400000m. h balandlikni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "7800",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "9",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "R",
+          "value": "6400000",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "v",
+        "g",
+        "R"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-7-section-32-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Gorizontal tinch model:F=4N,Fmax=9N. Qarshi f ishqalanish modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "4",
+          "unit": "N"
+        },
+        {
+          "symbol": "Fmax",
+          "value": "9",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F",
+        "Fmax"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-32-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chegarada:F=8N,Fmax=8N. Sirpanish boshlanish arafasidagi f modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "8",
+          "unit": "N"
+        },
+        {
+          "symbol": "Fmax",
+          "value": "8",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "F",
+        "Fmax"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-33-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Sirpanish modeli:mu=0,3,N=40N. f ni top.",
+      "givens": [
+        {
+          "symbol": "mu",
+          "value": "0.3",
+          "unit": "1"
+        },
+        {
+          "symbol": "N",
+          "value": "40",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "mu",
+        "N"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-33-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sirpanish:f=9N,N=30N. mu ni top.",
+      "givens": [
+        {
+          "symbol": "f",
+          "value": "9",
+          "unit": "N"
+        },
+        {
+          "symbol": "N",
+          "value": "30",
+          "unit": "N"
+        }
+      ],
+      "symbols": [
+        "f",
+        "N"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-7-section-33-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Dumalash modeli:c=1mm,P=800N,r=0,4m. f ni top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "1",
+          "unit": "mm"
+        },
+        {
+          "symbol": "P",
+          "value": "800",
+          "unit": "N"
+        },
+        {
+          "symbol": "r",
+          "value": "0.4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "c",
+        "P",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-33-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil:c=0,2mm,P=100N,r=0,1m. f qancha?",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "0.2",
+          "unit": "mm"
+        },
+        {
+          "symbol": "P",
+          "value": "100",
+          "unit": "N"
+        },
+        {
+          "symbol": "r",
+          "value": "0.1",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "c",
+        "P",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN"
+      ]
+    },
+    {
+      "key": "physics-7-section-34-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli gorizontal tekis tortish:F=2,4N,m=0,8kg,g=10m/s2. mu ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "2.4",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "0.8",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "m",
+        "g"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-7-section-34-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil sirt jufti:mu1=0,28,mu2=0,31,mu3=0,31. mu_ort ni top.",
+      "givens": [
+        {
+          "symbol": "mu1",
+          "value": "0.28",
+          "unit": "1"
+        },
+        {
+          "symbol": "mu2",
+          "value": "0.31",
+          "unit": "1"
+        },
+        {
+          "symbol": "mu3",
+          "value": "0.31",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "mu1",
+        "mu2",
+        "mu3"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-7-section-34-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Umumiy massa500g,tekis tortish F=2N,g=10m/s2. mu qancha?",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "2",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "500",
+          "unit": "g"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "m",
+        "g"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
     }
   ]
 }

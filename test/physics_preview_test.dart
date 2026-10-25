@@ -670,7 +670,7 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final questions = jsonRows(fixture('physics_grade7_frq')['questions']);
-      expect(questions, hasLength(84));
+      expect(questions, hasLength(94));
       for (final question in questions) {
         Json? edited;
         await mount(
