@@ -3363,6 +3363,258 @@
         "dptr",
         "1/m"
       ]
+    },
+    {
+      "key": "physics-6-section-57-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "t=3 s ichida n=900 ta to‘liq tebranish qayd etildi. nu chastotani top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "900",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "t"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "Hz",
+        "kHz"
+      ]
+    },
+    {
+      "key": "physics-6-section-57-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil qayd: n=1200 ta to‘liq tebranish, t=2 s. Chastotani Hz yoki kHz da yoz.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "1200",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "t"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "Hz",
+        "kHz"
+      ]
+    },
+    {
+      "key": "physics-6-section-58-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "20°C havo modeli: v=343m/s, t=4s. Bir tomon tarqalgan tovush yo‘lini top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "343",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-58-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shu modelda s=1029m, v=343m/s. Bir tomon tarqalish vaqtini top.",
+      "givens": [
+        {
+          "symbol": "s",
+          "value": "1029",
+          "unit": "m"
+        },
+        {
+          "symbol": "v",
+          "value": "343",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "s",
+        "v"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-6-section-60-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Oddiy exolot: v=1500m/s, t=0,6s borish-qaytish vaqti. Tubgacha h masofani top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "1500",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "0.6",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-60-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Havodagi qaytgan signal t=1,2s dan keyin olindi; v=340m/s. Manba/qabul qilgich bir joyda. Devorgacha h ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "340",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "1.2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-60-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chaqmoq ko‘ringach ovoz t=4s da keldi. Berilgan v=340m/s, yorug‘lik vaqti e’tiborsiz. Bir tomon s masofani top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "340",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-6-section-61-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli sirt: Ei=40J tushgan, Ea=12J yutilgan tovush energiyasi. alpha ulushini top, birlik1 yoki% ishlat.",
+      "givens": [
+        {
+          "symbol": "Ea",
+          "value": "12",
+          "unit": "J"
+        },
+        {
+          "symbol": "Ei",
+          "value": "40",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Ea",
+        "Ei"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-6-section-61-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil shartli qayd: Ei=80J, Ea=20J. Yutilish koeffitsiyentini top.",
+      "givens": [
+        {
+          "symbol": "Ea",
+          "value": "20",
+          "unit": "J"
+        },
+        {
+          "symbol": "Ei",
+          "value": "80",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Ea",
+        "Ei"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
     }
   ]
 }

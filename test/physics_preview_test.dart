@@ -565,6 +565,7 @@ void main() {
         '%',
         'mV',
         'dptr',
+        'Hz',
         'km',
       ]) {
         final q = questions.firstWhere(
