@@ -1,0 +1,463 @@
+{
+  "assessment_version": 2,
+  "questions": [
+    {
+      "key": "physics-8-section-2-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "n=5ta elementar zaryad moduli,e=1,6e-19C. Jami q modulini top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "5",
+          "unit": "1"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "n",
+        "e"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C"
+      ]
+    },
+    {
+      "key": "physics-8-section-2-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Jismning ortiqcha elektronlari zaryad MODULI q=3,2e-18C,e=1,6e-19C. n ni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "3.2e-18",
+          "unit": "C"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "q",
+        "e"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-2-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "2ta elektron uchun n=2,m0=9,1e-31kg. Ularning jami m massasini top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "2",
+          "unit": "1"
+        },
+        {
+          "symbol": "m0",
+          "value": "9.1e-31",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "n",
+        "m0"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-8-section-3-r1:q4",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Vakuum:modullar q1=2nC,q2=3nC,r=3cm,k=9e9N*m2/C2. F ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        },
+        {
+          "symbol": "q1",
+          "value": "2",
+          "unit": "nC"
+        },
+        {
+          "symbol": "q2",
+          "value": "3",
+          "unit": "nC"
+        },
+        {
+          "symbol": "r",
+          "value": "3",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q1",
+        "q2",
+        "r"
+      ],
+      "suggested_unit": "µN",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-3-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuum:modullar q1=0,2µC,q2=0,4µC,r=0,2m,k=9e9N*m2/C2. F ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        },
+        {
+          "symbol": "q1",
+          "value": "0.2",
+          "unit": "µC"
+        },
+        {
+          "symbol": "q2",
+          "value": "0.4",
+          "unit": "µC"
+        },
+        {
+          "symbol": "r",
+          "value": "0.2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q1",
+        "q2",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-3-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mustaqil vakuum modeli:modullar q1=1µC,q2=2µC,r=0,3m,k=9e9N*m2/C2. F qancha?",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        },
+        {
+          "symbol": "q1",
+          "value": "1",
+          "unit": "µC"
+        },
+        {
+          "symbol": "q2",
+          "value": "2",
+          "unit": "µC"
+        },
+        {
+          "symbol": "r",
+          "value": "0.3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q1",
+        "q2",
+        "r"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-4-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Teng moduldagi vakuum nuqtalari:F=1,6µN,r=30cm,k=9e9N*m2/C2. q MODULINI top. Formulada sqrt(...) yoki^0.5 ishlatish mumkin.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "1.6",
+          "unit": "µN"
+        },
+        {
+          "symbol": "r",
+          "value": "30",
+          "unit": "cm"
+        },
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "r",
+        "k"
+      ],
+      "suggested_unit": "nC",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-4-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Manfiy sharcha q=6,4nC MODULGA ega,e=1,6e-19C. Ortiqcha n elektronni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "6.4",
+          "unit": "nC"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "q",
+        "e"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-4-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ikki metall shar ideal teng taqsimlandi:q1=−8nC,q2=+2nC. Har biridagi q ni ishorasi bilan top.",
+      "givens": [
+        {
+          "symbol": "q1",
+          "value": "-8",
+          "unit": "nC"
+        },
+        {
+          "symbol": "q2",
+          "value": "2",
+          "unit": "nC"
+        }
+      ],
+      "symbols": [
+        "q1",
+        "q2"
+      ],
+      "suggested_unit": "nC",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-4-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Musbat q1=2nC,q2=32nC,bir xil ikki shar. Teng taqsimlab oldingi masofaga qaytarildi. Keyingi/oldingi kuch ratio nisbatini top; farq0,0005gacha qabul qilinadi.",
+      "givens": [
+        {
+          "symbol": "q1",
+          "value": "2",
+          "unit": "nC"
+        },
+        {
+          "symbol": "q2",
+          "value": "32",
+          "unit": "nC"
+        }
+      ],
+      "symbols": [
+        "q1",
+        "q2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-8-section-5-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Musbat sinov q=2nC,F=6µN. E modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "6",
+          "unit": "µN"
+        },
+        {
+          "symbol": "q",
+          "value": "2",
+          "unit": "nC"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ]
+    },
+    {
+      "key": "physics-8-section-5-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Maydon moduli E=2000N/C,sinov zaryad moduli q=3nC. F modulini top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "2000",
+          "unit": "N/C"
+        },
+        {
+          "symbol": "q",
+          "value": "3",
+          "unit": "nC"
+        }
+      ],
+      "symbols": [
+        "E",
+        "q"
+      ],
+      "suggested_unit": "µN",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-8-section-5-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuum nuqtasi:q=4nC,r=0,2m,k=9e9N*m2/C2. E modulini top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        },
+        {
+          "symbol": "q",
+          "value": "4",
+          "unit": "nC"
+        },
+        {
+          "symbol": "r",
+          "value": "0.2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q",
+        "r"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ]
+    },
+    {
+      "key": "physics-8-section-5-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ayni manba/geometriyada E0=1200N/C,eps=3. Bir jinsli elektrostatik modeldagi E ni top.",
+      "givens": [
+        {
+          "symbol": "E0",
+          "value": "1200",
+          "unit": "N/C"
+        },
+        {
+          "symbol": "eps",
+          "value": "3",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "E0",
+        "eps"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ]
+    },
+    {
+      "key": "physics-8-section-5-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil geometriyada E0=1500N/C,E=500N/C. eps ni top.",
+      "givens": [
+        {
+          "symbol": "E0",
+          "value": "1500",
+          "unit": "N/C"
+        },
+        {
+          "symbol": "E",
+          "value": "500",
+          "unit": "N/C"
+        }
+      ],
+      "symbols": [
+        "E0",
+        "E"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    }
+  ]
+}

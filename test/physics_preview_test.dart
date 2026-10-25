@@ -53,19 +53,21 @@ void main() {
             return reply(200, {
               ...fixture('physics_catalog'),
               'grade': grade,
-              'available_grades': [6, 7],
-              if (grade == 7) 'lessons': <Json>[],
-              'book': {
-                'grade': grade,
-                'title': 'Fizika. $grade-sinf uchun darslik',
-                'authors': [
-                  grade == 7 ? 'P. Q. Habibullayev' : 'N. Sh. Turdiyev',
-                ],
-                'publisher': grade == 7
-                    ? 'O‘zbekiston milliy ensiklopediyasi'
-                    : 'Niso Poligraf',
-                'year': 2017,
-              },
+              'available_grades': [6, 7, 8],
+              if (grade >= 7) 'lessons': <Json>[],
+              'book': grade == 8
+                  ? fixture('physics_grade8_book')
+                  : {
+                      'grade': grade,
+                      'title': 'Fizika. $grade-sinf uchun darslik',
+                      'authors': [
+                        grade == 7 ? 'P. Q. Habibullayev' : 'N. Sh. Turdiyev',
+                      ],
+                      'publisher': grade == 7
+                          ? 'O‘zbekiston milliy ensiklopediyasi'
+                          : 'Niso Poligraf',
+                      'year': 2017,
+                    },
             });
           }
           return reply(200, fixture('physics_catalog'));
@@ -412,6 +414,32 @@ void main() {
     },
   );
 
+  testWidgets(
+    'grade8 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('8-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 8);
+      final book = fixture('physics_grade8_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   testWidgets('offline catalog retry and dispose during request do not throw', (
     tester,
   ) async {
@@ -701,6 +729,47 @@ void main() {
       }
     },
   );
+  testWidgets('grade8 public FRQ and root notation drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade8_frq')['questions']);
+    expect(questions, hasLength(15));
+    for (final question in questions) {
+      Json? edited;
+      final isRoot = question['key'] == 'physics-8-section-4-r1:q5';
+      final formula = isRoot ? 'sqrt(F*r^2/k)' : 'learner_formula';
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
+            ),
+          ),
+        ),
+      );
+      await enter(
+        tester,
+        formula,
+        isRoot ? '4' : '-1,25',
+        question['suggested_unit'] as String,
+      );
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], isRoot ? '4' : '-1,25');
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
   testWidgets(
     'FRQ inputs have accessible labels and Android-sized tap targets',
     (tester) async {
