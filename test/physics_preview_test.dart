@@ -27,6 +27,7 @@ void main() {
   late List<RequestOptions> requests;
   late Json lesson, results;
   bool offline = false, lostAnswer = false, lostComplete = false;
+  bool multipleGrades = false;
   final committed = <String, Json>{};
   setUp(() {
     requests = [];
@@ -34,6 +35,7 @@ void main() {
     offline = false;
     lostAnswer = false;
     lostComplete = false;
+    multipleGrades = false;
     lesson = fixture('physics_lesson6');
     results = fixture('physics_result6');
     dio = Dio(BaseOptions(baseUrl: 'http://127.0.0.1:8000'))
@@ -46,6 +48,26 @@ void main() {
           );
         }
         if (request.path.endsWith('/catalog')) {
+          if (multipleGrades) {
+            final grade = request.queryParameters['grade'] as int;
+            return reply(200, {
+              ...fixture('physics_catalog'),
+              'grade': grade,
+              'available_grades': [6, 7],
+              if (grade == 7) 'lessons': <Json>[],
+              'book': {
+                'grade': grade,
+                'title': 'Fizika. $grade-sinf uchun darslik',
+                'authors': [
+                  grade == 7 ? 'P. Q. Habibullayev' : 'N. Sh. Turdiyev',
+                ],
+                'publisher': grade == 7
+                    ? 'O‘zbekiston milliy ensiklopediyasi'
+                    : 'Niso Poligraf',
+                'year': 2017,
+              },
+            });
+          }
           return reply(200, fixture('physics_catalog'));
         }
         if (request.path.endsWith('/start')) {
@@ -200,6 +222,28 @@ void main() {
         ),
       ),
     );
+  });
+
+  testWidgets('grade selection requests its own catalog and bibliography', (
+    tester,
+  ) async {
+    multipleGrades = true;
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await mount(tester, scale: 2);
+    final picker = find.byKey(const ValueKey('physics-grade-6'));
+    await tester.ensureVisible(picker);
+    await tester.tap(picker);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('7-sinf').last);
+    await tester.pumpAndSettle();
+    expect(requests.last.queryParameters['grade'], 7);
+    expect(find.text('Fizika • 7-sinf'), findsOneWidget);
+    expect(find.textContaining('P. Q. Habibullayev'), findsOneWidget);
+    expect(find.textContaining('N. Sh. Turdiyev'), findsNothing);
+    expect(tester.takeException(), isNull);
   });
 
   test('v2 fixtures contain no rubric or private expected answer', () {

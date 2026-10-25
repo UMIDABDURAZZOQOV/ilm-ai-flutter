@@ -45,6 +45,8 @@ class _SessionState extends ConsumerState<_Session> {
   String? _lessonKey, _error;
   bool _busy = false, _teaching = true, _expired = false;
   int _index = 0, _generation = 0;
+  int _grade = 6;
+  List<int> _grades = [6];
   Future<void> _writes = Future.value();
   PhysicsRepository get _repo => ref.read(physicsRepositoryProvider);
   bool active(int generation) =>
@@ -139,13 +141,35 @@ class _SessionState extends ConsumerState<_Session> {
       _error = null;
     });
     try {
-      final data = await _repo.catalog(_cancel);
-      if (active(generation)) setState(() => _catalog = data);
+      final data = await _repo.catalog(_cancel, grade: _grade);
+      if (active(generation)) {
+        setState(() {
+          _catalog = data;
+          _grades = {
+            ...?_catalog?['available_grades'] as List?,
+            _grade,
+          }.whereType<int>().where((g) => g >= 6 && g <= 11).toList()..sort();
+        });
+      }
     } catch (e) {
       if (active(generation)) setState(() => _error = message(e));
     } finally {
       if (active(generation)) setState(() => _busy = false);
     }
+  }
+
+  void _changeGrade(int grade) {
+    if (_busy || _attempt != null || grade == _grade) return;
+    _generation++;
+    _cancel.cancel();
+    _cancel = CancelToken();
+    setState(() {
+      _grade = grade;
+      _catalog = null;
+      _error = null;
+      _lessonKey = null;
+    });
+    unawaited(_loadCatalog());
   }
 
   Future<void> _open(String key, {bool fresh = false}) async {
@@ -385,8 +409,10 @@ class _SessionState extends ConsumerState<_Session> {
               'Darslik manbasi',
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            const Text(
-              'Fizika, 6-sinf. N. Sh. Turdiyev. Niso Poligraf, 2017. Asl PDF tekshirilgan. PDF fayli ilovada tarqatilmaydi.',
+            Text(
+              _catalog?['book'] is Map
+                  ? '${_catalog!['book']['title']}. ${(_catalog!['book']['authors'] as List).join(', ')}. ${_catalog!['book']['publisher']}, ${_catalog!['book']['year']}. PDF fayli ilovada tarqatilmaydi.'
+                  : 'Fizika, $_grade-sinf. Bibliografiya serverdan olinadi. PDF fayli ilovada tarqatilmaydi.',
             ),
             for (final r in refs)
               Padding(
@@ -419,14 +445,35 @@ class _SessionState extends ConsumerState<_Session> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        DropdownButtonFormField<int>(
+          key: ValueKey('physics-grade-$_grade'),
+          initialValue: _grade,
+          isExpanded: true,
+          decoration: const InputDecoration(labelText: 'Fizika sinfi'),
+          items: _grades
+              .map((g) => DropdownMenuItem(value: g, child: Text('$g-sinf')))
+              .toList(),
+          onChanged: _busy
+              ? null
+              : (g) {
+                  if (g != null) _changeGrade(g);
+                },
+        ),
         const MascotImage(pose: MascotPose.hello, size: 96),
         const DuoSpeechBubble(
           text: 'Birga kuzatamiz, o‘lchaymiz va tekshiramiz!',
         ),
         _panel(
-          '6-sinf • ${rows.isEmpty ? 'darslar kutilmoqda' : '§${rows.first['sequence']}–${rows.last['sequence']}'}',
+          '$_grade-sinf • ${rows.isEmpty ? 'darslar kutilmoqda' : '§${rows.first['sequence']}–${rows.last['sequence']}'}',
           'Bu alohida lokal sinov. Darslar faqat o‘zbekcha. Har darsdan kamida 60% natija keyingi bosqichni ochadi; birinchi muvaffaqiyatli yakun uchun 10 XP.',
         ),
+        if (_catalog?['book'] is Map)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: Text(
+              '${_catalog!['book']['title']}\n${(_catalog!['book']['authors'] as List).join(', ')}\n${_catalog!['book']['publisher']}, ${_catalog!['book']['year']}',
+            ),
+          ),
         if (_catalog != null)
           Text(
             '${rows.where((r) => r['state'] == 'completed').length}/${rows.length} bosqich tugallangan',
@@ -681,7 +728,7 @@ class _SessionState extends ConsumerState<_Session> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
       toolbarHeight: math.max(56, MediaQuery.textScalerOf(context).scale(42)),
-      title: const Text('Fizika • 6-sinf', maxLines: 2),
+      title: Text('Fizika • $_grade-sinf', maxLines: 2),
       leading: _attempt == null
           ? null
           : IconButton(
