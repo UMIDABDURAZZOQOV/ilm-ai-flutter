@@ -1,0 +1,2844 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-9-p18-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Metallar korroziyasi",
+  "content": {
+    "cards": [
+      {
+        "title": "Korroziya nimani bildiradi?",
+        "body": "Korroziya — metallning atrof-muhit bilan ta’sirlashishi natijasida yemirilish jarayoni. Sirt o‘zgarishi, birikmalar paydo bo‘lishi va buyum xossalari yomonlashishi bilan bog‘langan.",
+        "fact_ids": [
+          "definition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              80
+            ],
+            "pdf_pages": [
+              80
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page80"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page81"
+          }
+        ]
+      },
+      {
+        "title": "Muhit va mexanizm kategoriyalari",
+        "body": "Bo‘lim kimyoviy, elektrokimyoviy va biokorroziya kategoriyalarini sanaydi. Atmosferaviy, suyuqlikdagi va tuproqdagi holatlar esa muhit bo‘yicha tasnif misollaridir. Muhit nomi bilan jarayon mexanizmi nomi bir xil tasnif belgisi emas.",
+        "fact_ids": [
+          "categories"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page81"
+          }
+        ]
+      },
+      {
+        "title": "Atom bilan birga zaryadni sanang",
+        "body": "Alohida elektron hisobida Fe−2e⁻→Fe²⁺ ikki elektron berilishini ifodalaydi. 2H2O+O2+4e⁻→4OH⁻ modeli esa elektron olinishini ko‘rsatadi. Bu yozuvlarda atomlar bilan birga umumiy zaryadni ham sanash zarur.",
+        "fact_ids": [
+          "electrons"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page81"
+          }
+        ]
+      },
+      {
+        "title": "Masala uchun ideal zang modeli",
+        "body": "Masalalar uchun aniq maktab modeli 4Fe+6H2O+3O2=4Fe(OH)3. Bu ideal modda balansi, har bir haqiqiy zang namunasi faqat sof Fe(OH)3 dan iborat degani emas. Berilgan modelda Fe: O2 nisbati 4:3.",
+        "fact_ids": [
+          "rustmodel"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page81"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page85"
+          }
+        ]
+      },
+      {
+        "title": "Ikki gidroksid orasidagi balans",
+        "body": "Alohida berilgan neytral o‘tish 4Fe(OH)2+2H2O+O2=4Fe(OH)3. Chap va o‘ngda Fe4, O12 va H12 atomlari bor. Koeffitsiyentni o‘zgartirish bilan formula indeksini o‘zgartirish boshqa-boshqa amaldir.",
+        "fact_ids": [
+          "hydroxidestep"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page81"
+          }
+        ]
+      },
+      {
+        "title": "Sirt qatlami va tezlik",
+        "body": "Aluminiy sirtidagi yupqa oksid qatlami muhit bilan ta’sirlashishni kamaytiruvchi misol sifatida berilgan. Sirt holati korroziya tezligiga ta’sir qilishi mumkin; faollik qatorining o‘zi haqiqiy tezlikni to‘liq belgilamaydi.",
+        "fact_ids": [
+          "passivation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page82"
+          }
+        ]
+      },
+      {
+        "title": "Himoyaning besh kategoriyasi",
+        "body": "Himoya kategoriyalari: qoplama hosil qilish, muhit faolligini kamaytirish, metall tarkibini o‘zgartirish, elektrokimyoviy himoya va barqaror material tanlash. Bular sharoitga bog‘liq usullar oilasi; bitta usulga cheksiz kafolat berilmaydi.",
+        "fact_ids": [
+          "protection"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page82"
+          }
+        ]
+      },
+      {
+        "title": "Qoplama va fosfatlash",
+        "body": "Bo‘yoq, emal, polimer, oksid va fosfat qatlamlari sirt qoplamalari misollaridir. Fosfatlash metall sirtida fosfat qatlamiga asoslangan kategoriya bo‘lib, bo‘yoqning birikishi va elektr izolyatsiyasi bilan bog‘langan qo‘llanishlar sanaladi.",
+        "fact_ids": [
+          "coatings"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page83"
+          }
+        ]
+      },
+      {
+        "title": "Fosfatning uch berilgan balansi",
+        "body": "Berilgan neytral modellar: 2H3PO4+Fe=Fe(H2PO4)2+H2; Fe(H2PO4)2+Fe=2FeHPO4+H2; 2FeHPO4+Fe=Fe3(PO4)2+H2. Uch yozuvda fosfat guruhining tarkibi va Fe koeffitsiyentlarini saqlang. Bu fizik qoplash yo‘riqnomasi emas.",
+        "fact_ids": [
+          "phosphate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page83"
+          }
+        ]
+      },
+      {
+        "title": "Rux va temirning rollari",
+        "body": "Temirga nisbatan faolroq rux qoplamasi modelida rux anod, himoyalanayotgan temir katod rolida ko‘rsatiladi. Faolligi kamroq metall qoplamasi shikastlansa natija boshqacha bo‘lishi mumkin. Qoplama materiali va uning butunligi muhim.",
+        "fact_ids": [
+          "anodic"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page83"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              84
+            ],
+            "pdf_pages": [
+              84
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page84"
+          }
+        ]
+      },
+      {
+        "title": "Ingibitor kategoriyasi",
+        "body": "Ingibitorlar korrozion jarayonni sekinlashtiruvchi moddalar kategoriyasidir. Bo‘lim ularning sirtga adsorblanishi va anod/katod jarayonlariga ta’sirini tilga oladi. Bu yerda konsentratsiya yoki amaliy doza berilmaydi.",
+        "fact_ids": [
+          "inhibitors"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              84
+            ],
+            "pdf_pages": [
+              84
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page84"
+          }
+        ]
+      },
+      {
+        "title": "Protektor va konstruksiya",
+        "body": "Protektor himoya modelida faolroq metall anod sifatida sarflanadi, himoyalanadigan konstruksiya katod rolini bajaradi. Tashqi tokli katod himoyasi ham boshqa elektrokimyoviy kategoriya sifatida sanaladi. Bu raqamli rol tahlili, qurilma ulash loyihasi emas.",
+        "fact_ids": [
+          "protector"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              84
+            ],
+            "pdf_pages": [
+              84
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page84"
+          }
+        ]
+      },
+      {
+        "title": "2,24 g Fe uchun O2 hajmi",
+        "body": "Berilgan 2,24 g Fe va M(Fe)=56 modeli: n(Fe)=0,04 mol. 4Fe: 3O2 nisbatida n(O2)=0,03 mol; Vm22,4 L/mol(n.sh.) bilan V(O2)=0,672 L. Bu aynan ideal Fe(OH)3 modeli hisobi.",
+        "fact_ids": [
+          "smalliron"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page85"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph11",
+            "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+            "paragraph": 11,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph11-page57"
+          }
+        ]
+      },
+      {
+        "title": "28 g Fe uchun mahsulot massasi",
+        "body": "28 g Fe/M56=0,5 mol. Berilgan ideal tenglama bo‘yicha Fe(OH)3 ham 0,5 mol. Fe56/O16/H1 bilan M(Fe(OH)3)=107 g/mol, massa 53,5 g. O2 miqdori 0,375 mol va n.sh.dagi hajmi 8,4 L.",
+        "fact_ids": [
+          "ironmass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page85"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph11",
+            "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+            "paragraph": 11,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph11-page57"
+          }
+        ]
+      },
+      {
+        "title": "CuO mahsuloti aniq berilgan hisob",
+        "body": "Cu(II)-oksid mahsuloti aniq berilgan original model: 2Cu+O2=2CuO. Oldingi Cu64/O16 va 12,8 g Cu shartida n(Cu)=0,2 mol. O2=0,1 mol=2,24 L(n.sh.); CuO massasi 0,2·80=16 g. Boshqa oksid mahsuloti tanlansa bu hisob qo‘llanmaydi.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page85"
+          },
+          {
+            "book_id": "chemistry-7-uz-2017",
+            "book_title": "Kimyo",
+            "authors": [
+              "I.R. Asqarov",
+              "N.X. To‘xtaboyev",
+              "K.G‘. G‘opirov"
+            ],
+            "year": 2017,
+            "file_name": "kimyo_7_uzb.pdf",
+            "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+            "topic_id": "ch7-paragraph09",
+            "topic_title": "Kimyoviy formula va undan kelib chiqadigan xulosalar. Valentlik. Indekslar haqida tushuncha",
+            "paragraph": 9,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              16
+            ],
+            "regions": [
+              "right"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch7-paragraph09-page31"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph02",
+            "topic_title": "Noorganik birikmalarning asosiy sinflari",
+            "paragraph": 2,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph02-page10"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-practical01",
+            "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+            "paragraph": 1,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-practical01-page127"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph11",
+            "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+            "paragraph": 11,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph11-page57"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "O2 nisbatini unutmaslik",
+        "body": "2,24/56=0,04 mol Fe. Kislorodga o‘tishda 3/4 ko‘paytuvchi ishlatiladi: 0,03 mol. 0,03·22,4=0,672 L(n.sh.). Fe va O2 ni 1:1 olish bu tenglama koeffitsiyentlariga mos kelmaydi.",
+        "fact_ids": [
+          "rustmodel",
+          "smalliron"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page81"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph18",
+            "topic_title": "Metallar korroziyasi",
+            "paragraph": 18,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph18-page85"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph11",
+            "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+            "paragraph": 11,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph11-page57"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph18",
+        "topic_title": "Metallar korroziyasi",
+        "paragraph": 18,
+        "printed_pages": [
+          80
+        ],
+        "pdf_pages": [
+          80
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph18-page80"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph18",
+        "topic_title": "Metallar korroziyasi",
+        "paragraph": 18,
+        "printed_pages": [
+          81
+        ],
+        "pdf_pages": [
+          81
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph18-page81"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph18",
+        "topic_title": "Metallar korroziyasi",
+        "paragraph": 18,
+        "printed_pages": [
+          82
+        ],
+        "pdf_pages": [
+          82
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph18-page82"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph18",
+        "topic_title": "Metallar korroziyasi",
+        "paragraph": 18,
+        "printed_pages": [
+          83
+        ],
+        "pdf_pages": [
+          83
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph18-page83"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph18",
+        "topic_title": "Metallar korroziyasi",
+        "paragraph": 18,
+        "printed_pages": [
+          84
+        ],
+        "pdf_pages": [
+          84
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph18-page84"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph18",
+        "topic_title": "Metallar korroziyasi",
+        "paragraph": 18,
+        "printed_pages": [
+          85
+        ],
+        "pdf_pages": [
+          85
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph18-page85"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph26",
+        "topic_title": "Ekvivalent qonuni",
+        "paragraph": 26,
+        "printed_pages": [
+          114
+        ],
+        "pdf_pages": [
+          114
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph26-page114"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph11",
+        "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+        "paragraph": 11,
+        "printed_pages": [
+          57
+        ],
+        "pdf_pages": [
+          57
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph11-page57"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-7-uz-2017",
+        "book_title": "Kimyo",
+        "authors": [
+          "I.R. Asqarov",
+          "N.X. To‘xtaboyev",
+          "K.G‘. G‘opirov"
+        ],
+        "year": 2017,
+        "file_name": "kimyo_7_uzb.pdf",
+        "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+        "topic_id": "ch7-paragraph09",
+        "topic_title": "Kimyoviy formula va undan kelib chiqadigan xulosalar. Valentlik. Indekslar haqida tushuncha",
+        "paragraph": 9,
+        "printed_pages": [
+          31
+        ],
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          "right"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch7-paragraph09-page31"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph02",
+        "topic_title": "Noorganik birikmalarning asosiy sinflari",
+        "paragraph": 2,
+        "printed_pages": [
+          10
+        ],
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph02-page10"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-practical01",
+        "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+        "paragraph": 1,
+        "printed_pages": [
+          127
+        ],
+        "pdf_pages": [
+          127
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-practical01-page127"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-9-p18-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Atrof-muhit ta’siridagi metall yemirilishi atamasi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat kristallanish"
+        },
+        {
+          "id": "b",
+          "label": "Korroziya"
+        },
+        {
+          "id": "c",
+          "label": "Faqat distillash"
+        },
+        {
+          "id": "d",
+          "label": "Faqat neytrallanish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            80
+          ],
+          "pdf_pages": [
+            80
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page80"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page81"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Metall sirtidagi fosfat qatlami bilan bog‘langan kategoriya?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat sublimatsiya"
+        },
+        {
+          "id": "b",
+          "label": "Faqat filtrlash"
+        },
+        {
+          "id": "c",
+          "label": "Faqat muzlash"
+        },
+        {
+          "id": "d",
+          "label": "Fosfatlash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan rux/temir himoya modelida rux roli?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Anod"
+        },
+        {
+          "id": "b",
+          "label": "Katod"
+        },
+        {
+          "id": "c",
+          "label": "Faqat erituvchi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat indikator"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page83"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page84"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Protektor modelida himoyalanadigan konstruksiya roli?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Anod"
+        },
+        {
+          "id": "b",
+          "label": "Faqat gaz"
+        },
+        {
+          "id": "c",
+          "label": "Katod"
+        },
+        {
+          "id": "d",
+          "label": "Faqat tuz"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page84"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Metallning muhit bilan ta’sirlashib yemirilish atamasi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            80
+          ],
+          "pdf_pages": [
+            80
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page80"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page81"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Korroziyani sekinlashtiruvchi moddalar kategoriyasi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page84"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q07",
+      "response_kind": "chemical_formula",
+      "prompt": "Masalada aniq qabul qilingan ideal zang mahsuloti formulasi?",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page81"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q08",
+      "response_kind": "chemical_formula",
+      "prompt": "Oxirgi berilgan fosfat mahsuloti formulasi?",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q09",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotlar bilan atom balansini tenglang: Fe + H2O + O2 → Fe(OH)3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page81"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q10",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotlar bilan atom balansini tenglang: Fe(OH)2 + H2O + O2 → Fe(OH)3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page81"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q11",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotlar bilan atom balansini tenglang: H3PO4 + Fe → Fe(H2PO4)2 + H2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q12",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotlar bilan atom balansini tenglang: Fe(H2PO4)2 + Fe → FeHPO4 + H2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q13",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotlar bilan atom balansini tenglang: FeHPO4 + Fe → Fe3(PO4)2 + H2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotlar bilan atom balansini tenglang: Cu + O2 → CuO",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph09",
+          "topic_title": "Kimyoviy formula va undan kelib chiqadigan xulosalar. Valentlik. Indekslar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph09-page31"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page10"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical01",
+          "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 1,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical01-page127"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph11",
+          "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+          "paragraph": 11,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph11-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q15",
+      "response_kind": "numeric_value",
+      "prompt": "Fe−2e⁻→Fe²⁺ modelida berilgan elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page81"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q16",
+      "response_kind": "numeric_value",
+      "prompt": "Bo‘limdagi asosiy himoya kategoriyalari soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q17",
+      "response_kind": "numeric_value",
+      "prompt": "2,24 g Fe/M56 va 4:3 nisbat/Vm22,4 modelida O2 hajmi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph11",
+          "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+          "paragraph": 11,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph11-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q18",
+      "response_kind": "numeric_value",
+      "prompt": "28 g Fe/M56 va M(Fe(OH)3)=107 modelida ideal mahsulot massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph11",
+          "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+          "paragraph": 11,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph11-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q19",
+      "response_kind": "numeric_value",
+      "prompt": "Shu 28 g Fe modeli uchun O2 hajmi(n.sh.)?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph11",
+          "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+          "paragraph": 11,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph11-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q20",
+      "response_kind": "numeric_value",
+      "prompt": "12,8 g Cu/M64, CuO mahsulotli modelida O2 hajmi(n.sh.)?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph09",
+          "topic_title": "Kimyoviy formula va undan kelib chiqadigan xulosalar. Valentlik. Indekslar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph09-page31"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page10"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical01",
+          "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 1,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical01-page127"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph11",
+          "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+          "paragraph": 11,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph11-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p18-r1-q21",
+      "response_kind": "numeric_value",
+      "prompt": "Shu CuO mahsulotli modeldagi CuO massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph18",
+          "topic_title": "Metallar korroziyasi",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-7-uz-2017",
+          "book_title": "Kimyo",
+          "authors": [
+            "I.R. Asqarov",
+            "N.X. To‘xtaboyev",
+            "K.G‘. G‘opirov"
+          ],
+          "year": 2017,
+          "file_name": "kimyo_7_uzb.pdf",
+          "sha256": "a164c51ca0f55b8024e74d8e6daa32a3b10a3d45b33761630add81c47e24ce0a",
+          "topic_id": "ch7-paragraph09",
+          "topic_title": "Kimyoviy formula va undan kelib chiqadigan xulosalar. Valentlik. Indekslar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "right"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch7-paragraph09-page31"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph02",
+          "topic_title": "Noorganik birikmalarning asosiy sinflari",
+          "paragraph": 2,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph02-page10"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical01",
+          "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 1,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical01-page127"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph11",
+          "topic_title": "Karbonat kislota va karbonatlarning xossalari",
+          "paragraph": 11,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph11-page57"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

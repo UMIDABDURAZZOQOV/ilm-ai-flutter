@@ -1,0 +1,4848 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-9-p19-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Elektroliz va uning amaliy ahamiyati",
+  "content": {
+    "cards": [
+      {
+        "title": "Elektroliz va ikki xil muhit",
+        "body": "Elektroliz — elektrolit eritmasi yoki suyuqlanmasidan doimiy elektr toki o‘tganda yuz beradigan oksidlanish-qaytarilish jarayoni. Suvli eritma va suyuqlanma bir xil muhit emas.",
+        "fact_ids": [
+          "definition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page85"
+          }
+        ]
+      },
+      {
+        "title": "Katod va anoddagi jarayonlar",
+        "body": "Katodda qaytarilish, anodda oksidlanish yuz beradi. Elektrolizning berilgan sxemasida katod manfiy, anod musbat qutb bilan bog‘langan. Kationning katodga yo‘nalishi bilan elektron berish-olish yo‘nalishini farqlang.",
+        "fact_ids": [
+          "roles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page85"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              91
+            ],
+            "pdf_pages": [
+              91
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page91"
+          }
+        ]
+      },
+      {
+        "title": "CuCl2 ning aniq elektrod modeli",
+        "body": "CuCl2 ning suvli eritmasi uchun berilgan inert anod modelida Cu²⁺+2e⁻→Cu, 2Cl⁻−2e⁻→Cl2. Bir Cu²⁺ ikki elektron oladi; ikkita xlorid jami ikki elektron beradi. Bu aynan shu misolning elektrod modeli.",
+        "fact_ids": [
+          "copperchloride"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          }
+        ]
+      },
+      {
+        "title": "Eruvchan Cu anodi nimani o‘zgartiradi?",
+        "body": "Cu anodi eruvchan bo‘lgan misolda anodning o‘zi Cu²⁺ ionlariga o‘tadi. Shu sabab inert anodli xlor ajralishi misolini bu holatga avtomatik ko‘chirmang. Eruvchan va erimaydigan anod tanlovi natijani o‘zgartiradi.",
+        "fact_ids": [
+          "solubleanode"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          }
+        ]
+      },
+      {
+        "title": "Elektrod turi ham shart",
+        "body": "Platina yoki grafit berilgan inert elektrod misollaridir. Inert modelda eritma tarkibidagi zarrachalar yoki suv ishtirok etishi mumkin. Mahsulotni aniqlashda elektrod turi, muhit va berilgan shartlar kerak; faqat tuz nomi har doim yetarli emas.",
+        "fact_ids": [
+          "inert"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              88
+            ],
+            "pdf_pages": [
+              88
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page88"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              89
+            ],
+            "pdf_pages": [
+              89
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page89"
+          }
+        ]
+      },
+      {
+        "title": "Suvning neytral atom balansi",
+        "body": "Suv parchalanishining berilgan neytral modeli 2H2O=2H2+O2. Bir xil harorat va bosimdagi ideal gaz hajmlari H2: O2=2:1. Suvli elektrolitdagi suvning ishtirokini suyuqlanmadagi holat bilan adashtirmang.",
+        "fact_ids": [
+          "water"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page92"
+          }
+        ]
+      },
+      {
+        "title": "NaCl eritmasining berilgan mahsulotlari",
+        "body": "NaCl suvli eritmasining berilgan suv qaytarilishi/xlorid oksidlanishi modelini neytral atom balansi bilan yozsak: 2NaCl+2H2O=2NaOH+H2+Cl2. Bu suvli, inert anodli aniq mahsulotlar modeli; unda Na metalli mahsulot qilib olinmagan.",
+        "fact_ids": [
+          "nacl"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          }
+        ]
+      },
+      {
+        "title": "NaI suyuqlanmasi suvli eritma emas",
+        "body": "NaI suyuqlanmasi uchun kitobdagi model 2NaI=2Na+I2. Na⁺ katodda bitta elektron oladi; ikkita I⁻ anodda jami ikki elektron beradi. Bu misolda suvli eritma haqida gap ketmayapti.",
+        "fact_ids": [
+          "melt"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              91
+            ],
+            "pdf_pages": [
+              91
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page91"
+          }
+        ]
+      },
+      {
+        "title": "CuSO4 va inert elektrodlar",
+        "body": "CuSO4 suvli eritmasining inert elektrodli aniq modeli 2CuSO4+2H2O=2Cu+2H2SO4+O2. Cu katod mahsuloti, O2 anod mahsuloti sifatida berilgan. Ikki Cu atomiga bir O2 koeffitsiyenti to‘g‘ri keladi.",
+        "fact_ids": [
+          "coppersulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              91
+            ],
+            "pdf_pages": [
+              91
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page91"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page92"
+          }
+        ]
+      },
+      {
+        "title": "11,2 L H2 dan O2 hajmiga",
+        "body": "Uchinchi misolda H2 hajmi 11,2 L va gazlar bir xil sharoitda o‘lchangan. 2H2O=2H2+O2 nisbatida V(O2)=11,2/2=5,6 L. Hajmlarning sharoiti bir xil bo‘lishi hisobning shartidir.",
+        "fact_ids": [
+          "hydrogenvolume"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page92"
+          }
+        ]
+      },
+      {
+        "title": "Suv kamayganda tuz ulushi",
+        "body": "NaF misolining aniq sifat xulosasida suv H2/O2 ga o‘tib kamayadi, erigan tuz miqdori saqlangan ideal modelda uning massa ulushi ortadi. Xulosa faqat tuz yo‘qolmasligi va boshqa massa almashinuvi hisobga olinmagan shart bilan qo‘llanadi.",
+        "fact_ids": [
+          "concentration"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page92"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          }
+        ]
+      },
+      {
+        "title": "Faradey hisobidagi to‘rt kattalik",
+        "body": "Faradey hisobi uchun kitob m=E·I·t/F yozuvini beradi: m — mahsulot massasi, E — ekvivalent massa, I — tok kuchi, t — vaqt. Hisobda mahsulotga sarflangan zaryad ulushi aniq berilishi zarur. Quyidagi masalalarda u 100% deb tanlangan.",
+        "fact_ids": [
+          "faraday"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              90
+            ],
+            "pdf_pages": [
+              90
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page90"
+          }
+        ]
+      },
+      {
+        "title": "F bilan vaqt birligini juftlang",
+        "body": "Kitobdagi birlik juftlari: t sekund bo‘lsa F=96500; t minut bo‘lsa 1608,33; t soat bo‘lsa 26,8. Soatli va minutli qiymatlar yaxlitlangan hisob modellari. Sekundli vaqtni soatli F bilan aralashtirmang.",
+        "fact_ids": [
+          "units"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              90
+            ],
+            "pdf_pages": [
+              90
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page90"
+          }
+        ]
+      },
+      {
+        "title": "Cu uchun ekvivalent hisobi",
+        "body": "Oldingi E=A/V modeli va Cu²⁺ uchun ikki elektron hisobidan Cu=64 butun massa modelida E(Cu)=64/2=32 g/ekv. Shu berilgan modelda I=2 A, t=965 s, F=96500 va 100% unum bo‘lsa m=32·2·965/96500=0,64 g.",
+        "fact_ids": [
+          "equivalent"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              90
+            ],
+            "pdf_pages": [
+              90
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page90"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph13",
+            "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+            "paragraph": 13,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph13-page59"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-practical01",
+            "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+            "paragraph": 1,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-practical01-page127"
+          }
+        ]
+      },
+      {
+        "title": "6 A va 1,5 soatli model",
+        "body": "Beshinchi masalaning berilgan modeli: I=6 A, t=1,5 soat, F=26,8 A·soat/ekv, H2 hajm ekvivalenti 11,2 L/ekv(n.sh.). V=11,2·6·1,5/26,8=3,761194… L. Ikki kasrda 3,76 L; 100% zaryad unumi qabul qilingan.",
+        "fact_ids": [
+          "timehydrogen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          }
+        ]
+      },
+      {
+        "title": "Aralashmaning boshlang‘ich miqdorlari",
+        "body": "Aralashma modelida 400 mL 0,2 mol/L Cu(NO3)2 — 0,08 mol; 200 mL 0,3 mol/L AgNO3 — 0,06 mol. Berilgan M188/M170 bilan boshlang‘ich massalar 15,04 g va 10,2 g. Hajm mL bo‘lsa litrga bo‘lishni unutmang.",
+        "fact_ids": [
+          "mixturestart"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      },
+      {
+        "title": "Zaryadni Ag va Cu ga taqsimlang",
+        "body": "Aynan kitobning ideal Ag-avval/Cu-keyin modelida I·t/F=5·3860/96500=0,20 mol elektron ekvivalenti. Ag uchun 0,06 sarflanadi; qolgan 0,14 Cu²⁺ ning 0,07 moliga mos. Boshlang‘ich 0,08 dan qolgan 0,01 mol Cu(NO3)2 massasi 0,01·188=1,88 g.",
+        "fact_ids": [
+          "mixturecharge"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      },
+      {
+        "title": "Nitratlar uchun butun koeffitsiyentlar",
+        "body": "Berilgan nitrat misollarini butun atom balansida yozamiz: 4AgNO3+2H2O=4Ag+O2+4HNO3; 2Cu(NO3)2+2H2O=2Cu+O2+4HNO3. Bular kitobdagi ideal inert elektrodli mahsulotlar modellaridir.",
+        "fact_ids": [
+          "nitrates"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      },
+      {
+        "title": "Tuzni saqlab suv massasini ayiring",
+        "body": "500 g 10% Na2SO4 eritmasi modelida tuz 50 g, suv 450 g. Katodda 112 L H2(n.sh.) uchun berilgan suv balansi 90 g suv kamayishini beradi. Tuz saqlansa yakuniy eritma 410 g; massa foizi 50/410·100=12,195121…%, uch kasrda 12,195%.",
+        "fact_ids": [
+          "saltwater"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page95"
+          }
+        ]
+      },
+      {
+        "title": "8 A modelida vaqt",
+        "body": "Shu masalada suvning berilgan E=9 g/ekv va soatli F=26,8 modeli bilan 90 g suv uchun 10 ekv zaryad kerak. I=8 A da t=90·26,8/(9·8)=33,5 soat. Vaqt birligi tanlangan F bilan mos.",
+        "fact_ids": [
+          "salttime"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page95"
+          }
+        ]
+      },
+      {
+        "title": "Ag uchun tanlangan butun massa",
+        "body": "Kumush hisobi uchun oldingi Ag=107,9 ni butun 108 ga yaxlitlaymiz. Ag⁺ bir elektron olgan modelda E=108 g/ekv. Bu butun sonli hisob modeli, yuqori aniqlikdagi yangi atom massasi emas.",
+        "fact_ids": [
+          "silverconstant"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph13",
+            "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+            "paragraph": 13,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph13-page59"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          }
+        ]
+      },
+      {
+        "title": "6 A va 30 minutli Ag hisobi",
+        "body": "AgNO3 inert elektrod modelida 6 A va 30 minut=1800 s; F=96500 va E(Ag)=108. 100% unumda m(Ag)=108·6·1800/96500=12,087046… g; uch kasrda 12,087 g. Anodda O2 modeli uchun n=6·1800/(4·96500)=0,027979… mol.",
+        "fact_ids": [
+          "silvercurrent"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph13",
+            "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+            "paragraph": 13,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph13-page59"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              90
+            ],
+            "pdf_pages": [
+              90
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page90"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      },
+      {
+        "title": "O2 massasidan Ag massasiga",
+        "body": "AgNO3 inert elektrodli modelida 4Ag ga 1O2 nisbat bor. 12 g O2/M32=0,375 mol; Ag miqdori 1,5 mol. Ag108 butun massa modelida 1,5·108=162 g Ag.",
+        "fact_ids": [
+          "silveroxygen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph13",
+            "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+            "paragraph": 13,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph13-page59"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      },
+      {
+        "title": "Ag anodini grafit bilan qiyoslang",
+        "body": "AgNO3 uchun anod Ag bo‘lsa eruvchan anod modelida Ag elektron berib Ag⁺ ga o‘tadi. Grafit tanlansa kitobdagi inert anodli suv/O2 modeli bilan qiyoslanadi. Bir xil tuz nomiga turli anod tanlash bir xil anod mahsulotini kafolatlamaydi.",
+        "fact_ids": [
+          "anodesilver"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          }
+        ]
+      },
+      {
+        "title": "Al massasidan atomlar soniga",
+        "body": "Bo‘lim testidagi 13,5 g Al ni oldingi Al=27 g/mol va NA=6,02·10^23 modeli bilan hisoblang: 0,5 mol, ya’ni 3,01·10^23 atom. Sonli javobda ilmiy yozuvdan foydalanish mumkin.",
+        "fact_ids": [
+          "reviewal"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page97"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph05",
+            "topic_title": "Kimyoviy elementlarning davriy qonuni",
+            "paragraph": 5,
+            "printed_pages": [
+              27
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph05-page27"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "Oldingi Fe/Cu nisbatini takrorlang",
+        "body": "Oldingi Fe+CuSO4=FeSO4+Cu, Fe56/Cu64 modelida 2,8 g Fe nazariy 3,2 g Cu ga mos keladi. Bu manbadagi aniq mahsulotli nisbat, istalgan metall aralashmasi uchun cheksiz qoida emas.",
+        "fact_ids": [
+          "reviewcopper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph15",
+            "topic_title": "Metallarning tabiatda tarqalishi, olinishi va ishlatilishi",
+            "paragraph": 15,
+            "printed_pages": [
+              73
+            ],
+            "pdf_pages": [
+              73
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph15-page73"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-practical01",
+            "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+            "paragraph": 1,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-practical01-page127"
+          }
+        ]
+      },
+      {
+        "title": "Elektrolizning qo‘llanish oilalari",
+        "body": "Elektrolizning qo‘llanish kategoriyalari metall olish, tozalash va sirt qoplashni o‘z ichiga oladi. Bu ro‘yxat texnologik maqsadni bildiradi; apparat, kuchlanish, reagent miqdori yoki fizik tajriba tartibi berilmaydi.",
+        "fact_ids": [
+          "applications"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              88
+            ],
+            "pdf_pages": [
+              88
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page88"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              89
+            ],
+            "pdf_pages": [
+              89
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page89"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Aralashmada qaysi tuz qoladi?",
+        "body": "0,20 ekv zaryaddan Ag uchun 0,06 ekv ayiriladi. Cu uchun 0,14 ekv/2=0,07 mol. Dastlabki 0,08 mol dan 0,01 mol qoladi. 0,01·188=1,88 g. Model ideal ketma-ket ajralish va 100% unumga asoslangan.",
+        "fact_ids": [
+          "mixturestart",
+          "mixturecharge"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      },
+      {
+        "title": "Suv yo‘qolsa eritma massasi ham kamayadi",
+        "body": "Dastlabki 50 g tuz saqlanadi, 90 g suv kamayadi. Yangi umumiy massa 500−90=410 g. Foizni 500 ga emas, 410 ga bo‘ling: 50/410·100≈12,195%.",
+        "fact_ids": [
+          "saltwater"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page95"
+          }
+        ]
+      },
+      {
+        "title": "Vaqt birligini almashtirish",
+        "body": "Sekundli modelda 30 minutni 1800 sekundga o‘tkazing. 108·6·1800/96500=12,087046… g. Yakuniy uch kasrli javob 12,087 g; F96500 ni 30 minut bilan to‘g‘ridan-to‘g‘ri ko‘paytirmang.",
+        "fact_ids": [
+          "units",
+          "silvercurrent"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              90
+            ],
+            "pdf_pages": [
+              90
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page90"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page96"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph13",
+            "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+            "paragraph": 13,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph13-page59"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page93"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page94"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          85
+        ],
+        "pdf_pages": [
+          85
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page85"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          86
+        ],
+        "pdf_pages": [
+          86
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page86"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          87
+        ],
+        "pdf_pages": [
+          87
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page87"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          88
+        ],
+        "pdf_pages": [
+          88
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page88"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          89
+        ],
+        "pdf_pages": [
+          89
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page89"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          90
+        ],
+        "pdf_pages": [
+          90
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page90"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          91
+        ],
+        "pdf_pages": [
+          91
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page91"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          92
+        ],
+        "pdf_pages": [
+          92
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page92"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          93
+        ],
+        "pdf_pages": [
+          93
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page93"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          94
+        ],
+        "pdf_pages": [
+          94
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page94"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          95
+        ],
+        "pdf_pages": [
+          95
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page95"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          96
+        ],
+        "pdf_pages": [
+          96
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page96"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          97
+        ],
+        "pdf_pages": [
+          97
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page97"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph13",
+        "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+        "paragraph": 13,
+        "printed_pages": [
+          59
+        ],
+        "pdf_pages": [
+          59
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph13-page59"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-practical01",
+        "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+        "paragraph": 1,
+        "printed_pages": [
+          127
+        ],
+        "pdf_pages": [
+          127
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-practical01-page127"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph05",
+        "topic_title": "Kimyoviy elementlarning davriy qonuni",
+        "paragraph": 5,
+        "printed_pages": [
+          27
+        ],
+        "pdf_pages": [
+          27
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph05-page27"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph15",
+        "topic_title": "Metallarning tabiatda tarqalishi, olinishi va ishlatilishi",
+        "paragraph": 15,
+        "printed_pages": [
+          73
+        ],
+        "pdf_pages": [
+          73
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph15-page73"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph26",
+        "topic_title": "Ekvivalent qonuni",
+        "paragraph": 26,
+        "printed_pages": [
+          114
+        ],
+        "pdf_pages": [
+          114
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph26-page114"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-9-p19-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Doimiy tok ostidagi elektrolit redoks jarayoni?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat muzlash"
+        },
+        {
+          "id": "b",
+          "label": "Elektroliz"
+        },
+        {
+          "id": "c",
+          "label": "Faqat filtrlash"
+        },
+        {
+          "id": "d",
+          "label": "Faqat diffuziya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Qaytarilish qaysi elektrodda?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Anod"
+        },
+        {
+          "id": "b",
+          "label": "Faqat idish devori"
+        },
+        {
+          "id": "c",
+          "label": "Faqat gaz naychasi"
+        },
+        {
+          "id": "d",
+          "label": "Katod"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Anoddagi redoks jarayon nomi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Oksidlanish"
+        },
+        {
+          "id": "b",
+          "label": "Faqat qaytarilish"
+        },
+        {
+          "id": "c",
+          "label": "Faqat qotish"
+        },
+        {
+          "id": "d",
+          "label": "Faqat suyuqlanish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan inert elektrod materiali?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat eruvchan Cu"
+        },
+        {
+          "id": "b",
+          "label": "Faqat eruvchan Ag"
+        },
+        {
+          "id": "c",
+          "label": "Grafit"
+        },
+        {
+          "id": "d",
+          "label": "Faqat NaI suyuqlanmasi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            88
+          ],
+          "pdf_pages": [
+            88
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page88"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            89
+          ],
+          "pdf_pages": [
+            89
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page89"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "NaI suyuqlanmasi modelining katod mahsuloti?",
+      "options": [
+        {
+          "id": "a",
+          "label": "NaOH"
+        },
+        {
+          "id": "b",
+          "label": "Na"
+        },
+        {
+          "id": "c",
+          "label": "H2"
+        },
+        {
+          "id": "d",
+          "label": "O2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Suv kamayib tuz saqlangan modelda tuz massa ulushi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Albatta nol bo‘ladi"
+        },
+        {
+          "id": "b",
+          "label": "Har doim o‘zgarmaydi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat kamayadi"
+        },
+        {
+          "id": "d",
+          "label": "Ortadi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page92"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Bu bo‘limdagi doimiy tokli elektrolit jarayoni nomi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Elektrolizda qaytarilish elektrodi nomi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "Elektrolizda oksidlanish elektrodi nomi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q10",
+      "response_kind": "chemical_formula",
+      "prompt": "NaCl suvli modelida berilgan ishqor mahsuloti?",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q11",
+      "response_kind": "chemical_formula",
+      "prompt": "NaI suyuqlanmasining aniondan olingan mahsuloti?",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q12",
+      "response_kind": "chemical_formula",
+      "prompt": "CuSO4 inert modelidagi katod mahsuloti?",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q13",
+      "response_kind": "chemical_formula",
+      "prompt": "Kumush nitrat formulasi?",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli modelda atom balansini tenglang: H2O → H2 + O2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q15",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli modelda atom balansini tenglang: NaCl + H2O → NaOH + H2 + Cl2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q16",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli modelda atom balansini tenglang: NaI → Na + I2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q17",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli modelda atom balansini tenglang: CuSO4 + H2O → Cu + H2SO4 + O2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q18",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli modelda atom balansini tenglang: AgNO3 + H2O → Ag + O2 + HNO3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q19",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan mahsulotli modelda atom balansini tenglang: Cu(NO3)2 + H2O → Cu + O2 + HNO3",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q20",
+      "response_kind": "numeric_value",
+      "prompt": "Bitta Cu²⁺ ionini Cu ga o‘tkazish uchun elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q21",
+      "response_kind": "numeric_value",
+      "prompt": "Bitta Na⁺ uchun elektronlar soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q22",
+      "response_kind": "numeric_value",
+      "prompt": "Bir xil sharoitda 11,2 L H2 va 2:1 modelida O2 hajmi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q23",
+      "response_kind": "numeric_value",
+      "prompt": "Sekundli model uchun kitobdagi F soni?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "C/ekv",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            90
+          ],
+          "pdf_pages": [
+            90
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page90"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q24",
+      "response_kind": "numeric_value",
+      "prompt": "Cu64 va z=2 modelida E(Cu)?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/ekv",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            90
+          ],
+          "pdf_pages": [
+            90
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page90"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph13",
+          "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+          "paragraph": 13,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph13-page59"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical01",
+          "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 1,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical01-page127"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q25",
+      "response_kind": "numeric_value",
+      "prompt": "E32/I2/t965s/F96500/100% modelida Cu massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            90
+          ],
+          "pdf_pages": [
+            90
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page90"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph13",
+          "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+          "paragraph": 13,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph13-page59"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical01",
+          "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 1,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical01-page127"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q26",
+      "response_kind": "numeric_value",
+      "prompt": "6 A/1,5 soat/F26,8/11,2 L/ekv modelida H2 hajmi, ikki kasr xonasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q27",
+      "response_kind": "numeric_value",
+      "prompt": "400 mL va 0,2 mol/L modelida Cu(NO3)2 miqdori?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q28",
+      "response_kind": "numeric_value",
+      "prompt": "200 mL va 0,3 mol/L modelida AgNO3 miqdori?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q29",
+      "response_kind": "numeric_value",
+      "prompt": "5 A/3860 s/F96500 modelida elektron ekvivalentlari miqdori?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol ekv",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q30",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan ideal Ag/Cu modelida qolgan Cu(NO3)2 massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q31",
+      "response_kind": "numeric_value",
+      "prompt": "500 g modeldan 90 g suv kamayganda yakuniy eritma massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page95"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q32",
+      "response_kind": "numeric_value",
+      "prompt": "50 g tuz/410 g eritma modelida foiz, uch kasr xonasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "%",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page95"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q33",
+      "response_kind": "numeric_value",
+      "prompt": "90 g suv/E9/F26,8/I8 modelida vaqt?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "soat",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page95"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q34",
+      "response_kind": "numeric_value",
+      "prompt": "Ag108/F96500/6 A/1800 s/100% modelida Ag massasi, uch kasr xonasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page96"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph13",
+          "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+          "paragraph": 13,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph13-page59"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            90
+          ],
+          "pdf_pages": [
+            90
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page90"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page93"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q35",
+      "response_kind": "numeric_value",
+      "prompt": "12 g O2/M32 va 4:1/Ag108 modelida Ag massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page96"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph13",
+          "topic_title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+          "paragraph": 13,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph13-page59"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q36",
+      "response_kind": "numeric_value",
+      "prompt": "13,5 g Al/M27/NA6,02·10^23 modelida atomlar soni, ilmiy yozuvda?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page96"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page97"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page27"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-p19-r1-q37",
+      "response_kind": "numeric_value",
+      "prompt": "2,8 g Fe/Fe56/Cu64 va 1:1 modelida Cu massasi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page96"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph15",
+          "topic_title": "Metallarning tabiatda tarqalishi, olinishi va ishlatilishi",
+          "paragraph": 15,
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            73
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph15-page73"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-practical01",
+          "topic_title": "“Galogenlar” mavzusi bo‘yicha tajribaviy masalalar yechish",
+          "paragraph": 1,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-practical01-page127"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

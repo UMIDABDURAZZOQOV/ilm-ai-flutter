@@ -1027,6 +1027,80 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
+  for (final name in ['corrosion', 'electrolysis']) {
+    testWidgets('$name earlier textbook source at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      final family = name == 'corrosion';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(family ? 19 : 33);
+      await mount(t, dark: family, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      final field = find.byKey(const Key('chemistry-short-answer'));
+      await waitFor(field);
+      await t.ensureVisible(field);
+      final value = family ? '2,24' : '12,087';
+      await t.enterText(field, value);
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], {'value': value});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-model-feedback');
+      final paragraph = family ? 18 : 19;
+      final ownSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$paragraph'),
+      );
+      await t.ensureVisible(ownSource);
+      await t.pumpAndSettle();
+      await tapFinder(t, ownSource);
+      final ownPage = family ? 85 : 90;
+      final ownLocator = find.textContaining('$ownPage -> PDF $ownPage');
+      expect(ownLocator, findsOneWidget);
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(ownLocator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-current-source', overlay: true);
+      Navigator.of(t.element(ownLocator)).pop();
+      await t.pumpAndSettle();
+      final earlierSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining(family ? 'Manba: §9' : 'Manba: §13'),
+      );
+      await t.ensureVisible(earlierSource);
+      await t.pumpAndSettle();
+      await tapFinder(t, earlierSource);
+      final earlierPage = family ? 31 : 59;
+      final earlierLocator = find.textContaining(
+        family
+            ? '31 -> PDF 16'
+            : '$earlierPage -> PDF $earlierPage · Yakka sahifa',
+      );
+      expect(earlierLocator, findsOneWidget);
+      expect(
+        find.textContaining(family ? 'kimyo_7_uzb.pdf' : 'kimyo_8_uzb.pdf'),
+        findsOneWidget,
+      );
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsNothing);
+      await t.ensureVisible(earlierLocator);
+      await t.pumpAndSettle();
+      await capture(t, '$name-earlier-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
