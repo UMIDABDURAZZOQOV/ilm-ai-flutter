@@ -1663,6 +1663,105 @@ void main() {
     });
   }
 
+  for (final name in ['electrolysis_lab', 'aluminium_lab', 'hydrolysis_lab']) {
+    testWidgets('batch36 $name conditional source models at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 10)),
+          );
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+
+      final electrolysis = name == 'electrolysis_lab';
+      final aluminium = name == 'aluminium_lab';
+      catalog['available_grades'] = [7, 8, 9];
+      grade9Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(
+        electrolysis
+            ? 1
+            : aluminium
+            ? 9
+            : 8,
+      );
+      await mount(t, dark: aluminium, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-9')));
+      await waitFor(find.text('Darsni boshlash'));
+      await tap(t, 'Darsni boshlash');
+      final value = aluminium ? '0,30' : 'Al(OH)2Cl+H2O=Al(OH)3+HCl';
+      if (electrolysis) {
+        final question = jsonRows(lesson['questions'])[1];
+        final correct = jsonRows(
+          question['options'],
+        ).firstWhere((o) => o['id'] == 'c');
+        final choice = find.text(
+          chemistryDisplayText(correct['label'] as String),
+        );
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      } else {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect(
+        (request.data as Map)['answer'],
+        electrolysis ? {'choice_id': 'c'} : {'value': value},
+      );
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch36-feedback');
+      final number = electrolysis
+          ? 7
+          : aluminium
+          ? 8
+          : 11;
+      final source = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: Laboratoriya $number ·'),
+      );
+      await tapFinder(t, source);
+      final page = electrolysis
+          ? 198
+          : aluminium
+          ? 199
+          : 200;
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch36-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      final prior = electrolysis
+          ? 19
+          : aluminium
+          ? 26
+          : 7;
+      final priorSource = find.descendant(
+        of: find.byType(LessonFeedbackPanel),
+        matching: find.textContaining('Manba: §$prior ·'),
+      );
+      await tapFinder(t, priorSource);
+      final priorPage = electrolysis
+          ? 86
+          : aluminium
+          ? 125
+          : 34;
+      final priorLocator = find.textContaining('$priorPage -> PDF $priorPage');
+      expect(priorLocator, findsOneWidget);
+      expect(find.textContaining('kimyo_9_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(priorLocator);
+      await capture(t, '$name-batch36-prior-source', overlay: true);
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');

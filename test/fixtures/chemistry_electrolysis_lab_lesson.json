@@ -1,0 +1,1638 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-9-lab07-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+  "content": {
+    "cards": [
+      {
+        "title": "Katod va anod vazifalari",
+        "body": "Elektroliz modelida katodda qaytarilish, anodda oksidlanish bo‘ladi. Shu elektrolitik sxemada katod manfiy, anod musbat. Bu qutb belgilarini barcha turdagi elektr manbalariga shartsiz ko‘chirmaymiz.",
+        "fact_ids": [
+          "roles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              85
+            ],
+            "pdf_pages": [
+              85
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page85"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              91
+            ],
+            "pdf_pages": [
+              91
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page91"
+          }
+        ]
+      },
+      {
+        "title": "Cu katodidagi elektron sanog‘i",
+        "body": "Ma’lum Cu²⁺ modelida katodda Cu²⁺+2e⁻→Cu yoziladi. Bitta Cu ioni ikki elektron oladi; ma’lum katod mahsuloti Cu.",
+        "fact_ids": [
+          "cathode"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          }
+        ]
+      },
+      {
+        "title": "A: eruvchan Cu anodi",
+        "body": "A kartada anod eruvchan Cu deb aniq belgilangan. Oldingi matnning eruvchan anod izohida anodning o‘zi Cu²⁺ holida eritmaga o‘tadi: Cu→Cu²⁺+2e⁻. Gaz haqidagi bahsli savoldan “Cu anodda doim Cl2” degan javob olinmaydi.",
+        "fact_ids": [
+          "soluble"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          }
+        ]
+      },
+      {
+        "title": "B: inert anodning alohida modeli",
+        "body": "B kartada esa aynan inert anodli CuCl2 modeli berilgan. Oldingi modelda 2Cl⁻−2e⁻→Cl2 yozuvi bor. Uni A ning eruvchan Cu anodi bilan bitta shart deb hisoblamang; elektrod turi xulosaning bir qismi.",
+        "fact_ids": [
+          "inert"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          }
+        ]
+      },
+      {
+        "title": "C: KI suvli eritmasining manba kartasi",
+        "body": "C kartada manbaning KI suvli eritmasi va grafit elektrodlari modeli berilgan. Matn katodda H2, anodda yod ajralishini ko‘rsatadi. Mahsulotlar H2 va I2 sifatida shu aniq karta doirasida o‘qiladi.",
+        "fact_ids": [
+          "iodide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan mahsulotlarda atom saqlanishi",
+        "body": "C kartada berilgan mahsulotlarni neytral atomlar bilan ifodalovchi model 2KI+2H2O=2KOH+H2+I2. Chap/o‘ngda K2, I2, H4 va O2 saqlanadi. Bu suvli model, KI suyuqlanmasidan K metalli olish yozuvi emas.",
+        "fact_ids": [
+          "balance"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          }
+        ]
+      },
+      {
+        "title": "Rang kuzatuvi berilmaganini qayd eting",
+        "body": "Manba keyingi kraxmal kartasidagi o‘zgarishni kuzatishni so‘raydi, lekin bu sahifada tayyor rang natijasini yozmagan. Raqamli hisobotda mahsulot modeli bilan berilmagan rang kuzatuvini farqlaymiz; real kuzatuv bajarildi deb belgilamaymiz.",
+        "fact_ids": [
+          "starch"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          }
+        ]
+      },
+      {
+        "title": "Mahsulotlarning mol nisbatini toping",
+        "body": "C ning to‘liq virtual modelida 0,10 mol KI uchun 0,05 mol H2 va 0,05 mol I2 mos. Ikkala mahsulotning mol nisbati 1:1; gaz va qattiq modda hajmlarini bir xil deb xulosa qilmaymiz.",
+        "fact_ids": [
+          "ratio"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              199
+            ],
+            "pdf_pages": [
+              199
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page199"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Elektrod turini avval tekshiring",
+        "body": "A eruvchan Cu anodi va B inert anodli CuCl2 misoli bir xil emas. Oldin kartaning elektrod turini o‘qing, keyin mos yarim-modelni tanlang. C uchun esa mahsulotlar manbada H2 va yod deb berilgan.",
+        "fact_ids": [
+          "soluble",
+          "inert",
+          "iodide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-laboratory07",
+            "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+            "paragraph": 7,
+            "printed_pages": [
+              198
+            ],
+            "pdf_pages": [
+              198
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-laboratory07-page198"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              86
+            ],
+            "pdf_pages": [
+              86
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page86"
+          },
+          {
+            "book_id": "chemistry-9-uz-2019",
+            "book_title": "Kimyo 9",
+            "authors": [
+              "I.R. Asqarov",
+              "K.G‘. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_9_uzb.pdf",
+            "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+            "topic_id": "ch9-paragraph19",
+            "topic_title": "Elektroliz va uning amaliy ahamiyati",
+            "paragraph": 19,
+            "printed_pages": [
+              87
+            ],
+            "pdf_pages": [
+              87
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch9-paragraph19-page87"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-laboratory07",
+        "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+        "paragraph": 7,
+        "printed_pages": [
+          198
+        ],
+        "pdf_pages": [
+          198
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-laboratory07-page198"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-laboratory07",
+        "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+        "paragraph": 7,
+        "printed_pages": [
+          199
+        ],
+        "pdf_pages": [
+          199
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-laboratory07-page199"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          85
+        ],
+        "pdf_pages": [
+          85
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page85"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          91
+        ],
+        "pdf_pages": [
+          91
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page91"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          86
+        ],
+        "pdf_pages": [
+          86
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page86"
+      },
+      {
+        "book_id": "chemistry-9-uz-2019",
+        "book_title": "Kimyo 9",
+        "authors": [
+          "I.R. Asqarov",
+          "K.G‘. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_9_uzb.pdf",
+        "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+        "topic_id": "ch9-paragraph19",
+        "topic_title": "Elektroliz va uning amaliy ahamiyati",
+        "paragraph": 19,
+        "printed_pages": [
+          87
+        ],
+        "pdf_pages": [
+          87
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch9-paragraph19-page87"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-9-lab07-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Elektrolizda qaytarilish qaysi elektrodda?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Anod"
+        },
+        {
+          "id": "b",
+          "label": "Katod"
+        },
+        {
+          "id": "c",
+          "label": "Ikkalasida faqat oksidlanish"
+        },
+        {
+          "id": "d",
+          "label": "Elektrodsiz"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "A kartaning eruvchan anod modelida eritmaga o‘tuvchi zarracha qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cl2"
+        },
+        {
+          "id": "b",
+          "label": "Cu⁻"
+        },
+        {
+          "id": "c",
+          "label": "Cu²⁺"
+        },
+        {
+          "id": "d",
+          "label": "K"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Aynan B inert anodli CuCl2 kartasidagi mahsulot qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cl2"
+        },
+        {
+          "id": "b",
+          "label": "Cu"
+        },
+        {
+          "id": "c",
+          "label": "K"
+        },
+        {
+          "id": "d",
+          "label": "H2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "C KI suvli modelining katod mahsuloti qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "K"
+        },
+        {
+          "id": "b",
+          "label": "I2"
+        },
+        {
+          "id": "c",
+          "label": "Cu"
+        },
+        {
+          "id": "d",
+          "label": "H2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Elektrolizda oksidlanish sodir bo‘ladigan elektrod nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page85"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page91"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "A kartadagi anodning berilgan turini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q07",
+      "response_kind": "chemical_formula",
+      "prompt": "C kartadagi anod mahsuloti oddiy yod formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q08",
+      "response_kind": "chemical_equation",
+      "prompt": "Berilgan suvli KI mahsulotlari uchun atom balansini yozing: KI+H2O=KOH+H2+I2.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Bitta Cu²⁺ ning Cu ga o‘tishida nechta elektron olinadi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            198
+          ],
+          "pdf_pages": [
+            198
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page198"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-9-lab07-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "C ning to‘liq modelida 0,10 mol KI ga necha mol H2 mos?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory07",
+          "topic_title": "Mis (II)-xlorid va kaliy yodid eritmalarining elektrolizi",
+          "paragraph": 7,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory07-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page86"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph19",
+          "topic_title": "Elektroliz va uning amaliy ahamiyati",
+          "paragraph": 19,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph19-page87"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

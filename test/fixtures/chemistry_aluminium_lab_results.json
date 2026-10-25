@@ -1,0 +1,1435 @@
+{
+  "answers": {
+    "chemistry-9-lab08-r1-q01": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q01",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Al ning faolligi bilan sirtidagi oksid qatlamini farqlang. Oldingi matn yupqa qatlam keyingi ta’sirlashishga to‘siq bo‘lishini tushuntiradi; karta shartlari berilmasdan barcha Al buyumi bir xil tezlikda o‘zgaradi deb bo‘lmaydi.",
+      "correct_answer": "Oksid qatlami",
+      "solution": [
+        {
+          "body": "Al ning faolligi bilan sirtidagi oksid qatlamini farqlang. Oldingi matn yupqa qatlam keyingi ta’sirlashishga to‘siq bo‘lishini tushuntiradi; karta shartlari berilmasdan barcha Al buyumi bir xil tezlikda o‘zgaradi deb bo‘lmaydi.",
+          "fact_ids": [
+            "film"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                124
+              ],
+              "pdf_pages": [
+                124
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page124"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page124"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q02": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q02",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. B kartada manbaning suvli ishqor modeli 2Al+2NaOH+6H2O→2Na[Al(OH)4]+3H2. Mahsulot yozuvida Na, Al va to‘rtta OH guruhi bor. H2 koeffitsiyenti aynan 3; uni 1 ga almashtirish H atomlarini saqlamaydi.",
+      "correct_answer": "Na[Al(OH)4]",
+      "solution": [
+        {
+          "body": "B kartada manbaning suvli ishqor modeli 2Al+2NaOH+6H2O→2Na[Al(OH)4]+3H2. Mahsulot yozuvida Na, Al va to‘rtta OH guruhi bor. H2 koeffitsiyenti aynan 3; uni 1 ga almashtirish H atomlarini saqlamaydi.",
+          "fact_ids": [
+            "base"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q03": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q03",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. B kartada manbaning suvli ishqor modeli 2Al+2NaOH+6H2O→2Na[Al(OH)4]+3H2. Mahsulot yozuvida Na, Al va to‘rtta OH guruhi bor. H2 koeffitsiyenti aynan 3; uni 1 ga almashtirish H atomlarini saqlamaydi.",
+      "correct_answer": "3",
+      "solution": [
+        {
+          "body": "B kartada manbaning suvli ishqor modeli 2Al+2NaOH+6H2O→2Na[Al(OH)4]+3H2. Mahsulot yozuvida Na, Al va to‘rtta OH guruhi bor. H2 koeffitsiyenti aynan 3; uni 1 ga almashtirish H atomlarini saqlamaydi.",
+          "fact_ids": [
+            "base"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q04": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q04",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. A va B da kislota yoki asos muhiti va Al mahsuloti farqli, lekin berilgan Al: H2 koeffitsiyentlari 2:3. Faqat Al massasi bir xil bo‘lishi barcha amaliy sharoitda bir xil gaz tezligi degani emas.",
+      "correct_answer": "2:3",
+      "solution": [
+        {
+          "body": "A va B da kislota yoki asos muhiti va Al mahsuloti farqli, lekin berilgan Al: H2 koeffitsiyentlari 2:3. Faqat Al massasi bir xil bo‘lishi barcha amaliy sharoitda bir xil gaz tezligi degani emas.",
+          "fact_ids": [
+            "compare"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q05": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q05",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Al ning faolligi bilan sirtidagi oksid qatlamini farqlang. Oldingi matn yupqa qatlam keyingi ta’sirlashishga to‘siq bo‘lishini tushuntiradi; karta shartlari berilmasdan barcha Al buyumi bir xil tezlikda o‘zgaradi deb bo‘lmaydi.",
+      "correct_answer": "Oksid qatlami",
+      "solution": [
+        {
+          "body": "Al ning faolligi bilan sirtidagi oksid qatlamini farqlang. Oldingi matn yupqa qatlam keyingi ta’sirlashishga to‘siq bo‘lishini tushuntiradi; karta shartlari berilmasdan barcha Al buyumi bir xil tezlikda o‘zgaradi deb bo‘lmaydi.",
+          "fact_ids": [
+            "film"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                124
+              ],
+              "pdf_pages": [
+                124
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page124"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page124"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q06": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q06",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Hisobot uchun kartaning muhiti, berilgan mahsulotlari, atomlar tekshiruvi va shartli mol nisbati yoziladi. Tajriba kuzatuvi bo‘lmasa, gaz ajralishining real vaqti yoki intensivligi kiritilmaydi.",
+      "correct_answer": "Kislota",
+      "solution": [
+        {
+          "body": "Hisobot uchun kartaning muhiti, berilgan mahsulotlari, atomlar tekshiruvi va shartli mol nisbati yoziladi. Tajriba kuzatuvi bo‘lmasa, gaz ajralishining real vaqti yoki intensivligi kiritilmaydi.",
+          "fact_ids": [
+            "report"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q07": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q07",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. A kartada oldingi HCl mahsulotlari aniq berilgan: 2Al+6HCl=2AlCl3+3H2. Ikki Al ga uch H2 nisbati shu modelning bir qismi.",
+      "correct_answer": "AlCl3",
+      "solution": [
+        {
+          "body": "A kartada oldingi HCl mahsulotlari aniq berilgan: 2Al+6HCl=2AlCl3+3H2. Ikki Al ga uch H2 nisbati shu modelning bir qismi.",
+          "fact_ids": [
+            "acid"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q08": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q08",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. A kartada oldingi HCl mahsulotlari aniq berilgan: 2Al+6HCl=2AlCl3+3H2. Ikki Al ga uch H2 nisbati shu modelning bir qismi.",
+      "correct_answer": "2Al+6HCl=2AlCl3+3H2",
+      "solution": [
+        {
+          "body": "A kartada oldingi HCl mahsulotlari aniq berilgan: 2Al+6HCl=2AlCl3+3H2. Ikki Al ga uch H2 nisbati shu modelning bir qismi.",
+          "fact_ids": [
+            "acid"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q09": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q09",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. A modelida HCl tarkibidagi jami 6 H, mahsulotdagi 3H2 tarkibida ham 6 H bor. B modelida chapdagi 2NaOH va 6H2O jami 14 H; ikki kompleksdagi 8 H bilan 3H2 dagi 6 H yig‘indisi 14.",
+      "correct_answer": "14",
+      "solution": [
+        {
+          "body": "A modelida HCl tarkibidagi jami 6 H, mahsulotdagi 3H2 tarkibida ham 6 H bor. B modelida chapdagi 2NaOH va 6H2O jami 14 H; ikki kompleksdagi 8 H bilan 3H2 dagi 6 H yig‘indisi 14.",
+          "fact_ids": [
+            "hydrogen"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q10": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q10",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Faqat berilgan to‘liq o‘tish modelida 0,20 mol Al uchun H2=0,20·3/2=0,30 mol. A uchun HCl=0,60 mol, B uchun NaOH=0,20 mol. Shartli miqdorlar haqiqiy reaksiya tezligini aniqlamaydi.",
+      "correct_answer": "0.30",
+      "solution": [
+        {
+          "body": "Faqat berilgan to‘liq o‘tish modelida 0,20 mol Al uchun H2=0,20·3/2=0,30 mol. A uchun HCl=0,60 mol, B uchun NaOH=0,20 mol. Shartli miqdorlar haqiqiy reaksiya tezligini aniqlamaydi.",
+          "fact_ids": [
+            "ratio"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    },
+    "chemistry-9-lab08-r1-q11": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-9-lab08-r1-q11",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Faqat berilgan to‘liq o‘tish modelida 0,20 mol Al uchun H2=0,20·3/2=0,30 mol. A uchun HCl=0,60 mol, B uchun NaOH=0,20 mol. Shartli miqdorlar haqiqiy reaksiya tezligini aniqlamaydi.",
+      "correct_answer": "0.60",
+      "solution": [
+        {
+          "body": "Faqat berilgan to‘liq o‘tish modelida 0,20 mol Al uchun H2=0,20·3/2=0,30 mol. A uchun HCl=0,60 mol, B uchun NaOH=0,20 mol. Shartli miqdorlar haqiqiy reaksiya tezligini aniqlamaydi.",
+          "fact_ids": [
+            "ratio"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-laboratory08",
+              "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+              "paragraph": 8,
+              "printed_pages": [
+                199
+              ],
+              "pdf_pages": [
+                199
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-laboratory08-page199"
+            },
+            {
+              "book_id": "chemistry-9-uz-2019",
+              "book_title": "Kimyo 9",
+              "authors": [
+                "I.R. Asqarov",
+                "K.G‘. G‘opirov",
+                "N.X. To‘xtaboyev"
+              ],
+              "year": 2019,
+              "file_name": "kimyo_9_uzb.pdf",
+              "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+              "topic_id": "ch9-paragraph26",
+              "topic_title": "Aluminiy xossalari",
+              "paragraph": 26,
+              "printed_pages": [
+                125
+              ],
+              "pdf_pages": [
+                125
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch9-paragraph26-page125"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-laboratory08",
+          "topic_title": "Aluminiyning kislota va asos eritmalari bilan o‘zaro ta’siri",
+          "paragraph": 8,
+          "printed_pages": [
+            199
+          ],
+          "pdf_pages": [
+            199
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-laboratory08-page199"
+        },
+        {
+          "book_id": "chemistry-9-uz-2019",
+          "book_title": "Kimyo 9",
+          "authors": [
+            "I.R. Asqarov",
+            "K.G‘. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_9_uzb.pdf",
+          "sha256": "ee3695eeb0598016629cc370dfcb0c73836250cf594f4d5d0cb2a06ea40c7386",
+          "topic_id": "ch9-paragraph26",
+          "topic_title": "Aluminiy xossalari",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch9-paragraph26-page125"
+        }
+      ]
+    }
+  },
+  "result": {
+    "assessment_version": 2,
+    "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+    "lesson_key": "chemistry-9-lab08-r1",
+    "score": 11,
+    "total": 11,
+    "score_pct": 100.0,
+    "passed": true,
+    "xp_awarded": 20,
+    "xp_total": 3700,
+    "stars": 3,
+    "streak_days": 1,
+    "completion_threshold_pct": 60,
+    "elapsed_seconds": 0
+  }
+}
