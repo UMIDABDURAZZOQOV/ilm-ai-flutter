@@ -649,6 +649,508 @@
         "mm",
         "nm"
       ]
+    },
+    {
+      "key": "physics-8-section-11-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "18C zaryad ko‘chishida 72J ish bajarildi. U ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "72",
+          "unit": "J"
+        },
+        {
+          "symbol": "q",
+          "value": "18",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "A",
+        "q"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-11-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "U=2,5V va q=8C. A ishni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "8",
+          "unit": "C"
+        },
+        {
+          "symbol": "U",
+          "value": "2.5",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "q",
+        "U"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-8-section-11-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "U=4V da A=36J ish bajarildi. q ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "36",
+          "unit": "J"
+        },
+        {
+          "symbol": "U",
+          "value": "4",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "A",
+        "U"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-11-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Har biri1,5V bo‘lgan4ta bir xil element mos ketma-ket ulangan ideal model. U ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "4",
+          "unit": "1"
+        },
+        {
+          "symbol": "U0",
+          "value": "1.5",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "n",
+        "U0"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-12-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "36C zaryad3min ichida kesimdan o‘tdi. I ni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "36",
+          "unit": "C"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "q",
+        "t"
+      ],
+      "suggested_unit": "mA",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-12-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy I=80mA,t=25s. q ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "80",
+          "unit": "mA"
+        },
+        {
+          "symbol": "t",
+          "value": "25",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "I",
+        "t"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ]
+    },
+    {
+      "key": "physics-8-section-12-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy I=0,3A da q=45C o‘tishi uchun t ni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "45",
+          "unit": "C"
+        },
+        {
+          "symbol": "I",
+          "value": "0.3",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "q",
+        "I"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-8-section-12-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "I=40mA,t=4s,e=1,6e-19C. O‘tgan n elektron sonini top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "40",
+          "unit": "mA"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "I",
+        "t",
+        "e"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-8-section-13-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "U=4V,I=75mA,t=4min bo‘lsa A ishni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "4",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "75",
+          "unit": "mA"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-8-section-13-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "A=180J,I=50mA,t=10min. U ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "180",
+          "unit": "J"
+        },
+        {
+          "symbol": "I",
+          "value": "50",
+          "unit": "mA"
+        },
+        {
+          "symbol": "t",
+          "value": "10",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "A",
+        "I",
+        "t"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-13-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "I=0,16A,t=20s,e=1,6e-19C,m0=9,1e-31kg. O‘tgan elektronlar m massasini top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.16",
+          "unit": "A"
+        },
+        {
+          "symbol": "t",
+          "value": "20",
+          "unit": "s"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "m0",
+          "value": "9.1e-31",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "I",
+        "t",
+        "e",
+        "m0"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-8-section-13-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "I=120mA doimiy tokda q=18C o‘tish vaqti t ni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "18",
+          "unit": "C"
+        },
+        {
+          "symbol": "I",
+          "value": "120",
+          "unit": "mA"
+        }
+      ],
+      "symbols": [
+        "q",
+        "I"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-8-section-15-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Nixrom:rho=1,1e-6Ω*m,l=4m,S=0,5mm². R ni top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1.1e-6",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "l",
+          "value": "4",
+          "unit": "m"
+        },
+        {
+          "symbol": "S",
+          "value": "0.5",
+          "unit": "mm2"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "l",
+        "S"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ]
+    },
+    {
+      "key": "physics-8-section-15-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir jinsli sim:R=2,2Ω,S=0,5mm²,l=1m. rho ni top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "2.2",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "S",
+          "value": "0.5",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "l",
+          "value": "1",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "R",
+        "S",
+        "l"
+      ],
+      "suggested_unit": "Ω*m",
+      "unit_choices": [
+        "Ω*m"
+      ]
+    },
+    {
+      "key": "physics-8-section-15-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nixrom:rho=1,1e-6Ω*m,R=11Ω,S=0,2mm². l ni top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "11",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "S",
+          "value": "0.2",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "rho",
+          "value": "1.1e-6",
+          "unit": "Ω*m"
+        }
+      ],
+      "symbols": [
+        "R",
+        "S",
+        "rho"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-8-section-15-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nixrom:rho=1,1e-6Ω*m,l=5m,R=11Ω. S kesim yuzasini top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1.1e-6",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "l",
+          "value": "5",
+          "unit": "m"
+        },
+        {
+          "symbol": "R",
+          "value": "11",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "l",
+        "R"
+      ],
+      "suggested_unit": "mm2",
+      "unit_choices": [
+        "m2",
+        "cm2",
+        "mm2"
+      ]
     }
   ]
 }
