@@ -3081,6 +3081,191 @@
         "Wh",
         "kWh"
       ]
+    },
+    {
+      "key": "physics-8-section-36-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faqat hisobiy rezistiv model:I=0,3A,R=40Ω,t=20s doimiy. Q ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "0.3",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "value": "40",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "t",
+          "value": "20",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "I",
+        "R",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-8-section-39-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Faqat hisobiy bir jinsli sim bo‘lagi:I=20A,rho=2,8e-8Ω*m,l=100m jami o‘tkazgich uzunligi,S=10mm². Shu bo‘lakdagi U tushuvni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "20",
+          "unit": "A"
+        },
+        {
+          "symbol": "rho",
+          "value": "2.8e-8",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "l",
+          "value": "100",
+          "unit": "m"
+        },
+        {
+          "symbol": "S",
+          "value": "10",
+          "unit": "mm2"
+        }
+      ],
+      "symbols": [
+        "I",
+        "rho",
+        "l",
+        "S"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ]
+    },
+    {
+      "key": "physics-8-section-39-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faqat berilgan model:U=12V da P1=6W,P2=12W,P3=18W doimiy parallel yuklar. Umumiy I ni top.",
+      "givens": [
+        {
+          "symbol": "P1",
+          "value": "6",
+          "unit": "W"
+        },
+        {
+          "symbol": "P2",
+          "value": "12",
+          "unit": "W"
+        },
+        {
+          "symbol": "P3",
+          "value": "18",
+          "unit": "W"
+        },
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "P1",
+        "P2",
+        "P3",
+        "U"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ]
+    },
+    {
+      "key": "physics-8-section-39-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil U,t da ohmik R1=12Ω,R2=18Ω parallel. Q1=90J bo‘lsa Q2 ni top.",
+      "givens": [
+        {
+          "symbol": "Q1",
+          "value": "90",
+          "unit": "J"
+        },
+        {
+          "symbol": "R1",
+          "value": "12",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "18",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Q1",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-8-section-39-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil I,t da ohmik R1=10Ω,R2=25Ω ketma-ket. Q1=40J bo‘lsa Q2 ni top.",
+      "givens": [
+        {
+          "symbol": "Q1",
+          "value": "40",
+          "unit": "J"
+        },
+        {
+          "symbol": "R1",
+          "value": "10",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R2",
+          "value": "25",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Q1",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
     }
   ]
 }
