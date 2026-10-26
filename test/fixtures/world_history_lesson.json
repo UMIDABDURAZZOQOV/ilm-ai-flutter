@@ -1,0 +1,1607 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "whv2:900006:11111111-1111-4111-8111-111111111111",
+  "lesson_key": "world-history-6-p01-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+  "content": {
+    "cards": [
+      {
+        "title": "Kursga kirish",
+        "body": "Bu kitob qadimgi davlatlar, xalqlar va madaniyatlarni o‘rganadi. Undagi davrlashtirishda qadimgi dunyo tarixi G‘arbiy Rim imperiyasining milodiy 476-yildagi qulashi bilan yakunlanadi.",
+        "fact_ids": [
+          "intro-scope"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": null,
+            "topic_id": "wh6-intro",
+            "topic_title": "Kirish",
+            "paragraph": null,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page06"
+          }
+        ]
+      },
+      {
+        "title": "Dalilni kim tekshiradi?",
+        "body": "Qazishma va qadimgi manzilgoh — arxeologning ish maydoni. Suyak qoldiqlari orqali odam qiyofasini o‘rganish esa antropolog vazifasiga kiradi. Etnograf urf-odat va madaniy an’analarni tekshiradi.",
+        "fact_ids": [
+          "archaeologist",
+          "anthropologist",
+          "ethnographer"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page08"
+          }
+        ]
+      },
+      {
+        "title": "Buyum ham manba",
+        "body": "Sopol idish, tosh qurol yoki taqinchoq o‘tmishdan qolgan moddiy dalildir. Bitiklarni epigrafika, tangalarni numizmatika o‘rganadi. Avval topilmaning qanday manba ekanini ajrating.",
+        "fact_ids": [
+          "material-source",
+          "intro-specialists"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page08"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": null,
+            "topic_id": "wh6-intro",
+            "topic_title": "Kirish",
+            "paragraph": null,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page05"
+          }
+        ]
+      },
+      {
+        "title": "Avesto va Behistun",
+        "body": "Avestoda Baqtriya, So‘g‘d va Xorazm madaniyati eslanadi. Behistun yozuvlari ham shu hududlarni tilga oladi. Ular Eronda, Kirmonshoh yaqinida, Doro I buyrug‘i bilan qoyaga bitilgan.",
+        "fact_ids": [
+          "avesto",
+          "behistun"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Muallif va asarni bog‘lang",
+        "body": "Gerodot — to‘qqiz kitobli Tarix muallifi; kitob uni miloddan avvalgi V asrga joylashtiradi. Strabonning Geografiya asari ham O‘rta Osiyo xalqlari madaniyati haqida ma’lumot beradi.",
+        "fact_ids": [
+          "herodotus",
+          "strabo"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Aleksandr yurishlari manbalari",
+        "body": "Ikki muallifni ajrating: Kvint Kursiy Ruf — Makedoniyalik Aleksandr tarixi; Arrian — Aleksandrning harbiy yurishlari, ya’ni Aleksandr anabasisi. Ikkalasi ham yozma manbalar bilan ishlashda eslanadi.",
+        "fact_ids": [
+          "curtius",
+          "arrian"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Topilmadan aloqagacha",
+        "body": "O‘rta Osiyodagi qazishmalarda Hindiston, Eron va Mesopotamiya ustalari yaratgan buyumlar topilgan. Darslik buni madaniy aloqalar bilan bog‘laydi. Buyuk Ipak yo‘li ham Sharq va G‘arbni bog‘lagan.",
+        "fact_ids": [
+          "contacts",
+          "silk-road"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page10"
+          }
+        ]
+      },
+      {
+        "title": "Jamoa: kitobdagi talqin",
+        "body": "Kitob ibtidoiy jamoa va to‘dani umumiy turmush-mehnat bilan, urug‘ni esa qarindoshlar jamoasi bilan tushuntiradi. Bu ijtimoiy bosqichlar kitobdagi talqin sifatida o‘qiladi; barcha jamiyatlar uchun yagona yo‘l deb test qilinmaydi.",
+        "fact_ids": [
+          "social-model",
+          "clan-model"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page10"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page11"
+          }
+        ]
+      },
+      {
+        "title": "Atama va talqinni farqlang",
+        "body": "Matriarxat — kitobdagi ona urug‘i, patriarxat — ota urug‘i atamasi. Darslik ularni bosqichlar sifatida bayon qiladi. Bu ketma-ketlik universal tarixiy qonun sifatida avtomatik baholanmaydi.",
+        "fact_ids": [
+          "gender-model"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page11"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Nega tosh davri?",
+        "body": "Dastlabki mehnat qurollarining materiali davr nomida aks etgan: tosh. Darslik tartibini eslab qoling: paleolit → mezolit → neolit → eneolit. Ular qadimgi, o‘rta, yangi va mis-tosh davrlarini bildiradi.",
+        "fact_ids": [
+          "stone-name",
+          "stone-periods"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page11"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Nomning ichidagi ishora",
+        "body": "Litos — tosh. Paleos — qadimgi, mezos — o‘rta, neos — yangi. Eneolit atamasidagi eneus mis bilan bog‘liq. Shu ildizlar nomlarni bir-biridan ajratishga yordam beradi.",
+        "fact_ids": [
+          "word-roots"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Jadvalni o‘z doirasida o‘qing",
+        "body": "Kitobning 12-betida: ilk paleolit — mil.avv. 1 million–100 ming; o‘rta — 100–40 ming; so‘nggi — 40–12 ming yil. Bu darslikdagi davrlashtirishdir; uni butun dunyo uchun yagona chegara deb qabul qilmang.",
+        "fact_ids": [
+          "palaeolithic-bands"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page12"
+          }
+        ]
+      },
+      {
+        "title": "Qanday takrorlaysiz?",
+        "body": "Sarlavha va yakuniy savollarga qarang. Matnni kichik qismlarga ajratib, har birini o‘z so‘zingiz bilan ayting. Keyin asosiy atamalarni matnga qaramasdan eslang va qiyin qismini qayta o‘qing.",
+        "fact_ids": [
+          "intro-learning"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": null,
+            "topic_id": "wh6-intro",
+            "topic_title": "Kirish",
+            "paragraph": null,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page07"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "source_refs": [
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": null,
+        "topic_id": "wh6-intro",
+        "topic_title": "Kirish",
+        "paragraph": null,
+        "printed_pages": [
+          5
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page05"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": null,
+        "topic_id": "wh6-intro",
+        "topic_title": "Kirish",
+        "paragraph": null,
+        "printed_pages": [
+          6
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page06"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": null,
+        "topic_id": "wh6-intro",
+        "topic_title": "Kirish",
+        "paragraph": null,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page07"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          8
+        ],
+        "pdf_pages": [
+          8
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page08"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          9
+        ],
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page09"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          10
+        ],
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page10"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          11
+        ],
+        "pdf_pages": [
+          11
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page11"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          12
+        ],
+        "pdf_pages": [
+          12
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page12"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          13
+        ],
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          "above_next_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page13"
+      }
+    ],
+    "xp_reward": 20,
+    "reflections": [
+      {
+        "title": "Dalillarni solishtiring",
+        "body": "Sopol idish va yozma asar o‘tmishni o‘rganishda qanday turli ma’lumotlar bera olishini o‘z so‘zingiz bilan tushuntiring. Misollarni shu dars kartalaridan oling.",
+        "grading": "self_or_teacher_review",
+        "automatic_score": false,
+        "fact_ids": [
+          "material-source",
+          "avesto",
+          "herodotus"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page08"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page09"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              13
+            ],
+            "pdf_pages": [
+              13
+            ],
+            "regions": [
+              "above_next_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page13"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "world-history-6-p01-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Qadimgi manzilgohni qazib tekshirayotgan mutaxassis kim?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Etnograf"
+        },
+        {
+          "id": "b",
+          "label": "Arxeolog"
+        },
+        {
+          "id": "c",
+          "label": "Antropolog"
+        },
+        {
+          "id": "d",
+          "label": "Numizmat"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page08"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Qaysi topilma moddiy manbaga misol bo‘ladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Avesto"
+        },
+        {
+          "id": "b",
+          "label": "Geografiya"
+        },
+        {
+          "id": "c",
+          "label": "Sopol idish"
+        },
+        {
+          "id": "d",
+          "label": "Tarix"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page08"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Darslikda Baqtriya, So‘g‘d va Xorazm madaniyati haqidagi yozma manba sifatida qaysi asar keltirilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tarix"
+        },
+        {
+          "id": "b",
+          "label": "Avesto"
+        },
+        {
+          "id": "c",
+          "label": "Geografiya"
+        },
+        {
+          "id": "d",
+          "label": "Aleksandr anabasisi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page09"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Behistun yozuvlari qaysi hukmdor buyrug‘i bilan bitilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Gerodot"
+        },
+        {
+          "id": "b",
+          "label": "Strabon"
+        },
+        {
+          "id": "c",
+          "label": "Doro I"
+        },
+        {
+          "id": "d",
+          "label": "Arrian"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page09"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "To‘qqiz kitobdan iborat Tarix asarining muallifi kim?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Gerodot"
+        },
+        {
+          "id": "b",
+          "label": "Arrian"
+        },
+        {
+          "id": "c",
+          "label": "Strabon"
+        },
+        {
+          "id": "d",
+          "label": "Kvint Kursiy Ruf"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page09"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Strabon qaysi asarning muallifi sifatida eslanadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tarix"
+        },
+        {
+          "id": "b",
+          "label": "Avesto"
+        },
+        {
+          "id": "c",
+          "label": "Aleksandr anabasisi"
+        },
+        {
+          "id": "d",
+          "label": "Geografiya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page09"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q07",
+      "response_kind": "concept_selection",
+      "prompt": "Arrianga tegishli asarni tanlang.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Makedoniyalik Aleksandr tarixi"
+        },
+        {
+          "id": "b",
+          "label": "Geografiya"
+        },
+        {
+          "id": "c",
+          "label": "Aleksandr anabasisi"
+        },
+        {
+          "id": "d",
+          "label": "Tarix"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page09"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q08",
+      "response_kind": "concept_selection",
+      "prompt": "Darslikning tosh davrlari ketma-ketligini tanlang.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Paleolit → neolit → mezolit → eneolit"
+        },
+        {
+          "id": "b",
+          "label": "Paleolit → mezolit → neolit → eneolit"
+        },
+        {
+          "id": "c",
+          "label": "Eneolit → neolit → mezolit → paleolit"
+        },
+        {
+          "id": "d",
+          "label": "Mezolit → paleolit → eneolit → neolit"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page12"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q09",
+      "response_kind": "concept_selection",
+      "prompt": "Dastlabki qurollarning qaysi materiali tosh davri nomiga asos bo‘lgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Mis"
+        },
+        {
+          "id": "b",
+          "label": "Tosh"
+        },
+        {
+          "id": "c",
+          "label": "Sopol"
+        },
+        {
+          "id": "d",
+          "label": "Mis-tosh"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page11"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q10",
+      "response_kind": "concept_selection",
+      "prompt": "Tangalarni o‘rganuvchi fan nomini tanlang.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Epigrafika"
+        },
+        {
+          "id": "b",
+          "label": "Numizmatika"
+        },
+        {
+          "id": "c",
+          "label": "Antropologiya"
+        },
+        {
+          "id": "d",
+          "label": "Etnografiya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": null,
+          "topic_id": "wh6-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page05"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q11",
+      "response_kind": "short_text",
+      "prompt": "Qadimgi odamning suyak qoldiqlari va tashqi qiyofasini o‘rganuvchi mutaxassis nomini yozing.",
+      "input_label": "Bitta atama yoki mutaxassis nomini yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page08"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q12",
+      "response_kind": "short_text",
+      "prompt": "Urf-odat va madaniy an’analarni o‘rganuvchi mutaxassis nomini yozing.",
+      "input_label": "Bitta atama yoki mutaxassis nomini yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page08"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q13",
+      "response_kind": "short_text",
+      "prompt": "O‘rta tosh davrining bir so‘zli nomini yozing.",
+      "input_label": "Bitta atama yoki mutaxassis nomini yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page12"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p01-r1-q14",
+      "response_kind": "short_text",
+      "prompt": "Tarix nomli to‘qqiz kitobli asar muallifining ismini yozing.",
+      "input_label": "Bitta atama yoki mutaxassis nomini yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page09"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

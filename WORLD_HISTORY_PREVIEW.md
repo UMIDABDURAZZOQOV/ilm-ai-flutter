@@ -6,15 +6,36 @@ Backend companion: `../ilm-ai-world-history/` on the matching feature branch.
 
 ## Current status
 
-No history screen, route, endpoint, imported lesson or release is exposed yet.
-The source audit covers six supplied grade 6–11 books and 961 decoded pages;
-216 numbered source blocks were identified, including three combined grade-10
-topics. Final teaching-entry count awaits ancillary/activity inventory.
+Separate debug/loopback history screen and API are implemented. Grade6§1–6 are
+reviewed local-preview lessons:55 cards,39 MCQ,19 objective FRQ. **6/219 ready;
+213 remain.** Six books and961 original page images are inventoried;216 numbered
+blocks plus three conclusion/review units, with original chapters and ancillary links.
 Backend `docs/world_history/CHECKPOINT.md` is the continuation record.
 
-Initial worktree check: offline dependency resolution succeeded and Flutter
-analysis reported 0 issues in 252.3 s. No history widget/native test is claimed;
-the history implementation has not been added yet.
+The common ILM source/choice/feedback/completion components, Ilmo and themes are
+reused. Six grades, original chapter expansion, bibliography, theory, MCQ, typed
+FRQ, self/teacher reflection and account/origin-scoped save/resume are present.
+No ordinary `main.dart`, release route, OAuth or other subject feature was changed.
+
+Measured QA:23 history tests, including actual API fixtures for all six lessons,
+320×568/200% light/dark and UZ/RU/EN interface. Current full suite **632 passed**;
+full Flutter analysis **0 issues**. Backend QA_REPORT.md records precise scope.
+Widget screenshots were visually inspected;
+no real Android/IME/TalkBack run or independent history-teacher approval is claimed.
+
+## Local QA entrypoint
+
+Backend `scripts/serve_world_history_preview.py` creates a disposable synthetic
+loopback sandbox outside Git. Run the Flutter debug entrypoint with its private
+defines file, never a literal token in a command or tracked configuration:
+
+```powershell
+flutter run -t lib/world_history_preview_main.dart --dart-define-from-file="../ilm-ai-world-history-local-qa/flutter-defines.json" -d chrome --web-port 7366
+```
+
+This command is a run instruction, not a claim that a browser/native run occurred.
+Debug/explicit loopback guards reject release/remote use. Knowledge remains
+reviewed Uzbek; Russian/English UI does not auto-translate historical content.
 
 ## Integration requirements
 

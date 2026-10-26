@@ -1,0 +1,770 @@
+{
+  "assessment_version": 2,
+  "subject": "jahon_tarixi",
+  "grade": 8,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 33,
+  "implemented_sections": 0,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 33,
+  "grade_content_complete": false,
+  "implemented_grades": [
+    6
+  ],
+  "available_grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "bibliography": {
+    "id": "world-history-8-uz-2019",
+    "title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+    "authors": [
+      "R. Farmonov",
+      "U. Jo‘rayev",
+      "Sh. Ergashev"
+    ],
+    "year": 2019,
+    "edition": "Qayta ishlangan va to‘ldirilgan to‘rtinchi nashri",
+    "publisher": "Cho‘lpon nomidagi nashriyot-matbaa ijodiy uyi",
+    "isbn": "978-9943-05-620-6",
+    "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806"
+  },
+  "chapters": [
+    {
+      "id": "wh8-chapter01",
+      "source_number": "I",
+      "title": "Yevropada Yangi davrning shakllanishi",
+      "first_topic_number": 1,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh8-chapter02",
+      "source_number": "II",
+      "title": "XVI–XVIII asrlarda Yevropa va Amerika mamlakatlari",
+      "first_topic_number": 5,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh8-chapter03",
+      "source_number": "III",
+      "title": "XVI–XVIII asrlarda Osiyo va Afrika mamlakatlari",
+      "first_topic_number": 13,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh8-chapter04",
+      "source_number": "IV",
+      "title": "1800–1870-yillarda Yevropa va Amerika mamlakatlari",
+      "first_topic_number": 20,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh8-chapter05",
+      "source_number": "V",
+      "title": "1800–1870-yillarda Osiyo va Afrika mamlakatlari",
+      "first_topic_number": 26,
+      "verification": "contents_image_verified"
+    }
+  ],
+  "source_units": [
+    {
+      "id": "wh8-topic01",
+      "title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+      "sequence": 1,
+      "chapter_id": "wh8-chapter01",
+      "pdf_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "printed_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "wh8-topic02",
+      "title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+      "sequence": 2,
+      "chapter_id": "wh8-chapter01",
+      "pdf_pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "printed_pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "wh8-topic03",
+      "title": "Yevropada Reformatsiya",
+      "sequence": 3,
+      "chapter_id": "wh8-chapter01",
+      "pdf_pages": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "printed_pages": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "wh8-topic04",
+      "title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+      "sequence": 4,
+      "chapter_id": "wh8-chapter01",
+      "pdf_pages": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "printed_pages": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "wh8-topic05",
+      "title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+      "sequence": 5,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "printed_pages": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "id": "wh8-topic06",
+      "title": "XVI–XVIII asrlarda xalqaro munosabatlar",
+      "sequence": 6,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "printed_pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "wh8-topic07",
+      "title": "Fransiyada mutlaq monarxiya. Buyuk fransuz burjua inqilobi",
+      "sequence": 7,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "printed_pages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "wh8-topic08",
+      "title": "Buyuk fransuz burjua inqilobining yakunlanishi va tarixiy ahamiyati",
+      "sequence": 8,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "printed_pages": [
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "wh8-topic09",
+      "title": "XVI–XVIII asrlarda Germaniya imperiyasi",
+      "sequence": 9,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "printed_pages": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "wh8-topic10",
+      "title": "XVI–XVIII asrlarda Rossiya imperiyasi",
+      "sequence": 10,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "printed_pages": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "wh8-topic11",
+      "title": "XVIII asrda Shimoliy Amerika. Amerika Qo‘shma Shtatlarining tashkil topishi......................",
+      "sequence": 11,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "printed_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "id": "wh8-topic12",
+      "title": "Ma’rifat asri",
+      "sequence": 12,
+      "chapter_id": "wh8-chapter02",
+      "pdf_pages": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "printed_pages": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "wh8-topic13",
+      "title": "XVI–XVIII asrlarda Osiyo mamlakatlari rivojlanishining asosiy xususiyatlari",
+      "sequence": 13,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "printed_pages": [
+        65,
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "wh8-topic14",
+      "title": "XVI–XVIII asrlarda Xitoy",
+      "sequence": 14,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "printed_pages": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "id": "wh8-topic15",
+      "title": "XVI–XVIII asrlarda Hindiston",
+      "sequence": 15,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "printed_pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "id": "wh8-topic16",
+      "title": "XVI–XVIII asrlarda Yaponiya va Koreya",
+      "sequence": 16,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "printed_pages": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "id": "wh8-topic17",
+      "title": "XVI–XVIII asrlarda Usmoniylar imperiyasi",
+      "sequence": 17,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "printed_pages": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "id": "wh8-topic18",
+      "title": "XVI–XVIII asrlarda Eron",
+      "sequence": 18,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "printed_pages": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "id": "wh8-topic19",
+      "title": "XVI–XVIII asrlarda Afrika mamlakatlari",
+      "sequence": 19,
+      "chapter_id": "wh8-chapter03",
+      "pdf_pages": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "printed_pages": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "id": "wh8-topic20",
+      "title": "1800–1870-yillarda Buyuk Britaniya",
+      "sequence": 20,
+      "chapter_id": "wh8-chapter04",
+      "pdf_pages": [
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "printed_pages": [
+        97,
+        98,
+        99,
+        100,
+        101
+      ]
+    },
+    {
+      "id": "wh8-topic21",
+      "title": "1800–1870-yillarda Fransiya",
+      "sequence": 21,
+      "chapter_id": "wh8-chapter04",
+      "pdf_pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "printed_pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ]
+    },
+    {
+      "id": "wh8-topic22",
+      "title": "1800–1870-yillarda Germaniya va Italiya",
+      "sequence": 22,
+      "chapter_id": "wh8-chapter04",
+      "pdf_pages": [
+        107,
+        108,
+        109,
+        110
+      ],
+      "printed_pages": [
+        107,
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "id": "wh8-topic23",
+      "title": "1800–1870-yillarda Rossiya",
+      "sequence": 23,
+      "chapter_id": "wh8-chapter04",
+      "pdf_pages": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "printed_pages": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "id": "wh8-topic24",
+      "title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+      "sequence": 24,
+      "chapter_id": "wh8-chapter04",
+      "pdf_pages": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "printed_pages": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ]
+    },
+    {
+      "id": "wh8-topic25",
+      "title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+      "sequence": 25,
+      "chapter_id": "wh8-chapter04",
+      "pdf_pages": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "printed_pages": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ]
+    },
+    {
+      "id": "wh8-topic26",
+      "title": "1800–1870-yillarda Hindiston",
+      "sequence": 26,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "printed_pages": [
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "id": "wh8-topic27",
+      "title": "1800–1870-yillarda Xitoy",
+      "sequence": 27,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "printed_pages": [
+        130,
+        131,
+        132,
+        133,
+        134
+      ]
+    },
+    {
+      "id": "wh8-topic28",
+      "title": "1800–1870-yillarda Yaponiya",
+      "sequence": 28,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        134,
+        135,
+        136,
+        137,
+        138
+      ],
+      "printed_pages": [
+        134,
+        135,
+        136,
+        137,
+        138
+      ]
+    },
+    {
+      "id": "wh8-topic29",
+      "title": "1800–1870-yillarda Koreya",
+      "sequence": 29,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "printed_pages": [
+        138,
+        139,
+        140,
+        141,
+        142
+      ]
+    },
+    {
+      "id": "wh8-topic30",
+      "title": "1800–1870-yillarda Usmoniylar imperiyasi",
+      "sequence": 30,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        142,
+        143,
+        144,
+        145
+      ],
+      "printed_pages": [
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "id": "wh8-topic31",
+      "title": "1800–1870-yillarda Eron va Afg‘oniston",
+      "sequence": 31,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "printed_pages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ]
+    },
+    {
+      "id": "wh8-topic32",
+      "title": "1800–1870-yillarda Afrika xalqlari",
+      "sequence": 32,
+      "chapter_id": "wh8-chapter05",
+      "pdf_pages": [
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "printed_pages": [
+        151,
+        152,
+        153,
+        154,
+        155
+      ]
+    },
+    {
+      "id": "wh8-conclusion",
+      "title": "Xulosa",
+      "sequence": 33,
+      "chapter_id": null,
+      "pdf_pages": [
+        156
+      ],
+      "printed_pages": [
+        156
+      ]
+    }
+  ],
+  "lessons": []
+}
