@@ -2349,6 +2349,845 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-11-section-16-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "IDEAL sinusoidal L=40mH,omega=1000rad/s. XLni top.",
+      "givens": [
+        {
+          "symbol": "omega",
+          "value": "1000",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "L",
+          "value": "40",
+          "unit": "mH"
+        }
+      ],
+      "symbols": [
+        "omega",
+        "L"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-16",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            59
+          ],
+          "printed_pages": [
+            58
+          ],
+          "page_text_sha256": [
+            "5001b515e605f722d4d96e48a0f9865c7e7259e60ca2e920627df9ea8f0d05c3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-16-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "IDEAL sinusoidal L=100mH,nu=100Hz,p=3,14. XLni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "nu",
+          "value": "100",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "L",
+          "value": "100",
+          "unit": "mH"
+        }
+      ],
+      "symbols": [
+        "p",
+        "nu",
+        "L"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-16",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            60
+          ],
+          "printed_pages": [
+            59
+          ],
+          "page_text_sha256": [
+            "6270a782f59c6f0dfc5faabfcf708a1a7ce321ed129d537747d09f1e13f03284"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-16-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "IDEAL sinusoidal L=50mH,omega=1000rad/s,Um=5V AMPLITUDA. Imni top.",
+      "givens": [
+        {
+          "symbol": "Um",
+          "value": "5",
+          "unit": "V"
+        },
+        {
+          "symbol": "omega",
+          "value": "1000",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "L",
+          "value": "50",
+          "unit": "mH"
+        }
+      ],
+      "symbols": [
+        "Um",
+        "omega",
+        "L"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-16",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            59
+          ],
+          "printed_pages": [
+            58
+          ],
+          "page_text_sha256": [
+            "5001b515e605f722d4d96e48a0f9865c7e7259e60ca2e920627df9ea8f0d05c3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-16-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal Lda i=Imcos(theta),passiv uL=Ldi/dt. Um=5V,sinPhase=−0,6 tayyor. Signed Uni top.",
+      "givens": [
+        {
+          "symbol": "Um",
+          "value": "5",
+          "unit": "V"
+        },
+        {
+          "symbol": "sinPhase",
+          "value": "-0.6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "Um",
+        "sinPhase"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-16",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            58,
+            59
+          ],
+          "printed_pages": [
+            57,
+            58
+          ],
+          "page_text_sha256": [
+            "4b9459048df7b889c26f6d8c4a619fe74d456d99d5935053827dc8df22267a05",
+            "5001b515e605f722d4d96e48a0f9865c7e7259e60ca2e920627df9ea8f0d05c3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-17-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SERIES idealRLCsinusoidi:R=30Ω,XL=50Ω,XC=10Ω. Zni top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "30",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "XL",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "XC",
+          "value": "10",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "R",
+        "XL",
+        "XC"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-17",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            61
+          ],
+          "page_text_sha256": [
+            "d8e75dccabda573ed7b6f53fa34a5bc9dab64f17cf68ffb94c88d638f0b6eca4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-17-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SERIES idealRLC:R=30Ω,XL=50Ω,XC=10Ω,Um=10V AMPLITUDA. Imni top.",
+      "givens": [
+        {
+          "symbol": "Um",
+          "value": "10",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "30",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "XL",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "XC",
+          "value": "10",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Um",
+        "R",
+        "XL",
+        "XC"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-17",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            61
+          ],
+          "page_text_sha256": [
+            "d8e75dccabda573ed7b6f53fa34a5bc9dab64f17cf68ffb94c88d638f0b6eca4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-17-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SERIES idealRLC:R=30Ω,XL=50Ω,XC=10Ω. Kuchlanishning tokka nisbatan tanPhi nisbati0,01qadamda topilsin.",
+      "givens": [
+        {
+          "symbol": "XL",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "XC",
+          "value": "10",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R",
+          "value": "30",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "XL",
+        "XC",
+        "R"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-17",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            61
+          ],
+          "page_text_sha256": [
+            "d8e75dccabda573ed7b6f53fa34a5bc9dab64f17cf68ffb94c88d638f0b6eca4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-17-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SERIES sinusoidalRLC:UR=6V,UL=10V,UC=2V AMPLITUDALAR. Umni top.",
+      "givens": [
+        {
+          "symbol": "UR",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "UL",
+          "value": "10",
+          "unit": "V"
+        },
+        {
+          "symbol": "UC",
+          "value": "2",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "UR",
+        "UL",
+        "UC"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-17",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            61
+          ],
+          "page_text_sha256": [
+            "d8e75dccabda573ed7b6f53fa34a5bc9dab64f17cf68ffb94c88d638f0b6eca4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-18-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal SERIESRLC:L=40mH,C=1µF. omegaRezni top.",
+      "givens": [
+        {
+          "symbol": "L",
+          "value": "40",
+          "unit": "mH"
+        },
+        {
+          "symbol": "C",
+          "value": "1",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "L",
+        "C"
+      ],
+      "suggested_unit": "rad/s",
+      "unit_choices": [
+        "rad/s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-18",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            64
+          ],
+          "printed_pages": [
+            63
+          ],
+          "page_text_sha256": [
+            "4fb800ca352103aa4eaa5c5034f894fba5ca53d0bb4174f93efc27f173885b03"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-18-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal SERIESRLC:L=100mH,nu=50Hz,p=3,14. RezonansCni1µFqadamda yaxlitla.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "nu",
+          "value": "50",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "L",
+          "value": "100",
+          "unit": "mH"
+        }
+      ],
+      "symbols": [
+        "p",
+        "nu",
+        "L"
+      ],
+      "suggested_unit": "F",
+      "unit_choices": [
+        "F",
+        "µF",
+        "nF"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-18",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            65
+          ],
+          "printed_pages": [
+            64
+          ],
+          "page_text_sha256": [
+            "46c8e9e14bc9055c4105ec87bc95c1ab7a08dbf7970e18aed10bb223a257bee2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-18-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal SERIESRLCREZONANSda:U=Um=0,5V AMPLITUDA,R=20Ωaktiv. I=Imni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "0.5",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "20",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "U",
+        "R"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-18",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            64
+          ],
+          "printed_pages": [
+            63
+          ],
+          "page_text_sha256": [
+            "4fb800ca352103aa4eaa5c5034f894fba5ca53d0bb4174f93efc27f173885b03"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-18-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal SERIESRLCREZONANSda:Um=0,5V,R=20Ω,L=40mH,C=1µF. Ucomponent=UL=UC AMPLITUDAni top.",
+      "givens": [
+        {
+          "symbol": "Um",
+          "value": "0.5",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "20",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "L",
+          "value": "40",
+          "unit": "mH"
+        },
+        {
+          "symbol": "C",
+          "value": "1",
+          "unit": "µF"
+        }
+      ],
+      "symbols": [
+        "Um",
+        "R",
+        "L",
+        "C"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-18",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            64
+          ],
+          "printed_pages": [
+            63
+          ],
+          "page_text_sha256": [
+            "4fb800ca352103aa4eaa5c5034f894fba5ca53d0bb4174f93efc27f173885b03"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-20-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Passiv barqaror SINUSOID:U=Urms=12V,I=Irms=0,5A,cosPhi=0,6. Pavgni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        },
+        {
+          "symbol": "cosPhi",
+          "value": "0.6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I",
+        "cosPhi"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "MW"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-20",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            67
+          ],
+          "page_text_sha256": [
+            "cbc284590c2f6a8c41dd4a7520ce72ade51fc8080fd6bb73e45713af6511ad65"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-20-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Barqaror SINUSOIDni ko‘p/to‘liq davrli t=5min davomida o‘rtacha hisobla:U=Urms12V,I=Irms0,5A,cosPhi0,6. Ani top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        },
+        {
+          "symbol": "cosPhi",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "5",
+          "unit": "min"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I",
+        "cosPhi",
+        "t"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-20",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            67
+          ],
+          "page_text_sha256": [
+            "cbc284590c2f6a8c41dd4a7520ce72ade51fc8080fd6bb73e45713af6511ad65"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-20-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "PASSIV seriesRLCsinusoidda R=30Ω,Z=50Ω. cosPhini top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "30",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "Z",
+          "value": "50",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "R",
+        "Z"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-20",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            70
+          ],
+          "printed_pages": [
+            69
+          ],
+          "page_text_sha256": [
+            "65cdd7ab8d3e1599477de9040ce6c68328cfc7165d63ff3dfe6865e37c7def83"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-20-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "PASSIV sinusoidal model:U=Urms12V,I=Irms0,5A,Pavg=3,6W. cosPhini top.",
+      "givens": [
+        {
+          "symbol": "Pavg",
+          "value": "3.6",
+          "unit": "W"
+        },
+        {
+          "symbol": "U",
+          "value": "12",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "Pavg",
+        "U",
+        "I"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-20",
+          "chapter_id": "physics-11-chapter-3",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            67
+          ],
+          "page_text_sha256": [
+            "cbc284590c2f6a8c41dd4a7520ce72ade51fc8080fd6bb73e45713af6511ad65"
+          ]
+        }
+      ]
     }
   ]
 }
