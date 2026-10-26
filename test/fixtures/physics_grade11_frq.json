@@ -5339,6 +5339,665 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-11-section-36-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "VAKUUMda Lw=600nm,h=6,626e−34J*s,c=3e8m/s. Eqni top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "Lw",
+          "value": "600",
+          "unit": "nm"
+        }
+      ],
+      "symbols": [
+        "h",
+        "c",
+        "Lw"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-36",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            143
+          ],
+          "printed_pages": [
+            142
+          ],
+          "page_text_sha256": [
+            "c19f5557f9dffc0474dd0b49178054c898cc31941ca79f4cb7e55095d080239d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-36-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "VAKUUMda Lw=500nm,h=6,626e−34J*s. pPhot modulni top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        },
+        {
+          "symbol": "Lw",
+          "value": "500",
+          "unit": "nm"
+        }
+      ],
+      "symbols": [
+        "h",
+        "Lw"
+      ],
+      "suggested_unit": "kg*m/s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-36",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            143
+          ],
+          "printed_pages": [
+            142
+          ],
+          "page_text_sha256": [
+            "c19f5557f9dffc0474dd0b49178054c898cc31941ca79f4cb7e55095d080239d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-36-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "NORMAL ideal yutuvchi sirt:Iflux=600W/m²,c=3e8m/s. pAbsni top.",
+      "givens": [
+        {
+          "symbol": "Iflux",
+          "value": "600",
+          "unit": "W/m2"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "Iflux",
+        "c"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa",
+        "MPa",
+        "GPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-36",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            143
+          ],
+          "page_text_sha256": [
+            "ca173d94e81fc253abb6c447d5ebcb6d049ff2589c430962a9ff4f24ec12b47f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-36-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "NORMAL ideal qaytaruvchi sirt:Iflux=600W/m²,c=3e8m/s. pMirrorni top.",
+      "givens": [
+        {
+          "symbol": "Iflux",
+          "value": "600",
+          "unit": "W/m2"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "Iflux",
+        "c"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa",
+        "MPa",
+        "GPa"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-36",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            143
+          ],
+          "page_text_sha256": [
+            "ca173d94e81fc253abb6c447d5ebcb6d049ff2589c430962a9ff4f24ec12b47f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-37-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bor modeli:n=4,hbar=1,05e−34J*s berilgan. Jorbni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "4",
+          "unit": "1"
+        },
+        {
+          "symbol": "hbar",
+          "value": "1.05e-34",
+          "unit": "J*s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "hbar"
+      ],
+      "suggested_unit": "J*s",
+      "unit_choices": [
+        "J*s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-37",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            154
+          ],
+          "printed_pages": [
+            153
+          ],
+          "page_text_sha256": [
+            "ddc8e2cc08ca144c30bcf9c626f2784b84159a7119e5ea72ce516f0e69393200"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-37-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI atom sathlari:Ei=−1,3252e−19J,Ef=−3,313e−19J,h=6,626e−34J*s. Chiqarilgan nu ni top.",
+      "givens": [
+        {
+          "symbol": "Ei",
+          "value": "-1.3252e-19",
+          "unit": "J"
+        },
+        {
+          "symbol": "Ef",
+          "value": "-3.313e-19",
+          "unit": "J"
+        },
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        }
+      ],
+      "symbols": [
+        "Ei",
+        "Ef",
+        "h"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-37",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            155
+          ],
+          "printed_pages": [
+            154
+          ],
+          "page_text_sha256": [
+            "77d25c5e777934430c48c99c68e868243306517e14e2bf7f137f696884650c75"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-37-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vodorod modeli:Eion=2,176e−18J,n=2. Erkin elektron-proton energiyasi0 deb Enni top.",
+      "givens": [
+        {
+          "symbol": "Eion",
+          "value": "2.176e-18",
+          "unit": "J"
+        },
+        {
+          "symbol": "n",
+          "value": "2",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "Eion",
+        "n"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-37",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            155,
+            156
+          ],
+          "printed_pages": [
+            154,
+            155
+          ],
+          "page_text_sha256": [
+            "77d25c5e777934430c48c99c68e868243306517e14e2bf7f137f696884650c75",
+            "6f1f70ae4e48acc908520983095c8445e28c67aba5901034ce83af7dd65274eb"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-37-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vodorod Bor modeli:a0=5,29e−11m,n=3. rnni top.",
+      "givens": [
+        {
+          "symbol": "a0",
+          "value": "5.29e-11",
+          "unit": "m"
+        },
+        {
+          "symbol": "n",
+          "value": "3",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "a0",
+        "n"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "µm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-37",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            155
+          ],
+          "printed_pages": [
+            154
+          ],
+          "page_text_sha256": [
+            "77d25c5e777934430c48c99c68e868243306517e14e2bf7f137f696884650c75"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-39-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Hisobiy yadro:A=27,Z=13. Nni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "27",
+          "unit": "1"
+        },
+        {
+          "symbol": "Z",
+          "value": "13",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "A",
+        "Z"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-39",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            162
+          ],
+          "printed_pages": [
+            161
+          ],
+          "page_text_sha256": [
+            "8a9c18ef0fe5aac9f3481233c93c92ecd75d19f130efb053ac189c2f5c5a469d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-39-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan YADRO modeli:A=4,Z=2,mp=1,6726e−27kg,mn=1,6749e−27kg,mNuc=6,644e−27kg. Dmni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "4",
+          "unit": "1"
+        },
+        {
+          "symbol": "Z",
+          "value": "2",
+          "unit": "1"
+        },
+        {
+          "symbol": "mp",
+          "value": "1.6726e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "mn",
+          "value": "1.6749e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "mNuc",
+          "value": "6.644e-27",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "A",
+        "Z",
+        "mp",
+        "mn",
+        "mNuc"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-39",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            163
+          ],
+          "printed_pages": [
+            162
+          ],
+          "page_text_sha256": [
+            "aa5a7aadd5932cb36a3aa5acd162b1a1e1458d090d8b6e2396f7cea143bdcd60"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-39-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bog‘langan yadro uchun Dm=5,1e−29kg,c=3e8m/s. Ebindni top.",
+      "givens": [
+        {
+          "symbol": "Dm",
+          "value": "5.1e-29",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "Dm",
+        "c"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-39",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            163
+          ],
+          "printed_pages": [
+            162
+          ],
+          "page_text_sha256": [
+            "aa5a7aadd5932cb36a3aa5acd162b1a1e1458d090d8b6e2396f7cea143bdcd60"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-39-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Jami Ebind=4,59e−12J,A=4. Har bir nuklonga o‘rtacha Eperni top.",
+      "givens": [
+        {
+          "symbol": "Ebind",
+          "value": "4.59e-12",
+          "unit": "J"
+        },
+        {
+          "symbol": "A",
+          "value": "4",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "Ebind",
+        "A"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-39",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            163
+          ],
+          "printed_pages": [
+            162
+          ],
+          "page_text_sha256": [
+            "aa5a7aadd5932cb36a3aa5acd162b1a1e1458d090d8b6e2396f7cea143bdcd60"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-40-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "RAQAMLI sekin zarra/tik bir jinsli maydon:q=1,6e−19C,B=1mT,R=5mm,m=9,1e−31kg. vni eng yaqin1000m/s gacha top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "B",
+          "value": "1",
+          "unit": "mT"
+        },
+        {
+          "symbol": "R",
+          "value": "5",
+          "unit": "mm"
+        },
+        {
+          "symbol": "m",
+          "value": "9.1e-31",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "q",
+        "B",
+        "R",
+        "m"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-40",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            168
+          ],
+          "printed_pages": [
+            167
+          ],
+          "page_text_sha256": [
+            "68f7821d7352e6fcba7ade1e08d655a64f8de63257a7e779e064c86f8919c833"
+          ]
+        }
+      ]
     }
   ]
 }
