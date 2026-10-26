@@ -35,7 +35,10 @@ void main() {
     catalog = fixture('catalog7');
     lesson = fixture('lesson1');
     offline = false;
+    // Large real catalog fixtures otherwise decode on a background isolate,
+    // outside widget fake time. Keep only this mock transport synchronous.
     dio = Dio(BaseOptions(baseUrl: 'http://127.0.0.1:8000'))
+      ..transformer = SyncTransformer()
       ..httpClientAdapter = Adapter((r) {
         requests.add(r);
         if (offline) {
@@ -103,7 +106,7 @@ void main() {
     'real public DTOs contain no private grading rules or aliases',
     () async {
       final repo = HistoryRepository(dio);
-      for (var i = 1; i <= 10; i++) {
+      for (var i = 1; i <= 15; i++) {
         lesson = fixture('lesson$i');
         final dto = await repo.start(
           'uzh-7-$i-r1',
@@ -218,7 +221,7 @@ void main() {
     expect(find.text('Darsni ochish'), findsOneWidget);
   });
 
-  for (var n = 1; n <= 10; n++) {
+  for (var n = 1; n <= 15; n++) {
     testWidgets('grade 7 lesson $n short input keeps raw text at 200% scale', (
       tester,
     ) async {
@@ -258,7 +261,7 @@ void main() {
     });
   }
 
-  for (final n in [2, 3, 4, 5, 8, 10]) {
+  for (final n in [2, 3, 4, 5, 8, 10, 11, 12, 13, 15]) {
     testWidgets(
       'lesson $n chronology labels fit a small screen with large text',
       (tester) async {
