@@ -4053,6 +4053,466 @@
         "g",
         "mg"
       ]
+    },
+    {
+      "key": "physics-9-section-31-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir sirt uchun samarali jami l=2cm,sigma=0,073N/m. F ni top.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.073",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "l",
+          "value": "2",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "l"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-9-section-31-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan jami kontakt chizig‘i l=8cm,uning sirt taranglik kuchi F=3,2mN. sigma ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "3.2",
+          "unit": "mN"
+        },
+        {
+          "symbol": "l",
+          "value": "8",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "l"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "mN/m",
+        "J/m2",
+        "mJ/m2"
+      ]
+    },
+    {
+      "key": "physics-9-section-31-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "O‘zgarmas sigma=0,073J/m2,jami sirt S=200cm2. W ni top.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.073",
+          "unit": "J/m2"
+        },
+        {
+          "symbol": "S",
+          "value": "200",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "S"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-31-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kitob modelida W=0,8mJ,S=200cm2 jami sirt yuzi. sigma ni top.",
+      "givens": [
+        {
+          "symbol": "W",
+          "value": "0.8",
+          "unit": "mJ"
+        },
+        {
+          "symbol": "S",
+          "value": "200",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "W",
+        "S"
+      ],
+      "suggested_unit": "J/m2",
+      "unit_choices": [
+        "N/m",
+        "mN/m",
+        "J/m2",
+        "mJ/m2"
+      ]
+    },
+    {
+      "key": "physics-9-section-32-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal TO‘LIQ ho‘llash:sigma=0,073N/m,rho=1000kg/m3,g=9,81N/kg,r=1mm. h ni eng yaqin0,1mm qadamda yoz.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.073",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "r",
+          "value": "1",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "rho",
+        "g",
+        "r"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-32-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal TO‘LIQ ho‘llash:sigma=0,073N/m,rho=1000kg/m3,g=9,81N/kg,h=2cm. Ichki r radiusni eng yaqin0,001mm qadamda yoz.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.073",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "2",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "rho",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-33-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal to‘liq ho‘llovchi noma’lum suyuqlik:sigma=0,04905N/m,rho=1000kg/m3,g=9,81N/kg,h=1cm. Ichki d DIAMETRni top.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.04905",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "1",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "rho",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-33-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ikki uzun kontakt tomoni modeli:igna l=8cm,sigma=0,073N/m,uchlar/burchaklar ta’siri e’tiborsiz. F ni top.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.073",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "l",
+          "value": "8",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "l"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-9-section-33-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sodda uzilish modeli:sigma=0,04905N/m,pi=3,14,d=2mm,g=9,81N/kg. Bir tomchining model m0 massasini top.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.04905",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "pi",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "d",
+          "value": "2",
+          "unit": "mm"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "pi",
+        "d",
+        "g"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-33-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yupqa ikki sirtli sovun pufagi:sigma=0,04N/m,pi=3,14,R1=1cm,R2=3cm. DW ni oraliqda yaxlitlamay top.",
+      "givens": [
+        {
+          "symbol": "sigma",
+          "value": "0.04",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "pi",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "R2",
+          "value": "3",
+          "unit": "cm"
+        },
+        {
+          "symbol": "R1",
+          "value": "1",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "sigma",
+        "pi",
+        "R2",
+        "R1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-33-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal to‘liq ho‘llash:r=0,5mm,h=2cm,rho=1000kg/m3,g=9,81N/kg. Noma’lum suyuqlik sigma koeffitsiyentini top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "2",
+          "unit": "cm"
+        },
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "r",
+          "value": "0.5",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "h",
+        "rho",
+        "g",
+        "r"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "mN/m",
+        "J/m2",
+        "mJ/m2"
+      ]
+    },
+    {
+      "key": "physics-9-section-34-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli digital model:F1=0,1N,F2=0,1292N,l=20cm perimetr,ikki kontakt chizig‘i. sigma ni top.",
+      "givens": [
+        {
+          "symbol": "F2",
+          "value": "0.1292",
+          "unit": "N"
+        },
+        {
+          "symbol": "F1",
+          "value": "0.1",
+          "unit": "N"
+        },
+        {
+          "symbol": "l",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F2",
+        "F1",
+        "l"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "mN/m",
+        "J/m2",
+        "mJ/m2"
+      ]
+    },
+    {
+      "key": "physics-9-section-34-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil modda/sharoit uchun shartli s1=72mN/m,s2=73mN/m,s3=74mN/m. sigmaMean ni top.",
+      "givens": [
+        {
+          "symbol": "s1",
+          "value": "72",
+          "unit": "mN/m"
+        },
+        {
+          "symbol": "s2",
+          "value": "73",
+          "unit": "mN/m"
+        },
+        {
+          "symbol": "s3",
+          "value": "74",
+          "unit": "mN/m"
+        }
+      ],
+      "symbols": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "mN/m",
+        "J/m2",
+        "mJ/m2"
+      ]
     }
   ]
 }
