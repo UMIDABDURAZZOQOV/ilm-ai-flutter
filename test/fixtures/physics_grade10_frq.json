@@ -1987,6 +1987,1095 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-10-section-11-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal aylana modelida r=6400km va AYNAN ORBITADAGI g=10m/s² deb berilgan. v tezlik modulini top.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "r",
+          "value": "6400",
+          "unit": "km"
+        }
+      ],
+      "symbols": [
+        "g",
+        "r"
+      ],
+      "suggested_unit": "km/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-11",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37
+          ],
+          "printed_pages": [
+            36
+          ],
+          "page_text_sha256": [
+            "a4fd34fcdc6831891513c587adf57f6de3d0f5d54580bedde24fa40b82167089"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-11-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil markaziy maydon: R=6000km dagi T1=5000s, yangi MARKAZDAN r=24000km. Yangi aylana T davrini top.",
+      "givens": [
+        {
+          "symbol": "T1",
+          "value": "5000",
+          "unit": "s"
+        },
+        {
+          "symbol": "r",
+          "value": "24000",
+          "unit": "km"
+        },
+        {
+          "symbol": "R",
+          "value": "6000",
+          "unit": "km"
+        }
+      ],
+      "symbols": [
+        "T1",
+        "r",
+        "R"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-11",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37
+          ],
+          "printed_pages": [
+            36
+          ],
+          "page_text_sha256": [
+            "a4fd34fcdc6831891513c587adf57f6de3d0f5d54580bedde24fa40b82167089"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-11-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal aylana orbitada v=6km/s va shu orbitadagi g=4m/s² berilgan. Markazdan r radiusni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "6",
+          "unit": "km/s"
+        },
+        {
+          "symbol": "g",
+          "value": "4",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-11",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37
+          ],
+          "printed_pages": [
+            36
+          ],
+          "page_text_sha256": [
+            "a4fd34fcdc6831891513c587adf57f6de3d0f5d54580bedde24fa40b82167089"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-12-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "m=40kg, g=10m/s², lift tezlanishsiz bir tekis pastga ketmoqda. P og‘irlik modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "40",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-12",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            38,
+            39
+          ],
+          "printed_pages": [
+            37,
+            38
+          ],
+          "page_text_sha256": [
+            "63e4832f71f455ed732a7958495ecd735cc47e5f220e2f0b330ba4bbe1764c84",
+            "a82f89075209ecb189d4b8412ab46ec82c32983994aaca1f76762913adc88d49"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-12-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=40kg, g=10m/s², tayanch bilan YUQORIGA a=2m/s² tezlanish. P ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "40",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-12",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            40
+          ],
+          "printed_pages": [
+            39
+          ],
+          "page_text_sha256": [
+            "eff797118369bb50f7fa6ceb5a035ac26fc4b586ba59c5b882986acd4ee5916b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-12-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=40kg, g=10m/s², kontaktli lift modelida PASTGA a=2m/s² tezlanish. P ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "40",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-12",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            39,
+            40
+          ],
+          "printed_pages": [
+            38,
+            39
+          ],
+          "page_text_sha256": [
+            "a82f89075209ecb189d4b8412ab46ec82c32983994aaca1f76762913adc88d49",
+            "eff797118369bb50f7fa6ceb5a035ac26fc4b586ba59c5b882986acd4ee5916b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-12-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yuqoriga a=2m/s² tezlanish, g=10m/s². n=P/(mg) yuklama nisbatini top; kamayishning teskari nisbati emas.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "g",
+        "a"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-12",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            40
+          ],
+          "printed_pages": [
+            39
+          ],
+          "page_text_sha256": [
+            "eff797118369bb50f7fa6ceb5a035ac26fc4b586ba59c5b882986acd4ee5916b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-13-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Oldinga sirpanayotgan m=2kg blokka Ft=3N oldinga va Ff=7N orqaga kuch berilgan. Oldinga musbat o‘qda a ni top.",
+      "givens": [
+        {
+          "symbol": "Ft",
+          "value": "3",
+          "unit": "N"
+        },
+        {
+          "symbol": "Ff",
+          "value": "7",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "Ft",
+        "Ff",
+        "m"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-13",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            41,
+            42
+          ],
+          "printed_pages": [
+            40,
+            41
+          ],
+          "page_text_sha256": [
+            "55c78f86437c2c41722b3f14323f943e327f4fde43e2efa3fb9b4307862a2e83",
+            "26d3008d2bf5479888acdb10a855647f35f4a4fbff39777303c90a1e57ef81e4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-13-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Blok ALLAQACHON pastga sirpanmoqda. g=10m/s², sinA=0,6, cosA=0,8, KINETIK mu=0,5. Pastga musbat a ni top.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "mu",
+          "value": "0.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "cosA",
+          "value": "0.8",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "g",
+        "sinA",
+        "mu",
+        "cosA"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-13",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            42,
+            43
+          ],
+          "printed_pages": [
+            41,
+            42
+          ],
+          "page_text_sha256": [
+            "26d3008d2bf5479888acdb10a855647f35f4a4fbff39777303c90a1e57ef81e4",
+            "cd790d141a1674288688e6ad728ea18bf9d03e163e7defee6af9ceb8f5b873a7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-13-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal ip/blok: m1=3kg, m2=5kg, g=10m/s². a tezlanish MODULINI top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "3",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m2",
+          "value": "5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "m2",
+        "g"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-13",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            43,
+            44
+          ],
+          "printed_pages": [
+            42,
+            43
+          ],
+          "page_text_sha256": [
+            "cd790d141a1674288688e6ad728ea18bf9d03e163e7defee6af9ceb8f5b873a7",
+            "1faebd508c3f440580c44b2bdb54b4f8deb4098d06f4538c6d49093dbac1a594"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-13-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal ip/blok: m1=3kg, m2=5kg, g=10m/s². Ip T taranglik modulini top.",
+      "givens": [
+        {
+          "symbol": "m1",
+          "value": "3",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m2",
+          "value": "5",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m1",
+        "m2",
+        "g"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-13",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            44
+          ],
+          "printed_pages": [
+            43
+          ],
+          "page_text_sha256": [
+            "1faebd508c3f440580c44b2bdb54b4f8deb4098d06f4538c6d49093dbac1a594"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-14-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ko‘chish moduli s=3m. Kuchning ko‘chish yo‘nalishidagi ishorali proyeksiyasi Fpr=−4N. A ishni top.",
+      "givens": [
+        {
+          "symbol": "Fpr",
+          "value": "-4",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "Fpr",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-14",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            48,
+            49
+          ],
+          "printed_pages": [
+            47,
+            48
+          ],
+          "page_text_sha256": [
+            "41f0e80fff19925b8017ee26c722f2e742b190ba94e570e6c5ab26876fd5b12b",
+            "3247a7992ea1371d174fd19ee12b08caa6b2c2316c7401930ac7ded2bff09827"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-14-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2kg,g=10m/s², balandlik h1=1m dan h2=4m ga ko‘tarildi. FAQAT gravitatsiya A ishini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h1",
+          "value": "1",
+          "unit": "m"
+        },
+        {
+          "symbol": "h2",
+          "value": "4",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h1",
+        "h2"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-14",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            49,
+            50
+          ],
+          "printed_pages": [
+            48,
+            49
+          ],
+          "page_text_sha256": [
+            "3247a7992ea1371d174fd19ee12b08caa6b2c2316c7401930ac7ded2bff09827",
+            "92c93fa95639eba3390f90dbe5fd9e9c4b34f68b68a85598d66ee739edcc153e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-14-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=2kg,g=10m/s²,h=3m,v=4m/s. Tanlangan nol sathga nisbatan E mexanik energiyani top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "3",
+          "unit": "m"
+        },
+        {
+          "symbol": "v",
+          "value": "4",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h",
+        "v"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-14",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            50
+          ],
+          "printed_pages": [
+            49
+          ],
+          "page_text_sha256": [
+            "92c93fa95639eba3390f90dbe5fd9e9c4b34f68b68a85598d66ee739edcc153e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-14-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis yuqoriga parallel tortish: m=2kg,g=10m/s²,h=0,8m,kinetik mu=0,5,cotA=0,75 tayyor qiymat. Umumiy At ishni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "0.8",
+          "unit": "m"
+        },
+        {
+          "symbol": "mu",
+          "value": "0.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "cotA",
+          "value": "0.75",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "h",
+        "mu",
+        "cotA"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-14",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            51,
+            52
+          ],
+          "printed_pages": [
+            50,
+            51
+          ],
+          "page_text_sha256": [
+            "128e2967e282316fa66bd2fb02c4fc6844ffb918f4788641601f0499e301376c",
+            "745b61993e7d7764818f4f81710b4be142408a8efce5d7a2ab6b5b6854c0c746"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-14-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis parallel tortish modeli: kinetik mu=0,5,cotA=0,75 tayyor berilgan. eta ni0,01 FOIZ PUNKTI qadamgacha yaxlitlab foizda yoz; sonli maydonga ulush emas foiz kirit.",
+      "givens": [
+        {
+          "symbol": "mu",
+          "value": "0.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "cotA",
+          "value": "0.75",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "mu",
+        "cotA"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-14",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            52
+          ],
+          "printed_pages": [
+            51
+          ],
+          "page_text_sha256": [
+            "745b61993e7d7764818f4f81710b4be142408a8efce5d7a2ab6b5b6854c0c746"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-14-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis yuqoriga parallel tortish: m=2kg,g=10m/s²,sinA=0,8,cosA=0,6,kinetik mu=0,5. F tortish modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.8",
+          "unit": "1"
+        },
+        {
+          "symbol": "mu",
+          "value": "0.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "cosA",
+          "value": "0.6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "m",
+        "g",
+        "sinA",
+        "mu",
+        "cosA"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-14",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            52
+          ],
+          "printed_pages": [
+            51
+          ],
+          "page_text_sha256": [
+            "745b61993e7d7764818f4f81710b4be142408a8efce5d7a2ab6b5b6854c0c746"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-15-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI tekis tortish jadvali: F=12N, qiya yo‘l s=l=1,5m. Umumiy A ishni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "1.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "s"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-15",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            53
+          ],
+          "printed_pages": [
+            52
+          ],
+          "page_text_sha256": [
+            "4198d4369b2583c0b805d234fa5d8028f93168d3559de05e1d3d048cf3e6e942"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-15-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI foydali ko‘tarish: F=P=20N, vertikal h=0,6m. A foydali ishni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "20",
+          "unit": "N"
+        },
+        {
+          "symbol": "h",
+          "value": "0.6",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "F",
+        "h"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-15",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            53
+          ],
+          "printed_pages": [
+            52
+          ],
+          "page_text_sha256": [
+            "4198d4369b2583c0b805d234fa5d8028f93168d3559de05e1d3d048cf3e6e942"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-15-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI tekis tortish: P=20N,h=0,6m,F=12N,s=l=1,5m. eta ni0,01FOIZ PUNKTI qadamgacha yaxlitlab foizda yoz.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "20",
+          "unit": "N"
+        },
+        {
+          "symbol": "h",
+          "value": "0.6",
+          "unit": "m"
+        },
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "N"
+        },
+        {
+          "symbol": "s",
+          "value": "1.5",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "P",
+        "h",
+        "F",
+        "s"
+      ],
+      "suggested_unit": "%",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-15",
+          "chapter_id": "physics-10-chapter-3",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            53
+          ],
+          "printed_pages": [
+            52
+          ],
+          "page_text_sha256": [
+            "4198d4369b2583c0b805d234fa5d8028f93168d3559de05e1d3d048cf3e6e942"
+          ]
+        }
+      ]
     }
   ]
 }
