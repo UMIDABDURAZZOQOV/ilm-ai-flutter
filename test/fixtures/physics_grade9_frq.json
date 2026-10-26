@@ -5764,6 +5764,342 @@
         "1",
         "%"
       ]
+    },
+    {
+      "key": "physics-9-section-46-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil vaqtda n1=1,2muhitda s1=60cm,ikkinchida s2=40cm. n2ni top.",
+      "givens": [
+        {
+          "symbol": "n1",
+          "value": "1.2",
+          "unit": "1"
+        },
+        {
+          "symbol": "s1",
+          "value": "60",
+          "unit": "cm"
+        },
+        {
+          "symbol": "s2",
+          "value": "40",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "n1",
+        "s1",
+        "s2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-46-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Oddiy muhitlar,c=3e8m/s,n1=1,5,sina=0,8,sinb=0,4 BERILGAN sinuslar. Ikkinchi muhit v2tezligini top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "sinb",
+          "value": "0.4",
+          "unit": "1"
+        },
+        {
+          "symbol": "n1",
+          "value": "1.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "sina",
+          "value": "0.8",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "c",
+        "sinb",
+        "n1",
+        "sina"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-46-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Normal ikki yonidagi tushgan/qaytgan nur kesmalari orasidagi ICHKI geometrik theta=80°. Normaldan tushish alpha burchagini top.",
+      "givens": [
+        {
+          "symbol": "theta",
+          "value": "80",
+          "unit": "°"
+        }
+      ],
+      "symbols": [
+        "theta"
+      ],
+      "suggested_unit": "°",
+      "unit_choices": [
+        "°",
+        "deg"
+      ]
+    },
+    {
+      "key": "physics-9-section-46-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Haqiqiy buyum yassi ko‘zgudan d=25cm oldinda. Buyum va mavhum tasvir oralig‘i sni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "25",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "d"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-47-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Oddiy muhitlarda n1=2dan n2=1ga o‘tish chegarasi. sinCritni top,burchakning gradus qiymatini emas.",
+      "givens": [
+        {
+          "symbol": "n2",
+          "value": "1",
+          "unit": "1"
+        },
+        {
+          "symbol": "n1",
+          "value": "2",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "n2",
+        "n1"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-48-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Oddiy muhitlar:n2=1,Aynan kritik sinCrit=0,6 BERILGAN. n1ni eng yaqin0,001qadamda yoz.",
+      "givens": [
+        {
+          "symbol": "n2",
+          "value": "1",
+          "unit": "1"
+        },
+        {
+          "symbol": "sinCrit",
+          "value": "0.6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "n2",
+        "sinCrit"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-48-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tashqi muhit n2=1,c=3e8m/s,Aynan kritik sinCrit=0,6 BERILGAN. Ichki muhit v1tezligini top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "sinCrit",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "n2",
+          "value": "1",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "c",
+        "sinCrit",
+        "n2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-49-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "73-rasmdagi normal birinchi kirish/havoga chiqish modelida sinExit=0,75,sinA=0,5 BERILGAN. Prizma nko‘rsatkichini top.",
+      "givens": [
+        {
+          "symbol": "sinExit",
+          "value": "0.75",
+          "unit": "1"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.5",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "sinExit",
+        "sinA"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-49-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir modda va bir sharoit uchun shartli nA=1,48,nB=1,52. nMean arifmetik o‘rtachani top;haqiqiy o‘lchov deb belgilanmaydi.",
+      "givens": [
+        {
+          "symbol": "nA",
+          "value": "1.48",
+          "unit": "1"
+        },
+        {
+          "symbol": "nB",
+          "value": "1.52",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "nA",
+        "nB"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-50-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sochuvchi yupqa linza:F=-20cm,kitob signed konvensiyasi. Dni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "-20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F"
+      ],
+      "suggested_unit": "dptr",
+      "unit_choices": [
+        "dptr",
+        "1/m"
+      ]
+    },
+    {
+      "key": "physics-9-section-50-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yig‘uvchi yupqa linza:D=2,5dptr. Signed Fni metrda top.",
+      "givens": [
+        {
+          "symbol": "D",
+          "value": "2.5",
+          "unit": "dptr"
+        }
+      ],
+      "symbols": [
+        "D"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-50-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Havodagi yupqa BIKONVEKS linza:n=1,5,R1=12cm,R2=24cm MUSBAT radius modullari. Paraxial modeldagi Fni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "1.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "R1",
+          "value": "12",
+          "unit": "cm"
+        },
+        {
+          "symbol": "R2",
+          "value": "24",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "n",
+        "R1",
+        "R2"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
     }
   ]
 }
