@@ -7961,6 +7961,361 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-10-section-41-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil geometriya/katodtemperaturasi va ikkala nuqtada FAZOVIY ZARYAD bilan cheklangan I=kU^(3/2) rejimi:U1=4V,U2=16V. ratio=I2/I1 ni top.",
+      "givens": [
+        {
+          "symbol": "U1",
+          "value": "4",
+          "unit": "V"
+        },
+        {
+          "symbol": "U2",
+          "value": "16",
+          "unit": "V"
+        }
+      ],
+      "symbols": [
+        "U1",
+        "U2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-41",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            154
+          ],
+          "printed_pages": [
+            153
+          ],
+          "page_text_sha256": [
+            "886864e910e3215515bfcbaf676e54d9f7126615c329a455675ef9695f88a38e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-42-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Berilgan intervalda konstantalpha chiziqli model:R0=50Ω,alpha=0,004/K,DT=25K FARQ. Rni top.",
+      "givens": [
+        {
+          "symbol": "R0",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "alpha",
+          "value": "0.004",
+          "unit": "1/K"
+        },
+        {
+          "symbol": "DT",
+          "value": "25",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "R0",
+        "alpha",
+        "DT"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-42",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            156
+          ],
+          "printed_pages": [
+            155
+          ],
+          "page_text_sha256": [
+            "0090ab6be0a46e49fb6149ad9bfbaef0fd2b87009291f76501ad573d2b6ab224"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-42-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan chiziqli oddiy metall:R0=50Ω,R=55Ω,DT=25K FARQ. alpha ni top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "55",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R0",
+          "value": "50",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "DT",
+          "value": "25",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "R",
+        "R0",
+        "DT"
+      ],
+      "suggested_unit": "1/K",
+      "unit_choices": [
+        "1/K"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-42",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            156
+          ],
+          "printed_pages": [
+            155
+          ],
+          "page_text_sha256": [
+            "0090ab6be0a46e49fb6149ad9bfbaef0fd2b87009291f76501ad573d2b6ab224"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-42-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chiziqli model/geometriya o‘zgarishi e’tiborsiz:rho0=2e-8Ω*m,alpha=0,004/K,DT=25K FARQ. rho ni top.",
+      "givens": [
+        {
+          "symbol": "rho0",
+          "value": "2e-8",
+          "unit": "Ω*m"
+        },
+        {
+          "symbol": "alpha",
+          "value": "0.004",
+          "unit": "1/K"
+        },
+        {
+          "symbol": "DT",
+          "value": "25",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "rho0",
+        "alpha",
+        "DT"
+      ],
+      "suggested_unit": "Ω*m",
+      "unit_choices": [
+        "Ω*m"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-42",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            156
+          ],
+          "printed_pages": [
+            155
+          ],
+          "page_text_sha256": [
+            "0090ab6be0a46e49fb6149ad9bfbaef0fd2b87009291f76501ad573d2b6ab224"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-42-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan chiziqli interval:R=55Ω,alpha=0,004/K,DT=25K tayanchdan FARQ. R0ni top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "55",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "alpha",
+          "value": "0.004",
+          "unit": "1/K"
+        },
+        {
+          "symbol": "DT",
+          "value": "25",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "R",
+        "alpha",
+        "DT"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-42",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            156,
+            158
+          ],
+          "printed_pages": [
+            155,
+            157
+          ],
+          "page_text_sha256": [
+            "0090ab6be0a46e49fb6149ad9bfbaef0fd2b87009291f76501ad573d2b6ab224",
+            "f81ba359750f7f4bbcf1bd94d215097da023231c4ae23f415200b8319c4909f6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-45-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI to‘g‘ri diod nuqtasi:U=|U|=0,3V,I=|I|=10mA. Faqat shu nuqtaning R=U/I nisbatini top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "0.3",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "10",
+          "unit": "mA"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-45",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            168
+          ],
+          "printed_pages": [
+            167
+          ],
+          "page_text_sha256": [
+            "0bbff38cbaef5465a7e05f5040165094eae35d782606a9789b15e26845683104"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-45-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI teskari diod nuqtasi:U=|U|=5V,I=|I|=0,01mA. Faqat shu nuqtaning R=U/I nisbatini top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "5",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "0.01",
+          "unit": "mA"
+        }
+      ],
+      "symbols": [
+        "U",
+        "I"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-45",
+          "chapter_id": "physics-10-chapter-9",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            168
+          ],
+          "printed_pages": [
+            167
+          ],
+          "page_text_sha256": [
+            "0bbff38cbaef5465a7e05f5040165094eae35d782606a9789b15e26845683104"
+          ]
+        }
+      ]
     }
   ]
 }
