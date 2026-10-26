@@ -16,7 +16,7 @@
   },
   "subject_name": "O‘zbekiston tarixi",
   "source_sections": 42,
-  "implemented_sections": 15,
+  "implemented_sections": 20,
   "course_complete": false,
   "independent_review_pending": true,
   "course_ready": false,
@@ -2616,6 +2616,847 @@
           ],
           "native_text_sha256": [
             "f202e07b78e3cc38c6481400596a7f5ff1c92b3f62fca893a0f9c65bf0665662"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-16-r1",
+      "sequence": 16,
+      "title": "Qoraxoniylar",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:titles",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            55
+          ],
+          "printed_pages": [
+            55
+          ],
+          "native_text_sha256": [
+            "1274c398367af99253708e21dd14d84e53df20c822915460ceece9b1d479390a"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 151.054
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:attack992",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            56
+          ],
+          "printed_pages": [
+            56
+          ],
+          "native_text_sha256": [
+            "7dd69d7cb5cfa38e8853f3fd3bdf9fa5cfc0fb4a13b97ae68715a94744f0a882"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:nasr999",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            56
+          ],
+          "printed_pages": [
+            56
+          ],
+          "native_text_sha256": [
+            "7dd69d7cb5cfa38e8853f3fd3bdf9fa5cfc0fb4a13b97ae68715a94744f0a882"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:centres",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            57
+          ],
+          "printed_pages": [
+            57
+          ],
+          "native_text_sha256": [
+            "0cf8780dc09fc3e91d3c2bb04058c4f06e07686b25aaf6b3f18ba47df5d28799"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:iqto",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            58
+          ],
+          "printed_pages": [
+            58
+          ],
+          "native_text_sha256": [
+            "40e463fd577358fbb9dfeae689fa23327cc1ce9252b71fcc052278e11d56b87d"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:dehqon",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            57,
+            58
+          ],
+          "printed_pages": [
+            57,
+            58
+          ],
+          "native_text_sha256": [
+            "0cf8780dc09fc3e91d3c2bb04058c4f06e07686b25aaf6b3f18ba47df5d28799",
+            "40e463fd577358fbb9dfeae689fa23327cc1ce9252b71fcc052278e11d56b87d"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:craft",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            58,
+            59
+          ],
+          "printed_pages": [
+            58,
+            59
+          ],
+          "native_text_sha256": [
+            "40e463fd577358fbb9dfeae689fa23327cc1ce9252b71fcc052278e11d56b87d",
+            "e9c15e5a219f48c4c5e4ff5af33545572f8bfbc2fb93f04cbee456e8724f64ba"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-16",
+          "fact_id": "uzh-7-topic-16:qatvon1141",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            59
+          ],
+          "printed_pages": [
+            59
+          ],
+          "native_text_sha256": [
+            "e9c15e5a219f48c4c5e4ff5af33545572f8bfbc2fb93f04cbee456e8724f64ba"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-17-r1",
+      "sequence": 17,
+      "title": "Xorazm davlati va uning yuksalishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:mamun995",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            60
+          ],
+          "printed_pages": [
+            60
+          ],
+          "native_text_sha256": [
+            "05f56f97a41cdd27ac6d4f26ba78f0b867b4fe27511cd4c0951cbced9ebe0466"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 192.257
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:capital",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            60,
+            62
+          ],
+          "printed_pages": [
+            60,
+            62
+          ],
+          "native_text_sha256": [
+            "05f56f97a41cdd27ac6d4f26ba78f0b867b4fe27511cd4c0951cbced9ebe0466",
+            "cddbcfe9a64d4453ebe8b6937dc07b8e7492416b37b2212bffa6ed97a44b99c0"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 192.257
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:noibs",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            61
+          ],
+          "printed_pages": [
+            61
+          ],
+          "native_text_sha256": [
+            "439b200e7d5a0d3abfa4c285c48bda0a467aeac3d2ead803570f6141ba55b651"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:otsiz",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            61
+          ],
+          "printed_pages": [
+            61
+          ],
+          "native_text_sha256": [
+            "439b200e7d5a0d3abfa4c285c48bda0a467aeac3d2ead803570f6141ba55b651"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:takash1194",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            61
+          ],
+          "printed_pages": [
+            61
+          ],
+          "native_text_sha256": [
+            "439b200e7d5a0d3abfa4c285c48bda0a467aeac3d2ead803570f6141ba55b651"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:talas1210",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            61
+          ],
+          "printed_pages": [
+            61
+          ],
+          "native_text_sha256": [
+            "439b200e7d5a0d3abfa4c285c48bda0a467aeac3d2ead803570f6141ba55b651"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-17",
+          "fact_id": "uzh-7-topic-17:tensions",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            62
+          ],
+          "native_text_sha256": [
+            "cddbcfe9a64d4453ebe8b6937dc07b8e7492416b37b2212bffa6ed97a44b99c0"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-18-r1",
+      "sequence": 18,
+      "title": "Xorazmshoh va Chingizxon munosabatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:qurultoy1206",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            63
+          ],
+          "printed_pages": [
+            63
+          ],
+          "native_text_sha256": [
+            "890a2cae1a347d7ebd02a24e7c08a55ea8f347d1681e39a4b6f6a69d15fe055e"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 40.809
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:envoy1216",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            63
+          ],
+          "printed_pages": [
+            63
+          ],
+          "native_text_sha256": [
+            "890a2cae1a347d7ebd02a24e7c08a55ea8f347d1681e39a4b6f6a69d15fe055e"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 40.809
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:yalavoch1218",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            63,
+            64
+          ],
+          "printed_pages": [
+            63,
+            64
+          ],
+          "native_text_sha256": [
+            "890a2cae1a347d7ebd02a24e7c08a55ea8f347d1681e39a4b6f6a69d15fe055e",
+            "8c4c797e653d4eaf1db9cbef66ecd7d48171cf652f3e4c30aeff76f8bd3d3a36"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 40.809
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:otrar",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            64
+          ],
+          "printed_pages": [
+            64
+          ],
+          "native_text_sha256": [
+            "8c4c797e653d4eaf1db9cbef66ecd7d48171cf652f3e4c30aeff76f8bd3d3a36"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:break",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            64,
+            65
+          ],
+          "printed_pages": [
+            64,
+            65
+          ],
+          "native_text_sha256": [
+            "8c4c797e653d4eaf1db9cbef66ecd7d48171cf652f3e4c30aeff76f8bd3d3a36",
+            "3e986e4b5df0f1d756ba0d363dcab8ac67f279ab2d8751c852c5738e7a2e2a82"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:council",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            65
+          ],
+          "printed_pages": [
+            65
+          ],
+          "native_text_sha256": [
+            "3e986e4b5df0f1d756ba0d363dcab8ac67f279ab2d8751c852c5738e7a2e2a82"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-18",
+          "fact_id": "uzh-7-topic-18:governance",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            65,
+            66
+          ],
+          "printed_pages": [
+            65,
+            66
+          ],
+          "native_text_sha256": [
+            "3e986e4b5df0f1d756ba0d363dcab8ac67f279ab2d8751c852c5738e7a2e2a82",
+            "0b5f1b904c3c41b0df4872ac51a5747315544b5ceb97f04917962b99e04dcd26"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "end_before_y": 332.561
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-19-r1",
+      "sequence": 19,
+      "title": "Muhammad Xorazmshohning mamlakat mudofaasiga oid tadbirlari va uning oqibati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:defence",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            66,
+            67
+          ],
+          "printed_pages": [
+            66,
+            67
+          ],
+          "native_text_sha256": [
+            "0b5f1b904c3c41b0df4872ac51a5747315544b5ceb97f04917962b99e04dcd26",
+            "c94c711b87f59049818e5103102cabec75684ba62e303c806761aea537a6653f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 332.561
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:otrar1219",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            67
+          ],
+          "native_text_sha256": [
+            "c94c711b87f59049818e5103102cabec75684ba62e303c806761aea537a6653f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:bukhara1220",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            67
+          ],
+          "native_text_sha256": [
+            "c94c711b87f59049818e5103102cabec75684ba62e303c806761aea537a6653f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:samarkand",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            68
+          ],
+          "native_text_sha256": [
+            "81c2d4738794c53287dce1b7cb89e0da677756a1904de9f9d6b4c72574eee6e2"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:temur",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            68
+          ],
+          "printed_pages": [
+            68
+          ],
+          "native_text_sha256": [
+            "81c2d4738794c53287dce1b7cb89e0da677756a1904de9f9d6b4c72574eee6e2"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:urganch1221",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            68,
+            69
+          ],
+          "printed_pages": [
+            68,
+            69
+          ],
+          "native_text_sha256": [
+            "81c2d4738794c53287dce1b7cb89e0da677756a1904de9f9d6b4c72574eee6e2",
+            "f82c658647f1e6dadae42322460d77ced1c2b2868dded029ed27828eb9ba48df"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:kubro",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            69,
+            70
+          ],
+          "printed_pages": [
+            69,
+            70
+          ],
+          "native_text_sha256": [
+            "f82c658647f1e6dadae42322460d77ced1c2b2868dded029ed27828eb9ba48df",
+            "e019fadd8e6087a517d1fadebfba1603fd6dd4d6415cca17ee9e449706a29252"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-19",
+          "fact_id": "uzh-7-topic-19:consequence",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            67,
+            68,
+            69
+          ],
+          "printed_pages": [
+            67,
+            68,
+            69
+          ],
+          "native_text_sha256": [
+            "c94c711b87f59049818e5103102cabec75684ba62e303c806761aea537a6653f",
+            "81c2d4738794c53287dce1b7cb89e0da677756a1904de9f9d6b4c72574eee6e2",
+            "f82c658647f1e6dadae42322460d77ced1c2b2868dded029ed27828eb9ba48df"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-20-r1",
+      "sequence": 20,
+      "title": "Jaloliddin Manguberdining Xorazm taxtiga o‘tirishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:heir1220",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            71
+          ],
+          "printed_pages": [
+            71
+          ],
+          "native_text_sha256": [
+            "58506db78d860c684b68a4aa589c0656a2b9bc29572e8a6694b039728cfeb472"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 40.809
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:valiyon",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            71
+          ],
+          "printed_pages": [
+            71
+          ],
+          "native_text_sha256": [
+            "58506db78d860c684b68a4aa589c0656a2b9bc29572e8a6694b039728cfeb472"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 40.809
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:parvon",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            71,
+            72,
+            73
+          ],
+          "printed_pages": [
+            71,
+            72,
+            73
+          ],
+          "native_text_sha256": [
+            "58506db78d860c684b68a4aa589c0656a2b9bc29572e8a6694b039728cfeb472",
+            "aa3eecee98937eaedde5c67ea05d883575c80393fa2e850b7ec7d83e345c72b1",
+            "57a505db3b29ae19d81cf838bfeafb018f6e29758e6e418d9986285521a38d0c"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 40.809
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:sind1221",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            72,
+            73
+          ],
+          "printed_pages": [
+            72,
+            73
+          ],
+          "native_text_sha256": [
+            "aa3eecee98937eaedde5c67ea05d883575c80393fa2e850b7ec7d83e345c72b1",
+            "57a505db3b29ae19d81cf838bfeafb018f6e29758e6e418d9986285521a38d0c"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:dam",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            72
+          ],
+          "printed_pages": [
+            72
+          ],
+          "native_text_sha256": [
+            "aa3eecee98937eaedde5c67ea05d883575c80393fa2e850b7ec7d83e345c72b1"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:craft",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            72,
+            73
+          ],
+          "printed_pages": [
+            72,
+            73
+          ],
+          "native_text_sha256": [
+            "aa3eecee98937eaedde5c67ea05d883575c80393fa2e850b7ec7d83e345c72b1",
+            "57a505db3b29ae19d81cf838bfeafb018f6e29758e6e418d9986285521a38d0c"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-3",
+          "topic_id": "uzh-7-topic-20",
+          "fact_id": "uzh-7-topic-20:name",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            73
+          ],
+          "printed_pages": [
+            73
+          ],
+          "native_text_sha256": [
+            "57a505db3b29ae19d81cf838bfeafb018f6e29758e6e418d9986285521a38d0c"
           ],
           "verification": "original_text_and_image_checked",
           "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
