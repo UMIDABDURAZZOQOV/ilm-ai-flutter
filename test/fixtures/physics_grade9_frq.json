@@ -2243,6 +2243,821 @@
         "mJ",
         "MJ"
       ]
+    },
+    {
+      "key": "physics-9-section-16-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gaz p=80kPa absolyut bosimda izobarik V1=3L danV2=8L gacha kengaydi. Gaz bajargan signed A ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "80",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V2",
+          "value": "8",
+          "unit": "L"
+        },
+        {
+          "symbol": "V1",
+          "value": "3",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-16-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gaz p=100kPa absolyut bosimda V1=5L danV2=2L gacha izobarik siqildi. Gaz bajargan signed A ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "100",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V2",
+          "value": "2",
+          "unit": "L"
+        },
+        {
+          "symbol": "V1",
+          "value": "5",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-16-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz izobarik:nu=2mol,R=8,31J/(mol*K),T1=300K,T2=350K. A ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "2",
+          "unit": "mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T2",
+          "value": "350",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "R",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-16-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kislorod izobarik qizdirildi:A=1662J gaz ishi,M=32g/mol,R=8,31J/(mol*K),DT=40K ortish. m ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "1662",
+          "unit": "J"
+        },
+        {
+          "symbol": "M",
+          "value": "32",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "DT",
+          "value": "40",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "A",
+        "M",
+        "R",
+        "DT"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-16-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gazning izobarik bajargan signed ishi A=-200J,p=50kPa absolyut. Signed DV=V2-V1 ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "-200",
+          "unit": "J"
+        },
+        {
+          "symbol": "p",
+          "value": "50",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "A",
+        "p"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
+    },
+    {
+      "key": "physics-9-section-17-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faza o‘zgarmaydi:m=0,25kg suv,c=4200J/(kg*K),T1=293K,T2=313K. Signed Q ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.25",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "T2",
+          "value": "313",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "293",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "m",
+        "c",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-17-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faza o‘zgarmagan jism:m=0,2kg,Q=1560J olingan,T1=300K,T2=320K. c ni top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "1560",
+          "unit": "J"
+        },
+        {
+          "symbol": "m",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "T2",
+          "value": "320",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "m",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J/(kg*K)",
+      "unit_choices": [
+        "J/(kg*K)",
+        "kJ/(kg*K)"
+      ]
+    },
+    {
+      "key": "physics-9-section-17-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal balans,bir xil c li suvlar:mh=0,2kg,Th=333K,mc=0,3kg,Tc=293K. Idish va tashqi almashinuv e’tiborsiz. Tf ni top.",
+      "givens": [
+        {
+          "symbol": "mh",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "Th",
+          "value": "333",
+          "unit": "K"
+        },
+        {
+          "symbol": "mc",
+          "value": "0.3",
+          "unit": "kg"
+        },
+        {
+          "symbol": "Tc",
+          "value": "293",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "mh",
+        "Th",
+        "mc",
+        "Tc"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-17-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli balans:mw=0,1kg,cw=4200J/(kg*K),mc=0,1kg,cc=890J/(kg*K),mh=0,2kg,Th=353K,Tc=293K,Tf=303K. Yo‘qotishsiz modelda ch ni top.",
+      "givens": [
+        {
+          "symbol": "mw",
+          "value": "0.1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "cw",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "mc",
+          "value": "0.1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "cc",
+          "value": "890",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "Tf",
+          "value": "303",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "293",
+          "unit": "K"
+        },
+        {
+          "symbol": "mh",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "Th",
+          "value": "353",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "mw",
+        "cw",
+        "mc",
+        "cc",
+        "Tf",
+        "Tc",
+        "mh",
+        "Th"
+      ],
+      "suggested_unit": "J/(kg*K)",
+      "unit_choices": [
+        "J/(kg*K)",
+        "kJ/(kg*K)"
+      ]
+    },
+    {
+      "key": "physics-9-section-17-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Chegaraviy model:yo‘qolgan mgh to‘liq suvning ichki energiyasiga o‘tdi.g=9,81N/kg,h=140m,c=4200J/(kg*K). D temperatura ortishini top.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "9.81",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "140",
+          "unit": "m"
+        },
+        {
+          "symbol": "c",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        }
+      ],
+      "symbols": [
+        "g",
+        "h",
+        "c"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-18-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil miqdordagi BIR ATOMLI klassik ideal gaz:p1=100kPa,V1=2L,p2=200kPa,V2=3L. DU=U2-U1 ni top.",
+      "givens": [
+        {
+          "symbol": "p2",
+          "value": "200",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V2",
+          "value": "3",
+          "unit": "L"
+        },
+        {
+          "symbol": "p1",
+          "value": "100",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V1",
+          "value": "2",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p2",
+        "V2",
+        "p1",
+        "V1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-18-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz izobarik:p=100kPa absolyut,V1=2L,T1=300K,T2=450K. Gaz bajargan signed A ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "100",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V1",
+          "value": "2",
+          "unit": "L"
+        },
+        {
+          "symbol": "T2",
+          "value": "450",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V1",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-18-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal suv balansi:Tc=293K,Th=353K,Tf=317K,Vtotal=10L. Bir xil c/zichlik,hajmlar qo‘shiladi,yo‘qotish yo‘q. Vcold ni top.",
+      "givens": [
+        {
+          "symbol": "Vtotal",
+          "value": "10",
+          "unit": "L"
+        },
+        {
+          "symbol": "Th",
+          "value": "353",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tf",
+          "value": "317",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "293",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "Vtotal",
+        "Th",
+        "Tf",
+        "Tc"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
+    },
+    {
+      "key": "physics-9-section-18-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy po‘lat jism to‘xtadi:v=300m/s,c=460J/(kg*K),energiya eta=0,54ulushi atrofga ketdi,qolgani jismga,faza o‘zgarmadi. D ortishni top.",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "0.54",
+          "unit": "1"
+        },
+        {
+          "symbol": "v",
+          "value": "300",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "460",
+          "unit": "J/(kg*K)"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-19-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Jadval modeli:sovuq suv m=0,2kg,c=4200J/(kg*K),T1=303K,T2=313K. Signed Q ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "T2",
+          "value": "313",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "303",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "m",
+        "c",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-19-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Jadval modeli:issiq suv m=0,1kg,c=4200J/(kg*K),T1=333K,T2=313K. Signed Q ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "T2",
+          "value": "313",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "333",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "m",
+        "c",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-19-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal model:mh=0,1kg suv Th=333K,mc=0,2kg suv Tc=303K,bir xil c va tashqi/idish ta’siri e’tiborsiz. Tf ni top.",
+      "givens": [
+        {
+          "symbol": "mh",
+          "value": "0.1",
+          "unit": "kg"
+        },
+        {
+          "symbol": "Th",
+          "value": "333",
+          "unit": "K"
+        },
+        {
+          "symbol": "mc",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "Tc",
+          "value": "303",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "mh",
+        "Th",
+        "mc",
+        "Tc"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-20-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli model:mw=0,05kg,cw=4200J/(kg*K),mc=0,2kg,cc=890J/(kg*K),mh=0,2kg,Th=353K,Tc=293K,Tf=303K. Yo‘qotishsiz ch ni top.",
+      "givens": [
+        {
+          "symbol": "mw",
+          "value": "0.05",
+          "unit": "kg"
+        },
+        {
+          "symbol": "cw",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "mc",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "cc",
+          "value": "890",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "Tf",
+          "value": "303",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "293",
+          "unit": "K"
+        },
+        {
+          "symbol": "mh",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "Th",
+          "value": "353",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "mw",
+        "cw",
+        "mc",
+        "cc",
+        "Tf",
+        "Tc",
+        "mh",
+        "Th"
+      ],
+      "suggested_unit": "J/(kg*K)",
+      "unit_choices": [
+        "J/(kg*K)",
+        "kJ/(kg*K)"
+      ]
+    },
+    {
+      "key": "physics-9-section-20-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli uch baho:c1=385,c2=390,c3=392 J/(kg*K). cmean ni top;bu haqiqiy o‘lchov qaydi deb ko‘rsatilmaydi.",
+      "givens": [
+        {
+          "symbol": "c1",
+          "value": "385",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "c2",
+          "value": "390",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "c3",
+          "value": "392",
+          "unit": "J/(kg*K)"
+        }
+      ],
+      "symbols": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "suggested_unit": "J/(kg*K)",
+      "unit_choices": [
+        "J/(kg*K)",
+        "kJ/(kg*K)"
+      ]
+    },
+    {
+      "key": "physics-9-section-20-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli suv va kalorimetr:mw=0,05kg,cw=4200J/(kg*K),mc=0,2kg,cc=890J/(kg*K),Tc=293K,Tf=303K. Ikkalasi olgan jami Q ni top.",
+      "givens": [
+        {
+          "symbol": "mw",
+          "value": "0.05",
+          "unit": "kg"
+        },
+        {
+          "symbol": "cw",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "mc",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "cc",
+          "value": "890",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "Tf",
+          "value": "303",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "293",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "mw",
+        "cw",
+        "mc",
+        "cc",
+        "Tf",
+        "Tc"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
     }
   ]
 }
