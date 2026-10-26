@@ -843,7 +843,7 @@ void main() {
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
     final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
-    expect(questions, hasLength(201));
+    expect(questions, hasLength(205));
     for (final question in questions) {
       Json? edited;
       final draft = <String, (String, String)>{

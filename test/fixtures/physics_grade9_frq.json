@@ -6520,6 +6520,142 @@
         "1",
         "%"
       ]
+    },
+    {
+      "key": "physics-9-section-56-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Haqiqiy kamera tasviri modeli:d=5,1m,F=10cm,h=40mm. Buyum Hbalandligini top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "5.1",
+          "unit": "m"
+        },
+        {
+          "symbol": "F",
+          "value": "10",
+          "unit": "cm"
+        },
+        {
+          "symbol": "h",
+          "value": "40",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "d",
+        "F",
+        "h"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-56-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yupqa obyektivning haqiqiy tasvir modeli:F=10cm,H=3m,h=15mm. Buyum dmasofasini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "10",
+          "unit": "cm"
+        },
+        {
+          "symbol": "H",
+          "value": "3",
+          "unit": "m"
+        },
+        {
+          "symbol": "h",
+          "value": "15",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "H",
+        "h"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-56-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kitob SODDALASHTIRILGAN mikroskop modeli:l=40cm,D0=25cm,F1=1cm,F2=2cm. Kni shu modeldan top.",
+      "givens": [
+        {
+          "symbol": "l",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "D0",
+          "value": "25",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F1",
+          "value": "1",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F2",
+          "value": "2",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "l",
+        "D0",
+        "F1",
+        "F2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-56-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "ABSTRAKT yupqa linza:haqiqiy buyum d=25cm,kerakli MAVHUM tasvir f=-20cm signed. Dni top;bu odam uchun retsept emas.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "25",
+          "unit": "cm"
+        },
+        {
+          "symbol": "f",
+          "value": "-20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "d",
+        "f"
+      ],
+      "suggested_unit": "dptr",
+      "unit_choices": [
+        "dptr",
+        "1/m"
+      ]
     }
   ]
 }
