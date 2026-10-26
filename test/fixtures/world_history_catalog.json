@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 46,
-  "implemented_sections": 21,
+  "implemented_sections": 26,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 25,
+  "source_review_issue_count": 20,
   "grade_content_complete": false,
   "implemented_grades": [
     6
@@ -3530,6 +3530,591 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh6-p21-page086"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p22-r1",
+      "sequence": 22,
+      "title": "Qadimgi Yunonistonning yuksalishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic22",
+          "topic_title": "Qadimgi Yunonistonning yuksalishi",
+          "paragraph": 22,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p22-page086"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic22",
+          "topic_title": "Qadimgi Yunonistonning yuksalishi",
+          "paragraph": 22,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p22-page087"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic22",
+          "topic_title": "Qadimgi Yunonistonning yuksalishi",
+          "paragraph": 22,
+          "printed_pages": [
+            88
+          ],
+          "pdf_pages": [
+            88
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p22-page088"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic22",
+          "topic_title": "Qadimgi Yunonistonning yuksalishi",
+          "paragraph": 22,
+          "printed_pages": [
+            89
+          ],
+          "pdf_pages": [
+            89
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p22-page089"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic22",
+          "topic_title": "Qadimgi Yunonistonning yuksalishi",
+          "paragraph": 22,
+          "printed_pages": [
+            90
+          ],
+          "pdf_pages": [
+            90
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p22-page090"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p23-r1",
+      "sequence": 23,
+      "title": "Yunon koloniyalari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic23",
+          "topic_title": "Yunon koloniyalari",
+          "paragraph": 23,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p23-page091"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic23",
+          "topic_title": "Yunon koloniyalari",
+          "paragraph": 23,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p23-page092"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic23",
+          "topic_title": "Yunon koloniyalari",
+          "paragraph": 23,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p23-page093"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p24-r1",
+      "sequence": 24,
+      "title": "Afinada demokratiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page093"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page094"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page095"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page096"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page097"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p25-r1",
+      "sequence": 25,
+      "title": "Yunon-fors urushlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic25",
+          "topic_title": "Yunon-fors urushlari",
+          "paragraph": 25,
+          "printed_pages": [
+            98
+          ],
+          "pdf_pages": [
+            98
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p25-page098"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic25",
+          "topic_title": "Yunon-fors urushlari",
+          "paragraph": 25,
+          "printed_pages": [
+            99
+          ],
+          "pdf_pages": [
+            99
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p25-page099"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic25",
+          "topic_title": "Yunon-fors urushlari",
+          "paragraph": 25,
+          "printed_pages": [
+            100
+          ],
+          "pdf_pages": [
+            100
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p25-page100"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic25",
+          "topic_title": "Yunon-fors urushlari",
+          "paragraph": 25,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p25-page101"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p26-r1",
+      "sequence": 26,
+      "title": "Yunonistonning Makedoniya tomonidan bosib olinishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic26",
+          "topic_title": "Yunonistonning Makedoniya tomonidan bosib olinishi",
+          "paragraph": 26,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p26-page102"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic26",
+          "topic_title": "Yunonistonning Makedoniya tomonidan bosib olinishi",
+          "paragraph": 26,
+          "printed_pages": [
+            103
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p26-page103"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic26",
+          "topic_title": "Yunonistonning Makedoniya tomonidan bosib olinishi",
+          "paragraph": 26,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p26-page104"
         }
       ]
     }
