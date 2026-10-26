@@ -6,9 +6,9 @@ Backend companion: `../ilm-ai-world-history/` on the matching feature branch.
 
 ## Current status
 
-Separate debug/loopback history screen and API are implemented. Grade6§1–6 are
-reviewed local-preview lessons:55 cards,39 MCQ,19 objective FRQ. **6/219 ready;
-213 remain.** Six books and961 original page images are inventoried;216 numbered
+Separate debug/loopback history screen and API are implemented. Grade6§1–11 are
+reviewed local-preview lessons:99 cards,68 MCQ,36 objective FRQ. **11/219 ready;
+208 remain.** Six books and961 original page images are inventoried;216 numbered
 blocks plus three conclusion/review units, with original chapters and ancillary links.
 Backend `docs/world_history/CHECKPOINT.md` is the continuation record.
 
@@ -17,11 +17,17 @@ reused. Six grades, original chapter expansion, bibliography, theory, MCQ, typed
 FRQ, self/teacher reflection and account/origin-scoped save/resume are present.
 No ordinary `main.dart`, release route, OAuth or other subject feature was changed.
 
-Measured QA:23 history tests, including actual API fixtures for all six lessons,
-320×568/200% light/dark and UZ/RU/EN interface. Current full suite **632 passed**;
-full Flutter analysis **0 issues**. Backend QA_REPORT.md records precise scope.
+Measured QA:33 history tests, including actual API fixtures for all eleven lessons,
+320×568/200% light/dark and UZ/RU/EN interface. Current full suite **642 passed**
+in03:41; full Flutter analysis **0 issues in112.4s**. Backend QA_REPORT.md records scope.
 Widget screenshots were visually inspected;
 no real Android/IME/TalkBack run or independent history-teacher approval is claimed.
+
+Batch02 is content/fixture coverage only; the existing History runtime/UI contract
+is unchanged. Large-fixture JSON decoding uses Dio `SyncTransformer` in widget
+tests so isolate decoding cannot escape the controlled test async zone; ordinary
+application networking remains unchanged. The initial failing§11 FRQ test was
+resolved and all33 targeted/642 full tests then passed.
 
 ## Local QA entrypoint
 

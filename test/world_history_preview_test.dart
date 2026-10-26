@@ -43,6 +43,9 @@ void main() {
     committed.clear();
     lostAnswer = false;
     dio = Dio(BaseOptions(baseUrl: 'http://127.0.0.1:8916'))
+      // Real API fixtures can exceed Dio's isolate-decoding threshold. Keep
+      // fixture decoding within the widget test's controlled async zone.
+      ..transformer = SyncTransformer()
       ..httpClientAdapter = Adapter((r) {
         requests.add(r);
         if (r.path.endsWith('/catalog')) {
@@ -227,7 +230,7 @@ void main() {
           find.byKey(const ValueKey('world_history-grade-11')),
           findsOneWidget,
         );
-        expect(find.text('6/46 dars mavjud.'), findsOneWidget);
+        expect(find.text('11/46 dars mavjud.'), findsOneWidget);
         expect(find.byType(ExpansionTile), findsNWidgets(7));
         await capture(t, 'path-${dark ? 'dark' : 'light'}-200');
         await tapFinder(
@@ -362,16 +365,18 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
-  for (var number = 2; number <= 6; number++) {
+  for (var number = 2; number <= 11; number++) {
     void selectParagraph() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('p${suffix}_lesson');
       results = fixture('p${suffix}_results');
-      catalog = fixture('batch01_completed_catalog');
+      catalog = fixture(
+        number >= 7 ? 'batch02_completed_catalog' : 'batch01_completed_catalog',
+      );
     }
 
     Future<void> openParagraph(WidgetTester t) async {
-      if (number == 6) {
+      if (number >= 6) {
         await tapFinder(
           t,
           find.byKey(const ValueKey('history-chapter-6-wh6-chapter02')),
@@ -420,6 +425,13 @@ void main() {
       await openParagraph(t);
       final q = questions[firstFrq];
       final answer = (results['answers'] as Map)[q['key']] as Map;
+      await capture(t, 'paragraph$number-frq-resume');
+      await t.scrollUntilVisible(
+        find.byKey(const Key('world-history-short-answer')),
+        180,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await t.pumpAndSettle();
       await t.enterText(
         find.byKey(const Key('world-history-short-answer')),
         answer['correct_answer'] as String,
