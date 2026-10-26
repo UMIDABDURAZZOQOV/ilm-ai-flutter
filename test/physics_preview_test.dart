@@ -928,7 +928,7 @@ void main() {
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
     final questions = jsonRows(fixture('physics_grade10_frq')['questions']);
-    expect(questions, hasLength(59));
+    expect(questions, hasLength(78));
     for (final question in questions) {
       Json? edited;
       final draft = <String, (String, String)>{
@@ -940,6 +940,9 @@ void main() {
         'physics-10-section-13-r1:q5': ('(Ft-Ff)/m', '-2'),
         'physics-10-section-14-r1:q9': ('1/(1+mu*cotA)', '72.73'),
         'physics-10-section-15-r1:q7': ('P*h/(F*s)', '66.67'),
+        'physics-10-section-16-r1:q6': ('((m1-m2)*v1+2*m2*v2)/(m1+m2)', '-2'),
+        'physics-10-section-18-r1:q6': ('F1*l1-F2*l2', '-2'),
+        'physics-10-section-20-r1:q8': ('sqrt(2*g*h+2*m*g/(rho*S))', '2.24'),
         'physics-10-section-3-r1:q5': ('v0-g*t', '-10'),
         'physics-10-section-3-r1:q11': ('sqrt(v0^2+2*g*h)', '20'),
         'physics-10-section-4-r1:q7': ('(omega-omega0)/t', '-2'),
