@@ -1,0 +1,1049 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p20-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+  "content": {
+    "cards": [
+      {
+        "title": "Foiz va molyarlik orasidagi ko‘prik",
+        "body": "FoizC% son qiymati,ρ g/mL va Mmol g/mol berilganda CM=10·ρ·C%/Mmol. CM mol/L da chiqadi.10 ko‘paytiruvchi1000 mL ni1 L ga va foizni yuzdan ulushga o‘tkazishdan keladi. C%=20 bo‘lsa ifodaga20 qo‘yiladi, 0,20 emas.",
+        "fact_ids": [
+          "basis"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          }
+        ]
+      },
+      {
+        "title": "10 ko‘paytiruvchi qayerdan keladi?",
+        "body": "1 L eritmaning hajmi1000 mL, shuning uchun massasi 1000ρ g. ShundanC% ga mos erigan modda massasi 1000ρ·C%/100=10ρC% g. UniMmol ga bo‘lish1 L dagi mol sonini beradi.",
+        "fact_ids": [
+          "litre"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          }
+        ]
+      },
+      {
+        "title": "Foiz va zichlikni teskari topish",
+        "body": "CM berilganda foizC%=CM·Mmol/(10ρ). Zichlikni topish uchunρ=CM·Mmol/(10C%). Birlikρ uchung/mL bo‘lishi ushbu10 ko‘paytiruvchili ko‘rinishning shartidir.",
+        "fact_ids": [
+          "inverse"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          }
+        ]
+      },
+      {
+        "title": "Molyar massaga o‘tish",
+        "body": "Foiz, zichlik va CM orqali Mmol=10ρC%/CM. Molyar massa natijasi noma’lum moddaning tarkibini barcha hollarda yagona aniqlamaydi. Formula yoki chekli nomzodlar haqida qo‘shimcha ma’lumot kerak.",
+        "fact_ids": [
+          "molar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page93"
+          }
+        ]
+      },
+      {
+        "title": "KOH uchun berilgan model",
+        "body": "Berilgan KOH modeli: C%=20,ρ=1,25 g/mL, Mmol=56 g/mol. CM=10·1,25·20/56≈4,46 mol/L, ikki kasr xonasigacha. Yaxlitlash darajasi javobning shartidir.",
+        "fact_ids": [
+          "potassium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page93"
+          }
+        ]
+      },
+      {
+        "title": "HNO3 ning asl mashqdagi5% modeli",
+        "body": "Asl mashqdagi HNO3 uchun C%=5 vaρ=1,26 g/mL berilgan; kitob misolida Mmol=63 g/mol. Formula orqali CM=10·1,26·5/63=1 mol/L. Bu asl formula va berilgan massa qiymati bilan tekshirilgan sonli model.",
+        "fact_ids": [
+          "nitric"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page93"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page94"
+          }
+        ]
+      },
+      {
+        "title": "KNO3 shartidan zichlikka",
+        "body": "Berilgan KNO3 modelida C%=20,2, CM=2,5 mol/L va Mmol=101 g/mol.ρ=2,5·101/(10·20,2)=1,25 g/mL. Eritma zichligini shu shartlardan topdik; K atom massasi alohida taxmin qilinmadi.",
+        "fact_ids": [
+          "nitrate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page93"
+          }
+        ]
+      },
+      {
+        "title": "Noma’lum modeldan faqatMmol ga",
+        "body": "Berilgan noma’lum modda modeli: C%=16,ρ=1,4 g/mL va CM=4 mol/L. Mmol=10·1,4·16/4=56 g/mol. Savol faqat molyar massani so‘raydi; shu 56 sonidan barcha mumkin bo‘lgan moddalarni yagona nom bilan almashtirmang.",
+        "fact_ids": [
+          "unknown"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page94"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Bir xil birliklar bilan to‘rtta ifoda",
+        "body": "CM=10ρC%/Mmol; C%=CM·Mmol/(10ρ); ρ=CM·Mmol/(10C%); Mmol=10ρC%/CM.ρ g/mL, Mmol g/mol, CM mol/L va C% foizning son qiymati.",
+        "fact_ids": [
+          "basis",
+          "inverse",
+          "molar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page93"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Avval1 L asosini tekshiring",
+        "body": "HNO3 modeli uchun 1 L eritma massasi 1260 g.5% qism63 g; Mmol=63 g/mol bo‘lsa1 mol. Shuning uchun CM=1 mol/L.",
+        "fact_ids": [
+          "litre",
+          "nitric"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              92
+            ],
+            "pdf_pages": [
+              92
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page92"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page93"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph20",
+            "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 20,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph20-page94"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph20",
+        "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 20,
+        "printed_pages": [
+          92
+        ],
+        "pdf_pages": [
+          92
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph20-page92"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph20",
+        "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 20,
+        "printed_pages": [
+          93
+        ],
+        "pdf_pages": [
+          93
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph20-page93"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph20",
+        "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 20,
+        "printed_pages": [
+          94
+        ],
+        "pdf_pages": [
+          94
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph20-page94"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p20-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "C%=20 bo‘lgan ushbu formulaga qaysi ko‘rinish qo‘yiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Har doim0,20"
+        },
+        {
+          "id": "b",
+          "label": "Foizning son qiymati"
+        },
+        {
+          "id": "c",
+          "label": "Har doim2000"
+        },
+        {
+          "id": "d",
+          "label": "Faqat hajm"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "1000 mL va foiz100 ga bo‘linishi birga qanday ko‘paytiruvchi beradi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "1000"
+        },
+        {
+          "id": "b",
+          "label": "100"
+        },
+        {
+          "id": "c",
+          "label": "0,001"
+        },
+        {
+          "id": "d",
+          "label": "10"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Molyar massaning bitta qiymati barcha noma’lum moddani yagona aniqlashga yetadimi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Qo‘shimcha ma’lumot kerak"
+        },
+        {
+          "id": "b",
+          "label": "Har doim yetadi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat rangi yetadi"
+        },
+        {
+          "id": "d",
+          "label": "Har doimKOH bo‘ladi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page92"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page93"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "CM=10ρC%/Mmol dagi10 sonini so‘z bilan yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page92"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q05",
+      "response_kind": "numeric_value",
+      "prompt": "20%,ρ=1,25 g/mL, Mmol=56 g/mol modelida CM ni ikki kasr xonasigacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page93"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "5%,ρ=1,26 g/mL, Mmol=63 g/mol. CM qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page92"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page93"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "CM=2,5 mol/L, Mmol=101 g/mol, C%=20,2 modelidaρ qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mL",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page93"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "16%,ρ=1,4 g/mL, CM=4 mol/L modelida Mmol qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page94"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
