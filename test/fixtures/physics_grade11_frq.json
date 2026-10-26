@@ -1,0 +1,697 @@
+{
+  "assessment_version": 2,
+  "questions": [
+    {
+      "key": "physics-11-section-1-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir jinsli B=40mT,tekis S=30cm², Bva tanlangan NORMAL orasidagi cosAlpha=−0,5 tayyor. Signed Phi ni top.",
+      "givens": [
+        {
+          "symbol": "B",
+          "value": "40",
+          "unit": "mT"
+        },
+        {
+          "symbol": "S",
+          "value": "30",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "cosAlpha",
+          "value": "-0.5",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "B",
+        "S",
+        "cosAlpha"
+      ],
+      "suggested_unit": "Wb",
+      "unit_choices": [
+        "Wb",
+        "mWb",
+        "µWb"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-1",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            7
+          ],
+          "printed_pages": [
+            6
+          ],
+          "page_text_sha256": [
+            "3a32878c84cc1523479def0ff118a226b8e5c3e7059e2f44f6d9f364b2f8e1f6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-1-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir jinsli B tekis yuzaning musbat normaliga MOS:Phi=80µWb,S=40cm². B MODULIni top.",
+      "givens": [
+        {
+          "symbol": "Phi",
+          "value": "80",
+          "unit": "µWb"
+        },
+        {
+          "symbol": "S",
+          "value": "40",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "Phi",
+        "S"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-1",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            7
+          ],
+          "printed_pages": [
+            6
+          ],
+          "page_text_sha256": [
+            "3a32878c84cc1523479def0ff118a226b8e5c3e7059e2f44f6d9f364b2f8e1f6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-2-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Uniform model:n=20bir xil o‘ram,B=40mT,I=0,5A,S=30cm², BvaNORMAL uchun sinAlpha=1. M MODULIni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "20",
+          "unit": "1"
+        },
+        {
+          "symbol": "B",
+          "value": "40",
+          "unit": "mT"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        },
+        {
+          "symbol": "S",
+          "value": "30",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "sinAlpha",
+          "value": "1",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "n",
+        "B",
+        "I",
+        "S",
+        "sinAlpha"
+      ],
+      "suggested_unit": "N*m",
+      "unit_choices": [
+        "N*m"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-2",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            9,
+            10
+          ],
+          "printed_pages": [
+            8,
+            9
+          ],
+          "page_text_sha256": [
+            "096d424cf1698d34d226421e09844198d175cad301c1aee922077371d1ccf1bb",
+            "0bab68f0b49d72febf53178336162180d429a8e0879f2618b3eb40526ca8434b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-2-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Uniform model:n=10o‘ram,I=2A,S=50cm²,MAKSIMAL Mmax=0,002N*m. B modulini top.",
+      "givens": [
+        {
+          "symbol": "Mmax",
+          "value": "0.002",
+          "unit": "N*m"
+        },
+        {
+          "symbol": "n",
+          "value": "10",
+          "unit": "1"
+        },
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "A"
+        },
+        {
+          "symbol": "S",
+          "value": "50",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "Mmax",
+        "n",
+        "I",
+        "S"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-2",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            9,
+            10
+          ],
+          "printed_pages": [
+            8,
+            9
+          ],
+          "page_text_sha256": [
+            "096d424cf1698d34d226421e09844198d175cad301c1aee922077371d1ccf1bb",
+            "0bab68f0b49d72febf53178336162180d429a8e0879f2618b3eb40526ca8434b"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-2-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ramkaning l=20cm tomoni B=40mT ga TIK,I=0,5A. Shu tomondagi F MODULIni top.",
+      "givens": [
+        {
+          "symbol": "B",
+          "value": "40",
+          "unit": "mT"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "value": "20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "B",
+        "I",
+        "l"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-2",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            8
+          ],
+          "printed_pages": [
+            7
+          ],
+          "page_text_sha256": [
+            "474cf90595d92a9b19695d45b49e8e61afbf7cdc760f566935df6b0dfcc2a608"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-3-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Cheksiz uzun ingichka sim VAKUUMda:I=2A,d=4cm o‘qdan,p=3,14,mu0=1,256e-6N/A². Bmodulini top.",
+      "givens": [
+        {
+          "symbol": "mu0",
+          "value": "1.256e-6",
+          "unit": "N/A2"
+        },
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "A"
+        },
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "d",
+          "value": "4",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "mu0",
+        "I",
+        "p",
+        "d"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-3",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            12,
+            14
+          ],
+          "printed_pages": [
+            11,
+            13
+          ],
+          "page_text_sha256": [
+            "cd4f428d78788e337e2a6ea2d7d6ea8e69661d7f6afd3ef24cac89376a694868",
+            "b4f702897304093dc95d98c89efc45867ecd9157e5d5e51c858ffc6bded0c488"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-3-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuumdagi bitta yupqa aylana tok MARKAZI:I=2A,R=10cm RADIUS,mu0=1,256e-6N/A². B ni top.",
+      "givens": [
+        {
+          "symbol": "mu0",
+          "value": "1.256e-6",
+          "unit": "N/A2"
+        },
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "value": "10",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "mu0",
+        "I",
+        "R"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-3",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            13
+          ],
+          "printed_pages": [
+            12
+          ],
+          "page_text_sha256": [
+            "df16f0ce31cef2825f487a3c7392344cd6d243e48c272f7f2bb4a0017e7136e7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-3-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuumda UMUMIY TEKISLIKka yaqin n=20bir xil yupqa aylana o‘ram MARKAZI:I=0,5A,R=10cm,mu0=1,256e-6N/A². Bni top.",
+      "givens": [
+        {
+          "symbol": "mu0",
+          "value": "1.256e-6",
+          "unit": "N/A2"
+        },
+        {
+          "symbol": "n",
+          "value": "20",
+          "unit": "1"
+        },
+        {
+          "symbol": "I",
+          "value": "0.5",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "value": "10",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "mu0",
+        "n",
+        "I",
+        "R"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-3",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            13
+          ],
+          "printed_pages": [
+            12
+          ],
+          "page_text_sha256": [
+            "df16f0ce31cef2825f487a3c7392344cd6d243e48c272f7f2bb4a0017e7136e7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-3-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bitta nuqta va bir xil x o‘qda Bx1=−30µT,Bx2=50µT. Signed Bx ni top.",
+      "givens": [
+        {
+          "symbol": "Bx1",
+          "value": "-30",
+          "unit": "µT"
+        },
+        {
+          "symbol": "Bx2",
+          "value": "50",
+          "unit": "µT"
+        }
+      ],
+      "symbols": [
+        "Bx1",
+        "Bx2"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-3",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            12
+          ],
+          "printed_pages": [
+            11
+          ],
+          "page_text_sha256": [
+            "cd4f428d78788e337e2a6ea2d7d6ea8e69661d7f6afd3ef24cac89376a694868"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-4-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Uniform model:I=3A,B=0,2T,l=20cm,d=5cm, tok va B uchun sinAlpha=1. Siljish Amper kuchi TOMON. A ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "3",
+          "unit": "A"
+        },
+        {
+          "symbol": "B",
+          "value": "0.2",
+          "unit": "T"
+        },
+        {
+          "symbol": "l",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "d",
+          "value": "5",
+          "unit": "cm"
+        },
+        {
+          "symbol": "sinAlpha",
+          "value": "1",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "I",
+        "B",
+        "l",
+        "d",
+        "sinAlpha"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-4",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            15
+          ],
+          "printed_pages": [
+            14
+          ],
+          "page_text_sha256": [
+            "a51581bd4159562992a5cee60089901cb35a40ab7b86e6b01b2997a13b0e2e22"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-4-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy I=2A va kontur toki bilan kelishilgan normal uchun signed DPhi=−3mWb. Kitobning A=I*DPhi modelida A ni top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "2",
+          "unit": "A"
+        },
+        {
+          "symbol": "DPhi",
+          "value": "-3",
+          "unit": "mWb"
+        }
+      ],
+      "symbols": [
+        "I",
+        "DPhi"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-4",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            14,
+            15
+          ],
+          "printed_pages": [
+            13,
+            14
+          ],
+          "page_text_sha256": [
+            "b4f702897304093dc95d98c89efc45867ecd9157e5d5e51c858ffc6bded0c488",
+            "a51581bd4159562992a5cee60089901cb35a40ab7b86e6b01b2997a13b0e2e22"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-5-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuumdagi uzun ingichka parallel simlar:I1=3A,I2=4A MODULLAR,d=2cm,l=0,5m tanlangan uzunlik,p=3,14,mu0=1,256e-6N/A². F MODULIni top.",
+      "givens": [
+        {
+          "symbol": "mu0",
+          "value": "1.256e-6",
+          "unit": "N/A2"
+        },
+        {
+          "symbol": "I1",
+          "value": "3",
+          "unit": "A"
+        },
+        {
+          "symbol": "I2",
+          "value": "4",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "value": "0.5",
+          "unit": "m"
+        },
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "d",
+          "value": "2",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "mu0",
+        "I1",
+        "I2",
+        "l",
+        "p",
+        "d"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-5",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            17
+          ],
+          "printed_pages": [
+            16
+          ],
+          "page_text_sha256": [
+            "58cbe55b4d10001c5e1b4bc7bccd90ef4c74413b9504ae62b457717685e6c70f"
+          ]
+        }
+      ]
+    }
+  ]
+}
