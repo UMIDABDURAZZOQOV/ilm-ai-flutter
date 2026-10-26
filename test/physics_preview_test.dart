@@ -835,66 +835,62 @@ void main() {
     }
   });
 
-  testWidgets(
-    'grade9 public molar number density and RMS drafts fit large text',
-    (tester) async {
-      tester.view.physicalSize = const Size(320, 568);
-      tester.view.devicePixelRatio = 1;
-      addTearDown(tester.view.resetPhysicalSize);
-      addTearDown(tester.view.resetDevicePixelRatio);
-      final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
-      expect(questions, hasLength(187));
-      for (final question in questions) {
-        Json? edited;
-        final draft = <String, (String, String)>{
-          'physics-9-section-5-r1:q6': ('sqrt(3*p/rho)', '600'),
-          'physics-9-section-7-r1:q5': ('sqrt(3*k*T/m0)', '643.4'),
-          'physics-9-section-7-r1:q6': ('sqrt(3*R*T/M)', '499.3'),
-          'physics-9-section-15-r1:q6': ('3*nu*R*(T2-T1)/2', '-3739.5'),
-          'physics-9-section-16-r1:q9': ('A/p', '-0.004'),
-          'physics-9-section-19-r1:q6': ('m*c*(T2-T1)', '-8400'),
-          'physics-9-section-27-r1:q7': ('1-Tc/Th', '0,5'),
-          'physics-9-section-30-r1:q7': ('eta*rho*V*q*v/s', '16100'),
-          'physics-9-section-32-r1:q5': ('2*sigma/(rho*g*r)', '0.0149'),
-          'physics-9-section-34-r1:q5': ('(F2-F1)/(2*l)', '0.073'),
-          'physics-9-section-36-r1:q8': ('E*eps', '100000000'),
-          'physics-9-section-39-r1:q8': ('-lam*m', '-66800'),
-          'physics-9-section-40-r1:q7': ('-r*m', '-46000'),
-          'physics-9-section-41-r1:q8': ('phi*rhoSat', '0.0138'),
-          'physics-9-section-45-r1:q5': ('alpha', '35'),
-          'physics-9-section-45-r1:q10': ('n1*sina/n2', '0.6'),
-          'physics-9-section-50-r1:q5': ('1/F', '-5'),
-        }[question['key']];
-        final formula = draft?.$1 ?? 'learner_formula';
-        final value = draft?.$2 ?? '-1,25';
-        await mount(
-          tester,
-          scale: 2,
-          child: Scaffold(
-            body: SingleChildScrollView(
-              child: PhysicsAnswerEditor(
-                key: ValueKey(question['key']),
-                question: question,
-                draft: const {},
-                enabled: true,
-                onChanged: (v) => edited = v,
-              ),
+  testWidgets('grade9 public physics FRQ drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
+    expect(questions, hasLength(201));
+    for (final question in questions) {
+      Json? edited;
+      final draft = <String, (String, String)>{
+        'physics-9-section-5-r1:q6': ('sqrt(3*p/rho)', '600'),
+        'physics-9-section-7-r1:q5': ('sqrt(3*k*T/m0)', '643.4'),
+        'physics-9-section-7-r1:q6': ('sqrt(3*R*T/M)', '499.3'),
+        'physics-9-section-15-r1:q6': ('3*nu*R*(T2-T1)/2', '-3739.5'),
+        'physics-9-section-16-r1:q9': ('A/p', '-0.004'),
+        'physics-9-section-19-r1:q6': ('m*c*(T2-T1)', '-8400'),
+        'physics-9-section-27-r1:q7': ('1-Tc/Th', '0,5'),
+        'physics-9-section-30-r1:q7': ('eta*rho*V*q*v/s', '16100'),
+        'physics-9-section-32-r1:q5': ('2*sigma/(rho*g*r)', '0.0149'),
+        'physics-9-section-34-r1:q5': ('(F2-F1)/(2*l)', '0.073'),
+        'physics-9-section-36-r1:q8': ('E*eps', '100000000'),
+        'physics-9-section-39-r1:q8': ('-lam*m', '-66800'),
+        'physics-9-section-40-r1:q7': ('-r*m', '-46000'),
+        'physics-9-section-41-r1:q8': ('phi*rhoSat', '0.0138'),
+        'physics-9-section-45-r1:q5': ('alpha', '35'),
+        'physics-9-section-45-r1:q10': ('n1*sina/n2', '0.6'),
+        'physics-9-section-50-r1:q5': ('1/F', '-5'),
+        'physics-9-section-51-r1:q6': ('F*d/(d-F)', '-0.2'),
+        'physics-9-section-53-r1:q7': ('3/(F1+F2+F3)', '5'),
+      }[question['key']];
+      final formula = draft?.$1 ?? 'learner_formula';
+      final value = draft?.$2 ?? '-1,25';
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
             ),
           ),
-        );
-        await enter(
-          tester,
-          formula,
-          value,
-          question['suggested_unit'] as String,
-        );
-        expect(edited?['formula'], formula);
-        expect(edited?['value'], value);
-        expect(edited?['unit'], question['suggested_unit']);
-        expect(tester.takeException(), isNull);
-      }
-    },
-  );
+        ),
+      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], value);
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
 
   testWidgets(
     'FRQ inputs have accessible labels and Android-sized tap targets',

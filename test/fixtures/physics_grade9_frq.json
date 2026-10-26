@@ -6100,6 +6100,426 @@
         "mm",
         "nm"
       ]
+    },
+    {
+      "key": "physics-9-section-51-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yig‘uvchi yupqa linza:F=20cm,d=60cmhaqiqiy buyum. Signed fni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "d",
+          "value": "60",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "d"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-51-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yig‘uvchi yupqa linza:F=20cm,buyum d=10cm. Signed fni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "d",
+          "value": "10",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "d"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-51-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sochuvchi yupqa linza:F=-30cm,haqiqiy buyum d=60cm. Signed fni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "-30",
+          "unit": "cm"
+        },
+        {
+          "symbol": "d",
+          "value": "60",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "d"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-51-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mavhum tasvir masofasining MUSBAT moduli fMag=30cm,buyum d=15cm. K musbat o‘lcham nisbatini top.",
+      "givens": [
+        {
+          "symbol": "fMag",
+          "value": "30",
+          "unit": "cm"
+        },
+        {
+          "symbol": "d",
+          "value": "15",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "fMag",
+        "d"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-52-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yupqa linzada haqiqiy buyum d=30cm,haqiqiy tasvir f=60cm. Signed Fni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "30",
+          "unit": "cm"
+        },
+        {
+          "symbol": "f",
+          "value": "60",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "d",
+        "f"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-52-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yupqa linzada haqiqiy buyum d=40cm,mavhum tasvir f=-20cm signed. Dni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "f",
+          "value": "-20",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "d",
+        "f"
+      ],
+      "suggested_unit": "dptr",
+      "unit_choices": [
+        "dptr",
+        "1/m"
+      ]
+    },
+    {
+      "key": "physics-9-section-52-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yig‘uvchi F=40cm,K=4va tasvir HAQIQIY. Buyum dmasofasini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "K",
+          "value": "4",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "F",
+        "K"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-52-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yig‘uvchi F=40cm,K=4va tasvir MAVHUM. Buyum dmasofasini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "K",
+          "value": "4",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "F",
+        "K"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-53-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli haqiqiy ekran modeli:d=40cm,f=40cm. Fni top.",
+      "givens": [
+        {
+          "symbol": "d",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "f",
+          "value": "40",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "d",
+        "f"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-53-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil sharoitdagi shartli fokus baholari:F1=18cm,F2=20cm,F3=22cm. FMean ni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "18",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F2",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F3",
+          "value": "22",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-53-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kitob tartibi bo‘yicha shartli F1=15cm,F2=20cm,F3=25cm. Avval meanF,so‘ng D=1/meanF orqali Dni top.",
+      "givens": [
+        {
+          "symbol": "F1",
+          "value": "15",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F2",
+          "value": "20",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F3",
+          "value": "25",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "suggested_unit": "dptr",
+      "unit_choices": [
+        "dptr",
+        "1/m"
+      ]
+    },
+    {
+      "key": "physics-9-section-54-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bo‘shashgan ko‘z uchun kitob tayanch lupa modeli:D0=25cm,F=5cm. Kburchak kattalashtirishni top.",
+      "givens": [
+        {
+          "symbol": "D0",
+          "value": "25",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F",
+          "value": "5",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "D0",
+        "F"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-54-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kitob lupa tayanch modeli:D0=25cm,K=20berilgan. Fni top.",
+      "givens": [
+        {
+          "symbol": "D0",
+          "value": "25",
+          "unit": "cm"
+        },
+        {
+          "symbol": "K",
+          "value": "20",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "D0",
+        "K"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-54-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mikroskopning KITOB SODDALASHTIRILGAN modelida:l=30cm,D0=25cm,F1=1cm,F2=2,5cm. Kni shu modeldan top.",
+      "givens": [
+        {
+          "symbol": "l",
+          "value": "30",
+          "unit": "cm"
+        },
+        {
+          "symbol": "D0",
+          "value": "25",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F1",
+          "value": "1",
+          "unit": "cm"
+        },
+        {
+          "symbol": "F2",
+          "value": "2.5",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "l",
+        "D0",
+        "F1",
+        "F2"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
     }
   ]
 }
