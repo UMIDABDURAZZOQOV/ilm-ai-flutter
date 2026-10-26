@@ -35,7 +35,7 @@ class HistoryAnswerEditor extends StatelessWidget {
       keyboardType: TextInputType.text,
       textCapitalization: TextCapitalization.words,
       decoration: InputDecoration(
-        labelText: 'Tarixiy ism yoki atama',
+        labelText: 'Qisqa javob',
         helperText: question['input_hint'] as String,
         helperMaxLines: 4,
       ),

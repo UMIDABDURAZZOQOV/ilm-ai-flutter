@@ -13,6 +13,17 @@ import '../../auth/application/auth_controller.dart';
 import '../data/history_repository.dart';
 import 'history_answer_editor.dart';
 
+/// Source paragraph numbers can differ from path order (e.g. grade 9 §4–5).
+String historySectionLabel(Json row) {
+  final numbers = (row['source_numbers'] as List?)?.cast<int>();
+  if (numbers == null || numbers.isEmpty) return '${row['sequence']}-bosqich';
+  if (numbers.length == 1) return '§${numbers.single}';
+  if (numbers.last - numbers.first == numbers.length - 1) {
+    return '§${numbers.first}–${numbers.last}';
+  }
+  return numbers.map((n) => '§$n').join(', ');
+}
+
 /// Mounted only by the compile/host-gated router; keyed by account to prevent
 /// restoring another learner's draft. The server independently enforces access.
 class UzbekistanHistoryPreviewScreen extends ConsumerWidget {
@@ -396,6 +407,10 @@ class _SessionState extends ConsumerState<_Session> {
   );
 
   void _sources(List<Json> refs) {
+    final unique = {
+      for (final r in refs)
+        jsonEncode([r['topic_id'], r['pdf_pages'], r['printed_pages']]): r,
+    }.values;
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
@@ -411,14 +426,14 @@ class _SessionState extends ConsumerState<_Session> {
             ),
             Text(
               _catalog?['book'] is Map
-                  ? '${_catalog!['book']['title']}. ${(_catalog!['book']['authors'] as List).join(', ')}. ${_catalog!['book']['publisher']}, ${_catalog!['book']['year']}. PDF fayli ilovada tarqatilmaydi.'
-                  : 'O‘zbekiston tarixi, $_grade-sinf. Bibliografiya serverdan olinadi. PDF fayli ilovada tarqatilmaydi.',
+                  ? '${_catalog!['book']['title']}. ${(_catalog!['book']['authors'] as List).join(', ')}. ${_catalog!['book']['publisher']}, ${_catalog!['book']['year']}.${_catalog!['book']['isbn'] is String ? '\nISBN: ${_catalog!['book']['isbn']}' : ''}'
+                  : 'O‘zbekiston tarixi, $_grade-sinf. Darslik ma’lumotlari hozircha mavjud emas.',
             ),
-            for (final r in refs)
+            for (final r in unique)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 child: SelectableText(
-                  '${r['topic_id']}\nPDF sahifalari: ${(r['pdf_pages'] as List).join(', ')}\nBosma sahifalar: ${(r['printed_pages'] as List).join(', ')}',
+                  '${_attempt?['title'] ?? 'Joriy mavzu'}\nPDF sahifalari: ${(r['pdf_pages'] as List).join(', ')}\nBosma sahifalar: ${(r['printed_pages'] as List).join(', ')}\nMavzuga tegishli qism.',
                 ),
               ),
             TextButton(
@@ -466,7 +481,7 @@ class _SessionState extends ConsumerState<_Session> {
           text: 'Birga manbalarni o‘qiymiz va tarixni tushunamiz!',
         ),
         _panel(
-          '$_grade-sinf • ${rows.isEmpty ? 'darslar kutilmoqda' : '§${rows.first['sequence']}–${rows.last['sequence']}'}',
+          '$_grade-sinf • ${rows.isEmpty ? 'darslar kutilmoqda' : '${rows.length} manbali dars'}',
           'Bu alohida lokal sinov. Darslar faqat o‘zbekcha. Har darsdan kamida 60% natija keyingi bosqichni ochadi; birinchi muvaffaqiyatli yakun uchun 10 XP.',
         ),
         if (_catalog?['book'] is Map)
@@ -524,7 +539,7 @@ class _SessionState extends ConsumerState<_Session> {
                         color: Theme.of(context).colorScheme.primary,
                       ),
                       Text(
-                        '§${row['sequence']}. ${row['title']}',
+                        '${historySectionLabel(row)}. ${row['title']}',
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.titleMedium,
                       ),

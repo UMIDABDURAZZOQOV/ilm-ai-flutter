@@ -52,6 +52,14 @@ class HistoryRepository {
           text(row['key']);
           text(row['title']);
           sources(row['source_refs']);
+          final numbers = row['source_numbers'];
+          if (numbers != null &&
+              (numbers is! List ||
+                  numbers.isEmpty ||
+                  numbers.any((n) => n is! int || n <= 0) ||
+                  numbers.toSet().length != numbers.length)) {
+            throw const FormatException();
+          }
           if (row['sequence'] is! int ||
               !{'locked', 'available', 'completed'}.contains(row['state'])) {
             throw const FormatException();
