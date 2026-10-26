@@ -692,6 +692,864 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-11-section-6-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "q=1,6e-19C MODUL,v=1e5m/s,B=0,2T, vvaB uchun sinAlpha=0,5 tayyor. F MODULIni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "v",
+          "value": "1e5",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "B",
+          "value": "0.2",
+          "unit": "T"
+        },
+        {
+          "symbol": "sinAlpha",
+          "value": "0.5",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "q",
+        "v",
+        "B",
+        "sinAlpha"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-6",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            18
+          ],
+          "printed_pages": [
+            17
+          ],
+          "page_text_sha256": [
+            "0b24f508498bd2313d374c8e0c2546c1573e7c0b143b8b757c60074416e74848"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-6-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Uniform B=0,5Tga TIK,sekin zarra:m=3,2e-26kg,q=1,6e-19C MODUL,v=1e5m/s. Rni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "3.2e-26",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "1e5",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "B",
+          "value": "0.5",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "m",
+        "v",
+        "q",
+        "B"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-6",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            19
+          ],
+          "printed_pages": [
+            18
+          ],
+          "page_text_sha256": [
+            "4d7fa668b4138524b111d0c73dcc97c5e177b15374cf4febe494dd7a3f89a880"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-6-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Uniform Bga TIK sekin klassik zarra:m=3,2e-26kg,q=1,6e-19C MODUL,B=0,5T,p=3,14. Tni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "m",
+          "value": "3.2e-26",
+          "unit": "kg"
+        },
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "B",
+          "value": "0.5",
+          "unit": "T"
+        }
+      ],
+      "symbols": [
+        "p",
+        "m",
+        "q",
+        "B"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-6",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            20
+          ],
+          "printed_pages": [
+            19
+          ],
+          "page_text_sha256": [
+            "1aab35406730906d722ab823c5af07c8f0eb3a16e6db3b5cfc389a55f51dbaa4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-6-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Uniform Bga TIK klassik aylana:R=4cm,q=1,6e-19C MODUL,B=0,5T,m=3,2e-26kg. Sekin vni top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "B",
+          "value": "0.5",
+          "unit": "T"
+        },
+        {
+          "symbol": "R",
+          "value": "4",
+          "unit": "cm"
+        },
+        {
+          "symbol": "m",
+          "value": "3.2e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "q",
+        "B",
+        "R",
+        "m"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-6",
+          "chapter_id": "physics-11-chapter-1",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            19,
+            20
+          ],
+          "printed_pages": [
+            18,
+            19
+          ],
+          "page_text_sha256": [
+            "4d7fa668b4138524b111d0c73dcc97c5e177b15374cf4febe494dd7a3f89a880",
+            "1aab35406730906d722ab823c5af07c8f0eb3a16e6db3b5cfc389a55f51dbaa4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-7-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "n=50bir xil o‘ram, har bir o‘ram signed DPhi=−2mWb,dt=0,1s. Kelishilgan normal bo‘yicha EmfAVG ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "50",
+          "unit": "1"
+        },
+        {
+          "symbol": "DPhi",
+          "value": "-2",
+          "unit": "mWb"
+        },
+        {
+          "symbol": "dt",
+          "value": "0.1",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "DPhi",
+        "dt"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-7",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            28
+          ],
+          "printed_pages": [
+            27
+          ],
+          "page_text_sha256": [
+            "390634285b2815e2c0ed3325a1db32ad4a1ff68806ec778225ae90fcd8debf8a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-7-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "n=20o‘ramda perturnPhi1=3mWb,Phi2=8mWb,bir xil normal,dt=0,5s. Signed EmfAVGni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "20",
+          "unit": "1"
+        },
+        {
+          "symbol": "Phi1",
+          "value": "3",
+          "unit": "mWb"
+        },
+        {
+          "symbol": "Phi2",
+          "value": "8",
+          "unit": "mWb"
+        },
+        {
+          "symbol": "dt",
+          "value": "0.5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "Phi1",
+        "Phi2",
+        "dt"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-7",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            28
+          ],
+          "printed_pages": [
+            27
+          ],
+          "page_text_sha256": [
+            "390634285b2815e2c0ed3325a1db32ad4a1ff68806ec778225ae90fcd8debf8a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-7-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faqat OHMIK kontur modeli,induktiv o‘tishlar e’tiborsiz:EmfAVG=−0,2V,R=4Ω. Signed IAVGni top.",
+      "givens": [
+        {
+          "symbol": "Emf",
+          "value": "-0.2",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "4",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Emf",
+        "R"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-7",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            30
+          ],
+          "printed_pages": [
+            29
+          ],
+          "page_text_sha256": [
+            "edad2d7446b43ab5830a8f9070ccac30757c333d4beaf4d770bcb7ebc61a72ef"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-8-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Doimiy chiziqli L=0,2H, signed DI=−3A,dt=0,1s. EmfSelfAVGni top.",
+      "givens": [
+        {
+          "symbol": "L",
+          "value": "0.2",
+          "unit": "H"
+        },
+        {
+          "symbol": "DI",
+          "value": "-3",
+          "unit": "A"
+        },
+        {
+          "symbol": "dt",
+          "value": "0.1",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "L",
+        "DI",
+        "dt"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-8",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            31
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "6376199453d309d41ccf412330aa9967b948a3292f7a95e4e6a7246ec06e23e3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-8-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "DoimiyL modeli:Emag=3V EYuK MODULI,dt=0,2s,DImag=2A tok O‘ZGARISH MODULI. Lni top.",
+      "givens": [
+        {
+          "symbol": "Emag",
+          "value": "3",
+          "unit": "V"
+        },
+        {
+          "symbol": "dt",
+          "value": "0.2",
+          "unit": "s"
+        },
+        {
+          "symbol": "DImag",
+          "value": "2",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "Emag",
+        "dt",
+        "DImag"
+      ],
+      "suggested_unit": "H",
+      "unit_choices": [
+        "H",
+        "mH",
+        "µH"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-8",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            33
+          ],
+          "printed_pages": [
+            32
+          ],
+          "page_text_sha256": [
+            "c82b34038d765232afd0f5b117cc8c829d9761a589c8f2275f797002b57891a2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-8-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy chiziqli L=0,2H,signed I=0,4A. Tok bilan kelishilgan normalda jami Psi bog‘lanishini top.",
+      "givens": [
+        {
+          "symbol": "L",
+          "value": "0.2",
+          "unit": "H"
+        },
+        {
+          "symbol": "I",
+          "value": "0.4",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "L",
+        "I"
+      ],
+      "suggested_unit": "Wb",
+      "unit_choices": [
+        "Wb",
+        "mWb",
+        "µWb"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-8",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            31,
+            32
+          ],
+          "printed_pages": [
+            30,
+            31
+          ],
+          "page_text_sha256": [
+            "6376199453d309d41ccf412330aa9967b948a3292f7a95e4e6a7246ec06e23e3",
+            "f7473835d90d1dfaeb52795e841d583c4cbcde0406b4f39a6f895c79cf2f681e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-8-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "UZUN ideal solenoid/chiziqli muhit:mu0=1,256e-6N/A²,muR=1,n=100o‘ram,S=4cm²,l=40cm,chetta’sir e’tiborsiz. Lni top.",
+      "givens": [
+        {
+          "symbol": "mu0",
+          "value": "1.256e-6",
+          "unit": "N/A2"
+        },
+        {
+          "symbol": "muR",
+          "value": "1",
+          "unit": "1"
+        },
+        {
+          "symbol": "n",
+          "value": "100",
+          "unit": "1"
+        },
+        {
+          "symbol": "S",
+          "value": "4",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "l",
+          "value": "40",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "mu0",
+        "muR",
+        "n",
+        "S",
+        "l"
+      ],
+      "suggested_unit": "H",
+      "unit_choices": [
+        "H",
+        "mH",
+        "µH"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-8",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            31
+          ],
+          "page_text_sha256": [
+            "f7473835d90d1dfaeb52795e841d583c4cbcde0406b4f39a6f895c79cf2f681e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-9-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI bir xil tok/geometriya chiziqli model:B0=20mT,muR=0,999. Bni top.",
+      "givens": [
+        {
+          "symbol": "muR",
+          "value": "0.999",
+          "unit": "1"
+        },
+        {
+          "symbol": "B0",
+          "value": "20",
+          "unit": "mT"
+        }
+      ],
+      "symbols": [
+        "muR",
+        "B0"
+      ],
+      "suggested_unit": "T",
+      "unit_choices": [
+        "T",
+        "mT",
+        "µT"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-9",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            34
+          ],
+          "printed_pages": [
+            33
+          ],
+          "page_text_sha256": [
+            "9325ba2a524524ca66a6fddebb2e68c2cf3803008d7aef06159d3afa0b470b36"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-9-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI bir xil tok/geometriyada B=20,04mT,B0=20mT. muRni top.",
+      "givens": [
+        {
+          "symbol": "B",
+          "value": "20.04",
+          "unit": "mT"
+        },
+        {
+          "symbol": "B0",
+          "value": "20",
+          "unit": "mT"
+        }
+      ],
+      "symbols": [
+        "B",
+        "B0"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-9",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            34
+          ],
+          "printed_pages": [
+            33
+          ],
+          "page_text_sha256": [
+            "9325ba2a524524ca66a6fddebb2e68c2cf3803008d7aef06159d3afa0b470b36"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-10-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Doimiy CHIZIQLI L=0,2H,signed I=0,4A. Saqlangan Wni top.",
+      "givens": [
+        {
+          "symbol": "L",
+          "value": "0.2",
+          "unit": "H"
+        },
+        {
+          "symbol": "I",
+          "value": "0.4",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "L",
+        "I"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-10",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            36
+          ],
+          "printed_pages": [
+            35
+          ],
+          "page_text_sha256": [
+            "4a361998a2ff3073aead587e9a4ef27489427db5e9d1ce900e7188ac2162009f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-10-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy CHIZIQLI L=0,2H,saqlangan W=16mJ. I MODULIni top.",
+      "givens": [
+        {
+          "symbol": "W",
+          "value": "16",
+          "unit": "mJ"
+        },
+        {
+          "symbol": "L",
+          "value": "0.2",
+          "unit": "H"
+        }
+      ],
+      "symbols": [
+        "W",
+        "L"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-10",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            37
+          ],
+          "printed_pages": [
+            36
+          ],
+          "page_text_sha256": [
+            "f748953bbf400392ba49003f44bf58438ab59922754e9c45b6882343ddcd92a5"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-10-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy CHIZIQLI modelda W=9mJ,signed I=0,3A. Lni top.",
+      "givens": [
+        {
+          "symbol": "W",
+          "value": "9",
+          "unit": "mJ"
+        },
+        {
+          "symbol": "I",
+          "value": "0.3",
+          "unit": "A"
+        }
+      ],
+      "symbols": [
+        "W",
+        "I"
+      ],
+      "suggested_unit": "H",
+      "unit_choices": [
+        "H",
+        "mH",
+        "µH"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-10",
+          "chapter_id": "physics-11-chapter-2",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            36,
+            39
+          ],
+          "printed_pages": [
+            35,
+            38
+          ],
+          "page_text_sha256": [
+            "4a361998a2ff3073aead587e9a4ef27489427db5e9d1ce900e7188ac2162009f",
+            "da6eedf327ebefb48aaddf81cb5126d713a6d574be89af4d8a620319013dcfa6"
+          ]
+        }
+      ]
     }
   ]
 }
