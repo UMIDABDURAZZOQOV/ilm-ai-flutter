@@ -1,0 +1,1375 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p22-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Reaksiya tezligi haqida tushuncha",
+  "content": {
+    "cards": [
+      {
+        "title": "Alohida moddaning o‘rtacha tezligi",
+        "body": "Reaksiyada alohida moddaning sarflanish yoki hosil bo‘lish tezligi uning konsentratsiyasi ma’lum vaqt oralig‘ida qancha o‘zgarganini bildiradi. Bu darsda o‘rtacha tezlik va aynan nomlangan moddaning o‘zgarishi so‘raladi.",
+        "fact_ids": [
+          "meaning"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              98
+            ],
+            "pdf_pages": [
+              98
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page98"
+          }
+        ]
+      },
+      {
+        "title": "Musbat o‘zgarish va musbat vaqt",
+        "body": "Sarflanayotgan modda uchun musbat o‘rtacha tezlik kattaligi v=(c(bosh)−c(oxir))/∆t. ∆t musbat o‘tgan vaqt. Hosil bo‘layotgan mahsulotda esa oxirgi konsentratsiyadan boshlang‘ich ayiriladi. Ishorani qaysi o‘zgarish sanalayotganiga mos tanlang.",
+        "fact_ids": [
+          "positive"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              99
+            ],
+            "pdf_pages": [
+              99
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page99"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              101
+            ],
+            "pdf_pages": [
+              101
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page101"
+          }
+        ]
+      },
+      {
+        "title": "Doimiy hajmda moldan konsentratsiyaga",
+        "body": "HajmV o‘zgarmaydi deb berilsa, konsentratsiya o‘zgarishi ∆c=∆n/V. Shundan nomlangan modda uchun tezlik kattaligi v=∆n/(V·∆t). ∆n mol, V L va∆t min bo‘lsa birlikmol/(L·min).",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              99
+            ],
+            "pdf_pages": [
+              99
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page99"
+          }
+        ]
+      },
+      {
+        "title": "Aynan qaysi modda sanalmoqda?",
+        "body": "Kitobning NH3 misolida uning kamayishi hisoblanadi: 11,5 mol dan2,5 mol ga —9 mol sarflangan. Bu aynan NH3 ning yo‘qolish tezligi; 2NH3=N2+3H2 tenglamasidagi2 koeffitsiyentiga yana bo‘lish bu savolda so‘ralmagan boshqa normalash bo‘ladi.",
+        "fact_ids": [
+          "species"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              101
+            ],
+            "pdf_pages": [
+              101
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page101"
+          }
+        ]
+      },
+      {
+        "title": "Sekunddan minutga",
+        "body": "Berilgan 90 s vaqt90/60=1,5 min. NH3 kamayishi9 mol, hajm3 L bo‘lsa, v=9/(3·1,5)=2 mol/(L·min). Hajm va vaqt birliklari hisobdan oldin moslangan.",
+        "fact_ids": [
+          "minutes"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              101
+            ],
+            "pdf_pages": [
+              101
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page101"
+          }
+        ]
+      },
+      {
+        "title": "m³,L,min va sekund",
+        "body": "Ikkinchi sonli model:.005 m³=5 L; 0,1 min=6 s. Modda miqdori 80 dan5 mol ga kamaygan:∆n=75 mol. Nomlangan moddaning tezligi75/(5·6)=2,5 mol/(L·s). Bu natijaning vaqt birligi sekund.",
+        "fact_ids": [
+          "seconds"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              101
+            ],
+            "pdf_pages": [
+              101
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page101"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              102
+            ],
+            "pdf_pages": [
+              102
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page102"
+          }
+        ]
+      },
+      {
+        "title": "Tezlikdan vaqtni toping",
+        "body": "Tezlik kattaligi va V ma’lum bo‘lsa,∆t=∆n/(Vv). Berilgan N2 kartasida104−8=96 mol, V=8 L, v=3 mol/(L·min):∆t=96/(8·3)=4 min.",
+        "fact_ids": [
+          "time"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              102
+            ],
+            "pdf_pages": [
+              102
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page102"
+          }
+        ]
+      },
+      {
+        "title": "Konsentratsiya berilsaV qayta kirmaydi",
+        "body": "Agar bosh va oxirgi konsentratsiyalar berilsa, ularni hajmga yana bo‘lish kerak emas.7 dan2 mol/L ga kamayish∆c=5 mol/L. Sarflanish tezligi4 mol/(L·min) bo‘lsa,∆t=5/4=1,25 min=75 s.",
+        "fact_ids": [
+          "concentration"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              102
+            ],
+            "pdf_pages": [
+              102
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page102"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              103
+            ],
+            "pdf_pages": [
+              103
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page103"
+          }
+        ]
+      },
+      {
+        "title": "Kinetik shartni ochiq oling",
+        "body": "Tezlik modda tabiati, konsentratsiya va sharoitga bog‘liq. Konsentratsiya ta’siri haqidagi kinetik ifoda masala shartida aniq berilishi kerak; har qanday tenglama koeffitsiyentidan tajribaviy tezlik darajasini avtomatik chiqarib bo‘lmaydi.",
+        "fact_ids": [
+          "conditions"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              99
+            ],
+            "pdf_pages": [
+              99
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page99"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              100
+            ],
+            "pdf_pages": [
+              100
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page100"
+          }
+        ]
+      },
+      {
+        "title": "To‘g‘ri va teskari yo‘nalish",
+        "body": "aA+bB=cC+dD rasmida A va B danC va D ga yo‘nalish to‘g‘ri, C va D danA va B ga yo‘nalish teskari deb nomlangan. Bu yerda harflar abstrakt modda belgilari; kimyoviy formula kiritish savoli emas.",
+        "fact_ids": [
+          "directions"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              100
+            ],
+            "pdf_pages": [
+              100
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page100"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Nomlangan modda uchun o‘rtacha kattalik",
+        "body": "v=∆c/∆t=∆n/(V∆t), doimiyV va musbat sarflangan yoki hosil bo‘lgan miqdor uchun.",
+        "fact_ids": [
+          "positive",
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              99
+            ],
+            "pdf_pages": [
+              99
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page99"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              101
+            ],
+            "pdf_pages": [
+              101
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page101"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "NH3 ning o‘z tezligi",
+        "body": "11,5−2,5=9 mol.90 s=1,5 min.9/(3·1,5)=2 mol/(L·min). Kimning sarflanish tezligi so‘ralganini oxirigacha saqlang.",
+        "fact_ids": [
+          "species",
+          "minutes"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph22",
+            "topic_title": "Reaksiya tezligi haqida tushuncha",
+            "paragraph": 22,
+            "printed_pages": [
+              101
+            ],
+            "pdf_pages": [
+              101
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph22-page101"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          98
+        ],
+        "pdf_pages": [
+          98
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page98"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          99
+        ],
+        "pdf_pages": [
+          99
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page99"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          100
+        ],
+        "pdf_pages": [
+          100
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page100"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          101
+        ],
+        "pdf_pages": [
+          101
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page101"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          102
+        ],
+        "pdf_pages": [
+          102
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page102"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          103
+        ],
+        "pdf_pages": [
+          103
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page103"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph22",
+        "topic_title": "Reaksiya tezligi haqida tushuncha",
+        "paragraph": 22,
+        "printed_pages": [
+          104
+        ],
+        "pdf_pages": [
+          104
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph22-page104"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p22-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Bu darsda moddaning tezligi qaysi kattalikning vaqt bo‘yicha o‘zgarishi bilan bog‘langan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Konsentratsiya"
+        },
+        {
+          "id": "b",
+          "label": "Faqat rang nomi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat idish materiali"
+        },
+        {
+          "id": "d",
+          "label": "Faqat atom belgisi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            98
+          ],
+          "pdf_pages": [
+            98
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page98"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Sarflanish tezligi kattaligi va o‘tgan vaqt qanday ishorada olinadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Har doim manfiy"
+        },
+        {
+          "id": "b",
+          "label": "Faqat nol"
+        },
+        {
+          "id": "c",
+          "label": "Musbat"
+        },
+        {
+          "id": "d",
+          "label": "Faqat mavhum"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            99
+          ],
+          "pdf_pages": [
+            99
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page99"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Mahsulotlardan boshlang‘ich moddalarga yo‘nalish qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "To‘g‘ri"
+        },
+        {
+          "id": "b",
+          "label": "Teskari"
+        },
+        {
+          "id": "c",
+          "label": "Faqat cho‘kma"
+        },
+        {
+          "id": "d",
+          "label": "Faqat fizik"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            100
+          ],
+          "pdf_pages": [
+            100
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page100"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "Ma’lum vaqt oralig‘i bo‘yicha topilgan tezlik turi so‘zini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            98
+          ],
+          "pdf_pages": [
+            98
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page98"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "C va D danA va B ga yo‘nalish nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            100
+          ],
+          "pdf_pages": [
+            100
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page100"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "NH3 miqdori 11,5 dan2,5 mol ga kamaydi. Sarflangan miqdor qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "90 s ni minutda yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "min",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "NH3 sarfi9 mol, V=3 L,∆t=1,5 min. AynanNH3 sarflanish tezligi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/(L·min)",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "0,1 min necha sekund?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "s",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page102"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "∆n=75 mol, V=5 L,∆t=6 s. Nomlangan moddaning tezligi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/(L·s)",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page102"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "∆n=96 mol, V=8 L, v=3 mol/(L·min). O‘tgan vaqt qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "min",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page102"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Konsentratsiya7 dan2 mol/L ga kamaydi, v=4 mol/(L·min). Vaqtni sekundda yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "s",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page102"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            103
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page103"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

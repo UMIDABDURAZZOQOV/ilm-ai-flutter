@@ -1,0 +1,4323 @@
+{
+  "assessment_version": 2,
+  "subject": "kimyo",
+  "grade": 11,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 33,
+  "implemented_sections": 25,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 25,
+  "grade_content_complete": false,
+  "available_grades": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "lessons": [
+    {
+      "key": "chemistry-11-p01-r1",
+      "sequence": 1,
+      "title": "Atom tuzilishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page04"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page10"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page11"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p02-r1",
+      "sequence": 2,
+      "title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph02",
+          "topic_title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+          "paragraph": 2,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph02-page11"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph02",
+          "topic_title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph02-page12"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph02",
+          "topic_title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+          "paragraph": 2,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph02-page13"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph02",
+          "topic_title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+          "paragraph": 2,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph02-page14"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph02",
+          "topic_title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+          "paragraph": 2,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph02-page15"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph02",
+          "topic_title": "Davriy qonun. D.I. Mendeleyevning davriy sistemasi",
+          "paragraph": 2,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph02-page16"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph05",
+          "topic_title": "Kimyoviy elementlarning davriy qonuni",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph05-page27"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1",
+      "sequence": 3,
+      "title": "Atom tarkibi. Yadro reaksiyalari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page16"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page17"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page19"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page20"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page21"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page22"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page23"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page09"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1",
+      "sequence": 4,
+      "title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page23"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page24"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page25"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page26"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page27"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page28"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page29"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page30"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page31"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page57"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1",
+      "sequence": 5,
+      "title": "Modda miqdori",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page32"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page34"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1",
+      "sequence": 6,
+      "title": "Avogadro qonuni. Gazlar aralashmasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page34"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            36
+          ],
+          "pdf_pages": [
+            36
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page36"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            37
+          ],
+          "pdf_pages": [
+            37
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page37"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            38
+          ],
+          "pdf_pages": [
+            38
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page38"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            39
+          ],
+          "pdf_pages": [
+            39
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page39"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p07-r1",
+      "sequence": 7,
+      "title": "Ekvivalent",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            39
+          ],
+          "pdf_pages": [
+            39
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page39"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            40
+          ],
+          "pdf_pages": [
+            40
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page40"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            41
+          ],
+          "pdf_pages": [
+            41
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page41"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            42
+          ],
+          "pdf_pages": [
+            42
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page42"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            43
+          ],
+          "pdf_pages": [
+            43
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page43"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            44
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page44"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page45"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1",
+      "sequence": 8,
+      "title": "Mendeleyev-Klapeyron tenglamasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page45"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page47"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page48"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page49"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page50"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            51
+          ],
+          "pdf_pages": [
+            51
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page51"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p09-r1",
+      "sequence": 9,
+      "title": "Kuchli va kuchsiz elektrolitlar haqida tushuncha",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph09",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            51
+          ],
+          "pdf_pages": [
+            51
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph09-page51"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph09",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph09-page52"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph09",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            53
+          ],
+          "pdf_pages": [
+            53
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph09-page53"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph09",
+          "topic_title": "Kuchli va kuchsiz elektrolitlar haqida tushuncha",
+          "paragraph": 9,
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            54
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph09-page54"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1",
+      "sequence": 10,
+      "title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            54
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page54"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page57"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page58"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1",
+      "sequence": 11,
+      "title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page58"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page59"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            60
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page60"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page61"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page62"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p12-r1",
+      "sequence": 12,
+      "title": "Eritma haqida tushuncha",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            63
+          ],
+          "pdf_pages": [
+            63
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page63"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            64
+          ],
+          "pdf_pages": [
+            64
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page64"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            65
+          ],
+          "pdf_pages": [
+            65
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page65"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p13-r1",
+      "sequence": 13,
+      "title": "Eruvchanlik",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            65
+          ],
+          "pdf_pages": [
+            65
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page65"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            66
+          ],
+          "pdf_pages": [
+            66
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page66"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page67"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page68"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            69
+          ],
+          "pdf_pages": [
+            69
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page69"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            70
+          ],
+          "pdf_pages": [
+            70
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page70"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p14-r1",
+      "sequence": 14,
+      "title": "Eruvchanlik mavzusiga doir masalalar va ularning yechimi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph14",
+          "topic_title": "Eruvchanlik mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 14,
+          "printed_pages": [
+            70
+          ],
+          "pdf_pages": [
+            70
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph14-page70"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph14",
+          "topic_title": "Eruvchanlik mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 14,
+          "printed_pages": [
+            71
+          ],
+          "pdf_pages": [
+            71
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph14-page71"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph14",
+          "topic_title": "Eruvchanlik mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 14,
+          "printed_pages": [
+            72
+          ],
+          "pdf_pages": [
+            72
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph14-page72"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph14",
+          "topic_title": "Eruvchanlik mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 14,
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            73
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph14-page73"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph13",
+          "topic_title": "Eruvchanlik",
+          "paragraph": 13,
+          "printed_pages": [
+            65
+          ],
+          "pdf_pages": [
+            65
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph13-page65"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1",
+      "sequence": 15,
+      "title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            73
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page73"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page74"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            75
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page75"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page76"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            77
+          ],
+          "pdf_pages": [
+            77
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page77"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p16-r1",
+      "sequence": 16,
+      "title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            77
+          ],
+          "pdf_pages": [
+            77
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page77"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            78
+          ],
+          "pdf_pages": [
+            78
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page78"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            79
+          ],
+          "pdf_pages": [
+            79
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page79"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            80
+          ],
+          "pdf_pages": [
+            80
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page80"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page81"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page82"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page83"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph16",
+          "topic_title": "Foiz konsentratsiya mavzusiga doir masalalar va ularning yechimi",
+          "paragraph": 16,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph16-page84"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p17-r1",
+      "sequence": 17,
+      "title": "Foiz konsentratsiya, eritma massasi, hajmi va zichligi orasidagi bog‘lanish",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph17",
+          "topic_title": "Foiz konsentratsiya, eritma massasi, hajmi va zichligi orasidagi bog‘lanish",
+          "paragraph": 17,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph17-page84"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph17",
+          "topic_title": "Foiz konsentratsiya, eritma massasi, hajmi va zichligi orasidagi bog‘lanish",
+          "paragraph": 17,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph17-page85"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p18-r1",
+      "sequence": 18,
+      "title": "Molyar konsentratsiya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph18",
+          "topic_title": "Molyar konsentratsiya",
+          "paragraph": 18,
+          "printed_pages": [
+            85
+          ],
+          "pdf_pages": [
+            85
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph18-page85"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph18",
+          "topic_title": "Molyar konsentratsiya",
+          "paragraph": 18,
+          "printed_pages": [
+            86
+          ],
+          "pdf_pages": [
+            86
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph18-page86"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph18",
+          "topic_title": "Molyar konsentratsiya",
+          "paragraph": 18,
+          "printed_pages": [
+            87
+          ],
+          "pdf_pages": [
+            87
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph18-page87"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph18",
+          "topic_title": "Molyar konsentratsiya",
+          "paragraph": 18,
+          "printed_pages": [
+            88
+          ],
+          "pdf_pages": [
+            88
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph18-page88"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p19-r1",
+      "sequence": 19,
+      "title": "Normal konsentratsiya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            88
+          ],
+          "pdf_pages": [
+            88
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page88"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            89
+          ],
+          "pdf_pages": [
+            89
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page89"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            90
+          ],
+          "pdf_pages": [
+            90
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page90"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            91
+          ],
+          "pdf_pages": [
+            91
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page91"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page92"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            39
+          ],
+          "pdf_pages": [
+            39
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page39"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            41
+          ],
+          "pdf_pages": [
+            41
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page41"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph07",
+          "topic_title": "Ekvivalent",
+          "paragraph": 7,
+          "printed_pages": [
+            42
+          ],
+          "pdf_pages": [
+            42
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph07-page42"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p20-r1",
+      "sequence": 20,
+      "title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            92
+          ],
+          "pdf_pages": [
+            92
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page92"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page93"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph20",
+          "topic_title": "Foiz va molyar konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 20,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph20-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1",
+      "sequence": 21,
+      "title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page94"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page95"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page96"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page97"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            98
+          ],
+          "pdf_pages": [
+            98
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page98"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p22-r1",
+      "sequence": 22,
+      "title": "Reaksiya tezligi haqida tushuncha",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            98
+          ],
+          "pdf_pages": [
+            98
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page98"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            99
+          ],
+          "pdf_pages": [
+            99
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page99"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            100
+          ],
+          "pdf_pages": [
+            100
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page100"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page102"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            103
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page103"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page104"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1",
+      "sequence": 23,
+      "title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+      "state": "available",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page104"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            105
+          ],
+          "pdf_pages": [
+            105
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page105"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page106"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page107"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            108
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page108"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page109"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p24-r1",
+      "sequence": 24,
+      "title": "Tezlik mavzusi bo‘yicha masalalar va ularning yechimlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph24",
+          "topic_title": "Tezlik mavzusi bo‘yicha masalalar va ularning yechimlari",
+          "paragraph": 24,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph24-page109"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph24",
+          "topic_title": "Tezlik mavzusi bo‘yicha masalalar va ularning yechimlari",
+          "paragraph": 24,
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            110
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph24-page110"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph24",
+          "topic_title": "Tezlik mavzusi bo‘yicha masalalar va ularning yechimlari",
+          "paragraph": 24,
+          "printed_pages": [
+            111
+          ],
+          "pdf_pages": [
+            111
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph24-page111"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph24",
+          "topic_title": "Tezlik mavzusi bo‘yicha masalalar va ularning yechimlari",
+          "paragraph": 24,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph24-page112"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            99
+          ],
+          "pdf_pages": [
+            99
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page99"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph22",
+          "topic_title": "Reaksiya tezligi haqida tushuncha",
+          "paragraph": 22,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph22-page101"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p25-r1",
+      "sequence": 25,
+      "title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page112"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            113
+          ],
+          "pdf_pages": [
+            113
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page113"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page114"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page115"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            116
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page116"
+        }
+      ]
+    }
+  ]
+}

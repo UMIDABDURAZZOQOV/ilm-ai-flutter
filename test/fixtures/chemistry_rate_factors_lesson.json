@@ -1,0 +1,1219 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p23-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+  "content": {
+    "cards": [
+      {
+        "title": "Hajm o‘zgarishining aniq shartlari",
+        "body": "Gaz miqdorlari va harorat o‘zgarmay turgan ideal modelda hajm kamayganda har bir gazning n/V konsentratsiyasi oshadi.6 L dan2 L ga o‘tish hajmni3 marta kamaytiradi; konsentratsiyalar3 marta ortadi. Bu aynan ko‘rsatilgan darhol siqilish modeli.",
+        "fact_ids": [
+          "compression"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              104
+            ],
+            "pdf_pages": [
+              104
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page104"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          }
+        ]
+      },
+      {
+        "title": "Har bir gaz uchun n/V",
+        "body": "Berilgan CO/O2 modelida miqdorlar12 mol va 18 mol.6 L dagi konsentratsiyalar2 va 3 mol/L; 2 L dagilari6 va 9 mol/L. Taqqoslashda reaksiyada sarflanish hali hisobga olinmagan va miqdorlar o‘zgarmas deb berilgan.",
+        "fact_ids": [
+          "concentrations"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              104
+            ],
+            "pdf_pages": [
+              104
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page104"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              105
+            ],
+            "pdf_pages": [
+              105
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page105"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan kinetik ifodadan nisbat",
+        "body": "Masala uchun kinetik model v=k[CO]^2[O2] deb alohida berilgan. k o‘zgarmasa, ikkala konsentratsiya3 marta ortishi tezlikni3²·3=27 marta oshiradi. Ushbu darajalarni har qanday muvozanatlangan tenglamadan universal tajribaviy qoida deb chiqarmaymiz.",
+        "fact_ids": [
+          "law"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              104
+            ],
+            "pdf_pages": [
+              104
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page104"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              105
+            ],
+            "pdf_pages": [
+              105
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page105"
+          }
+        ]
+      },
+      {
+        "title": "γ modeli va chegaralangan oraliq",
+        "body": "Kitobdagi harorat koeffitsiyentiγ modeli uchun v2/v1=γ^((T2−T1)/10). Ushbu formula masaladaγ o‘zgarmas deb berilgan harorat oralig‘ida qo‘llanadi. Har bir reaksiya va har qanday haroratdaγ albatta2–4 bo‘ladi degan shartsiz qonun olinmaydi.",
+        "fact_ids": [
+          "temperature"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              105
+            ],
+            "pdf_pages": [
+              105
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page105"
+          }
+        ]
+      },
+      {
+        "title": "Ikki qadam:γ=4",
+        "body": "Berilgan modelda 50°C dagi tezlik3,γ=4.70°C gacha farq20°C: ikki10 gradusli qadam. Ko‘paytiruvchi4²=16; keyingi tezlik3·16=48, xuddi oldingi tezlik birligida.",
+        "fact_ids": [
+          "first"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              107
+            ],
+            "pdf_pages": [
+              107
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page107"
+          }
+        ]
+      },
+      {
+        "title": "Uch qadam:γ=2",
+        "body": "Boshqa modelda 60°C dagi tezlik1,5,γ=2 va keyingi harorat90°C. Uch10 gradusli qadam, ko‘paytiruvchi2³=8. Keyingi tezlik1,5·8=12, xuddi oldingi birlikda.",
+        "fact_ids": [
+          "second"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              107
+            ],
+            "pdf_pages": [
+              107
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page107"
+          }
+        ]
+      },
+      {
+        "title": "Sovishda manfiy exponent",
+        "body": "Berilganγ=5 modeli uchun 40°C dan20°C ga pasayish exponenti−2. Tezlik ko‘paytiruvchisi5^−2=1/25=0,04. Boshlang‘ich tezlik5 bo‘lsa, keyingi tezlik0,2, xuddi oldingi birlikda.",
+        "fact_ids": [
+          "cooling"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              109
+            ],
+            "pdf_pages": [
+              109
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page109"
+          }
+        ]
+      },
+      {
+        "title": "Katalizator va faollanish modeli",
+        "body": "Manba katalizatorni reaksiyani tezlashtiruvchi va yakuniy umumiy hisobda sarflanmaydigan modda sifatida tushuntiradi. Katalizator faollanish energiyasini kamaytiruvchi yo‘l bilan bog‘langan. Bu “reaksiya davomida hech qanday vaqtincha ta’sirlashuv bo‘lmaydi” degani emas.",
+        "fact_ids": [
+          "catalyst"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              106
+            ],
+            "pdf_pages": [
+              106
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page106"
+          }
+        ]
+      },
+      {
+        "title": "Fermentning nomlangan misoli",
+        "body": "Kitob biologik katalizatorlarning oqsil tabiatli misollarini ferment deb ataydi. Katalaza misoli keltirilgan; bu darsda faqat nom va vazifa o‘rganiladi. Uni haqiqiy peroksid bilan tajriba bajarish yoki barcha biologik katalizatorlar haqida istisnosiz qoida deb olmaymiz.",
+        "fact_ids": [
+          "enzyme"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              106
+            ],
+            "pdf_pages": [
+              106
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page106"
+          }
+        ]
+      },
+      {
+        "title": "Sekinlashtiruvchi modda atamasi",
+        "body": "Reaksiya tezligini sekinlashtiruvchi moddalar ingibitor deb ataladi. Katalizator va ingibitor atamalarini bir xil vazifa sifatida almashtirmang. Moddaning real qo‘llanish miqdori yoki aralashtirish tartibi bu darsda berilmaydi.",
+        "fact_ids": [
+          "inhibitor"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              107
+            ],
+            "pdf_pages": [
+              107
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page107"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Nisbat uchun ikki berilgan model",
+        "body": "v=k[CO]^2[O2] bo‘lsa, k bir xil holatda nisbat konsentratsiya ko‘paytiruvchilaridan olinadi. γ modeli: v2/v1=γ^((T2−T1)/10).",
+        "fact_ids": [
+          "law",
+          "temperature"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              104
+            ],
+            "pdf_pages": [
+              104
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page104"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              105
+            ],
+            "pdf_pages": [
+              105
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page105"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tezlikni bir xil birlikda saqlang",
+        "body": "Harorat modeli uchun 1,5·2³=12. Ko‘paytiruvchi8 birliksiz; natija oldingi tezlik birligida qoladi.",
+        "fact_ids": [
+          "second"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph23",
+            "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+            "paragraph": 23,
+            "printed_pages": [
+              107
+            ],
+            "pdf_pages": [
+              107
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph23-page107"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph23",
+        "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+        "paragraph": 23,
+        "printed_pages": [
+          104
+        ],
+        "pdf_pages": [
+          104
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph23-page104"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph23",
+        "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+        "paragraph": 23,
+        "printed_pages": [
+          105
+        ],
+        "pdf_pages": [
+          105
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph23-page105"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph23",
+        "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+        "paragraph": 23,
+        "printed_pages": [
+          106
+        ],
+        "pdf_pages": [
+          106
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph23-page106"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph23",
+        "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+        "paragraph": 23,
+        "printed_pages": [
+          107
+        ],
+        "pdf_pages": [
+          107
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph23-page107"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph23",
+        "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+        "paragraph": 23,
+        "printed_pages": [
+          108
+        ],
+        "pdf_pages": [
+          108
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph23-page108"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph23",
+        "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+        "paragraph": 23,
+        "printed_pages": [
+          109
+        ],
+        "pdf_pages": [
+          109
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph23-page109"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          46
+        ],
+        "pdf_pages": [
+          46
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page46"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p23-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Umumiy hisobda sarflanmay, tezlikni oshiruvchi modda atamasi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ingibitor"
+        },
+        {
+          "id": "b",
+          "label": "Faqat mahsulot"
+        },
+        {
+          "id": "c",
+          "label": "Katalizator"
+        },
+        {
+          "id": "d",
+          "label": "Faqat erituvchi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page106"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Reaksiya tezligini kamaytiruvchi modda qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ingibitor"
+        },
+        {
+          "id": "b",
+          "label": "Katalizator"
+        },
+        {
+          "id": "c",
+          "label": "Faqat neytron"
+        },
+        {
+          "id": "d",
+          "label": "Faqat anod"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page107"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Kitobda nomlangan ferment misoli qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat NaCl"
+        },
+        {
+          "id": "b",
+          "label": "Katalaza"
+        },
+        {
+          "id": "c",
+          "label": "Faqat O2"
+        },
+        {
+          "id": "d",
+          "label": "Faqat He"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page106"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "Kitobdagi oqsil tabiatli biologik katalizator atamasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page106"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Tezlikni sekinlashtiruvchi modda atamasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page107"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "Miqdorlar va T o‘zgarmas modeldaV6 L dan2 L ga tushdi. Konsentratsiya necha marta ortadi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page104"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "v=k[CO]^2[O2] va bir xilk berilgan. Ikkala konsentratsiya3 marta ortsa, tezlik ko‘paytiruvchisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page104"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            105
+          ],
+          "pdf_pages": [
+            105
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page105"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "γ=4 modelida harorat20°C oshdi. Tezlik ko‘paytiruvchisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page107"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "γ=2 modelida harorat30°C oshdi. Tezlik ko‘paytiruvchisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page107"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p23-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "γ=5 modelida harorat20°C pasaydi. v2/v1 qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph23",
+          "topic_title": "Reaksiya tezligiga bosim, hajm va haroratning ta’siri. Katalizator haqida tushuncha",
+          "paragraph": 23,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph23-page109"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

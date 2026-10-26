@@ -1,0 +1,1184 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p21-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+  "content": {
+    "cards": [
+      {
+        "title": "Foizdan normal konsentratsiyaga",
+        "body": "C% foizning son qiymati,ρ g/mL va E g/ekv bo‘lsa normal konsentratsiya CN=10ρC%/E. Natijaekv/L yokiN da. E aynan berilgan reaksiya uchun tanlanadi; normalityni barcha reaksiyalar uchun bir xil molyarlik deb olish mumkin emas.",
+        "fact_ids": [
+          "normal"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page94"
+          }
+        ]
+      },
+      {
+        "title": "Foiz,zichlik,E ni teskari toping",
+        "body": "Teskari ifodalar: C%=CN·E/(10ρ),ρ=CN·E/(10C%), E=10ρC%/CN. Ular bir xil birlik shartidan keladi. C% formulada20 bo‘lsa20 foizning son qiymatini bildiradi, 0,20 ulushini emas.",
+        "fact_ids": [
+          "inverse"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page94"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page95"
+          }
+        ]
+      },
+      {
+        "title": "UchH uchun aniq berilgan faktor",
+        "body": "H3PO4 ning uchH si to‘liq neytrallanishga qatnashadi deb berilgan modelda Mmol=98 g/mol, E=98/3≈32,67 g/ekv. Natija ikki kasr xonasigacha yaxlitlangan. Faqat bitta yoki ikkita H qatnashsa shu maxrajni o‘zgarishsiz ishlatmaymiz.",
+        "fact_ids": [
+          "factor"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page95"
+          }
+        ]
+      },
+      {
+        "title": "IkkiH li formal hisob modeli",
+        "body": "Berilgan formal H2SO3 hisobida to‘liq ikkiH neytrallanish modeli olinadi: Mmol=82 g/mol, E=41 g/ekv. C%=10 vaρ=1,23 g/mL orqali CN=10·1,23·10/41=3 N. Bu ekvivalentli hisob modeli; eritmada barcha S aynan ajratilganH2SO3 shaklida degan da’vo emas.",
+        "fact_ids": [
+          "sulfite"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page95"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page96"
+          }
+        ]
+      },
+      {
+        "title": "CN vaCM orasidagi reaksiya faktori",
+        "body": "Agar shu reaksiya uchun bir mol moddagaf ekv mos bo‘lsa, CN=f·CM va CM=CN/f. f qaysi reaksiya ko‘rilayotganiga bog‘liq. Kitobdagi to‘liq ion almashinish misollaridaf kation valentligi bilan uning indeksiga mos ko‘paytma sifatida berilgan.",
+        "fact_ids": [
+          "relation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page96"
+          }
+        ]
+      },
+      {
+        "title": "Na2SO4 misolidaf=2",
+        "body": "Na2SO4 ning berilgan to‘liq ion almashinish modelidaf=1·2=2. CM=1,5 mol/L bo‘lsa, CN=2·1,5=3 N. Bu ikkita Na+ ga mos formal ekvivalent hisobidir; har qanday boshqa reaksiya uchun universal faktor emas.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page96"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page97"
+          }
+        ]
+      },
+      {
+        "title": "Al(NO3)3 misolidaf=3",
+        "body": "Al(NO3)3 ning berilgan to‘liq ion almashinish modelidaf=3·1=3. CN=7,5 N bo‘lsa, CM=7,5/3=2,5 mol/L. Molyarlik javobining birligi mol/L; N normal konsentratsiya uchun ishlatiladi.",
+        "fact_ids": [
+          "aluminium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page97"
+          }
+        ]
+      },
+      {
+        "title": "Uchta ta’rif va birlikni ajrating",
+        "body": "Foiz, normal va molyar konsentratsiya uch xil ta’rifdir. Foiz — massalar nisbati; CM — mol miqdori/L eritma; CN — berilgan reaksiya uchun ekvivalent miqdori/L eritma. Bir xil son yozilishi ta’rif va birliklar bir xil degani emas.",
+        "fact_ids": [
+          "units"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page94"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page96"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page97"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Birliklar bilan konversiya",
+        "body": "CN=10ρC%/E; C%=CN E/(10ρ); CN=f CM.ρ g/mL, E g/ekv, CM mol/L va CN ekv/L.",
+        "fact_ids": [
+          "normal",
+          "inverse",
+          "relation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              94
+            ],
+            "pdf_pages": [
+              94
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page94"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page95"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page96"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "1,5M va3N bir modelga tegishli",
+        "body": "Na2SO4 uchun to‘liq ion almashinish faktori2 deb berilgan.1,5 mol/L·2 ekv/mol=3 ekv/L. Faqat sonlarni emas, reaksiya faktorini ham ayting.",
+        "fact_ids": [
+          "relation",
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              96
+            ],
+            "pdf_pages": [
+              96
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page96"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph21",
+            "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+            "paragraph": 21,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph21-page97"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph21",
+        "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 21,
+        "printed_pages": [
+          94
+        ],
+        "pdf_pages": [
+          94
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph21-page94"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph21",
+        "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 21,
+        "printed_pages": [
+          95
+        ],
+        "pdf_pages": [
+          95
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph21-page95"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph21",
+        "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 21,
+        "printed_pages": [
+          96
+        ],
+        "pdf_pages": [
+          96
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph21-page96"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph21",
+        "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 21,
+        "printed_pages": [
+          97
+        ],
+        "pdf_pages": [
+          97
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph21-page97"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph21",
+        "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+        "paragraph": 21,
+        "printed_pages": [
+          98
+        ],
+        "pdf_pages": [
+          98
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph21-page98"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p21-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Erigan moddaning mol miqdorini1 L eritmaga nisbati qaysi konsentratsiya?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Foiz"
+        },
+        {
+          "id": "b",
+          "label": "Molyar"
+        },
+        {
+          "id": "c",
+          "label": "Normal"
+        },
+        {
+          "id": "d",
+          "label": "Faqat zichlik"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page94"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page96"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page97"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan reaksiya uchun ekvivalent miqdorining1 L eritmaga nisbati qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat foiz"
+        },
+        {
+          "id": "b",
+          "label": "Faqat massa"
+        },
+        {
+          "id": "c",
+          "label": "Molyar massa"
+        },
+        {
+          "id": "d",
+          "label": "Normal"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "H3PO4 ning uchH si to‘liq neytrallanish modelida maxraj nechta?",
+      "options": [
+        {
+          "id": "a",
+          "label": "3"
+        },
+        {
+          "id": "b",
+          "label": "1"
+        },
+        {
+          "id": "c",
+          "label": "2"
+        },
+        {
+          "id": "d",
+          "label": "4"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page95"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "CN bilan berilgan konsentratsiya turi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            94
+          ],
+          "pdf_pages": [
+            94
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page94"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q05",
+      "response_kind": "numeric_value",
+      "prompt": "Mmol=98 va to‘liq uchH modeli: E=98/3 ni ikki kasr xonasigacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/ekv",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page95"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "C%=10,ρ=1,23 g/mL, E=41 g/ekv. CN qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "N",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            95
+          ],
+          "pdf_pages": [
+            95
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page95"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page96"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Berilganf=2 va CM=1,5 mol/L modelida CN qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "N",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            96
+          ],
+          "pdf_pages": [
+            96
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page96"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page97"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p21-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Berilganf=3 va CN=7,5 N modelida CM qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph21",
+          "topic_title": "Foiz va normal konsentratsiya o‘rtasidagi bog‘lanish",
+          "paragraph": 21,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph21-page97"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

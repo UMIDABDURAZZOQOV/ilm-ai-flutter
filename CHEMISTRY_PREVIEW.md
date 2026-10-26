@@ -1,6 +1,21 @@
 # ILM AI Chemistry: local QA preview
 
-## Current checkpoint — batch49, 2026-10-26
+## Current checkpoint — batch50, 2026-10-26
+
+260/268 source entries implemented; grade11 §1–25. Five scenarios at
+320×568 and200% text scale passed in17s;20 captures visually inspected.
+Normality/percent, named-species rate, stipulated rate factors, inverse rate
+and equilibrium quotient use existing inputs, feedback and source controls.
+Full Flutter601 tests passed in360s; analysis0 issues/627.5s. Fifteen sanitized
+actualHTTP fixtures;51 correct answers,255/5100XP preserved→260/5200XP,
++100once,identical completion replay. Comma and exponent variants agree.
+The first HTTP precondition found the prior catalog still cached by the old
+preview process; no answers had been sent. Restarting only the owned loopback
+preview with --resume imported the new index and preserved all prior progress.
+All source readiness flags remain false; independent teacher and copy spacing
+reviews remain pending. Native Android/IME/TalkBack not certified.
+
+## Historical checkpoint — batch49, 2026-10-26
 
 255/268 source entries implemented; grade11 §1–20. Five scenarios at
 320×568 and 200% text scale passed in19s;20 captures visually inspected.
