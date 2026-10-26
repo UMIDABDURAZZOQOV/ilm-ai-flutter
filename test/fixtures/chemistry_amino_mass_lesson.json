@@ -1,0 +1,2172 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-p34-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+  "content": {
+    "cards": [
+      {
+        "title": "Amino va karboksil guruhlari bir rasmda",
+        "body": "Bu mavzudagi aminokislota misollarida amino NH2 va karboksil COOH guruhlari birga berilgan. Alanin CH3–CH(NH2)–COOH rasmida bittadan shu guruh bor; jami tarkib C3H7NO2. Umumiy soddalashtirilgan yozuvni barcha boshqa guruhli aminokislotalarga yoymaymiz.",
+        "fact_ids": [
+          "groups"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              139
+            ],
+            "pdf_pages": [
+              139
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page139"
+          }
+        ]
+      },
+      {
+        "title": "Lizin va dikarbon misolda guruhlarni sanang",
+        "body": "Lizin rasmida 2 ta NH2 va 1 ta COOH: diamino monokarbon tur. Manbadagi glutamin kislota rasmida 1 ta NH2 va 2 ta COOH: monoamino dikarbon tur. Tasnif berilgan rasmda guruhlarni alohida sanash orqali qilinadi.",
+        "fact_ids": [
+          "classification"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              139
+            ],
+            "pdf_pages": [
+              139
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page139"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page140"
+          }
+        ]
+      },
+      {
+        "title": "Serin OH va sistein SH yon guruhlari",
+        "body": "Serin HO–CH2–CH(NH2)–COOH rasmida yon zanjir OH guruhi, sistein HS–CH2–CH(NH2)–COOH rasmida esa SH guruhi bor. Har birida bitta amino va bitta karboksil guruhi ham saqlangan.",
+        "fact_ids": [
+          "sidegroups"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page140"
+          }
+        ]
+      },
+      {
+        "title": "Karboksil C dan boshlangan raqamlash",
+        "body": "Sistematik raqamlashda karboksil C birinchi hisoblanadi. Berilgan 2-aminogeksan kislotada NH2 ikkinchi, 3-aminogeksan kislotada uchinchi C ga birikkan. Shu rasmlardagi alfa va beta belgilari mos ravishda shu o‘rinlarga tegishli.",
+        "fact_ids": [
+          "numbering"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page140"
+          }
+        ]
+      },
+      {
+        "title": "Glitsinning aniq berilgan rasmi",
+        "body": "Manbada NH2–CH2–COOH glitsin deb ko‘rsatilgan. Jami tarkibi C2H5NO2. ClCH2COOH kartasida mahsulot sifatida glitsin va NH4Cl berilgan; faqat atom modeli C2H3ClO2+2NH3=C2H5NO2+NH4Cl. Bu fizik sintezni bajarish yo‘riqnomasi emas.",
+        "fact_ids": [
+          "glycine"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page141"
+          }
+        ]
+      },
+      {
+        "title": "Amfoter xossaning ikki tomoni",
+        "body": "Manbada aminokislota kislotali karboksil va asosli amino guruhlari tufayli ham asos, ham kislota kartalarida tuz berishi bilan tushuntirilgan. Shu ikki tomonlama xossa amfoter deb ataladi. Bu ta’rif berilmagan eritmaning aniq pH ini belgilamaydi.",
+        "fact_ids": [
+          "amphoteric"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page141"
+          }
+        ]
+      },
+      {
+        "title": "Glitsin uchun berilgan NaOH mahsulot kartasi",
+        "body": "Glitsin aniq tanlangan virtual NaOH kartasida tuz va suv mahsulotlari beriladi: C2H5NO2+NaOH=C2H4NO2Na+H2O. Bitta COOH guruhi uchun berilgan nisbat 1:1; bu glitsin kartasiga tegishli atom modeli.",
+        "fact_ids": [
+          "base"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page141"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page144"
+          }
+        ]
+      },
+      {
+        "title": "Dipeptid va tripeptidning ochiq zanjir modeli",
+        "body": "Berilgan ochiq, tarmoqlanmagan zanjir modelida ikki aminokislota qoldig‘i dipeptid, uchtasi tripeptid deyiladi. Peptid ulanishida CO–NH qismi ajratiladi. Bu zanjirning ikki uchi bor; barcha mumkin bo‘lgan peptidlar faqat shu shaklda degan xulosa qilmaymiz.",
+        "fact_ids": [
+          "peptide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page142"
+          }
+        ]
+      },
+      {
+        "title": "Ikki glitsin: bitta ulanish va suv",
+        "body": "Glitsin aniq tanlangan ikki qoldiqli ochiq zanjir kartasida bitta peptid ulanishi va bitta ajralgan suv sanaladi. Jami model 2C2H5NO2=C4H8N2O3+H2O. Formula faqat jami tarkibni, berilgan zanjir rasmi esa ulanishni bildiradi.",
+        "fact_ids": [
+          "digly"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page141"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page142"
+          }
+        ]
+      },
+      {
+        "title": "Uch glitsin: ikkita ulanish va suv",
+        "body": "Uch glitsinli ochiq zanjir kartasida 3 qoldiq orasida 2 peptid ulanishi va 2 ajralgan suv bor. Jami model 3C2H5NO2=C6H11N3O4+2H2O. Bu faqat berilgan chiziqli zanjir hisobi, halqali tuzilish emas.",
+        "fact_ids": [
+          "trigly"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page142"
+          }
+        ]
+      },
+      {
+        "title": "Oddiy va murakkab oqsil gidrolizi",
+        "body": "Manba oqsillarni aminokislota qoldiqlaridan tuzilgan yuqori molekulyar birikmalar deb tushuntiradi. Oddiy oqsilning to‘liq gidroliz kartasida aminokislotalar, murakkab oqsil kartasida esa ulardan tashqari oqsil bo‘lmagan qism ham berilgan.",
+        "fact_ids": [
+          "proteins"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page142"
+          }
+        ]
+      },
+      {
+        "title": "Fazoviy tuzilish va denaturatsiya",
+        "body": "Manba oqsil faolligini uning fazoviy va kimyoviy tuzilishi bilan bog‘laydi. Denaturatsiya mavzusida fazoviy tuzilishning buzilishi muhokama qilinadi. Bu yerda aniq bog‘larning hammasi bir xil uziladi yoki barcha holatning natijasi bir xil degan qoida berilmaydi.",
+        "fact_ids": [
+          "spatial"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page143"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan biuret rangli kuzatuvi",
+        "body": "Oqsilning manbadagi biuret kuzatuv kartasida binafsha rang ko‘rsatilgan va peptid CO–NH qismi tilga olingan. Bu aniq kuzatuvni o‘qish topshirig‘i; rangdan har qanday noma’lum namunani yoki barcha peptid uzunliklarini yagona aniqlamaymiz.",
+        "fact_ids": [
+          "biuret"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page143"
+          }
+        ]
+      },
+      {
+        "title": "Suv miqdoridan M75 ga",
+        "body": "Virtual hisobda aynan bitta COOH tutgan modda NaOH bilan 1:1 modelda suv beradi. 37,5 g aminokislota va 9 g suv uchun n(suv)=9/18=0,5 mol; aminokislota ham 0,5 mol. Uning M si 37,5/0,5=75 g/mol.",
+        "fact_ids": [
+          "first"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page144"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page145"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "M89 ni yagona ulanishga tenglashtirmang",
+        "body": "Alohida bitta COOH li virtual kartada 26,7 g modda 5,4 g suvga mos. Suv miqdori 0,3 mol; M=26,7/0,3=89 g/mol. Bu sonning o‘zi aminoguruhning joyini yoki yagona alanin ulanishini aniqlamaydi.",
+        "fact_ids": [
+          "second"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page145"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      },
+      {
+        "title": "Serin rasmida sigma va pi hisobi",
+        "body": "Serinning HO–CH2–CH(NH2)–COOH ochiq rasmida og‘ir atomlar orasida 6 sigma va H bilan 7 sigma bor: jami 13 sigma. C=O da 1 pi qo‘shiladi; jami 14 bog‘. Bu hisob aynan ko‘rsatilgan zaryadsiz rasm uchun.",
+        "fact_ids": [
+          "bonds"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page140"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page145"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph17",
+            "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+            "paragraph": 17,
+            "printed_pages": [
+              67
+            ],
+            "pdf_pages": [
+              67
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph17-page67"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph17",
+            "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+            "paragraph": 17,
+            "printed_pages": [
+              68
+            ],
+            "pdf_pages": [
+              68
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph17-page68"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Avval bitta COOH shartini o‘qing",
+        "body": "5,4/18=0,3 mol suv. Berilgan 1:1 kartada aminokislota0,3 mol; M=26,7/0,3=89 g/mol. Aminoguruh joyi uchun qo‘shimcha tuzilish kerak.",
+        "fact_ids": [
+          "second"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph34",
+            "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+            "paragraph": 34,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph34-page145"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          139
+        ],
+        "pdf_pages": [
+          139
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page139"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          140
+        ],
+        "pdf_pages": [
+          140
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page140"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          141
+        ],
+        "pdf_pages": [
+          141
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page141"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          142
+        ],
+        "pdf_pages": [
+          142
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page142"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          143
+        ],
+        "pdf_pages": [
+          143
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page143"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          144
+        ],
+        "pdf_pages": [
+          144
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page144"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph34",
+        "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+        "paragraph": 34,
+        "printed_pages": [
+          145
+        ],
+        "pdf_pages": [
+          145
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph34-page145"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph17",
+        "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+        "paragraph": 17,
+        "printed_pages": [
+          67
+        ],
+        "pdf_pages": [
+          67
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph17-page67"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph17",
+        "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+        "paragraph": 17,
+        "printed_pages": [
+          68
+        ],
+        "pdf_pages": [
+          68
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph17-page68"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-p34-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Yon zanjirida SH ko‘rsatilgan aminokislota qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Serin"
+        },
+        {
+          "id": "b",
+          "label": "Glitsin"
+        },
+        {
+          "id": "c",
+          "label": "Alanin"
+        },
+        {
+          "id": "d",
+          "label": "Sistein"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Lizin rasmidagi ikki NH2 va bitta COOH qanday turga mos?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Monoamino dikarbon"
+        },
+        {
+          "id": "b",
+          "label": "Diamino monokarbon"
+        },
+        {
+          "id": "c",
+          "label": "Amino guruhsiz"
+        },
+        {
+          "id": "d",
+          "label": "Karboksilsiz"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page139"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Ham asos, ham kislota kartalarida tuz berish xossasi qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Amfoter"
+        },
+        {
+          "id": "b",
+          "label": "Faqat inert"
+        },
+        {
+          "id": "c",
+          "label": "Faqat oksidlovchi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat erituvchi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page141"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Uch qoldiqli berilgan ochiq zanjir nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Dipeptid"
+        },
+        {
+          "id": "b",
+          "label": "Faqat monosaxarid"
+        },
+        {
+          "id": "c",
+          "label": "Tripeptid"
+        },
+        {
+          "id": "d",
+          "label": "Faqat efir"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "NH2–CH2–COOH ning manbadagi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page141"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Aminokislotaning ikki tomonlama kislota/asos xossasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page141"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Oqsilning binafsha kuzatuvi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page143"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Uch glitsinli ochiq zanjir kartasida ajralgan suv molekulasi nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "37,5 g/9 g suv kartasida aminokislota M si qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page144"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page145"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "26,7 g/5,4 g suv kartasida aminokislota M si qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page145"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan zaryadsiz serin rasmida sigma soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page140"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page145"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Shu serin rasmida sigma va pi yig‘indisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page140"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page145"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q13",
+      "response_kind": "chemical_formula",
+      "prompt": "CH3–CH(NH2)–COOH alaninning faqat jami molekulyar tarkibini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page139"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning jami atom balansini yozing: C2H3ClO2+2NH3=C2H5NO2+NH4Cl",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page141"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q15",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning jami atom balansini yozing: C2H5NO2+NaOH=C2H4NO2Na+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page141"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q16",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning jami atom balansini yozing: 2C2H5NO2=C4H8N2O3+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page141"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page142"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p34-r1-q17",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning jami atom balansini yozing: 3C2H5NO2=C6H11N3O4+2H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph34",
+          "topic_title": "Aminokislotalar va oqsillar. Olinishi va xossalari",
+          "paragraph": 34,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph34-page142"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
