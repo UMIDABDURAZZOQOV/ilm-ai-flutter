@@ -2674,6 +2674,85 @@ void main() {
     });
   }
 
+  for (final scenario in [
+    ('equilibrium_shift', 26, 9, '', 'N2+3H2=2NH3', 118, false),
+    ('equilibrium_ice', 27, 7, '', '2,77', 122, false),
+    ('half_reaction', 28, 11, '', '3As2S3+28HNO3+4H2O=6H3AsO4+9H2SO4+28NO', 129, false),
+    ('redox_medium', 29, 11, '', '2KMnO4+NaNO2+2KOH=2K2MnO4+NaNO3+H2O', 134, false),
+    ('redox_equivalent', 30, 9, '', '10FeSO4+2KMnO4+8H2SO4=5Fe2(SO4)3+2MnSO4+K2SO4+8H2O', 138, false),
+    ('electrolysis_phase', 31, 5, '', 'Anod', 139, false),
+    ('faraday_units', 32, 11, '', '5', 145, false),
+    ('charge_budget', 33, 9, '', '0,96', 153, false),
+  ]) {
+    final (name, number, questionIndex, choiceId, value, page, prior) = scenario;
+    testWidgets('batch51 $name grade11 source and feedback at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      catalog['available_grades'] = [7, 8, 9, 10, 11];
+      grade11Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(questionIndex);
+      await mount(t, dark: number.isOdd, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-11')));
+      await waitFor(find.text('Darsni boshlash'));
+      expect(requests.lastWhere((r) => r.path.endsWith('/catalog')).queryParameters['grade'], 11);
+      await t.ensureVisible(find.text('Darsni boshlash').first);
+      if (!prior) await capture(t, '$name-batch51-catalog');
+      await tap(t, 'Darsni boshlash');
+      if (questionIndex == 0) {
+        for (var i = 0; i < jsonRows((lesson['content'] as Json)['cards']).length - 1; i++) {
+          await tap(t, 'Davom etish');
+        }
+        await tap(t, 'Mashqlarga o‘tish');
+      }
+      final numeric = value.isNotEmpty;
+      if (numeric) {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      } else {
+        final question = jsonRows(lesson['questions'])[questionIndex];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == choiceId);
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], numeric ? {'value':value} : {'choice_id':choiceId});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch51-feedback');
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$number ·'));
+      await t.ensureVisible(source);
+      await capture(t, '$name-batch51-feedback-source');
+      await tapFinder(t, source);
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('umumiy_kimyo_11_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch51-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (prior) {
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §5 ·'));
+        await tapFinder(t, priorSource);
+        final priorLocator = find.textContaining('31 -> PDF 31');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining('umumiy_kimyo_11_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch51-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');

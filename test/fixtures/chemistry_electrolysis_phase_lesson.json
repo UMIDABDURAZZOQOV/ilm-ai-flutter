@@ -1,0 +1,1287 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p31-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+  "content": {
+    "cards": [
+      {
+        "title": "Elektr energiyasi va kimyoviy o‘zgarish",
+        "body": "Elektroliz — eritma yoki suyuqlanmada elektr energiyasi hisobiga boradigan oksidlanish-qaytarilish jarayoni. Bu darsda tayyor raqamli kartalardagi ion va elektron yo‘nalishini tahlil qilamiz; elektr qurilmasini yig‘ish yoki reagent bilan tajriba bajarish talab qilinmaydi.",
+        "fact_ids": [
+          "definition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page140"
+          }
+        ]
+      },
+      {
+        "title": "Aynan elektroliz katagining qutblari",
+        "body": "Darslikdagi tashqi tok manbali elektroliz katagida manfiy elektrod katod, musbat elektrod anod deb belgilangan. Bu aynan elektroliz katagining qutblari: boshqa turdagi barcha elementlarga umumiy qoida sifatida ko‘chirmang.",
+        "fact_ids": [
+          "polarity"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              139
+            ],
+            "pdf_pages": [
+              139
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page139"
+          }
+        ]
+      },
+      {
+        "title": "Ion yo‘nalishi va elektron jarayoni",
+        "body": "Berilgan sxemada musbat kationlar katod, manfiy anionlar anod tomon yo‘naladi. Katodda elektron qabul qilish — qaytarilish; anodda elektron berish — oksidlanish. Ionning harakati bilan uning elektroddagi reaksiyasi ikkita alohida bosqich sifatida o‘qiladi.",
+        "fact_ids": [
+          "ions"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              139
+            ],
+            "pdf_pages": [
+              139
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page139"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page140"
+          }
+        ]
+      },
+      {
+        "title": "CuCl2 ning berilgan ion kartasi",
+        "body": "Mahsulotlari ko‘rsatilgan CuCl2 suvli eritmasining inert elektrodli modeli: katodda Cu2++2e− → Cu, anodda2Cl− → Cl2+2e−.1 ta Cu kartasiga2 elektron qabul qilish mos. Bu berilgan mahsulotlar modeli, barcha xlorid eritmalarining shartsiz bashorati emas.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page140"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page141"
+          }
+        ]
+      },
+      {
+        "title": "Suvsiz suyuqlanma kartasi",
+        "body": "NaCl suyuqlanmasining mahsulotlari berilgan atom kartasi2NaCl=2Na+Cl2. Suv bu kartada yo‘q. Katoddagi Na+ elektron qabul qilib Na ga o‘tadi. Suyuqlanma bilan suvli eritma bir xil tarkibli muhit emas.",
+        "fact_ids": [
+          "melt"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page140"
+          }
+        ]
+      },
+      {
+        "title": "Suv ham qatnashishi mumkin",
+        "body": "Suvli eritma elektrolizida suv ham jarayonga qatnashishi mumkin. Shuning uchun katodda har doim metall chiqadi deb bo‘lmaydi; kitob ayrim sharoitlarda H2 chiqishini ham ko‘rsatadi. Mahsulotni tanlash uchun muhit va berilgan elektrod modeli o‘qiladi.",
+        "fact_ids": [
+          "water"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page141"
+          }
+        ]
+      },
+      {
+        "title": "CuSO4 ning berilgan molekulyar kartasi",
+        "body": "Mahsulotlari berilgan inert elektrodli CuSO4 modeli: 2CuSO4+2H2O=2Cu+O2+2H2SO4. Katodda Cu, anodda O2 ko‘rsatilgan; qolgan eritmadagi H2SO4 ni katod metalli bilan aralashtirmang. Bu berilgan modelning atom balansi.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page143"
+          }
+        ]
+      },
+      {
+        "title": "Suyuqlanma va eritmani ajrating",
+        "body": "Mahsulotlari berilgan ikkita modelni qiyoslang: suyuqlanma NaCl kartasida Na, suvli tuzning ayrim kartalarida esa H2 bor. Demak boshlang‘ich tuz nomining o‘zi yetarli shart emas; suv bor-yo‘qligi va tayyor mahsulotlar ro‘yxatini ajrating.",
+        "fact_ids": [
+          "phase"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page140"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              142
+            ],
+            "pdf_pages": [
+              142
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page142"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              143
+            ],
+            "pdf_pages": [
+              143
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page143"
+          }
+        ]
+      },
+      {
+        "title": "Qoplanadigan buyum qaysi elektrod?",
+        "body": "Kitobning nikellash sxemasida qoplanadigan buyum katod qilib ko‘rsatiladi; nikel qavati buyum yuzasiga joylashadi. Bu qurilma yig‘ish tartibi emas, sxemadagi elektrod vazifasini topish mashqi.",
+        "fact_ids": [
+          "plating"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page144"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Cu2+ kartasini o‘qing",
+        "body": "Cu2+ kartasi2 elektron olib Cu ga aylansa bu qaytarilish. Elektroliz sxemasida u katodga mos. NaCl suyuqlanmasi kartasida esa boshqa kation va boshqa mahsulot berilgan.",
+        "fact_ids": [
+          "ions",
+          "copper",
+          "melt"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              139
+            ],
+            "pdf_pages": [
+              139
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page139"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              140
+            ],
+            "pdf_pages": [
+              140
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page140"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph31",
+            "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+            "paragraph": 31,
+            "printed_pages": [
+              141
+            ],
+            "pdf_pages": [
+              141
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph31-page141"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph31",
+        "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+        "paragraph": 31,
+        "printed_pages": [
+          139
+        ],
+        "pdf_pages": [
+          139
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph31-page139"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph31",
+        "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+        "paragraph": 31,
+        "printed_pages": [
+          140
+        ],
+        "pdf_pages": [
+          140
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph31-page140"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph31",
+        "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+        "paragraph": 31,
+        "printed_pages": [
+          141
+        ],
+        "pdf_pages": [
+          141
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph31-page141"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph31",
+        "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+        "paragraph": 31,
+        "printed_pages": [
+          142
+        ],
+        "pdf_pages": [
+          142
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph31-page142"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph31",
+        "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+        "paragraph": 31,
+        "printed_pages": [
+          143
+        ],
+        "pdf_pages": [
+          143
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph31-page143"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph31",
+        "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+        "paragraph": 31,
+        "printed_pages": [
+          144
+        ],
+        "pdf_pages": [
+          144
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph31-page144"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p31-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan elektroliz katagida manfiy elektrod nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Katod"
+        },
+        {
+          "id": "b",
+          "label": "Har doim anod"
+        },
+        {
+          "id": "c",
+          "label": "Faqat erituvchi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat idish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page139"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Katoddagi elektron qabul qilish jarayoni qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat bug‘lanish"
+        },
+        {
+          "id": "b",
+          "label": "Faqat oksidlanish"
+        },
+        {
+          "id": "c",
+          "label": "Qaytarilish"
+        },
+        {
+          "id": "d",
+          "label": "Faqat erish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page139"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Suv yo‘q bo‘lgan NaCl atom kartasi qaysi muhit uchun berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Har doim suvli eritma"
+        },
+        {
+          "id": "b",
+          "label": "Faqat qattiq idish"
+        },
+        {
+          "id": "c",
+          "label": "Faqat gaz aralashmasi"
+        },
+        {
+          "id": "d",
+          "label": "Suyuqlanma"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Nikellash sxemasida qoplanadigan buyum qaysi elektrod?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat anod"
+        },
+        {
+          "id": "b",
+          "label": "Katod"
+        },
+        {
+          "id": "c",
+          "label": "Faqat tuz"
+        },
+        {
+          "id": "d",
+          "label": "Faqat tok manbai"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Elektr energiyasi hisobiga boradigan shu jarayon nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Berilgan elektroliz katagining musbat elektrodi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page139"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Anodda elektron berish jarayonining nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page139"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Cu2++2e− → Cu kartasida1Cu uchun nechta elektron qabul qilinadi?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "ta",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page141"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "2NaCl=2Na+Cl2 atom kartasida chapdagi NaCl koeffitsiyenti qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "ta",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "2CuSO4+2H2O=2Cu+O2+2H2SO4 kartasida Cu koeffitsiyenti qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "ta",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page143"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q11",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari Na va Cl2 deb berilgan NaCl suyuqlanmasi atom kartasini tenglashtiring.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page140"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p31-r1-q12",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari Cu, O2, H2SO4 deb berilgan CuSO4+H2O atom kartasini tenglashtiring.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph31",
+          "topic_title": "Elektroliz tushunchasi. Eritma va suyuqlanma elektrolizi",
+          "paragraph": 31,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph31-page143"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

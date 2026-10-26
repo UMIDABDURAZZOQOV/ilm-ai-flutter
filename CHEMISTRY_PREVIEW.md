@@ -1,6 +1,23 @@
 # ILM AI Chemistry: local QA preview
 
-## Current checkpoint — batch50, 2026-10-26
+## Current checkpoint — batch51, 2026-10-26
+
+268/268 source entries implemented; grade11 §1–33. Eight scenarios at
+320×568 and 200% text scale passed in16s;32 captures visually inspected.
+Equilibrium shifts and tables, halfreaction balance, medium-dependent redox,
+equivalents, electrolysis phases, Faraday units and charge budgets reuse the
+existing MCQ/FRQ, feedback and exact-source controls. Long equations use the
+existing atom grader; charged halfreactions remain display/count/word/MCQ.
+Full Flutter609 tests passed in520s; analysis0 issues/141.0s. Twenty-four
+sanitized actualHTTP fixtures;92 correct answers,260/5200XP preserved→268/5360XP,
++160once,identical completion replay. Comma and exponent variants agree.
+The whole-course audit regraded all3794stored answers and verified all five
+actual grade catalogs. All source readiness flags remain false; independent
+teacher and editorial reviews remain pending. Native Android/IME/TalkBack
+certification is pending. Source PDFs,OCR,renders,private logs,tokens and
+databases are excluded from Git. Earlier checkpoints below are historical.
+
+## Historical checkpoint — batch50, 2026-10-26
 
 260/268 source entries implemented; grade11 §1–25. Five scenarios at
 320×568 and200% text scale passed in17s;20 captures visually inspected.

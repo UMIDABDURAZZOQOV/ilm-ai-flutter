@@ -1,0 +1,1446 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p27-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+  "content": {
+    "cards": [
+      {
+        "title": "Uch satrli hisobni boshlang",
+        "body": "Boshlang‘ich, sarflangan yoki hosil bo‘lgan, muvozanatdagi miqdorlarni alohida satrga yozing. Reagent kamayishi va mahsulot ortishi tenglamaning koeffitsiyent nisbatiga mos bo‘lishi kerak. Mahsulot boshlanishda0 deb olingani masala shartida aytiladi.",
+        "fact_ids": [
+          "table"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              121
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page121"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              122
+            ],
+            "pdf_pages": [
+              122
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page122"
+          }
+        ]
+      },
+      {
+        "title": "Mahsulotdan sarfga o‘ting",
+        "body": "Berilgan 4HCl+O2=2Cl2+2H2O modeli: boshlang‘ich mahsulotlar0; muvozanatda HCl=0,7, O2=0,6, H2O=0,4 mol/L. H2O ning0,4 ortishiga HCl ning0,8 va O2 ning0,2 mol/L sarfi mos.",
+        "fact_ids": [
+          "chlorine"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              122
+            ],
+            "pdf_pages": [
+              122
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page122"
+          }
+        ]
+      },
+      {
+        "title": "Sarfdan boshlang‘ich miqdorga",
+        "body": "Shu modelda boshlang‘ich HCl=0,7+0,8=1,5 mol/L, O2=0,6+0,2=0,8 mol/L. V=8 L o‘zgarmas bo‘lsa boshlang‘ich miqdorlar12 mol va 6,4 mol. Konsentratsiya mol/L, miqdor esa mol.",
+        "fact_ids": [
+          "initial"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              122
+            ],
+            "pdf_pages": [
+              122
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page122"
+          }
+        ]
+      },
+      {
+        "title": "K orqali noma’lumni toping",
+        "body": "Berilgan SO2+NO2=SO3+NO modelida boshlang‘ich reagent konsentratsiyalari6 va 7 mol/L, mahsulotlar0 va K=1. Har bir mahsulot x bo‘lsa x²=(6−x)(7−x); bundan13x=42. Muvozanatdagi SO2=36/13≈2,77 va NO2=49/13≈3,77 mol/L, ikki kasr xonasigacha.",
+        "fact_ids": [
+          "sulfur"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              122
+            ],
+            "pdf_pages": [
+              122
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page122"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              123
+            ],
+            "pdf_pages": [
+              123
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page123"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph25",
+            "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+            "paragraph": 25,
+            "printed_pages": [
+              115
+            ],
+            "pdf_pages": [
+              115
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph25-page115"
+          }
+        ]
+      },
+      {
+        "title": "CO modelidagi to‘g‘ri jadval",
+        "body": "CO+3H2=CH4+H2O modelida mahsulotlar boshida0. Muvozanatda CO=0,9, H2=0,7, CH4=H2O=0,4 mol/L. Jadvaldagi o‘zgarishlar: CO0,4 ga, H2 esa1,2 ga kamayadi. Shuning uchun boshlang‘ich CO1,3 va H2 1,9 mol/L.",
+        "fact_ids": [
+          "carbon"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              124
+            ],
+            "pdf_pages": [
+              124
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page124"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page125"
+          }
+        ]
+      },
+      {
+        "title": "K ning bitta noma’lumi",
+        "body": "SO2+NO2=SO3+NO uchun K=[SO3][NO]/([SO2][NO2]). Muvozanatdagi SO2=4, SO3=NO=3 mol/L va K=1 bo‘lsa [NO2]=9/4=2,25 mol/L. Barcha kvadrat qavslar bir xil muvozanat holatiga tegishli.",
+        "fact_ids": [
+          "quotient"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page126"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph25",
+            "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+            "paragraph": 25,
+            "printed_pages": [
+              115
+            ],
+            "pdf_pages": [
+              115
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph25-page115"
+          }
+        ]
+      },
+      {
+        "title": "Boshqa muvozanat nisbatini yeching",
+        "body": "CO2+H2=CO+H2O uchun K=[CO][H2O]/([CO2][H2]). Muvozanatdagi CO2=12, CO=H2O=6 mol/L va K=1 bo‘lsa [H2]=36/12=3 mol/L. Bu yangi reaksiya tezligi tenglamasi emas, muvozanatdagi nisbat.",
+        "fact_ids": [
+          "inverse"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page126"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph25",
+            "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+            "paragraph": 25,
+            "printed_pages": [
+              115
+            ],
+            "pdf_pages": [
+              115
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph25-page115"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Bir xil holatdagi konsentratsiyalar",
+        "body": "K=[SO3][NO]/([SO2][NO2]). Boshlang‘ich sonlarni muvozanat sonlari o‘rniga qo‘ymang.",
+        "fact_ids": [
+          "quotient"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page126"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph25",
+            "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+            "paragraph": 25,
+            "printed_pages": [
+              115
+            ],
+            "pdf_pages": [
+              115
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph25-page115"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "HCl uchun ikki bosqich",
+        "body": "0,4 mol/L H2O hosil bo‘lsa4:2 nisbatdan HCl sarfi0,8 mol/L. Qolgan 0,7 ni qo‘shing: dastlab1,5 mol/L.8 L uchun 1,5·8=12 mol.",
+        "fact_ids": [
+          "chlorine",
+          "initial"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph27",
+            "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+            "paragraph": 27,
+            "printed_pages": [
+              122
+            ],
+            "pdf_pages": [
+              122
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph27-page122"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          121
+        ],
+        "pdf_pages": [
+          121
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page121"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          122
+        ],
+        "pdf_pages": [
+          122
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page122"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          123
+        ],
+        "pdf_pages": [
+          123
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page123"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          124
+        ],
+        "pdf_pages": [
+          124
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page124"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          125
+        ],
+        "pdf_pages": [
+          125
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page125"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          126
+        ],
+        "pdf_pages": [
+          126
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page126"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph27",
+        "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+        "paragraph": 27,
+        "printed_pages": [
+          127
+        ],
+        "pdf_pages": [
+          127
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph27-page127"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph25",
+        "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+        "paragraph": 25,
+        "printed_pages": [
+          115
+        ],
+        "pdf_pages": [
+          115
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph25-page115"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p27-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Boshlang‘ich, o‘zgarish va muvozanatni ajratish uchun qaysi vosita ishlatiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat rang"
+        },
+        {
+          "id": "b",
+          "label": "Jadval"
+        },
+        {
+          "id": "c",
+          "label": "Faqat nom"
+        },
+        {
+          "id": "d",
+          "label": "Faqat harorat"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page121"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Moddalar konsentratsiyasining o‘zgarish nisbati tenglamadagi nimaga mos?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Idish nomiga"
+        },
+        {
+          "id": "b",
+          "label": "Har doim1 ga"
+        },
+        {
+          "id": "c",
+          "label": "Faqat massaga"
+        },
+        {
+          "id": "d",
+          "label": "Koeffitsiyent"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page121"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "K nisbatidagi barcha konsentratsiyalar qaysi holatniki?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Muvozanat"
+        },
+        {
+          "id": "b",
+          "label": "Har doim boshlang‘ich"
+        },
+        {
+          "id": "c",
+          "label": "Faqat sof gaz"
+        },
+        {
+          "id": "d",
+          "label": "Har doim0"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page126"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page115"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "Uch xil holatdagi miqdorlarni satrlarga ajratadigan vosita nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page121"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q05",
+      "response_kind": "numeric_value",
+      "prompt": "4HCl+O2=2Cl2+2H2O; boshlang‘ich mahsulot0 va H2O o‘sishi0,4 mol/L. HCl sarfi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "Shu modelda muvozanat HCl0,7 va sarf0,8 mol/L. Boshlang‘ich HCl qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Boshlang‘ich HCl1,5 mol/L, V8 L. Miqdor qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan K=1 modelida SO2=36/13 mol/L. Ikki kasr xonasigacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page122"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            123
+          ],
+          "pdf_pages": [
+            123
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page123"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page115"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "CO+3H2 modelida CH4 o‘sishi0,4 mol/L va muvozanat H2 0,7 mol/L. Boshlang‘ich H2 qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page124"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page125"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "K=1, SO2=4, SO3=NO=3 mol/L. Berilgan SO2+NO2=SO3+NO modelida muvozanat NO2 qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page126"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page115"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p27-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "K=1, CO2=12, CO=H2O=6 mol/L. Berilgan CO2+H2=CO+H2O modelida muvozanat H2 qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol/L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph27",
+          "topic_title": "Kimyoviy muvozanat mavzusiga oid masalalar va ularning yechimi",
+          "paragraph": 27,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph27-page126"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph25",
+          "topic_title": "Qaytar va qaytmas reaksiyalar. Kimyoviy muvozanat",
+          "paragraph": 25,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph25-page115"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

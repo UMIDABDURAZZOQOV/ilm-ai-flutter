@@ -1,0 +1,1581 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p32-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Elektroliz qonunlari",
+  "content": {
+    "cards": [
+      {
+        "title": "Bir xil modda va o‘tgan zaryad",
+        "body": "Faradeyning birinchi qonuniga oid berilgan ideal modelda bir xil modda uchun ajralgan massa o‘tgan elektr zaryadiga to‘g‘ri proporsional. Zaryad ikki marta ortsa, boshqa shartlar va shu mahsulotga ketgan ulush bir xil bo‘lganda massa ikki marta ortadi.",
+        "fact_ids": [
+          "first"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page144"
+          }
+        ]
+      },
+      {
+        "title": "Bir xil zaryad va turli mahsulot",
+        "body": "Faradeyning ikkinchi qonuniga oid ideal modelda turli elektrolitlardan bir xil zaryad o‘tganda mahsulot massalari ularning shu jarayonga tegishli ekvivalent massalariga proporsional. Berilgan Cu uchun E32, Ag uchun E108 g/ekv: bir xil1 ekv zaryadga32 g Cu yoki108 g Ag mos.",
+        "fact_ids": [
+          "second"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              144
+            ],
+            "pdf_pages": [
+              144
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page144"
+          }
+        ]
+      },
+      {
+        "title": "Formula va vaqt birligi",
+        "body": "Berilgan ideal hisob formulasi m=E·I·t/96500. I amper, t sekund, E g/ekv bo‘lsa m gramm. Bu yerda96500 — kitobdan olingan yaxlitlangan zaryad doimiysi; vaqt minutda berilgan bo‘lsa avval sekundga o‘tkazing.",
+        "fact_ids": [
+          "formula"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page145"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph19",
+            "topic_title": "Normal konsentratsiya",
+            "paragraph": 19,
+            "printed_pages": [
+              88
+            ],
+            "pdf_pages": [
+              88
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph19-page88"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph19",
+            "topic_title": "Normal konsentratsiya",
+            "paragraph": 19,
+            "printed_pages": [
+              89
+            ],
+            "pdf_pages": [
+              89
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph19-page89"
+          }
+        ]
+      },
+      {
+        "title": "Avval ekvivalent miqdorni toping",
+        "body": "O‘tgan zaryadga mos ekvivalent miqdor neq=I·t/96500, ajralgan massa m=neq·E. Masalan, I5 A va t4825 s berilgan raqamli modelda neq=24125/96500=0,25 ekv. E bilan neq boshqa kattaliklardir.",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page145"
+          }
+        ]
+      },
+      {
+        "title": "Kitobdagi CuSO4 raqamli kartasi",
+        "body": "Kitobdagi500 g 32% CuSO4 modelida 160 g tuz, M=160 g/mol va mahsulot Cu uchun 1 mol tuzga2 ekv kerak. Tuz hisobida E80 g/ekv; 160/80=2 ekv. I5 A bo‘lgan raqamli karta uchun t=2·96500/5=38600 s. Bu amaliy elektroliz rejasi emas.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page145"
+          }
+        ]
+      },
+      {
+        "title": "O‘zgarmagan tuz, kamaygan suv",
+        "body": "Berilgan ideal K2CO3 modelida tuz massasi o‘zgarmaydi, faqat suv kamayadi deb shart berilgan.500 g 23% eritmada115 g tuz bor. Yakuniy foiz50 bo‘lsa jami eritma115/0,5=230 g; kamaygan suv500−230=270 g.",
+        "fact_ids": [
+          "carbonate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page146"
+          }
+        ]
+      },
+      {
+        "title": "Minutni sekundga moslang",
+        "body": "Shu modelda suv uchun E9 g/ekv berilgan.4825 min=289500 s. I=m·96500/(E·t)=270·96500/(9·289500)=10 A. Sekundli doimiy bilan 4825 sonini minut sifatida moslamasdan ishlatmang.",
+        "fact_ids": [
+          "current"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page146"
+          }
+        ]
+      },
+      {
+        "title": "Yakuniy foizni aniq yaxlitlang",
+        "body": "Berilgan KCl mahsulotli massa kartasida yakuniy KOH16,8 g, chiqib ketgan gazlar10,95 g va boshlang‘ich eritma250 g. Qolgan eritma239,05 g. C%=16,8/239,05·100≈7,03%, ikki kasr xonasigacha. Bu aynan berilgan ideal faza hisobi.",
+        "fact_ids": [
+          "percentage"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              147
+            ],
+            "pdf_pages": [
+              147
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page147"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              148
+            ],
+            "pdf_pages": [
+              148
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page148"
+          }
+        ]
+      },
+      {
+        "title": "Kristallogidratni mol nisbati bilan tekshiring",
+        "body": "Berilgan kristallogidrat massasi 31,25 g. Zaryad hisobi anhidrid CuSO4 massasini20 g beradi; kristalldagi suv31,25−20=11,25 g. M(CuSO4)=160 g/mol, M(H2O)=18 g/mol bilan miqdorlar0,125 va 0,625 mol: ularning nisbati5. Formula CuSO4·5H2O; bu raqamli tarkib tahlili.",
+        "fact_ids": [
+          "hydrate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page145"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              148
+            ],
+            "pdf_pages": [
+              148
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page148"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              149
+            ],
+            "pdf_pages": [
+              149
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page149"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Birliklar bilan Faradey hisobi",
+        "body": "m=EIt/96500; neq=It/96500. t sekund, I amper, E g/ekv, neq ekv, m gramm.",
+        "fact_ids": [
+          "formula",
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              145
+            ],
+            "pdf_pages": [
+              145
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page145"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph19",
+            "topic_title": "Normal konsentratsiya",
+            "paragraph": 19,
+            "printed_pages": [
+              88
+            ],
+            "pdf_pages": [
+              88
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph19-page88"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph19",
+            "topic_title": "Normal konsentratsiya",
+            "paragraph": 19,
+            "printed_pages": [
+              89
+            ],
+            "pdf_pages": [
+              89
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph19-page89"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Minutli masalani sekundli formulada yeching",
+        "body": "4825·60=289500 s.270·96500/(9·289500)=10. Kitobdagi yaxlitlangan minut doimiysini va sekund doimiysini bitta hisobda aralashtirmang.",
+        "fact_ids": [
+          "current"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph32",
+            "topic_title": "Elektroliz qonunlari",
+            "paragraph": 32,
+            "printed_pages": [
+              146
+            ],
+            "pdf_pages": [
+              146
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph32-page146"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph32",
+        "topic_title": "Elektroliz qonunlari",
+        "paragraph": 32,
+        "printed_pages": [
+          144
+        ],
+        "pdf_pages": [
+          144
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph32-page144"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph32",
+        "topic_title": "Elektroliz qonunlari",
+        "paragraph": 32,
+        "printed_pages": [
+          145
+        ],
+        "pdf_pages": [
+          145
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph32-page145"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph32",
+        "topic_title": "Elektroliz qonunlari",
+        "paragraph": 32,
+        "printed_pages": [
+          146
+        ],
+        "pdf_pages": [
+          146
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph32-page146"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph32",
+        "topic_title": "Elektroliz qonunlari",
+        "paragraph": 32,
+        "printed_pages": [
+          147
+        ],
+        "pdf_pages": [
+          147
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph32-page147"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph32",
+        "topic_title": "Elektroliz qonunlari",
+        "paragraph": 32,
+        "printed_pages": [
+          148
+        ],
+        "pdf_pages": [
+          148
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph32-page148"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph32",
+        "topic_title": "Elektroliz qonunlari",
+        "paragraph": 32,
+        "printed_pages": [
+          149
+        ],
+        "pdf_pages": [
+          149
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph32-page149"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph19",
+        "topic_title": "Normal konsentratsiya",
+        "paragraph": 19,
+        "printed_pages": [
+          88
+        ],
+        "pdf_pages": [
+          88
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph19-page88"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph19",
+        "topic_title": "Normal konsentratsiya",
+        "paragraph": 19,
+        "printed_pages": [
+          89
+        ],
+        "pdf_pages": [
+          89
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph19-page89"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph05",
+        "topic_title": "Modda miqdori",
+        "paragraph": 5,
+        "printed_pages": [
+          31
+        ],
+        "pdf_pages": [
+          31
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph05-page31"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p32-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Birinchi qonundagi ideal bir modda massasi qaysi kattalikka proporsional?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat idish hajmi"
+        },
+        {
+          "id": "b",
+          "label": "Zaryad"
+        },
+        {
+          "id": "c",
+          "label": "Faqat modda nomi"
+        },
+        {
+          "id": "d",
+          "label": "Faqat xona soni"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Ikkinchi qonunda teng zaryad uchun massalar qaysi kattaliklarga proporsional?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat erituvchi nomiga"
+        },
+        {
+          "id": "b",
+          "label": "Faqat idish rangiga"
+        },
+        {
+          "id": "c",
+          "label": "Faqat vaqt harfiga"
+        },
+        {
+          "id": "d",
+          "label": "Ekvivalent"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "96500 doimiyli berilgan formulada vaqt qaysi birlikda kiritiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sekund"
+        },
+        {
+          "id": "b",
+          "label": "Moslamasdan minut"
+        },
+        {
+          "id": "c",
+          "label": "Moslamasdan soat"
+        },
+        {
+          "id": "d",
+          "label": "Faqat litr"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page145"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            88
+          ],
+          "pdf_pages": [
+            88
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page88"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            89
+          ],
+          "pdf_pages": [
+            89
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page89"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "Formuladagi vaqt birligi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page145"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            88
+          ],
+          "pdf_pages": [
+            88
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page88"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph19",
+          "topic_title": "Normal konsentratsiya",
+          "paragraph": 19,
+          "printed_pages": [
+            89
+          ],
+          "pdf_pages": [
+            89
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph19-page89"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Birinchi qonunda massa proporsional bo‘lgan elektr kattalik nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page144"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan ideal model I5 A, t4825 s. neq=It/96500 qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "ekv",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "160 g CuSO4 uchun E80 g/ekv, I5 A deb berilgan raqamli kartada t qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "s",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page145"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "500 g 23% eritmada tuz saqlangan, yakuniy foiz50. Suv massasi qancha kamaygan?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "4825 minutni sekundda yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "s",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "m270 g, E9 g/ekv, t289500 s bo‘lgan ideal suv kartasida I qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "A",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page146"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "16,8 g KOH va 239,05 g yakuniy eritma. C% ni ikki kasr xonasigacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "%",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            147
+          ],
+          "pdf_pages": [
+            147
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page147"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page148"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p32-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "0,625 mol kristall suvi va 0,125 mol CuSO4 nisbati qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "nisbat",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page145"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page148"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph32",
+          "topic_title": "Elektroliz qonunlari",
+          "paragraph": 32,
+          "printed_pages": [
+            149
+          ],
+          "pdf_pages": [
+            149
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph32-page149"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
