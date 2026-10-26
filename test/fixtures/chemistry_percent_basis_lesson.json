@@ -1,0 +1,1222 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p15-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+  "content": {
+    "cards": [
+      {
+        "title": "Foiz nimaning yuzdan bir qismi?",
+        "body": "Foiz konsentratsiya bu darsda erigan modda massasining jami eritma massasidagi foizini bildiradi. 15% li 100 g shakar eritmasi modelida 15 g shakar va 85 g suv bor. 15% ni 100 g suvga 15 g shakar deb almashtirmang.",
+        "fact_ids": [
+          "meaning"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              73
+            ],
+            "pdf_pages": [
+              73
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page73"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              74
+            ],
+            "pdf_pages": [
+              74
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page74"
+          }
+        ]
+      },
+      {
+        "title": "Maxrajga jami eritmani oling",
+        "body": "C%=100·m(erigan modda)/m(eritma). Eritma massasi erigan modda va erituvchi massalari yig‘indisi. Masalan, 30 g KCl va 100 g suv modeli uchun jami 130 g; 30/130·100≈23,08% ikki kasr xonasigacha.",
+        "fact_ids": [
+          "formula"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              74
+            ],
+            "pdf_pages": [
+              74
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page74"
+          }
+        ]
+      },
+      {
+        "title": "Foizdan erigan modda massasiga",
+        "body": "C% son qiymati va eritma massasi berilsa, erigan modda massasi m=C%·M/100. Bu ifodada M jami eritma massasi; ushbu kartada M molyar massa belgisi sifatida ishlatilmagan. Belgining ma’nosini shartdan o‘qing.",
+        "fact_ids": [
+          "solute"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          }
+        ]
+      },
+      {
+        "title": "Modda massasidan jami eritmaga",
+        "body": "Erigan modda massasi m va musbat C% berilsa, jami eritma massasi M=100m/C%. Suv va bitta erigan moddadan iborat modelda suv massasi M−m. Foizning qaysi massa asosida berilganini tekshiring.",
+        "fact_ids": [
+          "solution"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          }
+        ]
+      },
+      {
+        "title": "40% li KNO3 sonli kartasi",
+        "body": "Berilgan raqamli KNO3 modeli: 50 g erigan modda, C%=40. Eritma massasi 100·50/40=125 g; suv125−50=75 g. Bu sonli massa kartasi; haqiqiy eritma tayyorlash tartibi emas.",
+        "fact_ids": [
+          "potassium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          }
+        ]
+      },
+      {
+        "title": "Suv massasi berilgan NaNO3 kartasi",
+        "body": "Berilgan NaNO3 modeli: 150 g suv, C%=25. 100 g eritmada25 g modda va 75 g suv nisbatidan foydalanamiz.150 g suvga50 g erigan modda mos, jami 200 g eritma.",
+        "fact_ids": [
+          "sodium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          }
+        ]
+      },
+      {
+        "title": "30% li KBr sonli kartasi",
+        "body": "Berilgan KBr modeli: 500 g jami eritma, C%=30. Erigan modda500·30/100=150 g; suv500−150=350 g. Bu hisob uchun K yoki Br atom massasi talab qilinmaydi.",
+        "fact_ids": [
+          "bromide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              76
+            ],
+            "pdf_pages": [
+              76
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page76"
+          }
+        ]
+      },
+      {
+        "title": "Moldan avval grammga o‘ting",
+        "body": "Erigan moddaning massasi o‘rniga miqdori berilsa, avval m=n·Mmol hisoblanadi. Kitobning Na2CO3 kartasida Mmol=106 g/mol va n=0,5 mol: m=53 g. Bu yerda Mmol molyar massa, jami eritma massasi emas.",
+        "fact_ids": [
+          "moles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              76
+            ],
+            "pdf_pages": [
+              76
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page76"
+          }
+        ]
+      },
+      {
+        "title": "Na2CO3 uchun yakuniy foiz",
+        "body": "Shu Na2CO3 modelida 53 g erigan modda va 97 g suv jami 150 g eritma beradi. C%=53/150·100≈35,33%, ikki kasr xonasigacha. Oraliq53 g ni 97 g suvning o‘ziga bo‘lish boshqa nisbat beradi.",
+        "fact_ids": [
+          "carbonate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              76
+            ],
+            "pdf_pages": [
+              76
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page76"
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "title": "Bir xil massa asosidagi uch ifoda",
+        "body": "C%=100m/M; m=C%·M/100; M=100m/C%. Bu uchlikda m — erigan modda, M — jami eritma massasi. M ni molyar massa bilan almashtirmang.",
+        "fact_ids": [
+          "formula",
+          "solute",
+          "solution"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              74
+            ],
+            "pdf_pages": [
+              74
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page74"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "title": "Massa va foizni ikki marta tekshiring",
+        "body": "KBr modelida 150+350=500 g.150/500·100=30%. Modda va suv massalarining yig‘indisi shartdagi eritma massasiga qaytdi.",
+        "fact_ids": [
+          "bromide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              75
+            ],
+            "pdf_pages": [
+              75
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page75"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph15",
+            "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+            "paragraph": 15,
+            "printed_pages": [
+              76
+            ],
+            "pdf_pages": [
+              76
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph15-page76"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph15",
+        "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+        "paragraph": 15,
+        "printed_pages": [
+          73
+        ],
+        "pdf_pages": [
+          73
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph15-page73"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph15",
+        "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+        "paragraph": 15,
+        "printed_pages": [
+          74
+        ],
+        "pdf_pages": [
+          74
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph15-page74"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph15",
+        "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+        "paragraph": 15,
+        "printed_pages": [
+          75
+        ],
+        "pdf_pages": [
+          75
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph15-page75"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph15",
+        "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+        "paragraph": 15,
+        "printed_pages": [
+          76
+        ],
+        "pdf_pages": [
+          76
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph15-page76"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph15",
+        "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+        "paragraph": 15,
+        "printed_pages": [
+          77
+        ],
+        "pdf_pages": [
+          77
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph15-page77"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p15-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Bu darsdagi15% uchun 100 g asos qaysi massa?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat suv"
+        },
+        {
+          "id": "b",
+          "label": "Eritma"
+        },
+        {
+          "id": "c",
+          "label": "Faqat shakar"
+        },
+        {
+          "id": "d",
+          "label": "Faqat idish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            73
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page73"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page74"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "m erigan modda, M jami eritma massasi bo‘lsa C% qaysi ifoda?",
+      "options": [
+        {
+          "id": "a",
+          "label": "100m/(M−m)"
+        },
+        {
+          "id": "b",
+          "label": "100M/m"
+        },
+        {
+          "id": "c",
+          "label": "m+M"
+        },
+        {
+          "id": "d",
+          "label": "100m/M"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page74"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Na2CO3 kartasida berilgan Mmol soni qancha?",
+      "options": [
+        {
+          "id": "a",
+          "label": "106"
+        },
+        {
+          "id": "b",
+          "label": "53"
+        },
+        {
+          "id": "c",
+          "label": "97"
+        },
+        {
+          "id": "d",
+          "label": "150"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page76"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q04",
+      "response_kind": "short_text",
+      "prompt": "Foiz konsentratsiya maxrajidagi jami sistema nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            73
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page73"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page74"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q05",
+      "response_kind": "numeric_value",
+      "prompt": "100 g 15% li shakar eritmasi modelida suv massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            73
+          ],
+          "pdf_pages": [
+            73
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page73"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page74"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "30 g tuz va 100 g suvli modelning foizini ikki kasr xonasigacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "%",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            74
+          ],
+          "pdf_pages": [
+            74
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page74"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "50 g modda40% ni tashkil etgan modelda suv massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            75
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page75"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "150 g suvli25% modelda erigan modda massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            75
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page75"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "500 g 30% li modelda erigan modda massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            75
+          ],
+          "pdf_pages": [
+            75
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page75"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page76"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "n=0,5 mol, Mmol=106 g/mol. Modda massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page76"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p15-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "53 g erigan modda va 97 g suvli modelda C% ni ikki kasr xonasigacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "%",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph15",
+          "topic_title": "Eritma konsentratsiyasi va uni ifodalash usullari. Foiz konsentratsiya",
+          "paragraph": 15,
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            76
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph15-page76"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

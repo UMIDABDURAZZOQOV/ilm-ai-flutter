@@ -1,0 +1,986 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p11-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+  "content": {
+    "cards": [
+      {
+        "title": "Gidroliz va dissotsiatsiyani farqlang",
+        "body": "Tuz ionlarining suv bilan o‘zaro ta’siri natijasida kuchsiz elektrolitga mos shakl hosil bo‘lishi gidroliz deb tushuntirilgan. Uni tuzning shunchaki ionlarga ajralishi — dissotsiatsiya bilan bir vazifa deb olmang.",
+        "fact_ids": [
+          "definition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              58
+            ],
+            "pdf_pages": [
+              58
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page58"
+          }
+        ]
+      },
+      {
+        "title": "NH4Cl misolida kation tomoni",
+        "body": "Kitobning NH4Cl misolida suv bilan ta’sirlashuvchi tomon NH4+ kationidir. Rasmda H+ hosil bo‘lishi ko‘rsatilgani uchun shu misol muhiti kislotali deb berilgan. NH4OH yozuvi bu yerda maktab modeli; alohida sof modda olingani haqidagi da’vo emas.",
+        "fact_ids": [
+          "cation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              58
+            ],
+            "pdf_pages": [
+              58
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page58"
+          }
+        ]
+      },
+      {
+        "title": "Atsetat misolida anion tomoni",
+        "body": "Natriy atsetat misolida atsetat anioni suv bilan ta’sirlashib, sirka kislotasiga mos molekulyar shakl va OH− bilan ifodalangan muvozanat beradi. Shu berilgan misolda muhit ishqoriy; jarayon anion bo‘yicha gidroliz deyiladi.",
+        "fact_ids": [
+          "anion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page59"
+          }
+        ]
+      },
+      {
+        "title": "Ikkala ion qatnashadigan rasm",
+        "body": "Ammoniy atsetat rasmida ham NH4+ kationi, ham atsetat anioni suv bilan ta’sirlashuvchi tomon sifatida ko‘rsatilgan. “Ikkala ion qatnashadi” degan ma’lumotning o‘zi har qanday boshqa kuchsiz kislota/asos tuzi uchun aniq pH belgilashga yetmaydi.",
+        "fact_ids": [
+          "both"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page59"
+          }
+        ]
+      },
+      {
+        "title": "Sharoitning vazifasi",
+        "body": "Manba gidrolizni harorat, konsentratsiya va eritma muhiti bilan bog‘laydi. Bularni o‘zgartirish reaksiyaning tezligi va muvozanatdagi ulushiga bir xil, universal sonli ta’sir qiladi deb hisoblamaymiz. Ushbu darsda reagent qo‘shish yoki isitish bo‘yicha amaliy yo‘riqnoma berilmaydi.",
+        "fact_ids": [
+          "conditions"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              59
+            ],
+            "pdf_pages": [
+              59
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page59"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              60
+            ],
+            "pdf_pages": [
+              60
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page60"
+          }
+        ]
+      },
+      {
+        "title": "H+ va OH− ni qiyoslang",
+        "body": "Eritmadagi H+ va OH− miqdorlari teng bo‘lsa muhit neytral deb tasvirlangan. H+ ko‘proq bo‘lsa kislotali, OH− ko‘proq bo‘lsa ishqoriy. Shu qiyosda ionlarning nomi bilan birga qaysi biri ko‘pligiga e’tibor bering.",
+        "fact_ids": [
+          "relative"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              60
+            ],
+            "pdf_pages": [
+              60
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page60"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan pH shkalasini o‘qing",
+        "body": "Kitobning ko‘rsatilgan pH shkalasida 7 neytral nuqta, undan kichik qiymatlar kislotali, kattalari ishqoriy tomon qilib chizilgan. Savollar aynan shu rasm shartida beriladi. Rasmni barcha haroratlar uchun universal pH chegarasi yoki kasallik tashxisi deb ishlatmang.",
+        "fact_ids": [
+          "scale"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              60
+            ],
+            "pdf_pages": [
+              60
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page60"
+          }
+        ]
+      },
+      {
+        "title": "Jadvaldagi uchta aniq muhit",
+        "body": "Berilgan jadvalda kaliy nitrat eritmasi neytral, alyuminiy nitrat eritmasi kislotali, natriy karbonat eritmasi ishqoriy deb ko‘rsatilgan. Bular jadvaldagi uchta aniq misol; boshqa noma’lum eritmaning pH ini uning nomi ko‘rsatilmasdan tayinlamaymiz.",
+        "fact_ids": [
+          "named"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              61
+            ],
+            "pdf_pages": [
+              61
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page61"
+          }
+        ]
+      },
+      {
+        "title": "Lakmus kuzatuvini sharti bilan oling",
+        "body": "Jadvaldagi alyuminiy nitrat misolida lakmus qizaradi; natriy karbonat misolida ko‘karadi. Indikatorning nomi, berilgan eritma va kuzatuv birga o‘qiladi. Rangning o‘zi noma’lum tuzning yagona kimyoviy identifikatsiyasi emas.",
+        "fact_ids": [
+          "indicator"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              61
+            ],
+            "pdf_pages": [
+              61
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page61"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Bir-biriga o‘xshash ikki atama",
+        "body": "NH4Cl ionlarga ajralishini dissotsiatsiya deb nomlaymiz. Keyin NH4+ ning suv bilan ta’siri boshqa bosqich: berilgan gidroliz modeli. Bitta so‘z bilan ikkala vazifani almashtirmang.",
+        "fact_ids": [
+          "definition",
+          "cation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph11",
+            "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+            "paragraph": 11,
+            "printed_pages": [
+              58
+            ],
+            "pdf_pages": [
+              58
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph11-page58"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph11",
+        "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+        "paragraph": 11,
+        "printed_pages": [
+          58
+        ],
+        "pdf_pages": [
+          58
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph11-page58"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph11",
+        "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+        "paragraph": 11,
+        "printed_pages": [
+          59
+        ],
+        "pdf_pages": [
+          59
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph11-page59"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph11",
+        "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+        "paragraph": 11,
+        "printed_pages": [
+          60
+        ],
+        "pdf_pages": [
+          60
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph11-page60"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph11",
+        "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+        "paragraph": 11,
+        "printed_pages": [
+          61
+        ],
+        "pdf_pages": [
+          61
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph11-page61"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph11",
+        "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+        "paragraph": 11,
+        "printed_pages": [
+          62
+        ],
+        "pdf_pages": [
+          62
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph11-page62"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p11-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "NH4Cl ning berilgan gidroliz misolida suv bilan ta’sirlashuvchi ion tomoni qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat anion"
+        },
+        {
+          "id": "b",
+          "label": "Kation"
+        },
+        {
+          "id": "c",
+          "label": "Faqat neytral Cl2"
+        },
+        {
+          "id": "d",
+          "label": "Faqat metall"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page58"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Natriy atsetatning berilgan misolida muhit qanday?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kislotali"
+        },
+        {
+          "id": "b",
+          "label": "Har doim aynan pH=7"
+        },
+        {
+          "id": "c",
+          "label": "Muhit yo‘q"
+        },
+        {
+          "id": "d",
+          "label": "Ishqoriy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page59"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Ammoniy atsetat rasmida qaysi tomonlar qatnashgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ikkala ion"
+        },
+        {
+          "id": "b",
+          "label": "Faqat kation"
+        },
+        {
+          "id": "c",
+          "label": "Faqat anion"
+        },
+        {
+          "id": "d",
+          "label": "Ikkalasi ham qatnashmaydi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page59"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "OH− miqdori H+ dan ko‘proq deb berilsa muhit qanday?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kislotali"
+        },
+        {
+          "id": "b",
+          "label": "Neytral"
+        },
+        {
+          "id": "c",
+          "label": "Ishqoriy"
+        },
+        {
+          "id": "d",
+          "label": "Faqat gaz"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            60
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page60"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Jadvaldagi alyuminiy nitrat eritmasi muhiti qanday?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kislotali"
+        },
+        {
+          "id": "b",
+          "label": "Ishqoriy"
+        },
+        {
+          "id": "c",
+          "label": "Neytral"
+        },
+        {
+          "id": "d",
+          "label": "Faqat qattiq"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page61"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Tuz ionlarining suv bilan ta’sirlashishi mavzusidagi jarayon nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page58"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Atsetat ionining gidroliz tomoni: kationmi yoki anionmi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page59"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Jadvalda qizarishi va ko‘karishi solishtirilgan indikator nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page61"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Faqat kitobning berilgan pH rasmidagi neytral nuqta sonini yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            60
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page60"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p11-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "Ammoniy atsetat rasmida gidrolizga qatnashuvchi ion turlari soni nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph11",
+          "topic_title": "Tuzlarning gidrolizi va undagi eritma muhiti",
+          "paragraph": 11,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph11-page59"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

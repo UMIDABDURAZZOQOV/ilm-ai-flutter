@@ -2446,6 +2446,82 @@ void main() {
     });
   }
 
+  for (final scenario in [
+    ('hydrolysis_ph', 11, 5, '', 'Gidroliz', 58, false),
+    ('solution_roles', 12, 7, '', 'Gidratlanish', 62, false),
+    ('solubility_phase', 13, 8, '', '137,2', 68, false),
+    ('crystal_balance', 14, 9, '', '59,75', 72, false),
+    ('percent_basis', 15, 5, '', '23,08', 74, false),
+  ]) {
+    final (name, number, questionIndex, choiceId, value, page, prior) = scenario;
+    testWidgets('batch48 $name grade11 source and feedback at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      catalog['available_grades'] = [7, 8, 9, 10, 11];
+      grade11Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(questionIndex);
+      await mount(t, dark: number.isOdd, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-11')));
+      await waitFor(find.text('Darsni boshlash'));
+      expect(requests.lastWhere((r) => r.path.endsWith('/catalog')).queryParameters['grade'], 11);
+      await t.ensureVisible(find.text('Darsni boshlash').first);
+      if (!prior) await capture(t, '$name-batch48-catalog');
+      await tap(t, 'Darsni boshlash');
+      if (questionIndex == 0) {
+        for (var i = 0; i < jsonRows((lesson['content'] as Json)['cards']).length - 1; i++) {
+          await tap(t, 'Davom etish');
+        }
+        await tap(t, 'Mashqlarga o‘tish');
+      }
+      final numeric = value.isNotEmpty;
+      if (numeric) {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      } else {
+        final question = jsonRows(lesson['questions'])[questionIndex];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == choiceId);
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], numeric ? {'value':value} : {'choice_id':choiceId});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch48-feedback');
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$number ·'));
+      await t.ensureVisible(source);
+      await capture(t, '$name-batch48-feedback-source');
+      await tapFinder(t, source);
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('umumiy_kimyo_11_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch48-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (prior) {
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §5 ·'));
+        await tapFinder(t, priorSource);
+        final priorLocator = find.textContaining('31 -> PDF 31');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining('umumiy_kimyo_11_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch48-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');

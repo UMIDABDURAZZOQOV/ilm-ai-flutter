@@ -1,6 +1,19 @@
 # ILM AI Chemistry: local QA preview
 
-## Current checkpoint — batch47, 2026-10-26
+## Current checkpoint — batch48, 2026-10-26
+
+250/268 source entries implemented; grade11 §1–15. Five scenarios at
+320×568 and 200% text scale passed in18s;20 captures visually inspected.
+Hydrolysis, solution roles, phase masses, crystallization balance and total
+solution percentage use existing MCQ/FRQ, feedback and source controls.
+Full Flutter591 tests passed in467s; analysis0 issues/101.1s. Fifteen sanitized
+actualHTTP fixtures;52 correct answers,245/4900XP preserved→250/5000XP,
++100once,identical completion replay. Comma and exponent variants agree.
+All source readiness flags remain false; independent teacher and copy spacing
+reviews remain pending. Native Android/IME/TalkBack are not certified.
+Earlier sections are historical.
+
+## Historical checkpoint — batch47, 2026-10-26
 
 245/268 source entries implemented;grade11§1–10. Five new320×568/200%
 scenarios passed in19s;20 captures inspected for gas-particle count,

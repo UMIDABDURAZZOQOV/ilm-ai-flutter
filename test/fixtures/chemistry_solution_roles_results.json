@@ -1,0 +1,739 @@
+{
+  "answers": {
+    "chemistry-11-p12-r1-q01": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q01",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Eritmada erituvchi va erigan modda zarrachalari o‘zaro ta’sirlashib, bir jinsli sistema hosil qiladi. Kitob bu holatni gomogen deb ataydi: ko‘rib chiqilayotgan bir xil sharoitdagi qismlarning tarkibi bir tekis.",
+      "correct_answer": "Gomogen",
+      "solution": [
+        {
+          "body": "Eritmada erituvchi va erigan modda zarrachalari o‘zaro ta’sirlashib, bir jinsli sistema hosil qiladi. Kitob bu holatni gomogen deb ataydi: ko‘rib chiqilayotgan bir xil sharoitdagi qismlarning tarkibi bir tekis.",
+          "fact_ids": [
+            "homogeneous"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q02": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q02",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Suvli shakar eritmasi misolida suv — erituvchi, shakar — erigan modda. Bir misoldagi vazifani nomlash bilan “har qanday erituvchining o‘zi suv bo‘ladi” degan qoida chiqarmaymiz.",
+      "correct_answer": "Suv",
+      "solution": [
+        {
+          "body": "Suvli shakar eritmasi misolida suv — erituvchi, shakar — erigan modda. Bir misoldagi vazifani nomlash bilan “har qanday erituvchining o‘zi suv bo‘ladi” degan qoida chiqarmaymiz.",
+          "fact_ids": [
+            "solvent"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q03": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q03",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Shakar eriganda uning molekulalari suv molekulalari orasida tarqalishi bilan tasvirlangan. Shakar kristalining ko‘zga ko‘rinmay qolishi modda yo‘qolganini bildirmaydi. Zarrachalar turi shu misolda molekula deb berilgan.",
+      "correct_answer": "Molekula",
+      "solution": [
+        {
+          "body": "Shakar eriganda uning molekulalari suv molekulalari orasida tarqalishi bilan tasvirlangan. Shakar kristalining ko‘zga ko‘rinmay qolishi modda yo‘qolganini bildirmaydi. Zarrachalar turi shu misolda molekula deb berilgan.",
+          "fact_ids": [
+            "sugar"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q04": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q04",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. NaCl eritmasi esa Na+ va Cl− ionlari suv bilan o‘ralgan holda tarqalishi orqali tushuntirilgan. Suvning ionlarni o‘rab olishi gidratlanish modeli bilan ifodalangan. Shakar va NaCl uchun barcha zarrachalarni bir xil “molekula” deb yozmang.",
+      "correct_answer": "Ion",
+      "solution": [
+        {
+          "body": "NaCl eritmasi esa Na+ va Cl− ionlari suv bilan o‘ralgan holda tarqalishi orqali tushuntirilgan. Suvning ionlarni o‘rab olishi gidratlanish modeli bilan ifodalangan. Shakar va NaCl uchun barcha zarrachalarni bir xil “molekula” deb yozmang.",
+          "fact_ids": [
+            "ions"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q05": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q05",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Manba eritma qismlarini fizik usullar orqali ajratish tushunchasini, birikmaning parchalanishini esa kimyoviy o‘zgarish bilan solishtiradi. Bu dars usullarni tushunish uchun; haqiqiy distillash yoki reagent qizdirish tartibini bermaydi.",
+      "correct_answer": "Fizik",
+      "solution": [
+        {
+          "body": "Manba eritma qismlarini fizik usullar orqali ajratish tushunchasini, birikmaning parchalanishini esa kimyoviy o‘zgarish bilan solishtiradi. Bu dars usullarni tushunish uchun; haqiqiy distillash yoki reagent qizdirish tartibini bermaydi.",
+          "fact_ids": [
+            "separation"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                63
+              ],
+              "pdf_pages": [
+                63
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page63"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                64
+              ],
+              "pdf_pages": [
+                64
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page64"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            63
+          ],
+          "pdf_pages": [
+            63
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page63"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            64
+          ],
+          "pdf_pages": [
+            64
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page64"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q06": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q06",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Eritmada erituvchi va erigan modda zarrachalari o‘zaro ta’sirlashib, bir jinsli sistema hosil qiladi. Kitob bu holatni gomogen deb ataydi: ko‘rib chiqilayotgan bir xil sharoitdagi qismlarning tarkibi bir tekis.",
+      "correct_answer": "Gomogen",
+      "solution": [
+        {
+          "body": "Eritmada erituvchi va erigan modda zarrachalari o‘zaro ta’sirlashib, bir jinsli sistema hosil qiladi. Kitob bu holatni gomogen deb ataydi: ko‘rib chiqilayotgan bir xil sharoitdagi qismlarning tarkibi bir tekis.",
+          "fact_ids": [
+            "homogeneous"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q07": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q07",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Suvli shakar eritmasi misolida suv — erituvchi, shakar — erigan modda. Bir misoldagi vazifani nomlash bilan “har qanday erituvchining o‘zi suv bo‘ladi” degan qoida chiqarmaymiz.",
+      "correct_answer": "Shakar",
+      "solution": [
+        {
+          "body": "Suvli shakar eritmasi misolida suv — erituvchi, shakar — erigan modda. Bir misoldagi vazifani nomlash bilan “har qanday erituvchining o‘zi suv bo‘ladi” degan qoida chiqarmaymiz.",
+          "fact_ids": [
+            "solvent"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q08": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q08",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. NaCl eritmasi esa Na+ va Cl− ionlari suv bilan o‘ralgan holda tarqalishi orqali tushuntirilgan. Suvning ionlarni o‘rab olishi gidratlanish modeli bilan ifodalangan. Shakar va NaCl uchun barcha zarrachalarni bir xil “molekula” deb yozmang.",
+      "correct_answer": "Gidratlanish",
+      "solution": [
+        {
+          "body": "NaCl eritmasi esa Na+ va Cl− ionlari suv bilan o‘ralgan holda tarqalishi orqali tushuntirilgan. Suvning ionlarni o‘rab olishi gidratlanish modeli bilan ifodalangan. Shakar va NaCl uchun barcha zarrachalarni bir xil “molekula” deb yozmang.",
+          "fact_ids": [
+            "ions"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                62
+              ],
+              "pdf_pages": [
+                62
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page62"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page62"
+        }
+      ]
+    },
+    "chemistry-11-p12-r1-q09": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p12-r1-q09",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Eritmadagi tarkibiy qismlar nisbati o‘zgarishi mumkin. Shu sabab bir xil erituvchi va modda nomi berilishi ularning aniq miqdor nisbatini belgilamaydi. Kimyoviy birikmaning aniq formula tarkibini eritmaning o‘zgaruvchan tarkibi bilan ajrating.",
+      "correct_answer": "O‘zgaruvchan",
+      "solution": [
+        {
+          "body": "Eritmadagi tarkibiy qismlar nisbati o‘zgarishi mumkin. Shu sabab bir xil erituvchi va modda nomi berilishi ularning aniq miqdor nisbatini belgilamaydi. Kimyoviy birikmaning aniq formula tarkibini eritmaning o‘zgaruvchan tarkibi bilan ajrating.",
+          "fact_ids": [
+            "variable"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph12",
+              "topic_title": "Eritma haqida tushuncha",
+              "paragraph": 12,
+              "printed_pages": [
+                63
+              ],
+              "pdf_pages": [
+                63
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph12-page63"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph12",
+          "topic_title": "Eritma haqida tushuncha",
+          "paragraph": 12,
+          "printed_pages": [
+            63
+          ],
+          "pdf_pages": [
+            63
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph12-page63"
+        }
+      ]
+    }
+  },
+  "result": {
+    "assessment_version": 2,
+    "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+    "lesson_key": "chemistry-11-p12-r1",
+    "score": 9,
+    "total": 9,
+    "score_pct": 100.0,
+    "passed": true,
+    "xp_awarded": 20,
+    "xp_total": 4940,
+    "stars": 3,
+    "streak_days": 2,
+    "completion_threshold_pct": 60,
+    "elapsed_seconds": 0
+  }
+}
