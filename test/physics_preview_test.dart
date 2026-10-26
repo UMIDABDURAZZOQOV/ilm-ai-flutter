@@ -53,9 +53,9 @@ void main() {
             return reply(200, {
               ...fixture('physics_catalog'),
               'grade': grade,
-              'available_grades': [6, 7, 8, 9],
+              'available_grades': [6, 7, 8, 9, 10],
               if (grade >= 7) 'lessons': <Json>[],
-              'book': grade == 8 || grade == 9
+              'book': grade >= 8
                   ? fixture('physics_grade${grade}_book')
                   : {
                       'grade': grade,
@@ -458,6 +458,34 @@ void main() {
       await tester.pumpAndSettle();
       expect(requests.last.queryParameters['grade'], 9);
       final book = fixture('physics_grade9_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'grade10 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.text('10-sinf').last);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('10-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 10);
+      final book = fixture('physics_grade10_book');
       expect(
         find.textContaining((book['authors'] as List).first as String),
         findsOneWidget,
@@ -869,6 +897,49 @@ void main() {
       }[question['key']];
       final formula = draft?.$1 ?? 'learner_formula';
       final value = draft?.$2 ?? '-1,25';
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
+            ),
+          ),
+        ),
+      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], value);
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
+  testWidgets('grade10 signed angular and vertical drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade10_frq')['questions']);
+    expect(questions, hasLength(20));
+    for (final question in questions) {
+      Json? edited;
+      final draft = <String, (String, String)>{
+        'physics-10-section-2-r1:q5': ('v1+v2', '-2'),
+        'physics-10-section-3-r1:q5': ('v0-g*t', '-10'),
+        'physics-10-section-3-r1:q11': ('sqrt(v0^2+2*g*h)', '20'),
+        'physics-10-section-4-r1:q7': ('(omega-omega0)/t', '-2'),
+        'physics-10-section-4-r1:q10': ('beta*R', '-2'),
+      }[question['key']];
+      final formula = draft?.$1 ?? 'learner_formula';
+      final value = draft?.$2 ?? '1,25';
       await mount(
         tester,
         scale: 2,
