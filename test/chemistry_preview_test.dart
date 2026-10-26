@@ -1975,12 +1975,94 @@ void main() {
     });
   }
 
+  for (final scenario in [
+    ('arene_positions', 16, 0, 'b', '', 63, false),
+    ('hybrid_orbitals', 17, 14, '', '34', 69, false),
+    ('gas_volume', 19, 10, '', '44,8', 76, true),
+    ('alcohol_air', 21, 9, '', '537,6', 84, true),
+    ('benzyl_bonds', 23, 10, '', '19', 93, false),
+    ('ketone_composition', 25, 12, '', 'C6H12O', 102, false),
+  ]) {
+    final (name, number, questionIndex, choiceId, value, page, prior) = scenario;
+    testWidgets('batch41 $name grade10 source and feedback at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      catalog['available_grades'] = [7, 8, 9, 10];
+      grade10Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(questionIndex);
+      await mount(t, dark: number.isOdd, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-10')));
+      await waitFor(find.text('Darsni boshlash'));
+      expect(requests.lastWhere((r) => r.path.endsWith('/catalog')).queryParameters['grade'], 10);
+      await t.ensureVisible(find.text('Darsni boshlash').first);
+      if (!prior) await capture(t, '$name-batch41-catalog');
+      await tap(t, 'Darsni boshlash');
+      if (questionIndex == 0) {
+        for (var i = 0; i < jsonRows((lesson['content'] as Json)['cards']).length - 1; i++) {
+          await tap(t, 'Davom etish');
+        }
+        await tap(t, 'Mashqlarga o‘tish');
+      }
+      final numeric = value.isNotEmpty;
+      if (numeric) {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      } else {
+        final question = jsonRows(lesson['questions'])[questionIndex];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == choiceId);
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], numeric ? {'value':value} : {'choice_id':choiceId});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch41-feedback');
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$number ·'));
+      await t.ensureVisible(source);
+      await capture(t, '$name-batch41-feedback-source');
+      await tapFinder(t, source);
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('organik_kimyo_10_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch41-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (prior) {
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §26 ·'));
+        await tapFinder(t, priorSource);
+        final priorLocator = find.textContaining('114 -> PDF 114');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining('kimyo_8_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch41-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
     expect(chemistryDisplayText('1,66·10⁻²⁴ g'), '1,66·10^(-24) g');
     expect(chemistryDisplayText('Fe2(SO4)3=Fe2(SO4)3'), 'Fe2(SO4)3=Fe2(SO4)3');
     expect(chemistryDisplayText('SO₂+H₂O⇌H₂SO₃'), 'SO2+H2O <=> H2SO3');
+    expect(
+      chemistryDisplayText('CH₃–CH₂–C≡C–CH₂–CH₃'),
+      'CH3–CH2–C#C–CH2–CH3 (# — uch bog‘)',
+    );
+    expect(chemistryDisplayText('C=C'), 'C=C');
     final equilibrium = fixture('equilibrium_lesson');
     final equilibriumBefore = jsonEncode(equilibrium);
     for (final card in jsonRows((equilibrium['content'] as Json)['cards'])) {

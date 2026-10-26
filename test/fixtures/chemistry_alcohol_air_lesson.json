@@ -1,0 +1,2157 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-p21-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+  "content": {
+    "cards": [
+      {
+        "title": "Punktir vodorod bog‘i qaysi molekulalar orasida?",
+        "body": "Manba spirt molekulalari orasida ham, spirt va suv molekulalari orasida ham vodorod bog‘lari tasvirlaydi. Bir molekuladagi O va boshqa molekulaning OH vodorodi orasidagi punktir oddiy O–H kovalent chizig‘idan alohida o‘qiladi.",
+        "fact_ids": [
+          "hydrogen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page81"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          }
+        ]
+      },
+      {
+        "title": "Qaynashni molekulalar ajralishi bilan bog‘lang",
+        "body": "Darslik spirtlarning tegishli uglevodorodlarga nisbatan yuqoriroq qaynashini molekulalararo vodorod bog‘lanishi bilan bog‘laydi. Molekulalarning ajralishi bilan molekula ichidagi barcha kovalent bog‘lar uzilishini bir xil hodisa deb olmang.",
+        "fact_ids": [
+          "boiling"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page81"
+          }
+        ]
+      },
+      {
+        "title": "OH vodorodi o‘zgargan tayyor karta",
+        "body": "Berilgan etanol/natriy kartasida OH vodorodi o‘rnini Na egallagan mahsulot va H2 berilgan. Atom modeli 2C2H5OH+2Na=2C2H5ONa+H2. Ikki etanol birligiga bitta H2 birligi mos keladi.",
+        "fact_ids": [
+          "sodium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          }
+        ]
+      },
+      {
+        "title": "Etilat va suvning mahsulotlari",
+        "body": "Natriy etilat va suv kartasining tayyor mahsulotlari etanol va NaOH. Atom modeli C2H5ONa+H2O=C2H5OH+NaOH. Bu suv bilan bog‘liq o‘zgarish manbada gidroliz sifatida berilgan.",
+        "fact_ids": [
+          "hydrolysis"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          }
+        ]
+      },
+      {
+        "title": "Esterifikatsiyada mahsulotlar oldindan berilgan",
+        "body": "Etanol va sirka kislota kartasida etilatsetat hamda suv mahsulotlari berilgan. Bu esterifikatsiya misoli. Atom modeli C2H5OH+CH3COOH=CH3COOC2H5+H2O mahsulotlar tarkibini saqlaydi; u haqiqiy jarayon doim to‘liq borishini bildirmaydi.",
+        "fact_ids": [
+          "ester"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          }
+        ]
+      },
+      {
+        "title": "Bir etanol kartasidan etilenga",
+        "body": "Bir etanol birligidan suv ajralgan kartada etilen rasmi berilgan: C2H5OH=C2H4+H2O. Bu mahsuloti oldindan ko‘rsatilgan degidratlanish misoli. Shu kartada bir spirt birligiga bir suv birligi mos.",
+        "fact_ids": [
+          "onewater"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          }
+        ]
+      },
+      {
+        "title": "Ikki etanol kartasidan efirga",
+        "body": "Boshqa kartada ikki etanol birligidan bitta suv ajralib, dietil efir rasmi berilgan. Uning jami tarkib modeli 2C2H5OH=C4H10O+H2O. C4H10O bu topshiriqda oldindan berilgan efir rasmining jami tarkibi; formula yolg‘iz o‘zi tuzilishni tanlamaydi.",
+        "fact_ids": [
+          "twowater"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          }
+        ]
+      },
+      {
+        "title": "Ikki spirtning to‘liq yonish modeli",
+        "body": "To‘yingan bir atomli spirtning to‘liq yonish kartasi uchun etanol misoli C2H5OH+3O2=2CO2+3H2O. Butanol misoli C4H9OH+6O2=4CO2+5H2O. Ikkala tayyor modelda C, H va O alohida tekshiriladi.",
+        "fact_ids": [
+          "combustion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          }
+        ]
+      },
+      {
+        "title": "Spirt moli va H2 molini farqlang",
+        "body": "Virtual to‘liq modelda ikki mol bir atomli spirtga bir mol H2 olinadi. C12/H1/O16 va Vm22,4 modelida 18 g propanol M60 bo‘yicha 0,3 mol; H2 0,15 mol yoki 3,36 L. Alohida 23 g etanol M46 bilan 0,5 mol; H2 0,25 mol yoki 5,6 L.",
+        "fact_ids": [
+          "sodiumamount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      },
+      {
+        "title": "20% deb berilgan virtual havo kartasi",
+        "body": "Faqat virtual kartada havo tarkibi aniq 20 hajm% O2 deb berilgan. 92 mL etanol va 0,8 g/mL zichlikdan massa 73,6 g. M46 bilan 1,6 mol etanolga 4,8 mol O2, Vm22,4 bilan 107,52 L O2 mos. Shu berilgan 20% modelda havo 107,52/0,20=537,6 L.",
+        "fact_ids": [
+          "air"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              84
+            ],
+            "pdf_pages": [
+              84
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page84"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      },
+      {
+        "title": "Propanolning ikki alohida miqdor kartasi",
+        "body": "Propanolning berilgan to‘liq yonish modelida bir mol C3H7OH ga 4,5 mol O2 va 4 mol suv mos. 30 g propanol M60 bilan 0,5 mol bo‘lib, hisobiy suv 2 mol yoki 36 g. Boshqa 20 g propanol kartasida CO2 1 mol; Vm22,4 modelida uning hajmi 22,4 L.",
+        "fact_ids": [
+          "propanol"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              84
+            ],
+            "pdf_pages": [
+              84
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page84"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Havo hajmi O2 hajmi emas",
+        "body": "107,52 L O2 virtual havoning20%ini tashkil etadi. Jami hajm107,52/0,20=537,6 L. Bu kartada berilgan ulushdan foydalanilgan.",
+        "fact_ids": [
+          "air"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              84
+            ],
+            "pdf_pages": [
+              84
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page84"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph01",
+            "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph01-page07"
+          },
+          {
+            "book_id": "chemistry-8-uz-2019",
+            "book_title": "Kimyo 8",
+            "authors": [
+              "I.R. Asqarov",
+              "K. G‘opirov",
+              "N.X. To‘xtaboyev"
+            ],
+            "year": 2019,
+            "file_name": "kimyo_8_uzb.pdf",
+            "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+            "topic_id": "ch8-paragraph26",
+            "topic_title": "Ekvivalent qonuni",
+            "paragraph": 26,
+            "printed_pages": [
+              114
+            ],
+            "pdf_pages": [
+              114
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch8-paragraph26-page114"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph21",
+        "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+        "paragraph": 21,
+        "printed_pages": [
+          81
+        ],
+        "pdf_pages": [
+          81
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph21-page81"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph21",
+        "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+        "paragraph": 21,
+        "printed_pages": [
+          82
+        ],
+        "pdf_pages": [
+          82
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph21-page82"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph21",
+        "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+        "paragraph": 21,
+        "printed_pages": [
+          83
+        ],
+        "pdf_pages": [
+          83
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph21-page83"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph21",
+        "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+        "paragraph": 21,
+        "printed_pages": [
+          84
+        ],
+        "pdf_pages": [
+          84
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph21-page84"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph01",
+        "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph01-page07"
+      },
+      {
+        "book_id": "chemistry-8-uz-2019",
+        "book_title": "Kimyo 8",
+        "authors": [
+          "I.R. Asqarov",
+          "K. G‘opirov",
+          "N.X. To‘xtaboyev"
+        ],
+        "year": 2019,
+        "file_name": "kimyo_8_uzb.pdf",
+        "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+        "topic_id": "ch8-paragraph26",
+        "topic_title": "Ekvivalent qonuni",
+        "paragraph": 26,
+        "printed_pages": [
+          114
+        ],
+        "pdf_pages": [
+          114
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch8-paragraph26-page114"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-p21-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Spirt/suv rasmidagi molekulalar orasida chizilgan punktir qanday bog‘ni bildiradi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat barcha C–H bog‘lari"
+        },
+        {
+          "id": "b",
+          "label": "Vodorod bog‘i"
+        },
+        {
+          "id": "c",
+          "label": "Sof metall panjara"
+        },
+        {
+          "id": "d",
+          "label": "Har doim C=C"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page81"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Etanol va sirka kislota kartasining berilgan efir mahsuloti qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metan"
+        },
+        {
+          "id": "b",
+          "label": "Etilen"
+        },
+        {
+          "id": "c",
+          "label": "Sof natriy"
+        },
+        {
+          "id": "d",
+          "label": "Etilatsetat"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan bir etanol/suv ajralishi kartasining jarayon nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Degidratlanish"
+        },
+        {
+          "id": "b",
+          "label": "Faqat gidratlanish"
+        },
+        {
+          "id": "c",
+          "label": "Faqat erish"
+        },
+        {
+          "id": "d",
+          "label": "Faqat muzlash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Ikki etanol va bitta ajralgan suv kartasida berilgan mahsulot nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metanol"
+        },
+        {
+          "id": "b",
+          "label": "Sof etan"
+        },
+        {
+          "id": "c",
+          "label": "Dietil efir"
+        },
+        {
+          "id": "d",
+          "label": "Sof kislorod"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Spirt va kislota kartasida efir hosil bo‘lishi jarayonining nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Etilatning suv bilan berilgan o‘zgarishi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "18 g propanolning berilgan to‘liq virtual kartasida H2 hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "23 g etanolning alohida virtual kartasida H2 hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "92 mL va 0,8 g/mL kartasida etanol massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page84"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "Faqat berilgan 20% O2 modelida hisobiy havo hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page84"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "30 g propanolning to‘liq yonish modelida suv massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page84"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "20 g propanolning shu modelida CO2 hajmi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            84
+          ],
+          "pdf_pages": [
+            84
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page84"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph01",
+          "topic_title": "Dastlabki kimyoviy tushuncha va qonunlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph01-page07"
+        },
+        {
+          "book_id": "chemistry-8-uz-2019",
+          "book_title": "Kimyo 8",
+          "authors": [
+            "I.R. Asqarov",
+            "K. G‘opirov",
+            "N.X. To‘xtaboyev"
+          ],
+          "year": 2019,
+          "file_name": "kimyo_8_uzb.pdf",
+          "sha256": "077e2c96380950d3dd4118489474a200a08d39ff226b7096dd48436df9bc8056",
+          "topic_id": "ch8-paragraph26",
+          "topic_title": "Ekvivalent qonuni",
+          "paragraph": 26,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch8-paragraph26-page114"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q13",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning faqat atom balansini yozing: 2C2H5OH+2Na=2C2H5ONa+H2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning faqat atom balansini yozing: C2H5ONa+H2O=C2H5OH+NaOH",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q15",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning faqat atom balansini yozing: C2H5OH=C2H4+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-p21-r1-q16",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan virtual kartaning faqat atom balansini yozing: C2H5OH+3O2=2CO2+3H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
