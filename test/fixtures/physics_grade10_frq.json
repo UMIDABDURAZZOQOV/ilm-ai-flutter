@@ -4143,6 +4143,936 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-10-section-21-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal katta idish/kichik teshik: chuqurlik h=1,25m, g=10m/s², tashqi bosimlar teng. v ni top.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "1.25",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "g",
+        "h"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-21",
+          "chapter_id": "physics-10-chapter-4",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            73
+          ],
+          "printed_pages": [
+            72
+          ],
+          "page_text_sha256": [
+            "d41ce0084700837ac1edaeec2add188e9161f06636944e74ff614a403af950f5"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-21-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal model: sirt H=4,5m, teshik h=1,3m YERDAN, g=10m/s². v ni top.",
+      "givens": [
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "H",
+          "value": "4.5",
+          "unit": "m"
+        },
+        {
+          "symbol": "h",
+          "value": "1.3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "g",
+        "H",
+        "h"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-21",
+          "chapter_id": "physics-10-chapter-4",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            74
+          ],
+          "printed_pages": [
+            73
+          ],
+          "page_text_sha256": [
+            "7b747c11327c5e7bde99303d831b8b9de925f49650d77c4eb3672ca537a89233"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Chiziqli prujina: k=20N/m, muvozanatdan signed x=−4cm. F proyeksiyasini top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "20",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "value": "-4",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "k",
+        "x"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            79,
+            80
+          ],
+          "printed_pages": [
+            78,
+            79
+          ],
+          "page_text_sha256": [
+            "5fc8215501a03c678028f9eeff5c48f752bada8a2b15397f680a327e00596289",
+            "e262f0cf6febd1541a0255d08992bbbff1c3f9b95957d6e44bbc87fda0613f67"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal garmonik model: omega=4rad/s, signed x=3cm. a ni top.",
+      "givens": [
+        {
+          "symbol": "omega",
+          "value": "4",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "x",
+          "value": "3",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "omega",
+        "x"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            81,
+            82
+          ],
+          "printed_pages": [
+            80,
+            81
+          ],
+          "page_text_sha256": [
+            "c6f9dfb23acf529d59f6a76a80b8562044f1dc579d84d378719472dc8f12b7c2",
+            "55452f707490d20eceffa42ddf8a3d23145acc8118ed68a67874ba2b90bda381"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "A=5cm,omega=4rad/s. vmax modulini top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "5",
+          "unit": "cm"
+        },
+        {
+          "symbol": "omega",
+          "value": "4",
+          "unit": "rad/s"
+        }
+      ],
+      "symbols": [
+        "A",
+        "omega"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            81
+          ],
+          "printed_pages": [
+            80
+          ],
+          "page_text_sha256": [
+            "c6f9dfb23acf529d59f6a76a80b8562044f1dc579d84d378719472dc8f12b7c2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "A=5cm,omega=4rad/s. amax modulini top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "5",
+          "unit": "cm"
+        },
+        {
+          "symbol": "omega",
+          "value": "4",
+          "unit": "rad/s"
+        }
+      ],
+      "symbols": [
+        "A",
+        "omega"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            81,
+            82
+          ],
+          "printed_pages": [
+            80,
+            81
+          ],
+          "page_text_sha256": [
+            "c6f9dfb23acf529d59f6a76a80b8562044f1dc579d84d378719472dc8f12b7c2",
+            "55452f707490d20eceffa42ddf8a3d23145acc8118ed68a67874ba2b90bda381"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "x=A*sin(theta) modelida A=5cm, sinPhase=−0,6 tayyor qiymat. Signed x ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "5",
+          "unit": "cm"
+        },
+        {
+          "symbol": "sinPhase",
+          "value": "-0.6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "A",
+        "sinPhase"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            80
+          ],
+          "printed_pages": [
+            79
+          ],
+          "page_text_sha256": [
+            "e262f0cf6febd1541a0255d08992bbbff1c3f9b95957d6e44bbc87fda0613f67"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "x=A*sin(theta) modelida A=5cm,omega=4rad/s,cosPhase=−0,8 tayyor qiymat. Signed v ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "5",
+          "unit": "cm"
+        },
+        {
+          "symbol": "omega",
+          "value": "4",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "cosPhase",
+          "value": "-0.8",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "A",
+        "omega",
+        "cosPhase"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            81
+          ],
+          "printed_pages": [
+            80
+          ],
+          "page_text_sha256": [
+            "c6f9dfb23acf529d59f6a76a80b8562044f1dc579d84d378719472dc8f12b7c2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q11",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tayyor qaydda t=15s ichida n=30ta TO‘LIQ tebranish. nu chastotani top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "30",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "15",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "t"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            81
+          ],
+          "printed_pages": [
+            80
+          ],
+          "page_text_sha256": [
+            "c6f9dfb23acf529d59f6a76a80b8562044f1dc579d84d378719472dc8f12b7c2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-22-r1:q12",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Garmonik davr T=0,5s, pi uchun p=3,14 yaqinlashuvi. omega ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "T",
+          "value": "0.5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "p",
+        "T"
+      ],
+      "suggested_unit": "rad/s",
+      "unit_choices": [
+        "rad/s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-22",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            81
+          ],
+          "printed_pages": [
+            80
+          ],
+          "page_text_sha256": [
+            "c6f9dfb23acf529d59f6a76a80b8562044f1dc579d84d378719472dc8f12b7c2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-23-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal prujina k=25N/m,m=250g. omega ni top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "25",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "m",
+          "value": "250",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "k",
+        "m"
+      ],
+      "suggested_unit": "rad/s",
+      "unit_choices": [
+        "rad/s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-23",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            83
+          ],
+          "printed_pages": [
+            82
+          ],
+          "page_text_sha256": [
+            "8e358f7cd8759685a6ca3317a336f5f49a9afafc3bb805806a909ffd25133c49"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-23-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal prujina m=250g,k=25N/m,p=3,14. T ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "m",
+          "value": "250",
+          "unit": "g"
+        },
+        {
+          "symbol": "k",
+          "value": "25",
+          "unit": "N/m"
+        }
+      ],
+      "symbols": [
+        "p",
+        "m",
+        "k"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-23",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            83
+          ],
+          "printed_pages": [
+            82
+          ],
+          "page_text_sha256": [
+            "8e358f7cd8759685a6ca3317a336f5f49a9afafc3bb805806a909ffd25133c49"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-23-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "KICHIK burchakli ideal mayatnik l=90cm,g=10m/s²,p=3,14. T ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "l",
+          "value": "90",
+          "unit": "cm"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "p",
+        "l",
+        "g"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-23",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            85
+          ],
+          "printed_pages": [
+            84
+          ],
+          "page_text_sha256": [
+            "e9dbe602bc395ec904065d29a82095546fd87a87edebcaeb3330fbed5c23cded"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-23-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil g/kichik burchak: T1=6s,T2=8s. l1+l2 uzunlikli YANGI bitta mayatnik T sini top.",
+      "givens": [
+        {
+          "symbol": "T1",
+          "value": "6",
+          "unit": "s"
+        },
+        {
+          "symbol": "T2",
+          "value": "8",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "T1",
+        "T2"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-23",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            86
+          ],
+          "printed_pages": [
+            85
+          ],
+          "page_text_sha256": [
+            "5523fecea81096267bfbe98f361833eca5d2979fb1d18cc14fea91b4c1d18b31"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-23-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal tebranish: k=20N/m, x=A=10cm amplituda. Ep bilan belgilangan jami tebranish energiyasini top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "20",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "value": "10",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "k",
+        "x"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-23",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            84
+          ],
+          "printed_pages": [
+            83
+          ],
+          "page_text_sha256": [
+            "7a2de554f7fb43b709032db5224e3ff42c2e59a5ff065df43d46564e6b4dff94"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-24-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI model: ip uzunligi a=87cm, shar radiusi b=3cm. Markazgacha s=l uzunlikni top.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "87",
+          "unit": "cm"
+        },
+        {
+          "symbol": "b",
+          "value": "3",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "a",
+        "b"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-24",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            86
+          ],
+          "printed_pages": [
+            85
+          ],
+          "page_text_sha256": [
+            "5523fecea81096267bfbe98f361833eca5d2979fb1d18cc14fea91b4c1d18b31"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-24-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI qayd: n=N=20ta to‘liq tebranish,t=40s. T ni top.",
+      "givens": [
+        {
+          "symbol": "t",
+          "value": "40",
+          "unit": "s"
+        },
+        {
+          "symbol": "n",
+          "value": "20",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "t",
+        "n"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-24",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            86
+          ],
+          "printed_pages": [
+            85
+          ],
+          "page_text_sha256": [
+            "5523fecea81096267bfbe98f361833eca5d2979fb1d18cc14fea91b4c1d18b31"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-24-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI kichik burchakli model:l=1m,T=2s,p=3,14. g bahosini top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "l",
+          "value": "1",
+          "unit": "m"
+        },
+        {
+          "symbol": "T",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "p",
+        "l",
+        "T"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-24",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            87
+          ],
+          "printed_pages": [
+            86
+          ],
+          "page_text_sha256": [
+            "754e82c400c1fa4ba638c945673f7f6bfaf1eedc1f0e8cfaefef1bc7a78322c3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-24-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI bir xil modeldagi g baholari a1=9,8m/s²,a2=9,9m/s²,a3=9,88m/s². aMean o‘rtachasini top.",
+      "givens": [
+        {
+          "symbol": "a1",
+          "value": "9.8",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a2",
+          "value": "9.9",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a3",
+          "value": "9.88",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-24",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            87
+          ],
+          "printed_pages": [
+            86
+          ],
+          "page_text_sha256": [
+            "754e82c400c1fa4ba638c945673f7f6bfaf1eedc1f0e8cfaefef1bc7a78322c3"
+          ]
+        }
+      ]
     }
   ]
 }
