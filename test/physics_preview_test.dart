@@ -1029,7 +1029,7 @@ void main() {
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
     final questions = jsonRows(fixture('physics_grade11_frq')['questions']);
-    expect(questions, hasLength(60));
+    expect(questions, hasLength(76));
     for (final question in questions) {
       Json? edited;
       final draft = <String, (String, String)>{
@@ -1052,6 +1052,11 @@ void main() {
         'physics-11-section-17-r1:q8': ('(XL-XC)/R', '1.33'),
         'physics-11-section-18-r1:q7': ('1/(4*p^2*nu^2*L)', '0.000101'),
         'physics-11-section-20-r1:q6': ('U*I*cosPhi', '3.6'),
+        'physics-11-section-21-r1:q7': ('v/Lw', '100000000'),
+        'physics-11-section-22-r1:q7': ('Ewave/(S*dt)', '1'),
+        'physics-11-section-23-r1:q7': ('2*R/c', '0.00001'),
+        'physics-11-section-25-r1:q10': ('sqrt((m+0.5)*Lw*R)', '0.0005'),
+        'physics-11-section-25-r1:q11': ('d*sinPhi/n', '0.0000006'),
       }[question['key']];
       final formula = draft?.$1 ?? 'learner_formula';
       final value = draft?.$2 ?? '1,25';
