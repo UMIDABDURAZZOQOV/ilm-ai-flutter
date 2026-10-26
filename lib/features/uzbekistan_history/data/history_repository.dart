@@ -31,6 +31,7 @@ class HistoryRepository {
       void sources(dynamic refs) {
         for (final r in jsonRows(refs)) {
           text(r['topic_id']);
+          if (r.containsKey('source_title')) text(r['source_title']);
           if (r['pdf_pages'] is! List || r['printed_pages'] is! List) {
             throw const FormatException();
           }

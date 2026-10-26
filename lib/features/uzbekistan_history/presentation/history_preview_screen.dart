@@ -433,7 +433,7 @@ class _SessionState extends ConsumerState<_Session> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 child: SelectableText(
-                  '${_attempt?['title'] ?? 'Joriy mavzu'}\nPDF sahifalari: ${(r['pdf_pages'] as List).join(', ')}\nBosma sahifalar: ${(r['printed_pages'] as List).join(', ')}\nMavzuga tegishli qism.',
+                  '${r['source_title'] ?? _attempt?['title'] ?? 'Joriy mavzu'}\nPDF sahifalari: ${(r['pdf_pages'] as List).join(', ')}\nBosma sahifalar: ${(r['printed_pages'] as List).join(', ')}\nMavzuga tegishli qism.',
                 ),
               ),
             TextButton(

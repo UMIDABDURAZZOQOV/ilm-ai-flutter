@@ -134,7 +134,7 @@ void main() {
     'real public DTOs contain no private grading rules or aliases',
     () async {
       final repo = HistoryRepository(dio);
-      for (var i = 1; i <= 35; i++) {
+      for (var i = 1; i <= 40; i++) {
         lesson = fixture('lesson$i');
         final dto = await repo.start(
           'uzh-7-$i-r1',
@@ -249,7 +249,64 @@ void main() {
     expect(find.text('Darsni ochish'), findsOneWidget);
   });
 
-  for (var n = 1; n <= 35; n++) {
+  testWidgets(
+    'prior paragraph citation shows its own human title at large text',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      lesson = fixture('lesson40');
+      // QA transport state only: completed prerequisites expose this later lesson.
+      for (final row in catalog['lessons'] as List) {
+        row['state'] = row['sequence'] == 40 ? 'available' : 'completed';
+      }
+      await mount(tester, scale: 2);
+      final open = find.text('Darsni ochish');
+      await tester.ensureVisible(open);
+      await tester.pumpAndSettle();
+      await tester.tap(open);
+      await tester.pumpAndSettle();
+      final source = find.text('Manba sahifalari').at(3);
+      await tester.ensureVisible(source);
+      await tester.pumpAndSettle();
+      await tester.tap(source);
+      await tester.pumpAndSettle();
+      final prior = find.textContaining('Ta’lim tizimi');
+      final sheetScroll = find
+          .descendant(
+            of: find.byType(BottomSheet),
+            matching: find.byType(Scrollable),
+          )
+          .first;
+      await tester.scrollUntilVisible(prior, 180, scrollable: sheetScroll);
+      expect(prior, findsOneWidget);
+      expect(find.textContaining('uzh-7-topic'), findsNothing);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets('century answer stays raw text for server grading', (
+    tester,
+  ) async {
+    final q = jsonRows(fixture('lesson29')['questions']).last;
+    Json value = {};
+    await mount(
+      tester,
+      child: Scaffold(
+        body: HistoryAnswerEditor(
+          question: q,
+          draft: {},
+          enabled: true,
+          onChanged: (v) => value = v,
+        ),
+      ),
+    );
+    await tester.enterText(find.byType(TextFormField), 'XII');
+    expect(value, {'value': 'XII'});
+  });
+
+  for (var n = 1; n <= 40; n++) {
     testWidgets('grade 7 lesson $n short input keeps raw text at 200% scale', (
       tester,
     ) async {
@@ -315,6 +372,9 @@ void main() {
     33,
     34,
     35,
+    36,
+    37,
+    39,
   ]) {
     testWidgets(
       'lesson $n chronology labels fit a small screen with large text',
