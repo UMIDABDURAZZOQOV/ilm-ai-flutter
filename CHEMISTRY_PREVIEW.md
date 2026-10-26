@@ -1,5 +1,21 @@
 # ILM AI Chemistry: local QA preview
 
+## Current checkpoint — batch45, 2026-10-26
+
+235/268 source teaching entries implemented in the paired Chemistry backend:
+all74 grade7, all59 grade8, all61 grade9, and all41 grade10 entries.
+The six grade10 laboratories are guided digital analysis, with no physical
+experiment procedures. All whole-course readiness flags remain false.
+
+Six new320×568/200% scenarios passed in34s;24 captures inspected for feedback
+scrolling, pinned Continue, and current/prior source page locators. Full Flutter:
+576 tests passed in557s; analysis:0 issues in85.9s. Eighteen sanitized public
+HTTP fixtures contain catalogs, lessons and post-answer feedback. Backend HTTP
+preserved229/4580XP and added62 correct answers/120XP once→235/4700XP.
+No nativeAndroid/IME/TalkBack certification or fresh production build is claimed.
+Earlier sections below are historical checkpoints. See backend
+`docs/chemistry/CHECKPOINT.md` for the current source and regression evidence.
+
 Separate `feat/chemistry-curriculum` branch, based on polished UI444743b.
 Normal main.dart, auth, navigation, Biology and Physics files remain intact.
 Only the common source sheet gained optional paired printed/PDF/spread labels;

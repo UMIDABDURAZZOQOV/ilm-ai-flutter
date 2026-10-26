@@ -1,0 +1,1168 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-lab02-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Atsetilenning olinishi",
+  "content": {
+    "cards": [
+      {
+        "title": "Gaz bilan ishlash o‘rniga tayyor ma’lumotni tahlil qilish",
+        "body": "Bu dars kitobdagi atsetilen mavzusining tayyor mahsulot kartalarini raqamli o‘qishga qaratilgan. Jihoz yig‘ish, gaz olish, saqlash va alangada tekshirish bu topshiriqning amaliy harakatlari emas.",
+        "fact_ids": [
+          "digital"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page153"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          }
+        ]
+      },
+      {
+        "title": "Kartadagi ikki mahsulotning nomi",
+        "body": "Berilgan manba kartasida kalsiy karbid va suv tomoniga atsetilen hamda kalsiy gidroksid mahsulotlari mos qo‘yilgan. Jami atom modeli CaC2+2H2O=C2H2+Ca(OH)2. Mahsulotlarning nomlari kartada oldindan berilgan.",
+        "fact_ids": [
+          "products"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          }
+        ]
+      },
+      {
+        "title": "C, Ca va H ni alohida sanash",
+        "body": "CaC2 va C2H2 kartalarida jami C soni 2. Bitta Ca esa Ca(OH)2 kartasida sanaladi. Ikki suvdagi jami H4 mahsulotlar orasida C2H2 dagi H2 va Ca(OH)2 dagi H2 ga taqsimlangan.",
+        "fact_ids": [
+          "carbon"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          }
+        ]
+      },
+      {
+        "title": "Atsetilen rasmidagi uch bog‘",
+        "body": "Manbaning HC≡CH atsetilen rasmida C lar orasida uch bog‘ bor. Oldingi sigma/pi modelida shu C–C ulanishi 1 sigma va 2 pi beradi. Ikkita C–H sigma bilan molekulada jami 3 sigma va 2 pi, yig‘indi 5.",
+        "fact_ids": [
+          "triple"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph17",
+            "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+            "paragraph": 17,
+            "printed_pages": [
+              67
+            ],
+            "pdf_pages": [
+              67
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph17-page67"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph17",
+            "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+            "paragraph": 17,
+            "printed_pages": [
+              68
+            ],
+            "pdf_pages": [
+              68
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph17-page68"
+          }
+        ]
+      },
+      {
+        "title": "CO2 va H2O berilgan balans",
+        "body": "Manba atsetilenning yonish mahsulotlarini CO2 va H2O deb ko‘rsatib, tenglashtirishni so‘raydi. Tayyor mahsulotli raqamli kartaning balansi 2C2H2+5O2=4CO2+2H2O. Bu laboratoriyada yoqish yo‘riqnomasi emas.",
+        "fact_ids": [
+          "combustion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          }
+        ]
+      },
+      {
+        "title": "Kuzatuv va yagona identifikatsiyani ajrating",
+        "body": "Manbada alanga va qurum bilan bog‘liq kuzatuv tasvirlangan. Ushbu ko‘rinishning o‘zi har qanday noma’lum gazni yagona aniqlash uchun yetarli dalil sifatida olinmaydi. Bu darsda identifikatsiya nomi kartada aniq berilgan.",
+        "fact_ids": [
+          "observation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Yonish kartasini kichik butun sonlarda tekshiring",
+        "body": "2C2H2 da C4/H4. 4CO2 va 2H2O shu C4/H4 ni beradi; o‘ngda O10, chapda5O2 kerak.",
+        "fact_ids": [
+          "combustion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory02",
+            "topic_title": "Atsetilenning olinishi",
+            "paragraph": 2,
+            "printed_pages": [
+              154
+            ],
+            "pdf_pages": [
+              154
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory02-page154"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-laboratory02",
+        "topic_title": "Atsetilenning olinishi",
+        "paragraph": 2,
+        "printed_pages": [
+          153
+        ],
+        "pdf_pages": [
+          153
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-laboratory02-page153"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-laboratory02",
+        "topic_title": "Atsetilenning olinishi",
+        "paragraph": 2,
+        "printed_pages": [
+          154
+        ],
+        "pdf_pages": [
+          154
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-laboratory02-page154"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph17",
+        "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+        "paragraph": 17,
+        "printed_pages": [
+          67
+        ],
+        "pdf_pages": [
+          67
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph17-page67"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph17",
+        "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+        "paragraph": 17,
+        "printed_pages": [
+          68
+        ],
+        "pdf_pages": [
+          68
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph17-page68"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-lab02-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Karbid/suvning berilgan kartasida nomlangan organik mahsulot qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Etanol"
+        },
+        {
+          "id": "b",
+          "label": "Glitserin"
+        },
+        {
+          "id": "c",
+          "label": "Atsetilen"
+        },
+        {
+          "id": "d",
+          "label": "Sirka kislota"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Shu kartaning kalsiy tutgan mahsuloti qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kalsiy gidroksid"
+        },
+        {
+          "id": "b",
+          "label": "Sof kalsiy"
+        },
+        {
+          "id": "c",
+          "label": "Kalsiy karbid"
+        },
+        {
+          "id": "d",
+          "label": "Natriy gidroksid"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "HC≡CH rasmidagi C–C ulanishi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat bitta bog‘"
+        },
+        {
+          "id": "b",
+          "label": "Faqat ikkita bog‘"
+        },
+        {
+          "id": "c",
+          "label": "C–C ulanishi yo‘q"
+        },
+        {
+          "id": "d",
+          "label": "Uch bog‘"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Mazkur darsning bajariladigan vazifasi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Gazni saqlash"
+        },
+        {
+          "id": "b",
+          "label": "Raqamli tahlil"
+        },
+        {
+          "id": "c",
+          "label": "Gazni yoqish"
+        },
+        {
+          "id": "d",
+          "label": "Jihozlarni amalda yig‘ish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page153"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Berilgan organik mahsulot nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q06",
+      "response_kind": "numeric_value",
+      "prompt": "CaC2 kartasida C atomlari soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Atsetilenning berilgan rasmida sigma soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Shu rasmda sigma va pi yig‘indisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q09",
+      "response_kind": "chemical_formula",
+      "prompt": "Atsetilen deb nomlangan HC≡CH ning faqat jami tarkibini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q10",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari berilgan raqamli kartaning atom balansini yozing: CaC2+2H2O=C2H2+Ca(OH)2",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab02-r1-q11",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari berilgan raqamli kartaning atom balansini yozing: 2C2H2+5O2=4CO2+2H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory02",
+          "topic_title": "Atsetilenning olinishi",
+          "paragraph": 2,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory02-page154"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

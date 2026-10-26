@@ -1,0 +1,1464 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-lab05-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+  "content": {
+    "cards": [
+      {
+        "title": "Ikki kuzatuvni raqamli taqqoslash",
+        "body": "Bu dars ikki tayyor kuzatuv mavzusini raqamli tahlil qiladi: glukozaning Cu(II) bilan kartasi va kraxmal/yod kartasi. Eritma tayyorlash, isitish va reagent qo‘shish bosqichlari amalda bajarilmaydi.",
+        "fact_ids": [
+          "digital"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          }
+        ]
+      },
+      {
+        "title": "Glukoza rasmidagi ikki tur guruh",
+        "body": "Nomlangan glukozaning ochiq zanjir rasmi CH2OH–(CHOH)4–CHO. Unda 5 ta OH va 1 ta CHO guruhi bor; jami tarkib C6H12O6. Shu ikki tur guruhni kuzatuv izohi bilan alohida bog‘laymiz.",
+        "fact_ids": [
+          "groups"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph30",
+            "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+            "paragraph": 30,
+            "printed_pages": [
+              119
+            ],
+            "pdf_pages": [
+              119
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph30-page119"
+          }
+        ]
+      },
+      {
+        "title": "Zangori eritma haqidagi cheklangan xulosa",
+        "body": "Manbaning glukoza/Cu(II) kartasida zangori eritma kuzatuvi berilgan. Oldingi mavzu glukozadagi ko‘p OH guruhlari va kompleks hosil bo‘lish misolini bog‘laydi. Rangni istalgan noma’lum moddaning yagona isboti yoki yagona aniq kompleks formulasi deb olmaymiz.",
+        "fact_ids": [
+          "blue"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph30",
+            "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+            "paragraph": 30,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              121
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph30-page121"
+          }
+        ]
+      },
+      {
+        "title": "Qizil mahsulot deb nomlangan Cu2O",
+        "body": "Berilgan keyingi kuzatuv kartasida qizil cho‘kma tilga olingan. Oldingi aldegid rasmida qizil mahsulot Cu2O deb ko‘rsatiladi. Bu nomlangan, tayyor mahsulot kartasi; oraliq sariq yozuvdan barqaror sof CuOH ajratilgan degan xulosa qilinmaydi.",
+        "fact_ids": [
+          "red"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph24",
+            "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+            "paragraph": 24,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph24-page97"
+          }
+        ]
+      },
+      {
+        "title": "Tayyor mahsulotlar bilan to‘liq atom hisobi",
+        "body": "Oldingi aldegidning ikki ketma-ket atom kartasini qo‘shganda jami 2 suv kelib chiqadi. Glukoza va mahsulotlari aniq berilgan virtual model: C6H12O6+2Cu(OH)2=C6H12O7+Cu2O+2H2O. O‘ngda H12+H4=H16 va O7+O1+O2=O10. Bu jami atom modeli haqiqiy ishqorli eritmadagi yagona shaklni bildirmaydi.",
+        "fact_ids": [
+          "balance"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph24",
+            "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+            "paragraph": 24,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph24-page97"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph30",
+            "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+            "paragraph": 30,
+            "printed_pages": [
+              119
+            ],
+            "pdf_pages": [
+              119
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph30-page119"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph30",
+            "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+            "paragraph": 30,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              121
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph30-page121"
+          }
+        ]
+      },
+      {
+        "title": "Kraxmalning ko‘k kuzatuv kartasi",
+        "body": "Manbaning ikkinchi tayyor kuzatuvida kraxmal va yod kartasi ko‘k rang bilan bog‘langan. Oldingi kraxmal mavzusida ham shu kuzatuv keltirilgan. Raqamli topshiriqda rang qayd etiladi; kompleks uchun kitobda tekshirilmagan bitta doimiy formula yozilmaydi.",
+        "fact_ids": [
+          "starch"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph31",
+            "topic_title": "Disaxaridlar, Polisaxaridlar. Olinishi va xossalari",
+            "paragraph": 31,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph31-page127"
+          }
+        ]
+      },
+      {
+        "title": "Yod va yodid nomlarini almashtirmang",
+        "body": "Berilgan ikki kraxmal kartasida birinchisi yod, ikkinchisi kaliy yodid bilan nomlangan. Kitob savoli ko‘k rang aynan birinchi kartada qayd etilganini ajratishga qaratilgan. Taqqoslashda kartadagi reagent nomini almashtirib yubormang.",
+        "fact_ids": [
+          "control"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Suv koeffitsiyentini H va O bilan tekshiring",
+        "body": "Chapda glukozaH12 va 2Cu(OH)2 dagiH4 — jami H16. O‘ngdaC6H12O7 dagiH12 dan keyin 2H2O dagiH4 kerak; O ham10 bo‘ladi.",
+        "fact_ids": [
+          "balance"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory05",
+            "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+            "paragraph": 5,
+            "printed_pages": [
+              156
+            ],
+            "pdf_pages": [
+              156
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory05-page156"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph24",
+            "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+            "paragraph": 24,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph24-page97"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph30",
+            "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+            "paragraph": 30,
+            "printed_pages": [
+              119
+            ],
+            "pdf_pages": [
+              119
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph30-page119"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph30",
+            "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+            "paragraph": 30,
+            "printed_pages": [
+              121
+            ],
+            "pdf_pages": [
+              121
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph30-page121"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-laboratory05",
+        "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+        "paragraph": 5,
+        "printed_pages": [
+          156
+        ],
+        "pdf_pages": [
+          156
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-laboratory05-page156"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph30",
+        "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+        "paragraph": 30,
+        "printed_pages": [
+          119
+        ],
+        "pdf_pages": [
+          119
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph30-page119"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph30",
+        "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+        "paragraph": 30,
+        "printed_pages": [
+          121
+        ],
+        "pdf_pages": [
+          121
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph30-page121"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph24",
+        "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+        "paragraph": 24,
+        "printed_pages": [
+          97
+        ],
+        "pdf_pages": [
+          97
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph24-page97"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph31",
+        "topic_title": "Disaxaridlar, Polisaxaridlar. Olinishi va xossalari",
+        "paragraph": 31,
+        "printed_pages": [
+          127
+        ],
+        "pdf_pages": [
+          127
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph31-page127"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-lab05-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan ochiq glukoza rasmida karbonil guruhining turi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Keton"
+        },
+        {
+          "id": "b",
+          "label": "Aldegid"
+        },
+        {
+          "id": "c",
+          "label": "Faqat efir"
+        },
+        {
+          "id": "d",
+          "label": "Faqat karboksil"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page119"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Tayyor qizil mahsulot kartasida qaysi formula nomlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cu2O"
+        },
+        {
+          "id": "b",
+          "label": "CuO"
+        },
+        {
+          "id": "c",
+          "label": "Na2O"
+        },
+        {
+          "id": "d",
+          "label": "CO2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph24",
+          "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+          "paragraph": 24,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph24-page97"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan taqqoslashda ko‘k rang qayd etilgan birinchi kraxmal kartasi nima bilan nomlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kaliy yodid"
+        },
+        {
+          "id": "b",
+          "label": "Natriy xlorid"
+        },
+        {
+          "id": "c",
+          "label": "Etanol"
+        },
+        {
+          "id": "d",
+          "label": "Yod"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Ushbu darsning bajariladigan vazifasi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Eritmani qizdirish"
+        },
+        {
+          "id": "b",
+          "label": "Mis reagentini tayyorlash"
+        },
+        {
+          "id": "c",
+          "label": "Raqamli tahlil"
+        },
+        {
+          "id": "d",
+          "label": "Kraxmal kleysterini amalda tayyorlash"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Glukoza/Cu(II) kartasidagi eritma rangini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Yod bilan ko‘k kuzatuv kartasida nomlangan polisaxaridni yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph31",
+          "topic_title": "Disaxaridlar, Polisaxaridlar. Olinishi va xossalari",
+          "paragraph": 31,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph31-page127"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Ochiq glukoza rasmida OH guruhlari nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page119"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Mahsulotlari berilgan gross Cu(II) kartasida suv koeffitsiyenti qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph24",
+          "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+          "paragraph": 24,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph24-page97"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page119"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page121"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q09",
+      "response_kind": "chemical_formula",
+      "prompt": "Oldindan mis(I) oksid deb nomlangan qizil mahsulot kartasining formulasini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph24",
+          "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+          "paragraph": 24,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph24-page97"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab05-r1-q10",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari tayyor berilgan raqamli kartaning atom balansini yozing: C6H12O6+2Cu(OH)2=C6H12O7+Cu2O+2H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory05",
+          "topic_title": "Glukozaning mis (II)-gidroksid bilan reaksiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory05-page156"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph24",
+          "topic_title": "Oksobirikmalar. Aldegidlar. Olinishi va xossalari",
+          "paragraph": 24,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph24-page97"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page119"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph30",
+          "topic_title": "Uglevodlar. Monosaxaridlar. Olinishi va xossalari",
+          "paragraph": 30,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph30-page121"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

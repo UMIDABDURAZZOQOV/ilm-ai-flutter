@@ -1,0 +1,1161 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-10-lab01-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Etilenning etil spirtdan olinishi",
+  "content": {
+    "cards": [
+      {
+        "title": "Tayyor kartani raqamli tahlil qilish",
+        "body": "Bu laboratoriya darsida kitobdagi tayyor rasm va modda kartalarini raqamli tahlil qilamiz. Kuzatuv, nom va atomlar hisobini ajratamiz; tajribani amalda bajarish bosqichlari topshiriq tarkibiga kirmaydi.",
+        "fact_ids": [
+          "digital"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          }
+        ]
+      },
+      {
+        "title": "Boshlang‘ich modda va nomlangan mahsulot",
+        "body": "Manba sarlavhasida etil spirtidan etilen mavzusi berilgan. Kartadagi boshlang‘ich spirt — etanol C2H6O, nomlangan gaz mahsuloti — etilen C2H4. Bular mahsulotlari oldindan berilgan rasmga tegishli.",
+        "fact_ids": [
+          "names"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          }
+        ]
+      },
+      {
+        "title": "Birinchi rasmning jami atom kartasi",
+        "body": "Birinchi rasmda etanol va sulfat kislota uchun etilgidrogensulfat hamda suv ko‘rsatilgan. Faqat jami atom kartasi C2H6O+H2SO4=C2H6SO4+H2O. Etil guruhidagi C soni 2 bo‘lib qoladi.",
+        "fact_ids": [
+          "first"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          }
+        ]
+      },
+      {
+        "title": "Ikkinchi rasmda qaytgan kislota",
+        "body": "Ikkinchi rasmda etilgidrogensulfatdan etilen va sulfat kislota ko‘rsatilgan. Jami atom kartasi C2H6SO4=C2H4+H2SO4. Shu berilgan ikki kartada kislota bir tomonda kirib, keyingi kartada yana chiqadi.",
+        "fact_ids": [
+          "second"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          }
+        ]
+      },
+      {
+        "title": "Ikki kartadan gross modelga",
+        "body": "Ikki tayyor kartani qo‘shib, takrorlangan etilgidrogensulfat va sulfat kislotani qisqartirsak, jami model C2H6O=C2H4+H2O. Bu suv ajralishining atom hisobidir, amaldagi reaksiya chiqimi yoki gazni to‘plash ko‘rsatmasi emas.",
+        "fact_ids": [
+          "gross"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          }
+        ]
+      },
+      {
+        "title": "Har bir elementni alohida sanang",
+        "body": "Berilgan gross kartada etanolda C2/H6/O1, etilenda C2/H4, suvda H2/O1 sanaladi. O‘ngdagi jami H4+H2=H6, jami O1. Atomlar saqlanishini sanash modda nomini taxmin qilishdan alohida vazifa.",
+        "fact_ids": [
+          "counts"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Takrorlangan moddalarni qisqartirish",
+        "body": "Birinchi va ikkinchi kartadagi C2H6SO4 hamda H2SO4 qarama-qarshi tomonlardan qisqartiriladi. Qolgan atom kartasi C2H6O=C2H4+H2O.",
+        "fact_ids": [
+          "first",
+          "second",
+          "gross"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-laboratory01",
+            "topic_title": "Etilenning etil spirtdan olinishi",
+            "paragraph": 1,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-laboratory01-page153"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              82
+            ],
+            "pdf_pages": [
+              82
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page82"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph21",
+            "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+            "paragraph": 21,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph21-page83"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-laboratory01",
+        "topic_title": "Etilenning etil spirtdan olinishi",
+        "paragraph": 1,
+        "printed_pages": [
+          153
+        ],
+        "pdf_pages": [
+          153
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-laboratory01-page153"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph21",
+        "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+        "paragraph": 21,
+        "printed_pages": [
+          82
+        ],
+        "pdf_pages": [
+          82
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph21-page82"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph21",
+        "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+        "paragraph": 21,
+        "printed_pages": [
+          83
+        ],
+        "pdf_pages": [
+          83
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph21-page83"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-10-lab01-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Kitobning berilgan laboratoriya rasmida gaz mahsuloti qanday nomlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Etilen"
+        },
+        {
+          "id": "b",
+          "label": "Etanol"
+        },
+        {
+          "id": "c",
+          "label": "Glitserin"
+        },
+        {
+          "id": "d",
+          "label": "Saxaroza"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan kartaning boshlang‘ich spirti qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metanol"
+        },
+        {
+          "id": "b",
+          "label": "Fenol"
+        },
+        {
+          "id": "c",
+          "label": "Etanol"
+        },
+        {
+          "id": "d",
+          "label": "Sorbit"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Gross kartada etilendan tashqari qaysi mahsulot berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metan"
+        },
+        {
+          "id": "b",
+          "label": "Natriy xlorid"
+        },
+        {
+          "id": "c",
+          "label": "Kislorod"
+        },
+        {
+          "id": "d",
+          "label": "Suv"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Bu laboratoriya darsining vazifasi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Gazni amalda yig‘ish"
+        },
+        {
+          "id": "b",
+          "label": "Raqamli tahlil"
+        },
+        {
+          "id": "c",
+          "label": "Ochiq alanga sinovi"
+        },
+        {
+          "id": "d",
+          "label": "Reagentlarni o‘lchab aralashtirish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Berilgan gaz mahsulotining nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Berilgan boshlang‘ich spirt nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "C2H6O kartasida H atomlari nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "C2H4 mahsulot kartasida H atomlari nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Gross kartada bir etanolga suv koeffitsiyenti qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q10",
+      "response_kind": "chemical_formula",
+      "prompt": "Oldindan etilen deb nomlangan kartaning faqat jami tarkibini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q11",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari berilgan raqamli kartaning jami atom balansini yozing: C2H6O+H2SO4=C2H6SO4+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q12",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari berilgan raqamli kartaning jami atom balansini yozing: C2H6SO4=C2H4+H2SO4",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-10-lab01-r1-q13",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari berilgan raqamli kartaning jami atom balansini yozing: C2H6O=C2H4+H2O",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-laboratory01",
+          "topic_title": "Etilenning etil spirtdan olinishi",
+          "paragraph": 1,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-laboratory01-page153"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            82
+          ],
+          "pdf_pages": [
+            82
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page82"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph21",
+          "topic_title": "To‘yingan bir atomli spirtlarning fizik va kimyoviy xossalari. Ishlatilishi",
+          "paragraph": 21,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph21-page83"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
