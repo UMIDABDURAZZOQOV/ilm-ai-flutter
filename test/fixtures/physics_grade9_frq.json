@@ -714,6 +714,804 @@
         "kg/m3",
         "g/cm3"
       ]
+    },
+    {
+      "key": "physics-9-section-6-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "theta=-33,15°C. Aynan T=theta+273,15 bog‘lanishidan foydalanib javobni K da yoz.",
+      "givens": [
+        {
+          "symbol": "theta",
+          "value": "-33.15",
+          "unit": "°C"
+        }
+      ],
+      "symbols": [
+        "theta"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-6-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:T=400K,k=1,38e-23J/K. Bitta molekulaning o‘rtacha E ilgarilanma kinetik energiyasini top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "T",
+          "value": "400",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "k",
+        "T"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-6-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:n=2e25 1/m3,T=300K,k=1,38e-23J/K. Absolyut p ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "2e25",
+          "unit": "1/m3"
+        },
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "n",
+        "k",
+        "T"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-6-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gazning absolyut bosimi p=165,6kPa,T=400K,k=1,38e-23J/K. n ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "165.6",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "T",
+          "value": "400",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p",
+        "k",
+        "T"
+      ],
+      "suggested_unit": "1/m3",
+      "unit_choices": [
+        "1/m3"
+      ]
+    },
+    {
+      "key": "physics-9-section-6-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:p=80kPa absolyut,V=5L. Jami ilgarilanma kinetik Etotal ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "80",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V",
+          "value": "5",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-7-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy ideal gaz:m0=4e-26kg,T=400K,k=1,38e-23J/K. RMS v ni eng yaqin0,1m/s qadamda yoz;formulada sqrt ishlat.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "T",
+          "value": "400",
+          "unit": "K"
+        },
+        {
+          "symbol": "m0",
+          "value": "4e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "k",
+        "T",
+        "m0"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-7-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kislorod modeli:M=32g/mol,T=320K,R=8,31J/(mol*K). RMS v ni eng yaqin0,1m/s qadamda yoz.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "320",
+          "unit": "K"
+        },
+        {
+          "symbol": "M",
+          "value": "32",
+          "unit": "g/mol"
+        }
+      ],
+      "symbols": [
+        "R",
+        "T",
+        "M"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-7-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Zarra m0=2e-26kg,E=3,6e-21J kinetik energiyaga ega. v tezlik modulini top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "3.6e-21",
+          "unit": "J"
+        },
+        {
+          "symbol": "m0",
+          "value": "2e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "E",
+        "m0"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-7-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "k=1,38e-23J/K,NA=6,02e23 1/mol. R=k*NA ko‘paytmasini oraliqda yaxlitlamasdan yoz.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "NA",
+          "value": "6.02e23",
+          "unit": "1/mol"
+        }
+      ],
+      "symbols": [
+        "k",
+        "NA"
+      ],
+      "suggested_unit": "J/(mol*K)",
+      "unit_choices": [
+        "J/(mol*K)"
+      ]
+    },
+    {
+      "key": "physics-9-section-7-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shtern parvoz modeli:omega=250rad/s,tashqi R=16cm,ichki r=1cm,s=1,2cm. Izga mos v ni top.",
+      "givens": [
+        {
+          "symbol": "omega",
+          "value": "250",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "R",
+          "value": "16",
+          "unit": "cm"
+        },
+        {
+          "symbol": "r",
+          "value": "1",
+          "unit": "cm"
+        },
+        {
+          "symbol": "s",
+          "value": "1.2",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "omega",
+        "R",
+        "r",
+        "s"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-7-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kislorod modeli:M=32g/mol,v=500m/s RMS,R=8,31J/(mol*K). T ni eng yaqin0,1K qadamda yoz.",
+      "givens": [
+        {
+          "symbol": "M",
+          "value": "32",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "v",
+          "value": "500",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        }
+      ],
+      "symbols": [
+        "M",
+        "v",
+        "R"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-8-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "RMS tezliklar teng:geliy M1=4g/mol,vodorod M2=2g/mol,T2=250K. Geliy T1 ni top.",
+      "givens": [
+        {
+          "symbol": "M1",
+          "value": "4",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "T2",
+          "value": "250",
+          "unit": "K"
+        },
+        {
+          "symbol": "M2",
+          "value": "2",
+          "unit": "g/mol"
+        }
+      ],
+      "symbols": [
+        "M1",
+        "T2",
+        "M2"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-8-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil gaz:DT=180K,RMS v1=300m/s dan v2=600m/s ga ortdi. T1 ni top.",
+      "givens": [
+        {
+          "symbol": "DT",
+          "value": "180",
+          "unit": "K"
+        },
+        {
+          "symbol": "v2",
+          "value": "600",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v1",
+          "value": "300",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "DT",
+        "v2",
+        "v1"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-8-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "E=6,21e-21J bir molekulaning o‘rtacha ilgarilanma kinetik energiyasi,k=1,38e-23J/K. T ni top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "6.21e-21",
+          "unit": "J"
+        },
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        }
+      ],
+      "symbols": [
+        "E",
+        "k"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-9-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:nu=2mol,T=300K,V=16,62L,R=8,31J/(mol*K). Absolyut p ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "2",
+          "unit": "mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "V",
+          "value": "16.62",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "R",
+        "T",
+        "V"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-9-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:nu=0,5mol,T=400K,p=100kPa absolyut,R=8,31J/(mol*K). V ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "0.5",
+          "unit": "mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "400",
+          "unit": "K"
+        },
+        {
+          "symbol": "p",
+          "value": "100",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "R",
+        "T",
+        "p"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
+    },
+    {
+      "key": "physics-9-section-9-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:p=249,3kPa absolyut,V=20L,T=300K,R=8,31J/(mol*K). nu ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "249.3",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V",
+          "value": "20",
+          "unit": "L"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V",
+        "R",
+        "T"
+      ],
+      "suggested_unit": "mol",
+      "unit_choices": [
+        "mol"
+      ]
+    },
+    {
+      "key": "physics-9-section-9-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Azot modeli:p=249,3kPa absolyut,V=2L,M=28g/mol,T=300K,R=8,31J/(mol*K). m ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "249.3",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V",
+          "value": "2",
+          "unit": "L"
+        },
+        {
+          "symbol": "M",
+          "value": "28",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V",
+        "M",
+        "R",
+        "T"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-9-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil miqdor/tarkibli ideal gaz:p1=100kPa,V1=4L,T1=300K,V2=2L,T2=450K. p2 absolyut bosimni top.",
+      "givens": [
+        {
+          "symbol": "p1",
+          "value": "100",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V1",
+          "value": "4",
+          "unit": "L"
+        },
+        {
+          "symbol": "T2",
+          "value": "450",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "V2",
+          "value": "2",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p1",
+        "V1",
+        "T2",
+        "T1",
+        "V2"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-10-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz T const:p1=180kPa,V1=0,3L,p2=90kPa. V2 ni top.",
+      "givens": [
+        {
+          "symbol": "p1",
+          "value": "180",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V1",
+          "value": "0.3",
+          "unit": "L"
+        },
+        {
+          "symbol": "p2",
+          "value": "90",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "p1",
+        "V1",
+        "p2"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
+    },
+    {
+      "key": "physics-9-section-10-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz T const:p1=120kPa,V1=10L,V2=4L. p2 ni top.",
+      "givens": [
+        {
+          "symbol": "p1",
+          "value": "120",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V1",
+          "value": "10",
+          "unit": "L"
+        },
+        {
+          "symbol": "V2",
+          "value": "4",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p1",
+        "V1",
+        "V2"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-10-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil tarkibli ideal gaz T const:rho1=1,2kg/m3,p1=100kPa,p2=250kPa. rho2 ni top.",
+      "givens": [
+        {
+          "symbol": "rho1",
+          "value": "1.2",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "p2",
+          "value": "250",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "p1",
+          "value": "100",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "rho1",
+        "p2",
+        "p1"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-10-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz izotermik siqildi:V1=1,5L,V2=1L,bosim dp=30kPa ga ortdi. Dastlabki p1 ni top.",
+      "givens": [
+        {
+          "symbol": "dp",
+          "value": "30",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V2",
+          "value": "1",
+          "unit": "L"
+        },
+        {
+          "symbol": "V1",
+          "value": "1.5",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "dp",
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-10-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz T const:p1=80kPa,V1=6L,bosim dp=40kPa ga ortdi. V2 ni top.",
+      "givens": [
+        {
+          "symbol": "p1",
+          "value": "80",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V1",
+          "value": "6",
+          "unit": "L"
+        },
+        {
+          "symbol": "dp",
+          "value": "40",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "p1",
+        "V1",
+        "dp"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
     }
   ]
 }

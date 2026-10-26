@@ -803,12 +803,16 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
-      expect(questions, hasLength(24));
+      expect(questions, hasLength(48));
       for (final question in questions) {
         Json? edited;
-        final isRoot = question['key'] == 'physics-9-section-5-r1:q6';
-        final formula = isRoot ? 'sqrt(3*p/rho)' : 'learner_formula';
-        final value = isRoot ? '600' : '-1,25';
+        final draft = <String, (String, String)>{
+          'physics-9-section-5-r1:q6': ('sqrt(3*p/rho)', '600'),
+          'physics-9-section-7-r1:q5': ('sqrt(3*k*T/m0)', '643.4'),
+          'physics-9-section-7-r1:q6': ('sqrt(3*R*T/M)', '499.3'),
+        }[question['key']];
+        final formula = draft?.$1 ?? 'learner_formula';
+        final value = draft?.$2 ?? '-1,25';
         await mount(
           tester,
           scale: 2,
