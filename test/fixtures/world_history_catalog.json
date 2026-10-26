@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 46,
-  "implemented_sections": 26,
+  "implemented_sections": 31,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 20,
+  "source_review_issue_count": 15,
   "grade_content_complete": false,
   "implemented_grades": [
     6
@@ -4115,6 +4115,618 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh6-p26-page104"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p27-r1",
+      "sequence": 27,
+      "title": "Fuqaro tarbiyasi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic27",
+          "topic_title": "Fuqaro tarbiyasi",
+          "paragraph": 27,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p27-page104"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic27",
+          "topic_title": "Fuqaro tarbiyasi",
+          "paragraph": 27,
+          "printed_pages": [
+            105
+          ],
+          "pdf_pages": [
+            105
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p27-page105"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic27",
+          "topic_title": "Fuqaro tarbiyasi",
+          "paragraph": 27,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p27-page106"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic27",
+          "topic_title": "Fuqaro tarbiyasi",
+          "paragraph": 27,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p27-page107"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p28-r1",
+      "sequence": 28,
+      "title": "Qadimgi Yunoniston madaniyati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic28",
+          "topic_title": "Qadimgi Yunoniston madaniyati",
+          "paragraph": 28,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p28-page107"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic28",
+          "topic_title": "Qadimgi Yunoniston madaniyati",
+          "paragraph": 28,
+          "printed_pages": [
+            108
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p28-page108"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic28",
+          "topic_title": "Qadimgi Yunoniston madaniyati",
+          "paragraph": 28,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p28-page109"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic28",
+          "topic_title": "Qadimgi Yunoniston madaniyati",
+          "paragraph": 28,
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            110
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p28-page110"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic28",
+          "topic_title": "Qadimgi Yunoniston madaniyati",
+          "paragraph": 28,
+          "printed_pages": [
+            111
+          ],
+          "pdf_pages": [
+            111
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p28-page111"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p29-r1",
+      "sequence": 29,
+      "title": "Qadimgi Yunoniston olimlari va mutafakkirlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic29",
+          "topic_title": "Qadimgi Yunoniston olimlari va mutafakkirlari",
+          "paragraph": 29,
+          "printed_pages": [
+            111
+          ],
+          "pdf_pages": [
+            111
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p29-page111"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic29",
+          "topic_title": "Qadimgi Yunoniston olimlari va mutafakkirlari",
+          "paragraph": 29,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p29-page112"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic29",
+          "topic_title": "Qadimgi Yunoniston olimlari va mutafakkirlari",
+          "paragraph": 29,
+          "printed_pages": [
+            113
+          ],
+          "pdf_pages": [
+            113
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p29-page113"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic29",
+          "topic_title": "Qadimgi Yunoniston olimlari va mutafakkirlari",
+          "paragraph": 29,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p29-page114"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p30-r1",
+      "sequence": 30,
+      "title": "Qadimgi Yunoniston afsonalari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic30",
+          "topic_title": "Qadimgi Yunoniston afsonalari",
+          "paragraph": 30,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p30-page115"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic30",
+          "topic_title": "Qadimgi Yunoniston afsonalari",
+          "paragraph": 30,
+          "printed_pages": [
+            116
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p30-page116"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic30",
+          "topic_title": "Qadimgi Yunoniston afsonalari",
+          "paragraph": 30,
+          "printed_pages": [
+            117
+          ],
+          "pdf_pages": [
+            117
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p30-page117"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p31-r1",
+      "sequence": 31,
+      "title": "O‘rta Osiyoda ahamoniylar hukmronligi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic31",
+          "topic_title": "O‘rta Osiyoda ahamoniylar hukmronligi",
+          "paragraph": 31,
+          "printed_pages": [
+            118
+          ],
+          "pdf_pages": [
+            118
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p31-page118"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic31",
+          "topic_title": "O‘rta Osiyoda ahamoniylar hukmronligi",
+          "paragraph": 31,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p31-page119"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic31",
+          "topic_title": "O‘rta Osiyoda ahamoniylar hukmronligi",
+          "paragraph": 31,
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            120
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p31-page120"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic31",
+          "topic_title": "O‘rta Osiyoda ahamoniylar hukmronligi",
+          "paragraph": 31,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p31-page121"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic31",
+          "topic_title": "O‘rta Osiyoda ahamoniylar hukmronligi",
+          "paragraph": 31,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p31-page122"
         }
       ]
     }
