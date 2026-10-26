@@ -1,0 +1,1606 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p05-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Modda miqdori",
+  "content": {
+    "cards": [
+      {
+        "title": "Mol, massa va molyar massa",
+        "body": "Modda miqdori mol bilan, massa g yoki kg bilan ifodalanadi. Bu ikki kattalik bir tushuncha emas. Molyar massa M bir mol uchun massa bo‘lib g/mol da yoziladi; n=m/M va m=nM munosabatlari berilgan.",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      },
+      {
+        "title": "Zarrachani aniq nomlang",
+        "body": "Hisoblarda kitobning NA≈6,02·10²³ mol⁻¹ maktab yaqinlashuvini olamiz. Bir mol tanlangan zarrachaga shu son mos. Zarrachani oldindan nomlash kerak: atom, molekula, ion yoki formula birligi bir xil narsa emas.",
+        "fact_ids": [
+          "particles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      },
+      {
+        "title": "kmol va mmol ni molga o‘tkazing",
+        "body": "Manbaning birlik kartasida1kmol=1000 mol va 1mmol=0,001 mol. O‘tkazishda son bilan birga birlik ham o‘zgaradi. Masalan, 2kmol=2000 mol; 250mmol=0,25 mol.",
+        "fact_ids": [
+          "conversion"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan KOH kartasidan n ga",
+        "body": "Berilgan KOH kartasida massa28 g, molyar massa56 g/mol. Modda miqdori n=28/56=0,5 mol. Bu tayyor sonli karta; eritma tayyorlash yoki reagent o‘lchash yo‘riqnomasi emas.",
+        "fact_ids": [
+          "hydroxide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      },
+      {
+        "title": "Fe/S/FeS tayyor1:1:1kartasi",
+        "body": "Manbaning tayyor atom kartasi Fe+S=FeS, nisbat1:1:1. Butun-sonli modelda M(Fe)=56, M(S)=32, M(FeS)=88 g/mol. FeS uchun 22 g/88 g/mol=0,25 mol. Atom kartasi haqiqiy moddani amalda tayyorlash topshirig‘i emas.",
+        "fact_ids": [
+          "sulfide"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page32"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page33"
+          }
+        ]
+      },
+      {
+        "title": "0,5molFe kartasida massa hisobi",
+        "body": "Berilgan 0,5 mol Fe kartasida Fe massasi 56·0,5=28 g. Tayyor1:1:1Fe/S/FeS modelida atom S hisobi 16 g va mahsulot44 g bo‘ladi: 28+16=44. Bu yopiq kimyoviy atom modelidagi massa hisobidir, yadro tinchlik massalari haqidagi umumiy da’vo emas.",
+        "fact_ids": [
+          "massbalance"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page32"
+          }
+        ]
+      },
+      {
+        "title": "Formula nisbati va massa nisbatini ajrating",
+        "body": "Berilgan sofFeS formula kartasida Fe va S atomlari1:1. Shu karta uchun butun-sonli massa nisbati56:32. Kitobning tarkib doimiyligi tamoyili shu aniq formula modeli bilan tushuntiriladi; formula va massani aralashtirmang.",
+        "fact_ids": [
+          "composition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              32
+            ],
+            "pdf_pages": [
+              32
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page32"
+          }
+        ]
+      },
+      {
+        "title": "S atomlari bo‘yicha tanlangan hisob",
+        "body": "264 g oltingugurt kartasida aynan S atomlari bo‘yicha modda miqdori so‘ralgan. Berilgan M(S)=32 g/mol bilan 264/32=8,25 mol S atomi. Bu bulk oltingugurt faqat erkin yakka atomlardan iborat degani emas; hisob zarrachasi atom deb tanlangan.",
+        "fact_ids": [
+          "sulfur"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page33"
+          }
+        ]
+      },
+      {
+        "title": "Na2SO4formula massasi va miqdori",
+        "body": "Na2SO4 kartasida Na23/S32/O16 qiymatlari berilgan. Formula massasi 2·23+32+4·16=142; M=142 g/mol.14,2 g uchun n=14,2/142=0,1 mol formula birligi. Bir formula birligida2Na, 1S, 4O bor.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page33"
+          }
+        ]
+      },
+      {
+        "title": "BirNa atomi uchun yaqinlashgan massa",
+        "body": "Berilgan Na23 modelida bir mol Na atomlari massasi 23 g. Bitta atom massasi 23/(6,02·10²³)g; uch ahamiyatli raqamgacha3,82·10⁻²³g. Javob shakli3.82e-23 bo‘lishi mumkin. Bu darslikdagi yaqinlashganNA va M bilan hisob.",
+        "fact_ids": [
+          "sodium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              34
+            ],
+            "pdf_pages": [
+              34
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page34"
+          }
+        ]
+      },
+      {
+        "title": "BirCu atomi uchun alohida model",
+        "body": "Berilgan Cu64 modelida bitta atom massasi 64/(6,02·10²³)g. Uch ahamiyatli raqamgacha1,06·10⁻²²g. Bir atom massasini bir mol massasiga tenglashtirmang.",
+        "fact_ids": [
+          "copper"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              34
+            ],
+            "pdf_pages": [
+              34
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page34"
+          }
+        ]
+      },
+      {
+        "title": "Ikki mol molekuladagi molekulalar soni",
+        "body": "KitobdagiNA≈6,02·10²³ modelida aynan2 mol molekula berilsa, molekulalar soni 2·6,02·10²³=1,204·10²⁴. Buni molekuladagi barcha atomlar soni bilan almashtirish uchun atom tarkibi alohida kerak.",
+        "fact_ids": [
+          "double"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Avval M ni aniqlang, keyin n ni toping",
+        "body": "Na2SO4uchunM=2·23+32+4·16=142 g/mol.14,2 g/142 g/mol=0,1 mol formula birligi.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              33
+            ],
+            "pdf_pages": [
+              33
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page33"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph05",
+        "topic_title": "Modda miqdori",
+        "paragraph": 5,
+        "printed_pages": [
+          31
+        ],
+        "pdf_pages": [
+          31
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph05-page31"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph05",
+        "topic_title": "Modda miqdori",
+        "paragraph": 5,
+        "printed_pages": [
+          32
+        ],
+        "pdf_pages": [
+          32
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph05-page32"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph05",
+        "topic_title": "Modda miqdori",
+        "paragraph": 5,
+        "printed_pages": [
+          33
+        ],
+        "pdf_pages": [
+          33
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph05-page33"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph05",
+        "topic_title": "Modda miqdori",
+        "paragraph": 5,
+        "printed_pages": [
+          34
+        ],
+        "pdf_pages": [
+          34
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph05-page34"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p05-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Modda miqdori qaysi birlik bilan ifodalanadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat gramm"
+        },
+        {
+          "id": "b",
+          "label": "Faqat kilogramm"
+        },
+        {
+          "id": "c",
+          "label": "Mol"
+        },
+        {
+          "id": "d",
+          "label": "Faqat litr"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Molyar massa uchun manbadagi birlik qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "g/mol"
+        },
+        {
+          "id": "b",
+          "label": "Faqat g"
+        },
+        {
+          "id": "c",
+          "label": "Faqat mol"
+        },
+        {
+          "id": "d",
+          "label": "Faqat mol/g"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Na2SO4ning berilgan formulasida O soni qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "2"
+        },
+        {
+          "id": "b",
+          "label": "1"
+        },
+        {
+          "id": "c",
+          "label": "8"
+        },
+        {
+          "id": "d",
+          "label": "4"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Fe+S=FeS tayyor kartasida Fe/S/FeS koeffitsiyentlari qanday?",
+      "options": [
+        {
+          "id": "a",
+          "label": "2:1:1"
+        },
+        {
+          "id": "b",
+          "label": "1:1:1"
+        },
+        {
+          "id": "c",
+          "label": "1:2:1"
+        },
+        {
+          "id": "d",
+          "label": "1:1:2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page32"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Modda miqdorining birlik nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "FeS kartasidagi temir elementining kimyoviy belgisini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "250mmol ni molga aylantiring.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "28gKOH, M56 g/mol berilgan kartada n qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "22gFeS, M88 g/mol kartasida n qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page32"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "0,5 mol Fe, M56 g/mol kartasida Fe massasi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page32"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "264gS kartasida S atomlari bo‘yicha miqdor qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "14,2gNa2SO4, M142 g/mol kartasida miqdor qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Na23 va NA6,02·10²³ modelida bitta atom massasini uch ahamiyatli raqamgacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page34"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "Cu64 va NA6,02·10²³ modelida bitta atom massasini uch ahamiyatli raqamgacha yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page34"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q15",
+      "response_kind": "numeric_value",
+      "prompt": "NA6,02·10²³ modelida 2 mol molekulalar soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q16",
+      "response_kind": "chemical_formula",
+      "prompt": "Oldindan natriy sulfat deb nomlanganNa2SO4 formula birligining jami tarkibini yozing.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p05-r1-q17",
+      "response_kind": "chemical_equation",
+      "prompt": "Moddalari tayyor berilgan raqamli atom kartasini yozing: Fe+S=FeS.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page32"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page33"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

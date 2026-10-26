@@ -1,0 +1,1845 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p04-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+  "content": {
+    "cards": [
+      {
+        "title": "Bog‘lanishning to‘rtta tavsifi",
+        "body": "Manba bog‘lanishni energiya, uzunlik, valent burchak va tartib bilan tavsiflaydi. Uzunlik bog‘langan yadrolar oralig‘i, valent burchak ikki bog‘ orasidagi burchak sifatida berilgan. Turli moddalarning barcha xossalarini bitta ko‘rsatkich bilan tartiblash shart emas.",
+        "fact_ids": [
+          "metrics"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              23
+            ],
+            "pdf_pages": [
+              23
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page23"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              24
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page24"
+          }
+        ]
+      },
+      {
+        "title": "Suv va metanning berilgan taxminiy burchaklari",
+        "body": "Kitobdagi alohida molekula modeli uchun H2O burchagi taxminan104,5°, CH4 burchagi taxminan109,5° deb berilgan. Bu aynan ushbu ikki misolning yaqinlashgan burchagi; barcha faza va sharoitdagi aniq o‘zgarmas qiymat deb olinmaydi.",
+        "fact_ids": [
+          "angles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              24
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page24"
+          }
+        ]
+      },
+      {
+        "title": "Lokal sigma va pi modeli",
+        "body": "Ushbu darsning oddiy lokal bog‘ modelida bitta bog‘ —1sigma; qo‘shbog‘ —1sigma+1pi; uch bog‘ —1sigma+2pi. Jami atom tarkibini bilish bilan shu ulanish chizmasini bilish bir vazifa emas.",
+        "fact_ids": [
+          "local"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              24
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page24"
+          }
+        ]
+      },
+      {
+        "title": "Atsetilenning tayyor chizmasida sanash",
+        "body": "Oldindan HC≡CH deb chizilgan atsetilen kartasida C lar orasida 1sigma+2pi, ikki C–H da yana2sigma bor. Jami 3sigma, 2pi; yig‘indi5. Bu aynan berilgan chizmaning hisobi.",
+        "fact_ids": [
+          "acetylene"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              24
+            ],
+            "pdf_pages": [
+              24
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page24"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              30
+            ],
+            "pdf_pages": [
+              30
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page30"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph15",
+            "topic_title": "Alkinlar. Olinishi va xossalari",
+            "paragraph": 15,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph15-page57"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph17",
+            "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+            "paragraph": 17,
+            "printed_pages": [
+              67
+            ],
+            "pdf_pages": [
+              67
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph17-page67"
+          },
+          {
+            "book_id": "chemistry-10-uz-2017",
+            "book_title": "Organik kimyo",
+            "authors": [
+              "A. Mutalibov",
+              "E. Murodov",
+              "S. Masharipov",
+              "H. Islomova"
+            ],
+            "year": 2017,
+            "file_name": "organik_kimyo_10_uzb.pdf",
+            "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+            "topic_id": "ch10-paragraph17",
+            "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+            "paragraph": 17,
+            "printed_pages": [
+              68
+            ],
+            "pdf_pages": [
+              68
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch10-paragraph17-page68"
+          }
+        ]
+      },
+      {
+        "title": "Bir xil elementlar orasidagi qutbsiz misollar",
+        "body": "Berilgan H2, F2, Cl2, O2, N2 misollarida bir xil element atomlari o‘rtasidagi kovalent bog‘ qutbsiz deb tasniflangan. Qutbli bog‘ misolida elektron juftning taqsimlanishi farqli; bog‘ qutbliligi bilan murakkab molekulaning jami qutbliligini bitta tushuncha deb almashtirmang.",
+        "fact_ids": [
+          "nonpolar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              25
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page25"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan elektrmanfiyliklardan farqni hisoblang",
+        "body": "Faqat manbada berilgan elektrmanfiylik modelini ishlatamiz: H2,1; Cl3,0; N3,0; O3,5. HCl farqi0,9; NH3 dagi N–H farqi0,9; H2O dagi O–H farqi1,4; NO farqi0,5. Bu berilgan qiymatlar bilan farq hisobidir.",
+        "fact_ids": [
+          "polar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              30
+            ],
+            "pdf_pages": [
+              30
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page30"
+          }
+        ]
+      },
+      {
+        "title": "NH4+ hosil bo‘lishida donor va akseptor",
+        "body": "Manbaning NH3+H+→NH4+ rasmida N dagi tayyor elektron jufti donor tomondan, H+ esa akseptor sifatida berilgan. Ushbu donor-akseptor hosil bo‘lish modeli kovalent bog‘ mavzusiga kiradi; NH4+ ning to‘rtta H si alohida turdagi to‘rtta modda emas.",
+        "fact_ids": [
+          "donor"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              25
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page25"
+          }
+        ]
+      },
+      {
+        "title": "Ion va guruh ichidagi bog‘ni farqlang",
+        "body": "Ion bog‘lanish qarama-qarshi zaryadli ionlarning tortishishi bilan tushuntirilgan. NaOH kartasida Na+ va OH−, Na2SO4 kartasida2Na+ va SO4²− guruh ionlari ko‘rsatilgan. Guruh ichidagi kovalent ulanishni butun kristalldagi ionlararo tortishish bilan almashtirmang.",
+        "fact_ids": [
+          "ionic"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              26
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page26"
+          }
+        ]
+      },
+      {
+        "title": "Metall panjaraning elektron modeli",
+        "body": "Metall bog‘ modeli nisbatan erkin elektronlar bilan musbat metall markazlari o‘zaro ta’siriga asoslangan. Manbaning metall panjara rasmini shu model sifatida o‘qiymiz; undan barcha metallning harorat va mexanik xossalariga bitta universal son chiqarmaymiz.",
+        "fact_ids": [
+          "metal"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              26
+            ],
+            "pdf_pages": [
+              26
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page26"
+          }
+        ]
+      },
+      {
+        "title": "Suv molekulalari orasidagi uzilgan chiziq",
+        "body": "Berilgan suv rasmlarida bir H2O molekulasining H tomoni bilan boshqa molekulaning O tomoni orasida uzilgan chiziqli vodorod bog‘i ko‘rsatilgan. Bir suv molekulasi tarkibi H2O bo‘lib qoladi; assotsiatsiya rasmini hamma suv uchun bitta yangi doimiy molekulyar formula deb olmang.",
+        "fact_ids": [
+          "hydrogen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              25
+            ],
+            "pdf_pages": [
+              25
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page25"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              27
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page27"
+          }
+        ]
+      },
+      {
+        "title": "To‘rtta kristall panjara turi",
+        "body": "Kristall panjarada tugunlar fazoda tartibli takrorlanadi; takroriy qism elementar yacheyka deb atalgan. Manba panjaralarni molekulyar, atomli, ionli va metall turlarga ajratadi. Bu tasnif tugunlar va ular orasidagi o‘zaro ta’sirga tegishli.",
+        "fact_ids": [
+          "lattices"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              27
+            ],
+            "pdf_pages": [
+              27
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page27"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              28
+            ],
+            "pdf_pages": [
+              28
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page28"
+          }
+        ]
+      },
+      {
+        "title": "Panjara tugunlaridagi zarrachalar",
+        "body": "Molekulyar panjara tugunida molekulalar, ionli turda ionlar; atomli modelda kovalent bog‘langan atomlar, metall modelida musbat markazlar va erkin elektronlar bilan tushuntirilgan tasvir bor. Tugundagi zarrachani alohida moddaning jami formulasi bilan almashtirmang.",
+        "fact_ids": [
+          "nodes"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              28
+            ],
+            "pdf_pages": [
+              28
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page28"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan NaCl modelidagi qo‘shnilar",
+        "body": "Manbadagi NaCl ning ko‘rsatilgan panjara modelida bitta natriy ionini6xlorid ioni, bitta xlorid ionini6natriy ioni o‘rab oladi. Bu aynan berilgan struktura modelining yaqin qo‘shnilar soni; barcha mumkin bo‘lgan holatlarda o‘zgarmas deb da’vo qilinmaydi.",
+        "fact_ids": [
+          "salt"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              28
+            ],
+            "pdf_pages": [
+              28
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page28"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Bir xil berilgan shkalada farqni oling",
+        "body": "HCl: 3,0−2,1=0,9; O–H: 3,5−2,1=1,4. Bu kartada O–H farqi kattaroq; universal ion-kovalent chegarasi shu ikki sondan tayinlanmaydi.",
+        "fact_ids": [
+          "polar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph04",
+            "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+            "paragraph": 4,
+            "printed_pages": [
+              30
+            ],
+            "pdf_pages": [
+              30
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph04-page30"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          23
+        ],
+        "pdf_pages": [
+          23
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page23"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          24
+        ],
+        "pdf_pages": [
+          24
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page24"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          25
+        ],
+        "pdf_pages": [
+          25
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page25"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          26
+        ],
+        "pdf_pages": [
+          26
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page26"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          27
+        ],
+        "pdf_pages": [
+          27
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page27"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          28
+        ],
+        "pdf_pages": [
+          28
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page28"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          29
+        ],
+        "pdf_pages": [
+          29
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page29"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          30
+        ],
+        "pdf_pages": [
+          30
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page30"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph04",
+        "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+        "paragraph": 4,
+        "printed_pages": [
+          31
+        ],
+        "pdf_pages": [
+          31
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph04-page31"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph15",
+        "topic_title": "Alkinlar. Olinishi va xossalari",
+        "paragraph": 15,
+        "printed_pages": [
+          57
+        ],
+        "pdf_pages": [
+          57
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph15-page57"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph17",
+        "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+        "paragraph": 17,
+        "printed_pages": [
+          67
+        ],
+        "pdf_pages": [
+          67
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph17-page67"
+      },
+      {
+        "book_id": "chemistry-10-uz-2017",
+        "book_title": "Organik kimyo",
+        "authors": [
+          "A. Mutalibov",
+          "E. Murodov",
+          "S. Masharipov",
+          "H. Islomova"
+        ],
+        "year": 2017,
+        "file_name": "organik_kimyo_10_uzb.pdf",
+        "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+        "topic_id": "ch10-paragraph17",
+        "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+        "paragraph": 17,
+        "printed_pages": [
+          68
+        ],
+        "pdf_pages": [
+          68
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch10-paragraph17-page68"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p04-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "H2 dagi bir xil atomlar orasidagi kovalent bog‘ manbada qanday atalgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Qutbsiz"
+        },
+        {
+          "id": "b",
+          "label": "Faqat ionli"
+        },
+        {
+          "id": "c",
+          "label": "Faqat metall"
+        },
+        {
+          "id": "d",
+          "label": "Faqat vodorod"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page25"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "NH3/H+ kartasida H+ ning vazifasi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Donor"
+        },
+        {
+          "id": "b",
+          "label": "Tayyor elektron jufti"
+        },
+        {
+          "id": "c",
+          "label": "Akseptor"
+        },
+        {
+          "id": "d",
+          "label": "Neytral tuz"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page25"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Tugunlarida ionlar joylashgan panjara turi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Molekulyar"
+        },
+        {
+          "id": "b",
+          "label": "Faqat atomli"
+        },
+        {
+          "id": "c",
+          "label": "Faqat metall"
+        },
+        {
+          "id": "d",
+          "label": "Ionli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page28"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Tugunlarida neytral molekulalar berilgan panjara turi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ionli"
+        },
+        {
+          "id": "b",
+          "label": "Molekulyar"
+        },
+        {
+          "id": "c",
+          "label": "Faqat metall"
+        },
+        {
+          "id": "d",
+          "label": "Faqat atomli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page28"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "NH3/H+ kartasida N ning tayyor elektron jufti tomoni vazifasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page25"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Ionlar tugunlarda joylashgan panjara turini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page28"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Berilgan suv molekulalari orasidagi uzilgan chiziq qaysi bog‘ nomi bilan berilgan?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page25"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page27"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan H2,1/O3,5 modelida O–H elektrmanfiylik farqi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page30"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan H2,1/Cl3,0 modelida H–Cl farqi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page30"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "HC≡CH tayyor chizmasida sigma bog‘lar soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page24"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page30"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page57"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Shu chizmada sigma va pi yig‘indisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page24"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page30"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph15",
+          "topic_title": "Alkinlar. Olinishi va xossalari",
+          "paragraph": 15,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph15-page57"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            67
+          ],
+          "pdf_pages": [
+            67
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page67"
+        },
+        {
+          "book_id": "chemistry-10-uz-2017",
+          "book_title": "Organik kimyo",
+          "authors": [
+            "A. Mutalibov",
+            "E. Murodov",
+            "S. Masharipov",
+            "H. Islomova"
+          ],
+          "year": 2017,
+          "file_name": "organik_kimyo_10_uzb.pdf",
+          "sha256": "b9edd182161159f109fbbb668bc1656e00e221aab9411ec83b16ff1889244cb6",
+          "topic_id": "ch10-paragraph17",
+          "topic_title": "Organik birikmalarda uglerod atomining gibridlanishi",
+          "paragraph": 17,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch10-paragraph17-page68"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan NaCl modelida bitta Na+ atrofidagi Cl− qo‘shnilari soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page28"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p04-r1-q13",
+      "response_kind": "chemical_formula",
+      "prompt": "Bitta suv molekulasining jami tarkibini yozing; assotsiatsiya soni yoki n so‘ralmaydi.",
+      "input_label": "Kimyoviy formula",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page25"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph04",
+          "topic_title": "Kimyoviy bog‘lanish turlari. Kristall panjaralar",
+          "paragraph": 4,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph04-page27"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

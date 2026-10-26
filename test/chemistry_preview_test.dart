@@ -36,6 +36,7 @@ void main() {
   Json? grade8Catalog;
   Json? grade9Catalog;
   Json? grade10Catalog;
+  Json? grade11Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false, offline = false, expired = false;
@@ -46,6 +47,7 @@ void main() {
     grade8Catalog = null;
     grade9Catalog = null;
     grade10Catalog = null;
+    grade11Catalog = null;
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -61,6 +63,9 @@ void main() {
           );
         }
         if (r.path.endsWith('/catalog')) {
+          if (r.queryParameters['grade'] == 11 && grade11Catalog != null) {
+            return reply(200, grade11Catalog!);
+          }
           if (r.queryParameters['grade'] == 10 && grade10Catalog != null) {
             return reply(200, grade10Catalog!);
           }
@@ -2284,6 +2289,82 @@ void main() {
         expect(find.textContaining('organik_kimyo_10_uzb.pdf'), findsOneWidget);
         await t.ensureVisible(priorLocator);
         await capture(t, '$name-batch45-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
+  for (final scenario in [
+    ('quantum_shell', 1, 8, '', '-0,5', 6, false),
+    ('periodic_mo', 2, 8, '', '9', 15, false),
+    ('isotope_mean', 3, 9, '', '35,45', 18, false),
+    ('bond_graph', 4, 10, '', '5', 24, true),
+    ('mole_atom', 5, 12, '', '3.82e-23', 31, false),
+  ]) {
+    final (name, number, questionIndex, choiceId, value, page, prior) = scenario;
+    testWidgets('batch46 $name grade11 source and feedback at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      catalog['available_grades'] = [7, 8, 9, 10, 11];
+      grade11Catalog = fixture('${name}_catalog');
+      lesson = fixture('${name}_lesson');
+      results = fixture('${name}_results');
+      skip(questionIndex);
+      await mount(t, dark: number.isOdd, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-11')));
+      await waitFor(find.text('Darsni boshlash'));
+      expect(requests.lastWhere((r) => r.path.endsWith('/catalog')).queryParameters['grade'], 11);
+      await t.ensureVisible(find.text('Darsni boshlash').first);
+      if (!prior) await capture(t, '$name-batch46-catalog');
+      await tap(t, 'Darsni boshlash');
+      if (questionIndex == 0) {
+        for (var i = 0; i < jsonRows((lesson['content'] as Json)['cards']).length - 1; i++) {
+          await tap(t, 'Davom etish');
+        }
+        await tap(t, 'Mashqlarga o‘tish');
+      }
+      final numeric = value.isNotEmpty;
+      if (numeric) {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      } else {
+        final question = jsonRows(lesson['questions'])[questionIndex];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == choiceId);
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], numeric ? {'value':value} : {'choice_id':choiceId});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch46-feedback');
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$number ·'));
+      await t.ensureVisible(source);
+      await capture(t, '$name-batch46-feedback-source');
+      await tapFinder(t, source);
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('umumiy_kimyo_11_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch46-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (prior) {
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §17 ·'));
+        await tapFinder(t, priorSource);
+        final priorLocator = find.textContaining('68 -> PDF 68');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining('organik_kimyo_10_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch46-prior-source', overlay: true);
       }
       expect(t.takeException(), isNull);
     });

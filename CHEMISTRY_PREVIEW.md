@@ -1,5 +1,17 @@
 # ILM AI Chemistry: local QA preview
 
+## Current checkpoint — batch46, 2026-10-26
+
+240/268 source entries implemented:grades7–10 all mapped entries and grade11
+§1–5. Five new320×568/200% scenarios passed in11s;20 captures inspected,
+including negative spin, isotope mean, scientific notation and current11/prior10
+source locators. Full Flutter581 tests passed in284s; analysis0 issues/247.2s.
+The test HTTP adapter now routes grade11 independently. Production navigation
+and shared graders retain their contracts. Fifteen sanitized actualHTTP fixtures;
+76 answers,235/4700XP preserved→240/4800XP,+100once,identical complete replay.
+Whole-course readiness remains false;nativeAndroid/IME/TalkBack notcertified.
+All sections below are historical checkpoints;backend CHECKPOINT has full QA.
+
 ## Current checkpoint — batch45, 2026-10-26
 
 235/268 source teaching entries implemented in the paired Chemistry backend:

@@ -1,0 +1,1635 @@
+{
+  "answers": {
+    "chemistry-11-p01-r1-q01": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q01",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Berilgan belgilashda l=0 — s, l=1 — p, l=2 — d, l=3 — f. Masalan, n=3 va l=2 birga 3d pog‘onachani bildiradi. Shu ikki sonning o‘zi elementning davri yoki yagona kimligini belgilamaydi.",
+      "correct_answer": "3d",
+      "solution": [
+        {
+          "body": "Berilgan belgilashda l=0 — s, l=1 — p, l=2 — d, l=3 — f. Masalan, n=3 va l=2 birga 3d pog‘onachani bildiradi. Shu ikki sonning o‘zi elementning davri yoki yagona kimligini belgilamaydi.",
+          "fact_ids": [
+            "subshell"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                5
+              ],
+              "pdf_pages": [
+                5
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page05"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q02": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q02",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Pauli prinsipiga ko‘ra atomda to‘rtta kvant soni bir xil bo‘lgan ikki elektron bo‘lmaydi. Bitta orbitalda n, l, ml bir xil bo‘lishi mumkin, ikki elektronning ms qiymatlari esa qarama-qarshi bo‘ladi.",
+      "correct_answer": "Pauli",
+      "solution": [
+        {
+          "body": "Pauli prinsipiga ko‘ra atomda to‘rtta kvant soni bir xil bo‘lgan ikki elektron bo‘lmaydi. Bitta orbitalda n, l, ml bir xil bo‘lishi mumkin, ikki elektronning ms qiymatlari esa qarama-qarshi bo‘ladi.",
+          "fact_ids": [
+            "pauli"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q03": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q03",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Klechkovskiyning kirish modeli n+l yig‘indisi kichik holatni avval oladi; yig‘indi teng bo‘lsa n kichigi avval. Shu qoidada 4s uchun 4+0=4, 3d uchun 3+2=5; 4s avval. Bu barcha ionlar va holatlarning o‘zgarmas aniq energiya jadvali emas.",
+      "correct_answer": "4s",
+      "solution": [
+        {
+          "body": "Klechkovskiyning kirish modeli n+l yig‘indisi kichik holatni avval oladi; yig‘indi teng bo‘lsa n kichigi avval. Shu qoidada 4s uchun 4+0=4, 3d uchun 3+2=5; 4s avval. Bu barcha ionlar va holatlarning o‘zgarmas aniq energiya jadvali emas.",
+          "fact_ids": [
+            "order"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q04": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q04",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Xlorning berilgan asosiy konfiguratsiyasida jami 17 elektron: 1s²2s²2p⁶3s²3p⁵. Tashqi n=3 qavatda 2+5=7 elektron bor; 3p pog‘onachasida 5 elektron. Bu aynan neytral asosiy xlor atomi kartasi.",
+      "correct_answer": "3s^2 3p^5",
+      "solution": [
+        {
+          "body": "Xlorning berilgan asosiy konfiguratsiyasida jami 17 elektron: 1s²2s²2p⁶3s²3p⁵. Tashqi n=3 qavatda 2+5=7 elektron bor; 3p pog‘onachasida 5 elektron. Bu aynan neytral asosiy xlor atomi kartasi.",
+          "fact_ids": [
+            "chlorine"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                8
+              ],
+              "pdf_pages": [
+                8
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page08"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q05": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q05",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Berilgan belgilashda l=0 — s, l=1 — p, l=2 — d, l=3 — f. Masalan, n=3 va l=2 birga 3d pog‘onachani bildiradi. Shu ikki sonning o‘zi elementning davri yoki yagona kimligini belgilamaydi.",
+      "correct_answer": "d",
+      "solution": [
+        {
+          "body": "Berilgan belgilashda l=0 — s, l=1 — p, l=2 — d, l=3 — f. Masalan, n=3 va l=2 birga 3d pog‘onachani bildiradi. Shu ikki sonning o‘zi elementning davri yoki yagona kimligini belgilamaydi.",
+          "fact_ids": [
+            "subshell"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                5
+              ],
+              "pdf_pages": [
+                5
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page05"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q06": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q06",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Gund qoidasining berilgan teng energiyali p-orbital rasmlarida elektronlar juftlashishdan oldin alohida kataklarda parallel spin bilan ko‘rsatilgan. C ning 2p² rasmida 2 ta, N ning 2p³ rasmida 3 ta juftlashmagan elektron bor.",
+      "correct_answer": "Gund",
+      "solution": [
+        {
+          "body": "Gund qoidasining berilgan teng energiyali p-orbital rasmlarida elektronlar juftlashishdan oldin alohida kataklarda parallel spin bilan ko‘rsatilgan. C ning 2p² rasmida 2 ta, N ning 2p³ rasmida 3 ta juftlashmagan elektron bor.",
+          "fact_ids": [
+            "hund"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                8
+              ],
+              "pdf_pages": [
+                8
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page08"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q07": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q07",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Pauli prinsipiga ko‘ra atomda to‘rtta kvant soni bir xil bo‘lgan ikki elektron bo‘lmaydi. Bitta orbitalda n, l, ml bir xil bo‘lishi mumkin, ikki elektronning ms qiymatlari esa qarama-qarshi bo‘ladi.",
+      "correct_answer": "Pauli",
+      "solution": [
+        {
+          "body": "Pauli prinsipiga ko‘ra atomda to‘rtta kvant soni bir xil bo‘lgan ikki elektron bo‘lmaydi. Bitta orbitalda n, l, ml bir xil bo‘lishi mumkin, ikki elektronning ms qiymatlari esa qarama-qarshi bo‘ladi.",
+          "fact_ids": [
+            "pauli"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q08": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q08",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Magnit kvant soni ml berilgan l uchun −l dan +l gacha butun qiymatlarni oladi. Qiymatlar soni 2l+1. l=2 uchun −2,−1,0,1,2: jami 5 ta orbital holati.",
+      "correct_answer": "5",
+      "solution": [
+        {
+          "body": "Magnit kvant soni ml berilgan l uchun −l dan +l gacha butun qiymatlarni oladi. Qiymatlar soni 2l+1. l=2 uchun −2,−1,0,1,2: jami 5 ta orbital holati.",
+          "fact_ids": [
+            "magnetic"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                5
+              ],
+              "pdf_pages": [
+                5
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page05"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q09": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q09",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Spin kvant sonining ikki qiymati +1/2 va −1/2 qilib berilgan. Sonli javob kartalarida ular +0,5 va −0,5 deb yoziladi. Qarama-qarshi spinli ikki elektron bitta orbitalda joylashishi mumkin; to‘rtta kvant soni bir xil ikki elektron bo‘lmaydi.",
+      "correct_answer": "-0.5",
+      "solution": [
+        {
+          "body": "Spin kvant sonining ikki qiymati +1/2 va −1/2 qilib berilgan. Sonli javob kartalarida ular +0,5 va −0,5 deb yoziladi. Qarama-qarshi spinli ikki elektron bitta orbitalda joylashishi mumkin; to‘rtta kvant soni bir xil ikki elektron bo‘lmaydi.",
+          "fact_ids": [
+            "spin"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q10": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q10",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Bitta l pog‘onachada 2l+1 orbital va har bir orbitalda ko‘pi bilan 2 elektron hisoblanadi. Shu modelda s sig‘imi 2, p sig‘imi 6, d sig‘imi 10, f sig‘imi 14. Bu sig‘im, har bir atomda ularning hammasi to‘lgan degani emas.",
+      "correct_answer": "14",
+      "solution": [
+        {
+          "body": "Bitta l pog‘onachada 2l+1 orbital va har bir orbitalda ko‘pi bilan 2 elektron hisoblanadi. Shu modelda s sig‘imi 2, p sig‘imi 6, d sig‘imi 10, f sig‘imi 14. Bu sig‘im, har bir atomda ularning hammasi to‘lgan degani emas.",
+          "fact_ids": [
+            "capacity"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                5
+              ],
+              "pdf_pages": [
+                5
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page05"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q11": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q11",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. n qavat uchun l ning n ta qiymati bor; qavatdagi jami orbitallar n², maksimal elektronlar 2n². n=3 uchun 9 orbital va 18 elektron; n=4 uchun 16 orbital va 32 elektron sig‘imi. Pog‘onacha sonini orbital soni bilan almashtirmang.",
+      "correct_answer": "9",
+      "solution": [
+        {
+          "body": "n qavat uchun l ning n ta qiymati bor; qavatdagi jami orbitallar n², maksimal elektronlar 2n². n=3 uchun 9 orbital va 18 elektron; n=4 uchun 16 orbital va 32 elektron sig‘imi. Pog‘onacha sonini orbital soni bilan almashtirmang.",
+          "fact_ids": [
+            "shell"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                5
+              ],
+              "pdf_pages": [
+                5
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page05"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q12": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q12",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. n qavat uchun l ning n ta qiymati bor; qavatdagi jami orbitallar n², maksimal elektronlar 2n². n=3 uchun 9 orbital va 18 elektron; n=4 uchun 16 orbital va 32 elektron sig‘imi. Pog‘onacha sonini orbital soni bilan almashtirmang.",
+      "correct_answer": "18",
+      "solution": [
+        {
+          "body": "n qavat uchun l ning n ta qiymati bor; qavatdagi jami orbitallar n², maksimal elektronlar 2n². n=3 uchun 9 orbital va 18 elektron; n=4 uchun 16 orbital va 32 elektron sig‘imi. Pog‘onacha sonini orbital soni bilan almashtirmang.",
+          "fact_ids": [
+            "shell"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                5
+              ],
+              "pdf_pages": [
+                5
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page05"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                6
+              ],
+              "pdf_pages": [
+                6
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page06"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page05"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page06"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q13": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q13",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Gund qoidasining berilgan teng energiyali p-orbital rasmlarida elektronlar juftlashishdan oldin alohida kataklarda parallel spin bilan ko‘rsatilgan. C ning 2p² rasmida 2 ta, N ning 2p³ rasmida 3 ta juftlashmagan elektron bor.",
+      "correct_answer": "3",
+      "solution": [
+        {
+          "body": "Gund qoidasining berilgan teng energiyali p-orbital rasmlarida elektronlar juftlashishdan oldin alohida kataklarda parallel spin bilan ko‘rsatilgan. C ning 2p² rasmida 2 ta, N ning 2p³ rasmida 3 ta juftlashmagan elektron bor.",
+          "fact_ids": [
+            "hund"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                8
+              ],
+              "pdf_pages": [
+                8
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page08"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q14": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q14",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Xlorning berilgan asosiy konfiguratsiyasida jami 17 elektron: 1s²2s²2p⁶3s²3p⁵. Tashqi n=3 qavatda 2+5=7 elektron bor; 3p pog‘onachasida 5 elektron. Bu aynan neytral asosiy xlor atomi kartasi.",
+      "correct_answer": "7",
+      "solution": [
+        {
+          "body": "Xlorning berilgan asosiy konfiguratsiyasida jami 17 elektron: 1s²2s²2p⁶3s²3p⁵. Tashqi n=3 qavatda 2+5=7 elektron bor; 3p pog‘onachasida 5 elektron. Bu aynan neytral asosiy xlor atomi kartasi.",
+          "fact_ids": [
+            "chlorine"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                8
+              ],
+              "pdf_pages": [
+                8
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page08"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q15": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q15",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Kr uchun berilgan konfiguratsiya 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶. Unda 4 ta band qavat bor; 2n² sig‘im bo‘yicha dastlabki 3 qavat to‘la. Sakkizta band pog‘onacha ham o‘z s/p/d sig‘imiga yetgan. Band qavat bilan to‘la qavat sonini ajrating.",
+      "correct_answer": "4",
+      "solution": [
+        {
+          "body": "Kr uchun berilgan konfiguratsiya 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶. Unda 4 ta band qavat bor; 2n² sig‘im bo‘yicha dastlabki 3 qavat to‘la. Sakkizta band pog‘onacha ham o‘z s/p/d sig‘imiga yetgan. Band qavat bilan to‘la qavat sonini ajrating.",
+          "fact_ids": [
+            "krypton"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                9
+              ],
+              "pdf_pages": [
+                9
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page09"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                10
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page10"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page11"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page10"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page11"
+        }
+      ]
+    },
+    "chemistry-11-p01-r1-q16": {
+      "assessment_version": 2,
+      "assessment_key": "chemistry-11-p01-r1-q16",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Kr uchun berilgan konfiguratsiya 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶. Unda 4 ta band qavat bor; 2n² sig‘im bo‘yicha dastlabki 3 qavat to‘la. Sakkizta band pog‘onacha ham o‘z s/p/d sig‘imiga yetgan. Band qavat bilan to‘la qavat sonini ajrating.",
+      "correct_answer": "3",
+      "solution": [
+        {
+          "body": "Kr uchun berilgan konfiguratsiya 1s²2s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶. Unda 4 ta band qavat bor; 2n² sig‘im bo‘yicha dastlabki 3 qavat to‘la. Sakkizta band pog‘onacha ham o‘z s/p/d sig‘imiga yetgan. Band qavat bilan to‘la qavat sonini ajrating.",
+          "fact_ids": [
+            "krypton"
+          ],
+          "source_refs": [
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                9
+              ],
+              "pdf_pages": [
+                9
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page09"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                10
+              ],
+              "pdf_pages": [
+                10
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page10"
+            },
+            {
+              "book_id": "chemistry-11-uz-2018",
+              "book_title": "Umumiy kimyo",
+              "authors": [
+                "S. Masharipov",
+                "A. Mutalibov",
+                "E. Murodov",
+                "H. Islomova"
+              ],
+              "year": 2018,
+              "file_name": "umumiy_kimyo_11_uzb.pdf",
+              "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+              "topic_id": "ch11-paragraph01",
+              "topic_title": "Atom tuzilishi",
+              "paragraph": 1,
+              "printed_pages": [
+                11
+              ],
+              "pdf_pages": [
+                11
+              ],
+              "regions": [
+                "full"
+              ],
+              "verification": "page_image_reviewed",
+              "review_id": "ch11-paragraph01-page11"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page09"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page10"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page11"
+        }
+      ]
+    }
+  },
+  "result": {
+    "assessment_version": 2,
+    "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+    "lesson_key": "chemistry-11-p01-r1",
+    "score": 16,
+    "total": 16,
+    "score_pct": 100.0,
+    "passed": true,
+    "xp_awarded": 20,
+    "xp_total": 4720,
+    "stars": 3,
+    "streak_days": 2,
+    "completion_threshold_pct": 60,
+    "elapsed_seconds": 0
+  }
+}

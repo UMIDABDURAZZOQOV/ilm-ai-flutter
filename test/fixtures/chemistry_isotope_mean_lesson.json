@@ -1,0 +1,2130 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p03-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Atom tarkibi. Yadro reaksiyalari",
+  "content": {
+    "cards": [
+      {
+        "title": "A,Z,N va neytral elektronlar",
+        "body": "Neytral atomda protonlar p va elektronlar e soni tartib raqami Z ga teng. Massa soni A yadrodagi protonlar va neytronlar yig‘indisi: A=Z+N, N=A−Z. Massa sonini modda miqdori yoki tabiiy aralashmaning o‘rtacha atom massasi bilan almashtirmang.",
+        "fact_ids": [
+          "composition"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              17
+            ],
+            "pdf_pages": [
+              17
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page17"
+          }
+        ]
+      },
+      {
+        "title": "Vodorodning uchta aniq izotopi",
+        "body": "Berilgan vodorod izotoplari protiy1H, deyteriy2H va tritiy3H. Hammasida Z=1; neytronlar soni mos ravishda0,1,2. Protiyda neytron yo‘qligini barcha vodorod izotoplariga ko‘chirmang.",
+        "fact_ids": [
+          "hydrogen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          }
+        ]
+      },
+      {
+        "title": "Kislorod izotoplarida neytronlarni sanang",
+        "body": "Kislorodning berilgan 16O, 17O, 18O izotoplarida Z=8. Neytronlar soni 16−8=8,17−8=9,18−8=10. Bir elementning Z si saqlanib, massa soni va neytronlar soni farq qilishi izotoplar ta’rifiga mos.",
+        "fact_ids": [
+          "oxygen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              17
+            ],
+            "pdf_pages": [
+              17
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page17"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          }
+        ]
+      },
+      {
+        "title": "Xlor35 va37 ni qiyoslang",
+        "body": "Berilgan xlor35 va xlor37 uchun Z=17 bo‘lgan neytral atom kartalarini olamiz. Neytronlar35−17=18 va 37−17=20; elektronlar ikkalasida17. Izotoplar elektron soni bilan emas, shu misolda neytron soni bilan farqlanadi.",
+        "fact_ids": [
+          "chlorine"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              17
+            ],
+            "pdf_pages": [
+              17
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page17"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph01",
+            "topic_title": "Atom tuzilishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph01-page08"
+          }
+        ]
+      },
+      {
+        "title": "Berilgan son ulushlari bilan o‘rtacha",
+        "body": "Faqat berilgan son ulushlari modelida 35 massali izotop ulushi0,775,37 massaliniki0,225. O‘rtacha qiymat0,775·35+0,225·37=35,45. Bu massa sonlariga asoslangan maktab yaqinlashuvi; berilgan ulushlarni massa ulushi deb almashtirmang.",
+        "fact_ids": [
+          "weighted"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          }
+        ]
+      },
+      {
+        "title": "Bir xil A, turlicha Z:izobar",
+        "body": "Izobarlarda massa soni bir xil, Z esa farqli. Manbaning40K va 40Ar misolida A=40; Z mos ravishda19 va 18. Neytronlar21 va 22. Bir xil A bo‘lishi bir element degani emas.",
+        "fact_ids": [
+          "isobar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          }
+        ]
+      },
+      {
+        "title": "Bir xil N:izoton",
+        "body": "Izotonlarda neytronlar soni bir xil. Berilgan 136Xe(Z54),138Ba(Z56),139La(Z57) kartalarida har safar N=82. Massa sonlari ham, protonlar soni ham bir xil bo‘lishi shart emas.",
+        "fact_ids": [
+          "isotone"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          }
+        ]
+      },
+      {
+        "title": "Bir xil elektronlar:izoelektron",
+        "body": "Izoelektron zarrachalarda elektronlar soni bir xil. Berilgan ion kartalarida musbat zaryad elektron kamayishi, manfiy zaryad elektron qo‘shilishiga mos. Ca2+ uchun 20−2=18, Cl− uchun 17+1=18: elektronlar soni teng.",
+        "fact_ids": [
+          "isoelectronic"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              23
+            ],
+            "pdf_pages": [
+              23
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page23"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph01",
+            "topic_title": "Atom tuzilishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph01-page08"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph01",
+            "topic_title": "Atom tuzilishi",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph01-page09"
+          }
+        ]
+      },
+      {
+        "title": "Elektron qamrashda Z o‘zgarishi",
+        "body": "Manbaning so‘zli elektron qamrash modelida proton neytronga o‘tishi bilan Z birga kamayadi, A o‘zgarmaydi. Bu dars A va Z o‘zgarishini sanaydi; bosma zarracha qutisidagi noto‘g‘ri harf yoki to‘liq fizik tenglama taxmin qilinmaydi.",
+        "fact_ids": [
+          "capture"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              19
+            ],
+            "pdf_pages": [
+              19
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page19"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              20
+            ],
+            "pdf_pages": [
+              20
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page20"
+          }
+        ]
+      },
+      {
+        "title": "Beta va pozitron kartalarini ajrating",
+        "body": "Berilgan beta-minus ajralish modelida neytron proton tomonga o‘tishi bilan Z birga ortadi, A saqlanadi. Pozitron ajralish modelida esa Z birga kamayadi va A saqlanadi. Bu yadro jarayonlarini kimyoviy modda formulalari bilan tenglashtirish vazifasi emas.",
+        "fact_ids": [
+          "beta"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              20
+            ],
+            "pdf_pages": [
+              20
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page20"
+          }
+        ]
+      },
+      {
+        "title": "Gamma kartasida A va Z saqlanishi",
+        "body": "Gamma nurlanish haqidagi kartada yadro energiyasi o‘zgarishi, ammo A va Z o‘zgarmasligi berilgan. Demak, shu karta bo‘yicha elementning tartib raqami almashmaydi. To‘siq qalinligi yoki amaliy himoya usulini bitta son bilan kafolatlamaymiz.",
+        "fact_ids": [
+          "gamma"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              20
+            ],
+            "pdf_pages": [
+              20
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page20"
+          }
+        ]
+      },
+      {
+        "title": "Alfa kartasida massa soni va zaryad",
+        "body": "Berilgan radiy kartasida A226, Z88 dan radon A222, Z86 va geliy yadrosi A4, Z2 ko‘rsatilgan. Massa SONLARI226=222+4, zaryad sonlari88=86+2. Bu sonlar balansi, haqiqiy tinchlik massalarining aynan tengligi haqidagi da’vo emas.",
+        "fact_ids": [
+          "alpha"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              20
+            ],
+            "pdf_pages": [
+              20
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page20"
+          }
+        ]
+      },
+      {
+        "title": "Al/He/Si/H tayyor kartasining hisobi",
+        "body": "Berilgan Al27(Z13)+He4(Z2) kartasida Si30(Z14) va H1(Z1) nomlangan. Chapda massa sonlari27+4=31, o‘ngda30+1=31; Z yig‘indisi13+2=14+1=15. Bu faqat tayyor nazariy kartaning A/Z hisobi.",
+        "fact_ids": [
+          "aluminium"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              20
+            ],
+            "pdf_pages": [
+              20
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page20"
+          }
+        ]
+      },
+      {
+        "title": "Bo‘linish kartasini faqat sonlar bilan tekshiring",
+        "body": "Kitobdagi tayyor bo‘linish kartasida A235 va bitta neytronning A1 si jami 236 beradi. Ko‘rsatilgan mahsulotlar A93, A140 va uchta neytron: 93+140+3=236. Z bo‘yicha 92=36+56. Bu son kartasi qurilma, material tayyorlash yoki jarayonni boshqarish yo‘riqnomasi emas.",
+        "fact_ids": [
+          "fission"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              21
+            ],
+            "pdf_pages": [
+              21
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page21"
+          }
+        ]
+      },
+      {
+        "title": "Izotopli suv kartalarini takrorsiz sanang",
+        "body": "Uchta berilgan H izotopidan suvning H jufti tartibsiz tanlanadi: HH, DD, TT, HD, HT, DT — 6 xil. Har bir juftga berilgan ikki O izotopi mos keladi: 6·2=12 xil izotopli suv kartasi. H juftini teskari yozish yangi variant deb sanalmaydi.",
+        "fact_ids": [
+          "water"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              21
+            ],
+            "pdf_pages": [
+              21
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page21"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              22
+            ],
+            "pdf_pages": [
+              22
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page22"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Bir xil neytronlar sonini uch marta tekshiring",
+        "body": "136−54=82; 138−56=82; 139−57=82. Bu izotonlik, izotoplik emas: Z lar turlicha.",
+        "fact_ids": [
+          "isotone"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph03",
+            "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+            "paragraph": 3,
+            "printed_pages": [
+              18
+            ],
+            "pdf_pages": [
+              18
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph03-page18"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          16
+        ],
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page16"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          17
+        ],
+        "pdf_pages": [
+          17
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page17"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          18
+        ],
+        "pdf_pages": [
+          18
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page18"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          19
+        ],
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page19"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          20
+        ],
+        "pdf_pages": [
+          20
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page20"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          21
+        ],
+        "pdf_pages": [
+          21
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page21"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          22
+        ],
+        "pdf_pages": [
+          22
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page22"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph03",
+        "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+        "paragraph": 3,
+        "printed_pages": [
+          23
+        ],
+        "pdf_pages": [
+          23
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph03-page23"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph01",
+        "topic_title": "Atom tuzilishi",
+        "paragraph": 1,
+        "printed_pages": [
+          8
+        ],
+        "pdf_pages": [
+          8
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph01-page08"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph01",
+        "topic_title": "Atom tuzilishi",
+        "paragraph": 1,
+        "printed_pages": [
+          9
+        ],
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph01-page09"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p03-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Z bir xil, massa sonlari turlicha atomlar qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Izobar"
+        },
+        {
+          "id": "b",
+          "label": "Izotop"
+        },
+        {
+          "id": "c",
+          "label": "Faqat izoton"
+        },
+        {
+          "id": "d",
+          "label": "Faqat izoelektron"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page17"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "A bir xil, Z turlicha berilgan 40K va 40Ar qanday juft?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Izobar"
+        },
+        {
+          "id": "b",
+          "label": "Izotop"
+        },
+        {
+          "id": "c",
+          "label": "Bir element"
+        },
+        {
+          "id": "d",
+          "label": "Bir xil protonli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "N82 bir xil bo‘lgan berilgan Xe/Ba/La kartalari qanday juftlik turini ko‘rsatadi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat izotop"
+        },
+        {
+          "id": "b",
+          "label": "Faqat izobar"
+        },
+        {
+          "id": "c",
+          "label": "Bir xil Z"
+        },
+        {
+          "id": "d",
+          "label": "Izoton"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Elektronlar soni teng bo‘lganCa2+ va Cl− kartalari qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Bir element"
+        },
+        {
+          "id": "b",
+          "label": "Izotop"
+        },
+        {
+          "id": "c",
+          "label": "Izoelektron"
+        },
+        {
+          "id": "d",
+          "label": "Bir xil protonli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page23"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page09"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Vodorodning2H izotopi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "N soni bir xil zarrachalar turi atamasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Massa soni bir xil, Z turlicha atomlar turi atamasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "18O(Z8) kartasida neytronlar soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page17"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "37Cl(Z17) kartasida neytronlar soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page17"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "0,775·35+0,225·37 berilgan model o‘rtachasini toping.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan 138Ba(Z56) kartasida neytronlar soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "Ca2+(Z20) kartasida elektronlar soni qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page23"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page08"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph01",
+          "topic_title": "Atom tuzilishi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph01-page09"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Elektron qamrash kartasida Z ning o‘zgarishini ishorali son bilan yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page18"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page19"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page20"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q14",
+      "response_kind": "numeric_value",
+      "prompt": "Beta-minus ajralish kartasida Z o‘zgarishi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page20"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q15",
+      "response_kind": "numeric_value",
+      "prompt": "226Ra alfa kartasidagi radon mahsulotining A si qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page20"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q16",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan Al/He→Si/H kartasida har bir tomondagi Z yig‘indisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page20"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q17",
+      "response_kind": "numeric_value",
+      "prompt": "235+1 berilgan bo‘linish kartasida A yig‘indisi qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page21"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p03-r1-q18",
+      "response_kind": "numeric_value",
+      "prompt": "UchH vaikkiO izotopli berilgan tanlovda nechta suv varianti bor?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page21"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph03",
+          "topic_title": "Atom tarkibi. Yadro reaksiyalari",
+          "paragraph": 3,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph03-page22"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
