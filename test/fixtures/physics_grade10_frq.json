@@ -1014,6 +1014,979 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-10-section-6-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Gorizontal otilgan model: h=15m, g=10m/s². Yerga yetish t vaqtini 0,01s qadamgacha yaxlitla; oraliq ildizni erta yaxlitlama.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "15",
+          "unit": "m"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "h",
+        "g"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-6",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            18
+          ],
+          "printed_pages": [
+            17
+          ],
+          "page_text_sha256": [
+            "d303788e152dd904263f3e858b8f0fdcee106ba9eeb0fedb79f1a4c358a2b038"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-6-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gorizontal tezlik v0=5m/s, h=20m, g=10m/s². Yerga yetguncha gorizontal s uzoqlikni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "5",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "h",
+          "value": "20",
+          "unit": "m"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "h",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-6",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            18
+          ],
+          "printed_pages": [
+            17
+          ],
+          "page_text_sha256": [
+            "d303788e152dd904263f3e858b8f0fdcee106ba9eeb0fedb79f1a4c358a2b038"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-6-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yer y=0, otilgan joy h=20m. Gorizontal otilish, g=10m/s², t=1s. Yerdan y balandlikni top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "20",
+          "unit": "m"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "1",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "h",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-6",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            17
+          ],
+          "printed_pages": [
+            16
+          ],
+          "page_text_sha256": [
+            "415dd34d8dd7a4f4827046188e6f0922bc60ac2e09ec91f9a5a3b455f9f3272e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-6-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gorizontal otilish: v0=3m/s, h=0,8m, g=10m/s². Yerga yetishdagi jami v tezlik modulini top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "3",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "h",
+          "value": "0.8",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "g",
+        "h"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-6",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            18,
+            19
+          ],
+          "printed_pages": [
+            17,
+            18
+          ],
+          "page_text_sha256": [
+            "d303788e152dd904263f3e858b8f0fdcee106ba9eeb0fedb79f1a4c358a2b038",
+            "73a1b6567a4957ed37ac0487ceda2db7037cb0aaff01fc55f5c57a10c6b93570"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-6-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gorizontal tezlik tarkibi v=v0=8m/s o‘zgarmaydi. Jism hali havoda bo‘lgan t=0,5s dagi gorizontal s ko‘chish modulini top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "0.5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-6",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            17
+          ],
+          "printed_pages": [
+            16
+          ],
+          "page_text_sha256": [
+            "415dd34d8dd7a4f4827046188e6f0922bc60ac2e09ec91f9a5a3b455f9f3272e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-7-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal qiya otilish: v0=20m/s, cosA=0,8 tayyor berilgan. vx ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "20",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "cosA",
+          "value": "0.8",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "cosA"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-7",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            20
+          ],
+          "printed_pages": [
+            19
+          ],
+          "page_text_sha256": [
+            "f1ec2f79de15c042e99bfbcbe214d999ccf02001a1392dfd5ae98e4d15240b1a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-7-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Yuqoriga musbat o‘q: v0=20m/s, sinA=0,6, g=10m/s², t=2s; hali qaytishdan oldin. vy ni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "20",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "t",
+          "value": "2",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "sinA",
+        "g",
+        "t"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-7",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            20
+          ],
+          "printed_pages": [
+            19
+          ],
+          "page_text_sha256": [
+            "f1ec2f79de15c042e99bfbcbe214d999ccf02001a1392dfd5ae98e4d15240b1a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-7-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal qiya otilish: v0=20m/s, cosA=0,8, t=1s da jism hali havoda. Gorizontal x ko‘chishni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "20",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "cosA",
+          "value": "0.8",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "1",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "cosA",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-7",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            20
+          ],
+          "printed_pages": [
+            19
+          ],
+          "page_text_sha256": [
+            "f1ec2f79de15c042e99bfbcbe214d999ccf02001a1392dfd5ae98e4d15240b1a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-7-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v0=20m/s, sinA=0,6, g=10m/s². Qarshiliksiz otilish nuqtasidan maksimal h balandlikni top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "20",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "sinA",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-7",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            21
+          ],
+          "printed_pages": [
+            20
+          ],
+          "page_text_sha256": [
+            "7e7f18877f2089d3de362291c58f63a3e3c55ebd1029d4ea8dfea5176779c93a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-7-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v0=20m/s, sinA=0,6, g=10m/s². Qarshiliksiz aynan otilgan balandlikka qaytish t vaqtini top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "20",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "sinA",
+        "g"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-7",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            21
+          ],
+          "printed_pages": [
+            20
+          ],
+          "page_text_sha256": [
+            "7e7f18877f2089d3de362291c58f63a3e3c55ebd1029d4ea8dfea5176779c93a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-7-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "v0=20m/s, sinA=0,6, cosA=0,8, g=10m/s². Teng balandlikka qo‘nishning gorizontal s uzoqligini top.",
+      "givens": [
+        {
+          "symbol": "v0",
+          "value": "20",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "sinA",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "cosA",
+          "value": "0.8",
+          "unit": "1"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "v0",
+        "sinA",
+        "cosA",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-7",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            20,
+            21
+          ],
+          "printed_pages": [
+            19,
+            20
+          ],
+          "page_text_sha256": [
+            "f1ec2f79de15c042e99bfbcbe214d999ccf02001a1392dfd5ae98e4d15240b1a",
+            "7e7f18877f2089d3de362291c58f63a3e3c55ebd1029d4ea8dfea5176779c93a"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-8-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil burchakdagi SHARTLI raqamli qaydlar l1=190cm, l2=200cm, l3=210cm. lMean o‘rtacha uzoqlikni top.",
+      "givens": [
+        {
+          "symbol": "l1",
+          "value": "190",
+          "unit": "cm"
+        },
+        {
+          "symbol": "l2",
+          "value": "200",
+          "unit": "cm"
+        },
+        {
+          "symbol": "l3",
+          "value": "210",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "l1",
+        "l2",
+        "l3"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-8",
+          "chapter_id": "physics-10-chapter-1",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            23
+          ],
+          "printed_pages": [
+            22
+          ],
+          "page_text_sha256": [
+            "acf5eddbbb5ce431823bffe4ede409c180150f1167d5438b66490fc4feb7ff4e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-9-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Inersial klassik model: natijaviy kuch moduli F=12N, m=3kg. a tezlanish modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "3",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "F",
+        "m"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-9",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            31
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "d621a69844e66d0f0bdabae6a69ff798a8689d60ae37ddc139890711ad65c021"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-9-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Doimiy m=500g jism a=2m/s² tezlanish oldi. Natijaviy F kuch modulini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "500",
+          "unit": "g"
+        },
+        {
+          "symbol": "a",
+          "value": "2",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "a"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-9",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            31
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "d621a69844e66d0f0bdabae6a69ff798a8689d60ae37ddc139890711ad65c021"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-9-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Natijaviy F=18N va a=3m/s² modullaridan m inert massani top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "18",
+          "unit": "N"
+        },
+        {
+          "symbol": "a",
+          "value": "3",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "a"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-9",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            31
+          ],
+          "printed_pages": [
+            30
+          ],
+          "page_text_sha256": [
+            "d621a69844e66d0f0bdabae6a69ff798a8689d60ae37ddc139890711ad65c021"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-9-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "AYNAN bir xil F alohida jismlarga a1=3m/s², a2=6m/s² beradi. Ulangan jismlarga ham aynan F berilsa umumiy a ni top.",
+      "givens": [
+        {
+          "symbol": "a1",
+          "value": "3",
+          "unit": "m/s2"
+        },
+        {
+          "symbol": "a2",
+          "value": "6",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "a1",
+        "a2"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-9",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            31
+          ],
+          "page_text_sha256": [
+            "995c62b0fff6b6bb3ad15d58a34bff74a28f26224f527a244ea9a439be6dbfc3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-10-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Vagon Yerga nisbatan v1=8m/s, odam vagonga nisbatan v2=−2m/s. Klassik bir o‘qda odamning Yerdagi v sini top.",
+      "givens": [
+        {
+          "symbol": "v1",
+          "value": "8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v2",
+          "value": "-2",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "v1",
+        "v2"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-10",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            34
+          ],
+          "printed_pages": [
+            33
+          ],
+          "page_text_sha256": [
+            "6e64cfe92c02f46f6e9f72ce3f4e654b33ef31fadcc900d4b4cda563228e54ce"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-10-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Aylanmaydigan siljish sistemasi A=3m/s² musbat tezlanmoqda. m=2kg jism uchun Fi proyeksiyasini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "A",
+          "value": "3",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "m",
+        "A"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-10",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            35
+          ],
+          "printed_pages": [
+            34
+          ],
+          "page_text_sha256": [
+            "6ca7e340f3cf1c3a7d337922e51cd96ec73226e3dd4250b1d96f180d90e84d0f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-10-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir o‘q: real natijaviy F=10N, m=2kg, aylanmaydigan sistema A=3m/s² musbat. Nisbiy ar proyeksiyasini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "10",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "A",
+          "value": "3",
+          "unit": "m/s2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "m",
+        "A"
+      ],
+      "suggested_unit": "m/s2",
+      "unit_choices": [
+        "m/s2",
+        "cm/s2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-10",
+          "chapter_id": "physics-10-chapter-2",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            35
+          ],
+          "printed_pages": [
+            34
+          ],
+          "page_text_sha256": [
+            "6ca7e340f3cf1c3a7d337922e51cd96ec73226e3dd4250b1d96f180d90e84d0f"
+          ]
+        }
+      ]
     }
   ]
 }
