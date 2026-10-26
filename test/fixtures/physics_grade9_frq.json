@@ -3613,6 +3613,446 @@
         "mJ",
         "MJ"
       ]
+    },
+    {
+      "key": "physics-9-section-27-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘liq siklda Qh=2kJ olinib Qc=1,2kJ sovitkichka berildi. Sof A ni top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "2",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "Qc",
+          "value": "1.2",
+          "unit": "kJ"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "Qc"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-27-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘liq sikl:Qh=5kJ,Qc=3kJ musbat modullar. eta ni ulush yoki % bilan yoz.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "5",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "Qc",
+          "value": "3",
+          "unit": "kJ"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "Qc"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-27-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qaytar Karno modeli:Th=600K,Tc=300K. Maksimal eta ni top.",
+      "givens": [
+        {
+          "symbol": "Th",
+          "value": "600",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "Th",
+        "Tc"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-27-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘liq siklda Qh=3kJ,eta=40%. Sovitkichka berilgan Qc musbat modulini top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "3",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "eta",
+          "value": "40",
+          "unit": "%"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "eta"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-28-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘liq siklda A=800J,Qc=1200J. eta ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "800",
+          "unit": "J"
+        },
+        {
+          "symbol": "Qc",
+          "value": "1200",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "A",
+        "Qc"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-28-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qaytar Karno dvigateli:Tc=300K,eta=0,6. Th ni top.",
+      "givens": [
+        {
+          "symbol": "Tc",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "eta",
+          "value": "0.6",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "Tc",
+        "eta"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-28-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "To‘liq sikl:eta=30%,Qc=14kJ sovitkichka berilgan musbat modul. Sof A ni top.",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "30",
+          "unit": "%"
+        },
+        {
+          "symbol": "Qc",
+          "value": "14",
+          "unit": "kJ"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "Qc"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-28-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qaytar Karno sikli:Th=800K,Tc=300K,Qh=2400J. Sof A ni top.",
+      "givens": [
+        {
+          "symbol": "Th",
+          "value": "800",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "Qh",
+          "value": "2400",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Th",
+        "Tc",
+        "Qh"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-28-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qaytar Karno sikli:Qc=600J,Th=900K,Tc=300K. Qh ni top.",
+      "givens": [
+        {
+          "symbol": "Qc",
+          "value": "600",
+          "unit": "J"
+        },
+        {
+          "symbol": "Th",
+          "value": "900",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "Qc",
+        "Th",
+        "Tc"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-30-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy dvigatel:P=40kW foydali quvvat,t=1h,m=12kg,q=40MJ/kg berilgan yoqilg‘i batamom yondi. eta ni top.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "40",
+          "unit": "kW"
+        },
+        {
+          "symbol": "t",
+          "value": "1",
+          "unit": "h"
+        },
+        {
+          "symbol": "m",
+          "value": "12",
+          "unit": "kg"
+        },
+        {
+          "symbol": "q",
+          "value": "40",
+          "unit": "MJ/kg"
+        }
+      ],
+      "symbols": [
+        "P",
+        "t",
+        "m",
+        "q"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-30-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faza o‘zgarmaydigan suv modeli:eta=30%,mf=0,021kg,q=40MJ/kg berilgan yoqilg‘i,mw=2kg suv,c=4200J/(kg*K). DT ortishini top.",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "30",
+          "unit": "%"
+        },
+        {
+          "symbol": "mf",
+          "value": "0.021",
+          "unit": "kg"
+        },
+        {
+          "symbol": "q",
+          "value": "40",
+          "unit": "MJ/kg"
+        },
+        {
+          "symbol": "mw",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "mf",
+        "q",
+        "mw",
+        "c"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-30-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy avtomobil:eta=0,25,rho=700kg/m3,V=8L benzin,q=46MJ/kg,v=25m/s,s=100km,o‘zgarmas tezlik. O‘rtacha foydali P ni top.",
+      "givens": [
+        {
+          "symbol": "eta",
+          "value": "0.25",
+          "unit": "1"
+        },
+        {
+          "symbol": "rho",
+          "value": "700",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "V",
+          "value": "8",
+          "unit": "L"
+        },
+        {
+          "symbol": "q",
+          "value": "46",
+          "unit": "MJ/kg"
+        },
+        {
+          "symbol": "v",
+          "value": "25",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "s",
+          "value": "100",
+          "unit": "km"
+        }
+      ],
+      "symbols": [
+        "eta",
+        "rho",
+        "V",
+        "q",
+        "v",
+        "s"
+      ],
+      "suggested_unit": "W",
+      "unit_choices": [
+        "W",
+        "kW",
+        "mW",
+        "MW"
+      ]
+    },
+    {
+      "key": "physics-9-section-30-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy dizel:P=28kW foydali quvvat,t=3h,eta=0,3,q=42MJ/kg. Kerakli m ni top.",
+      "givens": [
+        {
+          "symbol": "P",
+          "value": "28",
+          "unit": "kW"
+        },
+        {
+          "symbol": "t",
+          "value": "3",
+          "unit": "h"
+        },
+        {
+          "symbol": "eta",
+          "value": "0.3",
+          "unit": "1"
+        },
+        {
+          "symbol": "q",
+          "value": "42",
+          "unit": "MJ/kg"
+        }
+      ],
+      "symbols": [
+        "P",
+        "t",
+        "eta",
+        "q"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
     }
   ]
 }

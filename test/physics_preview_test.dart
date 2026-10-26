@@ -540,6 +540,46 @@ void main() {
       expect(draft, {'order': <String>[]});
     },
   );
+  testWidgets(
+    'four Carnot stages fit large text and preserve explicit learner order',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final question = fixture('physics_grade9_carnot_order');
+      Json? draft;
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (d) => draft = d,
+            ),
+          ),
+        ),
+      );
+      for (final label in [
+        'Th da izotermik kengayish',
+        'Adiabatik kengayib Tc gacha sovish',
+        'Tc da izotermik siqilish',
+        'Adiabatik siqilib Th ga qaytish',
+      ]) {
+        await tap(tester, label);
+      }
+      expect(draft, {
+        'order': ['s2', 's4', 's1', 's3'],
+      });
+      expect(tester.takeException(), isNull);
+      await tap(tester, 'Tartibni tozalash');
+      expect(draft, {'order': <String>[]});
+    },
+  );
+
   test(
     'malformed v2 response is rejected before building an incomplete screen',
     () async {
@@ -803,7 +843,7 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
-      expect(questions, hasLength(108));
+      expect(questions, hasLength(121));
       for (final question in questions) {
         Json? edited;
         final draft = <String, (String, String)>{
@@ -813,6 +853,8 @@ void main() {
           'physics-9-section-15-r1:q6': ('3*nu*R*(T2-T1)/2', '-3739.5'),
           'physics-9-section-16-r1:q9': ('A/p', '-0.004'),
           'physics-9-section-19-r1:q6': ('m*c*(T2-T1)', '-8400'),
+          'physics-9-section-27-r1:q7': ('1-Tc/Th', '0,5'),
+          'physics-9-section-30-r1:q7': ('eta*rho*V*q*v/s', '16100'),
         }[question['key']];
         final formula = draft?.$1 ?? 'learner_formula';
         final value = draft?.$2 ?? '-1,25';
