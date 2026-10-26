@@ -230,7 +230,7 @@ void main() {
           find.byKey(const ValueKey('world_history-grade-11')),
           findsOneWidget,
         );
-        expect(find.text('16/46 dars mavjud.'), findsOneWidget);
+        expect(find.text('21/46 dars mavjud.'), findsOneWidget);
         expect(find.byType(ExpansionTile), findsNWidgets(7));
         await capture(t, 'path-${dark ? 'dark' : 'light'}-200');
         await tapFinder(
@@ -365,13 +365,15 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
-  for (var number = 2; number <= 16; number++) {
+  for (var number = 2; number <= 21; number++) {
     void selectParagraph() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('p${suffix}_lesson');
       results = fixture('p${suffix}_results');
       catalog = fixture(
-        number >= 12
+        number >= 17
+            ? 'batch04_completed_catalog'
+            : number >= 12
             ? 'batch03_completed_catalog'
             : number >= 7
             ? 'batch02_completed_catalog'
@@ -380,11 +382,12 @@ void main() {
     }
 
     Future<void> openParagraph(WidgetTester t) async {
-      if (number >= 6) {
-        await tapFinder(
-          t,
-          find.byKey(const ValueKey('history-chapter-6-wh6-chapter02')),
-        );
+      final unit = jsonRows(
+        catalog['source_units'],
+      ).singleWhere((u) => u['sequence'] == number);
+      final chapter = unit['chapter_id'];
+      if (chapter != jsonRows(catalog['chapters']).first['id']) {
+        await tapFinder(t, find.byKey(ValueKey('history-chapter-6-$chapter')));
       }
       final item = find
           .ancestor(
