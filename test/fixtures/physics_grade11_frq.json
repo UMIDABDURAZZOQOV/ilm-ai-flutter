@@ -4527,6 +4527,818 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-11-section-31-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "RAQAMLI alohida manbalar normal yuzaga teng Ev beradi:Iv2=90cd,r1=2m,r2=3m. Iv1ni top.",
+      "givens": [
+        {
+          "symbol": "Iv2",
+          "value": "90",
+          "unit": "cd"
+        },
+        {
+          "symbol": "r1",
+          "value": "2",
+          "unit": "m"
+        },
+        {
+          "symbol": "r2",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "Iv2",
+        "r1",
+        "r2"
+      ],
+      "suggested_unit": "cd",
+      "unit_choices": [
+        "cd"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-31",
+          "chapter_id": "physics-11-chapter-4",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            117
+          ],
+          "printed_pages": [
+            116
+          ],
+          "page_text_sha256": [
+            "75d6f7af75186be7e05fcd94df424c98bd568d05ae13365519bba98c1b5a3c8f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-32-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir soat xususiy tau0=6ns,v=1,8e8m/s,c=3e8m/s. Tashqi inertial tau ni top.",
+      "givens": [
+        {
+          "symbol": "tau0",
+          "value": "6",
+          "unit": "ns"
+        },
+        {
+          "symbol": "v",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "tau0",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "ms",
+        "µs",
+        "ns"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-32",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            128
+          ],
+          "printed_pages": [
+            127
+          ],
+          "page_text_sha256": [
+            "25d59c42c69af317bec45857da401c42c8ec07ff773984997ed0e890394bd0e4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-32-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Harakatga parallel sterjen:l0=2m,v=2,4e8m/s,c=3e8m/s. Tashqi tizimda uchlar bir vaqtda qayd etilgan lni top.",
+      "givens": [
+        {
+          "symbol": "l0",
+          "value": "2",
+          "unit": "m"
+        },
+        {
+          "symbol": "v",
+          "value": "2.4e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "l0",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "µm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-32",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            128
+          ],
+          "printed_pages": [
+            127
+          ],
+          "page_text_sha256": [
+            "25d59c42c69af317bec45857da401c42c8ec07ff773984997ed0e890394bd0e4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-32-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir o‘q:ichki u=1,8e8m/s,tizim v=1,8e8m/s,c=3e8m/s. wni eng yaqin1m/s gacha top.",
+      "givens": [
+        {
+          "symbol": "u",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "u",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-32",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            128,
+            129
+          ],
+          "printed_pages": [
+            127,
+            128
+          ],
+          "page_text_sha256": [
+            "25d59c42c69af317bec45857da401c42c8ec07ff773984997ed0e890394bd0e4",
+            "7c620c88fbf98df07a3d2ab01e7ed5f040d87900a40cbb40e83e19aebc99695d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-32-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir o‘q:ichki u=−1,8e8m/s,tizim v=1,8e8m/s,c=3e8m/s. wni top.",
+      "givens": [
+        {
+          "symbol": "u",
+          "value": "-1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "u",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-32",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            128
+          ],
+          "printed_pages": [
+            127
+          ],
+          "page_text_sha256": [
+            "25d59c42c69af317bec45857da401c42c8ec07ff773984997ed0e890394bd0e4"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-33-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Invariant m0=2e−27kg,c=3e8m/s. E0ni top.",
+      "givens": [
+        {
+          "symbol": "m0",
+          "value": "2e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m0",
+        "c"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-33",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            130
+          ],
+          "printed_pages": [
+            129
+          ],
+          "page_text_sha256": [
+            "27d1bf96655f93b99396873e9a309d7413e54011dd0abdd6bf501cbb4c526696"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-33-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m0=2e−27kg,v=1,8e8m/s,c=3e8m/s. To‘la Eni top.",
+      "givens": [
+        {
+          "symbol": "m0",
+          "value": "2e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m0",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-33",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            130
+          ],
+          "printed_pages": [
+            129
+          ],
+          "page_text_sha256": [
+            "27d1bf96655f93b99396873e9a309d7413e54011dd0abdd6bf501cbb4c526696"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-33-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m0=2e−27kg,v=1,8e8m/s,c=3e8m/s. Kni top (bu sonlarda gamma ratsional).",
+      "givens": [
+        {
+          "symbol": "m0",
+          "value": "2e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m0",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-33",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            131
+          ],
+          "printed_pages": [
+            130
+          ],
+          "page_text_sha256": [
+            "6e2f0e3bade3089d1e02964b8a3d65ad949c21ab6c55a0ea12e5343b70c4b0e2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-33-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m0=2e−27kg,tezlik moduli v=1,8e8m/s,c=3e8m/s. pMom modulni top.",
+      "givens": [
+        {
+          "symbol": "m0",
+          "value": "2e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "1.8e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "m0",
+        "v",
+        "c"
+      ],
+      "suggested_unit": "kg*m/s",
+      "unit_choices": [
+        "kg*m/s",
+        "N*s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-33",
+          "chapter_id": "physics-11-chapter-5",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            131
+          ],
+          "printed_pages": [
+            130
+          ],
+          "page_text_sha256": [
+            "6e2f0e3bade3089d1e02964b8a3d65ad949c21ab6c55a0ea12e5343b70c4b0e2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-34-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Qora jism to‘lqin uzunligi spektri:T=4200K,b=2,898e−3m*K. Lpeakni top.",
+      "givens": [
+        {
+          "symbol": "b",
+          "value": "0.002898",
+          "unit": "m*K"
+        },
+        {
+          "symbol": "T",
+          "value": "4200",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "b",
+        "T"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "µm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-34",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            136
+          ],
+          "printed_pages": [
+            135
+          ],
+          "page_text_sha256": [
+            "99177203696d0a704ff86ec17f4db48e4164cfd5c3dfecd9c8c0747875899c8d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-34-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qora jismning to‘lqin uzunligi spektrida Lpeak=966nm,b=2,898e−3m*K. Tni top.",
+      "givens": [
+        {
+          "symbol": "b",
+          "value": "0.002898",
+          "unit": "m*K"
+        },
+        {
+          "symbol": "Lpeak",
+          "value": "966",
+          "unit": "nm"
+        }
+      ],
+      "symbols": [
+        "b",
+        "Lpeak"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-34",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            136
+          ],
+          "printed_pages": [
+            135
+          ],
+          "page_text_sha256": [
+            "99177203696d0a704ff86ec17f4db48e4164cfd5c3dfecd9c8c0747875899c8d"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-34-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "h=6,626e−34J*s,nu=5e14Hz berilgan. Bitta Eqni top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        },
+        {
+          "symbol": "nu",
+          "value": "5e14",
+          "unit": "Hz"
+        }
+      ],
+      "symbols": [
+        "h",
+        "nu"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-34",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            137
+          ],
+          "printed_pages": [
+            136
+          ],
+          "page_text_sha256": [
+            "8da257e513b9db2cbe2448e20a93be269abad3b23cb77fca631a3096cee21bf7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-34-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Eq=1,9878e−19J,h=6,626e−34J*s. nu ni top.",
+      "givens": [
+        {
+          "symbol": "Eq",
+          "value": "1.9878e-19",
+          "unit": "J"
+        },
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        }
+      ],
+      "symbols": [
+        "Eq",
+        "h"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-34",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            137
+          ],
+          "printed_pages": [
+            136
+          ],
+          "page_text_sha256": [
+            "8da257e513b9db2cbe2448e20a93be269abad3b23cb77fca631a3096cee21bf7"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-35-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir foton modeli:h=6,626e−34J*s,nu=1e15Hz,A=3,313e−19J. Kmaxni top.",
+      "givens": [
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        },
+        {
+          "symbol": "nu",
+          "value": "1e15",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "A",
+          "value": "3.313e-19",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "h",
+        "nu",
+        "A"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-35",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            140
+          ],
+          "printed_pages": [
+            139
+          ],
+          "page_text_sha256": [
+            "6280c16c8ff6c42e3f0cd6eb10910e340ca12f704b6a8e6da1d2937d3dd992ad"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-35-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "A=1,9878e−19J,h=6,626e−34J*s. nu0ni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "1.9878e-19",
+          "unit": "J"
+        },
+        {
+          "symbol": "h",
+          "value": "6.626e-34",
+          "unit": "J*s"
+        }
+      ],
+      "symbols": [
+        "A",
+        "h"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-35",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            141
+          ],
+          "printed_pages": [
+            140
+          ],
+          "page_text_sha256": [
+            "d47ce8cdb6d8bc66d0b84a7ebfd5a2530c0c1d837bfb4bc1841c340112eef665"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-35-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kmax=3,2e−19J,e=1,6e−19C berilgan musbat MODULUS. Ustop modulni top.",
+      "givens": [
+        {
+          "symbol": "Kmax",
+          "value": "3.2e-19",
+          "unit": "J"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "Kmax",
+        "e"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-35",
+          "chapter_id": "physics-11-chapter-6",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            139
+          ],
+          "printed_pages": [
+            138
+          ],
+          "page_text_sha256": [
+            "ae1a304bc39749e78d76efe8b3eaa8a0e8610f4e1c8691932c0991aa0cb82a2d"
+          ]
+        }
+      ]
     }
   ]
 }
