@@ -2052,6 +2052,86 @@ void main() {
     });
   }
 
+  for (final scenario in [
+    ('acid_amount', 26, 8, '', '133,2', 106, true),
+    ('ether_orbitals', 27, 10, '', '68,182', 109, true),
+    ('ester_salt', 28, 2, 'a', '', 112, false),
+    ('fat_saponification', 29, 10, '', '1251', 117, true),
+    ('glucose_products', 30, 2, 'b', '', 123, false),
+    ('glucose_volume', 30, 11, '', '134,4', 124, true),
+  ]) {
+    final (name, number, questionIndex, choiceId, value, page, prior) = scenario;
+    testWidgets('batch43 $name grade10 source and feedback at200%', (t) async {
+      Future<void> waitFor(Finder finder) async {
+        for (var i = 0; i < 100 && finder.evaluate().isEmpty; i++) {
+          await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 10)));
+          await t.pumpAndSettle();
+        }
+        expect(finder, findsWidgets);
+      }
+      catalog['available_grades'] = [7, 8, 9, 10];
+      final fixtureName = name == 'glucose_products' ? 'glucose_volume' : name;
+      grade10Catalog = fixture('${fixtureName}_catalog');
+      lesson = fixture('${fixtureName}_lesson');
+      results = fixture('${fixtureName}_results');
+      skip(questionIndex);
+      await mount(t, dark: number.isOdd, size: const Size(320, 568), scale: 2);
+      await tapFinder(t, find.byKey(const ValueKey('chemistry-grade-10')));
+      await waitFor(find.text('Darsni boshlash'));
+      expect(requests.lastWhere((r) => r.path.endsWith('/catalog')).queryParameters['grade'], 10);
+      await t.ensureVisible(find.text('Darsni boshlash').first);
+      if (!prior) await capture(t, '$name-batch43-catalog');
+      await tap(t, 'Darsni boshlash');
+      if (questionIndex == 0) {
+        for (var i = 0; i < jsonRows((lesson['content'] as Json)['cards']).length - 1; i++) {
+          await tap(t, 'Davom etish');
+        }
+        await tap(t, 'Mashqlarga o‘tish');
+      }
+      final numeric = value.isNotEmpty;
+      if (numeric) {
+        final field = find.byKey(const Key('chemistry-short-answer'));
+        await waitFor(field);
+        await t.ensureVisible(field);
+        await t.enterText(field, value);
+      } else {
+        final question = jsonRows(lesson['questions'])[questionIndex];
+        final correct = jsonRows(question['options']).firstWhere((o) => o['id'] == choiceId);
+        final choice = find.text(chemistryDisplayText(correct['label'] as String));
+        await waitFor(choice);
+        await tapFinder(t, choice);
+      }
+      await tap(t, 'Tekshirish');
+      final request = requests.lastWhere((r) => r.path.endsWith('/answers'));
+      expect((request.data as Map)['answer'], numeric ? {'value':value} : {'choice_id':choiceId});
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, '$name-batch43-feedback');
+      final source = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$number ·'));
+      await t.ensureVisible(source);
+      await capture(t, '$name-batch43-feedback-source');
+      await tapFinder(t, source);
+      final locator = find.textContaining('$page -> PDF $page');
+      expect(locator, findsOneWidget);
+      expect(find.textContaining('organik_kimyo_10_uzb.pdf'), findsOneWidget);
+      await t.ensureVisible(locator);
+      await capture(t, '$name-batch43-current-source', overlay: true);
+      Navigator.of(t.element(locator)).pop();
+      await t.pumpAndSettle();
+      if (prior) {
+        final priorParagraph = name == 'glucose_volume' ? 26 : name == 'ether_orbitals' ? 1 : 5;
+        final priorPage = name == 'glucose_volume' ? 114 : name == 'ether_orbitals' ? 7 : name == 'acid_amount' ? 27 : 29;
+        final priorSource = find.descendant(of: find.byType(LessonFeedbackPanel), matching: find.textContaining('Manba: §$priorParagraph ·'));
+        await tapFinder(t, priorSource);
+        final priorLocator = find.textContaining('$priorPage -> PDF $priorPage');
+        expect(priorLocator, findsOneWidget);
+        expect(find.textContaining('kimyo_8_uzb.pdf'), findsOneWidget);
+        await t.ensureVisible(priorLocator);
+        await capture(t, '$name-batch43-prior-source', overlay: true);
+      }
+      expect(t.takeException(), isNull);
+    });
+  }
+
   test('portable formula display preserves source and grading data', () {
     final before = jsonEncode(fixture('grade8_lesson'));
     expect(chemistryDisplayText('H₂SO₄ + NH₄⁺'), 'H2SO4 + NH4^(+)');
