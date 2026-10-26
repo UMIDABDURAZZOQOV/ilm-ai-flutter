@@ -1,0 +1,152 @@
+{
+  "assessment_version": 2,
+  "subject": "ozbekiston_tarixi",
+  "grade": 9,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "book": {
+    "id": "uzbekistan-history-uz-grade-9",
+    "grade": 9,
+    "title": "O‘zbekiston tarixi (XIX asrning ikkinchi yarmi — XX asr boshlari)",
+    "authors": [
+      "Soyibjon Tillaboyev",
+      "Akbar Zamonov"
+    ],
+    "publisher": "Sharq",
+    "year": 2019
+  },
+  "subject_name": "O‘zbekiston tarixi",
+  "source_sections": 39,
+  "implemented_sections": 0,
+  "course_complete": false,
+  "independent_review_pending": true,
+  "course_ready": false,
+  "grade_options": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "grade_content_complete": false,
+  "available_grades": [
+    7
+  ],
+  "chapters": [
+    {
+      "id": "uzh-9-chapter-1",
+      "title": "I B O‘ L I M XIX ASR O‘RTALARIDA O‘ZBEK XONLIKLARINING SIYOSIY, IQTISODIY VA MADANIY HAYOTI",
+      "source_topics": [
+        "uzh-9-topic-1",
+        "uzh-9-topic-2",
+        "uzh-9-topic-3",
+        "uzh-9-topic-4-5"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-2",
+      "title": "II B O‘ L I M ROSSIYA IMPERIYASINING O‘RTA OSIYoNI BOSIB OLISHI",
+      "source_topics": [
+        "uzh-9-topic-6",
+        "uzh-9-topic-7",
+        "uzh-9-topic-8",
+        "uzh-9-topic-9",
+        "uzh-9-topic-10",
+        "uzh-9-topic-11",
+        "uzh-9-topic-12"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-3",
+      "title": "III B O‘ L I M ROSSIYA IMPERIYASINING TURKISTONDAGI MUSTAMLAKACHILIK SIYOSATI",
+      "source_topics": [
+        "uzh-9-topic-13",
+        "uzh-9-topic-14",
+        "uzh-9-topic-15",
+        "uzh-9-topic-16"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-4",
+      "title": "IV B O‘ L I M XIX ASR OXIRIDA TURKISTONDAGI MILLIY-OZODLIK HARAKATLARI",
+      "source_topics": [
+        "uzh-9-topic-17",
+        "uzh-9-topic-18",
+        "uzh-9-topic-19",
+        "uzh-9-topic-20"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-5",
+      "title": "V B O‘ L I M XIX ASRNING IKKINCHI YARMI – XX ASR BOSHLARIDA QORAQALPOQLAR",
+      "source_topics": [
+        "uzh-9-topic-21",
+        "uzh-9-topic-22",
+        "uzh-9-topic-23",
+        "uzh-9-topic-24"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-6",
+      "title": "VI BO‘ L I M JADIDLAR HARAKATI VA UNING TURKISTON IJTIMOIY-SIYOSIY VA MADANIY HAYOTIDAGI AHAMIYATI",
+      "source_topics": [
+        "uzh-9-topic-25",
+        "uzh-9-topic-26",
+        "uzh-9-topic-27",
+        "uzh-9-topic-28"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-7",
+      "title": "VII B O‘ L I M TURKISTON VA BIRINCHI JAHON URUSHI",
+      "source_topics": [
+        "uzh-9-topic-29",
+        "uzh-9-topic-30",
+        "uzh-9-topic-31",
+        "uzh-9-topic-32"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-8",
+      "title": "VIII B O‘ L I M XIX ASR OXIRI – XX ASR BOSHLARIDA BUXORO AMIRLIGI VA XIVA XONLIGI",
+      "source_topics": [
+        "uzh-9-topic-33",
+        "uzh-9-topic-34",
+        "uzh-9-topic-35-36",
+        "uzh-9-topic-37"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    },
+    {
+      "id": "uzh-9-chapter-9",
+      "title": "IX B O‘ L I M MUSTAMLAKA SHAROITIDA TURKISTONDA MADANIY HAYOT Xulosa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 155",
+      "source_topics": [
+        "uzh-9-topic-38",
+        "uzh-9-topic-39",
+        "uzh-9-topic-40",
+        "uzh-9-topic-41"
+      ],
+      "checkpoint_state": "locked",
+      "checkpoint_kind": "chapter_completion_marker_not_separate_quiz"
+    }
+  ],
+  "blocked_grades": [
+    8
+  ],
+  "lessons": []
+}
