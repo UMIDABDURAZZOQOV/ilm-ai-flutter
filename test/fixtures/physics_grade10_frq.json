@@ -7014,6 +7014,953 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-10-section-36-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Shartli qaydda t=4s ichida q=12C zaryad moduli kesimdan o‘tdi. O‘rtacha I modulini top.",
+      "givens": [
+        {
+          "symbol": "q",
+          "value": "12",
+          "unit": "C"
+        },
+        {
+          "symbol": "t",
+          "value": "4",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "q",
+        "t"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-36",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            137
+          ],
+          "printed_pages": [
+            136
+          ],
+          "page_text_sha256": [
+            "62c8884cc0ad244b04a503238f89686b5f4fb87712e34cb66c6f6b92e70ffa29"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-36-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Uniform tok I=3A, tik kesim S=1,5mm². j modulini top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "3",
+          "unit": "A"
+        },
+        {
+          "symbol": "S",
+          "value": "1.5",
+          "unit": "mm2"
+        }
+      ],
+      "symbols": [
+        "I",
+        "S"
+      ],
+      "suggested_unit": "A/m2",
+      "unit_choices": [
+        "A/m2",
+        "A/mm2",
+        "mA/mm2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-36",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            137
+          ],
+          "printed_pages": [
+            136
+          ],
+          "page_text_sha256": [
+            "62c8884cc0ad244b04a503238f89686b5f4fb87712e34cb66c6f6b92e70ffa29"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-36-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli bir-tashuvchili model:n=2e28/m³,e=1,6e-19C,vDrift=0,0005m/s modul. j ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "2e28",
+          "unit": "1/m3"
+        },
+        {
+          "symbol": "e",
+          "value": "1.6e-19",
+          "unit": "C"
+        },
+        {
+          "symbol": "vDrift",
+          "value": "0.0005",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "e",
+        "vDrift"
+      ],
+      "suggested_unit": "A/m2",
+      "unit_choices": [
+        "A/m2",
+        "A/mm2",
+        "mA/mm2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-36",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            138
+          ],
+          "printed_pages": [
+            137
+          ],
+          "page_text_sha256": [
+            "11ee8ee424628938c2df032a394752d88be091c64a947934ff6c58388891b0db"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-36-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Uniform doira kesimi:D=2mm DIAMETR,I=6,28A,p=3,14. j modulini top.",
+      "givens": [
+        {
+          "symbol": "I",
+          "value": "6.28",
+          "unit": "A"
+        },
+        {
+          "symbol": "p",
+          "value": "3.14",
+          "unit": "1"
+        },
+        {
+          "symbol": "D",
+          "value": "2",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "I",
+        "p",
+        "D"
+      ],
+      "suggested_unit": "A/m2",
+      "unit_choices": [
+        "A/m2",
+        "A/mm2",
+        "mA/mm2"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-36",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            139
+          ],
+          "printed_pages": [
+            138
+          ],
+          "page_text_sha256": [
+            "afb821f2ee1477a4aa57fb35e13eddb61e1f33bab82dbce30283cca2f90e1c4e"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-37-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Chet kuchlar A=Achet=18J ish bajarib,q=3C musbat zaryad ko‘chirdi. U=Emf EYuKni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "18",
+          "unit": "J"
+        },
+        {
+          "symbol": "q",
+          "value": "3",
+          "unit": "C"
+        }
+      ],
+      "symbols": [
+        "A",
+        "q"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-37",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            140
+          ],
+          "printed_pages": [
+            139
+          ],
+          "page_text_sha256": [
+            "664d18dc28ff9aeb60bf2fae5747a24cc9b8a73c9efcf4b797db8e8628231608"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-37-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Passiv tashqi R=10Ω,ichki r=2Ω,Emf=6V o‘zgarmas model. I ni top.",
+      "givens": [
+        {
+          "symbol": "Emf",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "10",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "r",
+          "value": "2",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Emf",
+        "R",
+        "r"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-37",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            141
+          ],
+          "printed_pages": [
+            140
+          ],
+          "page_text_sha256": [
+            "4e4323e7d345056f2e3d207683acfc87144c72f79c922f5359d936963e2e4232"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-37-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Zaryadsizlanish modeli:Emf=9V,R=8Ω,r=1Ω. Qutblardagi U ni top.",
+      "givens": [
+        {
+          "symbol": "Emf",
+          "value": "9",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "8",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "r",
+          "value": "1",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Emf",
+        "R",
+        "r"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-37",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            141
+          ],
+          "printed_pages": [
+            140
+          ],
+          "page_text_sha256": [
+            "4e4323e7d345056f2e3d207683acfc87144c72f79c922f5359d936963e2e4232"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-37-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Passiv tashqi R=8Ω,ichki r=2Ω. Tashqi energiya foydali deb olinadigan eta ni top.",
+      "givens": [
+        {
+          "symbol": "R",
+          "value": "8",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "r",
+          "value": "2",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "R",
+        "r"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-37",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            141
+          ],
+          "printed_pages": [
+            140
+          ],
+          "page_text_sha256": [
+            "4e4323e7d345056f2e3d207683acfc87144c72f79c922f5359d936963e2e4232"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-38-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI bir xil n=3mos yo‘nalgan ketma-ket manba:har biri Emf=2V,r=1Ω,tashqi R=9Ω. I ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "3",
+          "unit": "1"
+        },
+        {
+          "symbol": "Emf",
+          "value": "2",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "9",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "r",
+          "value": "1",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "n",
+        "Emf",
+        "R",
+        "r"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-38",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            143
+          ],
+          "page_text_sha256": [
+            "a0ea2ac903239a6ef7944f8c12be70b02bd37e4f2c6282cd5296584109760603"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-38-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI bir xil n=4mosqutbli parallel manba:har biri Emf=3V,r=4Ω,tashqi R=5Ω. I ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "4",
+          "unit": "1"
+        },
+        {
+          "symbol": "Emf",
+          "value": "3",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "value": "5",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "r",
+          "value": "4",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "n",
+        "Emf",
+        "R",
+        "r"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-38",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            143
+          ],
+          "page_text_sha256": [
+            "a0ea2ac903239a6ef7944f8c12be70b02bd37e4f2c6282cd5296584109760603"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-38-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faqat IDEAL yuklanmagan mosqutbli ikki manba/highimpedance voltmetr:E1=3V,r1=1Ω,E2=2V,r2=2Ω. U ni0,01Vqadamda top.",
+      "givens": [
+        {
+          "symbol": "E1",
+          "value": "3",
+          "unit": "V"
+        },
+        {
+          "symbol": "r1",
+          "value": "1",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "E2",
+          "value": "2",
+          "unit": "V"
+        },
+        {
+          "symbol": "r2",
+          "value": "2",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "E1",
+        "r1",
+        "E2",
+        "r2"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-38",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            145
+          ],
+          "printed_pages": [
+            144
+          ],
+          "page_text_sha256": [
+            "b8b95912f47741f63b75ac3bfe8ff5c9dc6feecb83fe8db2101eddc9eadddce0"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-38-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faqat IDEAL yuklanmagan ikki manba:E1=3V,r1=1Ω,E2=2V,r2=1Ω. E2USTUN yo‘nalishni musbat deb I ni top.",
+      "givens": [
+        {
+          "symbol": "E1",
+          "value": "3",
+          "unit": "V"
+        },
+        {
+          "symbol": "r1",
+          "value": "1",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "E2",
+          "value": "2",
+          "unit": "V"
+        },
+        {
+          "symbol": "r2",
+          "value": "1",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "E1",
+        "r1",
+        "E2",
+        "r2"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-38",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            145
+          ],
+          "printed_pages": [
+            144
+          ],
+          "page_text_sha256": [
+            "b8b95912f47741f63b75ac3bfe8ff5c9dc6feecb83fe8db2101eddc9eadddce0"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-39-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI galvanometr Rg=100Ω,m=Imax/Ig=5. Parallel Rsni top.",
+      "givens": [
+        {
+          "symbol": "Rg",
+          "value": "100",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "m",
+          "value": "5",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "Rg",
+        "m"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-39",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            147
+          ],
+          "printed_pages": [
+            146
+          ],
+          "page_text_sha256": [
+            "2835ad14dbe234118181457ab22b9889d4a2c97b5594d3570c6acaa3e4448b6f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-39-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI galvanometr Rg=200Ω,m=Umax/Ug=10. Ketma-ket Raddni top.",
+      "givens": [
+        {
+          "symbol": "Rg",
+          "value": "200",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "m",
+          "value": "10",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "Rg",
+        "m"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-39",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            147
+          ],
+          "printed_pages": [
+            146
+          ],
+          "page_text_sha256": [
+            "2835ad14dbe234118181457ab22b9889d4a2c97b5594d3570c6acaa3e4448b6f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-39-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI sxema:Ig=1mA,Rg=100Ω,parallel Rs=25Ω. Umumiy Imaxni top.",
+      "givens": [
+        {
+          "symbol": "Ig",
+          "value": "1",
+          "unit": "mA"
+        },
+        {
+          "symbol": "Rg",
+          "value": "100",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "Rs",
+          "value": "25",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Ig",
+        "Rg",
+        "Rs"
+      ],
+      "suggested_unit": "A",
+      "unit_choices": [
+        "A",
+        "mA",
+        "µA"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-39",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            146,
+            147
+          ],
+          "printed_pages": [
+            145,
+            146
+          ],
+          "page_text_sha256": [
+            "7eb648fbb6f53fe314b3d0faecd700fde8eeb5d2f831aa636e15d17f2c06440d",
+            "2835ad14dbe234118181457ab22b9889d4a2c97b5594d3570c6acaa3e4448b6f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-39-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI sxema:Ig=1mA,Rg=200Ω,ketma-ket Radd=1800Ω. Umaxni top.",
+      "givens": [
+        {
+          "symbol": "Ig",
+          "value": "1",
+          "unit": "mA"
+        },
+        {
+          "symbol": "Rg",
+          "value": "200",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "Radd",
+          "value": "1800",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Ig",
+        "Rg",
+        "Radd"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-39",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            147
+          ],
+          "printed_pages": [
+            146
+          ],
+          "page_text_sha256": [
+            "2835ad14dbe234118181457ab22b9889d4a2c97b5594d3570c6acaa3e4448b6f"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-40-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI ideal voltmetr modeli:Emf=6V,Uload=5V,I=500mA. r bahosini top.",
+      "givens": [
+        {
+          "symbol": "Emf",
+          "value": "6",
+          "unit": "V"
+        },
+        {
+          "symbol": "Uload",
+          "value": "5",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "500",
+          "unit": "mA"
+        }
+      ],
+      "symbols": [
+        "Emf",
+        "Uload",
+        "I"
+      ],
+      "suggested_unit": "Ω",
+      "unit_choices": [
+        "Ω",
+        "mΩ",
+        "kΩ",
+        "MΩ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-40",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            147
+          ],
+          "page_text_sha256": [
+            "5739f7fcc959f53f675641e93ffbd9a0baadbb7e5612c40d3390cd293a259515"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-40-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI passiv yuk modeli:Uload=4V,I=250mA,r=4Ω. Emfni top.",
+      "givens": [
+        {
+          "symbol": "Uload",
+          "value": "4",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "value": "250",
+          "unit": "mA"
+        },
+        {
+          "symbol": "r",
+          "value": "4",
+          "unit": "Ω"
+        }
+      ],
+      "symbols": [
+        "Uload",
+        "I",
+        "r"
+      ],
+      "suggested_unit": "V",
+      "unit_choices": [
+        "V",
+        "mV",
+        "kV"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-40",
+          "chapter_id": "physics-10-chapter-8",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            147
+          ],
+          "page_text_sha256": [
+            "5739f7fcc959f53f675641e93ffbd9a0baadbb7e5612c40d3390cd293a259515"
+          ]
+        }
+      ]
     }
   ]
 }
