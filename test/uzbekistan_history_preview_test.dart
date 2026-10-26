@@ -106,7 +106,7 @@ void main() {
     'real public DTOs contain no private grading rules or aliases',
     () async {
       final repo = HistoryRepository(dio);
-      for (var i = 1; i <= 20; i++) {
+      for (var i = 1; i <= 25; i++) {
         lesson = fixture('lesson$i');
         final dto = await repo.start(
           'uzh-7-$i-r1',
@@ -221,7 +221,7 @@ void main() {
     expect(find.text('Darsni ochish'), findsOneWidget);
   });
 
-  for (var n = 1; n <= 20; n++) {
+  for (var n = 1; n <= 25; n++) {
     testWidgets('grade 7 lesson $n short input keeps raw text at 200% scale', (
       tester,
     ) async {
@@ -261,7 +261,27 @@ void main() {
     });
   }
 
-  for (final n in [2, 3, 4, 5, 8, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20]) {
+  for (final n in [
+    2,
+    3,
+    4,
+    5,
+    8,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+  ]) {
     testWidgets(
       'lesson $n chronology labels fit a small screen with large text',
       (tester) async {
