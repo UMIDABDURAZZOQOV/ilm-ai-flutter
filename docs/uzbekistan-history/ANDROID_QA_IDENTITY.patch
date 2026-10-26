@@ -1,0 +1,48 @@
+--- a/android/app/build.gradle.kts
++++ b/android/app/build.gradle.kts
+@@ -17,13 +17,21 @@
+
+ // Flutter supplies base64-encoded dart-defines. A Physics QA APK must coexist
+ // with the learner's installed ILM AI app and must not claim its OAuth scheme.
+-val physicsPreviewEnabled = (project.findProperty("dart-defines") as? String)
++val previewDartDefines = (project.findProperty("dart-defines") as? String)
+     ?.split(",")
+     ?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+-    ?.contains("PHYSICS_PREVIEW=true") == true
++    .orEmpty()
++val physicsPreviewEnabled = previewDartDefines.contains("PHYSICS_PREVIEW=true")
++val historyPreviewEnabled = previewDartDefines.contains("UZBEKISTAN_HISTORY_PREVIEW=true")
+ val flutterTarget = (project.findProperty("target") as? String).orEmpty().replace('\\', '/')
+ val physicsPreviewBuild = physicsPreviewEnabled &&
+     (flutterTarget == "physics_preview_main.dart" || flutterTarget.endsWith("/physics_preview_main.dart"))
++val historyPreviewBuild = historyPreviewEnabled &&
++    (flutterTarget == "uzbekistan_history_preview_main.dart" ||
++        flutterTarget.endsWith("/uzbekistan_history_preview_main.dart"))
++if (physicsPreviewEnabled && historyPreviewEnabled) {
++    throw GradleException("Select exactly one subject preview flag for a QA build.")
++}
+
+ android {
+     namespace = "com.ilmai.ilm_ai_flutter"
+@@ -70,6 +78,10 @@
+                 applicationIdSuffix = ".physicsqa"
+                 manifestPlaceholders["appLabel"] = "ILM AI Fizika QA"
+                 manifestPlaceholders["oauthRedirectScheme"] = "ilmai-physics-qa"
++            } else if (historyPreviewBuild) {
++                applicationIdSuffix = ".uzhistoryqa"
++                manifestPlaceholders["appLabel"] = "ILM AI O‘zbekiston tarixi QA"
++                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-uzhistory-qa"
+             }
+         }
+         release {
+@@ -98,8 +110,8 @@
+
+
+ gradle.taskGraph.whenReady {
+-    if (physicsPreviewEnabled && allTasks.any { it.name.contains("Release") }) {
+-        throw GradleException("Physics preview is debug-only. Do not publish a sandbox APK.")
++    if ((physicsPreviewEnabled || historyPreviewEnabled) && allTasks.any { it.name.contains("Release") }) {
++        throw GradleException("Subject previews are debug-only. Do not publish a sandbox APK.")
+     }
+     if (!keystorePropertiesFile.exists() && allTasks.any { it.name.contains("Release") }) {
+         throw GradleException("Release signing requires android/key.properties and the upload keystore. Debug builds remain available.")

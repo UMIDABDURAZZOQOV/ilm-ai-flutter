@@ -134,7 +134,7 @@ void main() {
     'real public DTOs contain no private grading rules or aliases',
     () async {
       final repo = HistoryRepository(dio);
-      for (var i = 1; i <= 40; i++) {
+      for (var i = 1; i <= 42; i++) {
         lesson = fixture('lesson$i');
         final dto = await repo.start(
           'uzh-7-$i-r1',
@@ -306,7 +306,97 @@ void main() {
     expect(value, {'value': 'XII'});
   });
 
-  for (var n = 1; n <= 40; n++) {
+  testWidgets(
+    'last lesson completes MCQ FRQ and chronology using server feedback',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      lesson = fixture('lesson42');
+      for (final row in catalog['lessons'] as List) {
+        row['state'] = row['sequence'] == 42 ? 'available' : 'completed';
+      }
+      final feedback = fixture('feedback42')['responses'] as Json;
+      dio.httpClientAdapter = Adapter((r) {
+        requests.add(r);
+        if (r.path.endsWith('/catalog')) return reply(200, catalog);
+        if (r.path.endsWith('/start')) return reply(200, lesson);
+        if (r.path.endsWith('/answers')) {
+          return reply(200, feedback[(r.data as Json)['assessment_key']]);
+        }
+        if (r.path.endsWith('/complete')) return reply(200, fixture('result'));
+        throw StateError('Unexpected ${r.path}');
+      });
+      Future<void> press(String label, {bool twice = false}) async {
+        final target = find.text(label);
+        await tester.ensureVisible(target);
+        await tester.pumpAndSettle();
+        await tester.tap(target);
+        if (twice) await tester.tap(target);
+        await tester.pumpAndSettle();
+        expect(tester.takeException(), isNull);
+      }
+
+      await mount(tester, scale: 2);
+      await press('Darsni ochish');
+      // Exercises start only after the actual teaching cards and rubric.
+      final cards = jsonRows((lesson['content'] as Json)['cards']);
+      await tester.ensureVisible(find.text(cards.last['body'] as String));
+      expect(tester.takeException(), isNull);
+      await press('Mashqlarga o‘tish');
+      final choices = [
+        'Lavvohlik',
+        'Sahhoflik',
+        'Nasta’liq',
+        'Kamoliddin Behzod',
+      ];
+      final rawNames = ['Mahmud Muzahhib', 'Sultonali Mashhadiy'];
+      final questions = jsonRows(lesson['questions']);
+      for (var index = 0; index < questions.length; index++) {
+        final question = questions[index];
+        if (index < 4) {
+          await press(choices[index]);
+        } else if (index < 6) {
+          await tester.ensureVisible(find.byType(TextFormField));
+          await tester.enterText(
+            find.byType(TextFormField),
+            rawNames[index - 4],
+          );
+          await tester.pumpAndSettle();
+        } else {
+          final items = jsonRows(question['items']);
+          for (final id in ['e1', 'e2', 'e3']) {
+            await press(
+              items.singleWhere((item) => item['id'] == id)['label'] as String,
+            );
+          }
+        }
+        await press('Tekshirish', twice: true);
+        expect(find.text('To‘g‘ri!'), findsOneWidget);
+        expect(
+          find.text((feedback[question['key']] as Json)['feedback'] as String),
+          findsOneWidget,
+        );
+        expect(
+          requests.where((r) => r.path.endsWith('/answers')).length,
+          index + 1,
+        );
+        if (index == 4 || index == 5) {
+          expect((requests.last.data as Json)['answer'], {
+            'value': rawNames[index - 4],
+          });
+        }
+        await press('Davom etish');
+      }
+      await press('Natijani saqlash', twice: true);
+      expect(find.text('Dars yakunlandi!'), findsOneWidget);
+      expect(find.textContaining('7/7 to‘g‘ri • +10 XP'), findsOneWidget);
+      expect(requests.where((r) => r.path.endsWith('/complete')).length, 1);
+    },
+  );
+
+  for (var n = 1; n <= 42; n++) {
     testWidgets('grade 7 lesson $n short input keeps raw text at 200% scale', (
       tester,
     ) async {
@@ -375,6 +465,7 @@ void main() {
     36,
     37,
     39,
+    42,
   ]) {
     testWidgets(
       'lesson $n chronology labels fit a small screen with large text',
