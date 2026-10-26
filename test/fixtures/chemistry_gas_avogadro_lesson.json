@@ -1,0 +1,1442 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p06-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Avogadro qonuni. Gazlar aralashmasi",
+  "content": {
+    "cards": [
+      {
+        "title": "Avogadro qonunining shartlari",
+        "body": "Bir xil harorat va bosimdagi teng gaz hajmlarida zarrachalar soni teng bo‘ladi. Hisob kartalarida gazlar ideal modelda olinadi. Teng hajm deyishning o‘zi yetmaydi: harorat va bosim shartlari ham bir xil bo‘lishi kerak.",
+        "fact_ids": [
+          "avogadro"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              34
+            ],
+            "pdf_pages": [
+              34
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page34"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              35
+            ],
+            "pdf_pages": [
+              35
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page35"
+          }
+        ]
+      },
+      {
+        "title": "Molyar hajmni to‘g‘ri birlikda oling",
+        "body": "Kitobning normal sharoit modeli: 273 K va 101,325 kPa. Bu maktab yaqinlashuvida molyar hajm Vm=22,4 L/mol, V=n·Vm va n=V/Vm. 0,5 mol uchun 11,2 L, 2 mol uchun 44,8 L chiqadi. Vm hajmni modda miqdoriga bo‘lish bilan topiladi.",
+        "fact_ids": [
+          "volume"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              34
+            ],
+            "pdf_pages": [
+              34
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page34"
+          }
+        ]
+      },
+      {
+        "title": "Hajmdan zarrachalar soniga",
+        "body": "Normal sharoitdagi berilgan ideal gaz uchun avval n=V/22,4, keyin N=n·NA hisoblanadi. Bu kartada NA=6,02·10^23 mol−1 maktab yaqinlashuvi. 11,2 L gaz uchun n=0,5 mol va N=3,01·10^23 ta zarracha.",
+        "fact_ids": [
+          "particles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              34
+            ],
+            "pdf_pages": [
+              34
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page34"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              38
+            ],
+            "pdf_pages": [
+              38
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page38"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      },
+      {
+        "title": "Nisbiy zichlik — ikki massaning nisbati",
+        "body": "Bir xil sharoitdagi teng hajmli ikki gazning massalari nisbati ularning molyar massalari nisbatiga teng. Birinchi gazning ikkinchisiga nisbiy zichligi D=M1/M2: bu nisbatning birligi yo‘q. M1=M2·D.",
+        "fact_ids": [
+          "relative"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              35
+            ],
+            "pdf_pages": [
+              35
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page35"
+          }
+        ]
+      },
+      {
+        "title": "H2 ga nisbatan etilen misoli",
+        "body": "Vodorodga nisbiy zichlik hisobida H2 uchun M=2 g/mol olinadi. Shunda M(gaz)=2·D(H2). Etilen C2H4 uchun M=28 g/mol: uning H2 ga nisbiy zichligi 28/2=14.",
+        "fact_ids": [
+          "hydrogen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              35
+            ],
+            "pdf_pages": [
+              35
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page35"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              38
+            ],
+            "pdf_pages": [
+              38
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page38"
+          }
+        ]
+      },
+      {
+        "title": "Havo uchun soddalashtirilgan model",
+        "body": "Kitobning soddalashtirilgan havo modeli 4 hajm N2 va 1 hajm O2 oladi: (4·28+32)/5=28,8 g/mol. Keyingi hisoblar uchun bu son 29 g/mol gacha yaxlitlanadi. Bu aniq universal havo tarkibi yoki aniq o‘zgarmas molyar massa emas.",
+        "fact_ids": [
+          "air"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              35
+            ],
+            "pdf_pages": [
+              35
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page35"
+          }
+        ]
+      },
+      {
+        "title": "Taqqoslash gazini almashtiring",
+        "body": "Berilgan gazning metanga nisbiy zichligi 2 bo‘lsin. Kitob modelida M(CH4)=16 g/mol, demak M(gaz)=32 g/mol. Geliy uchun M=4 g/mol olinadi: D(He)=32/4=8. Bir taqqoslash gazidan boshqasiga o‘tganda avval gazning M qiymatini toping.",
+        "fact_ids": [
+          "chain"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              37
+            ],
+            "pdf_pages": [
+              37
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page37"
+          }
+        ]
+      },
+      {
+        "title": "Gaz tenglamasidagi nisbat",
+        "body": "Mahsulotlari berilgan H2+Cl2=2HCl atom modelida koeffitsiyentlar 1:1:2. Teng harorat va bosimdagi ideal gaz hajmlari uchun ham shu nisbat ishlatiladi. Bu tenglama gazlarni amalda tayyorlash yoki aralashtirish ko‘rsatmasi emas.",
+        "fact_ids": [
+          "ratio"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              36
+            ],
+            "pdf_pages": [
+              36
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page36"
+          }
+        ]
+      },
+      {
+        "title": "Aralashmada hajm ulushi",
+        "body": "Gazning hajm ulushi uning hajmini aralashmaning jami hajmiga bo‘lish bilan topiladi. Foiz uchun yana 100 ga ko‘paytiriladi. Masalan, hajmlari 2 L va 6 L bo‘lgan, o‘zaro reaksiyaga kirmaydi deb berilgan modelda 2 L qismning ulushi 2/8=0,25 yoki 25%.",
+        "fact_ids": [
+          "fraction"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              36
+            ],
+            "pdf_pages": [
+              36
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page36"
+          }
+        ]
+      },
+      {
+        "title": "Hajm va massa birga berilganda",
+        "body": "Normal sharoitdagi ideal gaz uchun hajmdan n=V/22,4, massadan esa M=m/n topiladi. Asl misoldagi 0,717 g va 0,365 L qiymatlari M≈44,0 g/mol beradi; natija uchta ahamiyatli raqam bilan yaxlitlangan. Hajmning o‘zi noma’lum gazning M qiymatini aniqlamaydi.",
+        "fact_ids": [
+          "mass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              37
+            ],
+            "pdf_pages": [
+              37
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page37"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Ikki bosqichli o‘tish",
+        "body": "11,2 L / (22,4 L/mol)=0,5 mol. Keyin 0,5·6,02·10^23=3,01·10^23 ta zarracha. Hajm va zarracha sonini bevosita tenglashtirmang.",
+        "fact_ids": [
+          "volume",
+          "particles"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              34
+            ],
+            "pdf_pages": [
+              34
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page34"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph06",
+            "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+            "paragraph": 6,
+            "printed_pages": [
+              38
+            ],
+            "pdf_pages": [
+              38
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph06-page38"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph05",
+            "topic_title": "Modda miqdori",
+            "paragraph": 5,
+            "printed_pages": [
+              31
+            ],
+            "pdf_pages": [
+              31
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph05-page31"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph06",
+        "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+        "paragraph": 6,
+        "printed_pages": [
+          34
+        ],
+        "pdf_pages": [
+          34
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph06-page34"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph06",
+        "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+        "paragraph": 6,
+        "printed_pages": [
+          35
+        ],
+        "pdf_pages": [
+          35
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph06-page35"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph06",
+        "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+        "paragraph": 6,
+        "printed_pages": [
+          36
+        ],
+        "pdf_pages": [
+          36
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph06-page36"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph06",
+        "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+        "paragraph": 6,
+        "printed_pages": [
+          37
+        ],
+        "pdf_pages": [
+          37
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph06-page37"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph06",
+        "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+        "paragraph": 6,
+        "printed_pages": [
+          38
+        ],
+        "pdf_pages": [
+          38
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph06-page38"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph06",
+        "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+        "paragraph": 6,
+        "printed_pages": [
+          39
+        ],
+        "pdf_pages": [
+          39
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph06-page39"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph05",
+        "topic_title": "Modda miqdori",
+        "paragraph": 5,
+        "printed_pages": [
+          31
+        ],
+        "pdf_pages": [
+          31
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph05-page31"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p06-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Teng gaz hajmlaridagi zarracha sonini teng deyish uchun yana qaysi shart kerak?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Bir xil harorat va bosim"
+        },
+        {
+          "id": "b",
+          "label": "Faqat rang bir xil"
+        },
+        {
+          "id": "c",
+          "label": "Faqat idish materiali bir xil"
+        },
+        {
+          "id": "d",
+          "label": "Gazlar albatta bir elementdan"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page34"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Nisbiy zichlik D uchun mos ifoda qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "M1+M2"
+        },
+        {
+          "id": "b",
+          "label": "M1−M2"
+        },
+        {
+          "id": "c",
+          "label": "M1/M2"
+        },
+        {
+          "id": "d",
+          "label": "M1·M2"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Bu darsda havo uchun 29 g/mol qanday qiymat?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Har qanday havo uchun aynan aniq son"
+        },
+        {
+          "id": "b",
+          "label": "Soddalashtirilgan modeldagi yaxlitlangan qiymat"
+        },
+        {
+          "id": "c",
+          "label": "Gazning hajmi"
+        },
+        {
+          "id": "d",
+          "label": "Avogadro soni"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Noma’lum gazning faqat hajmi berilsa, M ni har doim aniqlash mumkinmi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ha, hajmning o‘zi yetadi"
+        },
+        {
+          "id": "b",
+          "label": "M har doim 22,4"
+        },
+        {
+          "id": "c",
+          "label": "M har doim 1"
+        },
+        {
+          "id": "d",
+          "label": "Yo‘q, qo‘shimcha ma’lumot kerak"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            37
+          ],
+          "pdf_pages": [
+            37
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page37"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Teng sharoitdagi teng gaz hajmlari haqidagi qonun olimi familiyasini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page34"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Nisbiy zichlik birliklimi yoki birliksizmi? Bitta so‘z yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Berilgan normal sharoit modelida 0,5 mol ideal gaz hajmi necha L?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page34"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "Shu modelda 11,2 L gaz zarrachalari sonini yozing. NA=6,02·10^23 mol−1.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page34"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            38
+          ],
+          "pdf_pages": [
+            38
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page38"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph05",
+          "topic_title": "Modda miqdori",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph05-page31"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "M(C2H4)=28 va M(H2)=2 g/mol. D(H2) qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            38
+          ],
+          "pdf_pages": [
+            38
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page38"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "Havo modeli uchun (4·28+32)/5 ning yaxlitlanmagan son qiymati qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            35
+          ],
+          "pdf_pages": [
+            35
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page35"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "Metanga nisbiy zichligi 2 bo‘lgan gazning geliyga nisbiy zichligi qancha? M(CH4)=16, M(He)=4.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            37
+          ],
+          "pdf_pages": [
+            37
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page37"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "2 L qism va 6 L boshqa qism berilgan modelda 2 L gazning hajm ulushi necha foiz?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "%",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            36
+          ],
+          "pdf_pages": [
+            36
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page36"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p06-r1-q13",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsuloti HCl deb berilgan raqamli modelda H2 va Cl2 uchun tenglashtirilgan tenglamani yozing.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph06",
+          "topic_title": "Avogadro qonuni. Gazlar aralashmasi",
+          "paragraph": 6,
+          "printed_pages": [
+            36
+          ],
+          "pdf_pages": [
+            36
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph06-page36"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

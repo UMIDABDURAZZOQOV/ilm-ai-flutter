@@ -1,0 +1,1469 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p10-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+  "content": {
+    "cards": [
+      {
+        "title": "α ning maxrajini aniqlang",
+        "body": "Dissotsiatsiyalanish darajasi α — ionlarga ajralgan boshlang‘ich birliklar sonining ularning jami boshlang‘ich soniga nisbati: α=n/N. Masalan, 100 ta birlikdan 40 tasi ajralsa α=0,4. Maxrajga hosil bo‘lgan barcha ionlar soni yozilmaydi.",
+        "fact_ids": [
+          "alpha"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              54
+            ],
+            "pdf_pages": [
+              54
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page54"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              55
+            ],
+            "pdf_pages": [
+              55
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page55"
+          }
+        ]
+      },
+      {
+        "title": "Foiz va ulushni almashtirmang",
+        "body": "Darajani foizga o‘tkazish uchun α ni 100 ga ko‘paytiramiz. α=0,5 — 50%; 0,5% esa 0,005 ulush. Son va foiz belgisi birga ma’no beradi: 0,5 bilan 0,5% bir xil emas.",
+        "fact_ids": [
+          "percent"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              55
+            ],
+            "pdf_pages": [
+              55
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page55"
+          }
+        ]
+      },
+      {
+        "title": "Darajaga ta’sir etuvchi shartlar",
+        "body": "Dissotsiatsiyalanish darajasi erigan modda va erituvchi tabiatiga, konsentratsiya va haroratga bog‘liq. Kitobdagi 3% va 30% chegarali guruhlash shartli maktab tasnifidir; aniq chegara qiymatlariga bu darsda yagona test kaliti berilmaydi.",
+        "fact_ids": [
+          "depends"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              55
+            ],
+            "pdf_pages": [
+              55
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page55"
+          }
+        ]
+      },
+      {
+        "title": "To‘liq va qisqa ionli yozuv",
+        "body": "To‘liq ionli tenglamada ko‘rsatilgan kuchli elektrolitlar ionlar bilan yoziladi; cho‘kma, gaz va kam dissotsiatsiyalanadigan mahsulotlar tegishli birikma shaklida qoladi. Ikki tomonda bir xil qolgan kuzatuvchi ionlar qisqartiriladi. Atom bilan birga zaryad ham saqlanishi kerak.",
+        "fact_ids": [
+          "ionic"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              55
+            ],
+            "pdf_pages": [
+              55
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page55"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              56
+            ],
+            "pdf_pages": [
+              56
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page56"
+          }
+        ]
+      },
+      {
+        "title": "Cho‘kma rasmidagi nisbat",
+        "body": "Manbaning qo‘rg‘oshin(II) va yodid misolida qisqa ionli yozuvda bitta Pb^2+ ga ikkita yodid ioni mos keladi va cho‘kma hosil bo‘ladi. K+ hamda nitrat ionlari ikki tomonda o‘zgarmay qoladi. Bu rasmni tahlil qilish; reagent tayyorlash vazifasi emas.",
+        "fact_ids": [
+          "precipitate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              55
+            ],
+            "pdf_pages": [
+              55
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page55"
+          }
+        ]
+      },
+      {
+        "title": "Gaz mahsulotli almashinish",
+        "body": "Berilgan mahsulot modeli: Na2CO3+2HCl=2NaCl+CO2+H2O. Gaz mahsulot CO2; qisqa ionli rasmda karbonat bilan ikki H+ qatnashadi. Natriy va xlorid ionlari ikki tomonda o‘zgarmay qoladi.",
+        "fact_ids": [
+          "carbonate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              56
+            ],
+            "pdf_pages": [
+              56
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page56"
+          }
+        ]
+      },
+      {
+        "title": "Suv hosil bo‘ladigan model",
+        "body": "Berilgan to‘liq neytrallanish modeli H2SO4+2KOH=K2SO4+2H2O. Qisqa ionli ko‘rinishning eng sodda nisbati bitta H+ va bitta OH− dan bitta suvga mos. Sulfat va K+ bu yozuvda kuzatuvchi ionlardir.",
+        "fact_ids": [
+          "water"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              56
+            ],
+            "pdf_pages": [
+              56
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page56"
+          }
+        ]
+      },
+      {
+        "title": "Ajralmagan qismdan jami songa",
+        "body": "Formal CaCl2 sanash modelida α=80%, ajralmagan birliklar 50 ta. Ular 20% bo‘lgani uchun jami 250 birlik, ajralgani 200 birlik. Har biri 2 ta Cl− beradi: 400 xlorid ioni. Bu berilgan foizli model, real eritmaning o‘lchangan assotsiatsiya qonuni emas.",
+        "fact_ids": [
+          "count"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              56
+            ],
+            "pdf_pages": [
+              56
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page56"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page57"
+          }
+        ]
+      },
+      {
+        "title": "Konsentratsiya, hajm va daraja",
+        "body": "Berilgan eritma uchun n=CM·V: CM mol/L, V esa L da. 0,4 mol/L va 3 L bo‘lsa jami 1,2 mol boshlang‘ich HNO2 birligi. α=0,5%=0,005 olinsa ajralgan miqdor 1,2·0,005=0,006 mol.",
+        "fact_ids": [
+          "molar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page57"
+          }
+        ]
+      },
+      {
+        "title": "Ajralgan miqdordan ion soniga",
+        "body": "Berilgan HNO2 modeli bitta ajralgan birlikdan bitta nitrit ionini oladi. 0,006 mol nitrit uchun NA=6,02·10^23 mol−1: N=0,006·NA=3,612·10^21 ta nitrit ioni. Foizni ulushga o‘tkazish qadamini tashlamang.",
+        "fact_ids": [
+          "nitrite"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page57"
+          }
+        ]
+      },
+      {
+        "title": "Sulfat ionidan formula birliklariga",
+        "body": "Berilgan Cr2(SO4)3 formal modelida har ajralgan formula birligiga 3 sulfat ioni mos. 210 sulfat ioni bo‘lsa ajralgani 70 birlik. Bu 70% deb berilgan: jami 100, ajralmagan birliklar 30 ta. Bu §10 ning sahifa tepasidagi masala modeli.",
+        "fact_ids": [
+          "sulfate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              58
+            ],
+            "pdf_pages": [
+              58
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page58"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "80% bilan qolgan 20% ni ajrating",
+        "body": "50 birlik — ajralmagan 20%. Jami 50/0,2=250. Ajralgani 250·0,8=200. Xlorid ionlari 200·2=400. Har bosqichda sanalayotgan obyekt nomini yozing.",
+        "fact_ids": [
+          "count"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              56
+            ],
+            "pdf_pages": [
+              56
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page56"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph10",
+            "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+            "paragraph": 10,
+            "printed_pages": [
+              57
+            ],
+            "pdf_pages": [
+              57
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph10-page57"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph10",
+        "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+        "paragraph": 10,
+        "printed_pages": [
+          54
+        ],
+        "pdf_pages": [
+          54
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph10-page54"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph10",
+        "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+        "paragraph": 10,
+        "printed_pages": [
+          55
+        ],
+        "pdf_pages": [
+          55
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph10-page55"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph10",
+        "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+        "paragraph": 10,
+        "printed_pages": [
+          56
+        ],
+        "pdf_pages": [
+          56
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph10-page56"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph10",
+        "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+        "paragraph": 10,
+        "printed_pages": [
+          57
+        ],
+        "pdf_pages": [
+          57
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph10-page57"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph10",
+        "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+        "paragraph": 10,
+        "printed_pages": [
+          58
+        ],
+        "pdf_pages": [
+          58
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph10-page58"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p10-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "α=n/N ifodasida N nimani sanaydi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat hosil bo‘lgan kationlarni"
+        },
+        {
+          "id": "b",
+          "label": "Faqat ajralmagan birliklarni"
+        },
+        {
+          "id": "c",
+          "label": "Jami boshlang‘ich birliklarni"
+        },
+        {
+          "id": "d",
+          "label": "Faqat barcha yangi ionlarni"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            54
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page54"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Qisqa ionli tenglama tuzilganda nima qisqartiriladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ikki tomonda bir xil qolgan kuzatuvchi ionlar"
+        },
+        {
+          "id": "b",
+          "label": "Faqat barcha mahsulotlar"
+        },
+        {
+          "id": "c",
+          "label": "Har qanday musbat ion"
+        },
+        {
+          "id": "d",
+          "label": "Faqat suvning atomlari"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Berilgan karbonat modelidagi gaz mahsulot qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "NaCl"
+        },
+        {
+          "id": "b",
+          "label": "CO2"
+        },
+        {
+          "id": "c",
+          "label": "H2O"
+        },
+        {
+          "id": "d",
+          "label": "Na2CO3"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "H2SO4 bilan KOH to‘liq neytrallanish modelida kam dissotsiatsiyalanadigan mahsulot qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Faqat K+"
+        },
+        {
+          "id": "b",
+          "label": "Faqat sulfat"
+        },
+        {
+          "id": "c",
+          "label": "CO2"
+        },
+        {
+          "id": "d",
+          "label": "H2O"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "Darajaga ta’sir etuvchi issiqlik holati kattaligini bir so‘z bilan yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Ikki tomonda o‘zgarmay qolgan ionlarga qaysi sifat qo‘llanadi?",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "100 boshlang‘ich birlikdan 40 tasi ajraldi. α ulushda qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            54
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page54"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "0,5% ni ulush shaklida yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page55"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "Formal CaCl2 modelida α=80%, ajralmagan birliklar 50. Jami boshlang‘ich birliklar nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "Shu CaCl2 modelida hosil bo‘lgan xlorid ionlari nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "CM=0,4 mol/L, V=3 L, α=0,5%. Ajralgan miqdor necha mol?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "0,006 mol nitrit uchun NA=6,02·10^23. Ionlar sonini yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page57"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "Formal Cr2(SO4)3 modelida 210 sulfat ioni va α=70%. Ajralmagan birliklar nechta?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page58"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q14",
+      "response_kind": "chemical_equation",
+      "prompt": "Mahsulotlari NaCl, CO2, H2O berilgan raqamli modelda Na2CO3 bilan HCl tenglamasini tenglashtirib yozing.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p10-r1-q15",
+      "response_kind": "chemical_equation",
+      "prompt": "To‘liq neytrallanish modelida H2SO4 va KOH dan K2SO4 hamda H2O hosil bo‘lish tenglamasini yozing.",
+      "input_label": "Kimyoviy tenglama",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph10",
+          "topic_title": "Dissotsiatsiyalanish darajasi. Qisqa va to‘liq ionli tenglamalar",
+          "paragraph": 10,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph10-page56"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

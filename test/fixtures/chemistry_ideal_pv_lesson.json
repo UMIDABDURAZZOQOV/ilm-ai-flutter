@@ -1,0 +1,1506 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "chv2:900003:88888888-8888-4888-8888-888888888888",
+  "lesson_key": "chemistry-11-p08-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Mendeleyev-Klapeyron tenglamasi",
+  "content": {
+    "cards": [
+      {
+        "title": "Ideal gaz tenglamasi",
+        "body": "Ideal gazning berilgan Mendeleyev–Klapeyron tenglamasi PV=nRT. P — bosim, V — hajm, n — modda miqdori, T — Kelvin harorati. Bu darsdagi hisoblar ideal modelga tegishli; har qanday real gaz uchun shartsiz aniq tenglik deb olinmaydi.",
+        "fact_ids": [
+          "ideal"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              45
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page45"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          }
+        ]
+      },
+      {
+        "title": "R va birliklarni birga tanlang",
+        "body": "P kPa, V L, n mol va T K da olinsa, bu darsda R=8,31 kPa·L/(mol·K) yaqinlashuvi ishlatiladi. P atm va V L bo‘lsa R≈0,082 L·atm/(mol·K). Fizik doimiy o‘zgarmaydi: birliklar almashganda uning son qiymati boshqacha ifodalanadi.",
+        "fact_ids": [
+          "units"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          }
+        ]
+      },
+      {
+        "title": "Haroratni K ga o‘tkazing",
+        "body": "Kitobning butun sonli harorat yaqinlashuvi T=t+273. Masalan, −73°C uchun T=200 K, 47°C uchun 320 K, 27°C uchun 300 K. Tenglamaga Selsiy sonini bevosita qo‘ymang. K yoniga daraja belgisi yozilmaydi.",
+        "fact_ids": [
+          "temperature"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          }
+        ]
+      },
+      {
+        "title": "Bosim birliklarini moslang",
+        "body": "Berilgan bosim birliklari: 1 atm=101,325 kPa=101325 Pa=760 mm simob ustuni. Hisobni boshlashdan oldin tanlangan R ga mos bosim birligini oling. Masalan, 2·10^6 Pa — 2000 kPa.",
+        "fact_ids": [
+          "pressure"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              45
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page45"
+          }
+        ]
+      },
+      {
+        "title": "Massa va molyar massa bilan yozish",
+        "body": "Modda miqdori n=m/M. Uni PV=nRT ga qo‘ysak PV=(m/M)RT yoki PVM=mRT. Shundan M=mRT/(PV) kelib chiqadi. Massani molyar massa bilan bir xil massa birligida oling.",
+        "fact_ids": [
+          "amount"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          }
+        ]
+      },
+      {
+        "title": "Hajmni topish",
+        "body": "V=nRT/P. Berilgan O2 misolida m=12,8 g, M=32 g/mol: n=0,4 mol. T=200 K, P=166,2 kPa va R=8,31 olinsa V=0,4·8,31·200/166,2=4 L. Bu sahifadagi sonlar bilan hisoblangan ideal model.",
+        "fact_ids": [
+          "volume"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              47
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page47"
+          }
+        ]
+      },
+      {
+        "title": "Bosimni topish",
+        "body": "P=nRT/V. Berilgan CO misolida 14 g / (28 g/mol)=0,5 mol. 47°C uchun kitob yaqinlashuvida T=320 K. V=10 L va R=8,31 olinsa P=0,5·8,31·320/10=132,96 kPa.",
+        "fact_ids": [
+          "findpressure"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              47
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page47"
+          }
+        ]
+      },
+      {
+        "title": "Haroratni topish",
+        "body": "T=PV/(nR). Natija avval K da chiqadi; Selsiy kerak bo‘lsa kitob modelida t=T−273. Masalan, T=300 K deb berilgan hisobda t=27°C. Yaxlitlangan oraliq natijani barcha hollarda aynan aniq son deb qabul qilmang.",
+        "fact_ids": [
+          "findtemperature"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              47
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page47"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              48
+            ],
+            "pdf_pages": [
+              48
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page48"
+          }
+        ]
+      },
+      {
+        "title": "Molyar massani aniqlash",
+        "body": "Berilgan ideal gaz modeli: P=207,75 kPa, V=30 L, T=300 K, R=8,31. n=PV/(RT)=2,5 mol. m=42,5 g bo‘lsa M=42,5/2,5=17 g/mol. Faqat M qiymati ixtiyoriy noma’lum gazni barcha hollarda yagona aniqlamaydi.",
+        "fact_ids": [
+          "findmass"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              48
+            ],
+            "pdf_pages": [
+              48
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page48"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page49"
+          }
+        ]
+      },
+      {
+        "title": "Gazdan molekulalar soniga",
+        "body": "P=150 kPa, V=4,155 L, T=300 K, R=8,31 berilgan N2 modelida n=0,25 mol. NA=6,02·10^23 mol−1 olinsa N=0,25·NA=1,505·10^23 ta molekula. Bu yerda molekulalar so‘ralgan.",
+        "fact_ids": [
+          "molecules"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page49"
+          }
+        ]
+      },
+      {
+        "title": "Molekula va barcha atomlar farqi",
+        "body": "Berilgan CH4 modelida P=124,65 kPa, V=7 L, T=350 K va R=8,31: n=0,3 mol. Bitta CH4 molekulasida 5 atom bor. Jami atomlar soni 0,3·6,02·10^23·5=9,03·10^23. Molekulalar sonidan atomlar soniga o‘tganda 5 ga ko‘paytiriladi.",
+        "fact_ids": [
+          "atoms"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              49
+            ],
+            "pdf_pages": [
+              49
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page49"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              50
+            ],
+            "pdf_pages": [
+              50
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page50"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birliklarni hisobdan oldin tekshiring",
+        "body": "0,4 mol, 8,31 kPa·L/(mol·K), 200 K va 166,2 kPa: mol, K, kPa qisqarib, V uchun L qoladi. Sonli natija 4 L.",
+        "fact_ids": [
+          "units",
+          "volume"
+        ],
+        "source_refs": [
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              46
+            ],
+            "pdf_pages": [
+              46
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page46"
+          },
+          {
+            "book_id": "chemistry-11-uz-2018",
+            "book_title": "Umumiy kimyo",
+            "authors": [
+              "S. Masharipov",
+              "A. Mutalibov",
+              "E. Murodov",
+              "H. Islomova"
+            ],
+            "year": 2018,
+            "file_name": "umumiy_kimyo_11_uzb.pdf",
+            "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+            "topic_id": "ch11-paragraph08",
+            "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+            "paragraph": 8,
+            "printed_pages": [
+              47
+            ],
+            "pdf_pages": [
+              47
+            ],
+            "regions": [
+              "full"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "ch11-paragraph08-page47"
+          }
+        ]
+      }
+    ],
+    "xp_reward": 20,
+    "source_refs": [
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          45
+        ],
+        "pdf_pages": [
+          45
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page45"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          46
+        ],
+        "pdf_pages": [
+          46
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page46"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          47
+        ],
+        "pdf_pages": [
+          47
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page47"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          48
+        ],
+        "pdf_pages": [
+          48
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page48"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          49
+        ],
+        "pdf_pages": [
+          49
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page49"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          50
+        ],
+        "pdf_pages": [
+          50
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page50"
+      },
+      {
+        "book_id": "chemistry-11-uz-2018",
+        "book_title": "Umumiy kimyo",
+        "authors": [
+          "S. Masharipov",
+          "A. Mutalibov",
+          "E. Murodov",
+          "H. Islomova"
+        ],
+        "year": 2018,
+        "file_name": "umumiy_kimyo_11_uzb.pdf",
+        "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+        "topic_id": "ch11-paragraph08",
+        "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+        "paragraph": 8,
+        "printed_pages": [
+          51
+        ],
+        "pdf_pages": [
+          51
+        ],
+        "regions": [
+          "full"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "ch11-paragraph08-page51"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "chemistry-11-p08-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "PV=nRT tenglamasidagi T qaysi harorat?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kelvin harorati"
+        },
+        {
+          "id": "b",
+          "label": "Selsiy soni o‘zgarishsiz"
+        },
+        {
+          "id": "c",
+          "label": "Massa"
+        },
+        {
+          "id": "d",
+          "label": "Molyar hajm"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page45"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Bosim birligi kPa dan atm ga o‘tsa R soni nega boshqacha yoziladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Fizik doimiy yo‘qolgani uchun"
+        },
+        {
+          "id": "b",
+          "label": "Gaz albatta parchalangani uchun"
+        },
+        {
+          "id": "c",
+          "label": "Birliklar o‘zgargani uchun"
+        },
+        {
+          "id": "d",
+          "label": "Harorat har doim nol bo‘lgani uchun"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "n=m/M ni qo‘ygandan keyin qaysi ifoda to‘g‘ri?",
+      "options": [
+        {
+          "id": "a",
+          "label": "PV=mMRT"
+        },
+        {
+          "id": "b",
+          "label": "PVM=mRT"
+        },
+        {
+          "id": "c",
+          "label": "PVM=R/T"
+        },
+        {
+          "id": "d",
+          "label": "P/V=mRT"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "CH4 molekulalari sonidan barcha atomlar soniga qanday o‘tiladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "4 ga bo‘linadi"
+        },
+        {
+          "id": "b",
+          "label": "O‘zgarmaydi"
+        },
+        {
+          "id": "c",
+          "label": "Faqat C atomlari tashlanadi"
+        },
+        {
+          "id": "d",
+          "label": "5 ga ko‘paytiriladi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page49"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page50"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q05",
+      "response_kind": "short_text",
+      "prompt": "T uchun ishlatiladigan harorat shkalasi nomini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page45"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q06",
+      "response_kind": "short_text",
+      "prompt": "Kelvin birligining harf belgisini yozing.",
+      "input_label": "Qisqa javob",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q07",
+      "response_kind": "numeric_value",
+      "prompt": "Kitobning T=t+273 yaqinlashuvida −73°C necha K?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "K",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q08",
+      "response_kind": "numeric_value",
+      "prompt": "2·10^6 Pa necha kPa?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "kPa",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page45"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q09",
+      "response_kind": "numeric_value",
+      "prompt": "n=0,4 mol, R=8,31, T=200 K, P=166,2 kPa: V qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "L",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page46"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page47"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q10",
+      "response_kind": "numeric_value",
+      "prompt": "n=0,5 mol, R=8,31, T=320 K, V=10 L: P qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "kPa",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page47"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q11",
+      "response_kind": "numeric_value",
+      "prompt": "42,5 g gazning miqdori 2,5 mol. M qancha?",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "g/mol",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page48"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page49"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q12",
+      "response_kind": "numeric_value",
+      "prompt": "0,25 mol N2 uchun NA=6,02·10^23. Molekulalar sonini yozing.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page49"
+        }
+      ]
+    },
+    {
+      "key": "chemistry-11-p08-r1-q13",
+      "response_kind": "numeric_value",
+      "prompt": "0,3 mol CH4 dagi barcha atomlar sonini yozing. NA=6,02·10^23.",
+      "input_label": "Sonli javob",
+      "max_length": 80,
+      "unit": "1",
+      "source_refs": [
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page49"
+        },
+        {
+          "book_id": "chemistry-11-uz-2018",
+          "book_title": "Umumiy kimyo",
+          "authors": [
+            "S. Masharipov",
+            "A. Mutalibov",
+            "E. Murodov",
+            "H. Islomova"
+          ],
+          "year": 2018,
+          "file_name": "umumiy_kimyo_11_uzb.pdf",
+          "sha256": "ee3d429585691951eb0f5529553f5879869cd084e1886e01b950d6971cf2952b",
+          "topic_id": "ch11-paragraph08",
+          "topic_title": "Mendeleyev-Klapeyron tenglamasi",
+          "paragraph": 8,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "full"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "ch11-paragraph08-page50"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
