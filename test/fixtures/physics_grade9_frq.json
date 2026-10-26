@@ -4513,6 +4513,655 @@
         "J/m2",
         "mJ/m2"
       ]
+    },
+    {
+      "key": "physics-9-section-36-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Cho‘zilish:l0=1m,l=1,001m. DL absolyut uzayishni top.",
+      "givens": [
+        {
+          "symbol": "l",
+          "value": "1.001",
+          "unit": "m"
+        },
+        {
+          "symbol": "l0",
+          "value": "1",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "l",
+        "l0"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-36-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sterjenning l0=50cm boshlang‘ich uzunligi,DL=1mm uzayishi bor. eps ni ulush yoki % bilan yoz.",
+      "givens": [
+        {
+          "symbol": "DL",
+          "value": "1",
+          "unit": "mm"
+        },
+        {
+          "symbol": "l0",
+          "value": "50",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "DL",
+        "l0"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-36-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir tekis o‘q bo‘ylab tortilish:F=200N,S=2mm2. Mexanik sig kuchlanishni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "200",
+          "unit": "N"
+        },
+        {
+          "symbol": "S",
+          "value": "2",
+          "unit": "mm2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "S"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa",
+        "MPa",
+        "GPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-36-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kichik chiziqli elastik rejim:E=100GPa,eps=0,1%. sig ni top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "100",
+          "unit": "GPa"
+        },
+        {
+          "symbol": "eps",
+          "value": "0.1",
+          "unit": "%"
+        }
+      ],
+      "symbols": [
+        "E",
+        "eps"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa",
+        "MPa",
+        "GPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-36-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir tekis kichik chiziqli elastik sterjen:F=100N,l0=2m,E=100GPa,S=2mm2. DL ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "100",
+          "unit": "N"
+        },
+        {
+          "symbol": "l0",
+          "value": "2",
+          "unit": "m"
+        },
+        {
+          "symbol": "E",
+          "value": "100",
+          "unit": "GPa"
+        },
+        {
+          "symbol": "S",
+          "value": "2",
+          "unit": "mm2"
+        }
+      ],
+      "symbols": [
+        "F",
+        "l0",
+        "E",
+        "S"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-36-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir tekis chiziqli elastik sterjen:E=100GPa,S=2mm2,l0=2m. k bikrlikni top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "100",
+          "unit": "GPa"
+        },
+        {
+          "symbol": "S",
+          "value": "2",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "l0",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "E",
+        "S",
+        "l0"
+      ],
+      "suggested_unit": "N/m",
+      "unit_choices": [
+        "N/m",
+        "kN/m"
+      ]
+    },
+    {
+      "key": "physics-9-section-37-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Cho‘zilish DL=6mm,eps=0,3%. Dastlabki l0 ni top.",
+      "givens": [
+        {
+          "symbol": "DL",
+          "value": "6",
+          "unit": "mm"
+        },
+        {
+          "symbol": "eps",
+          "value": "0.3",
+          "unit": "%"
+        }
+      ],
+      "symbols": [
+        "DL",
+        "eps"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-37-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli kichik chiziqli elastik qayd:F=100N,l0=1m,S=0,5mm2,DL=2mm. E ni top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "100",
+          "unit": "N"
+        },
+        {
+          "symbol": "l0",
+          "value": "1",
+          "unit": "m"
+        },
+        {
+          "symbol": "S",
+          "value": "0.5",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "DL",
+          "value": "2",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "F",
+        "l0",
+        "S",
+        "DL"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa",
+        "MPa",
+        "GPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-37-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal bir jinsli vertikal sim,faqat o‘z og‘irligi:sigLimit=170MPa,rho=8500kg/m3,g=10N/kg. Nazariy lmax ni top;bu real qurilma yuk ruxsati emas.",
+      "givens": [
+        {
+          "symbol": "sigLimit",
+          "value": "170",
+          "unit": "MPa"
+        },
+        {
+          "symbol": "rho",
+          "value": "8500",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "sigLimit",
+        "rho",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-37-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir tekis kichik chiziqli elastik sterjen:E=190GPa,S=8mm2,DL=1mm,l0=2m. F ni top.",
+      "givens": [
+        {
+          "symbol": "E",
+          "value": "190",
+          "unit": "GPa"
+        },
+        {
+          "symbol": "S",
+          "value": "8",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "DL",
+          "value": "1",
+          "unit": "mm"
+        },
+        {
+          "symbol": "l0",
+          "value": "2",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "E",
+        "S",
+        "DL",
+        "l0"
+      ],
+      "suggested_unit": "N",
+      "unit_choices": [
+        "N",
+        "mN",
+        "kN",
+        "µN"
+      ]
+    },
+    {
+      "key": "physics-9-section-38-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kitobning yaxlitlangan qo‘rg‘oshin modeli:m=0,2kg,c=130J/(kg*K),T1=300K,T2=600K. Faqat erish boshlanishigacha qattiq fazani qizdirish Q sini top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "130",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "T2",
+          "value": "600",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "m",
+        "c",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-39-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Erish temperaturasidagi m=0,25kg muz,lam=334kJ/kg. To‘liq eritish Q sini top;oldindan qizdirish yo‘q.",
+      "givens": [
+        {
+          "symbol": "lam",
+          "value": "334",
+          "unit": "kJ/kg"
+        },
+        {
+          "symbol": "m",
+          "value": "0.25",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "lam",
+        "m"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-39-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Erish temperaturasidagi po‘lat modeli:faqat erishga Q=42kJ,lam=84kJ/kg. Eriydigan m ni top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "42",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "lam",
+          "value": "84",
+          "unit": "kJ/kg"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "lam"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-39-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Erish temperaturasida m=0,6kg kristallni to‘liq eritishga faqat faza bosqichida Q=63kJ sarflandi. lam ni top;moddani nomlash talab qilinmaydi.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "63",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "m",
+          "value": "0.6",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "m"
+      ],
+      "suggested_unit": "J/kg",
+      "unit_choices": [
+        "J/kg",
+        "kJ/kg",
+        "MJ/kg"
+      ]
+    },
+    {
+      "key": "physics-9-section-39-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qotish temperaturasidagi m=0,2kg suv kristall muzga aylandi,lam=334kJ/kg. JISMGA OLINGAN signed Q ni top.",
+      "givens": [
+        {
+          "symbol": "lam",
+          "value": "334",
+          "unit": "kJ/kg"
+        },
+        {
+          "symbol": "m",
+          "value": "0.2",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "lam",
+        "m"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-39-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal izolyatsiya,idish ta’siri yo‘q:mw=2kg suv,Tw=293K,Tm=273K yaxlitlangan model,c=4200J/(kg*K),lam=334kJ/kg. Muz boshlanishidaTmda. Maksimal mi ni eng yaqin1g qadamda top.",
+      "givens": [
+        {
+          "symbol": "mw",
+          "value": "2",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "4200",
+          "unit": "J/(kg*K)"
+        },
+        {
+          "symbol": "Tw",
+          "value": "293",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tm",
+          "value": "273",
+          "unit": "K"
+        },
+        {
+          "symbol": "lam",
+          "value": "334",
+          "unit": "kJ/kg"
+        }
+      ],
+      "symbols": [
+        "mw",
+        "c",
+        "Tw",
+        "Tm",
+        "lam"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-40-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Normal bosimdagi qaynash temperaturasida m=40g suv,r=2,3MJ/kg maktab qiymati. Faqat to‘liq bug‘lantirish Q sini top.",
+      "givens": [
+        {
+          "symbol": "r",
+          "value": "2.3",
+          "unit": "MJ/kg"
+        },
+        {
+          "symbol": "m",
+          "value": "40",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "r",
+        "m"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-40-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan temperaturada faqat bug‘lanishga Q=115kJ sarflandi,r=2,3MJ/kg. Bug‘langan m ni top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "115",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "r",
+          "value": "2.3",
+          "unit": "MJ/kg"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "r"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-40-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil temperaturada m=20g bug‘ suyuqlikka aylandi,r=2,3MJ/kg. JISMGA OLINGAN signed Q ni top.",
+      "givens": [
+        {
+          "symbol": "r",
+          "value": "2.3",
+          "unit": "MJ/kg"
+        },
+        {
+          "symbol": "m",
+          "value": "20",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "r",
+        "m"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-40-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil temperaturada m=10g suyuqlikni to‘liq bug‘lantirishga Q=23kJ sarflandi. r ni top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "23",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "m",
+          "value": "10",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "m"
+      ],
+      "suggested_unit": "J/kg",
+      "unit_choices": [
+        "J/kg",
+        "kJ/kg",
+        "MJ/kg"
+      ]
     }
   ]
 }
