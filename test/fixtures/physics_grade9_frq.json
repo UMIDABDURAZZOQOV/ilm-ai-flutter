@@ -1,0 +1,719 @@
+{
+  "assessment_version": 2,
+  "questions": [
+    {
+      "key": "physics-9-section-2-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Bir qatlamli model:V=0,3mm3,S=0,6m2. Qalinlik d ni top.",
+      "givens": [
+        {
+          "symbol": "V",
+          "value": "0.3",
+          "unit": "mm3"
+        },
+        {
+          "symbol": "S",
+          "value": "0.6",
+          "unit": "m2"
+        }
+      ],
+      "symbols": [
+        "V",
+        "S"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-2-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Atom uchun m0=3,984e-26kg,u=1,66e-27kg deb berilgan. Mr bilan belgilangan nisbiy massani top.",
+      "givens": [
+        {
+          "symbol": "m0",
+          "value": "3.984e-26",
+          "unit": "kg"
+        },
+        {
+          "symbol": "u",
+          "value": "1.66e-27",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m0",
+        "u"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-2-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mr=18 va u=1,66e-27kg yaqinlashuvi bilan bitta molekula m0 massasini top.",
+      "givens": [
+        {
+          "symbol": "Mr",
+          "value": "18",
+          "unit": "1"
+        },
+        {
+          "symbol": "u",
+          "value": "1.66e-27",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "Mr",
+        "u"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-2-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=0,4kg,m0=2e-26kg deb berilgan bir xil atomlar. N ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "0.4",
+          "unit": "kg"
+        },
+        {
+          "symbol": "m0",
+          "value": "2e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "m",
+        "m0"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-2-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Suv uchun hisobiy model:rho=1000kg/m3,V=6cm3,m0=3e-26kg deb ol. N ni top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "V",
+          "value": "6",
+          "unit": "cm3"
+        },
+        {
+          "symbol": "m0",
+          "value": "3e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "V",
+        "m0"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "nu=0,5mol va NA=6,022e23 1/mol. N ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "0.5",
+          "unit": "mol"
+        },
+        {
+          "symbol": "NA",
+          "value": "6.022e23",
+          "unit": "1/mol"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "NA"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "N=9,033e23 zarra,NA=6,022e23 1/mol. nu ni top.",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "9.033e23",
+          "unit": "1"
+        },
+        {
+          "symbol": "NA",
+          "value": "6.022e23",
+          "unit": "1/mol"
+        }
+      ],
+      "symbols": [
+        "N",
+        "NA"
+      ],
+      "suggested_unit": "mol",
+      "unit_choices": [
+        "mol"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "m=36g suv,M=18g/mol. nu ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "36",
+          "unit": "g"
+        },
+        {
+          "symbol": "M",
+          "value": "18",
+          "unit": "g/mol"
+        }
+      ],
+      "symbols": [
+        "m",
+        "M"
+      ],
+      "suggested_unit": "mol",
+      "unit_choices": [
+        "mol"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "nu=0,25mol karbonat angidrid,M=44g/mol. m ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "0.25",
+          "unit": "mol"
+        },
+        {
+          "symbol": "M",
+          "value": "44",
+          "unit": "g/mol"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "M"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy zarra modeli:m0=5e-26kg,NA=6,022e23 1/mol. M ni top;modda nomi taxmin qilinmasin.",
+      "givens": [
+        {
+          "symbol": "m0",
+          "value": "5e-26",
+          "unit": "kg"
+        },
+        {
+          "symbol": "NA",
+          "value": "6.022e23",
+          "unit": "1/mol"
+        }
+      ],
+      "symbols": [
+        "m0",
+        "NA"
+      ],
+      "suggested_unit": "kg/mol",
+      "unit_choices": [
+        "kg/mol",
+        "g/mol"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Hisobiy modda uchun M=30,11g/mol,NA=6,022e23 1/mol. Bitta zarra massasi m0 ni top.",
+      "givens": [
+        {
+          "symbol": "M",
+          "value": "30.11",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "NA",
+          "value": "6.022e23",
+          "unit": "1/mol"
+        }
+      ],
+      "symbols": [
+        "M",
+        "NA"
+      ],
+      "suggested_unit": "kg",
+      "unit_choices": [
+        "kg",
+        "g",
+        "mg"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q11",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "N=1,2044e24 molekula,V=2L. n son konsentratsiyasini top.",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "1.2044e24",
+          "unit": "1"
+        },
+        {
+          "symbol": "V",
+          "value": "2",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "N",
+        "V"
+      ],
+      "suggested_unit": "1/m3",
+      "unit_choices": [
+        "1/m3"
+      ]
+    },
+    {
+      "key": "physics-9-section-3-r1:q12",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan model:n=1e28 1/m3,m0=3e-26kg. rho zichlikni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "1e28",
+          "unit": "1/m3"
+        },
+        {
+          "symbol": "m0",
+          "value": "3e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "n",
+        "m0"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-4-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Grafit sterjen:l=10cm,S=2mm2,rho=2000kg/m3,m0=2e-26kg. N atomlar sonini top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "2000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "S",
+          "value": "2",
+          "unit": "mm2"
+        },
+        {
+          "symbol": "l",
+          "value": "10",
+          "unit": "cm"
+        },
+        {
+          "symbol": "m0",
+          "value": "2e-26",
+          "unit": "kg"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "S",
+        "l",
+        "m0"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-4-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Gaz:m=56g,M=28g/mol,V=4L,NA=6e23 1/mol. n konsentratsiyani top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "56",
+          "unit": "g"
+        },
+        {
+          "symbol": "NA",
+          "value": "6e23",
+          "unit": "1/mol"
+        },
+        {
+          "symbol": "M",
+          "value": "28",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "V",
+          "value": "4",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "m",
+        "NA",
+        "M",
+        "V"
+      ],
+      "suggested_unit": "1/m3",
+      "unit_choices": [
+        "1/m3"
+      ]
+    },
+    {
+      "key": "physics-9-section-4-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Kumush:S=8cm2 jami,h=3µm,rho=10500kg/m3,M=108g/mol,NA=6e23 1/mol. Atom sonini top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "10500",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "S",
+          "value": "8",
+          "unit": "cm2"
+        },
+        {
+          "symbol": "h",
+          "value": "3",
+          "unit": "µm"
+        },
+        {
+          "symbol": "NA",
+          "value": "6e23",
+          "unit": "1/mol"
+        },
+        {
+          "symbol": "M",
+          "value": "108",
+          "unit": "g/mol"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "S",
+        "h",
+        "NA",
+        "M"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-4-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Mis plastinka:nu=89mol,M=64g/mol,rho=8900kg/m3,h=2mm. S yuzani top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "89",
+          "unit": "mol"
+        },
+        {
+          "symbol": "M",
+          "value": "64",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "rho",
+          "value": "8900",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "h",
+          "value": "2",
+          "unit": "mm"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "M",
+        "rho",
+        "h"
+      ],
+      "suggested_unit": "m2",
+      "unit_choices": [
+        "m2",
+        "cm2",
+        "mm2"
+      ]
+    },
+    {
+      "key": "physics-9-section-4-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Fotosuratda D=0,8mm diametr ko‘rindi,k=400000 marta kattalashtirish. Haqiqiy d ni top.",
+      "givens": [
+        {
+          "symbol": "D",
+          "value": "0.8",
+          "unit": "mm"
+        },
+        {
+          "symbol": "k",
+          "value": "400000",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "D",
+        "k"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-5-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Ideal gaz:rho=1,2kg/m3,v=500m/s rms. p bosimni top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1.2",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "v",
+          "value": "500",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "v"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-5-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:p=144kPa,rho=1,2kg/m3. v rms tezlikni top;sqrt yozuvidan foydalanish mumkin.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "144",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "rho",
+          "value": "1.2",
+          "unit": "kg/m3"
+        }
+      ],
+      "symbols": [
+        "p",
+        "rho"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-5-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:n=3e25 1/m3,m0=4e-26kg,v=400m/s rms. p ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "3e25",
+          "unit": "1/m3"
+        },
+        {
+          "symbol": "m0",
+          "value": "4e-26",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "value": "400",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "n",
+        "m0",
+        "v"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-5-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:n=4e25 1/m3,E=3e-21J bitta molekulaning o‘rtacha kinetik energiyasi. p ni top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "4e25",
+          "unit": "1/m3"
+        },
+        {
+          "symbol": "E",
+          "value": "3e-21",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "n",
+        "E"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-5-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:p=60kPa,n=3e25 1/m3. Bitta molekulaning o‘rtacha E energiyasini top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "60",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "n",
+          "value": "3e25",
+          "unit": "1/m3"
+        }
+      ],
+      "symbols": [
+        "p",
+        "n"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-5-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal gaz:p=54kPa,v=300m/s rms. rho ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "54",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "v",
+          "value": "300",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "p",
+        "v"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ]
+    }
+  ]
+}

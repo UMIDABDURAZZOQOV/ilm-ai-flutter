@@ -53,10 +53,10 @@ void main() {
             return reply(200, {
               ...fixture('physics_catalog'),
               'grade': grade,
-              'available_grades': [6, 7, 8],
+              'available_grades': [6, 7, 8, 9],
               if (grade >= 7) 'lessons': <Json>[],
-              'book': grade == 8
-                  ? fixture('physics_grade8_book')
+              'book': grade == 8 || grade == 9
+                  ? fixture('physics_grade${grade}_book')
                   : {
                       'grade': grade,
                       'title': 'Fizika. $grade-sinf uchun darslik',
@@ -440,6 +440,32 @@ void main() {
     },
   );
 
+  testWidgets(
+    'grade9 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('9-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 9);
+      final book = fixture('physics_grade9_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   testWidgets('offline catalog retry and dispose during request do not throw', (
     tester,
   ) async {
@@ -768,6 +794,49 @@ void main() {
       expect(tester.takeException(), isNull);
     }
   });
+
+  testWidgets(
+    'grade9 public molar number density and RMS drafts fit large text',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
+      expect(questions, hasLength(24));
+      for (final question in questions) {
+        Json? edited;
+        final isRoot = question['key'] == 'physics-9-section-5-r1:q6';
+        final formula = isRoot ? 'sqrt(3*p/rho)' : 'learner_formula';
+        final value = isRoot ? '600' : '-1,25';
+        await mount(
+          tester,
+          scale: 2,
+          child: Scaffold(
+            body: SingleChildScrollView(
+              child: PhysicsAnswerEditor(
+                key: ValueKey(question['key']),
+                question: question,
+                draft: const {},
+                enabled: true,
+                onChanged: (v) => edited = v,
+              ),
+            ),
+          ),
+        );
+        await enter(
+          tester,
+          formula,
+          value,
+          question['suggested_unit'] as String,
+        );
+        expect(edited?['formula'], formula);
+        expect(edited?['value'], value);
+        expect(edited?['unit'], question['suggested_unit']);
+        expect(tester.takeException(), isNull);
+      }
+    },
+  );
 
   testWidgets(
     'FRQ inputs have accessible labels and Android-sized tap targets',
