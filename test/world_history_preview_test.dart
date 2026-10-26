@@ -230,7 +230,7 @@ void main() {
           find.byKey(const ValueKey('world_history-grade-11')),
           findsOneWidget,
         );
-        expect(find.text('11/46 dars mavjud.'), findsOneWidget);
+        expect(find.text('16/46 dars mavjud.'), findsOneWidget);
         expect(find.byType(ExpansionTile), findsNWidgets(7));
         await capture(t, 'path-${dark ? 'dark' : 'light'}-200');
         await tapFinder(
@@ -365,13 +365,17 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
-  for (var number = 2; number <= 11; number++) {
+  for (var number = 2; number <= 16; number++) {
     void selectParagraph() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('p${suffix}_lesson');
       results = fixture('p${suffix}_results');
       catalog = fixture(
-        number >= 7 ? 'batch02_completed_catalog' : 'batch01_completed_catalog',
+        number >= 12
+            ? 'batch03_completed_catalog'
+            : number >= 7
+            ? 'batch02_completed_catalog'
+            : 'batch01_completed_catalog',
       );
     }
 
