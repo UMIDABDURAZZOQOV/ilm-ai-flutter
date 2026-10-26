@@ -803,13 +803,14 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
-      expect(questions, hasLength(48));
+      expect(questions, hasLength(70));
       for (final question in questions) {
         Json? edited;
         final draft = <String, (String, String)>{
           'physics-9-section-5-r1:q6': ('sqrt(3*p/rho)', '600'),
           'physics-9-section-7-r1:q5': ('sqrt(3*k*T/m0)', '643.4'),
           'physics-9-section-7-r1:q6': ('sqrt(3*R*T/M)', '499.3'),
+          'physics-9-section-15-r1:q6': ('3*nu*R*(T2-T1)/2', '-3739.5'),
         }[question['key']];
         final formula = draft?.$1 ?? 'learner_formula';
         final value = draft?.$2 ?? '-1,25';

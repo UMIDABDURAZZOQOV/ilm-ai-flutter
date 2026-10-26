@@ -1512,6 +1512,737 @@
         "cm3",
         "L"
       ]
+    },
+    {
+      "key": "physics-9-section-11-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz izobarik:V1=8L,T1=320K,T2=480K. V2 ni top.",
+      "givens": [
+        {
+          "symbol": "V1",
+          "value": "8",
+          "unit": "L"
+        },
+        {
+          "symbol": "T2",
+          "value": "480",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "320",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "V1",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
+    },
+    {
+      "key": "physics-9-section-11-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz p const:V1=10L,V2=6L,T1=350K. T2 ni top.",
+      "givens": [
+        {
+          "symbol": "V2",
+          "value": "6",
+          "unit": "L"
+        },
+        {
+          "symbol": "T1",
+          "value": "350",
+          "unit": "K"
+        },
+        {
+          "symbol": "V1",
+          "value": "10",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "V2",
+        "T1",
+        "V1"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-11-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz p const:T1=400K,V1=20L,V2=12L. Musbat Dcool sovitish miqdorini top.",
+      "givens": [
+        {
+          "symbol": "T1",
+          "value": "400",
+          "unit": "K"
+        },
+        {
+          "symbol": "V2",
+          "value": "12",
+          "unit": "L"
+        },
+        {
+          "symbol": "V1",
+          "value": "20",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "T1",
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-11-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz p const:T1=300K,V1=5L,V2=6L. Musbat Dheating qizdirish miqdorini top.",
+      "givens": [
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "V2",
+          "value": "6",
+          "unit": "L"
+        },
+        {
+          "symbol": "V1",
+          "value": "5",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "T1",
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-12-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz V const:p1=90kPa,T1=300K,T2=500K. p2 absolyut bosimni top.",
+      "givens": [
+        {
+          "symbol": "p1",
+          "value": "90",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "T2",
+          "value": "500",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p1",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-12-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz V const:p1=100kPa,p2=160kPa,T1=250K. T2 ni top.",
+      "givens": [
+        {
+          "symbol": "p2",
+          "value": "160",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "T1",
+          "value": "250",
+          "unit": "K"
+        },
+        {
+          "symbol": "p1",
+          "value": "100",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "p2",
+        "T1",
+        "p1"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-12-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz V const:T1=320K,T2=480K,bosim dp=45kPa ga ortdi. p1 ni top.",
+      "givens": [
+        {
+          "symbol": "dp",
+          "value": "45",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "T1",
+          "value": "320",
+          "unit": "K"
+        },
+        {
+          "symbol": "T2",
+          "value": "480",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "dp",
+        "T1",
+        "T2"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-13-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Raqamli qatlam modeli:V=24cm3,S=60cm2. d=V/S samarali qalinlik bahosini top;aniq dona diametri deb olma.",
+      "givens": [
+        {
+          "symbol": "V",
+          "value": "24",
+          "unit": "cm3"
+        },
+        {
+          "symbol": "S",
+          "value": "60",
+          "unit": "cm2"
+        }
+      ],
+      "symbols": [
+        "V",
+        "S"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-13-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qator modeli:N=10 dona umumiy L=75mm uzunlikni egallagan. d o‘rtacha qator o‘lchamini top.",
+      "givens": [
+        {
+          "symbol": "L",
+          "value": "75",
+          "unit": "mm"
+        },
+        {
+          "symbol": "N",
+          "value": "10",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "L",
+        "N"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-13-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli to‘g‘ri burchakli xona:a=5m,b=4m,c=3m. V ni top.",
+      "givens": [
+        {
+          "symbol": "a",
+          "value": "5",
+          "unit": "m"
+        },
+        {
+          "symbol": "b",
+          "value": "4",
+          "unit": "m"
+        },
+        {
+          "symbol": "c",
+          "value": "3",
+          "unit": "m"
+        }
+      ],
+      "symbols": [
+        "a",
+        "b",
+        "c"
+      ],
+      "suggested_unit": "m3",
+      "unit_choices": [
+        "m3",
+        "cm3",
+        "L"
+      ]
+    },
+    {
+      "key": "physics-9-section-13-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Havo modeli:p=99,72kPa absolyut,M=29g/mol,T=300K,R=8,31J/(mol*K). rho ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "99.72",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "M",
+          "value": "29",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p",
+        "M",
+        "R",
+        "T"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-13-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Alohida havo modeli:p=82,8kPa absolyut,T=300K,k=1,38e-23J/K. n son konsentratsiyasini top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "82.8",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "k",
+          "value": "1.38e-23",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "p",
+        "k",
+        "T"
+      ],
+      "suggested_unit": "1/m3",
+      "unit_choices": [
+        "1/m3"
+      ]
+    },
+    {
+      "key": "physics-9-section-13-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli xona modeli:n=2e25 1/m3,V=60m3. N jami zarra sonini top.",
+      "givens": [
+        {
+          "symbol": "n",
+          "value": "2e25",
+          "unit": "1/m3"
+        },
+        {
+          "symbol": "V",
+          "value": "60",
+          "unit": "m3"
+        }
+      ],
+      "symbols": [
+        "n",
+        "V"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-14-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Qattiq idishdagi bir xil gazning f=0,5ulushi qoldi;p1=200kPa absolyut,T1=400K,T2=300K. p2 ni top.",
+      "givens": [
+        {
+          "symbol": "f",
+          "value": "0.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "p1",
+          "value": "200",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "T2",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "400",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "f",
+        "p1",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-14-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil ideal gaz p const:rho1=2kg/m3,T1=300K,rho2=1,5kg/m3. T2 ni top.",
+      "givens": [
+        {
+          "symbol": "rho1",
+          "value": "2",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "T1",
+          "value": "300",
+          "unit": "K"
+        },
+        {
+          "symbol": "rho2",
+          "value": "1.5",
+          "unit": "kg/m3"
+        }
+      ],
+      "symbols": [
+        "rho1",
+        "T1",
+        "rho2"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-14-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil gaz V const,qizdirish DT=15K,bosim ortishi dastlabki bosimning f=0,05qismi. T1 ni top.",
+      "givens": [
+        {
+          "symbol": "DT",
+          "value": "15",
+          "unit": "K"
+        },
+        {
+          "symbol": "f",
+          "value": "0.05",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "DT",
+        "f"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-14-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Izotermik pufakcha modeli:p0=100kPa,rho=1000kg/m3,g=10N/kg,h=20m. Sirt/tub hajmlari nisbati x ni top;sirt taranglik e’tiborsiz.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "value": "20",
+          "unit": "m"
+        },
+        {
+          "symbol": "p0",
+          "value": "100",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "g",
+        "h",
+        "p0"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1"
+      ]
+    },
+    {
+      "key": "physics-9-section-14-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Xuddi izotermik pufakcha modeli:x=3,5,p0=100kPa,rho=1000kg/m3,g=10N/kg. Model h chuqurligini top.",
+      "givens": [
+        {
+          "symbol": "x",
+          "value": "3.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "p0",
+          "value": "100",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "rho",
+          "value": "1000",
+          "unit": "kg/m3"
+        },
+        {
+          "symbol": "g",
+          "value": "10",
+          "unit": "N/kg"
+        }
+      ],
+      "symbols": [
+        "x",
+        "p0",
+        "rho",
+        "g"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-15-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir atomli klassik ideal gaz:nu=2mol,T=300K,R=8,31J/(mol*K). U ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "2",
+          "unit": "mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "R",
+        "T"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-15-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil miqdordagi bir atomli ideal gaz:nu=3mol,T1=350K,T2=250K,R=8,31J/(mol*K). Signed DU=U2-U1 ni top.",
+      "givens": [
+        {
+          "symbol": "nu",
+          "value": "3",
+          "unit": "mol"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T2",
+          "value": "250",
+          "unit": "K"
+        },
+        {
+          "symbol": "T1",
+          "value": "350",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "nu",
+        "R",
+        "T2",
+        "T1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
+    },
+    {
+      "key": "physics-9-section-15-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir atomli klassik ideal gaz:U=900J,V=3L. Absolyut p ni top.",
+      "givens": [
+        {
+          "symbol": "U",
+          "value": "900",
+          "unit": "J"
+        },
+        {
+          "symbol": "V",
+          "value": "3",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "U",
+        "V"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-15-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir xil miqdordagi bir atomli ideal gaz p=100kPa absolyut bosimda izobarik kengaydi:V1=2L,V2=5L. Signed DU ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "100",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "V2",
+          "value": "5",
+          "unit": "L"
+        },
+        {
+          "symbol": "V1",
+          "value": "2",
+          "unit": "L"
+        }
+      ],
+      "symbols": [
+        "p",
+        "V2",
+        "V1"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ]
     }
   ]
 }
