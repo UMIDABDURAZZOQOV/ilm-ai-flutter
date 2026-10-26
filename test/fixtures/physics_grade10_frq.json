@@ -5073,6 +5073,965 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-10-section-26-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Berilgan muhitda davriy mexanik to‘lqin v=240m/s,nu=800Hz. Lw=lambda ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "240",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "nu",
+          "value": "800",
+          "unit": "Hz"
+        }
+      ],
+      "symbols": [
+        "v",
+        "nu"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-26",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            93
+          ],
+          "printed_pages": [
+            92
+          ],
+          "page_text_sha256": [
+            "471d271cea5e79f6cc187c08ffa02f56d26d7ce7eb8874e23c83b97f8ad8b8e3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-26-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Davriy mexanik to‘lqin Lw=lambda=40cm,nu=150Hz. Shu muhitdagi v ni top.",
+      "givens": [
+        {
+          "symbol": "Lw",
+          "value": "40",
+          "unit": "cm"
+        },
+        {
+          "symbol": "nu",
+          "value": "150",
+          "unit": "Hz"
+        }
+      ],
+      "symbols": [
+        "Lw",
+        "nu"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-26",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            93
+          ],
+          "printed_pages": [
+            92
+          ],
+          "page_text_sha256": [
+            "471d271cea5e79f6cc187c08ffa02f56d26d7ce7eb8874e23c83b97f8ad8b8e3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-26-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan muhitda v=320m/s,Lw=lambda=80cm davriy mexanik to‘lqin. nu ni top.",
+      "givens": [
+        {
+          "symbol": "v",
+          "value": "320",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "Lw",
+          "value": "80",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "v",
+        "Lw"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-26",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            93
+          ],
+          "printed_pages": [
+            92
+          ],
+          "page_text_sha256": [
+            "471d271cea5e79f6cc187c08ffa02f56d26d7ce7eb8874e23c83b97f8ad8b8e3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-26-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir jinsli TARANG ip: F=20N,l=2m,m=100g. KICHIK ko‘ndalang to‘lqin v sini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "20",
+          "unit": "N"
+        },
+        {
+          "symbol": "l",
+          "value": "2",
+          "unit": "m"
+        },
+        {
+          "symbol": "m",
+          "value": "100",
+          "unit": "g"
+        }
+      ],
+      "symbols": [
+        "F",
+        "l",
+        "m"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-26",
+          "chapter_id": "physics-10-chapter-5",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            93
+          ],
+          "printed_pages": [
+            92
+          ],
+          "page_text_sha256": [
+            "471d271cea5e79f6cc187c08ffa02f56d26d7ce7eb8874e23c83b97f8ad8b8e3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-27-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "DU=450J, sistema tomonidan A=150J ish. Sistemaga Q ni top.",
+      "givens": [
+        {
+          "symbol": "DU",
+          "value": "450",
+          "unit": "J"
+        },
+        {
+          "symbol": "A",
+          "value": "150",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "DU",
+        "A"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-27",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            100,
+            101
+          ],
+          "printed_pages": [
+            99,
+            100
+          ],
+          "page_text_sha256": [
+            "90f800d3c03428fa856077d36e11363204921759334c6a8dac78d6ddc72feb0e",
+            "8380576ce32f2167981a1c98749223289cf26e0b80c5003a7643bcb03f3365c1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-27-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Q=−700J sistemaga nisbatan signed, A=−300J sistema tomonidan signed. DU ni top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "-700",
+          "unit": "J"
+        },
+        {
+          "symbol": "A",
+          "value": "-300",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "A"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-27",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            101
+          ],
+          "printed_pages": [
+            100
+          ],
+          "page_text_sha256": [
+            "8380576ce32f2167981a1c98749223289cf26e0b80c5003a7643bcb03f3365c1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-27-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Q=900J sistemaga, DU=650J. Sistema bajargan signed A ni top.",
+      "givens": [
+        {
+          "symbol": "Q",
+          "value": "900",
+          "unit": "J"
+        },
+        {
+          "symbol": "DU",
+          "value": "650",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Q",
+        "DU"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-27",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            101
+          ],
+          "printed_pages": [
+            100
+          ],
+          "page_text_sha256": [
+            "8380576ce32f2167981a1c98749223289cf26e0b80c5003a7643bcb03f3365c1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-27-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "DU=−200J, sistemaga Q=−500J signed. Sistema USTIDA Aon ni top.",
+      "givens": [
+        {
+          "symbol": "DU",
+          "value": "-200",
+          "unit": "J"
+        },
+        {
+          "symbol": "Q",
+          "value": "-500",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "DU",
+        "Q"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-27",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            101
+          ],
+          "printed_pages": [
+            100
+          ],
+          "page_text_sha256": [
+            "8380576ce32f2167981a1c98749223289cf26e0b80c5003a7643bcb03f3365c1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-28-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Adiabatik yopiq model Q=0, DU=−350J. Sistema bajargan signed A ni top.",
+      "givens": [
+        {
+          "symbol": "DU",
+          "value": "-350",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "DU"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-28",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            103
+          ],
+          "printed_pages": [
+            102
+          ],
+          "page_text_sha256": [
+            "e1f84dd8cafa8b1fa5af43933caa40f12b0569a4389e89a6ad273d6d52e77b10"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-28-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Siklik mashina Qh=2kJ oladi,Qc=1,3kJ musbat modulda beradi. Sof A ni top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "2",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "Qc",
+          "value": "1.3",
+          "unit": "kJ"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "Qc"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-28",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            103,
+            105
+          ],
+          "printed_pages": [
+            102,
+            104
+          ],
+          "page_text_sha256": [
+            "e1f84dd8cafa8b1fa5af43933caa40f12b0569a4389e89a6ad273d6d52e77b10",
+            "1c3b9d21a54994663a303d11485baa85439b0f920abd991f23324f21f97a91b2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-28-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Siklik mashina Qh=2kJ,eta=35%. Qc berilgan issiqlik MODULIni top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "2",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "eta",
+          "value": "35",
+          "unit": "%"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "eta"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-28",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            105,
+            106
+          ],
+          "printed_pages": [
+            104,
+            105
+          ],
+          "page_text_sha256": [
+            "1c3b9d21a54994663a303d11485baa85439b0f920abd991f23324f21f97a91b2",
+            "3b0f506567d684c9e59c4f3c23dc47209d6cbe335e4eff570a61f37c9202ac03"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-28-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Sikl Qh=1200J oladi,Qc=750J musbat modulda beradi. eta ni top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "1200",
+          "unit": "J"
+        },
+        {
+          "symbol": "Qc",
+          "value": "750",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "Qc"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-28",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            105
+          ],
+          "printed_pages": [
+            104
+          ],
+          "page_text_sha256": [
+            "1c3b9d21a54994663a303d11485baa85439b0f920abd991f23324f21f97a91b2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-28-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Faqat QAYTAR ikki rezervuarli Karno: Th=600K,Tc=360K. eta chegarani top.",
+      "givens": [
+        {
+          "symbol": "Th",
+          "value": "600",
+          "unit": "K"
+        },
+        {
+          "symbol": "Tc",
+          "value": "360",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "Th",
+        "Tc"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-28",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            106
+          ],
+          "printed_pages": [
+            105
+          ],
+          "page_text_sha256": [
+            "3b0f506567d684c9e59c4f3c23dc47209d6cbe335e4eff570a61f37c9202ac03"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-29-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "QAYTAR ideal gaz Karno: issiq izotermada ish=Qh=12J,eta=25%. Siqish ishining Qc musbat MODULIni top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "12",
+          "unit": "J"
+        },
+        {
+          "symbol": "eta",
+          "value": "25",
+          "unit": "%"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "eta"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-29",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            111
+          ],
+          "printed_pages": [
+            110
+          ],
+          "page_text_sha256": [
+            "e8fd3efc1f7683b31ec96c903eb1844d862353365eec836e69a7087459b37f2c"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-29-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "QAYTAR ideal gaz Karno namunasining izotermik ish modullari Qh=15J,Qc=9J. Sof sikl A ni top.",
+      "givens": [
+        {
+          "symbol": "Qh",
+          "value": "15",
+          "unit": "J"
+        },
+        {
+          "symbol": "Qc",
+          "value": "9",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Qh",
+        "Qc"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-29",
+          "chapter_id": "physics-10-chapter-6",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            111
+          ],
+          "printed_pages": [
+            110
+          ],
+          "page_text_sha256": [
+            "e8fd3efc1f7683b31ec96c903eb1844d862353365eec836e69a7087459b37f2c"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-30-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Yopiq ikki jism: q1=7nC,q2=−11nC. Signed qTotal ni top.",
+      "givens": [
+        {
+          "symbol": "q1",
+          "value": "7",
+          "unit": "nC"
+        },
+        {
+          "symbol": "q2",
+          "value": "-11",
+          "unit": "nC"
+        }
+      ],
+      "symbols": [
+        "q1",
+        "q2"
+      ],
+      "suggested_unit": "C",
+      "unit_choices": [
+        "C",
+        "µC",
+        "nC"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-30",
+          "chapter_id": "physics-10-chapter-7",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            116
+          ],
+          "printed_pages": [
+            115
+          ],
+          "page_text_sha256": [
+            "8e5c52c0a7616d5f817b28256715f78e1b855a16a726426435408d9bc3892bd0"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-30-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Musbat kichik sinov zaryadi MODULI q=2nC, kuch MODULI F=12µN. E modulini top.",
+      "givens": [
+        {
+          "symbol": "F",
+          "value": "12",
+          "unit": "µN"
+        },
+        {
+          "symbol": "q",
+          "value": "2",
+          "unit": "nC"
+        }
+      ],
+      "symbols": [
+        "F",
+        "q"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-30",
+          "chapter_id": "physics-10-chapter-7",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            116,
+            117
+          ],
+          "printed_pages": [
+            115,
+            116
+          ],
+          "page_text_sha256": [
+            "8e5c52c0a7616d5f817b28256715f78e1b855a16a726426435408d9bc3892bd0",
+            "78422a0e4708b68e17a918e16610c97dfcb1c67ef5bf82e17cd68c7f329dcbd3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-30-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuumdagi manba zaryadi MODULI q=3nC,r=30cm,k=9e9N*m²/C². E modulini top.",
+      "givens": [
+        {
+          "symbol": "k",
+          "value": "9e9",
+          "unit": "N*m2/C2"
+        },
+        {
+          "symbol": "q",
+          "value": "3",
+          "unit": "nC"
+        },
+        {
+          "symbol": "r",
+          "value": "30",
+          "unit": "cm"
+        }
+      ],
+      "symbols": [
+        "k",
+        "q",
+        "r"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-30",
+          "chapter_id": "physics-10-chapter-7",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            117
+          ],
+          "printed_pages": [
+            116
+          ],
+          "page_text_sha256": [
+            "78422a0e4708b68e17a918e16610c97dfcb1c67ef5bf82e17cd68c7f329dcbd3"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-30-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "BIR nuqta va bir xil x o‘qda Ex1=−800N/C,Ex2=300N/C. Signed Ex ni top.",
+      "givens": [
+        {
+          "symbol": "Ex1",
+          "value": "-800",
+          "unit": "N/C"
+        },
+        {
+          "symbol": "Ex2",
+          "value": "300",
+          "unit": "N/C"
+        }
+      ],
+      "symbols": [
+        "Ex1",
+        "Ex2"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-30",
+          "chapter_id": "physics-10-chapter-7",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            117,
+            118
+          ],
+          "printed_pages": [
+            116,
+            117
+          ],
+          "page_text_sha256": [
+            "78422a0e4708b68e17a918e16610c97dfcb1c67ef5bf82e17cd68c7f329dcbd3",
+            "75b5ae5ead4e196dc83953042f031aefdbe97552546015ec3f28d3349d6c2cca"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-10-section-30-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "BIR nuqtadagi o‘zaro TIK komponentlar Ex=−3000N/C,Ey=4000N/C. E MODULIni top.",
+      "givens": [
+        {
+          "symbol": "Ex",
+          "value": "-3000",
+          "unit": "N/C"
+        },
+        {
+          "symbol": "Ey",
+          "value": "4000",
+          "unit": "N/C"
+        }
+      ],
+      "symbols": [
+        "Ex",
+        "Ey"
+      ],
+      "suggested_unit": "N/C",
+      "unit_choices": [
+        "N/C"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-10",
+          "topic_id": "physics-10-section-30",
+          "chapter_id": "physics-10-chapter-7",
+          "sha256": "c61fa29d1f1e52c6bb426bac72c3a1fa803d166b7c78a886ee1dbd80c839fa64",
+          "file_name": "fizika_10_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            118
+          ],
+          "printed_pages": [
+            117
+          ],
+          "page_text_sha256": [
+            "75b5ae5ead4e196dc83953042f031aefdbe97552546015ec3f28d3349d6c2cca"
+          ]
+        }
+      ]
     }
   ]
 }
