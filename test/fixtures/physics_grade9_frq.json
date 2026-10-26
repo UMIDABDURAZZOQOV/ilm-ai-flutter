@@ -5162,6 +5162,608 @@
         "kJ/kg",
         "MJ/kg"
       ]
+    },
+    {
+      "key": "physics-9-section-41-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "V=5m3havoda suv bug‘ining m=60g massasi bor. Absolyut rho namlikni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "60",
+          "unit": "g"
+        },
+        {
+          "symbol": "V",
+          "value": "5",
+          "unit": "m3"
+        }
+      ],
+      "symbols": [
+        "m",
+        "V"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-41-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "20°Cshartli havo:rho=8,65g/m3,rhoSat=17,3g/m3. phi ni top.",
+      "givens": [
+        {
+          "symbol": "rho",
+          "value": "8.65",
+          "unit": "g/m3"
+        },
+        {
+          "symbol": "rhoSat",
+          "value": "17.3",
+          "unit": "g/m3"
+        }
+      ],
+      "symbols": [
+        "rho",
+        "rhoSat"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-41-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "20°Cda suv bug‘ining parsial p=1,165kPa,pSat=2,33kPa. phi ni top.",
+      "givens": [
+        {
+          "symbol": "p",
+          "value": "1.165",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "pSat",
+          "value": "2.33",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "p",
+        "pSat"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-41-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "25°Cuchun rhoSat=23g/m3,phi=60%. Absolyut rho namlikni top.",
+      "givens": [
+        {
+          "symbol": "phi",
+          "value": "60",
+          "unit": "%"
+        },
+        {
+          "symbol": "rhoSat",
+          "value": "23",
+          "unit": "g/m3"
+        }
+      ],
+      "symbols": [
+        "phi",
+        "rhoSat"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-42-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Shartli raqamli qayd:td=24°C,tw=19°C. DT=td-tw farqni K da top.",
+      "givens": [
+        {
+          "symbol": "td",
+          "value": "24",
+          "unit": "°C"
+        },
+        {
+          "symbol": "tw",
+          "value": "19",
+          "unit": "°C"
+        }
+      ],
+      "symbols": [
+        "td",
+        "tw"
+      ],
+      "suggested_unit": "K",
+      "unit_choices": [
+        "K"
+      ]
+    },
+    {
+      "key": "physics-9-section-42-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Jadvaldan olingan phi=62%,24°Cuchun rhoSat=21,8g/m3. Shartli rho ni top.",
+      "givens": [
+        {
+          "symbol": "phi",
+          "value": "62",
+          "unit": "%"
+        },
+        {
+          "symbol": "rhoSat",
+          "value": "21.8",
+          "unit": "g/m3"
+        }
+      ],
+      "symbols": [
+        "phi",
+        "rhoSat"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-43-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Bir temperaturadagi shartli model:phi=75%,rhoSat=16g/m3. rho ni top.",
+      "givens": [
+        {
+          "symbol": "phi",
+          "value": "75",
+          "unit": "%"
+        },
+        {
+          "symbol": "rhoSat",
+          "value": "16",
+          "unit": "g/m3"
+        }
+      ],
+      "symbols": [
+        "phi",
+        "rhoSat"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-43-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal suv bug‘i:T=300K,p=1,662kPa parsial bosim,M=18g/mol,R=8,31J/(mol*K). rho ni top.",
+      "givens": [
+        {
+          "symbol": "M",
+          "value": "18",
+          "unit": "g/mol"
+        },
+        {
+          "symbol": "p",
+          "value": "1.662",
+          "unit": "kPa"
+        },
+        {
+          "symbol": "R",
+          "value": "8.31",
+          "unit": "J/(mol*K)"
+        },
+        {
+          "symbol": "T",
+          "value": "300",
+          "unit": "K"
+        }
+      ],
+      "symbols": [
+        "M",
+        "p",
+        "R",
+        "T"
+      ],
+      "suggested_unit": "kg/m3",
+      "unit_choices": [
+        "kg/m3",
+        "g/m3",
+        "g/cm3"
+      ]
+    },
+    {
+      "key": "physics-9-section-43-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "20°Cmodelida m=34,6g suv bug‘i,V=4m3havo,rhoSat=17,3g/m3. phi ni top.",
+      "givens": [
+        {
+          "symbol": "m",
+          "value": "34.6",
+          "unit": "g"
+        },
+        {
+          "symbol": "V",
+          "value": "4",
+          "unit": "m3"
+        },
+        {
+          "symbol": "rhoSat",
+          "value": "17.3",
+          "unit": "g/m3"
+        }
+      ],
+      "symbols": [
+        "m",
+        "V",
+        "rhoSat"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-43-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "20°Cmodeli:phi=60%,pSat=2,33kPa. Suv bug‘ining parsial p bosimini top,umumiy atmosfera bosimini emas.",
+      "givens": [
+        {
+          "symbol": "phi",
+          "value": "60",
+          "unit": "%"
+        },
+        {
+          "symbol": "pSat",
+          "value": "2.33",
+          "unit": "kPa"
+        }
+      ],
+      "symbols": [
+        "phi",
+        "pSat"
+      ],
+      "suggested_unit": "Pa",
+      "unit_choices": [
+        "Pa",
+        "kPa",
+        "MPa",
+        "GPa"
+      ]
+    },
+    {
+      "key": "physics-9-section-44-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuumda bir yo‘nalish D=600000km,c=3e8m/s maktab yaqinlashuvi. tni top.",
+      "givens": [
+        {
+          "symbol": "D",
+          "value": "600000",
+          "unit": "km"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "D",
+        "c"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-9-section-44-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Vakuumda c=3e8m/s deb olinsin,t=0,25s. Bir yo‘nalish D yo‘lni top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "value": "0.25",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "c",
+        "t"
+      ],
+      "suggested_unit": "m",
+      "unit_choices": [
+        "m",
+        "cm",
+        "mm",
+        "nm"
+      ]
+    },
+    {
+      "key": "physics-9-section-44-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ko‘zgugacha bir tomon l=30km,c=3e8m/s. Borib qaytish tvaqtni top.",
+      "givens": [
+        {
+          "symbol": "l",
+          "value": "30",
+          "unit": "km"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "l",
+        "c"
+      ],
+      "suggested_unit": "s",
+      "unit_choices": [
+        "s",
+        "min",
+        "h"
+      ]
+    },
+    {
+      "key": "physics-9-section-44-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal teng tish/tirqishli birinchi qorong‘ilanish modeli:N=500tish,l=7,5km,f=20Hz. Modelcni top.",
+      "givens": [
+        {
+          "symbol": "N",
+          "value": "500",
+          "unit": "1"
+        },
+        {
+          "symbol": "l",
+          "value": "7.5",
+          "unit": "km"
+        },
+        {
+          "symbol": "f",
+          "value": "20",
+          "unit": "Hz"
+        }
+      ],
+      "symbols": [
+        "N",
+        "l",
+        "f"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-44-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Ideal birinchi qorong‘ilanish:c=3e8m/s,N=600tish,l=12,5km bir tomon. f aylanish chastotasini top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "N",
+          "value": "600",
+          "unit": "1"
+        },
+        {
+          "symbol": "l",
+          "value": "12.5",
+          "unit": "km"
+        }
+      ],
+      "symbols": [
+        "c",
+        "N",
+        "l"
+      ],
+      "suggested_unit": "Hz",
+      "unit_choices": [
+        "1/s",
+        "Hz",
+        "kHz"
+      ]
+    },
+    {
+      "key": "physics-9-section-45-r1:q5",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Tekis ko‘zguga normaldan alpha=35°tushish burchagi. gamma qaytish burchagini gradusda top.",
+      "givens": [
+        {
+          "symbol": "alpha",
+          "value": "35",
+          "unit": "°"
+        }
+      ],
+      "symbols": [
+        "alpha"
+      ],
+      "suggested_unit": "°",
+      "unit_choices": [
+        "°",
+        "deg"
+      ]
+    },
+    {
+      "key": "physics-9-section-45-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Nur tekis sirt bilan b=25°burchak hosil qiladi. Normalga nisbatan alpha ni gradusda top.",
+      "givens": [
+        {
+          "symbol": "b",
+          "value": "25",
+          "unit": "°"
+        }
+      ],
+      "symbols": [
+        "b"
+      ],
+      "suggested_unit": "°",
+      "unit_choices": [
+        "°",
+        "deg"
+      ]
+    },
+    {
+      "key": "physics-9-section-45-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Berilgan oddiy muhitda v=2e8m/s,c=3e8m/s maktab qiymati. Absolyut nni top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "value": "2e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "c",
+        "v"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-45-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Oddiy shaffof muhit:n=2,c=3e8m/s deb berilgan. vni top.",
+      "givens": [
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "n",
+          "value": "2",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "c",
+        "n"
+      ],
+      "suggested_unit": "m/s",
+      "unit_choices": [
+        "m/s",
+        "km/h"
+      ]
+    },
+    {
+      "key": "physics-9-section-45-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Normaldan o‘lchangan burchaklar uchun sina=0,6,sinb=0,4 BERILGAN sinus sonlari. n21ni top.",
+      "givens": [
+        {
+          "symbol": "sina",
+          "value": "0.6",
+          "unit": "1"
+        },
+        {
+          "symbol": "sinb",
+          "value": "0.4",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "sina",
+        "sinb"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
+    },
+    {
+      "key": "physics-9-section-45-r1:q10",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "Oddiy muhitlar:n1=1,5,n2=1,sina=0,4 BERILGAN sinus. Singan burchakning sinb sinus sonini top,burchakning o‘zini emas.",
+      "givens": [
+        {
+          "symbol": "n1",
+          "value": "1.5",
+          "unit": "1"
+        },
+        {
+          "symbol": "n2",
+          "value": "1",
+          "unit": "1"
+        },
+        {
+          "symbol": "sina",
+          "value": "0.4",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "n1",
+        "n2",
+        "sina"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ]
     }
   ]
 }
