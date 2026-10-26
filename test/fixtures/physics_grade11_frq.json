@@ -5998,6 +5998,529 @@
           ]
         }
       ]
+    },
+    {
+      "key": "physics-11-section-41-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI yagona ona izotop ansambli:N0=9600,t=24s,T=8s. Butun yarim davrlarda kutiladigan Nni top.",
+      "givens": [
+        {
+          "symbol": "N0",
+          "value": "9600",
+          "unit": "1"
+        },
+        {
+          "symbol": "t",
+          "value": "24",
+          "unit": "s"
+        },
+        {
+          "symbol": "T",
+          "value": "8",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "N0",
+        "t",
+        "T"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-41",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            170
+          ],
+          "printed_pages": [
+            169
+          ],
+          "page_text_sha256": [
+            "b855ca0abe0fa77131406ab3f43542d17484894cf51dc19fcf84a936ae9422e8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-41-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI ona izotop uchun t=20s,T=5s. Qolgan fRemain ulushni top.",
+      "givens": [
+        {
+          "symbol": "t",
+          "value": "20",
+          "unit": "s"
+        },
+        {
+          "symbol": "T",
+          "value": "5",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "t",
+        "T"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-41",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            170
+          ],
+          "printed_pages": [
+            169
+          ],
+          "page_text_sha256": [
+            "b855ca0abe0fa77131406ab3f43542d17484894cf51dc19fcf84a936ae9422e8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-41-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI ona ansambli:decayRate=0,002 s⁻¹,N=6000. Actni top,doza emas.",
+      "givens": [
+        {
+          "symbol": "decayRate",
+          "value": "0.002",
+          "unit": "1/s"
+        },
+        {
+          "symbol": "N",
+          "value": "6000",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "decayRate",
+        "N"
+      ],
+      "suggested_unit": "Bq",
+      "unit_choices": [
+        "Bq",
+        "kBq"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-41",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            170
+          ],
+          "printed_pages": [
+            169
+          ],
+          "page_text_sha256": [
+            "b855ca0abe0fa77131406ab3f43542d17484894cf51dc19fcf84a936ae9422e8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-41-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "T=30s,ell2=0,693 deb berilgan ln(2) yaqinlashuvi. decayRateni1/sda top.",
+      "givens": [
+        {
+          "symbol": "ell2",
+          "value": "0.693",
+          "unit": "1"
+        },
+        {
+          "symbol": "T",
+          "value": "30",
+          "unit": "s"
+        }
+      ],
+      "symbols": [
+        "ell2",
+        "T"
+      ],
+      "suggested_unit": "1/s",
+      "unit_choices": [
+        "1/s"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-41",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            170
+          ],
+          "printed_pages": [
+            169
+          ],
+          "page_text_sha256": [
+            "b855ca0abe0fa77131406ab3f43542d17484894cf51dc19fcf84a936ae9422e8"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-42-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "SHARTLI alfa kanal:ona A=210,Z=84. Qiz yadro Adni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "210",
+          "unit": "1"
+        },
+        {
+          "symbol": "Z",
+          "value": "84",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "A",
+        "Z"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-42",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            172
+          ],
+          "printed_pages": [
+            171
+          ],
+          "page_text_sha256": [
+            "a5adb7e51f75ec6d7bdf5b87592b526c08d7c3478d987a96340505be8bf726dd"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-42-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI alfa kanal:ona A=210,Z=84. Qiz yadro Zdni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "210",
+          "unit": "1"
+        },
+        {
+          "symbol": "Z",
+          "value": "84",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "A",
+        "Z"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-42",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            172
+          ],
+          "printed_pages": [
+            171
+          ],
+          "page_text_sha256": [
+            "a5adb7e51f75ec6d7bdf5b87592b526c08d7c3478d987a96340505be8bf726dd"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-42-r1:q8",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI beta-minus kanal:ona A=24,Z=11. Qiz yadro Zdni top.",
+      "givens": [
+        {
+          "symbol": "A",
+          "value": "24",
+          "unit": "1"
+        },
+        {
+          "symbol": "Z",
+          "value": "11",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "A",
+        "Z"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-42",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            173
+          ],
+          "printed_pages": [
+            172
+          ],
+          "page_text_sha256": [
+            "5f7de5d9ec7ab049d6a0f259a732459a84c4eb19ecf7edfd32749fbd0c0698fe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-42-r1:q9",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI kanalning to‘liq bir xil turdagi tinch massalari:mIn=6,72e−27kg,mOut=6,715e−27kg,c=3e8m/s. Ishorali Qni top.",
+      "givens": [
+        {
+          "symbol": "mIn",
+          "value": "6.72e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "mOut",
+          "value": "6.715e-27",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "mIn",
+        "mOut",
+        "c"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-42",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            172
+          ],
+          "printed_pages": [
+            171
+          ],
+          "page_text_sha256": [
+            "a5adb7e51f75ec6d7bdf5b87592b526c08d7c3478d987a96340505be8bf726dd"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-43-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "Protonning uch valent kvarki:nU=2,nD=1. qOverE=q/e ni top.",
+      "givens": [
+        {
+          "symbol": "nU",
+          "value": "2",
+          "unit": "1"
+        },
+        {
+          "symbol": "nD",
+          "value": "1",
+          "unit": "1"
+        }
+      ],
+      "symbols": [
+        "nU",
+        "nD"
+      ],
+      "suggested_unit": "1",
+      "unit_choices": [
+        "1",
+        "%"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-43",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            177
+          ],
+          "printed_pages": [
+            176
+          ],
+          "page_text_sha256": [
+            "702f42c6c92bfdca1d099af3fa1a89dcf42b96b26bc442063d274f679e8f91d1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-43-r1:q7",
+      "response_kind": "numeric_quantity",
+      "phase": "independent",
+      "prompt": "SHARTLI tinch ona zarra mParent=2,4e−28kg faqat ikki fotonga aylangan,c=3e8m/s. Har bir foton Eqni top.",
+      "givens": [
+        {
+          "symbol": "mParent",
+          "value": "2.4e-28",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "value": "3e8",
+          "unit": "m/s"
+        }
+      ],
+      "symbols": [
+        "mParent",
+        "c"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-43",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            178
+          ],
+          "printed_pages": [
+            177
+          ],
+          "page_text_sha256": [
+            "6375d9bbd91828e5bac749ac336ff44c9666200ad34267a61b1aef31a3903afb"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "physics-11-section-44-r1:q6",
+      "response_kind": "numeric_quantity",
+      "phase": "guided",
+      "prompt": "FAKAT shartli energiya hisobi:Nevents=6butun hodisa,Qsingle=3,2e−11J/hodisa. Etotalni top.",
+      "givens": [
+        {
+          "symbol": "Nevents",
+          "value": "6",
+          "unit": "1"
+        },
+        {
+          "symbol": "Qsingle",
+          "value": "3.2e-11",
+          "unit": "J"
+        }
+      ],
+      "symbols": [
+        "Nevents",
+        "Qsingle"
+      ],
+      "suggested_unit": "J",
+      "unit_choices": [
+        "J",
+        "kJ",
+        "mJ",
+        "MJ"
+      ],
+      "source_refs": [
+        {
+          "book_id": "physics-uz-grade-11",
+          "topic_id": "physics-11-section-44",
+          "chapter_id": "physics-11-chapter-7",
+          "sha256": "e9c174ab3d9c6e2d02d50a69c4eaa23b6f010ab433f2eb3044d41660010e4f64",
+          "file_name": "fizika_11_uzb.pdf",
+          "verification": "original_pdf_text_and_image_checked",
+          "pdf_pages": [
+            180
+          ],
+          "printed_pages": [
+            179
+          ],
+          "page_text_sha256": [
+            "ad0ac6e323e7691aba8646e232f30f51dfaccb484c96d4a614be5b1bcdd57c54"
+          ]
+        }
+      ]
     }
   ]
 }
