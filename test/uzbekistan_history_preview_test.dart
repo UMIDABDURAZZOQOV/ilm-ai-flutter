@@ -490,7 +490,28 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  for (final (grade, count) in [(8, 41), (9, 39), (10, 28)]) {
+  testWidgets('grade11 opens independently with historical law context', (
+    tester,
+  ) async {
+    lesson = fixture('grade11_lesson1');
+    await mount(tester);
+    final picker = find.byType(DropdownButtonFormField<int>);
+    await tester.ensureVisible(picker);
+    await tester.tap(picker);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('11-sinf').last);
+    await tester.pumpAndSettle();
+    final button = find.text('Darsni ochish');
+    await tester.ensureVisible(button);
+    await tester.pumpAndSettle();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(requests.last.path, contains('uzh-11-1-r1'));
+    expect(find.text('Mashqlarga o‘tish'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  for (final (grade, count) in [(8, 41), (9, 39), (10, 28), (11, 5)]) {
     for (var n = 1; n <= count; n++) {
       testWidgets(
         'grade$grade lesson $n keeps raw names and fits chronology at large text',
