@@ -1,0 +1,785 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:c9796806-fe85-47c9-8dd8-99e0d09ce7a9",
+  "lesson_key": "uzh-10-13-r1",
+  "expires_at": "2026-10-28T08:50:16.378161+00:00",
+  "title": "O‘zbek xotin-qizlarining ozodlikka chiqarish jarayoni va muammolar",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-10-13-r1:c1",
+        "title": "Hujum kampaniyasi",
+        "body": "Hujum kampaniyasi 1926-yilda e’lon qilinib, ommaviy tadbirlar 1927-yil 8-martda boshlangan. E’lon, komissiya tuzish va ommaviy harakat boshlanishi bir xil sana emas.",
+        "fact_ids": [
+          "uzh-10-topic-13:campaign"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:campaign",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              71,
+              72
+            ],
+            "printed_pages": [
+              71,
+              72
+            ],
+            "native_text_sha256": [
+              "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 244.919
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-13-r1:c2",
+        "title": "Huquq va xavfsizlik",
+        "body": "Ayollarning ta’lim, mehnat va jamoat hayotidagi ishtiroki kengayishi bilan birga majburlash va ularga qarshi zo‘ravonliklar ham bo‘lgan. Kiyim tanlovi yoki e’tiqod insonni zo‘ravonlikka loyiq qilmaydi. Muallifning maqsadlar haqidagi bahosi manba talqini sifatida muhokama qilinadi.",
+        "fact_ids": [
+          "uzh-10-topic-13:violence"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:violence",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              71,
+              72,
+              73
+            ],
+            "printed_pages": [
+              71,
+              72,
+              73
+            ],
+            "native_text_sha256": [
+              "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 244.919
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-13-r1:c3",
+        "title": "Artel va kooperatsiya",
+        "body": "Ayollar dastlab hunarmandchilik kooperatsiyalariga, jumladan tikuvchilik va do‘ppi tayyorlashga jalb etilgan. Artel kasb-hunar egalarining jamoa bo‘lib ishlash uyushmasi sifatida izohlanadi.",
+        "fact_ids": [
+          "uzh-10-topic-13:artel"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:artel",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              72,
+              74
+            ],
+            "printed_pages": [
+              72,
+              74
+            ],
+            "native_text_sha256": [
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-13-r1:c4",
+        "title": "Ayollar klublari",
+        "body": "Ayollar klublarida suhbatlar, tibbiy maslahat va bolalarni vrach ko‘rigidan o‘tkazish kabi ishlar bo‘lgan. Kutubxona, bog‘cha va yaslilar ham tilga olinadi. Klub faqat sanoat korxonasi yoki faqat siyosiy idora emas.",
+        "fact_ids": [
+          "uzh-10-topic-13:clubs"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:clubs",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              73
+            ],
+            "printed_pages": [
+              73
+            ],
+            "native_text_sha256": [
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-13-r1:c5",
+        "title": "Jamoat hayotidagi shaxslar",
+        "body": "Jahon Obidova va Tojixon Shodiyeva davlat-jamoat ishlaridagi ayollar sifatida keltiriladi. Halima Nosirova, Tamaraxonim, Sora Eshonto‘rayeva va Mukarram Turg‘unboyeva esa san’atdagi iste’dodlar qatorida sanaladi.",
+        "fact_ids": [
+          "uzh-10-topic-13:leaders"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:leaders",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              73,
+              74
+            ],
+            "printed_pages": [
+              73,
+              74
+            ],
+            "native_text_sha256": [
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779",
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-13-r1:c6",
+        "title": "Kooperatsiya ma’nosi",
+        "body": "Kooperatsiya kishilar yoki tashkilotlarning o‘zaro hamkorlikda faoliyat yuritishini tashkil qilish shakli deb izohlanadi. Uning ta’rifi har bir tarixiy kampaniya amalda ixtiyoriy bo‘lganini o‘zi tasdiqlamaydi.",
+        "fact_ids": [
+          "uzh-10-topic-13:cooperation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:cooperation",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              74
+            ],
+            "printed_pages": [
+              74
+            ],
+            "native_text_sha256": [
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Artel — birgalikdagi hunar uyushmasi; ayollar klubi — uchrashuv va ma’rifiy-ijtimoiy ishlar maskani. Ikkisini vazifasi bilan tanib, bir xil muassasa deb olmang.",
+        "fact_ids": [
+          "uzh-10-topic-13:artel",
+          "uzh-10-topic-13:clubs",
+          "uzh-10-topic-13:cooperation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:artel",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              72,
+              74
+            ],
+            "printed_pages": [
+              72,
+              74
+            ],
+            "native_text_sha256": [
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:clubs",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              73
+            ],
+            "printed_pages": [
+              73
+            ],
+            "native_text_sha256": [
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:cooperation",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              74
+            ],
+            "printed_pages": [
+              74
+            ],
+            "native_text_sha256": [
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Ta’lim va ishtirok imkoniyati, majburiy mehnat yoki bosim va shaxsiy xavfsizlikni alohida baholang. Shaxsning kiyimi yoki e’tiqodini to‘g‘ri-noto‘g‘ri deb baholamang.",
+        "fact_ids": [
+          "uzh-10-topic-13:campaign",
+          "uzh-10-topic-13:violence",
+          "uzh-10-topic-13:artel",
+          "uzh-10-topic-13:clubs",
+          "uzh-10-topic-13:leaders",
+          "uzh-10-topic-13:cooperation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:campaign",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              71,
+              72
+            ],
+            "printed_pages": [
+              71,
+              72
+            ],
+            "native_text_sha256": [
+              "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 244.919
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:violence",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              71,
+              72,
+              73
+            ],
+            "printed_pages": [
+              71,
+              72,
+              73
+            ],
+            "native_text_sha256": [
+              "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 244.919
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:artel",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              72,
+              74
+            ],
+            "printed_pages": [
+              72,
+              74
+            ],
+            "native_text_sha256": [
+              "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:clubs",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              73
+            ],
+            "printed_pages": [
+              73
+            ],
+            "native_text_sha256": [
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:leaders",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              73,
+              74
+            ],
+            "printed_pages": [
+              73,
+              74
+            ],
+            "native_text_sha256": [
+              "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779",
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-2",
+            "topic_id": "uzh-10-topic-13",
+            "fact_id": "uzh-10-topic-13:cooperation",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              74
+            ],
+            "printed_pages": [
+              74
+            ],
+            "native_text_sha256": [
+              "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-2",
+        "topic_id": "uzh-10-topic-13",
+        "fact_id": "uzh-10-topic-13:campaign",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          71,
+          72
+        ],
+        "printed_pages": [
+          71,
+          72
+        ],
+        "native_text_sha256": [
+          "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+          "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 244.919
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-2",
+        "topic_id": "uzh-10-topic-13",
+        "fact_id": "uzh-10-topic-13:violence",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          71,
+          72,
+          73
+        ],
+        "printed_pages": [
+          71,
+          72,
+          73
+        ],
+        "native_text_sha256": [
+          "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+          "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+          "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 244.919
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-2",
+        "topic_id": "uzh-10-topic-13",
+        "fact_id": "uzh-10-topic-13:artel",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          72,
+          74
+        ],
+        "printed_pages": [
+          72,
+          74
+        ],
+        "native_text_sha256": [
+          "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+          "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-2",
+        "topic_id": "uzh-10-topic-13",
+        "fact_id": "uzh-10-topic-13:clubs",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          73
+        ],
+        "printed_pages": [
+          73
+        ],
+        "native_text_sha256": [
+          "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-2",
+        "topic_id": "uzh-10-topic-13",
+        "fact_id": "uzh-10-topic-13:leaders",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          73,
+          74
+        ],
+        "printed_pages": [
+          73,
+          74
+        ],
+        "native_text_sha256": [
+          "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779",
+          "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-2",
+        "topic_id": "uzh-10-topic-13",
+        "fact_id": "uzh-10-topic-13:cooperation",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          74
+        ],
+        "printed_pages": [
+          74
+        ],
+        "native_text_sha256": [
+          "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-10-13-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Kasb-hunar egalarining jamoa uyushmasi qanday ataladi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Komsomol"
+        },
+        {
+          "id": "o2",
+          "label": "Artel"
+        },
+        {
+          "id": "o3",
+          "label": "Majlis"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-2",
+          "topic_id": "uzh-10-topic-13",
+          "fact_id": "uzh-10-topic-13:artel",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            72,
+            74
+          ],
+          "printed_pages": [
+            72,
+            74
+          ],
+          "native_text_sha256": [
+            "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2",
+            "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-13-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "O‘zaro hamkorlikda faoliyat tashkil qilish shakli nima?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Manifest"
+        },
+        {
+          "id": "o2",
+          "label": "Surgun"
+        },
+        {
+          "id": "o3",
+          "label": "Kooperatsiya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-2",
+          "topic_id": "uzh-10-topic-13",
+          "fact_id": "uzh-10-topic-13:cooperation",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            74
+          ],
+          "printed_pages": [
+            74
+          ],
+          "native_text_sha256": [
+            "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-13-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Darsdagi davlat-jamoat ishlarida qatnashgan shaxs kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Jahon Obidova"
+        },
+        {
+          "id": "o2",
+          "label": "Tamaraxonim"
+        },
+        {
+          "id": "o3",
+          "label": "Halima Nosirova"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-2",
+          "topic_id": "uzh-10-topic-13",
+          "fact_id": "uzh-10-topic-13:leaders",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            73,
+            74
+          ],
+          "printed_pages": [
+            73,
+            74
+          ],
+          "native_text_sha256": [
+            "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779",
+            "85c8100b84bbb4cffbbdf65c3705e9d1dbcccd59502a88cfd0784c78417e410f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-13-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "1927-yil ommaviy tadbirlari boshlangan kampaniya nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-2",
+          "topic_id": "uzh-10-topic-13",
+          "fact_id": "uzh-10-topic-13:campaign",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            71,
+            72
+          ],
+          "printed_pages": [
+            71,
+            72
+          ],
+          "native_text_sha256": [
+            "1f43bed5b1d3e8082c2c6d316895abdb21ecc808d03328e1dbe89d6b26e479a9",
+            "bce8eedccc1335b195e00e45c553fd5617ab7cb38b2ebaddfbc430022e4bd5b2"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 244.919
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-13-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Tibbiy maslahat va ma’rifiy suhbat o‘tkazilgan maskan turini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-2",
+          "topic_id": "uzh-10-topic-13",
+          "fact_id": "uzh-10-topic-13:clubs",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            73
+          ],
+          "printed_pages": [
+            73
+          ],
+          "native_text_sha256": [
+            "93d50217480114f45c8d77b1832803d47d8bb81ccc5f7ca7da8b0d0c4a7bf779"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

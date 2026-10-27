@@ -485,7 +485,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  for (final (grade, count) in [(8, 41), (9, 39), (10, 10)]) {
+  for (final (grade, count) in [(8, 41), (9, 39), (10, 15)]) {
     for (var n = 1; n <= count; n++) {
       testWidgets(
         'grade$grade lesson $n keeps raw names and fits chronology at large text',
