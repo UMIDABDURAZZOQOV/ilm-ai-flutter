@@ -1,0 +1,817 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:fd8b7bc8-5c69-44b2-95e5-13aff80dac6c",
+  "lesson_key": "uzh-11-18-r1",
+  "expires_at": "2026-10-28T10:03:48.542013+00:00",
+  "title": "O‘zbekistonning Markaziy Osiyo mamlakatlari bilan o‘zaro hamkorligi",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-11-18-r1:c1",
+        "title": "Mintaqaviy hamkorlik",
+        "body": "1990-yillarda Markaziy Osiyo rahbarlari uchrashuvlari, iqtisodiy hamkorlik va Orol bo‘yicha maslahatlashuvlar o‘tkazilgan. 2017–2018-yillardagi yangi tashriflar ham alohida bosqich sifatida yoritiladi. Uchrashuv va amalga oshgan shartnoma bir xil natija emas.",
+        "fact_ids": [
+          "uzh-11-topic-18:regional"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:regional",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              113,
+              114
+            ],
+            "printed_pages": [
+              113,
+              114
+            ],
+            "native_text_sha256": [
+              "1d5e1e3817413821dd12c44466763b07e666eed987b687f3a3dd48cee37cd1f3",
+              "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 396.227
+          }
+        ]
+      },
+      {
+        "key": "uzh-11-18-r1:c2",
+        "title": "Qozog‘iston",
+        "body": "1992-yil do‘stlik va hamkorlik shartnomasi, keyingi chegara bo‘yicha hujjatlar hamda 2013-yil strategik sheriklik sanaladi. Kitobdagi chegara ulushi yoki diaspora soni bugungi tekshirilgan o‘lchov emas.",
+        "fact_ids": [
+          "uzh-11-topic-18:kazakhstan"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:kazakhstan",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              114,
+              115,
+              116
+            ],
+            "printed_pages": [
+              114,
+              115,
+              116
+            ],
+            "native_text_sha256": [
+              "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940",
+              "cbd33e77c3209b1d580e575ce17af9bc51dad4922919f0fa1e381676494c5547",
+              "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-11-18-r1:c3",
+        "title": "Qirg‘iziston",
+        "body": "1992-yilgi do‘stlik va hamkorlik shartnomasi, 2010-yil qochqinlarga yordam va 2017-yil chegara postlarini ochish kabi voqealar yoritiladi. Etnik mojaro ayrim zo‘ravonlar xatti-harakatini barcha xalq vakillariga yuklashga asos emas.",
+        "fact_ids": [
+          "uzh-11-topic-18:kyrgyz"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:kyrgyz",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              116,
+              117
+            ],
+            "printed_pages": [
+              116,
+              117
+            ],
+            "native_text_sha256": [
+              "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f",
+              "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-11-18-r1:c4",
+        "title": "Tojikiston",
+        "body": "1992–1997-yil fuqarolar urushi, keyingi yarashuv va ikki tomonlama iqtisodiy aloqalar keltiriladi. 2017-yilda Dushanbe–Toshkent havo qatnovi qayta yo‘lga qo‘yilgan. Aviaqatnov va siyosiy yarashuv turli bosqichlardir.",
+        "fact_ids": [
+          "uzh-11-topic-18:tajik"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:tajik",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              117,
+              118
+            ],
+            "printed_pages": [
+              117,
+              118
+            ],
+            "native_text_sha256": [
+              "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366",
+              "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-11-18-r1:c5",
+        "title": "Turkmaniston",
+        "body": "Do‘stlik, chegara va suv masalalari bo‘yicha hujjatlar, madaniy markaz va 2017-yil strategik sheriklik shartnomasi sanaladi. Nashrda o‘sha davr rahbarlari va tashriflari haqida gapiriladi; bugungi tarkibni taxmin qilmaymiz.",
+        "fact_ids": [
+          "uzh-11-topic-18:turkmen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:turkmen",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              118,
+              119
+            ],
+            "printed_pages": [
+              118,
+              119
+            ],
+            "native_text_sha256": [
+              "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55",
+              "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-11-18-r1:c6",
+        "title": "Delimitatsiya va sammit",
+        "body": "Delimitatsiya shartnomaga muvofiq chegarani tavsiflash va xaritalashtirish orqali belgilash bilan bog‘liq. Sammit davlat rahbarlarining oliy darajadagi uchrashuvi. Chegara xaritasi bilan yig‘ilish shaklini farqlang.",
+        "fact_ids": [
+          "uzh-11-topic-18:terms"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:terms",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Qozog‘iston bilan chegara hujjati; Tojikiston bilan aviaqatnov; Turkmaniston bilan suv va iqtisodiy kelishuvlar — turli hamkorlik turlari. Ularni yagona sana yoki bitta shartnoma deb olmang.",
+        "fact_ids": [
+          "uzh-11-topic-18:kazakhstan",
+          "uzh-11-topic-18:tajik",
+          "uzh-11-topic-18:turkmen",
+          "uzh-11-topic-18:terms"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:kazakhstan",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              114,
+              115,
+              116
+            ],
+            "printed_pages": [
+              114,
+              115,
+              116
+            ],
+            "native_text_sha256": [
+              "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940",
+              "cbd33e77c3209b1d580e575ce17af9bc51dad4922919f0fa1e381676494c5547",
+              "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:tajik",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              117,
+              118
+            ],
+            "printed_pages": [
+              117,
+              118
+            ],
+            "native_text_sha256": [
+              "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366",
+              "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:turkmen",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              118,
+              119
+            ],
+            "printed_pages": [
+              118,
+              119
+            ],
+            "native_text_sha256": [
+              "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55",
+              "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:terms",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Mintaqaviy uchrashuv, chegara hujjati, madaniy tadbir va aviaqatnovni turli natija dalillari bilan qiyoslang. Bir mamlakat xalqiga umumiy siyosiy niyat yuklamang.",
+        "fact_ids": [
+          "uzh-11-topic-18:regional",
+          "uzh-11-topic-18:kazakhstan",
+          "uzh-11-topic-18:kyrgyz",
+          "uzh-11-topic-18:tajik",
+          "uzh-11-topic-18:turkmen",
+          "uzh-11-topic-18:terms"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:regional",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              113,
+              114
+            ],
+            "printed_pages": [
+              113,
+              114
+            ],
+            "native_text_sha256": [
+              "1d5e1e3817413821dd12c44466763b07e666eed987b687f3a3dd48cee37cd1f3",
+              "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 396.227
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:kazakhstan",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              114,
+              115,
+              116
+            ],
+            "printed_pages": [
+              114,
+              115,
+              116
+            ],
+            "native_text_sha256": [
+              "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940",
+              "cbd33e77c3209b1d580e575ce17af9bc51dad4922919f0fa1e381676494c5547",
+              "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:kyrgyz",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              116,
+              117
+            ],
+            "printed_pages": [
+              116,
+              117
+            ],
+            "native_text_sha256": [
+              "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f",
+              "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:tajik",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              117,
+              118
+            ],
+            "printed_pages": [
+              117,
+              118
+            ],
+            "native_text_sha256": [
+              "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366",
+              "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:turkmen",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              118,
+              119
+            ],
+            "printed_pages": [
+              118,
+              119
+            ],
+            "native_text_sha256": [
+              "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55",
+              "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-11",
+            "grade": 11,
+            "chapter_id": "uzh-11-chapter-8",
+            "topic_id": "uzh-11-topic-18",
+            "fact_id": "uzh-11-topic-18:terms",
+            "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+            "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-11",
+        "grade": 11,
+        "chapter_id": "uzh-11-chapter-8",
+        "topic_id": "uzh-11-topic-18",
+        "fact_id": "uzh-11-topic-18:regional",
+        "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+        "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+        "pdf_pages": [
+          113,
+          114
+        ],
+        "printed_pages": [
+          113,
+          114
+        ],
+        "native_text_sha256": [
+          "1d5e1e3817413821dd12c44466763b07e666eed987b687f3a3dd48cee37cd1f3",
+          "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 396.227
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-11",
+        "grade": 11,
+        "chapter_id": "uzh-11-chapter-8",
+        "topic_id": "uzh-11-topic-18",
+        "fact_id": "uzh-11-topic-18:kazakhstan",
+        "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+        "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+        "pdf_pages": [
+          114,
+          115,
+          116
+        ],
+        "printed_pages": [
+          114,
+          115,
+          116
+        ],
+        "native_text_sha256": [
+          "1286f5ca4e4e0ac8bec30e2b5b5ef70db332e5f070fcf6afa0774be2b3c44940",
+          "cbd33e77c3209b1d580e575ce17af9bc51dad4922919f0fa1e381676494c5547",
+          "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-11",
+        "grade": 11,
+        "chapter_id": "uzh-11-chapter-8",
+        "topic_id": "uzh-11-topic-18",
+        "fact_id": "uzh-11-topic-18:kyrgyz",
+        "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+        "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+        "pdf_pages": [
+          116,
+          117
+        ],
+        "printed_pages": [
+          116,
+          117
+        ],
+        "native_text_sha256": [
+          "1d83997c8d853c2ea9161798092bf126235d3a12b6b21a341840f6cf018da88f",
+          "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-11",
+        "grade": 11,
+        "chapter_id": "uzh-11-chapter-8",
+        "topic_id": "uzh-11-topic-18",
+        "fact_id": "uzh-11-topic-18:tajik",
+        "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+        "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+        "pdf_pages": [
+          117,
+          118
+        ],
+        "printed_pages": [
+          117,
+          118
+        ],
+        "native_text_sha256": [
+          "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366",
+          "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-11",
+        "grade": 11,
+        "chapter_id": "uzh-11-chapter-8",
+        "topic_id": "uzh-11-topic-18",
+        "fact_id": "uzh-11-topic-18:turkmen",
+        "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+        "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+        "pdf_pages": [
+          118,
+          119
+        ],
+        "printed_pages": [
+          118,
+          119
+        ],
+        "native_text_sha256": [
+          "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55",
+          "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-11",
+        "grade": 11,
+        "chapter_id": "uzh-11-chapter-8",
+        "topic_id": "uzh-11-topic-18",
+        "fact_id": "uzh-11-topic-18:terms",
+        "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+        "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+        "pdf_pages": [
+          119
+        ],
+        "printed_pages": [
+          119
+        ],
+        "native_text_sha256": [
+          "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-11-18-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Dushanbe–Toshkent qatnovi qaysi qo‘shni davlat bilan bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Tojikiston"
+        },
+        {
+          "id": "o2",
+          "label": "Turkmaniston"
+        },
+        {
+          "id": "o3",
+          "label": "Qozog‘iston"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-11",
+          "grade": 11,
+          "chapter_id": "uzh-11-chapter-8",
+          "topic_id": "uzh-11-topic-18",
+          "fact_id": "uzh-11-topic-18:tajik",
+          "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+          "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+          "pdf_pages": [
+            117,
+            118
+          ],
+          "printed_pages": [
+            117,
+            118
+          ],
+          "native_text_sha256": [
+            "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366",
+            "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-11-18-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Shartnoma va xarita orqali chegara belgilash atamasi qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Konvertatsiya"
+        },
+        {
+          "id": "o2",
+          "label": "Delimitatsiya"
+        },
+        {
+          "id": "o3",
+          "label": "Skrining"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-11",
+          "grade": 11,
+          "chapter_id": "uzh-11-chapter-8",
+          "topic_id": "uzh-11-topic-18",
+          "fact_id": "uzh-11-topic-18:terms",
+          "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+          "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+          "pdf_pages": [
+            119
+          ],
+          "printed_pages": [
+            119
+          ],
+          "native_text_sha256": [
+            "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-11-18-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Davlat rahbarlari darajasidagi yig‘ilish nima?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Seminariya"
+        },
+        {
+          "id": "o2",
+          "label": "Artel"
+        },
+        {
+          "id": "o3",
+          "label": "Sammit"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-11",
+          "grade": 11,
+          "chapter_id": "uzh-11-chapter-8",
+          "topic_id": "uzh-11-topic-18",
+          "fact_id": "uzh-11-topic-18:terms",
+          "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+          "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+          "pdf_pages": [
+            119
+          ],
+          "printed_pages": [
+            119
+          ],
+          "native_text_sha256": [
+            "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-11-18-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Dushanbe–Toshkent yo‘nalishidagi Tojikiston shahrini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-11",
+          "grade": 11,
+          "chapter_id": "uzh-11-chapter-8",
+          "topic_id": "uzh-11-topic-18",
+          "fact_id": "uzh-11-topic-18:tajik",
+          "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+          "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+          "pdf_pages": [
+            117,
+            118
+          ],
+          "printed_pages": [
+            117,
+            118
+          ],
+          "native_text_sha256": [
+            "d2d248dac2f1aec4956878ac61b01485452378b5699e9d3fc1de54ff0ebde366",
+            "b3031c99aa573f421f8ad3e50975c4a908e0f1d52e71a5fabe0e66cb2f44cc55"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-11-18-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Oliy darajadagi uchrashuv atamasini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-11",
+          "grade": 11,
+          "chapter_id": "uzh-11-chapter-8",
+          "topic_id": "uzh-11-topic-18",
+          "fact_id": "uzh-11-topic-18:terms",
+          "file_name": "ozbekiston_tarixi_11_uzb.pdf",
+          "sha256": "485d04513a799d22ad935c9298d4ccf8dc7976396762717c877acbe9ca6d205d",
+          "pdf_pages": [
+            119
+          ],
+          "printed_pages": [
+            119
+          ],
+          "native_text_sha256": [
+            "7383fecc3cda3ab25ce8fd660c58e3250ea48f0a6aa82b9186169887d1b92b5f"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
