@@ -1,0 +1,808 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:b58a674d-c60e-4d34-b353-0bbcd51c921c",
+  "lesson_key": "uzh-10-25-r1",
+  "expires_at": "2026-10-28T09:07:33.851196+00:00",
+  "title": "O‘zbekistonda ekologik vaziyatning og‘irlashishi va Orol fojiasi",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-10-25-r1:c1",
+        "title": "Ekologik muvozanat",
+        "body": "Sanoat, transport va qishloq xo‘jaligi faoliyatini nazoratsiz kengaytirish havoga, suvga va tuproqqa zarar yetkazgani bayon qilinadi. Ishlab chiqarish maqsadi bilan atrof-muhit xavfsizligini alohida baholash zarur.",
+        "fact_ids": [
+          "uzh-10-topic-25:pollution"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:pollution",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              123,
+              124
+            ],
+            "printed_pages": [
+              123,
+              124
+            ],
+            "native_text_sha256": [
+              "a1e1ae399ff342e1fafe561acd4f670b93ea914b3e143c253710fae41ab81e7d",
+              "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 475.016
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-25-r1:c2",
+        "title": "Defoliatsiya",
+        "body": "Defoliatsiya g‘o‘za bargini to‘kish jarayoni sifatida izohlanadi. Zaharli kimyoviy moddalardan foydalanishning tabiat va aholi salomatligiga ta’siri tanqid qilinadi. Bu tarixiy izoh; kimyoviy modda qo‘llash yo‘riqnomasi emas.",
+        "fact_ids": [
+          "uzh-10-topic-25:defoliation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:defoliation",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              124,
+              125
+            ],
+            "printed_pages": [
+              124,
+              125
+            ],
+            "native_text_sha256": [
+              "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-25-r1:c3",
+        "title": "Orolga suv kelishi",
+        "body": "Sug‘oriladigan maydonlar kengayishi bilan Amudaryo va Sirdaryodan Orolga keladigan suv kamaygan. Suv sathi pasayishi va sho‘rlanish baliqchilik hamda boshqa xo‘jaliklarga zarar yetkazgan. Ikki daryo va dengizning vazifasini ajrating.",
+        "fact_ids": [
+          "uzh-10-topic-25:rivers"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:rivers",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126
+            ],
+            "printed_pages": [
+              125,
+              126
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-25-r1:c4",
+        "title": "Orolbo‘yi",
+        "body": "Quyi Amudaryo va Orolbo‘yi muammolari O‘zbekiston hamda Qozog‘iston hududlariga ta’sir qilgan. Mo‘ynoq, Qo‘ng‘irot va Chimboy atrofidagi aholi turmushidagi qiyinchiliklar tilga olinadi. Bitta joy misoli barcha hududlarda zarar aynan bir xil bo‘lganini isbotlamaydi.",
+        "fact_ids": [
+          "uzh-10-topic-25:region"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:region",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126,
+              127
+            ],
+            "printed_pages": [
+              125,
+              126,
+              127
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+              "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-25-r1:c5",
+        "title": "Orolqum",
+        "body": "Dengizning qurigan tubida qum-sho‘rxok cho‘l — Orolqum paydo bo‘lgan. Bu topografik o‘zgarish, dengizning avvalgi hajmi saqlanib qolganini anglatmaydi. Kitobdagi maydon va bo‘laklar tasviri nashr davri holatidir, bugungi o‘lchov emas.",
+        "fact_ids": [
+          "uzh-10-topic-25:aralkum"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:aralkum",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126
+            ],
+            "printed_pages": [
+              125,
+              126
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-10-25-r1:c6",
+        "title": "Muammo ko‘lami va hamkorlik",
+        "body": "Mustaqillikdan keyin O‘zbekiston va Qozog‘iston rahbarlari muammoni hal etish masalasini muhokama qilgani qayd etiladi. Muallifning siyosiy javobgarlik haqidagi bahosi, ekologik sabab va tibbiy statistikani turli dalil turlari sifatida ajrating.",
+        "fact_ids": [
+          "uzh-10-topic-25:responses"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:responses",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              124,
+              125,
+              126,
+              127
+            ],
+            "printed_pages": [
+              124,
+              125,
+              126,
+              127
+            ],
+            "native_text_sha256": [
+              "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+              "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Amudaryo va Sirdaryo — suv keltiruvchi daryolar; Orol — qisqargan dengiz; Orolqum — ochilib qolgan tubdagi cho‘l. Ular bir-birining muqobil nomi emas.",
+        "fact_ids": [
+          "uzh-10-topic-25:rivers",
+          "uzh-10-topic-25:aralkum"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:rivers",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126
+            ],
+            "printed_pages": [
+              125,
+              126
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:aralkum",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126
+            ],
+            "printed_pages": [
+              125,
+              126
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Suv sarfi, sho‘rlanish, xo‘jalik zarari va sog‘liq haqidagi da’volarni alohida ajrating. Asl sahifa tasviri o‘sha davrni ko‘rsatadi; uni bugungi holat deb taqdim etmang.",
+        "fact_ids": [
+          "uzh-10-topic-25:pollution",
+          "uzh-10-topic-25:defoliation",
+          "uzh-10-topic-25:rivers",
+          "uzh-10-topic-25:region",
+          "uzh-10-topic-25:aralkum",
+          "uzh-10-topic-25:responses"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:pollution",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              123,
+              124
+            ],
+            "printed_pages": [
+              123,
+              124
+            ],
+            "native_text_sha256": [
+              "a1e1ae399ff342e1fafe561acd4f670b93ea914b3e143c253710fae41ab81e7d",
+              "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 475.016
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:defoliation",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              124,
+              125
+            ],
+            "printed_pages": [
+              124,
+              125
+            ],
+            "native_text_sha256": [
+              "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:rivers",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126
+            ],
+            "printed_pages": [
+              125,
+              126
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:region",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126,
+              127
+            ],
+            "printed_pages": [
+              125,
+              126,
+              127
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+              "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:aralkum",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              125,
+              126
+            ],
+            "printed_pages": [
+              125,
+              126
+            ],
+            "native_text_sha256": [
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-10",
+            "grade": 10,
+            "chapter_id": "uzh-10-chapter-5",
+            "topic_id": "uzh-10-topic-25",
+            "fact_id": "uzh-10-topic-25:responses",
+            "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+            "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+            "pdf_pages": [
+              124,
+              125,
+              126,
+              127
+            ],
+            "printed_pages": [
+              124,
+              125,
+              126,
+              127
+            ],
+            "native_text_sha256": [
+              "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+              "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+              "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+              "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-5",
+        "topic_id": "uzh-10-topic-25",
+        "fact_id": "uzh-10-topic-25:pollution",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          123,
+          124
+        ],
+        "printed_pages": [
+          123,
+          124
+        ],
+        "native_text_sha256": [
+          "a1e1ae399ff342e1fafe561acd4f670b93ea914b3e143c253710fae41ab81e7d",
+          "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 475.016
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-5",
+        "topic_id": "uzh-10-topic-25",
+        "fact_id": "uzh-10-topic-25:defoliation",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          124,
+          125
+        ],
+        "printed_pages": [
+          124,
+          125
+        ],
+        "native_text_sha256": [
+          "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+          "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-5",
+        "topic_id": "uzh-10-topic-25",
+        "fact_id": "uzh-10-topic-25:rivers",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          125,
+          126
+        ],
+        "printed_pages": [
+          125,
+          126
+        ],
+        "native_text_sha256": [
+          "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+          "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-5",
+        "topic_id": "uzh-10-topic-25",
+        "fact_id": "uzh-10-topic-25:region",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          125,
+          126,
+          127
+        ],
+        "printed_pages": [
+          125,
+          126,
+          127
+        ],
+        "native_text_sha256": [
+          "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+          "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+          "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-5",
+        "topic_id": "uzh-10-topic-25",
+        "fact_id": "uzh-10-topic-25:aralkum",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          125,
+          126
+        ],
+        "printed_pages": [
+          125,
+          126
+        ],
+        "native_text_sha256": [
+          "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+          "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-10",
+        "grade": 10,
+        "chapter_id": "uzh-10-chapter-5",
+        "topic_id": "uzh-10-topic-25",
+        "fact_id": "uzh-10-topic-25:responses",
+        "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+        "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+        "pdf_pages": [
+          124,
+          125,
+          126,
+          127
+        ],
+        "printed_pages": [
+          124,
+          125,
+          126,
+          127
+        ],
+        "native_text_sha256": [
+          "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+          "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+          "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+          "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-10-25-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Qurigan dengiz tubidagi cho‘l qanday ataladi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Orolqum"
+        },
+        {
+          "id": "o2",
+          "label": "Mirzacho‘l"
+        },
+        {
+          "id": "o3",
+          "label": "Gazli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-5",
+          "topic_id": "uzh-10-topic-25",
+          "fact_id": "uzh-10-topic-25:aralkum",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            125,
+            126
+          ],
+          "printed_pages": [
+            125,
+            126
+          ],
+          "native_text_sha256": [
+            "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+            "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-25-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "G‘o‘za bargini to‘kish jarayoni qaysi atama bilan berilgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Evakuatsiya"
+        },
+        {
+          "id": "o2",
+          "label": "Defoliatsiya"
+        },
+        {
+          "id": "o3",
+          "label": "Natsionalizatsiya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-5",
+          "topic_id": "uzh-10-topic-25",
+          "fact_id": "uzh-10-topic-25:defoliation",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            124,
+            125
+          ],
+          "printed_pages": [
+            124,
+            125
+          ],
+          "native_text_sha256": [
+            "6c8349520c6b637cf9b3b15ad5a60167ed6bc4471a643b757f7786be0427ff35",
+            "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-25-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Suv va sho‘rlanish o‘zgarishidan zarar ko‘rgan xo‘jalik tarmog‘i qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Temiryo‘l"
+        },
+        {
+          "id": "o2",
+          "label": "Aviatsiya"
+        },
+        {
+          "id": "o3",
+          "label": "Baliqchilik"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-5",
+          "topic_id": "uzh-10-topic-25",
+          "fact_id": "uzh-10-topic-25:rivers",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            125,
+            126
+          ],
+          "printed_pages": [
+            125,
+            126
+          ],
+          "native_text_sha256": [
+            "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+            "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-25-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Orolga suv yetkazuvchi darsda o‘tilgan ikki daryodan bittasini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-5",
+          "topic_id": "uzh-10-topic-25",
+          "fact_id": "uzh-10-topic-25:rivers",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            125,
+            126
+          ],
+          "printed_pages": [
+            125,
+            126
+          ],
+          "native_text_sha256": [
+            "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+            "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-10-25-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Orolbo‘yi ta’sir qilgan ikki davlatdan bittasini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-10",
+          "grade": 10,
+          "chapter_id": "uzh-10-chapter-5",
+          "topic_id": "uzh-10-topic-25",
+          "fact_id": "uzh-10-topic-25:region",
+          "file_name": "ozbekiston_tarixi_10_uzb.pdf",
+          "sha256": "ee69c917664b9db71b7da4e5269b952ad1a83f9a08d4c79ae035f8158394a628",
+          "pdf_pages": [
+            125,
+            126,
+            127
+          ],
+          "printed_pages": [
+            125,
+            126,
+            127
+          ],
+          "native_text_sha256": [
+            "604ca06b34c715e8f7aede3d3ca4e4075fcf6e20b0105a0d554d19affb89cddb",
+            "3e366e6302c7656209695e9da9782a65cbc91a7bd472188723427a846e2eaa5a",
+            "6d5d5ce2427e58d4fe712e7a1a7546a3afd88ef3876b8f8cbfb2733ccb57a7bd"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
