@@ -230,7 +230,7 @@ void main() {
           find.byKey(const ValueKey('world_history-grade-11')),
           findsOneWidget,
         );
-        expect(find.text('41/46 dars mavjud.'), findsOneWidget);
+        expect(find.text('46/46 dars mavjud.'), findsOneWidget);
         expect(find.byType(ExpansionTile), findsNWidgets(7));
         await capture(t, 'path-${dark ? 'dark' : 'light'}-200');
         await tapFinder(
@@ -253,6 +253,22 @@ void main() {
     expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
     expect(t.takeException(), isNull);
   });
+  testWidgets(
+    'finished grade6 can switch to the unimplemented grade7 catalogue',
+    (t) async {
+      catalog = fixture('batch09_completed_catalog');
+      expect(catalog['grade_content_complete'], true);
+      expect(catalog['course_complete'], false);
+      await mount(t);
+      await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
+      expect(requests.last.queryParameters['grade'], 7);
+      expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
+      expect(find.text('0/44 dars mavjud.'), findsOneWidget);
+      expect(find.text('Darsni boshlash'), findsNothing);
+      expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+      expect(t.takeException(), isNull);
+    },
+  );
   testWidgets('source sheet shows real bibliography and no PDF image', (
     t,
   ) async {
@@ -365,13 +381,15 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
-  for (var number = 2; number <= 41; number++) {
+  for (var number = 2; number <= 46; number++) {
     void selectParagraph() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('p${suffix}_lesson');
       results = fixture('p${suffix}_results');
       catalog = fixture(
-        number >= 37
+        number >= 42
+            ? 'batch09_completed_catalog'
+            : number >= 37
             ? 'batch08_completed_catalog'
             : number >= 32
             ? 'batch07_completed_catalog'
@@ -406,6 +424,27 @@ void main() {
       await tapFinder(
         t,
         find.descendant(of: item, matching: find.text('Darsni takrorlash')),
+      );
+    }
+
+    if (number >= 45) {
+      testWidgets(
+        'ancillary unit$number keeps its real title and source page',
+        (t) async {
+          selectParagraph();
+          await mount(t, size: const Size(320, 568), scale: 2);
+          await openParagraph(t);
+          final title = number == 45 ? 'Xulosa' : 'Yakuniy takrorlash';
+          expect(find.textContaining('§$number'), findsNothing);
+          await tapFinder(t, find.textContaining('Manba: $title').first);
+          expect(
+            find.textContaining('qadimgi_dunyo_tarixi_6_uzb.pdf'),
+            findsOneWidget,
+          );
+          expect(find.textContaining('Kitobdagi bet:'), findsOneWidget);
+          await capture(t, 'unit$number-source-200');
+          expect(t.takeException(), isNull);
+        },
       );
     }
 

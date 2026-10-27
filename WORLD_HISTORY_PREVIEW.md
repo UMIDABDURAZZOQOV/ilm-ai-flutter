@@ -6,9 +6,9 @@ Backend companion: `../ilm-ai-world-history/` on the matching feature branch.
 
 ## Current status
 
-Separate debug/loopback history screen and API are implemented. Grade6§1–41 are
-reviewed local-preview lessons:329 cards,241 MCQ,157 objective FRQ. **41/219 ready;
-178 remain.** Six books and961 original page images are inventoried;216 numbered
+Separate debug/loopback history screen and API are implemented. Grade6§1–44 plus conclusion and final review are
+reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **46/219 ready;
+173 remain.** Six books and961 original page images are inventoried;216 numbered
 blocks plus three conclusion/review units, with original chapters and ancillary links.
 Backend `docs/world_history/CHECKPOINT.md` is the continuation record.
 
@@ -17,19 +17,21 @@ reused. Six grades, original chapter expansion, bibliography, theory, MCQ, typed
 FRQ, self/teacher reflection and account/origin-scoped save/resume are present.
 No ordinary `main.dart`, release route, OAuth or other subject feature was changed.
 
-Measured QA:93 history tests, including actual API fixtures for all41 lessons,
-320×568/200% light/dark and UZ/RU/EN interface. Current full suite **702 passed**
-in03:23; full Flutter analysis **0 issues in101.8s**. Backend QA_REPORT.md records scope.
+Measured QA:106 history tests, including actual API fixtures for all46 units,
+320×568/200% light/dark and UZ/RU/EN interface. Current full suite **715 full tests passed in04:05**, full analysis **0 issues in90.6s**. Backend QA_REPORT.md records scope.
 Widget screenshots were visually inspected;
 no real Android/IME/TalkBack run or independent history-teacher approval is claimed.
 
-Batch02–08 add content/fixture coverage; the existing History runtime/UI contract
+Batch02–09 add content/fixture coverage; the existing History runtime/UI contract
 is unchanged. Large-fixture JSON decoding uses Dio `SyncTransformer` in widget
 tests so isolate decoding cannot escape the controlled test async zone; ordinary
 application networking remains unchanged. The initial failing§11 FRQ test was
-resolved in batch02; all93 targeted/702 full tests pass at the batch08 checkpoint.
+resolved in batch02; all106 targeted history tests pass at the batch09 checkpoint.
 Widget lesson-opening helpers resolve each original chapter from catalogue data;
-the new third-chapter§21 flow passes without changing production navigation.
+the third-chapter§21 and null-chapter conclusion/review flows pass. Grade6
+completion can switch to the original grade7 pending catalogue. Ancillary sources
+show their real titles, not invented§45/46; review questions retain original
+definition pages rather than relabelling184. Production navigation is unchanged.
 
 ## Local QA entrypoint
 

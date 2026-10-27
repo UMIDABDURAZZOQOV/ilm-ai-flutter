@@ -1,0 +1,2483 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "whv2:900096:11111111-1111-4111-8111-111111111111",
+  "lesson_key": "world-history-6-p46-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Yakuniy takrorlash",
+  "content": {
+    "cards": [
+      {
+        "title": "Atamani manba bilan qayta toping",
+        "body": "184-bet atama va sahifa havolalarini beradi. Ro‘yxatdagi nomni tanlang, so‘ng u tushuntirilgan asosiy sahifaga qayting. Quyidagi misollarning ma’nolari avval tekshirilgan darslardan olingan; manba tugmasi ro‘yxat sahifasi bilan haqiqiy izoh sahifasini farqlashga yordam beradi.",
+        "fact_ids": [
+          "lookup",
+          "locator_limit"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": null,
+            "topic_id": "wh6-final-review",
+            "topic_title": "Yakuniy takrorlash",
+            "paragraph": null,
+            "printed_pages": [
+              184
+            ],
+            "pdf_pages": [
+              184
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p46-page184"
+          }
+        ]
+      },
+      {
+        "title": "Tarixni o‘rganuvchi mutaxassis",
+        "body": "Arxeolog qadimgi manzilgohlarni qazib o‘rganadi. Mutaxassis nomini ish turi bilan moslang; topilma va uni sharhlash bir xil narsa emas.",
+        "fact_ids": [
+          "review-archaeologist"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page08"
+          }
+        ]
+      },
+      {
+        "title": "Misr va Shumer yozuvi",
+        "body": "Misr yozuvi rasm-belgilar va iyeroglif nomi bilan bog‘langan. Papirus o‘simlik poyasidan tayyorlangan yozuv materialidir. Shumer mixxati esa uchli tayoqcha bilan loy taxtachaga tushirilgan. Material, yozuv nomi va hududni ajrating.",
+        "fact_ids": [
+          "review-hieroglyph",
+          "review-papyrus",
+          "review-cuneiform"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic10",
+            "topic_title": "Qadimgi Misr madaniyati",
+            "paragraph": 10,
+            "printed_pages": [
+              40
+            ],
+            "pdf_pages": [
+              40
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p10-page040"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic11",
+            "topic_title": "Mesopotamiya sivilizatsiyalari",
+            "paragraph": 11,
+            "printed_pages": [
+              44
+            ],
+            "pdf_pages": [
+              44
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p11-page044"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic11",
+            "topic_title": "Mesopotamiya sivilizatsiyalari",
+            "paragraph": 11,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              45
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p11-page045"
+          }
+        ]
+      },
+      {
+        "title": "Sanskrit va Avesto",
+        "body": "Sanskrit — adabiy til; Mahabharat va Ramayana dostonlari shu til bilan bog‘langan. Avesto esa zardushtiylarning muqaddas kitobi nomi: marosim, madhiya va duo matnlari unda jamlangan deb beriladi. Tilni kitob yoki yozuv belgilarining turi bilan almashtirmang.",
+        "fact_ids": [
+          "review-sanskrit",
+          "review-avesta"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic16",
+            "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+            "paragraph": 16,
+            "printed_pages": [
+              66
+            ],
+            "pdf_pages": [
+              66
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p16-page066"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic16",
+            "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+            "paragraph": 16,
+            "printed_pages": [
+              68
+            ],
+            "pdf_pages": [
+              68
+            ],
+            "regions": [
+              "above_next_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p16-page068"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic20",
+            "topic_title": "Zardushtiylik",
+            "paragraph": 20,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p20-page081"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic20",
+            "topic_title": "Zardushtiylik",
+            "paragraph": 20,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p20-page083"
+          }
+        ]
+      },
+      {
+        "title": "Demokratiya atamasi",
+        "body": "Demokratiya kitobda xalq hokimiyati deb izohlangan: demos — xalq, kratos — hokimiyat. Matnda erkak fuqarolar ishtiroki, ayollar va meteklarning ovoz berishdan chetlatilishi ham berilgan. Atama ma’nosini hammada bir xil huquq mavjudligi bilan almashtirmang.",
+        "fact_ids": [
+          "review-democracy",
+          "review-participation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter03",
+            "topic_id": "wh6-topic24",
+            "topic_title": "Afinada demokratiya",
+            "paragraph": 24,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p24-page093"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter03",
+            "topic_id": "wh6-topic24",
+            "topic_title": "Afinada demokratiya",
+            "paragraph": 24,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p24-page097"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter03",
+            "topic_id": "wh6-topic24",
+            "topic_title": "Afinada demokratiya",
+            "paragraph": 24,
+            "printed_pages": [
+              95
+            ],
+            "pdf_pages": [
+              95
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p24-page095"
+          }
+        ]
+      },
+      {
+        "title": "Mozaika va freska",
+        "body": "Mozaika — shisha yoki tosh parchalaridan ishlangan surat. Freska — xom suvoqqa ishlangan rasm. Ikkalasi ham tasvir bilan bog‘liq, lekin materiali va bajarilish usuli bir xil emas.",
+        "fact_ids": [
+          "review-mosaic",
+          "review-fresco"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic39",
+            "topic_title": "Rim respublikasining hayoti",
+            "paragraph": 39,
+            "printed_pages": [
+              152
+            ],
+            "pdf_pages": [
+              152
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p39-page152"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic39",
+            "topic_title": "Rim respublikasining hayoti",
+            "paragraph": 39,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p39-page153"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic39",
+            "topic_title": "Rim respublikasining hayoti",
+            "paragraph": 39,
+            "printed_pages": [
+              155
+            ],
+            "pdf_pages": [
+              155
+            ],
+            "regions": [
+              "above_next_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p39-page155"
+          }
+        ]
+      },
+      {
+        "title": "Kolon va stil",
+        "body": "Kolonlar — mayda yer ijarachilari. Stil esa mumli taxtachaga yozish uchun metall tayoqcha. Birinchisi tarixiy ijtimoiy atama, ikkinchisi yozuv quroli nomi. Kolonlarni koloniyalar bilan aralashtirmang.",
+        "fact_ids": [
+          "review-coloni",
+          "review-stylus"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic41",
+            "topic_title": "Qullar va gladiatorlar",
+            "paragraph": 41,
+            "printed_pages": [
+              160
+            ],
+            "pdf_pages": [
+              160
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p41-page160"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic41",
+            "topic_title": "Qullar va gladiatorlar",
+            "paragraph": 41,
+            "printed_pages": [
+              161
+            ],
+            "pdf_pages": [
+              161
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p41-page161"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic41",
+            "topic_title": "Qullar va gladiatorlar",
+            "paragraph": 41,
+            "printed_pages": [
+              163
+            ],
+            "pdf_pages": [
+              163
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p41-page163"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic44",
+            "topic_title": "Qadimgi Rim madaniyati",
+            "paragraph": 44,
+            "printed_pages": [
+              173
+            ],
+            "pdf_pages": [
+              173
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p44-page173"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "source_refs": [
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": null,
+        "topic_id": "wh6-final-review",
+        "topic_title": "Yakuniy takrorlash",
+        "paragraph": null,
+        "printed_pages": [
+          184
+        ],
+        "pdf_pages": [
+          184
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p46-page184"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter01",
+        "topic_id": "wh6-topic01",
+        "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+        "paragraph": 1,
+        "printed_pages": [
+          8
+        ],
+        "pdf_pages": [
+          8
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p01-page08"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic10",
+        "topic_title": "Qadimgi Misr madaniyati",
+        "paragraph": 10,
+        "printed_pages": [
+          40
+        ],
+        "pdf_pages": [
+          40
+        ],
+        "regions": [
+          "below_topic_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p10-page040"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic11",
+        "topic_title": "Mesopotamiya sivilizatsiyalari",
+        "paragraph": 11,
+        "printed_pages": [
+          44
+        ],
+        "pdf_pages": [
+          44
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p11-page044"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic11",
+        "topic_title": "Mesopotamiya sivilizatsiyalari",
+        "paragraph": 11,
+        "printed_pages": [
+          45
+        ],
+        "pdf_pages": [
+          45
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p11-page045"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic16",
+        "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+        "paragraph": 16,
+        "printed_pages": [
+          66
+        ],
+        "pdf_pages": [
+          66
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p16-page066"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic16",
+        "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+        "paragraph": 16,
+        "printed_pages": [
+          68
+        ],
+        "pdf_pages": [
+          68
+        ],
+        "regions": [
+          "above_next_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p16-page068"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic20",
+        "topic_title": "Zardushtiylik",
+        "paragraph": 20,
+        "printed_pages": [
+          81
+        ],
+        "pdf_pages": [
+          81
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p20-page081"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter02",
+        "topic_id": "wh6-topic20",
+        "topic_title": "Zardushtiylik",
+        "paragraph": 20,
+        "printed_pages": [
+          83
+        ],
+        "pdf_pages": [
+          83
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p20-page083"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter03",
+        "topic_id": "wh6-topic24",
+        "topic_title": "Afinada demokratiya",
+        "paragraph": 24,
+        "printed_pages": [
+          93
+        ],
+        "pdf_pages": [
+          93
+        ],
+        "regions": [
+          "below_topic_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p24-page093"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter03",
+        "topic_id": "wh6-topic24",
+        "topic_title": "Afinada demokratiya",
+        "paragraph": 24,
+        "printed_pages": [
+          97
+        ],
+        "pdf_pages": [
+          97
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p24-page097"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic39",
+        "topic_title": "Rim respublikasining hayoti",
+        "paragraph": 39,
+        "printed_pages": [
+          152
+        ],
+        "pdf_pages": [
+          152
+        ],
+        "regions": [
+          "below_topic_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p39-page152"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic39",
+        "topic_title": "Rim respublikasining hayoti",
+        "paragraph": 39,
+        "printed_pages": [
+          153
+        ],
+        "pdf_pages": [
+          153
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p39-page153"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic39",
+        "topic_title": "Rim respublikasining hayoti",
+        "paragraph": 39,
+        "printed_pages": [
+          155
+        ],
+        "pdf_pages": [
+          155
+        ],
+        "regions": [
+          "above_next_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p39-page155"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic41",
+        "topic_title": "Qullar va gladiatorlar",
+        "paragraph": 41,
+        "printed_pages": [
+          160
+        ],
+        "pdf_pages": [
+          160
+        ],
+        "regions": [
+          "below_topic_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p41-page160"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic41",
+        "topic_title": "Qullar va gladiatorlar",
+        "paragraph": 41,
+        "printed_pages": [
+          161
+        ],
+        "pdf_pages": [
+          161
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p41-page161"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic41",
+        "topic_title": "Qullar va gladiatorlar",
+        "paragraph": 41,
+        "printed_pages": [
+          163
+        ],
+        "pdf_pages": [
+          163
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p41-page163"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter05",
+        "topic_id": "wh6-topic44",
+        "topic_title": "Qadimgi Rim madaniyati",
+        "paragraph": 44,
+        "printed_pages": [
+          173
+        ],
+        "pdf_pages": [
+          173
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p44-page173"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter03",
+        "topic_id": "wh6-topic24",
+        "topic_title": "Afinada demokratiya",
+        "paragraph": 24,
+        "printed_pages": [
+          95
+        ],
+        "pdf_pages": [
+          95
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p24-page095"
+      }
+    ],
+    "xp_reward": 20,
+    "reflections": [
+      {
+        "title": "Butun ro‘yxat bilan mustaqil qaytarish",
+        "body": "184-betning uch ustunidagi barcha atamalarni asl kitob bilan qaytaring: bilganingizni o‘z so‘zingizda yozing, ko‘rsatilgan sahifadan tekshiring. Sahifa havolasi mos kelmasa, ma’noni taxmin qilmang va tekshiruv uchun belgilang. Bu darsdagi avtomatik savollar faqat yuqorida qayta o‘rgatilgan, alohida tekshirilgan misollarni sinaydi. Qolgan atamalar, bahsli davrlashtirish va e’tiqodiy talqinlar uchun avtomatik to‘g‘ri/noto‘g‘ri hukm yo‘q.",
+        "grading": "self_or_teacher_review",
+        "automatic_score": false,
+        "fact_ids": [
+          "lookup",
+          "locator_limit",
+          "review-archaeologist",
+          "review-hieroglyph",
+          "review-papyrus",
+          "review-cuneiform",
+          "review-sanskrit",
+          "review-avesta",
+          "review-democracy",
+          "review-mosaic",
+          "review-fresco",
+          "review-coloni",
+          "review-stylus"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": null,
+            "topic_id": "wh6-final-review",
+            "topic_title": "Yakuniy takrorlash",
+            "paragraph": null,
+            "printed_pages": [
+              184
+            ],
+            "pdf_pages": [
+              184
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p46-page184"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter01",
+            "topic_id": "wh6-topic01",
+            "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p01-page08"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic10",
+            "topic_title": "Qadimgi Misr madaniyati",
+            "paragraph": 10,
+            "printed_pages": [
+              40
+            ],
+            "pdf_pages": [
+              40
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p10-page040"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic11",
+            "topic_title": "Mesopotamiya sivilizatsiyalari",
+            "paragraph": 11,
+            "printed_pages": [
+              44
+            ],
+            "pdf_pages": [
+              44
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p11-page044"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic11",
+            "topic_title": "Mesopotamiya sivilizatsiyalari",
+            "paragraph": 11,
+            "printed_pages": [
+              45
+            ],
+            "pdf_pages": [
+              45
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p11-page045"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic16",
+            "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+            "paragraph": 16,
+            "printed_pages": [
+              66
+            ],
+            "pdf_pages": [
+              66
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p16-page066"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic16",
+            "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+            "paragraph": 16,
+            "printed_pages": [
+              68
+            ],
+            "pdf_pages": [
+              68
+            ],
+            "regions": [
+              "above_next_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p16-page068"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic20",
+            "topic_title": "Zardushtiylik",
+            "paragraph": 20,
+            "printed_pages": [
+              81
+            ],
+            "pdf_pages": [
+              81
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p20-page081"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter02",
+            "topic_id": "wh6-topic20",
+            "topic_title": "Zardushtiylik",
+            "paragraph": 20,
+            "printed_pages": [
+              83
+            ],
+            "pdf_pages": [
+              83
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p20-page083"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter03",
+            "topic_id": "wh6-topic24",
+            "topic_title": "Afinada demokratiya",
+            "paragraph": 24,
+            "printed_pages": [
+              93
+            ],
+            "pdf_pages": [
+              93
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p24-page093"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter03",
+            "topic_id": "wh6-topic24",
+            "topic_title": "Afinada demokratiya",
+            "paragraph": 24,
+            "printed_pages": [
+              97
+            ],
+            "pdf_pages": [
+              97
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p24-page097"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic39",
+            "topic_title": "Rim respublikasining hayoti",
+            "paragraph": 39,
+            "printed_pages": [
+              152
+            ],
+            "pdf_pages": [
+              152
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p39-page152"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic39",
+            "topic_title": "Rim respublikasining hayoti",
+            "paragraph": 39,
+            "printed_pages": [
+              153
+            ],
+            "pdf_pages": [
+              153
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p39-page153"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic39",
+            "topic_title": "Rim respublikasining hayoti",
+            "paragraph": 39,
+            "printed_pages": [
+              155
+            ],
+            "pdf_pages": [
+              155
+            ],
+            "regions": [
+              "above_next_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p39-page155"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic41",
+            "topic_title": "Qullar va gladiatorlar",
+            "paragraph": 41,
+            "printed_pages": [
+              160
+            ],
+            "pdf_pages": [
+              160
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p41-page160"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic41",
+            "topic_title": "Qullar va gladiatorlar",
+            "paragraph": 41,
+            "printed_pages": [
+              161
+            ],
+            "pdf_pages": [
+              161
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p41-page161"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic41",
+            "topic_title": "Qullar va gladiatorlar",
+            "paragraph": 41,
+            "printed_pages": [
+              163
+            ],
+            "pdf_pages": [
+              163
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p41-page163"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter05",
+            "topic_id": "wh6-topic44",
+            "topic_title": "Qadimgi Rim madaniyati",
+            "paragraph": 44,
+            "printed_pages": [
+              173
+            ],
+            "pdf_pages": [
+              173
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p44-page173"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "world-history-6-p46-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Qadimgi manzilgohlarni qazib o‘rganuvchi mutaxassis kim?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Arxeolog"
+        },
+        {
+          "id": "b",
+          "label": "Antropolog"
+        },
+        {
+          "id": "c",
+          "label": "Etnograf"
+        },
+        {
+          "id": "d",
+          "label": "Lingvist"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter01",
+          "topic_id": "wh6-topic01",
+          "topic_title": "Qadimgi tarix – taraqqiyotning boshlanishi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p01-page08"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Misrning rasm-belgilar bilan bog‘langan yozuvi qaysi nom bilan berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Mixxat"
+        },
+        {
+          "id": "b",
+          "label": "Iyeroglif"
+        },
+        {
+          "id": "c",
+          "label": "Sanskrit"
+        },
+        {
+          "id": "d",
+          "label": "Oromiy yozuvi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic10",
+          "topic_title": "Qadimgi Misr madaniyati",
+          "paragraph": 10,
+          "printed_pages": [
+            40
+          ],
+          "pdf_pages": [
+            40
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p10-page040"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Shumerlarning loy taxtachaga tushirilgan yozuvi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Alifbo"
+        },
+        {
+          "id": "b",
+          "label": "Stil"
+        },
+        {
+          "id": "c",
+          "label": "Mixxat"
+        },
+        {
+          "id": "d",
+          "label": "Mozaika"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic11",
+          "topic_title": "Mesopotamiya sivilizatsiyalari",
+          "paragraph": 11,
+          "printed_pages": [
+            44
+          ],
+          "pdf_pages": [
+            44
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p11-page044"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic11",
+          "topic_title": "Mesopotamiya sivilizatsiyalari",
+          "paragraph": 11,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p11-page045"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "O‘simlik poyasidan tayyorlangan yozuv materiali nima?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Pergament"
+        },
+        {
+          "id": "b",
+          "label": "Loy taxtacha"
+        },
+        {
+          "id": "c",
+          "label": "Ohaktosh"
+        },
+        {
+          "id": "d",
+          "label": "Papirus"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic10",
+          "topic_title": "Qadimgi Misr madaniyati",
+          "paragraph": 10,
+          "printed_pages": [
+            40
+          ],
+          "pdf_pages": [
+            40
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p10-page040"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Mahabharat va Ramayana qaysi adabiy til bilan bog‘langan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sanskrit"
+        },
+        {
+          "id": "b",
+          "label": "Lotin"
+        },
+        {
+          "id": "c",
+          "label": "Yunon"
+        },
+        {
+          "id": "d",
+          "label": "Oromiy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic16",
+          "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+          "paragraph": 16,
+          "printed_pages": [
+            66
+          ],
+          "pdf_pages": [
+            66
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p16-page066"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic16",
+          "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+          "paragraph": 16,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p16-page068"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Zardushtiylarning muqaddas kitobi qanday nomlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Iliada"
+        },
+        {
+          "id": "b",
+          "label": "Avesto"
+        },
+        {
+          "id": "c",
+          "label": "Odisseya"
+        },
+        {
+          "id": "d",
+          "label": "Tarix"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic20",
+          "topic_title": "Zardushtiylik",
+          "paragraph": 20,
+          "printed_pages": [
+            81
+          ],
+          "pdf_pages": [
+            81
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p20-page081"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic20",
+          "topic_title": "Zardushtiylik",
+          "paragraph": 20,
+          "printed_pages": [
+            83
+          ],
+          "pdf_pages": [
+            83
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p20-page083"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q07",
+      "response_kind": "concept_selection",
+      "prompt": "Demokratiya atamasi kitobda qanday izohlangan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yakka hukmdor"
+        },
+        {
+          "id": "b",
+          "label": "Kohinlar hokimiyati"
+        },
+        {
+          "id": "c",
+          "label": "Xalq hokimiyati"
+        },
+        {
+          "id": "d",
+          "label": "Zodagonlar kengashi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            93
+          ],
+          "pdf_pages": [
+            93
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page093"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter03",
+          "topic_id": "wh6-topic24",
+          "topic_title": "Afinada demokratiya",
+          "paragraph": 24,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p24-page097"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q08",
+      "response_kind": "concept_selection",
+      "prompt": "Xom suvoqqa ishlangan rasm nima deb atalgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Akveduk"
+        },
+        {
+          "id": "b",
+          "label": "Mozaika"
+        },
+        {
+          "id": "c",
+          "label": "Stil"
+        },
+        {
+          "id": "d",
+          "label": "Freska"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic39",
+          "topic_title": "Rim respublikasining hayoti",
+          "paragraph": 39,
+          "printed_pages": [
+            152
+          ],
+          "pdf_pages": [
+            152
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p39-page152"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic39",
+          "topic_title": "Rim respublikasining hayoti",
+          "paragraph": 39,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p39-page153"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic39",
+          "topic_title": "Rim respublikasining hayoti",
+          "paragraph": 39,
+          "printed_pages": [
+            155
+          ],
+          "pdf_pages": [
+            155
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p39-page155"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "Shisha yoki tosh parchalaridan ishlangan surat nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic39",
+          "topic_title": "Rim respublikasining hayoti",
+          "paragraph": 39,
+          "printed_pages": [
+            152
+          ],
+          "pdf_pages": [
+            152
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p39-page152"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic39",
+          "topic_title": "Rim respublikasining hayoti",
+          "paragraph": 39,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p39-page153"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic39",
+          "topic_title": "Rim respublikasining hayoti",
+          "paragraph": 39,
+          "printed_pages": [
+            155
+          ],
+          "pdf_pages": [
+            155
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p39-page155"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q10",
+      "response_kind": "short_text",
+      "prompt": "Mayda yer ijarachilari atamasini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic41",
+          "topic_title": "Qullar va gladiatorlar",
+          "paragraph": 41,
+          "printed_pages": [
+            160
+          ],
+          "pdf_pages": [
+            160
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p41-page160"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic41",
+          "topic_title": "Qullar va gladiatorlar",
+          "paragraph": 41,
+          "printed_pages": [
+            161
+          ],
+          "pdf_pages": [
+            161
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p41-page161"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic41",
+          "topic_title": "Qullar va gladiatorlar",
+          "paragraph": 41,
+          "printed_pages": [
+            163
+          ],
+          "pdf_pages": [
+            163
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p41-page163"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q11",
+      "response_kind": "short_text",
+      "prompt": "Mumli taxtachaga yozish uchun metall tayoqcha nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter05",
+          "topic_id": "wh6-topic44",
+          "topic_title": "Qadimgi Rim madaniyati",
+          "paragraph": 44,
+          "printed_pages": [
+            173
+          ],
+          "pdf_pages": [
+            173
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p44-page173"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p46-r1-q12",
+      "response_kind": "short_text",
+      "prompt": "Mahabharat va Ramayana bilan bog‘langan adabiy til nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic16",
+          "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+          "paragraph": 16,
+          "printed_pages": [
+            66
+          ],
+          "pdf_pages": [
+            66
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p16-page066"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter02",
+          "topic_id": "wh6-topic16",
+          "topic_title": "Miloddan avvalgi I ming yillikda Hindiston",
+          "paragraph": 16,
+          "printed_pages": [
+            68
+          ],
+          "pdf_pages": [
+            68
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p16-page068"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
