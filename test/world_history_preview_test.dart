@@ -266,13 +266,17 @@ void main() {
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
     expect(requests.last.queryParameters['grade'], 7);
     expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
-    expect(find.text('20/44 dars mavjud.'), findsOneWidget);
+    final implemented = grade7Catalog['implemented_sections'] as int;
+    expect(find.text('$implemented/44 dars mavjud.'), findsOneWidget);
     expect(find.text('Darsni boshlash'), findsWidgets);
-    await tapFinder(
-      t,
-      find.byKey(const ValueKey('history-chapter-7-wh7-chapter03')),
-    );
-    expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+    if (implemented < 44) {
+      final pending = jsonRows(
+        grade7Catalog['source_units'],
+      ).firstWhere((u) => u['sequence'] == implemented + 1);
+      final chapter = pending['chapter_id'];
+      await tapFinder(t, find.byKey(ValueKey('history-chapter-7-$chapter')));
+      expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+    }
     expect(t.takeException(), isNull);
   });
   testWidgets('source sheet shows real bibliography and no PDF image', (
@@ -408,13 +412,15 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 20; number++) {
+  for (var number = 1; number <= 25; number++) {
     void selectGrade7Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g7_p${suffix}_lesson');
       results = fixture('g7_p${suffix}_results');
       grade7Catalog = fixture(
-        number >= 16
+        number >= 21
+            ? 'batch14_grade7_completed_catalog'
+            : number >= 16
             ? 'batch13_grade7_completed_catalog'
             : number >= 11
             ? 'batch12_grade7_completed_catalog'
