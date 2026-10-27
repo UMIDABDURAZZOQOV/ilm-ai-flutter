@@ -254,8 +254,22 @@ void main() {
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-8')));
     expect(requests.last.queryParameters['grade'], 8);
     expect(find.text('Jahon tarixi · 8-sinf'), findsWidgets);
-    expect(find.text('Darsni boshlash'), findsNothing);
-    expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+    final eight = fixture('grade8_catalog');
+    final implemented = eight['implemented_sections'] as int;
+    expect(
+      find.text('Darsni boshlash'),
+      implemented == 0 ? findsNothing : findsWidgets,
+    );
+    if (implemented < 33) {
+      final pending = jsonRows(
+        eight['source_units'],
+      ).firstWhere((u) => u['sequence'] == implemented + 1);
+      final chapter = pending['chapter_id'];
+      if (chapter != 'wh8-chapter01') {
+        await tapFinder(t, find.byKey(ValueKey('history-chapter-8-$chapter')));
+      }
+      expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+    }
     expect(t.takeException(), isNull);
   });
   testWidgets('finished grade6 can switch to the grade7 catalogue', (t) async {
@@ -393,16 +407,23 @@ void main() {
   }
   Future<void> openGrade7(WidgetTester t) async {
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
+    final row = jsonRows(
+      grade7Catalog['lessons'],
+    ).firstWhere((r) => r['key'] == lesson['lesson_key']);
     final unit = jsonRows(
       grade7Catalog['source_units'],
-    ).firstWhere((u) => u['title'] == lesson['title']);
+    ).firstWhere((u) => u['sequence'] == row['sequence']);
     final chapter = unit['chapter_id'];
+    final chapterFinder = find.byKey(ValueKey('history-chapter-7-$chapter'));
     if (chapter != 'wh7-chapter01') {
-      await tapFinder(t, find.byKey(ValueKey('history-chapter-7-$chapter')));
+      await tapFinder(t, chapterFinder);
     }
     final item = find
         .ancestor(
-          of: find.text(lesson['title'] as String),
+          of: find.descendant(
+            of: chapterFinder,
+            matching: find.text(lesson['title'] as String),
+          ),
           matching: find.byType(Column),
         )
         .first;
@@ -410,15 +431,41 @@ void main() {
       t,
       find.descendant(of: item, matching: find.text('Darsni takrorlash')),
     );
+    expect(
+      requests.last.path,
+      endsWith('/lessons/${lesson['lesson_key']}/start'),
+    );
   }
 
-  for (var number = 1; number <= 40; number++) {
+  testWidgets('completed grade7 switches to grade8 with its own bibliography', (
+    t,
+  ) async {
+    grade7Catalog = fixture('batch18_grade7_completed_catalog');
+    expect(grade7Catalog['implemented_sections'], 44);
+    expect(grade7Catalog['grade_content_complete'], true);
+    expect(grade7Catalog['course_complete'], false);
+    await mount(t);
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
+    expect(find.text('44/44 dars mavjud.'), findsOneWidget);
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-8')));
+    expect(requests.last.queryParameters['grade'], 8);
+    expect(find.text('Jahon tarixi · 8-sinf'), findsWidgets);
+    await tapFinder(t, find.byKey(const ValueKey('history-bibliography-8')));
+    expect(find.textContaining('2019'), findsWidgets);
+    expect(find.textContaining('Farmonov'), findsWidgets);
+    await capture(t, 'grade7-complete-to-grade8');
+    expect(t.takeException(), isNull);
+  });
+
+  for (var number = 1; number <= 44; number++) {
     void selectGrade7Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g7_p${suffix}_lesson');
       results = fixture('g7_p${suffix}_results');
       grade7Catalog = fixture(
-        number >= 36
+        number >= 41
+            ? 'batch18_grade7_completed_catalog'
+            : number >= 36
             ? 'batch17_grade7_completed_catalog'
             : number >= 31
             ? 'batch16_grade7_completed_catalog'

@@ -5,11 +5,11 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 44,
-  "implemented_sections": 40,
+  "implemented_sections": 44,
   "course_complete": false,
-  "source_review_pending": true,
-  "source_review_issue_count": 4,
-  "grade_content_complete": false,
+  "source_review_pending": false,
+  "source_review_issue_count": 0,
+  "grade_content_complete": true,
   "implemented_grades": [
     6,
     7
@@ -5761,6 +5761,555 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh7-p40-page140"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p41-r1",
+      "sequence": 41,
+      "title": "Hindiston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic41",
+          "topic_title": "Hindiston",
+          "paragraph": 41,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p41-page140"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic41",
+          "topic_title": "Hindiston",
+          "paragraph": 41,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p41-page141"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic41",
+          "topic_title": "Hindiston",
+          "paragraph": 41,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p41-page142"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p42-r1",
+      "sequence": 42,
+      "title": "Amerika o‘rta asrlarda",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic42",
+          "topic_title": "Amerika o‘rta asrlarda",
+          "paragraph": 42,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p42-page142"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic42",
+          "topic_title": "Amerika o‘rta asrlarda",
+          "paragraph": 42,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p42-page143"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic42",
+          "topic_title": "Amerika o‘rta asrlarda",
+          "paragraph": 42,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p42-page144"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic42",
+          "topic_title": "Amerika o‘rta asrlarda",
+          "paragraph": 42,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p42-page145"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic42",
+          "topic_title": "Amerika o‘rta asrlarda",
+          "paragraph": 42,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p42-page146"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p43-r1",
+      "sequence": 43,
+      "title": "Afrika xalqlari o‘rta asrlarda",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic43",
+          "topic_title": "Afrika xalqlari o‘rta asrlarda",
+          "paragraph": 43,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p43-page146"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic43",
+          "topic_title": "Afrika xalqlari o‘rta asrlarda",
+          "paragraph": 43,
+          "printed_pages": [
+            147
+          ],
+          "pdf_pages": [
+            147
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p43-page147"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic43",
+          "topic_title": "Afrika xalqlari o‘rta asrlarda",
+          "paragraph": 43,
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p43-page148"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic43",
+          "topic_title": "Afrika xalqlari o‘rta asrlarda",
+          "paragraph": 43,
+          "printed_pages": [
+            149
+          ],
+          "pdf_pages": [
+            149
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p43-page149"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic43",
+          "topic_title": "Afrika xalqlari o‘rta asrlarda",
+          "paragraph": 43,
+          "printed_pages": [
+            150
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p43-page150"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p44-r1",
+      "sequence": 44,
+      "title": "Osiyo, Amerika va Afrika xalqlari madaniyati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic44",
+          "topic_title": "Osiyo, Amerika va Afrika xalqlari madaniyati",
+          "paragraph": 44,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p44-page151"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic44",
+          "topic_title": "Osiyo, Amerika va Afrika xalqlari madaniyati",
+          "paragraph": 44,
+          "printed_pages": [
+            152
+          ],
+          "pdf_pages": [
+            152
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p44-page152"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic44",
+          "topic_title": "Osiyo, Amerika va Afrika xalqlari madaniyati",
+          "paragraph": 44,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p44-page153"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic44",
+          "topic_title": "Osiyo, Amerika va Afrika xalqlari madaniyati",
+          "paragraph": 44,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p44-page154"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-chronology",
+          "topic_title": "Muhim tarixiy sanalar",
+          "paragraph": null,
+          "printed_pages": [
+            155
+          ],
+          "pdf_pages": [
+            155
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p44-r1-wh7-chronology-page155"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-chronology",
+          "topic_title": "Muhim tarixiy sanalar",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p44-r1-wh7-chronology-page156"
         }
       ]
     }
