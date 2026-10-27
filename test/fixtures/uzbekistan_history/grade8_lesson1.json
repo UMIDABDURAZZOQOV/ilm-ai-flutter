@@ -1,0 +1,920 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:dc9ed39e-2c20-4e63-a361-7ef18b53049b",
+  "lesson_key": "uzh-8-1-r1",
+  "expires_at": "2026-10-28T02:41:12.843924+00:00",
+  "title": "Dashti Qipchoqdagi siyosiy vaziyat",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-1-r1:c1",
+        "title": "Hudud nomini tushunamiz",
+        "body": "Dashti Qipchoq nomi bu darsda Sirdaryoning yuqori oqimi va Tyanshanning g‘arbiy yonbag‘irlaridan Dneprning quyi oqimigacha cho‘zilgan hudud uchun ishlatilgan. Bu tarixiy geografik tavsifni bugungi bitta davlat chegarasi deb olmang.",
+        "fact_ids": [
+          "uzh-8-topic-1:region"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:region",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 256.6
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-1-r1:c2",
+        "title": "Oltin O‘rda qaydi",
+        "body": "Kitob Botuxon 1240-yili Oltin O‘rdaga asos solganini va uni Jo‘ji ulusi deb ham atashganini aytadi. Davlat nomi, hukmdor va ulus atamasini ajratamiz.",
+        "fact_ids": [
+          "uzh-8-topic-1:ulus"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:ulus",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 256.6
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-1-r1:c3",
+        "title": "Abulxayrxon davlati",
+        "body": "1428-yil Abulxayrxon asos solgan tuzilma darslikda O‘zbek ulusi deb ataladi. Dastlabki poytaxt Tura bo‘lgan; keyingi poytaxtga oid qaydni shu boshlanishga ko‘chirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-1:ab1428"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:ab1428",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-1-r1:c4",
+        "title": "Poytaxtning o‘zgarishi",
+        "body": "1446-yilda Sirdaryoning o‘rta oqimidagi shaharlar egallangach, davlat poytaxti Sig‘noqqa ko‘chirilgani qayd etiladi. Bu Tura bilan bir vaqtdagi yagona nom emas.",
+        "fact_ids": [
+          "uzh-8-topic-1:signoq"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:signoq",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-1-r1:c5",
+        "title": "Parchalanish qaydi",
+        "body": "Abulxayrxon 1468-yili vafot etgach, uning davlati parchalangani bayon qilinadi. Keyingi Shayboniyxon faoliyati bilan davlat tuzilgan ilk sanani farqlang.",
+        "fact_ids": [
+          "uzh-8-topic-1:1468"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:1468",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-1-r1:c6",
+        "title": "Ta’lim va siyosiy tajriba",
+        "body": "Muhammad Shayboniy va ukasi Mahmud Sultonga otaliq Shohbudog‘ Sulton bo‘lgan. Shayboniy keyinchalik Buxoroda ilm olgan, turli temuriy hukmdorlar xizmatida bo‘lib siyosiy vaziyat bilan tanishgan.",
+        "fact_ids": [
+          "uzh-8-topic-1:education"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:education",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6,
+              7
+            ],
+            "printed_pages": [
+              6,
+              7
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090",
+              "6b4990e2996fd9dcb5749f546e36531628719e27e21e423ad6204c3c1f3f4796"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-1-r1:c7",
+        "title": "Tiklash qaydi",
+        "body": "XV asrning 80-yillari boshida Shayboniyxon bobosi Abulxayrxon davlati o‘rnidagi siyosiy tuzilmani qayta birlashtirgani aytiladi. Bu qayd boshqa hudud — Movarounnahrni to‘liq egallash bilan bir voqea emas.",
+        "fact_ids": [
+          "uzh-8-topic-1:restore"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:restore",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              7
+            ],
+            "printed_pages": [
+              7
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "6b4990e2996fd9dcb5749f546e36531628719e27e21e423ad6204c3c1f3f4796"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Vaqt chizig‘ida uchta alohida belgi qo‘ying: 1428 — Abulxayrxon davlati; 1446 — Sig‘noq poytaxt bo‘lishi; 1468 — hukmdor vafotidan keyingi parchalanish. Poytaxt almashishi davlatning aynan o‘sha yili ilk tuzilishi degani emas.",
+        "fact_ids": [
+          "uzh-8-topic-1:ab1428",
+          "uzh-8-topic-1:signoq",
+          "uzh-8-topic-1:1468"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:ab1428",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:signoq",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:1468",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Tarixiy hudud, davlat, poytaxt va sulola bir xil tushunchalarmi? Darsdagi ikki misol bilan farqini tushuntiring.",
+        "fact_ids": [
+          "uzh-8-topic-1:region",
+          "uzh-8-topic-1:ulus",
+          "uzh-8-topic-1:ab1428",
+          "uzh-8-topic-1:signoq"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:region",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 256.6
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:ulus",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              5
+            ],
+            "printed_pages": [
+              5
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 256.6
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:ab1428",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-1",
+            "topic_id": "uzh-8-topic-1",
+            "fact_id": "uzh-8-topic-1:signoq",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              6
+            ],
+            "printed_pages": [
+              6
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:region",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          5
+        ],
+        "printed_pages": [
+          5
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 256.6
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:ulus",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          5
+        ],
+        "printed_pages": [
+          5
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 256.6
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:ab1428",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          6
+        ],
+        "printed_pages": [
+          6
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:signoq",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          6
+        ],
+        "printed_pages": [
+          6
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:1468",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          6
+        ],
+        "printed_pages": [
+          6
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:education",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          6,
+          7
+        ],
+        "printed_pages": [
+          6,
+          7
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090",
+          "6b4990e2996fd9dcb5749f546e36531628719e27e21e423ad6204c3c1f3f4796"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-1",
+        "topic_id": "uzh-8-topic-1",
+        "fact_id": "uzh-8-topic-1:restore",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          7
+        ],
+        "printed_pages": [
+          7
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "6b4990e2996fd9dcb5749f546e36531628719e27e21e423ad6204c3c1f3f4796"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-1-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "1428-yildagi davlat tuzilishi darsda qaysi hukmdorga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Abulxayrxon"
+        },
+        {
+          "id": "o2",
+          "label": "Muhammad Shayboniyxon"
+        },
+        {
+          "id": "o3",
+          "label": "Botuxon"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:ab1428",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6
+          ],
+          "printed_pages": [
+            6
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-1-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Abulxayrxon davlatining dastlabki poytaxti qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Sig‘noq"
+        },
+        {
+          "id": "o2",
+          "label": "Tura"
+        },
+        {
+          "id": "o3",
+          "label": "Buxoro"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:ab1428",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6
+          ],
+          "printed_pages": [
+            6
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-1-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Jo‘ji ulusi deb ham atalgan siyosiy tuzilma qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Faqat Sig‘noq shahri"
+        },
+        {
+          "id": "o2",
+          "label": "Faqat Tura shahri"
+        },
+        {
+          "id": "o3",
+          "label": "Oltin O‘rda"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:ulus",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            5
+          ],
+          "printed_pages": [
+            5
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "155235511e4c766d5597fc3e42191b397f43f1aa0dd10d2819676de57a21d092"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 256.6
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-1-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "1446-yilgi qaydda poytaxt qaysi shaharga ko‘chirilgan?",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:signoq",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6
+          ],
+          "printed_pages": [
+            6
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-1-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Shayboniy keyinchalik qaysi shaharda ilm olgani darsda o‘tilgan?",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:education",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "printed_pages": [
+            6,
+            7
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090",
+            "6b4990e2996fd9dcb5749f546e36531628719e27e21e423ad6204c3c1f3f4796"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-1-r1:q6",
+      "response_kind": "ordering",
+      "phase": "independent",
+      "prompt": "Davlat tuzilishi, poytaxt ko‘chishi va parchalanish qaydlarini tartiblang.",
+      "items": [
+        {
+          "id": "e2",
+          "label": "Poytaxtning Sig‘noqqa ko‘chirilishi",
+          "fact_id": "uzh-8-topic-1:signoq"
+        },
+        {
+          "id": "e3",
+          "label": "Abulxayrxon vafotidan keyingi parchalanish",
+          "fact_id": "uzh-8-topic-1:1468"
+        },
+        {
+          "id": "e1",
+          "label": "Abulxayrxon davlatining tashkil topishi",
+          "fact_id": "uzh-8-topic-1:ab1428"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:ab1428",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6
+          ],
+          "printed_pages": [
+            6
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:signoq",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6
+          ],
+          "printed_pages": [
+            6
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-1",
+          "topic_id": "uzh-8-topic-1",
+          "fact_id": "uzh-8-topic-1:1468",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            6
+          ],
+          "printed_pages": [
+            6
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "dc488c47931cb4b58a910f7ad5dc2935998cd1570ce5889bf193f4adc5d1f090"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

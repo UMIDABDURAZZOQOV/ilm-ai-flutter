@@ -189,7 +189,7 @@ void main() {
   );
 
   testWidgets(
-    'five grades remain selectable; missing scan has an honest empty state',
+    'five grades remain selectable with the verified scanned grade8 book',
     (tester) async {
       tester.view.physicalSize = const Size(320, 568);
       tester.view.devicePixelRatio = 1;
@@ -204,7 +204,10 @@ void main() {
         await tester.tap(find.text('$grade-sinf').last);
         await tester.pumpAndSettle();
         expect(requests.last.queryParameters['grade'], grade);
-        if (grade == 8) expect(find.text('Manba kutilmoqda'), findsOneWidget);
+        if (grade == 8) {
+          expect(find.text('Manba kutilmoqda'), findsNothing);
+          expect(find.text('Darsni ochish'), findsOneWidget);
+        }
         expect(tester.takeException(), isNull);
       }
     },
@@ -395,6 +398,73 @@ void main() {
       expect(requests.where((r) => r.path.endsWith('/complete')).length, 1);
     },
   );
+
+  testWidgets('scanned grade8 opens separately without a grade7 prerequisite', (
+    tester,
+  ) async {
+    lesson = fixture('grade8_lesson1');
+    await mount(tester);
+    final picker = find.byType(DropdownButtonFormField<int>);
+    await tester.ensureVisible(picker);
+    await tester.tap(picker);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('8-sinf').last);
+    await tester.pumpAndSettle();
+    final button = find.text('Darsni ochish');
+    await tester.ensureVisible(button);
+    await tester.pumpAndSettle();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(find.text('Dashti Qipchoqdagi siyosiy vaziyat'), findsOneWidget);
+    expect(requests.last.path, contains('uzh-8-1-r1'));
+    expect(find.text('Mashqlarga o‘tish'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  for (var n = 1; n <= 5; n++) {
+    testWidgets(
+      'scanned grade8 lesson $n keeps raw names and fits chronology at large text',
+      (tester) async {
+        tester.view.physicalSize = const Size(320, 568);
+        tester.view.devicePixelRatio = 1;
+        addTearDown(tester.view.resetPhysicalSize);
+        addTearDown(tester.view.resetDevicePixelRatio);
+        final dto = fixture('grade8_lesson$n');
+        for (final q in jsonRows(dto['questions'])) {
+          Json value = {};
+          await mount(
+            tester,
+            scale: 2,
+            child: Scaffold(
+              body: SingleChildScrollView(
+                child: HistoryAnswerEditor(
+                  question: q,
+                  draft: {},
+                  enabled: true,
+                  onChanged: (v) => value = v,
+                ),
+              ),
+            ),
+          );
+          if (q['response_kind'] == 'short_text') {
+            await tester.enterText(
+              find.byType(TextFormField),
+              "  Qutlug' Nigorxonim  ",
+            );
+            expect(value, {'value': "  Qutlug' Nigorxonim  "});
+          } else if (q['response_kind'] == 'ordering') {
+            for (final row in jsonRows(q['items'])) {
+              expect(find.text(row['label'] as String), findsOneWidget);
+            }
+          }
+          expect(tester.takeException(), isNull);
+        }
+        final encoded = jsonEncode(dto);
+        expect(encoded, isNot(contains('"grading_spec"')));
+        expect(encoded, isNot(contains('"accepted_answers"')));
+      },
+    );
+  }
 
   for (var n = 1; n <= 42; n++) {
     testWidgets('grade 7 lesson $n short input keeps raw text at 200% scale', (
