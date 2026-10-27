@@ -5,14 +5,15 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 33,
-  "implemented_sections": 0,
+  "implemented_sections": 5,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 33,
+  "source_review_issue_count": 28,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
-    7
+    7,
+    8
   ],
   "available_grades": [
     6,
@@ -767,5 +768,975 @@
       ]
     }
   ],
-  "lessons": []
+  "lessons": [
+    {
+      "key": "world-history-8-p01-r1",
+      "sequence": 1,
+      "title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+      "state": "available",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page007"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page008"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page009"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page010"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page011"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page012"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": null,
+          "topic_id": "wh8-intro",
+          "topic_title": "Kirish. Yangi davrning boshlanishi",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-8-p01-r1-wh8-intro-page003"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": null,
+          "topic_id": "wh8-intro",
+          "topic_title": "Kirish. Yangi davrning boshlanishi",
+          "paragraph": null,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-8-p01-r1-wh8-intro-page004"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": null,
+          "topic_id": "wh8-intro",
+          "topic_title": "Kirish. Yangi davrning boshlanishi",
+          "paragraph": null,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-8-p01-r1-wh8-intro-page005"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": null,
+          "topic_id": "wh8-intro",
+          "topic_title": "Kirish. Yangi davrning boshlanishi",
+          "paragraph": null,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-8-p01-r1-wh8-intro-page006"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p02-r1",
+      "sequence": 2,
+      "title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic02",
+          "topic_title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p02-page013"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic02",
+          "topic_title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p02-page014"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic02",
+          "topic_title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p02-page015"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic02",
+          "topic_title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p02-page016"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic02",
+          "topic_title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p02-page017"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p03-r1",
+      "sequence": 3,
+      "title": "Yevropada Reformatsiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page018"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page019"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page020"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page021"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page022"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p04-r1",
+      "sequence": 4,
+      "title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic04",
+          "topic_title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p04-page022"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic04",
+          "topic_title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p04-page023"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic04",
+          "topic_title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p04-page024"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic04",
+          "topic_title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p04-page025"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic04",
+          "topic_title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p04-page026"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic04",
+          "topic_title": "G‘arbiy Yevropada Yangi davr madaniyatining shakllanishi",
+          "paragraph": 4,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p04-page027"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p05-r1",
+      "sequence": 5,
+      "title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page028"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page029"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            30
+          ],
+          "pdf_pages": [
+            30
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page030"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            31
+          ],
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page031"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            32
+          ],
+          "pdf_pages": [
+            32
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page032"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            33
+          ],
+          "pdf_pages": [
+            33
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page033"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic05",
+          "topic_title": "Angliyada qirol hokimiyatining kuchayishi. XVII asrdagi Angliya burjua inqilobi",
+          "paragraph": 5,
+          "printed_pages": [
+            34
+          ],
+          "pdf_pages": [
+            34
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p05-page034"
+        }
+      ]
+    }
+  ]
 }

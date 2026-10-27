@@ -1,0 +1,2327 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "whv2:900196:11111111-1111-4111-8111-111111111111",
+  "lesson_key": "world-history-8-p01-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+  "content": {
+    "cards": [
+      {
+        "title": "Kursga kirish: jamiyat atamalari",
+        "body": "Kirish agrar yoki an’anaviy jamiyatni qishloq xo‘jaligi, industrial sivilizatsiyani sanoat ishlab chiqarishi bilan bog‘laydi. Kapital xususiy mulk va mablag‘ haqidagi atamadir. Bular kitobdagi tushuntirish modeli va tarixiy iqtisodiy so‘zlardir.",
+        "fact_ids": [
+          "intro_terms",
+          "capital"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              3
+            ],
+            "pdf_pages": [
+              3
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page003"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              4
+            ],
+            "pdf_pages": [
+              4
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page004"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page006"
+          }
+        ]
+      },
+      {
+        "title": "Davr va o‘zgarish",
+        "body": "Kitob Yangi tarixni XV asr oxiri – XVI asr boshlaridan 1918-yilgacha davrlashtirib, ikki bosqichga ajratadi. Shahar, ishlab chiqarish, fan-texnika va mustamlakachilik asosiy jarayonlar sifatida izohlanadi. Ushbu umumiy davr bilan aynan 8-sinf kitobi qamrovini ajrating.",
+        "fact_ids": [
+          "period",
+          "transformation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              4
+            ],
+            "pdf_pages": [
+              4
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page004"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              3
+            ],
+            "pdf_pages": [
+              3
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page003"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page005"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page006"
+          }
+        ]
+      },
+      {
+        "title": "Texnika haqidagi misollar",
+        "body": "Kirishda Jorj Stefenson parovoz bilan, Volta, Gemfri Devi, Maykl Faradey va Andre-Mari Amper elektr bilan bog‘liq ilmiy faoliyat orqali eslatiladi. Shaxs va faoliyat orasidagi bog‘lanish bu yerda tarixiy misoldir.",
+        "fact_ids": [
+          "technology"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page005"
+          }
+        ]
+      },
+      {
+        "title": "Sayohat va kema",
+        "body": "Buyuk geografik kashfiyotlar yevropalik sayyohlarning dengiz yo‘llari hamda hududlar haqidagi bayon nomidir. Karavella — yelkanli kema. Kompas, usturlob va dengiz xaritalari ham sayohat imkoniyatlari qismida berilgan.",
+        "fact_ids": [
+          "discovery",
+          "caravel",
+          "navigation"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page007"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page008"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page012"
+          }
+        ]
+      },
+      {
+        "title": "Portugaliya va Diash",
+        "body": "Mualliflar savdo mahsulotlari, boylik umidi va yangi yo‘l izlashni sayohatlar bilan bog‘laydi. Genrix Dengizchi Portugaliya bayonida shahzoda sifatida eslatiladi. Bartolomeu Diash ekspeditsiyasi Afrika janubidagi burun va Hind okeaniga chiqish bilan berilgan.",
+        "fact_ids": [
+          "motives",
+          "henry",
+          "dias"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page008"
+          }
+        ]
+      },
+      {
+        "title": "Kolumb va Vespuchchi",
+        "body": "Xristofor Kolumb ekspeditsiyasi 1492-yil 12-oktabrda Bagama orollariga yetib kelgani aytiladi. Amerigo Vespuchchi safarlari esa yangi qit’a haqidagi tasavvur va Amerika nomi bilan bog‘langan. Bu bayon yevropaliklar aloqalari nuqtayi nazaridan o‘qiladi.",
+        "fact_ids": [
+          "columbus",
+          "vespucci"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page009"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page011"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page010"
+          }
+        ]
+      },
+      {
+        "title": "Vasko da Gama",
+        "body": "Vasko da Gama ekspeditsiyasi 1498-yilda Hindistonga yetib, 1499-yilda Portugaliyaga qaytgani bayon qilingan. 9-bet xaritasi 1497–1499-yillar sayohati deb nomlangan. Umumiy safar davri bilan manzilga yetish sanasini ajrating.",
+        "fact_ids": [
+          "gama"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page009"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page010"
+          }
+        ]
+      },
+      {
+        "title": "Magellan ekspeditsiyasi",
+        "body": "1519–1522-yillar ekspeditsiyasi Fernando Magellan bilan bog‘langan. Uning o‘zi yo‘lda halok bo‘lgani, qaytishni omon qolgan a’zolar yakunlagani aytiladi. Tinch okeani nomi ham shu bayonda berilgan. Ekspeditsiya natijasi bilan bir shaxsning o‘z yo‘lini ajrating.",
+        "fact_ids": [
+          "magellan",
+          "pacific"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page010"
+          }
+        ]
+      },
+      {
+        "title": "Avstraliya va Tasmaniya",
+        "body": "Luis Torres hamda Villem Yanszon 1606-yilgi safarlar bayonida eslatiladi. Abel Tasman esa Tasmaniya oroli bilan bog‘langan. Yevropalik sayyohning kelishi avval bu yerlarda odam yashamaganini anglatmaydi.",
+        "fact_ids": [
+          "torres",
+          "janszoon",
+          "tasman"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page010"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page011"
+          }
+        ]
+      },
+      {
+        "title": "Natija va majburlov",
+        "body": "Mualliflar sayohatlarni bilim, savdo yo‘llari va xo‘jalikdagi o‘zgarishlar bilan izohlaydi. Shu bilan birga bosib olish, mahalliy aholining talafoti va qul savdosi ham bayon qilinadi. Bir jarayonning turli guruhlarga ta’sirini dalillar bilan alohida tahlil qilish kerak.",
+        "fact_ids": [
+          "effects",
+          "colonialism"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page011"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page008"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page012"
+          }
+        ]
+      },
+      {
+        "title": "Ikki atamani ajrating",
+        "body": "Ekspeditsiya — maxsus maqsad bilan uyushtirilgan sayohat. Burjuaziya esa ishlab chiqarish vositalariga egalik va daromad bilan bog‘langan ijtimoiy guruh nomi. Sayohat turi bilan jamiyatdagi guruh turli tushunchalardir.",
+        "fact_ids": [
+          "expedition",
+          "bourgeoisie"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page012"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "source_refs": [
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": "wh8-chapter01",
+        "topic_id": "wh8-topic01",
+        "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+        "paragraph": 1,
+        "printed_pages": [
+          7
+        ],
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          "below_topic_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh8-p01-page007"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": "wh8-chapter01",
+        "topic_id": "wh8-topic01",
+        "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+        "paragraph": 1,
+        "printed_pages": [
+          8
+        ],
+        "pdf_pages": [
+          8
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh8-p01-page008"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": "wh8-chapter01",
+        "topic_id": "wh8-topic01",
+        "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+        "paragraph": 1,
+        "printed_pages": [
+          9
+        ],
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh8-p01-page009"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": "wh8-chapter01",
+        "topic_id": "wh8-topic01",
+        "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+        "paragraph": 1,
+        "printed_pages": [
+          10
+        ],
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh8-p01-page010"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": "wh8-chapter01",
+        "topic_id": "wh8-topic01",
+        "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+        "paragraph": 1,
+        "printed_pages": [
+          11
+        ],
+        "pdf_pages": [
+          11
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh8-p01-page011"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": "wh8-chapter01",
+        "topic_id": "wh8-topic01",
+        "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+        "paragraph": 1,
+        "printed_pages": [
+          12
+        ],
+        "pdf_pages": [
+          12
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh8-p01-page012"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": null,
+        "topic_id": "wh8-intro",
+        "topic_title": "Kirish. Yangi davrning boshlanishi",
+        "paragraph": null,
+        "printed_pages": [
+          3
+        ],
+        "pdf_pages": [
+          3
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "world-history-8-p01-r1-wh8-intro-page003"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": null,
+        "topic_id": "wh8-intro",
+        "topic_title": "Kirish. Yangi davrning boshlanishi",
+        "paragraph": null,
+        "printed_pages": [
+          4
+        ],
+        "pdf_pages": [
+          4
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "world-history-8-p01-r1-wh8-intro-page004"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": null,
+        "topic_id": "wh8-intro",
+        "topic_title": "Kirish. Yangi davrning boshlanishi",
+        "paragraph": null,
+        "printed_pages": [
+          5
+        ],
+        "pdf_pages": [
+          5
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "world-history-8-p01-r1-wh8-intro-page005"
+      },
+      {
+        "book_id": "world-history-8-uz-2019",
+        "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+        "authors": [
+          "R. Farmonov",
+          "U. Jo‘rayev",
+          "Sh. Ergashev"
+        ],
+        "year": 2019,
+        "file_name": "jahon_tarixi_8_uzb.pdf",
+        "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+        "grade": 8,
+        "chapter_id": null,
+        "topic_id": "wh8-intro",
+        "topic_title": "Kirish. Yangi davrning boshlanishi",
+        "paragraph": null,
+        "printed_pages": [
+          6
+        ],
+        "pdf_pages": [
+          6
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "world-history-8-p01-r1-wh8-intro-page006"
+      }
+    ],
+    "xp_reward": 20,
+    "reflections": [
+      {
+        "title": "Kirish va sayohat oqibatlari",
+        "body": "6-betdagi kirish savollari hamda 12-betdagi to‘rt savol, xarita va esse topshiriqlariga qayting. Davr modeli, sayohat sanasi va mustamlakachilik oqibatlarini ajrating. 9 va 11-bet xaritalarida faqat berilgan nom hamda yo‘nalishlarni dalil qiling. Badiiy kitob yoki film tarixiy faktning o‘zi emas; tashqi materialdan tekshirilmagan bilim qo‘shmang. Xulosangizni o‘qituvchi bilan muhokama qiling.",
+        "grading": "self_or_teacher_review",
+        "automatic_score": false,
+        "fact_ids": [
+          "intro_terms",
+          "capital",
+          "period",
+          "technology",
+          "transformation",
+          "discovery",
+          "caravel",
+          "navigation",
+          "motives",
+          "henry",
+          "dias",
+          "columbus",
+          "vespucci",
+          "gama",
+          "magellan",
+          "pacific",
+          "torres",
+          "janszoon",
+          "tasman",
+          "effects",
+          "colonialism",
+          "expedition",
+          "bourgeoisie"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              3
+            ],
+            "pdf_pages": [
+              3
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page003"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              4
+            ],
+            "pdf_pages": [
+              4
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page004"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              6
+            ],
+            "pdf_pages": [
+              6
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page006"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": null,
+            "topic_id": "wh8-intro",
+            "topic_title": "Kirish. Yangi davrning boshlanishi",
+            "paragraph": null,
+            "printed_pages": [
+              5
+            ],
+            "pdf_pages": [
+              5
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "world-history-8-p01-r1-wh8-intro-page005"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              7
+            ],
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page007"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              8
+            ],
+            "pdf_pages": [
+              8
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page008"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              12
+            ],
+            "pdf_pages": [
+              12
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page012"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              9
+            ],
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page009"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              11
+            ],
+            "pdf_pages": [
+              11
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page011"
+          },
+          {
+            "book_id": "world-history-8-uz-2019",
+            "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+            "authors": [
+              "R. Farmonov",
+              "U. Jo‘rayev",
+              "Sh. Ergashev"
+            ],
+            "year": 2019,
+            "file_name": "jahon_tarixi_8_uzb.pdf",
+            "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+            "grade": 8,
+            "chapter_id": "wh8-chapter01",
+            "topic_id": "wh8-topic01",
+            "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+            "paragraph": 1,
+            "printed_pages": [
+              10
+            ],
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh8-p01-page010"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "world-history-8-p01-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Kirishda xususiy mulk va mablag‘ga bog‘langan iqtisodiy atama qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kapital"
+        },
+        {
+          "id": "b",
+          "label": "Karavella"
+        },
+        {
+          "id": "c",
+          "label": "Ekspeditsiya"
+        },
+        {
+          "id": "d",
+          "label": "Usturlob"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": null,
+          "topic_id": "wh8-intro",
+          "topic_title": "Kirish. Yangi davrning boshlanishi",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-8-p01-r1-wh8-intro-page003"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Yelkanli kema atamasini tanlang.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Usturlob"
+        },
+        {
+          "id": "b",
+          "label": "Karavella"
+        },
+        {
+          "id": "c",
+          "label": "Kompas"
+        },
+        {
+          "id": "d",
+          "label": "Ekspeditsiya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page007"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page008"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page012"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "1492-yil 12-oktabrda Bagama orollariga yetgan ekspeditsiya kim bilan berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Vasko da Gama"
+        },
+        {
+          "id": "b",
+          "label": "Fernando Magellan"
+        },
+        {
+          "id": "c",
+          "label": "Xristofor Kolumb"
+        },
+        {
+          "id": "d",
+          "label": "Abel Tasman"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page009"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page011"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Amerika nomi qaysi sayyoh bilan bog‘langan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Xristofor Kolumb"
+        },
+        {
+          "id": "b",
+          "label": "Vasko da Gama"
+        },
+        {
+          "id": "c",
+          "label": "Fernando Magellan"
+        },
+        {
+          "id": "d",
+          "label": "Amerigo Vespuchchi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page009"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page010"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "1498-yil Hindistonga yetib kelish bayonidagi sayyoh kim?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Vasko da Gama"
+        },
+        {
+          "id": "b",
+          "label": "Bartolomeu Diash"
+        },
+        {
+          "id": "c",
+          "label": "Genrix Dengizchi"
+        },
+        {
+          "id": "d",
+          "label": "Abel Tasman"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page009"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page010"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "1519–1522-yillardagi ekspeditsiya qaysi shaxs bilan berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Abel Tasman"
+        },
+        {
+          "id": "b",
+          "label": "Fernando Magellan"
+        },
+        {
+          "id": "c",
+          "label": "Xristofor Kolumb"
+        },
+        {
+          "id": "d",
+          "label": "Luis Torres"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page010"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q07",
+      "response_kind": "concept_selection",
+      "prompt": "Magellan ekspeditsiyasi bayonidagi okean nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Atlantika okeani"
+        },
+        {
+          "id": "b",
+          "label": "Hind okeani"
+        },
+        {
+          "id": "c",
+          "label": "Tinch okeani"
+        },
+        {
+          "id": "d",
+          "label": "Shimoliy Muz okeani"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page010"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q08",
+      "response_kind": "concept_selection",
+      "prompt": "Abel Tasman qaysi orol bilan bog‘langan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yukatan"
+        },
+        {
+          "id": "b",
+          "label": "Bagama orollari"
+        },
+        {
+          "id": "c",
+          "label": "Madeyra"
+        },
+        {
+          "id": "d",
+          "label": "Tasmaniya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page011"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q09",
+      "response_kind": "concept_selection",
+      "prompt": "Maxsus maqsad bilan uyushtirilgan sayohat qanday ataladi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ekspeditsiya"
+        },
+        {
+          "id": "b",
+          "label": "Karavella"
+        },
+        {
+          "id": "c",
+          "label": "Kapital"
+        },
+        {
+          "id": "d",
+          "label": "Burjuaziya"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page012"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q10",
+      "response_kind": "concept_selection",
+      "prompt": "Ishlab chiqarish vositalariga egalik va daromadga bog‘langan guruh nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ekspeditsiya"
+        },
+        {
+          "id": "b",
+          "label": "Burjuaziya"
+        },
+        {
+          "id": "c",
+          "label": "Karavella"
+        },
+        {
+          "id": "d",
+          "label": "Kapital"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page012"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q11",
+      "response_kind": "short_text",
+      "prompt": "Yelkanli kema atamasini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page007"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page008"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page012"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q12",
+      "response_kind": "short_text",
+      "prompt": "1492-yil Bagama orollariga yetgan ekspeditsiya boshlig‘ining to‘liq nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page009"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page011"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q13",
+      "response_kind": "short_text",
+      "prompt": "1498-yil Hindistonga yetgan ekspeditsiya boshlig‘ining to‘liq nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page009"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page010"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p01-r1-q14",
+      "response_kind": "short_text",
+      "prompt": "Maxsus maqsadli sayohat atamasini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic01",
+          "topic_title": "Buyuk geografik kashfiyotlar va ularning tarixiy ahamiyati",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p01-page012"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

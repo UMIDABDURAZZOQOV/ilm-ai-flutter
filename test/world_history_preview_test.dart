@@ -31,7 +31,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
-  late Json lesson, results, catalog, grade7Catalog;
+  late Json lesson, results, catalog, grade7Catalog, grade8Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false;
@@ -40,6 +40,7 @@ void main() {
     results = fixture('results');
     catalog = fixture('catalog');
     grade7Catalog = fixture('grade7_catalog');
+    grade8Catalog = fixture('grade8_catalog');
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -57,6 +58,8 @@ void main() {
                 ? catalog
                 : grade == 7
                 ? grade7Catalog
+                : grade == 8
+                ? grade8Catalog
                 : fixture('grade${grade}_catalog'),
           );
         }
@@ -437,6 +440,38 @@ void main() {
     );
   }
 
+  Future<void> openGrade8(WidgetTester t) async {
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-8')));
+    final row = jsonRows(
+      grade8Catalog['lessons'],
+    ).firstWhere((r) => r['key'] == lesson['lesson_key']);
+    final unit = jsonRows(
+      grade8Catalog['source_units'],
+    ).firstWhere((u) => u['sequence'] == row['sequence']);
+    final chapter = unit['chapter_id'];
+    final chapterFinder = find.byKey(ValueKey('history-chapter-8-$chapter'));
+    if (chapter != 'wh8-chapter01') {
+      await tapFinder(t, chapterFinder);
+    }
+    final item = find
+        .ancestor(
+          of: find.descendant(
+            of: chapterFinder,
+            matching: find.text(lesson['title'] as String),
+          ),
+          matching: find.byType(Column),
+        )
+        .first;
+    await tapFinder(
+      t,
+      find.descendant(of: item, matching: find.text('Darsni takrorlash')),
+    );
+    expect(
+      requests.last.path,
+      endsWith('/lessons/${lesson['lesson_key']}/start'),
+    );
+  }
+
   testWidgets('completed grade7 switches to grade8 with its own bibliography', (
     t,
   ) async {
@@ -581,6 +616,117 @@ void main() {
             find.byKey(const Key('world-history-short-answer')),
           );
           expect(input.controller!.text, 'Genrix I');
+          expect(t.takeException(), isNull);
+        },
+      );
+    }
+  }
+  for (var number = 1; number <= 5; number++) {
+    void selectGrade8Lesson() {
+      final suffix = number.toString().padLeft(2, '0');
+      lesson = fixture('g8_p${suffix}_lesson');
+      results = fixture('g8_p${suffix}_results');
+      grade8Catalog = fixture('batch19_grade8_completed_catalog');
+    }
+
+    testWidgets('grade8 paragraph$number theory and MCQ at200%', (t) async {
+      selectGrade8Lesson();
+      await mount(t, size: const Size(320, 568), scale: 2, dark: number.isEven);
+      await openGrade8(t);
+      expect(find.text('Jahon tarixi · 8-sinf'), findsWidgets);
+      await capture(t, 'grade8-paragraph$number-theory-200');
+      final cards = jsonRows((lesson['content'] as Json)['cards']);
+      for (var i = 0; i < cards.length - 1; i++) {
+        await tap(t, 'Davom etish');
+      }
+      await tap(t, 'Mashqlarga o‘tish');
+      final q = jsonRows(lesson['questions']).first;
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await tap(t, answer['correct_answer'] as String);
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, 'grade8-paragraph$number-feedback-200');
+      expect(t.takeException(), isNull);
+    });
+    testWidgets('grade8 paragraph$number FRQ uses its own snapshot', (t) async {
+      selectGrade8Lesson();
+      final questions = jsonRows(lesson['questions']);
+      final firstFrq = questions.indexWhere(
+        (q) => q['response_kind'] == 'short_text',
+      );
+      skip(firstFrq);
+      await mount(t);
+      await openGrade8(t);
+      final q = questions[firstFrq];
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await capture(t, 'grade8-paragraph$number-frq-resume');
+      await t.scrollUntilVisible(
+        find.byKey(const Key('world-history-short-answer')),
+        180,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await t.enterText(
+        find.byKey(const Key('world-history-short-answer')),
+        answer['correct_answer'] as String,
+      );
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      expect((requests.last.data as Map)['answer'], {
+        'value': answer['correct_answer'],
+      });
+      expect(
+        (requests.last.data as Map)['assessment_key'],
+        startsWith('world-history-8-'),
+      );
+      expect(t.takeException(), isNull);
+    });
+    if (number == 1) {
+      testWidgets('grade8 introduction retains its own bibliography', (
+        t,
+      ) async {
+        selectGrade8Lesson();
+        await mount(t, size: const Size(320, 568), scale: 2);
+        await openGrade8(t);
+        await tapFinder(t, find.textContaining('Manba: Kirish').first);
+        expect(find.textContaining('jahon_tarixi_8_uzb.pdf'), findsOneWidget);
+        expect(find.textContaining('Farmonov'), findsWidgets);
+        await capture(t, 'grade8-introduction-source-200');
+        expect(t.takeException(), isNull);
+      });
+    }
+    if (number == 5) {
+      testWidgets(
+        'grade8 draft survives remount without using a grade6 request',
+        (t) async {
+          selectGrade8Lesson();
+          final questions = jsonRows(lesson['questions']);
+          skip(questions.indexWhere((q) => q['response_kind'] == 'short_text'));
+          final prefs = await mount(t);
+          await openGrade8(t);
+          await t.scrollUntilVisible(
+            find.byKey(const Key('world-history-short-answer')),
+            180,
+            scrollable: find.byType(Scrollable).first,
+          );
+          await t.enterText(
+            find.byKey(const Key('world-history-short-answer')),
+            'Oliver Kromvel',
+          );
+          await t.pumpAndSettle();
+          final first = requests.lastWhere((r) => r.path.endsWith('/start'));
+          await t.pumpWidget(const SizedBox.shrink());
+          await mount(t, prefs: prefs);
+          await openGrade8(t);
+          final last = requests.lastWhere((r) => r.path.endsWith('/start'));
+          expect(
+            (first.data as Map)['request_id'],
+            (last.data as Map)['request_id'],
+          );
+          expect(last.path, contains('world-history-8-p05-r1'));
+          final input = t.widget<TextField>(
+            find.byKey(const Key('world-history-short-answer')),
+          );
+          expect(input.controller!.text, 'Oliver Kromvel');
           expect(t.takeException(), isNull);
         },
       );
