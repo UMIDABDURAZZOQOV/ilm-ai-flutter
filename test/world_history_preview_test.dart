@@ -266,8 +266,12 @@ void main() {
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
     expect(requests.last.queryParameters['grade'], 7);
     expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
-    expect(find.text('5/44 dars mavjud.'), findsOneWidget);
+    expect(find.text('10/44 dars mavjud.'), findsOneWidget);
     expect(find.text('Darsni boshlash'), findsWidgets);
+    await tapFinder(
+      t,
+      find.byKey(const ValueKey('history-chapter-7-wh7-chapter02')),
+    );
     expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
     expect(t.takeException(), isNull);
   });
@@ -385,6 +389,13 @@ void main() {
   }
   Future<void> openGrade7(WidgetTester t) async {
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
+    final unit = jsonRows(
+      grade7Catalog['source_units'],
+    ).firstWhere((u) => u['title'] == lesson['title']);
+    final chapter = unit['chapter_id'];
+    if (chapter != 'wh7-chapter01') {
+      await tapFinder(t, find.byKey(ValueKey('history-chapter-7-$chapter')));
+    }
     final item = find
         .ancestor(
           of: find.text(lesson['title'] as String),
@@ -397,12 +408,16 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 5; number++) {
+  for (var number = 1; number <= 10; number++) {
     void selectGrade7Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g7_p${suffix}_lesson');
       results = fixture('g7_p${suffix}_results');
-      grade7Catalog = fixture('batch10_grade7_completed_catalog');
+      grade7Catalog = fixture(
+        number >= 6
+            ? 'batch11_grade7_completed_catalog'
+            : 'batch10_grade7_completed_catalog',
+      );
     }
 
     testWidgets('grade7 paragraph$number theory and MCQ at200%', (t) async {
