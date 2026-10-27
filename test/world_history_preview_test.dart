@@ -266,7 +266,7 @@ void main() {
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
     expect(requests.last.queryParameters['grade'], 7);
     expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
-    expect(find.text('15/44 dars mavjud.'), findsOneWidget);
+    expect(find.text('20/44 dars mavjud.'), findsOneWidget);
     expect(find.text('Darsni boshlash'), findsWidgets);
     await tapFinder(
       t,
@@ -408,13 +408,15 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 15; number++) {
+  for (var number = 1; number <= 20; number++) {
     void selectGrade7Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g7_p${suffix}_lesson');
       results = fixture('g7_p${suffix}_results');
       grade7Catalog = fixture(
-        number >= 11
+        number >= 16
+            ? 'batch13_grade7_completed_catalog'
+            : number >= 11
             ? 'batch12_grade7_completed_catalog'
             : number >= 6
             ? 'batch11_grade7_completed_catalog'
