@@ -90,7 +90,9 @@ void main() {
       expect(capstone['title'], contains('Yakuniy'));
       expect(grade8['course_ready'], isFalse);
       expect(fixture('catalog9')['grade_content_complete'], isTrue);
-      expect(jsonRows(fixture('catalog9')['lessons']).last['source_numbers'], [41]);
+      expect(jsonRows(fixture('catalog9')['lessons']).last['source_numbers'], [
+        41,
+      ]);
       expect(
         historySectionLabel(jsonRows(fixture('catalog9')['lessons'])[3]),
         '§4–5',
@@ -462,7 +464,28 @@ void main() {
     },
   );
 
-  for (final (grade, count) in [(8, 41), (9, 39)]) {
+  testWidgets('grade10 opens independently with the supplied 2017 textbook', (
+    tester,
+  ) async {
+    lesson = fixture('grade10_lesson1');
+    await mount(tester);
+    final picker = find.byType(DropdownButtonFormField<int>);
+    await tester.ensureVisible(picker);
+    await tester.tap(picker);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('10-sinf').last);
+    await tester.pumpAndSettle();
+    final button = find.text('Darsni ochish');
+    await tester.ensureVisible(button);
+    await tester.pumpAndSettle();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(requests.last.path, contains('uzh-10-1-r1'));
+    expect(find.text('Mashqlarga o‘tish'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  for (final (grade, count) in [(8, 41), (9, 39), (10, 5)]) {
     for (var n = 1; n <= count; n++) {
       testWidgets(
         'grade$grade lesson $n keeps raw names and fits chronology at large text',
