@@ -421,7 +421,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  for (var n = 1; n <= 15; n++) {
+  for (var n = 1; n <= 20; n++) {
     testWidgets(
       'scanned grade8 lesson $n keeps raw names and fits chronology at large text',
       (tester) async {

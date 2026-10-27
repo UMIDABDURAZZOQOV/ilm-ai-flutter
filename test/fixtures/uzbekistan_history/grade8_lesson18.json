@@ -1,0 +1,901 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:555c946c-99d5-4a25-a538-384ababaa3f7",
+  "lesson_key": "uzh-8-18-r1",
+  "expires_at": "2026-10-28T03:01:11.179450+00:00",
+  "title": "Buxoro amirligida ijtimoiy-iqtisodiy hayot",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-18-r1:c1",
+        "title": "Hudud va aholi",
+        "body": "Bo‘lim amirlikni Zarafshon, Qashqadaryo, Hisor va boshqa hududlar bilan tavsiflaydi, aholi tarkibida bir nechta xalq vakillari borligini ko‘rsatadi. Nashrdagi tarixiy miqdorlar bugungi aholi ro‘yxati emas.",
+        "fact_ids": [
+          "uzh-8-topic-18:people"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:people",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              65
+            ],
+            "printed_pages": [
+              65
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7e2a9330861944eed4b736ef8de10f5559f3cadfecc7d0a9ebe26261e835d3bc"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 318.7
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c2",
+        "title": "Qishloq xo‘jaligi",
+        "body": "Qishloq xo‘jaligi yetakchi tarmoq sifatida beriladi. Paxta, bog‘ va poliz mahsulotlari hamda chorvachilik birgalikda tasvirlanadi; butun xo‘jalik faqat bitta mahsulotdan iborat deb olinmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-18:economy"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:economy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              65,
+              66
+            ],
+            "printed_pages": [
+              65,
+              66
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7e2a9330861944eed4b736ef8de10f5559f3cadfecc7d0a9ebe26261e835d3bc",
+              "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 318.7
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c3",
+        "title": "Suv ayirg‘ich va chig‘ir",
+        "body": "Sug‘orish inshootlari suvni taqsimlash va yuqoriga chiqarishga xizmat qilgan. Chig‘ir suv chiqaruvchi moslama sifatida keltiriladi; qo‘llanish tarixini barcha hudud uchun bir xil deb umumlashtirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-18:water"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:water",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              66
+            ],
+            "printed_pages": [
+              66
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c4",
+        "title": "Yer turlari",
+        "body": "Yer egaligida davlat, xususiy mulk va vaqf turlari saqlangan. Davlat yerlarining bir qismi foydalanish uchun, bir qismi mansab yoki xizmat bilan bog‘liq tartibda berilgan; barcha holat bir xil huquq demaydi.",
+        "fact_ids": [
+          "uzh-8-topic-18:land"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:land",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              66
+            ],
+            "printed_pages": [
+              66
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c5",
+        "title": "Tanho daromadi",
+        "body": "Tanhodor yerning o‘ziga emas, undan olinadigan soliq daromadining muayyan qismiga ega bo‘lgani aytiladi. Bu yerning sotilishi bilan bir xil bitim emas.",
+        "fact_ids": [
+          "uzh-8-topic-18:tanho"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:tanho",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c6",
+        "title": "Vaqf va muassasalar",
+        "body": "Vaqf yer daromadi masjid, maktabxona, madrasa va boshqa muassasalar xarajatlariga ajratilgan. Bunday mulkni mutavalli boshqargan.",
+        "fact_ids": [
+          "uzh-8-topic-18:vaqf"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:vaqf",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c7",
+        "title": "Bog‘ va poliz solig‘i",
+        "body": "Bog‘, poliz va sabzavot yerlaridan olinadigan soliq tanobona deb berilgan. Bu atamani asosiy yer solig‘i xiroj bilan almashtirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-18:tanobona"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:tanobona",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-18-r1:c8",
+        "title": "Boshqa soliqlar",
+        "body": "Qo‘sh puli ish hayvonlari bilan, zakot esa mol-mulk miqdori bilan bog‘langan. Bo‘limda turli soliqlarning hisoblanish asosi alohida keltiriladi.",
+        "fact_ids": [
+          "uzh-8-topic-18:other_tax"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:other_tax",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Tanho — daromaddan ulush; tanobona — ekin yerining muayyan turidan soliq; mutavalli — mulkni boshqaruvchi shaxs. O‘xshash tovush yoki bir mavzuda uchrash bir xil vazifa degani emas.",
+        "fact_ids": [
+          "uzh-8-topic-18:tanho",
+          "uzh-8-topic-18:vaqf",
+          "uzh-8-topic-18:tanobona"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:tanho",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:vaqf",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:tanobona",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Yer huquqi, undan tushadigan daromad va uni boshqaruvchi shaxsni ajrating. Tanho va vaqf misollari bilan izohlang.",
+        "fact_ids": [
+          "uzh-8-topic-18:land",
+          "uzh-8-topic-18:tanho",
+          "uzh-8-topic-18:vaqf"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:land",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              66
+            ],
+            "printed_pages": [
+              66
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:tanho",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-18",
+            "fact_id": "uzh-8-topic-18:vaqf",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              67
+            ],
+            "printed_pages": [
+              67
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:people",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          65
+        ],
+        "printed_pages": [
+          65
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7e2a9330861944eed4b736ef8de10f5559f3cadfecc7d0a9ebe26261e835d3bc"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 318.7
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:economy",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          65,
+          66
+        ],
+        "printed_pages": [
+          65,
+          66
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7e2a9330861944eed4b736ef8de10f5559f3cadfecc7d0a9ebe26261e835d3bc",
+          "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 318.7
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:water",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          66
+        ],
+        "printed_pages": [
+          66
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:land",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          66
+        ],
+        "printed_pages": [
+          66
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:tanho",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          67
+        ],
+        "printed_pages": [
+          67
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:vaqf",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          67
+        ],
+        "printed_pages": [
+          67
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:tanobona",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          67
+        ],
+        "printed_pages": [
+          67
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-18",
+        "fact_id": "uzh-8-topic-18:other_tax",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          67
+        ],
+        "printed_pages": [
+          67
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-18-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Suvni chiqarish uchun keltirilgan moslama qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Chig‘ir"
+        },
+        {
+          "id": "o2",
+          "label": "Mutavalli"
+        },
+        {
+          "id": "o3",
+          "label": "Tanobona"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-18",
+          "fact_id": "uzh-8-topic-18:water",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            66
+          ],
+          "printed_pages": [
+            66
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-18-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Vaqf mulkini boshqaruvchi kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Tanhodor"
+        },
+        {
+          "id": "o2",
+          "label": "Mutavalli"
+        },
+        {
+          "id": "o3",
+          "label": "Navkar"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-18",
+          "fact_id": "uzh-8-topic-18:vaqf",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            67
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-18-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Bog‘, poliz va sabzavot yeridan olinadigan soliq qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Zakot"
+        },
+        {
+          "id": "o2",
+          "label": "Tanho"
+        },
+        {
+          "id": "o3",
+          "label": "Tanobona"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-18",
+          "fact_id": "uzh-8-topic-18:tanobona",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            67
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-18-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Asosiy yer solig‘ining shu darsdagi nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-18",
+          "fact_id": "uzh-8-topic-18:tanobona",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            67
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-18-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Mol-mulk miqdoridan olinadigan soliqni yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-18",
+          "fact_id": "uzh-8-topic-18:other_tax",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            67
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a96bfe93691e461ccb82a7b8dcd46f9e782eb4394c2f4edb8acadec7f0f73055"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-18-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Bo‘limda yetakchi xo‘jalik tarmog‘i qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Qishloq xo‘jaligi"
+        },
+        {
+          "id": "o2",
+          "label": "Faqat kitob ko‘chirish"
+        },
+        {
+          "id": "o3",
+          "label": "Faqat metall qazish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-18",
+          "fact_id": "uzh-8-topic-18:economy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            65,
+            66
+          ],
+          "printed_pages": [
+            65,
+            66
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7e2a9330861944eed4b736ef8de10f5559f3cadfecc7d0a9ebe26261e835d3bc",
+            "c0eef9d7e076029b91c1ffd4213be3b62f9534f1672475da9f134ff224e0c319"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 318.7
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
