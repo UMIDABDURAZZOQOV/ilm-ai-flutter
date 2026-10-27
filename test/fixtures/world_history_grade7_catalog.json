@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 44,
-  "implemented_sections": 30,
+  "implemented_sections": 35,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 14,
+  "source_review_issue_count": 9,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
@@ -4699,6 +4699,483 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh7-p30-page112"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p31-r1",
+      "sequence": 31,
+      "title": "Rus knyazliklarida markazlashish jarayonlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic31",
+          "topic_title": "Rus knyazliklarida markazlashish jarayonlari",
+          "paragraph": 31,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p31-page112"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic31",
+          "topic_title": "Rus knyazliklarida markazlashish jarayonlari",
+          "paragraph": 31,
+          "printed_pages": [
+            113
+          ],
+          "pdf_pages": [
+            113
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p31-page113"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p32-r1",
+      "sequence": 32,
+      "title": "Yevropa madaniyati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic32",
+          "topic_title": "Yevropa madaniyati",
+          "paragraph": 32,
+          "printed_pages": [
+            113
+          ],
+          "pdf_pages": [
+            113
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p32-page113"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic32",
+          "topic_title": "Yevropa madaniyati",
+          "paragraph": 32,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p32-page114"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic32",
+          "topic_title": "Yevropa madaniyati",
+          "paragraph": 32,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p32-page115"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic32",
+          "topic_title": "Yevropa madaniyati",
+          "paragraph": 32,
+          "printed_pages": [
+            116
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p32-page116"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p33-r1",
+      "sequence": 33,
+      "title": "Yevropada me’morchilik, san’at va adabiyot",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic33",
+          "topic_title": "Yevropada me’morchilik, san’at va adabiyot",
+          "paragraph": 33,
+          "printed_pages": [
+            117
+          ],
+          "pdf_pages": [
+            117
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p33-page117"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic33",
+          "topic_title": "Yevropada me’morchilik, san’at va adabiyot",
+          "paragraph": 33,
+          "printed_pages": [
+            118
+          ],
+          "pdf_pages": [
+            118
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p33-page118"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic33",
+          "topic_title": "Yevropada me’morchilik, san’at va adabiyot",
+          "paragraph": 33,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p33-page119"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter04",
+          "topic_id": "wh7-topic33",
+          "topic_title": "Yevropada me’morchilik, san’at va adabiyot",
+          "paragraph": 33,
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            120
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p33-page120"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p34-r1",
+      "sequence": 34,
+      "title": "Saljuqiylar davlati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic34",
+          "topic_title": "Saljuqiylar davlati",
+          "paragraph": 34,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p34-page121"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic34",
+          "topic_title": "Saljuqiylar davlati",
+          "paragraph": 34,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p34-page122"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p35-r1",
+      "sequence": 35,
+      "title": "Usmonli turklar davlati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic35",
+          "topic_title": "Usmonli turklar davlati",
+          "paragraph": 35,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p35-page122"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic35",
+          "topic_title": "Usmonli turklar davlati",
+          "paragraph": 35,
+          "printed_pages": [
+            123
+          ],
+          "pdf_pages": [
+            123
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p35-page123"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic35",
+          "topic_title": "Usmonli turklar davlati",
+          "paragraph": 35,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p35-page124"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter05",
+          "topic_id": "wh7-topic35",
+          "topic_title": "Usmonli turklar davlati",
+          "paragraph": 35,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p35-page125"
         }
       ]
     }
