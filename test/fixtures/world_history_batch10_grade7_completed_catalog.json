@@ -1,0 +1,1781 @@
+{
+  "assessment_version": 2,
+  "subject": "jahon_tarixi",
+  "grade": 7,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 44,
+  "implemented_sections": 5,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 39,
+  "grade_content_complete": false,
+  "implemented_grades": [
+    6,
+    7
+  ],
+  "available_grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "bibliography": {
+    "id": "world-history-7-uz-2017",
+    "title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+    "authors": [
+      "T. O‘. Salimov",
+      "F. E. Sultonov"
+    ],
+    "year": 2017,
+    "edition": "Qayta ishlangan va to‘ldirilgan 3-nashri",
+    "publisher": "O‘zbekiston milliy ensiklopediyasi",
+    "isbn": "978-9943-07-501-6",
+    "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11"
+  },
+  "chapters": [
+    {
+      "id": "wh7-chapter01",
+      "source_number": "I",
+      "title": "O‘rta asrlarning ilk davri",
+      "first_topic_number": 1,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh7-chapter02",
+      "source_number": "II",
+      "title": "Ilk o‘rta asrlarda Osiyo",
+      "first_topic_number": 10,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh7-chapter03",
+      "source_number": "III",
+      "title": "Jahon xalqlari o‘rta asrlarning rivojlangan davrida (XI–XV asrlar)",
+      "first_topic_number": 15,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh7-chapter04",
+      "source_number": "IV",
+      "title": "Yevropada markazlashgan davlatlarning tashkil topishi",
+      "first_topic_number": 22,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh7-chapter05",
+      "source_number": "V",
+      "title": "Osiyo, Amerika va Afrika xalqlari",
+      "first_topic_number": 34,
+      "verification": "contents_image_verified"
+    }
+  ],
+  "source_units": [
+    {
+      "id": "wh7-topic01",
+      "title": "German qabilalari va Rim imperiyasi",
+      "sequence": 1,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "wh7-topic02",
+      "title": "Franklar. Franklar davlatining tashkil topishi",
+      "sequence": 2,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "printed_pages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "wh7-topic03",
+      "title": "Franklar imperiyasi",
+      "sequence": 3,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "printed_pages": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "wh7-topic04",
+      "title": "Britaniyadan Angliyaga",
+      "sequence": 4,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "printed_pages": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "wh7-topic05",
+      "title": "Muqaddas Rim imperiyasi",
+      "sequence": 5,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "printed_pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "wh7-topic06",
+      "title": "Vizantiya: G‘arb va Sharq orasida",
+      "sequence": 6,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "printed_pages": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "id": "wh7-topic07",
+      "title": "Slavyanlar va ularda davlatlarning tashkil topishi",
+      "sequence": 7,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "printed_pages": [
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "wh7-topic08",
+      "title": "Sharqiy slavyanlar. Kiyev Rusi",
+      "sequence": 8,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "printed_pages": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "wh7-topic09",
+      "title": "Yevropa xalqlari madaniyati",
+      "sequence": 9,
+      "chapter_id": "wh7-chapter01",
+      "pdf_pages": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "printed_pages": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "id": "wh7-topic10",
+      "title": "Arabiston ilk o‘rta asrlar boshida",
+      "sequence": 10,
+      "chapter_id": "wh7-chapter02",
+      "pdf_pages": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "printed_pages": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "wh7-topic11",
+      "title": "Arab xalifaligi",
+      "sequence": 11,
+      "chapter_id": "wh7-chapter02",
+      "pdf_pages": [
+        51,
+        52,
+        53
+      ],
+      "printed_pages": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "id": "wh7-topic12",
+      "title": "Hindiston",
+      "sequence": 12,
+      "chapter_id": "wh7-chapter02",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "printed_pages": [
+        53,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "wh7-topic13",
+      "title": "Xitoy (IV–X asrlarda)",
+      "sequence": 13,
+      "chapter_id": "wh7-chapter02",
+      "pdf_pages": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "printed_pages": [
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "id": "wh7-topic14",
+      "title": "Osiyo mamlakatlari madaniyati",
+      "sequence": 14,
+      "chapter_id": "wh7-chapter02",
+      "pdf_pages": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "printed_pages": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "wh7-topic15",
+      "title": "Yevropada o‘rta asr shaharlari",
+      "sequence": 15,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "printed_pages": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "id": "wh7-topic16",
+      "title": "O‘rta asrlarda tovar ishlab chiqarishning yuksalishi. Bozor va yarmarkalar",
+      "sequence": 16,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "printed_pages": [
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "id": "wh7-topic17",
+      "title": "Osiyo mamlakatlarining o‘rta asr shaharlari",
+      "sequence": 17,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "printed_pages": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "id": "wh7-topic18",
+      "title": "O‘rta asrlarda xristianlik",
+      "sequence": 18,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        78,
+        79,
+        80
+      ],
+      "printed_pages": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "id": "wh7-topic19",
+      "title": "Salib yurishlari",
+      "sequence": 19,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "printed_pages": [
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "wh7-topic20",
+      "title": "Dastlabki salib yurishlari",
+      "sequence": 20,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        83,
+        84,
+        85,
+        86
+      ],
+      "printed_pages": [
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "id": "wh7-topic21",
+      "title": "Keyingi salib yurishlari",
+      "sequence": 21,
+      "chapter_id": "wh7-chapter03",
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "printed_pages": [
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "id": "wh7-topic22",
+      "title": "Fransiyada markazlashgan davlatning tashkil topishi",
+      "sequence": 22,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        89,
+        90,
+        91
+      ],
+      "printed_pages": [
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "id": "wh7-topic23",
+      "title": "General shtatlar",
+      "sequence": 23,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        91,
+        92,
+        93
+      ],
+      "printed_pages": [
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "id": "wh7-topic24",
+      "title": "Yuz yillik urushning boshlanishi va uning dastlabki davri",
+      "sequence": 24,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        93,
+        94,
+        95
+      ],
+      "printed_pages": [
+        93,
+        94,
+        95
+      ]
+    },
+    {
+      "id": "wh7-topic25",
+      "title": "Fransiyada mutlaq monarxiya",
+      "sequence": 25,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "printed_pages": [
+        95,
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "id": "wh7-topic26",
+      "title": "Angliyada markazlashgan davlatning tashkil topishi",
+      "sequence": 26,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "printed_pages": [
+        98,
+        99,
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "id": "wh7-topic27",
+      "title": "Angliya o‘rta asrlar so‘ngida",
+      "sequence": 27,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        102,
+        103,
+        104
+      ],
+      "printed_pages": [
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "id": "wh7-topic28",
+      "title": "Germaniya",
+      "sequence": 28,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "printed_pages": [
+        104,
+        105,
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "id": "wh7-topic29",
+      "title": "Rus knyazliklari",
+      "sequence": 29,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        108,
+        109,
+        110
+      ],
+      "printed_pages": [
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "id": "wh7-topic30",
+      "title": "Ruslarning bosqinchilarga qarshi kurashi",
+      "sequence": 30,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        110,
+        111,
+        112
+      ],
+      "printed_pages": [
+        110,
+        111,
+        112
+      ]
+    },
+    {
+      "id": "wh7-topic31",
+      "title": "Rus knyazliklarida markazlashish jarayonlari",
+      "sequence": 31,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        112,
+        113
+      ],
+      "printed_pages": [
+        112,
+        113
+      ]
+    },
+    {
+      "id": "wh7-topic32",
+      "title": "Yevropa madaniyati",
+      "sequence": 32,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "printed_pages": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "id": "wh7-topic33",
+      "title": "Yevropada me’morchilik, san’at va adabiyot",
+      "sequence": 33,
+      "chapter_id": "wh7-chapter04",
+      "pdf_pages": [
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "printed_pages": [
+        117,
+        118,
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "id": "wh7-topic34",
+      "title": "Saljuqiylar davlati",
+      "sequence": 34,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        121,
+        122
+      ],
+      "printed_pages": [
+        121,
+        122
+      ]
+    },
+    {
+      "id": "wh7-topic35",
+      "title": "Usmonli turklar davlati",
+      "sequence": 35,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        122,
+        123,
+        124,
+        125
+      ],
+      "printed_pages": [
+        122,
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "id": "wh7-topic36",
+      "title": "Mo‘g‘ullar davlati",
+      "sequence": 36,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        125,
+        126,
+        127,
+        128
+      ],
+      "printed_pages": [
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "id": "wh7-topic37",
+      "title": "Oltin O‘rda xonligi",
+      "sequence": 37,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "printed_pages": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "id": "wh7-topic38",
+      "title": "Xitoy",
+      "sequence": 38,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        132,
+        133,
+        134,
+        135,
+        136
+      ],
+      "printed_pages": [
+        132,
+        133,
+        134,
+        135,
+        136
+      ]
+    },
+    {
+      "id": "wh7-topic39",
+      "title": "Yaponiya",
+      "sequence": 39,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        136,
+        137,
+        138
+      ],
+      "printed_pages": [
+        136,
+        137,
+        138
+      ]
+    },
+    {
+      "id": "wh7-topic40",
+      "title": "Koreya",
+      "sequence": 40,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        138,
+        139,
+        140
+      ],
+      "printed_pages": [
+        138,
+        139,
+        140
+      ]
+    },
+    {
+      "id": "wh7-topic41",
+      "title": "Hindiston",
+      "sequence": 41,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        140,
+        141,
+        142
+      ],
+      "printed_pages": [
+        140,
+        141,
+        142
+      ]
+    },
+    {
+      "id": "wh7-topic42",
+      "title": "Amerika o‘rta asrlarda",
+      "sequence": 42,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        142,
+        143,
+        144,
+        145,
+        146
+      ],
+      "printed_pages": [
+        142,
+        143,
+        144,
+        145,
+        146
+      ]
+    },
+    {
+      "id": "wh7-topic43",
+      "title": "Afrika xalqlari o‘rta asrlarda",
+      "sequence": 43,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "printed_pages": [
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ]
+    },
+    {
+      "id": "wh7-topic44",
+      "title": "Osiyo, Amerika va Afrika xalqlari madaniyati",
+      "sequence": 44,
+      "chapter_id": "wh7-chapter05",
+      "pdf_pages": [
+        151,
+        152,
+        153,
+        154
+      ],
+      "printed_pages": [
+        151,
+        152,
+        153,
+        154
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "key": "world-history-7-p01-r1",
+      "sequence": 1,
+      "title": "German qabilalari va Rim imperiyasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic01",
+          "topic_title": "German qabilalari va Rim imperiyasi",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p01-page008"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic01",
+          "topic_title": "German qabilalari va Rim imperiyasi",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p01-page009"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic01",
+          "topic_title": "German qabilalari va Rim imperiyasi",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p01-page010"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic01",
+          "topic_title": "German qabilalari va Rim imperiyasi",
+          "paragraph": 1,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p01-page011"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic01",
+          "topic_title": "German qabilalari va Rim imperiyasi",
+          "paragraph": 1,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p01-page012"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-authors",
+          "topic_title": "Mualliflardan",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p01-r1-wh7-authors-page003"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p01-r1-wh7-intro-page004"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p01-r1-wh7-intro-page005"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p01-r1-wh7-intro-page006"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": null,
+          "topic_id": "wh7-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-7-p01-r1-wh7-intro-page007"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p02-r1",
+      "sequence": 2,
+      "title": "Franklar. Franklar davlatining tashkil topishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic02",
+          "topic_title": "Franklar. Franklar davlatining tashkil topishi",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p02-page012"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic02",
+          "topic_title": "Franklar. Franklar davlatining tashkil topishi",
+          "paragraph": 2,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p02-page013"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic02",
+          "topic_title": "Franklar. Franklar davlatining tashkil topishi",
+          "paragraph": 2,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p02-page014"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic02",
+          "topic_title": "Franklar. Franklar davlatining tashkil topishi",
+          "paragraph": 2,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p02-page015"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic02",
+          "topic_title": "Franklar. Franklar davlatining tashkil topishi",
+          "paragraph": 2,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p02-page016"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic02",
+          "topic_title": "Franklar. Franklar davlatining tashkil topishi",
+          "paragraph": 2,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p02-page017"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p03-r1",
+      "sequence": 3,
+      "title": "Franklar imperiyasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic03",
+          "topic_title": "Franklar imperiyasi",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p03-page017"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic03",
+          "topic_title": "Franklar imperiyasi",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p03-page018"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic03",
+          "topic_title": "Franklar imperiyasi",
+          "paragraph": 3,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p03-page019"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic03",
+          "topic_title": "Franklar imperiyasi",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p03-page020"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic03",
+          "topic_title": "Franklar imperiyasi",
+          "paragraph": 3,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p03-page021"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p04-r1",
+      "sequence": 4,
+      "title": "Britaniyadan Angliyaga",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic04",
+          "topic_title": "Britaniyadan Angliyaga",
+          "paragraph": 4,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p04-page021"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic04",
+          "topic_title": "Britaniyadan Angliyaga",
+          "paragraph": 4,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p04-page022"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic04",
+          "topic_title": "Britaniyadan Angliyaga",
+          "paragraph": 4,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p04-page023"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic04",
+          "topic_title": "Britaniyadan Angliyaga",
+          "paragraph": 4,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p04-page024"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic04",
+          "topic_title": "Britaniyadan Angliyaga",
+          "paragraph": 4,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p04-page025"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic04",
+          "topic_title": "Britaniyadan Angliyaga",
+          "paragraph": 4,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p04-page026"
+        }
+      ]
+    },
+    {
+      "key": "world-history-7-p05-r1",
+      "sequence": 5,
+      "title": "Muqaddas Rim imperiyasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic05",
+          "topic_title": "Muqaddas Rim imperiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p05-page026"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic05",
+          "topic_title": "Muqaddas Rim imperiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p05-page027"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic05",
+          "topic_title": "Muqaddas Rim imperiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p05-page028"
+        },
+        {
+          "book_id": "world-history-7-uz-2017",
+          "book_title": "Jahon tarixi (milodiy V asr oxiridan XV asr oxirigacha)",
+          "authors": [
+            "T. O‘. Salimov",
+            "F. E. Sultonov"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_7_uzb.pdf",
+          "sha256": "4d057e61fa891875aeaad991adc5d77c6b8bdad7b9abe9a5eebf55bcf6efec11",
+          "grade": 7,
+          "chapter_id": "wh7-chapter01",
+          "topic_id": "wh7-topic05",
+          "topic_title": "Muqaddas Rim imperiyasi",
+          "paragraph": 5,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh7-p05-page029"
+        }
+      ]
+    }
+  ]
+}

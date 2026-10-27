@@ -31,7 +31,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
-  late Json lesson, results, catalog;
+  late Json lesson, results, catalog, grade7Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false;
@@ -39,6 +39,7 @@ void main() {
     lesson = fixture('lesson');
     results = fixture('results');
     catalog = fixture('catalog');
+    grade7Catalog = fixture('grade7_catalog');
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -52,7 +53,11 @@ void main() {
           final grade = r.queryParameters['grade'] as int;
           return reply(
             200,
-            grade == 6 ? catalog : fixture('grade${grade}_catalog'),
+            grade == 6
+                ? catalog
+                : grade == 7
+                ? grade7Catalog
+                : fixture('grade${grade}_catalog'),
           );
         }
         if (r.path.endsWith('/start')) {
@@ -253,22 +258,19 @@ void main() {
     expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
     expect(t.takeException(), isNull);
   });
-  testWidgets(
-    'finished grade6 can switch to the unimplemented grade7 catalogue',
-    (t) async {
-      catalog = fixture('batch09_completed_catalog');
-      expect(catalog['grade_content_complete'], true);
-      expect(catalog['course_complete'], false);
-      await mount(t);
-      await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
-      expect(requests.last.queryParameters['grade'], 7);
-      expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
-      expect(find.text('0/44 dars mavjud.'), findsOneWidget);
-      expect(find.text('Darsni boshlash'), findsNothing);
-      expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
-      expect(t.takeException(), isNull);
-    },
-  );
+  testWidgets('finished grade6 can switch to the grade7 catalogue', (t) async {
+    catalog = fixture('batch09_completed_catalog');
+    expect(catalog['grade_content_complete'], true);
+    expect(catalog['course_complete'], false);
+    await mount(t);
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
+    expect(requests.last.queryParameters['grade'], 7);
+    expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
+    expect(find.text('5/44 dars mavjud.'), findsOneWidget);
+    expect(find.text('Darsni boshlash'), findsWidgets);
+    expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+    expect(t.takeException(), isNull);
+  });
   testWidgets('source sheet shows real bibliography and no PDF image', (
     t,
   ) async {
@@ -380,6 +382,131 @@ void main() {
       );
       expect(t.takeException(), isNull);
     });
+  }
+  Future<void> openGrade7(WidgetTester t) async {
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-7')));
+    final item = find
+        .ancestor(
+          of: find.text(lesson['title'] as String),
+          matching: find.byType(Column),
+        )
+        .first;
+    await tapFinder(
+      t,
+      find.descendant(of: item, matching: find.text('Darsni takrorlash')),
+    );
+  }
+
+  for (var number = 1; number <= 5; number++) {
+    void selectGrade7Lesson() {
+      final suffix = number.toString().padLeft(2, '0');
+      lesson = fixture('g7_p${suffix}_lesson');
+      results = fixture('g7_p${suffix}_results');
+      grade7Catalog = fixture('batch10_grade7_completed_catalog');
+    }
+
+    testWidgets('grade7 paragraph$number theory and MCQ at200%', (t) async {
+      selectGrade7Lesson();
+      await mount(t, size: const Size(320, 568), scale: 2, dark: number.isEven);
+      await openGrade7(t);
+      expect(find.text('Jahon tarixi · 7-sinf'), findsWidgets);
+      await capture(t, 'grade7-paragraph$number-theory-200');
+      final cards = jsonRows((lesson['content'] as Json)['cards']);
+      for (var i = 0; i < cards.length - 1; i++) {
+        await tap(t, 'Davom etish');
+      }
+      await tap(t, 'Mashqlarga o‘tish');
+      final q = jsonRows(lesson['questions']).first;
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await tap(t, answer['correct_answer'] as String);
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, 'grade7-paragraph$number-feedback-200');
+      expect(t.takeException(), isNull);
+    });
+    testWidgets('grade7 paragraph$number FRQ uses its own snapshot', (t) async {
+      selectGrade7Lesson();
+      final questions = jsonRows(lesson['questions']);
+      final firstFrq = questions.indexWhere(
+        (q) => q['response_kind'] == 'short_text',
+      );
+      skip(firstFrq);
+      await mount(t);
+      await openGrade7(t);
+      final q = questions[firstFrq];
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await capture(t, 'grade7-paragraph$number-frq-resume');
+      await t.scrollUntilVisible(
+        find.byKey(const Key('world-history-short-answer')),
+        180,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await t.enterText(
+        find.byKey(const Key('world-history-short-answer')),
+        answer['correct_answer'] as String,
+      );
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      expect((requests.last.data as Map)['answer'], {
+        'value': answer['correct_answer'],
+      });
+      expect(
+        (requests.last.data as Map)['assessment_key'],
+        startsWith('world-history-7-'),
+      );
+      expect(t.takeException(), isNull);
+    });
+    if (number == 1) {
+      testWidgets('grade7 introduction retains its own bibliography', (
+        t,
+      ) async {
+        selectGrade7Lesson();
+        await mount(t, size: const Size(320, 568), scale: 2);
+        await openGrade7(t);
+        await tapFinder(t, find.textContaining('Manba: Kirish').first);
+        expect(find.textContaining('jahon_tarixi_7_uzb.pdf'), findsOneWidget);
+        expect(find.textContaining('Salimov'), findsWidgets);
+        await capture(t, 'grade7-introduction-source-200');
+        expect(t.takeException(), isNull);
+      });
+    }
+    if (number == 5) {
+      testWidgets(
+        'grade7 draft survives remount without using a grade6 request',
+        (t) async {
+          selectGrade7Lesson();
+          final questions = jsonRows(lesson['questions']);
+          skip(questions.indexWhere((q) => q['response_kind'] == 'short_text'));
+          final prefs = await mount(t);
+          await openGrade7(t);
+          await t.scrollUntilVisible(
+            find.byKey(const Key('world-history-short-answer')),
+            180,
+            scrollable: find.byType(Scrollable).first,
+          );
+          await t.enterText(
+            find.byKey(const Key('world-history-short-answer')),
+            'Genrix I',
+          );
+          await t.pumpAndSettle();
+          final first = requests.lastWhere((r) => r.path.endsWith('/start'));
+          await t.pumpWidget(const SizedBox.shrink());
+          await mount(t, prefs: prefs);
+          await openGrade7(t);
+          final last = requests.lastWhere((r) => r.path.endsWith('/start'));
+          expect(
+            (first.data as Map)['request_id'],
+            (last.data as Map)['request_id'],
+          );
+          expect(last.path, contains('world-history-7-p05-r1'));
+          final input = t.widget<TextField>(
+            find.byKey(const Key('world-history-short-answer')),
+          );
+          expect(input.controller!.text, 'Genrix I');
+          expect(t.takeException(), isNull);
+        },
+      );
+    }
   }
   for (var number = 2; number <= 46; number++) {
     void selectParagraph() {
