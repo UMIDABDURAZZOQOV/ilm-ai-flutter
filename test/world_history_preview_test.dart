@@ -621,12 +621,16 @@ void main() {
       );
     }
   }
-  for (var number = 1; number <= 5; number++) {
+  for (var number = 1; number <= 10; number++) {
     void selectGrade8Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g8_p${suffix}_lesson');
       results = fixture('g8_p${suffix}_results');
-      grade8Catalog = fixture('batch19_grade8_completed_catalog');
+      grade8Catalog = fixture(
+        number >= 6
+            ? 'batch20_grade8_completed_catalog'
+            : 'batch19_grade8_completed_catalog',
+      );
     }
 
     testWidgets('grade8 paragraph$number theory and MCQ at200%', (t) async {
