@@ -89,6 +89,10 @@ void main() {
       expect(historySectionLabel(capstone), '41-bosqich');
       expect(capstone['title'], contains('Yakuniy'));
       expect(grade8['course_ready'], isFalse);
+      expect(
+        historySectionLabel(jsonRows(fixture('catalog9')['lessons'])[3]),
+        '§4–5',
+      );
     },
   );
 
@@ -428,49 +432,79 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  for (var n = 1; n <= 41; n++) {
-    testWidgets(
-      'scanned grade8 lesson $n keeps raw names and fits chronology at large text',
-      (tester) async {
-        tester.view.physicalSize = const Size(320, 568);
-        tester.view.devicePixelRatio = 1;
-        addTearDown(tester.view.resetPhysicalSize);
-        addTearDown(tester.view.resetDevicePixelRatio);
-        final dto = fixture('grade8_lesson$n');
-        for (final q in jsonRows(dto['questions'])) {
-          Json value = {};
-          await mount(
-            tester,
-            scale: 2,
-            child: Scaffold(
-              body: SingleChildScrollView(
-                child: HistoryAnswerEditor(
-                  question: q,
-                  draft: {},
-                  enabled: true,
-                  onChanged: (v) => value = v,
+  testWidgets(
+    'grade9 opens separately with the original combined paragraph numbering',
+    (tester) async {
+      lesson = fixture('grade9_lesson1');
+      await mount(tester);
+      final picker = find.byType(DropdownButtonFormField<int>);
+      await tester.ensureVisible(picker);
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('9-sinf').last);
+      await tester.pumpAndSettle();
+      final button = find.text('Darsni ochish');
+      await tester.ensureVisible(button);
+      await tester.pumpAndSettle();
+      await tester.tap(button);
+      await tester.pumpAndSettle();
+      expect(
+        find.text(
+          'XIX asr o‘rtalarida O‘rta Osiyo davlatlarining hududi va aholisi',
+        ),
+        findsOneWidget,
+      );
+      expect(requests.last.path, contains('uzh-9-1-r1'));
+      expect(find.text('Mashqlarga o‘tish'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  for (final (grade, count) in [(8, 41), (9, 5)]) {
+    for (var n = 1; n <= count; n++) {
+      testWidgets(
+        'grade$grade lesson $n keeps raw names and fits chronology at large text',
+        (tester) async {
+          tester.view.physicalSize = const Size(320, 568);
+          tester.view.devicePixelRatio = 1;
+          addTearDown(tester.view.resetPhysicalSize);
+          addTearDown(tester.view.resetDevicePixelRatio);
+          final dto = fixture('grade${grade}_lesson$n');
+          for (final q in jsonRows(dto['questions'])) {
+            Json value = {};
+            await mount(
+              tester,
+              scale: 2,
+              child: Scaffold(
+                body: SingleChildScrollView(
+                  child: HistoryAnswerEditor(
+                    question: q,
+                    draft: {},
+                    enabled: true,
+                    onChanged: (v) => value = v,
+                  ),
                 ),
               ),
-            ),
-          );
-          if (q['response_kind'] == 'short_text') {
-            await tester.enterText(
-              find.byType(TextFormField),
-              "  Qutlug' Nigorxonim  ",
             );
-            expect(value, {'value': "  Qutlug' Nigorxonim  "});
-          } else if (q['response_kind'] == 'ordering') {
-            for (final row in jsonRows(q['items'])) {
-              expect(find.text(row['label'] as String), findsOneWidget);
+            if (q['response_kind'] == 'short_text') {
+              await tester.enterText(
+                find.byType(TextFormField),
+                "  Qutlug' Nigorxonim  ",
+              );
+              expect(value, {'value': "  Qutlug' Nigorxonim  "});
+            } else if (q['response_kind'] == 'ordering') {
+              for (final row in jsonRows(q['items'])) {
+                expect(find.text(row['label'] as String), findsOneWidget);
+              }
             }
+            expect(tester.takeException(), isNull);
           }
-          expect(tester.takeException(), isNull);
-        }
-        final encoded = jsonEncode(dto);
-        expect(encoded, isNot(contains('"grading_spec"')));
-        expect(encoded, isNot(contains('"accepted_answers"')));
-      },
-    );
+          final encoded = jsonEncode(dto);
+          expect(encoded, isNot(contains('"grading_spec"')));
+          expect(encoded, isNot(contains('"accepted_answers"')));
+        },
+      );
+    }
   }
 
   for (var n = 1; n <= 42; n++) {
