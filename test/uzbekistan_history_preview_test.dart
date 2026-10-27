@@ -82,6 +82,13 @@ void main() {
         '§6',
       );
       expect(historySectionLabel({'sequence': 5}), '5-bosqich');
+      final grade8 = fixture('catalog8');
+      final capstone = jsonRows(grade8['lessons']).last;
+      expect(grade8['grade_content_complete'], isTrue);
+      expect(capstone['source_numbers'], isNull);
+      expect(historySectionLabel(capstone), '41-bosqich');
+      expect(capstone['title'], contains('Yakuniy'));
+      expect(grade8['course_ready'], isFalse);
     },
   );
 
@@ -421,7 +428,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  for (var n = 1; n <= 35; n++) {
+  for (var n = 1; n <= 41; n++) {
     testWidgets(
       'scanned grade8 lesson $n keeps raw names and fits chronology at large text',
       (tester) async {

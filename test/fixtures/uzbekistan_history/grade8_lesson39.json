@@ -1,0 +1,915 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:a8c50d91-ef03-4c75-9dd5-883cdf9f105f",
+  "lesson_key": "uzh-8-39-r1",
+  "expires_at": "2026-10-28T03:53:38.688847+00:00",
+  "title": "Qo‘qon xonligida ta’lim",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-39-r1:c1",
+        "title": "Maktabxona va savod",
+        "body": "Maktabxona boshlang‘ich savod o‘rgatgan: yozish, o‘qish, hisoblash va odob bilimlari berilgan. Bu davrning dars tartibi hozirgi maktabning barcha qoidalari bilan aynan bir xil emas.",
+        "fact_ids": [
+          "uzh-8-topic-39:maktab"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:maktab",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              147,
+              149
+            ],
+            "printed_pages": [
+              147,
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df",
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 202.3
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c2",
+        "title": "Dilshod va Anbar Otin",
+        "body": "Dilshod Rahimqul so‘fi qizi Dilshod otin va boshqa taxalluslar bilan keltiriladi. U maktabdorlik qilgan, Anbar Otin esa uning o‘quvchilaridan bo‘lgan. O‘qituvchi va o‘quvchini almashtirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-39:dilshod"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:dilshod",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              147
+            ],
+            "printed_pages": [
+              147
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 202.3
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c3",
+        "title": "Dars va ta’til",
+        "body": "Maktabxonalarda yosh va davomiylik bo‘yicha turli shartlar, kun davomida mashg‘ulotlar va juma, bayram, yoz hamda ramazon tanaffuslari tasvirlanadi. Bu barcha joy uchun tekshirilgan yagona amaliy jadval emas.",
+        "fact_ids": [
+          "uzh-8-topic-39:calendar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:calendar",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              148
+            ],
+            "printed_pages": [
+              148
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c4",
+        "title": "Harf va o‘qish",
+        "body": "Ta’limda avval kalimayi shahodat, keyin arab alifbosi, harf shakllari, belgilar va bo‘g‘in tuzish o‘rganilgan. Saboq ketma-ketligi tarixiy tavsifdir; o‘quvchining e’tiqodi yoki diniy iborani takrorlashi baholanmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-39:letters"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:letters",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              148
+            ],
+            "printed_pages": [
+              148
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c5",
+        "title": "Haftiyak va Tajvid",
+        "body": "Haftiyak Qur’onning bir qismi ko‘chirilgan o‘quv kitobi sifatida, Tajvid esa Qur’onni qoidaga muvofiq o‘qish haqidagi fan sifatida berilgan. Kitob va o‘qish qoidasi bir xil atama emas.",
+        "fact_ids": [
+          "uzh-8-topic-39:haftiyak"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:haftiyak",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              148
+            ],
+            "printed_pages": [
+              148
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c6",
+        "title": "Ta’limdagi adabiyot",
+        "body": "So‘fi Olloyor asarlari, Sa’diy Sheroziyning Bo‘ston va Guliston asarlari, keyin Hofiz devoni o‘rganilgani keltiriladi. Darsliklar adabiyot hamda odob mazmunini birga bergan.",
+        "fact_ids": [
+          "uzh-8-topic-39:books"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:books",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              148,
+              149
+            ],
+            "printed_pages": [
+              148,
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af",
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c7",
+        "title": "Dunyoviy bilimlar",
+        "body": "Maktabxonada arab grammatikasi, Navoiy she’rlari va hisob o‘qitilgani aytiladi. Hisob arifmetika ma’nosida berilgan; bilim turlarini faqat bitta yo‘nalishga qisqartirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-39:grammar"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:grammar",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              149
+            ],
+            "printed_pages": [
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-39-r1:c8",
+        "title": "Madrasa va mudarris",
+        "body": "Madrasa faoliyatiga mutavalli boshchilik qilgan. Diniy fanlar bilan birga tarix, adabiyot, geografiya va matematika ham sanaladi; maktabda boshlangan bilimlar chuqurlashtirilgan.",
+        "fact_ids": [
+          "uzh-8-topic-39:madrasa"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:madrasa",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              149
+            ],
+            "printed_pages": [
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Haftiyak — o‘quv kitobi; Tajvid — qoidali o‘qish ilmi; mutavalli — madrasa faoliyatiga boshchilik qiluvchi. Bular uch xil vazifa va tushuncha.",
+        "fact_ids": [
+          "uzh-8-topic-39:haftiyak",
+          "uzh-8-topic-39:madrasa"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:haftiyak",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              148
+            ],
+            "printed_pages": [
+              148
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:madrasa",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              149
+            ],
+            "printed_pages": [
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Maktabxona va madrasaning vazifalarini dalil bilan solishtiring. Dilshodning xotirasi bilan barcha maktablar haqidagi statistik da’voni farqlang.",
+        "fact_ids": [
+          "uzh-8-topic-39:maktab",
+          "uzh-8-topic-39:dilshod",
+          "uzh-8-topic-39:grammar",
+          "uzh-8-topic-39:madrasa"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:maktab",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              147,
+              149
+            ],
+            "printed_pages": [
+              147,
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df",
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 202.3
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:dilshod",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              147
+            ],
+            "printed_pages": [
+              147
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 202.3
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:grammar",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              149
+            ],
+            "printed_pages": [
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-39",
+            "fact_id": "uzh-8-topic-39:madrasa",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              149
+            ],
+            "printed_pages": [
+              149
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:maktab",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          147,
+          149
+        ],
+        "printed_pages": [
+          147,
+          149
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df",
+          "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 202.3
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:dilshod",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          147
+        ],
+        "printed_pages": [
+          147
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 202.3
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:calendar",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          148
+        ],
+        "printed_pages": [
+          148
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:letters",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          148
+        ],
+        "printed_pages": [
+          148
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:haftiyak",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          148
+        ],
+        "printed_pages": [
+          148
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:books",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          148,
+          149
+        ],
+        "printed_pages": [
+          148,
+          149
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af",
+          "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:grammar",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          149
+        ],
+        "printed_pages": [
+          149
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-39",
+        "fact_id": "uzh-8-topic-39:madrasa",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          149
+        ],
+        "printed_pages": [
+          149
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-39-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Anbar Otinning darsda tilga olingan ustozasi kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Dilshod otin"
+        },
+        {
+          "id": "o2",
+          "label": "Mohlaroyim"
+        },
+        {
+          "id": "o3",
+          "label": "Gulxaniy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:dilshod",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            147
+          ],
+          "printed_pages": [
+            147
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 202.3
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-39-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Bo‘ston va Guliston qaysi adibga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Hofiz"
+        },
+        {
+          "id": "o2",
+          "label": "Sa’diy Sheroziy"
+        },
+        {
+          "id": "o3",
+          "label": "So‘fi Olloyor"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:books",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148,
+            149
+          ],
+          "printed_pages": [
+            148,
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af",
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-39-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Madrasa faoliyatiga boshchilik qilgan vazifa egasi kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Maktabdor"
+        },
+        {
+          "id": "o2",
+          "label": "Dasturxonchi"
+        },
+        {
+          "id": "o3",
+          "label": "Mutavalli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:madrasa",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            149
+          ],
+          "printed_pages": [
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-39-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Hisob darsining bo‘limda berilgan fan nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:grammar",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            149
+          ],
+          "printed_pages": [
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-39-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Qur’onning bir qismi ko‘chirilgan o‘quv kitobi nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:haftiyak",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            148
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-39-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Tajvid darsda qanday bilim sifatida berilgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Qur’onni qoida bilan o‘qish ilmi"
+        },
+        {
+          "id": "o2",
+          "label": "Yer maydoni birligi"
+        },
+        {
+          "id": "o3",
+          "label": "Savdo boji"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:haftiyak",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            148
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

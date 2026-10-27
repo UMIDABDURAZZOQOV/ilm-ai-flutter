@@ -1,0 +1,723 @@
+{
+  "responses": {
+    "uzh-8-41-r1:q1": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-41-r1:q1",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Buxoroning qo‘shbegisi va Qo‘qonning mingboshisi alohida davlatlar bosh vazirlaridir.",
+      "correct_answer": "Buxoro — qo‘shbegi; Qo‘qon — mingboshi",
+      "solution": [
+        {
+          "body": "Buxoroning qo‘shbegisi va Qo‘qonning mingboshisi alohida davlatlar bosh vazirlaridir.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-16",
+              "fact_id": "uzh-8-topic-41:bukhara",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                58,
+                59,
+                60
+              ],
+              "printed_pages": [
+                58,
+                59,
+                60
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "b14f83b286ea68e7b5b1e31ed1f041a87694241b9a12079548f29b0e6361fe82",
+                "4854fc530216f79ecf0297609c47ee8b5380ea52d03ab3b96450c726030db38d",
+                "bf49748e59b89cb7515b265909baadb75608dfe88970975e0327afb74861a612"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Buxoro amirligida davlat boshqaruvi",
+              "source_topic_sha256": "1bc7ac172fe5d0774c843d414c8e81858cf9ee62a3345f51bdf2399ba9855d7d",
+              "cross_topic_reference": "reviewed_prior_context"
+            },
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-4",
+              "topic_id": "uzh-8-topic-34",
+              "fact_id": "uzh-8-topic-41:bukhara",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                126,
+                127,
+                128
+              ],
+              "printed_pages": [
+                126,
+                127,
+                128
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+                "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+                "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+              "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+              "cross_topic_reference": "reviewed_prior_context",
+              "start_after_y": 202.3
+            },
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-4",
+              "topic_id": "uzh-8-topic-34",
+              "fact_id": "uzh-8-topic-41:qoqon",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                126,
+                127,
+                128
+              ],
+              "printed_pages": [
+                126,
+                127,
+                128
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+                "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+                "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+              "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+              "cross_topic_reference": "reviewed_prior_context",
+              "start_after_y": 202.3
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-16",
+          "fact_id": "uzh-8-topic-41:bukhara",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            58,
+            59,
+            60
+          ],
+          "printed_pages": [
+            58,
+            59,
+            60
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "b14f83b286ea68e7b5b1e31ed1f041a87694241b9a12079548f29b0e6361fe82",
+            "4854fc530216f79ecf0297609c47ee8b5380ea52d03ab3b96450c726030db38d",
+            "bf49748e59b89cb7515b265909baadb75608dfe88970975e0327afb74861a612"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Buxoro amirligida davlat boshqaruvi",
+          "source_topic_sha256": "1bc7ac172fe5d0774c843d414c8e81858cf9ee62a3345f51bdf2399ba9855d7d",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:bukhara",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:qoqon",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        }
+      ]
+    },
+    "uzh-8-41-r1:q2": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-41-r1:q2",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Begar mehnat vazifasi; u sulola yoki mansab emas.",
+      "correct_answer": "Mehnat majburiyati",
+      "solution": [
+        {
+          "body": "Begar mehnat vazifasi; u sulola yoki mansab emas.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-3",
+              "topic_id": "uzh-8-topic-25",
+              "fact_id": "uzh-8-topic-41:khiva",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                91,
+                92
+              ],
+              "printed_pages": [
+                91,
+                92
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "a16788229e8a759325fb5308c73b6acfa3328d01ea1ce64b49ab04dcbbea03fa",
+                "f2bf279e46ec064d4d09aded762d5c34cae6efa673c99b62414efb2f709ebe07"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Xiva xonligida davlat boshqaruvi",
+              "source_topic_sha256": "ddc9350afe031c1f4b95ba261499ffc53bba4f89e6ab04e72169651c6273bfbf",
+              "cross_topic_reference": "reviewed_prior_context"
+            },
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-3",
+              "topic_id": "uzh-8-topic-26",
+              "fact_id": "uzh-8-topic-41:khiva",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                95
+              ],
+              "printed_pages": [
+                95
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "90b65a912ae570846bd77cb50f827b2bacfb6864cdbc64fc786a277ccf88e9e4"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Xiva xonligida ijtimoiy-iqtisodiy hayot. Shaharlar hayoti",
+              "source_topic_sha256": "63fa04cc8a562ac6464e8216842c1728dd2afbcb6158faf532d2c1473d050016",
+              "cross_topic_reference": "reviewed_prior_context"
+            },
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-4",
+              "topic_id": "uzh-8-topic-34",
+              "fact_id": "uzh-8-topic-41:khiva",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                126,
+                127,
+                128
+              ],
+              "printed_pages": [
+                126,
+                127,
+                128
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+                "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+                "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+              "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+              "cross_topic_reference": "reviewed_prior_context",
+              "start_after_y": 202.3
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-25",
+          "fact_id": "uzh-8-topic-41:khiva",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            91,
+            92
+          ],
+          "printed_pages": [
+            91,
+            92
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a16788229e8a759325fb5308c73b6acfa3328d01ea1ce64b49ab04dcbbea03fa",
+            "f2bf279e46ec064d4d09aded762d5c34cae6efa673c99b62414efb2f709ebe07"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Xiva xonligida davlat boshqaruvi",
+          "source_topic_sha256": "ddc9350afe031c1f4b95ba261499ffc53bba4f89e6ab04e72169651c6273bfbf",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-26",
+          "fact_id": "uzh-8-topic-41:khiva",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            95
+          ],
+          "printed_pages": [
+            95
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "90b65a912ae570846bd77cb50f827b2bacfb6864cdbc64fc786a277ccf88e9e4"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Xiva xonligida ijtimoiy-iqtisodiy hayot. Shaharlar hayoti",
+          "source_topic_sha256": "63fa04cc8a562ac6464e8216842c1728dd2afbcb6158faf532d2c1473d050016",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:khiva",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        }
+      ]
+    },
+    "uzh-8-41-r1:q3": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-41-r1:q3",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Jadvaldagi topshiriq rivoyatni arxiv isboti qilib qo‘ymaydi.",
+      "correct_answer": "Rivoyat mazmuni",
+      "solution": [
+        {
+          "body": "Jadvaldagi topshiriq rivoyatni arxiv isboti qilib qo‘ymaydi.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-4",
+              "topic_id": "uzh-8-topic-33",
+              "fact_id": "uzh-8-topic-41:legend",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                121
+              ],
+              "printed_pages": [
+                121
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "eea8c1fd361d8b8f4d63e61d841f1af44c530d37e84f29fbd0bb8293a9b14c0c"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "XVIII asrning ikkinchi yarmi – XIX asrning birinchi yarmida Qo‘qon xonligida siyosiy ahvol",
+              "source_topic_sha256": "7fbe74c2e07b57ccb03d7185771b7106981da337a04b544c97898128afa1109f",
+              "cross_topic_reference": "reviewed_prior_context"
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-33",
+          "fact_id": "uzh-8-topic-41:legend",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            121
+          ],
+          "printed_pages": [
+            121
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "eea8c1fd361d8b8f4d63e61d841f1af44c530d37e84f29fbd0bb8293a9b14c0c"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "XVIII asrning ikkinchi yarmi – XIX asrning birinchi yarmida Qo‘qon xonligida siyosiy ahvol",
+          "source_topic_sha256": "7fbe74c2e07b57ccb03d7185771b7106981da337a04b544c97898128afa1109f",
+          "cross_topic_reference": "reviewed_prior_context"
+        }
+      ]
+    },
+    "uzh-8-41-r1:q4": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-41-r1:q4",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Bir xil mehtar nomining ikki davlatdagi vakolati farqli.",
+      "correct_answer": "Mehtar",
+      "solution": [
+        {
+          "body": "Bir xil mehtar nomining ikki davlatdagi vakolati farqli.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-3",
+              "topic_id": "uzh-8-topic-25",
+              "fact_id": "uzh-8-topic-41:mehtar_context",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                91,
+                92
+              ],
+              "printed_pages": [
+                91,
+                92
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "a16788229e8a759325fb5308c73b6acfa3328d01ea1ce64b49ab04dcbbea03fa",
+                "f2bf279e46ec064d4d09aded762d5c34cae6efa673c99b62414efb2f709ebe07"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Xiva xonligida davlat boshqaruvi",
+              "source_topic_sha256": "ddc9350afe031c1f4b95ba261499ffc53bba4f89e6ab04e72169651c6273bfbf",
+              "cross_topic_reference": "reviewed_prior_context"
+            },
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-4",
+              "topic_id": "uzh-8-topic-34",
+              "fact_id": "uzh-8-topic-41:mehtar_context",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                126,
+                127,
+                128
+              ],
+              "printed_pages": [
+                126,
+                127,
+                128
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+                "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+                "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+              "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+              "cross_topic_reference": "reviewed_prior_context",
+              "start_after_y": 202.3
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-25",
+          "fact_id": "uzh-8-topic-41:mehtar_context",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            91,
+            92
+          ],
+          "printed_pages": [
+            91,
+            92
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a16788229e8a759325fb5308c73b6acfa3328d01ea1ce64b49ab04dcbbea03fa",
+            "f2bf279e46ec064d4d09aded762d5c34cae6efa673c99b62414efb2f709ebe07"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Xiva xonligida davlat boshqaruvi",
+          "source_topic_sha256": "ddc9350afe031c1f4b95ba261499ffc53bba4f89e6ab04e72169651c6273bfbf",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:mehtar_context",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        }
+      ]
+    },
+    "uzh-8-41-r1:q5": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-41-r1:q5",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Bu ikki adib Qo‘qon adabiy muhitiga bog‘langan.",
+      "correct_answer": "Qo‘qon",
+      "solution": [
+        {
+          "body": "Bu ikki adib Qo‘qon adabiy muhitiga bog‘langan.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-4",
+              "topic_id": "uzh-8-topic-38",
+              "fact_id": "uzh-8-topic-41:culture",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                142,
+                144
+              ],
+              "printed_pages": [
+                142,
+                144
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+                "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "source_title": "Qo‘qon xonligida madaniy hayot",
+              "source_topic_sha256": "5c2196912abc3832732b1730d037a59f83a08474afa191d6e566179d80a256d6",
+              "cross_topic_reference": "reviewed_prior_context",
+              "start_after_y": 203
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-41:culture",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            142,
+            144
+          ],
+          "printed_pages": [
+            142,
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida madaniy hayot",
+          "source_topic_sha256": "5c2196912abc3832732b1730d037a59f83a08474afa191d6e566179d80a256d6",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 203
+        }
+      ]
+    }
+  }
+}

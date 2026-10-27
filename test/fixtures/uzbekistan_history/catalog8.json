@@ -20,7 +20,7 @@
   },
   "subject_name": "O‘zbekiston tarixi",
   "source_sections": 41,
-  "implemented_sections": 35,
+  "implemented_sections": 41,
   "course_complete": false,
   "independent_review_pending": true,
   "course_ready": false,
@@ -31,7 +31,7 @@
     10,
     11
   ],
-  "grade_content_complete": false,
+  "grade_content_complete": true,
   "available_grades": [
     7,
     8
@@ -7236,6 +7236,1491 @@
             "cf52a0abf4c600859f5f6453973106085ab0e78549f987550d7b5723f8467488"
           ],
           "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-36-r1",
+      "sequence": 36,
+      "source_numbers": [
+        36
+      ],
+      "title": "Qo‘qon xonligida ijtimoiy-iqtisodiy hayot",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:land",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            133
+          ],
+          "printed_pages": [
+            133
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "b723b66dbc94ec00a68a08762960366dbeb999ee972ece1aa552aa1170f3bb06"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 344.4
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:vaqf",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            133,
+            134
+          ],
+          "printed_pages": [
+            133,
+            134
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "b723b66dbc94ec00a68a08762960366dbeb999ee972ece1aa552aa1170f3bb06",
+            "a457ca73e8bb2cf89c0c9855f22c362dd87a75b5e48dd417581d1a10db2150ff"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 344.4
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:tanho",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            134
+          ],
+          "printed_pages": [
+            134
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a457ca73e8bb2cf89c0c9855f22c362dd87a75b5e48dd417581d1a10db2150ff"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:workers",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            134
+          ],
+          "printed_pages": [
+            134
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a457ca73e8bb2cf89c0c9855f22c362dd87a75b5e48dd417581d1a10db2150ff"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:tax",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            134
+          ],
+          "printed_pages": [
+            134
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a457ca73e8bb2cf89c0c9855f22c362dd87a75b5e48dd417581d1a10db2150ff"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:water",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            134,
+            135
+          ],
+          "printed_pages": [
+            134,
+            135
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a457ca73e8bb2cf89c0c9855f22c362dd87a75b5e48dd417581d1a10db2150ff",
+            "830b8065fa7ec1ec38fc1d7a9ab2cac677f6b352ea4f235764f190b99a3f737b"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:1832",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            135
+          ],
+          "printed_pages": [
+            135
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "830b8065fa7ec1ec38fc1d7a9ab2cac677f6b352ea4f235764f190b99a3f737b"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:qoqon",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            135
+          ],
+          "printed_pages": [
+            135
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "830b8065fa7ec1ec38fc1d7a9ab2cac677f6b352ea4f235764f190b99a3f737b"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-36",
+          "fact_id": "uzh-8-topic-36:andijon",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            136
+          ],
+          "printed_pages": [
+            136
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "70e2bfcf26ee46d6ccebe72472c51d8e12b6a317f47b329b5645cef96b49b874"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-37-r1",
+      "sequence": 37,
+      "source_numbers": [
+        37
+      ],
+      "title": "Qo‘qon xonligining tashqi siyosati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:qing1759",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            137
+          ],
+          "printed_pages": [
+            137
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "f420ef4556261a8fcc7a05969cf2621bba9d605e7b0d06bf4cf9c5ae111542e5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 248.7
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:1825",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            137,
+            141
+          ],
+          "printed_pages": [
+            137,
+            141
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "f420ef4556261a8fcc7a05969cf2621bba9d605e7b0d06bf4cf9c5ae111542e5",
+            "20460c220a4a293a9b9f4422df3f7445f835f22fd59f38511d4df25a3fc03c05"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 248.7
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:1832",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            138,
+            141
+          ],
+          "printed_pages": [
+            138,
+            141
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "28bde22ded4ce7d05ceb2f51188831a5790155e268233ede34c0bf3e8124972e",
+            "20460c220a4a293a9b9f4422df3f7445f835f22fd59f38511d4df25a3fc03c05"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:russia1831",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            139
+          ],
+          "printed_pages": [
+            139
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "8c2398eb9efddae9e68c6ab7e41476e2a078b3cc874634b640ab3a9708122265"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:russia1842",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            139
+          ],
+          "printed_pages": [
+            139
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "8c2398eb9efddae9e68c6ab7e41476e2a078b3cc874634b640ab3a9708122265"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:bukhara",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            138,
+            139
+          ],
+          "printed_pages": [
+            138,
+            139
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "28bde22ded4ce7d05ceb2f51188831a5790155e268233ede34c0bf3e8124972e",
+            "8c2398eb9efddae9e68c6ab7e41476e2a078b3cc874634b640ab3a9708122265"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:map",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            140
+          ],
+          "printed_pages": [
+            140
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "164d375982c08663b20b3b95f30fbd7ee1d18741696a2472f0ec7ff4549c8876"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-37",
+          "fact_id": "uzh-8-topic-37:fort",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            139,
+            141
+          ],
+          "printed_pages": [
+            139,
+            141
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "8c2398eb9efddae9e68c6ab7e41476e2a078b3cc874634b640ab3a9708122265",
+            "20460c220a4a293a9b9f4422df3f7445f835f22fd59f38511d4df25a3fc03c05"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-38-r1",
+      "sequence": 38,
+      "source_numbers": [
+        38
+      ],
+      "title": "Qo‘qon xonligida madaniy hayot",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:amiri",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            142
+          ],
+          "printed_pages": [
+            142
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 203
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:maxmur",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            142,
+            143
+          ],
+          "printed_pages": [
+            142,
+            143
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+            "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 203
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:gulxaniy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            143
+          ],
+          "printed_pages": [
+            143
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:uvaysiy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            143,
+            144
+          ],
+          "printed_pages": [
+            143,
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a",
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:nodira",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:mashrab",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:fazliy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            145
+          ],
+          "printed_pages": [
+            145
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:historian",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            145
+          ],
+          "printed_pages": [
+            145
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:buildings",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            145,
+            146
+          ],
+          "printed_pages": [
+            145,
+            146
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e",
+            "802609febb371f3960ee284be3ea952ac261ac32e0f246e7729a3e8550a09be9"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-39-r1",
+      "sequence": 39,
+      "source_numbers": [
+        39
+      ],
+      "title": "Qo‘qon xonligida ta’lim",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:maktab",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            147,
+            149
+          ],
+          "printed_pages": [
+            147,
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df",
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 202.3
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:dilshod",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            147
+          ],
+          "printed_pages": [
+            147
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "52937be72bad31760ee55ef8337892d1d7d2848206b92b3b3a63af220d9492df"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 202.3
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:calendar",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            148
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:letters",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            148
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:haftiyak",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148
+          ],
+          "printed_pages": [
+            148
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:books",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            148,
+            149
+          ],
+          "printed_pages": [
+            148,
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0eeb5b8e135437f37e73345d99ed9b91fb7a3e3e3d1128189e1c3ef19224c2af",
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:grammar",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            149
+          ],
+          "printed_pages": [
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-39",
+          "fact_id": "uzh-8-topic-39:madrasa",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            149
+          ],
+          "printed_pages": [
+            149
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "cce213ef7a31bccbbee368a29bd48350a2689c0dc47df689be4861abc7fbd635"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-40-r1",
+      "sequence": 40,
+      "source_numbers": [
+        40
+      ],
+      "title": "O‘zbek davlatlarining taraqqiyotda orqada qolish sabablari va oqibatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:manufaktura",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            150
+          ],
+          "printed_pages": [
+            150
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "30a9b3d5641832236da585cd87cc549ea8e7312d6da5582b456a185368b4a196"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 288.7
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:factory",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            150
+          ],
+          "printed_pages": [
+            150
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "30a9b3d5641832236da585cd87cc549ea8e7312d6da5582b456a185368b4a196"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 288.7
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:heavy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            150,
+            152
+          ],
+          "printed_pages": [
+            150,
+            152
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "30a9b3d5641832236da585cd87cc549ea8e7312d6da5582b456a185368b4a196",
+            "614ac1e36fe84f4f4a89bcad52d00048a5f56d25ac94b494c4c62528afc59178"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 288.7
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:investment",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            150
+          ],
+          "printed_pages": [
+            150
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "30a9b3d5641832236da585cd87cc549ea8e7312d6da5582b456a185368b4a196"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 288.7
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:causes",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            151,
+            152
+          ],
+          "printed_pages": [
+            151,
+            152
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "c5e4e736a6d31e46531a489dc2fbdcd7814c9ed03b8cb59bf1faffd83543c607",
+            "614ac1e36fe84f4f4a89bcad52d00048a5f56d25ac94b494c4c62528afc59178"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:market",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            152
+          ],
+          "printed_pages": [
+            152
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "614ac1e36fe84f4f4a89bcad52d00048a5f56d25ac94b494c4c62528afc59178"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:novel",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            152
+          ],
+          "printed_pages": [
+            152
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "614ac1e36fe84f4f4a89bcad52d00048a5f56d25ac94b494c4c62528afc59178"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-40",
+          "fact_id": "uzh-8-topic-40:2035",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            153
+          ],
+          "printed_pages": [
+            153
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "78ed8478d5a5a21ace34100d760a0156a6b540e8bb428ffbe44a11064eb5426c"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "end_before_y": 390.1
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-41-r1",
+      "sequence": 41,
+      "source_numbers": null,
+      "title": "Yakuniy dars (mustaqil ishlash)",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-41",
+          "fact_id": "uzh-8-topic-41:tables",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            153,
+            154,
+            155,
+            156
+          ],
+          "printed_pages": [
+            153,
+            154,
+            155,
+            156
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "78ed8478d5a5a21ace34100d760a0156a6b540e8bb428ffbe44a11064eb5426c",
+            "3b7366c62021cb0790c3c061ca38a66e5fb2e48bf6d3a744421603fcb1f4c649",
+            "392ca89930c36c801ea998e58be3eb9d4e57abd5815791cfda782fed88b32f38",
+            "405aadf3de0d10feedf64901a39d8113faf420faefc00b0edb29a57382700a08"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 390.1
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-41",
+          "fact_id": "uzh-8-topic-41:categories",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            154,
+            155,
+            156
+          ],
+          "printed_pages": [
+            154,
+            155,
+            156
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "3b7366c62021cb0790c3c061ca38a66e5fb2e48bf6d3a744421603fcb1f4c649",
+            "392ca89930c36c801ea998e58be3eb9d4e57abd5815791cfda782fed88b32f38",
+            "405aadf3de0d10feedf64901a39d8113faf420faefc00b0edb29a57382700a08"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-16",
+          "fact_id": "uzh-8-topic-41:bukhara",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            58,
+            59,
+            60
+          ],
+          "printed_pages": [
+            58,
+            59,
+            60
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "b14f83b286ea68e7b5b1e31ed1f041a87694241b9a12079548f29b0e6361fe82",
+            "4854fc530216f79ecf0297609c47ee8b5380ea52d03ab3b96450c726030db38d",
+            "bf49748e59b89cb7515b265909baadb75608dfe88970975e0327afb74861a612"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Buxoro amirligida davlat boshqaruvi",
+          "source_topic_sha256": "1bc7ac172fe5d0774c843d414c8e81858cf9ee62a3345f51bdf2399ba9855d7d",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:bukhara",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-25",
+          "fact_id": "uzh-8-topic-41:khiva",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            91,
+            92
+          ],
+          "printed_pages": [
+            91,
+            92
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a16788229e8a759325fb5308c73b6acfa3328d01ea1ce64b49ab04dcbbea03fa",
+            "f2bf279e46ec064d4d09aded762d5c34cae6efa673c99b62414efb2f709ebe07"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Xiva xonligida davlat boshqaruvi",
+          "source_topic_sha256": "ddc9350afe031c1f4b95ba261499ffc53bba4f89e6ab04e72169651c6273bfbf",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-26",
+          "fact_id": "uzh-8-topic-41:khiva",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            95
+          ],
+          "printed_pages": [
+            95
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "90b65a912ae570846bd77cb50f827b2bacfb6864cdbc64fc786a277ccf88e9e4"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Xiva xonligida ijtimoiy-iqtisodiy hayot. Shaharlar hayoti",
+          "source_topic_sha256": "63fa04cc8a562ac6464e8216842c1728dd2afbcb6158faf532d2c1473d050016",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:khiva",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:qoqon",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-33",
+          "fact_id": "uzh-8-topic-41:legend",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            121
+          ],
+          "printed_pages": [
+            121
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "eea8c1fd361d8b8f4d63e61d841f1af44c530d37e84f29fbd0bb8293a9b14c0c"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "XVIII asrning ikkinchi yarmi – XIX asrning birinchi yarmida Qo‘qon xonligida siyosiy ahvol",
+          "source_topic_sha256": "7fbe74c2e07b57ccb03d7185771b7106981da337a04b544c97898128afa1109f",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-41:culture",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            142,
+            144
+          ],
+          "printed_pages": [
+            142,
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida madaniy hayot",
+          "source_topic_sha256": "5c2196912abc3832732b1730d037a59f83a08474afa191d6e566179d80a256d6",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 203
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-25",
+          "fact_id": "uzh-8-topic-41:mehtar_context",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            91,
+            92
+          ],
+          "printed_pages": [
+            91,
+            92
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a16788229e8a759325fb5308c73b6acfa3328d01ea1ce64b49ab04dcbbea03fa",
+            "f2bf279e46ec064d4d09aded762d5c34cae6efa673c99b62414efb2f709ebe07"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Xiva xonligida davlat boshqaruvi",
+          "source_topic_sha256": "ddc9350afe031c1f4b95ba261499ffc53bba4f89e6ab04e72169651c6273bfbf",
+          "cross_topic_reference": "reviewed_prior_context"
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-34",
+          "fact_id": "uzh-8-topic-41:mehtar_context",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            126,
+            127,
+            128
+          ],
+          "printed_pages": [
+            126,
+            127,
+            128
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "5637464e95117a17fb680f5abee323485ab9d71a6889aab0decd343e192faf18",
+            "c5d439a52c6354d9ddf72928110ce72edc40999641321ddbfa80abe03ea47d13",
+            "964cc5439ce57afecdf6470dba52105d8dfd7e275504f98c707ec12e415713a3"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "source_title": "Qo‘qon xonligida davlat boshqaruvi",
+          "source_topic_sha256": "f026695bee6a2405b51f37823f31a0624a25d079551befb818c19bf92908d108",
+          "cross_topic_reference": "reviewed_prior_context",
+          "start_after_y": 202.3
         }
       ]
     }
