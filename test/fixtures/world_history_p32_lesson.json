@@ -1,0 +1,2006 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "whv2:900076:11111111-1111-4111-8111-111111111111",
+  "lesson_key": "world-history-6-p32-r1",
+  "expires_at": "2099-01-01T00:00:00+00:00",
+  "title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+  "content": {
+    "cards": [
+      {
+        "title": "Tarixiy jihoz nomlari",
+        "body": "Akinak — xanjar, sagaris — jangovar oybolta nomi. Kitob sovut, dubulg‘a, ot himoyasi va qal’a devorlarini ham tasvirlaydi. Buyum nomlarini surat izohlari bilan bog‘lang.",
+        "fact_ids": [
+          "akinak",
+          "sagaris",
+          "equipment"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              123
+            ],
+            "pdf_pages": [
+              123
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page123"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              124
+            ],
+            "pdf_pages": [
+              124
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page124"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          }
+        ]
+      },
+      {
+        "title": "Uch voqeani tartiblang",
+        "body": "Miloddan avvalgi 336-yil — Aleksandr Makedoniya podshosi. Miloddan avvalgi 334-yil — Sharqqa yurish boshlanishi. Miloddan avvalgi 329-yil — Maroqandaning egallanishi. Miloddan avvalgi sanalarda katta sonli yil oldin keladi.",
+        "fact_ids": [
+          "accession",
+          "east",
+          "maracanda",
+          "chronology"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              124
+            ],
+            "pdf_pages": [
+              124
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page124"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page125"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page126"
+          }
+        ]
+      },
+      {
+        "title": "Baqtra va Oks",
+        "body": "Baqtra Zariasp nomi bilan ham berilgan Baqtriya poytaxtidir. Bess shu viloyat satrapi sifatida tanishtirilgan. Oks — kitobdagi Amudaryoning qadimgi nomi.",
+        "fact_ids": [
+          "bactra",
+          "oks"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              124
+            ],
+            "pdf_pages": [
+              124
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page124"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page126"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page125"
+          }
+        ]
+      },
+      {
+        "title": "Maroqanda va qo‘zg‘olon",
+        "body": "Nautaka Qashqadaryo vohasining sharqiy qismi, Maroqanda Samarqand bilan bog‘langan. Maroqanda egallangach, qarshilik harakati Spitaman boshchiligidagi qo‘zg‘olon bilan tasvirlangan.",
+        "fact_ids": [
+          "places",
+          "maracanda",
+          "spitamenes"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page125"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page126"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          }
+        ]
+      },
+      {
+        "title": "Politimet va qal’alar",
+        "body": "Politimet — Zarafshon daryosining qadimgi nomi. Kurushkat Kiropolis nomi bilan ham berilgan. Sirdaryo bo‘yidagi Aleksandriya Esxata Chekka Aleksandriya deb izohlanadi. Shahar, qal’a va daryo nomlarini ajrating.",
+        "fact_ids": [
+          "polytimetus",
+          "cyropolis",
+          "eschate"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page126"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page125"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page127"
+          }
+        ]
+      },
+      {
+        "title": "Kurashning davom etishi",
+        "body": "Kitob Spitaman vafotidan keyin ham qarshilik davom etganini tasvirlaydi. Xoriyen va Oksiart qal’alari, Oksiartning qizi Ravshanak bilan nikoh mahalliy zodagonlar bilan aloqalar bayonida eslatiladi.",
+        "fact_ids": [
+          "resistance"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page126"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page127"
+          }
+        ]
+      },
+      {
+        "title": "Bosqin va keyingi o‘zgarishlar",
+        "body": "Muallif bosqin davrini vayronagarchilik va qo‘shinlar joylashtirilishi bilan tasvirlaydi. Keyingi davrda hunarmandchilik, savdo va mahalliy-yunon madaniy aloqalarining tiklanishi ham bayon qilingan.",
+        "fact_ids": [
+          "consequences"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page127"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          }
+        ]
+      },
+      {
+        "title": "Xaritadagi belgini o‘qing",
+        "body": "125-betdagi Aleksandr yurishlari xaritasida xochsimon belgi jang joyini bildiradi. Daryo, shahar va yo‘nalish belgilarini ajrating; tarixiy hudud tasviri bugungi chegaralar haqidagi hukm emas.",
+        "fact_ids": [
+          "map"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page125"
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "source_refs": [
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter04",
+        "topic_id": "wh6-topic32",
+        "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+        "paragraph": 32,
+        "printed_pages": [
+          123
+        ],
+        "pdf_pages": [
+          123
+        ],
+        "regions": [
+          "below_topic_heading"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p32-page123"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter04",
+        "topic_id": "wh6-topic32",
+        "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+        "paragraph": 32,
+        "printed_pages": [
+          124
+        ],
+        "pdf_pages": [
+          124
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p32-page124"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter04",
+        "topic_id": "wh6-topic32",
+        "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+        "paragraph": 32,
+        "printed_pages": [
+          125
+        ],
+        "pdf_pages": [
+          125
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p32-page125"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter04",
+        "topic_id": "wh6-topic32",
+        "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+        "paragraph": 32,
+        "printed_pages": [
+          126
+        ],
+        "pdf_pages": [
+          126
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p32-page126"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter04",
+        "topic_id": "wh6-topic32",
+        "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+        "paragraph": 32,
+        "printed_pages": [
+          127
+        ],
+        "pdf_pages": [
+          127
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p32-page127"
+      },
+      {
+        "book_id": "world-history-6-uz-2017",
+        "book_title": "Tarix. Qadimgi dunyo",
+        "authors": [
+          "A. S. Sagdullayev",
+          "V. A. Kostetskiy"
+        ],
+        "year": 2017,
+        "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+        "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+        "grade": 6,
+        "chapter_id": "wh6-chapter04",
+        "topic_id": "wh6-topic32",
+        "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+        "paragraph": 32,
+        "printed_pages": [
+          128
+        ],
+        "pdf_pages": [
+          128
+        ],
+        "regions": [
+          "topic_body"
+        ],
+        "verification": "page_image_reviewed",
+        "review_id": "wh6-p32-page128"
+      }
+    ],
+    "xp_reward": 20,
+    "reflections": [
+      {
+        "title": "Kurash va oqibatlarni dalil bilan izohlang",
+        "body": "128-bet topshiriqlari asosida Spitaman harakati va bosqin oqibatlarini yozma bayon qiling.125-bet xaritasidan joy va jang belgilarini ko‘rsating. Tarixiy qurolni tasvir bilan nomlash yetarli; uni yasash, ishlatish yoki jangni takrorlash vazifa emas. Salbiy oqibat va keyingi madaniy aloqani alohida dalillar bilan tushuntiring.",
+        "grading": "self_or_teacher_review",
+        "automatic_score": false,
+        "fact_ids": [
+          "equipment",
+          "spitamenes",
+          "map",
+          "resistance",
+          "consequences",
+          "chronology"
+        ],
+        "source_refs": [
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              123
+            ],
+            "pdf_pages": [
+              123
+            ],
+            "regions": [
+              "below_topic_heading"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page123"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              125
+            ],
+            "pdf_pages": [
+              125
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page125"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              126
+            ],
+            "pdf_pages": [
+              126
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page126"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              128
+            ],
+            "pdf_pages": [
+              128
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page128"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              127
+            ],
+            "pdf_pages": [
+              127
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page127"
+          },
+          {
+            "book_id": "world-history-6-uz-2017",
+            "book_title": "Tarix. Qadimgi dunyo",
+            "authors": [
+              "A. S. Sagdullayev",
+              "V. A. Kostetskiy"
+            ],
+            "year": 2017,
+            "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+            "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+            "grade": 6,
+            "chapter_id": "wh6-chapter04",
+            "topic_id": "wh6-topic32",
+            "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+            "paragraph": 32,
+            "printed_pages": [
+              124
+            ],
+            "pdf_pages": [
+              124
+            ],
+            "regions": [
+              "topic_body"
+            ],
+            "verification": "page_image_reviewed",
+            "review_id": "wh6-p32-page124"
+          }
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "key": "world-history-6-p32-r1-q01",
+      "response_kind": "concept_selection",
+      "prompt": "Xanjar nomi qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sagaris"
+        },
+        {
+          "id": "b",
+          "label": "Akinak"
+        },
+        {
+          "id": "c",
+          "label": "Falanga"
+        },
+        {
+          "id": "d",
+          "label": "Bargustvon"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            123
+          ],
+          "pdf_pages": [
+            123
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page123"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page124"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q02",
+      "response_kind": "concept_selection",
+      "prompt": "Jangovar oybolta qanday atalgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Dubulg‘a"
+        },
+        {
+          "id": "b",
+          "label": "Sovut"
+        },
+        {
+          "id": "c",
+          "label": "Sagaris"
+        },
+        {
+          "id": "d",
+          "label": "Akinak"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            123
+          ],
+          "pdf_pages": [
+            123
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page123"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page124"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q03",
+      "response_kind": "concept_selection",
+      "prompt": "Qarshilik qo‘zg‘oloniga kim boshchilik qilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Bess"
+        },
+        {
+          "id": "b",
+          "label": "Aleksandr"
+        },
+        {
+          "id": "c",
+          "label": "Oksiart"
+        },
+        {
+          "id": "d",
+          "label": "Spitaman"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page125"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q04",
+      "response_kind": "concept_selection",
+      "prompt": "Qaysi qatorda voqealar kitobdagi sanalar bo‘yicha oldindan keyinga to‘g‘ri joylashtirilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Podsholik — Sharqqa yurish — Maroqanda"
+        },
+        {
+          "id": "b",
+          "label": "Maroqanda — Sharqqa yurish — Podsholik"
+        },
+        {
+          "id": "c",
+          "label": "Sharqqa yurish — Podsholik — Maroqanda"
+        },
+        {
+          "id": "d",
+          "label": "Maroqanda — Podsholik — Sharqqa yurish"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page124"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page125"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q05",
+      "response_kind": "concept_selection",
+      "prompt": "Baqtriya satrapi sifatida kim berilgan?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Frada"
+        },
+        {
+          "id": "b",
+          "label": "Bess"
+        },
+        {
+          "id": "c",
+          "label": "Shiroq"
+        },
+        {
+          "id": "d",
+          "label": "Skunxa"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page124"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q06",
+      "response_kind": "concept_selection",
+      "prompt": "Chekka Aleksandriya deb izohlangan qal’a qaysi?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kurushkat"
+        },
+        {
+          "id": "b",
+          "label": "Nautaka"
+        },
+        {
+          "id": "c",
+          "label": "Aleksandriya Esxata"
+        },
+        {
+          "id": "d",
+          "label": "Baqtra"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page127"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q07",
+      "response_kind": "short_text",
+      "prompt": "Qo‘zg‘olon boshlig‘i nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page125"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q08",
+      "response_kind": "short_text",
+      "prompt": "Amudaryoning kitobda berilgan qadimgi nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page125"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q09",
+      "response_kind": "short_text",
+      "prompt": "Zarafshonning kitobda berilgan qadimgi nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    },
+    {
+      "key": "world-history-6-p32-r1-q10",
+      "response_kind": "short_text",
+      "prompt": "Zariasp deb ham atalgan Baqtriya poytaxtining nomini yozing.",
+      "input_label": "Bitta atamani yozing.",
+      "max_length": 80,
+      "source_refs": [
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page124"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page126"
+        },
+        {
+          "book_id": "world-history-6-uz-2017",
+          "book_title": "Tarix. Qadimgi dunyo",
+          "authors": [
+            "A. S. Sagdullayev",
+            "V. A. Kostetskiy"
+          ],
+          "year": 2017,
+          "file_name": "qadimgi_dunyo_tarixi_6_uzb.pdf",
+          "sha256": "aae8c182fb084bd58f98d06bd46542d5f33aeda9787dc6ba2946323257036b6d",
+          "grade": 6,
+          "chapter_id": "wh6-chapter04",
+          "topic_id": "wh6-topic32",
+          "topic_title": "O‘rta Osiyo xalqlarining yunon-makedon istilochilariga qarshi kurashi",
+          "paragraph": 32,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh6-p32-page128"
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
