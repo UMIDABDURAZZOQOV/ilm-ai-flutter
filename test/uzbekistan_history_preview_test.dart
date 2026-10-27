@@ -95,6 +95,18 @@ void main() {
         28,
       ]);
       expect(fixture('catalog10')['course_ready'], isFalse);
+      for (final grade in [7, 8, 9, 10, 11]) {
+        expect(fixture('catalog$grade')['course_content_complete'], isTrue);
+        expect(fixture('catalog$grade')['grade_content_complete'], isTrue);
+        expect(fixture('catalog$grade')['course_ready'], isFalse);
+        expect(
+          fixture('catalog$grade')['publication'],
+          'local_test_preview_only',
+        );
+      }
+      expect(jsonRows(fixture('catalog11')['lessons']).last['source_numbers'], [
+        22,
+      ]);
       expect(jsonRows(fixture('catalog9')['lessons']).last['source_numbers'], [
         41,
       ]);
