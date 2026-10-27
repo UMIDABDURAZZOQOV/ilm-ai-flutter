@@ -90,6 +90,11 @@ void main() {
       expect(capstone['title'], contains('Yakuniy'));
       expect(grade8['course_ready'], isFalse);
       expect(fixture('catalog9')['grade_content_complete'], isTrue);
+      expect(fixture('catalog10')['grade_content_complete'], isTrue);
+      expect(jsonRows(fixture('catalog10')['lessons']).last['source_numbers'], [
+        28,
+      ]);
+      expect(fixture('catalog10')['course_ready'], isFalse);
       expect(jsonRows(fixture('catalog9')['lessons']).last['source_numbers'], [
         41,
       ]);
@@ -485,7 +490,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  for (final (grade, count) in [(8, 41), (9, 39), (10, 25)]) {
+  for (final (grade, count) in [(8, 41), (9, 39), (10, 28)]) {
     for (var n = 1; n <= count; n++) {
       testWidgets(
         'grade$grade lesson $n keeps raw names and fits chronology at large text',
