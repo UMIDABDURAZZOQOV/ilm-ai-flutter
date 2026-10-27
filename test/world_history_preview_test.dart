@@ -412,13 +412,15 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 35; number++) {
+  for (var number = 1; number <= 40; number++) {
     void selectGrade7Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g7_p${suffix}_lesson');
       results = fixture('g7_p${suffix}_results');
       grade7Catalog = fixture(
-        number >= 31
+        number >= 36
+            ? 'batch17_grade7_completed_catalog'
+            : number >= 31
             ? 'batch16_grade7_completed_catalog'
             : number >= 26
             ? 'batch15_grade7_completed_catalog'
