@@ -1,0 +1,1022 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:35f08fc5-3a2c-4229-829c-aeb8ac220bf7",
+  "lesson_key": "uzh-8-31-r1",
+  "expires_at": "2026-10-28T03:42:51.030976+00:00",
+  "title": "Qoraqalpoqlarda madaniy va ma’naviy hayot",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-31-r1:c1",
+        "title": "Turmush va joylashuv",
+        "body": "Qoraqalpoqlar turmushida o‘tov va paxsa uyli ovullar, keyin qo‘rg‘on va shaharlar shakllangani tasvirlanadi. Bir uy turi barcha aholi hamma vaqt aynan shu tarzda yashaganini anglatmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-31:life"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:life",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              113,
+              114
+            ],
+            "printed_pages": [
+              113,
+              114
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "8fdc92ff16b8838c95fa5fb1f5fb7cf7747bd946187f758af35a039874e62ddd",
+              "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 528.7
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c2",
+        "title": "Kiyim va hunar",
+        "body": "Savkeli ayollar va qizlar bosh kiyimi sifatida keltiriladi. Kiyimdagi kashta, marvarid va munchoq bezaklar turmush hamda hunarmandchilikni o‘rganish uchun dalil bo‘la oladi. Bitta kiyim tavsifini har bir davrda hamma aynan shunday kiyingan degan qoida qilmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-31:clothing"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:clothing",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              114
+            ],
+            "printed_pages": [
+              114
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c3",
+        "title": "Shahar va markazlar",
+        "body": "Qo‘ng‘irot, Chimboy va Xo‘jayli yirik markazlar sifatida keltiriladi. Qo‘ng‘irot hamda Chimboy ma’muriy, Xo‘jayli esa savdo va bojxona bilan bog‘langan.",
+        "fact_ids": [
+          "uzh-8-topic-31:towns"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:towns",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              114
+            ],
+            "printed_pages": [
+              114
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c4",
+        "title": "Og‘zaki ijod",
+        "body": "Doston, latifa va xalq qo‘shiqlari og‘zaki ijod namunalaridir. Qirq qiz va Edigeydagi tarixiy mavzu badiiy ifoda orqali beriladi; ularni so‘zma-so‘z davlat arxivi qaydi deb olmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-31:oral"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:oral",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              114,
+              115
+            ],
+            "printed_pages": [
+              114,
+              115
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094",
+              "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c5",
+        "title": "Jirov, baxshi va qissaxon",
+        "body": "Jirov, baxshi va qissaxon doston aytish va ijro uslublari bilan farqlanadi. Dostonni ijro etish va yozma tarixiy hujjat tuzish bir xil faoliyat emas.",
+        "fact_ids": [
+          "uzh-8-topic-31:performers"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:performers",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              115
+            ],
+            "printed_pages": [
+              115
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c6",
+        "title": "Jiyen Jirov",
+        "body": "Jiyen Jirov Darbadar el asarida ko‘chish va og‘ir turmushni tasvirlagan adib sifatida keltiriladi. Badiiy guvohlikdagi voqeani qo‘shimcha tarixiy manbalar bilan qiyoslash mumkin.",
+        "fact_ids": [
+          "uzh-8-topic-31:jiyen"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:jiyen",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              115,
+              116
+            ],
+            "printed_pages": [
+              115,
+              116
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba",
+              "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c7",
+        "title": "Ajiniyoz ijodi",
+        "body": "Ajiniyoz Qo‘siboy o‘g‘li Zevar taxallusi bilan ham keltiriladi. Bo‘zatov dostonida xalqning ko‘chishga majbur bo‘lishi tasvirlangan; asar nomi shoirning yangi taxallusi emas.",
+        "fact_ids": [
+          "uzh-8-topic-31:ajiniyoz"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:ajiniyoz",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              116
+            ],
+            "printed_pages": [
+              116
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c8",
+        "title": "Berdaq va ism",
+        "body": "Berdaqning asl ismi Berdimurod Qarg‘aboy o‘g‘li deb berilgan. U Navoiyning va boshqa adiblarning asarlarini o‘rgangan, tarixiy va ijtimoiy mavzularda yozgan.",
+        "fact_ids": [
+          "uzh-8-topic-31:berdaq"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:berdaq",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              117
+            ],
+            "printed_pages": [
+              117
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9ae94f375b61dde2a6b7533ca631fd2404728779db9168cf8cb958cc9419f4fa"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c9",
+        "title": "Tasvir va musiqa",
+        "body": "Naqshlarda to‘lqin va qadama yog‘och o‘ymakorligi, musiqa ijrosida qo‘biz, dutor, g‘ijjak va boshqa cholg‘ular keltiriladi. San’at turini shahar yoki mansab nomi bilan aralashtirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-31:arts"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:arts",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              115
+            ],
+            "printed_pages": [
+              115
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-31-r1:c10",
+        "title": "Adib va keyingi xotira",
+        "body": "Ajiniyoz va Berdaqni keyingi davrda xotirlash tadbirlari alohida qayd etiladi. Asarning o‘zi, adib umri va yubiley sanasini bitta hodisa deb olmaymiz; mos kelmagan yosh-yil hisoblari tahririy tekshiruvga qoldiriladi.",
+        "fact_ids": [
+          "uzh-8-topic-31:later"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:later",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              116,
+              117
+            ],
+            "printed_pages": [
+              116,
+              117
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f",
+              "9ae94f375b61dde2a6b7533ca631fd2404728779db9168cf8cb958cc9419f4fa"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Berdaq — taxallus, Berdimurod Qarg‘aboy o‘g‘li — shu shaxsning ismi; Zevar — boshqa adib Ajiniyoz taxallusi. Sarlavha, taxallus va to‘liq ismni uch xil ustunda tekshiring.",
+        "fact_ids": [
+          "uzh-8-topic-31:ajiniyoz",
+          "uzh-8-topic-31:berdaq"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:ajiniyoz",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              116
+            ],
+            "printed_pages": [
+              116
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:berdaq",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              117
+            ],
+            "printed_pages": [
+              117
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9ae94f375b61dde2a6b7533ca631fd2404728779db9168cf8cb958cc9419f4fa"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Bir doston tarixni qanday yoritishi mumkin, lekin nega uni arxiv qaydnomasi bilan aynan tenglashtirib bo‘lmaydi? Bitta misol tanlang.",
+        "fact_ids": [
+          "uzh-8-topic-31:oral",
+          "uzh-8-topic-31:jiyen",
+          "uzh-8-topic-31:ajiniyoz"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:oral",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              114,
+              115
+            ],
+            "printed_pages": [
+              114,
+              115
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094",
+              "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:jiyen",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              115,
+              116
+            ],
+            "printed_pages": [
+              115,
+              116
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba",
+              "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-3",
+            "topic_id": "uzh-8-topic-31",
+            "fact_id": "uzh-8-topic-31:ajiniyoz",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              116
+            ],
+            "printed_pages": [
+              116
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:life",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          113,
+          114
+        ],
+        "printed_pages": [
+          113,
+          114
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "8fdc92ff16b8838c95fa5fb1f5fb7cf7747bd946187f758af35a039874e62ddd",
+          "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 528.7
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:clothing",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          114
+        ],
+        "printed_pages": [
+          114
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:towns",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          114
+        ],
+        "printed_pages": [
+          114
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:oral",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          114,
+          115
+        ],
+        "printed_pages": [
+          114,
+          115
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094",
+          "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:performers",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          115
+        ],
+        "printed_pages": [
+          115
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:jiyen",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          115,
+          116
+        ],
+        "printed_pages": [
+          115,
+          116
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba",
+          "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:ajiniyoz",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          116
+        ],
+        "printed_pages": [
+          116
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:berdaq",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          117
+        ],
+        "printed_pages": [
+          117
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "9ae94f375b61dde2a6b7533ca631fd2404728779db9168cf8cb958cc9419f4fa"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:arts",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          115
+        ],
+        "printed_pages": [
+          115
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-3",
+        "topic_id": "uzh-8-topic-31",
+        "fact_id": "uzh-8-topic-31:later",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          116,
+          117
+        ],
+        "printed_pages": [
+          116,
+          117
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f",
+          "9ae94f375b61dde2a6b7533ca631fd2404728779db9168cf8cb958cc9419f4fa"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-31-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Zevar taxallusi qaysi adibga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Ajiniyoz"
+        },
+        {
+          "id": "o2",
+          "label": "Berdaq"
+        },
+        {
+          "id": "o3",
+          "label": "Jiyen Jirov"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-31",
+          "fact_id": "uzh-8-topic-31:ajiniyoz",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            116
+          ],
+          "printed_pages": [
+            116
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-31-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Darbadar el asari qaysi adibga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Berdaq"
+        },
+        {
+          "id": "o2",
+          "label": "Jiyen Jirov"
+        },
+        {
+          "id": "o3",
+          "label": "Ajiniyoz"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-31",
+          "fact_id": "uzh-8-topic-31:jiyen",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            115,
+            116
+          ],
+          "printed_pages": [
+            115,
+            116
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba",
+            "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-31-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Savdo va bojxona bilan bog‘langan markaz qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Chimboy"
+        },
+        {
+          "id": "o2",
+          "label": "Qo‘ng‘irot"
+        },
+        {
+          "id": "o3",
+          "label": "Xo‘jayli"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-31",
+          "fact_id": "uzh-8-topic-31:towns",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            114
+          ],
+          "printed_pages": [
+            114
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-31-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Berdimurod Qarg‘aboy o‘g‘lining mashhur taxallusini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-31",
+          "fact_id": "uzh-8-topic-31:berdaq",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            117
+          ],
+          "printed_pages": [
+            117
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9ae94f375b61dde2a6b7533ca631fd2404728779db9168cf8cb958cc9419f4fa"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-31-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Ajiniyozning darsda ko‘rsatilgan dostoni nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-31",
+          "fact_id": "uzh-8-topic-31:ajiniyoz",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            116
+          ],
+          "printed_pages": [
+            116
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "43b3f2d27da2fc8be4a886112a5a5a1dc03032e5b3808b4d30cf92258e7f572f"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-31-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Qirq qiz va Edigey qaysi manba turiga misol?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Og‘zaki ijod"
+        },
+        {
+          "id": "o2",
+          "label": "Soliq qaydnomasi"
+        },
+        {
+          "id": "o3",
+          "label": "Harbiy buyruq"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-3",
+          "topic_id": "uzh-8-topic-31",
+          "fact_id": "uzh-8-topic-31:oral",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            114,
+            115
+          ],
+          "printed_pages": [
+            114,
+            115
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "1b618b7d5384a8e83b15e878e03b7a01bdb627ae1e53222bccbf9b6739071094",
+            "a3b0e056ffbd19434f090e534bbd8c56905c41fb7158727da919b262024db2ba"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

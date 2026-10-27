@@ -1,0 +1,924 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:12e20f9a-48bf-4f7a-a41f-2cfa9f0b3438",
+  "lesson_key": "uzh-8-32-r1",
+  "expires_at": "2026-10-28T03:42:51.159395+00:00",
+  "title": "Qo‘qon xonligining tashkil topishi",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-32-r1:c1",
+        "title": "1709-yilgi asos",
+        "body": "1709-yilda ming urug‘i vakillari Farg‘ona vodiysida hokimiyatni qo‘lga olib, Shohruxbiy hukmdor bo‘lgani berilgan. Keyinchalik Qo‘qon deb atalgan davlatning boshlanishi shu qayd bilan bog‘langan.",
+        "fact_ids": [
+          "uzh-8-topic-32:1709"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:1709",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              118,
+              120
+            ],
+            "printed_pages": [
+              118,
+              120
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f",
+              "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 259.4,
+            "end_before_y": 525.1
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-32-r1:c2",
+        "title": "Qarorgoh va unvon",
+        "body": "Tepa qo‘rg‘on Shohruxbiy qarorgohi sifatida keltiriladi. Buxoro hukmdori unga otaliq unvonini bergani amaldagi mustaqillik masalasini o‘z-o‘zidan hal qilmaydi; rasmiy da’vo va real nazorat farqli.",
+        "fact_ids": [
+          "uzh-8-topic-32:tepaqorgon"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:tepaqorgon",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              118
+            ],
+            "printed_pages": [
+              118
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 259.4
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-32-r1:c3",
+        "title": "Abdurahimbiy",
+        "body": "Shohruxbiydan keyin Abdurahimbiy Qo‘qon shahrini obod etish ishlarini davom ettirib, uni poytaxtga aylantirgani aytiladi. Qarorgoh va keyingi poytaxtni bitta nom deb olmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-32:abdura"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:abdura",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-32-r1:c4",
+        "title": "Abdulkarimbiy va devor",
+        "body": "Abdulkarimbiy1733–1750davrida hukmdor bo‘lgan, Qo‘qon atrofini devor bilan o‘ragan. Qo‘shni guruhlarning yordam va keyingi raqobati darslikda alohida tasvirlangan.",
+        "fact_ids": [
+          "uzh-8-topic-32:abdulkarim"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:abdulkarim",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-32-r1:c5",
+        "title": "Erdonabiy davri",
+        "body": "Erdonabiy davrida O‘sh va O‘zgan ham bo‘ysundirilgani qayd etiladi. Hududiy kengayish bilan barcha ichki kelishmovchiliklar tugagan degan xulosa chiqmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-32:erdo"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:erdo",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-32-r1:c6",
+        "title": "Norbo‘tabiy davri",
+        "body": "Norbo‘tabiy davrida Chust va boshqa joylar ustidan nazoratga intilish, mahalliy hokimlar bilan kurash va kelishuvlar tasvirlanadi. Uning davrida farovonlik haqidagi bayon ham muallif nuqtayi nazari bilan o‘qiladi.",
+        "fact_ids": [
+          "uzh-8-topic-32:norbota"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:norbota",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              119,
+              120
+            ],
+            "printed_pages": [
+              119,
+              120
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c",
+              "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "end_before_y": 525.1
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-32-r1:c7",
+        "title": "1776-yilgi pul",
+        "body": "1776-yilda Norbo‘tabiy xonlikning o‘z pulini zarb ettirgani berilgan. Bu1709davlat boshlanishi bilan bir sana emas; pul belgisi siyosiy maqomning bir dalilidir.",
+        "fact_ids": [
+          "uzh-8-topic-32:coin1776"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:coin1776",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              120
+            ],
+            "printed_pages": [
+              120
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "end_before_y": 525.1
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Qarorgoh — Tepa qo‘rg‘on; keyingi poytaxt — Qo‘qon.1709boshlanish qaydi va1776o‘z pulini zarb etish orasida bir nechta hukmdor davri bor.",
+        "fact_ids": [
+          "uzh-8-topic-32:1709",
+          "uzh-8-topic-32:tepaqorgon",
+          "uzh-8-topic-32:abdura",
+          "uzh-8-topic-32:coin1776"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:1709",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              118,
+              120
+            ],
+            "printed_pages": [
+              118,
+              120
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f",
+              "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 259.4,
+            "end_before_y": 525.1
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:tepaqorgon",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              118
+            ],
+            "printed_pages": [
+              118
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 259.4
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:abdura",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:coin1776",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              120
+            ],
+            "printed_pages": [
+              120
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "end_before_y": 525.1
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Otaliq unvoni, poytaxt va o‘z pulining mavjudligi siyosiy nazorat haqida qanday turli dalil beradi?",
+        "fact_ids": [
+          "uzh-8-topic-32:tepaqorgon",
+          "uzh-8-topic-32:abdura",
+          "uzh-8-topic-32:coin1776"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:tepaqorgon",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              118
+            ],
+            "printed_pages": [
+              118
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 259.4
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:abdura",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              119
+            ],
+            "printed_pages": [
+              119
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-32",
+            "fact_id": "uzh-8-topic-32:coin1776",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              120
+            ],
+            "printed_pages": [
+              120
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "end_before_y": 525.1
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:1709",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          118,
+          120
+        ],
+        "printed_pages": [
+          118,
+          120
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f",
+          "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 259.4,
+        "end_before_y": 525.1
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:tepaqorgon",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          118
+        ],
+        "printed_pages": [
+          118
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 259.4
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:abdura",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          119
+        ],
+        "printed_pages": [
+          119
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:abdulkarim",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          119
+        ],
+        "printed_pages": [
+          119
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:erdo",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          119
+        ],
+        "printed_pages": [
+          119
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:norbota",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          119,
+          120
+        ],
+        "printed_pages": [
+          119,
+          120
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c",
+          "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "end_before_y": 525.1
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-32",
+        "fact_id": "uzh-8-topic-32:coin1776",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          120
+        ],
+        "printed_pages": [
+          120
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "end_before_y": 525.1
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-32-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "1709-yilgi hokimiyat bilan bog‘langan asoschi kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Shohruxbiy"
+        },
+        {
+          "id": "o2",
+          "label": "Abdurahimbiy"
+        },
+        {
+          "id": "o3",
+          "label": "Norbo‘tabiy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:1709",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            118,
+            120
+          ],
+          "printed_pages": [
+            118,
+            120
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f",
+            "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 259.4,
+          "end_before_y": 525.1
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-32-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Qo‘qonni poytaxtga aylantirgan hukmdor kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Shohruxbiy"
+        },
+        {
+          "id": "o2",
+          "label": "Abdurahimbiy"
+        },
+        {
+          "id": "o3",
+          "label": "Abdulkarimbiy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:abdura",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            119
+          ],
+          "printed_pages": [
+            119
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-32-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Qo‘qon devorini qurdirish qaysi hukmdorga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Erdonabiy"
+        },
+        {
+          "id": "o2",
+          "label": "Shohruxbiy"
+        },
+        {
+          "id": "o3",
+          "label": "Abdulkarimbiy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:abdulkarim",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            119
+          ],
+          "printed_pages": [
+            119
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "1e714bf6dd0a510bf8f4784f77e6a2edaa0d8513b00cda6602508bb0332c394c"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-32-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Shohruxbiy qarorgohi nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:tepaqorgon",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            118
+          ],
+          "printed_pages": [
+            118
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 259.4
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-32-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "O‘z pulini zarb ettirish qaydining yilini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:coin1776",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            120
+          ],
+          "printed_pages": [
+            120
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "end_before_y": 525.1
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-32-r1:q6",
+      "response_kind": "ordering",
+      "phase": "independent",
+      "prompt": "Davlat boshlanishi va o‘z pulini zarb etishni tartiblang.",
+      "items": [
+        {
+          "id": "e2",
+          "label": "Norbo‘tabiyning o‘z pulini zarb ettirishi",
+          "fact_id": "uzh-8-topic-32:coin1776"
+        },
+        {
+          "id": "e1",
+          "label": "Shohruxbiy davrida hokimiyatning o‘rnatilishi",
+          "fact_id": "uzh-8-topic-32:1709"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:1709",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            118,
+            120
+          ],
+          "printed_pages": [
+            118,
+            120
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "0ce6d3af3ab01bbcf744edd1b3404a13bb62790b24175876d13529f68fffec8f",
+            "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 259.4,
+          "end_before_y": 525.1
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-32",
+          "fact_id": "uzh-8-topic-32:coin1776",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            120
+          ],
+          "printed_pages": [
+            120
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "44a71965cd6d74070623e273f532c0516a4191c1c4457136f64f1654fff66f25"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "end_before_y": 525.1
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
