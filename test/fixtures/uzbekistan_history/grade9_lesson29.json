@@ -1,0 +1,757 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:e3a12996-b136-48c8-8804-8b97b322cdd8",
+  "lesson_key": "uzh-9-29-r1",
+  "expires_at": "2026-10-28T05:14:46.819878+00:00",
+  "title": "Turkistonda 1916-yilgi qo‘zg‘olonning boshlanishi",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-9-29-r1:c1",
+        "title": "Hududiy ro‘yxatlar",
+        "body": "Farmon bo‘yicha viloyatlar kesimida mardikor miqdorlari belgilangan. Rejadagi miqdor amalda aynan shuncha odam ketganining to‘liq ro‘yxati emas.",
+        "fact_ids": [
+          "uzh-9-topic-30:quotas"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:quotas",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              103
+            ],
+            "printed_pages": [
+              103
+            ],
+            "native_text_sha256": [
+              "276cb1151332b2b28b1f37ab5cc8d9a92a04ba668664e3692aa6bdaf477ddb86"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 326.124
+          }
+        ]
+      },
+      {
+        "key": "uzh-9-29-r1:c2",
+        "title": "Ro‘yxatdagi adolatsizlik",
+        "body": "Boylarga pora evaziga imtiyoz, kambag‘al oilalarning boqimandasi hisobga olinmasligi haqidagi bayon norozilik bilan bog‘lanadi. Muayyan ma’mur qarorini barcha aholining xatti-harakati deb olmaymiz.",
+        "fact_ids": [
+          "uzh-9-topic-30:lists"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:lists",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              103,
+              104
+            ],
+            "printed_pages": [
+              103,
+              104
+            ],
+            "native_text_sha256": [
+              "276cb1151332b2b28b1f37ab5cc8d9a92a04ba668664e3692aa6bdaf477ddb86",
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 326.124
+          }
+        ]
+      },
+      {
+        "key": "uzh-9-29-r1:c3",
+        "title": "Dastlabki qayd",
+        "body": "1916-yil 4-iyulda Xo‘janddagi chiqish va mardikorlikdan bosh tortish qayd etiladi. Keyingi kunlarda Samarqandning Urgut va boshqa joylariga tarqalgan.",
+        "fact_ids": [
+          "uzh-9-topic-30:khujand"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:khujand",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-9-29-r1:c4",
+        "title": "Toshkent va Rizvonbibi",
+        "body": "11-iyulda Toshkent Beshyog‘och politsiya mahkamasi oldida namoyish bo‘lgani, Rizvonbibi Ahmadjonova faol qatnashgani yoziladi. Ayollar va bolalar zarar ko‘rishi bayoni ham bor; qurbonlar sonlari aniq yakuniy statistika qilib baholanmaydi.",
+        "fact_ids": [
+          "uzh-9-topic-30:tashkent"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:tashkent",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-9-29-r1:c5",
+        "title": "Vodiydagi tarqalish",
+        "body": "Qo‘qon, Rishton, Marg‘ilon, Andijon va Namanganda chiqishlar sanaladi. Namangandagi Labbaytog‘ dahasi alohida qayd etiladi. Mahalliy voqealar bir kunda tugagan yagona hodisa emas.",
+        "fact_ids": [
+          "uzh-9-topic-30:fergana"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:fergana",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              105
+            ],
+            "printed_pages": [
+              105
+            ],
+            "native_text_sha256": [
+              "fe087df8dfb571fcfd2448dff6094a2ed701b74b30820b9e3b4c862807fada9e"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-9-29-r1:c6",
+        "title": "Ma’muriy ogohlantirish",
+        "body": "Farg‘ona gubernatori Gippius norozilik xavfini bildirgani, ammo markaziy hokimiyat uni lavozimdan olgani yoziladi. Ogohlantirish, qaror va amaliy oqibat turli bosqichlar.",
+        "fact_ids": [
+          "uzh-9-topic-30:gippius"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:gippius",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Xo‘jand — dastlabki chiqish qaydi; Beshyog‘och — Toshkentdagi joy; Labbaytog‘ — Namangandagi daha. Uch nomni uch viloyat deb yozmang.",
+        "fact_ids": [
+          "uzh-9-topic-30:khujand",
+          "uzh-9-topic-30:tashkent",
+          "uzh-9-topic-30:fergana"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:khujand",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:tashkent",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:fergana",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              105
+            ],
+            "printed_pages": [
+              105
+            ],
+            "native_text_sha256": [
+              "fe087df8dfb571fcfd2448dff6094a2ed701b74b30820b9e3b4c862807fada9e"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Viloyatlar uchun belgilangan reja, ro‘yxatdagi adolatsizlik va namoyishning farqini tushuntiring. Reja sonini haqiqiy qatnashchi soni qilmang.",
+        "fact_ids": [
+          "uzh-9-topic-30:quotas",
+          "uzh-9-topic-30:lists",
+          "uzh-9-topic-30:khujand",
+          "uzh-9-topic-30:tashkent",
+          "uzh-9-topic-30:gippius"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:quotas",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              103
+            ],
+            "printed_pages": [
+              103
+            ],
+            "native_text_sha256": [
+              "276cb1151332b2b28b1f37ab5cc8d9a92a04ba668664e3692aa6bdaf477ddb86"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 326.124
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:lists",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              103,
+              104
+            ],
+            "printed_pages": [
+              103,
+              104
+            ],
+            "native_text_sha256": [
+              "276cb1151332b2b28b1f37ab5cc8d9a92a04ba668664e3692aa6bdaf477ddb86",
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 326.124
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:khujand",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:tashkent",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-9",
+            "grade": 9,
+            "chapter_id": "uzh-9-chapter-7",
+            "topic_id": "uzh-9-topic-30",
+            "fact_id": "uzh-9-topic-30:gippius",
+            "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+            "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+            "pdf_pages": [
+              104
+            ],
+            "printed_pages": [
+              104
+            ],
+            "native_text_sha256": [
+              "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-9",
+        "grade": 9,
+        "chapter_id": "uzh-9-chapter-7",
+        "topic_id": "uzh-9-topic-30",
+        "fact_id": "uzh-9-topic-30:quotas",
+        "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+        "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+        "pdf_pages": [
+          103
+        ],
+        "printed_pages": [
+          103
+        ],
+        "native_text_sha256": [
+          "276cb1151332b2b28b1f37ab5cc8d9a92a04ba668664e3692aa6bdaf477ddb86"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 326.124
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-9",
+        "grade": 9,
+        "chapter_id": "uzh-9-chapter-7",
+        "topic_id": "uzh-9-topic-30",
+        "fact_id": "uzh-9-topic-30:lists",
+        "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+        "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+        "pdf_pages": [
+          103,
+          104
+        ],
+        "printed_pages": [
+          103,
+          104
+        ],
+        "native_text_sha256": [
+          "276cb1151332b2b28b1f37ab5cc8d9a92a04ba668664e3692aa6bdaf477ddb86",
+          "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 326.124
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-9",
+        "grade": 9,
+        "chapter_id": "uzh-9-chapter-7",
+        "topic_id": "uzh-9-topic-30",
+        "fact_id": "uzh-9-topic-30:khujand",
+        "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+        "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+        "pdf_pages": [
+          104
+        ],
+        "printed_pages": [
+          104
+        ],
+        "native_text_sha256": [
+          "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-9",
+        "grade": 9,
+        "chapter_id": "uzh-9-chapter-7",
+        "topic_id": "uzh-9-topic-30",
+        "fact_id": "uzh-9-topic-30:tashkent",
+        "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+        "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+        "pdf_pages": [
+          104
+        ],
+        "printed_pages": [
+          104
+        ],
+        "native_text_sha256": [
+          "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-9",
+        "grade": 9,
+        "chapter_id": "uzh-9-chapter-7",
+        "topic_id": "uzh-9-topic-30",
+        "fact_id": "uzh-9-topic-30:fergana",
+        "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+        "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+        "pdf_pages": [
+          105
+        ],
+        "printed_pages": [
+          105
+        ],
+        "native_text_sha256": [
+          "fe087df8dfb571fcfd2448dff6094a2ed701b74b30820b9e3b4c862807fada9e"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-9",
+        "grade": 9,
+        "chapter_id": "uzh-9-chapter-7",
+        "topic_id": "uzh-9-topic-30",
+        "fact_id": "uzh-9-topic-30:gippius",
+        "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+        "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+        "pdf_pages": [
+          104
+        ],
+        "printed_pages": [
+          104
+        ],
+        "native_text_sha256": [
+          "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-9-29-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "4-iyuldagi chiqish qaysi shaharda qayd etilgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Xo‘jand"
+        },
+        {
+          "id": "o2",
+          "label": "Jizzax"
+        },
+        {
+          "id": "o3",
+          "label": "Qo‘qon"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-9",
+          "grade": 9,
+          "chapter_id": "uzh-9-chapter-7",
+          "topic_id": "uzh-9-topic-30",
+          "fact_id": "uzh-9-topic-30:khujand",
+          "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+          "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+          "pdf_pages": [
+            104
+          ],
+          "printed_pages": [
+            104
+          ],
+          "native_text_sha256": [
+            "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-9-29-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Rizvonbibi Ahmadjonova qatnashgan Toshkent joyi qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Ko‘kcha"
+        },
+        {
+          "id": "o2",
+          "label": "Beshyog‘och"
+        },
+        {
+          "id": "o3",
+          "label": "Shayxontohur"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-9",
+          "grade": 9,
+          "chapter_id": "uzh-9-chapter-7",
+          "topic_id": "uzh-9-topic-30",
+          "fact_id": "uzh-9-topic-30:tashkent",
+          "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+          "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+          "pdf_pages": [
+            104
+          ],
+          "printed_pages": [
+            104
+          ],
+          "native_text_sha256": [
+            "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-9-29-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Labbaytog‘ dahasi qaysi shahar voqeasida?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Andijon"
+        },
+        {
+          "id": "o2",
+          "label": "Marg‘ilon"
+        },
+        {
+          "id": "o3",
+          "label": "Namangan"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-9",
+          "grade": 9,
+          "chapter_id": "uzh-9-chapter-7",
+          "topic_id": "uzh-9-topic-30",
+          "fact_id": "uzh-9-topic-30:fergana",
+          "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+          "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+          "pdf_pages": [
+            105
+          ],
+          "printed_pages": [
+            105
+          ],
+          "native_text_sha256": [
+            "fe087df8dfb571fcfd2448dff6094a2ed701b74b30820b9e3b4c862807fada9e"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-9-29-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Farg‘onadagi xavf haqida xabar bergan gubernator familiyasini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-9",
+          "grade": 9,
+          "chapter_id": "uzh-9-chapter-7",
+          "topic_id": "uzh-9-topic-30",
+          "fact_id": "uzh-9-topic-30:gippius",
+          "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+          "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+          "pdf_pages": [
+            104
+          ],
+          "printed_pages": [
+            104
+          ],
+          "native_text_sha256": [
+            "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-9-29-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Toshkent voqeasida nomi berilgan ayol ishtirokchini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-9",
+          "grade": 9,
+          "chapter_id": "uzh-9-chapter-7",
+          "topic_id": "uzh-9-topic-30",
+          "fact_id": "uzh-9-topic-30:tashkent",
+          "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+          "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+          "pdf_pages": [
+            104
+          ],
+          "printed_pages": [
+            104
+          ],
+          "native_text_sha256": [
+            "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-9-29-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Urgut voqeasi qaysi hudud tarqalishida keltiriladi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Samarqand"
+        },
+        {
+          "id": "o2",
+          "label": "Xiva"
+        },
+        {
+          "id": "o3",
+          "label": "Kaspiyorti"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-9",
+          "grade": 9,
+          "chapter_id": "uzh-9-chapter-7",
+          "topic_id": "uzh-9-topic-30",
+          "fact_id": "uzh-9-topic-30:khujand",
+          "file_name": "ozbekiston_tarixi_9_uzb.pdf",
+          "sha256": "20f00f2caeb661b6240a9552e17b0486128aa316a0233c251d46cdc1d577f1df",
+          "pdf_pages": [
+            104
+          ],
+          "printed_pages": [
+            104
+          ],
+          "native_text_sha256": [
+            "f9439113486a527ef1fda4b427dd791b90edbe7bc3e16e9a7f8b5179007c02aa"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
