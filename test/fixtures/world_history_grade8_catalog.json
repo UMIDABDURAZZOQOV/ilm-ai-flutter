@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 33,
-  "implemented_sections": 20,
+  "implemented_sections": 25,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 13,
+  "source_review_issue_count": 8,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
@@ -4054,6 +4054,863 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh8-p20-page101"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p21-r1",
+      "sequence": 21,
+      "title": "1800–1870-yillarda Fransiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page101"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page102"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            103
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page103"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page104"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            105
+          ],
+          "pdf_pages": [
+            105
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page105"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page106"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic21",
+          "topic_title": "1800–1870-yillarda Fransiya",
+          "paragraph": 21,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p21-page107"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p22-r1",
+      "sequence": 22,
+      "title": "1800–1870-yillarda Germaniya va Italiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic22",
+          "topic_title": "1800–1870-yillarda Germaniya va Italiya",
+          "paragraph": 22,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p22-page107"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic22",
+          "topic_title": "1800–1870-yillarda Germaniya va Italiya",
+          "paragraph": 22,
+          "printed_pages": [
+            108
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p22-page108"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic22",
+          "topic_title": "1800–1870-yillarda Germaniya va Italiya",
+          "paragraph": 22,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p22-page109"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic22",
+          "topic_title": "1800–1870-yillarda Germaniya va Italiya",
+          "paragraph": 22,
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            110
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p22-page110"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p23-r1",
+      "sequence": 23,
+      "title": "1800–1870-yillarda Rossiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic23",
+          "topic_title": "1800–1870-yillarda Rossiya",
+          "paragraph": 23,
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            110
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p23-page110"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic23",
+          "topic_title": "1800–1870-yillarda Rossiya",
+          "paragraph": 23,
+          "printed_pages": [
+            111
+          ],
+          "pdf_pages": [
+            111
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p23-page111"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic23",
+          "topic_title": "1800–1870-yillarda Rossiya",
+          "paragraph": 23,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p23-page112"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic23",
+          "topic_title": "1800–1870-yillarda Rossiya",
+          "paragraph": 23,
+          "printed_pages": [
+            113
+          ],
+          "pdf_pages": [
+            113
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p23-page113"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic23",
+          "topic_title": "1800–1870-yillarda Rossiya",
+          "paragraph": 23,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p23-page114"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic23",
+          "topic_title": "1800–1870-yillarda Rossiya",
+          "paragraph": 23,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p23-page115"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p24-r1",
+      "sequence": 24,
+      "title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic24",
+          "topic_title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 24,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p24-page115"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic24",
+          "topic_title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 24,
+          "printed_pages": [
+            116
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p24-page116"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic24",
+          "topic_title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 24,
+          "printed_pages": [
+            117
+          ],
+          "pdf_pages": [
+            117
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p24-page117"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic24",
+          "topic_title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 24,
+          "printed_pages": [
+            118
+          ],
+          "pdf_pages": [
+            118
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p24-page118"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic24",
+          "topic_title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 24,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p24-page119"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic24",
+          "topic_title": "1800–1870-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 24,
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            120
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p24-page120"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p25-r1",
+      "sequence": 25,
+      "title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic25",
+          "topic_title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+          "paragraph": 25,
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            120
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p25-page120"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic25",
+          "topic_title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+          "paragraph": 25,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p25-page121"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic25",
+          "topic_title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+          "paragraph": 25,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p25-page122"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic25",
+          "topic_title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+          "paragraph": 25,
+          "printed_pages": [
+            123
+          ],
+          "pdf_pages": [
+            123
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p25-page123"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic25",
+          "topic_title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+          "paragraph": 25,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p25-page124"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter04",
+          "topic_id": "wh8-topic25",
+          "topic_title": "Lotin Amerikasi xalqlarining milliy-ozodlik kurashi",
+          "paragraph": 25,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p25-page125"
         }
       ]
     }

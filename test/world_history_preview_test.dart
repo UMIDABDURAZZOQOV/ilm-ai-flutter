@@ -621,13 +621,15 @@ void main() {
       );
     }
   }
-  for (var number = 1; number <= 20; number++) {
+  for (var number = 1; number <= 25; number++) {
     void selectGrade8Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g8_p${suffix}_lesson');
       results = fixture('g8_p${suffix}_results');
       grade8Catalog = fixture(
-        number >= 16
+        number >= 21
+            ? 'batch23_grade8_completed_catalog'
+            : number >= 16
             ? 'batch22_grade8_completed_catalog'
             : number >= 11
             ? 'batch21_grade8_completed_catalog'
