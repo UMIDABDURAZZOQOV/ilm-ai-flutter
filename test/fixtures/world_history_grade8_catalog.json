@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 33,
-  "implemented_sections": 25,
+  "implemented_sections": 30,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 8,
+  "source_review_issue_count": 3,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
@@ -4911,6 +4911,695 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh8-p25-page125"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p26-r1",
+      "sequence": 26,
+      "title": "1800–1870-yillarda Hindiston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic26",
+          "topic_title": "1800–1870-yillarda Hindiston",
+          "paragraph": 26,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p26-page126"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic26",
+          "topic_title": "1800–1870-yillarda Hindiston",
+          "paragraph": 26,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p26-page127"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic26",
+          "topic_title": "1800–1870-yillarda Hindiston",
+          "paragraph": 26,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p26-page128"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic26",
+          "topic_title": "1800–1870-yillarda Hindiston",
+          "paragraph": 26,
+          "printed_pages": [
+            129
+          ],
+          "pdf_pages": [
+            129
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p26-page129"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic26",
+          "topic_title": "1800–1870-yillarda Hindiston",
+          "paragraph": 26,
+          "printed_pages": [
+            130
+          ],
+          "pdf_pages": [
+            130
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p26-page130"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p27-r1",
+      "sequence": 27,
+      "title": "1800–1870-yillarda Xitoy",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic27",
+          "topic_title": "1800–1870-yillarda Xitoy",
+          "paragraph": 27,
+          "printed_pages": [
+            130
+          ],
+          "pdf_pages": [
+            130
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p27-page130"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic27",
+          "topic_title": "1800–1870-yillarda Xitoy",
+          "paragraph": 27,
+          "printed_pages": [
+            131
+          ],
+          "pdf_pages": [
+            131
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p27-page131"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic27",
+          "topic_title": "1800–1870-yillarda Xitoy",
+          "paragraph": 27,
+          "printed_pages": [
+            132
+          ],
+          "pdf_pages": [
+            132
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p27-page132"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic27",
+          "topic_title": "1800–1870-yillarda Xitoy",
+          "paragraph": 27,
+          "printed_pages": [
+            133
+          ],
+          "pdf_pages": [
+            133
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p27-page133"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic27",
+          "topic_title": "1800–1870-yillarda Xitoy",
+          "paragraph": 27,
+          "printed_pages": [
+            134
+          ],
+          "pdf_pages": [
+            134
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p27-page134"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p28-r1",
+      "sequence": 28,
+      "title": "1800–1870-yillarda Yaponiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic28",
+          "topic_title": "1800–1870-yillarda Yaponiya",
+          "paragraph": 28,
+          "printed_pages": [
+            134
+          ],
+          "pdf_pages": [
+            134
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p28-page134"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic28",
+          "topic_title": "1800–1870-yillarda Yaponiya",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p28-page135"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic28",
+          "topic_title": "1800–1870-yillarda Yaponiya",
+          "paragraph": 28,
+          "printed_pages": [
+            136
+          ],
+          "pdf_pages": [
+            136
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p28-page136"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic28",
+          "topic_title": "1800–1870-yillarda Yaponiya",
+          "paragraph": 28,
+          "printed_pages": [
+            137
+          ],
+          "pdf_pages": [
+            137
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p28-page137"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic28",
+          "topic_title": "1800–1870-yillarda Yaponiya",
+          "paragraph": 28,
+          "printed_pages": [
+            138
+          ],
+          "pdf_pages": [
+            138
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p28-page138"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p29-r1",
+      "sequence": 29,
+      "title": "1800–1870-yillarda Koreya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic29",
+          "topic_title": "1800–1870-yillarda Koreya",
+          "paragraph": 29,
+          "printed_pages": [
+            138
+          ],
+          "pdf_pages": [
+            138
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p29-page138"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic29",
+          "topic_title": "1800–1870-yillarda Koreya",
+          "paragraph": 29,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p29-page139"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic29",
+          "topic_title": "1800–1870-yillarda Koreya",
+          "paragraph": 29,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p29-page140"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic29",
+          "topic_title": "1800–1870-yillarda Koreya",
+          "paragraph": 29,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p29-page141"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p30-r1",
+      "sequence": 30,
+      "title": "1800–1870-yillarda Usmoniylar imperiyasi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic30",
+          "topic_title": "1800–1870-yillarda Usmoniylar imperiyasi",
+          "paragraph": 30,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p30-page142"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic30",
+          "topic_title": "1800–1870-yillarda Usmoniylar imperiyasi",
+          "paragraph": 30,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p30-page143"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic30",
+          "topic_title": "1800–1870-yillarda Usmoniylar imperiyasi",
+          "paragraph": 30,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p30-page144"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic30",
+          "topic_title": "1800–1870-yillarda Usmoniylar imperiyasi",
+          "paragraph": 30,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p30-page145"
         }
       ]
     }

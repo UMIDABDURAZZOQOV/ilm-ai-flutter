@@ -28,6 +28,7 @@ Json fixture(String name) =>
 const captureKey = Key('history-review');
 
 void main() {
+  const latestGrade8CompletedCatalogue = 'batch24_grade8_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -258,6 +259,9 @@ void main() {
     expect(requests.last.queryParameters['grade'], 8);
     expect(find.text('Jahon tarixi · 8-sinf'), findsWidgets);
     final eight = fixture('grade8_catalog');
+    final latest = fixture(latestGrade8CompletedCatalogue);
+    expect(eight['implemented_sections'], latest['implemented_sections']);
+    expect(jsonRows(eight['lessons']).length, jsonRows(latest['lessons']).length);
     final implemented = eight['implemented_sections'] as int;
     expect(
       find.text('Darsni boshlash'),
@@ -621,13 +625,15 @@ void main() {
       );
     }
   }
-  for (var number = 1; number <= 25; number++) {
+  for (var number = 1; number <= 30; number++) {
     void selectGrade8Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g8_p${suffix}_lesson');
       results = fixture('g8_p${suffix}_results');
       grade8Catalog = fixture(
-        number >= 21
+        number >= 26
+            ? 'batch24_grade8_completed_catalog'
+            : number >= 21
             ? 'batch23_grade8_completed_catalog'
             : number >= 16
             ? 'batch22_grade8_completed_catalog'
