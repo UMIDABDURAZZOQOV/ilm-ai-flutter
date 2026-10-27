@@ -1,0 +1,976 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:d4ed2249-3ae7-4df6-8ef3-fccf09bcba63",
+  "lesson_key": "uzh-8-7-r1",
+  "expires_at": "2026-10-28T02:49:20.124911+00:00",
+  "title": "Buxoro xonligida ashtarxoniylar sulolasi hukmronligining o‘rnatilishi",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-7-r1:c1",
+        "title": "Sulola nomi kelib chiqishi",
+        "body": "Ashtarxoniylar nomi Ashtarxon xonligi bilan bog‘langan. Kitob uning poytaxtini hozirgi Astraxan bilan aloqador deb ko‘rsatadi; sulola nomi Buxoro shahrining boshqa nomi emas.",
+        "fact_ids": [
+          "uzh-8-topic-7:astrakhan"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:astrakhan",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              21,
+              22
+            ],
+            "printed_pages": [
+              21,
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "4bbe0c9585a28933f97cea00453ec041c1d271d7695dcd7481ab1298c24ab39c",
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 548
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c2",
+        "title": "Oilaviy aloqalar",
+        "body": "Yormuhammadxon oilasi Buxoroga kelgach, Iskandarxonning qizi Zuhrabegim Jonibek Sultonga turmushga berilgan. Ularning farzandlari qatorida Din Muhammad, Boqi Muhammad va Vali Muhammad keltiriladi.",
+        "fact_ids": [
+          "uzh-8-topic-7:family"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:family",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22
+            ],
+            "printed_pages": [
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c3",
+        "title": "Buxorodagi yangi sulola",
+        "body": "1601-yilda Boqi Muhammad Buxoro taxtiga chiqarilgani va ashtarxoniylar sulolasi hukmronligi boshlangani qayd etiladi. Uning otasi Jonibek Sulton xonlik taklifini qabul qilmagan.",
+        "fact_ids": [
+          "uzh-8-topic-7:boqi1601"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:boqi1601",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22
+            ],
+            "printed_pages": [
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c4",
+        "title": "Balxdagi boshqaruv",
+        "body": "1602-yilda Balx bo‘ysundirilib, Vali Muhammad hokim qilib tayinlangani aytiladi. Bu uning keyinchalik Buxoro taxtiga o‘tirishidan boshqa voqea.",
+        "fact_ids": [
+          "uzh-8-topic-7:balkh1602"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:balkh1602",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22
+            ],
+            "printed_pages": [
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c5",
+        "title": "Hukmdor almashishi",
+        "body": "Boqi Muhammad vafotidan so‘ng, 1605-yilda Vali Muhammad taxtga o‘tirgan. Keyin amirlar bilan ziddiyat kuchaygani va uning o‘rniga Imomqulixon qo‘yilgani beriladi.",
+        "fact_ids": [
+          "uzh-8-topic-7:vali1605"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:vali1605",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22,
+              23
+            ],
+            "printed_pages": [
+              22,
+              23
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8",
+              "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c6",
+        "title": "Toshkent qaydi",
+        "body": "Imomqulixon davrida 1613-yili Toshkent qo‘lga olingani qayd etiladi. Shahar va hukmdorni shu voqea doirasida bog‘laymiz; buni barcha qo‘shni xalq haqida hukmga aylantirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-7:imom1613"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:imom1613",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              23
+            ],
+            "printed_pages": [
+              23
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c7",
+        "title": "Keyingi siyosiy kurash",
+        "body": "1681-yilda Abdulazizxon taxtdan voz kechgach, Subhonqulixon hukmronligi boshlangan. Bo‘lim ichki amirlar, viloyatlar va Xiva bilan raqobatni tasvirlaydi; hammasini faqat shaxsiy sifat bilan izohlash yetarli emas.",
+        "fact_ids": [
+          "uzh-8-topic-7:subhon"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:subhon",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              24
+            ],
+            "printed_pages": [
+              24
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7694b07933259b1ae60eee7605f9c862edf2cfce7ec55a2ab5f62524c72ba746"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-7-r1:c8",
+        "title": "Balx va oilaviy nizolar",
+        "body": "Nodir Muhammad, Abdulazizxon va Subhonqulixon davridagi voqealarda Balx takror uchraydi. Ayrim yordam so‘rovlarining keyingi qarama-qarshilikka aylanishi darslikda bayon etilgan; vaqt va rol o‘zgarganini ajratish zarur.",
+        "fact_ids": [
+          "uzh-8-topic-7:balkh"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:balkh",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              23,
+              24
+            ],
+            "printed_pages": [
+              23,
+              24
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2",
+              "7694b07933259b1ae60eee7605f9c862edf2cfce7ec55a2ab5f62524c72ba746"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Bir shaxs turli maqomda kelishi mumkin: Vali Muhammad1602-yilda Balx hokimi,1605-yilda Buxoro xoni. “U kim edi?” savolida joy va vaqtni ham aniqlang.",
+        "fact_ids": [
+          "uzh-8-topic-7:balkh1602",
+          "uzh-8-topic-7:vali1605"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:balkh1602",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22
+            ],
+            "printed_pages": [
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:vali1605",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22,
+              23
+            ],
+            "printed_pages": [
+              22,
+              23
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8",
+              "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Sulola nomi, qarindoshlik va amaldagi hokimiyat bir xil ma’lumot emas. Jonibek Sulton va Boqi Muhammad misolida farqlang.",
+        "fact_ids": [
+          "uzh-8-topic-7:astrakhan",
+          "uzh-8-topic-7:family",
+          "uzh-8-topic-7:boqi1601"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:astrakhan",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              21,
+              22
+            ],
+            "printed_pages": [
+              21,
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "4bbe0c9585a28933f97cea00453ec041c1d271d7695dcd7481ab1298c24ab39c",
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 548
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:family",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22
+            ],
+            "printed_pages": [
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-7",
+            "fact_id": "uzh-8-topic-7:boqi1601",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              22
+            ],
+            "printed_pages": [
+              22
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:astrakhan",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "printed_pages": [
+          21,
+          22
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "4bbe0c9585a28933f97cea00453ec041c1d271d7695dcd7481ab1298c24ab39c",
+          "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 548
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:family",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          22
+        ],
+        "printed_pages": [
+          22
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:boqi1601",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          22
+        ],
+        "printed_pages": [
+          22
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:balkh1602",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          22
+        ],
+        "printed_pages": [
+          22
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:vali1605",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          22,
+          23
+        ],
+        "printed_pages": [
+          22,
+          23
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8",
+          "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:imom1613",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          23
+        ],
+        "printed_pages": [
+          23
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:subhon",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          24
+        ],
+        "printed_pages": [
+          24
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "7694b07933259b1ae60eee7605f9c862edf2cfce7ec55a2ab5f62524c72ba746"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-7",
+        "fact_id": "uzh-8-topic-7:balkh",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          23,
+          24
+        ],
+        "printed_pages": [
+          23,
+          24
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2",
+          "7694b07933259b1ae60eee7605f9c862edf2cfce7ec55a2ab5f62524c72ba746"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-7-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "1601-yilda Buxoro taxtiga chiqarilgan hukmdor kim?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Boqi Muhammad"
+        },
+        {
+          "id": "o2",
+          "label": "Vali Muhammad"
+        },
+        {
+          "id": "o3",
+          "label": "Jonibek Sulton"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:boqi1601",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            22
+          ],
+          "printed_pages": [
+            22
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-7-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "1602-yilgi tayinlovda Vali Muhammad qaysi joy hokimi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Toshkent"
+        },
+        {
+          "id": "o2",
+          "label": "Balx"
+        },
+        {
+          "id": "o3",
+          "label": "Astraxan"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:balkh1602",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            22
+          ],
+          "printed_pages": [
+            22
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-7-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "1681-yilda Abdulazizxondan keyin kim hukmdor bo‘lgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Imomqulixon"
+        },
+        {
+          "id": "o2",
+          "label": "Boqi Muhammad"
+        },
+        {
+          "id": "o3",
+          "label": "Subhonqulixon"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:subhon",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            24
+          ],
+          "printed_pages": [
+            24
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7694b07933259b1ae60eee7605f9c862edf2cfce7ec55a2ab5f62524c72ba746"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-7-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Jonibek Sultonga turmushga berilgan Iskandarxon qizining ismini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:family",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            22
+          ],
+          "printed_pages": [
+            22
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-7-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "1613-yilda Imomqulixon qo‘lga olgan shaharni yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:imom1613",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            23
+          ],
+          "printed_pages": [
+            23
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-7-r1:q6",
+      "response_kind": "ordering",
+      "phase": "independent",
+      "prompt": "Yangi sulolaning dastlabki qaydlarini tartiblang.",
+      "items": [
+        {
+          "id": "e2",
+          "label": "Vali Muhammadning Balxga tayinlanishi",
+          "fact_id": "uzh-8-topic-7:balkh1602"
+        },
+        {
+          "id": "e3",
+          "label": "Vali Muhammadning xon bo‘lishi",
+          "fact_id": "uzh-8-topic-7:vali1605"
+        },
+        {
+          "id": "e4",
+          "label": "Imomqulixonning Toshkentni qo‘lga olishi",
+          "fact_id": "uzh-8-topic-7:imom1613"
+        },
+        {
+          "id": "e1",
+          "label": "Boqi Muhammadning Buxoro taxtiga chiqarilishi",
+          "fact_id": "uzh-8-topic-7:boqi1601"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:boqi1601",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            22
+          ],
+          "printed_pages": [
+            22
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:balkh1602",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            22
+          ],
+          "printed_pages": [
+            22
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:vali1605",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            22,
+            23
+          ],
+          "printed_pages": [
+            22,
+            23
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "7901e5df849cef3cfd5de0078aff0210d6da5acfb016a066b6ba9160b03265f8",
+            "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-7",
+          "fact_id": "uzh-8-topic-7:imom1613",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            23
+          ],
+          "printed_pages": [
+            23
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "ef3eb7abe60fce872b53373ec0da98c49ac6abd2cc0cf01d8fdf9563d3df23d2"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

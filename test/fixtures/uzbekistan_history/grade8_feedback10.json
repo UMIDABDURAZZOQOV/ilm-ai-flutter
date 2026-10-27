@@ -1,0 +1,384 @@
+{
+  "responses": {
+    "uzh-8-10-r1:q1": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-10-r1:q1",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Qalb — markaziy qism; boshqa ikkisi mansab va moslama.",
+      "correct_answer": "Qalb",
+      "solution": [
+        {
+          "body": "Qalb — markaziy qism; boshqa ikkisi mansab va moslama.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-10",
+              "fact_id": "uzh-8-topic-10:qalb",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                31
+              ],
+              "printed_pages": [
+                31
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "d4bc71d982dfb5d50f2aaf0d5e45f86bb12c9736f7f3a079917b654240982899"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+              "start_after_y": 374.4
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-10",
+          "fact_id": "uzh-8-topic-10:qalb",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            31
+          ],
+          "printed_pages": [
+            31
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "d4bc71d982dfb5d50f2aaf0d5e45f86bb12c9736f7f3a079917b654240982899"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 374.4
+        }
+      ]
+    },
+    "uzh-8-10-r1:q2": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-10-r1:q2",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Jevachi qurol ta’minotiga mas’ul; tavochining vazifasi kengroq tayyorlov.",
+      "correct_answer": "Jevachi",
+      "solution": [
+        {
+          "body": "Jevachi qurol ta’minotiga mas’ul; tavochining vazifasi kengroq tayyorlov.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-10",
+              "fact_id": "uzh-8-topic-10:jevachi",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                32
+              ],
+              "printed_pages": [
+                32
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "f7c1a16767e96efaf67b1cf8f60ba08d6d482571353cf8d8f18d4abc9ac2b7de"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-10",
+          "fact_id": "uzh-8-topic-10:jevachi",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            32
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "f7c1a16767e96efaf67b1cf8f60ba08d6d482571353cf8d8f18d4abc9ac2b7de"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    "uzh-8-10-r1:q3": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-10-r1:q3",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Sadoq moslama, sovut va dubulg‘a himoya aslahasi sifatida keladi.",
+      "correct_answer": "Sadoq",
+      "solution": [
+        {
+          "body": "Sadoq moslama, sovut va dubulg‘a himoya aslahasi sifatida keladi.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-10",
+              "fact_id": "uzh-8-topic-10:aslah",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                33
+              ],
+              "printed_pages": [
+                33
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "512c380e9ee2555133affad7971ae051deb9a563004eb0cde00a355363a184ae"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-10",
+          "fact_id": "uzh-8-topic-10:aslah",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            33
+          ],
+          "printed_pages": [
+            33
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "512c380e9ee2555133affad7971ae051deb9a563004eb0cde00a355363a184ae"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    "uzh-8-10-r1:q4": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-10-r1:q4",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Tarixiy mansab nomi — tavochi.",
+      "correct_answer": "Tavochi",
+      "solution": [
+        {
+          "body": "Tarixiy mansab nomi — tavochi.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-10",
+              "fact_id": "uzh-8-topic-10:tavochi",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                32
+              ],
+              "printed_pages": [
+                32
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "f7c1a16767e96efaf67b1cf8f60ba08d6d482571353cf8d8f18d4abc9ac2b7de"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-10",
+          "fact_id": "uzh-8-topic-10:tavochi",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            32
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "f7c1a16767e96efaf67b1cf8f60ba08d6d482571353cf8d8f18d4abc9ac2b7de"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    "uzh-8-10-r1:q5": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-10-r1:q5",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Guruh nomi to‘fandoz; qurolning o‘zi to‘fang.",
+      "correct_answer": "To‘fandoz",
+      "solution": [
+        {
+          "body": "Guruh nomi to‘fandoz; qurolning o‘zi to‘fang.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-10",
+              "fact_id": "uzh-8-topic-10:gun",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                33
+              ],
+              "printed_pages": [
+                33
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "512c380e9ee2555133affad7971ae051deb9a563004eb0cde00a355363a184ae"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-10",
+          "fact_id": "uzh-8-topic-10:gun",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            33
+          ],
+          "printed_pages": [
+            33
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "512c380e9ee2555133affad7971ae051deb9a563004eb0cde00a355363a184ae"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    "uzh-8-10-r1:q6": {
+      "assessment_version": 2,
+      "assessment_key": "uzh-8-10-r1:q6",
+      "is_correct": true,
+      "code": "correct",
+      "feedback": "To‘g‘ri. Yalovbardor bayroq bilan bog‘langan, boshqa ikki mansabning vazifasi boshqacha.",
+      "correct_answer": "Yalovbardor",
+      "solution": [
+        {
+          "body": "Yalovbardor bayroq bilan bog‘langan, boshqa ikki mansabning vazifasi boshqacha.",
+          "source_refs": [
+            {
+              "book_id": "uzbekistan-history-uz-grade-8",
+              "grade": 8,
+              "chapter_id": "uzh-8-chapter-2",
+              "topic_id": "uzh-8-topic-10",
+              "fact_id": "uzh-8-topic-10:flag",
+              "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+              "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+              "pdf_pages": [
+                32
+              ],
+              "printed_pages": [
+                32
+              ],
+              "native_text_sha256": [
+                "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+              ],
+              "verification": "original_image_checked_ocr_locator_only",
+              "page_image_sha256": [
+                "f7c1a16767e96efaf67b1cf8f60ba08d6d482571353cf8d8f18d4abc9ac2b7de"
+              ],
+              "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-10",
+          "fact_id": "uzh-8-topic-10:flag",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            32
+          ],
+          "printed_pages": [
+            32
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "f7c1a16767e96efaf67b1cf8f60ba08d6d482571353cf8d8f18d4abc9ac2b7de"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  }
+}
