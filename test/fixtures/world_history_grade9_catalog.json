@@ -5,16 +5,17 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 41,
-  "implemented_sections": 37,
+  "implemented_sections": 41,
   "course_complete": false,
-  "source_review_pending": true,
-  "source_review_issue_count": 4,
-  "grade_content_complete": false,
+  "source_review_pending": false,
+  "source_review_issue_count": 0,
+  "grade_content_complete": true,
   "implemented_grades": [
     6,
     7,
     8,
-    9
+    9,
+    10
   ],
   "available_grades": [
     6,
@@ -6092,6 +6093,622 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh9-p37-page136"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p38-r1",
+      "sequence": 38,
+      "title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic38",
+          "topic_title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+          "paragraph": 38,
+          "printed_pages": [
+            137
+          ],
+          "pdf_pages": [
+            137
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p38-page137"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic38",
+          "topic_title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+          "paragraph": 38,
+          "printed_pages": [
+            138
+          ],
+          "pdf_pages": [
+            138
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p38-page138"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic38",
+          "topic_title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+          "paragraph": 38,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p38-page139"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic38",
+          "topic_title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+          "paragraph": 38,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p38-page140"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic38",
+          "topic_title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+          "paragraph": 38,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p38-page141"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p39-r1",
+      "sequence": 39,
+      "title": "Aniq va tabiiy fanlar rivoji",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic39",
+          "topic_title": "Aniq va tabiiy fanlar rivoji",
+          "paragraph": 39,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p39-page141"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic39",
+          "topic_title": "Aniq va tabiiy fanlar rivoji",
+          "paragraph": 39,
+          "printed_pages": [
+            142
+          ],
+          "pdf_pages": [
+            142
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p39-page142"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic39",
+          "topic_title": "Aniq va tabiiy fanlar rivoji",
+          "paragraph": 39,
+          "printed_pages": [
+            143
+          ],
+          "pdf_pages": [
+            143
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p39-page143"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic39",
+          "topic_title": "Aniq va tabiiy fanlar rivoji",
+          "paragraph": 39,
+          "printed_pages": [
+            144
+          ],
+          "pdf_pages": [
+            144
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p39-page144"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic39",
+          "topic_title": "Aniq va tabiiy fanlar rivoji",
+          "paragraph": 39,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p39-page145"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic39",
+          "topic_title": "Aniq va tabiiy fanlar rivoji",
+          "paragraph": 39,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p39-page146"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p40-r1",
+      "sequence": 40,
+      "title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic40",
+          "topic_title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+          "paragraph": 40,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p40-page146"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic40",
+          "topic_title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+          "paragraph": 40,
+          "printed_pages": [
+            147
+          ],
+          "pdf_pages": [
+            147
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p40-page147"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic40",
+          "topic_title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+          "paragraph": 40,
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p40-page148"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic40",
+          "topic_title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+          "paragraph": 40,
+          "printed_pages": [
+            149
+          ],
+          "pdf_pages": [
+            149
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p40-page149"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic40",
+          "topic_title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+          "paragraph": 40,
+          "printed_pages": [
+            150
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p40-page150"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p41-r1",
+      "sequence": 41,
+      "title": "Adabiyot",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic41",
+          "topic_title": "Adabiyot",
+          "paragraph": 41,
+          "printed_pages": [
+            150
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p41-page150"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic41",
+          "topic_title": "Adabiyot",
+          "paragraph": 41,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p41-page151"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic41",
+          "topic_title": "Adabiyot",
+          "paragraph": 41,
+          "printed_pages": [
+            152
+          ],
+          "pdf_pages": [
+            152
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p41-page152"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter08",
+          "topic_id": "wh9-topic41",
+          "topic_title": "Adabiyot",
+          "paragraph": 41,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p41-page153"
         }
       ]
     }

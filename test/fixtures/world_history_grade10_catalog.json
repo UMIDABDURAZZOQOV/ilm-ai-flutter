@@ -5,16 +5,17 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 26,
-  "implemented_sections": 0,
+  "implemented_sections": 1,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 26,
+  "source_review_issue_count": 25,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
     7,
     8,
-    9
+    9,
+    10
   ],
   "available_grades": [
     6,
@@ -627,5 +628,183 @@
       ]
     }
   ],
-  "lessons": []
+  "lessons": [
+    {
+      "key": "world-history-10-p01-r1",
+      "sequence": 1,
+      "title": "1918 – 1939-yillarda xalqaro munosabatlar",
+      "state": "available",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page004"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page005"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page006"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page007"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page008"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-10-p01-r1-wh10-intro-page003"
+        }
+      ]
+    }
+  ]
 }
