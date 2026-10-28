@@ -30,7 +30,7 @@ const captureKey = Key('history-review');
 void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   const latestGrade9CompletedCatalogue = 'batch33_grade9_completed_catalog';
-  const latestGrade10CompletedCatalogue = 'batch35_grade10_completed_catalog';
+  const latestGrade10CompletedCatalogue = 'batch36_grade10_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -931,7 +931,7 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 11; number++) {
+  for (var number = 1; number <= 16; number++) {
     void selectGrade10Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g10_p${suffix}_lesson');
@@ -941,6 +941,8 @@ void main() {
             ? 'batch33_grade10_completed_catalog'
             : number <= 6
             ? 'batch34_grade10_completed_catalog'
+            : number <= 11
+            ? 'batch35_grade10_completed_catalog'
             : latestGrade10CompletedCatalogue,
       );
     }
