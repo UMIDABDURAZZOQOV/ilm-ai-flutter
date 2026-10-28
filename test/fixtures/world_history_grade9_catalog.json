@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 41,
-  "implemented_sections": 27,
+  "implemented_sections": 32,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 14,
+  "source_review_issue_count": 9,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
@@ -4552,6 +4552,863 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "world-history-9-p27-r1-wh9-appendix-page156"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p28-r1",
+      "sequence": 28,
+      "title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic28",
+          "topic_title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+          "paragraph": 28,
+          "printed_pages": [
+            97
+          ],
+          "pdf_pages": [
+            97
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p28-page097"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic28",
+          "topic_title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+          "paragraph": 28,
+          "printed_pages": [
+            98
+          ],
+          "pdf_pages": [
+            98
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p28-page098"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic28",
+          "topic_title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+          "paragraph": 28,
+          "printed_pages": [
+            99
+          ],
+          "pdf_pages": [
+            99
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p28-page099"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic28",
+          "topic_title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+          "paragraph": 28,
+          "printed_pages": [
+            100
+          ],
+          "pdf_pages": [
+            100
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p28-page100"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic28",
+          "topic_title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+          "paragraph": 28,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p28-page101"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-appendix",
+          "topic_title": "Ilova",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p28-r1-wh9-appendix-page156"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p29-r1",
+      "sequence": 29,
+      "title": "XIX asr oxiri – XX asr boshlarida Hindiston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic29",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Hindiston",
+          "paragraph": 29,
+          "printed_pages": [
+            101
+          ],
+          "pdf_pages": [
+            101
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p29-page101"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic29",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Hindiston",
+          "paragraph": 29,
+          "printed_pages": [
+            102
+          ],
+          "pdf_pages": [
+            102
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p29-page102"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic29",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Hindiston",
+          "paragraph": 29,
+          "printed_pages": [
+            103
+          ],
+          "pdf_pages": [
+            103
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p29-page103"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic29",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Hindiston",
+          "paragraph": 29,
+          "printed_pages": [
+            104
+          ],
+          "pdf_pages": [
+            104
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p29-page104"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-appendix",
+          "topic_title": "Ilova",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p29-r1-wh9-appendix-page156"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p30-r1",
+      "sequence": 30,
+      "title": "XIX asr oxiri – XX asr boshlarida Eron",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic30",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Eron",
+          "paragraph": 30,
+          "printed_pages": [
+            105
+          ],
+          "pdf_pages": [
+            105
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p30-page105"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic30",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Eron",
+          "paragraph": 30,
+          "printed_pages": [
+            106
+          ],
+          "pdf_pages": [
+            106
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p30-page106"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic30",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Eron",
+          "paragraph": 30,
+          "printed_pages": [
+            107
+          ],
+          "pdf_pages": [
+            107
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p30-page107"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic30",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Eron",
+          "paragraph": 30,
+          "printed_pages": [
+            108
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p30-page108"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-appendix",
+          "topic_title": "Ilova",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p30-r1-wh9-appendix-page156"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p31-r1",
+      "sequence": 31,
+      "title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic31",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            108
+          ],
+          "pdf_pages": [
+            108
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p31-page108"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic31",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            109
+          ],
+          "pdf_pages": [
+            109
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p31-page109"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic31",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            110
+          ],
+          "pdf_pages": [
+            110
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p31-page110"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic31",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            111
+          ],
+          "pdf_pages": [
+            111
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p31-page111"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic31",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p31-page112"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-appendix",
+          "topic_title": "Ilova",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p31-r1-wh9-appendix-page156"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p32-r1",
+      "sequence": 32,
+      "title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic32",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+          "paragraph": 32,
+          "printed_pages": [
+            112
+          ],
+          "pdf_pages": [
+            112
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p32-page112"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic32",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+          "paragraph": 32,
+          "printed_pages": [
+            113
+          ],
+          "pdf_pages": [
+            113
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p32-page113"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic32",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+          "paragraph": 32,
+          "printed_pages": [
+            114
+          ],
+          "pdf_pages": [
+            114
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p32-page114"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic32",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+          "paragraph": 32,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p32-page115"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter05",
+          "topic_id": "wh9-topic32",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+          "paragraph": 32,
+          "printed_pages": [
+            116
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p32-page116"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-appendix",
+          "topic_title": "Ilova",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p32-r1-wh9-appendix-page156"
         }
       ]
     }
