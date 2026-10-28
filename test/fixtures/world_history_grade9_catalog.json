@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 41,
-  "implemented_sections": 12,
+  "implemented_sections": 17,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 29,
+  "source_review_issue_count": 24,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
@@ -2416,6 +2416,718 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh9-p12-page045"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p13-r1",
+      "sequence": 13,
+      "title": "Buyuk Britaniyaning tashqi siyosati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic13",
+          "topic_title": "Buyuk Britaniyaning tashqi siyosati",
+          "paragraph": 13,
+          "printed_pages": [
+            45
+          ],
+          "pdf_pages": [
+            45
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p13-page045"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic13",
+          "topic_title": "Buyuk Britaniyaning tashqi siyosati",
+          "paragraph": 13,
+          "printed_pages": [
+            46
+          ],
+          "pdf_pages": [
+            46
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p13-page046"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic13",
+          "topic_title": "Buyuk Britaniyaning tashqi siyosati",
+          "paragraph": 13,
+          "printed_pages": [
+            47
+          ],
+          "pdf_pages": [
+            47
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p13-page047"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic13",
+          "topic_title": "Buyuk Britaniyaning tashqi siyosati",
+          "paragraph": 13,
+          "printed_pages": [
+            48
+          ],
+          "pdf_pages": [
+            48
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p13-page048"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p14-r1",
+      "sequence": 14,
+      "title": "Amerika Qo‘shma Shtatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic14",
+          "topic_title": "Amerika Qo‘shma Shtatlari",
+          "paragraph": 14,
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            49
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p14-page049"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic14",
+          "topic_title": "Amerika Qo‘shma Shtatlari",
+          "paragraph": 14,
+          "printed_pages": [
+            50
+          ],
+          "pdf_pages": [
+            50
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p14-page050"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic14",
+          "topic_title": "Amerika Qo‘shma Shtatlari",
+          "paragraph": 14,
+          "printed_pages": [
+            51
+          ],
+          "pdf_pages": [
+            51
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p14-page051"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic14",
+          "topic_title": "Amerika Qo‘shma Shtatlari",
+          "paragraph": 14,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p14-page052"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p15-r1",
+      "sequence": 15,
+      "title": "AQSHning ichki siyosati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic15",
+          "topic_title": "AQSHning ichki siyosati",
+          "paragraph": 15,
+          "printed_pages": [
+            52
+          ],
+          "pdf_pages": [
+            52
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p15-page052"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic15",
+          "topic_title": "AQSHning ichki siyosati",
+          "paragraph": 15,
+          "printed_pages": [
+            53
+          ],
+          "pdf_pages": [
+            53
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p15-page053"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic15",
+          "topic_title": "AQSHning ichki siyosati",
+          "paragraph": 15,
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            54
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p15-page054"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic15",
+          "topic_title": "AQSHning ichki siyosati",
+          "paragraph": 15,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p15-page055"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p16-r1",
+      "sequence": 16,
+      "title": "AQSHning tashqi siyosati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic16",
+          "topic_title": "AQSHning tashqi siyosati",
+          "paragraph": 16,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p16-page055"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic16",
+          "topic_title": "AQSHning tashqi siyosati",
+          "paragraph": 16,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p16-page056"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic16",
+          "topic_title": "AQSHning tashqi siyosati",
+          "paragraph": 16,
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            57
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p16-page057"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic16",
+          "topic_title": "AQSHning tashqi siyosati",
+          "paragraph": 16,
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            58
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p16-page058"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic16",
+          "topic_title": "AQSHning tashqi siyosati",
+          "paragraph": 16,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p16-page059"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p17-r1",
+      "sequence": 17,
+      "title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic17",
+          "topic_title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+          "paragraph": 17,
+          "printed_pages": [
+            59
+          ],
+          "pdf_pages": [
+            59
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p17-page059"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic17",
+          "topic_title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+          "paragraph": 17,
+          "printed_pages": [
+            60
+          ],
+          "pdf_pages": [
+            60
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p17-page060"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic17",
+          "topic_title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+          "paragraph": 17,
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            61
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p17-page061"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic17",
+          "topic_title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+          "paragraph": 17,
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            62
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p17-page062"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter03",
+          "topic_id": "wh9-topic17",
+          "topic_title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+          "paragraph": 17,
+          "printed_pages": [
+            63
+          ],
+          "pdf_pages": [
+            63
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p17-page063"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-appendix",
+          "topic_title": "Ilova",
+          "paragraph": null,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p17-r1-wh9-appendix-page154"
         }
       ]
     }
