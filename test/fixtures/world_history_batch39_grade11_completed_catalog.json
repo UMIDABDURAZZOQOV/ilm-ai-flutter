@@ -1,0 +1,1547 @@
+{
+  "assessment_version": 2,
+  "subject": "jahon_tarixi",
+  "grade": 11,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 29,
+  "implemented_sections": 5,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 24,
+  "grade_content_complete": false,
+  "implemented_grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "available_grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "bibliography": {
+    "id": "world-history-11-uz-2018",
+    "title": "Jahon tarixi (1991–2017-yillar)",
+    "authors": [
+      "Shuhrat Ergashev",
+      "Begzod Xodjayev",
+      "Jamshid Abdullayev"
+    ],
+    "year": 2018,
+    "edition": "Birinchi nashr",
+    "publisher": "Turon-Iqbol",
+    "isbn": "978-9943-14-511-5",
+    "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c"
+  },
+  "chapters": [
+    {
+      "id": "wh11-chapter01",
+      "source_number": "I",
+      "title": "XX asr oxiri – XXI asr boshlarida dunyo mamlakatlari",
+      "first_topic_number": 1,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh11-chapter02",
+      "source_number": "II",
+      "title": "1991–2017-yillarda dunyo mamlakatlari",
+      "first_topic_number": 4,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh11-chapter03",
+      "source_number": "III",
+      "title": "Yangi mingyillik boshlarida jahon sivilizatsiyasi muammolari",
+      "first_topic_number": 27,
+      "verification": "contents_image_verified"
+    }
+  ],
+  "source_units": [
+    {
+      "id": "wh11-topic01",
+      "title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+      "sequence": 1,
+      "chapter_id": "wh11-chapter01",
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "wh11-topic02",
+      "title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+      "sequence": 2,
+      "chapter_id": "wh11-chapter01",
+      "pdf_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "printed_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "wh11-topic03",
+      "title": "Sovet davlatining parchalanishi va sobiq sovet respublikalarida mustaqillikning e’lon qilinishi",
+      "sequence": 3,
+      "chapter_id": "wh11-chapter01",
+      "pdf_pages": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "printed_pages": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "wh11-topic04",
+      "title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+      "sequence": 4,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "printed_pages": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "id": "wh11-topic05",
+      "title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+      "sequence": 5,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "printed_pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "wh11-topic06",
+      "title": "1991 – 2017-yillarda Boltiqbo‘yi davlatlari",
+      "sequence": 6,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "printed_pages": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "id": "wh11-topic07",
+      "title": "1991 – 2017-yillarda Kavkazorti davlatlari",
+      "sequence": 7,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "printed_pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "wh11-topic08",
+      "title": "1991 – 2017-yillarda Markaziy Osiyo davlatlari",
+      "sequence": 8,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "printed_pages": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "id": "wh11-topic09",
+      "title": "G‘arb mamlakatlarida integratsiyalashuv jarayonlarining jadallashuvi. Yevropa Ittifoqi va AQSH munosabatlari",
+      "sequence": 9,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "printed_pages": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "id": "wh11-topic10",
+      "title": "1991 – 2017-yillarda Amerika Qo‘shma Shtatlari",
+      "sequence": 10,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "printed_pages": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "id": "wh11-topic11",
+      "title": "1991 – 2017-yillarda Germaniya Federativ Respublikasi",
+      "sequence": 11,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "printed_pages": [
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "id": "wh11-topic12",
+      "title": "1991 – 2017-yillarda Buyuk Britaniya",
+      "sequence": 12,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "printed_pages": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "id": "wh11-topic13",
+      "title": "1991 – 2017-yillarda Fransiya",
+      "sequence": 13,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "printed_pages": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "id": "wh11-topic14",
+      "title": "1991 – 2017-yillarda Italiya",
+      "sequence": 14,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "printed_pages": [
+        64,
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "id": "wh11-topic15",
+      "title": "Osiyo, Afrika va Lotin Amerikasi mamlakatlari siyosiy, ijtimoiy-iqtisodiy rivojlanishining asosiy yo‘nalishlari",
+      "sequence": 15,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "printed_pages": [
+        68,
+        69,
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "id": "wh11-topic16",
+      "title": "1991 – 2017-yillarda Xitoy Xalq Respublikasi",
+      "sequence": 16,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "printed_pages": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "id": "wh11-topic17",
+      "title": "1991 – 2017-yillarda Yaponiya",
+      "sequence": 17,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "printed_pages": [
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "id": "wh11-topic18",
+      "title": "1991 – 2017-yillarda Janubi-Sharqiy Osiyo mamlakatlari",
+      "sequence": 18,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "printed_pages": [
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "id": "wh11-topic19",
+      "title": "1991 – 2017-yillarda Hindiston Respublikasi",
+      "sequence": 19,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "printed_pages": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "id": "wh11-topic20",
+      "title": "1991 – 2017-yillarda Turkiya Respublikasi",
+      "sequence": 20,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "printed_pages": [
+        90,
+        91,
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "id": "wh11-topic21",
+      "title": "1991 – 2017-yillarda Eron Islom Respublikasi",
+      "sequence": 21,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        94,
+        95,
+        96,
+        97,
+        98
+      ],
+      "printed_pages": [
+        94,
+        95,
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "id": "wh11-topic22",
+      "title": "1991 – 2017-yillarda Pokiston va Afg‘oniston",
+      "sequence": 22,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "printed_pages": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "id": "wh11-topic23",
+      "title": "1991 – 2017-yillarda Suriya va Iroq",
+      "sequence": 23,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "printed_pages": [
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "id": "wh11-topic24",
+      "title": "1991 – 2017-yillarda Isroil davlati va Falastin muammosi",
+      "sequence": 24,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "printed_pages": [
+        109,
+        110,
+        111,
+        112,
+        113
+      ]
+    },
+    {
+      "id": "wh11-topic25",
+      "title": "1991 – 2017-yillarda Lotin Amerikasi mamlakatlari",
+      "sequence": 25,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ],
+      "printed_pages": [
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ]
+    },
+    {
+      "id": "wh11-topic26",
+      "title": "1991 – 2017-yillarda Afrika mamlakatlari",
+      "sequence": 26,
+      "chapter_id": "wh11-chapter02",
+      "pdf_pages": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ],
+      "printed_pages": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ]
+    },
+    {
+      "id": "wh11-topic27",
+      "title": "XX asr oxiri – XXI asr boshlarida globallashuv muammolari, harbiy, ekstremistik va ekologik xavf-xatarlar",
+      "sequence": 27,
+      "chapter_id": "wh11-chapter03",
+      "pdf_pages": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "printed_pages": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "id": "wh11-topic28",
+      "title": "XX asr oxiri – XXI asr boshlarida barqaror rivojlanish va etno-ijtimoiy muammolar",
+      "sequence": 28,
+      "chapter_id": "wh11-chapter03",
+      "pdf_pages": [
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "printed_pages": [
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ]
+    },
+    {
+      "id": "wh11-topic29",
+      "title": "XX asr oxiri – XXI asr boshlarida ilmiy-texnik taraqqiyot. Ilm-fan, adabiyot, san’at",
+      "sequence": 29,
+      "chapter_id": "wh11-chapter03",
+      "pdf_pages": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ],
+      "printed_pages": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "key": "world-history-11-p01-r1",
+      "sequence": 1,
+      "title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic01",
+          "topic_title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p01-page004"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic01",
+          "topic_title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p01-page005"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic01",
+          "topic_title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p01-page006"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic01",
+          "topic_title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p01-page007"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic01",
+          "topic_title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p01-page008"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic01",
+          "topic_title": "XX asr oxiri – XXI asr boshlarida xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p01-page009"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": null,
+          "topic_id": "wh11-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-11-p01-r1-wh11-intro-page003"
+        }
+      ]
+    },
+    {
+      "key": "world-history-11-p02-r1",
+      "sequence": 2,
+      "title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic02",
+          "topic_title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p02-page009"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic02",
+          "topic_title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p02-page010"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic02",
+          "topic_title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p02-page011"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic02",
+          "topic_title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p02-page012"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic02",
+          "topic_title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p02-page013"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic02",
+          "topic_title": "Sharqiy Yevropa mamlakatlarida demokratik inqiloblar va sotsialistik lagerning parchalanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p02-page014"
+        }
+      ]
+    },
+    {
+      "key": "world-history-11-p03-r1",
+      "sequence": 3,
+      "title": "Sovet davlatining parchalanishi va sobiq sovet respublikalarida mustaqillikning e’lon qilinishi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic03",
+          "topic_title": "Sovet davlatining parchalanishi va sobiq sovet respublikalarida mustaqillikning e’lon qilinishi",
+          "paragraph": 3,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p03-page015"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic03",
+          "topic_title": "Sovet davlatining parchalanishi va sobiq sovet respublikalarida mustaqillikning e’lon qilinishi",
+          "paragraph": 3,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p03-page016"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic03",
+          "topic_title": "Sovet davlatining parchalanishi va sobiq sovet respublikalarida mustaqillikning e’lon qilinishi",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p03-page017"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter01",
+          "topic_id": "wh11-topic03",
+          "topic_title": "Sovet davlatining parchalanishi va sobiq sovet respublikalarida mustaqillikning e’lon qilinishi",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p03-page018"
+        }
+      ]
+    },
+    {
+      "key": "world-history-11-p04-r1",
+      "sequence": 4,
+      "title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic04",
+          "topic_title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p04-page019"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic04",
+          "topic_title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+          "paragraph": 4,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p04-page020"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic04",
+          "topic_title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+          "paragraph": 4,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p04-page021"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic04",
+          "topic_title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+          "paragraph": 4,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p04-page022"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic04",
+          "topic_title": "1991 – 2017-yillarda Rossiya Federatsiyasi",
+          "paragraph": 4,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p04-page023"
+        }
+      ]
+    },
+    {
+      "key": "world-history-11-p05-r1",
+      "sequence": 5,
+      "title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page023"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page024"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page025"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page026"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page027"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page028"
+        },
+        {
+          "book_id": "world-history-11-uz-2018",
+          "book_title": "Jahon tarixi (1991–2017-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2018,
+          "file_name": "jahon_tarixi_11_uzb.pdf",
+          "sha256": "b446f17734e59c3fbb3caf94a80fc02f53a2f7c71525d5dfaf0525078527d33c",
+          "grade": 11,
+          "chapter_id": "wh11-chapter02",
+          "topic_id": "wh11-topic05",
+          "topic_title": "1991 – 2017-yillarda Ukraina, Belarus va Moldova respublikalari",
+          "paragraph": 5,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh11-p05-page029"
+        }
+      ]
+    }
+  ]
+}

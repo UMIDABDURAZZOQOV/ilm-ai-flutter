@@ -31,6 +31,7 @@ void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   const latestGrade9CompletedCatalogue = 'batch33_grade9_completed_catalog';
   const latestGrade10CompletedCatalogue = 'batch38_grade10_completed_catalog';
+  const latestGrade11CompletedCatalogue = 'batch39_grade11_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -40,7 +41,8 @@ void main() {
       grade7Catalog,
       grade8Catalog,
       grade9Catalog,
-      grade10Catalog;
+      grade10Catalog,
+      grade11Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false;
@@ -52,6 +54,7 @@ void main() {
     grade8Catalog = fixture('grade8_catalog');
     grade9Catalog = fixture('grade9_catalog');
     grade10Catalog = fixture('grade10_catalog');
+    grade11Catalog = fixture('grade11_catalog');
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -75,6 +78,8 @@ void main() {
                 ? grade9Catalog
                 : grade == 10
                 ? grade10Catalog
+                : grade == 11
+                ? grade11Catalog
                 : fixture('grade${grade}_catalog'),
           );
         }
@@ -1005,6 +1010,175 @@ void main() {
       expect(t.takeException(), isNull);
     });
   }
+
+  Future<void> openGrade11(WidgetTester t) async {
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-11')));
+    final row = jsonRows(
+      grade11Catalog['lessons'],
+    ).firstWhere((row) => row['key'] == lesson['lesson_key']);
+    final unit = jsonRows(
+      grade11Catalog['source_units'],
+    ).firstWhere((unit) => unit['sequence'] == row['sequence']);
+    final chapter = unit['chapter_id'];
+    final chapterFinder = find.byKey(ValueKey('history-chapter-11-$chapter'));
+    if (chapter != 'wh11-chapter01') {
+      await tapFinder(t, chapterFinder);
+    }
+    final item = find
+        .ancestor(
+          of: find.descendant(
+            of: chapterFinder,
+            matching: find.text(lesson['title'] as String),
+          ),
+          matching: find.byType(Column),
+        )
+        .first;
+    await tapFinder(
+      t,
+      find.descendant(of: item, matching: find.text('Darsni takrorlash')),
+    );
+    expect(
+      requests.last.path,
+      endsWith('/lessons/${lesson['lesson_key']}/start'),
+    );
+  }
+
+  for (var number = 1; number <= 5; number++) {
+    void selectGrade11Lesson() {
+      final suffix = number.toString().padLeft(2, '0');
+      lesson = fixture('g11_p${suffix}_lesson');
+      results = fixture('g11_p${suffix}_results');
+      grade11Catalog = fixture(latestGrade11CompletedCatalogue);
+    }
+
+    testWidgets('grade11 paragraph$number theory and MCQ at200%', (t) async {
+      selectGrade11Lesson();
+      await mount(t, size: const Size(320, 568), scale: 2, dark: true);
+      await openGrade11(t);
+      expect(find.text('Jahon tarixi · 11-sinf'), findsWidgets);
+      await capture(t, 'grade11-paragraph$number-theory-200');
+      final cards = jsonRows((lesson['content'] as Json)['cards']);
+      for (var i = 0; i < cards.length - 1; i++) {
+        await tap(t, 'Davom etish');
+      }
+      await tap(t, 'Mashqlarga o‘tish');
+      final q = jsonRows(lesson['questions']).first;
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await tap(t, answer['correct_answer'] as String);
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, 'grade11-paragraph$number-feedback-200');
+      expect(t.takeException(), isNull);
+    });
+
+    testWidgets('grade11 paragraph$number FRQ uses its own snapshot', (
+      t,
+    ) async {
+      selectGrade11Lesson();
+      final questions = jsonRows(lesson['questions']);
+      final firstFrq = questions.indexWhere(
+        (q) => q['response_kind'] == 'short_text',
+      );
+      skip(firstFrq);
+      await mount(t);
+      await openGrade11(t);
+      final q = questions[firstFrq];
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await capture(t, 'grade11-paragraph$number-frq-resume');
+      await t.scrollUntilVisible(
+        find.byKey(const Key('world-history-short-answer')),
+        180,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await t.enterText(
+        find.byKey(const Key('world-history-short-answer')),
+        answer['correct_answer'] as String,
+      );
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      expect((requests.last.data as Map)['answer'], {
+        'value': answer['correct_answer'],
+      });
+      expect(
+        (requests.last.data as Map)['assessment_key'],
+        startsWith('world-history-11-'),
+      );
+      expect(t.takeException(), isNull);
+    });
+  }
+
+  testWidgets(
+    'completed grade10 switches to independent grade11 bibliography',
+    (t) async {
+      grade10Catalog = fixture(latestGrade10CompletedCatalogue);
+      expect(grade10Catalog['implemented_sections'], 26);
+      expect(grade10Catalog['grade_content_complete'], true);
+      expect(grade10Catalog['course_complete'], false);
+      final latest = fixture(latestGrade11CompletedCatalogue);
+      final initialRows = jsonRows(grade11Catalog['lessons']);
+      expect(
+        grade11Catalog['implemented_sections'],
+        latest['implemented_sections'],
+      );
+      expect(initialRows.length, jsonRows(latest['lessons']).length);
+      expect(initialRows.first['state'], 'available');
+      expect(
+        initialRows.skip(1).every((row) => row['state'] == 'locked'),
+        true,
+      );
+      expect(grade11Catalog['grade_content_complete'], false);
+      expect(grade11Catalog['course_complete'], false);
+      await mount(t);
+      await tapFinder(t, find.byKey(const ValueKey('world_history-grade-10')));
+      expect(find.text('26/26 dars mavjud.'), findsOneWidget);
+      await tapFinder(t, find.byKey(const ValueKey('world_history-grade-11')));
+      expect(requests.last.queryParameters['grade'], 11);
+      expect(
+        find.text('${grade11Catalog['implemented_sections']}/29 dars mavjud.'),
+        findsOneWidget,
+      );
+      final chapters = initialRows
+          .map(
+            (row) => jsonRows(grade11Catalog['source_units']).firstWhere(
+              (unit) => unit['sequence'] == row['sequence'],
+            )['chapter_id'],
+          )
+          .toSet();
+      for (final chapter in chapters) {
+        if (chapter != 'wh11-chapter01') {
+          await tapFinder(
+            t,
+            find.byKey(ValueKey('history-chapter-11-$chapter')),
+          );
+        }
+      }
+      expect(find.text('Darsni boshlash'), findsNWidgets(initialRows.length));
+      await tapFinder(t, find.byKey(const ValueKey('history-bibliography-11')));
+      expect(find.textContaining('978-9943-14-511-5'), findsOneWidget);
+      expect(find.textContaining('2018'), findsWidgets);
+      await capture(t, 'grade10-complete-to-grade11');
+      expect(t.takeException(), isNull);
+    },
+  );
+
+  testWidgets('grade11 introduction retains reviewed 2018 bibliography', (
+    t,
+  ) async {
+    lesson = fixture('g11_p01_lesson');
+    results = fixture('g11_p01_results');
+    grade11Catalog = fixture('batch39_grade11_completed_catalog');
+    await mount(t, size: const Size(320, 568), scale: 2);
+    await openGrade11(t);
+    final cards = jsonRows((lesson['content'] as Json)['cards']);
+    for (var i = 0; i < cards.length - 1; i++) {
+      await tap(t, 'Davom etish');
+    }
+    await tapFinder(t, find.textContaining('Manba: Kirish').first);
+    expect(find.textContaining('jahon_tarixi_11_uzb.pdf'), findsOneWidget);
+    expect(find.textContaining('Ergashev'), findsWidgets);
+    await capture(t, 'grade11-introduction-source-200');
+    expect(t.takeException(), isNull);
+  });
 
   testWidgets('completed grade9 switches to independent grade10 bibliography', (
     t,
