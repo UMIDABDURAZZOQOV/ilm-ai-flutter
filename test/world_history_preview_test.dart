@@ -30,7 +30,7 @@ const captureKey = Key('history-review');
 void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   const latestGrade9CompletedCatalogue = 'batch33_grade9_completed_catalog';
-  const latestGrade10CompletedCatalogue = 'batch37_grade10_completed_catalog';
+  const latestGrade10CompletedCatalogue = 'batch38_grade10_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -931,7 +931,7 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 21; number++) {
+  for (var number = 1; number <= 26; number++) {
     void selectGrade10Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g10_p${suffix}_lesson');
@@ -945,6 +945,8 @@ void main() {
             ? 'batch35_grade10_completed_catalog'
             : number <= 16
             ? 'batch36_grade10_completed_catalog'
+            : number <= 21
+            ? 'batch37_grade10_completed_catalog'
             : latestGrade10CompletedCatalogue,
       );
     }
@@ -1020,7 +1022,11 @@ void main() {
       jsonRows(grade10Catalog['lessons']).length,
       jsonRows(latest['lessons']).length,
     );
-    expect(grade10Catalog['grade_content_complete'], false);
+    expect(
+      grade10Catalog['grade_content_complete'],
+      grade10Catalog['implemented_sections'] == 26,
+    );
+    expect(grade10Catalog['course_complete'], false);
     final initialRows = jsonRows(grade10Catalog['lessons']);
     expect(initialRows.first['state'], 'available');
     expect(initialRows.skip(1).every((row) => row['state'] == 'locked'), true);

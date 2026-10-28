@@ -5,11 +5,11 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 26,
-  "implemented_sections": 21,
+  "implemented_sections": 26,
   "course_complete": false,
-  "source_review_pending": true,
-  "source_review_issue_count": 5,
-  "grade_content_complete": false,
+  "source_review_pending": false,
+  "source_review_issue_count": 0,
+  "grade_content_complete": true,
   "implemented_grades": [
     6,
     7,
@@ -4399,6 +4399,863 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh10-p21-page115"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p22-r1",
+      "sequence": 22,
+      "title": "1946 – 1991-yillarda Hindiston va Pokiston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic25",
+          "topic_title": "1946 – 1991-yillarda Hindiston va Pokiston",
+          "paragraph": 25,
+          "printed_pages": [
+            115
+          ],
+          "pdf_pages": [
+            115
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p22-page115"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic25",
+          "topic_title": "1946 – 1991-yillarda Hindiston va Pokiston",
+          "paragraph": 25,
+          "printed_pages": [
+            116
+          ],
+          "pdf_pages": [
+            116
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p22-page116"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic25",
+          "topic_title": "1946 – 1991-yillarda Hindiston va Pokiston",
+          "paragraph": 25,
+          "printed_pages": [
+            117
+          ],
+          "pdf_pages": [
+            117
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p22-page117"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic25",
+          "topic_title": "1946 – 1991-yillarda Hindiston va Pokiston",
+          "paragraph": 25,
+          "printed_pages": [
+            118
+          ],
+          "pdf_pages": [
+            118
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p22-page118"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic25",
+          "topic_title": "1946 – 1991-yillarda Hindiston va Pokiston",
+          "paragraph": 25,
+          "printed_pages": [
+            119
+          ],
+          "pdf_pages": [
+            119
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p22-page119"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic25",
+          "topic_title": "1946 – 1991-yillarda Hindiston va Pokiston",
+          "paragraph": 25,
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            120
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p22-page120"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p23-r1",
+      "sequence": 23,
+      "title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            120
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page120"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            121
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page121"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            122
+          ],
+          "pdf_pages": [
+            122
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page122"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            123
+          ],
+          "pdf_pages": [
+            123
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page123"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            124
+          ],
+          "pdf_pages": [
+            124
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page124"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            125
+          ],
+          "pdf_pages": [
+            125
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page125"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic26",
+          "topic_title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+          "paragraph": 26,
+          "printed_pages": [
+            126
+          ],
+          "pdf_pages": [
+            126
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p23-page126"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p24-r1",
+      "sequence": 24,
+      "title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic27",
+          "topic_title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+          "paragraph": 27,
+          "printed_pages": [
+            127
+          ],
+          "pdf_pages": [
+            127
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p24-page127"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic27",
+          "topic_title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+          "paragraph": 27,
+          "printed_pages": [
+            128
+          ],
+          "pdf_pages": [
+            128
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p24-page128"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic27",
+          "topic_title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+          "paragraph": 27,
+          "printed_pages": [
+            129
+          ],
+          "pdf_pages": [
+            129
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p24-page129"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic27",
+          "topic_title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+          "paragraph": 27,
+          "printed_pages": [
+            130
+          ],
+          "pdf_pages": [
+            130
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p24-page130"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic27",
+          "topic_title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+          "paragraph": 27,
+          "printed_pages": [
+            131
+          ],
+          "pdf_pages": [
+            131
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p24-page131"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p25-r1",
+      "sequence": 25,
+      "title": "1946 – 1991-yillarda Afrika mamlakatlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic28",
+          "topic_title": "1946 – 1991-yillarda Afrika mamlakatlari",
+          "paragraph": 28,
+          "printed_pages": [
+            131
+          ],
+          "pdf_pages": [
+            131
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p25-page131"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic28",
+          "topic_title": "1946 – 1991-yillarda Afrika mamlakatlari",
+          "paragraph": 28,
+          "printed_pages": [
+            132
+          ],
+          "pdf_pages": [
+            132
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p25-page132"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic28",
+          "topic_title": "1946 – 1991-yillarda Afrika mamlakatlari",
+          "paragraph": 28,
+          "printed_pages": [
+            133
+          ],
+          "pdf_pages": [
+            133
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p25-page133"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic28",
+          "topic_title": "1946 – 1991-yillarda Afrika mamlakatlari",
+          "paragraph": 28,
+          "printed_pages": [
+            134
+          ],
+          "pdf_pages": [
+            134
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p25-page134"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic28",
+          "topic_title": "1946 – 1991-yillarda Afrika mamlakatlari",
+          "paragraph": 28,
+          "printed_pages": [
+            135
+          ],
+          "pdf_pages": [
+            135
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p25-page135"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic28",
+          "topic_title": "1946 – 1991-yillarda Afrika mamlakatlari",
+          "paragraph": 28,
+          "printed_pages": [
+            136
+          ],
+          "pdf_pages": [
+            136
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p25-page136"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p26-r1",
+      "sequence": 26,
+      "title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic29",
+          "topic_title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+          "paragraph": 29,
+          "printed_pages": [
+            137
+          ],
+          "pdf_pages": [
+            137
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p26-page137"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic29",
+          "topic_title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+          "paragraph": 29,
+          "printed_pages": [
+            138
+          ],
+          "pdf_pages": [
+            138
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p26-page138"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic29",
+          "topic_title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+          "paragraph": 29,
+          "printed_pages": [
+            139
+          ],
+          "pdf_pages": [
+            139
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p26-page139"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic29",
+          "topic_title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+          "paragraph": 29,
+          "printed_pages": [
+            140
+          ],
+          "pdf_pages": [
+            140
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p26-page140"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic29",
+          "topic_title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+          "paragraph": 29,
+          "printed_pages": [
+            141
+          ],
+          "pdf_pages": [
+            141
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p26-page141"
         }
       ]
     }
