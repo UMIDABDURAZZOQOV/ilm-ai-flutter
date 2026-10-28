@@ -1,0 +1,1289 @@
+{
+  "assessment_version": 2,
+  "subject": "jahon_tarixi",
+  "grade": 9,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 41,
+  "implemented_sections": 2,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 39,
+  "grade_content_complete": false,
+  "implemented_grades": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "available_grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "bibliography": {
+    "id": "world-history-9-uz-2019",
+    "title": "Jahon tarixi",
+    "authors": [
+      "M. Lafasov",
+      "U. Jo‘rayev",
+      "E. Xoliqov",
+      "D. Qodirova"
+    ],
+    "year": 2019,
+    "edition": "Qayta ishlangan va to‘ldirilgan 4-nashri",
+    "publisher": "O‘qituvchi",
+    "isbn": "978-9943-22-373-8",
+    "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5"
+  },
+  "chapters": [
+    {
+      "id": "wh9-chapter01",
+      "source_number": "I",
+      "title": "Dunyoning ijtimoiy-iqtisodiy va siyosiy manzarasi",
+      "first_topic_number": 1,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter02",
+      "source_number": "II",
+      "title": "G‘arbiy Yevropa davlatlari XIX asr oxiri va XX asr boshlarida",
+      "first_topic_number": 3,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter03",
+      "source_number": "III",
+      "title": "XIX asr oxiri – XX asr boshlarida Amerika davlatlari",
+      "first_topic_number": 14,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter04",
+      "source_number": "IV",
+      "title": "XIX asr oxiri – XX asr boshlarida Rossiya imperiyasi, Markaziy va Janubi-Sharqiy Yevropa davlatlari",
+      "first_topic_number": 19,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter05",
+      "source_number": "V",
+      "title": "XIX asr oxiri – XX asr boshlarida Osiyo davlatlari",
+      "first_topic_number": 26,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter06",
+      "source_number": "VI",
+      "title": "XIX asr oxiri – XX asr boshlarida Afrika mamlakatlari",
+      "first_topic_number": 33,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter07",
+      "source_number": "VII",
+      "title": "1914–1918-yillardagi Birinchi jahon urushi",
+      "first_topic_number": 35,
+      "verification": "contents_image_verified"
+    },
+    {
+      "id": "wh9-chapter08",
+      "source_number": "VIII",
+      "title": "XIX asr oxiri – XX asrning boshlarida fan va madaniyatning rivojlanishi",
+      "first_topic_number": 38,
+      "verification": "contents_image_verified"
+    }
+  ],
+  "source_units": [
+    {
+      "id": "wh9-topic01",
+      "title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+      "sequence": 1,
+      "chapter_id": "wh9-chapter01",
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "wh9-topic02",
+      "title": "Industrial sivilizatsiya",
+      "sequence": 2,
+      "chapter_id": "wh9-chapter01",
+      "pdf_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "printed_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "wh9-topic03",
+      "title": "Fransiya–Prussiya urushi va uning yakunlari",
+      "sequence": 3,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        16,
+        17,
+        18
+      ],
+      "printed_pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "wh9-topic04",
+      "title": "Fransiyada Uchinchi Respublika va 1871-yil 18-mart davlat to‘ntarishi",
+      "sequence": 4,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "printed_pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "wh9-topic05",
+      "title": "XIX asr oxiri – XX asr boshlarida Fransiyada iqtisodiy va siyosiy hayot",
+      "sequence": 5,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        21,
+        22,
+        23
+      ],
+      "printed_pages": [
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "id": "wh9-topic06",
+      "title": "Fransiyaning ichki siyosati",
+      "sequence": 6,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "printed_pages": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "wh9-topic07",
+      "title": "Fransiyaning tashqi siyosati",
+      "sequence": 7,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "printed_pages": [
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "wh9-topic08",
+      "title": "XIX asr oxiri – XX asr boshlarida Germaniya. Imperiyaning tashkil topishi",
+      "sequence": 8,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "printed_pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "id": "wh9-topic09",
+      "title": "Imperiyaning ichki siyosati",
+      "sequence": 9,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        33,
+        34,
+        35
+      ],
+      "printed_pages": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "wh9-topic10",
+      "title": "Imperiyaning tashqi siyosati",
+      "sequence": 10,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "printed_pages": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "wh9-topic11",
+      "title": "XIX asr oxiri – XX asr boshlarida Buyuk Britaniyaning siyosiy va iqtisodiy ahvoli",
+      "sequence": 11,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "printed_pages": [
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "wh9-topic12",
+      "title": "Buyuk Britaniyaning ichki siyosati",
+      "sequence": 12,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "printed_pages": [
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "wh9-topic13",
+      "title": "Buyuk Britaniyaning tashqi siyosati",
+      "sequence": 13,
+      "chapter_id": "wh9-chapter02",
+      "pdf_pages": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "printed_pages": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "wh9-topic14",
+      "title": "Amerika Qo‘shma Shtatlari",
+      "sequence": 14,
+      "chapter_id": "wh9-chapter03",
+      "pdf_pages": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "printed_pages": [
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "id": "wh9-topic15",
+      "title": "AQSHning ichki siyosati",
+      "sequence": 15,
+      "chapter_id": "wh9-chapter03",
+      "pdf_pages": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "printed_pages": [
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "id": "wh9-topic16",
+      "title": "AQSHning tashqi siyosati",
+      "sequence": 16,
+      "chapter_id": "wh9-chapter03",
+      "pdf_pages": [
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "printed_pages": [
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "id": "wh9-topic17",
+      "title": "XIX asr oxiri va XX asr boshlarida Lotin Amerikasi davlatlari",
+      "sequence": 17,
+      "chapter_id": "wh9-chapter03",
+      "pdf_pages": [
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "printed_pages": [
+        59,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "id": "wh9-topic18",
+      "title": "Lotin Amerikasining boshqa davlatlari",
+      "sequence": 18,
+      "chapter_id": "wh9-chapter03",
+      "pdf_pages": [
+        63,
+        64,
+        65,
+        66
+      ],
+      "printed_pages": [
+        63,
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "wh9-topic19",
+      "title": "XIX asr oxiri – XX asr boshlarida Rossiya imperiyasining ijtimoiy-siyosiy va iqtisodiy ahvoli",
+      "sequence": 19,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "printed_pages": [
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "id": "wh9-topic20",
+      "title": "Rossiya imperiyasining tashqi siyosati",
+      "sequence": 20,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "printed_pages": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "id": "wh9-topic21",
+      "title": "Rossiyada Davlat dumasining tashkil etilishi",
+      "sequence": 21,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "printed_pages": [
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "wh9-topic22",
+      "title": "XIX asr oxiri – XX asr boshlarida Avstriya-Vengriya imperiyasi",
+      "sequence": 22,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "printed_pages": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "id": "wh9-topic23",
+      "title": "Avstriya-Vengriya imperiyasining tashqi siyosati",
+      "sequence": 23,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "printed_pages": [
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "wh9-topic24",
+      "title": "XIX asr oxiri – XX asr boshlarida Italiya",
+      "sequence": 24,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        83,
+        84,
+        85,
+        86
+      ],
+      "printed_pages": [
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "id": "wh9-topic25",
+      "title": "XIX asr oxiri – XX asr boshlarida Bolqon davlatlari",
+      "sequence": 25,
+      "chapter_id": "wh9-chapter04",
+      "pdf_pages": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "printed_pages": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "id": "wh9-topic26",
+      "title": "XIX asrning oxiri va XX asr boshlarida Yaponiya",
+      "sequence": 26,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "printed_pages": [
+        90,
+        91,
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "id": "wh9-topic27",
+      "title": "XIX asrning oxirida Xitoy",
+      "sequence": 27,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        94,
+        95,
+        96,
+        97
+      ],
+      "printed_pages": [
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "id": "wh9-topic28",
+      "title": "XX asr boshlarida Xitoyning ijtimoiy-iqtisodiy va siyosiy ahvoli",
+      "sequence": 28,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "printed_pages": [
+        97,
+        98,
+        99,
+        100,
+        101
+      ]
+    },
+    {
+      "id": "wh9-topic29",
+      "title": "XIX asr oxiri – XX asr boshlarida Hindiston",
+      "sequence": 29,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "printed_pages": [
+        101,
+        102,
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "id": "wh9-topic30",
+      "title": "XIX asr oxiri – XX asr boshlarida Eron",
+      "sequence": 30,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        105,
+        106,
+        107,
+        108
+      ],
+      "printed_pages": [
+        105,
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "id": "wh9-topic31",
+      "title": "XIX asr oxiri – XX asr boshlarida Afg‘oniston",
+      "sequence": 31,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "printed_pages": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ]
+    },
+    {
+      "id": "wh9-topic32",
+      "title": "XIX asr oxiri – XX asr boshlarida Usmonli davlati",
+      "sequence": 32,
+      "chapter_id": "wh9-chapter05",
+      "pdf_pages": [
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "printed_pages": [
+        112,
+        113,
+        114,
+        115,
+        116
+      ]
+    },
+    {
+      "id": "wh9-topic33",
+      "title": "Shimoliy Afrika mamlakatlari",
+      "sequence": 33,
+      "chapter_id": "wh9-chapter06",
+      "pdf_pages": [
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "printed_pages": [
+        116,
+        117,
+        118,
+        119,
+        120
+      ]
+    },
+    {
+      "id": "wh9-topic34",
+      "title": "Tropik va Janubiy Afrika mamlakatlari",
+      "sequence": 34,
+      "chapter_id": "wh9-chapter06",
+      "pdf_pages": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "printed_pages": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "id": "wh9-topic35",
+      "title": "Birinchi jahon urushining boshlanishi va borishi",
+      "sequence": 35,
+      "chapter_id": "wh9-chapter07",
+      "pdf_pages": [
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "printed_pages": [
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "id": "wh9-topic36",
+      "title": "1916–1917-yillardagi urush harakatlari",
+      "sequence": 36,
+      "chapter_id": "wh9-chapter07",
+      "pdf_pages": [
+        130,
+        131,
+        132
+      ],
+      "printed_pages": [
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "id": "wh9-topic37",
+      "title": "Birinchi jahon urushining yakunlari va oqibatlari",
+      "sequence": 37,
+      "chapter_id": "wh9-chapter07",
+      "pdf_pages": [
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "printed_pages": [
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ]
+    },
+    {
+      "id": "wh9-topic38",
+      "title": "Moddiy ishlab chiqarishda texnika va fan taraqqiyoti",
+      "sequence": 38,
+      "chapter_id": "wh9-chapter08",
+      "pdf_pages": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ],
+      "printed_pages": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "id": "wh9-topic39",
+      "title": "Aniq va tabiiy fanlar rivoji",
+      "sequence": 39,
+      "chapter_id": "wh9-chapter08",
+      "pdf_pages": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146
+      ],
+      "printed_pages": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146
+      ]
+    },
+    {
+      "id": "wh9-topic40",
+      "title": "Xalq ta’limi. Gumanitar fanlar. San’at",
+      "sequence": 40,
+      "chapter_id": "wh9-chapter08",
+      "pdf_pages": [
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "printed_pages": [
+        146,
+        147,
+        148,
+        149,
+        150
+      ]
+    },
+    {
+      "id": "wh9-topic41",
+      "title": "Adabiyot",
+      "sequence": 41,
+      "chapter_id": "wh9-chapter08",
+      "pdf_pages": [
+        150,
+        151,
+        152,
+        153
+      ],
+      "printed_pages": [
+        150,
+        151,
+        152,
+        153
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "key": "world-history-9-p01-r1",
+      "sequence": 1,
+      "title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page004"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page005"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page006"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page007"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page008"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page009"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page010"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p01-r1-wh9-intro-page003"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p02-r1",
+      "sequence": 2,
+      "title": "Industrial sivilizatsiya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page011"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page012"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page013"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page014"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page015"
+        }
+      ]
+    }
+  ]
+}

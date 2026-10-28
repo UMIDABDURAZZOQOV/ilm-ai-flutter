@@ -5,15 +5,16 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 33,
-  "implemented_sections": 30,
+  "implemented_sections": 33,
   "course_complete": false,
-  "source_review_pending": true,
-  "source_review_issue_count": 3,
-  "grade_content_complete": false,
+  "source_review_pending": false,
+  "source_review_issue_count": 0,
+  "grade_content_complete": true,
   "implemented_grades": [
     6,
     7,
-    8
+    8,
+    9
   ],
   "available_grades": [
     6,
@@ -5600,6 +5601,537 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh8-p30-page145"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p31-r1",
+      "sequence": 31,
+      "title": "1800–1870-yillarda Eron va Afg‘oniston",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic31",
+          "topic_title": "1800–1870-yillarda Eron va Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            145
+          ],
+          "pdf_pages": [
+            145
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p31-page145"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic31",
+          "topic_title": "1800–1870-yillarda Eron va Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            146
+          ],
+          "pdf_pages": [
+            146
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p31-page146"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic31",
+          "topic_title": "1800–1870-yillarda Eron va Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            147
+          ],
+          "pdf_pages": [
+            147
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p31-page147"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic31",
+          "topic_title": "1800–1870-yillarda Eron va Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            148
+          ],
+          "pdf_pages": [
+            148
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p31-page148"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic31",
+          "topic_title": "1800–1870-yillarda Eron va Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            149
+          ],
+          "pdf_pages": [
+            149
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p31-page149"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic31",
+          "topic_title": "1800–1870-yillarda Eron va Afg‘oniston",
+          "paragraph": 31,
+          "printed_pages": [
+            150
+          ],
+          "pdf_pages": [
+            150
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p31-page150"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p32-r1",
+      "sequence": 32,
+      "title": "1800–1870-yillarda Afrika xalqlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic32",
+          "topic_title": "1800–1870-yillarda Afrika xalqlari",
+          "paragraph": 32,
+          "printed_pages": [
+            151
+          ],
+          "pdf_pages": [
+            151
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p32-page151"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic32",
+          "topic_title": "1800–1870-yillarda Afrika xalqlari",
+          "paragraph": 32,
+          "printed_pages": [
+            152
+          ],
+          "pdf_pages": [
+            152
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p32-page152"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic32",
+          "topic_title": "1800–1870-yillarda Afrika xalqlari",
+          "paragraph": 32,
+          "printed_pages": [
+            153
+          ],
+          "pdf_pages": [
+            153
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p32-page153"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic32",
+          "topic_title": "1800–1870-yillarda Afrika xalqlari",
+          "paragraph": 32,
+          "printed_pages": [
+            154
+          ],
+          "pdf_pages": [
+            154
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p32-page154"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter05",
+          "topic_id": "wh8-topic32",
+          "topic_title": "1800–1870-yillarda Afrika xalqlari",
+          "paragraph": 32,
+          "printed_pages": [
+            155
+          ],
+          "pdf_pages": [
+            155
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p32-page155"
+        }
+      ]
+    },
+    {
+      "key": "world-history-8-p33-r1",
+      "sequence": 33,
+      "title": "Xulosa",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": null,
+          "topic_id": "wh8-conclusion",
+          "topic_title": "Xulosa",
+          "paragraph": null,
+          "printed_pages": [
+            156
+          ],
+          "pdf_pages": [
+            156
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p33-page156"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic02",
+          "topic_title": "Yangi davr boshlarida G‘arbiy Yevropa mamlakatlarida industrial jamiyatning shakllanishi",
+          "paragraph": 2,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p02-page015"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page018"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page019"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter01",
+          "topic_id": "wh8-topic03",
+          "topic_title": "Yevropada Reformatsiya",
+          "paragraph": 3,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p03-page020"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic11",
+          "topic_title": "XVIII asrda Shimoliy Amerika. Amerika Qo‘shma Shtatlarining tashkil topishi......................",
+          "paragraph": 11,
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            55
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p11-page055"
+        },
+        {
+          "book_id": "world-history-8-uz-2019",
+          "book_title": "Jahon tarixi (XVI–XIX asrning 60-yillari)",
+          "authors": [
+            "R. Farmonov",
+            "U. Jo‘rayev",
+            "Sh. Ergashev"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_8_uzb.pdf",
+          "sha256": "bb3b3f91bd01f239a626768d1b7e4f279374e63275eca41b7858765ee987e806",
+          "grade": 8,
+          "chapter_id": "wh8-chapter02",
+          "topic_id": "wh8-topic11",
+          "topic_title": "XVIII asrda Shimoliy Amerika. Amerika Qo‘shma Shtatlarining tashkil topishi......................",
+          "paragraph": 11,
+          "printed_pages": [
+            56
+          ],
+          "pdf_pages": [
+            56
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh8-p11-page056"
         }
       ]
     }

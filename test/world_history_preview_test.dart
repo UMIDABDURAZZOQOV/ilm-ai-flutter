@@ -28,11 +28,16 @@ Json fixture(String name) =>
 const captureKey = Key('history-review');
 
 void main() {
-  const latestGrade8CompletedCatalogue = 'batch24_grade8_completed_catalog';
+  const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
-  late Json lesson, results, catalog, grade7Catalog, grade8Catalog;
+  late Json lesson,
+      results,
+      catalog,
+      grade7Catalog,
+      grade8Catalog,
+      grade9Catalog;
   late List<RequestOptions> requests;
   final committed = <String, Json>{};
   bool lostAnswer = false;
@@ -42,6 +47,7 @@ void main() {
     catalog = fixture('catalog');
     grade7Catalog = fixture('grade7_catalog');
     grade8Catalog = fixture('grade8_catalog');
+    grade9Catalog = fixture('grade9_catalog');
     requests = [];
     committed.clear();
     lostAnswer = false;
@@ -61,6 +67,8 @@ void main() {
                 ? grade7Catalog
                 : grade == 8
                 ? grade8Catalog
+                : grade == 9
+                ? grade9Catalog
                 : fixture('grade${grade}_catalog'),
           );
         }
@@ -261,7 +269,10 @@ void main() {
     final eight = fixture('grade8_catalog');
     final latest = fixture(latestGrade8CompletedCatalogue);
     expect(eight['implemented_sections'], latest['implemented_sections']);
-    expect(jsonRows(eight['lessons']).length, jsonRows(latest['lessons']).length);
+    expect(
+      jsonRows(eight['lessons']).length,
+      jsonRows(latest['lessons']).length,
+    );
     final implemented = eight['implemented_sections'] as int;
     expect(
       find.text('Darsni boshlash'),
@@ -476,6 +487,38 @@ void main() {
     );
   }
 
+  Future<void> openGrade9(WidgetTester t) async {
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-9')));
+    final row = jsonRows(
+      grade9Catalog['lessons'],
+    ).firstWhere((r) => r['key'] == lesson['lesson_key']);
+    final unit = jsonRows(
+      grade9Catalog['source_units'],
+    ).firstWhere((u) => u['sequence'] == row['sequence']);
+    final chapter = unit['chapter_id'];
+    final chapterFinder = find.byKey(ValueKey('history-chapter-9-$chapter'));
+    if (chapter != 'wh9-chapter01') {
+      await tapFinder(t, chapterFinder);
+    }
+    final item = find
+        .ancestor(
+          of: find.descendant(
+            of: chapterFinder,
+            matching: find.text(lesson['title'] as String),
+          ),
+          matching: find.byType(Column),
+        )
+        .first;
+    await tapFinder(
+      t,
+      find.descendant(of: item, matching: find.text('Darsni takrorlash')),
+    );
+    expect(
+      requests.last.path,
+      endsWith('/lessons/${lesson['lesson_key']}/start'),
+    );
+  }
+
   testWidgets('completed grade7 switches to grade8 with its own bibliography', (
     t,
   ) async {
@@ -625,13 +668,15 @@ void main() {
       );
     }
   }
-  for (var number = 1; number <= 30; number++) {
+  for (var number = 1; number <= 33; number++) {
     void selectGrade8Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g8_p${suffix}_lesson');
       results = fixture('g8_p${suffix}_results');
       grade8Catalog = fixture(
-        number >= 26
+        number >= 31
+            ? 'batch25_grade8_completed_catalog'
+            : number >= 26
             ? 'batch24_grade8_completed_catalog'
             : number >= 21
             ? 'batch23_grade8_completed_catalog'
@@ -748,6 +793,107 @@ void main() {
       );
     }
   }
+  for (var number = 1; number <= 2; number++) {
+    void selectGrade9Lesson() {
+      final suffix = number.toString().padLeft(2, '0');
+      lesson = fixture('g9_p${suffix}_lesson');
+      results = fixture('g9_p${suffix}_results');
+      grade9Catalog = fixture('batch25_grade9_completed_catalog');
+    }
+
+    testWidgets('grade9 paragraph$number theory and MCQ at200%', (t) async {
+      selectGrade9Lesson();
+      await mount(t, size: const Size(320, 568), scale: 2, dark: number.isEven);
+      await openGrade9(t);
+      expect(find.text('Jahon tarixi · 9-sinf'), findsWidgets);
+      await capture(t, 'grade9-paragraph$number-theory-200');
+      final cards = jsonRows((lesson['content'] as Json)['cards']);
+      for (var i = 0; i < cards.length - 1; i++) {
+        await tap(t, 'Davom etish');
+      }
+      await tap(t, 'Mashqlarga o‘tish');
+      final q = jsonRows(lesson['questions']).first;
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await tap(t, answer['correct_answer'] as String);
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      await capture(t, 'grade9-paragraph$number-feedback-200');
+      expect(t.takeException(), isNull);
+    });
+    testWidgets('grade9 paragraph$number FRQ uses its own snapshot', (t) async {
+      selectGrade9Lesson();
+      final questions = jsonRows(lesson['questions']);
+      final firstFrq = questions.indexWhere(
+        (q) => q['response_kind'] == 'short_text',
+      );
+      skip(firstFrq);
+      await mount(t);
+      await openGrade9(t);
+      final q = questions[firstFrq];
+      final answer = (results['answers'] as Map)[q['key']] as Map;
+      await capture(t, 'grade9-paragraph$number-frq-resume');
+      await t.scrollUntilVisible(
+        find.byKey(const Key('world-history-short-answer')),
+        180,
+        scrollable: find.byType(Scrollable).first,
+      );
+      await t.enterText(
+        find.byKey(const Key('world-history-short-answer')),
+        answer['correct_answer'] as String,
+      );
+      await tap(t, 'Tekshirish');
+      expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+      expect((requests.last.data as Map)['answer'], {
+        'value': answer['correct_answer'],
+      });
+      expect(
+        (requests.last.data as Map)['assessment_key'],
+        startsWith('world-history-9-'),
+      );
+      expect(t.takeException(), isNull);
+    });
+  }
+
+  testWidgets('completed grade8 switches to grade9 with its own bibliography', (
+    t,
+  ) async {
+    grade8Catalog = fixture('batch25_grade8_completed_catalog');
+    expect(grade8Catalog['implemented_sections'], 33);
+    expect(grade8Catalog['grade_content_complete'], true);
+    expect(grade8Catalog['course_complete'], false);
+    final latest = fixture('batch25_grade9_completed_catalog');
+    expect(
+      grade9Catalog['implemented_sections'],
+      latest['implemented_sections'],
+    );
+    expect(
+      jsonRows(grade9Catalog['lessons']).length,
+      jsonRows(latest['lessons']).length,
+    );
+    await mount(t);
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-8')));
+    expect(find.text('33/33 dars mavjud.'), findsOneWidget);
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-9')));
+    expect(requests.last.queryParameters['grade'], 9);
+    expect(find.text('2/41 dars mavjud.'), findsOneWidget);
+    await tapFinder(t, find.byKey(const ValueKey('history-bibliography-9')));
+    expect(find.textContaining('978-9943-22-373-8'), findsOneWidget);
+    expect(find.textContaining('Lafasov'), findsWidgets);
+    await capture(t, 'grade8-complete-to-grade9');
+    expect(t.takeException(), isNull);
+  });
+  testWidgets('grade9 scanned introduction retains its own source', (t) async {
+    lesson = fixture('g9_p01_lesson');
+    results = fixture('g9_p01_results');
+    grade9Catalog = fixture('batch25_grade9_completed_catalog');
+    await mount(t, size: const Size(320, 568), scale: 2);
+    await openGrade9(t);
+    await tapFinder(t, find.textContaining('Manba: Kirish').first);
+    expect(find.textContaining('jahon_tarixi_9_uzb.pdf'), findsOneWidget);
+    expect(find.textContaining('Lafasov'), findsWidgets);
+    await capture(t, 'grade9-introduction-source-200');
+    expect(t.takeException(), isNull);
+  });
   for (var number = 2; number <= 46; number++) {
     void selectParagraph() {
       final suffix = number.toString().padLeft(2, '0');

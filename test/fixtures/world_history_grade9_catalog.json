@@ -5,15 +5,16 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 41,
-  "implemented_sections": 0,
+  "implemented_sections": 2,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 41,
+  "source_review_issue_count": 39,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
     7,
-    8
+    8,
+    9
   ],
   "available_grades": [
     6,
@@ -888,5 +889,401 @@
       ]
     }
   ],
-  "lessons": []
+  "lessons": [
+    {
+      "key": "world-history-9-p01-r1",
+      "sequence": 1,
+      "title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+      "state": "available",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page004"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page005"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page006"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page007"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page008"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page009"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic01",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida kapitalizm taraqqiyotida yuz bergan tub o‘zgarishlar",
+          "paragraph": 1,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p01-page010"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": null,
+          "topic_id": "wh9-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-9-p01-r1-wh9-intro-page003"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p02-r1",
+      "sequence": 2,
+      "title": "Industrial sivilizatsiya",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page011"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page012"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page013"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page014"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter01",
+          "topic_id": "wh9-topic02",
+          "topic_title": "Industrial sivilizatsiya",
+          "paragraph": 2,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p02-page015"
+        }
+      ]
+    }
+  ]
 }
