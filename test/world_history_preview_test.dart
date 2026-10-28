@@ -29,6 +29,7 @@ const captureKey = Key('history-review');
 
 void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
+  const latestGrade9CompletedCatalogue = 'batch26_grade9_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -285,6 +286,37 @@ void main() {
       final chapter = pending['chapter_id'];
       if (chapter != 'wh8-chapter01') {
         await tapFinder(t, find.byKey(ValueKey('history-chapter-8-$chapter')));
+      }
+      expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
+    }
+    expect(t.takeException(), isNull);
+  });
+  testWidgets('grade9 pending catalogue matches latest implemented prefix', (
+    t,
+  ) async {
+    await mount(t);
+    await tapFinder(t, find.byKey(const ValueKey('world_history-grade-9')));
+    expect(requests.last.queryParameters['grade'], 9);
+    expect(find.text('Jahon tarixi · 9-sinf'), findsWidgets);
+    final nine = fixture('grade9_catalog');
+    final latest = fixture(latestGrade9CompletedCatalogue);
+    expect(nine['implemented_sections'], latest['implemented_sections']);
+    expect(
+      jsonRows(nine['lessons']).length,
+      jsonRows(latest['lessons']).length,
+    );
+    final implemented = nine['implemented_sections'] as int;
+    expect(
+      find.text('Darsni boshlash'),
+      implemented == 0 ? findsNothing : findsWidgets,
+    );
+    if (implemented < 41) {
+      final pending = jsonRows(
+        nine['source_units'],
+      ).firstWhere((u) => u['sequence'] == implemented + 1);
+      final chapter = pending['chapter_id'];
+      if (chapter != 'wh9-chapter01') {
+        await tapFinder(t, find.byKey(ValueKey('history-chapter-9-$chapter')));
       }
       expect(find.text('Dars tayyorlanmoqda'), findsWidgets);
     }
@@ -793,12 +825,16 @@ void main() {
       );
     }
   }
-  for (var number = 1; number <= 2; number++) {
+  for (var number = 1; number <= 7; number++) {
     void selectGrade9Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g9_p${suffix}_lesson');
       results = fixture('g9_p${suffix}_results');
-      grade9Catalog = fixture('batch25_grade9_completed_catalog');
+      grade9Catalog = fixture(
+        number >= 3
+            ? 'batch26_grade9_completed_catalog'
+            : 'batch25_grade9_completed_catalog',
+      );
     }
 
     testWidgets('grade9 paragraph$number theory and MCQ at200%', (t) async {
@@ -861,7 +897,7 @@ void main() {
     expect(grade8Catalog['implemented_sections'], 33);
     expect(grade8Catalog['grade_content_complete'], true);
     expect(grade8Catalog['course_complete'], false);
-    final latest = fixture('batch25_grade9_completed_catalog');
+    final latest = fixture(latestGrade9CompletedCatalogue);
     expect(
       grade9Catalog['implemented_sections'],
       latest['implemented_sections'],
@@ -875,7 +911,10 @@ void main() {
     expect(find.text('33/33 dars mavjud.'), findsOneWidget);
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-9')));
     expect(requests.last.queryParameters['grade'], 9);
-    expect(find.text('2/41 dars mavjud.'), findsOneWidget);
+    expect(
+      find.text('${grade9Catalog['implemented_sections']}/41 dars mavjud.'),
+      findsOneWidget,
+    );
     await tapFinder(t, find.byKey(const ValueKey('history-bibliography-9')));
     expect(find.textContaining('978-9943-22-373-8'), findsOneWidget);
     expect(find.textContaining('Lafasov'), findsWidgets);

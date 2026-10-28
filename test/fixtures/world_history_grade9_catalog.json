@@ -5,10 +5,10 @@
   "language": "uz",
   "publication": "local_test_preview_only",
   "source_sections": 41,
-  "implemented_sections": 2,
+  "implemented_sections": 7,
   "course_complete": false,
   "source_review_pending": true,
-  "source_review_issue_count": 39,
+  "source_review_issue_count": 34,
   "grade_content_complete": false,
   "implemented_grades": [
     6,
@@ -1282,6 +1282,544 @@
           ],
           "verification": "page_image_reviewed",
           "review_id": "wh9-p02-page015"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p03-r1",
+      "sequence": 3,
+      "title": "Fransiya–Prussiya urushi va uning yakunlari",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic03",
+          "topic_title": "Fransiya–Prussiya urushi va uning yakunlari",
+          "paragraph": 3,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p03-page016"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic03",
+          "topic_title": "Fransiya–Prussiya urushi va uning yakunlari",
+          "paragraph": 3,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p03-page017"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic03",
+          "topic_title": "Fransiya–Prussiya urushi va uning yakunlari",
+          "paragraph": 3,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p03-page018"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p04-r1",
+      "sequence": 4,
+      "title": "Fransiyada Uchinchi Respublika va 1871-yil 18-mart davlat to‘ntarishi",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic04",
+          "topic_title": "Fransiyada Uchinchi Respublika va 1871-yil 18-mart davlat to‘ntarishi",
+          "paragraph": 4,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p04-page018"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic04",
+          "topic_title": "Fransiyada Uchinchi Respublika va 1871-yil 18-mart davlat to‘ntarishi",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p04-page019"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic04",
+          "topic_title": "Fransiyada Uchinchi Respublika va 1871-yil 18-mart davlat to‘ntarishi",
+          "paragraph": 4,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p04-page020"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic04",
+          "topic_title": "Fransiyada Uchinchi Respublika va 1871-yil 18-mart davlat to‘ntarishi",
+          "paragraph": 4,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p04-page021"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p05-r1",
+      "sequence": 5,
+      "title": "XIX asr oxiri – XX asr boshlarida Fransiyada iqtisodiy va siyosiy hayot",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic05",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Fransiyada iqtisodiy va siyosiy hayot",
+          "paragraph": 5,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p05-page021"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic05",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Fransiyada iqtisodiy va siyosiy hayot",
+          "paragraph": 5,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p05-page022"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic05",
+          "topic_title": "XIX asr oxiri – XX asr boshlarida Fransiyada iqtisodiy va siyosiy hayot",
+          "paragraph": 5,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p05-page023"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p06-r1",
+      "sequence": 6,
+      "title": "Fransiyaning ichki siyosati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic06",
+          "topic_title": "Fransiyaning ichki siyosati",
+          "paragraph": 6,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p06-page023"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic06",
+          "topic_title": "Fransiyaning ichki siyosati",
+          "paragraph": 6,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p06-page024"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic06",
+          "topic_title": "Fransiyaning ichki siyosati",
+          "paragraph": 6,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p06-page025"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic06",
+          "topic_title": "Fransiyaning ichki siyosati",
+          "paragraph": 6,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p06-page026"
+        }
+      ]
+    },
+    {
+      "key": "world-history-9-p07-r1",
+      "sequence": 7,
+      "title": "Fransiyaning tashqi siyosati",
+      "state": "locked",
+      "best_score_pct": 0,
+      "source_refs": [
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic07",
+          "topic_title": "Fransiyaning tashqi siyosati",
+          "paragraph": 7,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p07-page027"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic07",
+          "topic_title": "Fransiyaning tashqi siyosati",
+          "paragraph": 7,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p07-page028"
+        },
+        {
+          "book_id": "world-history-9-uz-2019",
+          "book_title": "Jahon tarixi",
+          "authors": [
+            "M. Lafasov",
+            "U. Jo‘rayev",
+            "E. Xoliqov",
+            "D. Qodirova"
+          ],
+          "year": 2019,
+          "file_name": "jahon_tarixi_9_uzb.pdf",
+          "sha256": "4f20684716e02748d1f6d54b3f5c00f7d3320f36d216dcbd4d807a8bbc6983b5",
+          "grade": 9,
+          "chapter_id": "wh9-chapter02",
+          "topic_id": "wh9-topic07",
+          "topic_title": "Fransiyaning tashqi siyosati",
+          "paragraph": 7,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh9-p07-page029"
         }
       ]
     }
