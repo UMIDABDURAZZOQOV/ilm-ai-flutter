@@ -1,0 +1,1527 @@
+{
+  "assessment_version": 2,
+  "subject": "jahon_tarixi",
+  "grade": 10,
+  "language": "uz",
+  "publication": "local_test_preview_only",
+  "source_sections": 26,
+  "implemented_sections": 6,
+  "course_complete": false,
+  "source_review_pending": true,
+  "source_review_issue_count": 20,
+  "grade_content_complete": false,
+  "implemented_grades": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "available_grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "bibliography": {
+    "id": "world-history-10-uz-2017",
+    "title": "Jahon tarixi (1918–1991-yillar)",
+    "authors": [
+      "Shuhrat Ergashev",
+      "Begzod Xodjayev",
+      "Jamshid Abdullayev"
+    ],
+    "year": 2017,
+    "edition": "Birinchi nashr",
+    "publisher": "Turon-Iqbol",
+    "isbn": "978-9943-14-475-0",
+    "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76"
+  },
+  "chapters": [],
+  "source_units": [
+    {
+      "id": "wh10-topic01",
+      "title": "1918 – 1939-yillarda xalqaro munosabatlar",
+      "sequence": 1,
+      "chapter_id": null,
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "wh10-topic02",
+      "title": "1918 – 1939-yillarda ilmiy-texnik taraqqiyotning jadallashuvi, ilm-fandagi yutuqlar",
+      "sequence": 2,
+      "chapter_id": null,
+      "pdf_pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "wh10-topic03",
+      "title": "1918 – 1939-yillarda Buyuk Britaniya",
+      "sequence": 3,
+      "chapter_id": null,
+      "pdf_pages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "printed_pages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "wh10-topic04",
+      "title": "1918 – 1939-yillarda Fransiya",
+      "sequence": 4,
+      "chapter_id": null,
+      "pdf_pages": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "printed_pages": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "wh10-topic05",
+      "title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+      "sequence": 5,
+      "chapter_id": null,
+      "pdf_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "printed_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "wh10-topic06",
+      "title": "1918 – 1939-yillarda Germaniya",
+      "sequence": 6,
+      "chapter_id": null,
+      "pdf_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "printed_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "wh10-topic07-08",
+      "title": "1918 – 1939-yillarda SSSR",
+      "sequence": 7,
+      "chapter_id": null,
+      "pdf_pages": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "printed_pages": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "wh10-topic09",
+      "title": "1918 – 1939-yillarda Italiya va Ispaniya",
+      "sequence": 8,
+      "chapter_id": null,
+      "pdf_pages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "printed_pages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "wh10-topic10",
+      "title": "1918 – 1939-yillarda Lotin Amerikasi mamlakatlari",
+      "sequence": 9,
+      "chapter_id": null,
+      "pdf_pages": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "printed_pages": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "id": "wh10-topic11",
+      "title": "1918 – 1939-yillarda Yaponiya",
+      "sequence": 10,
+      "chapter_id": null,
+      "pdf_pages": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "printed_pages": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "wh10-topic12",
+      "title": "1918 – 1939-yillarda Xitoy va Hindiston",
+      "sequence": 11,
+      "chapter_id": null,
+      "pdf_pages": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "printed_pages": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "id": "wh10-topic13",
+      "title": "1918 – 1939-yillarda Turkiya va Eron",
+      "sequence": 12,
+      "chapter_id": null,
+      "pdf_pages": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "printed_pages": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "id": "wh10-topic14",
+      "title": "1918 – 1939-yillarda Afrika mamlakatlari",
+      "sequence": 13,
+      "chapter_id": null,
+      "pdf_pages": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "printed_pages": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "id": "wh10-topic15-16",
+      "title": "Ikkinchi jahon urushi va uning yakunlari",
+      "sequence": 14,
+      "chapter_id": null,
+      "pdf_pages": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "printed_pages": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "wh10-topic17",
+      "title": "Ikkinchi jahon urushidan keyingi xalqaro munosabatlar: «sovuq urush»ning boshlanishi",
+      "sequence": 15,
+      "chapter_id": null,
+      "pdf_pages": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "printed_pages": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "id": "wh10-topic18",
+      "title": "1946 – 1991-yillarda Amerika Qo‘shma Shtatlari",
+      "sequence": 16,
+      "chapter_id": null,
+      "pdf_pages": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "printed_pages": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "id": "wh10-topic19-20",
+      "title": "1946-1991-yillarda Sovet Ittifoqi",
+      "sequence": 17,
+      "chapter_id": null,
+      "pdf_pages": [
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "printed_pages": [
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "id": "wh10-topic21",
+      "title": "1946 – 1991-yillarda Buyuk Britaniya va Fransiya",
+      "sequence": 18,
+      "chapter_id": null,
+      "pdf_pages": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "printed_pages": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "id": "wh10-topic22",
+      "title": "1946 – 1991-yillarda Germaniya va Italiya",
+      "sequence": 19,
+      "chapter_id": null,
+      "pdf_pages": [
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "printed_pages": [
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "id": "wh10-topic23",
+      "title": "1946 – 1991-yillarda Yaponiya va Osiyoning yangi industrial mamlakat lari",
+      "sequence": 20,
+      "chapter_id": null,
+      "pdf_pages": [
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "printed_pages": [
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "id": "wh10-topic24",
+      "title": "1946 – 1991-yillarda Xitoy Xalq Respublikasi",
+      "sequence": 21,
+      "chapter_id": null,
+      "pdf_pages": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "printed_pages": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "id": "wh10-topic25",
+      "title": "1946 – 1991-yillarda Hindiston va Pokiston",
+      "sequence": 22,
+      "chapter_id": null,
+      "pdf_pages": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "printed_pages": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ]
+    },
+    {
+      "id": "wh10-topic26",
+      "title": "1946 – 1991-yillarda Turkiya, Eron va Afg‘oniston",
+      "sequence": 23,
+      "chapter_id": null,
+      "pdf_pages": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "printed_pages": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "id": "wh10-topic27",
+      "title": "1946 – 1991-yillarda Lotin Amerikasi mamlakatlari",
+      "sequence": 24,
+      "chapter_id": null,
+      "pdf_pages": [
+        127,
+        128,
+        129,
+        130,
+        131
+      ],
+      "printed_pages": [
+        127,
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "id": "wh10-topic28",
+      "title": "1946 – 1991-yillarda Afrika mamlakatlari",
+      "sequence": 25,
+      "chapter_id": null,
+      "pdf_pages": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "printed_pages": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ]
+    },
+    {
+      "id": "wh10-topic29",
+      "title": "XX asrning ikkinchi yarmida fan va madaniyatning rivojlanishi",
+      "sequence": 26,
+      "chapter_id": null,
+      "pdf_pages": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ],
+      "printed_pages": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "key": "world-history-10-p01-r1",
+      "sequence": 1,
+      "title": "1918 – 1939-yillarda xalqaro munosabatlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            4
+          ],
+          "pdf_pages": [
+            4
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page004"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            5
+          ],
+          "pdf_pages": [
+            5
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page005"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            6
+          ],
+          "pdf_pages": [
+            6
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page006"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            7
+          ],
+          "pdf_pages": [
+            7
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page007"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic01",
+          "topic_title": "1918 – 1939-yillarda xalqaro munosabatlar",
+          "paragraph": 1,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p01-page008"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-intro",
+          "topic_title": "Kirish",
+          "paragraph": null,
+          "printed_pages": [
+            3
+          ],
+          "pdf_pages": [
+            3
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "world-history-10-p01-r1-wh10-intro-page003"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p02-r1",
+      "sequence": 2,
+      "title": "1918 – 1939-yillarda ilmiy-texnik taraqqiyotning jadallashuvi, ilm-fandagi yutuqlar",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic02",
+          "topic_title": "1918 – 1939-yillarda ilmiy-texnik taraqqiyotning jadallashuvi, ilm-fandagi yutuqlar",
+          "paragraph": 2,
+          "printed_pages": [
+            8
+          ],
+          "pdf_pages": [
+            8
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p02-page008"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic02",
+          "topic_title": "1918 – 1939-yillarda ilmiy-texnik taraqqiyotning jadallashuvi, ilm-fandagi yutuqlar",
+          "paragraph": 2,
+          "printed_pages": [
+            9
+          ],
+          "pdf_pages": [
+            9
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p02-page009"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic02",
+          "topic_title": "1918 – 1939-yillarda ilmiy-texnik taraqqiyotning jadallashuvi, ilm-fandagi yutuqlar",
+          "paragraph": 2,
+          "printed_pages": [
+            10
+          ],
+          "pdf_pages": [
+            10
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p02-page010"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic02",
+          "topic_title": "1918 – 1939-yillarda ilmiy-texnik taraqqiyotning jadallashuvi, ilm-fandagi yutuqlar",
+          "paragraph": 2,
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            11
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p02-page011"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p03-r1",
+      "sequence": 3,
+      "title": "1918 – 1939-yillarda Buyuk Britaniya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic03",
+          "topic_title": "1918 – 1939-yillarda Buyuk Britaniya",
+          "paragraph": 3,
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            12
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p03-page012"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic03",
+          "topic_title": "1918 – 1939-yillarda Buyuk Britaniya",
+          "paragraph": 3,
+          "printed_pages": [
+            13
+          ],
+          "pdf_pages": [
+            13
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p03-page013"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic03",
+          "topic_title": "1918 – 1939-yillarda Buyuk Britaniya",
+          "paragraph": 3,
+          "printed_pages": [
+            14
+          ],
+          "pdf_pages": [
+            14
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p03-page014"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic03",
+          "topic_title": "1918 – 1939-yillarda Buyuk Britaniya",
+          "paragraph": 3,
+          "printed_pages": [
+            15
+          ],
+          "pdf_pages": [
+            15
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p03-page015"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic03",
+          "topic_title": "1918 – 1939-yillarda Buyuk Britaniya",
+          "paragraph": 3,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p03-page016"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p04-r1",
+      "sequence": 4,
+      "title": "1918 – 1939-yillarda Fransiya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic04",
+          "topic_title": "1918 – 1939-yillarda Fransiya",
+          "paragraph": 4,
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p04-page016"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic04",
+          "topic_title": "1918 – 1939-yillarda Fransiya",
+          "paragraph": 4,
+          "printed_pages": [
+            17
+          ],
+          "pdf_pages": [
+            17
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p04-page017"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic04",
+          "topic_title": "1918 – 1939-yillarda Fransiya",
+          "paragraph": 4,
+          "printed_pages": [
+            18
+          ],
+          "pdf_pages": [
+            18
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p04-page018"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic04",
+          "topic_title": "1918 – 1939-yillarda Fransiya",
+          "paragraph": 4,
+          "printed_pages": [
+            19
+          ],
+          "pdf_pages": [
+            19
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p04-page019"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic04",
+          "topic_title": "1918 – 1939-yillarda Fransiya",
+          "paragraph": 4,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "above_next_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p04-page020"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p05-r1",
+      "sequence": 5,
+      "title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic05",
+          "topic_title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 5,
+          "printed_pages": [
+            20
+          ],
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p05-page020"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic05",
+          "topic_title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 5,
+          "printed_pages": [
+            21
+          ],
+          "pdf_pages": [
+            21
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p05-page021"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic05",
+          "topic_title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 5,
+          "printed_pages": [
+            22
+          ],
+          "pdf_pages": [
+            22
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p05-page022"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic05",
+          "topic_title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 5,
+          "printed_pages": [
+            23
+          ],
+          "pdf_pages": [
+            23
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p05-page023"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic05",
+          "topic_title": "1918 – 1939-yillarda Amerika Qo‘shma Shtatlari",
+          "paragraph": 5,
+          "printed_pages": [
+            24
+          ],
+          "pdf_pages": [
+            24
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p05-page024"
+        }
+      ]
+    },
+    {
+      "key": "world-history-10-p06-r1",
+      "sequence": 6,
+      "title": "1918 – 1939-yillarda Germaniya",
+      "state": "completed",
+      "best_score_pct": 100.0,
+      "source_refs": [
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic06",
+          "topic_title": "1918 – 1939-yillarda Germaniya",
+          "paragraph": 6,
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ],
+          "regions": [
+            "below_topic_heading"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p06-page025"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic06",
+          "topic_title": "1918 – 1939-yillarda Germaniya",
+          "paragraph": 6,
+          "printed_pages": [
+            26
+          ],
+          "pdf_pages": [
+            26
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p06-page026"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic06",
+          "topic_title": "1918 – 1939-yillarda Germaniya",
+          "paragraph": 6,
+          "printed_pages": [
+            27
+          ],
+          "pdf_pages": [
+            27
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p06-page027"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic06",
+          "topic_title": "1918 – 1939-yillarda Germaniya",
+          "paragraph": 6,
+          "printed_pages": [
+            28
+          ],
+          "pdf_pages": [
+            28
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p06-page028"
+        },
+        {
+          "book_id": "world-history-10-uz-2017",
+          "book_title": "Jahon tarixi (1918–1991-yillar)",
+          "authors": [
+            "Shuhrat Ergashev",
+            "Begzod Xodjayev",
+            "Jamshid Abdullayev"
+          ],
+          "year": 2017,
+          "file_name": "jahon_tarixi_10_uzb.pdf",
+          "sha256": "c94cef41c7f9b46efca1a5d8c331a7bb8bcf1e686efe06a8daf812d1aae0aa76",
+          "grade": 10,
+          "chapter_id": null,
+          "topic_id": "wh10-topic06",
+          "topic_title": "1918 – 1939-yillarda Germaniya",
+          "paragraph": 6,
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ],
+          "regions": [
+            "topic_body"
+          ],
+          "verification": "page_image_reviewed",
+          "review_id": "wh10-p06-page029"
+        }
+      ]
+    }
+  ]
+}

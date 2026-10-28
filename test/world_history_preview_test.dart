@@ -30,7 +30,7 @@ const captureKey = Key('history-review');
 void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   const latestGrade9CompletedCatalogue = 'batch33_grade9_completed_catalog';
-  const latestGrade10CompletedCatalogue = 'batch33_grade10_completed_catalog';
+  const latestGrade10CompletedCatalogue = 'batch34_grade10_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -931,12 +931,16 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 1; number++) {
+  for (var number = 1; number <= 6; number++) {
     void selectGrade10Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g10_p${suffix}_lesson');
       results = fixture('g10_p${suffix}_results');
-      grade10Catalog = fixture(latestGrade10CompletedCatalogue);
+      grade10Catalog = fixture(
+        number == 1
+            ? 'batch33_grade10_completed_catalog'
+            : latestGrade10CompletedCatalogue,
+      );
     }
 
     testWidgets('grade10 paragraph$number theory and MCQ at200%', (t) async {
@@ -1011,13 +1015,19 @@ void main() {
       jsonRows(latest['lessons']).length,
     );
     expect(grade10Catalog['grade_content_complete'], false);
+    final initialRows = jsonRows(grade10Catalog['lessons']);
+    expect(initialRows.first['state'], 'available');
+    expect(initialRows.skip(1).every((row) => row['state'] == 'locked'), true);
     await mount(t);
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-9')));
     expect(find.text('41/41 dars mavjud.'), findsOneWidget);
     await tapFinder(t, find.byKey(const ValueKey('world_history-grade-10')));
     expect(requests.last.queryParameters['grade'], 10);
-    expect(find.text('1/26 dars mavjud.'), findsOneWidget);
-    expect(find.text('Darsni boshlash'), findsOneWidget);
+    expect(
+      find.text('${grade10Catalog['implemented_sections']}/26 dars mavjud.'),
+      findsOneWidget,
+    );
+    expect(find.text('Darsni boshlash'), findsNWidgets(initialRows.length));
     await tapFinder(t, find.byKey(const ValueKey('history-bibliography-10')));
     expect(find.textContaining('978-9943-14-475-0'), findsOneWidget);
     expect(find.textContaining('Ergashev'), findsWidgets);
@@ -1030,7 +1040,7 @@ void main() {
   ) async {
     lesson = fixture('g10_p01_lesson');
     results = fixture('g10_p01_results');
-    grade10Catalog = fixture(latestGrade10CompletedCatalogue);
+    grade10Catalog = fixture('batch33_grade10_completed_catalog');
     await mount(t, size: const Size(320, 568), scale: 2);
     await openGrade10(t);
     await tapFinder(t, find.textContaining('Manba: Kirish').first);

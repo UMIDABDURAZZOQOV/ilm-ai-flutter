@@ -7,8 +7,8 @@ Backend companion: `../ilm-ai-world-history/` on the matching feature branch.
 ## Current status
 
 Separate debug/loopback history screen and API are implemented. Grade6§1–44 plus conclusion and final review are
-reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **165/219 ready;
-54 remain.** Grade7 all44 units add314 cards,298 MCQ and176 objective FRQ. Grade8 all33 units add256 cards,252 MCQ and136 objective FRQ. Grade9§1–41 add293 cards,252 MCQ and172 objective FRQ. Grade10§1 adds9 cards,6 MCQ and4 objective FRQ. Six books and961 original page images are inventoried;216 numbered
+reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **170/219 ready;
+49 remain.** Grade7 all44 units add314 cards,298 MCQ and176 objective FRQ. Grade8 all33 units add256 cards,252 MCQ and136 objective FRQ. Grade9§1–41 add293 cards,252 MCQ and172 objective FRQ. Grade10§1–6 adds44 cards,36 MCQ and24 objective FRQ. Six books and961 original page images are inventoried;216 numbered
 blocks plus three conclusion/review units, with original chapters and ancillary links.
 Backend `docs/world_history/CHECKPOINT.md` is the continuation record.
 
@@ -17,7 +17,7 @@ reused. Six grades, original chapter expansion, bibliography, theory, MCQ, typed
 FRQ, self/teacher reflection and account/origin-scoped save/resume are present.
 No ordinary `main.dart`, release route, OAuth or other subject feature was changed.
 
-Measured QA: **354 history widgets passed in06:46**, **963 full tests passed in08:40**, full analysis **0 issues in155.0s**. Actual API fixtures cover all165 units,
+Measured QA: **364 history widgets passed in06:24**, **973 full tests passed in96:07**, full analysis **0 issues in98.8s**. Actual API fixtures cover all170 units,
 320×568/200% light/dark and UZ/RU/EN interface. Backend QA_REPORT.md records scope.
 Widget screenshots were visually inspected;
 no real Android/IME/TalkBack run or independent history-teacher approval is claimed.
