@@ -31,7 +31,7 @@ void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   const latestGrade9CompletedCatalogue = 'batch33_grade9_completed_catalog';
   const latestGrade10CompletedCatalogue = 'batch38_grade10_completed_catalog';
-  const latestGrade11CompletedCatalogue = 'batch39_grade11_completed_catalog';
+  const latestGrade11CompletedCatalogue = 'batch40_grade11_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -1043,7 +1043,7 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 5; number++) {
+  for (var number = 1; number <= 15; number++) {
     void selectGrade11Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g11_p${suffix}_lesson');

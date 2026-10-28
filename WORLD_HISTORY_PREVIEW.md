@@ -7,8 +7,8 @@ Backend companion: `../ilm-ai-world-history/` on the matching feature branch.
 ## Current status
 
 Separate debug/loopback history screen and API are implemented. Grade6§1–44 plus conclusion and final review are
-reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **195/219 ready;
-24 remain.** Grade7 all44 units add314 cards,298 MCQ and176 objective FRQ. Grade8 all33 units add256 cards,252 MCQ and136 objective FRQ. Grade9§1–41 add293 cards,252 MCQ and172 objective FRQ. Grade10§1–26 adds207 cards,162 MCQ and108 objective FRQ. Grade11§1–5 adds40 cards,30 MCQ and20 objective FRQ. Six books and961 original page images are inventoried;216 numbered
+reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **205/219 ready;
+14 remain.** Grade7 all44 units add314 cards,298 MCQ and176 objective FRQ. Grade8 all33 units add256 cards,252 MCQ and136 objective FRQ. Grade9§1–41 add293 cards,252 MCQ and172 objective FRQ. Grade10§1–26 adds207 cards,162 MCQ and108 objective FRQ. Grade11§1–15 adds120 cards,90 MCQ and60 objective FRQ. Six books and961 original page images are inventoried;216 numbered
 blocks plus three conclusion/review units, with original chapters and ancillary links.
 Backend `docs/world_history/CHECKPOINT.md` is the continuation record.
 
@@ -17,7 +17,7 @@ reused. Six grades, original chapter expansion, bibliography, theory, MCQ, typed
 FRQ, self/teacher reflection and account/origin-scoped save/resume are present.
 No ordinary `main.dart`, release route, OAuth or other subject feature was changed.
 
-Measured QA: **416 history widgets passed in07:31**, **1025 full tests passed in10:07**, full analysis **0 issues in222.7s**. Actual API fixtures cover all195 units,
+Measured QA: **436 history widgets passed in07:25**, **1045 full tests passed in10:06**, full analysis **0 issues in96.4s**. Actual API fixtures cover all205 units,
 320×568/200% light/dark and UZ/RU/EN interface. Backend QA_REPORT.md records scope.
 Widget screenshots were visually inspected;
 no real Android/IME/TalkBack run or independent history-teacher approval is claimed.
