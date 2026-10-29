@@ -22,6 +22,8 @@ import 'skill_profile_screen.dart';
 import 'skill_quests_screen.dart';
 import 'skill_ui.dart';
 import 'curriculum_learning_screen.dart';
+import '../../../core/config/integrated_beta.dart';
+import '../../learning/presentation/assessment_practice_screen.dart';
 
 final subjectCatalogProvider = FutureProvider<List<SkillSubject>>(
   (ref) => ref.watch(skillTreeRepositoryProvider).getSubjects(),
@@ -61,17 +63,46 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   }
 
   Future<void> _select(SkillSubject subject) async {
+    if (!subject.available) return;
     final user = ref.read(currentUserIdProvider);
     if (user == null) return;
+    final currentGrade = int.tryParse(
+      ref.read(prefsServiceProvider).getString('class_$user') ?? '',
+    );
     await ref.read(learningPreferencesProvider).save(user, {
       'subject': subject.slug,
+      if (integratedBeta && subject.grades.isNotEmpty)
+        'grade':
+            '${subject.grades.contains(currentGrade) ? currentGrade : subject.grades.first}',
     });
     if (!mounted || ref.read(currentUserIdProvider) != user) return;
+    if (integratedBeta && subject.grades.isNotEmpty) {
+      ref
+          .read(selectedCurriculumGradeProvider(subject.slug).notifier)
+          .state = subject.grades.contains(currentGrade)
+          ? currentGrade
+          : subject.grades.first;
+    }
     ref.read(selectedSubjectProvider.notifier).state = subject.slug;
     setState(() {
       _choosing = false;
       _tab = 0;
     });
+  }
+
+  int get _catalogGrade {
+    final uid = ref.read(currentUserIdProvider);
+    return int.tryParse(
+          ref.read(prefsServiceProvider).getString('class_$uid') ?? '',
+        ) ??
+        5;
+  }
+
+  Future<void> _changeCatalogGrade(int grade) async {
+    final uid = ref.read(currentUserIdProvider);
+    if (uid == null) return;
+    await ref.read(learningPreferencesProvider).save(uid, {'grade': '$grade'});
+    if (mounted && ref.read(currentUserIdProvider) == uid) setState(() {});
   }
 
   @override
@@ -183,7 +214,33 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                       child: Text(tr('Yangilash', 'Обновить', 'Refresh')),
                     ),
                   ],
-                  for (final item in subjects)
+                  if (integratedBeta) ...[
+                    DropdownButtonFormField<int>(
+                      initialValue: _catalogGrade,
+                      decoration: InputDecoration(
+                        labelText: tr('Sinf', 'Класс', 'Grade'),
+                      ),
+                      items: [
+                        for (var grade = 5; grade <= 11; grade++)
+                          DropdownMenuItem(
+                            value: grade,
+                            child: Text(
+                              tr('$grade-sinf', '$grade класс', 'Grade $grade'),
+                            ),
+                          ),
+                      ],
+                      onChanged: (grade) {
+                        if (grade != null) _changeCatalogGrade(grade);
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+                  for (final item in subjects.where(
+                    (s) =>
+                        !integratedBeta ||
+                        !s.available ||
+                        s.grades.contains(_catalogGrade),
+                  ))
                     Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: _LearningTile(
@@ -191,14 +248,16 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                             subjectIcons[item.slug] ?? Icons.menu_book_rounded,
                         color: skillColor(item.color),
                         title: item.nameFor(lang),
-                        subtitle: item.slug == selected
+                        subtitle: !item.available
+                            ? tr('Tez kunda', 'Скоро', 'Coming soon')
+                            : item.slug == selected
                             ? tr(
                                 'Hozirgi fan',
                                 'Текущий предмет',
                                 'Current subject',
                               )
                             : null,
-                        onTap: () => _select(item),
+                        onTap: item.available ? () => _select(item) : null,
                       ),
                     ),
                 ],
@@ -225,10 +284,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         // Local copy so closures do not see the outer nullable `subject`.
         final SkillSubject activeSubject = subject;
         final tabBuilders = <Widget Function()>[
-          () => activeSubject.slug == 'biologiya'
+          () => integratedBeta || activeSubject.slug == 'biologiya'
               ? CurriculumLearningScreen(
                   key: ValueKey(
-                    'curriculum:${ref.watch(currentUserIdProvider)}',
+                    'curriculum:${ref.watch(currentUserIdProvider)}:${activeSubject.slug}',
                   ),
                   subject: activeSubject,
                   onChangeSubject: () => setState(() => _choosing = true),
@@ -238,21 +297,26 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                   subject: activeSubject,
                   onChangeSubject: () => setState(() => _choosing = true),
                 ),
-          () => PracticeHubScreen(
-            language: lang,
-            onDaily: () => context.push(
-              '/skills/practice',
-              extra: {'mode': PracticeMode.daily},
-            ),
-            onMistakes: () => context.push(
-              '/skills/practice',
-              extra: {'mode': PracticeMode.mistakes},
-            ),
-            onLightning: () => context.push(
-              '/skills/practice',
-              extra: {'mode': PracticeMode.lightning},
-            ),
-          ),
+          () => integratedBeta && activeSubject.slug != 'biologiya'
+              ? AssessmentPracticeScreen(
+                  subject: activeSubject,
+                  onOpenLearning: _openLearning,
+                )
+              : PracticeHubScreen(
+                  language: lang,
+                  onDaily: () => context.push(
+                    '/skills/practice',
+                    extra: {'mode': PracticeMode.daily},
+                  ),
+                  onMistakes: () => context.push(
+                    '/skills/practice',
+                    extra: {'mode': PracticeMode.mistakes},
+                  ),
+                  onLightning: () => context.push(
+                    '/skills/practice',
+                    extra: {'mode': PracticeMode.lightning},
+                  ),
+                ),
           () => const SkillQuestsScreen(),
           () => SkillLeaderboardScreen(onOpenLearning: _openLearning),
           () => SkillProfileScreen(onOpenLearning: _openLearning),
@@ -302,7 +366,7 @@ class _LearningTile extends StatelessWidget {
   final Color color;
   final String title;
   final String? subtitle;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {

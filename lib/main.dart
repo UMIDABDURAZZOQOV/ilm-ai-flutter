@@ -5,8 +5,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'app.dart';
 import 'core/providers/app_providers.dart';
 import 'core/storage/prefs_service.dart';
+import 'core/config/integrated_beta.dart';
+import 'core/network/dio_client.dart' show apiBaseUrl;
 
 void main() async {
+  if (integratedBetaRequested) requireBetaConfiguration(apiBaseUrl);
   WidgetsFlutterBinding.ensureInitialized();
 
   // Edge-to-edge: draw behind the status & navigation bars and make them fully

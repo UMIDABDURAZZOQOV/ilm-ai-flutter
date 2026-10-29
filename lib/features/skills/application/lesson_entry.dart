@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/lesson_draft_store.dart';
 import '../data/skill_tree_models.dart';
+import '../../learning/data/assessment_repository.dart';
 
 enum LessonEntryState { start, resume, expired, review, locked }
 
@@ -117,6 +119,47 @@ final lessonEntryProvider = Provider.autoDispose
     .family<LessonEntry, SkillTreeLesson>((ref, lesson) {
       final user = ref.watch(currentUserIdProvider);
       ref.watch(studyRevisionProvider);
+      if (lesson.assessmentKey != null) {
+        if (lesson.status == LessonStatus.locked) {
+          return const LessonEntry(LessonEntryState.locked);
+        }
+        if (lesson.status == LessonStatus.completed) {
+          return const LessonEntry(LessonEntryState.review);
+        }
+        if (user == null) return const LessonEntry(LessonEntryState.start);
+        try {
+          final raw = ref
+              .watch(prefsServiceProvider)
+              .getString(
+                AssessmentRepository.storageKey(
+                  apiBaseUrl,
+                  user,
+                  lesson.assessmentSubject!,
+                  lesson.assessmentKey!,
+                ),
+              );
+          if (raw == null) return const LessonEntry(LessonEntryState.start);
+          final saved = jsonDecode(raw) as Map;
+          final started = saved['started_at'] as int;
+          final age = DateTime.now().millisecondsSinceEpoch - started;
+          if (age < 0 || age >= const Duration(hours: 24).inMilliseconds) {
+            return const LessonEntry(LessonEntryState.expired);
+          }
+          final theory = saved['teaching_done'] != true;
+          final index =
+              saved[theory ? 'teaching_index' : 'question_index'] as int? ?? 0;
+          final total =
+              saved[theory ? 'theory_total' : 'question_total'] as int? ?? 1;
+          return LessonEntry(
+            LessonEntryState.resume,
+            position: (index + 1).clamp(1, total),
+            total: total,
+            theory: theory,
+          );
+        } catch (_) {
+          return const LessonEntry(LessonEntryState.start);
+        }
+      }
       final draft = user == null || lesson.status != LessonStatus.unlocked
           ? null
           : LessonDraftStore(

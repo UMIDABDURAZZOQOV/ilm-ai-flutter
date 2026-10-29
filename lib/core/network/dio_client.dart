@@ -4,6 +4,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../storage/secure_token_storage.dart';
 import '../config/phone_qa.dart';
+import '../config/integrated_beta.dart';
 import 'mobile_api.dart';
 
 const _defaultBaseUrl = 'https://ilm-ai-backend-256x.onrender.com';
@@ -27,7 +28,7 @@ BaseOptions apiOptions({
   connectTimeout: const Duration(seconds: 20),
   sendTimeout: const Duration(seconds: 30),
   receiveTimeout: receiveTimeout,
-  followRedirects: !phoneQaRequested,
+  followRedirects: !phoneQaRequested && !integratedBetaRequested,
 );
 
 /// A queued refresh with storage compare-and-swap. Transient failures preserve
@@ -47,6 +48,11 @@ class AuthInterceptor extends QueuedInterceptor {
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) async {
+    if (integratedBetaRequested && (!integratedBeta || !isBetaOrigin(options.uri))) {
+      handler.reject(DioException(requestOptions: options,
+        error: StateError('Beta requests must remain on the isolated beta API origin.')));
+      return;
+    }
     if (phoneQaRequested && (!phoneQaEnabled || !isPhoneQaRequest(options.uri))) {
       handler.reject(DioException(requestOptions: options,
         error: StateError('Phone QA permits only the USB loopback API.')));

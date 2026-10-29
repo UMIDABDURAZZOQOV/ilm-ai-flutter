@@ -31,6 +31,13 @@ val phoneQaTarget = flutterTarget == "phone_qa_main.dart" || flutterTarget.endsW
 if (phoneQaEnabled != phoneQaTarget) {
     throw GradleException("Phone QA requires both PHONE_QA=true and lib/phone_qa_main.dart.")
 }
+val integratedBetaEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("INTEGRATED_BETA=true") == true
+if (integratedBetaEnabled && (phoneQaEnabled || physicsPreviewBuild ||
+    !(flutterTarget == "main.dart" || flutterTarget.endsWith("/main.dart")))) {
+    throw GradleException("Integrated beta must use the normal main.dart target, separately from QA previews.")
+}
 
 android {
     namespace = "com.ilmai.ilm_ai_flutter"
@@ -73,7 +80,11 @@ android {
 
     buildTypes {
         debug {
-            if (phoneQaEnabled) {
+            if (integratedBetaEnabled) {
+                applicationIdSuffix = ".beta"
+                manifestPlaceholders["appLabel"] = "ILM AI Beta"
+                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-beta"
+            } else if (phoneQaEnabled) {
                 applicationIdSuffix = ".phoneqa"
                 manifestPlaceholders["appLabel"] = "ILM AI QA"
                 manifestPlaceholders["oauthRedirectScheme"] = "ilmai-phone-qa"
@@ -109,6 +120,9 @@ dependencies {
 
 
 gradle.taskGraph.whenReady {
+    if (integratedBetaEnabled && allTasks.any { it.name.contains("Release") }) {
+        throw GradleException("Integrated beta is an internal debug build. Production release is a separate task.")
+    }
     if (phoneQaEnabled && allTasks.any { it.name.contains("Release") }) {
         throw GradleException("Phone QA is debug-only.")
     }

@@ -15,10 +15,14 @@ class LearningPathSections extends StatefulWidget {
     required this.leading,
     required this.itemBuilder,
     this.currentUnitId,
+    this.pageSize,
   });
   final String storageKey, language;
   final List<SkillTreeUnit> units;
   final int? currentUnitId;
+
+  /// Presentation only: the source order and prerequisite rules stay intact.
+  final int? pageSize;
   final Widget leading;
   final Widget Function(SkillTreeUnit unit, SkillTreeLesson? lesson)
   itemBuilder;
@@ -29,6 +33,7 @@ class LearningPathSections extends StatefulWidget {
 
 class _LearningPathSectionsState extends State<LearningPathSections> {
   final _expanded = <int, bool>{};
+  final _pages = <int, int>{};
   final _scroll = ScrollController();
   int? _focusedUnit;
 
@@ -234,10 +239,18 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
       if (_focusedUnit != null && unit.id != _focusedUnit) continue;
       rows.add((unit: unit, lesson: null, header: true));
       if (!_isExpanded(unit)) continue;
+      final size = widget.pageSize ?? unit.lessons.length;
+      final current = unit.lessons.indexWhere(
+        (l) => l.status == LessonStatus.unlocked,
+      );
+      final page = size > 0
+          ? (_pages[unit.id] ?? (current < 0 ? 0 : current ~/ size))
+          : 0;
+      final visible = widget.pageSize == null
+          ? unit.lessons
+          : unit.lessons.skip(page * size).take(size);
       rows.addAll(
-        unit.lessons.map(
-          (lesson) => (unit: unit, lesson: lesson, header: false),
-        ),
+        visible.map((lesson) => (unit: unit, lesson: lesson, header: false)),
       );
       if (unit.examStatus != 'none') {
         rows.add((unit: unit, lesson: null, header: false));
@@ -280,7 +293,7 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                           return widget.itemBuilder(row.unit, row.lesson);
                         }
                         final open = _isExpanded(row.unit);
-                        return LearningUnitHeader(
+                        final header = LearningUnitHeader(
                           key: ValueKey('section_${row.unit.id}'),
                           title: row.unit.titleFor(language),
                           language: language,
@@ -293,6 +306,60 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                           current: row.unit.id == widget.currentUnitId,
                           onToggle: () =>
                               setState(() => _expanded[row.unit.id] = !open),
+                        );
+                        final size = widget.pageSize;
+                        if (!open ||
+                            size == null ||
+                            row.unit.lessons.length <= size) {
+                          return header;
+                        }
+                        final current = row.unit.lessons.indexWhere(
+                          (l) => l.status == LessonStatus.unlocked,
+                        );
+                        final page =
+                            _pages[row.unit.id] ??
+                            (current < 0 ? 0 : current ~/ size);
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            header,
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: DropdownButtonFormField<int>(
+                                key: ValueKey(
+                                  'lesson_range_${row.unit.id}_$page',
+                                ),
+                                initialValue: page,
+                                isExpanded: true,
+                                decoration: InputDecoration(
+                                  labelText: str3(
+                                    language,
+                                    'Darslar oralig‘i',
+                                    'Диапазон уроков',
+                                    'Lesson range',
+                                  ),
+                                ),
+                                items: [
+                                  for (
+                                    var p = 0;
+                                    p * size < row.unit.lessons.length;
+                                    p++
+                                  )
+                                    DropdownMenuItem(
+                                      value: p,
+                                      child: Text(
+                                        '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)} / ${row.unit.lessons.length}',
+                                      ),
+                                    ),
+                                ],
+                                onChanged: (value) {
+                                  if (value != null) {
+                                    setState(() => _pages[row.unit.id] = value);
+                                  }
+                                },
+                              ),
+                            ),
+                          ],
                         );
                       },
                       findChildIndexCallback: (key) {

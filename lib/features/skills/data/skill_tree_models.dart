@@ -2,6 +2,8 @@
 // matching quiz_models.dart's convention for this kind of simple API domain.
 
 class SkillSubject {
+  final bool available;
+  final List<int> grades;
   final int id;
   final String slug;
   final String nameUz;
@@ -11,6 +13,8 @@ class SkillSubject {
   final String? color;
 
   SkillSubject({
+    this.available = true,
+    this.grades = const [],
     required this.id,
     required this.slug,
     required this.nameUz,
@@ -21,6 +25,8 @@ class SkillSubject {
   });
 
   factory SkillSubject.fromJson(Map<String, dynamic> json) => SkillSubject(
+    available: json['available'] != false,
+    grades: List<int>.from(json['grades'] as List? ?? []),
     id: json['id'] as int,
     slug: json['slug'] as String,
     nameUz: json['name_uz'] as String,
@@ -56,6 +62,8 @@ LessonStatus _parseStatus(String s) {
 }
 
 class SkillTreeLesson {
+  final String? assessmentKey, assessmentSubject;
+  final int? grade;
   final int id;
   final String slug;
   final String titleUz;
@@ -68,6 +76,9 @@ class SkillTreeLesson {
   final double? bestScorePct;
 
   SkillTreeLesson({
+    this.assessmentKey,
+    this.assessmentSubject,
+    this.grade,
     required this.id,
     required this.slug,
     required this.titleUz,
@@ -82,6 +93,9 @@ class SkillTreeLesson {
 
   factory SkillTreeLesson.fromJson(Map<String, dynamic> json) =>
       SkillTreeLesson(
+        assessmentKey: json['assessment_key'] as String?,
+        assessmentSubject: json['assessment_subject'] as String?,
+        grade: json['grade'] as int?,
         id: json['id'] as int,
         slug: json['slug'] as String,
         titleUz: json['title_uz'] as String,

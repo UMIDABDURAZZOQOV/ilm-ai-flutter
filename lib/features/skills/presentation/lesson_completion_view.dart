@@ -20,8 +20,10 @@ class LessonCompletionView extends StatelessWidget {
     required this.elapsed,
     required this.onReview,
     required this.onBack,
+    this.reviewLabel,
   });
   final String language, title, lessonTitle;
+  final String? reviewLabel;
   final int xp, correct, total, stars, streakDays;
   final Duration elapsed;
   final VoidCallback onReview, onBack;
@@ -223,12 +225,13 @@ class LessonCompletionView extends StatelessWidget {
                   onPressed: onReview,
                   icon: const Icon(Icons.fact_check_outlined),
                   label: Text(
-                    str3(
-                      language,
-                      'Javoblarni ko‘rish',
-                      'Посмотреть ответы',
-                      'Review answers',
-                    ),
+                    reviewLabel ??
+                        str3(
+                          language,
+                          'Javoblarni ko‘rish',
+                          'Посмотреть ответы',
+                          'Review answers',
+                        ),
                     textAlign: TextAlign.center,
                   ),
                 ),

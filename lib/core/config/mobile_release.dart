@@ -1,5 +1,8 @@
-/// Re-enable additional reviewed subjects with a coordinated backend release.
+import 'integrated_beta.dart';
+
+/// Re-enable additional reviewed subjects only in the isolated integrated beta.
 const biologyOnly = bool.fromEnvironment('BIOLOGY_ONLY', defaultValue: true);
 
-bool isPublishedMobileSubject(String? slug) =>
-    !biologyOnly || slug == 'biologiya';
+bool isPublishedMobileSubject(String? slug) => integratedBeta
+    ? betaSubjectSlugs.contains(slug)
+    : (!biologyOnly || slug == 'biologiya');

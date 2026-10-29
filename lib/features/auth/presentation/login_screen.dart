@@ -10,6 +10,8 @@ import 'package:go_router/go_router.dart';
 import '../../../core/config/product_mode.dart';
 import '../../../core/config/phone_qa.dart';
 import '../../phone_qa/phone_qa_pairing.dart';
+import '../../../core/config/integrated_beta.dart';
+import 'beta_login.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/network/error_message.dart';
@@ -248,6 +250,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           ],
                         ),
                       ),
+                      if (integratedBeta) const BetaLogin(),
                     ],
                   ).motion(context).fadeIn(duration: 220.ms, curve: Curves.easeOut),
                 ),

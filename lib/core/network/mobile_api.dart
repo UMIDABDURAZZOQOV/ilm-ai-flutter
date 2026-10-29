@@ -1,11 +1,14 @@
 import 'package:dio/dio.dart';
 import '../config/mobile_release.dart';
+import '../config/integrated_beta.dart';
 
 /// Mobile publication never changes the website's /skills namespace.
 class MobileApiInterceptor extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    if (biologyOnly && options.path.startsWith('/skills/')) {
+    if (integratedBeta && options.path.startsWith('/skills/')) {
+      options.path = '/beta${options.path}';
+    } else if (biologyOnly && options.path.startsWith('/skills/')) {
       options.path = '/mobile${options.path}';
     }
     handler.next(options);

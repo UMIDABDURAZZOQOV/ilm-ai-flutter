@@ -90,6 +90,7 @@ const subjectIcons = <String, IconData>{
   'kimyo': Icons.science_rounded,
   'fizika': Icons.bolt_rounded,
   'jahon_tarixi': Icons.public_rounded,
+  'ozbekiston_tarixi': Icons.account_balance_rounded,
   'tarix': Icons.account_balance_rounded,
   'ozbek_adabiyoti': Icons.history_edu_rounded,
   'jahon_adabiyoti': Icons.auto_stories_rounded,

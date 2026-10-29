@@ -6,6 +6,7 @@ import '../../../core/network/api_contract.dart';
 import 'skill_tree_models.dart';
 import 'curriculum_models.dart';
 import '../../../core/config/mobile_release.dart';
+import '../../../core/config/integrated_beta.dart';
 
 class SkillTreeRepository {
   final Dio _dio;
@@ -31,7 +32,7 @@ class SkillTreeRepository {
     try {
       return (res.data as List)
           .map((e) => SkillSubject.fromJson(e as Map<String, dynamic>))
-          .where((s) => isPublishedMobileSubject(s.slug))
+          .where((s) => isPublishedMobileSubject(s.slug) || (integratedBeta && !s.available))
           .toList();
     } on TypeError {
       throw const InvalidApiResponseException();

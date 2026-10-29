@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../providers/app_providers.dart';
 import '../config/product_mode.dart';
+import '../config/integrated_beta.dart';
 import '../config/physics_preview.dart';
 import '../network/dio_client.dart' show apiBaseUrl;
 import '../../features/physics/presentation/physics_preview_screen.dart';
@@ -53,6 +54,7 @@ import '../../features/subscription/presentation/subscription_screen.dart';
 import '../../features/learning_plan/presentation/learning_plan_screen.dart';
 import '../config/phone_qa.dart';
 import '../../features/phone_qa/phone_qa_hub.dart';
+import '../../features/learning/presentation/assessment_lesson_screen.dart';
 import '../../features/gaps/presentation/gaps_report_screen.dart';
 import '../../features/telegram/presentation/telegram_screen.dart';
 import '../../features/feedback/presentation/feedback_screen.dart';
@@ -200,7 +202,8 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/learn',
-        builder: (context, state) => phoneQaEnabled ? const PhoneQaHub() : const SubjectHomeScreen(),
+        builder: (context, state) =>
+            phoneQaEnabled ? const PhoneQaHub() : const SubjectHomeScreen(),
       ),
       GoRoute(
         path: '/settings',
@@ -310,7 +313,12 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: 'lesson',
             pageBuilder: (context, state) => _fadeSlidePage(
-              SkillLessonScreen(lesson: state.extra as SkillTreeLesson),
+              integratedBeta &&
+                      (state.extra as SkillTreeLesson).assessmentKey != null
+                  ? AssessmentLessonScreen(
+                      lesson: state.extra as SkillTreeLesson,
+                    )
+                  : SkillLessonScreen(lesson: state.extra as SkillTreeLesson),
               state,
             ),
           ),

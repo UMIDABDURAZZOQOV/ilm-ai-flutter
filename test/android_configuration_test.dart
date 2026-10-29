@@ -45,8 +45,30 @@ void main() {
       final main = File(
         'android/app/src/main/AndroidManifest.xml',
       ).readAsStringSync();
-      expect(debug, contains('android:usesCleartextTraffic="true"'));
+      expect(
+        debug,
+        contains(
+          'android:networkSecurityConfig="@xml/qa_network_security_config"',
+        ),
+      );
+      final network = File(
+        'android/app/src/debug/res/xml/qa_network_security_config.xml',
+      ).readAsStringSync();
+      expect(
+        network,
+        contains('<base-config cleartextTrafficPermitted="false"'),
+      );
+      expect(
+        network,
+        contains('<domain-config cleartextTrafficPermitted="true">'),
+      );
+      final domains = RegExp(
+        r'<domain[^>]*>([^<]+)</domain>',
+      ).allMatches(network).map((m) => m.group(1)).toSet();
+      expect(domains, {'127.0.0.1', 'localhost'});
+      expect(debug, isNot(contains('android:usesCleartextTraffic="true"')));
       expect(main, isNot(contains('android:usesCleartextTraffic="true"')));
+      expect(main, isNot(contains('qa_network_security_config')));
     },
   );
 }

@@ -6,6 +6,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import '../config/phone_qa.dart';
+import '../config/integrated_beta.dart';
 
 
 /// Ported from ilm-ai-mobile's utils/pushNotifications.ts, with one
@@ -104,7 +105,7 @@ class PushService {
 
   /// Account scoped, with token rotation and stale async callback protection.
   static Future<void> registerWithBackend(Dio dio, int userId, bool Function() isCurrent) async {
-    if (phoneQaRequested) return;
+    if (phoneQaRequested || integratedBetaRequested) return;
     stop();
     final generation = _generation;
     Future<void> send(String token) {

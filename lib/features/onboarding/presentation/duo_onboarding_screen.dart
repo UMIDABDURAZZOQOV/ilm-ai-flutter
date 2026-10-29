@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/config/product_mode.dart';
 import '../../../core/config/mobile_release.dart';
+import '../../../core/config/integrated_beta.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
@@ -43,7 +44,11 @@ class DuoOnboardingScreen extends ConsumerStatefulWidget {
 class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
   late int _step;
   String? _selectedSubject;
-  String? _selectedClass = biologyOnly ? '5' : 'all';
+  String? _selectedClass = integratedBeta
+      ? null
+      : biologyOnly
+      ? '5'
+      : 'all';
   String? _selectedSource;
   int? _selectedLevel;
   final Set<String> _selectedReasons = {};
@@ -90,7 +95,8 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 (_draftUser == null ? widget.initialStep : 11))
             .clamp(0, 11);
     _selectedSubject = draft?['subject'] as String?;
-    _selectedClass = draft?['class'] as String? ?? 'all';
+    _selectedClass =
+        draft?['class'] as String? ?? (integratedBeta ? null : 'all');
     if (biologyOnly) {
       if (_selectedSubject != null &&
           !isPublishedMobileSubject(_selectedSubject)) {
@@ -98,7 +104,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         if (_step > 3 && _draftUser == null) _step = 3;
       }
       if (!['5', '6', '7', '8', '9', '10', '11'].contains(_selectedClass)) {
-        _selectedClass = '5';
+        _selectedClass = integratedBeta ? null : '5';
       }
     }
     _selectedSource = draft?['source'] as String?;
@@ -155,7 +161,8 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       case 2: // Intro questions
         return true;
       case 3: // Subject selection
-        return _selectedSubject != null;
+        return _selectedSubject != null &&
+            (!integratedBeta || _selectedClass != null);
       case 4: // Source
         return _selectedSource != null;
       case 5: // Level (Bilim darajasi)
@@ -742,7 +749,11 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                   isSelected: _selectedClass == 'all',
                   onTap: () => _change(() => _selectedClass = 'all'),
                 ),
-              for (int grade = biologyOnly ? 5 : 1; grade <= 11; grade++) ...[
+              for (
+                int grade = integratedBeta || biologyOnly ? 5 : 1;
+                grade <= 11;
+                grade++
+              ) ...[
                 const SizedBox(width: 8),
                 _buildClassChip(
                   label: str3(
@@ -752,7 +763,18 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                     'Grade $grade',
                   ),
                   isSelected: _selectedClass == '$grade',
-                  onTap: () => _change(() => _selectedClass = '$grade'),
+                  onTap: () => _change(() {
+                    _selectedClass = '$grade';
+                    if (integratedBeta) {
+                      final selected = catalogAsync.valueOrNull
+                          ?.where((s) => s.slug == _selectedSubject)
+                          .firstOrNull;
+                      if (selected != null &&
+                          !selected.grades.contains(grade)) {
+                        _selectedSubject = null;
+                      }
+                    }
+                  }),
                 ),
               ],
             ],
@@ -760,7 +782,14 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         ),
         const SizedBox(height: 8),
         Text(
-          _selectedSubject == 'biologiya'
+          integratedBeta
+              ? str3(
+                  lang,
+                  'Tanlangan sinfga mos fanlar ko‘rsatiladi. Har bir fanning o‘z dars yo‘li va saqlangan progressi bor.',
+                  'Показаны предметы выбранного класса. У каждого предмета свой путь и сохранённый прогресс.',
+                  'Subjects match your selected grade. Each subject has its own path and saved progress.',
+                )
+              : _selectedSubject == 'biologiya'
               ? str3(
                   lang,
                   'Biologiya uchun alohida sinf yo‘li kirgandan keyin tanlanadi. Darslar hozir o‘zbek tilida.',
@@ -812,9 +841,18 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           data: (subjects) {
             return Column(
               children: [
-                for (final item in subjects) ...[
+                for (final item in subjects.where(
+                  (s) =>
+                      !integratedBeta ||
+                      !s.available ||
+                      _selectedClass == null ||
+                      s.grades.contains(int.tryParse(_selectedClass ?? '')),
+                )) ...[
                   _SelectionTile(
                     title: item.nameFor(lang),
+                    subtitle: !item.available
+                        ? str3(lang, 'Tez kunda', 'Скоро', 'Coming soon')
+                        : null,
                     isSelected: _selectedSubject == item.slug,
                     leading: CircleAvatar(
                       radius: 20,
@@ -827,9 +865,11 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                         size: 22,
                       ),
                     ),
-                    onTap: () {
-                      _change(() => _selectedSubject = item.slug);
-                    },
+                    onTap: !item.available
+                        ? null
+                        : () {
+                            _change(() => _selectedSubject = item.slug);
+                          },
                   ),
                   const SizedBox(height: 10),
                 ],
@@ -1467,13 +1507,19 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       case 'calculator':
         return Icons.calculate_outlined;
       case 'physics':
+      case 'bolt':
         return Icons.bolt_outlined;
       case 'chemistry':
+      case 'science':
         return Icons.science_outlined;
       case 'biology':
+      case 'eco':
         return Icons.biotech_outlined;
       case 'history':
+      case 'history_edu':
         return Icons.menu_book_outlined;
+      case 'public':
+        return Icons.public_outlined;
       case 'english':
       case 'language':
         return Icons.translate_rounded;
@@ -1515,7 +1561,7 @@ class _SelectionTile extends StatelessWidget {
   final bool isSelected;
   final bool isMultiSelect;
   final Widget? leading;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
   const _SelectionTile({
     required this.title,
@@ -1544,11 +1590,14 @@ class _SelectionTile extends StatelessWidget {
     return Semantics(
       button: true,
       selected: isSelected,
+      enabled: onTap != null,
       child: InkWell(
-        onTap: () {
-          HapticFeedback.selectionClick();
-          onTap();
-        },
+        onTap: onTap == null
+            ? null
+            : () {
+                HapticFeedback.selectionClick();
+                onTap!();
+              },
         borderRadius: BorderRadius.circular(16),
         child: Container(
           constraints: const BoxConstraints(minHeight: 56),

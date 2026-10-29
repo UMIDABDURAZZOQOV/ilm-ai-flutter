@@ -1,4 +1,5 @@
 import '../../../core/config/mobile_release.dart';
+import '../../../core/config/integrated_beta.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -437,6 +438,7 @@ class SkillPathScreen extends ConsumerWidget {
                 }
               },
               child: LearningPathSections(
+                pageSize: integratedBeta ? 10 : null,
                 key: ValueKey(
                   'sections:${ref.watch(currentUserIdProvider)}:${subject.slug}:$grade',
                 ),

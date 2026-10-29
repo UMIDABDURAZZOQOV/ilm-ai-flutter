@@ -7,6 +7,7 @@ import '../../../core/network/api_contract.dart';
 import '../data/auth_models.dart';
 import '../data/auth_repository.dart';
 import 'auth_controller.dart';
+import '../../../core/config/integrated_beta.dart';
 export 'auth_controller.dart' show needsProfileSetupProvider;
 
 const googleAuthTimeout = Duration(
@@ -23,7 +24,7 @@ String codeChallenge(String verifier) => base64UrlEncode(
 String validatedGoogleCode(String callback, String state) {
   final uri = Uri.tryParse(callback);
   if (uri == null ||
-      uri.scheme != 'ilmai' ||
+      uri.scheme != mobileAppScheme ||
       uri.host != 'auth' ||
       uri.path != '/callback' ||
       uri.userInfo.isNotEmpty ||
@@ -57,7 +58,7 @@ Future<bool> signInWithGoogle(WidgetRef ref) async {
       .timeout(googleAuthTimeout);
   final result = await FlutterWebAuth2.authenticate(
     url: url.authUrl,
-    callbackUrlScheme: 'ilmai',
+    callbackUrlScheme: mobileAppScheme,
   ).timeout(const Duration(minutes: 5));
   final code = validatedGoogleCode(result, url.state);
   if (!ref.context.mounted) return false;
