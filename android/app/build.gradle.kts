@@ -24,6 +24,13 @@ val physicsPreviewEnabled = (project.findProperty("dart-defines") as? String)
 val flutterTarget = (project.findProperty("target") as? String).orEmpty().replace('\\', '/')
 val physicsPreviewBuild = physicsPreviewEnabled &&
     (flutterTarget == "physics_preview_main.dart" || flutterTarget.endsWith("/physics_preview_main.dart"))
+val phoneQaEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("PHONE_QA=true") == true
+val phoneQaTarget = flutterTarget == "phone_qa_main.dart" || flutterTarget.endsWith("/phone_qa_main.dart")
+if (phoneQaEnabled != phoneQaTarget) {
+    throw GradleException("Phone QA requires both PHONE_QA=true and lib/phone_qa_main.dart.")
+}
 
 android {
     namespace = "com.ilmai.ilm_ai_flutter"
@@ -66,7 +73,11 @@ android {
 
     buildTypes {
         debug {
-            if (physicsPreviewBuild) {
+            if (phoneQaEnabled) {
+                applicationIdSuffix = ".phoneqa"
+                manifestPlaceholders["appLabel"] = "ILM AI QA"
+                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-phone-qa"
+            } else if (physicsPreviewBuild) {
                 applicationIdSuffix = ".physicsqa"
                 manifestPlaceholders["appLabel"] = "ILM AI Fizika QA"
                 manifestPlaceholders["oauthRedirectScheme"] = "ilmai-physics-qa"
@@ -98,6 +109,9 @@ dependencies {
 
 
 gradle.taskGraph.whenReady {
+    if (phoneQaEnabled && allTasks.any { it.name.contains("Release") }) {
+        throw GradleException("Phone QA is debug-only.")
+    }
     if (physicsPreviewEnabled && allTasks.any { it.name.contains("Release") }) {
         throw GradleException("Physics preview is debug-only. Do not publish a sandbox APK.")
     }

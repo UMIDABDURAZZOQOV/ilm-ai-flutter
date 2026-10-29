@@ -51,6 +51,8 @@ import '../../features/quiz/presentation/review_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
 import '../../features/subscription/presentation/subscription_screen.dart';
 import '../../features/learning_plan/presentation/learning_plan_screen.dart';
+import '../config/phone_qa.dart';
+import '../../features/phone_qa/phone_qa_hub.dart';
 import '../../features/gaps/presentation/gaps_report_screen.dart';
 import '../../features/telegram/presentation/telegram_screen.dart';
 import '../../features/feedback/presentation/feedback_screen.dart';
@@ -198,7 +200,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/learn',
-        builder: (context, state) => const SubjectHomeScreen(),
+        builder: (context, state) => phoneQaEnabled ? const PhoneQaHub() : const SubjectHomeScreen(),
       ),
       GoRoute(
         path: '/settings',

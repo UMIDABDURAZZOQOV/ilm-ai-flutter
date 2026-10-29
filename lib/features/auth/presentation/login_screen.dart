@@ -8,6 +8,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/config/product_mode.dart';
+import '../../../core/config/phone_qa.dart';
+import '../../phone_qa/phone_qa_pairing.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/network/error_message.dart';
@@ -157,6 +159,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const Center(child: IlmoBrandMark()),
+                      if (phoneQaEnabled) const PhoneQaPairing(),
                       const SizedBox(height: 16),
                       Text(
                         'ILM AI',
