@@ -1,14 +1,14 @@
 # ILM AI — World history worktree
 
-Work in progress, 2026-10-27. Branch: `feat/world-history-curriculum`, based on
+All219 units complete in isolated local preview, 2026-10-29. Branch: `feat/world-history-curriculum`, based on
 Chemistry Flutter `0312ff3108e96e1e3446bdc8c4dcb27fe7ecd37d`.
 Backend companion: `../ilm-ai-world-history/` on the matching feature branch.
 
 ## Current status
 
 Separate debug/loopback history screen and API are implemented. Grade6§1–44 plus conclusion and final review are
-reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **215/219 ready;
-4 remain.** Grade7 all44 units add314 cards,298 MCQ and176 objective FRQ. Grade8 all33 units add256 cards,252 MCQ and136 objective FRQ. Grade9§1–41 add293 cards,252 MCQ and172 objective FRQ. Grade10§1–26 adds207 cards,162 MCQ and108 objective FRQ. Grade11§1–25 adds200 cards,150 MCQ and100 objective FRQ. Six books and961 original page images are inventoried;216 numbered
+reviewed local-preview units:361 cards,271 MCQ,175 objective FRQ. **219/219 ready;
+0 remain.** Grade7 all44 units add314 cards,298 MCQ and176 objective FRQ. Grade8 all33 units add256 cards,252 MCQ and136 objective FRQ. Grade9§1–41 add293 cards,252 MCQ and172 objective FRQ. Grade10§1–26 adds207 cards,162 MCQ and108 objective FRQ. Grade11§1–29 adds234 cards,174 MCQ and116 objective FRQ. Six books and961 original page images are inventoried;216 numbered
 blocks plus three conclusion/review units, with original chapters and ancillary links.
 Backend `docs/world_history/CHECKPOINT.md` is the continuation record.
 
@@ -17,7 +17,7 @@ reused. Six grades, original chapter expansion, bibliography, theory, MCQ, typed
 FRQ, self/teacher reflection and account/origin-scoped save/resume are present.
 No ordinary `main.dart`, release route, OAuth or other subject feature was changed.
 
-Measured QA: **456 history widgets passed in07:24**, **1065 full tests passed in09:41**, full analysis **0 issues in84.6s**. Actual API fixtures cover all215 units,
+Measured QA: **464 history widgets passed in04:08**, **1073 full tests passed in09:33**, full analysis **0 issues in119.0s**. Actual API fixtures cover all219 units,
 320×568/200% light/dark and UZ/RU/EN interface. Backend QA_REPORT.md records scope.
 Widget screenshots were visually inspected;
 no real Android/IME/TalkBack run or independent history-teacher approval is claimed.
@@ -26,7 +26,7 @@ Batch02–18 add content/fixture coverage; the existing History runtime/UI contr
 is unchanged. Large-fixture JSON decoding uses Dio `SyncTransformer` in widget
 tests so isolate decoding cannot escape the controlled test async zone; ordinary
 application networking remains unchanged. The initial failing§11 FRQ test was
-resolved in batch02; all current targeted history tests pass at the batch18 checkpoint.
+resolved in batch02; the historical batch18 checkpoint passed. Current final measured results are above.
 Widget lesson-opening helpers resolve each original chapter from catalogue data;
 the third-chapter§21 and null-chapter conclusion/review flows pass. Grade6
 completion can switch to the original grade7 catalogue with44 reviewed lessons

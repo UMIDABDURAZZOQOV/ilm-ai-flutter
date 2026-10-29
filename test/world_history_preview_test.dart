@@ -31,7 +31,7 @@ void main() {
   const latestGrade8CompletedCatalogue = 'batch25_grade8_completed_catalog';
   const latestGrade9CompletedCatalogue = 'batch33_grade9_completed_catalog';
   const latestGrade10CompletedCatalogue = 'batch38_grade10_completed_catalog';
-  const latestGrade11CompletedCatalogue = 'batch41_grade11_completed_catalog';
+  const latestGrade11CompletedCatalogue = 'batch42_grade11_completed_catalog';
   TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(loadReviewFonts);
   late Dio dio;
@@ -1043,7 +1043,7 @@ void main() {
     );
   }
 
-  for (var number = 1; number <= 25; number++) {
+  for (var number = 1; number <= 29; number++) {
     void selectGrade11Lesson() {
       final suffix = number.toString().padLeft(2, '0');
       lesson = fixture('g11_p${suffix}_lesson');
@@ -1126,7 +1126,7 @@ void main() {
         initialRows.skip(1).every((row) => row['state'] == 'locked'),
         true,
       );
-      expect(grade11Catalog['grade_content_complete'], false);
+      expect(grade11Catalog['grade_content_complete'], true);
       expect(grade11Catalog['course_complete'], false);
       await mount(t);
       await tapFinder(t, find.byKey(const ValueKey('world_history-grade-10')));
