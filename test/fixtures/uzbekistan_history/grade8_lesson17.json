@@ -1,0 +1,877 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:fa91487d-7fd1-4d0a-b6fb-0603c2a16284",
+  "lesson_key": "uzh-8-17-r1",
+  "expires_at": "2026-10-28T03:01:11.045972+00:00",
+  "title": "Buxoro amirligida harbiy ish",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-17-r1:c1",
+        "title": "Muntazam va nomuntazam",
+        "body": "Muntazam qo‘shin navkariya, muayyan harakat uchun yig‘iladigan nomuntazam qo‘shin qora cherik deb atalgan. Xizmat shakli bilan otliq yoki piyoda bo‘lishni bir xil tasnif deb olmang.",
+        "fact_ids": [
+          "uzh-8-topic-17:regular"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:regular",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              61,
+              62
+            ],
+            "printed_pages": [
+              61,
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "50556ee07cdca518fe17463d0eb3a08440cc2719fd0e35005f5e014f94e4c49c",
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 528
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-17-r1:c2",
+        "title": "Harbiy islohot qaydi",
+        "body": "1837-yilda Amir Nasrullo harbiy islohot o‘tkazgani ko‘rsatiladi. Yangi tuzilmada sarboz, navkar va to‘pchi qismlar ajratilgan.",
+        "fact_ids": [
+          "uzh-8-topic-17:1837"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:1837",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-17-r1:c3",
+        "title": "Sarboz va navkar",
+        "body": "Muntazam piyoda askarlar sarboz, otliq askarlar navkar deb atalgan. Bu ikki qismning vazifasi va xizmat turi bir xil so‘z bilan berilmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-17:units"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:units",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-17-r1:c4",
+        "title": "Xizmat va yashash joyi",
+        "body": "Muntazam qo‘shin uchun Buxoro chetida Sarbozxona manzilgohi qurilgani, askarlar oilalari bilan yashab hunar va savdo bilan ham shug‘ullangani bayon qilinadi. Sarbozxona mansab unvoni emas.",
+        "fact_ids": [
+          "uzh-8-topic-17:sarbazxona"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:sarbazxona",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-17-r1:c5",
+        "title": "Boshqaruv mansabi",
+        "body": "Amir oliy bosh qo‘mondon bo‘lgan. Undan keyingi vaziri harb harbiy vazir va bosh qo‘mondon sifatida, to‘pchiboshi nomi bilan ham keltiriladi.",
+        "fact_ids": [
+          "uzh-8-topic-17:harb"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:harb",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              63
+            ],
+            "printed_pages": [
+              63
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-17-r1:c6",
+        "title": "Unvon va qo‘mondonlik",
+        "body": "Pansadboshi, yuzboshi, ellikboshi va o‘nboshi kabi unvonlar keltiriladi. Nafaqat nomdagi sonni, balki ayni davrdagi manba kontekstini ham ko‘rish kerak.",
+        "fact_ids": [
+          "uzh-8-topic-17:ranks"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:ranks",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              63
+            ],
+            "printed_pages": [
+              63
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-17-r1:c7",
+        "title": "Ta’minot va ijtimoiy sharoit",
+        "body": "Bo‘lim qurol va kiyim ta’minoti, keyin pul maoshi, askarlarga soliq va majburiyatdan ozodlikni tasvirlaydi. Bir davrga oid maosh miqdorini bugungi pul yoki zamonaviy xizmat sharti bilan aynan tenglashtirmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-17:supply"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:supply",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              64
+            ],
+            "printed_pages": [
+              64
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "cb42f66d097d40dc29d6f29121d50f7b5a60fffc6494aa170bccff660779e1c8"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Sarboz — piyoda qismdagi askar; Sarbozxona — yashash manzilgohi; vaziri harb — mansab. Bir o‘zak yoki bir davrga tegishli bo‘lish ularni bir xil tushuncha qilmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-17:units",
+          "uzh-8-topic-17:sarbazxona",
+          "uzh-8-topic-17:harb"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:units",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:sarbazxona",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:harb",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              63
+            ],
+            "printed_pages": [
+              63
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Qo‘shin turi, askar turi, mansab va manzilgohni to‘rt ustunga ajrating. Har biriga shu darsdan bitta manbali atama yozing.",
+        "fact_ids": [
+          "uzh-8-topic-17:regular",
+          "uzh-8-topic-17:units",
+          "uzh-8-topic-17:sarbazxona",
+          "uzh-8-topic-17:harb"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:regular",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              61,
+              62
+            ],
+            "printed_pages": [
+              61,
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "50556ee07cdca518fe17463d0eb3a08440cc2719fd0e35005f5e014f94e4c49c",
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 528
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:units",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:sarbazxona",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              62
+            ],
+            "printed_pages": [
+              62
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-2",
+            "topic_id": "uzh-8-topic-17",
+            "fact_id": "uzh-8-topic-17:harb",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              63
+            ],
+            "printed_pages": [
+              63
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:regular",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          61,
+          62
+        ],
+        "printed_pages": [
+          61,
+          62
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "50556ee07cdca518fe17463d0eb3a08440cc2719fd0e35005f5e014f94e4c49c",
+          "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 528
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:1837",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          62
+        ],
+        "printed_pages": [
+          62
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:units",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          62
+        ],
+        "printed_pages": [
+          62
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:sarbazxona",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          62
+        ],
+        "printed_pages": [
+          62
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:harb",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          63
+        ],
+        "printed_pages": [
+          63
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:ranks",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          63
+        ],
+        "printed_pages": [
+          63
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-2",
+        "topic_id": "uzh-8-topic-17",
+        "fact_id": "uzh-8-topic-17:supply",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          64
+        ],
+        "printed_pages": [
+          64
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "cb42f66d097d40dc29d6f29121d50f7b5a60fffc6494aa170bccff660779e1c8"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-17-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Nomuntazam yig‘iladigan qo‘shin qanday atalgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Qora cherik"
+        },
+        {
+          "id": "o2",
+          "label": "Navkariya"
+        },
+        {
+          "id": "o3",
+          "label": "Sarbozxona"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-17",
+          "fact_id": "uzh-8-topic-17:regular",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            61,
+            62
+          ],
+          "printed_pages": [
+            61,
+            62
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "50556ee07cdca518fe17463d0eb3a08440cc2719fd0e35005f5e014f94e4c49c",
+            "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 528
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-17-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Muntazam piyoda askar nomi qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Navkar"
+        },
+        {
+          "id": "o2",
+          "label": "Sarboz"
+        },
+        {
+          "id": "o3",
+          "label": "To‘pchiboshi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-17",
+          "fact_id": "uzh-8-topic-17:units",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            62
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-17-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Harbiy vazir uchun qaysi mansab berilgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Amin"
+        },
+        {
+          "id": "o2",
+          "label": "Kitobdor"
+        },
+        {
+          "id": "o3",
+          "label": "Vaziri harb"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-17",
+          "fact_id": "uzh-8-topic-17:harb",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            63
+          ],
+          "printed_pages": [
+            63
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a8c00bcc6c4f077ab93958132aecc0e40fa2869ed5ce5b48733af7e09c0670d1"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-17-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Amir Nasrulloning darsdagi harbiy islohoti yilini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-17",
+          "fact_id": "uzh-8-topic-17:1837",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            62
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-17-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Muntazam qo‘shin uchun qurilgan manzilgoh nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-17",
+          "fact_id": "uzh-8-topic-17:sarbazxona",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            62
+          ],
+          "printed_pages": [
+            62
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-17-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Muntazam qo‘shin bu bo‘limda qanday atalgan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Navkariya"
+        },
+        {
+          "id": "o2",
+          "label": "Qora cherik"
+        },
+        {
+          "id": "o3",
+          "label": "Dodxoh"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-2",
+          "topic_id": "uzh-8-topic-17",
+          "fact_id": "uzh-8-topic-17:regular",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            61,
+            62
+          ],
+          "printed_pages": [
+            61,
+            62
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "50556ee07cdca518fe17463d0eb3a08440cc2719fd0e35005f5e014f94e4c49c",
+            "e77d74625065139119ade1c271efe71ac36710e3db8023911fed9e342a9acbd0"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 528
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

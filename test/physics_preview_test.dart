@@ -27,6 +27,7 @@ void main() {
   late List<RequestOptions> requests;
   late Json lesson, results;
   bool offline = false, lostAnswer = false, lostComplete = false;
+  bool multipleGrades = false;
   final committed = <String, Json>{};
   setUp(() {
     requests = [];
@@ -34,6 +35,7 @@ void main() {
     offline = false;
     lostAnswer = false;
     lostComplete = false;
+    multipleGrades = false;
     lesson = fixture('physics_lesson6');
     results = fixture('physics_result6');
     dio = Dio(BaseOptions(baseUrl: 'http://127.0.0.1:8000'))
@@ -46,6 +48,28 @@ void main() {
           );
         }
         if (request.path.endsWith('/catalog')) {
+          if (multipleGrades) {
+            final grade = request.queryParameters['grade'] as int;
+            return reply(200, {
+              ...fixture('physics_catalog'),
+              'grade': grade,
+              'available_grades': [6, 7, 8, 9, 10, 11],
+              if (grade >= 7) 'lessons': <Json>[],
+              'book': grade >= 8
+                  ? fixture('physics_grade${grade}_book')
+                  : {
+                      'grade': grade,
+                      'title': 'Fizika. $grade-sinf uchun darslik',
+                      'authors': [
+                        grade == 7 ? 'P. Q. Habibullayev' : 'N. Sh. Turdiyev',
+                      ],
+                      'publisher': grade == 7
+                          ? 'O‘zbekiston milliy ensiklopediyasi'
+                          : 'Niso Poligraf',
+                      'year': 2017,
+                    },
+            });
+          }
           return reply(200, fixture('physics_catalog'));
         }
         if (request.path.endsWith('/start')) {
@@ -203,6 +227,28 @@ void main() {
         ),
       ),
     );
+  });
+
+  testWidgets('grade selection requests its own catalog and bibliography', (
+    tester,
+  ) async {
+    multipleGrades = true;
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await mount(tester, scale: 2);
+    final picker = find.byKey(const ValueKey('physics-grade-6'));
+    await tester.ensureVisible(picker);
+    await tester.tap(picker);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('7-sinf').last);
+    await tester.pumpAndSettle();
+    expect(requests.last.queryParameters['grade'], 7);
+    expect(find.text('Fizika • 7-sinf'), findsOneWidget);
+    expect(find.textContaining('P. Q. Habibullayev'), findsOneWidget);
+    expect(find.textContaining('N. Sh. Turdiyev'), findsNothing);
+    expect(tester.takeException(), isNull);
   });
 
   test('v2 fixtures contain no rubric or private expected answer', () {
@@ -371,6 +417,114 @@ void main() {
     },
   );
 
+  testWidgets(
+    'grade8 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('8-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 8);
+      final book = fixture('physics_grade8_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'grade9 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('9-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 9);
+      final book = fixture('physics_grade9_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'grade10 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.text('10-sinf').last);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('10-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 10);
+      final book = fixture('physics_grade10_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
+    'grade11 selection uses source bibliography and its own API query',
+    (tester) async {
+      multipleGrades = true;
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await mount(tester, scale: 2);
+      final picker = find.byKey(const ValueKey('physics-grade-6'));
+      await tester.ensureVisible(picker);
+      await tester.pumpAndSettle();
+      await tester.tap(picker);
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.text('11-sinf').last);
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('11-sinf').last);
+      await tester.pumpAndSettle();
+      expect(requests.last.queryParameters['grade'], 11);
+      final book = fixture('physics_grade11_book');
+      expect(
+        find.textContaining((book['authors'] as List).first as String),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   testWidgets('offline catalog retry and dispose during request do not throw', (
     tester,
   ) async {
@@ -445,6 +599,46 @@ void main() {
       expect(draft, {'order': <String>[]});
     },
   );
+  testWidgets(
+    'four Carnot stages fit large text and preserve explicit learner order',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final question = fixture('physics_grade9_carnot_order');
+      Json? draft;
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (d) => draft = d,
+            ),
+          ),
+        ),
+      );
+      for (final label in [
+        'Th da izotermik kengayish',
+        'Adiabatik kengayib Tc gacha sovish',
+        'Tc da izotermik siqilish',
+        'Adiabatik siqilib Th ga qaytish',
+      ]) {
+        await tap(tester, label);
+      }
+      expect(draft, {
+        'order': ['s2', 's4', 's1', 's3'],
+      });
+      expect(tester.takeException(), isNull);
+      await tap(tester, 'Tartibni tozalash');
+      expect(draft, {'order': <String>[]});
+    },
+  );
+
   test(
     'malformed v2 response is rejected before building an incomplete screen',
     () async {
@@ -567,6 +761,9 @@ void main() {
         'N*m',
         '%',
         'mV',
+        'dptr',
+        'Hz',
+        'km',
       ]) {
         final q = questions.firstWhere(
           (q) => (q['unit_choices'] as List).contains(unit),
@@ -618,6 +815,295 @@ void main() {
       handle.dispose();
     },
   );
+  testWidgets(
+    'grade7 public FRQs preserve independently entered drafts at 200 percent',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 568);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final questions = jsonRows(fixture('physics_grade7_frq')['questions']);
+      expect(questions, hasLength(133));
+      for (final question in questions) {
+        Json? edited;
+        await mount(
+          tester,
+          scale: 2,
+          child: Scaffold(
+            body: SingleChildScrollView(
+              child: PhysicsAnswerEditor(
+                key: ValueKey(question['key']),
+                question: question,
+                draft: const {},
+                enabled: true,
+                onChanged: (v) => edited = v,
+              ),
+            ),
+          ),
+        );
+        await enter(
+          tester,
+          'learner_formula',
+          '-1,25',
+          question['suggested_unit'] as String,
+        );
+        expect(edited?['formula'], 'learner_formula');
+        expect(edited?['value'], '-1,25');
+        expect(edited?['unit'], question['suggested_unit']);
+        expect(tester.takeException(), isNull);
+      }
+    },
+  );
+  testWidgets('grade8 public FRQ and root notation drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade8_frq')['questions']);
+    expect(questions, hasLength(134));
+    for (final question in questions) {
+      Json? edited;
+      final isRoot = question['key'] == 'physics-8-section-4-r1:q5';
+      final isHeatRoot = question['key'] == 'physics-8-section-34-r1:q9';
+      final formula = isRoot
+          ? 'sqrt(F*r^2/k)'
+          : (isHeatRoot ? 'sqrt(Q/(R*t))' : 'learner_formula');
+      final value = isRoot ? '4' : (isHeatRoot ? '2' : '-1,25');
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
+            ),
+          ),
+        ),
+      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], value);
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
+  testWidgets('grade9 public physics FRQ drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade9_frq')['questions']);
+    expect(questions, hasLength(205));
+    for (final question in questions) {
+      Json? edited;
+      final draft = <String, (String, String)>{
+        'physics-9-section-5-r1:q6': ('sqrt(3*p/rho)', '600'),
+        'physics-9-section-7-r1:q5': ('sqrt(3*k*T/m0)', '643.4'),
+        'physics-9-section-7-r1:q6': ('sqrt(3*R*T/M)', '499.3'),
+        'physics-9-section-15-r1:q6': ('3*nu*R*(T2-T1)/2', '-3739.5'),
+        'physics-9-section-16-r1:q9': ('A/p', '-0.004'),
+        'physics-9-section-19-r1:q6': ('m*c*(T2-T1)', '-8400'),
+        'physics-9-section-27-r1:q7': ('1-Tc/Th', '0,5'),
+        'physics-9-section-30-r1:q7': ('eta*rho*V*q*v/s', '16100'),
+        'physics-9-section-32-r1:q5': ('2*sigma/(rho*g*r)', '0.0149'),
+        'physics-9-section-34-r1:q5': ('(F2-F1)/(2*l)', '0.073'),
+        'physics-9-section-36-r1:q8': ('E*eps', '100000000'),
+        'physics-9-section-39-r1:q8': ('-lam*m', '-66800'),
+        'physics-9-section-40-r1:q7': ('-r*m', '-46000'),
+        'physics-9-section-41-r1:q8': ('phi*rhoSat', '0.0138'),
+        'physics-9-section-45-r1:q5': ('alpha', '35'),
+        'physics-9-section-45-r1:q10': ('n1*sina/n2', '0.6'),
+        'physics-9-section-50-r1:q5': ('1/F', '-5'),
+        'physics-9-section-51-r1:q6': ('F*d/(d-F)', '-0.2'),
+        'physics-9-section-53-r1:q7': ('3/(F1+F2+F3)', '5'),
+      }[question['key']];
+      final formula = draft?.$1 ?? 'learner_formula';
+      final value = draft?.$2 ?? '-1,25';
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
+            ),
+          ),
+        ),
+      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], value);
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
+  testWidgets('grade10 signed angular and vertical drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade10_frq')['questions']);
+    expect(questions, hasLength(161));
+    for (final question in questions) {
+      Json? edited;
+      final draft = <String, (String, String)>{
+        'physics-10-section-2-r1:q5': ('v1+v2', '-2'),
+        'physics-10-section-6-r1:q5': ('sqrt(2*h/g)', '1.73'),
+        'physics-10-section-7-r1:q6': ('v0*sinA-g*t', '-8'),
+        'physics-10-section-10-r1:q6': ('-m*A', '-6'),
+        'physics-10-section-11-r1:q6': ('T1*sqrt((r/R)^3)', '40000'),
+        'physics-10-section-13-r1:q5': ('(Ft-Ff)/m', '-2'),
+        'physics-10-section-14-r1:q9': ('1/(1+mu*cotA)', '72.73'),
+        'physics-10-section-15-r1:q7': ('P*h/(F*s)', '66.67'),
+        'physics-10-section-16-r1:q6': ('((m1-m2)*v1+2*m2*v2)/(m1+m2)', '-2'),
+        'physics-10-section-18-r1:q6': ('F1*l1-F2*l2', '-2'),
+        'physics-10-section-22-r1:q6': ('-omega^2*x', '-0.48'),
+        'physics-10-section-23-r1:q6': ('2*p*sqrt(m/k)', '0.628'),
+        'physics-10-section-24-r1:q7': ('4*p^2*l/T^2', '9.8596'),
+        'physics-10-section-26-r1:q7': ('Lw*nu', '60'),
+        'physics-10-section-27-r1:q7': ('Q-A', '-400'),
+        'physics-10-section-28-r1:q9': ('1-Qc/Qh', '0.375'),
+        'physics-10-section-30-r1:q6': ('q1+q2', '-4e-9'),
+        'physics-10-section-30-r1:q10': ('sqrt(Ex^2+Ey^2)', '5000'),
+        'physics-10-section-32-r1:q6': ('k*q/(eps*r)', '-30'),
+        'physics-10-section-33-r1:q7': ('q*Ex*dx', '-0.0003'),
+        'physics-10-section-34-r1:q9': ('e0*eps*E^2/2', '0.0000177'),
+        'physics-10-section-35-r1:q6': ('1/R', '0.004'),
+        'physics-10-section-36-r1:q9': ('4*I/(p*D^2)', '2000000'),
+        'physics-10-section-38-r1:q8': ('(E1*r2+E2*r1)/(r1+r2)', '2.67'),
+        'physics-10-section-38-r1:q9': ('(E2-E1)/(r1+r2)', '-0.5'),
+        'physics-10-section-39-r1:q6': ('Rg/(m-1)', '25'),
+        'physics-10-section-40-r1:q6': ('(Emf-Uload)/I', '2'),
+        'physics-10-section-41-r1:q6': ('sqrt((U2/U1)^3)', '8'),
+        'physics-10-section-42-r1:q7': ('(R-R0)/(R0*DT)', '0.004'),
+        'physics-10-section-45-r1:q7': ('U/I', '500000'),
+        'physics-10-section-20-r1:q8': ('sqrt(2*g*h+2*m*g/(rho*S))', '2.24'),
+        'physics-10-section-3-r1:q5': ('v0-g*t', '-10'),
+        'physics-10-section-3-r1:q11': ('sqrt(v0^2+2*g*h)', '20'),
+        'physics-10-section-4-r1:q7': ('(omega-omega0)/t', '-2'),
+        'physics-10-section-4-r1:q10': ('beta*R', '-2'),
+      }[question['key']];
+      final formula = draft?.$1 ?? 'learner_formula';
+      final value = draft?.$2 ?? '1,25';
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
+            ),
+          ),
+        ),
+      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], value);
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
+  testWidgets('grade11 magnetic flux torque and SI drafts fit large text', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 568);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    final questions = jsonRows(fixture('physics_grade11_frq')['questions']);
+    expect(questions, hasLength(127));
+    for (final question in questions) {
+      Json? edited;
+      final draft = <String, (String, String)>{
+        'physics-11-section-1-r1:q5': ('B*S*cosAlpha', '-0.00006'),
+        'physics-11-section-2-r1:q5': ('n*B*I*S*sinAlpha', '0.0012'),
+        'physics-11-section-3-r1:q5': ('mu0*I/(2*p*d)', '0.00001'),
+        'physics-11-section-3-r1:q8': ('Bx1+Bx2', '0.00002'),
+        'physics-11-section-4-r1:q6': ('I*DPhi', '-0.006'),
+        'physics-11-section-6-r1:q8': ('2*p*m/(q*B)', '0.000002512'),
+        'physics-11-section-7-r1:q7': ('-n*(Phi2-Phi1)/dt', '-0.2'),
+        'physics-11-section-8-r1:q6': ('-L*DI/dt', '6'),
+        'physics-11-section-9-r1:q7': ('B/B0', '1.002'),
+        'physics-11-section-10-r1:q7': ('sqrt(2*W/L)', '0.4'),
+        'physics-11-section-11-r1:q7': ('1/(2*p*sqrt(L*C))', '796'),
+        'physics-11-section-12-r1:q8': ('-Im*sinPhase', '-0.016'),
+        'physics-11-section-14-r1:q7': ('Um/sqrt(2)', '7.07'),
+        'physics-11-section-14-r1:q8': ('Im/sqrt(2)', '0.141'),
+        'physics-11-section-15-r1:q7': ('1/(2*p*nu*C)', '159.24'),
+        'physics-11-section-16-r1:q9': ('-Um*sinPhase', '3'),
+        'physics-11-section-17-r1:q8': ('(XL-XC)/R', '1.33'),
+        'physics-11-section-18-r1:q7': ('1/(4*p^2*nu^2*L)', '0.000101'),
+        'physics-11-section-20-r1:q6': ('U*I*cosPhi', '3.6'),
+        'physics-11-section-21-r1:q7': ('v/Lw', '100000000'),
+        'physics-11-section-22-r1:q7': ('Ewave/(S*dt)', '1'),
+        'physics-11-section-23-r1:q7': ('2*R/c', '0.00001'),
+        'physics-11-section-25-r1:q10': ('sqrt((m+0.5)*Lw*R)', '0.0005'),
+        'physics-11-section-25-r1:q11': ('d*sinPhi/n', '0.0000006'),
+        'physics-11-section-26-r1:q6': ('d*y/(n*x)', '0.0000006'),
+        'physics-11-section-28-r1:q7': ('cosA^2', '0.36'),
+        'physics-11-section-30-r1:q7': ('Phi/Omega', '60'),
+        'physics-11-section-30-r1:q10': ('Iv*cosA/r^2', '10'),
+        'physics-11-section-32-r1:q6': ('tau0/sqrt(1-v^2/c^2)', '0.0000000075'),
+        'physics-11-section-33-r1:q8': (
+          'm0*c^2*(1/sqrt(1-v^2/c^2)-1)',
+          '4.5e-11',
+        ),
+        'physics-11-section-34-r1:q8': ('h*nu', '3.313e-19'),
+        'physics-11-section-35-r1:q6': ('h*nu-A', '3.313e-19'),
+        'physics-11-section-36-r1:q9': ('2*Iflux/c', '0.000004'),
+        'physics-11-section-37-r1:q8': ('-Eion/n^2', '-5.44e-19'),
+        'physics-11-section-39-r1:q7': ('Z*mp+(A-Z)*mn-mNuc', '5.1e-29'),
+        'physics-11-section-41-r1:q6': ('N0*2^(-t/T)', '1200'),
+        'physics-11-section-41-r1:q8': ('decayRate*N', '12'),
+        'physics-11-section-42-r1:q9': ('(mIn-mOut)*c^2', '4.5e-13'),
+        'physics-11-section-43-r1:q7': ('mParent*c^2/2', '1.08e-11'),
+      }[question['key']];
+      final formula = draft?.$1 ?? 'learner_formula';
+      final value = draft?.$2 ?? '1,25';
+      await mount(
+        tester,
+        scale: 2,
+        child: Scaffold(
+          body: SingleChildScrollView(
+            child: PhysicsAnswerEditor(
+              key: ValueKey(question['key']),
+              question: question,
+              draft: const {},
+              enabled: true,
+              onChanged: (v) => edited = v,
+            ),
+          ),
+        ),
+      );
+      await enter(tester, formula, value, question['suggested_unit'] as String);
+      expect(edited?['formula'], formula);
+      expect(edited?['value'], value);
+      expect(edited?['unit'], question['suggested_unit']);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
   testWidgets(
     'FRQ inputs have accessible labels and Android-sized tap targets',
     (tester) async {

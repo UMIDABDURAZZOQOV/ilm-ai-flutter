@@ -136,14 +136,33 @@ class PhysicsRepository {
     receiveTimeout: const Duration(seconds: 25),
   );
 
-  Future<Json> catalog(CancelToken cancel) async => checked(
-    (await dio.get(
-      '$prefix/catalog',
-      options: options,
-      cancelToken: cancel,
-    )).data,
-    'catalog',
-  );
+  Future<Json> catalog(CancelToken cancel, {int grade = 6}) async {
+    if (grade < 6 || grade > 11) throw ArgumentError.value(grade, 'grade');
+    final data = checked(
+      (await dio.get(
+        '$prefix/catalog',
+        queryParameters: {'grade': grade},
+        options: options,
+        cancelToken: cancel,
+      )).data,
+      'catalog',
+    );
+    if (data['grade'] != null && data['grade'] != grade) {
+      throw const InvalidApiResponseException();
+    }
+    final book = data['book'];
+    if (book != null &&
+        (book is! Map ||
+            book['grade'] != grade ||
+            book['title'] is! String ||
+            book['authors'] is! List ||
+            (book['authors'] as List).any((a) => a is! String) ||
+            book['publisher'] is! String ||
+            book['year'] is! int)) {
+      throw const InvalidApiResponseException();
+    }
+    return data;
+  }
 
   Future<Json> start(String key, String requestId, CancelToken cancel) async =>
       checked(

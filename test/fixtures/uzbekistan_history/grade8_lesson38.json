@@ -1,0 +1,1043 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:97ebbf23-418e-41bd-9e8a-52d40f2708e6",
+  "lesson_key": "uzh-8-38-r1",
+  "expires_at": "2026-10-28T03:53:38.542760+00:00",
+  "title": "Qo‘qon xonligida madaniy hayot",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-8-38-r1:c1",
+        "title": "Umarxon va adabiy muhit",
+        "body": "Qo‘qon, Marg‘ilon, Andijon, Namangan va Toshkent madaniy markazlar sifatida keltiriladi. Umarxon Amiriy taxallusi bilan ijod qilgan; uning atrofida shoirlar to‘plangan. Nodira bu adabiy muhit shakllanishida ham ishtirok etgan.",
+        "fact_ids": [
+          "uzh-8-topic-38:amiri"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:amiri",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              142
+            ],
+            "printed_pages": [
+              142
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 203
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c2",
+        "title": "Maxmur ijodi",
+        "body": "Maxmurning asl ismi Mahmud deb beriladi. Uning hajviy asarlarida kambag‘allik va mansabdorlar tanqid qilingan; Hapalak she’ri shu misollardan. Badiiy ifodani barcha aholi holatining statistik ro‘yxati deb olmaymiz.",
+        "fact_ids": [
+          "uzh-8-topic-38:maxmur"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:maxmur",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              142,
+              143
+            ],
+            "printed_pages": [
+              142,
+              143
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 203
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c3",
+        "title": "Gulxaniy va masal",
+        "body": "Muhammad Sharif Gulxaniy Zarbulmasal asari bilan tanishtiriladi. Undagi hayvon va qush obrazlari orqali ijtimoiy xulq tanqid qilinadi. Masal qahramoni tarixiy arxiv hujjatidagi shaxs emas.",
+        "fact_ids": [
+          "uzh-8-topic-38:gulxaniy"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:gulxaniy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              143
+            ],
+            "printed_pages": [
+              143
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c4",
+        "title": "Uvaysiy ta’limi va ijodi",
+        "body": "Jahon otin Uvaysiy taxallusi bilan ijod qilgan, Navoiy va boshqa adiblarni o‘rgangan. Qo‘qonda yoshlar ta’limi bilan shug‘ullanib, Nodira bilan ijodiy hamkorlik qilgan.",
+        "fact_ids": [
+          "uzh-8-topic-38:uvaysiy"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:uvaysiy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              143,
+              144
+            ],
+            "printed_pages": [
+              143,
+              144
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a",
+              "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c5",
+        "title": "Nodiraning taxalluslari",
+        "body": "Mohlaroyim Nodira, Komila va Maknuna taxalluslari bilan tilga olinadi. Turli taxalluslarni alohida uch shoira deb sanamaymiz. U ta’lim, kitob ko‘chirish va adabiy faoliyat bilan ham shug‘ullangan.",
+        "fact_ids": [
+          "uzh-8-topic-38:nodira"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:nodira",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              144
+            ],
+            "printed_pages": [
+              144
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c6",
+        "title": "Mashrab",
+        "body": "Boborahim Mashrabning Namanganda tug‘ilishi, tasavvuf ta’limi va sayohatlari tasvirlanadi. She’rlaridagi adolatsizlik tanqidi badiiy guvohlik sifatida o‘qiladi.",
+        "fact_ids": [
+          "uzh-8-topic-38:mashrab"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:mashrab",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              144
+            ],
+            "printed_pages": [
+              144
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c7",
+        "title": "Fazliy va tarixiy asar",
+        "body": "Fazliy Namangoniy 1822-yilda Umarxon topshirig‘i bilan Umarnoma asarini tugatgani yoziladi. Mirzo Qalandar Mushrif esa Shohnomayi nusratpayom asariga bog‘langan; bir hukmdorga bag‘ishlanish mualliflarni bir shaxs qilmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-38:fazliy"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:fazliy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              145
+            ],
+            "printed_pages": [
+              145
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c8",
+        "title": "Tarixchilarni ajratish",
+        "body": "Muhammad Hakimxon to‘ra Muntaxab ut-tavorix, Muhammad Solih esa Tarixi jadidayi Toshkand asari bilan beriladi. Bular Buxoro, Qo‘qon va Toshkent tarixini o‘rganishda qo‘llanadigan yozma manbalar.",
+        "fact_ids": [
+          "uzh-8-topic-38:historian"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:historian",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              145
+            ],
+            "printed_pages": [
+              145
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-8-38-r1:c9",
+        "title": "Me’moriy obidalar",
+        "body": "Norbo‘tabiy madrasasi, Daxmayi Shohon va Xudoyorxon o‘rdasi tasvirlanadi. Daxmayi Shohon shohlar maqbarasi bo‘lib, madrasa vazifasi bilan aynan teng emas; suratdagi bino hozirgi barcha tarixiy holatni ko‘rsatmaydi.",
+        "fact_ids": [
+          "uzh-8-topic-38:buildings"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:buildings",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              145,
+              146
+            ],
+            "printed_pages": [
+              145,
+              146
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e",
+              "802609febb371f3960ee284be3ea952ac261ac32e0f246e7729a3e8550a09be9"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Amiriy — Umarxonning, Uvaysiy — Jahon otinning taxallusi. Zarbulmasal esa asar nomi. Shaxs, taxallus, asar va bino uchun alohida ustun tuzing.",
+        "fact_ids": [
+          "uzh-8-topic-38:amiri",
+          "uzh-8-topic-38:gulxaniy",
+          "uzh-8-topic-38:uvaysiy",
+          "uzh-8-topic-38:buildings"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:amiri",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              142
+            ],
+            "printed_pages": [
+              142
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 203
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:gulxaniy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              143
+            ],
+            "printed_pages": [
+              143
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:uvaysiy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              143,
+              144
+            ],
+            "printed_pages": [
+              143,
+              144
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a",
+              "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:buildings",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              145,
+              146
+            ],
+            "printed_pages": [
+              145,
+              146
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e",
+              "802609febb371f3960ee284be3ea952ac261ac32e0f246e7729a3e8550a09be9"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Masal, hajviy she’r, tarixiy asar va bino suratidan olinadigan dalillarni qiyoslang. Qaysi xulosani qo‘shimcha manbasiz chiqarmaysiz?",
+        "fact_ids": [
+          "uzh-8-topic-38:maxmur",
+          "uzh-8-topic-38:gulxaniy",
+          "uzh-8-topic-38:historian",
+          "uzh-8-topic-38:buildings"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:maxmur",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              142,
+              143
+            ],
+            "printed_pages": [
+              142,
+              143
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+            "start_after_y": 203
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:gulxaniy",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              143
+            ],
+            "printed_pages": [
+              143
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:historian",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              145
+            ],
+            "printed_pages": [
+              145
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-8",
+            "grade": 8,
+            "chapter_id": "uzh-8-chapter-4",
+            "topic_id": "uzh-8-topic-38",
+            "fact_id": "uzh-8-topic-38:buildings",
+            "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+            "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+            "pdf_pages": [
+              145,
+              146
+            ],
+            "printed_pages": [
+              145,
+              146
+            ],
+            "native_text_sha256": [
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+              "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+            ],
+            "verification": "original_image_checked_ocr_locator_only",
+            "page_image_sha256": [
+              "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e",
+              "802609febb371f3960ee284be3ea952ac261ac32e0f246e7729a3e8550a09be9"
+            ],
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:amiri",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          142
+        ],
+        "printed_pages": [
+          142
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 203
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:maxmur",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          142,
+          143
+        ],
+        "printed_pages": [
+          142,
+          143
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41",
+          "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+        "start_after_y": 203
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:gulxaniy",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          143
+        ],
+        "printed_pages": [
+          143
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:uvaysiy",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          143,
+          144
+        ],
+        "printed_pages": [
+          143,
+          144
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a",
+          "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:nodira",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          144
+        ],
+        "printed_pages": [
+          144
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:mashrab",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          144
+        ],
+        "printed_pages": [
+          144
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:fazliy",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          145
+        ],
+        "printed_pages": [
+          145
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:historian",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          145
+        ],
+        "printed_pages": [
+          145
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-8",
+        "grade": 8,
+        "chapter_id": "uzh-8-chapter-4",
+        "topic_id": "uzh-8-topic-38",
+        "fact_id": "uzh-8-topic-38:buildings",
+        "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+        "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+        "pdf_pages": [
+          145,
+          146
+        ],
+        "printed_pages": [
+          145,
+          146
+        ],
+        "native_text_sha256": [
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+          "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+        ],
+        "verification": "original_image_checked_ocr_locator_only",
+        "page_image_sha256": [
+          "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e",
+          "802609febb371f3960ee284be3ea952ac261ac32e0f246e7729a3e8550a09be9"
+        ],
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-8-38-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "Umarxon she’r yozgan taxallus qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Amiriy"
+        },
+        {
+          "id": "o2",
+          "label": "Gulxaniy"
+        },
+        {
+          "id": "o3",
+          "label": "Uvaysiy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:amiri",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            142
+          ],
+          "printed_pages": [
+            142
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "a572dafbd3fb52baae469ccd044b2db5598ebe4c93464a61a6f800e5560f9a41"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed.",
+          "start_after_y": 203
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-38-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Zarbulmasal asari qaysi adibga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Maxmur"
+        },
+        {
+          "id": "o2",
+          "label": "Gulxaniy"
+        },
+        {
+          "id": "o3",
+          "label": "Fazliy"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:gulxaniy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            143
+          ],
+          "printed_pages": [
+            143
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-38-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Daxmayi Shohon qanday inshoot sifatida izohlangan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Maktabxona"
+        },
+        {
+          "id": "o2",
+          "label": "Savdo timi"
+        },
+        {
+          "id": "o3",
+          "label": "Shohlar maqbarasi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:buildings",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            145,
+            146
+          ],
+          "printed_pages": [
+            145,
+            146
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e",
+            "802609febb371f3960ee284be3ea952ac261ac32e0f246e7729a3e8550a09be9"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-38-r1:q4",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Jahon otinning adabiy taxallusini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:uvaysiy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            143,
+            144
+          ],
+          "printed_pages": [
+            143,
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b",
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9cf48650e889dcd3cba724042389c39098165ca19007f2f47a9b64998a8cef0a",
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-38-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Fazliy Namangoniy tugatgan tarixiy asar nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:fazliy",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            145
+          ],
+          "printed_pages": [
+            145
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "3d9c4fe73a5e0fab6d4cdaf236732641173df0020044343202014cbeab889f3e"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-8-38-r1:q6",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Nodira, Komila va Maknuna taxalluslari kimga tegishli?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Mohlaroyim"
+        },
+        {
+          "id": "o2",
+          "label": "Jahon otin"
+        },
+        {
+          "id": "o3",
+          "label": "Muhammad Sharif"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-8",
+          "grade": 8,
+          "chapter_id": "uzh-8-chapter-4",
+          "topic_id": "uzh-8-topic-38",
+          "fact_id": "uzh-8-topic-38:nodira",
+          "file_name": "ozbekiston_tarixi_8_uzb.pdf",
+          "sha256": "756c63e79c3008fc3445a686e591012f059de5ae3757a5f2f2725f91986e076f",
+          "pdf_pages": [
+            144
+          ],
+          "printed_pages": [
+            144
+          ],
+          "native_text_sha256": [
+            "e362c7f175c567aa31baca6968745e52494a1ce65a921f1f73d1428e24de306b"
+          ],
+          "verification": "original_image_checked_ocr_locator_only",
+          "page_image_sha256": [
+            "9e6493ddd4f8a6845c2660e27e6c703b254a74257048a1bf467959303917cfa5"
+          ],
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}

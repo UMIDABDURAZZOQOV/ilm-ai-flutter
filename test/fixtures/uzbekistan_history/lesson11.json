@@ -1,0 +1,918 @@
+{
+  "assessment_version": 2,
+  "attempt_id": "uzhv2:1:f2ae94bf-2776-43d4-aaf6-204e0a0439cc",
+  "lesson_key": "uzh-7-11-r1",
+  "expires_at": "2026-10-27T18:42:33.494479+00:00",
+  "title": "Abbosiylar davrida Xuroson va Movarounnahr",
+  "content": {
+    "cards": [
+      {
+        "key": "uzh-7-11-r1:c1",
+        "title": "Abu Muslim da’vati",
+        "body": "Darslik Abu Muslimning umaviylarga qarshi da’vatini 747-yil bilan bog‘laydi. Uning harakati Xuroson, Movarounnahr va Toxaristonga tarqalgan deb beriladi. Harakat boshlanishi bilan yangi sulola hokimiyatga kelishi alohida voqealardir.",
+        "fact_ids": [
+          "uzh-7-topic-11:campaign747"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:campaign747",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              38
+            ],
+            "printed_pages": [
+              38
+            ],
+            "native_text_sha256": [
+              "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c2",
+        "title": "Umaviylar va abbosiylar",
+        "body": "Mavzu umaviylar o‘rniga abbosiylar kelishini bayon qiladi va Abul Abbos Saffohni yangi hukmdor sifatida tilga oladi. Kitobdagi hokimiyat almashish sanalari bir xil emas; ayni yil bu darsda tasdiqlangan avtomatik kalit sifatida so‘ralmaydi.",
+        "fact_ids": [
+          "uzh-7-topic-11:dynasty"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:dynasty",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              38,
+              39
+            ],
+            "printed_pages": [
+              38,
+              39
+            ],
+            "native_text_sha256": [
+              "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df",
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c3",
+        "title": "Talos voqeasi",
+        "body": "Kitob 751-yili Talos vodiysida Abu Muslim yuborgan harbiy kuch bilan Xitoy qo‘shini to‘qnashganini qayd qiladi. Bu voqeani yangi sulolaning tashkil topish sanasi bilan aynan tenglashtirmang.",
+        "fact_ids": [
+          "uzh-7-topic-11:talas751"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:talas751",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c4",
+        "title": "Abu Muslimning keyingi taqdiri",
+        "body": "Sahifada Abu Muslim xalifa buyrug‘i bilan 755-yili o‘ldirilgani aytiladi. Muallif bu voqeani keyingi norozilik kuchayishi bilan bog‘laydi; sana haqidagi qayd bilan sabab-oqibat izohi ikki xil dalildir.",
+        "fact_ids": [
+          "uzh-7-topic-11:death755"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:death755",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c5",
+        "title": "Vazir vazifasi",
+        "body": "Boshqaruv bayonida xalifa vazir ul-vuzaroga, ya’ni ulug‘ vazirga tayangani ko‘rsatiladi. Bu mansab harbiy ishlar uchun alohida mas’ul amir ul-umaro vazifasi bilan bir xil emas.",
+        "fact_ids": [
+          "uzh-7-topic-11:vazir"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:vazir",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              40
+            ],
+            "printed_pages": [
+              40
+            ],
+            "native_text_sha256": [
+              "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c6",
+        "title": "Harbiy boshqaruv",
+        "body": "Amir ul-umaro harbiy ishlar uchun mas’ul bo‘lgan mansab sifatida berilgan. Mansab nomini bir shaxsning ismi yoki viloyat nomi bilan almashtirmang.",
+        "fact_ids": [
+          "uzh-7-topic-11:commander"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:commander",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              40
+            ],
+            "printed_pages": [
+              40
+            ],
+            "native_text_sha256": [
+              "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c7",
+        "title": "Sharq ishlari devoni",
+        "body": "Movarounnahrga tegishli masalalar devon al-mashriqda hal qilingani aytiladi. Devon — idora; Movarounnahr esa shu banddagi hudud nomidir.",
+        "fact_ids": [
+          "uzh-7-topic-11:eastoffice"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:eastoffice",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              40
+            ],
+            "printed_pages": [
+              40
+            ],
+            "native_text_sha256": [
+              "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      },
+      {
+        "key": "uzh-7-11-r1:c8",
+        "title": "Va’da va natijani qiyoslash",
+        "body": "Muallif yangi sulolaning kelishi aholi kutgan yengilliklarni bermaganini ta’kidlaydi. Bu ijtimoiy natijaga berilgan umumiy talqin; barcha tabaqa va har bir kishi bir xil tajriba kechirganini alohida dalilsiz aytmaymiz.",
+        "fact_ids": [
+          "uzh-7-topic-11:promises"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:promises",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ]
+      }
+    ],
+    "formulas": [],
+    "examples": [
+      {
+        "title": "Birgalikda tahlil qilamiz",
+        "body": "Da’vat boshlangan yil, Talos to‘qnashuvi va Abu Muslimning o‘lim qaydini uchta alohida voqea deb ajrating. Matndagi sulola almashish sanasining tafovuti esa qo‘shimcha tekshiruv belgisi bo‘lib qoladi, taxmin bilan yopilmaydi.",
+        "fact_ids": [
+          "uzh-7-topic-11:campaign747",
+          "uzh-7-topic-11:dynasty",
+          "uzh-7-topic-11:talas751",
+          "uzh-7-topic-11:death755"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:campaign747",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              38
+            ],
+            "printed_pages": [
+              38
+            ],
+            "native_text_sha256": [
+              "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:dynasty",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              38,
+              39
+            ],
+            "printed_pages": [
+              38,
+              39
+            ],
+            "native_text_sha256": [
+              "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df",
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:talas751",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:death755",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "steps": []
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Dalil bilan fikrlang",
+        "body": "Muallifning va’da va natijalar haqidagi xulosasini bir aniq voqea bilan taqqoslang. Muallif talqini bilan bevosita sana qaydini qanday ajratasiz?",
+        "fact_ids": [
+          "uzh-7-topic-11:campaign747",
+          "uzh-7-topic-11:talas751",
+          "uzh-7-topic-11:promises"
+        ],
+        "source_refs": [
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:campaign747",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              38
+            ],
+            "printed_pages": [
+              38
+            ],
+            "native_text_sha256": [
+              "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:talas751",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          },
+          {
+            "book_id": "uzbekistan-history-uz-grade-7",
+            "grade": 7,
+            "chapter_id": "uzh-7-chapter-2",
+            "topic_id": "uzh-7-topic-11",
+            "fact_id": "uzh-7-topic-11:promises",
+            "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+            "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+            "pdf_pages": [
+              39
+            ],
+            "printed_pages": [
+              39
+            ],
+            "native_text_sha256": [
+              "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+            ],
+            "verification": "original_text_and_image_checked",
+            "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+          }
+        ],
+        "evaluation": "self_or_teacher_review_only",
+        "rubric": [
+          "Fikrni aynan darsdagi dalil bilan bog‘lang.",
+          "Sabab yoki oqibatni izohlang;manbada yo‘q da’vo qo‘shmang.",
+          "Boshqa asosli izoh ehtimoli va manba doirasini ajrating."
+        ]
+      }
+    ],
+    "source_refs": [
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:campaign747",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          38
+        ],
+        "printed_pages": [
+          38
+        ],
+        "native_text_sha256": [
+          "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:dynasty",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          38,
+          39
+        ],
+        "printed_pages": [
+          38,
+          39
+        ],
+        "native_text_sha256": [
+          "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df",
+          "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:talas751",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          39
+        ],
+        "printed_pages": [
+          39
+        ],
+        "native_text_sha256": [
+          "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:death755",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          39
+        ],
+        "printed_pages": [
+          39
+        ],
+        "native_text_sha256": [
+          "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:vazir",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          40
+        ],
+        "printed_pages": [
+          40
+        ],
+        "native_text_sha256": [
+          "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:commander",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          40
+        ],
+        "printed_pages": [
+          40
+        ],
+        "native_text_sha256": [
+          "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:eastoffice",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          40
+        ],
+        "printed_pages": [
+          40
+        ],
+        "native_text_sha256": [
+          "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      },
+      {
+        "book_id": "uzbekistan-history-uz-grade-7",
+        "grade": 7,
+        "chapter_id": "uzh-7-chapter-2",
+        "topic_id": "uzh-7-topic-11",
+        "fact_id": "uzh-7-topic-11:promises",
+        "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+        "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+        "pdf_pages": [
+          39
+        ],
+        "printed_pages": [
+          39
+        ],
+        "native_text_sha256": [
+          "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+        ],
+        "verification": "original_text_and_image_checked",
+        "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+      }
+    ],
+    "xp_reward": 10
+  },
+  "questions": [
+    {
+      "key": "uzh-7-11-r1:q1",
+      "response_kind": "concept_selection",
+      "phase": "guided",
+      "prompt": "§11dagi 747-yilgi da’vat bilan qaysi shaxs bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Abu Muslim"
+        },
+        {
+          "id": "o2",
+          "label": "Qutayba ibn Muslim"
+        },
+        {
+          "id": "o3",
+          "label": "Rofe ibn Lays"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:campaign747",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            38
+          ],
+          "printed_pages": [
+            38
+          ],
+          "native_text_sha256": [
+            "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-11-r1:q2",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Bu mavzuda umaviylar o‘rniga kelgan sulola qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Tohiriylar"
+        },
+        {
+          "id": "o2",
+          "label": "Abbosiylar"
+        },
+        {
+          "id": "o3",
+          "label": "G‘aznaviylar"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:dynasty",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            38,
+            39
+          ],
+          "printed_pages": [
+            38,
+            39
+          ],
+          "native_text_sha256": [
+            "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df",
+            "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-11-r1:q3",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "751-yilgi to‘qnashuv manbada qaysi joyga bog‘langan?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Quva"
+        },
+        {
+          "id": "o2",
+          "label": "Kat"
+        },
+        {
+          "id": "o3",
+          "label": "Talos vodiysi"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:talas751",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            39
+          ],
+          "printed_pages": [
+            39
+          ],
+          "native_text_sha256": [
+            "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-11-r1:q4",
+      "response_kind": "concept_selection",
+      "phase": "independent",
+      "prompt": "Harbiy ishlar mas’uli bilan farqli ravishda ulug‘ vazirning nomi qaysi?",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Vazir ul-vuzaro"
+        },
+        {
+          "id": "o2",
+          "label": "Amir ul-umaro"
+        },
+        {
+          "id": "o3",
+          "label": "Devon al-mashriq"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:vazir",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            40
+          ],
+          "printed_pages": [
+            40
+          ],
+          "native_text_sha256": [
+            "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-11-r1:q5",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "§11da harbiy ishlarga mas’ul mansab qanday atalgan?",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:commander",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            40
+          ],
+          "printed_pages": [
+            40
+          ],
+          "native_text_sha256": [
+            "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-11-r1:q6",
+      "response_kind": "short_text",
+      "phase": "independent",
+      "prompt": "Movarounnahr masalalari ko‘riladigan devon nomini yozing.",
+      "input_hint": "Bir ism yoki atama;120 belgigacha.",
+      "max_length": 120,
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:eastoffice",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            40
+          ],
+          "printed_pages": [
+            40
+          ],
+          "native_text_sha256": [
+            "b5249c2773873ea6fdd54bd58bf6453a3337b1762adc17575fe42c4891ba9d40"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    },
+    {
+      "key": "uzh-7-11-r1:q7",
+      "response_kind": "ordering",
+      "phase": "independent",
+      "prompt": "Darsda ajratilgan uch voqeani xronologik tartiblang.",
+      "items": [
+        {
+          "id": "e2",
+          "label": "Talos vodiysidagi to‘qnashuv",
+          "fact_id": "uzh-7-topic-11:talas751"
+        },
+        {
+          "id": "e3",
+          "label": "Abu Muslimning o‘limi haqidagi qayd",
+          "fact_id": "uzh-7-topic-11:death755"
+        },
+        {
+          "id": "e1",
+          "label": "Abu Muslimning umaviylarga qarshi da’vati",
+          "fact_id": "uzh-7-topic-11:campaign747"
+        }
+      ],
+      "source_refs": [
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:campaign747",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            38
+          ],
+          "printed_pages": [
+            38
+          ],
+          "native_text_sha256": [
+            "bd614962fbec2dc758b1b1b02f893165a0a00fc37677b09909688c5c024207df"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:talas751",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            39
+          ],
+          "printed_pages": [
+            39
+          ],
+          "native_text_sha256": [
+            "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        },
+        {
+          "book_id": "uzbekistan-history-uz-grade-7",
+          "grade": 7,
+          "chapter_id": "uzh-7-chapter-2",
+          "topic_id": "uzh-7-topic-11",
+          "fact_id": "uzh-7-topic-11:death755",
+          "file_name": "ozbekiston_tarixi_7_uzb.pdf",
+          "sha256": "3b55065e7dac210e223344ca01697eb5c5bca314cf09095b3f4597784a35346a",
+          "pdf_pages": [
+            39
+          ],
+          "printed_pages": [
+            39
+          ],
+          "native_text_sha256": [
+            "e88118a632061588d4cca9982de027bd87d1c0b6bc49f8fbad5106171c8c15ae"
+          ],
+          "verification": "original_text_and_image_checked",
+          "review_note": "Full original page images read; this citation is limited to the current paragraph region. Independent history teacher not claimed."
+        }
+      ]
+    }
+  ],
+  "answers": {},
+  "result": null
+}
