@@ -107,7 +107,7 @@ Set-Location C:\Users\Page\Desktop\Projects\ilm-ai-flutter-phone-qa
 C:\flutter\bin\flutter.bat pub get
 C:\flutter\bin\flutter.bat analyze
 C:\flutter\bin\flutter.bat test
-.\scripts\build_phone_qa.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build_phone_qa.ps1
 ```
 
 The build script runs `flutter build apk --debug` with the dedicated target and
