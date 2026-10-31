@@ -7,10 +7,12 @@ import 'core/providers/app_providers.dart';
 import 'core/storage/prefs_service.dart';
 import 'core/config/integrated_beta.dart';
 import 'core/network/dio_client.dart' show apiBaseUrl;
+import 'core/performance/beta_performance_probe.dart';
 
 void main() async {
   if (integratedBetaRequested) requireBetaConfiguration(apiBaseUrl);
   WidgetsFlutterBinding.ensureInitialized();
+  BetaPerformanceProbe.start();
 
   // Edge-to-edge: draw behind the status & navigation bars and make them fully
   // transparent, so there are no grey strips at the top/bottom — the app's own

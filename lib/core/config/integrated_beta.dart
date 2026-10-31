@@ -1,12 +1,17 @@
 import 'package:flutter/foundation.dart';
 
 const integratedBetaRequested = bool.fromEnvironment('INTEGRATED_BETA');
-const integratedBeta = kDebugMode && integratedBetaRequested;
+const betaPerformanceRequested = bool.fromEnvironment('BETA_PERFORMANCE');
+const integratedBeta =
+    integratedBetaRequested &&
+    (kDebugMode || (kProfileMode && betaPerformanceRequested));
 const betaApiOrigin = String.fromEnvironment(
   'BETA_API_ORIGIN',
   defaultValue: 'http://127.0.0.1:8930',
 );
-const mobileAppScheme = integratedBeta ? 'ilmai-beta' : 'ilmai';
+const mobileAppScheme = integratedBeta
+    ? (kProfileMode ? 'ilmai-beta-perf' : 'ilmai-beta')
+    : 'ilmai';
 const betaSubjectSlugs = {
   'biologiya',
   'fizika',
@@ -40,9 +45,10 @@ bool isBetaOrigin(Uri uri) {
 void requireBetaConfiguration(String api) {
   if (!integratedBeta ||
       api != betaApiOrigin ||
-      !isBetaOrigin(Uri.parse(api))) {
+      !isBetaOrigin(Uri.parse(api)) ||
+      (kProfileMode && api != 'http://127.0.0.1:8930')) {
     throw StateError(
-      'Integrated beta requires a debug build and its separate local/staging API origin.',
+      'Integrated beta requires debug or explicitly opted-in local profile mode; release is forbidden.',
     );
   }
 }

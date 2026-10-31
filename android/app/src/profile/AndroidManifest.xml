@@ -4,4 +4,6 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Profile benchmarking uses the same USB-only transport; no public cleartext. -->
+    <application android:networkSecurityConfig="@xml/qa_network_security_config" />
 </manifest>

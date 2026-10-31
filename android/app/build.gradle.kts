@@ -34,6 +34,9 @@ if (phoneQaEnabled != phoneQaTarget) {
 val integratedBetaEnabled = (project.findProperty("dart-defines") as? String)
     ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
     ?.contains("INTEGRATED_BETA=true") == true
+val betaPerformanceEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("BETA_PERFORMANCE=true") == true
 if (integratedBetaEnabled && (phoneQaEnabled || physicsPreviewBuild ||
     !(flutterTarget == "main.dart" || flutterTarget.endsWith("/main.dart")))) {
     throw GradleException("Integrated beta must use the normal main.dart target, separately from QA previews.")
@@ -79,6 +82,14 @@ android {
     }
 
     buildTypes {
+        maybeCreate("profile").apply {
+            if (integratedBetaEnabled && betaPerformanceEnabled) {
+                applicationIdSuffix = ".beta.perf"
+                manifestPlaceholders["appLabel"] = "ILM AI Beta Perf"
+                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-beta-perf"
+                signingConfig = signingConfigs.getByName("debug")
+            }
+        }
         debug {
             if (integratedBetaEnabled) {
                 applicationIdSuffix = ".beta"
@@ -120,6 +131,9 @@ dependencies {
 
 
 gradle.taskGraph.whenReady {
+    if (integratedBetaEnabled && allTasks.any { it.name.contains("Profile") } && !betaPerformanceEnabled) {
+        throw GradleException("Beta profile requires explicit BETA_PERFORMANCE=true; release stays forbidden.")
+    }
     if (integratedBetaEnabled && allTasks.any { it.name.contains("Release") }) {
         throw GradleException("Integrated beta is an internal debug build. Production release is a separate task.")
     }
