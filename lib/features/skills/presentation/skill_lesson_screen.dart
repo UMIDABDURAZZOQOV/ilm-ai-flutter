@@ -25,6 +25,8 @@ import 'mascot.dart';
 import 'skill_ui.dart';
 import 'lesson_completion_view.dart';
 import 'content_source_button.dart';
+import '../../../core/config/integrated_beta.dart';
+import '../../study_help/study_help.dart';
 import 'study_exit_guard.dart';
 import '../../../core/services/sound_service.dart';
 import '../../../core/widgets/celebration_confetti.dart';
@@ -878,6 +880,15 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           language: language,
                         ),
                       const SizedBox(height: 24),
+                      if (integratedBeta && !_answered && _attemptId != null)
+                        StudyHelpButton(
+                          language: language,
+                          contextData: StudyHelpContext(
+                            subject: 'biologiya',
+                            attemptId: 'lesson:$_attemptId',
+                            questionKey: '${q.id}',
+                          ),
+                        ),
                       for (final option in q.options)
                         DuoChoiceCard(
                           text: cleanMath(option),
@@ -935,6 +946,18 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                     : null,
                 language: language,
                 correct: isCorrect,
+                help: integratedBeta && _attemptId != null
+                    ? StudyHelpButton(
+                        language: language,
+                        contextData: StudyHelpContext(
+                          subject: 'biologiya',
+                          attemptId: 'lesson:$_attemptId',
+                          questionKey: '${q.id}',
+                          checked: _answered,
+                          selectedAnswer: _selected,
+                        ),
+                      )
+                    : null,
                 correctAnswer: cleanMath(q.correctAnswer),
                 explanation: q.explanation == null
                     ? ''

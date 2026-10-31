@@ -22,6 +22,7 @@ import 'skill_profile_screen.dart';
 import 'skill_quests_screen.dart';
 import 'skill_ui.dart';
 import 'curriculum_learning_screen.dart';
+import 'subject_switch_sheet.dart';
 import '../../../core/config/integrated_beta.dart';
 import '../../learning/presentation/assessment_practice_screen.dart';
 
@@ -62,13 +63,32 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
     });
   }
 
-  Future<void> _select(SkillSubject subject) async {
+  Future<void> _quickSwitch() async {
+    final uid = ref.read(currentUserIdProvider);
+    final subjects = ref.read(subjectCatalogProvider).valueOrNull;
+    if (uid == null || subjects == null) return;
+    final choice = await showSubjectSwitcher(
+      context,
+      subjects: subjects,
+      language: ref.read(languageProvider),
+      grade: _catalogGrade,
+      currentSubject: ref.read(selectedSubjectProvider),
+    );
+    if (!mounted || ref.read(currentUserIdProvider) != uid || choice == null) {
+      return;
+    }
+    await _select(choice.subject, grade: choice.grade);
+  }
+
+  Future<void> _select(SkillSubject subject, {int? grade}) async {
     if (!subject.available) return;
     final user = ref.read(currentUserIdProvider);
     if (user == null) return;
-    final currentGrade = int.tryParse(
-      ref.read(prefsServiceProvider).getString('class_$user') ?? '',
-    );
+    final currentGrade =
+        grade ??
+        int.tryParse(
+          ref.read(prefsServiceProvider).getString('class_$user') ?? '',
+        );
     await ref.read(learningPreferencesProvider).save(user, {
       'subject': subject.slug,
       if (integratedBeta && subject.grades.isNotEmpty)
@@ -290,7 +310,9 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                     'curriculum:${ref.watch(currentUserIdProvider)}:${activeSubject.slug}',
                   ),
                   subject: activeSubject,
-                  onChangeSubject: () => setState(() => _choosing = true),
+                  onChangeSubject: integratedBeta
+                      ? _quickSwitch
+                      : () => setState(() => _choosing = true),
                 )
               : SkillPathScreen(
                   key: ValueKey('${activeSubject.slug}:$_revision'),

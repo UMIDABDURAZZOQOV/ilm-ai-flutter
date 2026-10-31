@@ -5,14 +5,14 @@ $betaRoot = Split-Path $PSScriptRoot -Parent
 Push-Location $betaRoot
 try {
     $betaBranch = git branch --show-current
-    if ($betaBranch -ne 'beta/android-integrated-five-subjects') { throw 'Use the isolated integrated beta branch.' }
+    if ($betaBranch -notin @('beta/android-integrated-five-subjects', 'feat/beta-subject-switch-ai-help')) { throw 'Use an explicitly approved isolated beta branch.' }
     if (git status --porcelain) { throw 'Commit the reviewed implementation before building its receipt.' }
     $betaBackend = Join-Path (Split-Path $betaRoot -Parent) 'ilm-ai-beta'
     if ((git -C $betaBackend branch --show-current) -ne $betaBranch -or (git -C $betaBackend status --porcelain)) {
         throw 'The corresponding isolated beta backend must be committed and clean.'
     }
     $ErrorActionPreference = 'Continue'
-    & $Flutter build apk --debug --no-pub -t lib/main.dart `
+    & $Flutter --no-version-check build apk --debug --no-pub -t lib/main.dart `
         --dart-define=INTEGRATED_BETA=true `
         --dart-define=API_URL=http://127.0.0.1:8930
     $betaBuildExit = $LASTEXITCODE

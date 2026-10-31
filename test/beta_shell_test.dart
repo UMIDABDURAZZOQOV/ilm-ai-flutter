@@ -211,4 +211,80 @@ void main() {
       await tester.pumpWidget(const SizedBox());
     },
   );
+
+  testWidgets(
+    'Learn quick switch saves subject and grade without changing drafts',
+    (tester) async {
+      SharedPreferences.setMockInitialValues({
+        'subject_1': 'fizika',
+        PrefsKeys.language: 'uz',
+        'class_1': '7',
+        'assessment_draft_sentinel': 'existing progress',
+        'subject_2': 'biologiya',
+      });
+      final prefs = await PrefsService.create();
+      final dio = Dio(BaseOptions(baseUrl: betaApiOrigin));
+      dio.httpClientAdapter = Adapter((r) {
+        if (r.path.endsWith('/grades')) {
+          return reply(200, {
+            'grades': [
+              for (final g in [7, 8])
+                {
+                  'grade': g,
+                  'title_uz': 'Source grade $g',
+                  'status': 'mapped',
+                  'ready_lessons': 0,
+                },
+            ],
+          });
+        }
+        if (r.path.endsWith('/preferences')) return reply(200, {'ok': true});
+        return reply(404, {});
+      });
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            prefsServiceProvider.overrideWithValue(prefs),
+            currentUserIdProvider.overrideWithValue(1),
+            dioProvider.overrideWithValue(dio),
+            subjectCatalogProvider.overrideWith(
+              (ref) async => [
+                for (final slug in ['fizika', 'kimyo'])
+                  SkillSubject(
+                    id: 1,
+                    slug: slug,
+                    nameUz: slug,
+                    nameRu: slug,
+                    nameEn: slug,
+                    grades: [7, 8],
+                  ),
+              ],
+            ),
+          ],
+          child: MaterialApp(
+            theme: buildAppTheme(lightColors),
+            home: const SubjectHomeScreen(),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('subject_study_chat')), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('quick_subject_switch')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('switch_grade')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('8-sinf').last);
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('switch_kimyo')));
+      await tester.pumpAndSettle();
+      expect(prefs.getString('subject_1'), 'kimyo');
+      expect(prefs.getString('class_1'), '8');
+      expect(prefs.getString('assessment_draft_sentinel'), 'existing progress');
+      expect(prefs.getString('subject_2'), 'biologiya');
+      expect(find.text('kimyo · 8-sinf'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+      await tester.pumpWidget(const SizedBox());
+      dio.close();
+    },
+  );
 }

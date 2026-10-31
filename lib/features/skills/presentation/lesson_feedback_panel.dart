@@ -21,12 +21,14 @@ class LessonFeedbackPanel extends StatelessWidget {
     this.saving = false,
     this.saveError,
     this.source,
+    this.help,
   });
   final String language, correctAnswer, explanation;
   final bool correct, reviewHint, saving;
   final VoidCallback onContinue;
   final String? saveError;
   final Widget? source;
+  final Widget? help;
 
   @override
   Widget build(BuildContext context) {
@@ -141,6 +143,7 @@ class LessonFeedbackPanel extends StatelessWidget {
                                 ],
                               ),
                             ],
+                            ?help,
                             if (explanation.isNotEmpty) ...[
                               const SizedBox(height: 8),
                               Text(

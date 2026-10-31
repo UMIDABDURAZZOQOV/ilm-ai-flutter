@@ -1,5 +1,18 @@
 # Integrated Android Beta
 
+2026-10-31 update: active isolated branch `feat/beta-subject-switch-ai-help`.
+Adds direct subject/grade switching and question/subject study help with an
+honest reviewed-evidence fallback. No actual AI token is configured. See
+`../CLAUDE.md` and backend `docs/beta/STUDY_HELP.md` for audit, files and tests.
+The older beta branch below remains a preserved checkpoint. The build receipt
+beside the APK records the actual new branch and exact commits.
+
+Validation on 2026-10-31: 1,314 normal Flutter tests and 56 beta/feedback tests
+passed; analyze found no issues. Backend SQLite integration/help regression:
+14 passed; provider/config verification: 2 passed. The local server retained
+all 9 user/progress table digests after --resume. New feature device acceptance
+remains pending because no Android device is currently visible to Windows/ADB.
+
 Branch: `beta/android-integrated-five-subjects` in this repository and sibling
 `ilm-ai-beta`. Based on preserved QA checkpoints 4cd3a0a / 0c7a80e. Those QA
 commits exist locally; GitHub commit lookups returned 422 and no QA branch was

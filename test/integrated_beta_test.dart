@@ -367,6 +367,10 @@ void main() {
             ),
             isFalse,
           );
+          expect(
+            find.byKey(const ValueKey('question_study_help')),
+            findsOneWidget,
+          );
           await tester.pumpWidget(const SizedBox());
           dio.close();
         },
@@ -379,6 +383,10 @@ void main() {
           addTearDown(() => tester.binding.setSurfaceSize(null));
           await mount(tester, scale: scale);
           await exercises(tester);
+          expect(
+            find.byKey(const ValueKey('question_study_help')),
+            findsOneWidget,
+          );
           if (preset.slug == 'fizika') {
             for (final entry in [
               ('physics-formula', 'x/2'),
@@ -396,6 +404,10 @@ void main() {
           }
           await action(tester);
           expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+          expect(
+            find.byKey(const ValueKey('question_study_help')),
+            findsOneWidget,
+          );
           expect(requests.where((r) => r.path.endsWith('/answers')).length, 1);
           expect(tester.takeException(), isNull);
           await tester.pumpWidget(const SizedBox());

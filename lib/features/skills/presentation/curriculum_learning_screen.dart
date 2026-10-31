@@ -4,6 +4,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart' show foregroundOn;
 import '../../../core/config/mobile_release.dart';
+import '../../../core/config/integrated_beta.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/network/error_message.dart';
@@ -16,6 +17,7 @@ import '../data/skill_tree_repository.dart';
 import 'mascot.dart';
 import 'skill_path_screen.dart';
 import 'skill_ui.dart';
+import '../../study_help/study_help.dart';
 
 final curriculumGradesProvider =
     FutureProvider.family<List<CurriculumGrade>, String>(
@@ -294,8 +296,17 @@ class _CurriculumLearningScreenState
                   runSpacing: 4,
                   alignment: WrapAlignment.spaceBetween,
                   children: [
+                    if (integratedBeta)
+                      TextButton.icon(
+                        key: const ValueKey('quick_subject_switch'),
+                        onPressed: widget.onChangeSubject,
+                        icon: const Icon(Icons.swap_horiz_rounded),
+                        label: Text(tr('Fanlar', 'Предметы', 'Subjects')),
+                      ),
                     TextButton.icon(
-                      onPressed: () => setState(() => _choosing = true),
+                      onPressed: integratedBeta
+                          ? widget.onChangeSubject
+                          : () => setState(() => _choosing = true),
                       icon: const Icon(Icons.school_rounded),
                       label: Text(
                         tr(
@@ -310,6 +321,15 @@ class _CurriculumLearningScreenState
                       icon: const Icon(Icons.menu_book_outlined),
                       label: Text(tr('Mavzular', 'Темы', 'Topics')),
                     ),
+                    if (integratedBeta)
+                      StudyHelpButton(
+                        contextData: StudyHelpContext(
+                          subject: widget.subject.slug,
+                          grade: current.grade,
+                        ),
+                        language: lang,
+                        chat: true,
+                      ),
                   ],
                 ),
               ),

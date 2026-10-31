@@ -22,6 +22,8 @@ import 'mascot.dart';
 import 'skill_ui.dart';
 import 'study_exit_guard.dart';
 import 'content_source_button.dart';
+import '../../../core/config/integrated_beta.dart';
+import '../../study_help/study_help.dart';
 
 enum PracticeMode {
   daily,
@@ -759,6 +761,15 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                       if (q.source != null)
                         ContentSourceButton(source: q.source!, language: lang),
                       const SizedBox(height: 20),
+                      if (integratedBeta && !_answered && q.attemptId != null)
+                        StudyHelpButton(
+                          language: lang,
+                          contextData: StudyHelpContext(
+                            subject: 'biologiya',
+                            attemptId: q.attemptId,
+                            questionKey: '${q.id}',
+                          ),
+                        ),
                       for (final opt in q.options)
                         DuoChoiceCard(
                           text: opt,
@@ -827,6 +838,18 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
         correct: isCorrect,
         correctAnswer: q.correctAnswer,
         explanation: q.explanation ?? '',
+        help: integratedBeta && q.attemptId != null
+            ? StudyHelpButton(
+                language: lang,
+                contextData: StudyHelpContext(
+                  subject: 'biologiya',
+                  attemptId: q.attemptId,
+                  questionKey: '${q.id}',
+                  checked: _answered,
+                  selectedAnswer: _selected,
+                ),
+              )
+            : null,
         onContinue: _next,
       );
 }

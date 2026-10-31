@@ -23,6 +23,8 @@ import '../../world_history/presentation/world_history_answer_editor.dart';
 import '../../world_history/presentation/world_history_display_text.dart';
 import '../../uzbekistan_history/presentation/history_answer_editor.dart';
 import '../data/assessment_repository.dart';
+import '../../study_help/study_help.dart';
+import '../../../core/config/integrated_beta.dart';
 
 /// Shared branded lesson flow. Existing subject editors and server runtimes
 /// retain their specialised answer formats, source links and grading semantics.
@@ -636,7 +638,19 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       const SizedBox(height: 20),
       _answerEditor(_question, !_busy && _pending == null && _feedback == null),
       _sourceButton(_question['source_refs']),
+      if (integratedBeta && _feedback == null) _studyHelp(),
     ],
+  );
+
+  Widget _studyHelp() => StudyHelpButton(
+    language: _language,
+    contextData: StudyHelpContext(
+      subject: _subject,
+      grade: _grade,
+      lessonKey: _lessonKey,
+      attemptId: _attempt!['attempt_id'] as String,
+      questionKey: _question['key'] as String,
+    ),
   );
 
   Widget _feedbackPanel() {
@@ -655,6 +669,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
         '${_feedback!['feedback']}\n\n${solution.map((s) => s['body']).join('\n\n')}',
       ),
       source: _sourceButton(_feedback!['source_refs']),
+      help: integratedBeta ? _studyHelp() : null,
       onContinue: _nextQuestion,
     );
   }
