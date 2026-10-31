@@ -1,3 +1,4 @@
+import '../config/integrated_beta.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -158,6 +159,7 @@ class AiExplainButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    if (integratedBeta) return const SizedBox.shrink();
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final lang = ref.watch(languageProvider);
     return Align(

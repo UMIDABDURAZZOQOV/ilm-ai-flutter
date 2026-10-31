@@ -143,7 +143,6 @@ class LessonFeedbackPanel extends StatelessWidget {
                                 ],
                               ),
                             ],
-                            ?help,
                             if (explanation.isNotEmpty) ...[
                               const SizedBox(height: 8),
                               Text(
@@ -172,6 +171,7 @@ class LessonFeedbackPanel extends StatelessWidget {
                       ),
                     ),
                   ),
+                  ?help,
                   const SizedBox(height: 12),
                   Duo3DButton(
                     onPressed: saving ? null : onContinue,

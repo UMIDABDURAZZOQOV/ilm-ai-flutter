@@ -227,7 +227,13 @@ void main() {
           theme: buildAppTheme(lightColors),
           home: const Scaffold(
             body: StudyHelpSheet(
-              contextData: StudyHelpContext(subject: 'kimyo', grade: 7),
+              contextData: StudyHelpContext(
+                subject: 'kimyo',
+                grade: 7,
+                attemptId: 'owned',
+                questionKey: 'q',
+                checked: true,
+              ),
               language: 'uz',
             ),
           ),
@@ -295,7 +301,13 @@ void main() {
             theme: buildAppTheme(lightColors),
             home: const Scaffold(
               body: StudyHelpButton(
-                contextData: StudyHelpContext(subject: 'kimyo', grade: 7),
+                contextData: StudyHelpContext(
+                  subject: 'kimyo',
+                  grade: 7,
+                  attemptId: 'owned',
+                  questionKey: 'q',
+                  checked: true,
+                ),
                 language: 'uz',
               ),
             ),

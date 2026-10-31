@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/config/integrated_beta.dart';
 import 'skill_ui.dart';
 
 /// Bibliographic references only; copyrighted PDF pages are never bundled.
@@ -18,6 +19,8 @@ class ContentSourceButton extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
+    // Provenance remains in the models and backend, outside the Beta student UI.
+    if (integratedBeta) return const SizedBox.shrink();
     String tr(String uz, String ru, String en) => str3(language, uz, ru, en);
     final printed = (source['printed_pages'] as List? ?? []).join(', ');
     final pdf = (source['pdf_pages'] as List? ?? []).join(', ');

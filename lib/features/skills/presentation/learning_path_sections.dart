@@ -1,3 +1,4 @@
+import '../../../core/config/integrated_beta.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/ilm_design.dart';
@@ -142,12 +143,19 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                                     'No lessons yet',
                                   )
                           else
-                            str3(
-                              language,
-                              '$done/${unit.lessons.length} dars bajarilgan',
-                              '$done/${unit.lessons.length} уроков пройдено',
-                              '$done/${unit.lessons.length} lessons completed',
-                            ),
+                            integratedBeta
+                                ? str3(
+                                    language,
+                                    '$done dars bajarilgan',
+                                    '$done уроков пройдено',
+                                    '$done lessons completed',
+                                  )
+                                : str3(
+                                    language,
+                                    '$done/${unit.lessons.length} dars bajarilgan',
+                                    '$done/${unit.lessons.length} уроков пройдено',
+                                    '$done/${unit.lessons.length} lessons completed',
+                                  ),
                           if (unit.id == widget.currentUnitId)
                             str3(
                               language,
@@ -348,7 +356,7 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                                     DropdownMenuItem(
                                       value: p,
                                       child: Text(
-                                        '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)} / ${row.unit.lessons.length}',
+                                        '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)}${integratedBeta ? '' : ' / ${row.unit.lessons.length}'}',
                                       ),
                                     ),
                                 ],

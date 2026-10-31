@@ -598,6 +598,20 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 .slideY(begin: 0.12, end: 0, curve: Curves.easeOutQuad),
             const SizedBox(height: 18),
             const MascotImage.hero(pose: MascotPose.hello),
+            if (integratedBeta && !ref.watch(onboardingCompleteProvider)) ...[
+              const SizedBox(height: 18),
+              Text(
+                str3(
+                  lang,
+                  "Barcha o'quv mavzulari maktab darsliklari asosida tayyorlangan.",
+                  'Все учебные темы подготовлены на основе школьных учебников.',
+                  'All learning topics are based on school textbooks.',
+                ),
+                key: const ValueKey('onboarding_textbook_notice'),
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+            ],
           ],
         ),
       ),

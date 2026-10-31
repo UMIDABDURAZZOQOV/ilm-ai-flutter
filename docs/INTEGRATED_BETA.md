@@ -1,5 +1,24 @@
 # Integrated Android Beta
 
+## Latest UI policy — 2026-10-31
+
+The Beta now exposes study help only below checked MCQ/FRQ feedback (both
+correct and incorrect), opened explicitly by the student. Subject chat and
+pre-answer help entry points were removed; switching subjects/grades remains.
+Changing questions closes the old help modal and cancels its request. No
+grading/reward/prerequisite contracts changed; no real AI key is configured.
+
+Textbook bibliography, page locators and source-opening links are hidden from
+the Beta student UI. Provenance remains in API/models/database and source
+validation is unchanged. Grade/path/topic totals are hidden; progress still
+works and paginated lesson ranges still navigate. The first Ilmo greeting in
+onboarding states that topics are based on school textbooks, controlled by the
+existing persisted onboarding completion state. Returning accounts are not reset.
+
+The older sections below describe earlier checkpoints; their subject chat and
+pre-answer help claims are superseded by this policy. See CLAUDE.md for files,
+test coverage and the current APK receipt for the actual build identity.
+
 2026-10-31 update: active isolated branch `feat/beta-subject-switch-ai-help`.
 Adds direct subject/grade switching and question/subject study help with an
 honest reviewed-evidence fallback. No actual AI token is configured. See
@@ -11,7 +30,17 @@ Validation on 2026-10-31: 1,314 normal Flutter tests and 56 beta/feedback tests
 passed; analyze found no issues. Backend SQLite integration/help regression:
 14 passed; provider/config verification: 2 passed. The local server retained
 all 9 user/progress table digests after --resume. New feature device acceptance
-remains pending because no Android device is currently visible to Windows/ADB.
+was pending at build time because no Android device was then visible to ADB.
+
+2026-10-31 22:16 +05 device follow-up: authorized Samsung SM_A125F was connected;
+USB reverse for 8930 configured, existing APK installed with `install -r` (Success)
+and launched in the foreground. Installed base.apk SHA256 matches the build
+receipt (518d0ae8…9136d04). Existing localhost backend PID 12940 was preserved;
+health returned 200 / integrated_beta and 35 live API checks passed expected
+statuses. All five catalogues and source-linked no-token help were verified.
+No APK rebuild, data clear or production change. Full handset MCQ/FRQ/reward/
+restart acceptance still requires manual testing; install/launch alone does not
+claim those flows passed. See CLAUDE.md and the local artifacts readiness report.
 
 Branch: `beta/android-integrated-five-subjects` in this repository and sibling
 `ilm-ai-beta`. Based on preserved QA checkpoints 4cd3a0a / 0c7a80e. Those QA

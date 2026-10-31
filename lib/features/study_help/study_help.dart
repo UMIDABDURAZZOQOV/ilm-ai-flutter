@@ -1,3 +1,4 @@
+import '../../core/config/integrated_beta.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -73,48 +74,96 @@ final studyHelpRepositoryProvider = Provider<StudyHelpRepository>(
   (ref) => StudyHelpRepository(ref.watch(dioProvider)),
 );
 
-class StudyHelpButton extends StatelessWidget {
+class StudyHelpButton extends StatefulWidget {
   const StudyHelpButton({
     super.key,
     required this.contextData,
     required this.language,
-    this.chat = false,
     this.onOpenChanged,
   });
   final StudyHelpContext contextData;
   final String language;
-  final bool chat;
   final ValueChanged<bool>? onOpenChanged;
   @override
-  Widget build(BuildContext context) => TextButton.icon(
-    key: ValueKey(chat ? 'subject_study_chat' : 'question_study_help'),
-    onPressed: () async {
-      onOpenChanged?.call(true);
-      try {
-        await showModalBottomSheet<void>(
-          context: context,
-          isScrollControlled: true,
-          useSafeArea: true,
-          showDragHandle: true,
-          builder: (_) =>
-              StudyHelpSheet(contextData: contextData, language: language),
-        );
-      } finally {
-        onOpenChanged?.call(false);
-      }
-    },
-    icon: const Icon(Icons.auto_awesome_outlined, size: 20),
-    label: Text(
-      chat
-          ? str3(language, 'AI savol', 'Вопрос AI', 'Ask AI')
-          : str3(
-              language,
-              'AI tushuntirish',
-              'AI объяснение',
-              'AI explanation',
-            ),
-    ),
-  );
+  State<StudyHelpButton> createState() => _StudyHelpButtonState();
+}
+
+class _StudyHelpButtonState extends State<StudyHelpButton> {
+  ModalRoute<void>? _sheetRoute;
+  NavigatorState? _navigator;
+
+  void _closeSheet() {
+    final route = _sheetRoute;
+    final navigator = _navigator;
+    _sheetRoute = null;
+    if (route == null || navigator == null) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (navigator.mounted && route.isActive) navigator.removeRoute(route);
+    });
+  }
+
+  @override
+  void didUpdateWidget(covariant StudyHelpButton oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.contextData.attemptId != widget.contextData.attemptId ||
+        oldWidget.contextData.questionKey != widget.contextData.questionKey ||
+        oldWidget.contextData.subject != widget.contextData.subject ||
+        oldWidget.contextData.grade != widget.contextData.grade ||
+        oldWidget.contextData.lessonKey != widget.contextData.lessonKey ||
+        !widget.contextData.checked) {
+      _closeSheet();
+    }
+  }
+
+  @override
+  void dispose() {
+    _closeSheet();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final contextData = widget.contextData;
+    if (!contextData.checked ||
+        contextData.attemptId == null ||
+        contextData.questionKey == null) {
+      return const SizedBox.shrink();
+    }
+    return TextButton.icon(
+      key: const ValueKey('question_study_help'),
+      onPressed: () async {
+        widget.onOpenChanged?.call(true);
+        try {
+          await showModalBottomSheet<void>(
+            context: context,
+            isScrollControlled: true,
+            useSafeArea: true,
+            showDragHandle: true,
+            builder: (sheetContext) {
+              _sheetRoute = ModalRoute.of(sheetContext);
+              _navigator = Navigator.of(sheetContext);
+              return StudyHelpSheet(
+                contextData: contextData,
+                language: widget.language,
+              );
+            },
+          );
+        } finally {
+          _sheetRoute = null;
+          if (mounted) widget.onOpenChanged?.call(false);
+        }
+      },
+      icon: const Icon(Icons.auto_awesome_outlined, size: 20),
+      label: Text(
+        str3(
+          widget.language,
+          'AI tushuntirish',
+          'AI объяснение',
+          'AI explanation',
+        ),
+      ),
+    );
+  }
 }
 
 class StudyHelpSheet extends ConsumerStatefulWidget {
@@ -339,19 +388,20 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
                     for (final raw in turn.answer['evidence'] as List) ...[
                       const SizedBox(height: 12),
                       SelectableText('${raw['text']}'),
-                      for (final source in raw['source_refs'] as List? ?? [])
-                        ContentSourceButton(
-                          source: {
-                            'book_title':
-                                source['file_name'] ?? source['book_id'],
-                            ...Map<String, dynamic>.from(source as Map),
-                          },
-                          language: widget.language,
-                          referenceLabel: source['paragraph'] == null
-                              ? tr('Darslik', 'Учебник', 'Textbook')
-                              : null,
-                          sectionTitle: '${turn.answer['title']}',
-                        ),
+                      if (!integratedBeta)
+                        for (final source in raw['source_refs'] as List? ?? [])
+                          ContentSourceButton(
+                            source: {
+                              'book_title':
+                                  source['file_name'] ?? source['book_id'],
+                              ...Map<String, dynamic>.from(source as Map),
+                            },
+                            language: widget.language,
+                            referenceLabel: source['paragraph'] == null
+                                ? tr('Darslik', 'Учебник', 'Textbook')
+                                : null,
+                            sectionTitle: '${turn.answer['title']}',
+                          ),
                     ],
                     if ((turn.answer['evidence'] as List).isEmpty)
                       Text(

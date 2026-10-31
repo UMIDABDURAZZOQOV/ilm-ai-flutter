@@ -1,3 +1,4 @@
+import '../../../core/config/integrated_beta.dart';
 import 'package:flutter/material.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
@@ -331,12 +332,19 @@ class LearningUnitHeader extends StatelessWidget {
                     ),
                   if (total > 0)
                     Text(
-                      str3(
-                        language,
-                        'Bajarilgan darslar: $completed/$total',
-                        'Пройдено уроков: $completed/$total',
-                        'Lessons completed: $completed/$total',
-                      ),
+                      integratedBeta
+                          ? str3(
+                              language,
+                              'Bajarilgan darslar: $completed',
+                              'Пройдено уроков: $completed',
+                              'Lessons completed: $completed',
+                            )
+                          : str3(
+                              language,
+                              'Bajarilgan darslar: $completed/$total',
+                              'Пройдено уроков: $completed/$total',
+                              'Lessons completed: $completed/$total',
+                            ),
                       style: Theme.of(
                         context,
                       ).textTheme.bodySmall?.copyWith(color: c.textSecondary),

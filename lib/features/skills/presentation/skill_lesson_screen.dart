@@ -880,15 +880,6 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           language: language,
                         ),
                       const SizedBox(height: 24),
-                      if (integratedBeta && !_answered && _attemptId != null)
-                        StudyHelpButton(
-                          language: language,
-                          contextData: StudyHelpContext(
-                            subject: 'biologiya',
-                            attemptId: 'lesson:$_attemptId',
-                            questionKey: '${q.id}',
-                          ),
-                        ),
                       for (final option in q.options)
                         DuoChoiceCard(
                           text: cleanMath(option),

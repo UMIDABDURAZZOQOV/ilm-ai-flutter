@@ -19,6 +19,7 @@ import 'package:ilm_ai_flutter/features/onboarding/presentation/duo_onboarding_s
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_panel.dart';
+import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_display_text.dart';
 import 'package:ilm_ai_flutter/features/world_history/presentation/world_history_display_text.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
@@ -195,7 +196,11 @@ void main() {
     late List<RequestOptions> requests;
     bool loseNextAnswer = false;
     bool completedNode = false;
-    void setup({bool onlyFrq = false, bool completed = false}) {
+    void setup({
+      bool onlyFrq = false,
+      bool completed = false,
+      bool? checkedCorrect,
+    }) {
       completedNode = completed;
       lesson = fixture(preset.lesson);
       final content = lesson['content'] as Json;
@@ -249,6 +254,7 @@ void main() {
           final feedback = Map<String, dynamic>.from(
             (responses[key] ?? responses.values.first) as Map,
           )..['assessment_key'] = key;
+          if (checkedCorrect != null) feedback['is_correct'] = checkedCorrect;
           committed[key] = feedback;
           if (loseNextAnswer) {
             loseNextAnswer = false;
@@ -264,6 +270,28 @@ void main() {
             ...(result['result'] ?? result) as Map,
             'stars': 3,
             'elapsed_seconds': 20,
+          });
+        }
+        if (request.path == '/beta/study-help') {
+          final data = request.data as Map;
+          return reply(200, {
+            ...data,
+            'mode': 'reviewed_evidence',
+            'answered': true,
+            'provider_status': 'unconfigured',
+            'title': 'Izoh',
+            'source_refs': [],
+            'evidence': [
+              {
+                'text': 'Tekshirilgan izoh',
+                'source_refs': [
+                  {
+                    'book_title': 'Hidden textbook',
+                    'printed_pages': [9],
+                  },
+                ],
+              },
+            ],
           });
         }
         return reply(404, {'detail': 'unexpected_endpoint'});
@@ -300,12 +328,14 @@ void main() {
           ],
           child: MaterialApp(
             theme: buildAppTheme(lightColors),
-            home: MediaQuery(
-              data: MediaQueryData(
-                textScaler: TextScaler.linear(scale),
-                disableAnimations: true,
+            home: Builder(
+              builder: (context) => MediaQuery(
+                data: MediaQuery.of(context).copyWith(
+                  textScaler: TextScaler.linear(scale),
+                  disableAnimations: true,
+                ),
+                child: AssessmentLessonScreen(lesson: descriptor()),
               ),
-              child: AssessmentLessonScreen(lesson: descriptor()),
             ),
           ),
         ),
@@ -342,6 +372,82 @@ void main() {
       }
     }
 
+    for (final frq in [false, true]) {
+      for (final correct in [false, true]) {
+        testWidgets(
+          '${preset.slug} ${frq ? "FRQ" : "MCQ"} correct=$correct help only after grading',
+          (tester) async {
+            setup(onlyFrq: frq, checkedCorrect: correct);
+            if (!frq) {
+              lesson['questions'] = (lesson['questions'] as List)
+                  .where((q) => q['response_kind'] == 'concept_selection')
+                  .toList();
+            }
+            await mount(tester);
+            expect(find.byType(StudyHelpButton), findsNothing);
+            await exercises(tester);
+            expect(
+              find.byKey(const ValueKey('question_study_help')),
+              findsNothing,
+            );
+            expect(find.textContaining('Manba:'), findsNothing);
+            if (!frq) {
+              final choice = find.byType(DuoChoiceCard).first;
+              await tester.ensureVisible(choice);
+              await tester.tap(choice);
+            } else if (preset.slug == 'fizika') {
+              for (final entry in [
+                ('physics-formula', 'x/2'),
+                ('physics-value', '2'),
+                ('physics-unit', 'cm'),
+              ]) {
+                final field = find.byKey(Key(entry.$1));
+                await tester.ensureVisible(field);
+                await tester.enterText(field, entry.$2);
+              }
+            } else {
+              final field = find.byType(TextField).first;
+              await tester.ensureVisible(field);
+              await tester.enterText(field, 'botanika');
+            }
+            expect(
+              requests.where((r) => r.path == '/beta/study-help'),
+              isEmpty,
+            );
+            await action(tester);
+            final panel = tester.widget<LessonFeedbackPanel>(
+              find.byType(LessonFeedbackPanel),
+            );
+            expect(panel.correct, correct);
+            expect(
+              find.byKey(const ValueKey('question_study_help')),
+              findsOneWidget,
+            );
+            expect(find.byType(StudyHelpSheet), findsNothing);
+            await tester.tap(find.byKey(const ValueKey('question_study_help')));
+            await tester.pumpAndSettle();
+            expect(find.text('Tekshirilgan izoh'), findsOneWidget);
+            expect(find.textContaining('Hidden textbook'), findsNothing);
+            expect(find.textContaining('Manba:'), findsNothing);
+            expect(
+              requests.where((r) => r.path == '/beta/study-help').length,
+              1,
+            );
+            await tester.tap(find.byIcon(Icons.close).last);
+            await tester.pumpAndSettle();
+            await action(tester);
+            expect(find.byType(StudyHelpSheet), findsNothing);
+            expect(
+              find.byKey(const ValueKey('question_study_help')),
+              findsNothing,
+            );
+            expect(tester.takeException(), isNull);
+            await tester.pumpWidget(const SizedBox());
+            dio.close();
+          },
+        );
+      }
+    }
     for (final scale in [1.0, 2.0]) {
       testWidgets(
         '${preset.slug} preserves every teaching page and enters exercises at ${scale}x',
@@ -369,7 +475,7 @@ void main() {
           );
           expect(
             find.byKey(const ValueKey('question_study_help')),
-            findsOneWidget,
+            findsNothing,
           );
           await tester.pumpWidget(const SizedBox());
           dio.close();
@@ -385,7 +491,7 @@ void main() {
           await exercises(tester);
           expect(
             find.byKey(const ValueKey('question_study_help')),
-            findsOneWidget,
+            findsNothing,
           );
           if (preset.slug == 'fizika') {
             for (final entry in [

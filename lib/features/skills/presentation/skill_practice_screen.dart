@@ -761,15 +761,6 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                       if (q.source != null)
                         ContentSourceButton(source: q.source!, language: lang),
                       const SizedBox(height: 20),
-                      if (integratedBeta && !_answered && q.attemptId != null)
-                        StudyHelpButton(
-                          language: lang,
-                          contextData: StudyHelpContext(
-                            subject: 'biologiya',
-                            attemptId: q.attemptId,
-                            questionKey: '${q.id}',
-                          ),
-                        ),
                       for (final opt in q.options)
                         DuoChoiceCard(
                           text: opt,

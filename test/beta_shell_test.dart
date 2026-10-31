@@ -203,7 +203,7 @@ void main() {
       expect(find.text('Item 11'), findsNothing);
       await tester.tap(find.byType(DropdownButtonFormField<int>));
       await tester.pumpAndSettle();
-      await tester.tap(find.text('21–30 / 31').last);
+      await tester.tap(find.text('21–30').last);
       await tester.pumpAndSettle();
       expect(find.text('Item 21'), findsOneWidget);
       expect(lessons[20].status, LessonStatus.locked);
@@ -268,7 +268,9 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      expect(find.byKey(const ValueKey('subject_study_chat')), findsOneWidget);
+      expect(find.byKey(const ValueKey('subject_study_chat')), findsNothing);
+      expect(find.text('AI savol'), findsNothing);
+      expect(find.text('AI tushuntirish'), findsNothing);
       await tester.tap(find.byKey(const ValueKey('quick_subject_switch')));
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('switch_grade')));

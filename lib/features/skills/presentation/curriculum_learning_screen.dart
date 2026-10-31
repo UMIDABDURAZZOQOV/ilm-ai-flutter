@@ -17,7 +17,6 @@ import '../data/skill_tree_repository.dart';
 import 'mascot.dart';
 import 'skill_path_screen.dart';
 import 'skill_ui.dart';
-import '../../study_help/study_help.dart';
 
 final curriculumGradesProvider =
     FutureProvider.family<List<CurriculumGrade>, String>(
@@ -236,25 +235,30 @@ class _CurriculumLearningScreenState
                               'Grade ${item.grade} — ${item.title}',
                             ),
                           ),
-                          subtitle: Text(
-                            item.sourceBlocked
-                                ? tr(
-                                    'Darslik tekshiruvi kutilmoqda',
-                                    'Ожидается проверка учебника',
-                                    'Textbook verification pending',
-                                  )
-                                : item.readyLessons > 0
-                                ? tr(
-                                    'Tayyor darslar: ${item.readyLessons}',
-                                    'Подготовлено уроков: ${item.readyLessons}',
-                                    'Lessons prepared: ${item.readyLessons}',
-                                  )
-                                : tr(
-                                    'Mavzular xaritasi bor; darslar tayyorlanmoqda',
-                                    'Карта тем готова; уроки готовятся',
-                                    'Topics mapped; lessons in preparation',
-                                  ),
-                          ),
+                          subtitle:
+                              integratedBeta &&
+                                  item.readyLessons > 0 &&
+                                  !item.sourceBlocked
+                              ? null
+                              : Text(
+                                  item.sourceBlocked
+                                      ? tr(
+                                          'Darslar tayyorlanmoqda',
+                                          'Уроки готовятся',
+                                          'Lessons in preparation',
+                                        )
+                                      : item.readyLessons > 0
+                                      ? tr(
+                                          'Tayyor darslar: ${item.readyLessons}',
+                                          'Подготовлено уроков: ${item.readyLessons}',
+                                          'Lessons prepared: ${item.readyLessons}',
+                                        )
+                                      : tr(
+                                          'Mavzular xaritasi bor; darslar tayyorlanmoqda',
+                                          'Карта тем готова; уроки готовятся',
+                                          'Topics mapped; lessons in preparation',
+                                        ),
+                                ),
                           trailing: Icon(
                             item.grade == selected
                                 ? Icons.check_circle_rounded
@@ -321,15 +325,6 @@ class _CurriculumLearningScreenState
                       icon: const Icon(Icons.menu_book_outlined),
                       label: Text(tr('Mavzular', 'Темы', 'Topics')),
                     ),
-                    if (integratedBeta)
-                      StudyHelpButton(
-                        contextData: StudyHelpContext(
-                          subject: widget.subject.slug,
-                          grade: current.grade,
-                        ),
-                        language: lang,
-                        chat: true,
-                      ),
                   ],
                 ),
               ),
@@ -342,11 +337,13 @@ class _CurriculumLearningScreenState
                         subject: widget.subject,
                         grade: current.grade,
                         embedded: true,
-                        courseNote: tr(
-                          'Tayyor darslar: ${current.readyLessons}',
-                          'Подготовлено уроков: ${current.readyLessons}',
-                          'Lessons prepared: ${current.readyLessons}',
-                        ),
+                        courseNote: integratedBeta
+                            ? null
+                            : tr(
+                                'Tayyor darslar: ${current.readyLessons}',
+                                'Подготовлено уроков: ${current.readyLessons}',
+                                'Lessons prepared: ${current.readyLessons}',
+                              ),
                         onChangeSubject: () => setState(() => _choosing = true),
                       )
                     : ListView(
@@ -359,9 +356,9 @@ class _CurriculumLearningScreenState
                           Text(
                             current.sourceBlocked
                                 ? tr(
-                                    'Darslikni tekshirish kutilmoqda',
-                                    'Ожидается проверка учебника',
-                                    'Textbook verification is pending',
+                                    'Darslar tayyorlanmoqda',
+                                    'Уроки готовятся',
+                                    'Lessons are in preparation',
                                   )
                                 : tr(
                                     'Darslar tayyorlanmoqda',
@@ -486,9 +483,9 @@ class _CurriculumOutline extends ConsumerWidget {
               if (outline.chapters.isEmpty)
                 Text(
                   tr(
-                    'Manba hali o‘qilmagan; mavzular taxmin bilan to‘ldirilmaydi.',
-                    'Источник ещё не прочитан; темы не заполняются предположениями.',
-                    'The source is unread; topics will not be guessed.',
+                    'Mavzular tayyorlanmoqda.',
+                    'Темы готовятся.',
+                    'Topics are in preparation.',
                   ),
                 ),
               for (final chapter in outline.chapters) ...[
@@ -512,7 +509,7 @@ class _CurriculumOutline extends ConsumerWidget {
                     ),
                     title: Text(topic.title),
                     subtitle: Text(
-                      '${topic.printedStart ?? "?"}–${topic.printedEnd ?? "?"} ${tr('bet', 'стр.', 'pp.')} · ${topic.completed
+                      '${integratedBeta ? '' : '${topic.printedStart ?? "?"}–${topic.printedEnd ?? "?"} ${tr('bet', 'стр.', 'pp.')} · '}${topic.completed
                           ? tr('Bajarilgan', 'Завершено', 'Completed')
                           : topic.ready
                           ? tr('Kontent tayyor', 'Контент подготовлен', 'Content prepared')

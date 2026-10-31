@@ -172,9 +172,10 @@ class SkillPathScreen extends ConsumerWidget {
                           ),
                         ),
                         const SizedBox(height: 8),
-                        Text(
-                          '${u.lessons.where((l) => l.status == LessonStatus.completed).length}/${u.lessons.length} ${str3(lang, 'dars', 'уроков', 'lessons')}',
-                        ),
+                        if (!integratedBeta)
+                          Text(
+                            '${u.lessons.where((l) => l.status == LessonStatus.completed).length}/${u.lessons.length} ${str3(lang, 'dars', 'уроков', 'lessons')}',
+                          ),
                         const SizedBox(height: 12),
                         for (final lesson in u.lessons)
                           Padding(

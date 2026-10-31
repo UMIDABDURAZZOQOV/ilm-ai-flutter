@@ -482,6 +482,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
   }
 
   Widget _sourceButton(dynamic values) {
+    if (integratedBeta) return const SizedBox.shrink();
     final books = jsonRows(_catalog?['source_books'] ?? []);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -638,7 +639,6 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       const SizedBox(height: 20),
       _answerEditor(_question, !_busy && _pending == null && _feedback == null),
       _sourceButton(_question['source_refs']),
-      if (integratedBeta && _feedback == null) _studyHelp(),
     ],
   );
 
@@ -650,6 +650,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       lessonKey: _lessonKey,
       attemptId: _attempt!['attempt_id'] as String,
       questionKey: _question['key'] as String,
+      checked: _feedback != null,
     ),
   );
 
@@ -668,7 +669,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       explanation: _display(
         '${_feedback!['feedback']}\n\n${solution.map((s) => s['body']).join('\n\n')}',
       ),
-      source: _sourceButton(_feedback!['source_refs']),
+      source: integratedBeta ? null : _sourceButton(_feedback!['source_refs']),
       help: integratedBeta ? _studyHelp() : null,
       onContinue: _nextQuestion,
     );
