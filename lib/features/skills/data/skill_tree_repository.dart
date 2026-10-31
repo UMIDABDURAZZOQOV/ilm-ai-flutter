@@ -10,7 +10,8 @@ import '../../../core/config/integrated_beta.dart';
 
 class SkillTreeRepository {
   final Dio _dio;
-  const SkillTreeRepository(this._dio);
+  final _treeRequests = <(int, String, int?, int), Future<SkillTreeResponse>>{};
+  SkillTreeRepository(this._dio);
 
   Future<List<SkillSubject>> getSubjects() async {
     late Response res;
@@ -32,7 +33,11 @@ class SkillTreeRepository {
     try {
       return (res.data as List)
           .map((e) => SkillSubject.fromJson(e as Map<String, dynamic>))
-          .where((s) => isPublishedMobileSubject(s.slug) || (integratedBeta && !s.available))
+          .where(
+            (s) =>
+                isPublishedMobileSubject(s.slug) ||
+                (integratedBeta && !s.available),
+          )
           .toList();
     } on TypeError {
       throw const InvalidApiResponseException();
@@ -45,7 +50,23 @@ class SkillTreeRepository {
     required int userId,
     required String subjectSlug,
     int? grade,
-  }) async {
+    int? revision,
+  }) {
+    if (revision == null) return _fetchTree(userId, subjectSlug, grade);
+    final key = (userId, subjectSlug, grade, revision);
+    return _treeRequests.putIfAbsent(
+      key,
+      () => _fetchTree(userId, subjectSlug, grade).whenComplete(() {
+        _treeRequests.remove(key);
+      }),
+    );
+  }
+
+  Future<SkillTreeResponse> _fetchTree(
+    int userId,
+    String subjectSlug,
+    int? grade,
+  ) async {
     final res = await _dio.get(
       '/skills/$userId/tree',
       queryParameters: {'subject': subjectSlug, 'grade': ?grade},

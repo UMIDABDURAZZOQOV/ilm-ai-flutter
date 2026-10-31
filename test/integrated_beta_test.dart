@@ -456,6 +456,7 @@ void main() {
           await tester.binding.setSurfaceSize(const Size(360, 740));
           addTearDown(() => tester.binding.setSurfaceSize(null));
           await mount(tester, scale: scale);
+          expect(requests.where((r) => r.path.endsWith('/catalog')), isEmpty);
           for (final page in teaching()) {
             expect(find.text(display(page['title'] as String)), findsOneWidget);
             await action(tester);

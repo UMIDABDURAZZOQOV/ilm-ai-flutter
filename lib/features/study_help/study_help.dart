@@ -89,6 +89,7 @@ class StudyHelpButton extends StatefulWidget {
 }
 
 class _StudyHelpButtonState extends State<StudyHelpButton> {
+  bool _opening = false;
   ModalRoute<void>? _sheetRoute;
   NavigatorState? _navigator;
 
@@ -131,28 +132,35 @@ class _StudyHelpButtonState extends State<StudyHelpButton> {
     }
     return TextButton.icon(
       key: const ValueKey('question_study_help'),
-      onPressed: () async {
-        widget.onOpenChanged?.call(true);
-        try {
-          await showModalBottomSheet<void>(
-            context: context,
-            isScrollControlled: true,
-            useSafeArea: true,
-            showDragHandle: true,
-            builder: (sheetContext) {
-              _sheetRoute = ModalRoute.of(sheetContext);
-              _navigator = Navigator.of(sheetContext);
-              return StudyHelpSheet(
-                contextData: contextData,
-                language: widget.language,
-              );
+      onPressed: _opening
+          ? null
+          : () async {
+              if (_opening) return;
+              setState(() => _opening = true);
+              widget.onOpenChanged?.call(true);
+              try {
+                await showModalBottomSheet<void>(
+                  context: context,
+                  isScrollControlled: true,
+                  useSafeArea: true,
+                  showDragHandle: true,
+                  builder: (sheetContext) {
+                    _sheetRoute = ModalRoute.of(sheetContext);
+                    _navigator = Navigator.of(sheetContext);
+                    return StudyHelpSheet(
+                      contextData: contextData,
+                      language: widget.language,
+                    );
+                  },
+                );
+              } finally {
+                _sheetRoute = null;
+                if (mounted) {
+                  setState(() => _opening = false);
+                  widget.onOpenChanged?.call(false);
+                }
+              }
             },
-          );
-        } finally {
-          _sheetRoute = null;
-          if (mounted) widget.onOpenChanged?.call(false);
-        }
-      },
       icon: const Icon(Icons.auto_awesome_outlined, size: 20),
       label: Text(
         str3(

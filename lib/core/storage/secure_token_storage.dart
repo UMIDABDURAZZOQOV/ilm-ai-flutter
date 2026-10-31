@@ -63,9 +63,13 @@ class SecureTokenStorage {
   final FlutterSecureStorage _storage;
   final _changes = StreamController<StoredTokens?>.broadcast();
   Future<void> _pending = Future.value();
+  bool _loaded = false;
+  StoredTokens? _cached;
   SecureTokenStorage(this._storage);
 
   void dispose() {
+    _cached = null;
+    _loaded = false;
     unawaited(_changes.close());
   }
 
@@ -78,19 +82,27 @@ class SecureTokenStorage {
   }
 
   Future<StoredTokens?> _read() async {
+    if (_loaded) return _cached;
     final raw = await _storage.read(key: _key);
-    if (raw == null) return null;
+    StoredTokens? tokens;
     try {
-      return StoredTokens.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+      tokens = raw == null
+          ? null
+          : StoredTokens.fromJson(jsonDecode(raw) as Map<String, dynamic>);
     } catch (_) {
-      return null;
+      tokens = null;
     }
+    _cached = tokens;
+    _loaded = true;
+    return tokens;
   }
 
   Future<StoredTokens?> getTokens() => _serial(_read);
 
   Future<void> saveTokens(StoredTokens tokens) => _serial(() async {
     await _storage.write(key: _key, value: jsonEncode(tokens.toJson()));
+    _cached = tokens;
+    _loaded = true;
     if (!_changes.isClosed) _changes.add(tokens);
   });
 
@@ -101,6 +113,8 @@ class SecureTokenStorage {
     if (current == null) return null;
     final updated = change(current);
     await _storage.write(key: _key, value: jsonEncode(updated.toJson()));
+    _cached = updated;
+    _loaded = true;
     if (!_changes.isClosed) _changes.add(updated);
     return updated;
   });
@@ -114,6 +128,8 @@ class SecureTokenStorage {
           refreshToken: refresh,
         );
         await _storage.write(key: _key, value: jsonEncode(updated.toJson()));
+        _cached = updated;
+        _loaded = true;
         if (!_changes.isClosed) _changes.add(updated);
         return true;
       });
@@ -124,6 +140,8 @@ class SecureTokenStorage {
       return;
     }
     await _storage.delete(key: _key);
+    _cached = null;
+    _loaded = true;
     if (!_changes.isClosed) _changes.add(null);
   });
 }

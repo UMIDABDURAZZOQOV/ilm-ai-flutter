@@ -37,6 +37,9 @@ val integratedBetaEnabled = (project.findProperty("dart-defines") as? String)
 val betaPerformanceEnabled = (project.findProperty("dart-defines") as? String)
     ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
     ?.contains("BETA_PERFORMANCE=true") == true
+val betaPerformanceUsesBetaIdentity = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("BETA_PERF_ISOLATED=false") == true
 if (integratedBetaEnabled && (phoneQaEnabled || physicsPreviewBuild ||
     !(flutterTarget == "main.dart" || flutterTarget.endsWith("/main.dart")))) {
     throw GradleException("Integrated beta must use the normal main.dart target, separately from QA previews.")
@@ -84,9 +87,9 @@ android {
     buildTypes {
         maybeCreate("profile").apply {
             if (integratedBetaEnabled && betaPerformanceEnabled) {
-                applicationIdSuffix = ".beta.perf"
-                manifestPlaceholders["appLabel"] = "ILM AI Beta Perf"
-                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-beta-perf"
+                applicationIdSuffix = if (betaPerformanceUsesBetaIdentity) ".beta" else ".beta.perf"
+                manifestPlaceholders["appLabel"] = if (betaPerformanceUsesBetaIdentity) "ILM AI Beta" else "ILM AI Beta Perf"
+                manifestPlaceholders["oauthRedirectScheme"] = if (betaPerformanceUsesBetaIdentity) "ilmai-beta" else "ilmai-beta-perf"
                 signingConfig = signingConfigs.getByName("debug")
             }
         }

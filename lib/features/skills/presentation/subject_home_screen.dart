@@ -48,6 +48,7 @@ class SubjectHomeScreen extends ConsumerStatefulWidget {
 class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   int _tab = 0;
   bool _choosing = false;
+  bool _switching = false;
   final int _revision = 0;
 
   /// Lazy-mount tabs so Quests/League/Profile do not fire network (+18s
@@ -64,20 +65,28 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   }
 
   Future<void> _quickSwitch() async {
+    if (_switching) return;
     final uid = ref.read(currentUserIdProvider);
     final subjects = ref.read(subjectCatalogProvider).valueOrNull;
     if (uid == null || subjects == null) return;
-    final choice = await showSubjectSwitcher(
-      context,
-      subjects: subjects,
-      language: ref.read(languageProvider),
-      grade: _catalogGrade,
-      currentSubject: ref.read(selectedSubjectProvider),
-    );
-    if (!mounted || ref.read(currentUserIdProvider) != uid || choice == null) {
-      return;
+    _switching = true;
+    try {
+      final choice = await showSubjectSwitcher(
+        context,
+        subjects: subjects,
+        language: ref.read(languageProvider),
+        grade: _catalogGrade,
+        currentSubject: ref.read(selectedSubjectProvider),
+      );
+      if (!mounted ||
+          ref.read(currentUserIdProvider) != uid ||
+          choice == null) {
+        return;
+      }
+      await _select(choice.subject, grade: choice.grade);
+    } finally {
+      _switching = false;
     }
-    await _select(choice.subject, grade: choice.grade);
   }
 
   Future<void> _select(SkillSubject subject, {int? grade}) async {

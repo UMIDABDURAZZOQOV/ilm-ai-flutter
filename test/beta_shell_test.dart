@@ -271,8 +271,13 @@ void main() {
       expect(find.byKey(const ValueKey('subject_study_chat')), findsNothing);
       expect(find.text('AI savol'), findsNothing);
       expect(find.text('AI tushuntirish'), findsNothing);
-      await tester.tap(find.byKey(const ValueKey('quick_subject_switch')));
+      final switchButton = tester.widget<TextButton>(
+        find.byKey(const ValueKey('quick_subject_switch')),
+      );
+      switchButton.onPressed!();
+      switchButton.onPressed!();
       await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('switch_grade')), findsOneWidget);
       await tester.tap(find.byKey(const ValueKey('switch_grade')));
       await tester.pumpAndSettle();
       await tester.tap(find.text('8-sinf').last);

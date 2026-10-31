@@ -11,6 +11,7 @@ class LearningPreferences {
   final Dio dio;
   final PrefsService prefs;
   final _inFlight = <int, Future<bool>>{};
+  final _restoring = <int, Future<void>>{};
   LearningPreferences(this.dio, this.prefs);
   static const fields = {
     'daily_goal_xp': 'daily_goal',
@@ -27,7 +28,8 @@ class LearningPreferences {
       final Object? value = entry.key == 'daily_goal_xp' || entry.key == 'level'
           ? prefs.getInt('${entry.value}_$id')
           : prefs.getString('${entry.value}_$id');
-      if (entry.key == 'subject' && !isPublishedMobileSubject(value as String?)) {
+      if (entry.key == 'subject' &&
+          !isPublishedMobileSubject(value as String?)) {
         continue;
       }
       if (biologyOnly &&
@@ -92,17 +94,30 @@ class LearningPreferences {
     } while (true); // A newer local edit is sent after the earlier request settles.
   }
 
-  Future<void> restore(int id) async {
+  Future<void> restore(int id) {
+    return _restoring.putIfAbsent(
+      id,
+      () => _restore(id).whenComplete(() {
+        _restoring.remove(id);
+      }),
+    );
+  }
+
+  Future<void> _restore(int id) async {
     if (prefs.getBool('study_preferences_dirty_$id')) {
       await flush(id);
       return;
     }
+    final version = prefs.getInt('study_preferences_version_$id') ?? 0;
     try {
       final response = await dio
           .get('/skills/$id/preferences')
           .timeout(const Duration(seconds: 10));
       final remote = response.data['preferences'];
-      if (prefs.getBool('study_preferences_dirty_$id')) return;
+      if (prefs.getBool('study_preferences_dirty_$id') ||
+          version != (prefs.getInt('study_preferences_version_$id') ?? 0)) {
+        return;
+      }
       if (remote is Map) {
         await _store(id, remote);
       } else if (local(id).isNotEmpty) {

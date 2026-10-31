@@ -24,12 +24,14 @@ class _RefreshRepository extends fixture.FakeRepository {
     required int userId,
     required String subjectSlug,
     int? grade,
+    int? revision,
   }) {
     if (offline) throw TimeoutException('offline');
     return super.getTree(
       userId: userId,
       subjectSlug: subjectSlug,
       grade: grade,
+      revision: revision,
     );
   }
 }

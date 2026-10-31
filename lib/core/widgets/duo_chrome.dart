@@ -302,8 +302,13 @@ class DuoBottomNav extends StatelessWidget {
   final ValueChanged<int> onChanged;
   final List<DuoNavItem> items;
   @override
-  Widget build(BuildContext context) =>
-      IlmBottomNavigation(index: index, onChanged: onChanged, items: items);
+  Widget build(BuildContext context) => RepaintBoundary(
+    child: IlmBottomNavigation(
+      index: index,
+      onChanged: onChanged,
+      items: items,
+    ),
+  );
 }
 
 enum BubblePointerDirection { left, down, none }

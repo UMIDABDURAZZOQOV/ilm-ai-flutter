@@ -18,6 +18,10 @@ final sessionRestoreErrorProvider = StateProvider<Object?>((ref) => null);
 /// Secure storage is the session authority, including refreshes and profile edits.
 class AuthController extends AsyncNotifier<StoredTokens?> {
   StreamSubscription<StoredTokens?>? _changes;
+  Future<void>? _resuming;
+  int? _resumingUser, _syncedUser;
+  DateTime? _lastSync;
+  DateTime get now => DateTime.now();
 
   @override
   Future<StoredTokens?> build() async {
@@ -40,16 +44,20 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
     if (tokens == null) return null;
     ref.read(onboardingCompleteProvider.notifier).complete();
     try {
-      final pending = await ref
-          .read(authRepositoryProvider)
-          .needsOnboarding(tokens.userId);
+      // These reads are independent; publish the restored session after both.
+      final restored = await Future.wait<dynamic>([
+        ref.read(authRepositoryProvider).needsOnboarding(tokens.userId),
+        ref.read(learningPreferencesProvider).restore(tokens.userId),
+      ], eagerError: true);
+      final pending = restored[0] as bool;
       final updated = await storage.updateTokens(
         (current) => current.userId == tokens.userId
             ? current.copyWith(needsOnboarding: pending)
             : current,
       );
       ref.read(needsProfileSetupProvider.notifier).state = pending;
-      await ref.read(learningPreferencesProvider).restore(tokens.userId);
+      _syncedUser = tokens.userId;
+      _lastSync = now;
       ref.read(studyRevisionProvider.notifier).state++;
       _registerPush(tokens.userId);
       return updated;
@@ -68,12 +76,36 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
     }
   }
 
-  Future<void> resume() async {
+  Future<void> resume() {
     final userId = state.valueOrNull?.userId;
-    if (userId == null) return;
+    if (userId == null) return Future.value();
+    if (_resumingUser == userId && _resuming != null) return _resuming!;
+    final dirty = ref
+        .read(prefsServiceProvider)
+        .getBool('study_preferences_dirty_$userId');
+    if (!dirty &&
+        _syncedUser == userId &&
+        _lastSync != null &&
+        now.difference(_lastSync!) < const Duration(seconds: 30)) {
+      return Future.value();
+    }
+    _resumingUser = userId;
+    final task = _resume(userId);
+    _resuming = task;
+    return task.whenComplete(() {
+      if (identical(_resuming, task)) {
+        _resuming = null;
+        _resumingUser = null;
+      }
+    });
+  }
+
+  Future<void> _resume(int userId) async {
     _registerPush(userId);
     await ref.read(learningPreferencesProvider).restore(userId);
     if (state.valueOrNull?.userId == userId) {
+      _syncedUser = userId;
+      _lastSync = now;
       ref.read(studyRevisionProvider.notifier).state++;
     }
   }
@@ -133,6 +165,8 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
       }
     }
     await ref.read(learningPreferencesProvider).restore(res.userId);
+    _syncedUser = res.userId;
+    _lastSync = now;
     ref.read(studyRevisionProvider.notifier).state++;
     _registerPush(res.userId);
   }

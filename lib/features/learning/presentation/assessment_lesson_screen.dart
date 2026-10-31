@@ -64,6 +64,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
   final _feedbackKey = GlobalKey();
   CancelToken _cancel = CancelToken();
   Json? _catalog, _attempt, _feedback, _result;
+  List<Json> _questionRows = const [], _teachingRows = const [];
   Json _saved = {}, _draft = {};
   String? _lessonKey, _error;
   bool _busy = false,
@@ -111,9 +112,13 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       _error = null;
     });
     try {
-      final catalog = await _repo.catalog(_cancel, grade: _grade);
-      if (!active(generation)) return;
-      _catalog = catalog;
+      // Beta already has the selected lesson descriptor and hides bibliography.
+      // Fetch the fresh catalogue only when choosing the next unlocked lesson.
+      if (!integratedBeta) {
+        final catalog = await _repo.catalog(_cancel, grade: _grade);
+        if (!active(generation)) return;
+        _catalog = catalog;
+      }
       await _open(widget.lesson.assessmentKey!);
     } catch (error) {
       if (active(generation)) {
@@ -230,6 +235,8 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       }
       setState(() {
         _attempt = data;
+        _questionRows = List.unmodifiable(questions);
+        _teachingRows = List.unmodifiable(_buildTeachingItems(data));
         _feedback = null;
         _result = data['result'] as Json?;
         _index = index < 0 ? questions.length : index;
@@ -276,7 +283,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
     }
   }
 
-  List<Json> get _questions => jsonRows(_attempt!['questions']);
+  List<Json> get _questions => _questionRows;
   Json get _question => _questions[_index];
   Json? get _pending => _saved['pending'] is Map
       ? Map<String, dynamic>.from(_saved['pending'] as Map)
@@ -361,8 +368,10 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
     }
   }
 
-  List<Json> get _teachingItems {
-    final content = _attempt!['content'] as Json;
+  List<Json> get _teachingItems => _teachingRows;
+
+  static List<Json> _buildTeachingItems(Json attempt) {
+    final content = attempt['content'] as Json;
     return [
       for (final item in jsonRows(content['cards']))
         {...item, 'section': 'theory'},

@@ -206,54 +206,56 @@ class _NavigationTileState extends State<_NavigationTile>
                 SizedBox(
                   height: 40,
                   child: Center(
-                    child: AnimatedScale(
-                      scale: _reduced
-                          ? 1
-                          : _pressed
-                          ? .94
-                          : 1,
-                      duration: motionDuration(context, 100),
-                      curve: Curves.easeOutCubic,
-                      child: AnimatedBuilder(
-                        animation: _selection,
-                        builder: (context, _) {
-                          final progress = Curves.easeOutCubic.transform(
-                            _selection.value,
-                          );
-                          final pulse =
-                              widget.selected &&
-                                  _selection.isAnimating &&
-                                  !_reduced
-                              ? math.sin(_selection.value * math.pi)
-                              : 0.0;
-                          final color = Color.lerp(
-                            c.textMuted,
-                            c.primary,
-                            progress,
-                          )!;
-                          return Transform.translate(
-                            offset: Offset(0, -2 * progress - 2 * pulse),
-                            child: Transform.scale(
-                              scale: 1 + .08 * pulse,
-                              child: widget.item.motionIcon == null
-                                  ? Icon(
-                                      widget.item.icon,
-                                      size: 28,
-                                      color: color,
-                                    )
-                                  : IlmNavigationIcon(
-                                      icon: widget.item.motionIcon!,
-                                      progress: progress,
-                                      color: color,
-                                      accent:
-                                          widget.item.motionIcon ==
-                                              IlmNavIcon.league
-                                          ? BrandPalette.accentOrange
-                                          : BrandPalette.turquoise,
-                                    ),
-                            ),
-                          );
-                        },
+                    child: RepaintBoundary(
+                      child: AnimatedScale(
+                        scale: _reduced
+                            ? 1
+                            : _pressed
+                            ? .94
+                            : 1,
+                        duration: motionDuration(context, 100),
+                        curve: Curves.easeOutCubic,
+                        child: AnimatedBuilder(
+                          animation: _selection,
+                          builder: (context, _) {
+                            final progress = Curves.easeOutCubic.transform(
+                              _selection.value,
+                            );
+                            final pulse =
+                                widget.selected &&
+                                    _selection.isAnimating &&
+                                    !_reduced
+                                ? math.sin(_selection.value * math.pi)
+                                : 0.0;
+                            final color = Color.lerp(
+                              c.textMuted,
+                              c.primary,
+                              progress,
+                            )!;
+                            return Transform.translate(
+                              offset: Offset(0, -2 * progress - 2 * pulse),
+                              child: Transform.scale(
+                                scale: 1 + .08 * pulse,
+                                child: widget.item.motionIcon == null
+                                    ? Icon(
+                                        widget.item.icon,
+                                        size: 28,
+                                        color: color,
+                                      )
+                                    : IlmNavigationIcon(
+                                        icon: widget.item.motionIcon!,
+                                        progress: progress,
+                                        color: color,
+                                        accent:
+                                            widget.item.motionIcon ==
+                                                IlmNavIcon.league
+                                            ? BrandPalette.accentOrange
+                                            : BrandPalette.turquoise,
+                                      ),
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                   ),

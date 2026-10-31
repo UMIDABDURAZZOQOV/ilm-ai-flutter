@@ -12,12 +12,17 @@ import '../../skills/presentation/skill_ui.dart';
 
 final assessmentPracticeProvider = FutureProvider.autoDispose
     .family<SkillTreeResponse, (String, int)>((ref, key) {
-      ref.watch(studyRevisionProvider);
+      final revision = ref.watch(studyRevisionProvider);
       final uid = ref.watch(currentUserIdProvider);
       if (uid == null) throw StateError('Not authenticated');
       return ref
           .watch(skillTreeRepositoryProvider)
-          .getTree(userId: uid, subjectSlug: key.$1, grade: key.$2);
+          .getTree(
+            userId: uid,
+            subjectSlug: key.$1,
+            grade: key.$2,
+            revision: revision,
+          );
     });
 
 /// Review reuses the existing lesson and its authoritative once-only XP rule.

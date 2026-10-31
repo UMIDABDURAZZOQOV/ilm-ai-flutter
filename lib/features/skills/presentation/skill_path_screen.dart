@@ -87,12 +87,17 @@ class _PathItem {
 
 final _treeProvider = FutureProvider.autoDispose
     .family<SkillTreeResponse, (String, int?)>((ref, key) async {
-      ref.watch(studyRevisionProvider);
+      final revision = ref.watch(studyRevisionProvider);
       final userId = ref.watch(currentUserIdProvider);
       if (userId == null) throw Exception('not authenticated');
       return ref
           .read(skillTreeRepositoryProvider)
-          .getTree(userId: userId, subjectSlug: key.$1, grade: key.$2);
+          .getTree(
+            userId: userId,
+            subjectSlug: key.$1,
+            grade: key.$2,
+            revision: revision,
+          );
     });
 
 class SkillPathScreen extends ConsumerWidget {

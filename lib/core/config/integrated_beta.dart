@@ -2,6 +2,10 @@ import 'package:flutter/foundation.dart';
 
 const integratedBetaRequested = bool.fromEnvironment('INTEGRATED_BETA');
 const betaPerformanceRequested = bool.fromEnvironment('BETA_PERFORMANCE');
+const betaPerformanceIsolated = bool.fromEnvironment(
+  'BETA_PERF_ISOLATED',
+  defaultValue: true,
+);
 const integratedBeta =
     integratedBetaRequested &&
     (kDebugMode || (kProfileMode && betaPerformanceRequested));
@@ -10,7 +14,9 @@ const betaApiOrigin = String.fromEnvironment(
   defaultValue: 'http://127.0.0.1:8930',
 );
 const mobileAppScheme = integratedBeta
-    ? (kProfileMode ? 'ilmai-beta-perf' : 'ilmai-beta')
+    ? (kProfileMode && betaPerformanceIsolated
+          ? 'ilmai-beta-perf'
+          : 'ilmai-beta')
     : 'ilmai';
 const betaSubjectSlugs = {
   'biologiya',
