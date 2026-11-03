@@ -6,6 +6,8 @@ part 'arithmetic_explorer.dart';
 part 'concrete_number_explorer.dart';
 part 'number_properties_explorer.dart';
 part 'point_line_explorer.dart';
+part 'unknown_number_explorer.dart';
+part 'segment_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -262,6 +264,10 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if (mode == 'segments') return const _SegmentExplorer();
+    if ({'missing_addend', 'missing_minuend'}.contains(mode)) {
+      return _UnknownNumberExplorer(mode: mode);
+    }
     if ({'natural_numbers', 'parity', 'ordering_numbers'}.contains(mode)) {
       return _NumberPropertiesExplorer(mode: mode);
     }

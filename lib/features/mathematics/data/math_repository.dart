@@ -3,6 +3,9 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'segments',
+  'missing_addend',
+  'missing_minuend',
   'shape_properties',
   'compare_lengths',
   'positions',
