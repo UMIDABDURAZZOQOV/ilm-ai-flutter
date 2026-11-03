@@ -2,6 +2,36 @@ import 'dart:math';
 import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
+const mathExplorerModes = {
+  'shape_properties',
+  'compare_lengths',
+  'positions',
+  'count_once',
+  'flat_solid',
+  'timeline',
+  'group_members',
+  'pair_groups',
+  'number_line',
+  'addition',
+  'subtraction',
+  'comparison',
+  'one_two',
+  'compose_three',
+  'compose_four',
+  'compose_five',
+  'compose_six',
+  'compose_seven',
+  'compose_eight',
+  'compose_nine',
+  'compose_ten',
+  'part_whole_five',
+  'steps_five',
+  'zero',
+  'ordering_numbers',
+  'natural_numbers',
+  'parity',
+  'point_line',
+};
 List<MathJson> mathRows(dynamic value) =>
     (value as List).map((v) => Map<String, dynamic>.from(v as Map)).toList();
 
@@ -52,6 +82,9 @@ class MathRepository {
           throw const FormatException();
         }
         final content = result['content'] as Map;
+        if (!mathExplorerModes.contains(content['explorer']['type'])) {
+          throw const FormatException();
+        }
         for (final notation in mathRows(content['formulas'])) {
           if (notation['kind'] != 'worked_identity') {
             throw const FormatException();

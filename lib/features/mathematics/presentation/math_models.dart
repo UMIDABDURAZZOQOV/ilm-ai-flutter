@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import '../data/math_repository.dart';
 part 'elementary_explorer.dart';
 part 'arithmetic_explorer.dart';
 part 'concrete_number_explorer.dart';
+part 'number_properties_explorer.dart';
+part 'point_line_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -259,6 +262,10 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({'natural_numbers', 'parity', 'ordering_numbers'}.contains(mode)) {
+      return _NumberPropertiesExplorer(mode: mode);
+    }
+    if (mode == 'point_line') return const _PointLineExplorer();
     if ({
       'compose_three',
       'compose_four',
@@ -267,6 +274,7 @@ class _MathExplorerState extends State<MathExplorer> {
       'compose_seven',
       'compose_eight',
       'compose_nine',
+      'compose_ten',
       'zero',
       'part_whole_five',
       'steps_five',

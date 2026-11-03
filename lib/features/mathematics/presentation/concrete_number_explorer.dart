@@ -179,6 +179,7 @@ class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
           'compose_seven': 7,
           'compose_eight': 8,
           'compose_nine': 9,
+          'compose_ten': 10,
         }[widget.mode] ??
         5;
     final second = total - first;
