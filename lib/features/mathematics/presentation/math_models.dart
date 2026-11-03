@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../data/math_repository.dart';
 part 'elementary_explorer.dart';
 part 'arithmetic_explorer.dart';
+part 'concrete_number_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -258,6 +259,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'compose_three',
+      'compose_four',
+      'compose_five',
+      'part_whole_five',
+      'steps_five',
+    }.contains(mode)) {
+      return _ConcreteNumberExplorer(mode: mode);
+    }
     if ({'addition', 'subtraction', 'comparison', 'one_two'}.contains(mode)) {
       return _ArithmeticExplorer(mode: mode);
     }
