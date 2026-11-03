@@ -13,6 +13,16 @@ class _NumberPropertiesExplorerState extends State<_NumberPropertiesExplorer> {
   bool ascending = true;
   List<int> selected = [];
   @override
+  void didUpdateWidget(_NumberPropertiesExplorer oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.mode != widget.mode) {
+      number = 0;
+      selected = [];
+      ascending = true;
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     final order = widget.mode == 'ordering_numbers';
     final natural = widget.mode == 'natural_numbers';

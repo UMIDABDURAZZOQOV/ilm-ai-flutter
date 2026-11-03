@@ -8,6 +8,7 @@ part 'number_properties_explorer.dart';
 part 'point_line_explorer.dart';
 part 'unknown_number_explorer.dart';
 part 'segment_explorer.dart';
+part 'operation_properties_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -264,8 +265,20 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'commutative',
+      'addition_table',
+      'compare_same_addend',
+      'expression_steps',
+    }.contains(mode)) {
+      return _OperationPropertiesExplorer(mode: mode);
+    }
     if (mode == 'segments') return const _SegmentExplorer();
-    if ({'missing_addend', 'missing_minuend'}.contains(mode)) {
+    if ({
+      'missing_addend',
+      'missing_minuend',
+      'missing_subtrahend',
+    }.contains(mode)) {
       return _UnknownNumberExplorer(mode: mode);
     }
     if ({'natural_numbers', 'parity', 'ordering_numbers'}.contains(mode)) {
@@ -283,6 +296,7 @@ class _MathExplorerState extends State<MathExplorer> {
       'compose_ten',
       'zero',
       'part_whole_five',
+      'inverse_family',
       'steps_five',
     }.contains(mode)) {
       return _ConcreteNumberExplorer(mode: mode);

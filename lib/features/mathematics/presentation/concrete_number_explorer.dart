@@ -11,6 +11,17 @@ class _ConcreteNumberExplorer extends StatefulWidget {
 class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
   int first = 1, position = 3, zeroCount = 3;
   List<int> route = [3];
+  @override
+  void didUpdateWidget(_ConcreteNumberExplorer oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.mode != widget.mode) {
+      first = 1;
+      position = 3;
+      zeroCount = 3;
+      route = [3];
+    }
+  }
+
   void move(int delta) => setState(() {
     position += delta;
     route = [...route, position];
@@ -180,6 +191,7 @@ class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
           'compose_eight': 8,
           'compose_nine': 9,
           'compose_ten': 10,
+          'inverse_family': 7,
         }[widget.mode] ??
         5;
     final second = total - first;
@@ -233,6 +245,10 @@ class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
               onChanged: (v) => setState(() => first = v.round()),
             ),
             Text('$total − $first = $second. A qismini olsak B qismi qoladi.'),
+            if (widget.mode == 'inverse_family')
+              Text(
+                '$total − $second = $first. B qismini olsak A qismi qoladi.',
+              ),
             const Text(
               'Narsalar yangi paydo bo‘lmadi, faqat ikki guruhga ajratildi. Bitta doira faqat bir guruhga kiradi.',
             ),

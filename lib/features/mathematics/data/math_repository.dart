@@ -3,6 +3,12 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'missing_subtrahend',
+  'inverse_family',
+  'commutative',
+  'addition_table',
+  'compare_same_addend',
+  'expression_steps',
   'segments',
   'missing_addend',
   'missing_minuend',
