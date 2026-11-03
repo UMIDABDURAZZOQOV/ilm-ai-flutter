@@ -9,7 +9,7 @@ class _ConcreteNumberExplorer extends StatefulWidget {
 }
 
 class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
-  int first = 1, position = 3;
+  int first = 1, position = 3, zeroCount = 3;
   List<int> route = [3];
   void move(int delta) => setState(() {
     position += delta;
@@ -18,6 +18,94 @@ class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
   });
   @override
   Widget build(BuildContext context) {
+    Widget tokens(int count, String group, Color color) => Wrap(
+      spacing: 8,
+      runSpacing: 12,
+      children: [
+        for (var i = 0; i < count; i++)
+          Semantics(
+            container: true,
+            excludeSemantics: true,
+            label: '$group qism, ${i + 1}-doira',
+            child: SizedBox(
+              width: 56,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  SizedBox.square(
+                    dimension: 30,
+                    child: CustomPaint(
+                      painter: MathShapePainter('circle', color),
+                    ),
+                  ),
+                  Text('${i + 1}'),
+                ],
+              ),
+            ),
+          ),
+      ],
+    );
+    if (widget.mode == 'zero') {
+      return Card(
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const Text(
+                'Ilmoning qutisi',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Qutida: $zeroCount ta doira',
+                style: const TextStyle(fontSize: 24),
+              ),
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  border: Border.all(color: mathIndigo),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: zeroCount == 0
+                    ? Semantics(
+                        label: 'Bo‘sh quti. Nol doira.',
+                        child: const Text('Bo‘sh: 0 ta'),
+                      )
+                    : tokens(zeroCount, 'Quti', mathTurquoise),
+              ),
+              Wrap(
+                spacing: 8,
+                children: [
+                  OutlinedButton(
+                    onPressed: zeroCount == 0
+                        ? null
+                        : () => setState(() => zeroCount--),
+                    child: const Text('Bittasini ol'),
+                  ),
+                  OutlinedButton(
+                    onPressed: zeroCount == 4
+                        ? null
+                        : () => setState(() => zeroCount++),
+                    child: const Text('Bittasini qo‘sh'),
+                  ),
+                ],
+              ),
+              FilledButton(
+                onPressed: zeroCount == 0
+                    ? null
+                    : () => setState(() => zeroCount = 0),
+                child: const Text('Hammasini ol'),
+              ),
+              Text(
+                zeroCount == 0
+                    ? 'Hech narsa qolmadi. Nol — aniq miqdor, javobni bo‘sh qoldirish emas.'
+                    : 'Hozir $zeroCount ta. Nolni qo‘shish yoki ayirish miqdorni o‘zgartirmaydi.',
+              ),
+            ],
+          ),
+        ),
+      );
+    }
     if (widget.mode == 'steps_five') {
       return Card(
         child: Padding(
@@ -83,11 +171,16 @@ class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
         ),
       );
     }
-    final total = widget.mode == 'compose_three'
-        ? 3
-        : widget.mode == 'compose_four'
-        ? 4
-        : 5;
+    final total =
+        const {
+          'compose_three': 3,
+          'compose_four': 4,
+          'compose_six': 6,
+          'compose_seven': 7,
+          'compose_eight': 8,
+          'compose_nine': 9,
+        }[widget.mode] ??
+        5;
     final second = total - first;
     return Card(
       child: Padding(
@@ -104,22 +197,28 @@ class _ConcreteNumberExplorerState extends State<_ConcreteNumberExplorer> {
               style: const TextStyle(fontSize: 24),
               semanticsLabel: '$first ga $second qo‘shsak $total',
             ),
-            MathBoard(
-              scene: {
-                'type': 'shape_board',
-                'items': [
-                  for (var i = 0; i < total; i++)
-                    {
-                      'id': '${i + 1}',
-                      'shape': 'circle',
-                      'color': i < first ? 'turquoise' : 'yellow',
-                      'size': .6,
-                      'x': .12 + i * .18,
-                      'y': i < first ? .25 : .75,
-                    },
-                ],
-              },
-            ),
+            if (total > 5) ...[
+              Text('A qism: $first ta'),
+              tokens(first, 'A', mathTurquoise),
+              Text('B qism: $second ta'),
+              tokens(second, 'B', mathYellow),
+            ] else
+              MathBoard(
+                scene: {
+                  'type': 'shape_board',
+                  'items': [
+                    for (var i = 0; i < total; i++)
+                      {
+                        'id': '${i + 1}',
+                        'shape': 'circle',
+                        'color': i < first ? 'turquoise' : 'yellow',
+                        'size': .6,
+                        'x': .12 + i * .18,
+                        'y': i < first ? .25 : .75,
+                      },
+                  ],
+                },
+              ),
             Text(
               'A qism: $first ta. B qism: $second ta. Jami doiralar har doim $total ta.',
             ),

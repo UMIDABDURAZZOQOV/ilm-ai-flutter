@@ -125,7 +125,7 @@ class _ArithmeticExplorerState extends State<_ArithmeticExplorer> {
               single
                   ? 'Bitta — 1. Ikkita — 2. Raqamni qo‘lda yozishni daftarda ham mashq qil.'
                   : subtract
-                  ? 'Faqat pastdagi qolgan guruhni sana. Yuqori va pastki holatlarni qo‘shib sanama. Bu model nolni hali kiritmaydi.'
+                  ? 'Faqat pastdagi qolgan guruhni sana. Yuqori va pastki holatlarni qo‘shib sanama. Bu mashqda kamida bittasi qoladigan holatlarni sinab ko‘r.'
                   : compare
                   ? 'Belgining ochiq tomoni katta songa qaraydi. Miqdorlar teng bo‘lsa = yoziladi.'
                   : 'Jami miqdorni ikkala alohida guruhni birlashtirib topamiz.',

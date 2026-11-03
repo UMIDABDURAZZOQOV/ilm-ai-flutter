@@ -263,6 +263,11 @@ class _MathExplorerState extends State<MathExplorer> {
       'compose_three',
       'compose_four',
       'compose_five',
+      'compose_six',
+      'compose_seven',
+      'compose_eight',
+      'compose_nine',
+      'zero',
       'part_whole_five',
       'steps_five',
     }.contains(mode)) {
