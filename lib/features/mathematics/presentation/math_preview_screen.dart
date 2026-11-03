@@ -28,6 +28,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
   CancelToken _cancel = CancelToken();
   MathJson? _catalog, _attempt, _feedback, _result, _pending;
   String? _lessonKey, _request, _choice, _error;
+  List<String> _order = [];
   bool _busy = false, _practicing = false;
   int _page = 0, _generation = 0;
   Future<void> _writes = Future.value();
@@ -57,6 +58,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       _catalog = _attempt = _feedback = _result = _pending = null;
       _lessonKey = _request = _choice = _error = null;
       _busy = false;
+      _order = [];
       _practicing = false;
       _page = 0;
       _input.clear();
@@ -124,6 +126,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       'page': _page,
       'practicing': _practicing,
       'choice': _choice,
+      'order': _order,
       'value': _input.text,
       'pending': _pending,
     });
@@ -177,6 +180,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
     _page = fresh ? 0 : (saved['page'] as int? ?? 0);
     _practicing = !fresh && saved['practicing'] == true;
     _choice = fresh ? null : saved['choice'] as String?;
+    _order = fresh ? [] : ((saved['order'] as List?)?.cast<String>() ?? []);
     _input.text = fresh ? '' : (saved['value'] as String? ?? '');
     _pending = fresh ? null : saved['pending'] as MathJson?;
     await _save(); // Persist the stable start UUID before issuing a request.
@@ -220,6 +224,8 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       if (question == null) return;
       final answer = question['response_kind'] == 'choice'
           ? {'choice_id': _choice}
+          : question['response_kind'] == 'ordering'
+          ? {'order': List<String>.of(_order)}
           : {'value': _input.text.trim()};
       _pending = {
         'request_id': mathRequestId(),
@@ -258,6 +264,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
     setState(() {
       _feedback = null;
       _choice = null;
+      _order = [];
       _input.clear();
     });
     _persistDraft();
@@ -317,7 +324,9 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
           children.add(
             Card(
               child: ListTile(
+                key: ValueKey(lesson['key']),
                 title: Text(lesson['title'] as String),
+                subtitle: Text('${lesson['sequence']}-mavzu'),
                 leading: Icon(
                   lesson['state'] == 'locked'
                       ? Icons.lock_outline
@@ -530,6 +539,45 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
             ],
           ),
         );
+      } else if (q['response_kind'] == 'ordering') {
+        final items = mathRows(q['items']);
+        children.add(const Text('Qadamlarni birinchisidan boshlab tanla.'));
+        for (var i = 0; i < _order.length; i++) {
+          final label = items.firstWhere(
+            (item) => item['id'] == _order[i],
+          )['label'];
+          children.add(Text('${i + 1}. $label'));
+        }
+        children.add(
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final item in items)
+                ActionChip(
+                  label: Text(item['label'] as String),
+                  onPressed:
+                      _busy || _pending != null || _order.contains(item['id'])
+                      ? null
+                      : () {
+                          setState(() => _order.add(item['id'] as String));
+                          _persistDraft();
+                        },
+                ),
+            ],
+          ),
+        );
+        children.add(
+          TextButton(
+            onPressed: _busy || _pending != null || _order.isEmpty
+                ? null
+                : () {
+                    setState(() => _order.removeLast());
+                    _persistDraft();
+                  },
+            child: const Text('Oxirgi tanlovni qaytarish'),
+          ),
+        );
       } else {
         children.add(
           TextField(
@@ -560,6 +608,8 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
                   (_pending == null &&
                       (q['response_kind'] == 'choice'
                           ? _choice == null
+                          : q['response_kind'] == 'ordering'
+                          ? _order.length != (q['items'] as List).length
                           : _input.text.trim().isEmpty))
               ? null
               : _submit,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../data/math_repository.dart';
+part 'elementary_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -256,6 +257,14 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'timeline',
+      'group_members',
+      'pair_groups',
+      'number_line',
+    }.contains(mode)) {
+      return _ElementaryExplorer(mode: mode);
+    }
     final items = mode == 'count_once'
         ? List.generate(
             4,

@@ -74,6 +74,7 @@ class MathRepository {
             'choice',
             'short_text',
             'exact_number',
+            'ordering',
           }.contains(q['response_kind'])) {
             throw const FormatException();
           }
@@ -81,13 +82,25 @@ class MathRepository {
               mathRows(q['choices']).isEmpty) {
             throw const FormatException();
           }
+          if (q['response_kind'] == 'ordering') {
+            final items = mathRows(q['items']);
+            if (items.length < 2 ||
+                items.length > 10 ||
+                items.map((v) => v['id']).toSet().length != items.length) {
+              throw const FormatException();
+            }
+            for (final item in items) {
+              text(item['id']);
+              text(item['label']);
+            }
+          }
           if (q['visual'] != null) {
             final scene = q['visual'] as Map;
             if (!{'shape_board', 'bars'}.contains(scene['type'])) {
               throw const FormatException();
             }
             final items = mathRows(scene['items']);
-            if (items.isEmpty || items.length > 9) {
+            if (items.isEmpty || items.length > 10) {
               throw const FormatException();
             }
             for (final item in items) {
