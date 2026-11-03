@@ -389,6 +389,30 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
           _sources(card['source_refs']),
         ]);
       } else {
+        for (final notation in mathRows(content['formulas'])) {
+          children.add(
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      notation['title'] as String,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      notation['expression'] as String,
+                      style: const TextStyle(fontSize: 24),
+                    ),
+                    Text(notation['meaning'] as String),
+                    _sources(notation['source_refs']),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }
         for (final example in mathRows(content['examples'])) {
           if (example['visual'] != null) {
             children.add(MathBoard(scene: example['visual'] as MathJson));

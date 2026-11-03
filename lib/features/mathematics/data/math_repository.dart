@@ -52,6 +52,14 @@ class MathRepository {
           throw const FormatException();
         }
         final content = result['content'] as Map;
+        for (final notation in mathRows(content['formulas'])) {
+          if (notation['kind'] != 'worked_identity') {
+            throw const FormatException();
+          }
+          text(notation['title']);
+          text(notation['expression']);
+          text(notation['meaning']);
+        }
         for (final card in mathRows(content['cards'])) {
           text(card['title']);
           text(card['body']);

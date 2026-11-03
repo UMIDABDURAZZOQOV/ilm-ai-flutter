@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../data/math_repository.dart';
 part 'elementary_explorer.dart';
+part 'arithmetic_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -257,6 +258,9 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({'addition', 'subtraction', 'comparison', 'one_two'}.contains(mode)) {
+      return _ArithmeticExplorer(mode: mode);
+    }
     if ({
       'timeline',
       'group_members',
