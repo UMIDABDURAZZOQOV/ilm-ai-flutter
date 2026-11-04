@@ -13,6 +13,7 @@ part 'place_value_explorer.dart';
 part 'bracket_explorer.dart';
 part 'ten_strategy_explorer.dart';
 part 'hundred_explorer.dart';
+part 'two_digit_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -269,6 +270,17 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'two_digit_addition',
+      'two_digit_missing_addend',
+      'two_digit_subtraction',
+      'two_digit_inverse',
+    }.contains(mode)) {
+      return _TwoDigitExplorer(mode: mode);
+    }
+    if (mode == 'compare_place_value_100') {
+      return const _PlaceComparisonExplorer(large: true);
+    }
     if ({
       'round_tens_100',
       'hundred_chart',

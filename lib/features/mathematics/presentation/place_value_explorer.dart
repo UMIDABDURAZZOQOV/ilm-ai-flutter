@@ -130,7 +130,8 @@ class _PlaceValueExplorerState extends State<_PlaceValueExplorer> {
 }
 
 class _PlaceComparisonExplorer extends StatefulWidget {
-  const _PlaceComparisonExplorer();
+  final bool large;
+  const _PlaceComparisonExplorer({this.large = false});
   @override
   State<_PlaceComparisonExplorer> createState() =>
       _PlaceComparisonExplorerState();
@@ -138,6 +139,24 @@ class _PlaceComparisonExplorer extends StatefulWidget {
 
 class _PlaceComparisonExplorerState extends State<_PlaceComparisonExplorer> {
   int left = 16, right = 13;
+  @override
+  void initState() {
+    super.initState();
+    if (widget.large) {
+      left = 72;
+      right = 68;
+    }
+  }
+
+  @override
+  void didUpdateWidget(_PlaceComparisonExplorer oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.large != widget.large) {
+      left = widget.large ? 72 : 16;
+      right = widget.large ? 68 : 13;
+    }
+  }
+
   Widget number(String name, int value, ValueChanged<int> update) => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
@@ -145,9 +164,9 @@ class _PlaceComparisonExplorerState extends State<_PlaceComparisonExplorer> {
       Slider(
         key: ValueKey('compare-$name'),
         value: value.toDouble(),
-        min: 11,
-        max: 20,
-        divisions: 9,
+        min: widget.large ? 10 : 11,
+        max: widget.large ? 99 : 20,
+        divisions: widget.large ? 89 : 9,
         semanticFormatterCallback: (v) => '$name son ${v.round()}',
         onChanged: (v) => setState(() => update(v.round())),
       ),
