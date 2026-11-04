@@ -1,5 +1,13 @@
 # III qism — lokal QA, 2026-11-04
 
+Joriy yangilanish: III qism10/37matnli mavzu, jami83lokal dars/624topshiriq.
+6–10PDF16–25/bosma14–23: butun/qism, barcha mezonlar, ketma-ket strelka,
+teskari jadval va nol. 5yangi oqim320px/200%/ReduceMotion;21targetedtest.
+To‘liq Flutter512test(2:47), analyze0(3.8s), debugJSwebbuild34.4s o‘tdi.
+Oldingi5dars statusi quyida tarix sifatida qoldirilgan. Keyingi manba11,
+path11,PDF26–27; manba14keyin path12bo‘ladi. Normalapp/Gradle/auth o‘zgarmagan.
+
+
 Hozir III qismda 5 lokal dars bor: PDF6–15/bosma4–13, Repyova2024.
 37 ta matnli mavzu chegarasi xaritalangan; qolgan32 hali interaktiv emas.
 Mundarijadagi nazorat/o‘yin qatorlari tayyor dars hisoblanmaydi.

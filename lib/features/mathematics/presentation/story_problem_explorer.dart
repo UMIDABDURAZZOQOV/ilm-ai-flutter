@@ -12,7 +12,14 @@ class _StoryProblemExplorer extends StatefulWidget {
 class _StoryProblemExplorerState extends State<_StoryProblemExplorer> {
   int selected = 0, number = 27, step = 0, known = 20;
   bool reveal = false;
+  int secondPart = 14, minimumHours = 2, maximumHeight = 7;
   final Set<int> totalsSeen = {};
+  @override
+  void initState() {
+    super.initState();
+    if (widget.mode == 'problem_missing_part') known = 21;
+  }
+
   @override
   void didUpdateWidget(_StoryProblemExplorer oldWidget) {
     super.didUpdateWidget(oldWidget);
@@ -20,9 +27,12 @@ class _StoryProblemExplorerState extends State<_StoryProblemExplorer> {
       selected = 0;
       number = 27;
       step = 0;
-      known = 20;
+      known = widget.mode == 'problem_missing_part' ? 21 : 20;
       reveal = false;
       totalsSeen.clear();
+      secondPart = 14;
+      minimumHours = 2;
+      maximumHeight = 7;
     }
   }
 
@@ -140,30 +150,32 @@ class _StoryProblemExplorerState extends State<_StoryProblemExplorer> {
           ],
         ),
       ]);
-    } else if (widget.mode == 'problem_part_whole') {
-      final remaining = 76 - known;
+    } else if (widget.mode == 'problem_part_whole' ||
+        widget.mode == 'problem_missing_part') {
+      final whole = widget.mode == 'problem_part_whole' ? 76 : 53;
+      final remaining = whole - known;
       children.addAll([
-        const Text('Butun 76, ma’lum qismni o‘zgartir'),
+        Text('Butun $whole, ma’lum qismni o‘zgartir'),
         Text('Ma’lum qism:$known'),
         Slider(
           key: const ValueKey('story-known-part'),
           value: known.toDouble(),
           min: 0,
-          max: 76,
-          divisions: 76,
+          max: whole.toDouble(),
+          divisions: whole,
           semanticFormatterCallback: (v) =>
-              'Ma’lum qism ${v.round()}, butun 76',
+              'Ma’lum qism ${v.round()}, butun $whole',
           onChanged: (v) => setState(() {
             known = v.round();
             reveal = false;
           }),
         ),
         Semantics(
-          label: 'Butun 76; ma’lum qism$known; noma’lum qolgan qism',
+          label: 'Butun $whole; ma’lum qism $known; noma’lum qolgan qism',
           child: ExcludeSemantics(
             child: SizedBox(
               height: 32,
-              child: CustomPaint(painter: _ProblemBarPainter(known / 76)),
+              child: CustomPaint(painter: _ProblemBarPainter(known / whole)),
             ),
           ),
         ),
@@ -173,7 +185,7 @@ class _StoryProblemExplorerState extends State<_StoryProblemExplorer> {
         Semantics(
           liveRegion: true,
           child: Text(
-            reveal ? '76 − $known = $remaining' : '76 = $known + ?',
+            reveal ? '$whole − $known = $remaining' : '$whole = $known + ?',
             key: const ValueKey('story-part-result'),
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
@@ -182,7 +194,138 @@ class _StoryProblemExplorerState extends State<_StoryProblemExplorer> {
           onPressed: reveal ? null : () => setState(() => reveal = true),
           child: const Text('Hisobni ochish'),
         ),
-        if (reveal) Text('Tekshir:$known + $remaining = 76'),
+        if (reveal) Text('Tekshir: $known + $remaining = $whole'),
+      ]);
+    } else if (widget.mode == 'problem_whole_sum') {
+      final total = 23 + secondPart;
+      children.addAll([
+        const Text('Ko‘k qism 23 ta; sariq qismni o‘zgartir'),
+        Text('Sariq: $secondPart ta'),
+        Slider(
+          key: const ValueKey('story-second-part'),
+          min: 0,
+          max: 30,
+          divisions: 30,
+          value: secondPart.toDouble(),
+          semanticFormatterCallback: (v) => '${v.round()} ta sariq belgi',
+          onChanged: (v) => setState(() {
+            secondPart = v.round();
+            reveal = false;
+          }),
+        ),
+        Text(
+          'Ko‘k 23 ta + sariq $secondPart ta = butun ?',
+          key: const ValueKey('story-whole-equation'),
+        ),
+        FilledButton(
+          onPressed: reveal ? null : () => setState(() => reveal = true),
+          child: const Text('Butunni ochish'),
+        ),
+        if (reveal) ...[
+          Text(
+            '23 + $secondPart = $total',
+            key: const ValueKey('story-whole-result'),
+          ),
+          Text('Tekshir: $total − 23 = $secondPart'),
+          Semantics(
+            label: 'Butun $total; ko‘k 23 va sariq $secondPart ta',
+            child: ExcludeSemantics(
+              child: SizedBox(
+                height: 32,
+                child: CustomPaint(painter: _ProblemBarPainter(23 / total)),
+              ),
+            ),
+          ),
+        ],
+        const Text(
+          'Har belgi bitta guruhda sanaladi. Ikki qism ham belgi soni.',
+        ),
+      ]);
+    } else if (widget.mode == 'problem_criteria') {
+      final a = minimumHours <= 2 && maximumHeight >= 6;
+      final b = minimumHours <= 3 && maximumHeight >= 8;
+      children.addAll([
+        const Text('O‘yin modeli: barcha talabga mosini top'),
+        const Text('A: 2 soat, balandlik 6 cm\nB: 3 soat, balandlik 8 cm'),
+        SwitchListTile(
+          title: Text('Kamida $minimumHours soat ishlasin'),
+          value: minimumHours == 3,
+          onChanged: (v) => setState(() => minimumHours = v ? 3 : 2),
+        ),
+        SwitchListTile(
+          title: Text('Balandlik ko‘pi bilan $maximumHeight cm'),
+          value: maximumHeight == 9,
+          onChanged: (v) => setState(() => maximumHeight = v ? 9 : 7),
+        ),
+        Semantics(
+          liveRegion: true,
+          child: Text(
+            'A: ${a ? 'mos' : 'mos emas'}; B: ${b ? 'mos' : 'mos emas'}',
+            key: const ValueKey('story-criteria-result'),
+          ),
+        ),
+        const Text(
+          'Vaqt vaqt bilan, balandlik balandlik bilan taqqoslanadi. Ikkala talab ham bajarilsin.',
+        ),
+        if (!a && !b)
+          const Text('Hozir ikkala talabni birga bajaradigan model yo‘q.'),
+        if (a && b)
+          const Text(
+            'Ikkalasi ham mos. Yagona g‘olibni ajratadigan qo‘shimcha qoida berilmagan.',
+          ),
+      ]);
+    } else if (widget.mode == 'problem_arrow_chain') {
+      const values = [8, 12, 18, 28];
+      const additions = [4, 6, 10];
+      children.addAll([
+        const Text('Har strelka hozirgi natijani o‘zgartiradi'),
+        const Text('Boshlanish 8; strelkalar +4, +6, +10'),
+        Text(
+          '${values[step]}',
+          key: const ValueKey('story-chain-current'),
+          style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        ),
+        for (var i = 0; i < step; i++)
+          Text('${values[i]} + ${additions[i]} = ${values[i + 1]}'),
+        FilledButton(
+          onPressed: step < 3 ? () => setState(() => step++) : null,
+          child: Text(step < 3 ? 'Keyingi +${additions[step]}' : 'Yo‘l tugadi'),
+        ),
+        OutlinedButton(
+          onPressed: step == 0 ? null : () => setState(() => step = 0),
+          child: const Text('Boshidan ko‘rish'),
+        ),
+        if (step > 1)
+          const Text('Yana 8 ga qaytmadik; oldingi natijadan davom etdik.'),
+      ]);
+    } else if (widget.mode == 'problem_inverse_table') {
+      const totals = [35, 48, 27], knowns = [12, 18, 27], answers = [23, 30, 0];
+      final total = totals[selected],
+          part = knowns[selected],
+          answer = answers[selected];
+      children.addAll([
+        const Text('Bitta ustun — bitta butun va uning qismlari'),
+        choice(['1-ustun', '2-ustun', '3-ustun']),
+        Text(
+          selected == 1 ? '18 + ? = 48' : '? + $part = $total',
+          key: const ValueKey('story-table-missing'),
+        ),
+        FilledButton(
+          onPressed: () => setState(() => totalsSeen.add(selected)),
+          child: const Text('Noma’lumni ochish'),
+        ),
+        if (totalsSeen.contains(selected)) ...[
+          Text(
+            '$total − $part = $answer',
+            key: const ValueKey('story-table-inverse'),
+          ),
+          Text(selected == 1 ? '18 + 30 = 48' : '$answer + $part = $total'),
+          if (answer == 0)
+            const Text(
+              'Nol ham tekshiruvdan o‘tadi: ma’lum qism butunning o‘ziga teng.',
+            ),
+        ],
+        const Text('Boshqa ustunning soni bu shartga qo‘shilmaydi.'),
       ]);
     } else if (widget.mode == 'problem_representations') {
       children.addAll([
@@ -263,9 +406,7 @@ class _StoryProblemExplorerState extends State<_StoryProblemExplorer> {
           ),
         if (totalsSeen.length == 2)
           const Text('12 > 11. Eng katta jami qoidasiga ko‘ra A oldinda.'),
-        const Text(
-          'Bu original masalaning jadvali; akkaunt XPsi yoki haqiqiy reyting emas.',
-        ),
+        const Text('Har bir ustunda uch bosqichning natijasini jamla.'),
       ]);
     }
     return Card(

@@ -278,6 +278,11 @@ class _MathExplorerState extends State<MathExplorer> {
       'problem_part_whole',
       'problem_representations',
       'problem_table_totals',
+      'problem_whole_sum',
+      'problem_criteria',
+      'problem_arrow_chain',
+      'problem_missing_part',
+      'problem_inverse_table',
     }.contains(mode)) {
       return _StoryProblemExplorer(mode: mode);
     }
