@@ -3,6 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'geometry_ruler_interval',
+  'geometry_construct_segment',
+  'geometry_segment_partition',
+  'geometry_polyline_length',
+  'geometry_polygon_boundary',
   'quantity_mass_batches',
   'quantity_litre_addition',
   'quantity_capacity_content',

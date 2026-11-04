@@ -21,6 +21,7 @@ part 'comparison_application_explorer.dart';
 part 'reasoning_length_explorer.dart';
 part 'measurement_units_explorer.dart';
 part 'quantity_practice_explorer.dart';
+part 'geometry_length_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -277,6 +278,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'geometry_ruler_interval',
+      'geometry_construct_segment',
+      'geometry_segment_partition',
+      'geometry_polyline_length',
+      'geometry_polygon_boundary',
+    }.contains(mode)) {
+      return _GeometryLengthExplorer(mode: mode);
+    }
     if ({
       'quantity_mass_batches',
       'quantity_litre_addition',
