@@ -26,10 +26,12 @@ class _TenStrategyExplorerState extends State<_TenStrategyExplorer> {
       'bridge_ten_line': [(9, 8), (6, 7)],
       'subtract_units_20': [(18, 3), (17, 5), (19, 6)],
       'subtract_bridge_ten': [(14, 8), (16, 9), (12, 5)],
+      'subtract_from_ten': [(14, 8), (15, 9), (17, 8)],
     }[widget.mode]!;
     final (a, b) = pairs[sample];
     final subtract = widget.mode.startsWith('subtract');
     final unitsOnly = widget.mode == 'subtract_units_20';
+    final fromTen = widget.mode == 'subtract_from_ten';
     final symbol = subtract ? '−' : '+';
     final first = unitsOnly
         ? a % 10
@@ -38,7 +40,14 @@ class _TenStrategyExplorerState extends State<_TenStrategyExplorer> {
         : 10 - a;
     final rest = unitsOnly ? first - b : b - first;
     final result = subtract ? a - b : a + b;
-    final expressions = unitsOnly
+    final expressions = fromTen
+        ? [
+            '$a − $b',
+            '$a = ${a % 10} + 10',
+            '10 − $b = ${10 - b}',
+            '${a % 10} + ${10 - b} = $result',
+          ]
+        : unitsOnly
         ? [
             '$a − $b',
             '$a = 10 + $first',
@@ -51,7 +60,14 @@ class _TenStrategyExplorerState extends State<_TenStrategyExplorer> {
             '$a $symbol $first = 10',
             '10 $symbol $rest = $result',
           ];
-    final explanations = unitsOnly
+    final explanations = fromTen
+        ? [
+            'O‘nlikdan ayirib, ${a % 10} alohida birlikni saqlaymiz.',
+            'Kamayuvchi ikkiga ajratildi: ${a % 10} birlik va to‘liq 10.',
+            '$b ni faqat 10 dan ayirdik. Saqlangan ${a % 10} birlikka tegmadik.',
+            'Ikkala qolgan qismni qo‘shdik. Bu yo‘l ham $result natijasini beradi.',
+          ]
+        : unitsOnly
         ? [
             'Ayriluvchi $b mavjud $first birlikdan oshmaydi.',
             'Bitta o‘nlikni ajratdik, $first alohida birlik qoldi.',
@@ -100,7 +116,7 @@ class _TenStrategyExplorerState extends State<_TenStrategyExplorer> {
             ),
             Text('Qadam ${step + 1} / 4'),
             Text(explanations[step]),
-            if (step >= 1)
+            if (step >= 1 && !fromTen)
               Wrap(
                 spacing: 8,
                 runSpacing: 8,

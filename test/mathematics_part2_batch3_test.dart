@@ -234,6 +234,12 @@ void main() {
           '14 − 4 = 10',
           '10 − 4 = 6',
         ],
+        'subtract_from_ten': [
+          '14 − 8',
+          '14 = 4 + 10',
+          '10 − 8 = 2',
+          '4 + 2 = 6',
+        ],
       };
       for (final entry in paths.entries) {
         await tester.pumpWidget(

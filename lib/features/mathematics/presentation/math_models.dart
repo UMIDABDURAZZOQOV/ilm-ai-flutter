@@ -12,6 +12,7 @@ part 'operation_properties_explorer.dart';
 part 'place_value_explorer.dart';
 part 'bracket_explorer.dart';
 part 'ten_strategy_explorer.dart';
+part 'hundred_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -269,11 +270,20 @@ class _MathExplorerState extends State<MathExplorer> {
     };
     final mode = widget.mode;
     if ({
+      'round_tens_100',
+      'hundred_chart',
+      'place_value_100',
+      'abacus_100',
+    }.contains(mode)) {
+      return _HundredExplorer(mode: mode);
+    }
+    if ({
       'bridge_ten_intro',
       'bridge_ten_apply',
       'bridge_ten_line',
       'subtract_units_20',
       'subtract_bridge_ten',
+      'subtract_from_ten',
     }.contains(mode)) {
       return _TenStrategyExplorer(mode: mode);
     }
