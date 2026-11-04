@@ -3,6 +3,14 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'quantity_mass_batches',
+  'quantity_litre_addition',
+  'quantity_capacity_content',
+  'quantity_conserving_pour',
+  'quantity_commutative_units',
+  'quantity_unknown_components',
+  'quantity_course_review',
+
   'measurement_segments',
   'measurement_decimetre_intro',
   'measurement_dm_cm_conversion',

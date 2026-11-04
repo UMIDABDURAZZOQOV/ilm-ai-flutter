@@ -424,6 +424,18 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
             ),
           );
         }
+        if (bridge != null &&
+            book?['source_body_topic_count'] == book?['implemented_sections'] &&
+            (book?['source_gaps'] as List?)?.any(
+                  (v) => v['kind'] == 'toc_scheduled_activity_no_body',
+                ) ==
+                true) {
+          children.add(
+            const Text(
+              'Matnli mavzular qamrab olindi. Alohida matni berilmagan nazorat va o‘yin mashg‘ulotlari hali tayyor emas.',
+            ),
+          );
+        }
         for (final lesson in mathRows(_catalog!['lessons'])) {
           children.add(
             Card(

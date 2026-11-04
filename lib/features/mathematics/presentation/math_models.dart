@@ -20,6 +20,7 @@ part 'comparison_problem_explorer.dart';
 part 'comparison_application_explorer.dart';
 part 'reasoning_length_explorer.dart';
 part 'measurement_units_explorer.dart';
+part 'quantity_practice_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -276,6 +277,17 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'quantity_mass_batches',
+      'quantity_litre_addition',
+      'quantity_capacity_content',
+      'quantity_conserving_pour',
+      'quantity_commutative_units',
+      'quantity_unknown_components',
+      'quantity_course_review',
+    }.contains(mode)) {
+      return _QuantityPracticeExplorer(mode: mode);
+    }
     if ({
       'measurement_segments',
       'measurement_decimetre_intro',

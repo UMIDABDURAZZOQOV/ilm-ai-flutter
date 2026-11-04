@@ -1,5 +1,19 @@
 # III qism — lokal QA, 2026-11-04
 
+## Joriy: III qism37/37 matnli mavzu, jami110 lokal dars
+
+Source36–42/PDF66–79/bosma64–77 qo‘shildi:42karta/56topshiriq.
+Barcha84III-PDFsahifasi review qilindi.5jadvaldagi nazorat/o‘yin tanasi yo‘q;
+ular tayyor emas. II74ham missing. IVqism runtime hali blocked.
+Yangi modellar takroriykg,litr qo‘shish,sig‘im/joriy suv,yo‘qotishsiz8/5/3quyish,
+kommutativlik,noma’lum birlikli jadval va yakuniy butun/qism/tartibni qamraydi.
+16targetedtest21s;fullFlutter575passed5:03;analyze0(2.5s);debugJSweb65.7s.
+Backend147pass1skip294.64s;finaltext+PG10pass70.80s;protected11pass39.27s.
+Qayta urinish0XP,all110progress/seed137→1237XP,UID va streak saqlangan.
+Bu realAndroid/brauzerAPI/teacher/pilot tasdig‘i emas. Normalapp/auth/Gradle,
+frontend va boshqa fanlarga tegilmagan. Keyingi IV2023source112,PDF5–6/bosma4–5.
+
+
 ## Joriy: III qism30/37, jami103 lokal dars
 
 Source31–35/PDF56–65/bosma54–63:30karta,40topshiriq. Kesma/tenglik,dm/cmguruhlari va0–99konvertatsiya,kvadrat ham bo‘la oladigan to‘rtburchak,ma’lum tosh qo‘shiladigan tarozi modeli. Birlik savolda aniq,numericFRQ umumiyunitparser degani emas.
