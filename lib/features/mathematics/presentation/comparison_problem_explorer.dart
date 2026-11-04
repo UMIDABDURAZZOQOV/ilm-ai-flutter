@@ -241,7 +241,7 @@ class _ComparisonBarsPainter extends CustomPainter {
   const _ComparisonBarsPainter(this.first, this.second);
   @override
   void paint(Canvas canvas, Size size) {
-    final scale = size.width / math.max(first, second);
+    final scale = size.width / math.max(1, math.max(first, second));
     for (var i = 0; i < 2; i++) {
       final n = i == 0 ? first : second;
       final rect = Rect.fromLTWH(0, i * 32, scale * n, 24);

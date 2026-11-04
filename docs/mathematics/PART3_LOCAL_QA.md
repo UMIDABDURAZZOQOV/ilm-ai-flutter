@@ -1,5 +1,25 @@
 # III qism — lokal QA, 2026-11-04
 
+## Joriy checkpoint: III qism20/37, jami93 lokal dars
+
+Source18–22 (path16–20), PDF36–45/bosma34–43 qo‘shildi.5 yangi darsning
+40 topshirig‘i va barcha sahifalar bilan bog‘langan original karta/misollar bor.
+Modellar: ikki miqdor farqi,jadvaldagi tanlangan ustunlar,7/9/7 original
+belgilar,ikkala katakka bir xil qiymat,bosqichli/shaklli bog‘lanishlar.
+Ikkala miqdor0 bo‘lganda bar chizmasining nolga bo‘linishi himoyalangan.
+
+12 yangi test,5 oqim320px/200%matn/ReduceMotion bilan. Full Flutter536test
+(3:33), analyze0(2.4s), debugJSwebbuild42.3s o‘tdi. Bu haqiqiy brauzer/API,
+Android yoki mustaqil pedagogik tekshiruv degani emas. Backend Math125pass/
+1skip va alohida PG1pass34.10s:93dars,seed137XP→1067,replay0.
+
+II74 bosma68–69 hali yo‘q. Explicit local QA siyosati va default strict
+prerequisite saqlanadi; boshqa fanlar/normalapp/auth/Gradle o‘zgarmagan.
+Keyingi:source23 «Murakkab masalalar yechish»,path21,PDF46–47/bosma44–45.
+III qismda17matnli mavzu qolgan, butun1–11kurs hali tugallanmagan.
+
+## Oldingi checkpointlar
+
 ## Joriy checkpoint: III qism15/37, jami88 lokal dars
 
 Manba11 va14–17 (path11–15), PDF26–35/bosma24–33 qo‘shildi.
