@@ -31,6 +31,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
   List<String> _order = [];
   bool _busy = false, _practicing = false;
   int _page = 0, _generation = 0;
+  int _grade = 1, _part = 1;
   Future<void> _writes = Future.value();
   String get _namespace =>
       'math_preview_v1:${sha256.convert(utf8.encode(widget.repository.dio.options.baseUrl))}:${widget.userId}';
@@ -61,6 +62,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       _order = [];
       _practicing = false;
       _page = 0;
+      _grade = _part = 1;
       _input.clear();
       unawaited(_load());
     }
@@ -88,6 +90,9 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       if (detail == 'finish_previous_lesson') {
         return 'Avval oldingi mavzuni yakunlang.';
       }
+      if (detail == 'finish_previous_book') {
+        return 'Avval oldingi kitob qismini yakunlang.';
+      }
       if (detail == 'mathematics_preview_disabled') {
         return 'Matematika bu test serverida yoqilmagan.';
       }
@@ -111,6 +116,7 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
     } catch (error) {
       if (mounted && generation == _generation) {
         setState(() => _error = _message(error));
+        if (_attempt == null) _top();
       }
     } finally {
       if (mounted && generation == _generation) setState(() => _busy = false);
@@ -156,9 +162,30 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
   }
 
   Future<void> _load() => _run((generation) async {
-    final catalog = await widget.repository.catalog(_cancel);
+    final catalog = await widget.repository.catalog(
+      _cancel,
+      grade: _grade,
+      part: _part,
+    );
     if (!_active(generation)) return;
     setState(() => _catalog = catalog);
+  });
+
+  Future<void> _selectBook(String value) => _run((generation) async {
+    final values = value.split(':').map(int.parse).toList();
+    final catalog = await widget.repository.catalog(
+      _cancel,
+      grade: values[0],
+      part: values[1],
+    );
+    if (!_active(generation)) return;
+    setState(() {
+      _grade = values[0];
+      _part = values[1];
+      _catalog = catalog;
+      _lessonKey = null;
+    });
+    _top();
   });
 
   Future<void> _open(String key, {bool fresh = false}) => _run((
@@ -279,7 +306,11 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
     );
     if (!_active(generation)) return;
     setState(() => _result = result);
-    final catalog = await widget.repository.catalog(_cancel);
+    final catalog = await widget.repository.catalog(
+      _cancel,
+      grade: _grade,
+      part: _part,
+    );
     if (_active(generation)) setState(() => _catalog = catalog);
     await _save();
     _top();
@@ -296,13 +327,19 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
 
   Widget _sources(dynamic refs) {
     final reference = mathRows(refs).first;
+    final roman = {1: 'I', 2: 'II', 3: 'III', 4: 'IV'}[reference['part']];
+    final book = mathRows(
+      _catalog?['available_books'] ?? [],
+    ).where((b) => b['book_id'] == reference['book_id']).firstOrNull;
+    final bibliography = book?['bibliography'] as Map?;
+    final year = bibliography?['year'];
     return ExpansionTile(
       title: const Text('Manba'),
       children: [
         Padding(
           padding: const EdgeInsets.all(12),
           child: Text(
-            '1-sinf Matematika, I qism, 2023. PDF: ${(reference['pdf_pages'] as List).join('–')}. Bosma: ${(reference['printed_pages'] as List).join('–')}.',
+            '${reference['grade']}-sinf Matematika, ${roman ?? reference['part']} qism${year == null ? '' : ', $year'}. PDF: ${(reference['pdf_pages'] as List).join('–')}. Bosma: ${(reference['printed_pages'] as List).join('–')}.${bibliography?['isbn'] == null ? '' : ' ISBN: ${bibliography!['isbn']}.'}',
           ),
         ),
       ],
@@ -314,19 +351,58 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
     final children = <Widget>[];
     if (_attempt == null) {
       children.add(
-        const Text(
-          '1-sinf · I qism',
-          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+        Text(
+          _catalog?['book']?['label'] as String? ??
+              '$_grade-sinf · ${const {1: 'I', 2: 'II', 3: 'III', 4: 'IV'}[_part]} qism',
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
       );
       if (_catalog != null) {
+        final books = mathRows(_catalog!['available_books'] ?? []);
+        if (books.length > 1) {
+          children.add(
+            InputDecorator(
+              decoration: const InputDecoration(
+                labelText: 'Sinf va kitob qismi',
+              ),
+              child: DropdownButtonHideUnderline(
+                child: DropdownButton<String>(
+                  key: ValueKey('math-book-$_grade-$_part'),
+                  value: '$_grade:$_part',
+                  isExpanded: true,
+                  items: [
+                    for (final book in books)
+                      DropdownMenuItem(
+                        value: '${book['grade']}:${book['part']}',
+                        child: Text(book['label'] as String),
+                      ),
+                  ],
+                  onChanged: _busy
+                      ? null
+                      : (value) {
+                          if (value != null) unawaited(_selectBook(value));
+                        },
+                ),
+              ),
+            ),
+          );
+        }
+        if (_catalog!['previous_book_complete'] == false) {
+          children.add(
+            const Text(
+              'Bu qismni boshlash uchun avval oldingi kitob qismini yakunlang.',
+            ),
+          );
+        }
         for (final lesson in mathRows(_catalog!['lessons'])) {
           children.add(
             Card(
               child: ListTile(
                 key: ValueKey(lesson['key']),
                 title: Text(lesson['title'] as String),
-                subtitle: Text('${lesson['sequence']}-mavzu'),
+                subtitle: Text(
+                  '${lesson['source_number'] ?? lesson['sequence']}-mavzu',
+                ),
                 leading: Icon(
                   lesson['state'] == 'locked'
                       ? Icons.lock_outline
@@ -662,7 +738,8 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       children.add(_sources(q['source_refs']));
     }
     if (_error != null) {
-      children.add(
+      children.insert(
+        _attempt == null ? 0 : children.length,
         Semantics(
           liveRegion: true,
           child: Card(

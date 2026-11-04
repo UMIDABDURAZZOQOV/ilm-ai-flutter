@@ -9,6 +9,7 @@ part 'point_line_explorer.dart';
 part 'unknown_number_explorer.dart';
 part 'segment_explorer.dart';
 part 'operation_properties_explorer.dart';
+part 'place_value_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -265,6 +266,14 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'tens_units_20',
+      'number_pairs_12',
+      'number_pairs_14',
+      'number_pairs_16',
+    }.contains(mode)) {
+      return _PlaceValueExplorer(mode: mode);
+    }
     if ({
       'commutative',
       'addition_table',

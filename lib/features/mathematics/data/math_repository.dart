@@ -3,6 +3,10 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'tens_units_20',
+  'number_pairs_12',
+  'number_pairs_14',
+  'number_pairs_16',
   'missing_subtrahend',
   'inverse_family',
   'commutative',
@@ -75,6 +79,15 @@ class MathRepository {
 
       if (type == 'catalog') {
         if (result['subject'] != 'mathematics') throw const FormatException();
+        if (result['available_books'] != null) {
+          for (final book in mathRows(result['available_books'])) {
+            text(book['book_id']);
+            text(book['label']);
+            if (book['grade'] is! int || book['part'] is! int) {
+              throw const FormatException();
+            }
+          }
+        }
         for (final lesson in mathRows(result['lessons'])) {
           text(lesson['key']);
           text(lesson['title']);
@@ -193,9 +206,14 @@ class MathRepository {
     return result;
   }
 
-  Future<MathJson> catalog(CancelToken cancel) async => checked(
+  Future<MathJson> catalog(
+    CancelToken cancel, {
+    int grade = 1,
+    int part = 1,
+  }) async => checked(
     (await dio.get(
       '$prefix/catalog',
+      queryParameters: {'grade': grade, 'part': part},
       options: options,
       cancelToken: cancel,
     )).data,
