@@ -43,6 +43,8 @@ class _PlaceValueExplorerState extends State<_PlaceValueExplorer> {
           'number_pairs_12': 12,
           'number_pairs_14': 14,
           'number_pairs_16': 16,
+          'number_pairs_18': 18,
+          'number_pairs_20': 20,
         }[widget.mode] ??
         20;
     final n = pairs ? (upper ? limit : limit - 1) : number;
@@ -120,6 +122,83 @@ class _PlaceValueExplorerState extends State<_PlaceValueExplorer> {
               ),
               Text('$n − $first = ${n - first}. Butunning miqdori o‘zgarmadi.'),
             ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _PlaceComparisonExplorer extends StatefulWidget {
+  const _PlaceComparisonExplorer();
+  @override
+  State<_PlaceComparisonExplorer> createState() =>
+      _PlaceComparisonExplorerState();
+}
+
+class _PlaceComparisonExplorerState extends State<_PlaceComparisonExplorer> {
+  int left = 16, right = 13;
+  Widget number(String name, int value, ValueChanged<int> update) => Column(
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      Text('$name: $value = ${value ~/ 10} o‘nlik + ${value % 10} birlik'),
+      Slider(
+        key: ValueKey('compare-$name'),
+        value: value.toDouble(),
+        min: 11,
+        max: 20,
+        divisions: 9,
+        semanticFormatterCallback: (v) => '$name son ${v.round()}',
+        onChanged: (v) => setState(() => update(v.round())),
+      ),
+      Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: [
+          for (var t = 0; t < value ~/ 10; t++)
+            Chip(
+              avatar: const Icon(Icons.grid_view, color: mathIndigo),
+              label: Text('${t + 1}-o‘nlik: 10'),
+            ),
+          Chip(label: Text('Alohida birlik: ${value % 10}')),
+        ],
+      ),
+    ],
+  );
+  @override
+  Widget build(BuildContext context) {
+    final symbol = left > right
+        ? '>'
+        : left < right
+        ? '<'
+        : '=';
+    final spoken = left > right
+        ? 'katta'
+        : left < right
+        ? 'kichik'
+        : 'teng';
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Text('O‘nlikni, keyin birlikni taqqosla'),
+            number('Chap', left, (v) => left = v),
+            number('O‘ng', right, (v) => right = v),
+            Text(
+              '$left $symbol $right',
+              style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              semanticsLabel: '$left $spoken $right',
+            ),
+            Text(
+              left ~/ 10 != right ~/ 10
+                  ? 'O‘nliklar har xil: ${left ~/ 10} va ${right ~/ 10}. Avval ularni taqqoslaymiz.'
+                  : 'O‘nliklar teng: birliklar ${left % 10} va ${right % 10}. Endi ularni taqqoslaymiz.',
+            ),
+            const Text(
+              'Belgining ochiq tomoni kattaroq son tarafda; teng miqdorlarda =.',
+            ),
           ],
         ),
       ),

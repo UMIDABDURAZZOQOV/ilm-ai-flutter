@@ -10,6 +10,7 @@ part 'unknown_number_explorer.dart';
 part 'segment_explorer.dart';
 part 'operation_properties_explorer.dart';
 part 'place_value_explorer.dart';
+part 'bracket_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -266,11 +267,19 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if (mode == 'compare_place_value_20') {
+      return const _PlaceComparisonExplorer();
+    }
+    if (mode == 'brackets_single' || mode == 'brackets_double') {
+      return _BracketExplorer(mode: mode);
+    }
     if ({
       'tens_units_20',
       'number_pairs_12',
       'number_pairs_14',
       'number_pairs_16',
+      'number_pairs_18',
+      'number_pairs_20',
     }.contains(mode)) {
       return _PlaceValueExplorer(mode: mode);
     }
