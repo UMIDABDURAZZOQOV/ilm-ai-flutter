@@ -16,6 +16,7 @@ part 'hundred_explorer.dart';
 part 'two_digit_explorer.dart';
 part 'sum_explorer.dart';
 part 'story_problem_explorer.dart';
+part 'comparison_problem_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -272,6 +273,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'problem_route_times',
+      'comparison_more_less',
+      'comparison_partitions',
+      'comparison_independent_branches',
+      'comparison_difference_family',
+    }.contains(mode)) {
+      return _ComparisonProblemExplorer(mode: mode);
+    }
     if ({
       'problem_parts',
       'problem_algorithm',

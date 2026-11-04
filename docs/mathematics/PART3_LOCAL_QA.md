@@ -1,5 +1,22 @@
 # III qism — lokal QA, 2026-11-04
 
+## Joriy checkpoint: III qism15/37, jami88 lokal dars
+
+Manba11 va14–17 (path11–15), PDF26–35/bosma24–33 qo‘shildi.
+III qismning barcha15 oqimi320px/200%matn/ReduceMotion bilan tekshirildi;
+33targetedtest, fullFlutter524test(3:15), analyze0(2.6s), debugJSwebbuild38.7s.
+Bular haqiqiy Android, brauzer/API yoki pedagogik pilot tasdig‘i emas.
+Original modellar: yo‘lning jami vaqti, nisbiy ko‘p/kam, bir nechta mos
+butun/qism taqsimoti,50dan mustaqil tarmoqlar, kichik/katta/farqning4bog‘lanishi.
+12–13nazoratning alohida tanasi yo‘q; source14 path12dan ochiladi, soxta
+kontrol darsi yaratilmaydi. II74 manbasi hali yo‘q, explicit localQA siyosati
+saqlangan. Normalapp/auth/Gradle/frontendga tegilmagan.
+
+Keyingi:source18 «Taqqoslashga doir masalalar»,path16,PDF36–37/bosma34–35.
+III qismning22matnli mavzusi qolgan; jami1–11kurs hali tugallanmagan.
+
+## Oldingi checkpointlar va lokal ishga tushirish yo‘riqnomasi
+
 Joriy yangilanish: III qism10/37matnli mavzu, jami83lokal dars/624topshiriq.
 6–10PDF16–25/bosma14–23: butun/qism, barcha mezonlar, ketma-ket strelka,
 teskari jadval va nol. 5yangi oqim320px/200%/ReduceMotion;21targetedtest.

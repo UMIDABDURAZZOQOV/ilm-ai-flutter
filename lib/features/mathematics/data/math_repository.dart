@@ -3,6 +3,12 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'problem_route_times',
+  'comparison_more_less',
+  'comparison_partitions',
+  'comparison_independent_branches',
+  'comparison_difference_family',
+
   'problem_parts',
   'problem_algorithm',
   'problem_part_whole',
