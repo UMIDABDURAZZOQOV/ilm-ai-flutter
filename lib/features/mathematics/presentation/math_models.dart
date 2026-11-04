@@ -14,6 +14,7 @@ part 'bracket_explorer.dart';
 part 'ten_strategy_explorer.dart';
 part 'hundred_explorer.dart';
 part 'two_digit_explorer.dart';
+part 'sum_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -271,6 +272,13 @@ class _MathExplorerState extends State<MathExplorer> {
     };
     final mode = widget.mode;
     if ({
+      'multi_addition',
+      'addition_grouping',
+      'multi_addition_table',
+    }.contains(mode)) {
+      return _SumExplorer(mode: mode);
+    }
+    if ({
       'two_digit_addition',
       'two_digit_missing_addend',
       'two_digit_subtraction',
@@ -302,7 +310,11 @@ class _MathExplorerState extends State<MathExplorer> {
     if (mode == 'compare_place_value_20') {
       return const _PlaceComparisonExplorer();
     }
-    if (mode == 'brackets_single' || mode == 'brackets_double') {
+    if ({
+      'brackets_single',
+      'brackets_double',
+      'brackets_composite',
+    }.contains(mode)) {
       return _BracketExplorer(mode: mode);
     }
     if ({

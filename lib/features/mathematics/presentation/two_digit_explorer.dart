@@ -46,19 +46,19 @@ class _TwoDigitExplorerState extends State<_TwoDigitExplorer> {
             'Qancha qo‘shilsa butun 56 hosil bo‘ladi?',
             'O‘nlik qismi uchun 30 qo‘shildi.',
             'Qolgan 3 birlik ham qo‘shildi.',
-            'Qo‘shilgan ikki qismning jami33. Tekshir:23+33=56.',
+            'Qo‘shilgan ikki qismning jami 33. Tekshir:23+33=56.',
           ]
         : inverse
         ? const [
-            'Ikki qism bir butun68ni tiklaydi.',
+            'Ikki qism bir butun 68 ni tiklaydi.',
             'Qo‘shiluvchilar o‘rni almashdi, yig‘indi saqlandi.',
-            'Butundan23qismi olinsa45qoladi.',
-            'Butundan45qismi olinsa23qoladi.',
+            'Butundan 23 qismi olinsa 45 qoladi.',
+            'Butundan 45 qismi olinsa 23 qoladi.',
           ]
         : [
             subtract
                 ? 'Bu misolda birliklar ayirishga yetadi; o‘nlikni maydalash kerak emas.'
-                : 'Bu misolda birliklar yig‘indisi10dan kichik. Yangi o‘nlik hosil bo‘lmaydi.',
+                : 'Bu misolda birliklar yig‘indisi 10 dan kichik. Yangi o‘nlik hosil bo‘lmaydi.',
             'Avval birliklarni o‘zaro hisobladik.',
             'Endi o‘nliklar qiymatini o‘zaro hisobladik.',
             'Qolgan xona qiymatlarini bitta son qilib yig‘dik.',

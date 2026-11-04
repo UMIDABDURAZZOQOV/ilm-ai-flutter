@@ -126,7 +126,7 @@ class _HundredExplorerState extends State<_HundredExplorer> {
               ),
             ] else if (chart) ...[
               const Text(
-                'Jadvalni yon tomonga surish mumkin. Yonma-yon sonlar1ga, bir ustundagi keyingi qator10ga farq qiladi.',
+                'Jadvalni yon tomonga surish mumkin. Yonma-yon sonlar 1 ga, bir ustundagi keyingi qator 10 ga farq qiladi.',
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -167,7 +167,7 @@ class _HundredExplorerState extends State<_HundredExplorer> {
                 number == 0
                     ? 'Keyingi qo‘shni: 1'
                     : number == 100
-                    ? 'Oldingi qo‘shni: 99. Bu jadval100da tugaydi.'
+                    ? 'Oldingi qo‘shni: 99. Bu jadval 100 da tugaydi.'
                     : 'Qo‘shnilar: ${number - 1} va ${number + 1}',
               ),
               Wrap(
@@ -214,7 +214,7 @@ class _HundredExplorerState extends State<_HundredExplorer> {
                 rod('O‘nlik', tens, 10),
                 rod('Birlik', units, 1),
                 const Text(
-                  'Faol toshlar ✓ bilan belgilangan. O‘nlik toshi10, birlik toshi1ni bildiradi.',
+                  'Faol toshlar ✓ bilan belgilangan. O‘nlik toshi 10, birlik toshi 1 ni bildiradi.',
                 ),
               ] else
                 Wrap(

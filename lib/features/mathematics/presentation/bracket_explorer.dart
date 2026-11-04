@@ -23,12 +23,29 @@ class _BracketExplorerState extends State<_BracketExplorer> {
   @override
   Widget build(BuildContext context) {
     final doubleBracket = widget.mode == 'brackets_double';
-    final expressions = doubleBracket
+    final composite = widget.mode == 'brackets_composite';
+    final expressions = composite
+        ? grouped
+              ? const ['54 − (12 + 21)', '54 − 33', '21']
+              : const ['54 − 12 + 21', '42 + 21', '63']
+        : doubleBracket
         ? const ['(7 + 2) − (6 − 3)', '9 − (6 − 3)', '9 − 3', '6']
         : grouped
         ? const ['15 − (3 + 4)', '15 − 7', '8']
         : const ['15 − 3 + 4', '12 + 4', '16'];
-    final explanations = doubleBracket
+    final explanations = composite
+        ? grouped
+              ? const [
+                  'Avval qavsdagi 12+21 hisoblanadi.',
+                  'Qavsdagi butun yig‘indi 33 bilan almashtirildi.',
+                  '54−33=21. Butun yig‘indi ayirildi.',
+                ]
+              : const [
+                  'Faqat+va−bor; qavs yo‘q: chapdan o‘ngga.',
+                  'Avval 54−12=42. Endi 21 qo‘shiladi.',
+                  '42+21=63. Bu qavsli yo‘lning 21 javobidan farq qiladi.',
+                ]
+        : doubleBracket
         ? const [
             'Tashqi ayirish ikkala qavs natijasini kutadi. Bu yo‘lda chap qavsdan boshlaymiz.',
             'Chap qavs: 7 + 2 = 9. O‘ng qavs hali tayyor emas.',

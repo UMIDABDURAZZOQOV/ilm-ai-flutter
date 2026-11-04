@@ -1,5 +1,28 @@
 # Matematika Android QA — integratsiya handoff
 
+## 2026-11-04 — Matematika katalogi va telefon sinovi holati
+
+Feature branch `feat/mathematics-curriculum`: I qism41 va II qism32,
+jami73 lokal dars,422 karta/544topshiriq. II qism32/33:74ning
+bosma68–69sahifalari yo‘q; app katalogi bu kamchilikni ko‘rsatadi.
+Kitob tanlash va IIqism oldidan Iqism41mavzusi prerequisite ishlaydi.
+
+Yakuniy avtomatik tekshiruv: Flutter491passed, analyze0issue;
+MathpreviewJSdebugweb33.7s.32yangi oqim320px/200%matn/ReduceMotion bilan
+widgettestda o‘tdi. Haqiqiy brauzer/API va Android sinovi deyilmaydi.
+AndroidSDK/adb yo‘q; APK yig‘ilmadi, fizik telefon/TalkBack/signing tekshirilmadi.
+Umumiy Gradle yoki productionappidentity o‘zgarmadi; quyidagi alohida
+`.mathqa` identity patch hali qo‘llanmagan. Telefoniga mavjud app/progressni
+bosib o‘rnatish mumkin deb hisoblamang; alohidaQAidentity avval tayyorlansin.
+
+Real telefon ro‘yxatiga qo‘shilsin: I/IIkitob tanlash, yopiqIIqism sababi,
+I tugagach42dan boshlash,20dagi ikki o‘nlik/0birlik,100jadvali horizontal
+scroll, cho‘tning xonalari, ikki xonali amallar, qavsdagi feedback, timeoutdan
+so‘ng ayniUUIDretry, accountalmashish, oldprogress/replay0XP, katta matnda
+32/33manba qaydi. Markaziy qarorlar va keyingiIIIqism manba handoffi
+backenddagi `docs/mathematics/PART3_SOURCE_HANDOFF.md`da. IIIqism hali0dars.
+
+
 2026-10-27. Patch shared Gradle fayliga **qo‘llanmagan**. History/Kimyo/Jahon tarixi agentlarining parallel Android o‘zgarishlari bilan integratsiya review talab qilinadi. Patch alohida Physics bazasiga mo‘ljallangan; boshqa fan patchi bilan birini ustiga ko‘r-ko‘rona qo‘llamang.
 
 Math debug target va MATHEMATICS_PREVIEW=true uchun `.mathqa` applicationId suffix, alohida label/callback hamda preview release radini taklif qiladi. Bu Kotlin compile, signing, real Google login yoki Android test dalili emas. Normal app va OAuth o‘zgartirilmadi.

@@ -387,10 +387,24 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
             ),
           );
         }
+        final book = _catalog!['book'] as Map?;
+        if (book?['source_topic_count'] is int) {
+          children.add(
+            Text(
+              'Hozir mavjud darslar: ${book!['implemented_sections']} / ${book['source_topic_count']}.',
+            ),
+          );
+        }
         if (_catalog!['previous_book_complete'] == false) {
           children.add(
             const Text(
               'Bu qismni boshlash uchun avval oldingi kitob qismini yakunlang.',
+            ),
+          );
+        } else if ((book?['source_gaps'] as List?)?.isNotEmpty == true) {
+          children.add(
+            const Text(
+              'Bu kitobning ayrim manba sahifalari yetishmaydi. Faqat tekshirilgan mavjud mavzular ko‘rsatilgan.',
             ),
           );
         }
