@@ -19,6 +19,7 @@ part 'story_problem_explorer.dart';
 part 'comparison_problem_explorer.dart';
 part 'comparison_application_explorer.dart';
 part 'reasoning_length_explorer.dart';
+part 'measurement_units_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -275,6 +276,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'measurement_segments',
+      'measurement_decimetre_intro',
+      'measurement_dm_cm_conversion',
+      'measurement_rectangles',
+      'measurement_mass_balance',
+    }.contains(mode)) {
+      return _MeasurementUnitsExplorer(mode: mode);
+    }
     if ({
       'problem_missing_information',
       'problem_unordered_pairs',

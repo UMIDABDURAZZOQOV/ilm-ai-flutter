@@ -3,6 +3,12 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'measurement_segments',
+  'measurement_decimetre_intro',
+  'measurement_dm_cm_conversion',
+  'measurement_rectangles',
+  'measurement_mass_balance',
+
   'problem_missing_information',
   'problem_unordered_pairs',
   'problem_related_total',

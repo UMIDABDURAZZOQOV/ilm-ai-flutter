@@ -1,5 +1,13 @@
 # III qism — lokal QA, 2026-11-04
 
+## Joriy: III qism30/37, jami103 lokal dars
+
+Source31–35/PDF56–65/bosma54–63:30karta,40topshiriq. Kesma/tenglik,dm/cmguruhlari va0–99konvertatsiya,kvadrat ham bo‘la oladigan to‘rtburchak,ma’lum tosh qo‘shiladigan tarozi modeli. Birlik savolda aniq,numericFRQ umumiyunitparser degani emas.
+11targetedtest16s,5oqim320px/200%/ReduceMotion;fullFlutter559pass3:56,analyze0(2.8s),debugJSweb42.3s. Backend138pass1skip,PG1pass42.56s(all103/1167XP,seed137,replay0). Android/pilot/pedagog tasdiqsiz.
+Keyingi source36/path31/PDF66–67/bosma64–65. IIIqismda7matnli mavzu qolgan. Faqatlocalpreview;normalapp/auth/Gradle/frontend/boshqa fanlar o‘zgarmagan.
+
+## Oldingi checkpointlar
+
 ## Joriy: III qism25/37, jami98 lokal dars
 
 Source23–26/30, PDF46–55/bosma44–53 qo‘shildi:30karta/40topshiriq.23asl nomi yetishmayotgan ma’lumotli shart haqida; oldingi davom nomi noto‘g‘ri bo‘lgan. Source53footer game29/TOC81game28 tafovuti saqlangan; alohida game yaratilmagan.
