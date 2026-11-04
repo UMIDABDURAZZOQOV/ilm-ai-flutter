@@ -93,6 +93,9 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       if (detail == 'finish_previous_book') {
         return 'Avval oldingi kitob qismini yakunlang.';
       }
+      if (detail == 'math_source_gap_preview_disabled') {
+        return 'Bu manba kamchiligi bilan sinash sozlamasi o‘chirilgan. Qoralamani o‘zgartirmay, test sozlamasi tiklangach shu urinishni davom ettiring.';
+      }
       if (detail == 'mathematics_preview_disabled') {
         return 'Matematika bu test serverida yoqilmagan.';
       }
@@ -394,8 +397,17 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
               'Hozir mavjud darslar: ${book!['implemented_sections']} / ${book['source_topic_count']}.',
             ),
           );
+        } else if (book?['source_body_topic_count'] is int) {
+          children.add(
+            Text(
+              'Darslikdagi matnli mavzulardan: ${book!['implemented_sections']} / ${book['source_body_topic_count']}.',
+            ),
+          );
         }
-        if (_catalog!['previous_book_complete'] == false) {
+        final bridge = _catalog!['source_gap_bridge'] as Map?;
+        if (bridge != null) {
+          children.add(Text(bridge['message'] as String));
+        } else if (_catalog!['previous_book_complete'] == false) {
           children.add(
             const Text(
               'Bu qismni boshlash uchun avval oldingi kitob qismini yakunlang.',
@@ -403,8 +415,12 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
           );
         } else if ((book?['source_gaps'] as List?)?.isNotEmpty == true) {
           children.add(
-            const Text(
-              'Bu kitobning ayrim manba sahifalari yetishmaydi. Faqat tekshirilgan mavjud mavzular ko‘rsatilgan.',
+            Text(
+              (book!['source_gaps'] as List).any(
+                    (v) => v['kind'] == 'toc_scheduled_activity_no_body',
+                  )
+                  ? 'Mundarijadagi ayrim nazorat va o‘yin mashg‘ulotlarining alohida matni berilmagan. Ular tayyor dars hisoblanmaydi.'
+                  : 'Bu kitobning ayrim manba sahifalari yetishmaydi. Faqat tekshirilgan mavjud mavzular ko‘rsatilgan.',
             ),
           );
         }
@@ -463,6 +479,15 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
           style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       );
+      final bridge = _attempt!['source_gap_bridge'] as Map?;
+      if (bridge != null) {
+        children.add(
+          ExpansionTile(
+            title: const Text('Sinov rejimi'),
+            children: [Text(bridge['message'] as String)],
+          ),
+        );
+      }
       if (_page < cards.length) {
         final card = cards[_page];
         children.addAll([

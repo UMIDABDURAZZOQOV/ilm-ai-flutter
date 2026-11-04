@@ -3,6 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'problem_parts',
+  'problem_algorithm',
+  'problem_part_whole',
+  'problem_representations',
+  'problem_table_totals',
   'tens_units_20',
   'number_pairs_12',
   'number_pairs_14',
@@ -103,6 +108,15 @@ class MathRepository {
 
       if (type == 'catalog') {
         if (result['subject'] != 'mathematics') throw const FormatException();
+        if (result['source_gap_bridge'] != null) {
+          final bridge = result['source_gap_bridge'] as Map;
+          text(bridge['message']);
+          if (bridge['kind'] != 'local_qa_known_source_gap' ||
+              result['previous_book_complete'] != false ||
+              result['previous_book_navigation_ready'] != true) {
+            throw const FormatException();
+          }
+        }
         if (result['available_books'] != null) {
           for (final book in mathRows(result['available_books'])) {
             text(book['book_id']);

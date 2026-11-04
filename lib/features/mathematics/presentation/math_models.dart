@@ -15,6 +15,7 @@ part 'ten_strategy_explorer.dart';
 part 'hundred_explorer.dart';
 part 'two_digit_explorer.dart';
 part 'sum_explorer.dart';
+part 'story_problem_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -271,6 +272,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'problem_parts',
+      'problem_algorithm',
+      'problem_part_whole',
+      'problem_representations',
+      'problem_table_totals',
+    }.contains(mode)) {
+      return _StoryProblemExplorer(mode: mode);
+    }
     if ({
       'multi_addition',
       'addition_grouping',
