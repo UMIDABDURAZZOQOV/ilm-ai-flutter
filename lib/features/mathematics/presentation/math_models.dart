@@ -18,6 +18,7 @@ part 'sum_explorer.dart';
 part 'story_problem_explorer.dart';
 part 'comparison_problem_explorer.dart';
 part 'comparison_application_explorer.dart';
+part 'reasoning_length_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -274,6 +275,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'problem_missing_information',
+      'problem_unordered_pairs',
+      'problem_related_total',
+      'problem_weekday_reasoning',
+      'measurement_centimetre',
+    }.contains(mode)) {
+      return _ReasoningLengthExplorer(mode: mode);
+    }
     if ({
       'comparison_count_gap',
       'comparison_dataset',

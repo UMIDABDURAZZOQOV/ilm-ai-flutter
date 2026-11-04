@@ -1,5 +1,13 @@
 # III qism — lokal QA, 2026-11-04
 
+## Joriy: III qism25/37, jami98 lokal dars
+
+Source23–26/30, PDF46–55/bosma44–53 qo‘shildi:30karta/40topshiriq.23asl nomi yetishmayotgan ma’lumotli shart haqida; oldingi davom nomi noto‘g‘ri bo‘lgan. Source53footer game29/TOC81game28 tafovuti saqlangan; alohida game yaratilmagan.
+Modellar: ochiq qo‘shimcha shart, takrorsiz juftliklar, bog‘liq jami, hafta sikli, santimetr oraliqlari. Modeldagi cm fizik telefon masshtabi emas; numericFRQda birlik savolda berilgan.12targetedtest14s, fullFlutter548test3:34, analyze0(2.6s), debugJSweb40.4s. Backend132pass/1skip, alohidaPG1pass41.09s, all98/1117XP(seed137), replay0.
+Keyingi source31/path26/PDF56–57/bosma54–55. IIIqismda12matnli mavzu qolgan. Faqat localpreview; realAndroid/pedagog/pilot tasdiqsiz. Normalapp/auth/Gradle/frontend o‘zgarmagan.
+
+## Oldingi checkpointlar
+
 ## Joriy checkpoint: III qism20/37, jami93 lokal dars
 
 Source18–22 (path16–20), PDF36–45/bosma34–43 qo‘shildi.5 yangi darsning
