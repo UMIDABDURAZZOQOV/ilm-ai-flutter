@@ -35,6 +35,7 @@ part 'sum_remove_explorer.dart';
 part 'book_end_explorers.dart';
 part 'thousand_place_explorer.dart';
 part 'three_digit_explorer.dart';
+part 'three_digit_subtract_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -291,6 +292,16 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'subtract_three_regroup',
+      'subtract_three_double',
+      'subtract_round_hundred',
+      'mixed_three_operations',
+    }.contains(mode)) {
+      return _ThreeDigitSubtractExplorer(mode: mode);
+    }
+    if (mode == 'add_three_rows') return const _ThreeAddendExplorer();
+    if (mode == 'equal_cell_grid') return const _EqualCellGridExplorer();
     if ({
       'compare_three_places',
       'compare_digit_lengths',
