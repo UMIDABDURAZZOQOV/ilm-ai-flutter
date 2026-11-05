@@ -21,10 +21,16 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
 
   @override
   Widget build(BuildContext context) {
-    final subtract = widget.mode == 'round_tens_subtraction';
+    final subtract = widget.mode.endsWith('subtraction');
+    final borrowTwo = widget.mode == 'two_digit_regroup_subtraction';
+    final cross = widget.mode == 'two_digit_cross_tens_addition';
     final two = widget.mode == 'two_digit_regroup_addition';
     final pairs = subtract
-        ? const [(40, 3), (60, 8), (90, 4)]
+        ? (borrowTwo
+              ? const [(50, 23), (70, 26), (90, 42)]
+              : const [(40, 3), (60, 8), (90, 4)])
+        : cross
+        ? const [(35, 7), (48, 6), (67, 8), (79, 9)]
         : two
         ? const [(28, 32), (46, 24), (74, 26)]
         : const [(24, 6), (37, 3), (56, 4), (82, 8)];
@@ -33,42 +39,50 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
     final rawTens = subtract ? a ~/ 10 : a ~/ 10 + b ~/ 10;
     final rawOnes = subtract ? 0 : a % 10 + b % 10;
     final tens = subtract
-        ? (step == 0 ? rawTens : rawTens - 1)
+        ? (step == 0
+              ? rawTens
+              : step == 1
+              ? rawTens - 1
+              : rawTens - 1 - b ~/ 10)
         : (step < 2 ? rawTens : rawTens + 1);
     final ones = subtract
         ? (step == 0
               ? 0
               : step == 1
               ? 10
-              : 10 - b)
-        : (step < 2 ? rawOnes : 0);
+              : 10 - b % 10)
+        : (step < 2 ? rawOnes : rawOnes - 10);
     final expressions = subtract
         ? [
             '$a − $b',
             '$a = ${(rawTens - 1) * 10} + 10',
-            '10 − $b = ${10 - b}',
-            '${(rawTens - 1) * 10} + ${10 - b} = $result',
+            borrowTwo
+                ? '${(rawTens - 1) * 10} − ${b ~/ 10 * 10} = ${(rawTens - 1 - b ~/ 10) * 10}; 10 − ${b % 10} = ${10 - b % 10}'
+                : '10 − $b = ${10 - b}',
+            '${(rawTens - 1 - b ~/ 10) * 10} + ${10 - b % 10} = $result',
           ]
         : [
             '$a + $b',
             '${a % 10} + ${b % 10} = $rawOnes birlik',
             '10 birlik = 1 o‘nlik',
-            '${(rawTens + 1) * 10} + 0 = $result',
+            '${(rawTens + 1) * 10} + ${rawOnes - 10} = $result',
           ];
     final why = subtract
         ? [
             'Boshlang‘ich son yaxlit o‘nlik. Ayirish uchun alohida birliklarni ochamiz.',
             'Bitta o‘nlikni 10 birlikka almashtirdik. Jami miqdor $a bo‘lib qoldi.',
-            '$b birlik olib tashlandi; ${10 - b} birlik qoldi. Boshqa o‘nliklar saqlandi.',
+            borrowTwo
+                ? '${b ~/ 10} o‘nlik va ${b % 10} birlik olib tashlandi. Barcha olingan qismlar bir martadan hisoblandi.'
+                : '$b birlik olib tashlandi; ${10 - b} birlik qoldi. Boshqa o‘nliklar saqlandi.',
             'O‘nlik va qolgan birlikni jamladik. Tekshiruv: $result + $b = $a.',
           ]
         : [
-            'Bu modellarda birliklar yig‘indisi aynan 10. Qo‘shiluvchilarni xona qiymatlariga ajratamiz.',
+            'Bu modellarda birliklar yig‘indisi kamida 10. Qo‘shiluvchilarni xona qiymatlariga ajratamiz.',
             'O‘nliklar alohida, birliklar alohida jamlandi. Har bir qism bir marta qatnashadi.',
-            'Ayni 10 birlik 1 yangi o‘nlikka aylandi. Bu jami miqdorni o‘zgartirmaydi.',
+            'Ayni 10 birlik 1 yangi o‘nlikka aylandi. Bu jami miqdorni o‘zgartirmaydi; qolgan ${rawOnes - 10} birlik ham saqlanadi.',
             result == 100
                 ? '10 o‘nlik = 100. Birliklar qoldig‘i 0.'
-                : '${rawTens + 1} o‘nlik va 0 birlik = $result.',
+                : '${rawTens + 1} o‘nlik va ${rawOnes - 10} birlik = $result.',
           ];
     return Card(
       child: Padding(
@@ -192,7 +206,7 @@ class _RegroupHundredPainter extends CustomPainter {
       }
     }
     for (var i = 0; i < ones; i++) {
-      final c = Offset(gap * .55 + i * gap, 118);
+      final c = Offset(gap * .55 + (i % 10) * gap, 110 + (i ~/ 10) * 28);
       canvas.drawCircle(c, gap * .3, Paint()..color = mathYellow);
       canvas.drawCircle(
         c,

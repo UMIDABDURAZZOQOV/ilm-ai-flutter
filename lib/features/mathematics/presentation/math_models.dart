@@ -287,6 +287,8 @@ class _MathExplorerState extends State<MathExplorer> {
     };
     final mode = widget.mode;
     if ({
+      'two_digit_regroup_subtraction',
+      'two_digit_cross_tens_addition',
       'round_tens_addition',
       'round_tens_subtraction',
       'two_digit_regroup_addition',
