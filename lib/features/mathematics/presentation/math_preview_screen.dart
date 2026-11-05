@@ -442,9 +442,13 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
               child: ListTile(
                 key: ValueKey(lesson['key']),
                 title: Text(lesson['title'] as String),
-                subtitle: Text(
-                  '${lesson['source_number'] ?? lesson['sequence']}-mavzu',
-                ),
+                subtitle:
+                    lesson.containsKey('source_number') &&
+                        lesson['source_number'] == null
+                    ? null
+                    : Text(
+                        '${lesson['source_number'] ?? lesson['sequence']}-mavzu',
+                      ),
                 leading: Icon(
                   lesson['state'] == 'locked'
                       ? Icons.lock_outline

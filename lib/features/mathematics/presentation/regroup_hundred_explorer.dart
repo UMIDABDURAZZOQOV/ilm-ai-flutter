@@ -23,10 +23,13 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
   Widget build(BuildContext context) {
     final subtract = widget.mode.endsWith('subtraction');
     final borrowTwo = widget.mode == 'two_digit_regroup_subtraction';
+    final nonround = widget.mode == 'two_digit_nonround_subtraction';
     final cross = widget.mode == 'two_digit_cross_tens_addition';
     final two = widget.mode == 'two_digit_regroup_addition';
     final pairs = subtract
-        ? (borrowTwo
+        ? (nonround
+              ? const [(43, 7), (52, 8), (74, 9)]
+              : borrowTwo
               ? const [(50, 23), (70, 26), (90, 42)]
               : const [(40, 3), (60, 8), (90, 4)])
         : cross
@@ -37,7 +40,7 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
     final (a, b) = pairs[sample];
     final result = subtract ? a - b : a + b;
     final rawTens = subtract ? a ~/ 10 : a ~/ 10 + b ~/ 10;
-    final rawOnes = subtract ? 0 : a % 10 + b % 10;
+    final rawOnes = subtract ? a % 10 : a % 10 + b % 10;
     final tens = subtract
         ? (step == 0
               ? rawTens
@@ -47,19 +50,19 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
         : (step < 2 ? rawTens : rawTens + 1);
     final ones = subtract
         ? (step == 0
-              ? 0
+              ? rawOnes
               : step == 1
-              ? 10
-              : 10 - b % 10)
+              ? rawOnes + 10
+              : rawOnes + 10 - b % 10)
         : (step < 2 ? rawOnes : rawOnes - 10);
     final expressions = subtract
         ? [
             '$a − $b',
-            '$a = ${(rawTens - 1) * 10} + 10',
+            '$a = ${(rawTens - 1) * 10} + ${rawOnes + 10}',
             borrowTwo
-                ? '${(rawTens - 1) * 10} − ${b ~/ 10 * 10} = ${(rawTens - 1 - b ~/ 10) * 10}; 10 − ${b % 10} = ${10 - b % 10}'
-                : '10 − $b = ${10 - b}',
-            '${(rawTens - 1 - b ~/ 10) * 10} + ${10 - b % 10} = $result',
+                ? '${(rawTens - 1) * 10} − ${b ~/ 10 * 10} = ${(rawTens - 1 - b ~/ 10) * 10}; ${rawOnes + 10} − ${b % 10} = ${rawOnes + 10 - b % 10}'
+                : '${rawOnes + 10} − $b = ${rawOnes + 10 - b}',
+            '${(rawTens - 1 - b ~/ 10) * 10} + ${rawOnes + 10 - b % 10} = $result',
           ]
         : [
             '$a + $b',
@@ -69,11 +72,13 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
           ];
     final why = subtract
         ? [
-            'Boshlang‘ich son yaxlit o‘nlik. Ayirish uchun alohida birliklarni ochamiz.',
-            'Bitta o‘nlikni 10 birlikka almashtirdik. Jami miqdor $a bo‘lib qoldi.',
+            nonround
+                ? 'Avvalgi birliklar ayirishga yetmaydi. Bitta o‘nlikni ochib, eski birliklar bilan birlashtiramiz.'
+                : 'Boshlang‘ich son yaxlit o‘nlik. Ayirish uchun alohida birliklarni ochamiz.',
+            'Bitta o‘nlikni 10 birlikka almashtirdik. Avvalgi $rawOnes birlik ham saqlandi. Jami miqdor $a bo‘lib qoldi.',
             borrowTwo
                 ? '${b ~/ 10} o‘nlik va ${b % 10} birlik olib tashlandi. Barcha olingan qismlar bir martadan hisoblandi.'
-                : '$b birlik olib tashlandi; ${10 - b} birlik qoldi. Boshqa o‘nliklar saqlandi.',
+                : '$b birlik olib tashlandi; ${rawOnes + 10 - b} birlik qoldi. Boshqa o‘nliklar saqlandi.',
             'O‘nlik va qolgan birlikni jamladik. Tekshiruv: $result + $b = $a.',
           ]
         : [

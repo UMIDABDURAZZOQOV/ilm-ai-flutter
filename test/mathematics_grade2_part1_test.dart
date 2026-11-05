@@ -141,7 +141,7 @@ void main() {
     },
   );
   for (final n in keys.keys) {
-    testWidgets('grade2 source$n full flow at320px and200percent text', (
+    testWidgets('grade2 path$n full flow at320px and200percent text', (
       tester,
     ) async {
       await pump(tester);
@@ -228,7 +228,14 @@ void main() {
         find.textContaining('ayrim manba sahifalari yetishmaydi'),
         findsOneWidget,
       );
-      expect(find.byKey(const ValueKey('math-2-1-25-r1')), findsNothing);
+      expect(
+        find.byKey(const ValueKey<dynamic>('math-2-1-26-r1')),
+        findsNothing,
+      );
+      final catalogRows = mathRows(data['completed_catalog']['lessons']);
+      expect(catalogRows.any((l) => l['source_number'] == 25), isFalse);
+      expect(catalogRows.any((l) => l['key'] == 'math-2-1-26-r1'), isFalse);
+
       expect(
         requests
             .lastWhere((r) => r.path.endsWith('/catalog'))
