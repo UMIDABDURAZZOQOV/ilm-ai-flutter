@@ -33,6 +33,7 @@ part 'regroup_hundred_explorer.dart';
 part 'column_and_split_explorer.dart';
 part 'sum_remove_explorer.dart';
 part 'book_end_explorers.dart';
+part 'thousand_place_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -289,6 +290,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'hundreds_thousand',
+      'three_digit_place',
+      'zero_tens_place',
+      'zero_units_place',
+      'full_place_groups',
+    }.contains(mode)) {
+      return _ThousandPlaceExplorer(mode: mode);
+    }
     if (mode == 'number_remove_sum') return const _NumberRemoveSumExplorer();
     if (mode == 'arrow_two_lines') return const _ArrowPartitionExplorer();
     if (mode == 'three_colour_regions') return const _RegionColourExplorer();
