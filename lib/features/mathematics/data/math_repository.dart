@@ -3,6 +3,10 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'round_tens_addition',
+  'round_tens_subtraction',
+  'two_digit_regroup_addition',
+
   'equation_root_check',
   'inverse_story_family',
   'equation_initial_remaining',

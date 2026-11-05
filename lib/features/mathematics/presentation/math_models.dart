@@ -29,6 +29,7 @@ part 'geometry_views_explorer.dart';
 part 'algebra_practice_explorer.dart';
 part 'equation_notation_explorer.dart';
 part 'year_end_explorer.dart';
+part 'regroup_hundred_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -285,6 +286,13 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'round_tens_addition',
+      'round_tens_subtraction',
+      'two_digit_regroup_addition',
+    }.contains(mode)) {
+      return _RegroupHundredExplorer(mode: mode);
+    }
     if ({
       'equation_root_check',
       'inverse_story_family',
