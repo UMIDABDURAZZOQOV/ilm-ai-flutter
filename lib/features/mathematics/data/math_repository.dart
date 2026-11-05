@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'sum_remove_part',
   'column_place_value',
   'split_two_digit_subtraction',
   'two_digit_nonround_subtraction',

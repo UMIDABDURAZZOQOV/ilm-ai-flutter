@@ -31,6 +31,7 @@ part 'equation_notation_explorer.dart';
 part 'year_end_explorer.dart';
 part 'regroup_hundred_explorer.dart';
 part 'column_and_split_explorer.dart';
+part 'sum_remove_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -287,6 +288,7 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if (mode == 'sum_remove_part') return const _SumRemoveExplorer();
     if (mode == 'column_place_value' || mode == 'split_two_digit_subtraction') {
       return _ColumnAndSplitExplorer(mode: mode);
     }
