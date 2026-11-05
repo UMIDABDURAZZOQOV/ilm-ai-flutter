@@ -3,6 +3,10 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'number_remove_sum',
+  'arrow_two_lines',
+  'three_colour_regions',
+  'venn_distinct_sectors',
   'sum_remove_part',
   'column_place_value',
   'split_two_digit_subtraction',
@@ -190,6 +194,23 @@ class MathRepository {
         if (v is! String || v.isEmpty) throw const FormatException();
       }
 
+      void activity(dynamic v) {
+        if (v == null) return;
+        if (v is! Map ||
+            v['number'] is! int ||
+            v['number'] < 1 ||
+            v['number'] > 26 ||
+            v['pdf_pages'] is! List ||
+            v['printed_pages'] is! List ||
+            (v['pdf_pages'] as List).length != 1 ||
+            (v['printed_pages'] as List).length != 1 ||
+            v['pdf_pages'][0] is! int ||
+            v['printed_pages'][0] != v['pdf_pages'][0] + 1) {
+          throw const FormatException();
+        }
+        text(v['objective']);
+      }
+
       if (result['source_sequence_gap_bridge'] != null) {
         final bridge = result['source_sequence_gap_bridge'] as Map;
         text(bridge['message']);
@@ -273,6 +294,15 @@ class MathRepository {
         for (final card in mathRows(content['cards'])) {
           text(card['title']);
           text(card['body']);
+          activity(card['source_activity']);
+          if (card.containsKey('show_explorer') &&
+              card['show_explorer'] is! bool) {
+            throw const FormatException();
+          }
+          if (card.containsKey('explorer_type') &&
+              !mathExplorerModes.contains(card['explorer_type'])) {
+            throw const FormatException();
+          }
         }
         for (final example in mathRows(content['examples'])) {
           text(example['title']);
@@ -288,6 +318,7 @@ class MathRepository {
         for (final q in questions) {
           text(q['id']);
           text(q['prompt']);
+          activity(q['source_activity']);
           if (!{
             'choice',
             'short_text',

@@ -519,10 +519,15 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
             style: const TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
           ),
           Text(card['body'] as String),
-          MathExplorer(
-            key: ValueKey(content['explorer']['type']),
-            mode: content['explorer']['type'] as String,
-          ),
+          if (card['show_explorer'] != false)
+            MathExplorer(
+              key: ValueKey(
+                card['explorer_type'] ?? content['explorer']['type'],
+              ),
+              mode:
+                  (card['explorer_type'] ?? content['explorer']['type'])
+                      as String,
+            ),
           _sources(card['source_refs']),
         ]);
       } else {
@@ -631,6 +636,14 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
       ]);
     } else {
       final q = _question!;
+      if (q['source_activity'] is Map) {
+        final a = q['source_activity'] as Map;
+        children.add(
+          Text(
+            "Manbadagi ${a['number']}-mashq · PDF ${a['pdf_pages'][0]} · bosma ${a['printed_pages'][0]}",
+          ),
+        );
+      }
       final answered = _solved.length;
       final duration = MediaQuery.disableAnimationsOf(context)
           ? Duration.zero
