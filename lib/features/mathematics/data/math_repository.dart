@@ -3,6 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'geometry_perimeter_trace',
+  'geometry_perimeter_missing',
+  'geometry_rectangle_perimeter',
+  'geometry_parallel_paper_fit',
+  'geometry_angle_comparison',
   'geometry_ruler_interval',
   'geometry_construct_segment',
   'geometry_segment_partition',

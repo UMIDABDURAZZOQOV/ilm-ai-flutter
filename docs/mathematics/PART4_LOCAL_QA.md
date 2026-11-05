@@ -1,5 +1,21 @@
 # Matematika IV qism — lokal sinov
 
+## 2026-11-05 — IV117–121, jami120 lokal dars
+
+IV10/33tayyor lokal dars,23mavzu qolgan. Yangi30karta/40topshiriq:
+barcha tomonlarni bir martadan sanash,noma’lum tomon,to‘rtburchak/kvadrat
+perimetri,tekis parallel joylashish va nurlar/burchaklar.
+Burchak uchun sun’iy formula yoki gradus prerequisite yo‘q. O‘tmas ochilish
+to‘g‘ri burchakdan katta,lekin to‘g‘ri chiziqdek ochilishdan kichik.
+Apostrof variantlari bilan qisqa obyektiv javob serverda baholanadi;LLM yo‘q.
+11targetedtest11s;fullFlutter598passed4:10;analyze0(2.3s);debugJSweb57.1s.
+Backend160passed1skip336.35s;finalcontent+PG7passed110.09s(all120,seed137→1337XP,
+replay0),protected11passed42.55s. Old115lesson/reviewJSONbytes o‘zgarmagan.
+RealAndroid/TalkBack,pedagog,pilot va2026–27dastur mosligi hali tasdiqsiz.
+Keyingi122«To‘rtburchaklar»,PDF25–26/bosma24–25. Butun1–11kurs tugamagan.
+
+## Oldingi checkpoint — tarix
+
 2026-11-04. 1-sinf IVqism112–116/PDF5–14/bosma4–13 uchun5dars va5original
 geometrik model qo‘shildi. Jami115lokal dars; IV5/33,28mavzu hali yaratilmagan.
 1–11kurs tugallanmagan. Normalmain,auth,Gradle,frontend va boshqa fanlar o‘zgarmagan.
