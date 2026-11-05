@@ -3,6 +3,13 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'equation_root_check',
+  'inverse_story_family',
+  'equation_initial_remaining',
+  'review_sort_quantity',
+  'review_word_expression',
+  'review_segment_parts',
+
   'algebra_value_table',
   'algebra_addition_properties',
   'algebra_integer_inequalities',
