@@ -3,6 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'compare_three_places',
+  'compare_digit_lengths',
+  'order_three_places',
+  'add_three_no_carry',
+  'add_three_carry',
   'hundreds_thousand',
   'three_digit_place',
   'zero_tens_place',

@@ -34,6 +34,7 @@ part 'column_and_split_explorer.dart';
 part 'sum_remove_explorer.dart';
 part 'book_end_explorers.dart';
 part 'thousand_place_explorer.dart';
+part 'three_digit_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -290,6 +291,16 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'compare_three_places',
+      'compare_digit_lengths',
+      'order_three_places',
+    }.contains(mode)) {
+      return _ThreeDigitCompareExplorer(mode: mode);
+    }
+    if (mode == 'add_three_no_carry' || mode == 'add_three_carry') {
+      return _ThreeDigitAddExplorer(carry: mode == 'add_three_carry');
+    }
     if ({
       'hundreds_thousand',
       'three_digit_place',

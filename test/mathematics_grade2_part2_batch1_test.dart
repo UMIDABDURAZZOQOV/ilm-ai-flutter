@@ -8,7 +8,6 @@ import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/mathematics/data/math_repository.dart';
 import 'package:ilm_ai_flutter/features/mathematics/presentation/math_preview_screen.dart';
-import 'package:ilm_ai_flutter/features/mathematics/presentation/math_models.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 
 void main() {
