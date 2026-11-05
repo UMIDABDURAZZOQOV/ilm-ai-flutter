@@ -24,6 +24,8 @@ part 'quantity_practice_explorer.dart';
 part 'geometry_length_explorer.dart';
 part 'geometry_perimeter_explorer.dart';
 part 'geometry_regions_explorer.dart';
+part 'algebra_expression_explorer.dart';
+part 'geometry_views_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -280,6 +282,17 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({'geometry_shape_axes', 'geometry_solid_views'}.contains(mode)) {
+      return _GeometryViewsExplorer(mode: mode);
+    }
+    if ({
+      'algebra_compare_sums',
+      'algebra_expression_kind',
+      'algebra_parts_variables',
+      'algebra_value_comparison',
+    }.contains(mode)) {
+      return _AlgebraExpressionExplorer(mode: mode);
+    }
     if ({
       'geometry_quadrilateral',
       'geometry_regions',

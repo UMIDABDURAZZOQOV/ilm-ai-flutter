@@ -1,5 +1,21 @@
 # Matematika IV qism — lokal sinov
 
+## 2026-11-05 — IV127–132, jami131 lokal dars
+
+IV21/33tayyor,12mavzu qolgan. Yangi36karta/48topshiriq:aniqshaklo‘qlari,
+7originalhajmlimodel,konus/silindrningbelgilanganqarashlari,sonliyig‘indilar,
+harfniqiymatigao‘tkazish,butun/qismharflari vaikkalatomongaaaynixniqo‘yish.
+13targetedtest15s;yakuniymatnbilan13test14s;fullFlutter624pass4:29;
+analyze0(2.5s);debugJSweb58.0s. Backend173pass1skip389.63s;
+finalcontent+PG8pass69.99s(all131/seed137→1447XP/replay0),protected11pass44.38s.
+BularumumiyCAS/symbolicFRQparser yoki3DCADengine deganiemas. To‘rttaarifmetik
+modelbarchasonlarni0–80orasida,harfaqiymatini0–15,xni0–12orasidasaqlaydi.
+Old125kontentvaother22manbametadata/inventoryo‘zgarmagan. Normalapp/auth/Gradle,
+frontend/boshqafanlar/productiono‘zgarmagan. RealAndroid/TalkBack/pedagog/pilottasdiqsiz.
+Keyingi133«Ifodaningqiymatinihisoblash»,PDF47–48/bosma46–47. Butun1–11kurstugamagan.
+
+## Oldingi checkpointlar
+
 ## 2026-11-05 — IV122–126, jami125 lokal dars
 
 IV15/33lokal tayyor,18mavzu qolgan. Yangi30karta/40topshiriq:to‘rtburchak,

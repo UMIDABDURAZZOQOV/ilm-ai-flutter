@@ -3,6 +3,12 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'geometry_shape_axes',
+  'geometry_solid_views',
+  'algebra_compare_sums',
+  'algebra_expression_kind',
+  'algebra_parts_variables',
+  'algebra_value_comparison',
   'geometry_quadrilateral',
   'geometry_regions',
   'geometry_congruent_overlay',
