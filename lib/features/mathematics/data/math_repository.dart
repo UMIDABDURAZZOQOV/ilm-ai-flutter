@@ -3,6 +3,12 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'algebra_value_table',
+  'algebra_addition_properties',
+  'algebra_integer_inequalities',
+  'notation_roman_100',
+  'equation_unknown_component',
+  'equation_solution_steps',
   'geometry_shape_axes',
   'geometry_solid_views',
   'algebra_compare_sums',

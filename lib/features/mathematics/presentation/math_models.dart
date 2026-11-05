@@ -26,6 +26,8 @@ part 'geometry_perimeter_explorer.dart';
 part 'geometry_regions_explorer.dart';
 part 'algebra_expression_explorer.dart';
 part 'geometry_views_explorer.dart';
+part 'algebra_practice_explorer.dart';
+part 'equation_notation_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -282,6 +284,20 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'notation_roman_100',
+      'equation_unknown_component',
+      'equation_solution_steps',
+    }.contains(mode)) {
+      return _EquationNotationExplorer(mode: mode);
+    }
+    if ({
+      'algebra_value_table',
+      'algebra_addition_properties',
+      'algebra_integer_inequalities',
+    }.contains(mode)) {
+      return _AlgebraPracticeExplorer(mode: mode);
+    }
     if ({'geometry_shape_axes', 'geometry_solid_views'}.contains(mode)) {
       return _GeometryViewsExplorer(mode: mode);
     }
