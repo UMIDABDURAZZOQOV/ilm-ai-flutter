@@ -1,5 +1,20 @@
 # Matematika IV qism — lokal sinov
 
+## 2026-11-05 — IV122–126, jami125 lokal dars
+
+IV15/33lokal tayyor,18mavzu qolgan. Yangi30karta/40topshiriq:to‘rtburchak,
+ichi/chegara/tashqari,teng shakllar,original7qism tangram va o‘qqa akslantirish.
+13targetedtest13s,5fullflow320px/200%/ReduceMotion,aslvektorqismlariningmaydoni
+va1600ichkinuqtada qoplanish,uchalaakso‘qida49tadan nuqta/involution tekshirildi.
+Bu umumiytangram packing/topology solver emas;berilgankvadratsxemagayig‘ishqo‘llanmasi.
+FullFlutter611pass4:16,analyze0(2.0s),debugJSweb58.4s. Backend166pass1skip340.91s,
+PG1pass50.87s(all125/seed137→1387XP/replay0),protected11pass42.29s.
+Old120kontent o‘zgarmagan;normalapp/Gradle/auth/frontend/boshqa fanlar o‘zgarmagan.
+II74manbasi vaIII5jadvalcontrol/gameunready;1–11kurs tugamagan. RealAndroid,
+TalkBack,pedagog va pilot tasdiqsiz. Keyingi127/PDF35–36/bosma34–35.
+
+## Oldingi checkpointlar
+
 ## 2026-11-05 — IV117–121, jami120 lokal dars
 
 IV10/33tayyor lokal dars,23mavzu qolgan. Yangi30karta/40topshiriq:

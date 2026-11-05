@@ -3,6 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'geometry_quadrilateral',
+  'geometry_regions',
+  'geometry_congruent_overlay',
+  'geometry_tangram_guide',
+  'geometry_mirror_axis',
   'geometry_perimeter_trace',
   'geometry_perimeter_missing',
   'geometry_rectangle_perimeter',

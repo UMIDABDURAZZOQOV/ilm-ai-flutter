@@ -23,6 +23,7 @@ part 'measurement_units_explorer.dart';
 part 'quantity_practice_explorer.dart';
 part 'geometry_length_explorer.dart';
 part 'geometry_perimeter_explorer.dart';
+part 'geometry_regions_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -279,6 +280,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'geometry_quadrilateral',
+      'geometry_regions',
+      'geometry_congruent_overlay',
+      'geometry_tangram_guide',
+      'geometry_mirror_axis',
+    }.contains(mode)) {
+      return _GeometryRegionsExplorer(mode: mode);
+    }
     if ({
       'geometry_perimeter_trace',
       'geometry_perimeter_missing',
