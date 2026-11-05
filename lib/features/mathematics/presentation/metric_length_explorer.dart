@@ -1,7 +1,7 @@
 part of 'math_models.dart';
 
-String _metricLabel(int cm) =>
-    '${cm ~/ 100} m ${cm % 100 ~/ 10} dm ${cm % 10} cm';
+String _metricLabel(int cm, {bool small = false}) =>
+    '${cm ~/ 100} ${small ? 'dm' : 'm'} ${cm % 100 ~/ 10} ${small ? 'cm' : 'dm'} ${cm % 10} ${small ? 'mm' : 'cm'}';
 
 class _MetricLengthExplorer extends StatefulWidget {
   final String mode;
@@ -12,6 +12,14 @@ class _MetricLengthExplorer extends StatefulWidget {
 
 class _MetricLengthState extends State<_MetricLengthExplorer> {
   int cm = 100, index = 0, step = 0;
+  bool get small => widget.mode.startsWith('millimetre_');
+  String get big => small ? 'dm' : 'm';
+  String get middle => small ? 'cm' : 'dm';
+  String get unit => small ? 'mm' : 'cm';
+  String get bigName => small ? 'detsimetr' : 'metr';
+  String get middleName => small ? 'santimetr' : 'detsimetr';
+  String get unitName => small ? 'millimetr' : 'santimetr';
+  String lengthLabel(int value) => _metricLabel(value, small: small);
   @override
   void initState() {
     super.initState();
@@ -19,7 +27,9 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
   }
 
   void reset() {
-    cm = widget.mode == 'metre_conversion' ? 100 : 208;
+    cm = {'metre_conversion', 'millimetre_conversion'}.contains(widget.mode)
+        ? 100
+        : 208;
     index = 0;
     step = 0;
   }
@@ -32,8 +42,13 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
 
   @override
   Widget build(BuildContext context) {
-    final operations = widget.mode == 'metre_length_operations';
-    final samples = widget.mode == 'metre_conversion'
+    final operations = {
+      'metre_length_operations',
+      'millimetre_operations',
+    }.contains(widget.mode);
+    final samples = small
+        ? [100, 341, 705, 901]
+        : widget.mode == 'metre_conversion'
         ? [100, 300, 460, 700]
         : [127, 208, 280, 450, 608];
     final pair = [(276, 348, true), (632, 278, false), (346, 213, true)][index];
@@ -50,13 +65,13 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
           tens = t + bt + carryT,
           carryH = tens ~/ 10;
       notes.add(
-        'Santimetr: $u + $bu = $units; ${units % 10} cm qoladi, $carryT dm o‘tadi.',
+        '${small ? 'Millimetr' : 'Santimetr'}: $u + $bu = $units; ${units % 10} $unit qoladi, $carryT $middle o‘tadi.',
       );
       notes.add(
-        'Detsimetr: $t + $bt + $carryT = $tens; ${tens % 10} dm qoladi, $carryH m o‘tadi.',
+        '${small ? 'Santimetr' : 'Detsimetr'}: $t + $bt + $carryT = $tens; ${tens % 10} $middle qoladi, $carryH $big o‘tadi.',
       );
       notes.add(
-        'Metr: $h + $bh + $carryH = ${h + bh + carryH}. Jami ${_metricLabel(total)}.',
+        '${small ? 'Detsimetr' : 'Metr'}: $h + $bh + $carryH = ${h + bh + carryH}. Jami ${lengthLabel(total)}.',
       );
     } else {
       if (u < bu) {
@@ -68,14 +83,18 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
         u += 10;
       }
       notes.add(
-        'Santimetr: $u − $bu = ${u - bu}; donor detsimetr $t bo‘lib qoldi.',
+        '${small ? 'Millimetr' : 'Santimetr'}: $u − $bu = ${u - bu}; donor $middleName $t bo‘lib qoldi.',
       );
       if (t < bt) {
         h--;
         t += 10;
       }
-      notes.add('Detsimetr: $t − $bt = ${t - bt}; donor metr $h bo‘lib qoldi.');
-      notes.add('Metr: $h − $bh = ${h - bh}. Qolgan ${_metricLabel(total)}.');
+      notes.add(
+        '${small ? 'Santimetr' : 'Detsimetr'}: $t − $bt = ${t - bt}; donor $bigName $h bo‘lib qoldi.',
+      );
+      notes.add(
+        '${small ? 'Detsimetr' : 'Metr'}: $h − $bh = ${h - bh}. Qolgan ${lengthLabel(total)}.',
+      );
     }
     return Card(
       child: Padding(
@@ -86,10 +105,12 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
             Text(
               operations
                   ? 'Aralash uzunliklar bilan amallar'
+                  : small
+                  ? 'Detsimetr, santimetr, millimetr'
                   : 'Metr, detsimetr, santimetr',
             ),
-            const Text(
-              '1 m = 10 dm = 100 cm. Har dm 10 cm. Model ekran o‘lchovining fizik kalibrovkasi emas.',
+            Text(
+              '1 $big = 10 $middle = 100 $unit. Har $middle 10 $unit. Model ekran o‘lchovining fizik kalibrovkasi emas.',
             ),
             if (operations) ...[
               Wrap(
@@ -101,9 +122,9 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
                       key: ValueKey('metric-operation-$i'),
                       label: Text(
                         [
-                          '276 cm + 348 cm',
-                          '632 cm − 278 cm',
-                          '346 cm + 213 cm',
+                          '276 $unit + 348 $unit',
+                          '632 $unit − 278 $unit',
+                          '346 $unit + 213 $unit',
                         ][i],
                       ),
                       selected: index == i,
@@ -114,9 +135,7 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
                     ),
                 ],
               ),
-              Text(
-                'Birinchi: ${_metricLabel(a)}; ikkinchi: ${_metricLabel(b)}.',
-              ),
+              Text('Birinchi: ${lengthLabel(a)}; ikkinchi: ${lengthLabel(b)}.'),
               Semantics(
                 liveRegion: true,
                 child: Text(
@@ -142,7 +161,7 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
               ),
               if (step == 2)
                 Text(
-                  '$a cm ${plus ? '+' : '−'} $b cm = $total cm = ${_metricLabel(total)}',
+                  '$a $unit ${plus ? '+' : '−'} $b $unit = $total $unit = ${lengthLabel(total)}',
                   key: const ValueKey('metric-operation-result'),
                 ),
             ] else ...[
@@ -153,7 +172,7 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
                   for (final n in samples)
                     ChoiceChip(
                       key: ValueKey('metric-sample-$n'),
-                      label: Text('$n cm'),
+                      label: Text('$n $unit'),
                       selected: cm == n,
                       onSelected: (_) => setState(() => cm = n),
                     ),
@@ -162,20 +181,20 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
               Semantics(
                 liveRegion: true,
                 child: Text(
-                  '$cm cm = ${_metricLabel(cm)}',
+                  '$cm $unit = ${lengthLabel(cm)}',
                   key: const ValueKey('metric-conversion'),
                 ),
               ),
               Text(
-                'To‘liq metr: ${cm ~/ 100}; to‘liq detsimetr: ${cm ~/ 10}; detsimetr xonasi: ${cm % 100 ~/ 10}.',
+                'To‘liq $bigName: ${cm ~/ 100}; to‘liq $middleName: ${cm ~/ 10}; $middleName xonasi: ${cm % 100 ~/ 10}.',
                 key: const ValueKey('metric-groups'),
               ),
               Text(
-                'Butun ${cm ~/ 100} metr alohida. Quyidagi chiziq faqat qolgan ${cm % 100} cm ni 0–100 cm ichida ko‘rsatadi.',
+                'Butun ${cm ~/ 100} $bigName alohida. Quyidagi chiziq faqat qolgan ${cm % 100} $unit ni 0–100 $unit ichida ko‘rsatadi.',
               ),
               Semantics(
                 label:
-                    'Qoldiq ${cm % 100} santimetr; modelning yuzta teng katagi, har o‘ntasi bir detsimetr',
+                    'Qoldiq ${cm % 100} $unitName; modelning yuzta teng katagi, har o‘ntasi bir $middleName',
                 child: ExcludeSemantics(
                   child: SizedBox(
                     height: 64,
@@ -187,9 +206,9 @@ class _MetricLengthState extends State<_MetricLengthExplorer> {
                 key: const ValueKey('metric-cm-slider'),
                 value: cm.toDouble(),
                 min: 0,
-                max: 900,
-                divisions: 900,
-                semanticFormatterCallback: (v) => '${v.round()} santimetr',
+                max: small ? 999 : 900,
+                divisions: small ? 999 : 900,
+                semanticFormatterCallback: (v) => '${v.round()} $unitName',
                 onChanged: (v) => setState(() => cm = v.round()),
               ),
             ],

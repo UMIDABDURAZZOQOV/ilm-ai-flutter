@@ -37,6 +37,7 @@ part 'thousand_place_explorer.dart';
 part 'three_digit_explorer.dart';
 part 'three_digit_subtract_explorer.dart';
 part 'metric_length_explorer.dart';
+part 'operation_path_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -293,6 +294,14 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({'millimetre_conversion', 'millimetre_operations'}.contains(mode)) {
+      return _MetricLengthExplorer(mode: mode);
+    }
+    if (mode == 'metric_path_lengths') return const _MetricPathExplorer();
+    if (mode == 'three_digit_operation_machine') {
+      return const _ThreeDigitOperationExplorer();
+    }
+    if (mode == 'bracket_branch_flow') return const _BracketBranchExplorer();
     if ({
       'metre_conversion',
       'metre_mixed_lengths',

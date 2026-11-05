@@ -3,6 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'millimetre_conversion',
+  'millimetre_operations',
+  'metric_path_lengths',
+  'three_digit_operation_machine',
+  'bracket_branch_flow',
   'metre_conversion',
   'metre_mixed_lengths',
   'metre_length_operations',
