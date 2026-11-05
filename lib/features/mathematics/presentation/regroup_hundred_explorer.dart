@@ -22,16 +22,25 @@ class _RegroupHundredExplorerState extends State<_RegroupHundredExplorer> {
   @override
   Widget build(BuildContext context) {
     final subtract = widget.mode.endsWith('subtraction');
-    final borrowTwo = widget.mode == 'two_digit_regroup_subtraction';
-    final nonround = widget.mode == 'two_digit_nonround_subtraction';
+    final nonroundTwo =
+        widget.mode == 'two_digit_nonround_two_digit_subtraction';
+    final borrowTwo =
+        widget.mode == 'two_digit_regroup_subtraction' || nonroundTwo;
+    final nonround =
+        widget.mode == 'two_digit_nonround_subtraction' || nonroundTwo;
+    final carryRemainder = widget.mode == 'two_digit_carry_remainder_addition';
     final cross = widget.mode == 'two_digit_cross_tens_addition';
     final two = widget.mode == 'two_digit_regroup_addition';
     final pairs = subtract
-        ? (nonround
+        ? (nonroundTwo
+              ? const [(52, 27), (64, 38), (83, 46)]
+              : nonround
               ? const [(43, 7), (52, 8), (74, 9)]
               : borrowTwo
               ? const [(50, 23), (70, 26), (90, 42)]
               : const [(40, 3), (60, 8), (90, 4)])
+        : carryRemainder
+        ? const [(46, 28), (57, 26), (47, 28), (56, 27)]
         : cross
         ? const [(35, 7), (48, 6), (67, 8), (79, 9)]
         : two

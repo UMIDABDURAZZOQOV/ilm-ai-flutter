@@ -405,7 +405,10 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
           );
         }
         final bridge = _catalog!['source_gap_bridge'] as Map?;
-        if (bridge != null) {
+        final sequenceBridge = _catalog!['source_sequence_gap_bridge'] as Map?;
+        if (sequenceBridge != null) {
+          children.add(Text(sequenceBridge['message'] as String));
+        } else if (bridge != null) {
           children.add(Text(bridge['message'] as String));
         } else if (_catalog!['previous_book_complete'] == false) {
           children.add(
@@ -495,7 +498,10 @@ class _MathPreviewScreenState extends State<MathPreviewScreen> {
           style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       );
-      final bridge = _attempt!['source_gap_bridge'] as Map?;
+      final bridge =
+          (_attempt!['source_sequence_gap_bridge'] ??
+                  _attempt!['source_gap_bridge'])
+              as Map?;
       if (bridge != null) {
         children.add(
           ExpansionTile(

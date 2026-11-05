@@ -3,7 +3,11 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'column_place_value',
+  'split_two_digit_subtraction',
   'two_digit_nonround_subtraction',
+  'two_digit_carry_remainder_addition',
+  'two_digit_nonround_two_digit_subtraction',
   'two_digit_regroup_subtraction',
   'two_digit_cross_tens_addition',
 
@@ -183,6 +187,39 @@ class MathRepository {
     try {
       void text(dynamic v) {
         if (v is! String || v.isEmpty) throw const FormatException();
+      }
+
+      if (result['source_sequence_gap_bridge'] != null) {
+        final bridge = result['source_sequence_gap_bridge'] as Map;
+        text(bridge['message']);
+        bool exactList(dynamic value, List<int> expected) =>
+            value is List &&
+            value.length == expected.length &&
+            List.generate(
+              expected.length,
+              (i) => value[i] == expected[i],
+            ).every((v) => v);
+        if (bridge['kind'] != 'local_qa_within_book_source_gap' ||
+            bridge['book_id'] != 'math-uz-g2-p1' ||
+            bridge['grade'] != 2 ||
+            bridge['part'] != 1 ||
+            (type == 'catalog' &&
+                (result['grade'] != 2 ||
+                    result['part'] != 1 ||
+                    result['publication'] != 'local_test_preview_only' ||
+                    result['course_ready'] != false)) ||
+            (type == 'attempt' &&
+                !RegExp(
+                  r'^math-2-1-(2[7-9]|3[0-9]|4[0-4])-r1$',
+                ).hasMatch(result['lesson_key'] as String)) ||
+            bridge['teacher_review'] != 'not_verified' ||
+            bridge['missing_topic_completed'] != false ||
+            bridge['completed_predecessor_lessons'] != 25 ||
+            !exactList(bridge['missing_source_numbers'], [25]) ||
+            !exactList(bridge['missing_path_sequences'], [26]) ||
+            !exactList(bridge['missing_printed_pages'], [54, 55])) {
+          throw const FormatException();
+        }
       }
 
       if (type == 'catalog') {
