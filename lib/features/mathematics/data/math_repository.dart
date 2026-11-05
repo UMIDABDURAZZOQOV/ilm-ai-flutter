@@ -3,6 +3,10 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'metre_conversion',
+  'metre_mixed_lengths',
+  'metre_length_operations',
+  'metric_height_chart',
   'subtract_three_regroup',
   'subtract_three_double',
   'subtract_round_hundred',

@@ -36,6 +36,7 @@ part 'book_end_explorers.dart';
 part 'thousand_place_explorer.dart';
 part 'three_digit_explorer.dart';
 part 'three_digit_subtract_explorer.dart';
+part 'metric_length_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -292,6 +293,14 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'metre_conversion',
+      'metre_mixed_lengths',
+      'metre_length_operations',
+    }.contains(mode)) {
+      return _MetricLengthExplorer(mode: mode);
+    }
+    if (mode == 'metric_height_chart') return const _MetricHeightChart();
     if ({
       'subtract_three_regroup',
       'subtract_three_double',
