@@ -3,6 +3,17 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test(
+    'existing upload signing is reused only through an explicit private path',
+    () {
+      final gradle = File('android/app/build.gradle.kts').readAsStringSync();
+      expect(gradle, contains('System.getenv("ILM_ANDROID_KEY_PROPERTIES")'));
+      expect(gradle, contains('File(keystorePropertiesFile.parentFile, "app/'));
+      expect(gradle, contains('applicationId = "com.ilmai.app"'));
+      expect(gradle, contains('signingConfigs.getByName("release")'));
+      expect(gradle, contains('Integrated beta is an internal debug build.'));
+    },
+  );
+  test(
     'Beta profile gate targets app artifacts without rejecting DebugArtProfile metadata',
     () {
       final gradle = File('android/app/build.gradle.kts').readAsStringSync();

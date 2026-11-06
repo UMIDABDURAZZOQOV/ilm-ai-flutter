@@ -5,7 +5,7 @@ $betaRoot = Split-Path $PSScriptRoot -Parent
 Push-Location $betaRoot
 try {
     $betaBranch = git branch --show-current
-    if ($betaBranch -notin @('beta/android-integrated-five-subjects', 'feat/beta-subject-switch-ai-help')) { throw 'Use an explicitly approved isolated beta branch.' }
+    if ($betaBranch -notin @('beta/android-integrated-five-subjects', 'feat/beta-subject-switch-ai-help', 'qa/play-release-audit-20261106')) { throw 'Use an explicitly approved isolated beta branch.' }
     if (git status --porcelain) { throw 'Commit the reviewed implementation before building its receipt.' }
     $betaBackend = Join-Path (Split-Path $betaRoot -Parent) 'ilm-ai-beta'
     if ((git -C $betaBackend branch --show-current) -ne $betaBranch -or (git -C $betaBackend status --porcelain)) {

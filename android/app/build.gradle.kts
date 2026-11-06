@@ -1,5 +1,6 @@
 import java.util.Properties
 import java.io.FileInputStream
+import java.io.File
 import java.util.Base64
 
 plugins {
@@ -10,7 +11,13 @@ plugins {
 
 // Release signing: credentials live in android/key.properties (never committed).
 val keystoreProperties = Properties()
-val keystorePropertiesFile = rootProject.file("key.properties")
+// An isolated worktree may explicitly reuse the existing upload configuration.
+// Never copy credentials into Git or silently search for another signing key.
+val externalSigningProperties = System.getenv("ILM_ANDROID_KEY_PROPERTIES")
+val keystorePropertiesFile = if (!externalSigningProperties.isNullOrBlank())
+    File(externalSigningProperties).absoluteFile
+else
+    rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
@@ -78,7 +85,9 @@ android {
             if (keystorePropertiesFile.exists()) {
                 keyAlias = keystoreProperties["keyAlias"] as String
                 keyPassword = keystoreProperties["keyPassword"] as String
-                storeFile = file(keystoreProperties["storeFile"] as String)
+                val configuredStore = File(keystoreProperties["storeFile"] as String)
+                storeFile = if (configuredStore.isAbsolute) configuredStore
+                    else File(keystorePropertiesFile.parentFile, "app/${configuredStore.path}")
                 storePassword = keystoreProperties["storePassword"] as String
             }
         }

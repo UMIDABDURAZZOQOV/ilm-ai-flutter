@@ -28,7 +28,9 @@ BaseOptions apiOptions({
   connectTimeout: const Duration(seconds: 20),
   sendTimeout: const Duration(seconds: 30),
   receiveTimeout: receiveTimeout,
-  followRedirects: !phoneQaRequested && !integratedBetaRequested,
+  // API redirects must not forward bearer tokens or credential request bodies.
+  // OAuth navigation uses the separate, validated browser flow.
+  followRedirects: false,
 );
 
 /// A queued refresh with storage compare-and-swap. Transient failures preserve
@@ -48,14 +50,45 @@ class AuthInterceptor extends QueuedInterceptor {
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) async {
-    if (integratedBetaRequested && (!integratedBeta || !isBetaOrigin(options.uri))) {
-      handler.reject(DioException(requestOptions: options,
-        error: StateError('Beta requests must remain on the isolated beta API origin.')));
+    final apiOrigin = Uri.parse(apiBaseUrl);
+    final target = options.uri;
+    if (target.userInfo.isNotEmpty ||
+        target.scheme != apiOrigin.scheme ||
+        target.host != apiOrigin.host ||
+        target.port != apiOrigin.port) {
+      handler.reject(
+        DioException(
+          requestOptions: options,
+          error: StateError(
+            'API requests must remain on the configured API origin.',
+          ),
+        ),
+      );
       return;
     }
-    if (phoneQaRequested && (!phoneQaEnabled || !isPhoneQaRequest(options.uri))) {
-      handler.reject(DioException(requestOptions: options,
-        error: StateError('Phone QA permits only the USB loopback API.')));
+    // Enforce this even when a caller overrides BaseOptions or skips bearer
+    // injection: logout/exchange bodies may themselves contain credentials.
+    options.followRedirects = false;
+    if (integratedBetaRequested &&
+        (!integratedBeta || !isBetaOrigin(options.uri))) {
+      handler.reject(
+        DioException(
+          requestOptions: options,
+          error: StateError(
+            'Beta requests must remain on the isolated beta API origin.',
+          ),
+        ),
+      );
+      return;
+    }
+    if (phoneQaRequested &&
+        (!phoneQaEnabled || !isPhoneQaRequest(options.uri))) {
+      handler.reject(
+        DioException(
+          requestOptions: options,
+          error: StateError('Phone QA permits only the USB loopback API.'),
+        ),
+      );
       return;
     }
     try {

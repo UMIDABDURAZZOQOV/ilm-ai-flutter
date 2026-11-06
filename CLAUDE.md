@@ -1,5 +1,69 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+### Play Console tasdig‘i — shu auditning keyingi yangilanishi
+
+User Console’dan production **3 (1.0.2)**, Alpha **2 (1.0.1)** va package
+**com.ilmai.app**ni tasdiqladi. **1.0.3/code4** aniq ruxsat bilan belgilandi.
+Upload certificate lokal kalit/AAB/APKga mos. Play Console’ga yuborish uchun
+ruxsat berilmagan — hech narsa upload/publish qilinmaydi.
+Beta regressiya to‘plami **95 passed**. Alohida final config test logi va
+imzolangan AAB/debug APK natijasi build tugagach yoziladi. AAB oddiy release
+konfiguratsiyasida (Beta flagisiz, Biology-only default saqlangan) audit candidate
+sifatida yaratiladi; bu besh fan productionga ko‘chirilgani yoki API/OAuth
+acceptance o‘tgani degani emas. Release blockerlar yuqoridagi hisobotda ochiq.
+
+
+## 2026-11-06 — Mavjud Play ilovasini yangilash auditi (production approval yo‘q)
+
+User oldingi “birinchi release” javobini tuzatdi: **com.ilmai.app Play Store’da
+allaqachon mavjud**. Eski Flutter worktreedagi key.properties/upload keystore,
+imzolangan AAB/APK topildi. Upload SHA256
+`D0:F0:08:1B:E1:E3:EA:F6:79:8E:4C:95:57:0B:57:36:55:57:DA:23:B5:37:81:F0:DB:B4:19:10:3D:90:04:35`
+uchalasida mos; user Console’dan aynan shu fingerprintni yubordi. Yangi kalit yoki
+applicationId yaratilmaydi. Lokal APK code3; Console highest versionCode hali
+so‘ralgan. Upload va Play app signing sertifikatlari bir xil deb hisoblanmaydi.
+
+Ish ikki Beta worktreeda **qa/play-release-audit-20261106** branchida. Original
+Flutter/Biology, main va production DB o‘zgarmadi. Batafsil dalil/qolgan ishlar:
+`ilm-ai-flutter-beta/docs/PRODUCTION_UPDATE_AUDIT.md` va backend
+`docs/beta/PRODUCTION_UPDATE_HANDOFF.md`.
+
+Tuzatishlar: authenticated Dio begona origin/userinfo yoki credential-bearing
+redirectga so‘rov yubormaydi (avval 5 test bilan takrorlandi); Settings ichida
+mavjud rasmiy public privacy linki, localized failure/retry/tap guard; signing
+konfiguratsiyasi alohida worktreeda faqat explicit ILM_ANDROID_KEY_PROPERTIES
+orqali eski xususiy kalitdan foydalanishi mumkin. Beta release taqiqi saqlangan.
+
+Hozirgi testlar: **1 334 normal Flutter**, **55 auth/transport**, **17 privacy +
+account accessibility**, **53 backend auth**, **14 SQLite Beta/help** passed;
+12 PostgreSQL variant deselected. Suite’lar kesishadi, sonlarini qo‘shmang.
+Analyze: **No issues found**. Full Flutter log 114m55s, analyze 6274.7s ko‘rsatdi;
+xotira bosimi bor edi, buni tezlik benchmarki deb ko‘rsatmang. Yakuniy Beta
+regression/build/installation holati keyingi qo‘shimchada yoziladi.
+
+Haqiqiy Samsungda logout → Back/reopen → shu qurilma credentiali bilan qayta
+kirish shu account/Biologiya7/Savol3/8ni tikladi. 9 user/progress jadvali digestlari
+o‘zgarmadi. Faqat ADB reverse olib tashlanib offline cold start qilindi: session
+saqlandi va Retry/Settings bilan tushunarli connection error; reverse + Retrydan
+keyin shu Learn/draft tiklandi. Shaxsiy javob/XP reset, uninstall/data clear yo‘q.
+Bu Google account chooser/cross-device yoki Play-signed upgrade sinovi emas.
+
+**Reliz to‘siqlari:** joriy HTTPS production health200, ammo yangi client uchun
+/auth/mobile/config va /mobile/skills/subjects404 (faqat read-only tekshiruv).
+Bu eski production OAuth sozlanmagan degani emas. Alohida HTTPS/OAuth staging
+userda hali yo‘q. Oddiy release hali Biology-only, besh fan/FRQ/help Beta gates
+ichida. Account-deletion flow yo‘q; public Play “No data collected” deklaratsiyasi
+privacy policy va saqlanayotgan account/progress bilan moslashtirilishi kerak.
+Console highest versionCode, backward-compatible backend rollout, owner-scoped
+deletion/public path, Play internal-track upgrade va Android16/16KB runtime QA
+bajarilmasdan production-ready deb aytmang. Eski release 8 ta64-bit ELF alignment
+va zipalign16KB tekshiruvidan o‘tdi; Samsung page size4096, runtime16KB emas.
+
+Avtomatik review live DB yo‘li bilan test buyrug‘ini rad etdi; xavfsiz alohida
+SQLite backup faqat read-only source orqali yaratilib, testlar disposable DBlarda
+bajarildi. Secret log/Git/APKga chiqarilmadi. Lokal8930/PID22220 saqlangan.
+
+
 ## 2026-11-06 — Lokal Beta yakuniy Samsung acceptance o‘tdi
 
 User **lokal Beta qolsin** deb tasdiqladi; real Google/HTTPS konfiguratsiyasi
