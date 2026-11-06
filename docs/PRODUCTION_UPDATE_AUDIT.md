@@ -135,6 +135,30 @@ cross-device identity test, or a Play-signed upgrade test.
 
 No “100% bug-free” or production signoff is made from passing automated tests.
 
+### Native lint follow-up (before final rebuilt artifacts)
+
+The first `:app:lintRelease` exposed **7 errors and18 warnings**. They were fixed
+without adding a baseline, suppressing errors, raising minSdk, or changing branding:
+
+- Launch attributes now use inherited API28/API29 day/night style resources;
+  API24 base themes contain no newer attributes. Existing API31 splash is retained.
+- Capture hardware is declared optional so camera permissions do not silently
+  exclude otherwise compatible ChromeOS/tablet devices.
+- Ignored Windows `local.properties` drive colons are escaped. Flutter regenerates
+  this file; run `python scripts/normalize_android_local_properties.py` after a
+  Flutter build and before native lint. Three utility tests cover this behavior.
+- The existing no-backup policy now explicitly covers Android12+ cloud backup
+  and device transfers, including credential-encrypted/device-encrypted domains.
+  This does not delete local data or change server-side progress restoration.
+
+Recheck: **lintRelease BUILD SUCCESSFUL**, **0 errors /17 warnings**, 3m06s.
+Remaining warnings concern icon asset/config duplication/shape/monochrome, obsolete
+resource qualifiers, a newer desugar library, and legacy storage permission.
+They are recorded, not silenced or represented as zero warnings. Relevant
+configuration/mobile OAuth/transport tests: **24 passed** after native changes.
+The previous candidate below was built before these fixes; final rebuilt artifact
+identity and verification supersede that candidate when appended.
+
 ## Validation records
 
 Local ignored artifacts in `../ilm-ai-beta-artifacts`:
@@ -178,3 +202,70 @@ database was never a writable test target. No credentials were copied into logs.
 - [Data safety](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en-EN):
   declarations must reflect actual collection and processing.
 - [Existing public policy](https://ilm-ai-edu.vercel.app/privacy).
+
+## Built artifacts — update candidate, not release approval
+
+The user explicitly approved 1.0.3/code4 and requested an AAB while retaining
+the separate list of failed/unperformed production checks. Nothing was uploaded.
+
+| Artifact | Actual path under `../ilm-ai-beta-artifacts/` | Bytes / MiB | Source commit |
+| --- | --- | --- | --- |
+| Signed release candidate AAB | `ILM-AI-1.0.3-code4-release-candidate.aab` | 76,951,484 / 73.39 | `36226119a05d2aae2407536aa0e3706ea16dbe97` |
+| Local five-subject Beta debug APK | `ILM-AI-Beta-1.0.3-code4-20261106.apk` | 180,483,317 / 172.12 | `74c3c1ce5d4aae33fc14371fcb415426246a8ce3` |
+
+AAB SHA256: `58e2e3829c71b4256b893e84265876880e7e6ac83d4a9b28e36e7118f70539b3`.
+Beta APK SHA256: `a61e6c5c2241348b73c81e990cb9e3653f9f52c35e527424132bea2e6894b4c0`.
+
+**The AAB uses the existing ordinary Biology-only release configuration, not the
+five-subject Beta configuration.** It targets the existing HTTPS API whose new
+required endpoints still return404. It is not a functional five-subject production
+signoff and must not be uploaded until the blockers above are resolved. Beta
+release guards were not removed to manufacture a five-subject signed artifact.
+
+Release build: `flutter --no-version-check build appbundle --release --no-pub
+-t lib/main.dart --build-name 1.0.3 --build-number 4
+--dart-define=API_URL=https://ilm-ai-backend-256x.onrender.com`, with existing
+private key configuration referenced only through `ILM_ANDROID_KEY_PROPERTIES`.
+Build passed in 693.0s. The private key/password were not copied into the repo.
+Debug Beta build passed in 285.7s with the existing loopback Beta flags.
+
+Google's bundletool1.18.3 (official release asset; upstream SHA256 verified)
+validated the **actual final AAB**. `jarsigner` verified archive integrity;
+`keytool` confirmed the exact user-approved upload certificate. Bundle manifest:
+`com.ilmai.app`, 1.0.3/code4, non-debuggable, min24/target36, normal `ilmai` callback.
+All eight final 64-bit native libraries have >=16KB ELF load alignment. ZIP scan
+found no PDF/database/keystore/private config, known local-secret values or JWT
+literals. This does not verify runtime behavior or production provider settings.
+Beta APK signature/package/version and corresponding secret/source-file scan pass.
+
+Beta `adb install -r` returned **Success**, preserving data. USB immediately became
+offline, so launch/installed-hash/progress checks **after this new install** are
+pending stable USB. Earlier logout/login/offline/recovery acceptance above was
+performed on the previous installed Beta and must not be relabeled as new-build
+acceptance. `release-audit-device-status-20261106.json` records this distinction.
+
+Additional final validation: **95 Beta Flutter tests** and **22 config/mobile
+OAuth/transport tests** passed. Android native lint is running; its final outcome
+will be appended. Plugin KGP migration and Java deprecation warnings appeared in
+successful builds; dependencies were not upgraded opportunistically.
+
+Receipts: `release-audit-build-receipt-20261106.json`,
+`release-audit-aab-verification-20261106.json`, `release-audit-api-evidence-20261106.json`.
+The backend worktree at build was docs-only commit `5a65740`; the running local
+service code remains the earlier `974f542`. Deployed production commit is unknown.
+
+### Safe local phone commands
+
+These commands install only the separate Beta, never the production AAB:
+
+```powershell
+$adb = 'C:\Android\platform-tools\adb.exe'
+& $adb devices -l
+# Continue only when the Samsung appears as device, not offline/unauthorized.
+& $adb -s R58NC0JNBXJ reverse tcp:8930 tcp:8930
+& $adb -s R58NC0JNBXJ install -r 'C:\Users\Page\Desktop\Projects\ilm-ai-beta-artifacts\ILM-AI-Beta-1.0.3-code4-20261106.apk'
+& $adb -s R58NC0JNBXJ shell am start -n com.ilmai.app.beta/com.ilmai.ilm_ai_flutter.MainActivity
+```
+
+Keep the localhost backend running; USB reverse must be reapplied after reconnect.
+Do not uninstall or clear app data to work around connectivity/signing issues.

@@ -1,5 +1,49 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+## 2026-11-06 — 1.0.3/code4 signed update candidate tayyor, upload qilinmadi
+
+User tasdiqlagan eski **com.ilmai.app** va upload kaliti bilan release AAB yaratildi:
+`ilm-ai-beta-artifacts/ILM-AI-1.0.3-code4-release-candidate.aab`.
+**76 951 484 bytes /73.39MiB**, SHA256
+`58e2e3829c71b4256b893e84265876880e7e6ac83d4a9b28e36e7118f70539b3`.
+Flutter build commit **36226119a05d2aae2407536aa0e3706ea16dbe97**; build693.0s.
+Actual AAB bundletool validate, jar signature, user-approved upload fingerprint,
+package/version4/1.0.3, min24/target36, non-debuggable va ilmai callback tekshirildi.
+8 ta64-bit ELF alignment>=16KB. PDF/DB/keystore/private config/known secret/JWT
+literal topilmadi. **Play Console’ga upload/publish yo‘q.**
+
+Muhim: bu **oddiy Biology-only release yo‘li**dagi audit candidate. Besh fan,
+FRQ/help hali Beta konfiguratsiyasida. Production HTTPS /health200, ammo yangi
+/auth/mobile/config va /mobile/skills/subjects404. AAB tayyorligi yangi besh fanli
+production muvaffaqiyati emas. Account deletion/public request, Data safety
+mosligi, staging real Google/cross-account, Play-signed upgrade va Android16/16KB
+runtime QA hali ochiq. Preview/source/auth/release guardlar olib tashlanmadi.
+
+Yangi alohida Beta APK:
+`ilm-ai-beta-artifacts/ILM-AI-Beta-1.0.3-code4-20261106.apk`,
+**180 483 317 bytes /172.12MiB**, SHA256
+`a61e6c5c2241348b73c81e990cb9e3653f9f52c35e527424132bea2e6894b4c0`.
+Source **74c3c1ce5d4aae33fc14371fcb415426246a8ce3**, build285.7s,
+com.ilmai.app.beta /1.0.3 code4, loopback8930. Signature/manifest/secret scan passed.
+Samsungga **install -r Success**. Keyin USB yana offline; shu yangi buildning
+post-install launch/installed-hash/progress smoke’i barqaror USB kelguncha pending.
+Avvalgi logout/login/offline/recovery acceptance eski installed buildda o‘tgan;
+yangisiga avtomatik ko‘chirmang. Userdan ishonchli USB qayta ulash so‘ralgan.
+Uninstall/data clear/personal javob yuborish yo‘q, 9 user/progress digest unchanged.
+
+Testlar: **1 334 normal Flutter,95 Beta,55 auth/transport,17 privacy/accessibility,
+22 final configuration/OAuth/transport;53 backend auth;14 SQLite Beta/help passed**.
+Suite’lar kesishadi — qo‘shib total chiqarmang. Analyze No issues found.
+Android lintRelease hozir yakunlanmoqda, final result keyingi qo‘shimchada.
+Backend repository **5a65740** docs-only; ishlayotgan lokal service kodi
+**974f542** /PID22220, production commit mustaqil tekshirilmagan.
+
+Batafsil: Flutter **docs/PRODUCTION_UPDATE_AUDIT.md**; lokal receipts
+`release-audit-build-receipt-20261106.json`, `release-audit-aab-verification-20261106.json`,
+`release-audit-api-evidence-20261106.json`, `release-audit-device-status-20261106.json`.
+Original Flutter key/config faqat o‘qildi, main/production/fan branchlari saqlangan.
+
+
 ### Play Console tasdig‘i — shu auditning keyingi yangilanishi
 
 User Console’dan production **3 (1.0.2)**, Alpha **2 (1.0.1)** va package

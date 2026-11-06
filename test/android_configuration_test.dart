@@ -3,6 +3,76 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test(
+    'launch styles gate platform attributes by API without hiding lint errors',
+    () {
+      const resources = 'android/app/src/main/res';
+      for (final base in ['values', 'values-night']) {
+        final minimum = File('$resources/$base/styles.xml').readAsStringSync();
+        expect(minimum, contains('name="LaunchThemeBase"'));
+        expect(minimum, contains('parent="LaunchThemeBase"'));
+        expect(minimum, isNot(contains('android:forceDarkAllowed')));
+        expect(
+          minimum,
+          isNot(contains('android:windowLayoutInDisplayCutoutMode')),
+        );
+        final cutout = File(
+          '$resources/$base-v28/styles.xml',
+        ).readAsStringSync();
+        expect(cutout, contains('parent="LaunchThemeBase"'));
+        expect(cutout, contains('android:windowLayoutInDisplayCutoutMode'));
+        expect(cutout, isNot(contains('android:forceDarkAllowed')));
+        final dark = File('$resources/$base-v29/styles.xml').readAsStringSync();
+        expect(dark, contains('parent="LaunchThemeBase"'));
+        expect(dark, contains('android:forceDarkAllowed'));
+      }
+    },
+  );
+
+  test(
+    'capture hardware is optional and authentication data is not transferred',
+    () {
+      final manifest = File(
+        'android/app/src/main/AndroidManifest.xml',
+      ).readAsStringSync();
+      for (final hardware in ['camera', 'camera.autofocus', 'microphone']) {
+        expect(
+          manifest,
+          contains(
+            'android:name="android.hardware.$hardware" android:required="false"',
+          ),
+        );
+      }
+      expect(manifest, contains('android:allowBackup="false"'));
+      expect(manifest, contains('android:fullBackupContent="false"'));
+      expect(
+        manifest,
+        contains('android:dataExtractionRules="@xml/data_extraction_rules"'),
+      );
+      final rules = File(
+        'android/app/src/main/res/xml/data_extraction_rules.xml',
+      ).readAsStringSync();
+      for (final channel in ['cloud-backup', 'device-transfer']) {
+        final section = RegExp(
+          '<$channel>([\\s\\S]*?)</$channel>',
+        ).firstMatch(rules)!.group(1)!;
+        for (final domain in [
+          'root',
+          'file',
+          'database',
+          'sharedpref',
+          'external',
+          'device_root',
+          'device_file',
+          'device_database',
+          'device_sharedpref',
+        ]) {
+          expect(section, contains('<exclude domain="$domain" path="."/>'));
+        }
+      }
+    },
+  );
+
+  test(
     'existing upload signing is reused only through an explicit private path',
     () {
       final gradle = File('android/app/build.gradle.kts').readAsStringSync();
