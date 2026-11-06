@@ -1,5 +1,29 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+## 2026-11-06 — Biriktirilgan yakuniy topshiriq bandlari qayta audit qilindi
+
+`e83a7436-6610-4995-960c-d93840c60b99/Pasted text.txt` boshidan oxirigacha
+qayta o‘qildi. Ichida unified auth va ikki marta takrorlangan fan/sinf topshirig‘i
+bor. Har bir mazmunli talab `ilm-ai-flutter-beta/docs/BETA_REQUEST_ACCEPTANCE.md`
+jadvalida kod/test dalili va qolgan haqiqiy acceptance holatiga bog‘landi.
+Mavjud test loglari va APK bytes/SHA256 qayta tekshirildi; app kodi o‘zgarmadi,
+APK qayta yig‘ilmadi. Backend LOCAL_BETA.mddagi eski ikki tugmali kirish yo‘riqnomasi
+va eski branch nomi tuzatildi. Bu bosqich faqat hujjat/audit o‘zgarishlari.
+
+**Tugallangan:** lokal Beta UI/flow, stable verified identity integratsiyasi,
+5–11 katalog/qulf qoidalari, avtomatik testlar/analyze, debug APK va handoff.
+Dalillar: 1 327 normal Flutter, 107 Beta, 53 identity/auth, 14 Beta/help test;
+APK 209 766 255 byte / 200,05 MiB, build Flutter `0fd5baa`, backend `974f542`.
+
+**Hali tugallanmagan:** real Google providerda akkaunt tanlash/qayta kirish va
+haqiqiy Androidga o‘rnatib interaktiv acceptance/responsivenessni tekshirish.
+Yangi jonli tekshiruv: `/beta/config` `google_configured=false`, local test auth
+mavjud; `/health` `ok / integrated_beta`; `adb devices -l` bo‘sh.
+Oldingi user qarori lokal Beta edi. Qolgan real sinovlar uchun telefon ulanishi
+hamda staging/OAuth mavjudligi haqida aniq so‘rov yuborildi. Secret chat/Git/APKga
+so‘ralmadi. Bularni “100% bajarildi” deb ko‘rsatmaslik kerak.
+
+
 ### 2026-11-06 — Android debug ArtProfile build guard correction
 
 The first new debug build stopped safely before producing an APK: the earlier
