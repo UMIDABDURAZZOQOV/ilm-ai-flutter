@@ -3,6 +3,42 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test(
+    'Beta profile gate targets app artifacts without rejecting DebugArtProfile metadata',
+    () {
+      final gradle = File('android/app/build.gradle.kts').readAsStringSync();
+      expect(
+        gradle,
+        contains(
+          'it.project == project && it.name in betaProfileArtifactTasks',
+        ),
+      );
+      for (final task in [
+        'assembleProfile',
+        'bundleProfile',
+        'packageProfile',
+        'compileFlutterBuildProfile',
+        'installProfile',
+      ]) {
+        expect(gradle, contains('"$task"'));
+      }
+      expect(
+        gradle,
+        isNot(contains('allTasks.any { it.name.contains("Profile") }')),
+      );
+      expect(gradle, contains('!betaPerformanceEnabled'));
+      expect(
+        gradle,
+        contains('Beta profile requires explicit BETA_PERFORMANCE=true'),
+      );
+      expect(
+        gradle,
+        contains(
+          'Integrated beta is an internal debug build. Production release is a separate task.',
+        ),
+      );
+    },
+  );
+  test(
     'Android identity and deep link match the mobile OAuth protocol (static check)',
     () {
       final gradle = File('android/app/build.gradle.kts').readAsStringSync();

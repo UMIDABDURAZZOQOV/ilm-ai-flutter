@@ -134,7 +134,15 @@ dependencies {
 
 
 gradle.taskGraph.whenReady {
-    if (integratedBetaEnabled && allTasks.any { it.name.contains("Profile") } && !betaPerformanceEnabled) {
+    // AGP debug builds also merge DebugArtProfile metadata. Only actual app
+    // Profile artifacts require the explicit performance opt-in.
+    val betaProfileArtifactTasks = setOf(
+        "assembleProfile", "bundleProfile", "packageProfile",
+        "compileFlutterBuildProfile", "installProfile"
+    )
+    if (integratedBetaEnabled && !betaPerformanceEnabled && allTasks.any {
+        it.project == project && it.name in betaProfileArtifactTasks
+    }) {
         throw GradleException("Beta profile requires explicit BETA_PERFORMANCE=true; release stays forbidden.")
     }
     if (integratedBetaEnabled && allTasks.any { it.name.contains("Release") }) {
