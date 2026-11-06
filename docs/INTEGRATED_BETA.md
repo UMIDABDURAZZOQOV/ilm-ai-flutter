@@ -1,5 +1,23 @@
 # Integrated Android Beta
 
+## 2026-11-06 — Existing Play update audit and final Beta installation
+
+Current audit branch: `qa/play-release-audit-20261106`. The existing Play identity
+is `com.ilmai.app`; its upload certificate and Console version3 were verified.
+User-approved1.0.3/code4 signed AAB and a separate Beta APK were built and audited.
+The final Beta APK is installed on Samsung, its installed hash matches, and the
+same account/grade7/saved question3/8 remain. Native lint passes with0 errors and
+17 recorded warnings. The local backend remains active on127.0.0.1:8930.
+
+**This does not approve production release.** Ordinary signed release remains
+Biology-only; five-subject/FRQ/help integration is still Beta-only. The live
+production mobile auth/catalogue endpoints return404. Account deletion, Data
+safety reconciliation, real OAuth, Play-signed upgrade and performance/runtime
+acceptance remain open. Nothing was uploaded to Play. See
+[the complete update audit](PRODUCTION_UPDATE_AUDIT.md) for final hashes, commits,
+tests, actual handset evidence and limitations. Older checkpoints below are
+historical; their ADB-empty or previous APK values do not describe this final state.
+
 ## 2026-11-06 — Catalogue availability and registration
 
 All subjects remain visible in onboarding, the main catalogue and quick switch.

@@ -1,5 +1,70 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+## 2026-11-06 — Yakuniy native tuzatishlar va tekshirilgan artifactlar
+
+**Bu yozuv oldingi hash va USB-pending checkpointlarini almashtiradi.**
+App source commit: **384f6d6a2663fd65709df78b08ddfb09de91d138**;
+branch: `qa/play-release-audit-20261106`. User tasdiqlagan **1.0.3/code4**, eski
+`com.ilmai.app` va upload sertifikati saqlangan. Play upload, remote push yoki
+deploy bajarilmagan. Oddiy release hali Biology-only; besh fan Beta ichida.
+
+| Artifact (`ilm-ai-beta-artifacts/`) | Bytes / MiB | SHA256 |
+| --- | --- | --- |
+| `ILM-AI-1.0.3-code4-release-candidate.aab` | 76 951 648 /73.39 | `a3aa66463f996a772fc1f0d7b3f2fbc653c55f75160c3c34d02a65e4043f003c` |
+| `ILM-AI-Beta-1.0.3-code4-20261106.apk` | 209 804 239 /200.08 | `1a54a015468ad5087407ddb18ad88d5a47cb5c4136b759e99922bbdf239d8754` |
+
+Final AAB build330.9s, debug APK194.4s. AAB bundletool validation, jar signature,
+user-approved certificate, manifest va secret/source-file scan passed. Final
+manifest min24/target36, non-debuggable, normal ilmai callback, no-backup rules,
+optional capture hardware. Barcha8 ta64-bit ELF alignment>=16KB; bu runtime16KB
+testi emas. PDF, DB, keystore, known private values yoki JWT literal topilmadi.
+
+Native lint topgan **7 error** tuzatildi: yangi splash atributlari API28/29
+day/night resurslariga ko‘chirildi; capture hardware optional; ignored Windows
+SDK properties escape qilindi. Android12+ cloud/device-transfer uchun oldingi
+no-backup siyosati aniq belgilandi. Lint/source/auth/preview guard o‘chirilmadi.
+Flutter local.propertiesni qayta yaratadi; native lintdan oldin:
+`python scripts/normalize_android_local_properties.py` (3 tests passed).
+
+**Final lintRelease: BUILD SUCCESSFUL,0 errors/17 warnings,1m33s.** Qolganlari:
+legacy storage permission, icon/config duplication/shape/monochrome, obsolete
+resource qualifiers, newer desugar dependency. Warnings yashirilmadi. Final
+analyze: **No issues found,167.3s**;24 config/mobile OAuth/transport tests passed.
+Oldingi1334 full Flutter,95 Beta,55 auth,17 privacy/accessibility,53 backend auth,
+14 SQLite Beta/help testlari o‘tgan; suite’lar kesishadi, jamlab total chiqarmang.
+35 fresh live Beta API checks passed,9 measured user/progress digests unchanged.
+PostgreSQL va haqiqiy Google/Play upgrade acceptance bu bosqichda tekshirilmagan.
+
+Samsungga final APK **install-r Success**. Installed base.apk SHA256 final APKga
+aynan mos. Fresh UI shu session/Biologiya7/Savol3/8ni tasdiqladi. Besh tab ochildi,
+draft saqlandi; privacy tugmasi haqiqiy telefonda fixed public URL bilan tashqi
+Chrome’ni ochdi. Token/credential URLga qo‘shilmadi. Uninstall, data clear,
+shaxsiy javob yuborish yoki XP reset yo‘q;9 ta jadval digesti o‘zgarmadi.
+`am start-W`11017ms timeout qaytardi, keyin Learn ochilgani fresh UI bilan
+tekshirildi. **Cold-start performance hali qabul qilinmagan**; ANR bor deb xulosa
+qilinmadi. Profile/release timings, Android16/16KB runtime QA hali ochiq.
+
+**Reliz bloklangan:** production `/auth/mobile/config` va
+`/mobile/skills/subjects`404; besh fan/FRQ/help productionga ko‘chirilmagan;
+owner-scoped account deletion/public request yo‘q; Data safety deklaratsiyasi
+privacy/actual behavior bilan moslashtirilishi kerak. Alohida HTTPS/OAuth staging
+userda yo‘q. Real account chooser, cross-device va Play-signed upgrade testlari
+qolgan. AAB mavjudligi production-ready degani emas; user ruxsatisiz upload yo‘q.
+
+To‘liq hisobot: `ilm-ai-flutter-beta/docs/PRODUCTION_UPDATE_AUDIT.md`.
+Lokal receipts: `release-audit-build-receipt-20261106.json`,
+`release-audit-aab-verification-20261106.json`,
+`release-audit-installed-final-beta-20261106.json`,
+`release-audit-device-status-20261106.json`,
+`release-audit-native-lint-result-20261106.json`,
+`release-audit-privacy-device-20261106.json`.
+Backend127.0.0.1:8930/PID22220 active qoldirildi; service kodi974f542 o‘zgarmagan.
+Production commit mustaqil tekshirilmagan. Original key fayllari faqat o‘qildi;
+main/fan branchlari va foydalanuvchi/source PDF ma’lumotlari saqlangan. Markaziy
+CLAUDE — user so‘ragan handoff. Vaqtinchalik ADB approval usage-limit xatosi resetdan
+keyin o‘sha approval yo‘li orqali qayta tekshirilib hal bo‘ldi; bypass qilinmadi.
+
+
 ## 2026-11-06 — 1.0.3/code4 signed update candidate tayyor, upload qilinmadi
 
 User tasdiqlagan eski **com.ilmai.app** va upload kaliti bilan release AAB yaratildi:

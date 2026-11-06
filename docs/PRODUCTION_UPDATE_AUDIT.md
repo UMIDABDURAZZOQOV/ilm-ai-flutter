@@ -156,8 +156,8 @@ Remaining warnings concern icon asset/config duplication/shape/monochrome, obsol
 resource qualifiers, a newer desugar library, and legacy storage permission.
 They are recorded, not silenced or represented as zero warnings. Relevant
 configuration/mobile OAuth/transport tests: **24 passed** after native changes.
-The previous candidate below was built before these fixes; final rebuilt artifact
-identity and verification supersede that candidate when appended.
+The final rebuilt artifacts below include these fixes. Earlier pre-fix receipts
+are retained separately and are superseded by the final build receipt.
 
 ## Validation records
 
@@ -210,11 +210,11 @@ the separate list of failed/unperformed production checks. Nothing was uploaded.
 
 | Artifact | Actual path under `../ilm-ai-beta-artifacts/` | Bytes / MiB | Source commit |
 | --- | --- | --- | --- |
-| Signed release candidate AAB | `ILM-AI-1.0.3-code4-release-candidate.aab` | 76,951,484 / 73.39 | `36226119a05d2aae2407536aa0e3706ea16dbe97` |
-| Local five-subject Beta debug APK | `ILM-AI-Beta-1.0.3-code4-20261106.apk` | 180,483,317 / 172.12 | `74c3c1ce5d4aae33fc14371fcb415426246a8ce3` |
+| Signed release candidate AAB | `ILM-AI-1.0.3-code4-release-candidate.aab` | 76,951,648 / 73.39 | `384f6d6a2663fd65709df78b08ddfb09de91d138` |
+| Local five-subject Beta debug APK | `ILM-AI-Beta-1.0.3-code4-20261106.apk` | 209,804,239 / 200.08 | `384f6d6a2663fd65709df78b08ddfb09de91d138` |
 
-AAB SHA256: `58e2e3829c71b4256b893e84265876880e7e6ac83d4a9b28e36e7118f70539b3`.
-Beta APK SHA256: `a61e6c5c2241348b73c81e990cb9e3653f9f52c35e527424132bea2e6894b4c0`.
+AAB SHA256: `a3aa66463f996a772fc1f0d7b3f2fbc653c55f75160c3c34d02a65e4043f003c`.
+Beta APK SHA256: `1a54a015468ad5087407ddb18ad88d5a47cb5c4136b759e99922bbdf239d8754`.
 
 **The AAB uses the existing ordinary Biology-only release configuration, not the
 five-subject Beta configuration.** It targets the existing HTTPS API whose new
@@ -226,8 +226,8 @@ Release build: `flutter --no-version-check build appbundle --release --no-pub
 -t lib/main.dart --build-name 1.0.3 --build-number 4
 --dart-define=API_URL=https://ilm-ai-backend-256x.onrender.com`, with existing
 private key configuration referenced only through `ILM_ANDROID_KEY_PROPERTIES`.
-Build passed in 693.0s. The private key/password were not copied into the repo.
-Debug Beta build passed in 285.7s with the existing loopback Beta flags.
+Final build passed in 330.9s. The private key/password were not copied into the repo.
+Final debug Beta build passed in 194.4s with the existing loopback Beta flags.
 
 Google's bundletool1.18.3 (official release asset; upstream SHA256 verified)
 validated the **actual final AAB**. `jarsigner` verified archive integrity;
@@ -238,15 +238,23 @@ found no PDF/database/keystore/private config, known local-secret values or JWT
 literals. This does not verify runtime behavior or production provider settings.
 Beta APK signature/package/version and corresponding secret/source-file scan pass.
 
-Beta `adb install -r` returned **Success**, preserving data. USB immediately became
-offline, so launch/installed-hash/progress checks **after this new install** are
-pending stable USB. Earlier logout/login/offline/recovery acceptance above was
-performed on the previous installed Beta and must not be relabeled as new-build
-acceptance. `release-audit-device-status-20261106.json` records this distinction.
+Final Beta `adb install -r` returned **Success**. The installed base.apk was read
+and hashed without reading any account credentials/data: exact SHA256 matches the
+final APK above, and package/version4/1.0.3 match. A fresh package-checked UI capture
+shows the same account session, Biology7 and saved question3/8. All9 measured
+user/progress table digests remain unchanged across the audit. No uninstall,
+data clear, personal answer or XP reset. Five tabs were traversed on the earlier
+1.0.3 build with the same Dart app code; all loaded and returned to the saved draft.
 
-Additional final validation: **95 Beta Flutter tests** and **22 config/mobile
-OAuth/transport tests** passed. Android native lint is running; its final outcome
-will be appended. Plugin KGP migration and Java deprecation warnings appeared in
+`am start -W` timed out at11017ms on the final install before the app subsequently
+loaded Learn (verified by fresh screenshot/XML). This is a debug/device timing
+observation, **not accepted cold-start performance** or an ANR diagnosis. Complete
+profile/release startup and responsiveness acceptance remains open.
+
+Additional final validation: **95 Beta Flutter tests** and **24 config/mobile
+OAuth/transport tests** and3 SDK normalization tests passed. Final Android native
+lint passed after all builds (1m33s), with0 errors/17 warnings. Final analyze:
+No issues found (167.3s). Plugin KGP migration and Java deprecation warnings appeared in
 successful builds; dependencies were not upgraded opportunistically.
 
 Receipts: `release-audit-build-receipt-20261106.json`,
@@ -269,3 +277,25 @@ $adb = 'C:\Android\platform-tools\adb.exe'
 
 Keep the localhost backend running; USB reverse must be reapplied after reconnect.
 Do not uninstall or clear app data to work around connectivity/signing issues.
+
+### Final operating state
+
+Local backend still returns200/ok/integrated_beta on127.0.0.1:8930; left running.
+A fresh read-only35-call Beta API acceptance passed and all9 measured table digests
+were unchanged. Production was not mutated; required public endpoint404 blockers
+remain. Nothing was uploaded to Play or pushed/deployed remotely.
+
+Phone evidence: `release-audit-installed-final-beta-20261106.json`,
+`release-audit-final-installed-learn-20261106.png/xml`,
+`release-audit-five-tabs-20261106.json`, `release-audit-device-status-20261106.json`.
+Native errors before/after and final source validation:
+`release-audit-android-lint.log`, `release-audit-android-lint-fixed.log`,
+`release-audit-android-lint-final.log`, `release-audit-native-lint-final-report.xml`.
+The automatic review usage-limit error temporarily prevented one ADB action; it
+was retried through the same approval mechanism after the stated reset time,
+not bypassed. Final on-device acceptance above supersedes the earlier USB-pending
+checkpoint; it does not close real Google/Play upgrade/performance requirements.
+
+Final handset privacy action was also tested: the fixed public privacy URI opened
+external Chrome, without credentials in the URL. The Beta was restored to Learn
+with saved question3/8. Evidence: `release-audit-privacy-device-20261106.json`.
