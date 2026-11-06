@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../core/theme/app_theme.dart';
 import '../data/skill_tree_models.dart';
 import 'skill_ui.dart';
+import 'subject_grade_card.dart';
 
 class SubjectSelection {
   const SubjectSelection(this.subject, this.grade);
@@ -56,7 +56,6 @@ class _SubjectSwitcherState extends State<_SubjectSwitcher> {
       str3(widget.language, uz, ru, en);
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).extension<AppColors>()!.colors;
     return SizedBox(
       height: MediaQuery.sizeOf(context).height * .8,
       child: Column(
@@ -104,52 +103,19 @@ class _SubjectSwitcherState extends State<_SubjectSwitcher> {
             child: ListView.separated(
               controller: _scroll,
               itemCount: widget.subjects.length,
-              separatorBuilder: (_, _) => const Divider(height: 1, indent: 64),
+              separatorBuilder: (_, _) => const SizedBox(height: 10),
               itemBuilder: (context, index) {
                 final subject = widget.subjects[index];
-                final enabled =
-                    subject.available && subject.grades.contains(_grade);
-                final selected =
-                    subject.slug == widget.currentSubject &&
-                    _grade == widget.grade;
-                final hint = !subject.available
-                    ? tr('Tez kunda', 'Скоро', 'Coming soon')
-                    : !enabled
-                    ? tr(
-                        '${subject.grades.join(', ')}-sinflarda mavjud',
-                        'Доступные классы: ${subject.grades.join(', ')}',
-                        'Available grades: ${subject.grades.join(', ')}',
-                      )
-                    : selected
-                    ? tr('Hozirgi fan', 'Текущий предмет', 'Current subject')
-                    : null;
-                return ListTile(
+                return SubjectGradeCard(
                   key: ValueKey('switch_${subject.slug}'),
-                  enabled: enabled,
-                  selected: selected,
-                  contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 6,
-                  ),
-                  leading: Icon(
-                    subjectIcons[subject.slug] ?? Icons.menu_book_rounded,
-                    color: enabled
-                        ? skillColor(subject.color)
-                        : colors.textSecondary,
-                  ),
-                  title: Text(subject.nameFor(widget.language)),
-                  subtitle: hint == null ? null : Text(hint),
-                  trailing: selected
-                      ? const Icon(Icons.check_circle_rounded)
-                      : enabled
-                      ? const Icon(Icons.chevron_right_rounded)
-                      : const Icon(Icons.lock_outline_rounded),
-                  onTap: enabled
-                      ? () => Navigator.pop(
-                          context,
-                          SubjectSelection(subject, _grade),
-                        )
-                      : null,
+                  subject: subject,
+                  grade: _grade,
+                  language: widget.language,
+                  selected:
+                      subject.slug == widget.currentSubject &&
+                      _grade == widget.grade,
+                  onSelected: () =>
+                      Navigator.pop(context, SubjectSelection(subject, _grade)),
                 );
               },
             ),

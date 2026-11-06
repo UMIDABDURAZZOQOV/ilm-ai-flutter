@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import '../config/integrated_beta.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'ilm_navigation_icons.dart';
@@ -169,6 +170,9 @@ class _NavigationTileState extends State<_NavigationTile>
     widget.onSelect(); // Callback is immediate; motion never gates navigation.
   }
 
+  Widget _isolatePaint(Widget child) =>
+      integratedBeta ? RepaintBoundary(child: child) : child;
+
   @override
   void dispose() {
     _selection.dispose();
@@ -206,8 +210,8 @@ class _NavigationTileState extends State<_NavigationTile>
                 SizedBox(
                   height: 40,
                   child: Center(
-                    child: RepaintBoundary(
-                      child: AnimatedScale(
+                    child: _isolatePaint(
+                      AnimatedScale(
                         scale: _reduced
                             ? 1
                             : _pressed

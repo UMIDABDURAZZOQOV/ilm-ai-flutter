@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
+import '../config/integrated_beta.dart';
 import 'motion.dart';
 import 'ilm_bottom_navigation.dart';
 import '../theme/ilm_design.dart';
@@ -302,13 +303,14 @@ class DuoBottomNav extends StatelessWidget {
   final ValueChanged<int> onChanged;
   final List<DuoNavItem> items;
   @override
-  Widget build(BuildContext context) => RepaintBoundary(
-    child: IlmBottomNavigation(
+  Widget build(BuildContext context) {
+    final bar = IlmBottomNavigation(
       index: index,
       onChanged: onChanged,
       items: items,
-    ),
-  );
+    );
+    return integratedBeta ? RepaintBoundary(child: bar) : bar;
+  }
 }
 
 enum BubblePointerDirection { left, down, none }

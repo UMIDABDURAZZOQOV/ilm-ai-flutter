@@ -1,5 +1,17 @@
 # Integrated Android Beta
 
+## 2026-11-06 — Catalogue availability and registration
+
+All subjects remain visible in onboarding, the main catalogue and quick switch.
+The shared card derives grade locks and labels from the existing complete backend
+catalogue; unsupported/unknown grades cannot be selected. Locked taps only show
+an explanation. Beta registration has one action, preserving provider verification,
+existing accounts, sessions and progress. Local Google remains unconfigured and
+is honestly labeled. See [the contract](BETA_GRADE_AVAILABILITY.md) and CLAUDE.md
+for tests, files, limitations and the APK receipt. No optimized handset performance
+or installation is claimed while ADB has no connected device.
+
+
 ## Latest UI policy — 2026-10-31
 
 The Beta now exposes study help only below checked MCQ/FRQ feedback (both

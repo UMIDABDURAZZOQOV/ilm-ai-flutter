@@ -106,6 +106,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   }
 
   Future<void> _handleGoogle() async {
+    if (_googleLoading) return;
     setState(() {
       _googleLoading = true;
       _error = null;
@@ -175,7 +176,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       Semantics(
                         header: true,
                         child: Text(
-                          t('auth.login.title', language),
+                          integratedBeta
+                              ? tr(
+                                  'ILM AI bilan o‘rganing',
+                                  'Учитесь с ILM AI',
+                                  'Learn with ILM AI',
+                                )
+                              : t('auth.login.title', language),
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 32,
@@ -186,70 +193,73 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 12),
-                      Text(
-                        tr(
-                          "Google bilan bir marta bosib kiring — ro'yxatdan o'tish ham, kirish ham shu.",
-                          'Войдите одним нажатием через Google — это и регистрация, и вход.',
-                          'Continue with Google in one tap — it both signs you up and logs you in.',
+                      if (!integratedBeta) ...[
+                        const SizedBox(height: 12),
+                        Text(
+                          tr(
+                            "Google bilan bir marta bosib kiring — ro'yxatdan o'tish ham, kirish ham shu.",
+                            'Войдите одним нажатием через Google — это и регистрация, и вход.',
+                            'Continue with Google in one tap — it both signs you up and logs you in.',
+                          ),
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colors.textSecondary,
+                            fontWeight: FontWeight.w500,
+                            height: 1.4,
+                          ),
                         ),
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: colors.textSecondary,
-                          fontWeight: FontWeight.w500,
-                          height: 1.4,
+                        const SizedBox(height: 32),
+                        Semantics(
+                          liveRegion: true,
+                          child: ErrorBanner(
+                            message: _error,
+                            onDismiss: () => setState(() => _error = null),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 32),
-                      Semantics(
-                        liveRegion: true,
-                        child: ErrorBanner(
-                          message: _error,
-                          onDismiss: () => setState(() => _error = null),
-                        ),
-                      ),
-                      PremiumButton(
-                        key: const ValueKey('login_google'),
-                        onPressed: _googleLoading ? null : _handleGoogle,
-                        outline: true,
-                        borderRadius: 20,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            if (_googleLoading)
-                              SizedBox(
-                                width: 20,
-                                height: 20,
-                                child: CircularProgressIndicator(
-                                  value: MediaQuery.disableAnimationsOf(context)
-                                      ? .75
-                                      : null,
-                                  semanticsLabel: tr(
-                                    'Kirilmoqda',
-                                    'Выполняется вход',
-                                    'Signing in',
+                        PremiumButton(
+                          key: const ValueKey('login_google'),
+                          onPressed: _googleLoading ? null : _handleGoogle,
+                          outline: true,
+                          borderRadius: 20,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              if (_googleLoading)
+                                SizedBox(
+                                  width: 20,
+                                  height: 20,
+                                  child: CircularProgressIndicator(
+                                    value:
+                                        MediaQuery.disableAnimationsOf(context)
+                                        ? .75
+                                        : null,
+                                    semanticsLabel: tr(
+                                      'Kirilmoqda',
+                                      'Выполняется вход',
+                                      'Signing in',
+                                    ),
+                                    strokeWidth: 2.5,
+                                    color: colors.primary,
                                   ),
-                                  strokeWidth: 2.5,
-                                  color: colors.primary,
+                                )
+                              else
+                                const GoogleLogo(size: 22),
+                              const SizedBox(width: 12),
+                              Flexible(
+                                child: Text(
+                                  tr(
+                                    'Google bilan davom etish',
+                                    'Продолжить с Google',
+                                    'Continue with Google',
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-                              )
-                            else
-                              const GoogleLogo(size: 22),
-                            const SizedBox(width: 12),
-                            Flexible(
-                              child: Text(
-                                tr(
-                                  'Google bilan davom etish',
-                                  'Продолжить с Google',
-                                  'Continue with Google',
-                                ),
-                                textAlign: TextAlign.center,
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
+                      ],
                       if (integratedBeta) const BetaLogin(),
                     ],
                   ).motion(context).fadeIn(duration: 220.ms, curve: Curves.easeOut),

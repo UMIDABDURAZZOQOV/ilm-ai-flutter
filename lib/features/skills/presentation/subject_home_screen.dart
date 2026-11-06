@@ -23,6 +23,7 @@ import 'skill_quests_screen.dart';
 import 'skill_ui.dart';
 import 'curriculum_learning_screen.dart';
 import 'subject_switch_sheet.dart';
+import 'subject_grade_card.dart';
 import '../../../core/config/integrated_beta.dart';
 import '../../learning/presentation/assessment_practice_screen.dart';
 
@@ -97,20 +98,23 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         grade ??
         int.tryParse(
           ref.read(prefsServiceProvider).getString('class_$user') ?? '',
-        );
+        ) ??
+        (integratedBeta ? _catalogGrade : null);
+    if (integratedBeta &&
+        !SubjectGradeAvailability(
+          subject,
+          currentGrade ?? _catalogGrade,
+        ).canStudy) {
+      return;
+    }
     await ref.read(learningPreferencesProvider).save(user, {
       'subject': subject.slug,
-      if (integratedBeta && subject.grades.isNotEmpty)
-        'grade':
-            '${subject.grades.contains(currentGrade) ? currentGrade : subject.grades.first}',
+      if (integratedBeta) 'grade': '$currentGrade',
     });
     if (!mounted || ref.read(currentUserIdProvider) != user) return;
-    if (integratedBeta && subject.grades.isNotEmpty) {
-      ref
-          .read(selectedCurriculumGradeProvider(subject.slug).notifier)
-          .state = subject.grades.contains(currentGrade)
-          ? currentGrade
-          : subject.grades.first;
+    if (integratedBeta) {
+      ref.read(selectedCurriculumGradeProvider(subject.slug).notifier).state =
+          currentGrade;
     }
     ref.read(selectedSubjectProvider.notifier).state = subject.slug;
     setState(() {
@@ -179,6 +183,11 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         SkillSubject? subject;
         for (final item in subjects) {
           if (item.slug == selected) subject = item;
+        }
+        if (integratedBeta &&
+            subject != null &&
+            !SubjectGradeAvailability(subject, _catalogGrade).canStudy) {
+          subject = null;
         }
         if (subject == null || _choosing) {
           return Scaffold(
@@ -264,30 +273,37 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                     ),
                     const SizedBox(height: 16),
                   ],
-                  for (final item in subjects.where(
-                    (s) =>
-                        !integratedBeta ||
-                        !s.available ||
-                        s.grades.contains(_catalogGrade),
-                  ))
+                  for (final item in subjects)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 12),
-                      child: _LearningTile(
-                        icon:
-                            subjectIcons[item.slug] ?? Icons.menu_book_rounded,
-                        color: skillColor(item.color),
-                        title: item.nameFor(lang),
-                        subtitle: !item.available
-                            ? tr('Tez kunda', 'Скоро', 'Coming soon')
-                            : item.slug == selected
-                            ? tr(
-                                'Hozirgi fan',
-                                'Текущий предмет',
-                                'Current subject',
-                              )
-                            : null,
-                        onTap: item.available ? () => _select(item) : null,
-                      ),
+                      child: integratedBeta
+                          ? SubjectGradeCard(
+                              key: ValueKey('catalog_${item.slug}'),
+                              subject: item,
+                              grade: _catalogGrade,
+                              language: lang,
+                              selected: item.slug == selected,
+                              onSelected: () => _select(item),
+                            )
+                          : _LearningTile(
+                              icon:
+                                  subjectIcons[item.slug] ??
+                                  Icons.menu_book_rounded,
+                              color: skillColor(item.color),
+                              title: item.nameFor(lang),
+                              subtitle: !item.available
+                                  ? tr('Tez kunda', 'Скоро', 'Coming soon')
+                                  : item.slug == selected
+                                  ? tr(
+                                      'Hozirgi fan',
+                                      'Текущий предмет',
+                                      'Current subject',
+                                    )
+                                  : null,
+                              onTap: item.available
+                                  ? () => _select(item)
+                                  : null,
+                            ),
                     ),
                 ],
               ),

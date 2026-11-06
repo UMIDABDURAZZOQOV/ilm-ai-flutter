@@ -26,6 +26,7 @@ import '../../skills/presentation/daily_goal_bottom_sheet.dart';
 import '../../skills/application/learning_preferences.dart';
 import '../../skills/presentation/skill_ui.dart';
 import '../../skills/presentation/subject_home_screen.dart';
+import '../../skills/presentation/subject_grade_card.dart';
 
 class DuoOnboardingScreen extends ConsumerStatefulWidget {
   final int initialStep;
@@ -92,7 +93,11 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final draft = _drafts.read(_draftUser);
     _step =
         (draft?['step'] as int? ??
-                (_draftUser == null ? widget.initialStep : 11))
+                (_draftUser == null
+                    ? widget.initialStep
+                    : integratedBeta && ref.read(needsProfileSetupProvider)
+                    ? 1
+                    : 11))
             .clamp(0, 11);
     _selectedSubject = draft?['subject'] as String?;
     _selectedClass =
@@ -161,8 +166,17 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       case 2: // Intro questions
         return true;
       case 3: // Subject selection
-        return _selectedSubject != null &&
-            (!integratedBeta || _selectedClass != null);
+        if (!integratedBeta) return _selectedSubject != null;
+        final subject = ref
+            .read(subjectCatalogProvider)
+            .valueOrNull
+            ?.where((s) => s.slug == _selectedSubject)
+            .firstOrNull;
+        return subject != null &&
+            SubjectGradeAvailability(
+              subject,
+              int.tryParse(_selectedClass ?? ''),
+            ).canStudy;
       case 4: // Source
         return _selectedSource != null;
       case 5: // Level (Bilim darajasi)
@@ -757,7 +771,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              if (!biologyOnly)
+              if (!biologyOnly && !integratedBeta)
                 _buildClassChip(
                   label: str3(lang, 'Barchasi', 'Все', 'All'),
                   isSelected: _selectedClass == 'all',
@@ -784,7 +798,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                           ?.where((s) => s.slug == _selectedSubject)
                           .firstOrNull;
                       if (selected != null &&
-                          !selected.grades.contains(grade)) {
+                          !SubjectGradeAvailability(selected, grade).canStudy) {
                         _selectedSubject = null;
                       }
                     }
@@ -799,9 +813,9 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           integratedBeta
               ? str3(
                   lang,
-                  'Tanlangan sinfga mos fanlar ko‘rsatiladi. Har bir fanning o‘z dars yo‘li va saqlangan progressi bor.',
-                  'Показаны предметы выбранного класса. У каждого предмета свой путь и сохранённый прогресс.',
-                  'Subjects match your selected grade. Each subject has its own path and saved progress.',
+                  'Barcha fanlar ko‘rsatiladi. Qulf belgisi tanlangan sinfda hali mavjud bo‘lmagan fanni bildiradi. Har bir fanning o‘z dars yo‘li va saqlangan progressi bor.',
+                  'Показаны все предметы. Замок означает, что предмет недоступен в выбранном классе. У каждого предмета свой путь и сохранённый прогресс.',
+                  'All subjects are shown. A lock means the subject is unavailable in your selected grade. Each subject has its own path and saved progress.',
                 )
               : _selectedSubject == 'biologiya'
               ? str3(
@@ -855,36 +869,41 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           data: (subjects) {
             return Column(
               children: [
-                for (final item in subjects.where(
-                  (s) =>
-                      !integratedBeta ||
-                      !s.available ||
-                      _selectedClass == null ||
-                      s.grades.contains(int.tryParse(_selectedClass ?? '')),
-                )) ...[
-                  _SelectionTile(
-                    title: item.nameFor(lang),
-                    subtitle: !item.available
-                        ? str3(lang, 'Tez kunda', 'Скоро', 'Coming soon')
-                        : null,
-                    isSelected: _selectedSubject == item.slug,
-                    leading: CircleAvatar(
-                      radius: 20,
-                      backgroundColor: skillColor(
-                        item.color,
-                      ).withValues(alpha: 0.15),
-                      child: Icon(
-                        _getSubjectIcon(item.icon),
-                        color: skillColor(item.color),
-                        size: 22,
+                for (final item in subjects) ...[
+                  if (integratedBeta)
+                    SubjectGradeCard(
+                      key: ValueKey('onboarding_${item.slug}'),
+                      subject: item,
+                      grade: int.tryParse(_selectedClass ?? ''),
+                      language: lang,
+                      selected: _selectedSubject == item.slug,
+                      onSelected: () =>
+                          _change(() => _selectedSubject = item.slug),
+                    )
+                  else
+                    _SelectionTile(
+                      title: item.nameFor(lang),
+                      subtitle: !item.available
+                          ? str3(lang, 'Tez kunda', 'Скоро', 'Coming soon')
+                          : null,
+                      isSelected: _selectedSubject == item.slug,
+                      leading: CircleAvatar(
+                        radius: 20,
+                        backgroundColor: skillColor(
+                          item.color,
+                        ).withValues(alpha: 0.15),
+                        child: Icon(
+                          _getSubjectIcon(item.icon),
+                          color: skillColor(item.color),
+                          size: 22,
+                        ),
                       ),
+                      onTap: !item.available
+                          ? null
+                          : () {
+                              _change(() => _selectedSubject = item.slug);
+                            },
                     ),
-                    onTap: !item.available
-                        ? null
-                        : () {
-                            _change(() => _selectedSubject = item.slug);
-                          },
-                  ),
                   const SizedBox(height: 10),
                 ],
               ],

@@ -18,6 +18,7 @@ import 'package:ilm_ai_flutter/features/learning/presentation/assessment_lesson_
 import 'package:ilm_ai_flutter/features/onboarding/presentation/duo_onboarding_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/subject_grade_card.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_panel.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_display_text.dart';
@@ -109,8 +110,10 @@ void main() {
   );
 
   testWidgets(
-    'onboarding shows five subjects, filters by grade and disables coming soon',
+    'onboarding keeps all subjects visible and locks unavailable grades',
     (tester) async {
+      await tester.binding.setSurfaceSize(const Size(430, 1900));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
       SharedPreferences.setMockInitialValues({PrefsKeys.language: 'uz'});
       final prefs = await PrefsService.create();
       final names = [
@@ -169,22 +172,44 @@ void main() {
       for (final name in names) {
         expect(find.text(name), findsOneWidget);
       }
-      final disabled = find
-          .ancestor(of: find.text('Matematika'), matching: find.byType(InkWell))
-          .first;
-      expect(tester.widget<InkWell>(disabled).onTap, isNull);
-      await tester.ensureVisible(find.text('6-sinf'));
-      await tester.tap(find.text('6-sinf'));
-      await tester.pumpAndSettle();
-      expect(find.text('Fizika'), findsOneWidget);
-      expect(find.text('Jahon tarixi'), findsOneWidget);
-      expect(find.text('Kimyo'), findsNothing);
-      expect(find.text('O‘zbekiston tarixi'), findsNothing);
-      await tester.ensureVisible(find.text('7-sinf'));
-      await tester.tap(find.text('7-sinf'));
-      await tester.pumpAndSettle();
-      expect(find.text('Kimyo'), findsOneWidget);
-      expect(find.text('O‘zbekiston tarixi'), findsOneWidget);
+      expect(
+        tester
+            .widget<SubjectGradeCard>(
+              find.byKey(const ValueKey('onboarding_matematika')),
+            )
+            .canStudy,
+        isFalse,
+      );
+      for (var grade = 5; grade <= 11; grade++) {
+        await tester.ensureVisible(find.text('$grade-sinf'));
+        await tester.tap(find.text('$grade-sinf'));
+        await tester.pumpAndSettle();
+        for (final item in subjects) {
+          expect(find.text(item.nameUz), findsOneWidget);
+          expect(
+            tester
+                .widget<SubjectGradeCard>(
+                  find.byKey(ValueKey('onboarding_${item.slug}')),
+                )
+                .canStudy,
+            item.available && item.grades.contains(grade),
+          );
+        }
+        if (grade == 5) {
+          await tester.ensureVisible(find.text('Kimyo'));
+          await tester.tap(find.text('Kimyo'));
+          await tester.pump();
+          expect(find.byType(SnackBar), findsOneWidget);
+          expect(
+            tester
+                .widget<Duo3DButton>(
+                  find.byKey(const ValueKey('onboarding_continue_btn')),
+                )
+                .onPressed,
+            isNull,
+          );
+        }
+      }
       expect(tester.takeException(), isNull);
     },
   );

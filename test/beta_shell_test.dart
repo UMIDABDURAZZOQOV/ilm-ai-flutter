@@ -124,7 +124,7 @@ void main() {
         findsOneWidget,
       );
       Future<void> login() async {
-        final button = find.text('Ichki beta orqali davom etish');
+        final button = find.byKey(const ValueKey('beta_register'));
         await tester.ensureVisible(button);
         await tester.tap(button);
         await tester.pumpAndSettle();

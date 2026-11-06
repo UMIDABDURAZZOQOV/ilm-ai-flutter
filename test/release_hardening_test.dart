@@ -9,6 +9,8 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ilm_ai_flutter/core/network/dio_client.dart';
+import 'package:ilm_ai_flutter/core/config/integrated_beta.dart';
+import 'package:ilm_ai_flutter/features/auth/presentation/beta_login.dart';
 import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/storage/secure_token_storage.dart';
@@ -426,7 +428,16 @@ void main() {
         addTearDown(tester.view.resetDevicePixelRatio);
         await tester.pumpWidget(
           ProviderScope(
-            overrides: [prefsServiceProvider.overrideWithValue(prefs)],
+            overrides: [
+              prefsServiceProvider.overrideWithValue(prefs),
+              if (integratedBeta)
+                betaConfigProvider.overrideWith(
+                  (ref) async => {
+                    'google_configured': false,
+                    'test_auth_available': true,
+                  },
+                ),
+            ],
             child: MaterialApp(
               theme: buildAppTheme(lightColors),
               home: const MediaQuery(
@@ -442,7 +453,11 @@ void main() {
         await tester.pumpAndSettle();
         expect(tester.takeException(), isNull);
         await tester.ensureVisible(
-          find.byKey(const ValueKey('welcome_have_account_btn')),
+          find.byKey(
+            ValueKey(
+              integratedBeta ? 'beta_register' : 'welcome_have_account_btn',
+            ),
+          ),
         );
         expect(tester.takeException(), isNull);
       },

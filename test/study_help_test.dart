@@ -7,6 +7,7 @@ import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_switch_sheet.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/subject_grade_card.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 
@@ -110,13 +111,17 @@ void main() {
         );
         expect(
           tester
-              .widget<ListTile>(find.byKey(const ValueKey('switch_kimyo')))
-              .enabled,
+              .widget<SubjectGradeCard>(
+                find.byKey(const ValueKey('switch_kimyo')),
+              )
+              .canStudy,
           isFalse,
         );
         expect(
           tester
-              .widget<ListTile>(find.byKey(const ValueKey('switch_fizika')))
+              .widget<SubjectGradeCard>(
+                find.byKey(const ValueKey('switch_fizika')),
+              )
               .selected,
           isTrue,
         );

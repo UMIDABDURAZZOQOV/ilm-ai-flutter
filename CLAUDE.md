@@ -1,5 +1,52 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+## 2026-11-06 — Barcha fanlar ko‘rinadi, sinfga qarab qulflanadi; yagona kirish
+
+Alohida `feat/beta-subject-switch-ai-help` Beta worktree. Onboardingning fan
+bosqichi, asosiy katalog va Learn ichidagi quick switch endi bitta
+`SubjectGradeCard` / `SubjectGradeAvailability`dan foydalanadi. Sinfga mos
+kelmagan fanlar yashirilmaydi. `getSubjects()` mavjud to‘liq katalogni grade
+filtrisiz oladi; backend `grades`ni ready lessonlardan hisoblaydi. Live katalog:
+Biologiya 5–11; Fizika/Jahon tarixi 6–11; Kimyo/O‘zbekiston tarixi 7–11.
+Matematika/Ona tili ham ko‘rinadi, ammo tayyor sinf yo‘q va yopiq.
+Bu chegaralar UIga hardcode qilinmagan; bo‘sh metadata yopiq qoladi.
+
+Har kartada sinf holati bor: mavjud / keyingi haqiqiy sinfda ochiladi / avvalgi
+sinflarda mavjud / hozircha yo‘q. Yopiq tap faqat SnackBar, tanlov yoki progress
+yozuvi yo‘q. 5–11 sinf almashsa katalog qayta so‘ralmaydi, qulf darhol yangilanadi.
+Asosiy tanlash va qayta tiklangan onboarding draftining Continue tugmasida ham
+availability guard bor. Boshqa sinfga yashirin fallback bilan o‘tish olib tashlandi.
+
+Beta welcome va login ekranida bitta **RO‘YXATDAN O‘TISH** auth tugmasi.
+Google configured bo‘lsa mavjud state/PKCE/code-exchange/provider tekshiruvi;
+hozir sozlanmaganligi va qurilmadagi ichki Beta akkaunti ishlatilishi aniq yoziladi.
+Runtime secure credential logoutdan keyin ham shu identityni qaytaradi; Google
+akkaunt tanlash/cross-device login hozir ishlayapti deb ko‘rsatilmaydi. Bir vaqtning
+o‘zida takroriy callback bloklangan. Yangi user mavjud onboardingga kiradi,
+completed user Learn; haqiqiy saqlangan sessiya eski restore yo‘lidan o‘tadi.
+Darslik haqidagi bir martalik notice birinchi welcome ichida mavjud persisted
+onboarding holati bilan; natija tashqarisidagi AI/manba/topic-count UI yashirilganicha.
+Backend verified Google sub orqali avvalgi profilni topadi; email/name almashishi
+progressni ajratib yubormaydi. Backend code commit `974f542`.
+
+Tekshiruv: **1 327 normal Flutter test passed** (`grade-lock-normal-final.log`),
+**107 Beta test passed** (`grade-lock-beta-verified.log`), oxirgi selection fallback
+aniqlashtirilgandan keyin yana **10 passed** (`grade-lock-selection-final.log`).
+Yangi registration + grade tests **10 passed**. Normal golden rasmlar yangilanmadi;
+oldingi 16/17-pixel nav farqi paint boundaryni faqat Beta uchun qoldirish bilan
+bartaraf etildi. `flutter analyze --no-pub`: **No issues found** (102,9s).
+Backend: **53 identity/auth tests** va **14 Beta/help tests**, PG 12 deselected.
+UI Google provider javoblari mock; live OAuth hali tekshirilmagan.
+
+Oldingi performance commit `0afe25a` optimizatsiyalari saqlangan. Samsungdagi
+baseline lokal artifactlarda bor; ADB hozir bo‘sh, shuning uchun yangi APKni
+telefonga o‘rnatildi yoki optimized profile tezligi o‘lchandi deb hisoblamang.
+Debug natija profile performance dalili emas. APK hajmi/hash/aniq commitlari uning
+`integrated-beta-build.json` receiptida, yakuniy backend/PID/APK/device holati
+markaziy `../ilm-ai/CLAUDE.md`da qayd etiladi. Gitga PDF/DB/secret/APK kirmaydi.
+To‘liq kontrakt: `docs/BETA_GRADE_AVAILABILITY.md`.
+
+
 ## 2026-10-31 — Beta UI/UX: faqat natijada AI, yashirilgan manbalar
 
 Yangi foydalanuvchi talabi oldingi subject chat/pre-answer help UI topshirig‘ini
