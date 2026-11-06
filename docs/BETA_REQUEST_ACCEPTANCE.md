@@ -1,5 +1,39 @@
 # Submitted Beta requests — requirement audit, 2026-11-06
 
+## 2026-11-06 — Lokal Beta yakuniy Samsung acceptance o‘tdi
+
+User **lokal Beta qolsin** deb tasdiqladi; real Google/HTTPS konfiguratsiyasi
+shu bosqichda kechiktirilgan. Yangi APK Samsung SM_A125F / R58NC0JNBXJga
+**install -r Success** bilan o‘rnatildi va MainActivity foregroundda ochildi.
+O‘rnatilgan base.apk SHA256 lokal artifactga to‘liq mos:
+`6af19f86f6b7ace7be077f67c2500f66ec693cf5d65ea6a4501abe15362aefce`.
+Uninstall/data clear yo‘q. USB offline holati reconnect/reverse/Retry bilan tiklandi.
+
+Haqiqiy telefonda quyidagilar tasdiqlandi:
+- Mavjud session bilan login/onboarding takror chiqmasdan **Biologiya · 7-sinf**
+  ochildi.
+- Quick switchda **5-sinfda beshala fan ko‘rinadi**: Biologiya ochiq,
+  Fizika/Jahon tarixi 6-sinfda, Kimyo/O‘zbekiston tarixi 7-sinfda ochilishi yozilgan.
+- Yopiq Kimyoni bosish fan/darsga kiritmadi, tanlash paneli saqlandi.
+- **5 → 7** o‘zgarishida restart qilmasdan beshala fan “7-sinfda mavjud” bo‘ldi.
+- Modal bekor qilindi; asl **Biologiya · 7-sinf** tanlovi saqlandi. Userning
+  amaldagi darsi standart **Saqlab chiqish** orqali **Savol 3/8**da qoldi.
+  Agent javob yubormadi, yangi urinish boshlamadi, progress/XPni reset qilmadi.
+
+Dalillar: `ilm-ai-beta-artifacts/beta-request-installed-proof-20261106.json`,
+`beta-request-handset-matrix-20261106.json`, `beta-request-grade5-20261106.png/xml`,
+`beta-request-grade7-20261106.xml`, `beta-request-final-20261106.png/xml`.
+5-sinf screenshot vizual ko‘rildi: barcha besh karta, qulf va sinf statuslari to‘g‘ri.
+User ekran boshqaruvini berdi, tekshiruv tugagach qaytarildi. Backend
+127.0.0.1:8930 / PID 22220 ishlayotgan holatda qoldirildi.
+
+Biriktirilgan auth + fan/sinf topshiriqlarining **kelishilgan lokal Beta doirasi
+bajarildi**. Real Google account chooser/cross-device login hali sozlanmagan,
+user qaroriga ko‘ra keyingi bosqich; buni tayyor deb ko‘rsatmang. Oldingi alohida
+performance topshirig‘ining to‘liq profile before/after benchmarki ushbu qisqa
+UI smoke-test bilan bajarildi deb hisoblanmaydi. App kodi/APK ushbu qayta auditda
+o‘zgarmadi; faqat hujjat/dalillar yangilandi.
+
 The complete attachment `e83a7436-6610-4995-960c-d93840c60b99/Pasted text.txt`
 was read. It contains unified authentication and subject/grade availability
 requests; the latter is repeated. The exported usage-limit notices are not
@@ -49,21 +83,21 @@ application requirements.
 - Full operational report: `../ilm-ai-beta-artifacts/GRADE_LOCK_ACCEPTANCE.md`.
 - Central handoff: `../ilm-ai/CLAUDE.md`.
 
-## Open external acceptance items — not marked complete
+## Final scope and remaining provider work
 
-1. **Real Google sign-in/account choice:** current `/beta/config` explicitly
-   reports `google_configured=false`. The user previously chose local Beta while
-   HTTPS staging/OAuth were unavailable. Runtime installation identity reuses
-   this device's local account; it cannot provide Google account selection or
-   cross-device recovery. Complete live acceptance only after an isolated HTTPS
-   staging origin and private Google OAuth server configuration are available.
-   Secrets belong in the private server configuration, not chat/Git/APK.
-2. **Physical Android installation and acceptance:** fresh `adb devices -l`
-   reports no connected device. No install/launch or perceived responsiveness
-   result is claimed. Connect USB debugging, accept RSA, then use the documented
-   reverse/install-r/launch commands. Do not clear data or uninstall.
+The user explicitly confirmed retaining local Beta. Real Google account choice,
+HTTPS staging and cross-device recovery remain deferred, with
+`google_configured=false`; they are not represented as working live features.
+The existing provider integration is implemented and tested with mocked provider
+responses. The local installation credential reuses this device's account.
 
-The application implementation, automated validation, APK and central handoff
-are complete for the agreed local Beta. End-to-end provider/device acceptance
-remains open for the two reasons above. This audit changes documentation only;
-the existing APK does not require rebuilding.
+Physical Android installation, matching APK hash, restored session and grade
+switch/lock acceptance have now passed as recorded above. New-account, different
+identity, expiry/logout and network edge cases retain automated coverage;
+they were not all repeated by modifying the learner's active handset account.
+No fresh answers were submitted on that account. Full quantitative performance
+profiling belongs to the separate performance task and is not claimed here.
+
+Implementation, automated validation, APK, agreed local-Beta handset acceptance
+and central handoff are complete. This audit changed documentation only; no
+new APK rebuild was needed.

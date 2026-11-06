@@ -1,5 +1,63 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+## 2026-11-06 — Lokal Beta yakuniy Samsung acceptance o‘tdi
+
+User **lokal Beta qolsin** deb tasdiqladi; real Google/HTTPS konfiguratsiyasi
+shu bosqichda kechiktirilgan. Yangi APK Samsung SM_A125F / R58NC0JNBXJga
+**install -r Success** bilan o‘rnatildi va MainActivity foregroundda ochildi.
+O‘rnatilgan base.apk SHA256 lokal artifactga to‘liq mos:
+`6af19f86f6b7ace7be077f67c2500f66ec693cf5d65ea6a4501abe15362aefce`.
+Uninstall/data clear yo‘q. USB offline holati reconnect/reverse/Retry bilan tiklandi.
+
+Haqiqiy telefonda quyidagilar tasdiqlandi:
+- Mavjud session bilan login/onboarding takror chiqmasdan **Biologiya · 7-sinf**
+  ochildi.
+- Quick switchda **5-sinfda beshala fan ko‘rinadi**: Biologiya ochiq,
+  Fizika/Jahon tarixi 6-sinfda, Kimyo/O‘zbekiston tarixi 7-sinfda ochilishi yozilgan.
+- Yopiq Kimyoni bosish fan/darsga kiritmadi, tanlash paneli saqlandi.
+- **5 → 7** o‘zgarishida restart qilmasdan beshala fan “7-sinfda mavjud” bo‘ldi.
+- Modal bekor qilindi; asl **Biologiya · 7-sinf** tanlovi saqlandi. Userning
+  amaldagi darsi standart **Saqlab chiqish** orqali **Savol 3/8**da qoldi.
+  Agent javob yubormadi, yangi urinish boshlamadi, progress/XPni reset qilmadi.
+
+Dalillar: `ilm-ai-beta-artifacts/beta-request-installed-proof-20261106.json`,
+`beta-request-handset-matrix-20261106.json`, `beta-request-grade5-20261106.png/xml`,
+`beta-request-grade7-20261106.xml`, `beta-request-final-20261106.png/xml`.
+5-sinf screenshot vizual ko‘rildi: barcha besh karta, qulf va sinf statuslari to‘g‘ri.
+User ekran boshqaruvini berdi, tekshiruv tugagach qaytarildi. Backend
+127.0.0.1:8930 / PID 22220 ishlayotgan holatda qoldirildi.
+
+Biriktirilgan auth + fan/sinf topshiriqlarining **kelishilgan lokal Beta doirasi
+bajarildi**. Real Google account chooser/cross-device login hali sozlanmagan,
+user qaroriga ko‘ra keyingi bosqich; buni tayyor deb ko‘rsatmang. Oldingi alohida
+performance topshirig‘ining to‘liq profile before/after benchmarki ushbu qisqa
+UI smoke-test bilan bajarildi deb hisoblanmaydi. App kodi/APK ushbu qayta auditda
+o‘zgarmadi; faqat hujjat/dalillar yangilandi.
+
+
+### 2026-11-06 15:10+05 — Samsungga haqiqiy o‘rnatish tasdiqlandi
+
+Foydalanuvchi telefonni uladi va **lokal Beta qolsin** deb tasdiqladi; real
+HTTPS/Google OAuth bu bosqich uchun kechiktirildi. Samsung SM_A125F / R58NC0JNBXJ
+authorized device bo‘ldi. `adb reverse tcp:8930 tcp:8930`, **install -r Success**,
+MainActivity launch va foreground tasdiqlandi. Telefonda o‘rnatilgan base.apk
+SHA256 `6af19f86f6b7ace7be077f67c2500f66ec693cf5d65ea6a4501abe15362aefce`
+lokal yangi APKga mos. Uninstall yoki data clear yo‘q.
+
+USB bir marta offline bo‘ldi, reconnectdan keyin reverse qayta o‘rnatildi.
+Katalogda avvalgi network error Retry orqali tiklandi; saqlangan session bilan
+**Biologiya · 7-sinf** Learn ochildi, login/onboarding takror so‘ralmadi.
+Backend 8930da ishlamoqda. Dalil:
+`ilm-ai-beta-artifacts/beta-request-installed-proof-20261106.json` va
+`beta-request-retry-20261106.xml/png`.
+
+Foydalanuvchi shu paytda telefonning dars/AI oynalarini ham boshqarmoqda.
+Agent hech qanday savolga javob yubormadi yoki urinishni yangilamadi. Qo‘lda
+fan/sinf panelini tekshirish uchun qisqa exclusive screen control so‘raldi;
+automatik 5–11 matrix testlari o‘tgan. Quyidagi oldingi “ADB bo‘sh/o‘rnatilmagan”
+holatlari avvalgi tekshiruv vaqtiga tegishli; ushbu follow-up ularni yangilaydi.
+
+
 ## 2026-11-06 — Biriktirilgan yakuniy topshiriq bandlari qayta audit qilindi
 
 `e83a7436-6610-4995-960c-d93840c60b99/Pasted text.txt` boshidan oxirigacha
