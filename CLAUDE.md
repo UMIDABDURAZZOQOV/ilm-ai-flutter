@@ -1,5 +1,62 @@
 # ILM AI Flutter — 2026-10-31 handoff
 
+## 2026-11-06 - AI provider and final-readiness follow-up (NO-GO)
+
+Backend source commit: `98cd97cb77571b2112df889ef352333c3bebe81e`; running loopback service remains `974f542`, not hot-reloaded.
+
+The new 195-line user brief was read fully with credential redaction. The user
+confirmed the disclosed keys belong to Google AI Studio. No key was persisted or
+sent to any provider. Revoke/replace disclosed credentials in the provider
+console; never paste replacements in chat. Gemini Developer API terms currently
+exclude clients directed towards or likely accessed by under-18s, so it was NOT
+connected to this school app. See `AI_PROVIDER_READINESS.md` in backend docs/beta.
+
+Source changes are isolated on `qa/play-release-audit-20261106` in the Beta
+backend: strict private config outside all Git checkouts, optional existing
+OpenAI evidence-ID selector with bounded authorized standby, whole-pool
+Retry-After/rate/quota handling, no account quota hopping, capped input/output,
+per-process call/concurrency limits, no free-form learner messages/answers/IDs
+in external selection, and original reviewed-evidence fallback. No provider
+was activated; shared/durable production budget and audience/privacy review
+remain required. This is not a Gemini integration or provider acceptance.
+
+Added read-only `scripts/mobile_release_preflight.py`: live health200, seven
+required mobile auth/catalogue/grade contracts404; NO-GO. Added additive Alembic
+0014 PKCE state/grant migration with ownership/schema checks and no user/XP/
+progress mutation. Its SQLite tests pass; production migrations were NOT run.
+Application rollback preserves these additive tables; destructive downgrade
+is deliberately refused. See backend `PRODUCTION_DEPLOYMENT_PLAN.md` for
+staging/backup/restore/old-client/publication/rollback requirements.
+
+The signed release candidate remains the prior Biology-only source384f6d6 AAB.
+Five-subject production integration and account deletion are still engineering
+work, not completed features. HTTPS/OAuth staging, real provider/account tests,
+Play-signed upgrade, Data safety and complete device performance acceptance
+remain open. No Play upload, backend deploy, production DB write or subject/main
+branch change occurred. Source changes are not automatically live in port8930.
+
+Final source validation: combined86 passed/12 deselected/1 warning(51.28s);
+separate backend auth/migration57 passed/1 warning(301.01s); standalone65 passed.
+Suites overlap; do not sum counts. Fresh Flutter analyze No issues found247.9s;
+no Dart/native source changed. New-file Ruff and whitespace checks passed.
+
+Samsung profile: same-account5/5 Learn-ready; Android TotalTime2443-2528ms
+(median2450), Dart frame callback470-492ms (median477). UI-polled Learn5902-7186ms
+includes tooling overhead, not precise TTI. First profile launch8330ms and restored
+debug launch10532ms timeout remain recorded; no startup fix/ANR diagnosis claimed.
+Two five-tab rounds had9.59%/27.62% frames over60Hz budget; short post-GC heap
+18,190,112 to19,816,160 bytes/PSS156,134 to174,123KiB does not prove no leak.
+Original stable debug APK restored with install-r Success; all9 measured user/
+progress table digests unchanged. No answers, data clear, uninstall or logout.
+
+Disk-full interrupted initial attempts. Only verified disposable test DB copies
+and generated Flutter test/debug-native caches were removed; source PDFs, phone
+DB, keys and final APK/AAB preserved. Successful rerun results supersede interrupted
+attempts. Detailed evidence and unfinished engineering/external acceptance are in
+Flutter docs/PRODUCTION_UPDATE_AUDIT.md and backend docs/beta/AI_PROVIDER_READINESS.md
+and PRODUCTION_DEPLOYMENT_PLAN.md. NO-GO remains.
+
+
 ## 2026-11-06 — Yakuniy native tuzatishlar va tekshirilgan artifactlar
 
 **Bu yozuv oldingi hash va USB-pending checkpointlarini almashtiradi.**
