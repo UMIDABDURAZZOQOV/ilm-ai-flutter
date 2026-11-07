@@ -45,7 +45,7 @@ class DuoOnboardingScreen extends ConsumerStatefulWidget {
 class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
   late int _step;
   String? _selectedSubject;
-  String? _selectedClass = integratedBeta
+  String? _selectedClass = reviewedLearning
       ? null
       : biologyOnly
       ? '5'
@@ -95,13 +95,13 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         (draft?['step'] as int? ??
                 (_draftUser == null
                     ? widget.initialStep
-                    : integratedBeta && ref.read(needsProfileSetupProvider)
+                    : reviewedLearning && ref.read(needsProfileSetupProvider)
                     ? 1
                     : 11))
             .clamp(0, 11);
     _selectedSubject = draft?['subject'] as String?;
     _selectedClass =
-        draft?['class'] as String? ?? (integratedBeta ? null : 'all');
+        draft?['class'] as String? ?? (reviewedLearning ? null : 'all');
     if (biologyOnly) {
       if (_selectedSubject != null &&
           !isPublishedMobileSubject(_selectedSubject)) {
@@ -109,7 +109,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         if (_step > 3 && _draftUser == null) _step = 3;
       }
       if (!['5', '6', '7', '8', '9', '10', '11'].contains(_selectedClass)) {
-        _selectedClass = integratedBeta ? null : '5';
+        _selectedClass = reviewedLearning ? null : '5';
       }
     }
     _selectedSource = draft?['source'] as String?;
@@ -166,7 +166,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       case 2: // Intro questions
         return true;
       case 3: // Subject selection
-        if (!integratedBeta) return _selectedSubject != null;
+        if (!reviewedLearning) return _selectedSubject != null;
         final subject = ref
             .read(subjectCatalogProvider)
             .valueOrNull
@@ -612,7 +612,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 .slideY(begin: 0.12, end: 0, curve: Curves.easeOutQuad),
             const SizedBox(height: 18),
             const MascotImage.hero(pose: MascotPose.hello),
-            if (integratedBeta && !ref.watch(onboardingCompleteProvider)) ...[
+            if (reviewedLearning && !ref.watch(onboardingCompleteProvider)) ...[
               const SizedBox(height: 18),
               Text(
                 str3(
@@ -771,14 +771,14 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              if (!biologyOnly && !integratedBeta)
+              if (!biologyOnly && !reviewedLearning)
                 _buildClassChip(
                   label: str3(lang, 'Barchasi', 'Все', 'All'),
                   isSelected: _selectedClass == 'all',
                   onTap: () => _change(() => _selectedClass = 'all'),
                 ),
               for (
-                int grade = integratedBeta || biologyOnly ? 5 : 1;
+                int grade = reviewedLearning || biologyOnly ? 5 : 1;
                 grade <= 11;
                 grade++
               ) ...[
@@ -793,7 +793,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                   isSelected: _selectedClass == '$grade',
                   onTap: () => _change(() {
                     _selectedClass = '$grade';
-                    if (integratedBeta) {
+                    if (reviewedLearning) {
                       final selected = catalogAsync.valueOrNull
                           ?.where((s) => s.slug == _selectedSubject)
                           .firstOrNull;
@@ -810,7 +810,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         ),
         const SizedBox(height: 8),
         Text(
-          integratedBeta
+          reviewedLearning
               ? str3(
                   lang,
                   'Barcha fanlar ko‘rsatiladi. Qulf belgisi tanlangan sinfda hali mavjud bo‘lmagan fanni bildiradi. Har bir fanning o‘z dars yo‘li va saqlangan progressi bor.',
@@ -870,7 +870,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
             return Column(
               children: [
                 for (final item in subjects) ...[
-                  if (integratedBeta)
+                  if (reviewedLearning)
                     SubjectGradeCard(
                       key: ValueKey('onboarding_${item.slug}'),
                       subject: item,

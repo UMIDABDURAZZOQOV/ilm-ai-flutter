@@ -159,7 +159,7 @@ class AiExplainButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    if (integratedBeta) return const SizedBox.shrink();
+    if (reviewedLearning) return const SizedBox.shrink();
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final lang = ref.watch(languageProvider);
     return Align(

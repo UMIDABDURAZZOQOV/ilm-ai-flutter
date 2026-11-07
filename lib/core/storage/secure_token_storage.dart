@@ -65,6 +65,11 @@ class SecureTokenStorage {
   Future<void> _pending = Future.value();
   bool _loaded = false;
   StoredTokens? _cached;
+  int _sessionGeneration = 0;
+
+  /// Changes on login/logout, including a new login to the same account.
+  /// Ordinary token refreshes and profile edits preserve the logical session.
+  int get sessionGeneration => _sessionGeneration;
   SecureTokenStorage(this._storage);
 
   void dispose() {
@@ -103,6 +108,7 @@ class SecureTokenStorage {
     await _storage.write(key: _key, value: jsonEncode(tokens.toJson()));
     _cached = tokens;
     _loaded = true;
+    _sessionGeneration++;
     if (!_changes.isClosed) _changes.add(tokens);
   });
 
@@ -142,6 +148,7 @@ class SecureTokenStorage {
     await _storage.delete(key: _key);
     _cached = null;
     _loaded = true;
+    _sessionGeneration++;
     if (!_changes.isClosed) _changes.add(null);
   });
 }

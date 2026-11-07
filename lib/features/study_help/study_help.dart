@@ -49,7 +49,7 @@ class StudyHelpRepository {
     CancelToken cancel,
   ) async {
     final response = await dio.post(
-      '/beta/study-help',
+      reviewedMobileRelease ? '/mobile/study-help' : '/beta/study-help',
       data: context.request(language, message),
       cancelToken: cancel,
       options: Options(receiveTimeout: const Duration(seconds: 25)),
@@ -396,7 +396,7 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
                     for (final raw in turn.answer['evidence'] as List) ...[
                       const SizedBox(height: 12),
                       SelectableText('${raw['text']}'),
-                      if (!integratedBeta)
+                      if (!reviewedLearning)
                         for (final source in raw['source_refs'] as List? ?? [])
                           ContentSourceButton(
                             source: {

@@ -99,8 +99,8 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         int.tryParse(
           ref.read(prefsServiceProvider).getString('class_$user') ?? '',
         ) ??
-        (integratedBeta ? _catalogGrade : null);
-    if (integratedBeta &&
+        (reviewedLearning ? _catalogGrade : null);
+    if (reviewedLearning &&
         !SubjectGradeAvailability(
           subject,
           currentGrade ?? _catalogGrade,
@@ -109,10 +109,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
     }
     await ref.read(learningPreferencesProvider).save(user, {
       'subject': subject.slug,
-      if (integratedBeta) 'grade': '$currentGrade',
+      if (reviewedLearning) 'grade': '$currentGrade',
     });
     if (!mounted || ref.read(currentUserIdProvider) != user) return;
-    if (integratedBeta) {
+    if (reviewedLearning) {
       ref.read(selectedCurriculumGradeProvider(subject.slug).notifier).state =
           currentGrade;
     }
@@ -184,7 +184,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         for (final item in subjects) {
           if (item.slug == selected) subject = item;
         }
-        if (integratedBeta &&
+        if (reviewedLearning &&
             subject != null &&
             !SubjectGradeAvailability(subject, _catalogGrade).canStudy) {
           subject = null;
@@ -252,7 +252,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                       child: Text(tr('Yangilash', 'Обновить', 'Refresh')),
                     ),
                   ],
-                  if (integratedBeta) ...[
+                  if (reviewedLearning) ...[
                     DropdownButtonFormField<int>(
                       initialValue: _catalogGrade,
                       decoration: InputDecoration(
@@ -276,7 +276,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                   for (final item in subjects)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 12),
-                      child: integratedBeta
+                      child: reviewedLearning
                           ? SubjectGradeCard(
                               key: ValueKey('catalog_${item.slug}'),
                               subject: item,
@@ -329,13 +329,13 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         // Local copy so closures do not see the outer nullable `subject`.
         final SkillSubject activeSubject = subject;
         final tabBuilders = <Widget Function()>[
-          () => integratedBeta || activeSubject.slug == 'biologiya'
+          () => reviewedLearning || activeSubject.slug == 'biologiya'
               ? CurriculumLearningScreen(
                   key: ValueKey(
                     'curriculum:${ref.watch(currentUserIdProvider)}:${activeSubject.slug}',
                   ),
                   subject: activeSubject,
-                  onChangeSubject: integratedBeta
+                  onChangeSubject: reviewedLearning
                       ? _quickSwitch
                       : () => setState(() => _choosing = true),
                 )
@@ -344,7 +344,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                   subject: activeSubject,
                   onChangeSubject: () => setState(() => _choosing = true),
                 ),
-          () => integratedBeta && activeSubject.slug != 'biologiya'
+          () => reviewedLearning && activeSubject.slug != 'biologiya'
               ? AssessmentPracticeScreen(
                   subject: activeSubject,
                   onOpenLearning: _openLearning,

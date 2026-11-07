@@ -21,10 +21,12 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
   Future<void>? _resuming;
   int? _resumingUser, _syncedUser;
   DateTime? _lastSync;
+  int _epoch = 0;
   DateTime get now => DateTime.now();
 
   @override
   Future<StoredTokens?> build() async {
+    final epoch = ++_epoch;
     final storage = ref.read(secureTokenStorageProvider);
     _changes = storage.changes.listen((tokens) {
       state = AsyncData(tokens);
@@ -37,60 +39,35 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
       }
     });
     ref.onDispose(() {
+      _epoch++;
       _changes?.cancel();
       PushService.stop();
     });
     final tokens = await storage.getTokens();
     if (tokens == null) return null;
     ref.read(onboardingCompleteProvider.notifier).complete();
-    try {
-      // These reads are independent; publish the restored session after both.
-      final restored = await Future.wait<dynamic>([
-        ref.read(authRepositoryProvider).needsOnboarding(tokens.userId),
-        ref.read(learningPreferencesProvider).restore(tokens.userId),
-      ], eagerError: true);
-      final pending = restored[0] as bool;
-      final updated = await storage.updateTokens(
-        (current) => current.userId == tokens.userId
-            ? current.copyWith(needsOnboarding: pending)
-            : current,
-      );
-      ref.read(needsProfileSetupProvider.notifier).state = pending;
-      _syncedUser = tokens.userId;
-      _lastSync = now;
-      ref.read(studyRevisionProvider.notifier).state++;
-      _registerPush(tokens.userId);
-      return updated;
-    } catch (error) {
-      final current = await storage.getTokens();
-      if (current == null) {
-        return null; // Only a confirmed refresh 401 clears it.
-      }
+    if (tokens.needsOnboarding != null) {
       ref.read(needsProfileSetupProvider.notifier).state =
-          current.needsOnboarding ?? true;
-      if (current.needsOnboarding == null) {
-        ref.read(sessionRestoreErrorProvider.notifier).state = error;
-      }
-      _registerPush(current.userId);
-      return current;
+          tokens.needsOnboarding!;
+      // Cached routing is immediate. Every protected request still authenticates
+      // on the server; a confirmed failed refresh clears secure storage as before.
+      unawaited(_trackRestore(storage, tokens, epoch));
+      return tokens;
     }
+    // Legacy sessions without a known profile state must resolve it or show the
+    // existing retry screen, rather than silently skipping required onboarding.
+    await _trackRestore(storage, tokens, epoch);
+    return storage.getTokens();
   }
 
-  Future<void> resume() {
-    final userId = state.valueOrNull?.userId;
-    if (userId == null) return Future.value();
-    if (_resumingUser == userId && _resuming != null) return _resuming!;
-    final dirty = ref
-        .read(prefsServiceProvider)
-        .getBool('study_preferences_dirty_$userId');
-    if (!dirty &&
-        _syncedUser == userId &&
-        _lastSync != null &&
-        now.difference(_lastSync!) < const Duration(seconds: 30)) {
-      return Future.value();
-    }
-    _resumingUser = userId;
-    final task = _resume(userId);
+  Future<void> _trackRestore(
+    SecureTokenStorage storage,
+    StoredTokens tokens,
+    int epoch,
+  ) {
+    final generation = storage.sessionGeneration;
+    _resumingUser = tokens.userId;
+    final task = _restoreSession(storage, tokens, epoch, generation);
     _resuming = task;
     return task.whenComplete(() {
       if (identical(_resuming, task)) {
@@ -100,14 +77,60 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
     });
   }
 
-  Future<void> _resume(int userId) async {
-    _registerPush(userId);
-    await ref.read(learningPreferencesProvider).restore(userId);
-    if (state.valueOrNull?.userId == userId) {
-      _syncedUser = userId;
+  Future<void> _restoreSession(
+    SecureTokenStorage storage,
+    StoredTokens tokens,
+    int epoch,
+    int generation,
+  ) async {
+    bool currentSession() =>
+        _epoch == epoch && storage.sessionGeneration == generation;
+    try {
+      final restored = await Future.wait<dynamic>([
+        ref.read(authRepositoryProvider).needsOnboarding(tokens.userId),
+        ref.read(learningPreferencesProvider).restore(tokens.userId),
+      ], eagerError: true);
+      if (!currentSession()) return;
+      final pending = restored[0] as bool;
+      final updated = await storage.updateTokens(
+        (current) => currentSession() && current.userId == tokens.userId
+            ? current.copyWith(needsOnboarding: pending)
+            : current,
+      );
+      if (!currentSession() || updated?.userId != tokens.userId) return;
+      ref.read(needsProfileSetupProvider.notifier).state = pending;
+      ref.read(sessionRestoreErrorProvider.notifier).state = null;
+      _syncedUser = tokens.userId;
       _lastSync = now;
       ref.read(studyRevisionProvider.notifier).state++;
+      _registerPush(tokens.userId);
+    } catch (error) {
+      if (!currentSession()) return;
+      final current = await storage.getTokens();
+      if (!currentSession() || current == null) return;
+      ref.read(needsProfileSetupProvider.notifier).state =
+          current.needsOnboarding ?? true;
+      if (current.needsOnboarding == null) {
+        ref.read(sessionRestoreErrorProvider.notifier).state = error;
+      }
+      _registerPush(current.userId);
     }
+  }
+
+  Future<void> resume() {
+    final tokens = state.valueOrNull;
+    if (tokens == null) return Future.value();
+    if (_resumingUser == tokens.userId && _resuming != null) return _resuming!;
+    final dirty = ref
+        .read(prefsServiceProvider)
+        .getBool('study_preferences_dirty_${tokens.userId}');
+    if (!dirty &&
+        _syncedUser == tokens.userId &&
+        _lastSync != null &&
+        now.difference(_lastSync!) < const Duration(seconds: 30)) {
+      return Future.value();
+    }
+    return _trackRestore(ref.read(secureTokenStorageProvider), tokens, _epoch);
   }
 
   Future<void> retryRestore() async {
@@ -126,6 +149,7 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
   }
 
   Future<void> login(AuthResponse res, {bool needsOnboarding = false}) async {
+    _epoch++;
     final storage = ref.read(secureTokenStorageProvider);
     final draftStore = OnboardingDraftStore(ref.read(prefsServiceProvider));
     final draft = await draftStore.adopt(res.userId);
@@ -186,6 +210,9 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
   }
 
   Future<void> logout() async {
+    _epoch++;
+    _syncedUser = null;
+    _lastSync = null;
     final storage = ref.read(secureTokenStorageProvider);
     final tokens = await storage.getTokens();
     final dio = ref.read(dioProvider);

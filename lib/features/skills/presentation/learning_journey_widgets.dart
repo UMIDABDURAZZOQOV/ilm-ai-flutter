@@ -332,7 +332,7 @@ class LearningUnitHeader extends StatelessWidget {
                     ),
                   if (total > 0)
                     Text(
-                      integratedBeta
+                      reviewedLearning
                           ? str3(
                               language,
                               'Bajarilgan darslar: $completed',

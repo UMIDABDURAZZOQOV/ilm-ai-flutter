@@ -309,7 +309,7 @@ class DuoBottomNav extends StatelessWidget {
       onChanged: onChanged,
       items: items,
     );
-    return integratedBeta ? RepaintBoundary(child: bar) : bar;
+    return reviewedLearning ? RepaintBoundary(child: bar) : bar;
   }
 }
 

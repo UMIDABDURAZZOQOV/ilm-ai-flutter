@@ -140,7 +140,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final language = ref.watch(languageProvider);
     if (subjectsOnly) {
-      if (_startedOnboarding && !integratedBeta) {
+      if (_startedOnboarding && !reviewedLearning) {
         return DuoOnboardingScreen(
           initialStep: 1,
           onBackToWelcome: () => setState(() => _startedOnboarding = false),
@@ -239,7 +239,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                           ),
                         ),
                         const Spacer(),
-                        if (integratedBeta) ...[
+                        if (reviewedLearning) ...[
                           if (!ref.watch(onboardingCompleteProvider))
                             Text(
                               str3(
@@ -251,7 +251,22 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                               key: const ValueKey('onboarding_textbook_notice'),
                               textAlign: TextAlign.center,
                             ),
-                          const BetaLogin(),
+                          if (integratedBeta)
+                            const BetaLogin()
+                          else
+                            Duo3DButton(
+                              key: const ValueKey('welcome_register_btn'),
+                              color: BrandPalette.indigo,
+                              onPressed: _complete,
+                              child: Text(
+                                str3(
+                                  language,
+                                  'RO‘YXATDAN O‘TISH',
+                                  'ЗАРЕГИСТРИРОВАТЬСЯ',
+                                  'SIGN UP',
+                                ),
+                              ),
+                            ),
                         ] else ...[
                           Duo3DButton(
                             key: const ValueKey('welcome_start_btn'),

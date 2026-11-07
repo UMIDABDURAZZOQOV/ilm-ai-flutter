@@ -55,7 +55,8 @@ void main() {
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 600));
 
-    expect(find.text('Google bilan davom etish'), findsOneWidget);
+    expect(find.text('RO‘YXATDAN O‘TISH'), findsOneWidget);
+    expect(find.text('Google bilan davom etish'), findsNothing);
   });
 
   testWidgets('router sends authed user needing setup to /setup, else to /learn',

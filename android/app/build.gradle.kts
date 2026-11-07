@@ -47,6 +47,17 @@ val betaPerformanceEnabled = (project.findProperty("dart-defines") as? String)
 val betaPerformanceUsesBetaIdentity = (project.findProperty("dart-defines") as? String)
     ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
     ?.contains("BETA_PERF_ISOLATED=false") == true
+val reviewedReleaseEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("REVIEWED_MOBILE_RELEASE=true") == true
+val mobileStagingEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("MOBILE_STAGING=true") == true
+if ((reviewedReleaseEnabled || mobileStagingEnabled) &&
+    (!reviewedReleaseEnabled || integratedBetaEnabled || phoneQaEnabled || physicsPreviewEnabled ||
+        !(flutterTarget == "main.dart" || flutterTarget.endsWith("/main.dart")))) {
+    throw GradleException("Reviewed mobile/staging requires main.dart, without Beta or preview identities.")
+}
 if (integratedBetaEnabled && (phoneQaEnabled || physicsPreviewBuild ||
     !(flutterTarget == "main.dart" || flutterTarget.endsWith("/main.dart")))) {
     throw GradleException("Integrated beta must use the normal main.dart target, separately from QA previews.")
@@ -123,6 +134,14 @@ android {
                 signingConfigs.getByName("release")
             else
                 null
+        }
+    }
+    // A staging APK cannot replace the installed Play app or intercept its login.
+    if (mobileStagingEnabled) {
+        buildTypes.all {
+            applicationIdSuffix = ".staging"
+            manifestPlaceholders["appLabel"] = "ILM AI Staging"
+            manifestPlaceholders["oauthRedirectScheme"] = "ilmai-staging"
         }
     }
 }

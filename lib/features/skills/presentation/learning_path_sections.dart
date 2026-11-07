@@ -143,7 +143,7 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                                     'No lessons yet',
                                   )
                           else
-                            integratedBeta
+                            reviewedLearning
                                 ? str3(
                                     language,
                                     '$done dars bajarilgan',
@@ -356,7 +356,7 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                                     DropdownMenuItem(
                                       value: p,
                                       child: Text(
-                                        '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)}${integratedBeta ? '' : ' / ${row.unit.lessons.length}'}',
+                                        '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)}${reviewedLearning ? '' : ' / ${row.unit.lessons.length}'}',
                                       ),
                                     ),
                                 ],

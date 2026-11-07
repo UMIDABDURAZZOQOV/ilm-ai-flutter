@@ -8,7 +8,8 @@ class MobileApiInterceptor extends Interceptor {
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
     if (integratedBeta && options.path.startsWith('/skills/')) {
       options.path = '/beta${options.path}';
-    } else if (biologyOnly && options.path.startsWith('/skills/')) {
+    } else if ((biologyOnly || reviewedMobileRelease) &&
+        options.path.startsWith('/skills/')) {
       options.path = '/mobile${options.path}';
     }
     handler.next(options);

@@ -829,7 +829,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
         correct: isCorrect,
         correctAnswer: q.correctAnswer,
         explanation: q.explanation ?? '',
-        help: integratedBeta && q.attemptId != null
+        help: reviewedLearning && q.attemptId != null
             ? StudyHelpButton(
                 language: lang,
                 contextData: StudyHelpContext(

@@ -36,7 +36,7 @@ class SkillTreeRepository {
           .where(
             (s) =>
                 isPublishedMobileSubject(s.slug) ||
-                (integratedBeta && !s.available),
+                (reviewedLearning && !s.available),
           )
           .toList();
     } on TypeError {

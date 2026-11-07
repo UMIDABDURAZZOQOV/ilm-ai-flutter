@@ -109,10 +109,16 @@ class LearningPreferences {
       return;
     }
     final version = prefs.getInt('study_preferences_version_$id') ?? 0;
+    final cancel = CancelToken();
+    final deadline = Timer(
+      const Duration(seconds: 10),
+      () => cancel.cancel('preference_restore_timeout'),
+    );
     try {
-      final response = await dio
-          .get('/skills/$id/preferences')
-          .timeout(const Duration(seconds: 10));
+      final response = await dio.get(
+        '/skills/$id/preferences',
+        cancelToken: cancel,
+      );
       final remote = response.data['preferences'];
       if (prefs.getBool('study_preferences_dirty_$id') ||
           version != (prefs.getInt('study_preferences_version_$id') ?? 0)) {
@@ -125,6 +131,8 @@ class LearningPreferences {
       }
     } catch (_) {
       /* Cached account preferences stay available offline. */
+    } finally {
+      deadline.cancel();
     }
   }
 }

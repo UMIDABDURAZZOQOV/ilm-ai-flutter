@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/network/api_contract.dart';
+import '../../../core/config/integrated_beta.dart';
 import '../../physics/data/physics_repository.dart' as physics;
 import '../../chemistry/data/chemistry_repository.dart' as chemistry;
 import '../../world_history/data/world_history_repository.dart' as world;
@@ -45,7 +46,7 @@ class AssessmentRepository {
     return result;
   }
 
-  String get prefix => '/beta/v2/$subject';
+  String get prefix => '${reviewedMobileRelease ? '/mobile' : '/beta'}/v2/$subject';
   static String requestId() => physics.PhysicsRepository.requestId();
   static String storageKey(
     String origin,

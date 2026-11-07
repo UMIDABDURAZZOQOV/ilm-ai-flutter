@@ -937,7 +937,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                     : null,
                 language: language,
                 correct: isCorrect,
-                help: integratedBeta && _attemptId != null
+                help: reviewedLearning && _attemptId != null
                     ? StudyHelpButton(
                         language: language,
                         contextData: StudyHelpContext(

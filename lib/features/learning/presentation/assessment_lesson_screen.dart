@@ -114,7 +114,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
     try {
       // Beta already has the selected lesson descriptor and hides bibliography.
       // Fetch the fresh catalogue only when choosing the next unlocked lesson.
-      if (!integratedBeta) {
+      if (!reviewedLearning) {
         final catalog = await _repo.catalog(_cancel, grade: _grade);
         if (!active(generation)) return;
         _catalog = catalog;
@@ -491,7 +491,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
   }
 
   Widget _sourceButton(dynamic values) {
-    if (integratedBeta) return const SizedBox.shrink();
+    if (reviewedLearning) return const SizedBox.shrink();
     final books = jsonRows(_catalog?['source_books'] ?? []);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -678,8 +678,8 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       explanation: _display(
         '${_feedback!['feedback']}\n\n${solution.map((s) => s['body']).join('\n\n')}',
       ),
-      source: integratedBeta ? null : _sourceButton(_feedback!['source_refs']),
-      help: integratedBeta ? _studyHelp() : null,
+      source: reviewedLearning ? null : _sourceButton(_feedback!['source_refs']),
+      help: reviewedLearning ? _studyHelp() : null,
       onContinue: _nextQuestion,
     );
   }

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -87,10 +89,22 @@ class AuthRepository {
   }
 
   Future<bool> needsOnboarding(int userId) async {
-    final response = await _dio.get('/auth/profile/$userId');
-    final value = response.data['needs_onboarding'];
-    if (value is! bool) throw const FormatException('Invalid profile state');
-    return value;
+    final cancel = CancelToken();
+    final deadline = Timer(
+      const Duration(seconds: 10),
+      () => cancel.cancel('profile_restore_timeout'),
+    );
+    try {
+      final response = await _dio.get(
+        '/auth/profile/$userId',
+        cancelToken: cancel,
+      );
+      final value = response.data['needs_onboarding'];
+      if (value is! bool) throw const FormatException('Invalid profile state');
+      return value;
+    } finally {
+      deadline.cancel();
+    }
   }
 
   Future<GoogleLoginUrlResponse> getGoogleLoginUrl(

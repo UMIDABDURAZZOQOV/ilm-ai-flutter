@@ -171,7 +171,7 @@ class _NavigationTileState extends State<_NavigationTile>
   }
 
   Widget _isolatePaint(Widget child) =>
-      integratedBeta ? RepaintBoundary(child: child) : child;
+      reviewedLearning ? RepaintBoundary(child: child) : child;
 
   @override
   void dispose() {

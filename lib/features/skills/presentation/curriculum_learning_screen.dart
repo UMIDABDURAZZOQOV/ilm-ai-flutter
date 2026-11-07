@@ -236,7 +236,7 @@ class _CurriculumLearningScreenState
                             ),
                           ),
                           subtitle:
-                              integratedBeta &&
+                              reviewedLearning &&
                                   item.readyLessons > 0 &&
                                   !item.sourceBlocked
                               ? null
@@ -300,7 +300,7 @@ class _CurriculumLearningScreenState
                   runSpacing: 4,
                   alignment: WrapAlignment.spaceBetween,
                   children: [
-                    if (integratedBeta)
+                    if (reviewedLearning)
                       TextButton.icon(
                         key: const ValueKey('quick_subject_switch'),
                         onPressed: widget.onChangeSubject,
@@ -308,7 +308,7 @@ class _CurriculumLearningScreenState
                         label: Text(tr('Fanlar', 'Предметы', 'Subjects')),
                       ),
                     TextButton.icon(
-                      onPressed: integratedBeta
+                      onPressed: reviewedLearning
                           ? widget.onChangeSubject
                           : () => setState(() => _choosing = true),
                       icon: const Icon(Icons.school_rounded),
@@ -337,7 +337,7 @@ class _CurriculumLearningScreenState
                         subject: widget.subject,
                         grade: current.grade,
                         embedded: true,
-                        courseNote: integratedBeta
+                        courseNote: reviewedLearning
                             ? null
                             : tr(
                                 'Tayyor darslar: ${current.readyLessons}',
@@ -509,7 +509,7 @@ class _CurriculumOutline extends ConsumerWidget {
                     ),
                     title: Text(topic.title),
                     subtitle: Text(
-                      '${integratedBeta ? '' : '${topic.printedStart ?? "?"}–${topic.printedEnd ?? "?"} ${tr('bet', 'стр.', 'pp.')} · '}${topic.completed
+                      '${reviewedLearning ? '' : '${topic.printedStart ?? "?"}–${topic.printedEnd ?? "?"} ${tr('bet', 'стр.', 'pp.')} · '}${topic.completed
                           ? tr('Bajarilgan', 'Завершено', 'Completed')
                           : topic.ready
                           ? tr('Kontent tayyor', 'Контент подготовлен', 'Content prepared')

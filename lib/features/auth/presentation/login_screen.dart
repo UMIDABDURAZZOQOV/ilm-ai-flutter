@@ -249,9 +249,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                               Flexible(
                                 child: Text(
                                   tr(
-                                    'Google bilan davom etish',
-                                    'Продолжить с Google',
-                                    'Continue with Google',
+                                    'RO‘YXATDAN O‘TISH',
+                                    'ЗАРЕГИСТРИРОВАТЬСЯ',
+                                    'SIGN UP',
                                   ),
                                   textAlign: TextAlign.center,
                                 ),

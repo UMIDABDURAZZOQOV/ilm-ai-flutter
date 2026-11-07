@@ -313,7 +313,7 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: 'lesson',
             pageBuilder: (context, state) => _fadeSlidePage(
-              integratedBeta &&
+              reviewedLearning &&
                       (state.extra as SkillTreeLesson).assessmentKey != null
                   ? AssessmentLessonScreen(
                       lesson: state.extra as SkillTreeLesson,

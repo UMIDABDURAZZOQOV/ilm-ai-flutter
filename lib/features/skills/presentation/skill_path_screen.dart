@@ -177,7 +177,7 @@ class SkillPathScreen extends ConsumerWidget {
                           ),
                         ),
                         const SizedBox(height: 8),
-                        if (!integratedBeta)
+                        if (!reviewedLearning)
                           Text(
                             '${u.lessons.where((l) => l.status == LessonStatus.completed).length}/${u.lessons.length} ${str3(lang, 'dars', 'уроков', 'lessons')}',
                           ),
@@ -444,7 +444,7 @@ class SkillPathScreen extends ConsumerWidget {
                 }
               },
               child: LearningPathSections(
-                pageSize: integratedBeta ? 10 : null,
+                pageSize: reviewedLearning ? 10 : null,
                 key: ValueKey(
                   'sections:${ref.watch(currentUserIdProvider)}:${subject.slug}:$grade',
                 ),

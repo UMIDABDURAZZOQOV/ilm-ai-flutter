@@ -67,34 +67,39 @@ const presets = [
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  if (!integratedBeta) {
+  final helpPath = reviewedMobileRelease
+      ? '/mobile/study-help'
+      : '/beta/study-help';
+  if (!reviewedLearning) {
     test(
       'normal build keeps the integrated beta disabled',
       () => expect(integratedBetaRequested, isFalse),
     );
     return;
   }
+  if (integratedBeta) {
+    test(
+      'beta origin rejects production, LAN, credentials and mismatched host',
+      () {
+        requireBetaConfiguration('http://127.0.0.1:8930');
+        expect(
+          isBetaOrigin(Uri.parse('http://127.0.0.1:8930/beta/skills/subjects')),
+          isTrue,
+        );
+        for (final uri in [
+          'https://ilm-ai-backend-256x.onrender.com',
+          'http://192.168.1.2:8930',
+          'http://127.0.0.1:8925',
+          'http://secret@127.0.0.1:8930',
+        ]) {
+          expect(isBetaOrigin(Uri.parse(uri)), isFalse);
+        }
+        expect(mobileAppScheme, 'ilmai-beta');
+      },
+    );
+  }
   test(
-    'beta origin rejects production, LAN, credentials and mismatched host',
-    () {
-      requireBetaConfiguration('http://127.0.0.1:8930');
-      expect(
-        isBetaOrigin(Uri.parse('http://127.0.0.1:8930/beta/skills/subjects')),
-        isTrue,
-      );
-      for (final uri in [
-        'https://ilm-ai-backend-256x.onrender.com',
-        'http://192.168.1.2:8930',
-        'http://127.0.0.1:8925',
-        'http://secret@127.0.0.1:8930',
-      ]) {
-        expect(isBetaOrigin(Uri.parse(uri)), isFalse);
-      }
-      expect(mobileAppScheme, 'ilmai-beta');
-    },
-  );
-  test(
-    'normal skills API uses integrated beta without preview endpoints',
+    'reviewed skills API uses its isolated namespace without preview endpoints',
     () async {
       final dio = Dio(BaseOptions(baseUrl: betaApiOrigin));
       RequestOptions? captured;
@@ -104,7 +109,12 @@ void main() {
         return reply(200, []);
       });
       await dio.get('/skills/subjects');
-      expect(captured!.path, '/beta/skills/subjects');
+      expect(
+        captured!.path,
+        reviewedMobileRelease
+            ? '/mobile/skills/subjects'
+            : '/beta/skills/subjects',
+      );
       dio.close();
     },
   );
@@ -297,7 +307,7 @@ void main() {
             'elapsed_seconds': 20,
           });
         }
-        if (request.path == '/beta/study-help') {
+        if (request.path == helpPath) {
           final data = request.data as Map;
           return reply(200, {
             ...data,
@@ -435,10 +445,7 @@ void main() {
               await tester.ensureVisible(field);
               await tester.enterText(field, 'botanika');
             }
-            expect(
-              requests.where((r) => r.path == '/beta/study-help'),
-              isEmpty,
-            );
+            expect(requests.where((r) => r.path == helpPath), isEmpty);
             await action(tester);
             final panel = tester.widget<LessonFeedbackPanel>(
               find.byType(LessonFeedbackPanel),
@@ -454,10 +461,7 @@ void main() {
             expect(find.text('Tekshirilgan izoh'), findsOneWidget);
             expect(find.textContaining('Hidden textbook'), findsNothing);
             expect(find.textContaining('Manba:'), findsNothing);
-            expect(
-              requests.where((r) => r.path == '/beta/study-help').length,
-              1,
-            );
+            expect(requests.where((r) => r.path == helpPath).length, 1);
             await tester.tap(find.byIcon(Icons.close).last);
             await tester.pumpAndSettle();
             await action(tester);

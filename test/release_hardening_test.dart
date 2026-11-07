@@ -273,6 +273,7 @@ void main() {
     final container = session(SessionRepo(pending: true));
     addTearDown(container.dispose);
     await container.read(authControllerProvider.future);
+    await container.read(authControllerProvider.notifier).resume();
     expect(container.read(needsProfileSetupProvider), isTrue);
     expect((await storage.getTokens())!.needsOnboarding, isTrue);
   });

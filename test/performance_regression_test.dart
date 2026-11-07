@@ -285,6 +285,7 @@ void main() {
       preferences.hold!.complete();
       await restored;
       final auth = container.read(authControllerProvider.notifier) as ClockAuth;
+      await auth.resume();
       final revision = container.read(studyRevisionProvider);
       await Future.wait(List.generate(20, (_) => auth.resume()));
       expect(preferences.calls, 1);
@@ -351,4 +352,95 @@ void main() {
     await tester.pumpWidget(const SizedBox());
     dio.close();
   });
+
+  for (final transition in ['logout', 'other-account', 'same-account']) {
+    test(
+      'cached startup does not wait; late restore cannot cross $transition',
+      () async {
+        final prefs = await PrefsService.create();
+        final storage = SecureTokenStorage(CountingSecureStorage());
+        addTearDown(storage.dispose);
+        final profile = DelayedProfile();
+        final preferences = DelayedPreferences(Dio(), prefs);
+        final container = ProviderContainer(
+          overrides: [
+            prefsServiceProvider.overrideWithValue(prefs),
+            secureTokenStorageProvider.overrideWithValue(storage),
+            authRepositoryProvider.overrideWithValue(profile),
+            learningPreferencesProvider.overrideWithValue(preferences),
+          ],
+        );
+        addTearDown(container.dispose);
+        final cached = await container
+            .read(authControllerProvider.future)
+            .timeout(const Duration(seconds: 1));
+        expect(cached!.userId, original.userId);
+        expect(profile.response.isCompleted, false);
+        expect(container.read(needsProfileSetupProvider), false);
+        final pending = container
+            .read(authControllerProvider.notifier)
+            .resume();
+        if (transition == 'logout') {
+          await storage.clearTokens();
+        } else {
+          await storage.saveTokens(
+            StoredTokens(
+              userId: transition == 'same-account' ? original.userId : 2,
+              accessToken: 'new-login',
+              refreshToken: 'new-session',
+              needsOnboarding: false,
+            ),
+          );
+        }
+        profile.response.complete(true);
+        preferences.hold!.complete();
+        await pending;
+        await Future<void>.delayed(Duration.zero);
+        expect(container.read(needsProfileSetupProvider), false);
+        expect(container.read(studyRevisionProvider), 0);
+        final current = await storage.getTokens();
+        if (transition == 'logout') {
+          expect(current, isNull);
+          expect(container.read(authControllerProvider).valueOrNull, isNull);
+        } else {
+          expect(current!.accessToken, 'new-login');
+          expect(current.needsOnboarding, false);
+        }
+      },
+    );
+  }
+
+  test(
+    'legacy profile state waits for validation rather than skipping setup',
+    () async {
+      FlutterSecureStorage.setMockInitialValues({
+        'ilm_tokens': jsonEncode({
+          'access_token': 'legacy',
+          'refresh_token': 'legacy-refresh',
+          'user_id': 1,
+        }),
+      });
+      final prefs = await PrefsService.create();
+      final storage = SecureTokenStorage(CountingSecureStorage());
+      addTearDown(storage.dispose);
+      final profile = DelayedProfile();
+      final preferences = DelayedPreferences(Dio(), prefs);
+      final container = ProviderContainer(
+        overrides: [
+          prefsServiceProvider.overrideWithValue(prefs),
+          secureTokenStorageProvider.overrideWithValue(storage),
+          authRepositoryProvider.overrideWithValue(profile),
+          learningPreferencesProvider.overrideWithValue(preferences),
+        ],
+      );
+      addTearDown(container.dispose);
+      final result = container.read(authControllerProvider.future);
+      await Future<void>.delayed(Duration.zero);
+      expect(container.read(authControllerProvider).isLoading, true);
+      profile.response.complete(true);
+      preferences.hold!.complete();
+      await result;
+      expect(container.read(needsProfileSetupProvider), true);
+    },
+  );
 }
