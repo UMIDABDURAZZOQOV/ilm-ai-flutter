@@ -135,6 +135,8 @@ class DuoProgressBar extends StatelessWidget {
     final clamped = value.clamp(0.0, 1.0);
 
     return Semantics(
+      // Keep progress distinct from question/input semantics inside sliver lists.
+      container: true,
       value: '${(clamped * 100).round()}%',
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8),
