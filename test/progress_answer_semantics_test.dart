@@ -15,18 +15,22 @@ void main() {
           home: Scaffold(
             body: ListView(
               children: [
-                Column(
-                  children: [
-                    const Text('10/12 Independent practice'),
-                    const DuoProgressBar(value: .75),
-                    const Text('Write the name of the science.'),
-                    TextField(
-                      controller: controller,
-                      decoration: const InputDecoration(
-                        labelText: 'Short answer',
+                Semantics(
+                  container: true,
+                  explicitChildNodes: true,
+                  child: Column(
+                    children: [
+                      const Text('10/12 Independent practice'),
+                      const DuoProgressBar(value: .75),
+                      const Text('Write the name of the science.'),
+                      TextField(
+                        controller: controller,
+                        decoration: const InputDecoration(
+                          labelText: 'Short answer',
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -54,8 +58,8 @@ void main() {
       );
       expect(boundary.container, isTrue);
       expect(
-        find.bySemanticsLabel(RegExp('Write the name of the science')),
-        findsWidgets,
+        find.bySemanticsLabel('Write the name of the science.'),
+        findsOneWidget,
       );
       expect(input.label, contains('Short answer'));
     });

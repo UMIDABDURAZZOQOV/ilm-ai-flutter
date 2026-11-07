@@ -632,23 +632,31 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
     };
   }
 
-  Widget _exercise() => Column(
-    crossAxisAlignment: CrossAxisAlignment.stretch,
-    children: [
-      Text(
-        '${_index + 1}/${_questions.length} · ${_question['phase'] == 'guided' ? _t('Yo‘naltirilgan mashq', 'С поддержкой', 'Guided practice') : _t('Mustaqil mashq', 'Самостоятельно', 'Independent practice')}',
-      ),
-      const SizedBox(height: 12),
-      DuoProgressBar(value: _index / _questions.length),
-      const SizedBox(height: 24),
-      Text(
-        _display(_question['prompt'] as String),
-        style: Theme.of(context).textTheme.titleLarge,
-      ),
-      const SizedBox(height: 20),
-      _answerEditor(_question, !_busy && _pending == null && _feedback == null),
-      _sourceButton(_question['source_refs']),
-    ],
+  Widget _exercise() => Semantics(
+    // Sliver item merging must not make the whole prompt/progress an EditText.
+    container: true,
+    explicitChildNodes: true,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          '${_index + 1}/${_questions.length} · ${_question['phase'] == 'guided' ? _t('Yo‘naltirilgan mashq', 'С поддержкой', 'Guided practice') : _t('Mustaqil mashq', 'Самостоятельно', 'Independent practice')}',
+        ),
+        const SizedBox(height: 12),
+        DuoProgressBar(value: _index / _questions.length),
+        const SizedBox(height: 24),
+        Text(
+          _display(_question['prompt'] as String),
+          style: Theme.of(context).textTheme.titleLarge,
+        ),
+        const SizedBox(height: 20),
+        _answerEditor(
+          _question,
+          !_busy && _pending == null && _feedback == null,
+        ),
+        _sourceButton(_question['source_refs']),
+      ],
+    ),
   );
 
   Widget _studyHelp() => StudyHelpButton(
@@ -678,7 +686,9 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       explanation: _display(
         '${_feedback!['feedback']}\n\n${solution.map((s) => s['body']).join('\n\n')}',
       ),
-      source: reviewedLearning ? null : _sourceButton(_feedback!['source_refs']),
+      source: reviewedLearning
+          ? null
+          : _sourceButton(_feedback!['source_refs']),
       help: reviewedLearning ? _studyHelp() : null,
       onContinue: _nextQuestion,
     );
