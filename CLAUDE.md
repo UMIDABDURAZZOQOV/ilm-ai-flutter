@@ -489,3 +489,57 @@ Live localhost health/config ishladi, eski tutor 404, authsiz study-help 401.
 Server --resume startidan oldin/keyin 9 user/progress jadvalining count/hashlari bir xil.
 Yangi Android acceptance hozir ochiq: 31-oktabrda ADB qurilma ro‘yxati bo‘sh.
 Haqiqiy APK bytes/hash/ikkala commit uning yonidagi `integrated-beta-build.json`da.
+
+## 2026-11-07 - Final fixes and isolated HTTPS staging checkpoint (NO-GO)
+
+Latest owner steering: highest Play versionCode is still3;1.0.3/code4 preparation
+is authorized, upload/deploy is not. No HTTPS/OAuth staging resource exists.
+Both Beta worktrees remain on qa/final-production-fixes-20261106; main/subject
+branches and production database/deployment/Play release were not modified.
+
+Code commits: Flutter d00ce86ffd359a640b0553bb49dd6508f99386fd;
+backend ac668bfdeb1f31b107fb5e286893629895476485. Subsequent receipt commits only
+update documentation. Five-subject /mobile publication reuses reviewed graders
+behind explicit source/coverage/private-rubric checks, while preview and test-auth
+guards stay closed. Prepared isolated staging env/validator/launcher, pinned
+additive migration0015 and separate Android staging identity. No hosted resources
+were provisioned or migration applied to production. NVIDIA quota hopping was
+removed per latest final brief:402/403 stop pool,429 pauses; reviewed fallback.
+Email verification codes/recipients/raw provider exceptions no longer enter logs.
+Production reminders preserved through lifecycle; staging sends no scheduled push.
+Known cached Flutter sessions route immediately with guarded background profile/
+preferences validation; unknown profile state still resolves or shows retry.
+
+Final evidence (commands overlap; do not sum as unique tests): full Flutter1347
+passed/6m40s, reviewed-staging44, local-Beta44, session/hardening38; final analyze
+No issues found/90s. Backend publication/Beta/provider182 passed19 PostgreSQL
+deselected; auth/session/config94; startup/email/schema/config43; final scheme/
+config34. New/changed policy/publication Ruff passed. First full Flutter3 stale
+label/golden failures were inspected/corrected and full rerun passed; two braces
+lint findings were corrected. Real PostgreSQL/Google/device acceptance remains.
+
+Local8930 backend was stopped when checked; restored with --resume, PID22368,
+source ac668bf, loopback only. Health200/ok/integrated_beta; five subjects visible,
+grade5 only Biology available. Unauthenticated help401, old tutor404. Before/after
+46 account/progress table count/hash receipts identical; no account/answer/XP
+created by probes. Google unconfigured; no AI key activated. Server left running.
+
+New Beta APK:
+C:\Users\Page\Desktop\Projects\ilm-ai-beta-artifacts\ILM-AI-Beta-1.0.3-code4-d00ce86.apk
+209809731bytes /200.09MiB; source d00ce86; com.ilmai.app.beta/1.0.3/code4/target36.
+SHA256 4dc61f94bf81410c1f96ab5da27bbacc598a7a58aa53200b710d37ceeed57a6e.
+Build205.9s; v2 debug signature verifies. APK scan found no checked private files/
+credential/JWT literals. Existing future KGP plugin warnings remain. ADB empty:
+no new install or phone smoke/upgrade/performance test was claimed. Do not clear
+phone data. Final signed five-subject production AAB has NOT been produced.
+
+Live read-only production preflight: health200, mobile auth/catalogue and five
+grade routes404. NO-GO blockers: publication import/fresh PostgreSQL whole-chain
+acceptance; verified in-app AND public-web account deletion/revocation/data
+lifecycle; actual HTTPS/Google new/returning/account-switch/offline acceptance;
+real signed upgrade/performance; accurate privacy/Data safety/deletion URLs.
+No paid hosting/provider activation, secret persistence, push/deploy/Play upload.
+
+Resume from backend docs/beta/FINAL_FIX_PROGRESS_20261107.md and HTTPS_STAGING.md,
+Flutter docs/REVIEWED_MOBILE_STAGING.md, and sibling artifacts/
+FINAL_FIX_CHECKPOINT_20261107.md (install/start commands and receipt paths).
