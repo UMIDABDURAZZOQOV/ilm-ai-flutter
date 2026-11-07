@@ -38,6 +38,8 @@ part 'three_digit_explorer.dart';
 part 'three_digit_subtract_explorer.dart';
 part 'metric_length_explorer.dart';
 part 'operation_path_explorer.dart';
+part 'variable_inverse_explorer.dart';
+part 'clock_time_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -294,6 +296,21 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if (mode == 'three_digit_variable_values') {
+      return const _ThreeDigitVariableExplorer();
+    }
+    if (mode == 'three_digit_equation_root') {
+      return const _ThreeDigitEquationExplorer();
+    }
+    if (mode == 'inverse_operations_three_digits') {
+      return const _InverseOperationsExplorer();
+    }
+    if (mode == 'analogue_clock_minutes') {
+      return const _AnalogueClockExplorer();
+    }
+    if (mode == 'hours_minutes_arithmetic') {
+      return const _TimeArithmeticExplorer();
+    }
     if ({'millimetre_conversion', 'millimetre_operations'}.contains(mode)) {
       return _MetricLengthExplorer(mode: mode);
     }
