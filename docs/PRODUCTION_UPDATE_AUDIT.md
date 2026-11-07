@@ -391,3 +391,86 @@ checkpoint; it does not close real Google/Play upgrade/performance requirements.
 Final handset privacy action was also tested: the fixed public privacy URI opened
 external Chrome, without credentials in the URL. The Beta was restored to Learn
 with saved question3/8. Evidence: `release-audit-privacy-device-20261106.json`.
+
+## 2026-11-07 — final blockers implementation and new Beta artifact
+
+**Production remains NO-GO.** This section supersedes earlier artifact/process
+and pending account-deletion/publication engineering status. It does not replace
+the still-required live Google, Play-signed upgrade, policy and device acceptance.
+
+Functional source commits on `qa/final-production-fixes-20261106`:
+Flutter `ac168c3acbd045f80a275d3297832057590cdae4`, backend
+`b4e138a31d605cee0e1d2ae4a45068b5ce0da88c`. Later docs-only commits do not change
+the code used for the new APK. Main/subject branches and production were not edited.
+
+### App changes
+
+Settings now contains the localized signed-in account-deletion action. The dialog
+requires explicit permanent-deletion consent, emailed6-digit proof and server
+acknowledgment. Pending file cleanup and financial retention review have distinct,
+honest states. Server errors do not falsely clear/log out the account. Successful
+revocation clears only the exact UID's local lesson drafts/preferences and matching
+secure-session generation. Other accounts/global theme-language/ordinary logout
+are preserved. A late deletion acknowledgment cannot clear a new same-UID login.
+Final small-screen Uzbek200% text/keyboard widget tests reproduced an overflow;
+moving actions into scrollable content fixed both failures. Existing learning,
+subject switching, graders and checked-feedback-only help were not rewritten.
+
+Changed app files: `lib/features/settings/{data/account_deletion_repository.dart,
+presentation/account_deletion_button.dart,presentation/settings_screen.dart}`,
+`lib/features/auth/application/auth_controller.dart`,
+`lib/core/storage/{prefs_service.dart,secure_token_storage.dart}` and
+`test/account_deletion_test.dart`.
+
+### Evidence
+
+- Full Flutter suite1359 passed/20m35s before the final responsive dialog fix;
+  final targeted deletion/auth/storage/widget20 passed after that fix.
+  Do not describe this as a single full1367-test run.
+- Reviewed-staging UI/API44 and local-Beta UI/API44 passed as separate mocked
+  transport commands. Final analyze: No issues found,234s.
+- Backend deletion32 passed on disposable SQLite/real PostgreSQL schemas, plus2
+  cached-file-auth runtime rejection cases. Actual Alembic whole-chain migration,
+ 1381-lesson source import/idempotent reimport and synthetic137 XP preservation
+  passed in a fresh real PostgreSQL schema. Final config/startup/email42 passed.
+- Publication/provider5 passed/5 PG variants skipped; separate PostgreSQL evidence
+  above. Earlier broad207 passed/5 skipped/5 fixture errors were followed by a
+  corrected allowlisted disposable test URL and a passing5-case rerun. No preview
+  guard was weakened and no clean full-backend run is claimed.
+- Android debug build succeeded,166.3s. Existing future KGP plugin warnings remain.
+
+Receipts/logs live in sibling `ilm-ai-beta-artifacts`, prefixed `blockers-`.
+Detailed13-point report: `BLOCKERS_FIX_HANDOFF_20261107.md`.
+
+### New artifact / server / device
+
+APK: `ILM-AI-Beta-1.0.3-code4-ac168c3.apk`,209821062bytes/200.10MiB, SHA256
+`4854ff1c23282c0f159d55f563b6eb467d4184b481c882854440a12c17ccf2c5`.
+Verified `com.ilmai.app.beta`,1.0.3/code4,min24/target36,debug and v2 signature.
+Launch activity: `com.ilmai.ilm_ai_flutter.MainActivity`. Static archive scan found
+no checked PDF/DB/keystore/private files or NVIDIA/AQ/JWT literals, not a universal
+proof against every secret format. Receipt: `blockers-beta-debug-build-20261107.json`.
+
+Backend resumed from `b4e138a`, PID3892,127.0.0.1:8930. Health200 and17 public API
+checks passed; all five subjects visible for grades5–11 with actual content locks.
+All46 account/progress table hashes/counts match before/after and the earlier
+checkpoint. No login/answer/reward/account was created by these probes. Google
+is unconfigured; no provider key was activated. Verified explanation fallback
+continues without one. Deletion deliberately remains disabled on8930 until real
+policy/mailbox/storage/worker acceptance. SQLite server is left running; separate
+owned PostgreSQL test cluster was stopped after tests.
+
+Latest ADB list is empty. No new phone installation, Android15 edge-to-edge,
+profile/release cold-start/frame/memory benchmark or signed upgrade was performed.
+Do not clear/uninstall phone data. Prior phone observations above are historical,
+not acceptance of this APK.
+
+Latest public production preflight at2026-11-07T10:07:32Z: health200, mobile auth,
+catalogue and five grade routes404. No hosted HTTPS/Google staging or real mailbox
+acceptance. Public deletion page is implemented but not hosted/enabled; privacy,
+Data safety, financial retention/support and backups require owner/operator review.
+Existing production upload-key evidence does not replace a Play-signed upgrade.
+No final five-subject production AAB was rebuilt while these critical gates remain;
+the older Biology-only AAB is not this commit. No push, production migration/deploy
+or Play upload was performed. See backend `docs/beta/PRODUCTION_DEPLOYMENT_PLAN.md`
+for the exact operator sequence after separate permission.
