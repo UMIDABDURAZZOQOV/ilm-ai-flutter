@@ -41,6 +41,7 @@ part 'operation_path_explorer.dart';
 part 'variable_inverse_explorer.dart';
 part 'clock_time_explorer.dart';
 part 'book2_logic_explorer.dart';
+part 'grade2_geometry_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -325,6 +326,15 @@ class _MathExplorerState extends State<MathExplorer> {
       'logic_rosette_pairs',
     }.contains(mode)) {
       return _Book2LogicExplorer(mode: mode);
+    }
+    if ({
+      'geometry_line_ray_segment',
+      'geometry_flat_plane',
+      'geometry_angle_kinds',
+      'geometry_rect_square',
+      'geometry_equal_angles',
+    }.contains(mode)) {
+      return _Grade2GeometryExplorer(mode);
     }
     if (mode == 'three_digit_variable_values') {
       return const _ThreeDigitVariableExplorer();
