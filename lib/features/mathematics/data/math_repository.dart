@@ -3,6 +3,21 @@ import 'package:dio/dio.dart';
 
 typedef MathJson = Map<String, dynamic>;
 const mathExplorerModes = {
+  'clock_offsets_overnight',
+  'mixed_review_quantities',
+  'book2_final_summary',
+  'logic_digit_search',
+  'logic_periodic_patterns',
+  'logic_menu_pairs',
+  'logic_tiling_lab',
+  'logic_layer_stack',
+  'logic_scaled_bars',
+  'logic_grid_route',
+  'logic_constraint_boxes',
+  'logic_equal_bags',
+  'logic_hourglass_interval',
+  'logic_mirror_clock',
+  'logic_rosette_pairs',
   'three_digit_variable_values',
   'three_digit_equation_root',
   'inverse_operations_three_digits',
@@ -229,13 +244,33 @@ class MathRepository {
         if (v is! Map ||
             v['number'] is! int ||
             v['number'] < 1 ||
-            v['number'] > 26 ||
+            v['number'] > (v['book_id'] == 'math-uz-g2-p2' ? 32 : 26) ||
+            (v['book_id'] != null && v['book_id'] != 'math-uz-g2-p2') ||
             v['pdf_pages'] is! List ||
             v['printed_pages'] is! List ||
             (v['pdf_pages'] as List).length != 1 ||
             (v['printed_pages'] as List).length != 1 ||
             v['pdf_pages'][0] is! int ||
-            v['printed_pages'][0] != v['pdf_pages'][0] + 1) {
+            v['printed_pages'][0] !=
+                v['pdf_pages'][0] +
+                    (v['book_id'] == 'math-uz-g2-p2' ? -1 : 1) ||
+            (v['book_id'] == 'math-uz-g2-p2' &&
+                (result['lesson_key'] != 'math-2-2-34-r1' ||
+                    v['pdf_pages'][0] < 71 ||
+                    v['pdf_pages'][0] !=
+                        (v['number'] <= 5
+                            ? 71
+                            : v['number'] <= 11
+                            ? 72
+                            : v['number'] <= 16
+                            ? 73
+                            : v['number'] <= 21
+                            ? 74
+                            : v['number'] <= 25
+                            ? 75
+                            : v['number'] <= 28
+                            ? 76
+                            : 77)))) {
           throw const FormatException();
         }
         text(v['objective']);
@@ -375,6 +410,10 @@ class MathRepository {
           }
           if (q['visual'] != null) {
             final scene = q['visual'] as Map;
+            if ({'clock_diagram', 'rosette_set'}.contains(scene['type'])) {
+              checkSupplementalMathScene(Map<String, dynamic>.from(scene));
+              continue;
+            }
             if (!{'shape_board', 'bars'}.contains(scene['type'])) {
               throw const FormatException();
             }
@@ -474,4 +513,59 @@ class MathRepository {
     )).data,
     'result',
   );
+}
+
+void checkSupplementalMathScene(MathJson scene) {
+  if (scene['type'] == 'clock_diagram') {
+    if (scene.keys.toSet().difference({
+          'type',
+          'hour_hand',
+          'minute_hand',
+          'mirrored',
+        }).isNotEmpty ||
+        scene.length != 4 ||
+        scene['mirrored'] is! bool) {
+      throw const FormatException();
+    }
+    for (final key in ['hour_hand', 'minute_hand']) {
+      final vector = scene[key];
+      if (vector is! List ||
+          vector.length != 2 ||
+          vector.any((v) => v is! num || !v.isFinite || v.abs() > 1)) {
+        throw const FormatException();
+      }
+      final norm =
+          (vector[0] as num) * (vector[0] as num) +
+          (vector[1] as num) * (vector[1] as num);
+      if ((norm - 1).abs() > 0.000001) throw const FormatException();
+    }
+  } else if (scene['type'] == 'rosette_set') {
+    if (scene.keys.toSet().difference({'type', 'patterns'}).isNotEmpty ||
+        scene.length != 2 ||
+        scene['patterns'] is! List ||
+        (scene['patterns'] as List).any((p) => p is! Map)) {
+      throw const FormatException();
+    }
+    final patterns = mathRows(scene['patterns']);
+    if (patterns.length < 3 ||
+        patterns.length > 9 ||
+        patterns.length.isEven ||
+        patterns.map((p) => p['id']).toSet().length != patterns.length) {
+      throw const FormatException();
+    }
+    for (final p in patterns) {
+      if (p.length != 2 ||
+          p['id'] is! String ||
+          (p['id'] as String).isEmpty ||
+          p['colors'] is! List ||
+          (p['colors'] as List).length != 6 ||
+          (p['colors'] as List).any(
+            (v) => !{'indigo', 'yellow', 'turquoise'}.contains(v),
+          )) {
+        throw const FormatException();
+      }
+    }
+  } else {
+    throw const FormatException();
+  }
 }

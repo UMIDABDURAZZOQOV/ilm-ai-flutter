@@ -40,6 +40,7 @@ part 'metric_length_explorer.dart';
 part 'operation_path_explorer.dart';
 part 'variable_inverse_explorer.dart';
 part 'clock_time_explorer.dart';
+part 'book2_logic_explorer.dart';
 
 const mathIndigo = Color(0xFF2A1F6B);
 const mathYellow = Color(0xFFF9A825);
@@ -77,6 +78,16 @@ class MathBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (scene['type'] == 'clock_diagram') {
+      return _ClockDiagramBoard(scene: scene);
+    }
+    if (scene['type'] == 'rosette_set') {
+      return _RosetteSetBoard(
+        scene: scene,
+        selected: selected,
+        onSelect: onSelect,
+      );
+    }
     final items = mathRows(scene['items']);
     final bars = scene['type'] == 'bars';
     return LayoutBuilder(
@@ -296,6 +307,25 @@ class _MathExplorerState extends State<MathExplorer> {
       'y': y,
     };
     final mode = widget.mode;
+    if ({
+      'clock_offsets_overnight',
+      'mixed_review_quantities',
+      'book2_final_summary',
+      'logic_digit_search',
+      'logic_periodic_patterns',
+      'logic_menu_pairs',
+      'logic_tiling_lab',
+      'logic_layer_stack',
+      'logic_scaled_bars',
+      'logic_grid_route',
+      'logic_constraint_boxes',
+      'logic_equal_bags',
+      'logic_hourglass_interval',
+      'logic_mirror_clock',
+      'logic_rosette_pairs',
+    }.contains(mode)) {
+      return _Book2LogicExplorer(mode: mode);
+    }
     if (mode == 'three_digit_variable_values') {
       return const _ThreeDigitVariableExplorer();
     }
