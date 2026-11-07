@@ -209,6 +209,26 @@ class AuthController extends AsyncNotifier<StoredTokens?> {
         updated?.needsOnboarding ?? false;
   }
 
+  Future<void> finishAccountDeletion(
+    int userId, {
+    required int sessionGeneration,
+  }) async {
+    final prefs = ref.read(prefsServiceProvider);
+    final storage = ref.read(secureTokenStorageProvider);
+    // Clearing the deleted account is safe even if a different account signed in
+    // while the server was responding. Never clear that new session.
+    await prefs.clearAccountData(userId);
+    final current = await storage.getTokens();
+    if (storage.sessionGeneration != sessionGeneration ||
+        current?.userId != userId) {
+      return;
+    }
+    _epoch++;
+    _syncedUser = null;
+    _lastSync = null;
+    await storage.clearTokens(expectedGeneration: sessionGeneration);
+  }
+
   Future<void> logout() async {
     _epoch++;
     _syncedUser = null;

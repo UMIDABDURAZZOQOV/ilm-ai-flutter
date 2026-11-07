@@ -140,7 +140,14 @@ class SecureTokenStorage {
         return true;
       });
 
-  Future<void> clearTokens({String? expectedRefresh}) => _serial(() async {
+  Future<void> clearTokens({
+    String? expectedRefresh,
+    int? expectedGeneration,
+  }) => _serial(() async {
+    if (expectedGeneration != null &&
+        _sessionGeneration != expectedGeneration) {
+      return;
+    }
     final current = await _read();
     if (expectedRefresh != null && current?.refreshToken != expectedRefresh) {
       return;

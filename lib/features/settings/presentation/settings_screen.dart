@@ -14,6 +14,7 @@ import '../../../core/widgets/duo_chrome.dart' show foregroundOn;
 import '../../../core/widgets/premium_card.dart';
 import '../../auth/application/auth_controller.dart';
 import 'privacy_policy_button.dart';
+import 'account_deletion_button.dart';
 import '../../skills/presentation/skill_profile_screen.dart';
 import '../../skills/presentation/skill_ui.dart';
 
@@ -281,6 +282,7 @@ class SettingsScreen extends ConsumerWidget {
                   .slideY(begin: 0.06, end: 0, curve: Curves.easeOutCubic),
               const SizedBox(height: 24),
               const PrivacyPolicyButton(),
+              const AccountDeletionButton(),
               const SizedBox(height: 12),
               OutlinedButton.icon(
                 style: OutlinedButton.styleFrom(
