@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'route_extra_codec.dart';
 
 import '../providers/app_providers.dart';
 import '../config/product_mode.dart';
@@ -114,6 +115,7 @@ final routerProvider = Provider<GoRouter>((ref) {
 
   return GoRouter(
     initialLocation: '/splash',
+    extraCodec: const LearningRouteExtraCodec(),
     refreshListenable: refresh,
     redirect: (context, state) {
       final loc = state.matchedLocation;
@@ -312,15 +314,20 @@ final routerProvider = Provider<GoRouter>((ref) {
           ),
           GoRoute(
             path: 'lesson',
-            pageBuilder: (context, state) => _fadeSlidePage(
-              reviewedLearning &&
-                      (state.extra as SkillTreeLesson).assessmentKey != null
-                  ? AssessmentLessonScreen(
-                      lesson: state.extra as SkillTreeLesson,
-                    )
-                  : SkillLessonScreen(lesson: state.extra as SkillTreeLesson),
-              state,
-            ),
+            pageBuilder: (context, state) {
+              final lesson = state.extra;
+              // A corrupt/restored imperative child can bypass the root redirect.
+              // Never cast missing metadata or invent a lesson for it.
+              if (lesson is! SkillTreeLesson) {
+                return _fadeSlidePage(const SubjectHomeScreen(), state);
+              }
+              return _fadeSlidePage(
+                reviewedLearning && lesson.assessmentKey != null
+                    ? AssessmentLessonScreen(lesson: lesson)
+                    : SkillLessonScreen(lesson: lesson),
+                state,
+              );
+            },
           ),
           GoRoute(
             path: 'practice',
