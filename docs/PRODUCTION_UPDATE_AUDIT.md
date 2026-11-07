@@ -1,5 +1,18 @@
 # Existing Play application update audit — 2026-11-06
 
+## Latest hosted checkpoint ? 2026-11-07
+
+See [the current Free staging evidence](../../ilm-ai-beta/docs/beta/FREE_STAGING_20261107.md). Authenticated
+Render reads now prove Live e97c029 on main lacks the mobile routers. Release
+branch was safely pushed; isolated Free HTTPS staging is actually live with
+Alembic0017/1381 lessons and no users. Google remains explicitly unconfigured;
+normal preflight correctly stays NO-GO. Production's46-table Neon schema is
+unversioned: no blind initial upgrade/stamp. No production mutation/deploy or
+Play upload. This supersedes older unavailable-hosting/unknown-SHA/no-push notes.
+
+Flutter app source remains ac168c3; existing Beta APK is unchanged. No new final
+AAB, phone install, Google/device or signed-upgrade acceptance is claimed.
+
 ## 2026-11-06 - Final-readiness follow-up: NO-GO remains
 
 Backend source commit: `98cd97cb77571b2112df889ef352333c3bebe81e`; running loopback service remains `974f542`, not hot-reloaded.
