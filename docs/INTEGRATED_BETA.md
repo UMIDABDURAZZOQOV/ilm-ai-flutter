@@ -1,5 +1,17 @@
 # Integrated Android Beta
 
+## Current HTTPS staging acceptance — 2026-11-08
+
+Current app source7a2e37e supports reviewed five-subject publication and exact
+Google auth/deletion callback routes. Separate Samsung staging package uses real
+HTTPS backend597b5ac;9/9 public contracts passed. Owner-approved third-account
+Google reauth/deletion/relogin and protected A/B progress passed, including
+read-only DB purge confirmation. Flutter1393 full tests/37 targeted/analyze clean.
+Signed production AAB1.0.3/code4 is a locally validated NO-GO candidate only;
+current backend full CI and actual production/DB/privacy/upgrade/performance gates
+remain. See PRODUCTION_UPDATE_AUDIT.md for current artifacts and limits. Earlier
+local-only/Biology-only/pending-device statements below describe older checkpoints.
+
 ## 2026-11-06 — Existing Play update audit and final Beta installation
 
 Current audit branch: `qa/play-release-audit-20261106`. The existing Play identity

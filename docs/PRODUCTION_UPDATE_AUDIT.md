@@ -1,5 +1,39 @@
 # Existing Play application update audit — 2026-11-06
 
+## Current native deletion callback correction — 2026-11-08
+
+App implementation7a2e37e86f34f0cfb0cd5e95a62a5e853244f7b4 fixes a real
+Android return-path defect: the exact deletion host/path was absent from the
+CallbackActivity manifest filter. Separate exact auth/deletion filters now work;
+the resolver rejects deletion/other. No wildcard, state/PKCE or identity bypass.
+New regression failed before the fix;37 targeted tests and analyze clean384.7s
+passed. Native full suite1393 passed in44:00; parent1392 is historical.
+
+Current arm64 APK `ILM-AI-Staging-1.0.3-code4-7a2e37e-arm64.apk`:109719594 bytes,
+SHA25691c8047da5bc67a0b9cda7b7242d3ee2ad29cb5dfb9e5589c76a908602a6e7f2.
+Installed-r Success without data clear; both exact callbacks resolve on Samsung.
+Owner's Google selection returned to the app, but server verification denied it;
+no proof/DELETE was issued and the third disposable account remains intact.
+Backend follow-up597b5ac verifies fresh signed application OAuth issuance rather
+than Google Account session auth_time;110 local backend regressions passed.
+Backend597b5ac is Live on isolated Free staging; exact-source9/9 passed after a
+retained deploy-time timeout. New backend CI42500888563 is still running.
+Owner repeated Google approval then separately pressed final deletion; actual
+exchange200/confirm200/logout and same-Google fresh onboarding observed, including
+restart. TLS read-only staging DB confirms completed cleanup, original personal
+fields removed, zero owned rows across40 tables/old refresh tokens and a distinct
+new zero-XP/zero-progress profile. Only a non-reusable ID tombstone remains.
+Protected A30 XP/two lessons and B20 XP/one lesson preserved; ACL closed again.
+Phone left in new third-account onboarding; no personal age was invented.
+
+Current AAB `ILM-AI-1.0.3-code4-7a2e37e-NO-GO.aab`:77581578 bytes,
+SHA2560b34f08354eeeae7167478f998074f4a6bd5f52e39834ce2f006c9f47199b911.
+Bundletool/JAR signature/existing upload certificate,com.ilmai.app,1.0.3/code4,
+both exact callbacks, non-debuggable/backup off and16KiB alignment passed.
+Bounded known-secret/credential-format checks found no matches. Prior b6/984
+artifacts are superseded. Artifact validity is not production approval: NO-GO.
+No main/subject branch, production service/database or Google Play change.
+
 ## Latest hosted checkpoint — 2026-11-08
 
 Real HTTPS staging on Samsung SM-A125F now accepts two owner-approved Google
@@ -509,3 +543,46 @@ No final five-subject production AAB was rebuilt while these critical gates rema
 the older Biology-only AAB is not this commit. No push, production migration/deploy
 or Play upload was performed. See backend `docs/beta/PRODUCTION_DEPLOYMENT_PLAN.md`
 for the exact operator sequence after separate permission.
+# Email-free account deletion update — 2026-11-08
+
+App implementation source:b6f604aa510a5e25f2ca34b02f216b7efd495bd4 on the existing
+isolated QA branch. Server sourcefd44385 is actually Live only on HTTPS staging.
+Google/password reauth replaces mandatory email OTP when the backend explicitly
+offers the new capability. Separate final confirmation, owner/session-generation
+checks, honest errors and acknowledged-only local logout/purge are retained.
+Legacy OTP remains available only when offered by the server; failure never
+silently enables a weaker proof. Callback path/state/purpose are strictly checked;
+final confirmation bypasses token-refresh retries while still sending owner bearer.
+
+Current validation:1392 full serial Flutter tests passed in11:05, targeted61 and
+actual staging-flag99 passed (overlap), full analyze No issues found91.3s. Backend
+CI42446994077 atfd44385 succeeded:5356 passed,75 skipped,21 warnings, import/Docker
+passed. Skips are not passes. Real HTTPS password/web deletion acceptance29/29, including two
+fresh synthetic-account deletions and revoked access/refresh tokens. Real Google
+third-account deletion is still pending owner authentication; A/B never deleted.
+
+Staging debug APK:ILM-AI-Staging-1.0.3-code4-b6f604a-arm64.apk,109715231 bytes/104.63MiB,
+SHA2561210bfbf82e7807b1851b3e2e0a0489fa5754ef598daaadfa65cc1fad9abc1c1.
+674 ZIP entries/zero exact OAuth or checked credential-format matches. Samsung
+install-r Success without clear/uninstall; third-account session/onboarding restored.
+A30 XP/two lessons was preserved before switching to this disposable third account. Deploy-time
+timeout followed by successful explicit retry is retained, not called a clean
+startup benchmark. Production package/backend/data are unchanged.
+
+The phone uncovered a misleading browser-expiry message: an over10-minute Google
+flow had callback307/no exchange yet UI claimed the server was waking. Fresh
+owner-completed login succeeded. Typed Google browser expiry and localized retry
+guidance now distinguish it from actual network timeouts. OAuth/PKCE/state and
+identity limits were not weakened. Callback fixtures use configured schemes and
+explicitly reject the alternate app scheme. Parent984a825 artifacts are superseded.
+
+Production AAB candidate built in427.7s with existing upload key,1.0.3/code4,
+com.ilmai.app and REVIEWED_MOBILE_RELEASE=true. ILM-AI-1.0.3-code4-b6f604a-NO-GO.aab,
+77581484 bytes, SHA2561bba69dcaec4e1c8480a29283a22beec736b126279b7e83b64b832f8da7774ee.
+Bundletool/signature verified, approved upload certificate matches; min24/target36,
+ilmai callback, non-debuggable, backup off; eight64-bit libraries meet16KB ELF
+alignment. No forbidden files/known OAuth/local secrets/JWT/checked token-format
+matches. Artifact checks do not imply working production API/Google/deletion.
+**NO-GO** remains; no production deploy/database mutation or Play upload.
+See backend docs/beta/EMAIL_FREE_AUTH_DELETION_20261108.md for migration/backup,
+reauth security, manual-review/privacy/recovery limits and current release gates.
