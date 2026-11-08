@@ -8,7 +8,15 @@ import '../config/integrated_beta.dart';
 /// No content, credentials, user data, heap snapshots or UI controls are exposed.
 class BetaPerformanceProbe {
   static void start() {
-    if (!kProfileMode || !integratedBeta || !betaPerformanceRequested) return;
+    if (!performanceProbeAllowed(
+      profileMode: kProfileMode,
+      requested: betaPerformanceRequested,
+      localBeta: integratedBeta,
+      reviewedRelease: reviewedMobileRelease,
+      staging: reviewedMobileStaging,
+    )) {
+      return;
+    }
     final clock = Stopwatch()..start();
     final frames = <Map<String, int>>[];
     int? firstFrameMs;
@@ -40,3 +48,12 @@ class BetaPerformanceProbe {
     });
   }
 }
+
+/// Metrics remain opt-in and profile-only; ordinary production has no extension.
+bool performanceProbeAllowed({
+  required bool profileMode,
+  required bool requested,
+  required bool localBeta,
+  required bool reviewedRelease,
+  required bool staging,
+}) => profileMode && requested && (localBeta || (reviewedRelease && staging));
