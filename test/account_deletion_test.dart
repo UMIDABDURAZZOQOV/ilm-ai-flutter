@@ -100,6 +100,14 @@ void main() {
           overrides: [
             prefsServiceProvider.overrideWithValue(await PrefsService.create()),
             authControllerProvider.overrideWith(DeletionAuth.new),
+            accountDeletionRepositoryProvider.overrideWithValue(
+              AccountDeletionRepository(
+                Dio(apiOptions())
+                  ..httpClientAdapter = Adapter(
+                    (_) => reply(200, {'available': true}),
+                  ),
+              ),
+            ),
           ],
         );
         addTearDown(container.dispose);
@@ -241,6 +249,9 @@ void main() {
       int requested = 0, confirmed = 0;
       final dio = Dio(apiOptions())
         ..httpClientAdapter = Adapter((request) {
+          if (request.path == '/account/deletion/config') {
+            return reply(200, {'available': true});
+          }
           if (request.path.endsWith('/request')) {
             requested++;
             return reply(200, {'request_id': 'a' * 43});

@@ -126,7 +126,8 @@ class AuthInterceptor extends QueuedInterceptor {
   ) async {
     if (err.response?.statusCode != 401 ||
         err.requestOptions.extra['_retried'] == true ||
-        err.requestOptions.extra['skipAuth'] == true) {
+        err.requestOptions.extra['skipAuth'] == true ||
+        err.requestOptions.extra['skipAuthRefresh'] == true) {
       handler.next(err);
       return;
     }

@@ -6,6 +6,7 @@ import '../../../core/network/dio_client.dart';
 import '../../auth/application/auth_controller.dart';
 import '../../skills/presentation/skill_ui.dart';
 import '../data/account_deletion_repository.dart';
+import '../application/deletion_google_auth.dart';
 
 class AccountDeletionButton extends ConsumerWidget {
   const AccountDeletionButton({super.key});
@@ -40,6 +41,10 @@ class _DeletionDialog extends ConsumerStatefulWidget {
 
 class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
   final _code = TextEditingController();
+  final _password = TextEditingController();
+  DeletionProof? _proof;
+  bool _emailFree = true, _configLoaded = false, _available = false;
+  String? _method;
   CancelToken? _cancel;
   String? _requestId, _error;
   bool _busy = false, _consent = false, _closing = false;
@@ -49,6 +54,32 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
   void initState() {
     super.initState();
     _sessionGeneration = ref.read(secureTokenStorageProvider).sessionGeneration;
+    Future.microtask(_loadConfiguration);
+  }
+
+  Future<void> _loadConfiguration() async {
+    final cancel = _cancel = CancelToken();
+    try {
+      final repo = ref.read(accountDeletionRepositoryProvider);
+      final config = await repo.configuration(cancel);
+      final free = config['email_required'] == false;
+      final available = config['available'] == true;
+      final method = free && available ? await repo.method(cancel) : null;
+      if (!mounted || !_sameSession) return;
+      setState(() {
+        _emailFree = free;
+        _available = available;
+        _method = method;
+        _configLoaded = true;
+      });
+    } catch (_) {
+      if (mounted) {
+        setState(() {
+          _available = false;
+          _configLoaded = true;
+        });
+      }
+    }
   }
 
   bool get _sameSession =>
@@ -60,11 +91,14 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
   void dispose() {
     _cancel?.cancel('deletion_dialog_closed');
     _code.dispose();
+    _password.dispose();
     super.dispose();
   }
 
   Future<void> _submit() async {
-    if (_busy || !_consent || !_sameSession) return;
+    if (_busy || !_consent || !_sameSession || !_configLoaded || !_available) {
+      return;
+    }
     final lang = ref.read(languageProvider);
     setState(() {
       _busy = true;
@@ -74,15 +108,24 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
     try {
       final repository = ref.read(accountDeletionRepositoryProvider);
       if (_requestId == null) {
-        final request = await repository.request(cancel);
+        String request;
+        if (_emailFree) {
+          final proof = _method == 'google'
+              ? await ref.read(googleDeletionReauthProvider)(repository, cancel)
+              : await repository.passwordProof(_password.text, cancel);
+          if (!mounted || !_sameSession) return;
+          _password.clear();
+          _proof = proof;
+          request = proof.requestId;
+        } else {
+          request = await repository.request(cancel);
+        }
         if (!mounted || !_sameSession) return;
         setState(() => _requestId = request);
       } else {
-        final result = await repository.confirm(
-          _requestId!,
-          _code.text.trim(),
-          cancel,
-        );
+        final result = _emailFree
+            ? await repository.confirmProof(_proof!, cancel)
+            : await repository.confirm(_requestId!, _code.text.trim(), cancel);
         if (!mounted || !_sameSession) return;
         if (result == 'retention_review') {
           setState(
@@ -130,9 +173,9 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
       setState(
         () => _error = str3(
           lang,
-          'So‘rov tasdiqlanmadi. Email kodini va ulanishni tekshiring. Natija noaniq bo‘lsa, shu kod bilan qayta urinib ko‘ring.',
-          'Запрос не подтверждён. Проверьте код и соединение. При неизвестном результате повторите с тем же кодом.',
-          'Request not confirmed. Check your code and connection. If the result is unknown, retry with the same code.',
+          'So‘rov tasdiqlanmadi. Qayta tasdiqlash va ulanishni tekshiring. Natija noaniq bo‘lsa, qayta urinib ko‘ring.',
+          'Запрос не подтверждён. Проверьте повторный вход и соединение. При неизвестном результате повторите запрос.',
+          'Request not confirmed. Check reauthentication and connection. If the result is unknown, retry.',
         ),
       );
     } finally {
@@ -160,9 +203,15 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
           Text(
             str3(
               lang,
-              'Profilingiz, progress, javoblar va XP o‘chiriladi. Bu amal qaytarilmaydi. Emailingizga kelgan kod bilan tasdiqlaysiz.',
-              'Профиль, прогресс, ответы и XP будут удалены безвозвратно. Подтвердите кодом из письма.',
-              'Your profile, progress, answers and XP will be deleted permanently. Confirm with the email verification code.',
+              _emailFree
+                  ? 'Profilingiz, progress, javoblar va XP o‘chiriladi. Avval akkauntingizni qayta tasdiqlang, keyin butunlay o‘chirishni tasdiqlaysiz.'
+                  : 'Profilingiz, progress, javoblar va XP o‘chiriladi. Bu amal qaytarilmaydi. Emailingizga kelgan kod bilan tasdiqlaysiz.',
+              _emailFree
+                  ? 'Сначала подтвердите вход, затем необратимое удаление профиля, прогресса, ответов и XP.'
+                  : 'Профиль, прогресс, ответы и XP будут удалены безвозвратно. Подтвердите кодом из письма.',
+              _emailFree
+                  ? 'First verify your account again, then confirm permanent deletion of your profile, progress, answers and XP.'
+                  : 'Your profile, progress, answers and XP will be deleted permanently. Confirm with the email verification code.',
             ),
           ),
           CheckboxListTile(
@@ -181,7 +230,24 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
               ),
             ),
           ),
-          if (_requestId != null)
+          if (_emailFree && _method == 'password' && _proof == null)
+            TextField(
+              controller: _password,
+              obscureText: true,
+              enabled: !_busy,
+              key: const ValueKey('delete_account_password'),
+              autofillHints: const [AutofillHints.password],
+              onChanged: (_) => setState(() {}),
+              decoration: InputDecoration(
+                labelText: str3(
+                  lang,
+                  'Joriy parol',
+                  'Текущий пароль',
+                  'Current password',
+                ),
+              ),
+            ),
+          if (!_emailFree && _requestId != null)
             TextField(
               controller: _code,
               key: const ValueKey('delete_account_code'),
@@ -201,6 +267,16 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
             ),
           if (_error != null)
             Text(_error!, key: const ValueKey('delete_account_error')),
+          if (_configLoaded && !_available)
+            Text(
+              str3(
+                lang,
+                'O‘chirish xizmati hozir mavjud emas. Keyinroq qayta oching.',
+                'Удаление сейчас недоступно. Повторите позже.',
+                'Deletion is unavailable. Reopen this dialog later.',
+              ),
+            ),
+          if (!_configLoaded) const CircularProgressIndicator(),
           if (_busy)
             const Padding(
               padding: EdgeInsets.all(8),
@@ -225,19 +301,33 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
                 ),
                 onPressed:
                     _busy ||
+                        !_configLoaded ||
+                        !_available ||
                         !_consent ||
-                        (_requestId != null &&
+                        (_emailFree &&
+                            _method == 'password' &&
+                            _proof == null &&
+                            _password.text.isEmpty) ||
+                        (!_emailFree &&
+                            _requestId != null &&
                             !RegExp(r'^\d{6}$').hasMatch(_code.text))
                     ? null
                     : _submit,
                 child: Text(
                   _requestId == null
-                      ? str3(
-                          lang,
-                          'Tasdiqlash kodini olish',
-                          'Получить код',
-                          'Send verification code',
-                        )
+                      ? _emailFree
+                            ? str3(
+                                lang,
+                                'Akkauntni qayta tasdiqlash',
+                                'Подтвердить вход',
+                                'Verify account again',
+                              )
+                            : str3(
+                                lang,
+                                'Tasdiqlash kodini olish',
+                                'Получить код',
+                                'Send verification code',
+                              )
                       : str3(
                           lang,
                           'Akkauntni o‘chirish',
