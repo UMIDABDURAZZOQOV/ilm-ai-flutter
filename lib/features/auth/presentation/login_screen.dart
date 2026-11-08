@@ -14,6 +14,7 @@ import '../../../core/config/integrated_beta.dart';
 import 'beta_login.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/network/dio_client.dart';
+import '../../../core/network/api_contract.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
@@ -53,7 +54,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         ? en
         : uz;
 
-    // Check for timeout or backend waking up (Render free tier cold start ~30-50s)
+    if (err is GoogleAuthException) {
+      return extractError(err, language: language);
+    }
+    // A network timeout or gateway response does not prove a cold server wake.
     final isTimeout =
         err is TimeoutException ||
         (err is DioException &&
@@ -67,9 +71,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
     if (isTimeout) {
       return tr(
-        "Server uyg'onmoqda, biroz kuting va qayta urinib ko'ring.",
-        'Сервер просыпается, подождите немного и повторите попытку.',
-        'Server is waking up, please wait a moment and try again.',
+        "Tarmoq yoki server vaqtida javob bermadi. Ulanishni tekshirib, qayta urinib ko'ring.",
+        'Сеть или сервер не ответили вовремя. Проверьте соединение и повторите попытку.',
+        'The network or server did not respond in time. Check your connection and retry.',
       );
     }
 

@@ -9,6 +9,7 @@ class InvalidApiResponseException implements Exception {
 
 enum GoogleAuthFailure {
   cancelled,
+  interactionExpired,
   invalidCallback,
   providerFailed,
   notConfigured,

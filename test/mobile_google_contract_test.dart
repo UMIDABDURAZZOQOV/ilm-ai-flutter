@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
+import 'dart:async';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:ilm_ai_flutter/core/config/integrated_beta.dart';
 import 'package:ilm_ai_flutter/core/network/api_contract.dart';
 import 'package:ilm_ai_flutter/core/network/error_message.dart';
 import 'package:ilm_ai_flutter/core/network/mobile_api.dart';
@@ -9,6 +11,33 @@ import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 
 void main() {
+  test('browser expiry is distinct from a network/server timeout', () async {
+    await expectLater(
+      waitForGoogleCallback(Completer<String>().future, timeout: Duration.zero),
+      throwsA(
+        isA<GoogleAuthException>().having(
+          (e) => e.failure,
+          'failure',
+          GoogleAuthFailure.interactionExpired,
+        ),
+      ),
+    );
+    for (final language in ['uz', 'ru', 'en']) {
+      final text = extractError(
+        const GoogleAuthException(GoogleAuthFailure.interactionExpired),
+        language: language,
+      );
+      expect(text, contains('Google'));
+      expect(text, isNot(contains('Server uyg')));
+    }
+    expect(
+      await waitForGoogleCallback(
+        Future.value('callback'),
+        timeout: Duration.zero,
+      ),
+      'callback',
+    );
+  });
   test(
     'malformed or non-Google authorization URL is rejected before the browser',
     () async {
@@ -171,7 +200,7 @@ void main() {
   test('valid callback returns only a code after state verification', () {
     expect(
       validatedGoogleCode(
-        'ilmai://auth/callback?code=one-use&state=expected',
+        '$mobileAppScheme://auth/callback?code=one-use&state=expected',
         'expected',
       ),
       'one-use',
@@ -179,11 +208,12 @@ void main() {
   });
 
   for (final callback in [
-    'ilmai://auth/callback?code=x&state=wrong',
-    'ilmai://other/callback?code=x&state=expected',
-    'ilmai://auth/callback?code=x&state=expected&state=expected',
-    'ilmai://auth/callback?code=x&state=expected&access_token=must-not-accept',
-    'ilmai://auth/callback?error=cancelled&state=wrong',
+    '$mobileAppScheme://auth/callback?code=x&state=wrong',
+    '$mobileAppScheme://other/callback?code=x&state=expected',
+    '$mobileAppScheme://auth/callback?code=x&state=expected&state=expected',
+    '$mobileAppScheme://auth/callback?code=x&state=expected&access_token=must-not-accept',
+    '$mobileAppScheme://auth/callback?error=cancelled&state=wrong',
+    '${mobileAppScheme == 'ilmai' ? 'ilmai-staging' : 'ilmai'}://auth/callback?code=x&state=expected',
   ]) {
     test('untrusted callback is rejected: $callback', () {
       expect(
@@ -202,7 +232,7 @@ void main() {
   test('verified cancellation differs from provider failure', () {
     expect(
       () => validatedGoogleCode(
-        'ilmai://auth/callback?error=cancelled&state=expected',
+        '$mobileAppScheme://auth/callback?error=cancelled&state=expected',
         'expected',
       ),
       throwsA(
@@ -215,7 +245,7 @@ void main() {
     );
     expect(
       () => validatedGoogleCode(
-        'ilmai://auth/callback?error=oauth_failed&state=expected',
+        '$mobileAppScheme://auth/callback?error=oauth_failed&state=expected',
         'expected',
       ),
       throwsA(

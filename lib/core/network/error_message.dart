@@ -20,6 +20,12 @@ String extractError(Object err, {String language = 'en'}) {
   }
   if (err is GoogleAuthException) {
     switch (err.failure) {
+      case GoogleAuthFailure.interactionExpired:
+        return text(
+          'Google orqali kirish muddati tugadi. Tugmani bosib, kirishni qaytadan boshlang.',
+          'Время входа через Google истекло. Нажмите кнопку и начните вход заново.',
+          'Google sign-in expired. Press the button to start sign-in again.',
+        );
       case GoogleAuthFailure.cancelled:
         return text(
           'Google orqali kirish bekor qilindi.',

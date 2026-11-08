@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:async';
 import 'dart:math';
 import 'package:crypto/crypto.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -13,6 +14,15 @@ export 'auth_controller.dart' show needsProfileSetupProvider;
 const googleAuthTimeout = Duration(
   seconds: 30,
 ); // Network phase; browser allows time for 2FA.
+
+Future<String> waitForGoogleCallback(
+  Future<String> browser, {
+  Duration timeout = const Duration(minutes: 5),
+}) => browser.timeout(
+  timeout,
+  onTimeout: () =>
+      throw const GoogleAuthException(GoogleAuthFailure.interactionExpired),
+);
 
 String createCodeVerifier() => base64UrlEncode(
   List<int>.generate(48, (_) => Random.secure().nextInt(256)),
@@ -56,10 +66,12 @@ Future<bool> signInWithGoogle(WidgetRef ref) async {
   final url = await repo
       .prepareGoogleLogin(codeChallenge(verifier))
       .timeout(googleAuthTimeout);
-  final result = await FlutterWebAuth2.authenticate(
-    url: url.authUrl,
-    callbackUrlScheme: mobileAppScheme,
-  ).timeout(const Duration(minutes: 5));
+  final result = await waitForGoogleCallback(
+    FlutterWebAuth2.authenticate(
+      url: url.authUrl,
+      callbackUrlScheme: mobileAppScheme,
+    ),
+  );
   final code = validatedGoogleCode(result, url.state);
   if (!ref.context.mounted) return false;
   final data = await repo
