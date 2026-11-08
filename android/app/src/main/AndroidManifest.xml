@@ -54,6 +54,14 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="${oauthRedirectScheme}" android:host="auth" android:path="/callback"/>
             </intent-filter>
+            <!-- Deletion reauth has a separate purpose. Keep both hosts/path
+                 filters exact; Dart also validates purpose, state and code. -->
+            <intent-filter android:label="flutter_web_auth_2_deletion">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="${oauthRedirectScheme}" android:host="deletion" android:path="/callback"/>
+            </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->

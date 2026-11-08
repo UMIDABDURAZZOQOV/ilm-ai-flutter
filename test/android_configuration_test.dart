@@ -2,6 +2,33 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
+  test('each OAuth purpose has its own exact native callback filter', () {
+    final manifest = File(
+      'android/app/src/main/AndroidManifest.xml',
+    ).readAsStringSync();
+    final callback = RegExp(
+      r'<activity\b[^>]*android:name="com\.linusu\.flutter_web_auth_2\.CallbackActivity"[^>]*>([\s\S]*?)</activity>',
+    ).firstMatch(manifest)!.group(1)!;
+    final filters = RegExp(
+      r'<intent-filter\b[^>]*>([\s\S]*?)</intent-filter>',
+    ).allMatches(callback).map((m) => m.group(1)!).toList();
+    expect(filters, hasLength(2));
+    for (final host in ['auth', 'deletion']) {
+      final matching = filters.where(
+        (filter) => filter.contains('android:host="$host"'),
+      );
+      expect(matching, hasLength(1));
+      final filter = matching.single;
+      expect(filter, contains('android.intent.action.VIEW'));
+      expect(filter, contains('android.intent.category.DEFAULT'));
+      expect(filter, contains('android.intent.category.BROWSABLE'));
+      expect(RegExp(r'<data\b').allMatches(filter), hasLength(1));
+      expect(filter, contains(r'android:scheme="${oauthRedirectScheme}"'));
+      expect(filter, contains('android:path="/callback"'));
+      expect(filter, isNot(contains('pathPrefix')));
+      expect(filter, isNot(contains('pathPattern')));
+    }
+  });
   test(
     'launch styles gate platform attributes by API without hiding lint errors',
     () {
