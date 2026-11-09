@@ -1,5 +1,22 @@
 # Integrated Android Beta
 
+## Google-only correction — 2026-11-09
+
+Owner explicitly requested Google as the only registration/login entry. Source
+68d0697 removes the password-choice experiment and unused email/signup/reset
+screens. One registration CTA opens Google directly; verified subject, PKCE,
+existing sessions and account-scoped progress remain. No email sender is required
+for this Google flow. Legacy backend contracts/data remain for old clients.
+
+New Google-only staging APK installed-r Success; owner third-account login,
+no repeated onboarding and session restoration after restart were observed.
+1428 full Flutter tests passed in17:20;54 focused tests overlap, analyze clean.
+Signed1.0.3/code4 Google-only AAB verified, not uploaded and still NO-GO.
+Staging backendcc239d0 is Live; exact-source9/9 public contracts passed. Backend
+full CI is pending;83/83 real PostgreSQL/PDF/Windows coverage gaps passed locally.
+Current artifacts/evidence/limits: [FINAL_READINESS_20261109.md](FINAL_READINESS_20261109.md).
+Earlier checkpoints below are historical; they do not supersede this decision.
+
 ## Current HTTPS staging acceptance — 2026-11-08
 
 Current app source7a2e37e supports reviewed five-subject publication and exact

@@ -586,3 +586,36 @@ matches. Artifact checks do not imply working production API/Google/deletion.
 **NO-GO** remains; no production deploy/database mutation or Play upload.
 See backend docs/beta/EMAIL_FREE_AUTH_DELETION_20261108.md for migration/backup,
 reauth security, manual-review/privacy/recovery limits and current release gates.
+
+## Google-only owner correction and actual device acceptance — 2026-11-09
+
+Latest owner instruction removes email/password entry. Flutter implementation
+68d069705d714a49acf83d40bbd1b3d4a9d27f7e has one direct Google registration CTA;
+password choice/signup/forgot-password/verify-email UI removed. New/returning
+Google accounts reuse verified provider subjects and existing session handling.
+1428 full current Flutter tests passed in17:20;54 focused tests overlap and are not
+added to that count. Analyze clean317.0s.
+New debug APK installed-r Success onSamsung; owner third-account Google login
+returned to Learn without onboarding. Force-stop/reopen restored session and saved
+Physics6 selection. No progress/XP answers changed; USB-awake restored to0.
+
+Google-only APK139072397bytes, SHA256
+646e8728fba664d40a8c3685fa57a145de9072b1bf584c623e0cedaaf27ab7cf.
+Google-only signed AAB77582586bytes, SHA256
+7ff6f1823aa0f1f14b78774d1ae59022503bde0ed5d235cc1af35c72cf58bfff.
+Both names/paths and signature/secret/native checks are inFINAL_READINESS_20261109.md.
+Existingcom.ilmai.app/1.0.3/code4 and upload certificate preserved; no Play upload.
+
+Recovery backendcc239d059a7db57d29bda9ef122b1f4eff6f0a80 deployed to existing
+Free staging only, RenderLive and exact-source public9/9 contracts passed. Full
+backend CI42570996008 pending.83selected gaps actually passed:57PostgreSQL,
+15sourcePDF,11WindowsACL, plus one SQLite control, counted by unique node IDs.
+No production connection in those tests. Private saved-backup baseline/index/lock
+review is evidence for an approval packet, not approval to mutate production.
+
+**NO-GO** remains for production deployment/baseline/migration approval, full CI,
+privacy/audience/retention/support/Console reconciliation, credential rotation,
+Play-signed old-client upgrade and controlled performance acceptance. Google-only
+policy review remains unresolved; no audience was silently changed. Google login
+accepted above was against597b5ac immediately before the staging backend update;
+the new backend's public contracts passed, not a repeated owner Google login.
