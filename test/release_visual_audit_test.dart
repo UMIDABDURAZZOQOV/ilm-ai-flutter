@@ -60,10 +60,12 @@ void main() {
         final dio = reviewDio();
         final deletionDio = Dio()
           ..httpClientAdapter = Adapter((r) {
-            if (r.path.endsWith('/config'))
+            if (r.path.endsWith('/config')) {
               return reply(200, {'available': true, 'email_required': false});
-            if (r.path.endsWith('/options'))
+            }
+            if (r.path.endsWith('/options')) {
               return reply(200, {'method': 'google'});
+            }
             throw StateError(
               'No deletion or reauthentication permitted in visual audit',
             );
