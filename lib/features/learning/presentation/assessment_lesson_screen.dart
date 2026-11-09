@@ -25,6 +25,7 @@ import '../../uzbekistan_history/presentation/history_answer_editor.dart';
 import '../data/assessment_repository.dart';
 import '../../study_help/study_help.dart';
 import '../../../core/config/integrated_beta.dart';
+import '../../../core/utils/reviewed_text.dart';
 
 /// Shared branded lesson flow. Existing subject editors and server runtimes
 /// retain their specialised answer formats, source links and grading semantics.
@@ -684,7 +685,10 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
                 : solution.last['body'] as String),
       ),
       explanation: _display(
-        '${_feedback!['feedback']}\n\n${solution.map((s) => s['body']).join('\n\n')}',
+        assessmentFeedbackText(
+          _feedback!['feedback'] as String,
+          solution.map((s) => s['body'] as String),
+        ),
       ),
       source: reviewedLearning
           ? null

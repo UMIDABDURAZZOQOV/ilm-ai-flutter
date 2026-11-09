@@ -24,6 +24,8 @@ import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_display_text.dart';
 import 'package:ilm_ai_flutter/features/world_history/presentation/world_history_display_text.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
+import 'support/capture_release_frame.dart';
+import 'support/load_review_fonts.dart';
 
 typedef Json = Map<String, dynamic>;
 Json fixture(String name) =>
@@ -67,6 +69,9 @@ const presets = [
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+  setUpAll(() async {
+    if (const bool.fromEnvironment('UIUX_CAPTURE')) await loadReviewFonts();
+  });
   final helpPath = reviewedMobileRelease
       ? '/mobile/study-help'
       : '/beta/study-help';
@@ -289,7 +294,14 @@ void main() {
           final feedback = Map<String, dynamic>.from(
             (responses[key] ?? responses.values.first) as Map,
           )..['assessment_key'] = key;
-          if (checkedCorrect != null) feedback['is_correct'] = checkedCorrect;
+          if (checkedCorrect != null) {
+            feedback['is_correct'] = checkedCorrect;
+            // This fixture tests UI states, not grading. Keep its synthetic
+            // status prose consistent with the forced correct/wrong state.
+            feedback['feedback'] = checkedCorrect
+                ? 'Sinov: javob mos keldi.'
+                : 'Sinov: javob mos kelmadi. Tekshirilgan yechimni ko‘ring.';
+          }
           committed[key] = feedback;
           if (loseNextAnswer) {
             loseNextAnswer = false;
@@ -347,11 +359,18 @@ void main() {
       status: completedNode ? LessonStatus.completed : LessonStatus.unlocked,
       stars: 0,
     );
+    final captureKey = GlobalKey();
     Future<PrefsService> mount(
       WidgetTester tester, {
       double scale = 1,
       PrefsService? store,
     }) async {
+      if (const bool.fromEnvironment('UIUX_CAPTURE')) {
+        tester.view.physicalSize = const Size(720, 1600);
+        tester.view.devicePixelRatio = 2;
+        addTearDown(tester.view.resetPhysicalSize);
+        addTearDown(tester.view.resetDevicePixelRatio);
+      }
       if (store == null) SharedPreferences.setMockInitialValues({});
       final prefs = store ?? await PrefsService.create();
       await tester.pumpWidget(
@@ -361,15 +380,19 @@ void main() {
             currentUserIdProvider.overrideWithValue(900777),
             dioProvider.overrideWithValue(dio),
           ],
-          child: MaterialApp(
-            theme: buildAppTheme(lightColors),
-            home: Builder(
-              builder: (context) => MediaQuery(
-                data: MediaQuery.of(context).copyWith(
-                  textScaler: TextScaler.linear(scale),
-                  disableAnimations: true,
+          child: RepaintBoundary(
+            key: captureKey,
+            child: MaterialApp(
+              debugShowCheckedModeBanner: false,
+              theme: buildAppTheme(lightColors),
+              home: Builder(
+                builder: (context) => MediaQuery(
+                  data: MediaQuery.of(context).copyWith(
+                    textScaler: TextScaler.linear(scale),
+                    disableAnimations: true,
+                  ),
+                  child: AssessmentLessonScreen(lesson: descriptor()),
                 ),
-                child: AssessmentLessonScreen(lesson: descriptor()),
               ),
             ),
           ),
@@ -419,8 +442,18 @@ void main() {
                   .toList();
             }
             await mount(tester);
+            await captureReleaseFrame(
+              tester,
+              captureKey,
+              '${preset.slug}-${frq ? "frq" : "mcq"}-$correct-theory',
+            );
             expect(find.byType(StudyHelpButton), findsNothing);
             await exercises(tester);
+            await captureReleaseFrame(
+              tester,
+              captureKey,
+              '${preset.slug}-${frq ? "frq" : "mcq"}-$correct-before',
+            );
             expect(
               find.byKey(const ValueKey('question_study_help')),
               findsNothing,
@@ -451,6 +484,11 @@ void main() {
               find.byType(LessonFeedbackPanel),
             );
             expect(panel.correct, correct);
+            await captureReleaseFrame(
+              tester,
+              captureKey,
+              '${preset.slug}-${frq ? "frq" : "mcq"}-$correct-after',
+            );
             expect(
               find.byKey(const ValueKey('question_study_help')),
               findsOneWidget,
@@ -459,6 +497,11 @@ void main() {
             await tester.tap(find.byKey(const ValueKey('question_study_help')));
             await tester.pumpAndSettle();
             expect(find.text('Tekshirilgan izoh'), findsOneWidget);
+            await captureReleaseFrame(
+              tester,
+              captureKey,
+              '${preset.slug}-${frq ? "frq" : "mcq"}-$correct-fallback',
+            );
             expect(find.textContaining('Hidden textbook'), findsNothing);
             expect(find.textContaining('Manba:'), findsNothing);
             expect(requests.where((r) => r.path == helpPath).length, 1);

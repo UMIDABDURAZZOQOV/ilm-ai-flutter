@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:ilm_ai_flutter/core/config/integrated_beta.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
@@ -253,6 +254,56 @@ void main() {
     expect(find.text('Tekshirilgan dars izohi'), findsOneWidget);
     await tester.pumpWidget(const SizedBox());
     dio.close();
+  });
+  testWidgets('reviewed help displays a repeated whole passage only once', (
+    tester,
+  ) async {
+    final data = evidence();
+    data['evidence'] = [
+      {'id': 'e1', 'text': 'To‘g‘ri. Tekshirilgan izoh.', 'source_refs': []},
+      {'id': 'e2', 'text': 'Tekshirilgan izoh.', 'source_refs': []},
+      {'id': 'e3', 'text': 'Keyingi qadam.', 'source_refs': []},
+    ];
+    final dio = Dio()..httpClientAdapter = Adapter((_) => reply(200, data));
+    addTearDown(() => dio.close(force: true));
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          currentUserIdProvider.overrideWithValue(1),
+          studyHelpRepositoryProvider.overrideWithValue(
+            StudyHelpRepository(dio),
+          ),
+        ],
+        child: MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: const Scaffold(
+            body: StudyHelpSheet(
+              contextData: StudyHelpContext(
+                subject: 'kimyo',
+                grade: 7,
+                attemptId: 'owned',
+                questionKey: 'q',
+                checked: true,
+              ),
+              language: 'uz',
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('To‘g‘ri. Tekshirilgan izoh.'), findsOneWidget);
+    expect(
+      find.text('Tekshirilgan izoh.'),
+      reviewedLearning ? findsNothing : findsOneWidget,
+    );
+    expect(find.text('Keyingi qadam.'), findsOneWidget);
+    expect(
+      (data['evidence'] as List).length,
+      3,
+    ); // No server evidence mutation.
+    expect(tester.takeException(), isNull);
+    await tester.pumpWidget(const SizedBox.shrink());
   });
   test('repository rejects another question from the same subject', () async {
     final dio = Dio(BaseOptions(baseUrl: 'http://127.0.0.1:8930'));

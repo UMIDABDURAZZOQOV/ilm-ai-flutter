@@ -7,6 +7,7 @@ import '../../core/network/dio_client.dart';
 import '../auth/application/auth_controller.dart';
 import '../skills/presentation/content_source_button.dart';
 import '../skills/presentation/skill_ui.dart';
+import '../../core/utils/reviewed_text.dart';
 
 /// Only identifiers and the Biology v1 advisory selection cross the wire.
 /// Correct answers, grading specs and textbook facts are resolved on the server.
@@ -393,7 +394,13 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
                             ),
                         ],
                       ),
-                    for (final raw in turn.answer['evidence'] as List) ...[
+                    for (final raw
+                        in reviewedLearning
+                            ? distinctReviewedText(
+                                turn.answer['evidence'] as List,
+                                (raw) => '${raw['text']}',
+                              )
+                            : turn.answer['evidence'] as List) ...[
                       const SizedBox(height: 12),
                       SelectableText('${raw['text']}'),
                       if (!reviewedLearning)

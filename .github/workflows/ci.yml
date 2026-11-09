@@ -13,4 +13,16 @@ jobs:
       - run: flutter pub get --enforce-lockfile
       - run: flutter analyze
       - run: flutter test
+      - name: Reviewed five-subject release regressions without live services
+        run: >-
+          flutter test --concurrency=1
+          --dart-define=REVIEWED_MOBILE_RELEASE=true
+          --dart-define=API_URL=https://staging.example.test
+          test/integrated_beta_test.dart
+          test/reviewed_mobile_release_test.dart
+          test/subject_grade_availability_test.dart
+          test/catalogue_deadline_test.dart
+          test/release_visual_audit_test.dart
+          test/assessment_feedback_text_test.dart
+          test/study_help_test.dart
       - run: flutter build web --no-pub --no-web-resources-cdn --no-wasm-dry-run

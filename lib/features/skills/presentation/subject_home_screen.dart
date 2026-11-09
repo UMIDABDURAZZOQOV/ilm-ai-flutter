@@ -151,30 +151,39 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
       error: (error, _) => Scaffold(
         body: SafeArea(
           child: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  tr(
-                    'Fanlarni yuklab bo‘lmadi',
-                    'Не удалось загрузить предметы',
-                    'Could not load subjects',
-                  ),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(24),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 560),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      tr(
+                        'Fanlarni yuklab bo‘lmadi',
+                        'Не удалось загрузить предметы',
+                        'Could not load subjects',
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      extractError(error, language: lang),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 16),
+                    FilledButton(
+                      onPressed: () => ref.invalidate(subjectCatalogProvider),
+                      child: Text(
+                        tr('Qayta urinish', 'Повторить', 'Try again'),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => context.push('/settings'),
+                      child: Text(tr('Sozlamalar', 'Настройки', 'Settings')),
+                    ),
+                  ],
                 ),
-                Text(
-                  extractError(error, language: lang),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 16),
-                FilledButton(
-                  onPressed: () => ref.invalidate(subjectCatalogProvider),
-                  child: Text(tr('Qayta urinish', 'Повторить', 'Try again')),
-                ),
-                TextButton(
-                  onPressed: () => context.push('/settings'),
-                  child: Text(tr('Sozlamalar', 'Настройки', 'Settings')),
-                ),
-              ],
+              ),
             ),
           ),
         ),
