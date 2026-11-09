@@ -19,17 +19,21 @@ class SkillTreeRepository {
     // adapter/DNS waits. Bound the complete catalogue request so startup always
     // reaches the existing retry UI, preserving the session and progress.
     final cancel = CancelToken();
-    final deadline = Timer(
-      const Duration(seconds: 30),
-      () => cancel.cancel('catalogue_load_timeout'),
-    );
     late Response res;
     try {
-      res = await _dio.get(
-        '/skills/subjects',
-        cancelToken: cancel,
-        options: Options(extra: {'skipAuth': true}),
-      );
+      res = await _dio
+          .get(
+            '/skills/subjects',
+            cancelToken: cancel,
+            options: Options(extra: {'skipAuth': true}),
+          )
+          .timeout(
+            const Duration(seconds: 30),
+            onTimeout: () {
+              cancel.cancel('catalogue_load_timeout');
+              throw TimeoutException('catalogue_load_timeout');
+            },
+          );
     } on DioException catch (error) {
       if (CancelToken.isCancel(error) &&
           error.error == 'catalogue_load_timeout') {
@@ -39,8 +43,6 @@ class SkillTreeRepository {
         throw const ApiCompatibilityException();
       }
       rethrow;
-    } finally {
-      deadline.cancel();
     }
     if (res.data is! List ||
         (res.data as List).any((item) => item is! Map<String, dynamic>)) {

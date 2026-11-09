@@ -38,6 +38,14 @@ and Console declarations, exposed operator credential rotation, Play-signed
 upgrade and newly built/scanned final APK/AAB. Current source fixes are not yet
 installed in the phone's profile APK. Old7a2e37e NO-GO AAB is not final.
 
+Follow-up: cancellation inside a stalled interceptor need not settle a request.
+The outer30s Future deadline now guarantees a failure/retry state even before
+transport dispatch; all3 deadline regressions passed. This is a later delta to
+profile4c2ab1c; its actual installation succeeded with data preserved. Device
+auto-lock/screen-off prevents accepting subsequent readiness polling; owner unlock
+was requested and no PIN or keyguard bypass was attempted. Do not label these
+samples a clean startup acceptance or infer an optimized navigation result.
+
 Owner reports previous Play review approved. Optional password does not itself
 establish neutral age handling or parental consent. No audience declaration was
 changed. Current staging has no external AI key; verified lesson explanations

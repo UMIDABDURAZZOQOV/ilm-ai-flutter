@@ -5,6 +5,25 @@ import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 
 void main() {
+  testWidgets('stalled interceptor cannot prevent the whole-request deadline', (
+    tester,
+  ) async {
+    final dio = Dio(BaseOptions(baseUrl: 'https://isolated.example.test'))
+      ..interceptors.add(InterceptorsWrapper(onRequest: (_, _) {}));
+    addTearDown(() => dio.close(force: true));
+    Object? failure;
+    unawaited(
+      SkillTreeRepository(dio).getSubjects().then<void>(
+        (_) {},
+        onError: (Object error) {
+          failure = error;
+        },
+      ),
+    );
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 31));
+    expect(failure, isA<TimeoutException>());
+  });
   testWidgets('stalled catalogue reaches timeout and a new request can retry', (
     tester,
   ) async {
