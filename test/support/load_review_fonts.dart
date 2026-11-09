@@ -13,12 +13,12 @@ Future<void> loadReviewFonts() async {
     config.uri.resolve(flutter['rootUri'] as String),
   ).parent.parent;
   final text = FontLoader('Roboto');
-  for (final weight in ['regular', 'medium', 'bold']) {
+  for (final weight in ['Regular', 'Medium', 'Bold']) {
     text.addFont(
       Future.value(
         ByteData.sublistView(
           File(
-            '${sdk.path}/bin/cache/artifacts/material_fonts/roboto-$weight.ttf',
+            '${sdk.path}/bin/cache/artifacts/material_fonts/Roboto-$weight.ttf',
           ).readAsBytesSync(),
         ),
       ),
@@ -30,7 +30,7 @@ Future<void> loadReviewFonts() async {
       Future.value(
         ByteData.sublistView(
           File(
-            '${sdk.path}/bin/cache/artifacts/material_fonts/materialicons-regular.otf',
+            '${sdk.path}/bin/cache/artifacts/material_fonts/MaterialIcons-Regular.otf',
           ).readAsBytesSync(),
         ),
       ),
