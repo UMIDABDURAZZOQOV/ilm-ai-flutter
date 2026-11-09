@@ -1,15 +1,21 @@
 # ILM AI1.0.3 readiness checkpoint — not release approval
 
-The existing single primary registration button now opens Google or password
-authentication. Google is optional for the mixed-audience app. Existing passwords,
-verified provider subjects, server sessions and account-scoped progress are reused;
-failed existing-user login never creates a new account. Email-free signup retains
-issued tokens; the profile setup state is read using that newly authenticated
-owner's bearer, without a previous account's token or refresh retry. Legacy email
-verification is used only when explicitly required by the server. Unconfigured
-password recovery reports unavailability rather than claiming email was sent.
-Modal cancellation and duplicate-submit guards remain. Ilmo and the one primary
-CTA are preserved; two changed login goldens were visually inspected light/dark.
+## Owner correction: Google-only authentication
+
+The owner's latest instruction supersedes the optional-password experiment.
+The single registration CTA opens Google directly for new and returning learners.
+Password choice/form, signup, forgot-password and email-verification screens are
+removed. Login goldens return to the established Google-only design. Verified
+Google subject, PKCE, server sessions, account-scoped progress, duplicate-submit
+guard, cancellation, loading and errors remain. Typing an email never authenticates
+a Google account. Existing backend contracts/data for older clients are retained;
+no account/progress deletion or production configuration change was performed.
+
+Installed profile4c2ab1c and debug22ea794 contain the superseded password UI and
+are not final artifacts. Google-only auth/brand/transport and catalogue regression
+tests:39 passed, including direct Google dispatch, disabled loading CTA, retry,
+light/dark goldens, three languages, large text and absent email screens/routes.
+A new Google-only APK, static analysis and device verification are pending.
 
 Focused auth validation:49 passed; catalogue deadline/retry:2 passed. These are
 targeted counts, not a current full-suite result. Full current-source suite and
@@ -46,7 +52,7 @@ auto-lock/screen-off prevents accepting subsequent readiness polling; owner unlo
 was requested and no PIN or keyguard bypass was attempted. Do not label these
 samples a clean startup acceptance or infer an optimized navigation result.
 
-Owner reports previous Play review approved. Optional password does not itself
-establish neutral age handling or parental consent. No audience declaration was
-changed. Current staging has no external AI key; verified lesson explanations
+Owner reports previous Play review approved. Google-only entry is implemented as
+requested; the mixed-audience Google sign-in policy review remains an unresolved
+release gate. No audience declaration was changed. Current staging has no external AI key; verified lesson explanations
 remain available. No production, Play, paid-resource or subject-branch action.

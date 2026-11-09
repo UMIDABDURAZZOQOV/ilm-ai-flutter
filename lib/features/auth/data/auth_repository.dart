@@ -7,12 +7,6 @@ import '../../../core/network/dio_client.dart';
 import '../../../core/network/api_contract.dart';
 import 'auth_models.dart';
 
-class PasswordRegistration {
-  const PasswordRegistration({this.authentication, this.verificationEmail});
-  final AuthResponse? authentication;
-  final String? verificationEmail;
-}
-
 /// Ported 1:1 from ilm-ai-mobile's src/api/auth.ts.
 class AuthRepository {
   final Dio _dio;
@@ -26,45 +20,6 @@ class AuthRepository {
   Future<SignUpResponse> signUp(SignUpRequest req) async {
     final res = await _dio.post('/auth/signup', data: req.toJson());
     return SignUpResponse.fromJson(res.data as Map<String, dynamic>);
-  }
-
-  /// Preserve the authenticated email-free response instead of discarding its
-  /// tokens and incorrectly sending a new account to mandatory email OTP.
-  Future<PasswordRegistration> registerPassword(SignUpRequest req) async {
-    final response = await _dio.post(
-      '/auth/signup',
-      data: req.toJson(),
-      options: Options(extra: {'skipAuth': true}),
-    );
-    final data = response.data;
-    if (data is! Map<String, dynamic> ||
-        data['verification_required'] is! bool) {
-      throw const InvalidApiResponseException();
-    }
-    if (data['verification_required'] == true) {
-      if (data['email'] is! String || (data['email'] as String).isEmpty) {
-        throw const InvalidApiResponseException();
-      }
-      return PasswordRegistration(verificationEmail: data['email'] as String);
-    }
-    return PasswordRegistration(authentication: AuthResponse.fromJson(data));
-  }
-
-  /// Check the newly authenticated owner before adopting a session. Never send
-  /// a previous account's bearer token or infer setup from the email/name.
-  Future<bool> passwordNeedsOnboarding(AuthResponse authentication) async {
-    final response = await _dio.get(
-      '/auth/profile/${authentication.userId}',
-      options: Options(
-        headers: {'Authorization': 'Bearer ${authentication.accessToken}'},
-        extra: {'skipAuth': true, 'skipAuthRefresh': true},
-      ),
-    );
-    final data = response.data;
-    if (data is! Map || data['needs_onboarding'] is! bool) {
-      throw const InvalidApiResponseException();
-    }
-    return data['needs_onboarding'] as bool;
   }
 
   Future<AuthResponse> verifyEmail(VerifyEmailRequest req) async {

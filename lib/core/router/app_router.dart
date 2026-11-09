@@ -68,7 +68,7 @@ import '../widgets/main_shell.dart';
 const _preAuthRoutes = {'/language-select', '/onboarding'};
 const _authRoutes = {
   '/login',
-}; // One entry; provider/password choices stay inside its authenticated flow.
+}; // Google-only; email screens removed from the UI
 
 /// Subtle fade + upward slide on every push/pop, replacing the platform
 /// default so navigation feels consistent across Android/iOS.

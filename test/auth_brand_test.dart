@@ -18,7 +18,6 @@ import 'package:ilm_ai_flutter/core/widgets/ilmo_brand_mark.dart';
 import 'package:ilm_ai_flutter/core/widgets/premium_button.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/auth/presentation/login_screen.dart';
-import 'package:ilm_ai_flutter/features/auth/presentation/signup_screen.dart';
 
 import 'support/load_review_fonts.dart';
 import 'uiux_visual_review_test.dart' show reviewDio;
@@ -122,8 +121,15 @@ void main() {
         final rect = tester.getRect(find.byType(IlmoBrandMark));
         expect(rect.center.dx, closeTo(192, .1));
         expect(
-          find.byKey(const ValueKey('auth_start')).hitTestable(),
+          find.byKey(const ValueKey('login_google')).hitTestable(),
           findsOneWidget,
+        );
+        expect(find.byType(PremiumButton), findsOneWidget);
+        expect(find.byType(TextField), findsNothing);
+        expect(find.byType(TextFormField), findsNothing);
+        expect(
+          find.byKey(const ValueKey('auth_method_password')),
+          findsNothing,
         );
         await captureLogin(tester, key, '$language-${dark ? "dark" : "light"}');
         if (language == 'ru') {
@@ -148,7 +154,7 @@ void main() {
           );
           expect(tester.takeException(), isNull);
           semantics.dispose();
-          final button = find.byKey(const ValueKey('auth_start'));
+          final button = find.byKey(const ValueKey('login_google'));
           await tester.ensureVisible(button);
           await tester.pumpAndSettle();
           expect(button.hitTestable(), findsOneWidget);
@@ -178,10 +184,8 @@ void main() {
           dark: dark,
           network: dio,
         );
-        final button = find.byKey(const ValueKey('auth_start'));
+        final button = find.byKey(const ValueKey('login_google'));
         await tester.tap(button);
-        await tester.pumpAndSettle();
-        await tester.tap(find.byKey(const ValueKey('auth_method_google')));
         await tester.pump();
         await tester.pump(const Duration(milliseconds: 250));
         expect(tester.widget<PremiumButton>(button).onPressed, isNull);
@@ -231,10 +235,22 @@ void main() {
     }
     expect(tester.takeException(), isNull);
   });
-  testWidgets('retained signup uses the same official face', (tester) async {
-    await mountLogin(tester, screen: const SignUpScreen());
-    expect(find.byType(IlmoBrandMark), findsOneWidget);
-    expect(tester.takeException(), isNull);
+  test('email authentication screens and routes are absent', () {
+    for (final name in [
+      'password_access_sheet',
+      'signup_screen',
+      'forgot_password_screen',
+      'verify_email_screen',
+    ]) {
+      expect(
+        File('lib/features/auth/presentation/$name.dart').existsSync(),
+        isFalse,
+      );
+    }
+    final router = File('lib/core/router/app_router.dart').readAsStringSync();
+    for (final path in ['/signup', '/forgot-password', '/verify-email']) {
+      expect(router, isNot(contains("path: '$path'")));
+    }
   });
   test('no Flutter screen references the retired brand asset', () {
     final oldReferences = Directory('lib')
