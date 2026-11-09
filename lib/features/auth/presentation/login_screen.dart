@@ -23,10 +23,12 @@ import '../../../core/widgets/ilmo_brand_mark.dart';
 import '../../../core/widgets/premium_button.dart';
 import '../../../core/widgets/google_logo.dart';
 import '../application/google_auth.dart';
+import '../application/auth_controller.dart';
+import '../data/auth_repository.dart';
+import 'password_access_sheet.dart';
 
-/// Google-only entry. One button both signs up and logs in — Google has already
-/// vetted the account, so we no longer ask for email + password. The email
-/// endpoints still exist on the backend for support, just not in the UI.
+/// One primary entry; Google is optional and existing password accounts retain
+/// the same server verification/session/onboarding rules.
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
 
@@ -36,6 +38,7 @@ class LoginScreen extends ConsumerStatefulWidget {
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   bool _googleLoading = false;
+  bool _entryOpen = false;
   String? _error;
 
   @override
@@ -136,6 +139,94 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     }
   }
 
+  Future<void> _handleEntry() async {
+    if (_googleLoading || _entryOpen) return;
+    setState(() {
+      _entryOpen = true;
+      _error = null;
+    });
+    final language = ref.read(languageProvider);
+    String tr(String uz, String ru, String en) => language == 'uz'
+        ? uz
+        : language == 'ru'
+        ? ru
+        : en;
+    try {
+      final method = await showModalBottomSheet<String>(
+        context: context,
+        showDragHandle: true,
+        builder: (context) => SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 20),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ListTile(
+                  key: const ValueKey('auth_method_google'),
+                  leading: const GoogleLogo(size: 24),
+                  title: Text(
+                    tr('Google orqali', 'Через Google', 'With Google'),
+                  ),
+                  onTap: () => Navigator.pop(context, 'google'),
+                ),
+                ListTile(
+                  key: const ValueKey('auth_method_password'),
+                  leading: const Icon(Icons.lock_outline),
+                  title: Text(
+                    tr(
+                      'Email va parol',
+                      'Почта и пароль',
+                      'Email and password',
+                    ),
+                  ),
+                  onTap: () => Navigator.pop(context, 'password'),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+      if (!mounted) return;
+      if (method == 'google') {
+        await _handleGoogle();
+      } else if (method == 'password') {
+        final result = await showModalBottomSheet<PasswordAccessResult>(
+          context: context,
+          isScrollControlled: true,
+          showDragHandle: true,
+          isDismissible: false,
+          enableDrag: false,
+          builder: (context) => PasswordAccessSheet(
+            repository: ref.read(authRepositoryProvider),
+            language: language,
+          ),
+        );
+        if (!mounted || result == null) return;
+        await ref
+            .read(authControllerProvider.notifier)
+            .login(
+              result.authentication,
+              needsOnboarding: result.needsOnboarding,
+            );
+        if (mounted) {
+          context.go(
+            result.needsOnboarding
+                ? '/setup'
+                : subjectsOnly
+                ? '/learn'
+                : '/home',
+          );
+        }
+      }
+    } catch (error) {
+      if (mounted) {
+        setState(() => _error = _getAuthErrorMessage(error, language));
+      }
+    } finally {
+      if (mounted) setState(() => _entryOpen = false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()!.colors;
@@ -201,9 +292,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         const SizedBox(height: 12),
                         Text(
                           tr(
-                            "Google bilan bir marta bosib kiring — ro'yxatdan o'tish ham, kirish ham shu.",
-                            'Войдите одним нажатием через Google — это и регистрация, и вход.',
-                            'Continue with Google in one tap — it both signs you up and logs you in.',
+                            'Akkauntingizga kiring yoki yangi profil yarating.',
+                            'Войдите в аккаунт или создайте новый профиль.',
+                            'Access your account or create a new profile.',
                           ),
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -222,8 +313,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           ),
                         ),
                         PremiumButton(
-                          key: const ValueKey('login_google'),
-                          onPressed: _googleLoading ? null : _handleGoogle,
+                          key: const ValueKey('auth_start'),
+                          onPressed: _googleLoading || _entryOpen
+                              ? null
+                              : _handleEntry,
                           outline: true,
                           borderRadius: 20,
                           child: Row(
@@ -248,7 +341,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                   ),
                                 )
                               else
-                                const GoogleLogo(size: 22),
+                                const Icon(
+                                  Icons.person_outline_rounded,
+                                  size: 22,
+                                ),
                               const SizedBox(width: 12),
                               Flexible(
                                 child: Text(

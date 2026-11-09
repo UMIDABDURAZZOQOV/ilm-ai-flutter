@@ -122,7 +122,7 @@ void main() {
         final rect = tester.getRect(find.byType(IlmoBrandMark));
         expect(rect.center.dx, closeTo(192, .1));
         expect(
-          find.byKey(const ValueKey('login_google')).hitTestable(),
+          find.byKey(const ValueKey('auth_start')).hitTestable(),
           findsOneWidget,
         );
         await captureLogin(tester, key, '$language-${dark ? "dark" : "light"}');
@@ -148,7 +148,7 @@ void main() {
           );
           expect(tester.takeException(), isNull);
           semantics.dispose();
-          final button = find.byKey(const ValueKey('login_google'));
+          final button = find.byKey(const ValueKey('auth_start'));
           await tester.ensureVisible(button);
           await tester.pumpAndSettle();
           expect(button.hitTestable(), findsOneWidget);
@@ -178,8 +178,10 @@ void main() {
           dark: dark,
           network: dio,
         );
-        final button = find.byKey(const ValueKey('login_google'));
+        final button = find.byKey(const ValueKey('auth_start'));
         await tester.tap(button);
+        await tester.pumpAndSettle();
+        await tester.tap(find.byKey(const ValueKey('auth_method_google')));
         await tester.pump();
         await tester.pump(const Duration(milliseconds: 250));
         expect(tester.widget<PremiumButton>(button).onPressed, isNull);

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -14,17 +15,32 @@ class SkillTreeRepository {
   SkillTreeRepository(this._dio);
 
   Future<List<SkillSubject>> getSubjects() async {
+    // A socket receive timeout restarts as bytes arrive and does not cover all
+    // adapter/DNS waits. Bound the complete catalogue request so startup always
+    // reaches the existing retry UI, preserving the session and progress.
+    final cancel = CancelToken();
+    final deadline = Timer(
+      const Duration(seconds: 30),
+      () => cancel.cancel('catalogue_load_timeout'),
+    );
     late Response res;
     try {
       res = await _dio.get(
         '/skills/subjects',
+        cancelToken: cancel,
         options: Options(extra: {'skipAuth': true}),
       );
     } on DioException catch (error) {
+      if (CancelToken.isCancel(error) &&
+          error.error == 'catalogue_load_timeout') {
+        throw TimeoutException('catalogue_load_timeout');
+      }
       if (error.response?.statusCode == 404) {
         throw const ApiCompatibilityException();
       }
       rethrow;
+    } finally {
+      deadline.cancel();
     }
     if (res.data is! List ||
         (res.data as List).any((item) => item is! Map<String, dynamic>)) {
