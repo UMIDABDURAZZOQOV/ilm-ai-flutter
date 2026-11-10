@@ -674,7 +674,9 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Dars 2: Ayirish'), findsOneWidget);
-      expect(find.text('+20 XP'), findsOneWidget);
+      // Completed replay must not promise another once-only reward (UI-012).
+      expect(find.text('+20 XP'), findsNothing);
+      expect(find.text('3/3 yulduz'), findsOneWidget);
       expect(find.text('QAYTA O‘TISH'), findsOneWidget);
       expect(tester.takeException(), isNull);
 
