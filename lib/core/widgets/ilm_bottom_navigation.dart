@@ -67,14 +67,23 @@ class IlmBottomNavigation extends StatelessWidget {
                   labelHeight = math.max(labelHeight, painter.height);
                   painter.dispose();
                 }
-                final columns = (constraints.maxWidth / minSlot).floor().clamp(
+                var columns = (constraints.maxWidth / minSlot).floor().clamp(
                   1,
                   items.length,
                 );
-                final slot = constraints.maxWidth / columns;
                 final wrapped = columns < items.length;
-                final tileHeight = math.max(72.0, 56 + labelHeight);
-                final plateWidth = math.min(52.0, slot - 4);
+                if (wrapped) {
+                  // Horizontal icon/label rows need less height, leaving the
+                  // lesson page usable even with a wide accessibility font.
+                  columns = (constraints.maxWidth / (minSlot + 36))
+                      .floor()
+                      .clamp(1, items.length);
+                }
+                final slot = constraints.maxWidth / columns;
+                final tileHeight = math.max(48.0, labelHeight + 8);
+                final plateWidth = wrapped
+                    ? slot - 8
+                    : math.min(52.0, slot - 4);
                 return Stack(
                   children: [
                     AnimatedPositionedDirectional(
@@ -82,9 +91,9 @@ class IlmBottomNavigation extends StatelessWidget {
                       duration: motionDuration(context, 280),
                       curve: Curves.easeInOutCubic,
                       start: slot * (index % columns) + (slot - plateWidth) / 2,
-                      top: wrapped ? (index ~/ columns) * tileHeight + 6 : 6,
+                      top: wrapped ? (index ~/ columns) * tileHeight + 4 : 6,
                       width: plateWidth,
-                      height: 40,
+                      height: wrapped ? tileHeight - 8 : 40,
                       child: IgnorePointer(
                         child: ExcludeSemantics(
                           child: AnimatedContainer(
@@ -214,6 +223,70 @@ class _NavigationTileState extends State<_NavigationTile>
   @override
   Widget build(BuildContext context) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
+    final content = <Widget>[
+      SizedBox(
+        height: widget.singleLine ? 32 : 40,
+        child: Center(
+          child: _isolatePaint(
+            AnimatedScale(
+              scale: _reduced
+                  ? 1
+                  : _pressed
+                  ? .94
+                  : 1,
+              duration: motionDuration(context, 100),
+              curve: Curves.easeOutCubic,
+              child: AnimatedBuilder(
+                animation: _selection,
+                builder: (context, _) {
+                  final progress = Curves.easeOutCubic.transform(
+                    _selection.value,
+                  );
+                  final pulse =
+                      widget.selected && _selection.isAnimating && !_reduced
+                      ? math.sin(_selection.value * math.pi)
+                      : 0.0;
+                  final color = Color.lerp(c.textMuted, c.primary, progress)!;
+                  return Transform.translate(
+                    offset: Offset(0, -2 * progress - 2 * pulse),
+                    child: Transform.scale(
+                      scale: 1 + .08 * pulse,
+                      child: widget.item.motionIcon == null
+                          ? Icon(widget.item.icon, size: 28, color: color)
+                          : IlmNavigationIcon(
+                              icon: widget.item.motionIcon!,
+                              progress: progress,
+                              color: color,
+                              accent:
+                                  widget.item.motionIcon == IlmNavIcon.league
+                                  ? BrandPalette.accentOrange
+                                  : BrandPalette.turquoise,
+                            ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        ),
+      ),
+      const SizedBox(height: 4),
+      AnimatedDefaultTextStyle(
+        duration: motionDuration(context, 180),
+        style: Theme.of(context).textTheme.labelSmall!.copyWith(
+          fontSize: 11,
+          height: 1.2,
+          fontWeight: widget.selected ? FontWeight.w700 : FontWeight.w500,
+          color: widget.selected ? c.primary : c.textMuted,
+        ),
+        child: Text(
+          widget.item.label,
+          maxLines: widget.singleLine ? 1 : 2,
+          overflow: TextOverflow.ellipsis,
+          textAlign: TextAlign.center,
+        ),
+      ),
+    ];
     return Semantics(
       button: true,
       selected: widget.selected,
@@ -233,89 +306,21 @@ class _NavigationTileState extends State<_NavigationTile>
           if (_pressed != pressed) setState(() => _pressed = pressed);
         },
         child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 72),
+          constraints: BoxConstraints(minHeight: widget.singleLine ? 48 : 72),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 6),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SizedBox(
-                  height: 40,
-                  child: Center(
-                    child: _isolatePaint(
-                      AnimatedScale(
-                        scale: _reduced
-                            ? 1
-                            : _pressed
-                            ? .94
-                            : 1,
-                        duration: motionDuration(context, 100),
-                        curve: Curves.easeOutCubic,
-                        child: AnimatedBuilder(
-                          animation: _selection,
-                          builder: (context, _) {
-                            final progress = Curves.easeOutCubic.transform(
-                              _selection.value,
-                            );
-                            final pulse =
-                                widget.selected &&
-                                    _selection.isAnimating &&
-                                    !_reduced
-                                ? math.sin(_selection.value * math.pi)
-                                : 0.0;
-                            final color = Color.lerp(
-                              c.textMuted,
-                              c.primary,
-                              progress,
-                            )!;
-                            return Transform.translate(
-                              offset: Offset(0, -2 * progress - 2 * pulse),
-                              child: Transform.scale(
-                                scale: 1 + .08 * pulse,
-                                child: widget.item.motionIcon == null
-                                    ? Icon(
-                                        widget.item.icon,
-                                        size: 28,
-                                        color: color,
-                                      )
-                                    : IlmNavigationIcon(
-                                        icon: widget.item.motionIcon!,
-                                        progress: progress,
-                                        color: color,
-                                        accent:
-                                            widget.item.motionIcon ==
-                                                IlmNavIcon.league
-                                            ? BrandPalette.accentOrange
-                                            : BrandPalette.turquoise,
-                                      ),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 4),
-                AnimatedDefaultTextStyle(
-                  duration: motionDuration(context, 180),
-                  style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                    fontSize: 11,
-                    height: 1.2,
-                    fontWeight: widget.selected
-                        ? FontWeight.w700
-                        : FontWeight.w500,
-                    color: widget.selected ? c.primary : c.textMuted,
-                  ),
-                  child: Text(
-                    widget.item.label,
-                    maxLines: widget.singleLine ? 1 : 2,
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ],
+            padding: EdgeInsets.symmetric(
+              horizontal: widget.singleLine ? 4 : 2,
+              vertical: widget.singleLine ? 4 : 6,
             ),
+            child: widget.singleLine
+                ? Row(
+                    children: [
+                      SizedBox(width: 32, child: content.first),
+                      const SizedBox(width: 4),
+                      Expanded(child: content.last),
+                    ],
+                  )
+                : Column(mainAxisSize: MainAxisSize.min, children: content),
           ),
         ),
       ),

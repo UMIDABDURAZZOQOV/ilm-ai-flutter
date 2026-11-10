@@ -397,6 +397,11 @@ void main() {
         lang: lang,
       );
       await tester.pumpAndSettle();
+      expect(
+        tester.getSize(find.byType(IlmBottomNavigation)).height,
+        lessThanOrEqualTo(568 / 2),
+        reason: 'Large labels must leave room for the learning page.',
+      );
       for (var i = 0; i < labels.length; i++) {
         final text = find.text(labels[i]);
         expect(text.hitTestable(), findsOneWidget);
