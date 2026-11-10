@@ -20,11 +20,21 @@ Future<SubjectSelection?> showSubjectSwitcher(
   showDragHandle: true,
   useSafeArea: true,
   isScrollControlled: true,
-  builder: (_) => _SubjectSwitcher(
-    subjects: subjects,
-    language: language,
-    grade: grade,
-    currentSubject: currentSubject,
+  builder: (context) => SizedBox(
+    height: MediaQuery.sizeOf(context).height * .8,
+    // Availability feedback belongs above this modal, not on the obscured
+    // underlying page. It does not select a subject or write preferences.
+    child: ScaffoldMessenger(
+      child: Scaffold(
+        backgroundColor: Theme.of(context).bottomSheetTheme.backgroundColor,
+        body: _SubjectSwitcher(
+          subjects: subjects,
+          language: language,
+          grade: grade,
+          currentSubject: currentSubject,
+        ),
+      ),
+    ),
   ),
 );
 

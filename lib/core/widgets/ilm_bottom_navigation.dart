@@ -45,7 +45,35 @@ class IlmBottomNavigation extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             child: LayoutBuilder(
               builder: (context, constraints) {
-                final slot = constraints.maxWidth / items.length;
+                // Keep whole destination names at the user's chosen text size.
+                // When five columns are too narrow, all destinations wrap into
+                // additional rows instead of splitting or shrinking words.
+                final labelStyle = Theme.of(context).textTheme.labelSmall!
+                    .copyWith(
+                      fontSize: 11,
+                      height: 1.2,
+                      fontWeight: FontWeight.w700,
+                    );
+                var minSlot = 56.0;
+                var labelHeight = 0.0;
+                for (final item in items) {
+                  final painter = TextPainter(
+                    text: TextSpan(text: item.label, style: labelStyle),
+                    textDirection: Directionality.of(context),
+                    textScaler: MediaQuery.textScalerOf(context),
+                    maxLines: 1,
+                  )..layout();
+                  minSlot = math.max(minSlot, painter.width + 8);
+                  labelHeight = math.max(labelHeight, painter.height);
+                  painter.dispose();
+                }
+                final columns = (constraints.maxWidth / minSlot).floor().clamp(
+                  1,
+                  items.length,
+                );
+                final slot = constraints.maxWidth / columns;
+                final wrapped = columns < items.length;
+                final tileHeight = math.max(72.0, 56 + labelHeight);
                 final plateWidth = math.min(52.0, slot - 4);
                 return Stack(
                   children: [
@@ -53,8 +81,8 @@ class IlmBottomNavigation extends StatelessWidget {
                       key: const ValueKey('ilm-nav-selection'),
                       duration: motionDuration(context, 280),
                       curve: Curves.easeInOutCubic,
-                      start: slot * index + (slot - plateWidth) / 2,
-                      top: 6,
+                      start: slot * (index % columns) + (slot - plateWidth) / 2,
+                      top: wrapped ? (index ~/ columns) * tileHeight + 6 : 6,
                       width: plateWidth,
                       height: 40,
                       child: IgnorePointer(
@@ -89,15 +117,17 @@ class IlmBottomNavigation extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    Wrap(
                       children: [
                         for (var i = 0; i < items.length; i++)
-                          Expanded(
+                          SizedBox(
+                            width: slot,
+                            height: wrapped ? tileHeight : null,
                             child: _NavigationTile(
                               key: ValueKey('ilm-nav-$i'),
                               item: items[i],
                               selected: i == index,
+                              singleLine: wrapped,
                               onSelect: () => onChanged(i),
                             ),
                           ),
@@ -119,10 +149,12 @@ class _NavigationTile extends StatefulWidget {
     super.key,
     required this.item,
     required this.selected,
+    this.singleLine = false,
     required this.onSelect,
   });
   final IlmNavigationDestination item;
   final bool selected;
+  final bool singleLine;
   final VoidCallback onSelect;
   @override
   State<_NavigationTile> createState() => _NavigationTileState();
@@ -277,7 +309,7 @@ class _NavigationTileState extends State<_NavigationTile>
                   ),
                   child: Text(
                     widget.item.label,
-                    maxLines: 2,
+                    maxLines: widget.singleLine ? 1 : 2,
                     overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.center,
                   ),

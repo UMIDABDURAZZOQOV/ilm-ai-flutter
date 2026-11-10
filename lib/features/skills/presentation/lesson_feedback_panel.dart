@@ -34,9 +34,116 @@ class LessonFeedbackPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
     final status = correct ? c.success : c.error;
+    final shortWindow = MediaQuery.sizeOf(context).height < 480;
+    final details = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (saveError != null) ...[
+          Semantics(
+            liveRegion: true,
+            child: Text(
+              saveError!,
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: c.error),
+            ),
+          ),
+          const SizedBox(height: 8),
+        ],
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              correct ? Icons.check_circle_rounded : Icons.info_outline_rounded,
+              size: 22,
+              color: status,
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Semantics(
+                liveRegion: true,
+                child: Text(
+                  t(
+                    correct
+                        ? 'skills.lesson.correct'
+                        : 'skills.lesson.incorrect',
+                    language,
+                  ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleMedium?.copyWith(color: status),
+                ),
+              ),
+            ),
+            if (MediaQuery.textScalerOf(context).scale(16) <= 24) ...[
+              const SizedBox(width: 8),
+              MascotImage(
+                pose: correct ? MascotPose.happy : MascotPose.explaining,
+                size: 36,
+                animate: false,
+              ),
+            ],
+          ],
+        ),
+        if (!correct) ...[
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            runSpacing: 2,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              Text(
+                str3(
+                  language,
+                  'To‘g‘ri javob',
+                  'Правильный ответ',
+                  'Correct answer',
+                ),
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+              Text(
+                correctAnswer,
+                style: Theme.of(context).textTheme.titleSmall,
+              ),
+            ],
+          ),
+        ],
+        if (explanation.isNotEmpty) ...[
+          const SizedBox(height: 8),
+          Text(explanation, style: Theme.of(context).textTheme.bodyMedium),
+        ],
+        if (source != null) ...[const SizedBox(height: 8), source!],
+        if (reviewHint) ...[
+          const SizedBox(height: 8),
+          Text(
+            str3(
+              language,
+              'Bu savol oxirida yana chiqadi',
+              'Этот вопрос появится снова в конце',
+              'This question will appear again at the end',
+            ),
+            style: Theme.of(context).textTheme.bodySmall,
+          ),
+        ],
+      ],
+    );
+    final next = Duo3DButton(
+      onPressed: saving ? null : onContinue,
+      child: saving
+          ? SizedBox(
+              width: 22,
+              height: 22,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                value: MediaQuery.disableAnimationsOf(context) ? .75 : null,
+                color: c.primary,
+              ),
+            )
+          : Text(t('skills.lesson.continue', language)),
+    );
     return ConstrainedBox(
       constraints: BoxConstraints(
-        maxHeight: MediaQuery.sizeOf(context).height * .42,
+        maxHeight: MediaQuery.sizeOf(context).height * (shortWindow ? .7 : .42),
       ),
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -51,145 +158,44 @@ class LessonFeedbackPanel extends StatelessWidget {
               constraints: const BoxConstraints(
                 maxWidth: IlmDesign.readingWidth,
               ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Flexible(
-                    child: Scrollbar(
-                      child: SingleChildScrollView(
-                        primary: false,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            if (saveError != null) ...[
-                              Semantics(
-                                liveRegion: true,
-                                child: Text(
-                                  saveError!,
-                                  style: Theme.of(context).textTheme.bodySmall
-                                      ?.copyWith(color: c.error),
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                            ],
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  correct
-                                      ? Icons.check_circle_rounded
-                                      : Icons.info_outline_rounded,
-                                  size: 22,
-                                  color: status,
-                                ),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  child: Semantics(
-                                    liveRegion: true,
-                                    child: Text(
-                                      t(
-                                        correct
-                                            ? 'skills.lesson.correct'
-                                            : 'skills.lesson.incorrect',
-                                        language,
-                                      ),
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleMedium
-                                          ?.copyWith(color: status),
-                                    ),
-                                  ),
-                                ),
-                                if (MediaQuery.textScalerOf(
-                                      context,
-                                    ).scale(16) <=
-                                    24) ...[
-                                  const SizedBox(width: 8),
-                                  MascotImage(
-                                    pose: correct
-                                        ? MascotPose.happy
-                                        : MascotPose.explaining,
-                                    size: 36,
-                                    animate: false,
-                                  ),
-                                ],
-                              ],
-                            ),
-                            if (!correct) ...[
-                              const SizedBox(height: 8),
-                              Wrap(
-                                spacing: 8,
-                                runSpacing: 2,
-                                crossAxisAlignment: WrapCrossAlignment.center,
-                                children: [
-                                  Text(
-                                    str3(
-                                      language,
-                                      'To‘g‘ri javob',
-                                      'Правильный ответ',
-                                      'Correct answer',
-                                    ),
-                                    style: Theme.of(
-                                      context,
-                                    ).textTheme.bodySmall,
-                                  ),
-                                  Text(
-                                    correctAnswer,
-                                    style: Theme.of(
-                                      context,
-                                    ).textTheme.titleSmall,
-                                  ),
-                                ],
-                              ),
-                            ],
-                            if (explanation.isNotEmpty) ...[
-                              const SizedBox(height: 8),
-                              Text(
-                                explanation,
-                                style: Theme.of(context).textTheme.bodyMedium,
-                              ),
-                            ],
-                            if (source != null) ...[
-                              const SizedBox(height: 8),
-                              source!,
-                            ],
-                            if (reviewHint) ...[
-                              const SizedBox(height: 8),
-                              Text(
-                                str3(
-                                  language,
-                                  'Bu savol oxirida yana chiqadi',
-                                  'Этот вопрос появится снова в конце',
-                                  'This question will appear again at the end',
-                                ),
-                                style: Theme.of(context).textTheme.bodySmall,
-                              ),
-                            ],
-                          ],
+              child: LayoutBuilder(
+                builder: (context, constraints) {
+                  // Short landscape/multi-window must let both actions and
+                  // the original explanation scroll into view together.
+                  if (constraints.maxHeight < 180) {
+                    return SingleChildScrollView(
+                      key: const ValueKey('feedback_compact_scroll'),
+                      primary: false,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          details,
+                          ?help,
+                          const SizedBox(height: 12),
+                          next,
+                        ],
+                      ),
+                    );
+                  }
+                  return Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Flexible(
+                        child: Scrollbar(
+                          child: SingleChildScrollView(
+                            primary: false,
+                            child: details,
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  ?help,
-                  const SizedBox(height: 12),
-                  Duo3DButton(
-                    onPressed: saving ? null : onContinue,
-                    child: saving
-                        ? SizedBox(
-                            width: 22,
-                            height: 22,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2,
-                              value: MediaQuery.disableAnimationsOf(context)
-                                  ? .75
-                                  : null,
-                              color: c.primary,
-                            ),
-                          )
-                        : Text(t('skills.lesson.continue', language)),
-                  ),
-                ],
+                      ?help,
+                      const SizedBox(height: 12),
+                      next,
+                    ],
+                  );
+                },
               ),
             ),
           ),

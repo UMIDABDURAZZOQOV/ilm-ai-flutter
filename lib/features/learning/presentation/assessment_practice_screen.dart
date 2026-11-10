@@ -77,7 +77,14 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
                 const SizedBox(height: 8),
-                Text('${subject.nameFor(language)} · $grade'),
+                Text(
+                  str3(
+                    language,
+                    '${subject.nameFor(language)} · $grade-sinf',
+                    '${subject.nameFor(language)} · $grade класс',
+                    '${subject.nameFor(language)} · Grade $grade',
+                  ),
+                ),
                 const MascotImage(pose: MascotPose.thinking, size: 96),
                 if (completed.isEmpty) ...[
                   Text(
@@ -96,6 +103,7 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                 ],
                 for (final lesson in completed)
                   Card(
+                    margin: const EdgeInsets.only(bottom: 12),
                     child: ListTile(
                       leading: const Icon(Icons.replay_rounded),
                       title: Text(lesson.titleFor(language)),

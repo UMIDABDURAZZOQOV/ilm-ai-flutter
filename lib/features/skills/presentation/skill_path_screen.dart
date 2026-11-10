@@ -702,7 +702,7 @@ class LessonPopoverContent extends StatelessWidget {
               backgroundColor: c.primaryLight,
               side: BorderSide.none,
             ),
-          if (lesson.xpReward > 0)
+          if (!completed && lesson.xpReward > 0)
             Chip(
               avatar: Icon(Icons.bolt_rounded, size: 18, color: c.warning),
               label: Text(
