@@ -5,6 +5,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/utils/reviewed_text.dart';
 import 'skill_ui.dart';
 
 /// Full-width explanation, a small companion in the header, and a pinned action.
@@ -35,6 +36,9 @@ class LessonFeedbackPanel extends StatelessWidget {
     final c = Theme.of(context).extension<AppColors>()!.colors;
     final status = correct ? c.success : c.error;
     final shortWindow = MediaQuery.sizeOf(context).height < 480;
+    final visibleExplanation = correct
+        ? explanation
+        : explanationAfterCorrectAnswer(explanation, correctAnswer);
     final details = Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -108,9 +112,12 @@ class LessonFeedbackPanel extends StatelessWidget {
             ],
           ),
         ],
-        if (explanation.isNotEmpty) ...[
+        if (visibleExplanation.isNotEmpty) ...[
           const SizedBox(height: 8),
-          Text(explanation, style: Theme.of(context).textTheme.bodyMedium),
+          Text(
+            visibleExplanation,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         ],
         if (source != null) ...[const SizedBox(height: 8), source!],
         if (reviewHint) ...[

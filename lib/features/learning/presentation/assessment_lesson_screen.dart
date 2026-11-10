@@ -10,6 +10,7 @@ import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
 import '../../auth/application/auth_controller.dart';
+import '../../skills/application/lesson_entry.dart';
 import '../../skills/data/skill_tree_models.dart';
 import '../../skills/presentation/skill_ui.dart';
 import '../../skills/presentation/lesson_feedback_panel.dart';
@@ -60,7 +61,8 @@ class _AssessmentSession extends ConsumerStatefulWidget {
   ConsumerState<_AssessmentSession> createState() => _AssessmentSessionState();
 }
 
-class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
+class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
+    with WidgetsBindingObserver {
   final _scroll = ScrollController();
   final _feedbackKey = GlobalKey();
   CancelToken _cancel = CancelToken();
@@ -73,6 +75,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       _expired = false,
       _allowExit = false,
       _exitDialog = false;
+  bool _revealErrorAfterKeyboard = false;
   int _index = 0, _generation = 0, _teachingIndex = 0;
   Future<void> _writes = Future.value();
   String get _subject => widget.lesson.assessmentSubject!;
@@ -95,15 +98,45 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     Future.microtask(_prepare);
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _generation++;
     _cancel.cancel();
     _scroll.dispose();
     super.dispose();
+  }
+
+  @override
+  void didChangeMetrics() {
+    if (mounted &&
+        _revealErrorAfterKeyboard &&
+        View.of(context).viewInsets.bottom == 0) {
+      _revealInputError();
+    }
+  }
+
+  void _revealInputError() {
+    // Android may restore the editor's scroll position while its IME closes.
+    // Reveal the validation message after that final viewport change, then
+    // release the flag so editing the draft can open the keyboard normally.
+    if (View.of(context).viewInsets.bottom > 0) {
+      _revealErrorAfterKeyboard = true;
+      return;
+    }
+    _revealErrorAfterKeyboard = false;
+    final generation = _generation;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      scheduleMicrotask(() {
+        if (active(generation) && _error != null && _scroll.hasClients) {
+          _scroll.jumpTo(0);
+        }
+      });
+    });
   }
 
   Future<void> _prepare() async {
@@ -142,6 +175,13 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
     if (error is DioException) {
       final data = error.response?.data;
       final detail = data is Map ? data['detail'] : null;
+      if (detail is Map && detail['code'] == 'answer_required') {
+        return _t(
+          'Javob maydonlarini to‘ldiring va qayta tekshiring.',
+          'Заполните поля ответа и проверьте снова.',
+          'Complete the answer fields and check again.',
+        );
+      }
       if (detail is Map && detail['feedback'] is String) {
         return detail['feedback'] as String;
       }
@@ -182,6 +222,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
   }
 
   Future<void> _open(String key, {bool fresh = false}) async {
+    _revealErrorAfterKeyboard = false;
     final generation = ++_generation;
     _cancel.cancel();
     _cancel = CancelToken();
@@ -292,6 +333,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
 
   Future<void> _submit() async {
     if (_busy) return;
+    _revealErrorAfterKeyboard = false;
     FocusManager.instance.primaryFocus?.unfocus();
     final generation = _generation;
     setState(() {
@@ -335,7 +377,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
         }
         if (active(generation)) {
           setState(() => _error = message(e));
-          _top();
+          _revealInputError();
         }
       }
     } finally {
@@ -434,6 +476,9 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
 
   Future<void> _leave() async {
     if (!mounted) return;
+    // Home stays mounted behind this route. Refresh its local draft summaries
+    // after saving without refetching the catalogue or changing progress.
+    ref.invalidate(lessonEntryProvider);
     setState(() => _allowExit = true);
     await Future<void>.delayed(Duration.zero);
     if (mounted) Navigator.of(context).pop();
@@ -705,7 +750,16 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession> {
       child: Duo3DButton(
         height: math.max(56, MediaQuery.textScalerOf(context).scale(36) + 16),
         onPressed: action,
-        child: Text(label, textAlign: TextAlign.center),
+        child: _busy
+            ? Semantics(
+                liveRegion: true,
+                child: Text(
+                  _t('Kuting…', 'Подождите…', 'Please wait…'),
+                  key: const ValueKey('assessment_action_loading'),
+                  textAlign: TextAlign.center,
+                ),
+              )
+            : Text(label, textAlign: TextAlign.center),
       ),
     ),
   );

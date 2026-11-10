@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:dio/dio.dart';
@@ -15,8 +16,10 @@ import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/core/widgets/duo_chrome.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/learning/presentation/assessment_lesson_screen.dart';
+import 'package:ilm_ai_flutter/features/learning/data/assessment_repository.dart';
 import 'package:ilm_ai_flutter/features/onboarding/presentation/duo_onboarding_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
+import 'package:ilm_ai_flutter/features/skills/application/lesson_entry.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_grade_card.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_panel.dart';
@@ -235,6 +238,8 @@ void main() {
     late Map<String, Json> committed;
     late List<RequestOptions> requests;
     bool loseNextAnswer = false;
+    bool rejectNextAnswer = false;
+    Completer<ResponseBody>? delayedAnswer;
     bool completedNode = false;
     void setup({
       bool onlyFrq = false,
@@ -261,6 +266,8 @@ void main() {
       committed = {};
       requests = [];
       loseNextAnswer = false;
+      rejectNextAnswer = false;
+      delayedAnswer = null;
       dio = Dio(BaseOptions(baseUrl: betaApiOrigin));
       // Dio otherwise moves these large history catalogues to a real isolate,
       // which cannot finish while the widget test advances its fake clock.
@@ -285,6 +292,15 @@ void main() {
           });
         }
         if (request.path.endsWith('/answers')) {
+          if (rejectNextAnswer) {
+            rejectNextAnswer = false;
+            return reply(422, {
+              'detail': {
+                'code': 'answer_required',
+                'feedback': 'Synthetic required fields',
+              },
+            });
+          }
           final key = (request.data as Map)['assessment_key'] as String;
           // UI transport contract only; real answer correctness is exercised
           // against all five unchanged graders in test_integrated_beta.py.
@@ -309,6 +325,11 @@ void main() {
               requestOptions: request,
               type: DioExceptionType.receiveTimeout,
             );
+          }
+          final waiting = delayedAnswer;
+          if (waiting != null) {
+            delayedAnswer = null;
+            return waiting.future;
           }
           return reply(200, feedback);
         }
@@ -428,6 +449,225 @@ void main() {
       for (var i = 0; i < teaching().length; i++) {
         await action(tester);
       }
+    }
+
+    testWidgets(
+      '${preset.slug} saving an unfinished answer refreshes the retained home entry',
+      (tester) async {
+        setup(onlyFrq: true);
+        dio.options.baseUrl = apiBaseUrl;
+        SharedPreferences.setMockInitialValues({PrefsKeys.language: 'uz'});
+        final prefs = await PrefsService.create();
+        final container = ProviderContainer(
+          overrides: [
+            prefsServiceProvider.overrideWithValue(prefs),
+            currentUserIdProvider.overrideWithValue(900777),
+            dioProvider.overrideWithValue(dio),
+          ],
+        );
+        addTearDown(container.dispose);
+        final homeEntry = lessonEntryProvider(descriptor());
+        final subscription = container.listen(homeEntry, (_, _) {});
+        addTearDown(subscription.close);
+        expect(container.read(homeEntry).state, LessonEntryState.start);
+        await tester.pumpWidget(
+          UncontrolledProviderScope(
+            container: container,
+            child: MaterialApp(
+              theme: buildAppTheme(lightColors),
+              home: Builder(
+                builder: (context) => Scaffold(
+                  body: TextButton(
+                    onPressed: () => Navigator.of(context).push<void>(
+                      MaterialPageRoute(
+                        builder: (_) => AssessmentLessonScreen(
+                          // A separate descriptor instance matches real routing.
+                          lesson: descriptor(),
+                        ),
+                      ),
+                    ),
+                    child: const Text('Open QA lesson'),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+        await tester.tap(find.text('Open QA lesson'));
+        await tester.pumpAndSettle();
+        await exercises(tester);
+        final editor = find.byType(TextField).first;
+        await tester.ensureVisible(editor);
+        await tester.enterText(editor, 'saved-qa-draft');
+        tester.testTextInput.hide();
+        await tester.pumpAndSettle();
+        final requestCount = requests.length;
+        await tester.tap(find.byTooltip('Yopish'));
+        await tester.pumpAndSettle();
+        await tester.tap(find.text('Saqlab chiqish'));
+        await tester.pumpAndSettle();
+        expect(find.text('Open QA lesson'), findsOneWidget);
+        final refreshed = container.read(homeEntry);
+        expect(refreshed.state, LessonEntryState.resume);
+        expect(refreshed.theory, isFalse);
+        expect(refreshed.position, 1);
+        expect(refreshed.total, 1);
+        expect(requests.length, requestCount);
+        expect(committed, isEmpty);
+        expect(requests.where((r) => r.path.endsWith('/answers')), isEmpty);
+        expect(
+          prefs.getString(
+            AssessmentRepository.storageKey(
+              apiBaseUrl,
+              900777,
+              preset.slug,
+              lesson['lesson_key'] as String,
+            ),
+          ),
+          contains('saved-qa-draft'),
+        );
+        await tester.pumpWidget(const SizedBox.shrink());
+        await tester.pumpAndSettle();
+      },
+    );
+
+    testWidgets(
+      '${preset.slug} pending answer shows waiting state and blocks duplicate taps',
+      (tester) async {
+        setup(checkedCorrect: true);
+        lesson['questions'] = [
+          (lesson['questions'] as List).firstWhere(
+            (q) => q['response_kind'] == 'concept_selection',
+          ),
+        ];
+        await mount(tester);
+        await exercises(tester);
+        final choice = find.byType(DuoChoiceCard).first;
+        await tester.ensureVisible(choice);
+        await tester.tap(choice);
+        await tester.pumpAndSettle();
+        final waiting = Completer<ResponseBody>();
+        delayedAnswer = waiting;
+        final button = find.byType(Duo3DButton).last;
+        await tester.tap(button);
+        for (var frame = 0; frame < 6; frame++) {
+          await tester.pump(const Duration(milliseconds: 16));
+        }
+        expect(
+          find.byKey(const ValueKey('assessment_action_loading')),
+          findsOneWidget,
+        );
+        expect(tester.widget<Duo3DButton>(button).onPressed, isNull);
+        expect(find.text('Qayta yuborish'), findsNothing);
+        expect(requests.where((r) => r.path.endsWith('/answers')).length, 1);
+        await tester.tap(button, warnIfMissed: false);
+        await tester.pump();
+        expect(requests.where((r) => r.path.endsWith('/answers')).length, 1);
+        waiting.complete(reply(200, committed.values.single));
+        await tester.pumpAndSettle();
+        expect(
+          find.byKey(const ValueKey('assessment_action_loading')),
+          findsNothing,
+        );
+        expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+        expect(tester.takeException(), isNull);
+        await tester.pumpWidget(const SizedBox());
+        dio.close();
+      },
+    );
+
+    for (final errorLanguage in ['uz', 'ru', 'en']) {
+      testWidgets(
+        '${preset.slug}/$errorLanguage reveals ungraded input error after IME closes and keeps draft editable',
+        (tester) async {
+          setup(onlyFrq: true, checkedCorrect: true);
+          SharedPreferences.setMockInitialValues({
+            PrefsKeys.language: errorLanguage,
+          });
+          final preferences = await PrefsService.create();
+          await mount(tester, store: preferences);
+          final requiredMessage = switch (errorLanguage) {
+            'ru' => 'Заполните поля ответа и проверьте снова.',
+            'en' => 'Complete the answer fields and check again.',
+            _ => 'Javob maydonlarini to‘ldiring va qayta tekshiring.',
+          };
+          tester.view.physicalSize = const Size(360, 740);
+          tester.view.devicePixelRatio = 1;
+          addTearDown(tester.view.resetPhysicalSize);
+          addTearDown(tester.view.resetDevicePixelRatio);
+          addTearDown(tester.view.resetViewInsets);
+          await tester.pumpAndSettle();
+          await exercises(tester);
+          final field = preset.slug == 'fizika'
+              ? find.byKey(const Key('physics-formula'))
+              : find.byType(TextField).first;
+          await tester.ensureVisible(field);
+          final draftText = preset.slug == 'fizika' ? 'x/2' : 'botanika';
+          await tester.enterText(field, draftText);
+          tester.view.viewInsets = const FakeViewPadding(bottom: 260);
+          await tester.pumpAndSettle();
+          rejectNextAnswer = true;
+          await action(tester);
+          expect(committed, isEmpty);
+          expect(find.byType(LessonFeedbackPanel), findsNothing);
+          expect(find.byType(StudyHelpButton), findsNothing);
+          expect(
+            tester
+                .widget<EditableText>(
+                  find.descendant(
+                    of: field,
+                    matching: find.byType(EditableText),
+                  ),
+                )
+                .controller
+                .text,
+            draftText,
+          );
+
+          // Reproduce Android's late editor anchoring while its IME is closing,
+          // after the validation response has already rendered above the field.
+          await tester.ensureVisible(field);
+          await tester.pumpAndSettle();
+          tester.view.viewInsets = const FakeViewPadding();
+          await tester.pumpAndSettle();
+          expect(find.text(requiredMessage).hitTestable(), findsOneWidget);
+
+          // Once revealed, opening the editor again must not yank it back to the
+          // error panel. The original answer remains repairable, not graded.
+          await tester.ensureVisible(field);
+          await tester.enterText(field, draftText);
+          tester.view.viewInsets = const FakeViewPadding(bottom: 260);
+          await tester.pumpAndSettle();
+          final editable = find.descendant(
+            of: field,
+            matching: find.byType(EditableText),
+          );
+          // A TextFormField includes long helper text. Check the actual input
+          // area, not the centre of its whole decoration/helper container.
+          await tester.ensureVisible(editable);
+          await tester.pumpAndSettle();
+          expect(editable.hitTestable(), findsOneWidget);
+          if (preset.slug == 'fizika') {
+            for (final input in [
+              ('physics-value', '2'),
+              ('physics-unit', 'cm'),
+            ]) {
+              final editor = find.byKey(Key(input.$1));
+              await tester.ensureVisible(editor);
+              await tester.enterText(editor, input.$2);
+            }
+          }
+          tester.view.viewInsets = const FakeViewPadding();
+          await tester.pumpAndSettle();
+          await action(tester);
+          expect(committed.length, 1);
+          expect(requests.where((r) => r.path.endsWith('/answers')).length, 2);
+          expect(find.byType(LessonFeedbackPanel), findsOneWidget);
+          expect(tester.takeException(), isNull);
+          await tester.pumpWidget(const SizedBox());
+          dio.close();
+        },
+      );
     }
 
     for (final frq in [false, true]) {

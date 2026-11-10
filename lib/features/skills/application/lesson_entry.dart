@@ -73,6 +73,16 @@ class LessonEntry {
   }
 
   String description(String language) {
+    if (state == LessonEntryState.resume &&
+        (position == null || total == null || total! <= 0)) {
+      // A request ID is saved before the server responds. Until its content
+      // arrives, the draft is resumable but its page count is unknown.
+      return switch (language) {
+        'ru' => 'Урок сохранён на устройстве',
+        'en' => 'Lesson saved on this device',
+        _ => 'Dars shu qurilmada saqlangan',
+      };
+    }
     final labels = switch (state) {
       LessonEntryState.start => [
         'Boshlashga tayyor',
@@ -148,11 +158,13 @@ final lessonEntryProvider = Provider.autoDispose
           final theory = saved['teaching_done'] != true;
           final index =
               saved[theory ? 'teaching_index' : 'question_index'] as int? ?? 0;
-          final total =
-              saved[theory ? 'theory_total' : 'question_total'] as int? ?? 1;
+          final storedTotal = saved[theory ? 'theory_total' : 'question_total'];
+          final total = storedTotal is int && storedTotal > 0
+              ? storedTotal
+              : null;
           return LessonEntry(
             LessonEntryState.resume,
-            position: (index + 1).clamp(1, total),
+            position: total == null ? null : (index + 1).clamp(1, total),
             total: total,
             theory: theory,
           );
