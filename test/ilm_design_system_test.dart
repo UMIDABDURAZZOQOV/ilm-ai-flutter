@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'support/platform_golden.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/core/theme/ilm_design.dart';
 import 'package:ilm_ai_flutter/core/widgets/duo_chrome.dart';
@@ -189,7 +190,7 @@ void main() {
       await expectLater(
         find.byKey(key),
         matchesGoldenFile(
-          'goldens/ilm_controls_${dark ? 'dark' : 'light'}.png',
+          platformGolden('ilm_controls_${dark ? 'dark' : 'light'}.png'),
         ),
       );
     });

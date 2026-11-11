@@ -20,6 +20,7 @@ import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/auth/presentation/login_screen.dart';
 
 import 'support/load_review_fonts.dart';
+import 'support/platform_golden.dart';
 import 'uiux_visual_review_test.dart' show reviewDio;
 import 'release_hardening_test.dart' show Adapter, reply;
 
@@ -136,7 +137,7 @@ void main() {
           await expectLater(
             find.byKey(key),
             matchesGoldenFile(
-              'goldens/auth_login_${dark ? "dark" : "light"}.png',
+              platformGolden('auth_login_${dark ? "dark" : "light"}.png'),
             ),
           );
         }

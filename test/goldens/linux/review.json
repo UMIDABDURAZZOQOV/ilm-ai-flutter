@@ -1,0 +1,153 @@
+{
+  "source_commit": "628412110e9c23b9f2ffd68bcb3cda65fd5e4296",
+  "run": 43029048233,
+  "artifact_id": 13858963442,
+  "reviewer": "Codex visual review; not owner release approval",
+  "fonts": [
+    {
+      "name": "Roboto-Regular.ttf",
+      "bytes": 171676,
+      "sha256": "79e851404657dac2106b3d22ad256d47824a9a5765458edb72c9102a45816d95"
+    },
+    {
+      "name": "Roboto-Medium.ttf",
+      "bytes": 172064,
+      "sha256": "f205cc511821ea56078a105557fcea6253129404d411c997e1866fbd006abb68"
+    },
+    {
+      "name": "Roboto-Bold.ttf",
+      "bytes": 170760,
+      "sha256": "7d0b991ee3e0be7af01ad7ea8cd2beea6c00a25e679a0226b6737f079aafff86"
+    },
+    {
+      "name": "MaterialIcons-Regular.otf",
+      "bytes": 1645184,
+      "sha256": "d9865b671a09d683d13a863089d8825e0f61a37696ce5d7d448bc8023aa62453"
+    }
+  ],
+  "SDK": {
+    "frameworkVersion": "3.44.6",
+    "frameworkRevision": "ee80f08bbf97172ec030b8751ceab557177a34a6",
+    "engineRevision": "83675ed27633283e7fc296c8bca22e841224c096",
+    "dartSdkVersion": "3.12.2",
+    "channel": "stable"
+  },
+  "exact_comparison": true,
+  "tolerance_added": false,
+  "existing_references_overwritten": false,
+  "automatic_update_pipeline": false,
+  "images": [
+    {
+      "file": "auth_login_dark.png",
+      "sha256": "b7562465b28e3efe906148a1a0028b9bbf29c99c8ca6595d2d0f7aa24d7bb835",
+      "existing_Windows_sha256": "ff1550fe5d126181866d26f62985e6bf6b219a5d39b695eff17411551548189d",
+      "changed_pixels_from_Windows": 4940,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "auth_login_light.png",
+      "sha256": "c7985da00e2206c039e8927122266ef89f27a43a0e41253ff700d94045ba2077",
+      "existing_Windows_sha256": "c9a4ed34b59b3b1d0a840f7f0b7cd1a859975db970a77c13c4fc361c4fcbfadf",
+      "changed_pixels_from_Windows": 4960,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "ilm_controls_dark.png",
+      "sha256": "f2f0773e49bccf8fa4764458e97e3098f2d5a433d121325b22b9538bd7968e9d",
+      "existing_Windows_sha256": "bbfc3e516d83940b8d83ab76c8551d87513c1987a1d4760ca2c7f4e1a84584c3",
+      "changed_pixels_from_Windows": 465,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "ilm_controls_light.png",
+      "sha256": "83e2628cc156dcb83dc4394fe528b6cf1d4abb3067baed6b9c3c3206d8853ca5",
+      "existing_Windows_sha256": "b823a7d33b0dc9c576ff4e466c5fe7752f7061553fe8361b3a9d6ccfe0bc03fe",
+      "changed_pixels_from_Windows": 465,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "ilm_navigation_dark.png",
+      "sha256": "318b44c47f6cd42d1d170421eb3f040aba771ef2c89222d44597115cbbb7c3da",
+      "existing_Windows_sha256": "717537cd0651ceb1b35695a9f0a144902f380827b983e1118723f4d9d00e2a44",
+      "changed_pixels_from_Windows": 803,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "ilm_navigation_light.png",
+      "sha256": "f59a18cc17b05b23c7548f201c1e78fdeecb263536dbf8b1404a30ada954d064",
+      "existing_Windows_sha256": "a9c0a385f8cd1bed9560ad283beb23da5026a99ee044c3a12b176b83d27618ff",
+      "changed_pixels_from_Windows": 825,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "lesson_completion_dark.png",
+      "sha256": "fdff4d480705252c5953005486e001d0fb4f73a02ee3b3a0eb88b18d4e859cd0",
+      "existing_Windows_sha256": "726be298438cbbd04b58c6b88868901ebcb997b067994e7784d1d72368e6f85a",
+      "changed_pixels_from_Windows": 7265,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "lesson_completion_light.png",
+      "sha256": "ecb221d9e33de3bd8253dee48f2a7fd21f31bf0b23e38b645ef5fbaec44d8da8",
+      "existing_Windows_sha256": "8cdfa9ae554cd4a35de853bf85f211433f7aeabe3fed762aa9ffa1c60eabeb43",
+      "changed_pixels_from_Windows": 7273,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "polish_home_dark.png",
+      "sha256": "df479e4fe3ba6de805660f91889857e2995d03d759e025f5bd0736a03000103e",
+      "existing_Windows_sha256": "9ff7200a2a40468c58a3d5b7976ee9b6560c8966d764cd83df280914e5031839",
+      "changed_pixels_from_Windows": 7680,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "polish_home_light.png",
+      "sha256": "0763d28409b66a2b36894b5a710843d2ad7ebf14fae6fdd1e692868e4935ab55",
+      "existing_Windows_sha256": "97db4b3a802b4cde787fc3a1dd0c306de90cfcdc3ae95eaf2049269da404ec2e",
+      "changed_pixels_from_Windows": 7739,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "polish_league_dark.png",
+      "sha256": "1428e589682ca3cea49e1e8b6dc78f280df9c54ae63c7e8f8101d6ebe30d59c3",
+      "existing_Windows_sha256": "4242225a2c9726ddfdb14ea527e88acdf322a5e7292dcf63afdc2ccf278ce6e0",
+      "changed_pixels_from_Windows": 6477,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "polish_league_light.png",
+      "sha256": "dddd39d74f69a2c2771daa92d791f9031d7149f20c9d68a0b9eeb68a9a6faf00",
+      "existing_Windows_sha256": "86e7c85d3b47bc4b672271086776bc46d2a688ce98daffbdfdf97c3cf3868fbe",
+      "changed_pixels_from_Windows": 6506,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "polish_profile_dark.png",
+      "sha256": "2b06483abf30b9a50e1524cdb87fc84e71b2ecbfae2ade265526e1ff033bac5e",
+      "existing_Windows_sha256": "37287e43210d43a281be3166af7374a5fe30a9664946a3d54574cf21fb0b0755",
+      "changed_pixels_from_Windows": 8429,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "polish_profile_light.png",
+      "sha256": "8307472361a43dab186b9e7d71b4d8209b231ddc2940b5f478133f910add2d50",
+      "existing_Windows_sha256": "da5c4285cce7bc3fca58de846c42f5f09a3c676ed642b1200a0ce647de3be64b",
+      "changed_pixels_from_Windows": 8472,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "study_exit_dark.png",
+      "sha256": "5b15caedbba583d89b46b5849b18311d88e8545a2309dccec636ee61d9f289bb",
+      "existing_Windows_sha256": "7d296061eabf5fa07f5f397039faa0680b2aae43d53ae297f598233eb447db48",
+      "changed_pixels_from_Windows": 6764,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    },
+    {
+      "file": "study_exit_light.png",
+      "sha256": "1c21c0e5508f3ae8e1b7213567b1867aaac56705f8a5c9ac7b10e51adbe17fb1",
+      "existing_Windows_sha256": "8bcde941e2b1733258c137c35c656b890bf6afaa31d4b66c8e6604ee46417faa",
+      "changed_pixels_from_Windows": 6772,
+      "visual_review": "Glyph rendering only; no new layout defect identified"
+    }
+  ]
+}

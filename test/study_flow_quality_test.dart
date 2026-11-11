@@ -9,6 +9,7 @@ import 'package:ilm_ai_flutter/features/skills/presentation/study_start_sheet.da
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_path_screen.dart';
 import 'subject_experience_test.dart' as fixture;
 import 'support/load_review_fonts.dart';
+import 'support/platform_golden.dart';
 
 SkillTreeUnit _unit(String status) => SkillTreeUnit(
   id: 1,
@@ -328,7 +329,7 @@ void main() {
       await expectLater(
         find.byKey(key),
         matchesGoldenFile(
-          'goldens/lesson_completion_${dark ? 'dark' : 'light'}.png',
+          platformGolden('lesson_completion_${dark ? 'dark' : 'light'}.png'),
         ),
       );
       expect(tester.takeException(), isNull);

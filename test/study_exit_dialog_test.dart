@@ -7,6 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/study_exit_dialog.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/study_exit_guard.dart';
+import 'support/platform_golden.dart';
 
 const _keep = {'uz': 'Davom etish', 'ru': 'Продолжить', 'en': 'Keep learning'};
 const _savedLeave = {
@@ -242,7 +243,9 @@ void main() {
       await tester.pumpAndSettle();
       await expectLater(
         find.byType(StudyExitDialog),
-        matchesGoldenFile('goldens/study_exit_${dark ? 'dark' : 'light'}.png'),
+        matchesGoldenFile(
+          platformGolden('study_exit_${dark ? 'dark' : 'light'}.png'),
+        ),
       );
       expect(tester.takeException(), isNull);
     });

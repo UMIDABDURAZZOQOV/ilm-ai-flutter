@@ -27,6 +27,7 @@ import 'package:ilm_ai_flutter/features/settings/presentation/settings_screen.da
 import 'release_hardening_test.dart' show Adapter, reply;
 import 'subject_experience_test.dart' show FakeAuth;
 import 'support/load_review_fonts.dart';
+import 'support/platform_golden.dart';
 import 'support/offline_preferences.dart';
 import 'uiux_visual_review_test.dart' show reviewFixture, reviewLeague;
 
@@ -665,7 +666,7 @@ void main() {
         await expectLater(
           find.byKey(key),
           matchesGoldenFile(
-            'goldens/polish_${name}_${dark ? 'dark' : 'light'}.png',
+            platformGolden('polish_${name}_${dark ? 'dark' : 'light'}.png'),
           ),
         );
       });

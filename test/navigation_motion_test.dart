@@ -22,6 +22,7 @@ import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.dart';
 import 'subject_experience_test.dart' show FakeAuth;
 import 'support/offline_preferences.dart';
+import 'support/platform_golden.dart';
 import 'uiux_visual_review_test.dart' show reviewDio;
 
 const _labels = ['Learn', 'Practice', 'Quests', 'League', 'Profile'];
@@ -507,7 +508,7 @@ void main() {
       await expectLater(
         find.byKey(key),
         matchesGoldenFile(
-          'goldens/ilm_navigation_${dark ? 'dark' : 'light'}.png',
+          platformGolden('ilm_navigation_${dark ? 'dark' : 'light'}.png'),
         ),
       );
       if (const bool.fromEnvironment('NAV_CAPTURE')) {
