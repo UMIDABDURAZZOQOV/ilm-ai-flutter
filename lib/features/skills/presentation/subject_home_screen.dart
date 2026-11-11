@@ -56,6 +56,8 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
   /// timeout timers) until the user opens them. Once visited, IlmTabView
   /// keeps them alive (no spinner on return).
   final Set<int> _visitedTabs = {0};
+  final Map<int, Widget> _tabBodies = {};
+  (int?, SkillSubject, String)? _tabScope;
 
   void _openLearning() {
     if (_tab == 0) return;
@@ -337,6 +339,14 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         // do not flash a spinner every time the user returns to them.
         // Local copy so closures do not see the outer nullable `subject`.
         final SkillSubject activeSubject = subject;
+        // Retained tabs should not rebuild merely because the selected index
+        // changes. Their own provider/theme dependencies remain reactive.
+        // Owner, catalogue metadata and constructor language must stay current.
+        final scope = (ref.watch(currentUserIdProvider), activeSubject, lang);
+        if (_tabScope != scope) {
+          _tabScope = scope;
+          _tabBodies.clear();
+        }
         final tabBuilders = <Widget Function()>[
           () => reviewedLearning || activeSubject.slug == 'biologiya'
               ? CurriculumLearningScreen(
@@ -380,7 +390,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
         final tabs = [
           for (var i = 0; i < tabBuilders.length; i++)
             _visitedTabs.contains(i)
-                ? TickerMode(enabled: _tab == i, child: tabBuilders[i]())
+                ? TickerMode(
+                    enabled: _tab == i,
+                    child: _tabBodies.putIfAbsent(i, tabBuilders[i]),
+                  )
                 : const SizedBox.shrink(),
         ];
         return Scaffold(

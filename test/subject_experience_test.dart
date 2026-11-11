@@ -15,6 +15,7 @@ import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/practice_hub_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_lesson_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_practice_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_extras_repository.dart';
@@ -117,6 +118,12 @@ class FakeAuth extends AuthController {
   @override
   Future<StoredTokens?> build() async =>
       StoredTokens(accessToken: 'test', refreshToken: 'test', userId: 7);
+}
+
+class MutableCatalogRepository extends FakeRepository {
+  SkillSubject current = subject;
+  @override
+  Future<List<SkillSubject>> getSubjects() async => [current];
 }
 
 /// Forces UI language in widget tests (prefs alone can race LanguageNotifier).
@@ -320,6 +327,7 @@ void main() {
     FakeSoundService? soundService,
     Map<String, Object> saved = const {},
     String? language,
+    int userId = 7,
   }) async {
     tester.view.physicalSize = const Size(390, 844);
     tester.view.devicePixelRatio = 1;
@@ -336,7 +344,7 @@ void main() {
         overrides: [
         learningPreferencesProvider.overrideWith((ref) => OfflinePreferences(ref.read(prefsServiceProvider))),
           prefsServiceProvider.overrideWithValue(prefs),
-          currentUserIdProvider.overrideWithValue(7),
+          currentUserIdProvider.overrideWithValue(userId),
           if (language != null)
             languageProvider.overrideWith(
               () => _FixedLanguageNotifier(language),
@@ -396,6 +404,133 @@ void main() {
       saved: {'subject_8': 'math'},
     );
     expect(find.text('What will you learn?'), findsOneWidget);
+  });
+
+  testWidgets('visited tab bodies remain stable across navigation', (
+    tester,
+  ) async {
+    await mount(
+      tester,
+      const SubjectHomeScreen(),
+      saved: {'subject_7': 'math'},
+      language: 'en',
+    );
+    final path = tester.widget<SkillPathScreen>(find.byType(SkillPathScreen));
+    await tester.tap(find.text('Practice'));
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    final practice = tester.widget<PracticeHubScreen>(
+      find.byType(PracticeHubScreen),
+    );
+    await tester.tap(find.text('Learn'));
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    expect(
+      identical(
+        path,
+        tester.widget<SkillPathScreen>(find.byType(SkillPathScreen)),
+      ),
+      isTrue,
+    );
+    await tester.tap(find.text('Practice'));
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    expect(
+      identical(
+        practice,
+        tester.widget<PracticeHubScreen>(find.byType(PracticeHubScreen)),
+      ),
+      isTrue,
+    );
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('visited tab bodies refresh their language', (tester) async {
+    await mount(
+      tester,
+      const SubjectHomeScreen(),
+      saved: {'subject_7': 'math'},
+      language: 'en',
+    );
+    await tester.tap(find.text('Practice'));
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    final practice = tester.widget<PracticeHubScreen>(
+      find.byType(PracticeHubScreen),
+    );
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(SubjectHomeScreen)),
+    );
+    container.read(languageProvider.notifier).setLanguage('uz');
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    final updated = tester.widget<PracticeHubScreen>(
+      find.byType(PracticeHubScreen),
+    );
+    expect(identical(practice, updated), isFalse);
+    expect(updated.language, 'uz');
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('visited tab bodies refresh catalogue metadata', (tester) async {
+    final repository = MutableCatalogRepository();
+    await mount(
+      tester,
+      const SubjectHomeScreen(),
+      repository: repository,
+      saved: {'subject_7': 'math'},
+      language: 'en',
+    );
+    final path = tester.widget<SkillPathScreen>(find.byType(SkillPathScreen));
+    repository.current = SkillSubject(
+      id: 1,
+      slug: 'math',
+      nameUz: 'Yangilangan',
+      nameRu: 'Обновлено',
+      nameEn: 'Updated subject',
+    );
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(SubjectHomeScreen)),
+    );
+    container.invalidate(subjectCatalogProvider);
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    final updated = tester.widget<SkillPathScreen>(
+      find.byType(SkillPathScreen),
+    );
+    expect(identical(path, updated), isFalse);
+    expect(updated.subject.nameEn, 'Updated subject');
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('visited tab bodies are not reused for another account', (
+    tester,
+  ) async {
+    const saved = {'subject_7': 'math', 'subject_8': 'math'};
+    await mount(
+      tester,
+      const SubjectHomeScreen(),
+      saved: saved,
+      language: 'en',
+    );
+    final path = tester.widget<SkillPathScreen>(find.byType(SkillPathScreen));
+    final prefs = await mount(
+      tester,
+      const SubjectHomeScreen(),
+      saved: saved,
+      language: 'en',
+      userId: 8,
+    );
+    final updated = tester.widget<SkillPathScreen>(
+      find.byType(SkillPathScreen),
+    );
+    expect(identical(path, updated), isFalse);
+    final container = ProviderScope.containerOf(
+      tester.element(find.byType(SubjectHomeScreen)),
+    );
+    expect(container.read(currentUserIdProvider), 8);
+    expect(prefs.getString('subject_7'), 'math');
+    expect(tester.takeException(), isNull);
   });
 
   testWidgets('selecting an answer requires Check before feedback', (

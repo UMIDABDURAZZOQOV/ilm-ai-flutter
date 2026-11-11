@@ -53,6 +53,10 @@ val reviewedReleaseEnabled = (project.findProperty("dart-defines") as? String)
 val mobileStagingEnabled = (project.findProperty("dart-defines") as? String)
     ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
     ?.contains("MOBILE_STAGING=true") == true
+val subjectsOnlyOverride = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.lastOrNull { it.startsWith("SUBJECTS_ONLY=") }?.substringAfter("=")
+val subjectsOnlyEnabled = subjectsOnlyOverride?.toBooleanStrictOrNull() ?: true
 if ((reviewedReleaseEnabled || mobileStagingEnabled) &&
     (!reviewedReleaseEnabled || integratedBetaEnabled || phoneQaEnabled || physicsPreviewEnabled ||
         !(flutterTarget == "main.dart" || flutterTarget.endsWith("/main.dart")))) {
@@ -142,6 +146,14 @@ android {
             applicationIdSuffix = ".staging"
             manifestPlaceholders["appLabel"] = "ILM AI Staging"
             manifestPlaceholders["oauthRedirectScheme"] = "ilmai-staging"
+        }
+    }
+    // The published learning routes have no capture/upload controls. Keep the
+    // broader product/USB previews unchanged; remove capture permissions only
+    // for the explicitly reviewed subjects-only application, in every mode.
+    if (reviewedReleaseEnabled && subjectsOnlyEnabled) {
+        for (mode in listOf("debug", "profile", "release")) {
+            sourceSets.getByName(mode).manifest.srcFile("src/reviewedMobile/AndroidManifest.xml")
         }
     }
 }
