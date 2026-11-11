@@ -12,7 +12,22 @@ jobs:
           cache: true
       - run: flutter pub get --enforce-lockfile
       - run: flutter analyze
-      - run: flutter test
+      - name: Record golden rendering environment
+        run: python3 tool/report_golden_environment.py --output build/test_reports/golden-environment.json
+      - id: flutter_tests
+        run: flutter test
+      - name: Preserve golden failure comparisons
+        if: ${{ failure() && steps.flutter_tests.outcome == 'failure' }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: golden-failures-${{ runner.os }}
+          path: |
+            test/failures/*.png
+            build/test_reports/golden-environment.json
+          retention-days: 1
+          compression-level: 9
+          include-hidden-files: false
+          if-no-files-found: warn
       - name: Reviewed five-subject release regressions without live services
         run: >-
           flutter test --concurrency=1
