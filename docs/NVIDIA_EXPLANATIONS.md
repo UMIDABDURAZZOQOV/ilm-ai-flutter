@@ -32,6 +32,13 @@ Run normal `flutter analyze` and `flutter test`; the new tests include both
 grader outcomes, five subjects, light/dark themes, invalid provenance, pre-answer
 rejection, network retry, and 200% portrait/landscape scrolling.
 
+The sheet measures its actual resized viewport as well as keyboard insets.
+When large text or the keyboard leaves little space, header, transcript and
+composer scroll together; the existing pinned arrangement remains when it fits.
+Two regression cases require the send control to remain hit-testable at200%
+text with a240px keyboard inset. The initial landscape case reproduced89px
+of vertical overflow; its failure receipt is retained in the local artifacts.
+
 The explicit cross-repository check requires the separately exported accepted
 backend fixture. It must fail if that fixture is absent; it does not silently
 skip and is not a live AI/Android test:

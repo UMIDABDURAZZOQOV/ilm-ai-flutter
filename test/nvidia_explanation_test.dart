@@ -238,6 +238,54 @@ void main() {
   );
 
   for (final size in [const Size(360, 740), const Size(740, 360)]) {
+    testWidgets(
+      'generated help keeps keyboard composer reachable at 200% $size',
+      (tester) async {
+        await tester.binding.setSurfaceSize(size);
+        addTearDown(() => tester.binding.setSurfaceSize(null));
+        final data = generated('kimyo', false);
+        final dio = Dio()..httpClientAdapter = Adapter((_) => reply(200, data));
+        addTearDown(() => dio.close(force: true));
+        await tester.pumpWidget(
+          ProviderScope(
+            overrides: [
+              currentUserIdProvider.overrideWithValue(101),
+              studyHelpRepositoryProvider.overrideWithValue(
+                StudyHelpRepository(dio),
+              ),
+            ],
+            child: MaterialApp(
+              theme: buildAppTheme(lightColors),
+              builder: (context, child) => MediaQuery(
+                data: MediaQuery.of(context).copyWith(
+                  textScaler: const TextScaler.linear(2),
+                  viewInsets: const EdgeInsets.only(bottom: 240),
+                ),
+                child: child!,
+              ),
+              home: const Scaffold(
+                body: StudyHelpSheet(contextData: checked, language: 'uz'),
+              ),
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+        await tester.ensureVisible(find.byType(TextField));
+        await tester.enterText(
+          find.byType(TextField),
+          'Shu savolni tushuntiring',
+        );
+        await tester.ensureVisible(find.byTooltip('Yuborish'));
+        await tester.pumpAndSettle();
+        expect(find.byTooltip('Yuborish').hitTestable(), findsOneWidget);
+        expect(tester.takeException(), isNull);
+        await tester.pumpWidget(const SizedBox.shrink());
+        await tester.pumpAndSettle();
+      },
+    );
+  }
+
+  for (final size in [const Size(360, 740), const Size(740, 360)]) {
     testWidgets('generated text scrolls at 200% text size $size', (
       tester,
     ) async {

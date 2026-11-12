@@ -346,16 +346,31 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
       }
     });
     if (user != _owner) return const SizedBox.shrink();
+    return LayoutBuilder(builder: _buildSheet);
+  }
+
+  Widget _buildSheet(BuildContext context, BoxConstraints constraints) {
+    final requestedHeight =
+        (MediaQuery.sizeOf(context).height -
+                MediaQuery.viewInsetsOf(context).bottom -
+                80)
+            .clamp(120, MediaQuery.sizeOf(context).height * .82);
+    // A Scaffold/modal can already have resized its body for the keyboard and
+    // removed viewInsets. Use its actual constraints, not screen size alone.
+    final availableHeight = constraints.hasBoundedHeight
+        ? (constraints.maxHeight - MediaQuery.viewInsetsOf(context).bottom)
+              .clamp(0, double.infinity)
+        : requestedHeight;
+    final sheetHeight = requestedHeight.clamp(0, availableHeight);
+    final compact =
+        sheetHeight < 240 * MediaQuery.textScalerOf(context).scale(20) / 20;
     return Padding(
       padding: EdgeInsets.only(bottom: MediaQuery.viewInsetsOf(context).bottom),
       child: SizedBox(
-        height:
-            (MediaQuery.sizeOf(context).height -
-                    MediaQuery.viewInsetsOf(context).bottom -
-                    80)
-                .clamp(120, MediaQuery.sizeOf(context).height * .82),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        height: sheetHeight.toDouble(),
+        child: _AdaptiveHelpLayout(
+          compact: compact,
+          scrollController: _scroll,
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -379,9 +394,14 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
                 ],
               ),
             ),
-            Expanded(
+            Flexible(
+              flex: compact ? 0 : 1,
+              fit: FlexFit.tight,
               child: ListView(
-                controller: _scroll,
+                controller: compact ? null : _scroll,
+                primary: false,
+                shrinkWrap: compact,
+                physics: compact ? const NeverScrollableScrollPhysics() : null,
                 padding: const EdgeInsets.all(20),
                 children: [
                   for (final turn in _messages) ...[
@@ -601,5 +621,29 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
         ),
       ),
     );
+  }
+}
+
+/// Keep the pinned layout when it fits. With a keyboard/large text, the header,
+/// transcript and composer scroll together so neither controls nor text clip.
+class _AdaptiveHelpLayout extends StatelessWidget {
+  const _AdaptiveHelpLayout({
+    required this.compact,
+    required this.scrollController,
+    required this.children,
+  });
+  final bool compact;
+  final ScrollController scrollController;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    final column = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: children,
+    );
+    return compact
+        ? SingleChildScrollView(controller: scrollController, child: column)
+        : column;
   }
 }
