@@ -152,7 +152,11 @@ final lessonEntryProvider = Provider.autoDispose
           final saved = jsonDecode(raw) as Map;
           final started = saved['started_at'] as int;
           final age = DateTime.now().millisecondsSinceEpoch - started;
-          if (age < 0 || age >= const Duration(hours: 24).inMilliseconds) {
+          final expires = saved['expires_at'];
+          final expired = expires is int
+              ? DateTime.now().millisecondsSinceEpoch >= expires
+              : age < 0 || age >= const Duration(hours: 24).inMilliseconds;
+          if (expired) {
             return const LessonEntry(LessonEntryState.expired);
           }
           final theory = saved['teaching_done'] != true;

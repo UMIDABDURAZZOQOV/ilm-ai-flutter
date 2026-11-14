@@ -264,6 +264,11 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         _cancel,
       );
       if (!active(generation)) return;
+      // The accepted server attempt owns expiry. A local request draft can
+      // predate the attempt (for example after a lost/recreated QA database).
+      _saved['expires_at'] = DateTime.parse(
+        data['expires_at'] as String,
+      ).millisecondsSinceEpoch;
       final answered = Map<String, dynamic>.from(data['answers'] as Map);
       final questions = jsonRows(data['questions']);
       final index = questions.indexWhere(

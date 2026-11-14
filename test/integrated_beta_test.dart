@@ -248,6 +248,12 @@ void main() {
     }) {
       completedNode = completed;
       lesson = fixture(preset.lesson);
+      // These UI fixtures represent a currently accepted server attempt,
+      // not the calendar date when their original JSON was recorded.
+      lesson['expires_at'] = DateTime.now()
+          .toUtc()
+          .add(const Duration(hours: 24))
+          .toIso8601String();
       final content = lesson['content'] as Json;
       lesson['content'] = {
         ...content,
@@ -422,6 +428,61 @@ void main() {
       await tester.pumpAndSettle();
       return prefs;
     }
+
+    testWidgets(
+      '${preset.slug} accepted server expiry replaces stale draft age',
+      (tester) async {
+        setup();
+        SharedPreferences.setMockInitialValues({});
+        final prefs = await PrefsService.create();
+        final key = AssessmentRepository.storageKey(
+          apiBaseUrl,
+          900777,
+          preset.slug,
+          lesson['lesson_key'] as String,
+        );
+        final request = AssessmentRepository.requestId();
+        await prefs.setString(
+          key,
+          jsonEncode({
+            'request_id': request,
+            'drafts': <String, dynamic>{},
+            'started_at': DateTime.now()
+                .subtract(const Duration(days: 2))
+                .millisecondsSinceEpoch,
+            'teaching_done': false,
+            'teaching_index': 0,
+          }),
+        );
+        await mount(tester, store: prefs);
+        final saved = jsonDecode(prefs.getString(key)!) as Map<String, dynamic>;
+        expect(saved['request_id'], request);
+        expect(
+          saved['expires_at'],
+          DateTime.parse(lesson['expires_at'] as String).millisecondsSinceEpoch,
+        );
+        await tester.pumpWidget(const SizedBox());
+        final container = ProviderContainer(
+          overrides: [
+            prefsServiceProvider.overrideWithValue(prefs),
+            currentUserIdProvider.overrideWithValue(900777),
+          ],
+        );
+        addTearDown(container.dispose);
+        final entry = lessonEntryProvider(descriptor());
+        expect(container.read(entry).state, LessonEntryState.resume);
+        saved['expires_at'] = DateTime.now()
+            .subtract(const Duration(seconds: 1))
+            .millisecondsSinceEpoch;
+        await prefs.setString(key, jsonEncode(saved));
+        container.invalidate(entry);
+        expect(container.read(entry).state, LessonEntryState.expired);
+        expect(tester.takeException(), isNull);
+        container.dispose();
+        await tester.pumpAndSettle();
+        dio.close();
+      },
+    );
 
     String display(String text) => preset.slug == 'kimyo'
         ? chemistryDisplayText(text)
