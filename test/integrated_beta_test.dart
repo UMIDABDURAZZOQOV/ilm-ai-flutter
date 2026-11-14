@@ -433,6 +433,7 @@ void main() {
       '${preset.slug} accepted server expiry replaces stale draft age',
       (tester) async {
         setup();
+        dio.options.baseUrl = apiBaseUrl;
         SharedPreferences.setMockInitialValues({});
         final prefs = await PrefsService.create();
         final key = AssessmentRepository.storageKey(
