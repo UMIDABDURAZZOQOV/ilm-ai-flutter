@@ -106,7 +106,7 @@ void main() {
             expect(requests, hasLength(1));
             expect(
               requests.single.headers['X-ILM-Study-Help'],
-              'nvidia-text-v1',
+              'reviewed-text-v2',
             );
             expect(
               (requests.single.data as Map).containsKey('explanation_version'),
