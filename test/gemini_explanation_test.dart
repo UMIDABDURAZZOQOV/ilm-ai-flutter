@@ -6,6 +6,7 @@ import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'nvidia_explanation_test.dart' show generated, checked;
 import 'release_hardening_test.dart' show Adapter, reply;
+import 'study_help_test.dart' show evidence;
 
 Map<String, dynamic> googleAnswer(bool correct) {
   final data = generated('kimyo', correct);
@@ -15,6 +16,39 @@ Map<String, dynamic> googleAnswer(bool correct) {
 }
 
 void main() {
+  testWidgets('configured provider failure is not labeled as disconnected', (
+    tester,
+  ) async {
+    final data = evidence()..['provider_status'] = 'unavailable';
+    final dio = Dio()..httpClientAdapter = Adapter((_) => reply(200, data));
+    addTearDown(() => dio.close(force: true));
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          currentUserIdProvider.overrideWithValue(101),
+          studyHelpRepositoryProvider.overrideWithValue(
+            StudyHelpRepository(dio),
+          ),
+        ],
+        child: const MaterialApp(
+          home: Scaffold(
+            body: StudyHelpSheet(contextData: checked, language: 'uz'),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.textContaining('AI izohini hozir tayyorlab bo‘lmadi.'),
+      findsOneWidget,
+    );
+    expect(find.textContaining('AI hozir ulanmagan'), findsNothing);
+    expect(find.text('Tekshirilgan dars izohi'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+    await tester.pumpWidget(const SizedBox.shrink());
+    await tester.pumpAndSettle();
+  });
+
   for (final correct in [false, true]) {
     testWidgets(
       'Gemini checked=$correct opens on tap with truthful provider label',

@@ -434,6 +434,12 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
                               'Проверенные объяснения, выбранные AI.',
                               'Reviewed lesson explanations selected by AI.',
                             )
+                          : turn.answer['provider_status'] == 'unavailable'
+                          ? tr(
+                              'AI izohini hozir tayyorlab bo‘lmadi. Quyida tekshirilgan dars izohlari.',
+                              'Сейчас не удалось подготовить объяснение AI. Ниже проверенные объяснения урока.',
+                              'An AI explanation could not be prepared right now. Reviewed lesson explanations are shown below.',
+                            )
                           : tr(
                               'AI hozir ulanmagan. Quyida tekshirilgan dars izohlari.',
                               'AI сейчас не подключён. Ниже проверенные объяснения урока.',
