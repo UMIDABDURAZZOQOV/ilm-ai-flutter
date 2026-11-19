@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:flutter/material.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
@@ -28,21 +29,38 @@ class LearningInvitationCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Text(
-                  title,
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-              ),
-              const SizedBox(width: 12),
-              MascotImage(
+          LayoutBuilder(
+            builder: (context, constraints) {
+              const mascotSize = 100.0;
+              const inlineGap = 12.0;
+              final scaler = MediaQuery.textScalerOf(context);
+              final style = Theme.of(context).textTheme.titleLarge;
+              // Reserve readable space for the heading beside the artwork.
+              // This budget scales with text across phone widths.
+              final headingWidth = scaler.scale(128);
+              final stackHeader =
+                  constraints.maxWidth < mascotSize + inlineGap + headingWidth;
+              final heading = Text(title, style: style);
+              const ilmo = AnimatedIlmo(
                 pose: MascotPose.hello,
-                size: MediaQuery.textScalerOf(context).scale(16) > 24 ? 48 : 72,
-              ),
-            ],
+                size: mascotSize,
+              );
+              return Flex(
+                direction: stackHeader ? Axis.vertical : Axis.horizontal,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (stackHeader) ...[
+                    heading,
+                    const SizedBox(height: 8),
+                    const Center(child: ilmo),
+                  ] else ...[
+                    Expanded(child: heading),
+                    const SizedBox(width: inlineGap),
+                    ilmo,
+                  ],
+                ],
+              );
+            },
           ),
           const SizedBox(height: 12),
           Text(message, style: Theme.of(context).textTheme.bodyMedium),

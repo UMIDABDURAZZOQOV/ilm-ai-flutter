@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import '../../../core/widgets/ilm_navigation_icons.dart';
 import '../../../core/widgets/ilm_tab_view.dart';
 import 'package:flutter/material.dart';
@@ -224,7 +225,7 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 32),
                 children: [
                   const Center(
-                    child: MascotImage(pose: MascotPose.hello, size: 120),
+                    child: AnimatedIlmo(pose: MascotPose.hello, size: 168),
                   ),
                   const SizedBox(height: 20),
                   Text(

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import '../../auth/application/auth_controller.dart';
 import '../../skills/data/skill_tree_models.dart';
 import '../../skills/data/skill_tree_repository.dart';
@@ -85,7 +86,7 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                     '${subject.nameFor(language)} · Grade $grade',
                   ),
                 ),
-                const MascotImage(pose: MascotPose.thinking, size: 96),
+                const AnimatedIlmo(pose: MascotPose.thinking, size: 134),
                 if (completed.isEmpty) ...[
                   Text(
                     tr(

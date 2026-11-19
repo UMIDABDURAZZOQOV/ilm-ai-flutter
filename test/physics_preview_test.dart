@@ -12,6 +12,7 @@ import 'package:ilm_ai_flutter/core/network/api_contract.dart';
 import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/physics/data/physics_repository.dart';
 import 'package:ilm_ai_flutter/features/physics/presentation/physics_preview_screen.dart';
@@ -333,12 +334,17 @@ void main() {
       await choose(tester, 4, 0);
       await choose(tester, 5, 1);
       await choose(tester, 6, 2);
+      expect(
+        tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+        IlmoActivity.listening,
+      );
       lostComplete = true;
       await tap(tester, 'Natijani saqlash');
       expect(find.textContaining('So‘rov vaqti tugadi'), findsOneWidget);
       await tap(tester, 'Natijani saqlash');
       expect(find.text('Dars yakunlandi!'), findsOneWidget);
       expect(find.textContaining('+10 XP'), findsOneWidget);
+      expect(find.textContaining('kun ketma-ket'), findsOneWidget);
       final calls = requests
           .where((r) => r.path.endsWith('/complete'))
           .toList();

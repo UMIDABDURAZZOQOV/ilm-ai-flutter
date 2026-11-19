@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/ilm_state_view.dart';
 import 'lesson_widgets.dart';
@@ -443,7 +444,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const MascotImage(pose: MascotPose.thinking, size: 110),
+                const AnimatedIlmo(pose: MascotPose.thinking, size: 154),
                 const SizedBox(height: 16),
                 Text(
                   str3(
@@ -578,7 +579,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                   children: [
                     // Do not chain flutter_animate `.motion(context)` on MascotImage —
                     // it has a bool field named `animate` that shadows the extension.
-                    const MascotImage(pose: MascotPose.happy, size: 170),
+                    const AnimatedIlmo(pose: MascotPose.happy, size: 238),
                     const SizedBox(height: 12),
                     Text(
                           str3(lang, 'Tayyor!', 'Готово!', 'Done!'),
@@ -683,7 +684,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const MascotImage(pose: MascotPose.thinking, size: 110),
+                const AnimatedIlmo(pose: MascotPose.thinking, size: 154),
                 const SizedBox(height: 12),
                 Text(
                   str3(
@@ -736,9 +737,9 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                         const Padding(
                           padding: EdgeInsets.only(bottom: 12),
                           child: Center(
-                            child: MascotImage(
+                            child: AnimatedIlmo(
                               pose: MascotPose.thinking,
-                              size: 72,
+                              size: 101,
                             ),
                           ),
                         ),

@@ -37,6 +37,22 @@ class _RefreshRepository extends fixture.FakeRepository {
 }
 
 void main() {
+  for (final alreadyIncluded in [true, false]) {
+    testWidgets('resume semantics includes detail once: $alreadyIncluded', (tester) async {
+      final handle = tester.ensureSemantics();
+      const detail = 'Theory 3/9 saved';
+      await tester.pumpWidget(MaterialApp(theme: buildAppTheme(lightColors),
+        home: Scaffold(body: LearningJourneyTile(
+          title: 'Lesson', stateLabel: 'Continue',
+          semanticLabel: alreadyIncluded ? 'Lesson. $detail' : 'Lesson',
+          detail: detail, onTap: () {}, locked: false, completed: false, current: true,
+        ))));
+      expect(find.bySemanticsLabel('Lesson. $detail'), findsOneWidget);
+      expect(find.bySemanticsLabel('Lesson. $detail. $detail'), findsNothing);
+      handle.dispose();
+    });
+  }
+
   testWidgets(
     'failed pull refresh finishes cleanly and retry restores the same path',
     (tester) async {

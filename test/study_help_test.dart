@@ -10,7 +10,9 @@ import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_switch_sheet.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_grade_card.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
+import 'subject_tutor_test.dart' show TutorFake;
 
 class DeferredHelp extends StudyHelpRepository {
   DeferredHelp(super.dio);
@@ -21,8 +23,9 @@ class DeferredHelp extends StudyHelpRepository {
     StudyHelpContext context,
     String language,
     String message,
-    CancelToken cancel,
-  ) {
+    CancelToken cancel, {
+    bool generate = true,
+  }) {
     cancellation = cancel;
     return result.future;
   }
@@ -69,6 +72,28 @@ Map<String, dynamic> evidence() => {
 };
 
 void main() {
+  test(
+    'grade resolution does not request a discarded AI explanation',
+    () async {
+      final dio = Dio();
+      dio.httpClientAdapter = Adapter((request) async {
+        expect(request.headers['X-ILM-Study-Help'], 'context-only');
+        return reply(200, evidence());
+      });
+      final result = await StudyHelpRepository(dio).ask(
+        const StudyHelpContext(
+          subject: 'kimyo',
+          attemptId: 'owned',
+          questionKey: 'q',
+        ),
+        'uz',
+        '',
+        CancelToken(),
+        generate: false,
+      );
+      expect(result['grade'], 7);
+    },
+  );
   for (final dark in [false, true]) {
     testWidgets(
       'quick switch selects subject and grade with 200% text, dark=$dark',
@@ -152,6 +177,19 @@ void main() {
       final dio = Dio(BaseOptions(baseUrl: 'http://127.0.0.1:8930'));
       dio.httpClientAdapter = Adapter((request) {
         requests.add(request);
+        if (request.path.endsWith('/subject-chat')) {
+          final body = request.data as Map;
+          return reply(200, {
+            'mode': 'subject_chat',
+            'subject': body['subject'],
+            'grade': body['grade'],
+            'conversation_id': body['conversation_id'],
+            'request_id': body['request_id'],
+            'status': 'clarify',
+            'message': 'Qaysi tushunchani tushuntiray?',
+            'paragraphs': [],
+          });
+        }
         return reply(200, evidence());
       });
       await tester.pumpWidget(
@@ -160,6 +198,9 @@ void main() {
             currentUserIdProvider.overrideWithValue(1),
             studyHelpRepositoryProvider.overrideWithValue(
               StudyHelpRepository(dio),
+            ),
+            subjectTutorRepositoryProvider.overrideWithValue(
+              SubjectTutorRepository(dio),
             ),
           ],
           child: MaterialApp(
@@ -202,7 +243,9 @@ void main() {
       await tester.tap(find.byTooltip('Yuborish'));
       await tester.pumpAndSettle();
       expect(requests.length, 2);
-      expect((requests.last.data as Map)['question_key'], 'q');
+      expect(requests.last.path, endsWith('/subject-chat'));
+      expect((requests.last.data as Map)['subject'], 'kimyo');
+      expect((requests.last.data as Map).containsKey('question_key'), isFalse);
       expect((requests.last.data as Map)['message'], 'Shu mavzuni tushuntir');
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(const SizedBox());
@@ -343,11 +386,11 @@ void main() {
     (tester) async {
       final user = StateProvider<int?>((ref) => 1);
       final dio = Dio();
-      final repository = DeferredHelp(dio);
+      final repository = TutorFake();
       final container = ProviderContainer(
         overrides: [
           currentUserIdProvider.overrideWith((ref) => ref.watch(user)),
-          studyHelpRepositoryProvider.overrideWithValue(repository),
+          subjectTutorRepositoryProvider.overrideWithValue(repository),
         ],
       );
       await tester.pumpWidget(
@@ -373,12 +416,13 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('question_study_help')));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 500));
-      expect(repository.cancellation, isNotNull);
+      expect(repository.token, isNotNull);
+      expect(find.byType(SubjectTutorScreen), findsOneWidget);
       container.read(user.notifier).state = 2;
       await tester.pump();
       await tester.pumpAndSettle();
-      expect(repository.cancellation!.isCancelled, isTrue);
-      expect(find.byType(StudyHelpSheet), findsNothing);
+      expect(repository.token!.isCancelled, isTrue);
+      expect(find.byType(SubjectTutorScreen), findsNothing);
       repository.result.complete(evidence());
       await tester.pump();
       expect(tester.takeException(), isNull);

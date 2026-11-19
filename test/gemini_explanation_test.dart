@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
 import 'nvidia_explanation_test.dart' show generated, checked;
 import 'release_hardening_test.dart' show Adapter, reply;
 import 'study_help_test.dart' show evidence;
@@ -16,6 +17,86 @@ Map<String, dynamic> googleAnswer(bool correct) {
 }
 
 void main() {
+  for (final outcome in ['correct', 'wrong']) {
+    testWidgets(
+      'checked $outcome question opens contextual Gemini conversation on tap',
+      (tester) async {
+        final requests = <RequestOptions>[];
+        final dio = Dio()
+          ..httpClientAdapter = Adapter((request) {
+            requests.add(request);
+            final data = request.data as Map;
+            return reply(200, {
+              'mode': 'subject_chat',
+              'status': 'answered',
+              'subject': data['subject'],
+              'grade': data['grade'],
+              'conversation_id': data['conversation_id'],
+              'request_id': data['request_id'],
+              'generation': {
+                'provider': 'gemini',
+                'model': 'gemini-3.1-flash-lite',
+                'http_status': 200,
+                'status': 'answered',
+                'language': 'uz',
+                'grounding':
+                    'citations_and_quotes_checked_not_semantic_verification',
+              },
+              'evidence': [
+                {'id': 'fixture'},
+              ],
+              'paragraphs': [
+                {
+                  'text': 'Synthetic contextual response for $outcome.',
+                  'evidence_ids': ['fixture'],
+                },
+              ],
+            });
+          });
+        addTearDown(() => dio.close(force: true));
+        Widget screen(String questionKey) => ProviderScope(
+          overrides: [
+            currentUserIdProvider.overrideWithValue(101),
+            subjectTutorRepositoryProvider.overrideWithValue(
+              SubjectTutorRepository(dio),
+            ),
+          ],
+          child: MaterialApp(
+            home: Scaffold(
+              body: StudyHelpButton(
+                contextData: StudyHelpContext(
+                  subject: 'kimyo',
+                  grade: 7,
+                  attemptId: 'owned',
+                  questionKey: questionKey,
+                  checked: true,
+                ),
+                language: 'uz',
+              ),
+            ),
+          ),
+        );
+        await tester.pumpWidget(screen(outcome));
+        expect(requests, isEmpty);
+        await tester.tap(find.byKey(const ValueKey('question_study_help')));
+        await tester.pumpAndSettle();
+        expect(requests, hasLength(1));
+        expect(requests.single.path, endsWith('/subject-chat'));
+        expect((requests.single.data as Map)['question_key'], outcome);
+        expect((requests.single.data as Map)['attempt_id'], 'owned');
+        expect((requests.single.data as Map)['checked'], isTrue);
+        expect(
+          find.text('Synthetic contextual response for $outcome.'),
+          findsOneWidget,
+        );
+        expect(find.byType(SubjectTutorScreen), findsOneWidget);
+        await tester.pumpWidget(screen('next-question'));
+        await tester.pumpAndSettle();
+        expect(find.byType(SubjectTutorScreen), findsNothing);
+        expect(tester.takeException(), isNull);
+      },
+    );
+  }
   testWidgets('configured provider failure is not labeled as disconnected', (
     tester,
   ) async {
@@ -51,7 +132,7 @@ void main() {
 
   for (final correct in [false, true]) {
     testWidgets(
-      'Gemini checked=$correct opens on tap with truthful provider label',
+      'legacy Gemini correct=$correct retains truthful provider label',
       (tester) async {
         final requests = <RequestOptions>[];
         final dio = Dio()
@@ -70,13 +151,11 @@ void main() {
             ],
             child: const MaterialApp(
               home: Scaffold(
-                body: StudyHelpButton(contextData: checked, language: 'uz'),
+                body: StudyHelpSheet(contextData: checked, language: 'uz'),
               ),
             ),
           ),
         );
-        expect(requests, isEmpty);
-        await tester.tap(find.byKey(const ValueKey('question_study_help')));
         await tester.pumpAndSettle();
         expect(requests.single.headers['X-ILM-Study-Help'], 'reviewed-text-v2');
         expect(find.text('Gemini yaratgan izoh.'), findsOneWidget);

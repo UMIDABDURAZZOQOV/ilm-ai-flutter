@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/ilmo_tokens.dart';
 import 'duo_chrome.dart';
 import 'mascot_image.dart';
+import 'animated_ilmo.dart';
 
 /// The bubble carries the accessible message; the adjacent Ilmo is decorative.
 /// Large text and narrow screens place the message beneath the character.
@@ -16,7 +17,11 @@ class IlmoSpeechHeader extends StatelessWidget {
       final stacked =
           constraints.maxWidth < 320 ||
           MediaQuery.textScalerOf(context).scale(16) > 20.8;
-      final mascot = MascotImage.compact(pose: pose);
+      final mascot = AnimatedIlmo(
+        pose: pose,
+        size: IlmoSizes.compact * 1.4,
+        reactionKey: text,
+      );
       final bubble = DuoSpeechBubble(
         text: text,
         pointerDirection: stacked

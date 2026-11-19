@@ -29,6 +29,8 @@ import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_switch_sheet.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_profile_screen.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
+import 'support/subject_tutor_fixture.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 import 'subject_experience_test.dart' show FakeAuth;
 import 'study_help_test.dart' show subjects, evidence;
@@ -71,7 +73,14 @@ void main() {
             );
           });
         final helpDio = Dio()
-          ..httpClientAdapter = Adapter((_) => reply(200, evidence()));
+          ..httpClientAdapter = Adapter(
+            (request) => reply(
+              200,
+              request.path.endsWith('/subject-chat')
+                  ? subjectTutorFixture(request.data as Map)
+                  : evidence(),
+            ),
+          );
         addTearDown(() {
           dio.close(force: true);
           deletionDio.close(force: true);
@@ -114,6 +123,9 @@ void main() {
                 ),
                 studyHelpRepositoryProvider.overrideWithValue(
                   StudyHelpRepository(helpDio),
+                ),
+                subjectTutorRepositoryProvider.overrideWithValue(
+                  SubjectTutorRepository(helpDio),
                 ),
                 subjectCatalogProvider.overrideWith(
                   (_) => offline
@@ -250,7 +262,8 @@ void main() {
         if (entry.evaluate().isNotEmpty) {
           await tester.tap(entry);
           await tester.pumpAndSettle();
-          await save('ai-reviewed-fallback');
+          expect(find.byType(SubjectTutorScreen), findsOneWidget);
+          await save('ai-contextual-chat');
         }
         await tester.pumpWidget(const SizedBox.shrink());
         await tester.pump();

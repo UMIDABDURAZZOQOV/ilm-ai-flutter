@@ -8,6 +8,7 @@ import '../auth/application/auth_controller.dart';
 import '../skills/presentation/content_source_button.dart';
 import '../skills/presentation/skill_ui.dart';
 import '../../core/utils/reviewed_text.dart';
+import 'subject_tutor.dart';
 
 /// Only identifiers and the Biology v1 advisory selection cross the wire.
 /// Correct answers, grading specs and textbook facts are resolved on the server.
@@ -47,8 +48,9 @@ class StudyHelpRepository {
     StudyHelpContext context,
     String language,
     String message,
-    CancelToken cancel,
-  ) async {
+    CancelToken cancel, {
+    bool generate = true,
+  }) async {
     final response = await dio.post(
       reviewedMobileRelease ? '/mobile/study-help' : '/beta/study-help',
       data: context.request(language, message),
@@ -57,7 +59,9 @@ class StudyHelpRepository {
         receiveTimeout: const Duration(seconds: 25),
         // An old backend ignores this header and keeps its compatible reviewed
         // fallback. No new JSON field breaks its extra-forbid request schema.
-        headers: const {'X-ILM-Study-Help': 'reviewed-text-v2'},
+        headers: {
+          'X-ILM-Study-Help': generate ? 'reviewed-text-v2' : 'context-only',
+        },
       ),
     );
     final data = Map<String, dynamic>.from(response.data as Map);
@@ -232,7 +236,24 @@ class _StudyHelpButtonState extends State<StudyHelpButton> {
                   builder: (sheetContext) {
                     _sheetRoute = ModalRoute.of(sheetContext);
                     _navigator = Navigator.of(sheetContext);
-                    return StudyHelpSheet(
+                    if (contextData.grade != null) {
+                      return SubjectTutorScreen(
+                        language: widget.language,
+                        subject: contextData.subject,
+                        grade: contextData.grade!,
+                        lessonKey: contextData.lessonKey,
+                        initialMessage:
+                            'Shu savolning tekshirilgan javobini bosqichma-bosqich tushuntir.',
+                        questionContext: {
+                          'attempt_id': contextData.attemptId,
+                          'question_key': contextData.questionKey,
+                          'checked': contextData.checked,
+                          if (contextData.selectedAnswer != null)
+                            'selected_answer': contextData.selectedAnswer,
+                        },
+                      );
+                    }
+                    return QuestionTutorResolver(
                       contextData: contextData,
                       language: widget.language,
                     );
@@ -255,6 +276,82 @@ class _StudyHelpButtonState extends State<StudyHelpButton> {
           'AI explanation',
         ),
       ),
+    );
+  }
+}
+
+/// Biology resolves its actual grade from the issued server question, never
+/// from a guessed class or the currently selected catalogue.
+class QuestionTutorResolver extends ConsumerStatefulWidget {
+  const QuestionTutorResolver({
+    super.key,
+    required this.contextData,
+    required this.language,
+  });
+  final StudyHelpContext contextData;
+  final String language;
+  @override
+  ConsumerState<QuestionTutorResolver> createState() =>
+      _QuestionTutorResolverState();
+}
+
+class _QuestionTutorResolverState extends ConsumerState<QuestionTutorResolver> {
+  final _cancel = CancelToken();
+  late final int? _owner;
+  late Future<Map<String, dynamic>> _result;
+  @override
+  void initState() {
+    super.initState();
+    _owner = ref.read(currentUserIdProvider);
+    _result = _load();
+  }
+
+  Future<Map<String, dynamic>> _load() => ref
+      .read(studyHelpRepositoryProvider)
+      .ask(widget.contextData, widget.language, '', _cancel, generate: false);
+  @override
+  void dispose() {
+    _cancel.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (ref.watch(currentUserIdProvider) != _owner) {
+      _cancel.cancel();
+      return const SizedBox.shrink();
+    }
+    return FutureBuilder<Map<String, dynamic>>(
+      future: _result,
+      builder: (context, snapshot) {
+        if (snapshot.hasData && snapshot.data!['grade'] is int) {
+          final data = widget.contextData;
+          return SubjectTutorScreen(
+            language: widget.language,
+            subject: data.subject,
+            grade: snapshot.data!['grade'] as int,
+            lessonKey: data.lessonKey,
+            initialMessage:
+                'Shu savolning tekshirilgan javobini bosqichma-bosqich tushuntir.',
+            questionContext: {
+              'attempt_id': data.attemptId,
+              'question_key': data.questionKey,
+              'checked': data.checked,
+              if (data.selectedAnswer != null)
+                'selected_answer': data.selectedAnswer,
+            },
+          );
+        }
+        return Padding(
+          padding: const EdgeInsets.all(24),
+          child: snapshot.hasError || snapshot.hasData
+              ? TextButton(
+                  onPressed: () => setState(() => _result = _load()),
+                  child: const Text('Qayta urinish'),
+                )
+              : const Center(child: CircularProgressIndicator()),
+        );
+      },
     );
   }
 }
@@ -300,6 +397,25 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
 
   Future<void> _ask(String message) async {
     if (_busy || _owner == null || ref.read(currentUserIdProvider) != _owner) {
+      return;
+    }
+    // Follow-ups are a real subject conversation, not another request to the
+    // immutable checked-question explanation endpoint.
+    if (message.isNotEmpty) {
+      final grade =
+          widget.contextData.grade ??
+          (_messages.isEmpty ? null : _messages.last.answer['grade'] as int?);
+      if (grade != null) {
+        _input.clear();
+        await openSubjectTutor(
+          context,
+          language: widget.language,
+          subject: widget.contextData.subject,
+          grade: grade,
+          lessonKey: widget.contextData.lessonKey,
+          initialMessage: message,
+        );
+      }
       return;
     }
     setState(() {

@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import '../../../core/config/integrated_beta.dart';
 import 'package:flutter/material.dart';
 import '../../../core/theme/app_theme.dart';
@@ -99,14 +100,14 @@ class LearningContinueCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: IlmSpace.sm),
-                MascotImage(
+                AnimatedIlmo(
                   pose: entry?.state == LessonEntryState.resume
                       ? MascotPose.happy
                       : MascotPose.hello,
                   size:
                       compact || MediaQuery.textScalerOf(context).scale(16) > 24
-                      ? 48
-                      : 64,
+                      ? 64
+                      : 90,
                 ),
               ],
             ),
@@ -167,7 +168,7 @@ class LearningContinueCard extends StatelessWidget {
               child: Row(
                 children: [
                   if (compact && onContinue == null) ...[
-                    const MascotImage(pose: MascotPose.hello, size: 40),
+                    const AnimatedIlmo(pose: MascotPose.hello, size: 56),
                     const SizedBox(width: 12),
                   ],
                   Expanded(
@@ -423,7 +424,9 @@ class LearningJourneyTile extends StatelessWidget {
       container: true,
       button: true,
       selected: current,
-      label: [semanticLabel, ?detail].join('. '),
+      label: detail == null || detail!.isEmpty || semanticLabel.endsWith(detail!)
+          ? semanticLabel
+          : '$semanticLabel. $detail',
       onTap: onTap,
       excludeSemantics: true,
       child: Padding(

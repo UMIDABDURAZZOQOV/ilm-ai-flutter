@@ -23,7 +23,8 @@ import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_pane
 import 'support/offline_preferences.dart';
 import 'biology_curriculum_test.dart' show fixture;
 import 'release_hardening_test.dart' show Adapter, reply;
-import 'study_help_test.dart' show DeferredHelp, evidence;
+import 'subject_tutor_test.dart' show TutorFake;
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -141,7 +142,7 @@ void main() {
           find.byKey(const ValueKey('question_study_help')),
           findsOneWidget,
         );
-        expect(find.byType(StudyHelpSheet), findsNothing);
+        expect(find.byType(SubjectTutorScreen), findsNothing);
         await tester.tap(find.byType(Duo3DButton).last);
         await tester.pumpAndSettle();
         expect(find.byKey(const ValueKey('question_study_help')), findsNothing);
@@ -171,7 +172,7 @@ void main() {
         ),
       );
       expect(find.byKey(const ValueKey('question_study_help')), findsNothing);
-      expect(find.byType(StudyHelpSheet), findsNothing);
+      expect(find.byType(SubjectTutorScreen), findsNothing);
     }
   });
 
@@ -179,12 +180,12 @@ void main() {
     'changing question closes the old explanation and cancels request',
     (tester) async {
       final dio = Dio();
-      final repository = DeferredHelp(dio);
+      final repository = TutorFake();
       final question = StateProvider((ref) => 'q');
       final container = ProviderContainer(
         overrides: [
           currentUserIdProvider.overrideWithValue(1),
-          studyHelpRepositoryProvider.overrideWithValue(repository),
+          subjectTutorRepositoryProvider.overrideWithValue(repository),
         ],
       );
       await tester.pumpWidget(
@@ -212,12 +213,16 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('question_study_help')));
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 500));
-      expect(repository.cancellation, isNotNull);
+      expect(repository.token, isNotNull);
+      expect(find.byType(SubjectTutorScreen), findsOneWidget);
       container.read(question.notifier).state = 'next';
       await tester.pumpAndSettle();
-      expect(find.byType(StudyHelpSheet), findsNothing);
-      expect(repository.cancellation!.isCancelled, isTrue);
-      repository.result.complete(evidence());
+      expect(find.byType(SubjectTutorScreen), findsNothing);
+      expect(repository.token!.isCancelled, isTrue);
+      repository.result.complete({
+        'status': 'unavailable',
+        'message': 'Synthetic late response.',
+      });
       await tester.pump();
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(const SizedBox());

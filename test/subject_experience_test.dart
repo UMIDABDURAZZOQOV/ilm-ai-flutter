@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'support/offline_preferences.dart';
 import 'package:ilm_ai_flutter/features/skills/application/learning_preferences.dart';
 import 'package:dio/dio.dart';
@@ -1377,7 +1378,7 @@ void main() {
       );
       expect(
         find.byWidgetPredicate(
-          (w) => w is MascotImage && w.pose == MascotPose.hello,
+          (w) => w is AnimatedIlmo && w.pose == MascotPose.hello,
         ),
         findsOneWidget,
       );

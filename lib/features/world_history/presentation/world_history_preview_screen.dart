@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math' as math;
@@ -494,7 +495,7 @@ class _SessionState extends ConsumerState<_Session> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const MascotImage(pose: MascotPose.hello, size: 76),
+        const AnimatedIlmo(pose: MascotPose.hello, size: 106),
         Text(
           _gradeTitle,
           style: Theme.of(context).textTheme.headlineSmall,
@@ -694,7 +695,11 @@ class _SessionState extends ConsumerState<_Session> {
         const SizedBox(height: 12),
         DuoProgressBar(value: (_theoryIndex + 1) / cards.length),
         const SizedBox(height: 18),
-        const MascotImage(pose: MascotPose.explaining, size: 72),
+        AnimatedIlmo(
+          pose: MascotPose.explaining,
+          size: 101,
+          reactionKey: _theoryIndex,
+        ),
         _panel(
           card['title'] as String,
           card['body'] as String,
@@ -743,6 +748,7 @@ class _SessionState extends ConsumerState<_Session> {
         DuoProgressBar(value: _index / _questions.length),
         const SizedBox(height: 20),
         Semantics(
+          container: true,
           header: true,
           child: Text(
             worldHistoryDisplayText(q['prompt'] as String),
@@ -818,6 +824,7 @@ class _SessionState extends ConsumerState<_Session> {
 
   Widget _resultContent() => LessonCompletionView(
     language: _language,
+    passed: _result!['passed'] == true,
     title: _result!['passed'] == true
         ? _t('Dars yakunlandi!', 'Урок завершён!', 'Lesson complete!')
         : _t('Yana mashq qilamiz', 'Попробуем ещё', 'Let’s practise again'),
@@ -953,9 +960,10 @@ class _SessionState extends ConsumerState<_Session> {
                                 _exercise()
                               else ...[
                                 _reflectionContent(),
-                                const MascotImage(
-                                  pose: MascotPose.happy,
-                                  size: 96,
+                                const AnimatedIlmo(
+                                  pose: MascotPose.thinking,
+                                  activity: IlmoActivity.listening,
+                                  size: 134,
                                 ),
                                 Text(
                                   _t(

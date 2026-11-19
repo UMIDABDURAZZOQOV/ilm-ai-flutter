@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
 import 'study_help_test.dart' show evidence;
 
@@ -85,7 +86,7 @@ void main() {
                 child: MaterialApp(
                   theme: buildAppTheme(dark ? darkColors : lightColors),
                   home: Scaffold(
-                    body: StudyHelpButton(
+                    body: StudyHelpSheet(
                       contextData: StudyHelpContext(
                         subject: subject,
                         grade: 7,
@@ -99,9 +100,8 @@ void main() {
                 ),
               ),
             );
-            expect(find.byType(StudyHelpSheet), findsNothing);
-            expect(requests, isEmpty);
-            await tester.tap(find.byKey(const ValueKey('question_study_help')));
+            // Legacy generated-explanation presentation remains supported;
+            // the question button now opens the separately tested tutor chat.
             await tester.pumpAndSettle();
             expect(requests, hasLength(1));
             expect(
@@ -204,6 +204,9 @@ void main() {
           studyHelpRepositoryProvider.overrideWithValue(
             StudyHelpRepository(dio),
           ),
+          subjectTutorRepositoryProvider.overrideWithValue(
+            SubjectTutorRepository(dio),
+          ),
         ],
         child: MaterialApp(
           theme: buildAppTheme(lightColors),
@@ -226,7 +229,7 @@ void main() {
       await tester.pumpWidget(page(true));
       await tester.tap(find.byKey(const ValueKey('question_study_help')));
       await tester.pumpAndSettle();
-      expect(find.byKey(const ValueKey('study_help_error')), findsOneWidget);
+      expect(find.byKey(const ValueKey('tutor_error')), findsOneWidget);
       expect(find.text('Qayta urinish'), findsOneWidget);
       expect(
         find.byKey(const ValueKey('nvidia_generated_explanation')),

@@ -10,6 +10,7 @@ import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/storage/secure_token_storage.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/auth/data/auth_models.dart';
 import 'package:ilm_ai_flutter/features/auth/data/auth_repository.dart';
@@ -596,6 +597,8 @@ void main() {
 
       // Advances to Step 12 (Loading)
       expect(find.text('TAYYOR!'), findsOneWidget);
+      final readyIlmo = tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo));
+      expect(readyIlmo.reactionDuration, const Duration(milliseconds: 520));
 
       // The setup guard changes only when preparation finishes.
       await tester.pump(const Duration(seconds: 2));

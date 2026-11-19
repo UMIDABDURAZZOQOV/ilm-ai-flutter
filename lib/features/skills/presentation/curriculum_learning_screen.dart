@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:flutter/material.dart';
 import '../../../core/widgets/ilm_state_view.dart';
 import '../../../core/theme/app_theme.dart';
@@ -17,6 +18,7 @@ import '../data/skill_tree_repository.dart';
 import 'mascot.dart';
 import 'skill_path_screen.dart';
 import 'skill_ui.dart';
+import '../../study_help/subject_tutor.dart';
 
 final curriculumGradesProvider =
     FutureProvider.family<List<CurriculumGrade>, String>(
@@ -121,7 +123,7 @@ class _CurriculumLearningScreenState
         child: ListView(
           padding: const EdgeInsets.all(24),
           children: [
-            const MascotImage(pose: MascotPose.thinking, size: 120),
+            const AnimatedIlmo(pose: MascotPose.thinking, size: 168),
             Text(
               tr(
                 'Sinf yo‘llarini yuklab bo‘lmadi',
@@ -182,7 +184,7 @@ class _CurriculumLearningScreenState
                     ],
                   ),
                   const Center(
-                    child: MascotImage(pose: MascotPose.hello, size: 110),
+                    child: AnimatedIlmo(pose: MascotPose.hello, size: 154),
                   ),
                   Text(
                     tr(
@@ -325,6 +327,20 @@ class _CurriculumLearningScreenState
                       icon: const Icon(Icons.menu_book_outlined),
                       label: Text(tr('Mavzular', 'Темы', 'Topics')),
                     ),
+                    if (reviewedLearning && current.readyLessons > 0)
+                      TextButton.icon(
+                        key: const ValueKey('subject_tutor_entry'),
+                        onPressed: () => openSubjectTutor(
+                          context,
+                          language: lang,
+                          subject: widget.subject.slug,
+                          grade: current.grade,
+                        ),
+                        icon: const Icon(Icons.chat_bubble_outline_rounded),
+                        label: Text(
+                          tr('Ilmodan so‘rang', 'Спросить Илмо', 'Ask Ilmo'),
+                        ),
+                      ),
                   ],
                 ),
               ),
@@ -349,9 +365,9 @@ class _CurriculumLearningScreenState
                     : ListView(
                         padding: const EdgeInsets.all(24),
                         children: [
-                          const MascotImage(
+                          const AnimatedIlmo(
                             pose: MascotPose.explaining,
-                            size: 130,
+                            size: 182,
                           ),
                           Text(
                             current.sourceBlocked

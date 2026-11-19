@@ -1,4 +1,5 @@
 import '../../../core/widgets/motion.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -561,7 +562,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const MascotImage(pose: MascotPose.sad, size: 110),
+                  const AnimatedIlmo(pose: MascotPose.sad, size: 154),
                   const SizedBox(height: 16),
                   Text(
                     _expired
@@ -667,9 +668,9 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                         ),
                                       ),
                                       const SizedBox(width: 12),
-                                      const MascotImage(
+                                      const AnimatedIlmo(
                                         pose: MascotPose.explaining,
-                                        size: 72,
+                                        size: 101,
                                       ),
                                     ],
                                   ),
@@ -848,10 +849,12 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         const SizedBox(height: 12),
                       ],
                       if (!_answered) ...[
-                        const Center(
-                          child: MascotImage(
+                        Center(
+                          child: AnimatedIlmo(
                             pose: MascotPose.thinking,
-                            size: 72,
+                            activity: IlmoActivity.listening,
+                            reactionKey: _index,
+                            size: 101,
                           ),
                         ),
                         const SizedBox(height: 12),

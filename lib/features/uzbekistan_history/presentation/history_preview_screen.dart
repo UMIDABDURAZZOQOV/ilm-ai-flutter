@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math' as math;
@@ -7,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
+import '../../../core/utils/reviewed_text.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
 import '../../auth/application/auth_controller.dart';
@@ -476,7 +478,7 @@ class _SessionState extends ConsumerState<_Session> {
                   if (g != null) _changeGrade(g);
                 },
         ),
-        const MascotImage(pose: MascotPose.hello, size: 96),
+        const AnimatedIlmo(pose: MascotPose.hello, size: 134),
         const DuoSpeechBubble(
           text: 'Birga manbalarni o‘qiymiz va tarixni tushunamiz!',
         ),
@@ -570,7 +572,7 @@ class _SessionState extends ConsumerState<_Session> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const MascotImage(pose: MascotPose.explaining, size: 88),
+        const AnimatedIlmo(pose: MascotPose.explaining, size: 123),
         Text(
           _attempt!['title'] as String,
           style: Theme.of(context).textTheme.headlineSmall,
@@ -653,6 +655,13 @@ class _SessionState extends ConsumerState<_Session> {
   Widget _exercise() {
     final q = _question,
         locked = _feedback != null || _pending != null || _busy;
+    final feedback = _feedback;
+    final summary = feedback?['feedback'] as String? ?? '';
+    final steps = distinctReviewedText([
+      summary,
+      if (feedback != null)
+        for (final step in jsonRows(feedback['solution'])) step['body'] as String,
+    ], (text) => text).where((text) => text != summary);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -662,9 +671,13 @@ class _SessionState extends ConsumerState<_Session> {
         const SizedBox(height: 12),
         DuoProgressBar(value: _index / _questions.length),
         const SizedBox(height: 20),
-        Text(
-          q['prompt'] as String,
-          style: Theme.of(context).textTheme.titleLarge,
+        Semantics(
+          container: true,
+          header: true,
+          child: Text(
+            q['prompt'] as String,
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
         ),
         const SizedBox(height: 16),
         if (_feedback == null)
@@ -686,20 +699,24 @@ class _SessionState extends ConsumerState<_Session> {
               _feedback!['is_correct'] == true
                   ? 'To‘g‘ri!'
                   : 'Birga ko‘rib chiqamiz',
-              _feedback!['feedback'] as String,
+              summary,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  MascotImage(
+                  AnimatedIlmo(
+                    activity: _feedback!['is_correct'] == true
+                        ? IlmoActivity.success
+                        : IlmoActivity.encouraging,
+                    reactionKey: _feedback,
                     pose: _feedback!['is_correct'] == true
                         ? MascotPose.happy
                         : MascotPose.thinking,
-                    size: 80,
+                    size: 112,
                   ),
-                  for (final (i, s) in jsonRows(_feedback!['solution']).indexed)
+                  for (final (i, step) in steps.indexed)
                     Padding(
                       padding: const EdgeInsets.only(top: 12),
-                      child: Text('${i + 1}. ${s['body']}'),
+                      child: Text('${i + 1}. $step'),
                     ),
                 ],
               ),
@@ -743,17 +760,20 @@ class _SessionState extends ConsumerState<_Session> {
   Widget _resultContent() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
-      MascotImage(
+      AnimatedIlmo(
+        activity: _result!['passed'] == true
+            ? IlmoActivity.celebrating
+            : IlmoActivity.encouraging,
         pose: _result!['passed'] == true
             ? MascotPose.happy
             : MascotPose.thinking,
-        size: 120,
+        size: 168,
       ),
       _panel(
         _result!['passed'] == true
             ? 'Dars yakunlandi!'
             : 'Yana mashq qilib ko‘ramiz',
-        '${_result!['score']}/${_result!['total']} to‘g‘ri • +${_result!['xp_awarded']} XP\nStreak: ${_result!['streak_days']} kun\n${_result!['passed'] == true ? 'Natija serverda saqlandi.' : 'Keyingi bosqich uchun kamida 60% kerak. Qayta urinish mumkin.'}',
+        '${_result!['score']}/${_result!['total']} to‘g‘ri • +${_result!['xp_awarded']} XP\n${_result!['streak_days']} kun ketma-ket\n${_result!['passed'] == true ? 'Natija serverda saqlandi.' : 'Keyingi bosqich uchun kamida 60% kerak. Qayta urinish mumkin.'}',
       ),
       _button('Yo‘lga qaytish', _backToPath),
       _button(
@@ -823,7 +843,11 @@ class _SessionState extends ConsumerState<_Session> {
           else if (_index < _questions.length)
             _exercise()
           else ...[
-            const MascotImage(pose: MascotPose.happy, size: 100),
+            const AnimatedIlmo(
+              pose: MascotPose.thinking,
+              activity: IlmoActivity.listening,
+              size: 140,
+            ),
             const Text(
               'Barcha javoblar qabul qilindi. Natijani serverda yakunlaymiz.',
             ),

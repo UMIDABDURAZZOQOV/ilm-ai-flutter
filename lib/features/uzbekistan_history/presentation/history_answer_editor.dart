@@ -25,22 +25,26 @@ class HistoryAnswerEditor extends StatelessWidget {
         onChanged: onChanged,
       );
     }
-    return TextFormField(
-      key: ValueKey('history-value-${question['key']}'),
-      initialValue: draft['value'] as String? ?? '',
-      enabled: enabled,
-      maxLength: 120,
-      minLines: 1,
-      maxLines: 3,
-      keyboardType: TextInputType.text,
-      textCapitalization: TextCapitalization.words,
-      decoration: InputDecoration(
-        labelText: 'Qisqa javob',
-        helperText: question['input_hint'] as String,
-        helperMaxLines: 4,
+    return Semantics(
+      container: true,
+      explicitChildNodes: true,
+      child: TextFormField(
+        key: ValueKey('history-value-${question['key']}'),
+        initialValue: draft['value'] as String? ?? '',
+        enabled: enabled,
+        maxLength: 120,
+        minLines: 1,
+        maxLines: 3,
+        keyboardType: TextInputType.text,
+        textCapitalization: TextCapitalization.words,
+        decoration: InputDecoration(
+          labelText: 'Qisqa javob',
+          helperText: question['input_hint'] as String,
+          helperMaxLines: 4,
+        ),
+        onChanged: (value) =>
+            onChanged(value.trim().isEmpty ? {} : {'value': value}),
       ),
-      onChanged: (value) =>
-          onChanged(value.trim().isEmpty ? {} : {'value': value}),
     );
   }
 }

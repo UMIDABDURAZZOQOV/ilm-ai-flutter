@@ -39,6 +39,15 @@ class SkillProfileScreen extends ConsumerWidget {
         if (p.weakest != null) p.weakest!,
       ].any((s) => s.completed > 0 || s.stars > 0 || s.pct > 0);
 
+  String _progressLabel(SubjectProgress subject) {
+    if (subject.pct == 0 &&
+        subject.completed > 0 &&
+        subject.total > subject.completed * 100) {
+      return '<1%';
+    }
+    return '${subject.pct}%';
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lang = ref.watch(languageProvider);
@@ -188,7 +197,7 @@ class SkillProfileScreen extends ConsumerWidget {
                                           'Strongest',
                                         ),
                                         p.strongest!.nameFor(lang),
-                                        '${p.strongest!.pct}%',
+                                        _progressLabel(p.strongest!),
                                         c.success,
                                       ),
                                     ),
@@ -208,7 +217,7 @@ class SkillProfileScreen extends ConsumerWidget {
                                           'To practise',
                                         ),
                                         p.weakest!.nameFor(lang),
-                                        '${p.weakest!.pct}%',
+                                        _progressLabel(p.weakest!),
                                         c.primary,
                                       ),
                                     ),

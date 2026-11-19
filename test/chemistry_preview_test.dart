@@ -13,6 +13,7 @@ import 'package:ilm_ai_flutter/core/network/api_contract.dart';
 import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/chemistry/data/chemistry_repository.dart';
 import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_preview_screen.dart';
@@ -3203,6 +3204,19 @@ void main() {
     await tap(t, 'Darsni boshlash');
     expect(find.text('10/12 · FRQ'), findsOneWidget);
     final field = find.byKey(const Key('chemistry-short-answer'));
+    final question = jsonRows(lesson['questions'])[9];
+    final prompt = chemistryDisplayText(question['prompt'] as String);
+    final semantics = t.ensureSemantics();
+    try {
+      await t.pump();
+      final heading = t.getSemantics(find.text(prompt));
+      expect(heading.label, prompt);
+      final input = t.getSemantics(field);
+      expect(heading.id, isNot(input.id));
+      expect(input.rect.height, lessThanOrEqualTo(t.getSize(field).height));
+    } finally {
+      semantics.dispose();
+    }
     await t.ensureVisible(field);
     await t.enterText(field, '  KIMYO FANI. ');
     await tap(t, 'Tekshirish');
@@ -3273,10 +3287,25 @@ void main() {
     expect((requests.last.data as Map)['request_id'], isNot(old));
   });
   testWidgets(
+    'unsubmitted final answers wait for the authoritative result',
+    (t) async {
+      skip(12);
+      await mount(t);
+      await tap(t, 'Darsni boshlash');
+      expect(
+        t.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+        IlmoActivity.listening,
+      );
+      expect(requests.where((r) => r.path.endsWith('/complete')), isEmpty);
+      await tap(t, 'Natijani saqlash');
+      expect(find.byType(LessonCompletionView), findsOneWidget);
+    },
+  );
+  testWidgets(
     'completed attempt uses common result and sourced answer review',
     (t) async {
       skip(12);
-      lesson['result'] = results['result'];
+      lesson['result'] = {...results['result'] as Map, 'score': 9};
       await mount(t);
       await tap(t, 'Darsni boshlash');
       expect(find.byType(LessonCompletionView), findsOneWidget);
@@ -3284,7 +3313,11 @@ void main() {
         find.byType(LessonCompletionView),
       );
       expect(result.xp, 20);
-      expect(result.correct, 11);
+      expect(result.correct, 9);
+      expect(
+        t.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+        IlmoActivity.celebrating,
+      );
       result.onReview();
       await t.pumpAndSettle();
       expect(find.text('Javoblar'), findsOneWidget);

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/network/dio_client.dart';
 import '../../core/widgets/mascot_image.dart';
+import '../../core/widgets/animated_ilmo.dart';
 import '../chemistry/presentation/chemistry_preview_screen.dart';
 import '../physics/presentation/physics_preview_screen.dart';
 import '../skills/presentation/subject_home_screen.dart';
@@ -67,7 +68,7 @@ class PhoneQaHub extends ConsumerWidget {
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: [
-            const MascotImage(pose: MascotPose.hello, size: 96),
+            const AnimatedIlmo(pose: MascotPose.hello, size: 134),
             Text(
               'Bugun nimani o‘rganamiz?',
               style: Theme.of(context).textTheme.headlineSmall,

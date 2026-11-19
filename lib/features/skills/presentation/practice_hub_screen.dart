@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/config/mobile_release.dart';
@@ -100,9 +101,9 @@ class PracticeHubScreen extends StatelessWidget {
                           if (MediaQuery.textScalerOf(context).scale(16) <=
                               20) ...[
                             const SizedBox(width: 12),
-                            const MascotImage(
+                            const AnimatedIlmo(
                               pose: MascotPose.thinking,
-                              size: 56,
+                              size: 78,
                             ),
                           ],
                         ],

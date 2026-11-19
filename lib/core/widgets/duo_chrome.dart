@@ -63,6 +63,7 @@ class _Duo3DButtonState extends State<Duo3DButton> {
     final bottomBevel = _pressed && enabled ? 0.0 : 1.5;
 
     return Semantics(
+      container: true,
       button: true,
       enabled: enabled,
       child: InkWell(

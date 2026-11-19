@@ -67,32 +67,36 @@ class _WorldHistoryAnswerEditorState extends State<WorldHistoryAnswerEditor> {
         ],
       );
     }
-    return TextField(
-      key: const Key('world-history-short-answer'),
-      controller: _text,
-      readOnly: !widget.enabled,
-      maxLength: widget.question['max_length'] as int,
-      minLines: 1,
-      maxLines: 3,
-      autocorrect: false,
-      enableSuggestions: false,
-      keyboardType: TextInputType.text,
-      textInputAction: TextInputAction.done,
-      decoration: InputDecoration(
-        labelText: str3(
-          widget.language,
-          'Qisqa javob',
-          'Краткий ответ',
-          'Short answer',
+    return Semantics(
+      container: true,
+      explicitChildNodes: true,
+      child: TextField(
+        key: const Key('world-history-short-answer'),
+        controller: _text,
+        readOnly: !widget.enabled,
+        maxLength: widget.question['max_length'] as int,
+        minLines: 1,
+        maxLines: 3,
+        autocorrect: false,
+        enableSuggestions: false,
+        keyboardType: TextInputType.text,
+        textInputAction: TextInputAction.done,
+        decoration: InputDecoration(
+          labelText: str3(
+            widget.language,
+            'Qisqa javob',
+            'Краткий ответ',
+            'Short answer',
+          ),
+          hintText: str3(
+            widget.language,
+            'Javobni yozing',
+            'Введите ответ',
+            'Type your answer',
+          ),
         ),
-        hintText: str3(
-          widget.language,
-          'Javobni yozing',
-          'Введите ответ',
-          'Type your answer',
-        ),
+        onChanged: (value) => change('value', value),
       ),
-      onChanged: (value) => change('value', value),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:math' as math;
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
@@ -607,7 +608,11 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         const SizedBox(height: 12),
         DuoProgressBar(value: (_teachingIndex + 1) / items.length),
         const SizedBox(height: 16),
-        const MascotImage(pose: MascotPose.explaining, size: 72),
+        AnimatedIlmo(
+          pose: MascotPose.explaining,
+          size: 101,
+          reactionKey: _teachingIndex,
+        ),
         _panel(
           item['title'] as String,
           '${item['expression'] == null ? '' : '${item['expression']}\n\n'}${item['body']}',
@@ -690,15 +695,32 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          '${_index + 1}/${_questions.length} · ${_question['phase'] == 'guided' ? _t('Yo‘naltirilgan mashq', 'С поддержкой', 'Guided practice') : _t('Mustaqil mashq', 'Самостоятельно', 'Independent practice')}',
+        Row(
+          children: [
+            AnimatedIlmo(
+              pose: MascotPose.thinking,
+              activity: IlmoActivity.listening,
+              size: 62,
+              reactionKey: _question['key'],
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                '${_index + 1}/${_questions.length} · ${_question['phase'] == 'guided' ? _t('Yo‘naltirilgan mashq', 'С поддержкой', 'Guided practice') : _t('Mustaqil mashq', 'Самостоятельно', 'Independent practice')}',
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 12),
         DuoProgressBar(value: _index / _questions.length),
         const SizedBox(height: 24),
-        Text(
-          _display(_question['prompt'] as String),
-          style: Theme.of(context).textTheme.titleLarge,
+        Semantics(
+          container: true,
+          header: true,
+          child: Text(
+            _display(_question['prompt'] as String),
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
         ),
         const SizedBox(height: 20),
         _answerEditor(
@@ -798,6 +820,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                   Expanded(
                     child: LessonCompletionView(
                       language: _language,
+                      passed: result['passed'] == true,
                       title: result['passed'] == true
                           ? _t(
                               'Dars yakunlandi!',
@@ -895,9 +918,10 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                                   _index < _questions.length)
                                 _exercise()
                               else if (_attempt != null) ...[
-                                const MascotImage(
-                                  pose: MascotPose.happy,
-                                  size: 96,
+                                const AnimatedIlmo(
+                                  pose: MascotPose.thinking,
+                                  activity: IlmoActivity.listening,
+                                  size: 134,
                                 ),
                                 Text(
                                   _t(

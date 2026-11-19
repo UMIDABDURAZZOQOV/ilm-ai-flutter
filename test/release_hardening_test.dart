@@ -372,6 +372,7 @@ void main() {
           home: Scaffold(
             body: Column(
               children: [
+                const Text('Theory 1/3'),
                 Duo3DButton(
                   onPressed: () => taps++,
                   color: BrandPalette.accentOrange,
@@ -393,6 +394,10 @@ void main() {
       await tester.sendKeyEvent(LogicalKeyboardKey.enter);
       expect(taps, 1);
       final semantics = tester.ensureSemantics();
+      expect(
+        tester.getSemantics(find.byType(Duo3DButton)).label,
+        'Continue',
+      );
       expect(
         tester
             .getSemantics(find.text('Choice'))

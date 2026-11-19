@@ -3,6 +3,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import 'skill_ui.dart';
 
 /// Only acknowledged server results are passed here. No reward calculation.
@@ -21,9 +22,11 @@ class LessonCompletionView extends StatelessWidget {
     required this.onReview,
     required this.onBack,
     this.reviewLabel,
+    this.passed,
   });
   final String language, title, lessonTitle;
   final String? reviewLabel;
+  final bool? passed;
   final int xp, correct, total, stars, streakDays;
   final Duration elapsed;
   final VoidCallback onReview, onBack;
@@ -33,6 +36,7 @@ class LessonCompletionView extends StatelessWidget {
     final c = Theme.of(context).extension<AppColors>()!.colors;
     final theme = Theme.of(context);
     final accuracy = total == 0 ? 0 : (100 * correct / total).round();
+    final celebrate = passed ?? (accuracy >= 80);
     Widget stat(String value, String label, IconData icon) => Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -64,9 +68,12 @@ class LessonCompletionView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Center(
-                  child: MascotImage(
-                    pose: accuracy >= 80 ? MascotPose.happy : MascotPose.hello,
-                    size: 112,
+                  child: AnimatedIlmo(
+                    pose: celebrate ? MascotPose.happy : MascotPose.hello,
+                    activity: celebrate
+                        ? IlmoActivity.celebrating
+                        : IlmoActivity.encouraging,
+                    size: 157,
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -183,9 +190,9 @@ class LessonCompletionView extends StatelessWidget {
                         Text(
                           str3(
                             language,
-                            'Dars vaqti',
-                            'Время урока',
-                            'Lesson time',
+                            'Jami vaqt (tanaffus bilan)',
+                            'Общее время (с перерывами)',
+                            'Total time (including breaks)',
                           ),
                           style: theme.textTheme.bodySmall,
                         ),

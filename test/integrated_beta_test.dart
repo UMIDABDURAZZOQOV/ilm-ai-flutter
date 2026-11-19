@@ -14,6 +14,7 @@ import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/storage/secure_token_storage.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/core/widgets/duo_chrome.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/learning/presentation/assessment_lesson_screen.dart';
 import 'package:ilm_ai_flutter/features/learning/data/assessment_repository.dart';
@@ -27,6 +28,8 @@ import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'package:ilm_ai_flutter/features/chemistry/presentation/chemistry_display_text.dart';
 import 'package:ilm_ai_flutter/features/world_history/presentation/world_history_display_text.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
+import 'support/subject_tutor_fixture.dart';
 import 'support/capture_release_frame.dart';
 import 'support/load_review_fonts.dart';
 
@@ -367,6 +370,9 @@ void main() {
               },
             ],
           });
+        }
+        if (request.path.endsWith('/subject-chat')) {
+          return reply(200, subjectTutorFixture(request.data as Map));
         }
         return reply(404, {'detail': 'unexpected_endpoint'});
       });
@@ -738,6 +744,15 @@ void main() {
           '${preset.slug} ${frq ? "FRQ" : "MCQ"} correct=$correct help only after grading',
           (tester) async {
             setup(onlyFrq: frq, checkedCorrect: correct);
+            if (frq) {
+              final completion = (result['result'] ?? result) as Json;
+              completion.addAll(<String, dynamic>{
+                'passed': correct,
+                // Test that the server outcome takes precedence over accuracy.
+                'score': correct ? 7 : 9,
+                'total': 10,
+              });
+            }
             if (!frq) {
               lesson['questions'] = (lesson['questions'] as List)
                   .where((q) => q['response_kind'] == 'concept_selection')
@@ -795,26 +810,67 @@ void main() {
               find.byKey(const ValueKey('question_study_help')),
               findsOneWidget,
             );
-            expect(find.byType(StudyHelpSheet), findsNothing);
+            expect(find.byType(SubjectTutorScreen), findsNothing);
             await tester.tap(find.byKey(const ValueKey('question_study_help')));
             await tester.pumpAndSettle();
-            expect(find.text('Tekshirilgan izoh'), findsOneWidget);
+            expect(
+              find.text('Sintetik suhbat javobi — haqiqiy AI sinovi emas.'),
+              findsOneWidget,
+            );
             await captureReleaseFrame(
               tester,
               captureKey,
-              '${preset.slug}-${frq ? "frq" : "mcq"}-$correct-fallback',
+              '${preset.slug}-${frq ? "frq" : "mcq"}-$correct-chat',
             );
             expect(find.textContaining('Hidden textbook'), findsNothing);
             expect(find.textContaining('Manba:'), findsNothing);
-            expect(requests.where((r) => r.path == helpPath).length, 1);
-            await tester.tap(find.byIcon(Icons.close).last);
+            expect(
+              requests.where((r) => r.path.endsWith('/subject-chat')).length,
+              1,
+            );
+            expect(requests.where((r) => r.path == helpPath), isEmpty);
+            final chatRequest =
+                requests
+                        .singleWhere((r) => r.path.endsWith('/subject-chat'))
+                        .data
+                    as Map;
+            expect(chatRequest['checked'], isTrue);
+            expect(chatRequest['subject'], preset.slug);
+            expect(chatRequest['attempt_id'], isNotNull);
+            expect(chatRequest['question_key'], isNotNull);
+            await tester.pageBack();
             await tester.pumpAndSettle();
             await action(tester);
-            expect(find.byType(StudyHelpSheet), findsNothing);
+            expect(find.byType(SubjectTutorScreen), findsNothing);
             expect(
               find.byKey(const ValueKey('question_study_help')),
               findsNothing,
             );
+            if ((lesson['questions'] as List).length == 1) {
+              final saveLabel = switch (panel.language) {
+                'ru' => 'Сохранить результат',
+                'en' => 'Save result',
+                _ => 'Natijani saqlash',
+              };
+              expect(find.text(saveLabel), findsOneWidget);
+              expect(
+                tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+                IlmoActivity.listening,
+              );
+              expect(
+                requests.where((r) => r.path.endsWith('/complete')),
+                isEmpty,
+              );
+              await action(tester);
+              expect(
+                requests.where((r) => r.path.endsWith('/complete')),
+                hasLength(1),
+              );
+              expect(
+                tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+                correct ? IlmoActivity.celebrating : IlmoActivity.encouraging,
+              );
+            }
             expect(tester.takeException(), isNull);
             await tester.pumpWidget(const SizedBox());
             dio.close();

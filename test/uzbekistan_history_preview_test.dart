@@ -10,6 +10,7 @@ import 'package:ilm_ai_flutter/core/network/api_contract.dart';
 import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/uzbekistan_history/data/history_repository.dart';
 import 'package:ilm_ai_flutter/features/uzbekistan_history/presentation/history_answer_editor.dart';
@@ -393,6 +394,14 @@ void main() {
         if (index < 4) {
           await press(choices[index]);
         } else if (index < 6) {
+          final prompt = question['prompt'] as String;
+          final semantics = tester.ensureSemantics();
+          try {
+            await tester.pump();
+            expect(tester.getSemantics(find.text(prompt)).label, prompt);
+          } finally {
+            semantics.dispose();
+          }
           await tester.ensureVisible(find.byType(TextFormField));
           await tester.enterText(
             find.byType(TextFormField),
@@ -409,10 +418,13 @@ void main() {
         }
         await press('Tekshirish', twice: true);
         expect(find.text('To‘g‘ri!'), findsOneWidget);
+        final serverFeedback = feedback[question['key']] as Json;
         expect(
-          find.text((feedback[question['key']] as Json)['feedback'] as String),
+          find.text(serverFeedback['feedback'] as String),
           findsOneWidget,
         );
+        final repeated = jsonRows(serverFeedback['solution']).first['body'];
+        expect(find.textContaining(repeated as String), findsOneWidget);
         expect(
           requests.where((r) => r.path.endsWith('/answers')).length,
           index + 1,
@@ -424,9 +436,26 @@ void main() {
         }
         await press('Davom etish');
       }
+      // With large text and the larger companion, the final action is below
+      // the viewport. Materialize the lazy ListView child by scrolling first.
+      await tester.scrollUntilVisible(
+        find.byType(AnimatedIlmo),
+        -180,
+        scrollable: find.byType(Scrollable).first,
+      );
+      expect(
+        tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+        IlmoActivity.listening,
+      );
+      await tester.scrollUntilVisible(
+        find.text('Natijani saqlash'),
+        180,
+        scrollable: find.byType(Scrollable).first,
+      );
       await press('Natijani saqlash', twice: true);
       expect(find.text('Dars yakunlandi!'), findsOneWidget);
       expect(find.textContaining('7/7 to‘g‘ri • +10 XP'), findsOneWidget);
+      expect(find.textContaining('kun ketma-ket'), findsOneWidget);
       expect(requests.where((r) => r.path.endsWith('/complete')).length, 1);
     },
   );

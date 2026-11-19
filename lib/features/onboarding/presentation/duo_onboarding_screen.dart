@@ -17,6 +17,7 @@ import '../../../core/widgets/app_text_field.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/error_banner.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import '../../../core/widgets/ilmo_speech_header.dart';
 import '../../../core/theme/ilmo_tokens.dart';
 import '../../auth/application/auth_controller.dart';
@@ -611,7 +612,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 .fadeIn(duration: 350.ms, delay: 100.ms)
                 .slideY(begin: 0.12, end: 0, curve: Curves.easeOutQuad),
             const SizedBox(height: 18),
-            const MascotImage.hero(pose: MascotPose.hello),
+            const AnimatedIlmo.hero(pose: MascotPose.hello),
             if (reviewedLearning && !ref.watch(onboardingCompleteProvider)) ...[
               const SizedBox(height: 18),
               Text(
@@ -701,7 +702,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               child: Text.rich(buildSpan()),
             ),
             const SizedBox(height: 18),
-            const MascotImage(pose: MascotPose.explaining, size: 140),
+            const AnimatedIlmo(pose: MascotPose.explaining, size: 196),
           ],
         ),
       ),
@@ -1064,7 +1065,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            MascotImage(pose: MascotPose.happy, size: 140),
+            AnimatedIlmo(pose: MascotPose.happy, size: 196),
           ],
         ),
       ),
@@ -1187,7 +1188,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            MascotImage(pose: MascotPose.thinking, size: 140),
+            AnimatedIlmo(pose: MascotPose.thinking, size: 196),
           ],
         ),
       ),
@@ -1466,7 +1467,11 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const MascotImage.hero(pose: MascotPose.happy),
+            const AnimatedIlmo.hero(
+              pose: MascotPose.happy,
+              // The ready screen advances after 650 ms.
+              reactionDuration: Duration(milliseconds: 520),
+            ),
             const SizedBox(height: 28),
             Text(
               str3(lang, 'TAYYOR!', 'ГОТОВО!', 'READY!'),

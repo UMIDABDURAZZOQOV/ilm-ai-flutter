@@ -5,6 +5,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import '../../../core/utils/reviewed_text.dart';
 import 'skill_ui.dart';
 
@@ -81,10 +82,12 @@ class LessonFeedbackPanel extends StatelessWidget {
             ),
             if (MediaQuery.textScalerOf(context).scale(16) <= 24) ...[
               const SizedBox(width: 8),
-              MascotImage(
+              AnimatedIlmo(
                 pose: correct ? MascotPose.happy : MascotPose.explaining,
-                size: 36,
-                animate: false,
+                activity: correct
+                    ? IlmoActivity.success
+                    : IlmoActivity.encouraging,
+                size: 50,
               ),
             ],
           ],

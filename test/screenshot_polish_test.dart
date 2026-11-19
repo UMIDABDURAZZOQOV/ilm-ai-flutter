@@ -9,6 +9,7 @@ import 'package:ilm_ai_flutter/core/network/dio_client.dart';
 import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/skills/application/learning_preferences.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_extras_models.dart';
@@ -361,7 +362,11 @@ void main() {
         },
       );
 
-      for (final size in [const Size(320, 568), const Size(640, 360)]) {
+      for (final size in [
+        const Size(320, 568),
+        const Size(411, 914),
+        const Size(640, 360),
+      ]) {
         testWidgets(
           'compact goal $lang/$dark/$size at 200% keeps both goal and later-entry actions',
           (tester) async {
@@ -445,7 +450,22 @@ void main() {
                 scale: 2,
               );
               expect(find.byType(StreakCalendarWidget), findsNothing);
-              expect(find.byType(LearningInvitationCard), findsOneWidget);
+              final invitation = find.byType(LearningInvitationCard);
+              expect(invitation, findsOneWidget);
+              if (size.width == 320 || (size.width == 411 && lang == 'uz')) {
+                final title = tester
+                    .widget<LearningInvitationCard>(invitation)
+                    .title;
+                final heading = tester.getRect(find.text(title));
+                final mascot = tester.getRect(
+                  find.descendant(
+                    of: invitation,
+                    matching: find.byType(AnimatedIlmo),
+                  ),
+                );
+                expect(heading.width, greaterThan(200));
+                expect(mascot.top, greaterThan(heading.bottom));
+              }
               await _tap(tester, find.text(_pathAction(lang)));
               expect(opened, 1);
               final stats = find.text(_statistics(lang));
@@ -548,6 +568,15 @@ void main() {
     'strongest': {
       'strongest': {'slug': 'biologiya', 'name_en': 'Biology', 'pct': 10},
     },
+    'sub-percent progress': {
+      'strongest': {
+        'slug': 'biologiya',
+        'name_en': 'Biology',
+        'completed': 1,
+        'total': 406,
+        'pct': 0,
+      },
+    },
   };
   for (final entry in progressVariants.entries) {
     testWidgets(
@@ -563,6 +592,9 @@ void main() {
         expect(find.byType(LearningInvitationCard), findsNothing);
         expect(find.byType(StreakCalendarWidget), findsOneWidget);
         expect(find.byType(ExpansionTile), findsNothing);
+        if (entry.key == 'sub-percent progress') {
+          expect(find.text('<1%'), findsOneWidget);
+        }
       },
     );
   }

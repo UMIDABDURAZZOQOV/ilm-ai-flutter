@@ -16,9 +16,10 @@ import 'package:ilm_ai_flutter/features/auth/data/auth_repository.dart';
 import 'package:ilm_ai_flutter/features/skills/application/learning_preferences.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
+import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
 import 'biology_curriculum_test.dart' show fixture;
 import 'release_hardening_test.dart' show Adapter, reply, original;
-import 'study_help_test.dart' show DeferredHelp, evidence;
+import 'subject_tutor_test.dart' show TutorFake;
 
 class CountingSecureStorage extends FlutterSecureStorage {
   int reads = 0;
@@ -309,12 +310,12 @@ void main() {
 
   testWidgets('rapid help taps open one modal and one request', (tester) async {
     final dio = Dio();
-    final repository = DeferredHelp(dio);
+    final repository = TutorFake();
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
           currentUserIdProvider.overrideWithValue(1),
-          studyHelpRepositoryProvider.overrideWithValue(repository),
+          subjectTutorRepositoryProvider.overrideWithValue(repository),
         ],
         child: MaterialApp(
           theme: buildAppTheme(lightColors),
@@ -341,13 +342,17 @@ void main() {
     }
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));
-    expect(find.byType(StudyHelpSheet), findsOneWidget);
-    expect(repository.cancellation, isNotNull);
-    repository.result.complete(evidence());
+    expect(find.byType(SubjectTutorScreen), findsOneWidget);
+    expect(repository.token, isNotNull);
+    expect(repository.calls, hasLength(1));
+    repository.result.complete({
+      'status': 'unavailable',
+      'message': 'Synthetic retry state.',
+    });
     await tester.pumpAndSettle();
-    await tester.tap(find.byIcon(Icons.close).last);
+    await tester.pageBack();
     await tester.pumpAndSettle();
-    expect(find.byType(StudyHelpSheet), findsNothing);
+    expect(find.byType(SubjectTutorScreen), findsNothing);
     expect(tester.takeException(), isNull);
     await tester.pumpWidget(const SizedBox());
     dio.close();

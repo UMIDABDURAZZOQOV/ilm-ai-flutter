@@ -13,8 +13,10 @@ import 'package:ilm_ai_flutter/core/network/api_contract.dart';
 import 'package:ilm_ai_flutter/core/providers/app_providers.dart';
 import 'package:ilm_ai_flutter/core/storage/prefs_service.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/world_history/data/world_history_repository.dart';
+import 'package:ilm_ai_flutter/features/world_history/presentation/world_history_display_text.dart';
 import 'package:ilm_ai_flutter/features/world_history/presentation/world_history_preview_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_panel.dart';
 import 'release_hardening_test.dart' show Adapter, reply;
@@ -394,6 +396,19 @@ void main() {
     final prefs = await mount(t);
     await begin(t);
     final field = find.byKey(const Key('world-history-short-answer'));
+    final question = jsonRows(lesson['questions'])[10];
+    final prompt = worldHistoryDisplayText(question['prompt'] as String);
+    final semantics = t.ensureSemantics();
+    try {
+      await t.pump();
+      final heading = t.getSemantics(find.text(prompt));
+      expect(heading.label, prompt);
+      final input = t.getSemantics(field);
+      expect(heading.id, isNot(input.id));
+      expect(input.rect.height, lessThanOrEqualTo(t.getSize(field).height));
+    } finally {
+      semantics.dispose();
+    }
     await t.enterText(field, 'Antropolog');
     await t.pumpAndSettle();
     await tapFinder(t, find.byIcon(Icons.arrow_back));
@@ -438,15 +453,24 @@ void main() {
     t,
   ) async {
     skip(14);
+    results['result'] = {...results['result'] as Map, 'score': 10};
     await mount(t);
     await begin(t);
     expect(find.text('Dalillarni solishtiring'), findsOneWidget);
     expect(find.textContaining('Avtomatik ball berilmaydi.'), findsOneWidget);
+    expect(
+      t.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+      IlmoActivity.listening,
+    );
     await capture(t, 'reflection');
     await tap(t, 'Natijani saqlash');
     expect(requests.last.path, endsWith('/complete'));
     expect((requests.last.data as Map).keys.toSet(), {'assessment_version'});
     expect(find.textContaining('20'), findsWidgets);
+    expect(
+      t.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
+      IlmoActivity.celebrating,
+    );
     expect(t.takeException(), isNull);
   });
   for (final language in ['ru', 'en']) {

@@ -13,6 +13,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/gradient_button.dart';
 import '../../../core/widgets/mascot_image.dart';
+import '../../../core/widgets/animated_ilmo.dart';
 import '../../../core/widgets/onboarding_illustration.dart';
 import '../../skills/presentation/skill_ui.dart';
 import 'duo_onboarding_screen.dart';
@@ -211,7 +212,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                           ),
                         ),
                         const Spacer(),
-                        const MascotImage.hero(pose: MascotPose.hello),
+                        const AnimatedIlmo.hero(pose: MascotPose.hello),
                         const SizedBox(height: 24),
                         Text(
                           'ILM AI',

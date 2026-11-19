@@ -11,6 +11,7 @@ import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/core/theme/ilmo_tokens.dart';
 import 'package:ilm_ai_flutter/core/widgets/ilmo_speech_header.dart';
 import 'package:ilm_ai_flutter/core/widgets/mascot_image.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 
 class _MissingImages extends CachingAssetBundle {
   @override
@@ -182,7 +183,7 @@ void main() {
           reduced: true,
         );
         expect(find.text(message), findsOneWidget);
-        final image = tester.getRect(find.byType(Image));
+        final image = tester.getRect(find.byType(AnimatedIlmo));
         final bubble = tester.getRect(find.text(message));
         expect(bubble.top, greaterThan(image.bottom));
         await tester.ensureVisible(find.text(message));
@@ -202,7 +203,7 @@ void main() {
         ),
         reduced: true,
       );
-      final image = tester.getRect(find.byType(Image));
+      final image = tester.getRect(find.byType(AnimatedIlmo));
       final text = tester.getRect(find.text(messages.first));
       expect(
         text.left - image.right,

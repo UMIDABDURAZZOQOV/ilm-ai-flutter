@@ -1,3 +1,4 @@
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import '../config/integrated_beta.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -115,7 +116,7 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const MascotImage(pose: MascotPose.thinking, size: 72),
+                            const AnimatedIlmo(pose: MascotPose.thinking, thinking: true, size: 101),
                             const SizedBox(height: 12),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -133,7 +134,7 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const MascotImage(pose: MascotPose.explaining, size: 56),
+                        const AnimatedIlmo(pose: MascotPose.explaining, size: 78),
                         const SizedBox(width: 12),
                         Expanded(
                           child: Text(cleanMath(_text!), style: TextStyle(color: colors.text, fontSize: 15, height: 1.55)),

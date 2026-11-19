@@ -273,6 +273,17 @@ void main() {
           expect(find.text('9/12'), findsOneWidget);
           expect(find.text('75%'), findsOneWidget);
           expect(find.text('3:17'), findsOneWidget);
+          // Server duration includes pauses; every locale must disclose that.
+          expect(
+            find.textContaining(
+              {
+                'uz': 'tanaffus',
+                'ru': 'перерывами',
+                'en': 'including breaks',
+              }[lang]!,
+            ),
+            findsOneWidget,
+          );
           final back = lang == 'uz'
               ? 'Dars yo‘liga qaytish'
               : lang == 'ru'
@@ -321,6 +332,10 @@ void main() {
         size: const Size(360, 800),
       );
       await tester.runAsync(() async {
+        await precacheImage(
+          const AssetImage('assets/mascot/ilmo_rig_v1.png'),
+          tester.element(find.byType(LessonCompletionView)),
+        );
         for (final element in find.byType(Image).evaluate()) {
           await precacheImage((element.widget as Image).image, element);
         }

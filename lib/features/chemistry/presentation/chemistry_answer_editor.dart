@@ -70,76 +70,80 @@ class _ChemistryAnswerEditorState extends State<ChemistryAnswerEditor> {
         ],
       );
     }
-    return TextField(
-      key: const Key('chemistry-short-answer'),
-      controller: _text,
-      readOnly: !widget.enabled,
-      maxLength: widget.question['max_length'] as int,
-      minLines: 1,
-      maxLines: 3,
-      autocorrect: false,
-      enableSuggestions: false,
-      // Scientific notation needs e and a minus sign on mobile keyboards too.
-      keyboardType: TextInputType.text,
-      textInputAction: TextInputAction.done,
-      decoration: InputDecoration(
-        labelText: equation
-            ? str3(
-                widget.language,
-                'Kimyoviy tenglama',
-                'Химическое уравнение',
-                'Chemical equation',
-              )
-            : formula
-            ? str3(
-                widget.language,
-                'Kimyoviy formula',
-                'Химическая формула',
-                'Chemical formula',
-              )
-            : numeric
-            ? str3(
-                widget.language,
-                'Sonli javob',
-                'Числовой ответ',
-                'Numeric answer',
-              )
-            : str3(
-                widget.language,
-                'Qisqa javob',
-                'Краткий ответ',
-                'Short answer',
-              ),
-        helperText: (formula || equation)
-            ? str3(
-                widget.language,
-                equation
-                    ? 'Chap = o‘ng. Moddalarni + bilan ajrating. Harflar registrini saqlang.'
-                    : 'Indeksni oddiy yoki pastki raqamda yozing. Harflar registrini saqlang.',
-                equation
-                    ? 'Слева = справа. Разделяйте вещества знаком +. Учитывайте регистр.'
-                    : 'Индекс: обычная или нижняя цифра. Учитывайте регистр.',
-                equation
-                    ? 'Left = right. Separate substances with +. Case matters.'
-                    : 'Use ordinary or subscript digits. Case matters.',
-              )
-            : numeric
-            ? str3(
-                widget.language,
-                'Faqat son. Birlik: ${widget.question['unit'] == '' ? 'birliksiz' : widget.question['unit']}. e yozuvi ham mumkin.',
-                'Только число. Единица: ${widget.question['unit'] == '' ? 'безразмерная' : widget.question['unit']}. Можно использовать e.',
-                'Number only. Unit: ${widget.question['unit'] == '' ? 'dimensionless' : widget.question['unit']}. e notation accepted.',
-              )
-            : null,
-        helperMaxLines: 6,
-        hintText: str3(
-          widget.language,
-          'Javobni yozing',
-          'Введите ответ',
-          'Type your answer',
+    return Semantics(
+      container: true,
+      explicitChildNodes: true,
+      child: TextField(
+        key: const Key('chemistry-short-answer'),
+        controller: _text,
+        readOnly: !widget.enabled,
+        maxLength: widget.question['max_length'] as int,
+        minLines: 1,
+        maxLines: 3,
+        autocorrect: false,
+        enableSuggestions: false,
+        // Scientific notation needs e and a minus sign on mobile keyboards too.
+        keyboardType: TextInputType.text,
+        textInputAction: TextInputAction.done,
+        decoration: InputDecoration(
+          labelText: equation
+              ? str3(
+                  widget.language,
+                  'Kimyoviy tenglama',
+                  'Химическое уравнение',
+                  'Chemical equation',
+                )
+              : formula
+              ? str3(
+                  widget.language,
+                  'Kimyoviy formula',
+                  'Химическая формула',
+                  'Chemical formula',
+                )
+              : numeric
+              ? str3(
+                  widget.language,
+                  'Sonli javob',
+                  'Числовой ответ',
+                  'Numeric answer',
+                )
+              : str3(
+                  widget.language,
+                  'Qisqa javob',
+                  'Краткий ответ',
+                  'Short answer',
+                ),
+          helperText: (formula || equation)
+              ? str3(
+                  widget.language,
+                  equation
+                      ? 'Chap = o‘ng. Moddalarni + bilan ajrating. Harflar registrini saqlang.'
+                      : 'Indeksni oddiy yoki pastki raqamda yozing. Harflar registrini saqlang.',
+                  equation
+                      ? 'Слева = справа. Разделяйте вещества знаком +. Учитывайте регистр.'
+                      : 'Индекс: обычная или нижняя цифра. Учитывайте регистр.',
+                  equation
+                      ? 'Left = right. Separate substances with +. Case matters.'
+                      : 'Use ordinary or subscript digits. Case matters.',
+                )
+              : numeric
+              ? str3(
+                  widget.language,
+                  'Faqat son. Birlik: ${widget.question['unit'] == '' ? 'birliksiz' : widget.question['unit']}. e yozuvi ham mumkin.',
+                  'Только число. Единица: ${widget.question['unit'] == '' ? 'безразмерная' : widget.question['unit']}. Можно использовать e.',
+                  'Number only. Unit: ${widget.question['unit'] == '' ? 'dimensionless' : widget.question['unit']}. e notation accepted.',
+                )
+              : null,
+          helperMaxLines: 6,
+          hintText: str3(
+            widget.language,
+            'Javobni yozing',
+            'Введите ответ',
+            'Type your answer',
+          ),
         ),
+        onChanged: (value) => change('value', value),
       ),
-      onChanged: (value) => change('value', value),
     );
   }
 }
