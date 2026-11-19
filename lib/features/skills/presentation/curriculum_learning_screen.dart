@@ -287,6 +287,48 @@ class _CurriculumLearningScreenState
           );
         }
         final current = active;
+        final screen = MediaQuery.sizeOf(context);
+        final largeText = MediaQuery.textScalerOf(context).scale(16) >= 25;
+        final compactToolbar =
+            reviewedLearning &&
+            (screen.height < 480 || (screen.width < 440 && largeText));
+        final gradeButton = TextButton.icon(
+          onPressed: reviewedLearning
+              ? widget.onChangeSubject
+              : () => setState(() => _choosing = true),
+          icon: const Icon(Icons.school_rounded),
+          label: Text(
+            tr(
+              '${widget.subject.nameFor(lang)} · ${current.grade}-sinf',
+              '${widget.subject.nameFor(lang)} · ${current.grade} класс',
+              '${widget.subject.nameFor(lang)} · Grade ${current.grade}',
+            ),
+            maxLines: compactToolbar ? 2 : null,
+            overflow: compactToolbar ? TextOverflow.ellipsis : null,
+          ),
+        );
+        Widget toolbarAction({
+          Key? key,
+          required String label,
+          required IconData icon,
+          required VoidCallback onPressed,
+        }) {
+          if (compactToolbar) {
+            return IconButton(
+              key: key,
+              tooltip: label,
+              onPressed: onPressed,
+              icon: Icon(icon),
+            );
+          }
+          return TextButton.icon(
+            key: key,
+            onPressed: onPressed,
+            icon: Icon(icon),
+            label: Text(label),
+          );
+        }
+
         return SafeArea(
           top: true,
           bottom: false,
@@ -297,50 +339,46 @@ class _CurriculumLearningScreenState
                   horizontal: 12,
                   vertical: 4,
                 ),
-                child: Wrap(
-                  spacing: 8,
-                  runSpacing: 4,
-                  alignment: WrapAlignment.spaceBetween,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
-                    if (reviewedLearning)
-                      TextButton.icon(
-                        key: const ValueKey('quick_subject_switch'),
-                        onPressed: widget.onChangeSubject,
-                        icon: const Icon(Icons.swap_horiz_rounded),
-                        label: Text(tr('Fanlar', 'Предметы', 'Subjects')),
-                      ),
-                    TextButton.icon(
-                      onPressed: reviewedLearning
-                          ? widget.onChangeSubject
-                          : () => setState(() => _choosing = true),
-                      icon: const Icon(Icons.school_rounded),
-                      label: Text(
-                        tr(
-                          '${widget.subject.nameFor(lang)} · ${current.grade}-sinf',
-                          '${widget.subject.nameFor(lang)} · ${current.grade} класс',
-                          '${widget.subject.nameFor(lang)} · Grade ${current.grade}',
+                    if (compactToolbar) gradeButton,
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 4,
+                      alignment: WrapAlignment.spaceBetween,
+                      children: [
+                        if (reviewedLearning)
+                          toolbarAction(
+                            key: const ValueKey('quick_subject_switch'),
+                            onPressed: widget.onChangeSubject,
+                            icon: Icons.swap_horiz_rounded,
+                            label: tr('Fanlar', 'Предметы', 'Subjects'),
+                          ),
+                        if (!compactToolbar) gradeButton,
+                        toolbarAction(
+                          onPressed: () => _showOutline(current.grade),
+                          icon: Icons.menu_book_outlined,
+                          label: tr('Mavzular', 'Темы', 'Topics'),
                         ),
-                      ),
+                        if (reviewedLearning && current.readyLessons > 0)
+                          toolbarAction(
+                            key: const ValueKey('subject_tutor_entry'),
+                            onPressed: () => openSubjectTutor(
+                              context,
+                              language: lang,
+                              subject: widget.subject.slug,
+                              grade: current.grade,
+                            ),
+                            icon: Icons.chat_bubble_outline_rounded,
+                            label: tr(
+                              'Ilmodan so‘rang',
+                              'Спросить Илмо',
+                              'Ask Ilmo',
+                            ),
+                          ),
+                      ],
                     ),
-                    TextButton.icon(
-                      onPressed: () => _showOutline(current.grade),
-                      icon: const Icon(Icons.menu_book_outlined),
-                      label: Text(tr('Mavzular', 'Темы', 'Topics')),
-                    ),
-                    if (reviewedLearning && current.readyLessons > 0)
-                      TextButton.icon(
-                        key: const ValueKey('subject_tutor_entry'),
-                        onPressed: () => openSubjectTutor(
-                          context,
-                          language: lang,
-                          subject: widget.subject.slug,
-                          grade: current.grade,
-                        ),
-                        icon: const Icon(Icons.chat_bubble_outline_rounded),
-                        label: Text(
-                          tr('Ilmodan so‘rang', 'Спросить Илмо', 'Ask Ilmo'),
-                        ),
-                      ),
                   ],
                 ),
               ),

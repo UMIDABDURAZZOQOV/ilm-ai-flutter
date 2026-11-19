@@ -32,3 +32,16 @@ This evidence establishes the cross-host glyph-rendering mismatch, but does not
 identify a particular native rasterizer flag or prove every screen production-ready.
 Linux CI must actually run successfully after the candidate is separately approved
 for push; comparison against captured bytes is not a new Linux application run.
+
+## ILM AI 1.0.3 mascot and result review
+
+Eight light and dark references for Home, League, Profile and Lesson Completion
+were reviewed using the captured Linux images from commit `69e8534`.
+The larger articulated Ilmo changes card geometry and the result screen includes
+the total time with breaks. Both result actions, the home path, and the profile
+and league actions remain readable and in bounds.
+[Linux run 44562854934](https://github.com/UMIDABDURAZZOQOV/ilm-ai-flutter/actions/runs/44562854934)
+
+`play-1.0.3-review-20261119.json` records the before and after image fingerprints
+and the runner environment. The Windows references and pixel-exact comparison
+rules are unchanged.

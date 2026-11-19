@@ -394,10 +394,7 @@ void main() {
       await tester.sendKeyEvent(LogicalKeyboardKey.enter);
       expect(taps, 1);
       final semantics = tester.ensureSemantics();
-      expect(
-        tester.getSemantics(find.byType(Duo3DButton)).label,
-        'Continue',
-      );
+      expect(tester.getSemantics(find.byType(Duo3DButton)).label, 'Continue');
       expect(
         tester
             .getSemantics(find.text('Choice'))
@@ -461,7 +458,11 @@ void main() {
         await tester.ensureVisible(
           find.byKey(
             ValueKey(
-              integratedBeta ? 'beta_register' : 'welcome_have_account_btn',
+              integratedBeta
+                  ? 'beta_register'
+                  : reviewedMobileRelease
+                  ? 'welcome_register_btn'
+                  : 'welcome_have_account_btn',
             ),
           ),
         );

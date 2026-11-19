@@ -1,0 +1,91 @@
+{
+  "run": 44562854934,
+  "source_commit": "69e85347d7cb9153f287719919caf2324888f4fc",
+  "artifact": "golden-failures-Linux",
+  "reviewed_images": [
+    {
+      "file": "lesson_completion_dark.png",
+      "previous_sha256": "fdff4d480705252c5953005486e001d0fb4f73a02ee3b3a0eb88b18d4e859cd0",
+      "sha256": "c3f0e6012790ea2a1409c0cc0ae51eabf409b5aa45d44b2f88a1c5a852544a8b",
+      "review": "Larger articulated Ilmo and the existing total-time line with breaks. Both actions remain visible."
+    },
+    {
+      "file": "lesson_completion_light.png",
+      "previous_sha256": "ecb221d9e33de3bd8253dee48f2a7fd21f31bf0b23e38b645ef5fbaec44d8da8",
+      "sha256": "29ae19dae43ae2025fedaf8610d36533e15ecc1ba65f236e2d494ecd3d217e1c",
+      "review": "Larger articulated Ilmo and the existing total-time line with breaks. Both actions remain visible."
+    },
+    {
+      "file": "polish_home_dark.png",
+      "previous_sha256": "df479e4fe3ba6de805660f91889857e2995d03d759e025f5bd0736a03000103e",
+      "sha256": "10344ec255ef81c3158b5db031ec8344165cfabfcfe59ed9405b1e19a6bb8b96",
+      "review": "Larger articulated Ilmo in the existing daily-goal card. Path progression and navigation remain visible."
+    },
+    {
+      "file": "polish_home_light.png",
+      "previous_sha256": "0763d28409b66a2b36894b5a710843d2ad7ebf14fae6fdd1e692868e4935ab55",
+      "sha256": "1070ba36a4224429a751bd4e6c9ba2dbbd2d483d0eaec38ede31184771b1ae14",
+      "review": "Larger articulated Ilmo in the existing daily-goal card. Path progression and navigation remain visible."
+    },
+    {
+      "file": "polish_league_dark.png",
+      "previous_sha256": "1428e589682ca3cea49e1e8b6dc78f280df9c54ae63c7e8f8101d6ebe30d59c3",
+      "sha256": "caf1f2327f0006c54fca6954cecfeeb2454cf2884eb7998e15e2e013829742e1",
+      "review": "Larger articulated Ilmo wraps the empty-state heading and shifts its call to action downward. No clipped text."
+    },
+    {
+      "file": "polish_league_light.png",
+      "previous_sha256": "dddd39d74f69a2c2771daa92d791f9031d7149f20c9d68a0b9eeb68a9a6faf00",
+      "sha256": "ea6a9960fe5cbec4b224ecf2392e10feca886a0c310a7f017d7f64402e6e4821",
+      "review": "Larger articulated Ilmo wraps the empty-state heading and shifts its call to action downward. No clipped text."
+    },
+    {
+      "file": "polish_profile_dark.png",
+      "previous_sha256": "2b06483abf30b9a50e1524cdb87fc84e71b2ecbfae2ade265526e1ff033bac5e",
+      "sha256": "f6c200e159b76ed9cf538c3d7829ad2f18c1ee175b895a833ad8c9f316212f3f",
+      "review": "Larger articulated Ilmo and the existing stacked empty-state treatment. Settings and statistics remain visible."
+    },
+    {
+      "file": "polish_profile_light.png",
+      "previous_sha256": "8307472361a43dab186b9e7d71b4d8209b231ddc2940b5f478133f910add2d50",
+      "sha256": "2c976f3fc3a8776b54714c53da43802f55069f49fe135e29c9a21a669e87cf3e",
+      "review": "Larger articulated Ilmo and the existing stacked empty-state treatment. Settings and statistics remain visible."
+    }
+  ],
+  "runner_environment": {
+    "schema": 1,
+    "os": "Linux",
+    "machine": "x86_64",
+    "fonts": [
+      {
+        "name": "Roboto-Regular.ttf",
+        "bytes": 171676,
+        "sha256": "79e851404657dac2106b3d22ad256d47824a9a5765458edb72c9102a45816d95"
+      },
+      {
+        "name": "Roboto-Medium.ttf",
+        "bytes": 172064,
+        "sha256": "f205cc511821ea56078a105557fcea6253129404d411c997e1866fbd006abb68"
+      },
+      {
+        "name": "Roboto-Bold.ttf",
+        "bytes": 170760,
+        "sha256": "7d0b991ee3e0be7af01ad7ea8cd2beea6c00a25e679a0226b6737f079aafff86"
+      },
+      {
+        "name": "MaterialIcons-Regular.otf",
+        "bytes": 1645184,
+        "sha256": "d9865b671a09d683d13a863089d8825e0f61a37696ce5d7d448bc8023aa62453"
+      }
+    ],
+    "material_font_archive": "flutter_infra_release/flutter/fonts/3012db47f3130e62f7cc0beabff968a33cbec8d8/fonts.zip",
+    "environment_variables_or_credentials_read": false,
+    "flutter": {
+      "frameworkVersion": "3.44.6",
+      "frameworkRevision": "ee80f08bbf97172ec030b8751ceab557177a34a6",
+      "engineRevision": "83675ed27633283e7fc296c8bca22e841224c096",
+      "dartSdkVersion": "3.12.2",
+      "channel": "stable"
+    }
+  }
+}
