@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 const integratedBetaRequested = bool.fromEnvironment('INTEGRATED_BETA');
 const reviewedMobileRelease = bool.fromEnvironment('REVIEWED_MOBILE_RELEASE');
 const reviewedMobileStaging = bool.fromEnvironment('MOBILE_STAGING');
+const ilmAccessQaRequested = bool.fromEnvironment('ILM_INDEPENDENT_AUTH_QA');
 const betaPerformanceRequested = bool.fromEnvironment('BETA_PERFORMANCE');
 const betaPerformanceIsolated = bool.fromEnvironment(
   'BETA_PERF_ISOLATED',
@@ -18,6 +19,11 @@ const betaApiOrigin = String.fromEnvironment(
   'BETA_API_ORIGIN',
   defaultValue: 'http://127.0.0.1:8930',
 );
+bool ilmAccessQaEnabled(String api) =>
+    kDebugMode &&
+    integratedBeta &&
+    ilmAccessQaRequested &&
+    api == 'http://127.0.0.1:8930';
 const mobileAppScheme = integratedBeta
     ? (kProfileMode && betaPerformanceIsolated
           ? 'ilmai-beta-perf'
@@ -70,6 +76,7 @@ void requireReviewedReleaseConfiguration(String api) {
   final uri = Uri.tryParse(api);
   if (!reviewedMobileRelease ||
       integratedBetaRequested ||
+      ilmAccessQaRequested ||
       const bool.fromEnvironment('PHONE_QA') ||
       const bool.fromEnvironment('PHYSICS_PREVIEW') ||
       uri == null ||

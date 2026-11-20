@@ -39,7 +39,11 @@ class AccountDeletionRepository {
       cancelToken: cancel,
     );
     if (response.data is! Map ||
-        !['google', 'password'].contains(response.data['method'])) {
+        ![
+          'google',
+          'password',
+          'access_key',
+        ].contains(response.data['method'])) {
       throw const FormatException('Invalid reauthentication method');
     }
     return response.data['method'] as String;

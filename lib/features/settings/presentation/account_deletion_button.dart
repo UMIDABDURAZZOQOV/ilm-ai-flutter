@@ -45,6 +45,7 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
   DeletionProof? _proof;
   bool _emailFree = true, _configLoaded = false, _available = false;
   String? _method;
+  bool get _requiresSecret => _method == 'password' || _method == 'access_key';
   CancelToken? _cancel;
   String? _requestId, _error;
   bool _busy = false, _consent = false, _closing = false;
@@ -112,7 +113,12 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
         if (_emailFree) {
           final proof = _method == 'google'
               ? await ref.read(googleDeletionReauthProvider)(repository, cancel)
-              : await repository.passwordProof(_password.text, cancel);
+              : await repository.passwordProof(
+                  _method == 'access_key'
+                      ? _password.text.trim()
+                      : _password.text,
+                  cancel,
+                );
           if (!mounted || !_sameSession) return;
           _password.clear();
           _proof = proof;
@@ -230,21 +236,30 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
               ),
             ),
           ),
-          if (_emailFree && _method == 'password' && _proof == null)
+          if (_emailFree && _requiresSecret && _proof == null)
             TextField(
               controller: _password,
               obscureText: true,
               enabled: !_busy,
               key: const ValueKey('delete_account_password'),
-              autofillHints: const [AutofillHints.password],
+              autofillHints: _method == 'access_key'
+                  ? null
+                  : const [AutofillHints.password],
               onChanged: (_) => setState(() {}),
               decoration: InputDecoration(
-                labelText: str3(
-                  lang,
-                  'Joriy parol',
-                  'Текущий пароль',
-                  'Current password',
-                ),
+                labelText: _method == 'access_key'
+                    ? str3(
+                        lang,
+                        'ILM kirish kaliti',
+                        'Ключ входа ILM',
+                        'ILM sign-in key',
+                      )
+                    : str3(
+                        lang,
+                        'Joriy parol',
+                        'Текущий пароль',
+                        'Current password',
+                      ),
               ),
             ),
           if (!_emailFree && _requestId != null)
@@ -305,7 +320,7 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
                         !_available ||
                         !_consent ||
                         (_emailFree &&
-                            _method == 'password' &&
+                            _requiresSecret &&
                             _proof == null &&
                             _password.text.isEmpty) ||
                         (!_emailFree &&

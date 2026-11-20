@@ -12,6 +12,7 @@ import '../../../core/config/phone_qa.dart';
 import '../../phone_qa/phone_qa_pairing.dart';
 import '../../../core/config/integrated_beta.dart';
 import 'beta_login.dart';
+import 'ilm_access_login.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/network/api_contract.dart';
@@ -36,6 +37,7 @@ class LoginScreen extends ConsumerStatefulWidget {
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   bool _googleLoading = false;
+  bool _ilmKeyBusy = false;
   String? _error;
 
   @override
@@ -110,7 +112,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   }
 
   Future<void> _handleGoogle() async {
-    if (_googleLoading) return;
+    if (_googleLoading || _ilmKeyBusy) return;
     setState(() {
       _googleLoading = true;
       _error = null;
@@ -138,6 +140,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final ilmKeyQa = ilmAccessQaEnabled(apiBaseUrl);
     final colors = Theme.of(context).extension<AppColors>()!.colors;
     final language = ref.watch(languageProvider);
     String tr(String uz, String ru, String en) => language == 'ru'
@@ -197,14 +200,20 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           ),
                         ),
                       ),
-                      if (!integratedBeta) ...[
+                      if (!integratedBeta || ilmKeyQa) ...[
                         const SizedBox(height: 12),
                         Text(
-                          tr(
-                            "Google bilan bir marta bosib kiring — ro'yxatdan o'tish ham, kirish ham shu.",
-                            'Войдите одним нажатием через Google — это и регистрация, и вход.',
-                            'Continue with Google in one tap — it both signs you up and logs you in.',
-                          ),
+                          ilmKeyQa
+                              ? tr(
+                                  'Kirish usulini tanlang.',
+                                  'Выберите способ входа.',
+                                  'Choose how to sign in.',
+                                )
+                              : tr(
+                                  "Google bilan bir marta bosib kiring — ro'yxatdan o'tish ham, kirish ham shu.",
+                                  'Войдите одним нажатием через Google — это и регистрация, и вход.',
+                                  'Continue with Google in one tap — it both signs you up and logs you in.',
+                                ),
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 16,
@@ -223,7 +232,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         ),
                         PremiumButton(
                           key: const ValueKey('login_google'),
-                          onPressed: _googleLoading ? null : _handleGoogle,
+                          onPressed: _googleLoading || _ilmKeyBusy
+                              ? null
+                              : _handleGoogle,
                           outline: true,
                           borderRadius: 20,
                           child: Row(
@@ -252,11 +263,17 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                               const SizedBox(width: 12),
                               Flexible(
                                 child: Text(
-                                  tr(
-                                    'RO‘YXATDAN O‘TISH',
-                                    'ЗАРЕГИСТРИРОВАТЬСЯ',
-                                    'SIGN UP',
-                                  ),
+                                  ilmKeyQa
+                                      ? tr(
+                                          'Google orqali davom etish',
+                                          'Продолжить через Google',
+                                          'Continue with Google',
+                                        )
+                                      : tr(
+                                          'RO‘YXATDAN O‘TISH',
+                                          'ЗАРЕГИСТРИРОВАТЬСЯ',
+                                          'SIGN UP',
+                                        ),
                                   textAlign: TextAlign.center,
                                 ),
                               ),
@@ -264,7 +281,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           ),
                         ),
                       ],
-                      if (integratedBeta) const BetaLogin(),
+                      if (integratedBeta && !ilmKeyQa) const BetaLogin(),
+                      if (ilmKeyQa)
+                        IlmAccessLogin(
+                          blocked: _googleLoading,
+                          onBusyChanged: (busy) =>
+                              setState(() => _ilmKeyBusy = busy),
+                        ),
                     ],
                   ).motion(context).fadeIn(duration: 220.ms, curve: Curves.easeOut),
                 ),
