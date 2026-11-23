@@ -41,6 +41,9 @@ if (phoneQaEnabled != phoneQaTarget) {
 val integratedBetaEnabled = (project.findProperty("dart-defines") as? String)
     ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
     ?.contains("INTEGRATED_BETA=true") == true
+val independentAuthQaEnabled = (project.findProperty("dart-defines") as? String)
+    ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
+    ?.contains("ILM_INDEPENDENT_AUTH_QA=true") == true
 val betaPerformanceEnabled = (project.findProperty("dart-defines") as? String)
     ?.split(",")?.map { String(Base64.getDecoder().decode(it), Charsets.UTF_8) }
     ?.contains("BETA_PERFORMANCE=true") == true
@@ -119,9 +122,9 @@ android {
         }
         debug {
             if (integratedBetaEnabled) {
-                applicationIdSuffix = ".beta"
-                manifestPlaceholders["appLabel"] = "ILM AI Beta"
-                manifestPlaceholders["oauthRedirectScheme"] = "ilmai-beta"
+                applicationIdSuffix = if (independentAuthQaEnabled) ".beta.authqa" else ".beta"
+                manifestPlaceholders["appLabel"] = if (independentAuthQaEnabled) "ILM AI Auth QA" else "ILM AI Beta"
+                manifestPlaceholders["oauthRedirectScheme"] = if (independentAuthQaEnabled) "ilmai-auth-qa" else "ilmai-beta"
             } else if (phoneQaEnabled) {
                 applicationIdSuffix = ".phoneqa"
                 manifestPlaceholders["appLabel"] = "ILM AI QA"

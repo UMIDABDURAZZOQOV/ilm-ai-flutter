@@ -8,6 +8,7 @@ import '../../../core/i18n/app_localizations.dart';
 import '../../../core/providers/app_providers.dart';
 import '../../../core/config/product_mode.dart';
 import '../../../core/config/integrated_beta.dart';
+import '../../../core/network/dio_client.dart';
 import '../../auth/presentation/beta_login.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
@@ -252,7 +253,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                               key: const ValueKey('onboarding_textbook_notice'),
                               textAlign: TextAlign.center,
                             ),
-                          if (integratedBeta)
+                          if (integratedBeta && !ilmAccessQaEnabled(apiBaseUrl))
                             const BetaLogin()
                           else
                             Duo3DButton(

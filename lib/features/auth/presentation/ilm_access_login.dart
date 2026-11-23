@@ -12,6 +12,7 @@ import '../../../core/providers/app_providers.dart';
 import '../../skills/presentation/skill_ui.dart';
 import '../application/auth_controller.dart';
 import '../data/auth_models.dart';
+import 'qa_age_check.dart';
 
 class IlmAccessLogin extends ConsumerStatefulWidget {
   const IlmAccessLogin({
@@ -101,27 +102,52 @@ class _AccessDialog extends ConsumerStatefulWidget {
 class _AccessDialogState extends ConsumerState<_AccessDialog> {
   final _input = TextEditingController();
   final _format = RegExp(r'^ilm1_[A-Za-z0-9_-]{43}$');
+  final _backupFormat = RegExp(r'^ilmr1_[A-Za-z0-9_-]{43}$');
   String? _newKey;
+  String? _newBackup;
   String? _error;
+  bool _recovering = false;
   bool _busy = false;
   bool _saved = false;
   CancelToken? _request;
 
-  void _startNewKey() {
+  String _makeKey(String prefix) {
     final random = Random.secure();
     final secret = base64UrlEncode(
       List.generate(32, (_) => random.nextInt(256)),
     );
+    return prefix + secret.replaceAll('=', '');
+  }
+
+  void _startNewKey({bool recover = false}) {
     setState(() {
-      _newKey = 'ilm1_${secret.replaceAll('=', '')}';
+      _recovering = recover;
+      _input.clear();
+      _newKey = _makeKey('ilm1_');
+      _newBackup = _makeKey('ilmr1_');
       _saved = false;
       _error = null;
     });
   }
 
-  String get _key => _newKey ?? _input.text.trim();
+  Future<void> _startNewAccount() async {
+    if (_busy) return;
+    setState(() => _busy = true);
+    final language = ref.read(languageProvider);
+    final allowed = await confirmQaAdultEntry(context, language);
+    if (!mounted) return;
+    setState(() => _busy = false);
+    if (allowed) _startNewKey();
+  }
+
+  String get _entered => _input.text.trim();
+  String get _key => _newKey ?? _entered;
   bool get _canSubmit =>
-      !_busy && _format.hasMatch(_key) && (_newKey == null || _saved);
+      !_busy &&
+      (_recovering
+          ? _backupFormat.hasMatch(_entered)
+          : _format.hasMatch(_key)) &&
+      (_newBackup == null || _saved);
 
   Future<void> _submit() async {
     if (!_canSubmit) return;
@@ -136,7 +162,19 @@ class _AccessDialogState extends ConsumerState<_AccessDialog> {
           .read(dioProvider)
           .post<Map<String, dynamic>>(
             '/auth/ilm/access',
-            data: {'key': _key, 'mode': _newKey == null ? 'login' : 'create'},
+            data: {
+              'key': _key,
+              'mode': _recovering
+                  ? 'recover'
+                  : _newKey == null
+                  ? 'login'
+                  : 'create',
+              if (_recovering) ...{
+                'recovery_key': _entered,
+                'next_recovery_key': _newBackup,
+              } else if (_newBackup != null)
+                'recovery_key': _newBackup,
+            },
             options: Options(extra: {'skipAuth': true}),
             cancelToken: cancel,
           );
@@ -154,7 +192,14 @@ class _AccessDialogState extends ConsumerState<_AccessDialog> {
       if (!mounted) return;
       final badKey = error is DioException && error.response?.statusCode == 401;
       setState(
-        () => _error = badKey
+        () => _error = badKey && _recovering
+            ? str3(
+                lang,
+                'Zaxira kalit ishlamadi. Avval tiklagan bo‘lsangiz, yangi kirish kalitini sinang.',
+                'Резервный ключ не подошёл. Если профиль уже восстановлен, попробуйте новый ключ входа.',
+                'Backup key rejected. If recovery already succeeded, try your new sign-in key.',
+              )
+            : badKey
             ? str3(
                 lang,
                 'Kalit topilmadi. Kalitni tekshiring.',
@@ -195,7 +240,7 @@ class _AccessDialogState extends ConsumerState<_AccessDialog> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            if (newKey == null) ...[
+            if (newKey == null || _recovering)
               TextField(
                 key: const ValueKey('ilm_access_input'),
                 controller: _input,
@@ -206,11 +251,19 @@ class _AccessDialogState extends ConsumerState<_AccessDialog> {
                 onChanged: (_) => setState(() {}),
                 onSubmitted: (_) => _submit(),
                 decoration: InputDecoration(
-                  labelText: str3(lang, 'Kalitingiz', 'Ваш ключ', 'Your key'),
+                  labelText: _recovering
+                      ? str3(
+                          lang,
+                          'Saqlangan zaxira kalit',
+                          'Сохранённый резервный ключ',
+                          'Saved backup key',
+                        )
+                      : str3(lang, 'Kalitingiz', 'Ваш ключ', 'Your key'),
                 ),
               ),
+            if (newKey == null && _newBackup == null) ...[
               TextButton(
-                onPressed: _busy ? null : _startNewKey,
+                onPressed: _busy ? null : _startNewAccount,
                 child: Text(
                   str3(
                     lang,
@@ -220,19 +273,72 @@ class _AccessDialogState extends ConsumerState<_AccessDialog> {
                   ),
                 ),
               ),
-            ] else ...[
+              TextButton(
+                onPressed: _busy ? null : () => _startNewKey(recover: true),
+                child: Text(
+                  str3(
+                    lang,
+                    'Zaxira kalit bilan tiklash',
+                    'Восстановить по резервному ключу',
+                    'Recover with a backup key',
+                  ),
+                ),
+              ),
+              if (_format.hasMatch(_entered))
+                TextButton(
+                  onPressed: _busy
+                      ? null
+                      : () => setState(() {
+                          _newBackup = _makeKey('ilmr1_');
+                          _saved = false;
+                          _error = null;
+                        }),
+                  child: Text(
+                    str3(
+                      lang,
+                      'Zaxira kalit yaratish',
+                      'Создать резервный ключ',
+                      'Create a backup key',
+                    ),
+                  ),
+                ),
+            ],
+            if (newKey != null) ...[
+              const SizedBox(height: 12),
               Text(
                 str3(
                   lang,
-                  'Kalitni xavfsiz joyga saqlang. U boshqa qurilmada profilingizni ochadi.',
-                  'Сохраните ключ в безопасном месте. Он откроет профиль на другом устройстве.',
-                  'Keep this key somewhere safe. It opens your profile on another device.',
+                  'Yangi kirish kaliti',
+                  'Новый ключ входа',
+                  'New sign-in key',
                 ),
               ),
-              const SizedBox(height: 12),
               SelectableText(
                 newKey,
                 key: const ValueKey('ilm_access_generated'),
+              ),
+            ],
+            if (_newBackup case final backup?) ...[
+              const SizedBox(height: 12),
+              Text(
+                str3(
+                  lang,
+                  'Yangi zaxira kalit',
+                  'Новый резервный ключ',
+                  'New backup key',
+                ),
+              ),
+              SelectableText(
+                backup,
+                key: const ValueKey('ilm_backup_generated'),
+              ),
+              Text(
+                str3(
+                  lang,
+                  'Zaxira kalitni alohida xavfsiz joyda saqlang. U kirish kaliti yo‘qolsa, profilni tiklaydi.',
+                  'Храните резервный ключ отдельно. Он восстановит профиль при потере ключа входа.',
+                  'Keep your backup key somewhere safe and separate. It restores your profile if you lose your sign-in key.',
+                ),
               ),
               CheckboxListTile(
                 contentPadding: EdgeInsets.zero,
@@ -241,12 +347,19 @@ class _AccessDialogState extends ConsumerState<_AccessDialog> {
                     ? null
                     : (value) => setState(() => _saved = value == true),
                 title: Text(
-                  str3(
-                    lang,
-                    'Kalitni saqladim',
-                    'Я сохранил ключ',
-                    'I saved my key',
-                  ),
+                  newKey == null
+                      ? str3(
+                          lang,
+                          'Zaxira kalitni saqladim',
+                          'Я сохранил резервный ключ',
+                          'I saved my backup key',
+                        )
+                      : str3(
+                          lang,
+                          'Ikkala kalitni saqladim',
+                          'Я сохранил оба ключа',
+                          'I saved both keys',
+                        ),
                 ),
               ),
             ],

@@ -13,6 +13,7 @@ import '../../phone_qa/phone_qa_pairing.dart';
 import '../../../core/config/integrated_beta.dart';
 import 'beta_login.dart';
 import 'ilm_access_login.dart';
+import 'qa_age_check.dart';
 import '../../../core/i18n/app_localizations.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/network/api_contract.dart';
@@ -37,8 +38,11 @@ class LoginScreen extends ConsumerStatefulWidget {
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   bool _googleLoading = false;
+  bool _checkingGoogleAge = false;
   bool _ilmKeyBusy = false;
   String? _error;
+
+  bool get _googleBusy => _googleLoading || _checkingGoogleAge;
 
   @override
   void initState() {
@@ -112,7 +116,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   }
 
   Future<void> _handleGoogle() async {
-    if (_googleLoading || _ilmKeyBusy) return;
+    if (_googleBusy || _ilmKeyBusy) return;
+    if (ilmAccessQaEnabled(apiBaseUrl)) {
+      setState(() => _checkingGoogleAge = true);
+      final language = ref.read(languageProvider);
+      final allowed = await confirmQaAdultEntry(context, language);
+      if (!mounted) return;
+      setState(() => _checkingGoogleAge = false);
+      if (!allowed) return;
+    }
     setState(() {
       _googleLoading = true;
       _error = null;
@@ -232,7 +244,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         ),
                         PremiumButton(
                           key: const ValueKey('login_google'),
-                          onPressed: _googleLoading || _ilmKeyBusy
+                          onPressed: _googleBusy || _ilmKeyBusy
                               ? null
                               : _handleGoogle,
                           outline: true,
@@ -284,7 +296,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       if (integratedBeta && !ilmKeyQa) const BetaLogin(),
                       if (ilmKeyQa)
                         IlmAccessLogin(
-                          blocked: _googleLoading,
+                          blocked: _googleBusy,
                           onBusyChanged: (busy) =>
                               setState(() => _ilmKeyBusy = busy),
                         ),

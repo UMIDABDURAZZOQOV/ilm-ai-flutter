@@ -7,6 +7,7 @@ import '../../core/widgets/animated_ilmo.dart';
 import '../../core/widgets/mascot_image.dart';
 import '../auth/application/auth_controller.dart';
 import '../physics/data/physics_repository.dart';
+import 'ai_answer_report.dart';
 
 const subjectTutorNames = {
   'biologiya': 'Biologiya',
@@ -41,7 +42,10 @@ class SubjectTutorRepository {
         'lesson_key': ?lessonKey,
       },
       cancelToken: cancel,
-      options: Options(receiveTimeout: const Duration(seconds: 25)),
+      options: Options(
+        receiveTimeout: const Duration(seconds: 25),
+        headers: {'X-ILM-AI-Report': 'v1'},
+      ),
     );
     final data = Map<String, dynamic>.from(result.data as Map);
     if (data['mode'] != 'subject_chat' ||
@@ -151,7 +155,8 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
   final _scroll = ScrollController();
   final _cancel = CancelToken();
   late final _conversation = PhysicsRepository.requestId();
-  final List<({bool user, String text})> _turns = [];
+  final List<({bool user, String text, ReportableAiAnswer? report})> _turns =
+      [];
   late final int? _owner;
   String? _pending, _request, _error;
   bool _busy = false;
@@ -227,7 +232,7 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
       if (!retry) {
         _pending = message;
         _request = PhysicsRepository.requestId();
-        _turns.add((user: true, text: message));
+        _turns.add((user: true, text: message, report: null));
         _input.clear();
       }
     });
@@ -252,6 +257,9 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
         } else {
           _turns.add((
             user: false,
+            report: reply['status'] == 'answered'
+                ? ReportableAiAnswer.fromReply(reply)
+                : null,
             text: reply['status'] == 'answered'
                 ? (reply['paragraphs'] as List)
                       .map((p) => p['text'])
@@ -424,6 +432,11 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                                     : colors.onSurface,
                               ),
                             ),
+                            if (turn.report case final report?)
+                              AiAnswerReportButton(
+                                answer: report,
+                                language: widget.language,
+                              ),
                           ],
                         ),
                       ),

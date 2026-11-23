@@ -8,6 +8,7 @@ import '../auth/application/auth_controller.dart';
 import '../skills/presentation/content_source_button.dart';
 import '../skills/presentation/skill_ui.dart';
 import '../../core/utils/reviewed_text.dart';
+import 'ai_answer_report.dart';
 import 'subject_tutor.dart';
 
 /// Only identifiers and the Biology v1 advisory selection cross the wire.
@@ -61,6 +62,7 @@ class StudyHelpRepository {
         // fallback. No new JSON field breaks its extra-forbid request schema.
         headers: {
           'X-ILM-Study-Help': generate ? 'reviewed-text-v2' : 'context-only',
+          if (generate) 'X-ILM-AI-Report': 'v1',
         },
       ),
     );
@@ -591,6 +593,12 @@ class _StudyHelpSheetState extends ConsumerState<StudyHelpSheet> {
                                 ),
                                 style: Theme.of(context).textTheme.bodySmall,
                               ),
+                              if (ReportableAiAnswer.fromReply(turn.answer)
+                                  case final report?)
+                                AiAnswerReportButton(
+                                  answer: report,
+                                  language: widget.language,
+                                ),
                             ],
                           ),
                         ),

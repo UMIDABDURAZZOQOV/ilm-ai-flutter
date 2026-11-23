@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:ilm_ai_flutter/core/network/dio_client.dart';
 import 'package:ilm_ai_flutter/features/auth/application/auth_controller.dart';
 import 'package:ilm_ai_flutter/features/study_help/study_help.dart';
 import 'package:ilm_ai_flutter/features/study_help/subject_tutor.dart';
@@ -25,7 +26,16 @@ void main() {
         final dio = Dio()
           ..httpClientAdapter = Adapter((request) {
             requests.add(request);
+            if (request.path.endsWith('/ai-answer-report')) {
+              return reply(200, {'reported': true});
+            }
             final data = request.data as Map;
+            final paragraphs = [
+              {
+                'text': 'Synthetic contextual response for $outcome.',
+                'evidence_ids': ['fixture'],
+              },
+            ];
             return reply(200, {
               'mode': 'subject_chat',
               'status': 'answered',
@@ -33,6 +43,7 @@ void main() {
               'grade': data['grade'],
               'conversation_id': data['conversation_id'],
               'request_id': data['request_id'],
+              'report_receipt': 'authorized-fixture-proof',
               'generation': {
                 'provider': 'gemini',
                 'model': 'gemini-3.1-flash-lite',
@@ -41,22 +52,19 @@ void main() {
                 'language': 'uz',
                 'grounding':
                     'citations_and_quotes_checked_not_semantic_verification',
+                'paragraphs': paragraphs,
               },
               'evidence': [
                 {'id': 'fixture'},
               ],
-              'paragraphs': [
-                {
-                  'text': 'Synthetic contextual response for $outcome.',
-                  'evidence_ids': ['fixture'],
-                },
-              ],
+              'paragraphs': paragraphs,
             });
           });
         addTearDown(() => dio.close(force: true));
         Widget screen(String questionKey) => ProviderScope(
           overrides: [
             currentUserIdProvider.overrideWithValue(101),
+            dioProvider.overrideWithValue(dio),
             subjectTutorRepositoryProvider.overrideWithValue(
               SubjectTutorRepository(dio),
             ),
@@ -90,6 +98,17 @@ void main() {
           findsOneWidget,
         );
         expect(find.byType(SubjectTutorScreen), findsOneWidget);
+        final report = find.text('AI javobidan shikoyat qilish');
+        await tester.ensureVisible(report);
+        await tester.tap(report);
+        await tester.pumpAndSettle();
+        expect(requests, hasLength(2));
+        expect(requests.last.path, endsWith('/ai-answer-report'));
+        expect(requests.last.data, {
+          'receipt': 'authorized-fixture-proof',
+          'paragraphs': ['Synthetic contextual response for $outcome.'],
+        });
+        expect(find.text('Shikoyat yuborildi'), findsOneWidget);
         await tester.pumpWidget(screen('next-question'));
         await tester.pumpAndSettle();
         expect(find.byType(SubjectTutorScreen), findsNothing);
@@ -97,6 +116,61 @@ void main() {
       },
     );
   }
+  testWidgets(
+    'generated explanation reports its text and can retry on failure',
+    (tester) async {
+      final data = googleAnswer(true)..['report_receipt'] = 'answer-proof';
+      final reports = <RequestOptions>[];
+      final dio = Dio()
+        ..httpClientAdapter = Adapter((request) {
+          if (request.path.endsWith('/ai-answer-report')) {
+            reports.add(request);
+            return reports.length == 1
+                ? reply(503, {})
+                : reply(200, {'reported': true});
+          }
+          return reply(200, data);
+        });
+      addTearDown(() => dio.close(force: true));
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            currentUserIdProvider.overrideWithValue(101),
+            dioProvider.overrideWithValue(dio),
+            studyHelpRepositoryProvider.overrideWithValue(
+              StudyHelpRepository(dio),
+            ),
+          ],
+          child: const MaterialApp(
+            home: Scaffold(
+              body: StudyHelpSheet(contextData: checked, language: 'en'),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      final button = find.text('Report AI answer');
+      await tester.ensureVisible(button);
+      await tester.tap(button);
+      await tester.pumpAndSettle();
+      expect(
+        find.text('The report could not be sent. Try again.'),
+        findsOneWidget,
+      );
+      await tester.ensureVisible(button);
+      await tester.tap(button);
+      await tester.pumpAndSettle();
+      expect(reports, hasLength(2));
+      expect(reports.last.data, {
+        'receipt': 'answer-proof',
+        'paragraphs': [
+          for (final paragraph in data['generation']['paragraphs'])
+            paragraph['text'],
+        ],
+      });
+      expect(find.text('Report sent'), findsOneWidget);
+    },
+  );
   testWidgets('configured provider failure is not labeled as disconnected', (
     tester,
   ) async {
@@ -119,6 +193,7 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
+    expect(find.text('AI javobidan shikoyat qilish'), findsNothing);
     expect(
       find.textContaining('AI izohini hozir tayyorlab bo‘lmadi.'),
       findsOneWidget,

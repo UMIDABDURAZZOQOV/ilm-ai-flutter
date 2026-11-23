@@ -25,7 +25,9 @@ bool ilmAccessQaEnabled(String api) =>
     ilmAccessQaRequested &&
     api == 'http://127.0.0.1:8930';
 const mobileAppScheme = integratedBeta
-    ? (kProfileMode && betaPerformanceIsolated
+    ? (kDebugMode && ilmAccessQaRequested
+          ? 'ilmai-auth-qa'
+          : kProfileMode && betaPerformanceIsolated
           ? 'ilmai-beta-perf'
           : 'ilmai-beta')
     : reviewedMobileStaging
