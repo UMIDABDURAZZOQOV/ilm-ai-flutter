@@ -30,6 +30,39 @@ class FakeLoggedInAuth extends AuthController {
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  for (final language in [null, 'unsupported', 'uz', 'ru', 'en']) {
+    testWidgets('resume incomplete onboarding with saved language $language',
+        (tester) async {
+      SharedPreferences.setMockInitialValues({
+        PrefsKeys.language: ?language,
+      });
+      final prefs = await PrefsService.create();
+      final container = ProviderContainer(
+        overrides: [
+          prefsServiceProvider.overrideWithValue(prefs),
+          authControllerProvider.overrideWith(FakeLoggedOutAuth.new),
+        ],
+      );
+      addTearDown(container.dispose);
+      final router = container.read(routerProvider);
+      await tester.pumpWidget(
+        UncontrolledProviderScope(
+          container: container,
+          child: MaterialApp.router(
+            theme: buildAppTheme(lightColors),
+            routerConfig: router,
+          ),
+        ),
+      );
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
+      final supported = language != null && language != 'unsupported';
+      expect(router.state.matchedLocation,
+          supported ? '/onboarding' : '/language-select');
+      expect(container.read(onboardingCompleteProvider), isFalse);
+    });
+  }
+
   testWidgets('LoginScreen renders Google button with uz and en localization',
       (tester) async {
     SharedPreferences.setMockInitialValues({PrefsKeys.language: 'uz'});

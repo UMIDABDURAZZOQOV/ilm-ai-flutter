@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'route_extra_codec.dart';
 
 import '../providers/app_providers.dart';
+import '../storage/prefs_service.dart';
 import '../config/product_mode.dart';
 import '../config/integrated_beta.dart';
 import '../config/physics_preview.dart';
@@ -134,12 +135,15 @@ final routerProvider = Provider<GoRouter>((ref) {
       }
 
       if (!onboardingDone) {
-        return _preAuthRoutes.contains(loc)
-            ? null
-            : OnboardingDraftStore(ref.read(prefsServiceProvider)).read(null) !=
-                  null
-            ? '/onboarding'
-            : '/language-select';
+        if (_preAuthRoutes.contains(loc)) return null;
+        final prefs = ref.read(prefsServiceProvider);
+        final hasLanguage = LanguageNotifier.supported.contains(
+          prefs.getString(PrefsKeys.language),
+        );
+        if (hasLanguage || OnboardingDraftStore(prefs).read(null) != null) {
+          return '/onboarding';
+        }
+        return '/language-select';
       }
       if (!authed) {
         return _authRoutes.contains(loc) ? null : '/login';
