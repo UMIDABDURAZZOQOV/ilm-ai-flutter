@@ -20,6 +20,7 @@ class IlmoRig extends StatefulWidget {
     required this.activity,
     this.staticProgress = 1,
     this.motion,
+    this.idle,
     required this.size,
     required this.fallback,
     this.onReady,
@@ -27,6 +28,9 @@ class IlmoRig extends StatefulWidget {
   final IlmoActivity activity;
   final double staticProgress, size;
   final Animation<double>? motion;
+
+  /// Looping 0..1 phase for the settled "alive" state (breathing, sway, blink).
+  final Animation<double>? idle;
   double get progress => motion?.value ?? staticProgress;
   final Widget fallback;
   final VoidCallback? onReady;
@@ -92,18 +96,27 @@ class _IlmoRigState extends State<IlmoRig> {
               widget.activity,
               widget.staticProgress,
               motion: widget.motion,
+              idle: widget.idle,
             ),
           ),
   );
 }
 
 class IlmoRigPainter extends CustomPainter {
-  IlmoRigPainter(this.atlas, this.activity, this.progress, {this.motion})
-    : super(repaint: motion);
+  IlmoRigPainter(
+    this.atlas,
+    this.activity,
+    this.progress, {
+    this.motion,
+    this.idle,
+  }) : super(
+         repaint: Listenable.merge([?motion, ?idle]),
+       );
   final ui.Image atlas;
   final IlmoActivity activity;
   final double progress;
   final Animation<double>? motion;
+  final Animation<double>? idle;
   static const parts = <Rect>[
     Rect.fromLTRB(0, 27, 314, 397), // neutral head
     Rect.fromLTRB(329, 104, 622, 384), // torso
@@ -147,6 +160,16 @@ class IlmoRigPainter extends CustomPainter {
     final joyous =
         activity == IlmoActivity.success ||
         activity == IlmoActivity.celebrating;
+    // Settled "alive" layer: only after a reaction has finished, so it never
+    // fights a reaction. Small amplitudes keep every frame inside the stage.
+    final settled = idle != null && t >= 1;
+    final phase = settled ? idle!.value * math.pi * 2 : 0.0;
+    final breathe = settled ? math.sin(phase) : 0.0;
+    final sway = settled ? math.sin(phase + .9) : 0.0;
+    final idleBlink =
+        settled &&
+        ((idle!.value > .58 && idle!.value < .62) ||
+            (idle!.value > .66 && idle!.value < .69));
     final jumpHeight = activity == IlmoActivity.celebrating ? 38.0 : 18.0;
     final jump = joyous
         ? -jumpHeight * flight + 6 * anticipation + 4 * landing
@@ -166,7 +189,10 @@ class IlmoRigPainter extends CustomPainter {
     final squash = joyous ? .10 * anticipation + .07 * landing : 0.0;
     final stretch = joyous ? .045 * flight : 0.0;
     canvas.translate(120, 291);
-    canvas.scale(1 + squash - stretch, 1 - squash + stretch);
+    canvas.scale(
+      1 + squash - stretch - .006 * breathe,
+      1 - squash + stretch + .016 * breathe,
+    );
     canvas.rotate(
       activity == IlmoActivity.greeting
           ? .045 * wave
@@ -199,11 +225,13 @@ class IlmoRigPainter extends CustomPainter {
       angle: joyous ? -.32 * flight - .12 * wave : 0,
       pivot: const Offset(140, 237),
     );
-    final left = joyous
-        ? .9 + .55 * flight + .3 * wave
-        : activity == IlmoActivity.explaining
-        ? .4 * wave
-        : 0.0;
+    final left =
+        (joyous
+            ? .9 + .55 * flight + .3 * wave
+            : activity == IlmoActivity.explaining
+            ? .4 * wave
+            : 0.0) +
+        .07 * sway;
     final right = switch (activity) {
       IlmoActivity.greeting => -.35 - .19 * waveEnvelope + .73 * greetingWave,
       IlmoActivity.explaining => -.2 + .48 * wave,
@@ -212,7 +240,7 @@ class IlmoRigPainter extends CustomPainter {
       IlmoActivity.success ||
       IlmoActivity.celebrating => -.55 - .38 * flight + .25 * wave,
       _ => 0.0,
-    };
+    } - .07 * sway;
     part(
       2,
       const Rect.fromLTWH(53, 174, 38, 75),
@@ -233,7 +261,7 @@ class IlmoRigPainter extends CustomPainter {
       IlmoActivity.thinking => 7,
       IlmoActivity.encouraging => 8,
       IlmoActivity.explaining => t < 1 && math.sin(t * math.pi * 8) > 0 ? 9 : 0,
-      _ => blink ? 10 : 0,
+      _ => blink || idleBlink ? 10 : 0,
     };
     final tilt = activity == IlmoActivity.greeting
         ? -.10 * waveEnvelope + .04 * greetingWave
@@ -244,10 +272,11 @@ class IlmoRigPainter extends CustomPainter {
         : activity == IlmoActivity.thinking
         ? -.12 * envelope
         : .085 * wave;
+    final headTilt = tilt + .035 * sway;
     part(
       head,
       const Rect.fromLTWH(36, 1, 168, 198),
-      angle: tilt,
+      angle: headTilt,
       pivot: const Offset(120, 173),
     );
     if (activity == IlmoActivity.celebrating && t > 0 && t < 1) {
@@ -280,5 +309,6 @@ class IlmoRigPainter extends CustomPainter {
       old.atlas != atlas ||
       old.activity != activity ||
       old.motion != motion ||
+      old.idle != idle ||
       old.progress != progress;
 }

@@ -1,5 +1,6 @@
 import 'dart:ui' as ui;
 
+import 'package:flutter/animation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ilm_ai_flutter/core/widgets/ilmo_rig.dart';
@@ -19,8 +20,20 @@ void main() {
       const extent = 240;
       const canvasExtent = extent + padding * 2;
       final violations = <String>[];
-      for (final activity in IlmoActivity.values) {
-        for (var frame = 0; frame <= 20; frame++) {
+      // Reaction frames, then the settled idle loop (breath, sway, blink).
+      final cases = [
+        for (final activity in IlmoActivity.values) ...[
+          for (var frame = 0; frame <= 20; frame++)
+            (activity, frame / 20, null as double?),
+          for (var frame = 0; frame < 20; frame++)
+            (activity, 1.0, frame / 20),
+        ],
+      ];
+      for (final (activity, progress, idlePhase) in cases) {
+        final frame = idlePhase == null
+            ? 'reaction ${progress.toStringAsFixed(2)}'
+            : 'idle ${idlePhase.toStringAsFixed(2)}';
+        {
           final recorder = ui.PictureRecorder();
           final canvas = ui.Canvas(recorder)
             ..translate(padding.toDouble(), padding.toDouble());
@@ -28,7 +41,8 @@ void main() {
           IlmoRigPainter(
             atlas,
             activity,
-            frame / 20,
+            progress,
+            idle: idlePhase == null ? null : AlwaysStoppedAnimation(idlePhase),
           ).paint(canvas, const ui.Size.square(240));
           final picture = recorder.endRecording();
           final image = await picture.toImage(canvasExtent, canvasExtent);

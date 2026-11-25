@@ -34,15 +34,24 @@ class AnimatedIlmo extends StatefulWidget {
   final bool motionEnabled;
   final Object? reactionKey;
   final Duration? reactionDuration;
+
+  /// After a reaction settles Ilmo keeps "breathing" (Duolingo-style idle):
+  /// a slow loop of breath, sway and blinks. Widget tests switch it off in
+  /// test/flutter_test_config.dart so pumpAndSettle and goldens stay stable.
+  static bool ambientIdle = true;
   @override
   State<AnimatedIlmo> createState() => _AnimatedIlmoState();
 }
 
 class _AnimatedIlmoState extends State<AnimatedIlmo>
-    with SingleTickerProviderStateMixin, WidgetsBindingObserver {
+    with TickerProviderStateMixin, WidgetsBindingObserver {
   late final _motion = AnimationController(
     vsync: this,
     duration: _reactionDuration,
+  )..addStatusListener(_reactionStatus);
+  late final _idle = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 3600),
   );
   bool _foreground = true;
   bool _artReady = false;
@@ -102,8 +111,34 @@ class _AnimatedIlmoState extends State<AnimatedIlmo>
     _syncMotion();
   }
 
+  void _reactionStatus(AnimationStatus status) {
+    if (status == AnimationStatus.completed) _syncIdle();
+  }
+
+  bool get _motionAllowed =>
+      _artReady &&
+      widget.motionEnabled &&
+      _foreground &&
+      !MediaQuery.disableAnimationsOf(context) &&
+      TickerMode.valuesOf(context).enabled;
+
+  void _syncIdle() {
+    if (!mounted) return;
+    final run =
+        AnimatedIlmo.ambientIdle &&
+        _motionAllowed &&
+        !widget.thinking &&
+        !_motion.isAnimating;
+    if (run) {
+      if (!_idle.isAnimating) _idle.repeat();
+    } else if (_idle.isAnimating) {
+      _idle.stop();
+    }
+  }
+
   void _start() {
     _reactionPlayed = false;
+    _idle.stop();
     _motion.stop();
     _motion.duration = _reactionDuration;
     _syncMotion();
@@ -111,18 +146,17 @@ class _AnimatedIlmoState extends State<AnimatedIlmo>
 
   void _syncMotion() {
     if (!mounted) return;
-    if (!_artReady ||
-        !widget.motionEnabled ||
-        !_foreground ||
-        MediaQuery.disableAnimationsOf(context) ||
-        !TickerMode.valuesOf(context).enabled) {
+    if (!_motionAllowed) {
       _motion.stop();
       _motion.value = 1;
+      _syncIdle();
     } else if (widget.thinking) {
       if (!_motion.isAnimating) _motion.repeat();
     } else if (!_reactionPlayed) {
       _reactionPlayed = true;
       _motion.forward(from: 0);
+    } else {
+      _syncIdle();
     }
   }
 
@@ -130,6 +164,7 @@ class _AnimatedIlmoState extends State<AnimatedIlmo>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _motion.dispose();
+    _idle.dispose();
     super.dispose();
   }
 
@@ -144,6 +179,7 @@ class _AnimatedIlmoState extends State<AnimatedIlmo>
       },
       activity: _activity,
       motion: _motion,
+      idle: AnimatedIlmo.ambientIdle ? _idle : null,
       size: widget.size,
       fallback: MascotImage(
         pose: widget.pose,
