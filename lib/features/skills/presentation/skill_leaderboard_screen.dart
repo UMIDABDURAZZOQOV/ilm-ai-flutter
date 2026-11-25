@@ -1,6 +1,9 @@
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
+import '../../../core/widgets/animated_ilmo.dart';
+import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/ilm_state_view.dart';
+import '../../../core/widgets/mascot_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -48,6 +51,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
     final c = Theme.of(context).extension<AppColors>()!.colors;
     final async = ref.watch(_leaderboardProvider);
     final league = ref.watch(_leagueProvider);
+    final openLearning = onOpenLearning ?? () => context.go('/learn');
     return Scaffold(
       appBar: AppBar(
         title: Text(str3(lang, 'Liga', 'Лига', 'League')),
@@ -87,7 +91,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
         ),
         data: (d) => IlmReadingWidth(
           child: ListView(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
             children: [
               league.when(
                 loading: () => const LinearProgressIndicator(),
@@ -102,73 +106,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
                     ),
                   ),
                 ),
-                data: (l) => Container(
-                  padding: const EdgeInsets.all(24),
-                  margin: const EdgeInsets.only(bottom: 24),
-                  decoration: BoxDecoration(
-                    color: c.card,
-                    border: Border.all(color: c.border),
-                    borderRadius: BorderRadius.circular(24),
-                  ),
-                  child: Column(
-                    children: [
-                      Wrap(
-                        alignment: WrapAlignment.center,
-                        spacing: 16,
-                        runSpacing: 8,
-                        children: [
-                          for (final tier in l.allTiers)
-                            Icon(
-                              Icons.shield_rounded,
-                              color: skillColor(tier.color).withValues(
-                                alpha: l.weeklyXp >= tier.minXp ? 1 : .25,
-                              ),
-                              size: tier.id == l.league.id ? 48 : 28,
-                            ),
-                        ],
-                      ),
-                      const SizedBox(height: 16),
-                      Text(
-                        l.league.nameFor(lang),
-                        style: const TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.w900,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        '${l.weeklyXp} XP',
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                      if (l.nextLeague != null) ...[
-                        const SizedBox(height: 16),
-                        LinearProgressIndicator(
-                          value: (l.nextLeague!.minXp - l.league.minXp) <= 0
-                              ? 1
-                              : ((l.weeklyXp - l.league.minXp) /
-                                        (l.nextLeague!.minXp - l.league.minXp))
-                                    .clamp(0.0, 1.0),
-                          minHeight: 12,
-                          borderRadius: BorderRadius.circular(8),
-                          color: c.primary,
-                        ),
-                        const SizedBox(height: 12),
-                        Text(
-                          str3(
-                            lang,
-                            '${l.nextLeague!.nameFor(lang)} ligasiga ${l.xpToNext} XP qoldi',
-                            'До лиги ${l.nextLeague!.nameFor(lang)}: ${l.xpToNext} XP',
-                            '${l.xpToNext} XP to ${l.nextLeague!.nameFor(lang)}',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
+                data: (l) => _LeagueHero(league: l, lang: lang),
               ),
               if (d.entries.isEmpty)
                 LearningInvitationCard(
@@ -190,17 +128,46 @@ class SkillLeaderboardScreen extends ConsumerWidget {
                     'Перейти к урокам',
                     'Go to learning path',
                   ),
-                  onOpenLearning: onOpenLearning ?? () => context.go('/learn'),
+                  onOpenLearning: openLearning,
                 ),
               if (d.ownRank != null)
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: Text(
-                    '${str3(lang, 'Sizning o\'rningiz', 'Ваше место', 'Your rank')}: #${d.ownRank}  ·  ${d.totalParticipants} ${str3(lang, 'ishtirokchi', 'участников', 'participants')}',
-                    style: const TextStyle(fontWeight: FontWeight.w800),
+                  padding: const EdgeInsets.fromLTRB(4, 0, 4, 12),
+                  child: Row(
+                    children: [
+                      Icon(Icons.leaderboard_rounded, color: c.primary),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          '${str3(lang, 'Sizning o\'rningiz', 'Ваше место', 'Your rank')}: #${d.ownRank}  ·  ${d.totalParticipants} ${str3(lang, 'ishtirokchi', 'участников', 'participants')}',
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              for (final e in d.entries) _row(context, lang, e),
+              if (d.entries.isNotEmpty) ...[
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: c.card,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: c.border, width: 2),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(6),
+                    child: Column(
+                      children: [
+                        for (final e in d.entries) _row(context, lang, e),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                _KeepClimbing(lang: lang, onOpenLearning: openLearning),
+              ],
             ],
           ),
         ),
@@ -210,64 +177,348 @@ class SkillLeaderboardScreen extends ConsumerWidget {
 
   Widget _row(BuildContext context, String lang, LeaderboardEntry e) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
-    final medal = e.rank == 1
-        ? '🥇'
-        : e.rank == 2
-        ? '🥈'
-        : e.rank == 3
-        ? '🥉'
-        : null;
+    final podium = switch (e.rank) {
+      1 => const Color(0xFFFFB100),
+      2 => const Color(0xFF9AA8B4),
+      3 => const Color(0xFFD9822B),
+      _ => null,
+    };
     final leagueColor = _leagueColors[e.league] ?? const Color(0xFFCD7F32);
     return Container(
-      margin: const EdgeInsets.only(bottom: 6),
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 3),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       decoration: BoxDecoration(
-        color: e.isMe ? c.primary.withValues(alpha: 0.08) : c.card,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(
-          color: e.isMe ? c.primary : c.border,
-          width: e.isMe ? 2 : 1,
-        ),
+        color: e.isMe ? c.primary.withValues(alpha: .12) : null,
+        borderRadius: BorderRadius.circular(16),
+        border: e.isMe ? Border.all(color: c.primary, width: 2) : null,
       ),
       child: Row(
         children: [
           SizedBox(
-            width: 30,
-            child: medal != null
-                ? Text(medal, style: const TextStyle(fontSize: 18))
+            width: 32,
+            child: podium != null
+                ? Container(
+                    width: 28,
+                    height: 28,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: podium,
+                    ),
+                    child: Text(
+                      '${e.rank}',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w900,
+                        color: Colors.white,
+                        fontSize: 14,
+                      ),
+                    ),
+                  )
                 : Text(
                     '${e.rank}',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
                       color: c.textSecondary,
+                      fontSize: 16,
                     ),
                   ),
           ),
+          const SizedBox(width: 6),
           CircleAvatar(
-            radius: 16,
-            backgroundColor: leagueColor.withValues(alpha: 0.25),
+            radius: 20,
+            backgroundColor: leagueColor.withValues(alpha: .28),
             child: Text(
               e.name.isNotEmpty ? e.name[0].toUpperCase() : '?',
               style: TextStyle(
-                fontWeight: FontWeight.w800,
+                fontWeight: FontWeight.w900,
                 color: c.text,
-                fontSize: 13,
+                fontSize: 16,
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 12),
           Expanded(
-            child: Text(
-              e.name,
-              style: TextStyle(
-                fontWeight: e.isMe ? FontWeight.w900 : FontWeight.w700,
-              ),
+            child: Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 8,
+              runSpacing: 4,
+              children: [
+                Text(
+                  e.name,
+                  style: TextStyle(
+                    fontWeight: e.isMe ? FontWeight.w900 : FontWeight.w700,
+                    fontSize: 16,
+                  ),
+                ),
+                if (e.isMe)
+                  DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: c.primary,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 2,
+                      ),
+                      child: Text(
+                        str3(lang, 'SIZ', 'ВЫ', 'YOU'),
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onPrimary,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 11,
+                          letterSpacing: .6,
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
             ),
           ),
-          const Icon(Icons.bolt_rounded, size: 16, color: Color(0xFFFFC800)),
+          const Icon(Icons.bolt_rounded, size: 20, color: Color(0xFFFFB100)),
           Text(
             '${e.weeklyXp}',
-            style: const TextStyle(fontWeight: FontWeight.w900),
+            style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// League header: every tier in climbing order, the current one large.
+class _LeagueHero extends StatelessWidget {
+  const _LeagueHero({required this.league, required this.lang});
+  final LeagueResponse league;
+  final String lang;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    final l = league;
+    final tone = skillColor(l.league.color);
+    final next = l.nextLeague;
+    final tiers = [...l.allTiers]..sort((a, b) => a.minXp.compareTo(b.minXp));
+    final span = next == null ? 0 : next.minXp - l.league.minXp;
+    final progress = span <= 0
+        ? 1.0
+        : ((l.weeklyXp - l.league.minXp) / span).clamp(0.0, 1.0);
+    return Container(
+      margin: const EdgeInsets.only(bottom: 24),
+      padding: const EdgeInsets.fromLTRB(20, 24, 20, 22),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.alphaBlend(tone.withValues(alpha: .26), c.card),
+            c.card,
+          ],
+        ),
+        border: Border.all(color: tone.withValues(alpha: .7), width: 2),
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: tone.withValues(alpha: .45),
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              for (final tier in tiers)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: _TierBadge(
+                    color: skillColor(tier.color),
+                    current: tier.id == l.league.id,
+                    reached: l.weeklyXp >= tier.minXp,
+                    label: tier.nameFor(lang),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: 18),
+          Text(
+            str3(
+              lang,
+              '${l.league.nameFor(lang)} ligasi',
+              'Лига: ${l.league.nameFor(lang)}',
+              '${l.league.nameFor(lang)} League',
+            ),
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            str3(
+              lang,
+              'So‘nggi 7 kunda to‘plangan XP',
+              'XP за последние 7 дней',
+              'XP earned in the last 7 days',
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: c.textSecondary,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.bolt_rounded,
+                color: Color(0xFFFFB100),
+                size: 26,
+              ),
+              Text(
+                '${l.weeklyXp} XP',
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+            ],
+          ),
+          if (next != null) ...[
+            const SizedBox(height: 16),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: LinearProgressIndicator(
+                value: progress,
+                minHeight: 14,
+                color: skillColor(next.color),
+                backgroundColor: c.border,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              str3(
+                lang,
+                '${next.nameFor(lang)} ligasiga ${l.xpToNext} XP qoldi',
+                'До лиги ${next.nameFor(lang)}: ${l.xpToNext} XP',
+                '${l.xpToNext} XP to ${next.nameFor(lang)}',
+              ),
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w700),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _TierBadge extends StatelessWidget {
+  const _TierBadge({
+    required this.color,
+    required this.current,
+    required this.reached,
+    required this.label,
+  });
+  final Color color;
+  final bool current;
+  final bool reached;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    final size = current ? 76.0 : 40.0;
+    return Semantics(
+      label: label,
+      selected: current,
+      child: ExcludeSemantics(
+        child: Container(
+          width: size,
+          height: size,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: reached
+                ? color.withValues(alpha: current ? .22 : .16)
+                : c.border.withValues(alpha: .6),
+            boxShadow: current
+                ? [
+                    BoxShadow(
+                      color: color.withValues(alpha: .55),
+                      blurRadius: 18,
+                    ),
+                  ]
+                : null,
+          ),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Icon(
+                Icons.shield_rounded,
+                size: size * .72,
+                color: reached ? color : c.textMuted.withValues(alpha: .6),
+              ),
+              if (current)
+                Icon(Icons.star_rounded, size: size * .3, color: Colors.white)
+              else if (!reached)
+                Icon(Icons.lock_rounded, size: size * .3, color: c.card),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Encouragement under the ranking, so the tab never ends in empty space.
+class _KeepClimbing extends StatelessWidget {
+  const _KeepClimbing({required this.lang, required this.onOpenLearning});
+  final String lang;
+  final VoidCallback onOpenLearning;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: c.primary.withValues(alpha: .08),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: c.primary.withValues(alpha: .35), width: 2),
+      ),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              const ExcludeSemantics(
+                child: AnimatedIlmo(pose: MascotPose.happy, size: 96),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  str3(
+                    lang,
+                    'Har bir dars XP beradi. Ko‘proq o‘qing va yuqori ligaga chiqing!',
+                    'Каждый урок даёт XP. Учитесь больше и поднимайтесь в лиге!',
+                    'Every lesson earns XP. Keep learning to climb the leagues!',
+                  ),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 15,
+                    height: 1.35,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          SizedBox(
+            width: double.infinity,
+            child: Duo3DButton(
+              onPressed: onOpenLearning,
+              child: Text(str3(lang, 'XP YIG‘ISH', 'ЗАРАБОТАТЬ XP', 'EARN XP')),
+            ),
           ),
         ],
       ),
