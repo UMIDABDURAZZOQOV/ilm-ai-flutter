@@ -1,6 +1,7 @@
 import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import '../../../core/widgets/ilm_navigation_icons.dart';
 import '../../../core/widgets/ilm_tab_view.dart';
+import '../../../core/widgets/mascot_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -161,6 +162,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
+                    const ExcludeSemantics(
+                      child: AnimatedIlmo(pose: MascotPose.sad, size: 140),
+                    ),
+                    const SizedBox(height: 16),
                     Text(
                       tr(
                         'Fanlarni yuklab bo‘lmadi',
@@ -168,10 +173,18 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
                         'Could not load subjects',
                       ),
                       textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.w900,
+                      ),
                     ),
+                    const SizedBox(height: 8),
                     Text(
                       extractError(error, language: lang),
                       textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        height: 1.4,
+                      ),
                     ),
                     const SizedBox(height: 16),
                     FilledButton(

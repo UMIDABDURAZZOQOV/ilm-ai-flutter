@@ -430,13 +430,28 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                           ? Alignment.centerRight
                           : Alignment.centerLeft,
                       child: Container(
+                        constraints: BoxConstraints(
+                          maxWidth: MediaQuery.sizeOf(context).width * .85,
+                        ),
                         margin: const EdgeInsets.only(bottom: 14),
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           color: turn.user
-                              ? colors.primaryContainer
+                              ? colors.primary
                               : colors.surfaceContainerHighest,
-                          borderRadius: BorderRadius.circular(20),
+                          border: turn.user
+                              ? null
+                              : Border.all(
+                                  color: colors.outlineVariant,
+                                  width: 1.5,
+                                ),
+                          // A small corner points at the speaker, like a tail.
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(turn.user ? 20 : 6),
+                            topRight: const Radius.circular(20),
+                            bottomLeft: const Radius.circular(20),
+                            bottomRight: Radius.circular(turn.user ? 6 : 20),
+                          ),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -468,8 +483,13 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                               turn.text,
                               style: TextStyle(
                                 color: turn.user
-                                    ? colors.onPrimaryContainer
+                                    ? colors.onPrimary
                                     : colors.onSurface,
+                                fontSize: 15.5,
+                                height: 1.45,
+                                fontWeight: turn.user
+                                    ? FontWeight.w600
+                                    : FontWeight.w400,
                               ),
                             ),
                             if (turn.report case final report?)
@@ -502,30 +522,56 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                       ],
                     ),
                   if (_error != null)
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const AnimatedIlmo(pose: MascotPose.sad, size: 56),
-                            const SizedBox(width: 8),
-                            Expanded(
-                              child: Text(
-                                _error!,
-                                key: const ValueKey('tutor_error'),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(12, 12, 12, 4),
+                      decoration: BoxDecoration(
+                        color: colors.errorContainer.withValues(alpha: .35),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: colors.error.withValues(alpha: .4),
+                          width: 1.5,
+                        ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const AnimatedIlmo(
+                                pose: MascotPose.sad,
+                                size: 64,
+                              ),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  _error!,
+                                  key: const ValueKey('tutor_error'),
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    height: 1.4,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional.centerEnd,
+                            child: TextButton.icon(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _send(retry: true),
+                              icon: const Icon(Icons.refresh_rounded),
+                              label: Text(
+                                tr('Qayta urinish', 'Повторить', 'Retry'),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w800,
+                                ),
                               ),
                             ),
-                          ],
-                        ),
-                        TextButton.icon(
-                          onPressed: _busy ? null : () => _send(retry: true),
-                          icon: const Icon(Icons.refresh),
-                          label: Text(
-                            tr('Qayta urinish', 'Повторить', 'Retry'),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                 ],
               ),

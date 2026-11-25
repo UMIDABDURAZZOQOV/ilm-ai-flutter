@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../theme/ilm_design.dart';
 import '../i18n/app_localizations.dart';
+import 'animated_ilmo.dart';
+import 'mascot_image.dart';
 
 /// No invented progress, no network calls and no repeating mascot animation.
 class IlmLoadingView extends StatelessWidget {
@@ -18,6 +20,15 @@ class IlmLoadingView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // A still Ilmo: loading screens never loop mascot animation.
+              const ExcludeSemantics(
+                child: AnimatedIlmo(
+                  pose: MascotPose.thinking,
+                  size: 96,
+                  motionEnabled: false,
+                ),
+              ),
+              const SizedBox(height: IlmSpace.sm),
               Semantics(
                 liveRegion: true,
                 child: Text(
@@ -34,9 +45,9 @@ class IlmLoadingView extends StatelessWidget {
               Text(
                 uiText(
                   language,
-                    'Bir oz kuting. Ma’lumotlar tayyorlanmoqda.',
-                    'Подождите немного. Готовим данные.',
-                    'One moment. Your data is on its way.',
+                  'Bir oz kuting. Ma’lumotlar tayyorlanmoqda.',
+                  'Подождите немного. Готовим данные.',
+                  'One moment. Your data is on its way.',
                 ),
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
@@ -97,19 +108,26 @@ class IlmStateView extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
-                Icons.cloud_off_rounded,
-                size: 40,
-                color: Theme.of(context).colorScheme.primary,
+              const ExcludeSemantics(
+                child: AnimatedIlmo(pose: MascotPose.sad, size: 140),
               ),
               const SizedBox(height: IlmSpace.md),
               Text(
                 title,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.titleLarge,
+                style: Theme.of(
+                  context,
+                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: IlmSpace.sm),
-              Text(message, textAlign: TextAlign.center),
+              Text(
+                message,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  height: 1.4,
+                ),
+              ),
               const SizedBox(height: IlmSpace.lg),
               FilledButton.icon(
                 onPressed: onRetry,

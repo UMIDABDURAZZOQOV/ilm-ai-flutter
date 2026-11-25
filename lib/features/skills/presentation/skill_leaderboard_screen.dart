@@ -34,6 +34,14 @@ final _leagueProvider = FutureProvider<LeagueResponse>((ref) async {
       .timeout(const Duration(seconds: 18));
 });
 
+String _ruParticipants(int n) {
+  final tens = n % 100, ones = n % 10;
+  if (tens >= 11 && tens <= 14) return 'участников';
+  if (ones == 1) return 'участник';
+  if (ones >= 2 && ones <= 4) return 'участника';
+  return 'участников';
+}
+
 const _leagueColors = {
   'diamond': Color(0xFF7DD3FC),
   'gold': Color(0xFFFFC800),
@@ -139,7 +147,7 @@ class SkillLeaderboardScreen extends ConsumerWidget {
                       const SizedBox(width: 8),
                       Expanded(
                         child: Text(
-                          '${str3(lang, 'Sizning o‘rningiz', 'Ваше место', 'Your rank')}: #${d.ownRank}  ·  ${d.totalParticipants} ${str3(lang, 'ishtirokchi', 'участников', 'participants')}',
+                          '${str3(lang, 'Sizning o‘rningiz', 'Ваше место', 'Your rank')}: #${d.ownRank}  ·  ${d.totalParticipants} ${str3(lang, 'ishtirokchi', _ruParticipants(d.totalParticipants), d.totalParticipants == 1 ? 'participant' : 'participants')}',
                           style: const TextStyle(
                             fontWeight: FontWeight.w800,
                             fontSize: 16,

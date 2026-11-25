@@ -1,3 +1,5 @@
+import '../../../core/widgets/animated_ilmo.dart';
+import '../../../core/widgets/mascot_image.dart';
 import 'package:flutter/material.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
@@ -53,21 +55,51 @@ class StudyStartSheet extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ExcludeSemantics(
-                    child: Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: c.primaryLight,
-                        borderRadius: BorderRadius.circular(IlmRadius.small),
+                    child: SizedBox(
+                      width: 88,
+                      height: 84,
+                      child: Stack(
+                        clipBehavior: Clip.none,
+                        children: [
+                          AnimatedIlmo(
+                            pose: locked
+                                ? MascotPose.sad
+                                : icon == Icons.task_alt_rounded
+                                ? MascotPose.happy
+                                : MascotPose.hello,
+                            size: 80,
+                          ),
+                          Positioned(
+                            right: 0,
+                            bottom: 0,
+                            child: Container(
+                              width: 32,
+                              height: 32,
+                              decoration: BoxDecoration(
+                                color: c.primaryLight,
+                                shape: BoxShape.circle,
+                                border: Border.all(color: c.surface, width: 2),
+                              ),
+                              child: Icon(icon, size: 17, color: c.primary),
+                            ),
+                          ),
+                        ],
                       ),
-                      child: Icon(icon, size: 23, color: c.primary),
                     ),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
-                    child: Semantics(
-                      header: true,
-                      child: Text(title, style: theme.textTheme.titleLarge),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: Semantics(
+                        header: true,
+                        child: Text(
+                          title,
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],
