@@ -101,7 +101,22 @@ class SkillQuestsScreen extends ConsumerWidget {
                 padding: const EdgeInsets.all(20),
                 physics: const AlwaysScrollableScrollPhysics(),
                 children: [
-                  Card(
+                  // Streak hero: warm gradient banner like Duolingo's flame.
+                  DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFFFF8A00), Color(0xFFFFB800)],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Color(0xFFC86A00),
+                          offset: Offset(0, 5),
+                        ),
+                      ],
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(20),
                       child: Column(
@@ -109,10 +124,10 @@ class SkillQuestsScreen extends ConsumerWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.local_fire_department_rounded,
-                                size: 32,
-                                color: c.warning,
+                                size: 48,
+                                color: Colors.white,
                               ),
                               const SizedBox(width: 12),
                               Expanded(
@@ -122,7 +137,13 @@ class SkillQuestsScreen extends ConsumerWidget {
                                     '$days $russianDays подряд',
                                     '$days day streak',
                                   ),
-                                  style: Theme.of(context).textTheme.titleLarge,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall
+                                      ?.copyWith(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w900,
+                                      ),
                                 ),
                               ),
                             ],
@@ -134,13 +155,17 @@ class SkillQuestsScreen extends ConsumerWidget {
                               'Продолжайте по одному уроку в удобном темпе.',
                               'Keep learning one lesson at a time, at your own pace.',
                             ),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                           const SizedBox(height: 12),
                           Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.ac_unit_rounded,
-                                color: c.primary,
+                                color: Colors.white,
                                 size: 20,
                               ),
                               const SizedBox(width: 8),
@@ -151,7 +176,8 @@ class SkillQuestsScreen extends ConsumerWidget {
                                     'Заморозки: ${data.freezes}',
                                     'Streak freezes: ${data.freezes}',
                                   ),
-                                  style: Theme.of(context).textTheme.bodySmall,
+                                  style: Theme.of(context).textTheme.bodySmall
+                                      ?.copyWith(color: Colors.white),
                                 ),
                               ),
                             ],
@@ -251,49 +277,80 @@ class _Quest extends StatelessWidget {
   final int target;
   final VoidCallback? onTap;
   @override
-  Widget build(BuildContext context) => Card(
-    elevation: 0,
-    child: InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(20),
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Row(
-          children: [
-            Icon(
-              progress >= target ? Icons.check_circle_rounded : icon,
-              color: color,
-              size: 28,
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 16,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  LinearProgressIndicator(
-                    value: target <= 0
-                        ? 0
-                        : (progress / target).clamp(0.0, 1.0),
-                    color: color,
-                    minHeight: 8,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  const SizedBox(height: 6),
-                  Text('${progress.clamp(0, target)}/$target'),
-                ],
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    final done = progress >= target;
+    final tone = done ? c.success : color;
+    final value = target <= 0 ? 0.0 : (progress / target).clamp(0.0, 1.0);
+    return Material(
+      color: c.card,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        side: BorderSide(color: done ? c.success : c.border, width: 2),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(18),
+          child: Row(
+            children: [
+              Container(
+                width: 54,
+                height: 54,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: tone.withValues(alpha: .16),
+                ),
+                child: Icon(
+                  done ? Icons.check_circle_rounded : icon,
+                  color: tone,
+                  size: 30,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: LinearProgressIndicator(
+                              value: value,
+                              color: tone,
+                              backgroundColor: c.border,
+                              minHeight: 14,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Text(
+                          '${progress.clamp(0, target)}/$target',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            color: tone,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }

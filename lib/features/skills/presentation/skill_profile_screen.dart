@@ -168,7 +168,7 @@ class SkillProfileScreen extends ConsumerWidget {
                                 _tile(
                                   context,
                                   Icons.local_fire_department_rounded,
-                                  c.warning,
+                                  const Color(0xFFFF8A00),
                                   '${p.streakDays}',
                                   str3(lang, 'kun', 'дней', 'streak'),
                                 ),
@@ -352,18 +352,26 @@ class SkillProfileScreen extends ConsumerWidget {
   ) => Expanded(
     child: Container(
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+      // Each stat carries its own colour, like Duolingo's profile tiles.
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Theme.of(context).colorScheme.surface,
-        border: Border.all(color: Theme.of(context).dividerColor),
+        color: Color.alphaBlend(
+          color.withValues(alpha: .12),
+          Theme.of(context).colorScheme.surface,
+        ),
+        border: Border.all(color: color, width: 2),
       ),
       child: Column(
         children: [
-          Icon(icon, color: color, size: 20),
+          Icon(icon, color: color, size: 24),
           const SizedBox(height: 2),
           Text(
             value,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w900,
+              color: color,
+            ),
           ),
           Text(
             label,

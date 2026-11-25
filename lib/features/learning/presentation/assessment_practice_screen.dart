@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/providers/app_providers.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/mascot_image.dart';
 import '../../../core/widgets/animated_ilmo.dart';
@@ -66,27 +67,70 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                 .expand((u) => u.lessons)
                 .where((l) => l.status == LessonStatus.completed)
                 .toList();
+            final c = Theme.of(context).extension<AppColors>()!.colors;
             return ListView(
               padding: const EdgeInsets.all(20),
               children: [
-                Text(
-                  tr(
-                    'Bilimingizni mustahkamlang',
-                    'Закрепите знания',
-                    'Make your knowledge stick',
+                // Hero banner, Duolingo practice-hub style.
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF6754D4), Color(0xFF8B7CF6)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: const [
+                      BoxShadow(color: Color(0xFF4A3AA8), offset: Offset(0, 5)),
+                    ],
                   ),
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  str3(
-                    language,
-                    '${subject.nameFor(language)} · $grade-sinf',
-                    '${subject.nameFor(language)} · $grade класс',
-                    '${subject.nameFor(language)} · Grade $grade',
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 18, 8, 18),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                tr(
+                                  'Bilimingizni mustahkamlang',
+                                  'Закрепите знания',
+                                  'Make your knowledge stick',
+                                ),
+                                style: Theme.of(context).textTheme.headlineSmall
+                                    ?.copyWith(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                str3(
+                                  language,
+                                  '${subject.nameFor(language)} · $grade-sinf',
+                                  '${subject.nameFor(language)} · $grade класс',
+                                  '${subject.nameFor(language)} · Grade $grade',
+                                ),
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const ExcludeSemantics(
+                          child: AnimatedIlmo(
+                            pose: MascotPose.thinking,
+                            size: 120,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                const AnimatedIlmo(pose: MascotPose.thinking, size: 134),
+                const SizedBox(height: 24),
                 if (completed.isEmpty) ...[
                   Text(
                     tr(
@@ -94,7 +138,10 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                       'Сначала завершите первый урок. Здесь появятся уроки для повторения.',
                       'Complete your first lesson. Finished lessons will appear here for review.',
                     ),
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
+                  const SizedBox(height: 20),
                   FilledButton(
                     onPressed: onOpenLearning,
                     child: Text(
@@ -103,14 +150,55 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                   ),
                 ],
                 for (final lesson in completed)
-                  Card(
-                    margin: const EdgeInsets.only(bottom: 12),
-                    child: ListTile(
-                      leading: const Icon(Icons.replay_rounded),
-                      title: Text(lesson.titleFor(language)),
-                      trailing: const Icon(Icons.chevron_right),
-                      onTap: () =>
-                          context.push('/skills/lesson', extra: lesson),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Card(
+                      margin: EdgeInsets.zero,
+                      elevation: 0,
+                      color: c.card,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        side: BorderSide(color: c.border, width: 2),
+                      ),
+                      clipBehavior: Clip.antiAlias,
+                      child: ListTile(
+                        contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 8,
+                        ),
+                        leading: Container(
+                          width: 48,
+                          height: 48,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: c.primary.withValues(alpha: .16),
+                          ),
+                          child: Icon(Icons.replay_rounded, color: c.primary),
+                        ),
+                        title: Text(
+                          lesson.titleFor(language),
+                          style: const TextStyle(fontWeight: FontWeight.w700),
+                        ),
+                        subtitle: lesson.stars > 0
+                            ? Row(
+                                children: [
+                                  for (var i = 0; i < 3; i++)
+                                    Icon(
+                                      i < lesson.stars
+                                          ? Icons.star_rounded
+                                          : Icons.star_outline_rounded,
+                                      size: 18,
+                                      color: i < lesson.stars
+                                          ? c.warning
+                                          : c.textMuted,
+                                    ),
+                                ],
+                              )
+                            : null,
+                        trailing: Icon(Icons.chevron_right, color: c.primary),
+                        onTap: () =>
+                            context.push('/skills/lesson', extra: lesson),
+                      ),
                     ),
                   ),
               ],

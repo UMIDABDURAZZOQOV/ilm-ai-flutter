@@ -132,7 +132,7 @@ class StreakCalendarWidget extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      '$streakDays ${str3(language, 'kun', 'дн', 'days')}',
+                      '$streakDays ${str3(language, 'kun', 'дн', streakDays == 1 ? 'day' : 'days')}',
                       style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ],
