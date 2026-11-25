@@ -149,6 +149,20 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                     ),
                   ),
                 ],
+                if (completed.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(left: 4, bottom: 12),
+                    child: Text(
+                      tr(
+                        'Takrorlash uchun darslar',
+                        'Уроки для повторения',
+                        'Lessons to review',
+                      ),
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ),
                 for (final lesson in completed)
                   Padding(
                     padding: const EdgeInsets.only(bottom: 12),
@@ -201,6 +215,62 @@ class AssessmentPracticeScreen extends ConsumerWidget {
                       ),
                     ),
                   ),
+                if (completed.isNotEmpty) ...[
+                  const SizedBox(height: 8),
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(16, 14, 8, 8),
+                    decoration: BoxDecoration(
+                      color: c.warning.withValues(alpha: .10),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: c.warning.withValues(alpha: .45),
+                        width: 2,
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Icon(Icons.lightbulb_rounded, color: c.warning),
+                            const SizedBox(width: 10),
+                            Expanded(
+                              child: Text(
+                                tr(
+                                  'Yulduzi kam darslarni qayta ishlang va 3 yulduzga chiqaring. Yangi darslar o‘quv yo‘lida.',
+                                  'Повторите уроки с малым числом звёзд и доведите их до трёх. Новые уроки ждут на учебном пути.',
+                                  'Replay lessons with fewer stars to reach three. New lessons wait on your learning path.',
+                                ),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.4,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Align(
+                          alignment: AlignmentDirectional.centerEnd,
+                          child: TextButton.icon(
+                            onPressed: onOpenLearning,
+                            icon: const Icon(Icons.route_rounded),
+                            label: Text(
+                              tr(
+                                'O‘quv yo‘liga',
+                                'К учебному пути',
+                                'To the learning path',
+                              ),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ],
             );
           },
