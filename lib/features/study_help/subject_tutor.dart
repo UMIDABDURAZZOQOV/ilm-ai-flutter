@@ -383,6 +383,46 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 16),
+                    // Starter prompts: one tap sends a ready subject question.
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        for (final (index, prompt) in [
+                          tr(
+                            'Bu fanning asosiy tushunchalarini tushuntir',
+                            'Объясни основные понятия предмета',
+                            'Explain the key ideas of this subject',
+                          ),
+                          tr(
+                            'Hayotiy misol bilan tushuntir',
+                            'Объясни на жизненном примере',
+                            'Explain with a real-life example',
+                          ),
+                          tr(
+                            'Oxirgi mavzuni soddaroq tushuntir',
+                            'Объясни последнюю тему проще',
+                            'Explain the latest topic more simply',
+                          ),
+                        ].indexed)
+                          ActionChip(
+                            key: ValueKey('tutor_starter_$index'),
+                            avatar: const Icon(
+                              Icons.auto_awesome_rounded,
+                              size: 18,
+                            ),
+                            label: Text(prompt),
+                            onPressed: _busy
+                                ? null
+                                : () {
+                                    _input.text = prompt;
+                                    _send();
+                                  },
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
                   ],
                   for (final (index, turn) in _turns.indexed)
                     Align(
