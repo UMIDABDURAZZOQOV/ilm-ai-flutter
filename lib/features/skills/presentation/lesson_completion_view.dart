@@ -23,10 +23,14 @@ class LessonCompletionView extends StatelessWidget {
     required this.onBack,
     this.reviewLabel,
     this.passed,
+    this.backIsSecondary = false,
   });
   final String language, title, lessonTitle;
   final String? reviewLabel;
   final bool? passed;
+
+  /// True when the host screen pins its own primary action (Next lesson).
+  final bool backIsSecondary;
   final int xp, correct, total, stars, streakDays;
   final Duration elapsed;
   final VoidCallback onReview, onBack;
@@ -37,27 +41,37 @@ class LessonCompletionView extends StatelessWidget {
     final theme = Theme.of(context);
     final accuracy = total == 0 ? 0 : (100 * correct / total).round();
     final celebrate = passed ?? (accuracy >= 80);
-    Widget stat(String value, String label, IconData icon) => Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: c.card,
-        border: Border.all(color: c.border),
-        borderRadius: BorderRadius.circular(IlmRadius.control),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          ExcludeSemantics(child: Icon(icon, size: 20, color: c.primary)),
-          const SizedBox(height: 8),
-          Text(value, style: theme.textTheme.headlineSmall),
-          const SizedBox(height: 4),
-          Text(
-            label,
-            style: theme.textTheme.bodySmall?.copyWith(color: c.textSecondary),
+    // Duolingo-style result tiles: each metric has its own colour.
+    Widget stat(String value, String label, IconData icon, Color tone) =>
+        Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: Color.alphaBlend(tone.withValues(alpha: .12), c.card),
+            border: Border.all(color: tone, width: 2),
+            borderRadius: BorderRadius.circular(IlmRadius.control),
           ),
-        ],
-      ),
-    );
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ExcludeSemantics(child: Icon(icon, size: 24, color: tone)),
+              const SizedBox(height: 8),
+              Text(
+                value,
+                style: theme.textTheme.headlineSmall?.copyWith(
+                  color: tone,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                label,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: c.textSecondary,
+                ),
+              ),
+            ],
+          ),
+        );
     return SafeArea(
       child: Center(
         child: SingleChildScrollView(
@@ -129,6 +143,7 @@ class LessonCompletionView extends StatelessWidget {
                       '${xp >= 0 ? '+' : ''}$xp',
                       'XP',
                       Icons.bolt_rounded,
+                      c.warning,
                     );
                     final score = stat(
                       '$correct/$total',
@@ -139,6 +154,7 @@ class LessonCompletionView extends StatelessWidget {
                         'Correct answers',
                       ),
                       Icons.task_alt_rounded,
+                      c.success,
                     );
                     return stacked
                         ? Column(
@@ -184,7 +200,14 @@ class LessonCompletionView extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          '${elapsed.inMinutes}:${(elapsed.inSeconds % 60).toString().padLeft(2, '0')}',
+                          elapsed.inHours >= 1
+                              ? str3(
+                                  language,
+                                  '${elapsed.inHours} soat ${elapsed.inMinutes % 60} daq',
+                                  '${elapsed.inHours} ч ${elapsed.inMinutes % 60} мин',
+                                  '${elapsed.inHours} h ${elapsed.inMinutes % 60} min',
+                                )
+                              : '${elapsed.inMinutes}:${(elapsed.inSeconds % 60).toString().padLeft(2, '0')}',
                           style: theme.textTheme.titleLarge,
                         ),
                         Text(
@@ -215,7 +238,12 @@ class LessonCompletionView extends StatelessWidget {
                     ),
                   ),
                 const SizedBox(height: 24),
+                // Secondary: the lesson screen pins the primary next action.
                 Duo3DButton(
+                  key: const ValueKey('completion_back_to_path'),
+                  color: backIsSecondary ? c.card : null,
+                  textColor: backIsSecondary ? c.primary : null,
+                  borderColor: backIsSecondary ? c.border : null,
                   onPressed: onBack,
                   child: Text(
                     str3(

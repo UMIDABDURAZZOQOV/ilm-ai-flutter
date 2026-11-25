@@ -109,9 +109,7 @@ class IlmoRigPainter extends CustomPainter {
     this.progress, {
     this.motion,
     this.idle,
-  }) : super(
-         repaint: Listenable.merge([?motion, ?idle]),
-       );
+  }) : super(repaint: Listenable.merge([?motion, ?idle]));
   final ui.Image atlas;
   final IlmoActivity activity;
   final double progress;
@@ -170,7 +168,7 @@ class IlmoRigPainter extends CustomPainter {
         settled &&
         ((idle!.value > .58 && idle!.value < .62) ||
             (idle!.value > .66 && idle!.value < .69));
-    final jumpHeight = activity == IlmoActivity.celebrating ? 38.0 : 18.0;
+    final jumpHeight = activity == IlmoActivity.celebrating ? 38.0 : 24.0;
     final jump = joyous
         ? -jumpHeight * flight + 6 * anticipation + 4 * landing
         : activity == IlmoActivity.encouraging
@@ -232,15 +230,18 @@ class IlmoRigPainter extends CustomPainter {
             ? .4 * wave
             : 0.0) +
         .07 * sway;
-    final right = switch (activity) {
-      IlmoActivity.greeting => -.35 - .19 * waveEnvelope + .73 * greetingWave,
-      IlmoActivity.explaining => -.2 + .48 * wave,
-      IlmoActivity.thinking => .35 + .22 * wave,
-      IlmoActivity.encouraging => -.1 + .35 * envelope,
-      IlmoActivity.success ||
-      IlmoActivity.celebrating => -.55 - .38 * flight + .25 * wave,
-      _ => 0.0,
-    } - .07 * sway;
+    final right =
+        switch (activity) {
+          IlmoActivity.greeting =>
+            -.35 - .19 * waveEnvelope + .73 * greetingWave,
+          IlmoActivity.explaining => -.2 + .48 * wave,
+          IlmoActivity.thinking => .35 + .22 * wave,
+          IlmoActivity.encouraging => -.1 + .35 * envelope,
+          IlmoActivity.success ||
+          IlmoActivity.celebrating => -.55 - .38 * flight + .25 * wave,
+          _ => 0.0,
+        } -
+        .07 * sway;
     part(
       2,
       const Rect.fromLTWH(53, 174, 38, 75),
@@ -280,13 +281,23 @@ class IlmoRigPainter extends CustomPainter {
       pivot: const Offset(120, 173),
     );
     if (activity == IlmoActivity.celebrating && t > 0 && t < 1) {
-      final paint = Paint()
-        ..color = const Color(0xFFF9A825).withValues(alpha: envelope);
-      for (var i = 0; i < 6; i++) {
-        final angle = i * math.pi / 3;
+      // Multicolour confetti burst; pieces stay inside the reserved stage.
+      const confetti = [
+        Color(0xFFF9A825),
+        Color(0xFF2DD4BF),
+        Color(0xFF8B7CF6),
+        Color(0xFFF472B6),
+        Color(0xFF34D399),
+        Color(0xFF60A5FA),
+      ];
+      for (var i = 0; i < 12; i++) {
+        final paint = Paint()
+          ..color = confetti[i % confetti.length].withValues(alpha: envelope);
+        final angle = i * math.pi / 6 + .2 * (i % 2);
+        final reach = (i.isEven ? 70 : 52) + 26 * t;
         final point = Offset(
-          120 + math.cos(angle) * (70 + 25 * t),
-          120 + math.sin(angle) * (65 + 25 * t),
+          120 + math.cos(angle) * reach,
+          120 + math.sin(angle) * reach * .92,
         );
         canvas.save();
         canvas.translate(point.dx, point.dy);

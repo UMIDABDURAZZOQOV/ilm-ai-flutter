@@ -7,6 +7,7 @@ import '../../../core/widgets/animated_ilmo.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
@@ -708,32 +709,60 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            AnimatedIlmo(
-              pose: MascotPose.thinking,
-              activity: IlmoActivity.listening,
-              size: 96,
-              reactionKey: _question['key'],
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                '${_index + 1}/${_questions.length} · ${_question['phase'] == 'guided' ? _t('Yo‘naltirilgan mashq', 'С поддержкой', 'Guided practice') : _t('Mustaqil mashq', 'Самостоятельно', 'Independent practice')}',
-              ),
-            ),
-          ],
+        Text(
+          '${_index + 1}/${_questions.length} · ${_question['phase'] == 'guided' ? _t('Yo‘naltirilgan mashq', 'С поддержкой', 'Guided practice') : _t('Mustaqil mashq', 'Самостоятельно', 'Independent practice')}',
+          style: Theme.of(context).textTheme.labelLarge,
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: 8),
         DuoProgressBar(value: _index / _questions.length),
-        const SizedBox(height: 24),
-        Semantics(
-          container: true,
-          header: true,
-          child: Text(
-            _display(_question['prompt'] as String),
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
+        const SizedBox(height: 20),
+        // Duolingo-style character callout: Ilmo asks the question from a
+        // speech bubble and reacts in place once the answer is checked.
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final compact =
+                constraints.maxWidth < 300 ||
+                MediaQuery.textScalerOf(context).scale(16) > 24;
+            final verdict = _feedback?['is_correct'];
+            return Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                ExcludeSemantics(
+                  child: AnimatedIlmo(
+                    pose: verdict == null
+                        ? MascotPose.thinking
+                        : verdict == true
+                        ? MascotPose.happy
+                        : MascotPose.sad,
+                    activity: verdict == null
+                        ? IlmoActivity.listening
+                        : verdict == true
+                        ? IlmoActivity.success
+                        : IlmoActivity.encouraging,
+                    size: compact ? 84 : 132,
+                    reactionKey: '${_question['key']}:$verdict',
+                  ),
+                ),
+                const SizedBox(width: 4),
+                Expanded(
+                  child: _SpeechBubble(
+                    child: Semantics(
+                      container: true,
+                      header: true,
+                      child: Text(
+                        _display(_question['prompt'] as String),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(
+                              fontWeight: FontWeight.w700,
+                              height: 1.3,
+                            ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            );
+          },
         ),
         const SizedBox(height: 20),
         _answerEditor(
@@ -832,6 +861,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                 children: [
                   Expanded(
                     child: LessonCompletionView(
+                      backIsSecondary: true,
                       language: _language,
                       passed: result['passed'] == true,
                       title: result['passed'] == true
@@ -931,17 +961,37 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                                   _index < _questions.length)
                                 _exercise()
                               else if (_attempt != null) ...[
-                                const AnimatedIlmo(
-                                  pose: MascotPose.thinking,
-                                  activity: IlmoActivity.listening,
-                                  size: 134,
+                                const SizedBox(height: 32),
+                                const Center(
+                                  // Waits (listening) until the server grades
+                                  // the attempt; celebration comes with the result.
+                                  child: AnimatedIlmo(
+                                    pose: MascotPose.thinking,
+                                    activity: IlmoActivity.listening,
+                                    size: 190,
+                                  ),
                                 ),
+                                const SizedBox(height: 20),
+                                Text(
+                                  _t(
+                                    'Barcha savollar tugadi!',
+                                    'Все вопросы пройдены!',
+                                    'All questions done!',
+                                  ),
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall
+                                      ?.copyWith(fontWeight: FontWeight.w900),
+                                ),
+                                const SizedBox(height: 8),
                                 Text(
                                   _t(
                                     'Barcha javoblar qabul qilindi. Natijani saqlaymiz.',
                                     'Все ответы приняты. Сохраним результат.',
                                     'All answers received. Save your result.',
                                   ),
+                                  textAlign: TextAlign.center,
                                 ),
                               ],
                             ],
@@ -990,4 +1040,59 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
       ),
     );
   }
+}
+
+/// Rounded bubble with a tail pointing at Ilmo on the left.
+class _SpeechBubble extends StatelessWidget {
+  const _SpeechBubble({required this.child});
+  final Widget child;
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    return CustomPaint(
+      painter: _BubblePainter(fill: c.surface, stroke: c.border),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(26, 14, 16, 14),
+        child: child,
+      ),
+    );
+  }
+}
+
+class _BubblePainter extends CustomPainter {
+  _BubblePainter({required this.fill, required this.stroke});
+  final Color fill, stroke;
+  @override
+  void paint(Canvas canvas, Size size) {
+    const tail = 10.0, radius = 16.0;
+    final body = RRect.fromLTRBR(
+      tail,
+      0,
+      size.width,
+      size.height,
+      const Radius.circular(radius),
+    );
+    final tailY = math.min(
+      size.height - radius,
+      math.max(radius, size.height * .72),
+    );
+    final path = Path()
+      ..addRRect(body)
+      ..moveTo(tail, tailY - 9)
+      ..lineTo(0, tailY + 4)
+      ..lineTo(tail, tailY + 7)
+      ..close();
+    canvas.drawPath(path, Paint()..color = fill);
+    canvas.drawPath(
+      path,
+      Paint()
+        ..color = stroke
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 2,
+    );
+  }
+
+  @override
+  bool shouldRepaint(_BubblePainter old) =>
+      old.fill != fill || old.stroke != stroke;
 }
