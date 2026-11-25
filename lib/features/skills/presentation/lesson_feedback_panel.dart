@@ -137,7 +137,12 @@ class LessonFeedbackPanel extends StatelessWidget {
         ],
       ],
     );
+    // Duolingo-style verdict: the whole sheet and its action carry the result
+    // colour, so the outcome is readable at a glance (icon + text keep it
+    // accessible without relying on colour alone).
     final next = Duo3DButton(
+      key: const ValueKey('lesson_feedback_continue'),
+      color: status,
       onPressed: saving ? null : onContinue,
       child: saving
           ? SizedBox(
@@ -156,9 +161,10 @@ class LessonFeedbackPanel extends StatelessWidget {
         maxHeight: MediaQuery.sizeOf(context).height * (shortWindow ? .7 : .42),
       ),
       child: DecoratedBox(
+        key: const ValueKey('lesson_feedback_sheet'),
         decoration: BoxDecoration(
-          color: c.surface,
-          border: Border(top: BorderSide(color: c.border)),
+          color: Color.alphaBlend(status.withValues(alpha: .14), c.surface),
+          border: Border(top: BorderSide(color: status, width: 2)),
         ),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),

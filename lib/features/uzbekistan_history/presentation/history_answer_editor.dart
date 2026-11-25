@@ -7,12 +7,14 @@ class HistoryAnswerEditor extends StatelessWidget {
   final Json question, draft;
   final bool enabled;
   final ValueChanged<Json> onChanged;
+  final Json? feedback;
   const HistoryAnswerEditor({
     super.key,
     required this.question,
     required this.draft,
     required this.enabled,
     required this.onChanged,
+    this.feedback,
   });
 
   @override
@@ -23,6 +25,7 @@ class HistoryAnswerEditor extends StatelessWidget {
         draft: draft,
         enabled: enabled,
         onChanged: onChanged,
+        feedback: feedback,
       );
     }
     return Semantics(

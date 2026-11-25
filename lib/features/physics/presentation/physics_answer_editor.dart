@@ -7,12 +7,16 @@ class PhysicsAnswerEditor extends StatefulWidget {
   final Json question, draft;
   final bool enabled;
   final ValueChanged<Json> onChanged;
+
+  /// Server verdict for this question once checked; null before checking.
+  final Json? feedback;
   const PhysicsAnswerEditor({
     super.key,
     required this.question,
     required this.draft,
     required this.enabled,
     required this.onChanged,
+    this.feedback,
   });
   @override
   State<PhysicsAnswerEditor> createState() => _PhysicsAnswerEditorState();
@@ -70,8 +74,13 @@ class _PhysicsAnswerEditorState extends State<PhysicsAnswerEditor> {
               child: DuoChoiceCard(
                 text: option['label'] as String,
                 selected: _draft['choice_id'] == option['id'],
-                answered: false,
-                isCorrectOption: false,
+                answered: widget.feedback != null,
+                // The verified label when the server returns it; otherwise a
+                // correct verdict marks the learner's own choice.
+                isCorrectOption:
+                    widget.feedback?['correct_answer'] == option['label'] ||
+                    (widget.feedback?['is_correct'] == true &&
+                        _draft['choice_id'] == option['id']),
                 onTap: widget.enabled
                     ? () => _change('choice_id', option['id'])
                     : null,

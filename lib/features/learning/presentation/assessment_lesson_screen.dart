@@ -317,13 +317,22 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
       }
       _top();
     } catch (e) {
+      final expired =
+          e is DioException &&
+          e.response?.data is Map &&
+          (e.response!.data as Map)['detail'] == 'attempt_expired';
+      // The learner already chose "renew attempt" on the path; an expired
+      // attempt can never be resumed, so open a fresh one instead of asking
+      // a second time. Server-side earlier results are untouched.
+      if (expired && !fresh && active(generation)) {
+        _busy = false;
+        await _open(key, fresh: true);
+        return;
+      }
       if (active(generation)) {
         setState(() {
           _error = message(e);
-          _expired =
-              e is DioException &&
-              e.response?.data is Map &&
-              (e.response!.data as Map)['detail'] == 'attempt_expired';
+          _expired = expired;
         });
       }
     } finally {
@@ -662,6 +671,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         draft: _draft,
         enabled: enabled,
         onChanged: changed,
+        feedback: _feedback,
       ),
       'kimyo' => ChemistryAnswerEditor(
         key: key,
@@ -669,6 +679,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         draft: _draft,
         enabled: enabled,
         onChanged: changed,
+        feedback: _feedback,
       ),
       'jahon_tarixi' => WorldHistoryAnswerEditor(
         key: key,
@@ -676,6 +687,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         draft: _draft,
         enabled: enabled,
         onChanged: changed,
+        feedback: _feedback,
       ),
       'ozbekiston_tarixi' => HistoryAnswerEditor(
         key: key,
@@ -683,6 +695,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         draft: _draft,
         enabled: enabled,
         onChanged: changed,
+        feedback: _feedback,
       ),
       _ => const SizedBox.shrink(),
     };

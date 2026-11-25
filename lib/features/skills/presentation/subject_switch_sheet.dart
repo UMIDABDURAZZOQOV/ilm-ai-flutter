@@ -112,6 +112,9 @@ class _SubjectSwitcherState extends State<_SubjectSwitcher> {
           Expanded(
             child: ListView.separated(
               controller: _scroll,
+              // Keep cards off the screen edges; a narrower gutter keeps
+              // tall 200%-text cards tappable on small phones.
+              padding: const EdgeInsets.fromLTRB(12, 0, 12, 16),
               itemCount: widget.subjects.length,
               separatorBuilder: (_, _) => const SizedBox(height: 10),
               itemBuilder: (context, index) {
