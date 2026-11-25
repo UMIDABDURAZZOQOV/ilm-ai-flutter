@@ -339,7 +339,31 @@ class _CurriculumLearningScreenState
                   horizontal: 12,
                   vertical: 4,
                 ),
-                child: Column(
+                child: reviewedLearning
+                    ? _CompactLearnHeader(
+                        label: tr(
+                          '${widget.subject.nameFor(lang)} · ${current.grade}-sinf',
+                          '${widget.subject.nameFor(lang)} · ${current.grade} класс',
+                          '${widget.subject.nameFor(lang)} · Grade ${current.grade}',
+                        ),
+                        onSubject: widget.onChangeSubject,
+                        topicsLabel: tr('Mavzular', 'Темы', 'Topics'),
+                        onTopics: () => _showOutline(current.grade),
+                        tutorLabel: tr(
+                          'Ilmodan so‘rang',
+                          'Спросить Илмо',
+                          'Ask Ilmo',
+                        ),
+                        onTutor: current.readyLessons > 0
+                            ? () => openSubjectTutor(
+                                context,
+                                language: lang,
+                                subject: widget.subject.slug,
+                                grade: current.grade,
+                              )
+                            : null,
+                      )
+                    : Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     if (compactToolbar) gradeButton,
@@ -588,5 +612,79 @@ class _CurriculumOutline extends ConsumerWidget {
             ],
           ),
         );
+  }
+}
+
+
+/// One compact row like Duolingo's top bar: the subject/grade chip opens the
+/// switcher, then icon actions for the topic map and the subject tutor.
+class _CompactLearnHeader extends StatelessWidget {
+  const _CompactLearnHeader({
+    required this.label,
+    required this.onSubject,
+    required this.topicsLabel,
+    required this.onTopics,
+    required this.tutorLabel,
+    required this.onTutor,
+  });
+  final String label, topicsLabel, tutorLabel;
+  final VoidCallback? onSubject, onTutor;
+  final VoidCallback onTopics;
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    return Row(
+      children: [
+        Expanded(
+          child: Material(
+            key: const ValueKey('quick_subject_switch'),
+            color: c.primaryLight,
+            shape: const StadiumBorder(),
+            clipBehavior: Clip.antiAlias,
+            child: InkWell(
+              onTap: onSubject,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 14,
+                  vertical: 10,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.school_rounded, color: c.primary, size: 22),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        label,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                          color: c.primary,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ),
+                    Icon(Icons.expand_more_rounded, color: c.primary),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(width: 6),
+        IconButton(
+          key: const ValueKey('learning_topics'),
+          tooltip: topicsLabel,
+          onPressed: onTopics,
+          icon: const Icon(Icons.menu_book_rounded),
+        ),
+        if (onTutor != null)
+          IconButton.filledTonal(
+            key: const ValueKey('subject_tutor_entry'),
+            tooltip: tutorLabel,
+            onPressed: onTutor,
+            icon: const Icon(Icons.chat_bubble_rounded),
+          ),
+      ],
+    );
   }
 }

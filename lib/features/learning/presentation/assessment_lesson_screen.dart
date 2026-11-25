@@ -619,7 +619,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         const SizedBox(height: 16),
         AnimatedIlmo(
           pose: MascotPose.explaining,
-          size: 101,
+          size: 132,
           reactionKey: _teachingIndex,
         ),
         _panel(
@@ -713,7 +713,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
             AnimatedIlmo(
               pose: MascotPose.thinking,
               activity: IlmoActivity.listening,
-              size: 62,
+              size: 96,
               reactionKey: _question['key'],
             ),
             const SizedBox(width: 8),

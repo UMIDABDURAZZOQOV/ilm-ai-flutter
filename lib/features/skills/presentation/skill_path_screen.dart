@@ -557,6 +557,8 @@ class SkillPathScreen extends ConsumerWidget {
                       ? checkpointItems[unit.id]!
                       : lessonItems[lesson.id]!;
                   return LearningJourneyTile(
+                    pathIndex: items.indexOf(item),
+                    accent: subjectColor,
                     detail:
                         !item.isCheckpoint &&
                             entries[item.lesson!.id]?.state ==

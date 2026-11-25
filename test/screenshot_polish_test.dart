@@ -695,6 +695,21 @@ void main() {
           RepaintBoundary(key: key, child: screen),
           dark: dark,
         );
+        // Decode the mascot art before capture so the frame is deterministic
+        // (otherwise the first test can capture before the atlas decodes).
+        await tester.runAsync(() async {
+          for (final asset in [
+            'assets/mascot/ilmo_rig_v1.png',
+            'assets/mascot/ilmo_hello.png',
+          ]) {
+            await precacheImage(
+              AssetImage(asset),
+              tester.element(find.byKey(key)),
+            );
+          }
+        });
+        await tester.pump();
+        await tester.pump();
         await expectLater(
           find.byKey(key),
           matchesGoldenFile(

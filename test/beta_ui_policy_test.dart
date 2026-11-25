@@ -98,7 +98,7 @@ void main() {
         find.byKey(const ValueKey('quick_subject_switch')),
         findsOneWidget,
       );
-      await tester.tap(find.text('Mavzular'));
+      await tester.tap(find.byTooltip('Mavzular'));
       await tester.pumpAndSettle();
       expect(find.textContaining('1-§. Biologiya'), findsOneWidget);
       expect(find.textContaining('bet ·'), findsNothing);

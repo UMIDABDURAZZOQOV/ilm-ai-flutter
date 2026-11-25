@@ -87,7 +87,7 @@ class LessonFeedbackPanel extends StatelessWidget {
                 activity: correct
                     ? IlmoActivity.success
                     : IlmoActivity.encouraging,
-                size: 50,
+                size: 76,
               ),
             ],
           ],
