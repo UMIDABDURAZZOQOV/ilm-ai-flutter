@@ -123,7 +123,7 @@ class _AiExplainSheetState extends ConsumerState<AiExplainSheet> {
                               children: [
                                 SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2, color: colors.primary)),
                                 const SizedBox(width: 8),
-                                Text(_tr(lang, 'AI o\'ylayapti...', 'AI думает...', 'AI is thinking...'), style: TextStyle(color: colors.textSecondary, fontWeight: FontWeight.w600)),
+                                Text(_tr(lang, 'AI o‘ylayapti...', 'AI думает...', 'AI is thinking...'), style: TextStyle(color: colors.textSecondary, fontWeight: FontWeight.w600)),
                               ],
                             ),
                           ],

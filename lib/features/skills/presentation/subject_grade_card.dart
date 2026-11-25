@@ -76,6 +76,8 @@ class SubjectGradeCard extends StatelessWidget {
     final active = selected && open;
     final status = availability.label(language);
     final accent = open ? skillColor(subject.color) : colors.textSecondary;
+    // Large text needs the width more than the badge does.
+    final icon = MediaQuery.textScalerOf(context).scale(16) > 22 ? 40.0 : 52.0;
     return Card(
       margin: EdgeInsets.zero,
       color: active ? colors.primary.withValues(alpha: .10) : colors.card,
@@ -95,11 +97,25 @@ class SubjectGradeCard extends StatelessWidget {
             horizontal: 18,
             vertical: 12,
           ),
-          leading: CircleAvatar(
-            backgroundColor: accent.withValues(alpha: .13),
+          leading: Container(
+            width: icon,
+            height: icon,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: open ? accent : colors.border,
+              boxShadow: open
+                  ? [
+                      BoxShadow(
+                        color: Color.lerp(accent, Colors.black, .3)!,
+                        offset: const Offset(0, 3),
+                      ),
+                    ]
+                  : null,
+            ),
             child: Icon(
               subjectIcons[subject.slug] ?? Icons.menu_book_rounded,
-              color: accent,
+              color: open ? Colors.white : colors.textSecondary,
+              size: icon * .5,
             ),
           ),
           title: Text(

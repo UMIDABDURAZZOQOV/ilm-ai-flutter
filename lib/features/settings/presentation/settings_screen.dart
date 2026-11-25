@@ -96,6 +96,25 @@ class SettingsScreen extends ConsumerWidget {
                     onTap: () => _editName(context, ref, user?.name ?? ''),
                     child: Row(
                       children: [
+                        ExcludeSemantics(
+                          child: CircleAvatar(
+                            radius: 26,
+                            backgroundColor: colors.primary.withValues(
+                              alpha: .16,
+                            ),
+                            child: Text(
+                              (user?.name?.trim() ?? '').isEmpty
+                                  ? '?'
+                                  : user!.name!.trim()[0].toUpperCase(),
+                              style: TextStyle(
+                                color: colors.primary,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 14),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,10 +139,18 @@ class SettingsScreen extends ConsumerWidget {
                             ],
                           ),
                         ),
-                        Icon(
-                          Icons.edit_rounded,
-                          color: colors.textMuted,
-                          size: 20,
+                        Container(
+                          width: 36,
+                          height: 36,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: colors.primary.withValues(alpha: .12),
+                          ),
+                          child: Icon(
+                            Icons.edit_rounded,
+                            color: colors.primary,
+                            size: 18,
+                          ),
                         ),
                       ],
                     ),

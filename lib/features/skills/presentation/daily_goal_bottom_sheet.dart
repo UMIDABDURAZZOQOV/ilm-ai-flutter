@@ -1,4 +1,6 @@
 import '../../../core/widgets/duo_chrome.dart';
+import '../../../core/widgets/animated_ilmo.dart';
+import '../../../core/widgets/mascot_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -137,6 +139,12 @@ class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              const ExcludeSemantics(
+                child: Center(
+                  child: AnimatedIlmo(pose: MascotPose.happy, size: 88),
+                ),
+              ),
+              const SizedBox(height: 6),
               Text(
                 str3(lang, 'Kunlik maqsad', 'Цель на день', 'Daily Goal'),
                 textAlign: TextAlign.center,

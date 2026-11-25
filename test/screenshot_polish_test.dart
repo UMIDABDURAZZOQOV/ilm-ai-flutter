@@ -310,9 +310,9 @@ void main() {
           final sheet = find.byType(BottomSheet);
           final prepared = str3(
             lang,
-            'Kontent tayyor',
-            'Контент подготовлен',
-            'Content prepared',
+            'O‘rganishga tayyor',
+            'Готово к изучению',
+            'Ready to learn',
           );
           expect(
             find.descendant(

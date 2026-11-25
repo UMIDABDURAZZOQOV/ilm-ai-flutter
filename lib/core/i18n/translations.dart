@@ -38,12 +38,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Log in to your account',
   },
   'auth.signup.title': {
-    'uz': 'Ro\'yxatdan o\'tish',
+    'uz': 'Ro‘yxatdan o‘tish',
     'ru': 'Регистрация',
     'en': 'Sign Up',
   },
   'auth.signup.subtitle': {
-    'uz': 'Bepul hisob yarating va o\'rganishni boshlang',
+    'uz': 'Bepul hisob yarating va o‘rganishni boshlang',
     'ru': 'Создайте бесплатный аккаунт и начните учиться',
     'en': 'Create a free account and start learning',
   },
@@ -68,7 +68,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Passwords do not match',
   },
   'auth.password.hint': {
-    'uz': 'Parol kamida 8 ta belgidan iborat bo\'lishi kerak',
+    'uz': 'Parol kamida 8 ta belgidan iborat bo‘lishi kerak',
     'ru': 'Пароль должен содержать не менее 8 символов',
     'en': 'Password must be at least 8 characters',
   },
@@ -93,7 +93,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Log In',
   },
   'auth.signup.button': {
-    'uz': 'Ro\'yxatdan o\'tish',
+    'uz': 'Ro‘yxatdan o‘tish',
     'ru': 'Зарегистрироваться',
     'en': 'Sign Up',
   },
@@ -103,7 +103,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Continue with Google',
   },
   'auth.no.account': {
-    'uz': 'Hisobingiz yo\'qmi?',
+    'uz': 'Hisobingiz yo‘qmi?',
     'ru': 'Нет аккаунта?',
     'en': 'Don\'t have an account?',
   },
@@ -223,7 +223,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Quiz',
   },
   'dashboard.quiz.desc': {
-    'uz': 'Bilimingizni sinab ko\'ring',
+    'uz': 'Bilimingizni sinab ko‘ring',
     'ru': 'Проверьте свои знания',
     'en': 'Test your knowledge',
   },
@@ -238,7 +238,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Pomodoro + break quiz',
   },
   'insights.card': {
-    'uz': 'O\'rganish tahlili',
+    'uz': 'O‘rganish tahlili',
     'ru': 'Аналитика обучения',
     'en': 'Learning insights',
   },
@@ -253,12 +253,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Course from materials',
   },
   'course.desc': {
-    'uz': 'Yuklagan PDF\'dan tuzilgan kurs',
+    'uz': 'Yuklagan PDF‘dan tuzilgan kurs',
     'ru': 'Курс из ваших PDF',
     'en': 'A course built from your PDFs',
   },
   'decks.card': {
-    'uz': 'Flashcard to\'plamlari',
+    'uz': 'Flashcard to‘plamlari',
     'ru': 'Колоды карточек',
     'en': 'Flashcard decks',
   },
@@ -278,17 +278,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Search, cheat sheet, translate',
   },
   'dashboard.plan.card': {
-    'uz': 'O\'quv rejasi',
+    'uz': 'O‘quv rejasi',
     'ru': 'План обучения',
     'en': 'Learning Plan',
   },
   'dashboard.plan.desc': {
-    'uz': 'AI tomonidan yaratilgan o\'quv jadvali',
+    'uz': 'AI tomonidan yaratilgan o‘quv jadvali',
     'ru': 'Расписание обучения от AI',
     'en': 'AI-generated study schedule',
   },
   'dashboard.gaps.card': {
-    'uz': 'Bilim bo\'shliqlari',
+    'uz': 'Bilim bo‘shliqlari',
     'ru': 'Пробелы в знаниях',
     'en': 'Knowledge Gaps',
   },
@@ -308,7 +308,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Day ',
   },
   'dashboard.today.noplan': {
-    'uz': 'Hali o\'quv rejangiz yo\'q — uni yarating',
+    'uz': 'Hali o‘quv rejangiz yo‘q — uni yarating',
     'ru': 'У вас ещё нет плана обучения — создайте его',
     'en': 'You don\'t have a learning plan yet — create one',
   },
@@ -323,7 +323,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Review',
   },
   'review.empty': {
-    'uz': 'Hozircha takrorlash uchun mavzular yo\'q. Bilim bo\'shliqlari hisobotini oching — zaif mavzular shu yerga qo\'shiladi.',
+    'uz': 'Hozircha takrorlash uchun mavzular yo‘q. Bilim bo‘shliqlari hisobotini oching — zaif mavzular shu yerga qo‘shiladi.',
     'ru': 'Пока нет тем для повторения. Откройте отчёт о пробелах в знаниях — слабые темы появятся здесь.',
     'en': 'No topics to review yet. Open your Knowledge Gaps report — weak topics will appear here.',
   },
@@ -353,7 +353,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Premium',
   },
   'tier.upgrade': {
-    'uz': 'Premium\'ga o\'tish',
+    'uz': 'Premium‘ga o‘tish',
     'ru': 'Перейти на Премиум',
     'en': 'Upgrade to Premium',
   },
@@ -363,7 +363,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Premium Feature',
   },
   'premium.gate.desc': {
-    'uz': 'Bu funksiyani ochish uchun Premium\'ga o\'ting',
+    'uz': 'Bu funksiyani ochish uchun Premium‘ga o‘ting',
     'ru': 'Перейдите на Премиум, чтобы открыть эту функцию',
     'en': 'Upgrade to Premium to unlock this feature',
   },
@@ -393,7 +393,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Topic (optional)',
   },
   'files.delete.confirm': {
-    'uz': 'Faylni o\'chirmoqchimisiz?',
+    'uz': 'Faylni o‘chirmoqchimisiz?',
     'ru': 'Удалить файл?',
     'en': 'Delete this file?',
   },
@@ -458,7 +458,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'AI Assistant',
   },
   'assistant.subtitle': {
-    'uz': 'Istalgan savolingizni bering — matematika, kod, umumiy bilim, nimaiki bo\'lmasin',
+    'uz': 'Istalgan savolingizni bering — matematika, kod, umumiy bilim, nimaiki bo‘lmasin',
     'ru': 'Задайте любой вопрос — математика, код, общие знания, что угодно',
     'en': 'Ask anything — math, code, general knowledge, anything at all',
   },
@@ -468,12 +468,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Type a message...',
   },
   'vocab.card': {
-    'uz': 'Lug\'at',
+    'uz': 'Lug‘at',
     'ru': 'Словарь',
     'en': 'Vocabulary',
   },
   'vocab.desc': {
-    'uz': 'So\'z ma\'nosi, misollar va saqlangan so\'zlar',
+    'uz': 'So‘z ma‘nosi, misollar va saqlangan so‘zlar',
     'ru': 'Значения слов, примеры и избранное',
     'en': 'Definitions, examples & starred words',
   },
@@ -493,7 +493,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'IELTS Preparation',
   },
   'ielts.desc': {
-    'uz': '4 ko\'nikma: Listening, Reading, Writing, Speaking',
+    'uz': '4 ko‘nikma: Listening, Reading, Writing, Speaking',
     'ru': '4 навыка: Listening, Reading, Writing, Speaking',
     'en': '4 skills: Listening, Reading, Writing, Speaking',
   },
@@ -518,7 +518,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'AI Assistant',
   },
   'assistant.empty.desc': {
-    'uz': 'Bu — istalgan savolingizga javob beradigan umumiy AI yordamchi. Materiallaringizga bog\'liq emas.',
+    'uz': 'Bu — istalgan savolingizga javob beradigan umumiy AI yordamchi. Materiallaringizga bog‘liq emas.',
     'ru': 'Это — универсальный AI-помощник, отвечающий на любые вопросы. Не привязан к вашим материалам.',
     'en': 'This is a general AI assistant that answers anything — it isn\'t tied to your uploaded materials.',
   },
@@ -533,7 +533,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Clear conversation history?',
   },
   'assistant.recording': {
-    'uz': 'Yozib olinmoqda... qo\'yib yuboring',
+    'uz': 'Yozib olinmoqda... qo‘yib yuboring',
     'ru': 'Идёт запись... отпустите',
     'en': 'Recording... release to send',
   },
@@ -548,7 +548,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': '🎤 Voice message',
   },
   'assistant.daily.limit': {
-    'uz': 'Kunlik limit tugadi — Premium\'ga o\'ting',
+    'uz': 'Kunlik limit tugadi — Premium‘ga o‘ting',
     'ru': 'Дневной лимит исчерпан — перейдите на Премиум',
     'en': 'Daily limit reached — Upgrade to Premium',
   },
@@ -568,7 +568,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Listening...',
   },
   'live.thinking': {
-    'uz': 'O\'ylayapman...',
+    'uz': 'O‘ylayapman...',
     'ru': 'Думаю...',
     'en': 'Thinking...',
   },
@@ -603,7 +603,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Easy',
   },
   'quiz.difficulty.medium': {
-    'uz': 'O\'rta',
+    'uz': 'O‘rta',
     'ru': 'Средний',
     'en': 'Medium',
   },
@@ -648,7 +648,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Stats',
   },
   'quiz.daily.limit': {
-    'uz': 'Kunlik limit tugadi — Premium\'ga o\'ting',
+    'uz': 'Kunlik limit tugadi — Premium‘ga o‘ting',
     'ru': 'Дневной лимит исчерпан — перейдите на Премиум',
     'en': 'Daily limit reached — Upgrade to Premium',
   },
@@ -658,7 +658,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Flashcards',
   },
   'flashcard.tap': {
-    'uz': 'Javobni ko\'rish uchun bosing',
+    'uz': 'Javobni ko‘rish uchun bosing',
     'ru': 'Нажмите, чтобы увидеть ответ',
     'en': 'Tap to reveal',
   },
@@ -678,7 +678,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Card {i} of {n}',
   },
   'plan.title': {
-    'uz': 'O\'quv rejasi',
+    'uz': 'O‘quv rejasi',
     'ru': 'План обучения',
     'en': 'Learning Plan',
   },
@@ -693,7 +693,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Regenerate',
   },
   'plan.goal.placeholder': {
-    'uz': 'O\'quv maqsadingiz',
+    'uz': 'O‘quv maqsadingiz',
     'ru': 'Ваша цель обучения',
     'en': 'Your learning goal',
   },
@@ -718,12 +718,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'AI is preparing your plan...',
   },
   'gaps.title': {
-    'uz': 'Bilim bo\'shliqlari',
+    'uz': 'Bilim bo‘shliqlari',
     'ru': 'Пробелы в знаниях',
     'en': 'Knowledge Gaps',
   },
   'gaps.not.ready': {
-    'uz': 'Ko\'proq quiz ishlang',
+    'uz': 'Ko‘proq quiz ishlang',
     'ru': 'Пройдите больше квизов',
     'en': 'Complete more quizzes to see your gaps',
   },
@@ -733,7 +733,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Strong',
   },
   'gaps.weakness.medium': {
-    'uz': 'O\'rta',
+    'uz': 'O‘rta',
     'ru': 'Средний',
     'en': 'Average',
   },
@@ -748,7 +748,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Profile',
   },
   'profile.goal.placeholder': {
-    'uz': 'O\'quv maqsadi',
+    'uz': 'O‘quv maqsadi',
     'ru': 'Цель обучения',
     'en': 'Learning goal',
   },
@@ -788,7 +788,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Saved!',
   },
   'settings.appearance': {
-    'uz': 'Ko\'rinish',
+    'uz': 'Ko‘rinish',
     'ru': 'Внешний вид',
     'en': 'Appearance',
   },
@@ -798,12 +798,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Theme',
   },
   'settings.theme.light': {
-    'uz': 'Yorug\'',
+    'uz': 'Yorug‘',
     'ru': 'Светлая',
     'en': 'Light',
   },
   'settings.theme.dark': {
-    'uz': 'Qorong\'i',
+    'uz': 'Qorong‘i',
     'ru': 'Тёмная',
     'en': 'Dark',
   },
@@ -848,12 +848,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Pay with Stripe',
   },
   'payment.success': {
-    'uz': 'To\'lov muvaffaqiyatli!',
+    'uz': 'To‘lov muvaffaqiyatli!',
     'ru': 'Оплата успешна!',
     'en': 'Payment successful!',
   },
   'payment.failed': {
-    'uz': 'To\'lov amalga oshmadi',
+    'uz': 'To‘lov amalga oshmadi',
     'ru': 'Ошибка оплаты',
     'en': 'Payment failed',
   },
@@ -883,7 +883,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Yes',
   },
   'common.no': {
-    'uz': 'Yo\'q',
+    'uz': 'Yo‘q',
     'ru': 'Нет',
     'en': 'No',
   },
@@ -893,7 +893,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Close',
   },
   'common.delete': {
-    'uz': 'O\'chirish',
+    'uz': 'O‘chirish',
     'ru': 'Удалить',
     'en': 'Delete',
   },
@@ -913,12 +913,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Back',
   },
   'common.error.generic': {
-    'uz': 'Xatolik yuz berdi. Qayta urinib ko\'ring.',
+    'uz': 'Xatolik yuz berdi. Qayta urinib ko‘ring.',
     'ru': 'Произошла ошибка. Попробуйте снова.',
     'en': 'An error occurred. Please try again.',
   },
   'common.no.internet': {
-    'uz': 'Internet aloqasi yo\'q',
+    'uz': 'Internet aloqasi yo‘q',
     'ru': 'Нет интернет-соединения',
     'en': 'No internet connection',
   },
@@ -943,17 +943,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Ask questions about your uploaded materials',
   },
   'onboarding.step3.title': {
-    'uz': 'Quiz o\'ting',
+    'uz': 'Quiz o‘ting',
     'ru': 'Проходите квизы',
     'en': 'Take a quiz',
   },
   'onboarding.step3.desc': {
-    'uz': 'Bilimingizni sinab ko\'ring va xatolaringizni tushunib oling',
+    'uz': 'Bilimingizni sinab ko‘ring va xatolaringizni tushunib oling',
     'ru': 'Проверьте знания и поймите свои ошибки',
     'en': 'Test your knowledge and learn from mistakes',
   },
   'onboarding.step4.title': {
-    'uz': 'O\'quv rejasini yarating',
+    'uz': 'O‘quv rejasini yarating',
     'ru': 'Создайте план обучения',
     'en': 'Generate a learning plan',
   },
@@ -973,17 +973,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Snap a photo or type it in — get a step-by-step solution instantly',
   },
   'onboarding.step6.title': {
-    'uz': 'IELTS\'ga tayyorlaning',
+    'uz': 'IELTS‘ga tayyorlaning',
     'ru': 'Подготовка к IELTS',
     'en': 'Prepare for IELTS',
   },
   'onboarding.step6.desc': {
-    'uz': '4 ko\'nikma: Listening, Reading, Writing va Speaking — AI band baholash bilan',
+    'uz': '4 ko‘nikma: Listening, Reading, Writing va Speaking — AI band baholash bilan',
     'ru': '4 навыка: Listening, Reading, Writing и Speaking — с AI-оценкой балла',
     'en': 'All 4 skills — Listening, Reading, Writing & Speaking — with instant AI band scoring',
   },
   'onboarding.step7.title': {
-    'uz': 'SAT\'ni zabt eting',
+    'uz': 'SAT‘ni zabt eting',
     'ru': 'Освойте SAT',
     'en': 'Conquer the SAT',
   },
@@ -998,7 +998,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'National Certificate',
   },
   'onboarding.step8.desc': {
-    'uz': 'Duolingo uslubidagi ko\'nikma daraxti bilan har kuni oz-ozdan o\'rganing',
+    'uz': 'Duolingo uslubidagi ko‘nikma daraxti bilan har kuni oz-ozdan o‘rganing',
     'ru': 'Учитесь понемногу каждый день с деревом навыков в стиле Duolingo',
     'en': 'Learn a little every day with a Duolingo-style gamified skill tree',
   },
@@ -1008,17 +1008,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Get Started',
   },
   'onboarding.welcome': {
-    'uz': 'Ilm AI\'ga xush kelibsiz',
+    'uz': 'Ilm AI‘ga xush kelibsiz',
     'ru': 'Добро пожаловать в Ilm AI',
     'en': 'Welcome to Ilm AI',
   },
   'onboarding.subtitle': {
-    'uz': 'Shaxsiy AI o\'quv yo\'ldoshingiz',
+    'uz': 'Shaxsiy AI o‘quv yo‘ldoshingiz',
     'ru': 'Ваш личный AI-наставник',
     'en': 'Your personal AI learning companion',
   },
   'onboarding.skip': {
-    'uz': 'O\'tkazib yuborish',
+    'uz': 'O‘tkazib yuborish',
     'ru': 'Пропустить',
     'en': 'Skip',
   },
@@ -1038,7 +1038,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Select the app language',
   },
   'language.uz': {
-    'uz': 'O\'zbekcha',
+    'uz': 'O‘zbekcha',
     'ru': 'Узбекский',
     'en': 'Uzbek',
   },
@@ -1068,22 +1068,22 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'No date selected',
   },
   'gaps.not.ready.desc': {
-    'uz': 'Bilim bo\'shliqlaringizni ko\'rish uchun kamida 3 ta quiz sessiysini yakunlang',
+    'uz': 'Bilim bo‘shliqlaringizni ko‘rish uchun kamida 3 ta quiz sessiysini yakunlang',
     'ru': 'Пройдите не менее 3 квиз-сессий, чтобы увидеть пробелы',
     'en': 'Complete at least 3 quiz sessions to see your knowledge gaps',
   },
   'gaps.identified': {
-    'uz': '{n} ta bo\'shliq aniqlandi',
+    'uz': '{n} ta bo‘shliq aniqlandi',
     'ru': 'Найдено {n} пробелов',
     'en': '{n} gap{s} identified',
   },
   'gaps.locked.count': {
-    'uz': 'Yana {n} ta bo\'shliq yashirilgan',
+    'uz': 'Yana {n} ta bo‘shliq yashirilgan',
     'ru': 'Ещё {n} пробелов скрыто',
     'en': '{n} more gap{s} hidden',
   },
   'gaps.locked.desc': {
-    'uz': 'To\'liq tahlil va tavsiyalarni ko\'rish uchun Premiumga o\'ting',
+    'uz': 'To‘liq tahlil va tavsiyalarni ko‘rish uchun Premiumga o‘ting',
     'ru': 'Перейдите на Премиум, чтобы увидеть полный анализ с рекомендациями',
     'en': 'Upgrade to Premium to see full analysis with action recommendations',
   },
@@ -1098,7 +1098,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Good work!',
   },
   'quiz.result.keep': {
-    'uz': 'O\'qishda davom eting!',
+    'uz': 'O‘qishda davom eting!',
     'ru': 'Продолжайте учиться!',
     'en': 'Keep studying!',
   },
@@ -1108,12 +1108,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Your answer',
   },
   'quiz.result.correct.answer': {
-    'uz': 'To\'g\'ri javob',
+    'uz': 'To‘g‘ri javob',
     'ru': 'Правильный ответ',
     'en': 'Correct',
   },
   'quiz.result.progress.label': {
-    'uz': '{score} ta to\'g\'ri, jami {total} ta',
+    'uz': '{score} ta to‘g‘ri, jami {total} ta',
     'ru': '{score} правильных из {total}',
     'en': '{score} correct out of {total}',
   },
@@ -1123,12 +1123,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Sessions',
   },
   'quiz.stats.avg.score': {
-    'uz': 'O\'rtacha ball',
+    'uz': 'O‘rtacha ball',
     'ru': 'Средний балл',
     'en': 'Avg Score',
   },
   'quiz.stats.correct': {
-    'uz': 'To\'g\'ri',
+    'uz': 'To‘g‘ri',
     'ru': 'Правильно',
     'en': 'Correct',
   },
@@ -1148,7 +1148,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Session',
   },
   'plan.title.view': {
-    'uz': '📅 O\'quv rejasi',
+    'uz': '📅 O‘quv rejasi',
     'ru': '📅 План обучения',
     'en': '📅 Learning Plan',
   },
@@ -1178,7 +1178,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': '⏱ {minutes} min',
   },
   'plan.tips.title': {
-    'uz': '💡 O\'quv maslahatlari',
+    'uz': '💡 O‘quv maslahatlari',
     'ru': '💡 Советы по учёбе',
     'en': '💡 Study Tips',
   },
@@ -1188,7 +1188,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Please fill in goal and target date',
   },
   'plan.error.hours': {
-    'uz': 'Kunlik soatlar 0.5 va 8 orasida bo\'lishi kerak',
+    'uz': 'Kunlik soatlar 0.5 va 8 orasida bo‘lishi kerak',
     'ru': 'Часы в день должны быть от 0.5 до 8',
     'en': 'Daily hours must be between 0.5 and 8',
   },
@@ -1233,17 +1233,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Expires: {date}',
   },
   'payment.checkout.error': {
-    'uz': 'To\'lov havolasini olishda xatolik',
+    'uz': 'To‘lov havolasini olishda xatolik',
     'ru': 'Не удалось получить ссылку на оплату',
     'en': 'Failed to get checkout URL',
   },
   'payment.test.title': {
-    'uz': 'Test rejimidagi to\'lov',
+    'uz': 'Test rejimidagi to‘lov',
     'ru': 'Тестовый платёж',
     'en': 'Test-mode payment',
   },
   'payment.test.message': {
-    'uz': 'Haqiqiy to\'lov tizimi hali ulanmagan. Premium\'ni test rejimida faollashtirasizmi?',
+    'uz': 'Haqiqiy to‘lov tizimi hali ulanmagan. Premium‘ni test rejimida faollashtirasizmi?',
     'ru': 'Реальная платёжная система ещё не подключена. Активировать Premium в тестовом режиме?',
     'en': 'The real payment gateway isn’t connected yet. Activate Premium in test mode?',
   },
@@ -1273,7 +1273,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Explanation',
   },
   'quiz.answer.correct.label': {
-    'uz': 'To\'g\'ri javob:',
+    'uz': 'To‘g‘ri javob:',
     'ru': 'Правильный ответ:',
     'en': 'Correct answer:',
   },
@@ -1293,7 +1293,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Basic AI chat',
   },
   'payment.free.f4': {
-    'uz': 'Asosiy bo\'shliqlar ko\'rinishi',
+    'uz': 'Asosiy bo‘shliqlar ko‘rinishi',
     'ru': 'Базовый просмотр пробелов',
     'en': 'Basic gaps preview',
   },
@@ -1308,17 +1308,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Unlimited file uploads',
   },
   'payment.premium.f3': {
-    'uz': 'To\'liq AI suhbat',
+    'uz': 'To‘liq AI suhbat',
     'ru': 'Полный AI-чат',
     'en': 'Full AI chat',
   },
   'payment.premium.f4': {
-    'uz': 'To\'liq bo\'shliqlar hisoboti va tavsiyalar',
+    'uz': 'To‘liq bo‘shliqlar hisoboti va tavsiyalar',
     'ru': 'Полный отчёт о пробелах + рекомендации',
     'en': 'Full gaps report + actions',
   },
   'payment.premium.f5': {
-    'uz': 'To\'liq o\'quv rejasi',
+    'uz': 'To‘liq o‘quv rejasi',
     'ru': 'Полный план обучения',
     'en': 'Complete learning plan',
   },
@@ -1343,12 +1343,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Topics',
   },
   'profile.stats.score': {
-    'uz': 'O\'rtacha ball',
+    'uz': 'O‘rtacha ball',
     'ru': 'Средний балл',
     'en': 'Avg Score',
   },
   'onboarding.subtitle.multilang': {
-    'uz': 'Shaxsiy AI o\'quv yo\'ldoshingiz',
+    'uz': 'Shaxsiy AI o‘quv yo‘ldoshingiz',
     'ru': 'Ваш личный AI-наставник',
     'en': 'Your personal AI learning companion',
   },
@@ -1368,7 +1368,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Feedback',
   },
   'feedback.desc': {
-    'uz': 'Ilm AI\'ni yaxshilashga yordam bering',
+    'uz': 'Ilm AI‘ni yaxshilashga yordam bering',
     'ru': 'Помогите нам улучшить Ilm AI',
     'en': 'Help us make Ilm AI better',
   },
@@ -1613,7 +1613,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'No colleges match your search',
   },
   'college.showing': {
-    'uz': '{n} ta universitet ko\'rsatilmoqda',
+    'uz': '{n} ta universitet ko‘rsatilmoqda',
     'ru': 'Показано университетов: {n}',
     'en': 'Showing {n} matching universities',
   },
@@ -1623,7 +1623,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Acceptance',
   },
   'college.card.sat': {
-    'uz': 'SAT o\'rtacha',
+    'uz': 'SAT o‘rtacha',
     'ru': 'Медиана SAT',
     'en': 'Median SAT',
   },
@@ -1633,12 +1633,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Scores',
   },
   'college.detail.sat.median': {
-    'uz': 'SAT · o\'rtacha',
+    'uz': 'SAT · o‘rtacha',
     'ru': 'SAT · медиана',
     'en': 'SAT · median',
   },
   'college.detail.act.median': {
-    'uz': 'ACT · o\'rtacha',
+    'uz': 'ACT · o‘rtacha',
     'ru': 'ACT · медиана',
     'en': 'ACT · median',
   },
@@ -1648,7 +1648,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'This university does not typically use SAT scores for admission.',
   },
   'college.detail.visit.website': {
-    'uz': 'Veb-saytga o\'tish',
+    'uz': 'Veb-saytga o‘tish',
     'ru': 'Перейти на сайт',
     'en': 'Visit website',
   },
@@ -1658,7 +1658,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Admissions',
   },
   'college.detail.tab.academics': {
-    'uz': 'O\'quv',
+    'uz': 'O‘quv',
     'ru': 'Учёба',
     'en': 'Academics',
   },
@@ -1668,7 +1668,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Students',
   },
   'college.detail.gpa': {
-    'uz': 'O\'rtacha GPA',
+    'uz': 'O‘rtacha GPA',
     'ru': 'Средний GPA',
     'en': 'Average GPA',
   },
@@ -1723,7 +1723,7 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Famous professors',
   },
   'college.detail.professors.empty': {
-    'uz': 'Bu maktab uchun professorlar ma\'lumoti hali qo\'shilmoqda.',
+    'uz': 'Bu maktab uchun professorlar ma‘lumoti hali qo‘shilmoqda.',
     'ru': 'Информация о преподавателях для этого вуза пока добавляется.',
     'en': 'Notable-faculty details for this school are being added.',
   },
@@ -1733,12 +1733,12 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'Also known as',
   },
   'college.detail.faq.title': {
-    'uz': 'Tez-tez so\'raladigan savollar',
+    'uz': 'Tez-tez so‘raladigan savollar',
     'ru': 'Часто задаваемые вопросы',
     'en': 'Frequently asked questions',
   },
   'college.detail.disclaimer': {
-    'uz': 'Eslatma: ma\'lumotlar taxminiy, ochiq manbalardan olingan va dolzarb bo\'lmasligi mumkin. Ariza topshirishdan oldin rasmiy qabul veb-saytida tekshiring.',
+    'uz': 'Eslatma: ma‘lumotlar taxminiy, ochiq manbalardan olingan va dolzarb bo‘lmasligi mumkin. Ariza topshirishdan oldin rasmiy qabul veb-saytida tekshiring.',
     'ru': 'Отказ от ответственности: данные являются приблизительными, взяты из открытых источников и могут быть неактуальны. Перед подачей заявки уточните информацию на официальном сайте приёмной комиссии.',
     'en': 'Disclaimer: figures are approximate, drawn from public data, and may not be fully current. Always verify on the official admissions website before applying.',
   },
@@ -1828,17 +1828,17 @@ const Map<String, Map<String, String>> kTranslations = {
     'en': 'New Problem',
   },
   'math.error.generic': {
-    'uz': 'Yechib bo\'lmadi, qayta urining.',
+    'uz': 'Yechib bo‘lmadi, qayta urining.',
     'ru': 'Не удалось решить, попробуйте снова.',
     'en': 'Couldn\'t solve that — please try again.',
   },
   'math.error.not.recognized': {
-    'uz': 'Masala aniqlanmadi. Aniqroq surat oling yoki qo\'lda yozing.',
+    'uz': 'Masala aniqlanmadi. Aniqroq surat oling yoki qo‘lda yozing.',
     'ru': 'Задача не распознана. Сделайте фото чётче или введите текст.',
     'en': 'Couldn\'t recognize a problem. Try a clearer photo, or type it instead.',
   },
   'math.empty.hint': {
-    'uz': 'Arifmetika, algebra, geometriya, trigonometriya, statistika va so\'z masalalari — hammasi qo\'llab-quvvatlanadi.',
+    'uz': 'Arifmetika, algebra, geometriya, trigonometriya, statistika va so‘z masalalari — hammasi qo‘llab-quvvatlanadi.',
     'ru': 'Арифметика, алгебра, геометрия, тригонометрия, статистика и текстовые задачи — всё поддерживается.',
     'en': 'Arithmetic, algebra, geometry, trigonometry, calculus, statistics, and word problems — all supported.',
   },

@@ -364,47 +364,47 @@ class _CurriculumLearningScreenState
                             : null,
                       )
                     : Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (compactToolbar) gradeButton,
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 4,
-                      alignment: WrapAlignment.spaceBetween,
-                      children: [
-                        if (reviewedLearning)
-                          toolbarAction(
-                            key: const ValueKey('quick_subject_switch'),
-                            onPressed: widget.onChangeSubject,
-                            icon: Icons.swap_horiz_rounded,
-                            label: tr('Fanlar', 'Предметы', 'Subjects'),
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          if (compactToolbar) gradeButton,
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 4,
+                            alignment: WrapAlignment.spaceBetween,
+                            children: [
+                              if (reviewedLearning)
+                                toolbarAction(
+                                  key: const ValueKey('quick_subject_switch'),
+                                  onPressed: widget.onChangeSubject,
+                                  icon: Icons.swap_horiz_rounded,
+                                  label: tr('Fanlar', 'Предметы', 'Subjects'),
+                                ),
+                              if (!compactToolbar) gradeButton,
+                              toolbarAction(
+                                onPressed: () => _showOutline(current.grade),
+                                icon: Icons.menu_book_outlined,
+                                label: tr('Mavzular', 'Темы', 'Topics'),
+                              ),
+                              if (reviewedLearning && current.readyLessons > 0)
+                                toolbarAction(
+                                  key: const ValueKey('subject_tutor_entry'),
+                                  onPressed: () => openSubjectTutor(
+                                    context,
+                                    language: lang,
+                                    subject: widget.subject.slug,
+                                    grade: current.grade,
+                                  ),
+                                  icon: Icons.chat_bubble_outline_rounded,
+                                  label: tr(
+                                    'Ilmodan so‘rang',
+                                    'Спросить Илмо',
+                                    'Ask Ilmo',
+                                  ),
+                                ),
+                            ],
                           ),
-                        if (!compactToolbar) gradeButton,
-                        toolbarAction(
-                          onPressed: () => _showOutline(current.grade),
-                          icon: Icons.menu_book_outlined,
-                          label: tr('Mavzular', 'Темы', 'Topics'),
-                        ),
-                        if (reviewedLearning && current.readyLessons > 0)
-                          toolbarAction(
-                            key: const ValueKey('subject_tutor_entry'),
-                            onPressed: () => openSubjectTutor(
-                              context,
-                              language: lang,
-                              subject: widget.subject.slug,
-                              grade: current.grade,
-                            ),
-                            icon: Icons.chat_bubble_outline_rounded,
-                            label: tr(
-                              'Ilmodan so‘rang',
-                              'Спросить Илмо',
-                              'Ask Ilmo',
-                            ),
-                          ),
-                      ],
-                    ),
-                  ],
-                ),
+                        ],
+                      ),
               ),
               Expanded(
                 child: current.readyLessons > 0
@@ -508,6 +508,7 @@ class _CurriculumOutline extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lang = ref.watch(languageProvider);
+    final c = Theme.of(context).extension<AppColors>()!.colors;
     String tr(String uz, String ru, String en) => str3(lang, uz, ru, en);
     final key = (subject, grade);
     return ref
@@ -566,32 +567,91 @@ class _CurriculumOutline extends ConsumerWidget {
                     'Topics are in preparation.',
                   ),
                 ),
-              for (final chapter in outline.chapters) ...[
+              for (final (ci, chapter) in outline.chapters.indexed) ...[
                 const SizedBox(height: 20),
-                Text(
-                  chapter.title,
-                  style: const TextStyle(
-                    fontSize: 19,
-                    fontWeight: FontWeight.w800,
-                  ),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: c.primary,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        tr(
+                          '${ci + 1}-bob',
+                          'Глава ${ci + 1}',
+                          'Chapter ${ci + 1}',
+                        ),
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onPrimary,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        chapter.title,
+                        style: const TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-                for (final topic in chapter.topics)
+                const SizedBox(height: 8),
+                for (final (ti, topic) in chapter.topics.indexed)
                   ListTile(
                     contentPadding: EdgeInsets.zero,
-                    leading: Icon(
-                      topic.completed
-                          ? Icons.check_circle_rounded
-                          : topic.ready
-                          ? Icons.menu_book_rounded
-                          : Icons.menu_book_outlined,
+                    leading: Container(
+                      width: 40,
+                      height: 40,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: topic.completed
+                            ? c.success
+                            : topic.ready
+                            ? c.primary.withValues(alpha: .14)
+                            : c.border.withValues(alpha: .5),
+                        border: topic.completed || !topic.ready
+                            ? null
+                            : Border.all(color: c.primary, width: 2),
+                      ),
+                      child: topic.completed
+                          ? const Icon(
+                              Icons.check_rounded,
+                              color: Colors.white,
+                              size: 22,
+                            )
+                          : Text(
+                              '${ti + 1}',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w900,
+                                color: topic.ready ? c.primary : c.textMuted,
+                              ),
+                            ),
                     ),
-                    title: Text(topic.title),
+                    title: Text(
+                      topic.title,
+                      style: const TextStyle(fontWeight: FontWeight.w700),
+                    ),
                     subtitle: Text(
                       '${reviewedLearning ? '' : '${topic.printedStart ?? "?"}–${topic.printedEnd ?? "?"} ${tr('bet', 'стр.', 'pp.')} · '}${topic.completed
                           ? tr('Bajarilgan', 'Завершено', 'Completed')
                           : topic.ready
-                          ? tr('Kontent tayyor', 'Контент подготовлен', 'Content prepared')
-                          : tr('Kontent tayyorlanmoqda', 'Контент готовится', 'Content in preparation')}',
+                          ? tr('O‘rganishga tayyor', 'Готово к изучению', 'Ready to learn')
+                          : tr('Tayyorlanmoqda', 'Готовится', 'Coming soon')}',
+                      style: TextStyle(
+                        color: topic.completed ? c.success : c.textSecondary,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
               ],
@@ -614,7 +674,6 @@ class _CurriculumOutline extends ConsumerWidget {
         );
   }
 }
-
 
 /// One compact row like Duolingo's top bar: the subject/grade chip opens the
 /// switcher, then icon actions for the topic map and the subject tutor.

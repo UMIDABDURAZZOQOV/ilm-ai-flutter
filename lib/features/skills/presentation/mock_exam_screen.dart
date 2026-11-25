@@ -385,7 +385,7 @@ class _MockExamScreenState extends ConsumerState<MockExamScreen> {
             const SizedBox(height: 6),
             if (r.userAnswer.isNotEmpty)
               Text('${str3(lang, 'Siz:', 'Вы:', 'You:')} ${r.userAnswer}', style: const TextStyle(fontSize: 12, color: Color(0xFFFF4B4B), decoration: TextDecoration.lineThrough)),
-            Text('${str3(lang, 'To\'g\'ri:', 'Верно:', 'Correct:')} ${r.correctAnswer}', style: const TextStyle(fontSize: 12, color: Color(0xFF3A8A00), fontWeight: FontWeight.w700)),
+            Text('${str3(lang, 'To‘g‘ri:', 'Верно:', 'Correct:')} ${r.correctAnswer}', style: const TextStyle(fontSize: 12, color: Color(0xFF3A8A00), fontWeight: FontWeight.w700)),
             if (r.explanation != null && r.explanation!.isNotEmpty)
               Padding(padding: const EdgeInsets.only(top: 2), child: Text(r.explanation!, style: TextStyle(fontSize: 12, color: Colors.grey.shade600))),
             AiTutorWidget(questionText: r.questionText, options: r.options, correctAnswer: r.correctAnswer, userAnswer: r.userAnswer),

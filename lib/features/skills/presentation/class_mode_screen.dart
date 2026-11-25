@@ -80,7 +80,7 @@ class _ClassModeScreenState extends ConsumerState<ClassModeScreen> {
           ? str3(lang, "Siz allaqachon a'zosiz", 'Вы уже в классе', 'Already a member')
           : str3(lang, "Sinfga qo'shildingiz", 'Вы вступили в класс', 'Joined the class'));
     } catch (_) {
-      _toast(str3(lang, "Kod noto'g'ri", 'Неверный код', 'Invalid code'));
+      _toast(str3(lang, "Kod noto‘g‘ri", 'Неверный код', 'Invalid code'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -97,25 +97,25 @@ class _ClassModeScreenState extends ConsumerState<ClassModeScreen> {
               padding: const EdgeInsets.all(16),
               children: [
                 if (_classes!.teaching.isNotEmpty) ...[
-                  _label(str3(lang, "Men o'qituvchi", 'Я преподаю', 'I teach')),
+                  _label(str3(lang, "Men o‘qituvchi", 'Я преподаю', 'I teach')),
                   for (final c in _classes!.teaching)
                     _classTile(
                       icon: Icons.groups_rounded,
                       color: const Color(0xFF4C6EF5),
                       title: c.name,
-                      subtitle: '${c.memberCount} ${str3(lang, "o'quvchi", 'учеников', 'students')} · ${str3(lang, 'kod', 'код', 'code')} ${c.joinCode}',
+                      subtitle: '${c.memberCount} ${str3(lang, "o‘quvchi", 'учеников', 'students')} · ${str3(lang, 'kod', 'код', 'code')} ${c.joinCode}',
                       onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => ClassDetailScreen(classId: c.id))),
                     ),
                   const SizedBox(height: 16),
                 ],
                 if (_classes!.enrolled.isNotEmpty) ...[
-                  _label(str3(lang, "Men o'quvchi", 'Я учусь', "I'm enrolled")),
+                  _label(str3(lang, "Men o‘quvchi", 'Я учусь', "I'm enrolled")),
                   for (final c in _classes!.enrolled)
                     _classTile(
                       icon: Icons.menu_book_rounded,
                       color: const Color(0xFF2A1F6B),
                       title: c.name,
-                      subtitle: '${str3(lang, "O'qituvchi", 'Учитель', 'Teacher')}: ${c.teacherName}',
+                      subtitle: '${str3(lang, "O‘qituvchi", 'Учитель', 'Teacher')}: ${c.teacherName}',
                     ),
                   const SizedBox(height: 16),
                 ],
@@ -266,12 +266,12 @@ class _ClassDetailScreenState extends ConsumerState<ClassDetailScreen> {
           : ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                Text('${str3(lang, "O'quvchilar", 'Ученики', 'Students')} (${d.roster.length})', style: const TextStyle(fontWeight: FontWeight.w800)),
+                Text('${str3(lang, "O‘quvchilar", 'Ученики', 'Students')} (${d.roster.length})', style: const TextStyle(fontWeight: FontWeight.w800)),
                 const SizedBox(height: 8),
                 if (d.roster.isEmpty)
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Center(child: Text(str3(lang, "Hali o'quvchi yo'q. Kodni ulashing.", 'Пока нет учеников. Поделитесь кодом.', 'No students yet. Share the code.'), style: TextStyle(color: Colors.grey.shade600))),
+                    child: Center(child: Text(str3(lang, "Hali o‘quvchi yo‘q. Kodni ulashing.", 'Пока нет учеников. Поделитесь кодом.', 'No students yet. Share the code.'), style: TextStyle(color: Colors.grey.shade600))),
                   ),
                 for (var i = 0; i < d.roster.length; i++) _rosterTile(lang, i + 1, d.roster[i]),
                 const SizedBox(height: 20),

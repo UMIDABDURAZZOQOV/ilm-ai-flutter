@@ -222,7 +222,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                   'Choose how to sign in.',
                                 )
                               : tr(
-                                  "Google bilan bir marta bosib kiring — ro'yxatdan o'tish ham, kirish ham shu.",
+                                  "Google bilan bir marta bosib kiring — ro‘yxatdan o‘tish ham, kirish ham shu.",
                                   'Войдите одним нажатием через Google — это и регистрация, и вход.',
                                   'Continue with Google in one tap — it both signs you up and logs you in.',
                                 ),

@@ -104,59 +104,36 @@ class LearningContinueCard extends StatelessWidget {
                   pose: entry?.state == LessonEntryState.resume
                       ? MascotPose.happy
                       : MascotPose.hello,
-                  size:
-                      compact || MediaQuery.textScalerOf(context).scale(16) > 24
+                  size: MediaQuery.textScalerOf(context).scale(16) > 24
                       ? 64
-                      : 90,
+                      : compact
+                      ? 84
+                      : 96,
                 ),
               ],
             ),
           if (onContinue != null) ...[
-            SizedBox(height: compact ? 4 : IlmSpace.md),
-            if (compact)
-              Align(
-                alignment: AlignmentDirectional.centerStart,
-                child: TextButton.icon(
-                  onPressed: onContinue,
-                  icon: const Icon(Icons.arrow_forward_rounded, size: 20),
-                  label: Text(
-                    checkpoint
-                        ? str3(
+            SizedBox(height: compact ? 12 : IlmSpace.md),
+            Duo3DButton(
+              onPressed: onContinue,
+              height: compact ? 46 : 52,
+              child: Text(
+                checkpoint
+                    ? str3(
+                        language,
+                        'BO‘LIM SINOVI',
+                        'ПРОВЕРКА РАЗДЕЛА',
+                        'UNIT CHECKPOINT',
+                      )
+                    : entry?.action(language) ??
+                          str3(
                             language,
-                            'BO‘LIM SINOVI',
-                            'ПРОВЕРКА РАЗДЕЛА',
-                            'UNIT CHECKPOINT',
-                          )
-                        : entry?.action(language) ??
-                              str3(
-                                language,
-                                'DAVOM ETISH',
-                                'ПРОДОЛЖИТЬ',
-                                'CONTINUE',
-                              ),
-                  ),
-                ),
-              )
-            else
-              Duo3DButton(
-                onPressed: onContinue,
-                child: Text(
-                  checkpoint
-                      ? str3(
-                          language,
-                          'BO‘LIM SINOVI',
-                          'ПРОВЕРКА РАЗДЕЛА',
-                          'UNIT CHECKPOINT',
-                        )
-                      : entry?.action(language) ??
-                            str3(
-                              language,
-                              'DAVOM ETISH',
-                              'ПРОДОЛЖИТЬ',
-                              'CONTINUE',
-                            ),
-                ),
+                            'DAVOM ETISH',
+                            'ПРОДОЛЖИТЬ',
+                            'CONTINUE',
+                          ),
               ),
+            ),
           ],
           SizedBox(height: compact ? 2 : IlmSpace.sm),
           InkWell(

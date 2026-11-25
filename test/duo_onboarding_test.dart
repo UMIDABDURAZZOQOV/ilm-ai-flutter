@@ -130,7 +130,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Check title in Uzbek
-      expect(find.text("Qaysi tilda o'rganishni xohlaysiz?"), findsOneWidget);
+      expect(find.text("Qaysi tilda o‘rganishni xohlaysiz?"), findsOneWidget);
 
       // Select Russian
       await tester.tap(find.text('Русский'));
@@ -227,7 +227,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Subject screen
-      expect(find.text("Qaysi fanni o'rganmoqchisiz?"), findsOneWidget);
+      expect(find.text("Qaysi fanni o‘rganmoqchisiz?"), findsOneWidget);
       expect(find.text('Matematika'), findsOneWidget);
 
       final continueBtn = find.byKey(const ValueKey('onboarding_continue_btn'));
@@ -235,7 +235,7 @@ void main() {
       // Tapping continue before selecting does not advance
       await tester.tap(continueBtn);
       await tester.pumpAndSettle();
-      expect(find.text("Qaysi fanni o'rganmoqchisiz?"), findsOneWidget);
+      expect(find.text("Qaysi fanni o‘rganmoqchisiz?"), findsOneWidget);
 
       // Tap 'Matematika'
       await tester.tap(find.text('Matematika'));
@@ -334,7 +334,7 @@ void main() {
       // Check all 5 levels exist
       expect(find.text('Yangi boshlovchi'), findsOneWidget);
       expect(find.text('Asoslarini bilaman'), findsOneWidget);
-      expect(find.text("O'rtacha"), findsOneWidget);
+      expect(find.text("O‘rtacha"), findsOneWidget);
       expect(find.text('Yaxshi bilaman'), findsOneWidget);
       expect(find.text("A'lo", skipOffstage: false), findsOneWidget);
 
@@ -343,8 +343,8 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Bu fandan qanchalik bilasiz?'), findsOneWidget);
 
-      // Tap "O'rtacha"
-      await tester.tap(find.text("O'rtacha"));
+      // Tap "O‘rtacha"
+      await tester.tap(find.text("O‘rtacha"));
       await tester.pumpAndSettle();
 
       // Advance to Step 6 (Ishonch oraliq ekrani)
@@ -393,7 +393,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Advances to Step 7: Reason (Sabab)
-      expect(find.text("Nima uchun o'rganasiz?"), findsOneWidget);
+      expect(find.text("Nima uchun o‘rganasiz?"), findsOneWidget);
     });
 
     testWidgets(
@@ -432,7 +432,7 @@ void main() {
       // Initially empty -> tapping does not advance
       await tester.tap(continueBtn);
       await tester.pumpAndSettle();
-      expect(find.text("Nima uchun o'rganasiz?"), findsOneWidget);
+      expect(find.text("Nima uchun o‘rganasiz?"), findsOneWidget);
 
       // Select first reason
       await tester.tap(find.text('Imtihonlarga tayyorlanish'));
@@ -447,7 +447,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(
-          find.text('Keling, qanday sur\'atda o\'qishni hal qilaylik!'),
+          find.text('Keling, qanday sur’atda o‘qishni hal qilaylik!'),
           findsOneWidget);
     });
 
@@ -486,7 +486,7 @@ void main() {
 
       // Step 8: Sur'at
       expect(
-          find.text('Keling, qanday sur\'atda o\'qishni hal qilaylik!'),
+          find.text('Keling, qanday sur’atda o‘qishni hal qilaylik!'),
           findsOneWidget);
 
       // Advance to Step 9
@@ -521,7 +521,7 @@ void main() {
       expect(find.text('Mavzuni chuqur tushunish'), findsOneWidget);
       expect(
           find.text('Imtihonga ishonch bilan tayyorgarlik'), findsOneWidget);
-      expect(find.text("Muntazam o'qish odati"), findsOneWidget);
+      expect(find.text("Muntazam o‘qish odati"), findsOneWidget);
     });
 
     testWidgets(
@@ -566,7 +566,7 @@ void main() {
       await tester.tap(continueBtn);
       await tester.pumpAndSettle();
 
-      expect(find.text("O'zingiz haqingizda ayting"), findsOneWidget);
+      expect(find.text("O‘zingiz haqingizda ayting"), findsOneWidget);
 
       // Ali Valiyev is prefilled from mock auth
       expect(find.text('Ali Valiyev'), findsOneWidget);
@@ -651,7 +651,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Returns to Step 0 (Language)
-      expect(find.text("Qaysi tilda o'rganishni xohlaysiz?"), findsOneWidget);
+      expect(find.text("Qaysi tilda o‘rganishni xohlaysiz?"), findsOneWidget);
     });
   });
 }

@@ -300,7 +300,7 @@ void main() {
       var container = await mount();
       expect(
         find.text(
-          "Barcha o'quv mavzulari maktab darsliklari asosida tayyorlangan.",
+          "Barcha o‘quv mavzulari maktab darsliklari asosida tayyorlangan.",
         ),
         findsOneWidget,
       );

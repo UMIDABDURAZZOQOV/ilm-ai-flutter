@@ -60,7 +60,7 @@ class _SkillReferralScreenState extends ConsumerState<SkillReferralScreen> {
       await _load();
       _toast(str3(lang, "+${r['bonus_xp']} XP! Sizni ${r['inviter_name']} taklif qildi.", '+${r['bonus_xp']} XP! Вас пригласил(а) ${r['inviter_name']}.', '+${r['bonus_xp']} XP! Invited by ${r['inviter_name']}.'));
     } catch (_) {
-      _toast(str3(lang, "Kod noto'g'ri yoki allaqachon ishlatilgan", 'Неверный или уже использованный код', 'Invalid or already-used code'));
+      _toast(str3(lang, "Kod noto‘g‘ri yoki allaqachon ishlatilgan", 'Неверный или уже использованный код', 'Invalid or already-used code'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }

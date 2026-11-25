@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ilm_ai_flutter/core/theme/app_theme.dart';
 import 'package:ilm_ai_flutter/core/theme/ilm_design.dart';
+import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
+import 'package:ilm_ai_flutter/core/widgets/mascot_image.dart';
 import 'skill_ui.dart';
 
 enum StudyExitStatus { saved, saveFailed, unsaved }
@@ -66,49 +68,69 @@ class StudyExitDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ExcludeSemantics(
-                  child: Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: failed ? c?.warningLight : c?.primaryLight,
-                      borderRadius: BorderRadius.circular(IlmRadius.small),
-                    ),
-                    child: Icon(
-                      failed
-                          ? Icons.warning_amber_rounded
-                          : saved
-                          ? Icons.bookmark_added_outlined
-                          : Icons.pause_rounded,
-                      size: 23,
-                      color: accent,
-                    ),
+            // Ilmo asks the learner to stay, with the save state as a badge.
+            ExcludeSemantics(
+              child: Center(
+                child: SizedBox(
+                  width: 148,
+                  height: 136,
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      const Center(
+                        child: AnimatedIlmo(pose: MascotPose.sad, size: 132),
+                      ),
+                      Positioned(
+                        right: 0,
+                        bottom: 4,
+                        child: Container(
+                          width: 36,
+                          height: 36,
+                          decoration: BoxDecoration(
+                            color: failed ? c?.warningLight : c?.primaryLight,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: c?.surface ?? theme.colorScheme.surface,
+                              width: 3,
+                            ),
+                          ),
+                          child: Icon(
+                            failed
+                                ? Icons.warning_amber_rounded
+                                : saved
+                                ? Icons.bookmark_added_outlined
+                                : Icons.pause_rounded,
+                            size: 18,
+                            color: accent,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 5),
-                    child: Semantics(
-                      namesRoute: true,
-                      header: true,
-                      child: Text(title, style: theme.textTheme.titleLarge),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 12),
+            Semantics(
+              namesRoute: true,
+              header: true,
+              child: Text(
+                title,
+                textAlign: TextAlign.center,
+                style: theme.textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
             Text(
               message,
+              textAlign: TextAlign.center,
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: c?.textSecondary,
               ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 8),
             Text(
               str3(
                 language,
@@ -116,6 +138,7 @@ class StudyExitDialog extends StatelessWidget {
                 'Предыдущие достижения сохранятся.',
                 'Your earlier progress is safe.',
               ),
+              textAlign: TextAlign.center,
               style: theme.textTheme.bodySmall?.copyWith(color: c?.textMuted),
             ),
             const SizedBox(height: 24),

@@ -237,7 +237,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       _change(
         () => _error = str3(
           lang,
-          "Yoshingizni to'g'ri kiriting (5–100).",
+          "Yoshingizni to‘g‘ri kiriting (5–100).",
           'Введите корректный возраст (5–100).',
           'Enter a valid age (5–100).',
         ),
@@ -542,14 +542,14 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       mascotPose: MascotPose.hello,
       speechText: str3(
         lang,
-        "Qaysi tilda o'rganishni xohlaysiz?",
+        "Qaysi tilda o‘rganishni xohlaysiz?",
         'На каком языке вы хотите учиться?',
         'Which language do you want to learn in?',
       ),
       children: [
         _SelectionTile(
-          title: "O'zbekcha",
-          subtitle: "O'zbek tili",
+          title: "O‘zbekcha",
+          subtitle: "O‘zbek tili",
           isSelected: lang == 'uz',
           leading: const Text('🇺🇿', style: TextStyle(fontSize: 28)),
           onTap: () {
@@ -618,7 +618,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               Text(
                 str3(
                   lang,
-                  "Barcha o'quv mavzulari maktab darsliklari asosida tayyorlangan.",
+                  "Barcha o‘quv mavzulari maktab darsliklari asosida tayyorlangan.",
                   'Все учебные темы подготовлены на основе школьных учебников.',
                   'All learning topics are based on school textbooks.',
                 ),
@@ -763,7 +763,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       mascotPose: MascotPose.thinking,
       speechText: str3(
         lang,
-        "Qaysi fanni o'rganmoqchisiz?",
+        "Qaysi fanni o‘rganmoqchisiz?",
         'Какой предмет вы хотите изучать?',
         'Which subject do you want to learn?',
       ),
@@ -938,7 +938,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         'school',
         str3(
           lang,
-          "Maktab / o'qituvchi",
+          "Maktab / o‘qituvchi",
           'Школа / учитель',
           'School / teacher',
         ),
@@ -976,7 +976,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         str3(lang, 'Yangi boshlovchi', 'Новичок', 'Beginner'),
         str3(
           lang,
-          "Oldin bu fanni o'rganmaganman",
+          "Oldin bu fanni o‘rganmaganman",
           'Раньше не изучал предмет',
           'Never studied this subject before',
         ),
@@ -993,7 +993,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       ),
       (
         3,
-        str3(lang, "O'rtacha", 'Средний уровень', 'Intermediate'),
+        str3(lang, "O‘rtacha", 'Средний уровень', 'Intermediate'),
         str3(
           lang,
           'Mustaqil misollar yecha olaman',
@@ -1098,7 +1098,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         'self_dev',
         str3(
           lang,
-          "O'zimni rivojlantirish",
+          "O‘zimni rivojlantirish",
           'Саморазвитие',
           'Self-improvement',
         ),
@@ -1130,7 +1130,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       mascotPose: MascotPose.thinking,
       speechText: str3(
         lang,
-        "Nima uchun o'rganasiz?",
+        "Nima uchun o‘rganasiz?",
         'Зачем вы хотите учиться?',
         'Why are you learning this?',
       ),
@@ -1182,7 +1182,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               pointerDirection: BubblePointerDirection.down,
               text: str3(
                 lang,
-                'Keling, qanday sur\'atda o\'qishni hal qilaylik!',
+                'Keling, qanday sur’atda o‘qishni hal qilaylik!',
                 'Давайте решим, в каком темпе будем учиться!',
                 'Let\'s decide what pace to learn at!',
               ),
@@ -1292,7 +1292,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         BrandPalette.accentOrange,
         str3(
           lang,
-          "Muntazam o'qish odati",
+          "Muntazam o‘qish odati",
           'Привычка учиться регулярно',
           'Consistent daily study habit',
         ),
@@ -1380,7 +1380,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       mascotPose: MascotPose.hello,
       speechText: str3(
         lang,
-        'O\'zingiz haqingizda ayting',
+        'O‘zingiz haqingizda ayting',
         'Расскажите немного о себе',
         'Tell us a bit about you',
       ),

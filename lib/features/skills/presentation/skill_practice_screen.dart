@@ -597,7 +597,7 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                       children: [
                         _stat(
                               '$_correct/${_results.length}',
-                              str3(lang, "To'g'ri", 'Правильно', 'Correct'),
+                              str3(lang, "To‘g‘ri", 'Правильно', 'Correct'),
                               c.success,
                             )
                             .motion(context)

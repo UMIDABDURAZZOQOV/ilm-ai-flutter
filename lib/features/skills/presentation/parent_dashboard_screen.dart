@@ -58,7 +58,7 @@ class _ParentDashboardScreenState extends ConsumerState<ParentDashboardScreen> {
           ? str3(lang, "Allaqachon bog'langan", 'Уже привязан', 'Already linked')
           : str3(lang, "${r['child_name']} bilan bog'landingiz", 'Вы привязаны к ${r['child_name']}', 'Linked to ${r['child_name']}'));
     } catch (_) {
-      _toast(str3(lang, "Kod noto'g'ri", 'Неверный код', 'Invalid code'));
+      _toast(str3(lang, "Kod noto‘g‘ri", 'Неверный код', 'Invalid code'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -145,7 +145,7 @@ class _ParentDashboardScreenState extends ConsumerState<ParentDashboardScreen> {
                 Text(c.name, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
                 Text(
                   c.activeToday
-                      ? str3(lang, "Bugun o'qidi ✓", 'Занимался сегодня ✓', 'Studied today ✓')
+                      ? str3(lang, "Bugun o‘qidi ✓", 'Занимался сегодня ✓', 'Studied today ✓')
                       : c.lastActive != null
                           ? '${str3(lang, 'Oxirgi:', 'Последняя:', 'Last:')} ${c.lastActive}'
                           : str3(lang, 'Hali boshlamagan', 'Ещё не начал', 'Not started yet'),

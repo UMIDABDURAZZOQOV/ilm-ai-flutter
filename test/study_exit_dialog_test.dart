@@ -241,6 +241,20 @@ void main() {
       addTearDown(tester.view.resetDevicePixelRatio);
       await _open(tester, dark: dark, save: () async => true);
       await tester.pumpAndSettle();
+      // Decode the mascot art first so the captured frame is deterministic.
+      await tester.runAsync(() async {
+        for (final asset in [
+          'assets/mascot/ilmo_rig_v1.png',
+          'assets/mascot/ilmo_sad.png',
+        ]) {
+          await precacheImage(
+            AssetImage(asset),
+            tester.element(find.byType(StudyExitDialog)),
+          );
+        }
+      });
+      await tester.pump();
+      await tester.pump();
       await expectLater(
         find.byType(StudyExitDialog),
         matchesGoldenFile(

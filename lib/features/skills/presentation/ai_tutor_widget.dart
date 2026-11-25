@@ -107,7 +107,7 @@ class _AiTutorWidgetState extends ConsumerState<AiTutorWidget> {
                   : const Icon(Icons.auto_awesome_rounded, size: 16),
               label: Text(
                 _loading
-                    ? str3(lang, "O'ylayapti...", 'Думает...', 'Thinking...')
+                    ? str3(lang, "O‘ylayapti...", 'Думает...', 'Thinking...')
                     : str3(lang, '🤔 Tushuntirib ber', '🤔 Объясни', '🤔 Explain this'),
                 style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12.5),
               ),

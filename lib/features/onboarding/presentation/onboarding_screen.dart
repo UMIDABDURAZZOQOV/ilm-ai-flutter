@@ -246,7 +246,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                             Text(
                               str3(
                                 language,
-                                "Barcha o'quv mavzulari maktab darsliklari asosida tayyorlangan.",
+                                "Barcha o‘quv mavzulari maktab darsliklari asosida tayyorlangan.",
                                 'Все учебные темы подготовлены на основе школьных учебников.',
                                 'All learning topics are based on school textbooks.',
                               ),
