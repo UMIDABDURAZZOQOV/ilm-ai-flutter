@@ -132,11 +132,19 @@ class SkillQuestsScreen extends ConsumerWidget {
                               const SizedBox(width: 12),
                               Expanded(
                                 child: Text(
-                                  tr(
-                                    '$days kunlik seriya',
-                                    '$days $russianDays подряд',
-                                    '$days day streak',
-                                  ),
+                                  // "0 day streak" reads as a scolding; invite
+                                  // the first day instead.
+                                  days == 0
+                                      ? tr(
+                                          'Seriyani bugun boshlang',
+                                          'Начните серию сегодня',
+                                          'Start your streak today',
+                                        )
+                                      : tr(
+                                          '$days kunlik seriya',
+                                          '$days $russianDays подряд',
+                                          '$days day streak',
+                                        ),
                                   style: Theme.of(context)
                                       .textTheme
                                       .headlineSmall
@@ -150,11 +158,17 @@ class SkillQuestsScreen extends ConsumerWidget {
                           ),
                           const SizedBox(height: 12),
                           Text(
-                            tr(
-                              'O‘zingizga qulay sur’atda, bir darsdan davom eting.',
-                              'Продолжайте по одному уроку в удобном темпе.',
-                              'Keep learning one lesson at a time, at your own pace.',
-                            ),
+                            days == 0
+                                ? tr(
+                                    'Bitta darsni tugating — olov yonadi.',
+                                    'Завершите один урок — и огонёк загорится.',
+                                    'Finish one lesson to light the flame.',
+                                  )
+                                : tr(
+                                    'O‘zingizga qulay sur’atda, bir darsdan davom eting.',
+                                    'Продолжайте по одному уроку в удобном темпе.',
+                                    'Keep learning one lesson at a time, at your own pace.',
+                                  ),
                             style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w600,
