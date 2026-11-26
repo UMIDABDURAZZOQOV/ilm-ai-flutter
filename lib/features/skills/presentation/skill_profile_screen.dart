@@ -40,12 +40,15 @@ class SkillProfileScreen extends ConsumerWidget {
       ].any((s) => s.completed > 0 || s.stars > 0 || s.pct > 0);
 
   /// 1 урок, 2 урока, 5 уроков, 11 уроков, 21 урок.
-  static String _ruLessons(int n) {
+  static String _ruLessons(int n) => _ruForm(n, 'урок', 'урока', 'уроков');
+
+  /// Russian noun form for a count: one (1, 21), few (2–4), many (5–20, 11–14).
+  static String _ruForm(int n, String one, String few, String many) {
     final tens = n % 100, ones = n % 10;
-    if (tens >= 11 && tens <= 14) return 'уроков';
-    if (ones == 1) return 'урок';
-    if (ones >= 2 && ones <= 4) return 'урока';
-    return 'уроков';
+    if (tens >= 11 && tens <= 14) return many;
+    if (ones == 1) return one;
+    if (ones >= 2 && ones <= 4) return few;
+    return many;
   }
 
   /// Any started subject shows a visible sliver rather than an empty bar.
@@ -191,7 +194,17 @@ class SkillProfileScreen extends ConsumerWidget {
                                   Icons.local_fire_department_rounded,
                                   const Color(0xFFFF8A00),
                                   '${p.streakDays}',
-                                  str3(lang, 'kun', 'дней', 'streak'),
+                                  str3(
+                                    lang,
+                                    'kun',
+                                    _ruForm(
+                                      p.streakDays,
+                                      'день',
+                                      'дня',
+                                      'дней',
+                                    ),
+                                    'streak',
+                                  ),
                                 ),
                                 const SizedBox(width: 10),
                                 _tile(

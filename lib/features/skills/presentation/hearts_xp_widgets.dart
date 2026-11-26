@@ -34,7 +34,7 @@ class HeartsXpHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final language = Localizations.localeOf(context).languageCode;
-    final streakLabel = language == 'uz' ? '${summary.streakDays} kunlik seriya' : language == 'ru' ? 'Серия: ${summary.streakDays} дней' : '${summary.streakDays} day streak';
+    final streakLabel = language == 'uz' ? '${summary.streakDays} kunlik seriya' : language == 'ru' ? 'Серия: ${summary.streakDays} дн.' : '${summary.streakDays} day streak';
     final activeStreak = summary.streakDays > 0;
     return Row(
       mainAxisSize: MainAxisSize.min,
