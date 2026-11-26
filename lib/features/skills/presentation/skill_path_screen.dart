@@ -85,6 +85,27 @@ class _PathItem {
        lockReason = null;
 }
 
+/// Title of the lesson the learner is on (first open one, else the last
+/// completed one) from the path already on screen; null if not loaded.
+String? currentLessonTitle(
+  WidgetRef ref,
+  String subject,
+  int grade,
+  String language,
+) {
+  final tree = ref.read(_treeProvider((subject, grade))).valueOrNull;
+  if (tree == null) return null;
+  final lessons = [for (final unit in tree.units) ...unit.lessons];
+  final open = lessons.where((l) => l.status == LessonStatus.unlocked);
+  final done = lessons.where((l) => l.status == LessonStatus.completed);
+  final lesson = open.isNotEmpty
+      ? open.first
+      : done.isNotEmpty
+      ? done.last
+      : null;
+  return lesson?.titleFor(language);
+}
+
 final _treeProvider = FutureProvider.autoDispose
     .family<SkillTreeResponse, (String, int?)>((ref, key) async {
       final revision = ref.watch(studyRevisionProvider);

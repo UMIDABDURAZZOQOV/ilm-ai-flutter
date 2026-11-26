@@ -113,6 +113,7 @@ Future<void> openSubjectTutor(
   String language = 'uz',
   String? lessonKey,
   String? initialMessage,
+  String? latestTopic,
 }) {
   return Navigator.of(context).push<void>(
     PageRouteBuilder<void>(
@@ -126,6 +127,7 @@ Future<void> openSubjectTutor(
         language: language,
         lessonKey: lessonKey,
         initialMessage: initialMessage,
+        latestTopic: latestTopic,
       ),
     ),
   );
@@ -139,12 +141,16 @@ class SubjectTutorScreen extends ConsumerStatefulWidget {
     this.language = 'uz',
     this.lessonKey,
     this.initialMessage,
+    this.latestTopic,
     this.questionContext = const {},
   });
   final String subject;
   final String language;
   final int grade;
   final String? lessonKey, initialMessage;
+
+  /// The lesson the learner is on, so "explain the latest topic" names it.
+  final String? latestTopic;
   final Map<String, dynamic> questionContext;
   @override
   ConsumerState<SubjectTutorScreen> createState() => _SubjectTutorScreenState();
@@ -383,45 +389,85 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 16),
-                    // Starter prompts: one tap sends a ready subject question.
-                    Wrap(
-                      alignment: WrapAlignment.center,
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: [
-                        for (final (index, prompt) in [
-                          tr(
-                            'Bu fanning asosiy tushunchalarini tushuntir',
-                            'Объясни основные понятия предмета',
-                            'Explain the key ideas of this subject',
-                          ),
-                          tr(
-                            'Hayotiy misol bilan tushuntir',
-                            'Объясни на жизненном примере',
-                            'Explain with a real-life example',
-                          ),
-                          tr(
-                            'Oxirgi mavzuni soddaroq tushuntir',
-                            'Объясни последнюю тему проще',
-                            'Explain the latest topic more simply',
-                          ),
-                        ].indexed)
-                          ActionChip(
-                            key: ValueKey('tutor_starter_$index'),
-                            avatar: const Icon(
-                              Icons.auto_awesome_rounded,
-                              size: 18,
+                    // Starter prompts name the learner's current lesson, so
+                    // each one gets a real answer instead of "which topic?".
+                    // Without a known lesson only the text field is offered.
+                    if (widget.latestTopic?.trim() case final topic?
+                        when topic.isNotEmpty) ...[
+                      Text(
+                        tr(
+                          'Mavzu: «$topic»',
+                          'Тема: «$topic»',
+                          'Topic: “$topic”',
+                        ),
+                        key: const ValueKey('tutor_topic'),
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                          color: colors.primary,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Wrap(
+                        alignment: WrapAlignment.center,
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: [
+                          for (final (index, (label, message)) in [
+                            (
+                              tr(
+                                'Asosiy g‘oyani tushuntir',
+                                'Объясни главную идею',
+                                'Explain the main idea',
+                              ),
+                              tr(
+                                '«$topic» mavzusining asosiy g‘oyasini tushuntir',
+                                'Объясни главную идею темы «$topic»',
+                                'Explain the main idea of the topic “$topic”',
+                              ),
                             ),
-                            label: Text(prompt),
-                            onPressed: _busy
-                                ? null
-                                : () {
-                                    _input.text = prompt;
-                                    _send();
-                                  },
-                          ),
-                      ],
-                    ),
+                            (
+                              tr(
+                                'Hayotiy misol bilan tushuntir',
+                                'Объясни на жизненном примере',
+                                'Explain with a real-life example',
+                              ),
+                              tr(
+                                '«$topic» mavzusini hayotiy misol bilan tushuntir',
+                                'Объясни тему «$topic» на жизненном примере',
+                                'Explain the topic “$topic” with a real-life example',
+                              ),
+                            ),
+                            (
+                              tr(
+                                'Soddaroq tushuntir',
+                                'Объясни проще',
+                                'Explain more simply',
+                              ),
+                              tr(
+                                '«$topic» mavzusini soddaroq tushuntir',
+                                'Объясни проще тему «$topic»',
+                                'Explain the topic “$topic” more simply',
+                              ),
+                            ),
+                          ].indexed)
+                            ActionChip(
+                              key: ValueKey('tutor_starter_$index'),
+                              avatar: const Icon(
+                                Icons.auto_awesome_rounded,
+                                size: 18,
+                              ),
+                              label: Text(label),
+                              onPressed: _busy
+                                  ? null
+                                  : () {
+                                      _input.text = message;
+                                      _send();
+                                    },
+                            ),
+                        ],
+                      ),
+                    ],
                     const SizedBox(height: 16),
                   ],
                   for (final (index, turn) in _turns.indexed)

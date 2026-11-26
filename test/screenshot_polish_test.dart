@@ -593,7 +593,7 @@ void main() {
         expect(find.byType(StreakCalendarWidget), findsOneWidget);
         expect(find.byType(ExpansionTile), findsNothing);
         if (entry.key == 'sub-percent progress') {
-          expect(find.text('<1%'), findsOneWidget);
+          expect(find.textContaining('<1%'), findsOneWidget);
         }
       },
     );

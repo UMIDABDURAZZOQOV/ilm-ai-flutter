@@ -72,6 +72,44 @@ class _AiAnswerReportButtonState extends ConsumerState<AiAnswerReportButton> {
     super.dispose();
   }
 
+  /// One stray tap must not file a report: ask first.
+  Future<void> _confirmAndReport() async {
+    if (_busy || _sent) return;
+    final colors = Theme.of(context).colorScheme;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        icon: Icon(Icons.flag_rounded, size: 36, color: colors.error),
+        title: Text(
+          tr(
+            'Javobdan shikoyat qilasizmi?',
+            'Пожаловаться на ответ?',
+            'Report this answer?',
+          ),
+        ),
+        content: Text(
+          tr(
+            'Javob xato, darslikka mos emas yoki noo‘rin bo‘lsa, yuboring. Biz uni ko‘rib chiqamiz.',
+            'Отправьте, если ответ неверный, не по учебнику или неуместный. Мы его проверим.',
+            'Send this if the answer is wrong, off the textbook or inappropriate. We will review it.',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(tr('Bekor qilish', 'Отмена', 'Cancel')),
+          ),
+          FilledButton(
+            key: const ValueKey('confirm_ai_report'),
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(tr('Yuborish', 'Отправить', 'Send')),
+          ),
+        ],
+      ),
+    );
+    if (confirmed == true && mounted) await _report();
+  }
+
   Future<void> _report() async {
     if (_busy ||
         _sent ||
@@ -119,10 +157,24 @@ class _AiAnswerReportButtonState extends ConsumerState<AiAnswerReportButton> {
       return const SizedBox.shrink();
     }
     if (_sent) {
+      final done = Theme.of(context).colorScheme.primary;
       return Semantics(
         liveRegion: true,
-        child: Text(
-          tr('Shikoyat yuborildi', 'Жалоба отправлена', 'Report sent'),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.check_circle_rounded, size: 18, color: done),
+              const SizedBox(width: 8),
+              Flexible(
+                child: Text(
+                  tr('Shikoyat yuborildi', 'Жалоба отправлена', 'Report sent'),
+                  style: TextStyle(color: done, fontWeight: FontWeight.w600),
+                ),
+              ),
+            ],
+          ),
         ),
       );
     }
@@ -130,7 +182,7 @@ class _AiAnswerReportButtonState extends ConsumerState<AiAnswerReportButton> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         TextButton.icon(
-          onPressed: _busy ? null : _report,
+          onPressed: _busy ? null : _confirmAndReport,
           icon: const Icon(Icons.flag_outlined),
           label: Text(
             _busy

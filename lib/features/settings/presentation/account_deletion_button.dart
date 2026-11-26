@@ -298,9 +298,34 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
             ),
           if (!_configLoaded) const CircularProgressIndicator(),
           if (_busy)
-            const Padding(
-              padding: EdgeInsets.all(8),
-              child: CircularProgressIndicator(),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Column(
+                children: [
+                  const CircularProgressIndicator(),
+                  const SizedBox(height: 10),
+                  // Deletion can take up to a minute on a cold server; say so.
+                  Semantics(
+                    liveRegion: true,
+                    child: Text(
+                      _requestId == null
+                          ? str3(
+                              lang,
+                              'Akkaunt tekshirilmoqda…',
+                              'Проверяем аккаунт…',
+                              'Verifying your account…',
+                            )
+                          : str3(
+                              lang,
+                              'Ma’lumotlar o‘chirilmoqda. Bu bir daqiqagacha davom etishi mumkin.',
+                              'Удаляем данные. Это может занять до минуты.',
+                              'Deleting your data. This can take up to a minute.',
+                            ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
             ),
           const SizedBox(height: 16),
           // Actions scroll with the content when large text and the keyboard

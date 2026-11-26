@@ -151,9 +151,14 @@ void main() {
               .selected,
           isTrue,
         );
-        await tester.tap(find.byKey(const ValueKey('switch_grade')));
+        // Grade chips head the scrolling list; scroll back to the top.
+        await tester.fling(
+          find.byKey(const ValueKey('switch_fizika')),
+          const Offset(0, 3000),
+          3000,
+        );
         await tester.pumpAndSettle();
-        await tester.tap(find.text('7-sinf').last);
+        await tester.tap(find.byKey(const ValueKey('switch_grade_7')));
         await tester.pumpAndSettle();
         await tester.scrollUntilVisible(
           find.byKey(const ValueKey('switch_kimyo')),

@@ -102,6 +102,10 @@ void main() {
         await tester.ensureVisible(report);
         await tester.tap(report);
         await tester.pumpAndSettle();
+        // A report needs a second, deliberate tap.
+        expect(requests, hasLength(1));
+        await tester.tap(find.byKey(const ValueKey('confirm_ai_report')));
+        await tester.pumpAndSettle();
         expect(requests, hasLength(2));
         expect(requests.last.path, endsWith('/ai-answer-report'));
         expect(requests.last.data, {
@@ -153,12 +157,22 @@ void main() {
       await tester.ensureVisible(button);
       await tester.tap(button);
       await tester.pumpAndSettle();
+      // Cancelling the confirmation sends nothing.
+      await tester.tap(find.text('Cancel'));
+      await tester.pumpAndSettle();
+      expect(reports, isEmpty);
+      await tester.tap(button);
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('confirm_ai_report')));
+      await tester.pumpAndSettle();
       expect(
         find.text('The report could not be sent. Try again.'),
         findsOneWidget,
       );
       await tester.ensureVisible(button);
       await tester.tap(button);
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('confirm_ai_report')));
       await tester.pumpAndSettle();
       expect(reports, hasLength(2));
       expect(reports.last.data, {

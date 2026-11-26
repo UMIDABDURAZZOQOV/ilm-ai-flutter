@@ -29,8 +29,8 @@ const Map<String, Map<String, String>> kTranslations = {
   },
   'auth.login.title': {
     'uz': 'Xush kelibsiz',
-    'ru': 'С возвращением',
-    'en': 'Welcome back',
+    'ru': 'Добро пожаловать',
+    'en': 'Welcome',
   },
   'auth.login.subtitle': {
     'uz': 'Hisobingizga kiring',

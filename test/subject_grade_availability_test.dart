@@ -130,6 +130,30 @@ void main() {
     );
   }
 
+  testWidgets('before a grade is picked the card is not shown as locked', (
+    tester,
+  ) async {
+    var selections = 0;
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: buildAppTheme(darkColors),
+        home: Scaffold(
+          body: SubjectGradeCard(
+            subject: subject('kimyo', [7, 8]),
+            grade: null,
+            language: 'uz',
+            onSelected: () => selections++,
+          ),
+        ),
+      ),
+    );
+    expect(find.byIcon(Icons.lock_outline_rounded), findsNothing);
+    await tester.tap(find.text('kimyo'));
+    await tester.pump();
+    expect(selections, 0);
+    expect(find.text('Sinfni tanlang'), findsNWidgets(2));
+  });
+
   if (!integratedBeta) return;
   testWidgets(
     'restored onboarding cannot continue with a locked saved subject',

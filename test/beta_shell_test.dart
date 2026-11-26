@@ -276,9 +276,7 @@ void main() {
       switchButton.onPressed!();
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('switch_grade')), findsOneWidget);
-      await tester.tap(find.byKey(const ValueKey('switch_grade')));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('8-sinf').last);
+      await tester.tap(find.byKey(const ValueKey('switch_grade_8')));
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('switch_kimyo')));
       await tester.pumpAndSettle();

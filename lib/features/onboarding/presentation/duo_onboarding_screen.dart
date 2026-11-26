@@ -377,7 +377,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       return str3(lang, 'Yuklanmoqda...', 'Загрузка...', 'Loading...');
     }
     if (_step == 9) {
-      return str3(lang, 'MAQSADGA KETDIK', 'ИДТИ К ЦЕЛИ', 'SET GOAL');
+      return str3(lang, 'Maqsadni belgilash', 'Установить цель', 'Set goal');
     }
     return str3(lang, 'Davom etish', 'Продолжить', 'Continue');
   }
@@ -596,7 +596,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                     lang,
                     'Salom! Men Ilmoman',
                     'Привет! Я Ильмо',
-                    "Hello! I'm Ilmo",
+                    "Hello! I’m Ilmo",
                   ),
                   textStyle: const TextStyle(
                     fontSize: 20,
@@ -668,7 +668,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               text: '6 quick questions',
               style: TextStyle(fontWeight: FontWeight.w900),
             ),
-            TextSpan(text: " — and let's start the first lesson!"),
+            TextSpan(text: " — and let’s start the first lesson!"),
           ],
         );
       } else {
@@ -814,9 +814,9 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           reviewedLearning
               ? str3(
                   lang,
-                  'Barcha fanlar ko‘rsatiladi. Qulf belgisi tanlangan sinfda hali mavjud bo‘lmagan fanni bildiradi. Har bir fanning o‘z dars yo‘li va saqlangan progressi bor.',
-                  'Показаны все предметы. Замок означает, что предмет недоступен в выбранном классе. У каждого предмета свой путь и сохранённый прогресс.',
-                  'All subjects are shown. A lock means the subject is unavailable in your selected grade. Each subject has its own path and saved progress.',
+                  'Avval sinfingizni tanlang. Qulf belgisi fan bu sinfda hali yo‘qligini bildiradi.',
+                  'Сначала выберите класс. Замок означает, что предмета в этом классе пока нет.',
+                  'Pick your grade first. A lock means the subject is not in that grade yet.',
                 )
               : _selectedSubject == 'biologiya'
               ? str3(
@@ -835,12 +835,12 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         ),
         const SizedBox(height: 16),
         catalogAsync.when(
-          loading: () => const Padding(
-            padding: EdgeInsets.symmetric(vertical: 40),
+          loading: () => Padding(
+            padding: const EdgeInsets.symmetric(vertical: 40),
             child: Center(
               child: CircularProgressIndicator(
                 strokeWidth: 3.5,
-                valueColor: AlwaysStoppedAnimation(BrandPalette.indigo),
+                valueColor: AlwaysStoppedAnimation(colors.primary),
               ),
             ),
           ),
@@ -1066,7 +1066,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 lang,
                 'Ajoyib! Bilimni mustahkamlaymiz.',
                 'Отлично! Закрепим знания.',
-                'Awesome! Let\'s reinforce your knowledge.',
+                'Awesome! Let’s reinforce your knowledge.',
               ),
             ),
             const SizedBox(height: 24),
@@ -1088,6 +1088,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           'Exam preparation',
         ),
         Icons.edit_note_rounded,
+        const Color(0xFFFF9600),
       ),
       (
         'grades',
@@ -1098,6 +1099,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           'Improving my grades',
         ),
         Icons.trending_up_rounded,
+        const Color(0xFF58CC02),
       ),
       (
         'self_dev',
@@ -1108,6 +1110,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           'Self-improvement',
         ),
         Icons.psychology_outlined,
+        const Color(0xFFCE82FF),
       ),
       (
         'olympiad',
@@ -1118,16 +1121,19 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
           'Olympiad preparation',
         ),
         Icons.emoji_events_outlined,
+        const Color(0xFFFFC800),
       ),
       (
         'interest',
         str3(lang, 'Qiziqish uchun', 'Ради интереса', 'Just for curiosity'),
         Icons.lightbulb_outline_rounded,
+        const Color(0xFF1CB0F6),
       ),
       (
         'other',
         str3(lang, 'Boshqa', 'Другое', 'Other'),
         Icons.more_horiz_rounded,
+        const Color(0xFF8D879F),
       ),
     ];
 
@@ -1159,7 +1165,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
             title: item.$2,
             isMultiSelect: true,
             isSelected: _selectedReasons.contains(item.$1),
-            leading: Icon(item.$3, color: BrandPalette.indigo, size: 24),
+            leading: Icon(item.$3, color: item.$4, size: 24),
             onTap: () {
               _change(() {
                 if (_selectedReasons.contains(item.$1)) {
@@ -1189,7 +1195,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
                 lang,
                 'Keling, qanday sur’atda o‘qishni hal qilaylik!',
                 'Давайте решим, в каком темпе будем учиться!',
-                'Let\'s decide what pace to learn at!',
+                'Let’s decide what pace to learn at!',
               ),
             ),
             const SizedBox(height: 24),
@@ -1262,7 +1268,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
     final items = [
       (
         Icons.menu_book_rounded,
-        BrandPalette.indigo,
+        colors.primary,
         str3(
           lang,
           'Mavzuni chuqur tushunish',
@@ -1600,7 +1606,7 @@ class _StepContainer extends StatelessWidget {
 
 /// Recognisable icons and brand-like colours for "where did you hear of us".
 const _sourceIcons = <String, (IconData, Color)>{
-  'friends': (Icons.people_alt_rounded, BrandPalette.indigo),
+  'friends': (Icons.people_alt_rounded, Color(0xFF7C6CF0)),
   'social': (Icons.photo_camera_rounded, Color(0xFFE1306C)),
   'tiktok': (Icons.music_note_rounded, Color(0xFFEE1D52)),
   'telegram': (Icons.send_rounded, Color(0xFF229ED9)),

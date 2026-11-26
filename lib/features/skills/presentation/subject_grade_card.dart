@@ -75,7 +75,12 @@ class SubjectGradeCard extends StatelessWidget {
     final open = availability.canStudy;
     final active = selected && open;
     final status = availability.label(language);
-    final accent = open ? skillColor(subject.color) : colors.textSecondary;
+    // Before a grade is picked nothing is locked yet: show the subject in its
+    // own colour, without a padlock, so the list does not look all closed.
+    final pending =
+        grade == null && subject.available && subject.grades.isNotEmpty;
+    final vivid = open || pending;
+    final accent = vivid ? skillColor(subject.color) : colors.textSecondary;
     // Large text needs the width more than the badge does.
     final icon = MediaQuery.textScalerOf(context).scale(16) > 22 ? 40.0 : 52.0;
     return Card(
@@ -102,8 +107,8 @@ class SubjectGradeCard extends StatelessWidget {
             height: icon,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: open ? accent : colors.border,
-              boxShadow: open
+              color: vivid ? accent : colors.border,
+              boxShadow: vivid
                   ? [
                       BoxShadow(
                         color: Color.lerp(accent, Colors.black, .3)!,
@@ -114,7 +119,7 @@ class SubjectGradeCard extends StatelessWidget {
             ),
             child: Icon(
               subjectIcons[subject.slug] ?? Icons.menu_book_rounded,
-              color: open ? Colors.white : colors.textSecondary,
+              color: vivid ? Colors.white : colors.textSecondary,
               size: icon * .5,
             ),
           ),
@@ -122,18 +127,20 @@ class SubjectGradeCard extends StatelessWidget {
             subject.nameFor(language),
             style: TextStyle(
               fontWeight: FontWeight.w800,
-              color: open ? colors.text : colors.textSecondary,
+              color: vivid ? colors.text : colors.textSecondary,
             ),
           ),
           subtitle: Text(status, style: TextStyle(color: colors.textSecondary)),
-          trailing: Icon(
-            !open
-                ? Icons.lock_outline_rounded
-                : active
-                ? Icons.check_circle_rounded
-                : Icons.chevron_right_rounded,
-            color: active ? colors.primary : colors.textSecondary,
-          ),
+          trailing: pending
+              ? null
+              : Icon(
+                  !open
+                      ? Icons.lock_outline_rounded
+                      : active
+                      ? Icons.check_circle_rounded
+                      : Icons.chevron_right_rounded,
+                  color: active ? colors.primary : colors.textSecondary,
+                ),
           onTap: () {
             if (open) {
               onSelected();

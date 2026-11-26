@@ -300,7 +300,14 @@ void main() {
       await tester.tap(find.text('Fanlar'));
       await tester.pumpAndSettle();
       final card = find.byType(SubjectGradeCard);
+      // Grade chips head the list; subjects follow below them.
+      await tester.scrollUntilVisible(
+        card,
+        120,
+        scrollable: find.byType(Scrollable).last,
+      );
       await tester.ensureVisible(card);
+      await tester.pumpAndSettle();
       await tester.tap(card);
       await tester.pump();
       await tester.pump(const Duration(milliseconds: 400));

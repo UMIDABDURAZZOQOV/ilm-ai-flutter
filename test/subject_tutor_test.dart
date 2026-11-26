@@ -213,6 +213,51 @@ void main() {
       },
     );
   }
+  for (final topic in [null, 'Paskal qonuni']) {
+    testWidgets('starters name the current lesson, topic=$topic', (
+      tester,
+    ) async {
+      final fake = TutorFake();
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            currentUserIdProvider.overrideWithValue(42),
+            subjectTutorRepositoryProvider.overrideWithValue(fake),
+          ],
+          child: MaterialApp(
+            theme: buildAppTheme(lightColors),
+            home: SubjectTutorScreen(
+              subject: 'fizika',
+              grade: 7,
+              latestTopic: topic,
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      final latest = find.byKey(const ValueKey('tutor_starter_2'));
+      if (topic == null) {
+        // Without a known lesson a chip would only make Ilmo ask "which?".
+        expect(find.byKey(const ValueKey('tutor_starter_0')), findsNothing);
+        expect(latest, findsNothing);
+        return;
+      }
+      expect(find.text('Mavzu: «Paskal qonuni»'), findsOneWidget);
+      expect(find.text('Soddaroq tushuntir'), findsOneWidget);
+      await tester.tap(latest);
+      await tester.pump();
+      expect(fake.calls, [
+        'fizika:7:«Paskal qonuni» mavzusini soddaroq tushuntir',
+      ]);
+      fake.result.complete({
+        'status': 'answered',
+        'paragraphs': [
+          {'text': 'Izoh.'},
+        ],
+      });
+      await tester.pumpAndSettle();
+    });
+  }
   testWidgets(
     'real typed question is sent once and cancellation owns lifecycle',
     (tester) async {

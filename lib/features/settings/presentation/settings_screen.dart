@@ -527,8 +527,10 @@ class _NameDialogState extends ConsumerState<_NameDialog> {
   @override
   Widget build(BuildContext context) {
     final lang = ref.watch(languageProvider);
+    final colors = Theme.of(context).extension<AppColors>()!.colors;
     return AlertDialog(
       scrollable: true,
+      icon: Icon(Icons.badge_rounded, size: 36, color: colors.primary),
       title: Text(str3(lang, 'Ism / familiya', 'Имя / фамилия', 'Name')),
       content: TextField(
         controller: _name,
@@ -552,7 +554,7 @@ class _NameDialogState extends ConsumerState<_NameDialog> {
           onPressed: () => Navigator.pop(context, false),
           child: Text(t('common.cancel', lang)),
         ),
-        TextButton(
+        FilledButton(
           onPressed: _saving ? null : _save,
           child: _saving
               ? const SizedBox(

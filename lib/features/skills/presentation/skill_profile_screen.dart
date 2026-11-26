@@ -39,13 +39,25 @@ class SkillProfileScreen extends ConsumerWidget {
         if (p.weakest != null) p.weakest!,
       ].any((s) => s.completed > 0 || s.stars > 0 || s.pct > 0);
 
-  String _progressLabel(SubjectProgress subject) {
-    if (subject.pct == 0 &&
-        subject.completed > 0 &&
-        subject.total > subject.completed * 100) {
-      return '<1%';
-    }
-    return '${subject.pct}%';
+  /// Any started subject shows a visible sliver rather than an empty bar.
+  double _barValue(SubjectProgress subject) => subject.completed > 0
+      ? (subject.pct / 100).clamp(0.03, 1.0).toDouble()
+      : 0;
+
+  /// "12% completed": a bare percentage left learners guessing what it meant.
+  String _progressLabel(SubjectProgress subject, String lang) {
+    final value =
+        subject.pct == 0 &&
+            subject.completed > 0 &&
+            subject.total > subject.completed * 100
+        ? '<1%'
+        : '${subject.pct}%';
+    return str3(
+      lang,
+      '$value o‘zlashtirildi',
+      '$value пройдено',
+      '$value completed',
+    );
   }
 
   @override
@@ -197,7 +209,8 @@ class SkillProfileScreen extends ConsumerWidget {
                                           'Strongest',
                                         ),
                                         p.strongest!.nameFor(lang),
-                                        _progressLabel(p.strongest!),
+                                        _progressLabel(p.strongest!, lang),
+                                        _barValue(p.strongest!),
                                         c.success,
                                       ),
                                     ),
@@ -217,7 +230,8 @@ class SkillProfileScreen extends ConsumerWidget {
                                           'To practise',
                                         ),
                                         p.weakest!.nameFor(lang),
-                                        _progressLabel(p.weakest!),
+                                        _progressLabel(p.weakest!, lang),
+                                        _barValue(p.weakest!),
                                         c.primary,
                                       ),
                                     ),
@@ -390,6 +404,7 @@ class SkillProfileScreen extends ConsumerWidget {
     String label,
     String subject,
     String pct,
+    double progress,
     Color color,
   ) => Container(
     padding: const EdgeInsets.all(12),
@@ -412,6 +427,17 @@ class SkillProfileScreen extends ConsumerWidget {
           subject,
           style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 13),
         ),
+        const SizedBox(height: 6),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(4),
+          child: LinearProgressIndicator(
+            value: progress,
+            minHeight: 6,
+            color: color,
+            backgroundColor: color.withValues(alpha: 0.18),
+          ),
+        ),
+        const SizedBox(height: 4),
         Text(
           pct,
           style: TextStyle(

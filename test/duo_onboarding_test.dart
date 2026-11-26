@@ -452,7 +452,7 @@ void main() {
     });
 
     testWidgets(
-        'Step 8 (Pace) & Step 9 (Daily Goal): Sets goal with MAQSADGA KETDIK button', (
+        'Step 8 (Pace) & Step 9 (Daily Goal): Sets goal with the set-goal button', (
       tester,
     ) async {
       SharedPreferences.setMockInitialValues({PrefsKeys.language: 'uz'});
@@ -500,8 +500,8 @@ void main() {
       expect(find.text('15 daqiqa / kun'), findsOneWidget);
       expect(find.text('20 daqiqa / kun'), findsOneWidget);
 
-      // Button says "MAQSADGA KETDIK"
-      expect(find.text('MAQSADGA KETDIK'), findsOneWidget);
+      // Button says "Maqsadni belgilash"
+      expect(find.text('Maqsadni belgilash'), findsOneWidget);
 
       // Before selection, tapping continue does not advance
       await tester.tap(continueBtn);
@@ -512,7 +512,7 @@ void main() {
       await tester.tap(find.text('10 daqiqa / kun'));
       await tester.pumpAndSettle();
 
-      // Tap 'MAQSADGA KETDIK'
+      // Tap 'Maqsadni belgilash'
       await tester.tap(continueBtn);
       await tester.pumpAndSettle();
 

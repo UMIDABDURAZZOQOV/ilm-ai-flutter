@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/theme/app_theme.dart';
 import '../data/skill_tree_models.dart';
 import 'skill_ui.dart';
 import 'subject_grade_card.dart';
@@ -66,6 +67,28 @@ class _SubjectSwitcherState extends State<_SubjectSwitcher> {
       str3(widget.language, uz, ru, en);
   @override
   Widget build(BuildContext context) {
+    final gradeChips = Padding(
+      padding: const EdgeInsets.fromLTRB(8, 0, 8, 4),
+      // The same grade chips as onboarding; every grade stays visible.
+      child: Wrap(
+        key: const ValueKey('switch_grade'),
+        spacing: 8,
+        runSpacing: 8,
+        children: [
+          for (var grade = 5; grade <= 11; grade++)
+            _GradeChip(
+              key: ValueKey('switch_grade_$grade'),
+              label: tr('$grade-sinf', '$grade класс', 'Grade $grade'),
+              selected: grade == _grade,
+              onTap: () {
+                if (grade == _grade) return;
+                setState(() => _grade = grade);
+                if (_scroll.hasClients) _scroll.jumpTo(0);
+              },
+            ),
+        ],
+      ),
+    );
     return SizedBox(
       height: MediaQuery.sizeOf(context).height * .8,
       child: Column(
@@ -82,43 +105,18 @@ class _SubjectSwitcherState extends State<_SubjectSwitcher> {
               style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: DropdownButtonFormField<int>(
-              key: const ValueKey('switch_grade'),
-              initialValue: _grade,
-              isExpanded: true,
-              decoration: InputDecoration(
-                labelText: tr('Sinf', 'Класс', 'Grade'),
-              ),
-              items: [
-                for (var grade = 5; grade <= 11; grade++)
-                  DropdownMenuItem(
-                    value: grade,
-                    child: Text(
-                      tr('$grade-sinf', '$grade класс', 'Grade $grade'),
-                    ),
-                  ),
-              ],
-              onChanged: (value) {
-                if (value != null) {
-                  setState(() => _grade = value);
-                  if (_scroll.hasClients) _scroll.jumpTo(0);
-                }
-              },
-            ),
-          ),
-          const SizedBox(height: 12),
           Expanded(
             child: ListView.separated(
               controller: _scroll,
               // Keep cards off the screen edges; a narrower gutter keeps
               // tall 200%-text cards tappable on small phones.
               padding: const EdgeInsets.fromLTRB(12, 0, 12, 16),
-              itemCount: widget.subjects.length,
+              // Grade chips scroll with the list, so 200% text still fits.
+              itemCount: widget.subjects.length + 1,
               separatorBuilder: (_, _) => const SizedBox(height: 10),
               itemBuilder: (context, index) {
-                final subject = widget.subjects[index];
+                if (index == 0) return gradeChips;
+                final subject = widget.subjects[index - 1];
                 return SubjectGradeCard(
                   key: ValueKey('switch_${subject.slug}'),
                   subject: subject,
@@ -134,6 +132,61 @@ class _SubjectSwitcherState extends State<_SubjectSwitcher> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _GradeChip extends StatelessWidget {
+  const _GradeChip({
+    super.key,
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).extension<AppColors>()!.colors;
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Semantics(
+      button: true,
+      selected: selected,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(16),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 160),
+            constraints: const BoxConstraints(minHeight: 44),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: selected
+                  ? BrandPalette.turquoise.withValues(alpha: dark ? .2 : .12)
+                  : colors.card,
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(
+                color: selected ? BrandPalette.turquoise : colors.border,
+                width: selected ? 2 : 1.5,
+              ),
+            ),
+            child: Text(
+              label,
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: selected ? FontWeight.w800 : FontWeight.w600,
+                color: selected
+                    ? (dark ? Colors.white : const Color(0xFF0F766E))
+                    : colors.textSecondary,
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

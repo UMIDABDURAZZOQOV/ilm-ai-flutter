@@ -148,13 +148,15 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                                 ? str3(
                                     language,
                                     '$done dars bajarilgan',
-                                    '$done уроков пройдено',
-                                    '$done lessons completed',
+                                    'Пройдено уроков: $done',
+                                    done == 1
+                                        ? '1 lesson completed'
+                                        : '$done lessons completed',
                                   )
                                 : str3(
                                     language,
                                     '$done/${unit.lessons.length} dars bajarilgan',
-                                    '$done/${unit.lessons.length} уроков пройдено',
+                                    'Пройдено уроков: $done/${unit.lessons.length}',
                                     '$done/${unit.lessons.length} lessons completed',
                                   ),
                           if (unit.id == widget.currentUnitId)

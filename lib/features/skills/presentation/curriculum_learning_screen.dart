@@ -360,6 +360,12 @@ class _CurriculumLearningScreenState
                                 language: lang,
                                 subject: widget.subject.slug,
                                 grade: current.grade,
+                                latestTopic: currentLessonTitle(
+                                  ref,
+                                  widget.subject.slug,
+                                  current.grade,
+                                  lang,
+                                ),
                               )
                             : null,
                       )
@@ -393,6 +399,12 @@ class _CurriculumLearningScreenState
                                     language: lang,
                                     subject: widget.subject.slug,
                                     grade: current.grade,
+                                    latestTopic: currentLessonTitle(
+                                      ref,
+                                      widget.subject.slug,
+                                      current.grade,
+                                      lang,
+                                    ),
                                   ),
                                   icon: Icons.chat_bubble_outline_rounded,
                                   label: tr(
