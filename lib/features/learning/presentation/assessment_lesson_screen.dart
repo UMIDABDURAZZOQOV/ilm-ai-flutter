@@ -433,6 +433,18 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
     }
   }
 
+  /// Check stays disabled until the answer is complete: an ordering question
+  /// needs every step placed, not just the first tap.
+  bool get _draftReady {
+    if (_draft.isEmpty) return false;
+    if (_question['response_kind'] == 'ordering') {
+      final items = (_question['items'] as List?)?.length ?? 0;
+      final order = (_draft['order'] as List?)?.length ?? 0;
+      return items > 0 && order >= items;
+    }
+    return true;
+  }
+
   List<Json> get _teachingItems => _teachingRows;
 
   static List<Json> _buildTeachingItems(Json attempt) {
@@ -1064,7 +1076,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                             : _teaching
                             ? _nextTeaching
                             : _index < _questions.length
-                            ? (_draft.isEmpty && _pending == null
+                            ? (!_draftReady && _pending == null
                                   ? null
                                   : _submit)
                             : _complete,

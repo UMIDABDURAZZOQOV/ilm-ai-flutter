@@ -78,7 +78,9 @@ class LessonCompletionView extends StatelessWidget {
     return SafeArea(
       child: Center(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(24),
+          // With a pinned primary action below (backIsSecondary), leave room
+          // so the last button can scroll clear of the host's fading edge.
+          padding: EdgeInsets.fromLTRB(24, 24, 24, backIsSecondary ? 72 : 24),
           child: IlmReadingWidth(
             child: Column(
               mainAxisSize: MainAxisSize.min,
