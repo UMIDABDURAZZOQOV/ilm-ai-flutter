@@ -849,7 +849,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               Text(
                 str3(
                   lang,
-                  "Fanlarni yuklab bo'lmadi",
+                  "Fanlarni yuklab bo‘lmadi",
                   'Не удалось загрузить предметы',
                   'Could not load subjects',
                 ),
@@ -921,7 +921,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         'friends',
         str3(
           lang,
-          "Do'stlar yoki yaqinlar",
+          "Do‘stlar yoki yaqinlar",
           'Друзья или близкие',
           'Friends or family',
         ),
@@ -932,7 +932,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       ('youtube', 'YouTube'),
       (
         'store',
-        str3(lang, "Ilovalar do'koni", 'Магазин приложений', 'App store'),
+        str3(lang, "Ilovalar do‘koni", 'Магазин приложений', 'App store'),
       ),
       (
         'school',
@@ -958,6 +958,11 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
         for (final item in sources) ...[
           _SelectionTile(
             title: item.$2,
+            leading: Icon(
+              _sourceIcons[item.$1]!.$1,
+              color: _sourceIcons[item.$1]!.$2,
+              size: 24,
+            ),
             isSelected: _selectedSource == item.$1,
             onTap: () {
               _change(() => _selectedSource = item.$1);
@@ -1013,7 +1018,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
       ),
       (
         5,
-        str3(lang, "A'lo", 'Отлично знаю', 'Advanced'),
+        str3(lang, "A’lo", 'Отлично знаю', 'Advanced'),
         str3(
           lang,
           'Eng yuqori natijalar uchun',
@@ -1592,6 +1597,18 @@ class _StepContainer extends StatelessWidget {
     );
   }
 }
+
+/// Recognisable icons and brand-like colours for "where did you hear of us".
+const _sourceIcons = <String, (IconData, Color)>{
+  'friends': (Icons.people_alt_rounded, BrandPalette.indigo),
+  'social': (Icons.photo_camera_rounded, Color(0xFFE1306C)),
+  'tiktok': (Icons.music_note_rounded, Color(0xFFEE1D52)),
+  'telegram': (Icons.send_rounded, Color(0xFF229ED9)),
+  'youtube': (Icons.play_circle_fill_rounded, Color(0xFFFF0000)),
+  'store': (Icons.shop_rounded, Color(0xFF34A853)),
+  'school': (Icons.school_rounded, Color(0xFFFF9600)),
+  'other': (Icons.more_horiz_rounded, Color(0xFF8D879F)),
+};
 
 class _SelectionTile extends StatelessWidget {
   final String title;

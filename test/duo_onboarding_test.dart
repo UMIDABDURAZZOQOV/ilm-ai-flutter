@@ -336,7 +336,7 @@ void main() {
       expect(find.text('Asoslarini bilaman'), findsOneWidget);
       expect(find.text("O‘rtacha"), findsOneWidget);
       expect(find.text('Yaxshi bilaman'), findsOneWidget);
-      expect(find.text("A'lo", skipOffstage: false), findsOneWidget);
+      expect(find.text("A’lo", skipOffstage: false), findsOneWidget);
 
       // Before selecting, continue button does not advance
       await tester.tap(continueBtn);
