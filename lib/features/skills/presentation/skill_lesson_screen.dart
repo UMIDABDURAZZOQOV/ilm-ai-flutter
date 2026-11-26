@@ -3,6 +3,7 @@ import '../../../core/widgets/animated_ilmo.dart';
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import '../../../core/widgets/ilmo_question_callout.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -733,7 +734,7 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                                       const SizedBox(width: 12),
                                       const AnimatedIlmo(
                                         pose: MascotPose.explaining,
-                                        size: 101,
+                                        size: 124,
                                       ),
                                     ],
                                   ),
@@ -911,17 +912,6 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                         ),
                         const SizedBox(height: 12),
                       ],
-                      if (!_answered) ...[
-                        Center(
-                          child: AnimatedIlmo(
-                            pose: MascotPose.thinking,
-                            activity: IlmoActivity.listening,
-                            reactionKey: _index,
-                            size: 101,
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                      ],
                       if (!_answered &&
                           _theory.isEmpty &&
                           _index == 0 &&
@@ -930,14 +920,21 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                           padding: const EdgeInsets.only(bottom: 10),
                           child: ContentLanguageBadge(language: language),
                         ),
-                      Text(
-                        cleanMath(q.questionText),
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 21,
-                          fontWeight: FontWeight.w700,
-                          color: colors.text,
-                          height: 1.4,
+                      // Same callout as the other subjects: Ilmo asks from a
+                      // speech bubble and reacts once the answer is checked.
+                      IlmoQuestionCallout(
+                        verdict: _answered
+                            ? _selected == q.correctAnswer
+                            : null,
+                        reactionKey: '${q.id}:$_reviewing',
+                        prompt: Text(
+                          cleanMath(q.questionText),
+                          style: TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w700,
+                            color: colors.text,
+                            height: 1.35,
+                          ),
                         ),
                       ),
                       if (q.source != null)

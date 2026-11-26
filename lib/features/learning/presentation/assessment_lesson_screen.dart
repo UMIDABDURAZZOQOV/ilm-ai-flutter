@@ -3,11 +3,11 @@ import 'dart:convert';
 import 'dart:math' as math;
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:ilm_ai_flutter/core/widgets/ilmo_question_callout.dart';
 import '../../../core/widgets/animated_ilmo.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/providers/app_providers.dart';
-import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../../../core/widgets/duo_chrome.dart';
 import '../../../core/widgets/mascot_image.dart';
@@ -736,51 +736,16 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
         const SizedBox(height: 20),
         // Duolingo-style character callout: Ilmo asks the question from a
         // speech bubble and reacts in place once the answer is checked.
-        LayoutBuilder(
-          builder: (context, constraints) {
-            final compact =
-                constraints.maxWidth < 300 ||
-                MediaQuery.textScalerOf(context).scale(16) > 24;
-            final verdict = _feedback?['is_correct'];
-            return Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                ExcludeSemantics(
-                  child: AnimatedIlmo(
-                    pose: verdict == null
-                        ? MascotPose.thinking
-                        : verdict == true
-                        ? MascotPose.happy
-                        : MascotPose.sad,
-                    activity: verdict == null
-                        ? IlmoActivity.listening
-                        : verdict == true
-                        ? IlmoActivity.success
-                        : IlmoActivity.encouraging,
-                    size: compact ? 84 : 132,
-                    reactionKey: '${_question['key']}:$verdict',
-                  ),
-                ),
-                const SizedBox(width: 4),
-                Expanded(
-                  child: _SpeechBubble(
-                    child: Semantics(
-                      container: true,
-                      header: true,
-                      child: Text(
-                        _display(_question['prompt'] as String),
-                        style: Theme.of(context).textTheme.titleMedium
-                            ?.copyWith(
-                              fontWeight: FontWeight.w700,
-                              height: 1.3,
-                            ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            );
-          },
+        IlmoQuestionCallout(
+          verdict: _feedback?['is_correct'] as bool?,
+          reactionKey: _question['key'] as Object,
+          prompt: Text(
+            _display(_question['prompt'] as String),
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.w700,
+              height: 1.3,
+            ),
+          ),
         ),
         const SizedBox(height: 20),
         _answerEditor(
@@ -1087,59 +1052,4 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
       ),
     );
   }
-}
-
-/// Rounded bubble with a tail pointing at Ilmo on the left.
-class _SpeechBubble extends StatelessWidget {
-  const _SpeechBubble({required this.child});
-  final Widget child;
-  @override
-  Widget build(BuildContext context) {
-    final c = Theme.of(context).extension<AppColors>()!.colors;
-    return CustomPaint(
-      painter: _BubblePainter(fill: c.surface, stroke: c.border),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(26, 14, 16, 14),
-        child: child,
-      ),
-    );
-  }
-}
-
-class _BubblePainter extends CustomPainter {
-  _BubblePainter({required this.fill, required this.stroke});
-  final Color fill, stroke;
-  @override
-  void paint(Canvas canvas, Size size) {
-    const tail = 10.0, radius = 16.0;
-    final body = RRect.fromLTRBR(
-      tail,
-      0,
-      size.width,
-      size.height,
-      const Radius.circular(radius),
-    );
-    final tailY = math.min(
-      size.height - radius,
-      math.max(radius, size.height * .72),
-    );
-    final path = Path()
-      ..addRRect(body)
-      ..moveTo(tail, tailY - 9)
-      ..lineTo(0, tailY + 4)
-      ..lineTo(tail, tailY + 7)
-      ..close();
-    canvas.drawPath(path, Paint()..color = fill);
-    canvas.drawPath(
-      path,
-      Paint()
-        ..color = stroke
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 2,
-    );
-  }
-
-  @override
-  bool shouldRepaint(_BubblePainter old) =>
-      old.fill != fill || old.stroke != stroke;
 }
