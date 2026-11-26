@@ -1,6 +1,7 @@
 import '../../../core/config/integrated_beta.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/ilm_design.dart';
 import '../data/skill_tree_models.dart';
 import 'learning_journey_widgets.dart';
@@ -331,40 +332,43 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             header,
+                            // Lesson ranges as pills, like Duolingo's section
+                            // pickers, instead of a form dropdown in the path.
                             Padding(
                               padding: const EdgeInsets.only(bottom: 16),
-                              child: DropdownButtonFormField<int>(
-                                key: ValueKey(
-                                  'lesson_range_${row.unit.id}_$page',
+                              child: Semantics(
+                                label: str3(
+                                  language,
+                                  'Darslar oralig‘i',
+                                  'Диапазон уроков',
+                                  'Lesson range',
                                 ),
-                                initialValue: page,
-                                isExpanded: true,
-                                decoration: InputDecoration(
-                                  labelText: str3(
-                                    language,
-                                    'Darslar oralig‘i',
-                                    'Диапазон уроков',
-                                    'Lesson range',
+                                child: SingleChildScrollView(
+                                  key: ValueKey('lesson_range_${row.unit.id}'),
+                                  scrollDirection: Axis.horizontal,
+                                  child: Row(
+                                    children: [
+                                      for (
+                                        var p = 0;
+                                        p * size < row.unit.lessons.length;
+                                        p++
+                                      )
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            right: 8,
+                                          ),
+                                          child: _RangePill(
+                                            label:
+                                                '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)}${reviewedLearning ? '' : ' / ${row.unit.lessons.length}'}',
+                                            selected: p == page,
+                                            onTap: () => setState(
+                                              () => _pages[row.unit.id] = p,
+                                            ),
+                                          ),
+                                        ),
+                                    ],
                                   ),
                                 ),
-                                items: [
-                                  for (
-                                    var p = 0;
-                                    p * size < row.unit.lessons.length;
-                                    p++
-                                  )
-                                    DropdownMenuItem(
-                                      value: p,
-                                      child: Text(
-                                        '${p * size + 1}–${((p + 1) * size).clamp(1, row.unit.lessons.length)}${reviewedLearning ? '' : ' / ${row.unit.lessons.length}'}',
-                                      ),
-                                    ),
-                                ],
-                                onChanged: (value) {
-                                  if (value != null) {
-                                    setState(() => _pages[row.unit.id] = value);
-                                  }
-                                },
                               ),
                             ),
                           ],
@@ -387,6 +391,53 @@ class _LearningPathSectionsState extends State<LearningPathSections> {
           ],
         );
       },
+    );
+  }
+}
+
+class _RangePill extends StatelessWidget {
+  const _RangePill({
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    final scheme = Theme.of(context).colorScheme;
+    return Semantics(
+      button: true,
+      selected: selected,
+      child: Material(
+        color: selected ? c.primary : c.card,
+        shape: StadiumBorder(
+          side: BorderSide(color: selected ? c.primary : c.border, width: 2),
+        ),
+        child: InkWell(
+          customBorder: const StadiumBorder(),
+          onTap: onTap,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 44, minWidth: 64),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Center(
+                widthFactor: 1,
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: selected ? scheme.onPrimary : c.text,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

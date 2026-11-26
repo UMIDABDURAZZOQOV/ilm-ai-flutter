@@ -400,54 +400,117 @@ class _SkillLessonScreenState extends ConsumerState<SkillLessonScreen> {
                   for (final question in _questions.where(
                     (q) => answers.containsKey(q.id),
                   ))
-                    Padding(
-                      padding: const EdgeInsets.only(top: 12),
-                      child: Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Text(
-                                cleanMath(question.questionText),
-                                style: Theme.of(context).textTheme.titleMedium,
+                    Builder(
+                      builder: (context) {
+                        final c = Theme.of(
+                          context,
+                        ).extension<AppColors>()!.colors;
+                        final right =
+                            answers[question.id] == question.correctAnswer;
+                        final tone = right ? c.success : c.error;
+                        return Padding(
+                          padding: const EdgeInsets.only(top: 12),
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              side: BorderSide(
+                                color: tone.withValues(alpha: .6),
+                                width: 2,
                               ),
-                              const SizedBox(height: 12),
-                              Text(
-                                str3(
-                                  language,
-                                  'Sizning javobingiz',
-                                  'Ваш ответ',
-                                  'Your answer',
-                                ),
-                                style: Theme.of(context).textTheme.labelMedium,
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        right
+                                            ? Icons.check_circle_rounded
+                                            : Icons.cancel_rounded,
+                                        color: tone,
+                                        size: 20,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        right
+                                            ? str3(
+                                                language,
+                                                'To‘g‘ri',
+                                                'Верно',
+                                                'Correct',
+                                              )
+                                            : str3(
+                                                language,
+                                                'Xato',
+                                                'Ошибка',
+                                                'Incorrect',
+                                              ),
+                                        style: TextStyle(
+                                          color: tone,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Text(
+                                    cleanMath(question.questionText),
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.titleMedium,
+                                  ),
+                                  const SizedBox(height: 12),
+                                  Text(
+                                    str3(
+                                      language,
+                                      'Sizning javobingiz',
+                                      'Ваш ответ',
+                                      'Your answer',
+                                    ),
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.labelMedium,
+                                  ),
+                                  Text(
+                                    cleanMath(answers[question.id]!),
+                                    style: TextStyle(
+                                      color: tone,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Text(
+                                    str3(
+                                      language,
+                                      'Darsdagi javob',
+                                      'Ответ из урока',
+                                      'Lesson answer',
+                                    ),
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.labelMedium,
+                                  ),
+                                  Text(cleanMath(question.correctAnswer)),
+                                  if (question.explanation?.isNotEmpty == true)
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 12),
+                                      child: Text(
+                                        cleanMath(question.explanation!),
+                                      ),
+                                    ),
+                                  if (question.source != null)
+                                    ContentSourceButton(
+                                      source: question.source!,
+                                      language: language,
+                                    ),
+                                ],
                               ),
-                              Text(cleanMath(answers[question.id]!)),
-                              const SizedBox(height: 8),
-                              Text(
-                                str3(
-                                  language,
-                                  'Darsdagi javob',
-                                  'Ответ из урока',
-                                  'Lesson answer',
-                                ),
-                                style: Theme.of(context).textTheme.labelMedium,
-                              ),
-                              Text(cleanMath(question.correctAnswer)),
-                              if (question.explanation?.isNotEmpty == true)
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 12),
-                                  child: Text(cleanMath(question.explanation!)),
-                                ),
-                              if (question.source != null)
-                                ContentSourceButton(
-                                  source: question.source!,
-                                  language: language,
-                                ),
-                            ],
+                            ),
                           ),
-                        ),
-                      ),
+                        );
+                      },
                     ),
                 ],
               ),

@@ -201,9 +201,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Item 1'), findsOneWidget);
       expect(find.text('Item 11'), findsNothing);
-      await tester.tap(find.byType(DropdownButtonFormField<int>));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('21–30').last);
+      await tester.tap(find.text('21–30'));
       await tester.pumpAndSettle();
       expect(find.text('Item 21'), findsOneWidget);
       expect(lessons[20].status, LessonStatus.locked);

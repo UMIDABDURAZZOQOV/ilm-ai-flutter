@@ -321,6 +321,11 @@ class SettingsScreen extends ConsumerWidget {
                   final confirmed = await showDialog<bool>(
                     context: context,
                     builder: (context) => AlertDialog(
+                      icon: Icon(
+                        Icons.logout_rounded,
+                        size: 36,
+                        color: colors.primary,
+                      ),
                       title: Text(t('settings.logout', language)),
                       content: Text(t('settings.logout.confirm', language)),
                       actions: [
