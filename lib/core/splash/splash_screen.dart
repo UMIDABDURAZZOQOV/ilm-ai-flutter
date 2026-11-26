@@ -39,10 +39,49 @@ class SplashScreen extends ConsumerWidget {
                           .clamp(1, 1024),
                   semanticLabel: 'ILM AI',
                 ),
-                const SizedBox(height: 36),
+                const SizedBox(height: 20),
+                const Text(
+                  'ILM AI',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 34,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 2,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  str3(
+                    language,
+                    'Maktab fanlarini oson o‘rganing',
+                    'Школьные предметы — легко',
+                    'School subjects made easy',
+                  ),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white.withValues(alpha: .8),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 40),
                 if (!failed)
-                  const CircularProgressIndicator(
-                    color: BrandPalette.accentOrange,
+                  SizedBox(
+                    width: 140,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: LinearProgressIndicator(
+                        minHeight: 8,
+                        color: BrandPalette.accentOrange,
+                        backgroundColor: Colors.white.withValues(alpha: .18),
+                        semanticsLabel: str3(
+                          language,
+                          'Yuklanmoqda',
+                          'Загрузка',
+                          'Loading',
+                        ),
+                      ),
+                    ),
                   )
                 else ...[
                   Text(

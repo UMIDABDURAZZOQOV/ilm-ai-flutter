@@ -110,9 +110,15 @@ class _PremiumButtonState extends State<PremiumButton>
             color: bgColor,
           )
         : isOutline
+        // Duolingo-style secondary button: a card face with a solid lower
+        // edge, so it reads as pressable next to the filled 3D buttons.
         ? BoxDecoration(
             borderRadius: BorderRadius.circular(widget.borderRadius),
+            color: widget.backgroundColor ?? colors.card,
             border: Border.all(color: brColor, width: 2),
+            boxShadow: disabled
+                ? null
+                : [BoxShadow(color: brColor, offset: const Offset(0, 4))],
           )
         : BoxDecoration(
             borderRadius: BorderRadius.circular(widget.borderRadius),

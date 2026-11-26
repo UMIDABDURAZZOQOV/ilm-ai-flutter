@@ -200,6 +200,11 @@ class _DeletionDialogState extends ConsumerState<_DeletionDialog> {
     final lang = ref.watch(languageProvider);
     return AlertDialog(
       scrollable: true,
+      icon: Icon(
+        Icons.warning_amber_rounded,
+        size: 40,
+        color: Theme.of(context).colorScheme.error,
+      ),
       title: Text(
         str3(lang, 'Akkauntni o‘chirish', 'Удалить аккаунт', 'Delete account'),
       ),
