@@ -39,6 +39,15 @@ class SkillProfileScreen extends ConsumerWidget {
         if (p.weakest != null) p.weakest!,
       ].any((s) => s.completed > 0 || s.stars > 0 || s.pct > 0);
 
+  /// 1 урок, 2 урока, 5 уроков, 11 уроков, 21 урок.
+  static String _ruLessons(int n) {
+    final tens = n % 100, ones = n % 10;
+    if (tens >= 11 && tens <= 14) return 'уроков';
+    if (ones == 1) return 'урок';
+    if (ones >= 2 && ones <= 4) return 'урока';
+    return 'уроков';
+  }
+
   /// Any started subject shows a visible sliver rather than an empty bar.
   double _barValue(SubjectProgress subject) => subject.completed > 0
       ? (subject.pct / 100).clamp(0.03, 1.0).toDouble()
@@ -190,7 +199,14 @@ class SkillProfileScreen extends ConsumerWidget {
                                   Icons.menu_book_rounded,
                                   c.primary,
                                   '${p.lessonsCompleted}',
-                                  str3(lang, 'dars', 'уроков', 'lessons'),
+                                  str3(
+                                    lang,
+                                    'dars',
+                                    _ruLessons(p.lessonsCompleted),
+                                    p.lessonsCompleted == 1
+                                        ? 'lesson'
+                                        : 'lessons',
+                                  ),
                                 ),
                               ],
                             ),
