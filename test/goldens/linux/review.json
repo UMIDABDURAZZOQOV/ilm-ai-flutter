@@ -39,17 +39,19 @@
   "images": [
     {
       "file": "auth_login_dark.png",
-      "sha256": "b7562465b28e3efe906148a1a0028b9bbf29c99c8ca6595d2d0f7aa24d7bb835",
+      "sha256": "73ed5115cbd45497f658d59204c0a6b38cd10f72edad4761d7840f6fecdac3ba",
       "existing_Windows_sha256": "ff1550fe5d126181866d26f62985e6bf6b219a5d39b695eff17411551548189d",
       "changed_pixels_from_Windows": 4940,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "3D outline Google button (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45795900960
     },
     {
       "file": "auth_login_light.png",
-      "sha256": "c7985da00e2206c039e8927122266ef89f27a43a0e41253ff700d94045ba2077",
+      "sha256": "ddafa87b5564a77de5af58a08dd4531e81d0895c454f057650893d5246ce24db",
       "existing_Windows_sha256": "c9a4ed34b59b3b1d0a840f7f0b7cd1a859975db970a77c13c4fc361c4fcbfadf",
       "changed_pixels_from_Windows": 4960,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "3D outline Google button (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45795900960
     },
     {
       "file": "ilm_controls_dark.png",
@@ -81,45 +83,51 @@
     },
     {
       "file": "lesson_completion_dark.png",
-      "sha256": "fdff4d480705252c5953005486e001d0fb4f73a02ee3b3a0eb88b18d4e859cd0",
+      "sha256": "7a520dd4bae6ac5d300bfcda3187abe59d571df3b09e42869e1bd97333febb26",
       "existing_Windows_sha256": "726be298438cbbd04b58c6b88868901ebcb997b067994e7784d1d72368e6f85a",
       "changed_pixels_from_Windows": 7265,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Coloured XP and accuracy tiles (2026-11-25 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45638289576
     },
     {
       "file": "lesson_completion_light.png",
-      "sha256": "ecb221d9e33de3bd8253dee48f2a7fd21f31bf0b23e38b645ef5fbaec44d8da8",
+      "sha256": "9602b5d445b3e8da8f0eac4adbfe7999526c19140de2671d728ce88f40ae3969",
       "existing_Windows_sha256": "8cdfa9ae554cd4a35de853bf85f211433f7aeabe3fed762aa9ffa1c60eabeb43",
       "changed_pixels_from_Windows": 7273,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Coloured XP and accuracy tiles (2026-11-25 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45638289576
     },
     {
       "file": "polish_home_dark.png",
-      "sha256": "df479e4fe3ba6de805660f91889857e2995d03d759e025f5bd0736a03000103e",
+      "sha256": "c448680e6540b649e05109e3df6004b0332524275f1f630d0df3b85dcc0af538",
       "existing_Windows_sha256": "9ff7200a2a40468c58a3d5b7976ee9b6560c8966d764cd83df280914e5031839",
       "changed_pixels_from_Windows": 7680,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Learning path with Ilmo beside the current node (2026-11-25 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45638289576
     },
     {
       "file": "polish_home_light.png",
-      "sha256": "0763d28409b66a2b36894b5a710843d2ad7ebf14fae6fdd1e692868e4935ab55",
+      "sha256": "4eca131a48e24cd9f2410f19aae8ca4466de4fe459c0f9e30c6d57cc51993397",
       "existing_Windows_sha256": "97db4b3a802b4cde787fc3a1dd0c306de90cfcdc3ae95eaf2049269da404ec2e",
       "changed_pixels_from_Windows": 7739,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Learning path with Ilmo beside the current node (2026-11-25 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45638289576
     },
     {
       "file": "polish_league_dark.png",
-      "sha256": "1428e589682ca3cea49e1e8b6dc78f280df9c54ae63c7e8f8101d6ebe30d59c3",
+      "sha256": "50991da082ffa6c8c0d6c3df67b296300a0a58cb2709b677411ebe3deab99d29",
       "existing_Windows_sha256": "4242225a2c9726ddfdb14ea527e88acdf322a5e7292dcf63afdc2ccf278ce6e0",
       "changed_pixels_from_Windows": 6477,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Tiered league hero and ranking card (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45795900960
     },
     {
       "file": "polish_league_light.png",
-      "sha256": "dddd39d74f69a2c2771daa92d791f9031d7149f20c9d68a0b9eeb68a9a6faf00",
+      "sha256": "a52702ed0f0a19d560f1ccc1560ad0c815328afedea078b20ad911c326aab1be",
       "existing_Windows_sha256": "86e7c85d3b47bc4b672271086776bc46d2a688ce98daffbdfdf97c3cf3868fbe",
       "changed_pixels_from_Windows": 6506,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Tiered league hero and ranking card (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45795900960
     },
     {
       "file": "polish_profile_dark.png",
@@ -137,17 +145,19 @@
     },
     {
       "file": "study_exit_dark.png",
-      "sha256": "5b15caedbba583d89b46b5849b18311d88e8545a2309dccec636ee61d9f289bb",
+      "sha256": "71764470ffdc7b778f22036de4e226960dfe94e6cef9626fe060dc27781bddad",
       "existing_Windows_sha256": "7d296061eabf5fa07f5f397039faa0680b2aae43d53ae297f598233eb447db48",
       "changed_pixels_from_Windows": 6764,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Exit dialog with Ilmo and save-state badge (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45795900960
     },
     {
       "file": "study_exit_light.png",
-      "sha256": "1c21c0e5508f3ae8e1b7213567b1867aaac56705f8a5c9ac7b10e51adbe17fb1",
+      "sha256": "33ae9a49deb999e56139d2c2466bdf959ff464e6f7cf0b1181c074ccced26bca",
       "existing_Windows_sha256": "8bcde941e2b1733258c137c35c656b890bf6afaa31d4b66c8e6604ee46417faa",
       "changed_pixels_from_Windows": 6772,
-      "visual_review": "Glyph rendering only; no new layout defect identified"
+      "visual_review": "Exit dialog with Ilmo and save-state badge (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45795900960
     }
   ]
 }
