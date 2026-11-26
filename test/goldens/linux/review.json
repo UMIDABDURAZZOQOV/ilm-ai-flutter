@@ -39,19 +39,19 @@
   "images": [
     {
       "file": "auth_login_dark.png",
-      "sha256": "73ed5115cbd45497f658d59204c0a6b38cd10f72edad4761d7840f6fecdac3ba",
-      "existing_Windows_sha256": "ff1550fe5d126181866d26f62985e6bf6b219a5d39b695eff17411551548189d",
-      "changed_pixels_from_Windows": 4940,
-      "visual_review": "3D outline Google button (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
-      "source_run": 45795900960
+      "sha256": "57d30d1f892e5ab4ec00afb0b658985c39989c89275e8ee88c45732f61d829ab",
+      "existing_Windows_sha256": "9abb70f0f9a04aff37a795d3af0184a44b81bdbbeaa0926de40fcecf1b49ac1c",
+      "changed_pixels_from_Windows": 5101,
+      "visual_review": "Neutral title \"Добро пожаловать\" above the sign-up button (2026-11-26); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45856339586
     },
     {
       "file": "auth_login_light.png",
-      "sha256": "ddafa87b5564a77de5af58a08dd4531e81d0895c454f057650893d5246ce24db",
-      "existing_Windows_sha256": "c9a4ed34b59b3b1d0a840f7f0b7cd1a859975db970a77c13c4fc361c4fcbfadf",
-      "changed_pixels_from_Windows": 4960,
-      "visual_review": "3D outline Google button (2026-11-26 redesign); Linux render compared with the reviewed Windows reference, no layout defect.",
-      "source_run": 45795900960
+      "sha256": "3dd94519f46c113ee96ae3e4653766dfb291964b7fea4f5e33839baf91e2ead1",
+      "existing_Windows_sha256": "0765144e588a1d4fe65f7d661ad9f964d8ea4d100a4fdc99d46ec432600a44b8",
+      "changed_pixels_from_Windows": 5122,
+      "visual_review": "Neutral title \"Добро пожаловать\" above the sign-up button (2026-11-26); Linux render compared with the reviewed Windows reference, no layout defect.",
+      "source_run": 45856339586
     },
     {
       "file": "ilm_controls_dark.png",
