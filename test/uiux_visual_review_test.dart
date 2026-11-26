@@ -173,6 +173,7 @@ void main() {
           String lang = 'ru',
           bool catalogLoading = false,
           bool catalogError = false,
+          Map<String, Object> extraPrefs = const {},
         }) async {
           // A new route tree, not a global-key reparent of a visited tab.
           await tester.pumpWidget(const SizedBox.shrink());
@@ -181,6 +182,7 @@ void main() {
             PrefsKeys.language: lang,
             'subject_7': 'biologiya',
             if (grade) 'class_7': '5',
+            ...extraPrefs,
           });
           final prefs = await PrefsService.create();
           await tester.pumpWidget(
@@ -322,6 +324,26 @@ void main() {
         await save('login');
         await mount(const DuoOnboardingScreen(initialStep: 11));
         await save('onboarding');
+        // Subject, source, reason and roadmap steps: their icons once
+        // vanished on the dark theme.
+        for (final step in [3, 4, 7, 10]) {
+          // A signed-in learner resumes from the saved draft step.
+          await mount(
+            const DuoOnboardingScreen(),
+            lang: 'uz',
+            extraPrefs: {
+              'onboarding_draft_7': jsonEncode({
+                'version': 1,
+                'step': step,
+                'class': '7',
+                'subject': 'fizika',
+                'source': 'telegram',
+                'reason': 'grades,self_dev',
+              }),
+            },
+          );
+          await save('onboarding-$step');
+        }
         final tree = SkillTreeResponse.fromJson(
           reviewFixture('biology_grade5_tree'),
         );

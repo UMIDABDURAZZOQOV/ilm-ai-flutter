@@ -1639,11 +1639,15 @@ class _SelectionTile extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final borderColor = isSelected ? BrandPalette.turquoise : colors.border;
+    final baseColor = isDark ? BrandPalette.indigoDarkCard : colors.card;
+    // Opaque: a see-through tint let the solid turquoise drop shadow show
+    // through the whole tile, hiding the dark-teal label in the light theme.
     final bgColor = isSelected
-        ? (isDark
-              ? BrandPalette.turquoise.withValues(alpha: 0.16)
-              : BrandPalette.turquoise.withValues(alpha: 0.10))
-        : (isDark ? BrandPalette.indigoDarkCard : colors.card);
+        ? Color.alphaBlend(
+            BrandPalette.turquoise.withValues(alpha: isDark ? 0.16 : 0.10),
+            baseColor,
+          )
+        : baseColor;
     final shadowColor = isSelected
         ? const Color(0xFF0D9488)
         : (isDark ? Colors.black26 : const Color(0xFFE5E2F2));
