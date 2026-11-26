@@ -3318,7 +3318,7 @@ void main() {
         t.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
         IlmoActivity.celebrating,
       );
-      result.onReview();
+      result.onReview!();
       await t.pumpAndSettle();
       expect(find.text('Javoblar'), findsOneWidget);
       expect(find.textContaining('Manba:'), findsWidgets);

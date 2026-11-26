@@ -19,7 +19,7 @@ class LessonCompletionView extends StatelessWidget {
     required this.stars,
     required this.streakDays,
     required this.elapsed,
-    required this.onReview,
+    this.onReview,
     required this.onBack,
     this.reviewLabel,
     this.passed,
@@ -33,7 +33,10 @@ class LessonCompletionView extends StatelessWidget {
   final bool backIsSecondary;
   final int xp, correct, total, stars, streakDays;
   final Duration elapsed;
-  final VoidCallback onReview, onBack;
+  final VoidCallback onBack;
+
+  /// Null when the host screen pins this action as its primary button.
+  final VoidCallback? onReview;
 
   @override
   Widget build(BuildContext context) {
@@ -255,21 +258,22 @@ class LessonCompletionView extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                const SizedBox(height: 8),
-                OutlinedButton.icon(
-                  onPressed: onReview,
-                  icon: const Icon(Icons.fact_check_outlined),
-                  label: Text(
-                    reviewLabel ??
-                        str3(
-                          language,
-                          'Javoblarni ko‘rish',
-                          'Посмотреть ответы',
-                          'Review answers',
-                        ),
-                    textAlign: TextAlign.center,
+                if (onReview != null) const SizedBox(height: 8),
+                if (onReview != null)
+                  OutlinedButton.icon(
+                    onPressed: onReview,
+                    icon: const Icon(Icons.fact_check_outlined),
+                    label: Text(
+                      reviewLabel ??
+                          str3(
+                            language,
+                            'Javoblarni ko‘rish',
+                            'Посмотреть ответы',
+                            'Review answers',
+                          ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
-                ),
               ],
             ),
           ),

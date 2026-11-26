@@ -884,7 +884,11 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                       elapsed: Duration(
                         seconds: result['elapsed_seconds'] as int? ?? 0,
                       ),
-                      onReview: () => _open(_lessonKey!, fresh: true),
+                      // A failed attempt pins "practise again" below as
+                      // the primary action; it is not repeated here.
+                      onReview: result['passed'] == true
+                          ? () => _open(_lessonKey!, fresh: true)
+                          : null,
                       reviewLabel: _t(
                         'Qayta mashq qilish',
                         'Пройти ещё раз',
@@ -898,6 +902,15 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                     _action(
                       _t('Keyingi dars', 'Следующий урок', 'Next lesson'),
                       _busy ? null : _nextLesson,
+                    )
+                  else
+                    _action(
+                      _t(
+                        'Qayta mashq qilish',
+                        'Пройти ещё раз',
+                        'Practise again',
+                      ),
+                      _busy ? null : () => _open(_lessonKey!, fresh: true),
                     ),
                 ],
               )
