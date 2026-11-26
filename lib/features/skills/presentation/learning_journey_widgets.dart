@@ -370,9 +370,11 @@ class LearningUnitHeader extends StatelessWidget {
                           'Остальные уроки раздела готовятся.',
                           'More lessons in this unit are in preparation.',
                         ),
+                        // Same secondary ink as the banner's other lines, so
+                        // it stays readable on the filled current-unit banner.
                         style: Theme.of(
                           context,
-                        ).textTheme.bodySmall?.copyWith(color: c.textMuted),
+                        ).textTheme.bodySmall?.copyWith(color: inkSoft),
                       ),
                     ),
                 ],

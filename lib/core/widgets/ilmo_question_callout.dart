@@ -43,7 +43,8 @@ class IlmoQuestionCallout extends StatelessWidget {
                   : verdict!
                   ? IlmoActivity.success
                   : IlmoActivity.encouraging,
-              size: compact ? 84 : 132,
+              // 116 leaves the bubble room for the question on 360 dp phones.
+              size: compact ? 84 : 116,
               reactionKey: '$reactionKey:$verdict',
             ),
           ),
