@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -43,7 +45,10 @@ class SubjectTutorRepository {
       },
       cancelToken: cancel,
       options: Options(
-        receiveTimeout: const Duration(seconds: 25),
+        // The server may retry a slow provider for up to ~55 s and keeps the
+        // conversation busy meanwhile; giving up sooner made the learner's
+        // Retry hit "request in progress" instead of the real answer.
+        receiveTimeout: const Duration(seconds: 60),
         headers: {'X-ILM-AI-Report': 'v1'},
       ),
     );
@@ -557,11 +562,16 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                         ),
                         const SizedBox(width: 8),
                         Expanded(
-                          child: Text(
-                            tr(
+                          child: _ThinkingLine(
+                            first: tr(
                               'Ilmo savolingiz ustida o‘ylayapti…',
                               'Ilmo обдумывает ваш вопрос…',
                               'Ilmo is thinking about your question…',
+                            ),
+                            slow: tr(
+                              'Javob odatdagidan uzoqroq tayyorlanmoqda. Bir daqiqagacha kuting…',
+                              'Ответ готовится дольше обычного. Подождите до минуты…',
+                              'This answer is taking longer than usual. Allow up to a minute…',
                             ),
                           ),
                         ),
@@ -682,4 +692,37 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
       ),
     );
   }
+}
+
+/// Reassures the learner when a slow provider answer takes over 15 seconds.
+class _ThinkingLine extends StatefulWidget {
+  const _ThinkingLine({required this.first, required this.slow});
+  final String first, slow;
+  @override
+  State<_ThinkingLine> createState() => _ThinkingLineState();
+}
+
+class _ThinkingLineState extends State<_ThinkingLine> {
+  late final Timer _timer;
+  bool _slow = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer(const Duration(seconds: 15), () {
+      if (mounted) setState(() => _slow = true);
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+    liveRegion: true,
+    child: Text(_slow ? widget.slow : widget.first),
+  );
 }

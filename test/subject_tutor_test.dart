@@ -258,6 +258,43 @@ void main() {
       await tester.pumpAndSettle();
     });
   }
+  testWidgets('a slow answer is announced after 15 s, then replaced', (
+    tester,
+  ) async {
+    final fake = TutorFake();
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          currentUserIdProvider.overrideWithValue(42),
+          subjectTutorRepositoryProvider.overrideWithValue(fake),
+        ],
+        child: MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: const SubjectTutorScreen(subject: 'fizika', grade: 7),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.enterText(
+      find.byKey(const ValueKey('tutor_input')),
+      'Bosim nima?',
+    );
+    await tester.pump();
+    await tester.tap(find.byTooltip('Yuborish'));
+    await tester.pump();
+    expect(find.text('Ilmo savolingiz ustida o‘ylayapti…'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 16));
+    expect(find.textContaining('odatdagidan uzoqroq'), findsOneWidget);
+    fake.result.complete({
+      'status': 'answered',
+      'paragraphs': [
+        {'text': 'Bosim izohi.'},
+      ],
+    });
+    await tester.pumpAndSettle();
+    expect(find.textContaining('odatdagidan uzoqroq'), findsNothing);
+    expect(find.text('Bosim izohi.'), findsOneWidget);
+  });
   testWidgets(
     'real typed question is sent once and cancellation owns lifecycle',
     (tester) async {

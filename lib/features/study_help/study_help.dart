@@ -57,7 +57,10 @@ class StudyHelpRepository {
       data: context.request(language, message),
       cancelToken: cancel,
       options: Options(
-        receiveTimeout: const Duration(seconds: 25),
+        // The server may retry a slow provider for up to ~55 s and keeps the
+        // conversation busy meanwhile; giving up sooner made the learner's
+        // Retry hit "request in progress" instead of the real answer.
+        receiveTimeout: const Duration(seconds: 60),
         // An old backend ignores this header and keeps its compatible reviewed
         // fallback. No new JSON field breaks its extra-forbid request schema.
         headers: {
