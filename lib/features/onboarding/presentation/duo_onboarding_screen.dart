@@ -1248,7 +1248,7 @@ class _DuoOnboardingScreenState extends ConsumerState<DuoOnboardingScreen> {
               Icons.bolt_rounded,
               color: _selectedDailyGoal == item.$1
                   ? BrandPalette.accentOrange
-                  : Colors.grey,
+                  : Theme.of(context).extension<AppColors>()!.colors.textMuted,
               size: 26,
             ),
             onTap: () {

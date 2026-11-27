@@ -633,7 +633,9 @@ class _SkillPracticeScreenState extends ConsumerState<SkillPracticeScreen> {
                                 : Icons.radio_button_unchecked,
                             color: level['mastered'] == true
                                 ? const Color(0xFF58CC02)
-                                : Colors.grey,
+                                : Theme.of(
+                                    context,
+                                  ).extension<AppColors>()!.colors.textMuted,
                           ),
                           title: Text('${level['label']}'),
                           trailing: Text(

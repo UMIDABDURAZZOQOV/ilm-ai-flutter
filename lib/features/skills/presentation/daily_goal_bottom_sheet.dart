@@ -164,7 +164,9 @@ class _DailyGoalBottomSheetState extends ConsumerState<DailyGoalBottomSheet> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 13,
-                  color: isDark ? Colors.grey.shade400 : Colors.grey.shade600,
+                  color: Theme.of(
+                    context,
+                  ).extension<AppColors>()!.colors.textSecondary,
                 ),
               ),
               const SizedBox(height: 20),
