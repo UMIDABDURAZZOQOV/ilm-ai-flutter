@@ -855,57 +855,43 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
             ? Column(
                 children: [
                   Expanded(
-                    // Fade the lower edge: on short phones the secondary
-                    // buttons scroll under the pinned primary action instead
-                    // of looking cut off.
-                    child: ShaderMask(
-                      shaderCallback: (rect) => const LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.black,
-                          Colors.black,
-                          Colors.transparent,
-                        ],
-                        stops: [0, .9, 1],
-                      ).createShader(rect),
-                      blendMode: BlendMode.dstIn,
-                      child: LessonCompletionView(
-                        backIsSecondary: true,
-                        language: _language,
-                        passed: result['passed'] == true,
-                        title: result['passed'] == true
-                            ? _t(
-                                'Dars yakunlandi!',
-                                'Урок завершён!',
-                                'Lesson complete!',
-                              )
-                            : _t(
-                                'Yana mashq qilamiz',
-                                'Попробуем ещё',
-                                'Keep practising',
-                              ),
-                        lessonTitle: title,
-                        xp: result['xp_awarded'] as int,
-                        correct: result['score'] as int,
-                        total: result['total'] as int,
-                        stars: result['stars'] as int,
-                        streakDays: result['streak_days'] as int,
-                        elapsed: Duration(
-                          seconds: result['elapsed_seconds'] as int? ?? 0,
-                        ),
-                        // A failed attempt pins "practise again" below as
-                        // the primary action; it is not repeated here.
-                        onReview: result['passed'] == true
-                            ? () => _open(_lessonKey!, fresh: true)
-                            : null,
-                        reviewLabel: _t(
-                          'Qayta mashq qilish',
-                          'Пройти ещё раз',
-                          'Practise again',
-                        ),
-                        onBack: _leave,
+                    // Every action is pinned below, so the result needs no
+                    // fade; the fade had greyed out the accuracy and time.
+                    child: LessonCompletionView(
+                      backIsSecondary: true,
+                      language: _language,
+                      passed: result['passed'] == true,
+                      title: result['passed'] == true
+                          ? _t(
+                              'Dars yakunlandi!',
+                              'Урок завершён!',
+                              'Lesson complete!',
+                            )
+                          : _t(
+                              'Yana mashq qilamiz',
+                              'Попробуем ещё',
+                              'Keep practising',
+                            ),
+                      lessonTitle: title,
+                      xp: result['xp_awarded'] as int,
+                      correct: result['score'] as int,
+                      total: result['total'] as int,
+                      stars: result['stars'] as int,
+                      streakDays: result['streak_days'] as int,
+                      elapsed: Duration(
+                        seconds: result['elapsed_seconds'] as int? ?? 0,
                       ),
+                      // A failed attempt pins "practise again" below as
+                      // the primary action; it is not repeated here.
+                      onReview: result['passed'] == true
+                          ? () => _open(_lessonKey!, fresh: true)
+                          : null,
+                      reviewLabel: _t(
+                        'Qayta mashq qilish',
+                        'Пройти ещё раз',
+                        'Practise again',
+                      ),
+                      onBack: _leave,
                     ),
                   ),
                   if (_error != null) Text(_error!),
