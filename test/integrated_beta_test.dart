@@ -242,6 +242,7 @@ void main() {
     late List<RequestOptions> requests;
     bool loseNextAnswer = false;
     bool rejectNextAnswer = false;
+    bool failNextComplete = false;
     Completer<ResponseBody>? delayedAnswer;
     bool completedNode = false;
     void setup({
@@ -276,6 +277,7 @@ void main() {
       requests = [];
       loseNextAnswer = false;
       rejectNextAnswer = false;
+      failNextComplete = false;
       delayedAnswer = null;
       dio = Dio(BaseOptions(baseUrl: betaApiOrigin));
       // Dio otherwise moves these large history catalogues to a real isolate,
@@ -343,6 +345,10 @@ void main() {
           return reply(200, feedback);
         }
         if (request.path.endsWith('/complete')) {
+          if (failNextComplete) {
+            failNextComplete = false;
+            return reply(503, {'detail': 'temporarily_unavailable'});
+          }
           return reply(200, {
             ...(result['result'] ?? result) as Map,
             'stars': 3,
@@ -840,6 +846,8 @@ void main() {
             expect(chatRequest['question_key'], isNotNull);
             await tester.pageBack();
             await tester.pumpAndSettle();
+            // One run per outcome also covers a failed automatic save.
+            failNextComplete = !correct;
             await action(tester);
             expect(find.byType(SubjectTutorScreen), findsNothing);
             expect(
@@ -847,25 +855,26 @@ void main() {
               findsNothing,
             );
             if ((lesson['questions'] as List).length == 1) {
-              final saveLabel = switch (panel.language) {
-                'ru' => 'Сохранить результат',
-                'en' => 'Save result',
-                _ => 'Natijani saqlash',
-              };
-              expect(find.text(saveLabel), findsOneWidget);
-              expect(
-                tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
-                IlmoActivity.listening,
-              );
-              expect(
-                requests.where((r) => r.path.endsWith('/complete')),
-                isEmpty,
-              );
-              await action(tester);
+              // Continuing past the last answer saves the result by itself
+              // (no extra "Save result" tap). If that save fails, the button
+              // stays as the retry.
               expect(
                 requests.where((r) => r.path.endsWith('/complete')),
                 hasLength(1),
               );
+              if (!correct) {
+                final saveLabel = switch (panel.language) {
+                  'ru' => 'Сохранить результат',
+                  'en' => 'Save result',
+                  _ => 'Natijani saqlash',
+                };
+                expect(find.text(saveLabel), findsOneWidget);
+                await action(tester);
+                expect(
+                  requests.where((r) => r.path.endsWith('/complete')),
+                  hasLength(2),
+                );
+              }
               expect(
                 tester.widget<AnimatedIlmo>(find.byType(AnimatedIlmo)).activity,
                 correct ? IlmoActivity.celebrating : IlmoActivity.encouraging,

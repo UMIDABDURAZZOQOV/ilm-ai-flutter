@@ -506,6 +506,10 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
       _error = null;
     });
     _top();
+    // After the last answer go straight to the result, as Duolingo does,
+    // instead of making the learner press "Save result". The button stays
+    // as the retry if saving fails.
+    if (_index >= _questions.length) _complete();
   }
 
   Future<void> _leave() async {
@@ -1000,11 +1004,17 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
-                                  _t(
-                                    'Barcha javoblar qabul qilindi. Natijani saqlaymiz.',
-                                    'Все ответы приняты. Сохраним результат.',
-                                    'All answers received. Save your result.',
-                                  ),
+                                  _busy
+                                      ? _t(
+                                          'Barcha javoblar qabul qilindi. Natija saqlanmoqda…',
+                                          'Все ответы приняты. Сохраняем результат…',
+                                          'All answers received. Saving your result…',
+                                        )
+                                      : _t(
+                                          'Barcha javoblar qabul qilindi. Natijani saqlaymiz.',
+                                          'Все ответы приняты. Сохраним результат.',
+                                          'All answers received. Save your result.',
+                                        ),
                                   textAlign: TextAlign.center,
                                 ),
                               ],
