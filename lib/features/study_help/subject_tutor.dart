@@ -49,7 +49,8 @@ class SubjectTutorRepository {
         // conversation busy meanwhile; giving up sooner made the learner's
         // Retry hit "request in progress" instead of the real answer.
         receiveTimeout: const Duration(seconds: 60),
-        headers: {'X-ILM-AI-Report': 'v1'},
+        // gemini-any: a busy model may be answered by another Gemini model.
+        headers: {'X-ILM-AI-Report': 'v1', 'X-ILM-AI-Models': 'gemini-any'},
       ),
     );
     final data = Map<String, dynamic>.from(result.data as Map);
@@ -75,7 +76,7 @@ class SubjectTutorRepository {
       final evidence = data['evidence'];
       if (generation is! Map ||
           generation['provider'] != 'gemini' ||
-          generation['model'] != 'gemini-3.1-flash-lite' ||
+          !isGeminiModel(generation['model']) ||
           generation['http_status'] != 200 ||
           generation['status'] != 'answered' ||
           generation['language'] != 'uz' ||
@@ -199,9 +200,9 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
       'AI chat is unavailable for this account. Use the reviewed explanation in the lesson.',
     ),
     _ => tr(
-      'Javob kelmadi. Savolingiz saqlandi — qayta urinishingiz mumkin.',
-      'Ответ не получен. Ваш вопрос сохранён — можно повторить попытку.',
-      'No answer arrived. Your question is saved — you can retry.',
+      'Ilmo hozir juda band. Savolingiz saqlandi — bir ozdan keyin «Qayta urinish»ni bosing.',
+      'Илмо сейчас очень занят. Вопрос сохранён — через минуту нажмите «Повторить».',
+      'Ilmo is very busy right now. Your question is saved — tap Retry in a moment.',
     ),
   };
   @override
@@ -569,9 +570,9 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
                               'Ilmo is thinking about your question…',
                             ),
                             slow: tr(
-                              'Javob odatdagidan uzoqroq tayyorlanmoqda. Bir daqiqagacha kuting…',
-                              'Ответ готовится дольше обычного. Подождите до минуты…',
-                              'This answer is taking longer than usual. Allow up to a minute…',
+                              'Javob odatdagidan uzoqroq tayyorlanmoqda. Bir necha soniya…',
+                              'Ответ готовится дольше обычного. Ещё несколько секунд…',
+                              'This answer is taking longer than usual. A few more seconds…',
                             ),
                           ),
                         ),
@@ -694,7 +695,7 @@ class _SubjectTutorScreenState extends ConsumerState<SubjectTutorScreen> {
   }
 }
 
-/// Reassures the learner when a slow provider answer takes over 15 seconds.
+/// Reassures the learner when a slow provider answer takes over 8 seconds.
 class _ThinkingLine extends StatefulWidget {
   const _ThinkingLine({required this.first, required this.slow});
   final String first, slow;
@@ -709,7 +710,7 @@ class _ThinkingLineState extends State<_ThinkingLine> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer(const Duration(seconds: 15), () {
+    _timer = Timer(const Duration(seconds: 8), () {
       if (mounted) setState(() => _slow = true);
     });
   }
@@ -726,3 +727,9 @@ class _ThinkingLineState extends State<_ThinkingLine> {
     child: Text(_slow ? widget.slow : widget.first),
   );
 }
+
+
+/// Any Gemini model the server names. A busy model may be answered by another
+/// Gemini model; the provider and every grounding check stay unchanged.
+bool isGeminiModel(Object? model) =>
+    model is String && RegExp(r'^gemini-[a-z0-9.\-]{1,60}$').hasMatch(model);

@@ -260,6 +260,44 @@ void main() {
     );
   }
 
+  test(
+    'accepts a fallback Gemini model and asks for any Gemini model',
+    () async {
+      final data = googleAnswer(true);
+      data['generation']['model'] = 'gemini-2.5-flash';
+      RequestOptions? sent;
+      final dio = Dio()
+        ..httpClientAdapter = Adapter((request) {
+          sent = request;
+          return reply(200, data);
+        });
+      addTearDown(() => dio.close(force: true));
+      final result = await StudyHelpRepository(
+        dio,
+      ).ask(checked, 'uz', '', CancelToken());
+      expect(result, isNotNull);
+      expect(sent!.headers['X-ILM-AI-Models'], 'gemini-any');
+    },
+  );
+  for (final model in ['gemini-2.5-flash', 'gemini-3.1-flash-lite']) {
+    test(
+      'isGeminiModel accepts $model',
+      () => expect(isGeminiModel(model), isTrue),
+    );
+  }
+  for (final model in [
+    '',
+    'gemini-',
+    'GEMINI-x',
+    'gemini-a b',
+    'gpt-4o',
+    null,
+  ]) {
+    test(
+      'isGeminiModel rejects $model',
+      () => expect(isGeminiModel(model), isFalse),
+    );
+  }
   for (final pair in [
     ['gemini', 'meta/muse-glimmer-30b'],
     ['nvidia', 'gemini-3.1-flash-lite'],

@@ -66,6 +66,7 @@ class StudyHelpRepository {
         headers: {
           'X-ILM-Study-Help': generate ? 'reviewed-text-v2' : 'context-only',
           if (generate) 'X-ILM-AI-Report': 'v1',
+          if (generate) 'X-ILM-AI-Models': 'gemini-any',
         },
       ),
     );
@@ -107,7 +108,7 @@ bool _validGeneration(Map<String, dynamic> data) {
       !((generation['provider'] == 'nvidia' &&
               generation['model'] == 'meta/muse-glimmer-30b') ||
           (generation['provider'] == 'gemini' &&
-              generation['model'] == 'gemini-3.1-flash-lite')) ||
+              isGeminiModel(generation['model']))) ||
       !{
         'internal_evaluation',
         'authorized_hosted_application',
