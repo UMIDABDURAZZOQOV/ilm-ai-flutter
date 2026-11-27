@@ -801,10 +801,16 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
     );
   }
 
-  Widget _action(String label, VoidCallback? action) => SafeArea(
+  Widget _action(
+    String label,
+    VoidCallback? action, {
+    bool pinned = false,
+  }) => SafeArea(
     top: false,
+    // A pinned result action sits above the secondary links; no bottom inset.
+    bottom: !pinned,
     child: Padding(
-      padding: const EdgeInsets.fromLTRB(20, 12, 20, 16),
+      padding: EdgeInsets.fromLTRB(20, 12, 20, pinned ? 4 : 16),
       child: Duo3DButton(
         height: math.max(56, MediaQuery.textScalerOf(context).scale(36) + 16),
         onPressed: action,
@@ -907,6 +913,7 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                     _action(
                       _t('Keyingi dars', 'Следующий урок', 'Next lesson'),
                       _busy ? null : _nextLesson,
+                      pinned: true,
                     )
                   else
                     _action(
@@ -916,7 +923,48 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
                         'Practise again',
                       ),
                       _busy ? null : () => _open(_lessonKey!, fresh: true),
+                      pinned: true,
                     ),
+                  // Secondary actions are pinned too, as compact links, so
+                  // none is left half-visible under the result's fade.
+                  SafeArea(
+                    top: false,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+                      child: Wrap(
+                        alignment: WrapAlignment.center,
+                        spacing: 4,
+                        children: [
+                          TextButton.icon(
+                            key: const ValueKey('completion_back_to_path'),
+                            onPressed: _busy ? null : _leave,
+                            icon: const Icon(Icons.map_rounded),
+                            label: Text(
+                              _t(
+                                'Dars yo‘liga qaytish',
+                                'К учебному пути',
+                                'Back to learning path',
+                              ),
+                            ),
+                          ),
+                          if (result['passed'] == true)
+                            TextButton.icon(
+                              onPressed: _busy
+                                  ? null
+                                  : () => _open(_lessonKey!, fresh: true),
+                              icon: const Icon(Icons.replay_rounded),
+                              label: Text(
+                                _t(
+                                  'Qayta mashq qilish',
+                                  'Пройти ещё раз',
+                                  'Practise again',
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               )
             : SafeArea(

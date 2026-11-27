@@ -29,7 +29,8 @@ class LessonCompletionView extends StatelessWidget {
   final String? reviewLabel;
   final bool? passed;
 
-  /// True when the host screen pins its own primary action (Next lesson).
+  /// True when the host screen pins all actions (next, back, practise again)
+  /// below this view; the view then shows only the result.
   final bool backIsSecondary;
   final int xp, correct, total, stars, streakDays;
   final Duration elapsed;
@@ -78,9 +79,7 @@ class LessonCompletionView extends StatelessWidget {
     return SafeArea(
       child: Center(
         child: SingleChildScrollView(
-          // With a pinned primary action below (backIsSecondary), leave room
-          // so the last button can scroll clear of the host's fading edge.
-          padding: EdgeInsets.fromLTRB(24, 24, 24, backIsSecondary ? 72 : 24),
+          padding: const EdgeInsets.fromLTRB(24, 24, 24, 24),
           child: IlmReadingWidth(
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -242,40 +241,44 @@ class LessonCompletionView extends StatelessWidget {
                       style: theme.textTheme.bodySmall,
                     ),
                   ),
-                const SizedBox(height: 24),
-                // Secondary: the lesson screen pins the primary next action.
-                Duo3DButton(
-                  key: const ValueKey('completion_back_to_path'),
-                  color: backIsSecondary ? c.card : null,
-                  textColor: backIsSecondary ? c.primary : null,
-                  borderColor: backIsSecondary ? c.border : null,
-                  onPressed: onBack,
-                  child: Text(
-                    str3(
-                      language,
-                      'Dars yo‘liga qaytish',
-                      'К учебному пути',
-                      'Back to learning path',
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                if (onReview != null) const SizedBox(height: 8),
-                if (onReview != null)
-                  OutlinedButton.icon(
-                    onPressed: onReview,
-                    icon: const Icon(Icons.fact_check_outlined),
-                    label: Text(
-                      reviewLabel ??
-                          str3(
-                            language,
-                            'Javoblarni ko‘rish',
-                            'Посмотреть ответы',
-                            'Review answers',
-                          ),
+                // A host that pins every action (backIsSecondary) draws none
+                // here, so no half-visible button sits under its fade.
+                if (!backIsSecondary) ...[
+                  const SizedBox(height: 24),
+                  // Secondary: the lesson screen pins the primary next action.
+                  Duo3DButton(
+                    key: const ValueKey('completion_back_to_path'),
+                    color: backIsSecondary ? c.card : null,
+                    textColor: backIsSecondary ? c.primary : null,
+                    borderColor: backIsSecondary ? c.border : null,
+                    onPressed: onBack,
+                    child: Text(
+                      str3(
+                        language,
+                        'Dars yo‘liga qaytish',
+                        'К учебному пути',
+                        'Back to learning path',
+                      ),
                       textAlign: TextAlign.center,
                     ),
                   ),
+                  if (onReview != null) const SizedBox(height: 8),
+                  if (onReview != null)
+                    OutlinedButton.icon(
+                      onPressed: onReview,
+                      icon: const Icon(Icons.fact_check_outlined),
+                      label: Text(
+                        reviewLabel ??
+                            str3(
+                              language,
+                              'Javoblarni ko‘rish',
+                              'Посмотреть ответы',
+                              'Review answers',
+                            ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                ],
               ],
             ),
           ),
