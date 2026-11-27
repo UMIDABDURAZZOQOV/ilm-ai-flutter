@@ -24,6 +24,7 @@ import 'package:ilm_ai_flutter/features/skills/application/learning_preferences.
 import 'package:ilm_ai_flutter/features/skills/data/skill_extras_repository.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_models.dart';
 import 'package:ilm_ai_flutter/features/skills/data/skill_tree_repository.dart';
+import 'package:ilm_ai_flutter/features/skills/presentation/daily_goal_bottom_sheet.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/subject_home_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_lesson_screen.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/skill_profile_screen.dart';
@@ -316,6 +317,26 @@ void main() {
         await save('profile');
         await mount(const SkillQuestsScreen());
         await save('quests');
+        await mount(
+          Scaffold(
+            body: Builder(
+              // Same sheet colour and accent as showDailyGoalBottomSheet.
+              builder: (context) => Align(
+                alignment: Alignment.bottomCenter,
+                child: ColoredBox(
+                  color: Theme.of(context).cardColor,
+                  child: DailyGoalBottomSheet(
+                    language: 'uz',
+                    accentColor: Theme.of(
+                      context,
+                    ).extension<AppColors>()!.colors.secondary,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+        await save('goal');
         await mount(const SkillLeaderboardScreen());
         await save('league');
         await mount(const SettingsScreen());

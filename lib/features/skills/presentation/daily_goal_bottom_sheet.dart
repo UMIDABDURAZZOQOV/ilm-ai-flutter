@@ -269,12 +269,19 @@ class _GoalOptionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final borderColor = isSelected
-        ? accentColor
-        : (isDark ? Colors.grey.shade800 : Colors.grey.shade300);
+    // App palette tokens, not Material greys: neutral #212121 tiles looked
+    // foreign on the indigo sheet in the dark theme.
+    final c = Theme.of(context).extension<AppColors>()!.colors;
+    final borderColor = isSelected ? accentColor : c.border;
     final bgColor = isSelected
-        ? accentColor.withValues(alpha: isDark ? 0.20 : 0.10)
-        : (isDark ? Colors.grey.shade900 : Colors.grey.shade50);
+        ? Color.alphaBlend(
+            accentColor.withValues(alpha: isDark ? 0.20 : 0.10),
+            c.card,
+          )
+        : Color.alphaBlend(
+            c.text.withValues(alpha: isDark ? .04 : .02),
+            c.card,
+          );
 
     return Semantics(
       button: true,
@@ -300,13 +307,13 @@ class _GoalOptionTile extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: isSelected
                       ? accentColor.withValues(alpha: 0.2)
-                      : (isDark ? Colors.grey.shade800 : Colors.grey.shade200),
+                      : c.border.withValues(alpha: .6),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(
                   Icons.bolt_rounded,
                   size: 20,
-                  color: isSelected ? accentColor : Colors.grey,
+                  color: isSelected ? accentColor : c.textMuted,
                 ),
               ),
               const SizedBox(width: 14),
@@ -327,9 +334,7 @@ class _GoalOptionTile extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 12.5,
                         fontWeight: FontWeight.w600,
-                        color: isDark
-                            ? Colors.grey.shade400
-                            : Colors.grey.shade600,
+                        color: c.textSecondary,
                       ),
                     ),
                   ],
@@ -340,7 +345,7 @@ class _GoalOptionTile extends StatelessWidget {
               else
                 Icon(
                   Icons.radio_button_unchecked,
-                  color: isDark ? Colors.grey.shade700 : Colors.grey.shade400,
+                  color: c.textMuted,
                   size: 22,
                 ),
             ],
