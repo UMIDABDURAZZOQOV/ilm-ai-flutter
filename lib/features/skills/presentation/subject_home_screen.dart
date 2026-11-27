@@ -1,3 +1,4 @@
+import '../../../core/splash/splash_screen.dart';
 import 'package:ilm_ai_flutter/core/widgets/animated_ilmo.dart';
 import '../../../core/widgets/ilm_navigation_icons.dart';
 import '../../../core/widgets/ilm_tab_view.dart';
@@ -10,7 +11,6 @@ import '../../../core/providers/app_providers.dart';
 import '../../../core/network/error_message.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/duo_chrome.dart';
-import '../../../core/widgets/ilm_state_view.dart';
 import '../../auth/application/auth_controller.dart';
 import '../data/skill_tree_models.dart';
 import '../data/skill_tree_repository.dart';
@@ -151,7 +151,10 @@ class _SubjectHomeScreenState extends ConsumerState<SubjectHomeScreen> {
     return catalog.when(
       skipLoadingOnReload: true,
       skipLoadingOnRefresh: true,
-      loading: () => Scaffold(body: IlmLoadingView(language: lang)),
+      // Right after launch the catalogue is the last thing between the splash
+      // and the app; keep the splash on screen instead of flashing a second,
+      // navigation-less loading page.
+      loading: () => const SplashScreen(),
       error: (error, _) => Scaffold(
         body: SafeArea(
           child: Center(
