@@ -118,7 +118,42 @@ class _CurriculumLearningScreenState
     return grades.when(
       skipLoadingOnReload: true,
       skipLoadingOnRefresh: true,
-      loading: () => IlmLoadingView(language: lang),
+      // Keep the subject header in place while grades load, so it does not
+      // drop in and push the loading card down a moment later.
+      loading: () => !reviewedLearning
+          ? IlmLoadingView(language: lang)
+          : SafeArea(
+              bottom: false,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 4,
+                    ),
+                    child: _CompactLearnHeader(
+                      label: selected == null
+                          ? widget.subject.nameFor(lang)
+                          : tr(
+                              '${widget.subject.nameFor(lang)} · $selected-sinf',
+                              '${widget.subject.nameFor(lang)} · $selected класс',
+                              '${widget.subject.nameFor(lang)} · Grade $selected',
+                            ),
+                      onSubject: widget.onChangeSubject,
+                      topicsLabel: tr('Mavzular', 'Темы', 'Topics'),
+                      onTopics: null,
+                      tutorLabel: tr(
+                        'Ilmodan so‘rang',
+                        'Спросить Илмо',
+                        'Ask Ilmo',
+                      ),
+                      onTutor: null,
+                    ),
+                  ),
+                  Expanded(child: IlmLoadingView(language: lang)),
+                ],
+              ),
+            ),
       error: (error, _) => SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(24),
@@ -700,7 +735,9 @@ class _CompactLearnHeader extends StatelessWidget {
   });
   final String label, topicsLabel, tutorLabel;
   final VoidCallback? onSubject, onTutor;
-  final VoidCallback onTopics;
+
+  /// Null while the grade outline is still loading.
+  final VoidCallback? onTopics;
   @override
   Widget build(BuildContext context) {
     final c = Theme.of(context).extension<AppColors>()!.colors;
