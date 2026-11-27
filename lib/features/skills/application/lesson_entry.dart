@@ -54,9 +54,9 @@ class LessonEntry {
       LessonEntryState.start => ['BOSHLASH', 'НАЧАТЬ', 'START'],
       LessonEntryState.resume => ['DAVOM ETISH', 'ПРОДОЛЖИТЬ', 'CONTINUE'],
       LessonEntryState.expired => [
-        'URINISHNI YANGILASH',
-        'ОБНОВИТЬ ПОПЫТКУ',
-        'RENEW ATTEMPT',
+        'QAYTADAN BOSHLASH',
+        'НАЧАТЬ ЗАНОВО',
+        'START AGAIN',
       ],
       LessonEntryState.review => [
         'QAYTA O‘TISH',
@@ -102,9 +102,9 @@ class LessonEntry {
                 'Question $position/$total · saved on this device',
               ],
       LessonEntryState.expired => [
-        'Oldingi urinish muddati tugagan',
-        'Срок предыдущей попытки истёк',
-        'The previous attempt has expired',
+        'Saqlangan urinish eskirdi — yangidan boshlaymiz',
+        'Сохранённая попытка устарела — начнём заново',
+        'Your saved attempt timed out — let’s start fresh',
       ],
       LessonEntryState.review => [
         'Bajarilgan · yana mashq qilish mumkin',

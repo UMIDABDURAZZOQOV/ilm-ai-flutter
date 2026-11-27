@@ -756,9 +756,9 @@ class LessonPopoverContent extends StatelessWidget {
           : presentation.state == LessonEntryState.expired
           ? str3(
               language,
-              'Oldingi urinish muddati tugagan. Keyingi oynada yangi urinish boshlashingiz mumkin.',
-              'Срок предыдущей попытки истёк. На следующем экране можно начать заново.',
-              'The previous attempt has expired. You can start again on the next screen.',
+              'Saqlangan urinish eskirdi. Darsni yangidan boshlaymiz — oldingi natijalaringiz saqlanadi.',
+              'Сохранённая попытка устарела. Начнём урок заново — прежние результаты сохранятся.',
+              'Your saved attempt timed out. Let’s start the lesson fresh — earlier results stay saved.',
             )
           : null,
       actionLabel: presentation.action(language),
