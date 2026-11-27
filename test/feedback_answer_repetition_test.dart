@@ -5,6 +5,39 @@ import 'package:ilm_ai_flutter/core/utils/reviewed_text.dart';
 import 'package:ilm_ai_flutter/features/skills/presentation/lesson_feedback_panel.dart';
 
 void main() {
+  for (final solution in [false, true]) {
+    testWidgets('wrong answer label, solution sentence=$solution', (
+      tester,
+    ) async {
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: buildAppTheme(lightColors),
+          home: Scaffold(
+            body: Align(
+              alignment: Alignment.bottomCenter,
+              child: LessonFeedbackPanel(
+                language: 'uz',
+                correct: false,
+                correctAnswer: 'Velosiped harakati mexanik hodisa.',
+                explanation: '',
+                answerIsSolution: solution,
+                onContinue: () {},
+              ),
+            ),
+          ),
+        ),
+      );
+      // A solution sentence is not the option the learner should have picked.
+      expect(
+        find.text('Eslab qoling'),
+        solution ? findsOneWidget : findsNothing,
+      );
+      expect(
+        find.text('To‘g‘ri javob'),
+        solution ? findsNothing : findsOneWidget,
+      );
+    });
+  }
   const answer = 'Sovutkich oziq-ovqatni saqlash vazifasiga mos texnik misol.';
   for (final prefix in ['', 'Yana o‘ylab ko‘r: ', "Yana o'ylab ko'r: "]) {
     test('whole shown answer is not repeated after $prefix', () {

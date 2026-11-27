@@ -775,6 +775,8 @@ class _AssessmentSessionState extends ConsumerState<_AssessmentSession>
       key: _feedbackKey,
       language: _language,
       correct: _feedback!['is_correct'] as bool,
+      // Reviewed v2 grading returns the solution, never the expected option.
+      answerIsSolution: _feedback!['correct_answer'] is! String,
       correctAnswer: _display(
         _feedback!['correct_answer'] as String? ??
             (solution.isEmpty

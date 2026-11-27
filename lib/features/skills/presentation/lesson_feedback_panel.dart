@@ -24,8 +24,13 @@ class LessonFeedbackPanel extends StatelessWidget {
     this.saveError,
     this.source,
     this.help,
+    this.answerIsSolution = false,
   });
   final String language, correctAnswer, explanation;
+
+  /// True when [correctAnswer] is the reviewed solution sentence rather than
+  /// the chosen option text, so it is not labelled "Correct answer".
+  final bool answerIsSolution;
   final bool correct, reviewHint, saving;
   final VoidCallback onContinue;
   final String? saveError;
@@ -100,12 +105,19 @@ class LessonFeedbackPanel extends StatelessWidget {
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               Text(
-                str3(
-                  language,
-                  'To‘g‘ri javob',
-                  'Правильный ответ',
-                  'Correct answer',
-                ),
+                answerIsSolution
+                    ? str3(
+                        language,
+                        'Eslab qoling',
+                        'Запомните',
+                        'Keep in mind',
+                      )
+                    : str3(
+                        language,
+                        'To‘g‘ri javob',
+                        'Правильный ответ',
+                        'Correct answer',
+                      ),
                 style: Theme.of(context).textTheme.bodySmall,
               ),
               Text(
